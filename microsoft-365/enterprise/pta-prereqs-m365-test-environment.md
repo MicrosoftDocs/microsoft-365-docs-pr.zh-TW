@@ -23,9 +23,9 @@ ms.locfileid: "51199846"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中傳遞驗證的先決條件
 
-*此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
+*此測試實驗室指南僅可用於企業測試環境的 Microsoft 365。*
 
-身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組設定和條件式存取原則，可保護所有與 Azure Active Directory (azure AD) 整合的 365 Microsoft 企業版服務的存取。
+身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組設定和條件式存取原則，可保護對與 Azure Active Directory (Azure AD) 相關的 enterprise Microsoft 365 中所有服務的存取。
 
 本文說明如何設定符合[傳遞驗證先決條件組態](../security/office-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的 Microsoft 365 測試環境。
 
@@ -37,7 +37,7 @@ ms.locfileid: "51199846"
 4. 設定密碼回寫
 5. 設定自助式密碼重設
 6. 設定多重要素驗證
-7. 啟用加入網域之 Windows 電腦的自動裝置註冊
+7. 啟用加入網域的 Windows 電腦的自動裝置註冊
 8. 設定 Azure AD 密碼保護 
 9. 啟用 Azure AD Identity Protection
 10. 為 Exchange Online 和商務用 Skype Online 啟用新式驗證
@@ -90,7 +90,7 @@ ms.locfileid: "51199846"
 
 ## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>階段7：啟用加入網域的 Windows 電腦的自動裝置註冊 
 
-遵循 [下列指示](/azure/active-directory/devices/hybrid-azuread-join-plan) ，啟用已加入網域之 Windows 電腦的自動裝置註冊。
+遵循[下列指示](/azure/active-directory/devices/hybrid-azuread-join-plan)，啟用已加入網域之 Windows 電腦的自動裝置註冊。
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>階段8：設定 Azure AD 密碼保護 
 
@@ -100,7 +100,7 @@ ms.locfileid: "51199846"
 
 遵循[測試實驗室指南 Azure AD Identity Protection 階段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的指示。 
 
-## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段10：為 Exchange Online 和商務用 Skype Online 啟用新式驗證
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段10：為 Exchange Online 和商務用 Skype 線上啟用新式驗證
 
 若為 Exchange Online，請遵循[這些指示](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)。 
 

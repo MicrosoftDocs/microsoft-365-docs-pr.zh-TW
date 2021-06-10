@@ -105,7 +105,7 @@ Advanced eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 3
 |[![Microsoft 電話語音解決方案海報](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021年3月更新 | 如需詳細資訊，請參閱[規劃您的 Teams 語音解決方案](/microsoftteams/cloud-voice-landing-page)。|
 
 
-## <a name="set-up-your-infrastructure-for-hybrid-work"></a>設定混合式工作的基礎結構
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>設定混合式工作基礎結構
 
 透過 Microsoft 365 和其他 Microsoft 雲端技術，您可以為員工提供來自其住宅中組織內部部署和雲端架構資訊、工具及資源的安全存取權。 
 

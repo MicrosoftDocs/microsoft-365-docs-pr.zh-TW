@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceProcessEvents 表格
 description: 深入瞭解高級搜尋架構 DeviceProcessEventstable 中的程式產生或建立事件
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、query、遙測、schema reference、kusto、table、column、data type、processcreationevents、DeviceProcessEvents、進程識別碼、命令列、DeviceProcessEvents
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，processcreationevents，DeviceProcessEvents，進程識別碼，命令列，DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -65,7 +65,7 @@ ms.locfileid: "52024253"
 | `ProcessVersionInfoFileDescription` | string | 新建立程式之版本資訊的描述 |
 | `ProcessId` | int | 新建立程式的進程識別碼 (PID)  |
 | `ProcessCommandLine` | string | 用來建立新程式的命令列 |
-| `ProcessIntegrityLevel` | string | 新建立程式的完整性層級。 Windows 會根據某些特性，例如從已下載的網際網路上啟動的方式，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
+| `ProcessIntegrityLevel` | string | 新建立程式的完整性層級。 Windows 會根據某些特性，例如從已下載的網際網路上啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
 | `ProcessTokenElevation` | string | 會指出套用至新建立之程式的權杖提升類型。 可能的值： TokenElevationTypeLimited (限制) 、TokenElevationTypeDefault (標準) 及 TokenElevationTypeFull (提升)  |
 | `ProcessCreationTime` | datetime | 處理常式的建立日期和時間 |
 | `AccountDomain` | string | 帳戶的網域 |
@@ -80,7 +80,7 @@ ms.locfileid: "52024253"
 | `InitiatingProcessAccountUpn` | string | 執行事件負責之帳戶的使用者主要名稱 (UPN)  |
 | `InitiatingProcessAccountObjectId` | string | 執行負責事件之處理常式之使用者帳戶的 Azure AD 物件識別碼 |
 | `InitiatingProcessLogonId` | string | 啟動事件之處理常式的登入會話識別碼。 這個識別碼在同一部電腦上只在重新開機之間是唯一的。 |
-| `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
+| `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據某些特性（例如從網際網路下載）將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
 | `InitiatingProcessTokenElevation` | string | 指出是否存在使用者存取控制的 Token 類型 (UAC) 許可權提升會套用至啟動事件的程式。 |
 | `InitiatingProcessSHA1` | string | 啟動事件) 的處理常式 (映射檔 SHA-1 |
 | `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |

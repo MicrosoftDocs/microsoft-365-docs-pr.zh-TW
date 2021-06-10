@@ -39,7 +39,7 @@ ms.locfileid: "51203487"
 
 - [使用連接器設定郵件流程](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [Exchange Online 如何使用 TLS 保護電子郵件連線](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
-- [Microsoft 365 中有關加密的技術參考詳細資料](../../compliance/technical-reference-details-about-encryption.md)
+- [Microsoft 365 中加密的技術參考詳細資料](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>傳輸中郵件保護 (使用 TLS)
 
@@ -49,16 +49,16 @@ ms.locfileid: "51203487"
 
 目前，TLS 1.2 是 Microsoft 365 提供的最安全 TLS 版本。 通常，您必須知道用於合規性稽核的 TLS 加密為何。 您可能與來源和目的地電子郵件伺服器都沒有直接關係 (您沒有，Microsoft 也沒有)，因此您沒有許多選項可改善那些伺服器使用的 TLS 加密。
 
-不過，您可以使用 [連接器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) ，以確保您的電子郵件伺服器和 Microsoft 365 之間傳送的郵件可使用的最佳 TLS 保護。 在 Microsoft 365 和您自己的電子郵件伺服器之間或屬於合作夥伴的伺服器之間的郵件流程，通常比一般郵件更為重要且敏感，所以您會想要對這些郵件套用額外的安全性和 vigilance。
+不過，您可以使用[連接器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)，以確保您的電子郵件伺服器和 Microsoft 365 之間傳送的郵件可使用的最佳 TLS 保護。 Microsoft 365 和您自己的電子郵件伺服器或屬於您的合作夥伴的伺服器之間的郵件流程，通常比一般郵件更為重要及敏感，所以您會想要對這些郵件套用額外的安全性和 vigilance。
 
-您可以升級或修正您自己的電子郵件伺服器，以改善正在使用的 TLS 加密，或連絡合作夥伴來執行此相同動作。 **連接器報告** 會顯示使用 Microsoft 365 連接器之郵件的郵件流程數量和 TLS 加密。
+您可以升級或修正您自己的電子郵件伺服器，以改善正在使用的 TLS 加密，或連絡合作夥伴來執行此相同動作。 **連接器報告** 會針對使用 Microsoft 365 連接器的郵件，顯示郵件流程數量和 TLS 加密。
 
 您可以按一下 [ **連接器報告** ] 連結，以移至 [連接器報告](view-mail-flow-reports.md#connector-report)。 如果偵測到相關聯的條件， **連接器報告** 頁面上可能會提供下列深入瞭解：
 
 - **輸入的協力廠商連接器查看大量 TLS 1.0 郵件流程**
 - **輸入 OnPremises 連接器查看大量 TLS 1.0 郵件流程**
 
-針對 TLS 1.0 連線，您實際上需要將您的電子郵件伺服器或夥伴的伺服器升級或修復，以避免 Microsoft 365 中的 TLS 1.0 支援最後已被取代的任何問題。
+針對 TLS 1.0 連線，您實際上需要取得您的電子郵件伺服器或夥伴的伺服器升級或修復，以避免 Microsoft 365 中的 TLS 1.0 支援最後已被取代的任何問題。
 
 ## <a name="see-also"></a>另請參閱
 

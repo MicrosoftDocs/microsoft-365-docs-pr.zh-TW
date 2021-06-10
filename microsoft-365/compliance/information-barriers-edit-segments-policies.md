@@ -25,16 +25,16 @@ ms.locfileid: "50925549"
 
 ## <a name="what-do-you-want-to-do"></a>您要執行的工作
 
-|**動作**|**描述**|
+|**Action**|**描述**|
 |:---------|:--------------|
-| [編輯使用者帳戶屬性](#edit-user-account-attributes) | 在 Azure Active Directory 中填入可用於定義區段的屬性。<br/>編輯使用者帳戶屬性時，使用者不會包含在應是的區段中，變更使用者所在的區段，或定義使用不同屬性的區段。 |
-| [編輯區段](#edit-a-segment) | 當您想要變更區段定義的方式時，請編輯段落。 <br/>例如，您可能原本使用 *部門* 定義的區段，現在想要使用另一個屬性，例如 *MemberOf*。 |
-| [編輯原則](#edit-a-policy) | 當您想要變更原則的運作方式時，請編輯資訊屏障原則。<br/>例如，您可以決定只允許在特定的區段之間進行通訊，而不是封鎖兩個網段間的通訊。 |
+| [編輯使用者帳戶屬性](#edit-user-account-attributes) | 在 Azure Active Directory 中填入可用於定義區段的屬性。<br/>當使用者未包含在其應包含的區隔時，請編輯使用者帳戶屬性、變更使用者所參與的區隔，或使用不同的屬性定義區隔。 |
+| [編輯區隔](#edit-a-segment) | 當您想要變更區隔的定義時，請編輯區隔。 <br/>例如，您可能原本使用 *部門* 定義的區段，現在想要使用另一個屬性，例如 *MemberOf*。 |
+| [編輯原則](#edit-a-policy) | 當您想要變更原則運作方式時，請編輯資訊屏障原則。<br/>例如，您可以決定只允許在特定的區段之間進行通訊，而不是封鎖兩個網段間的通訊。 |
 | [將原則設定為非使用中狀態](#set-a-policy-to-inactive-status) |當您想要變更原則或不想讓原則生效時，將原則設定為非使用中狀態。 |
 | [移除原則](#remove-a-policy) | 當您不再需要特定的原則時，請移除資訊障礙原則。 |
 | [停止原則應用程式](#stop-a-policy-application) | 當您想要停止套用資訊障礙原則的程式時，請採取此動作。<br/> 停止原則應用程式不會立即運作，也不會復原已套用至使用者的原則。 |
-| [定義資訊障礙的原則](information-barriers-policies.md) | 定義資訊屏障原則時，當您不具備這類原則時，必須限制或限制特定使用者群組之間的通訊。 |
-| [疑難排解資訊屏障](information-barriers-troubleshooting.md) | 當您遇到資訊障礙的意外問題時，請參閱本文。 |
+| [定義資訊屏障的原則](information-barriers-policies.md) | 定義資訊屏障原則時，當您不具備這類原則時，必須限制或限制特定使用者群組之間的通訊。 |
+| [資訊屏障疑難排解](information-barriers-troubleshooting.md) | 當您遇到資訊障礙的意外問題時，請參閱本文。 |
 
 > [!IMPORTANT]
 > 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <br><br>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<br><br> 請務必 [連接至安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
@@ -47,17 +47,17 @@ ms.locfileid: "50925549"
 
     |**語法**|**範例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p>  (您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`)  |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan* 和 *alexw* for *Alex*。 |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p>  (您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`)  |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365： *Megan* 的 *meganb* 中的兩個使用者帳戶，以及 *Alex* 的 *alexw* 。 |
 
 2. 決定您要編輯使用者帳戶設定檔的哪個屬性 (s) 。 如需詳細資訊，請參閱 [資訊障礙原則的屬性](information-barriers-attributes.md)。 
 
 3. 編輯一或多個使用者帳戶，以包含您在上一個步驟中選取之屬性的值。 若要採取此動作，請使用下列其中一個程式：
 
-    - 若要編輯單一帳戶，請參閱 [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 若要編輯單一帳戶，請參閱[使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
-    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱 [Configure user account properties With Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
+    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱[Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
 
-## <a name="edit-a-segment"></a>編輯區段
+## <a name="edit-a-segment"></a>編輯區隔
 
 使用此程式來編輯使用者區段的定義。 例如，您可以變更區段的名稱或篩選，用來判斷區段中所包含的人員。
 
@@ -165,8 +165,8 @@ ms.locfileid: "50925549"
 ## <a name="resources"></a>資源
 
 - [取得資訊障礙的概覽](information-barriers.md)
-- [定義資訊障礙的原則](information-barriers-policies.md)
-- [深入瞭解 Microsoft 小組中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
+- [定義資訊屏障的原則](information-barriers-policies.md)
+- [深入瞭解 Microsoft Teams 中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
 - [深入瞭解 SharePoint 線上中的資訊障礙](/sharepoint/information-barriers)
 - [深入瞭解 OneDrive 中的資訊障礙](/onedrive/information-barriers)
 - [資訊屏障原則的屬性](information-barriers-attributes.md)

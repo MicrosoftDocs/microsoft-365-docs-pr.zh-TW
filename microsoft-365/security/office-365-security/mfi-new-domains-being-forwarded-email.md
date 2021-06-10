@@ -44,7 +44,7 @@ ms.locfileid: "51203455"
 
 您也可以在 [ (**報表** 儀表板] 或 [) ] 的 [**熱門洞察力 & 建議**] 區域中按一下 [**全部查看**] 之後，取得此詳細資料頁面 \>  <https://protection.office.com/insightdashboard> 。
 
-若要防止自動將郵件轉送到外部網域，請設定部分或所有外部網域的遠端網域。 如需詳細資訊，請參閱 [管理 Exchange Online 中的遠端網域](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
+若要防止自動將郵件轉送到外部網域，請設定部分或所有外部網域的遠端網域。 如需詳細資訊，請參閱[管理 Exchange Online 中的遠端網域](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
 
 ## <a name="related-topics"></a>相關主題
 

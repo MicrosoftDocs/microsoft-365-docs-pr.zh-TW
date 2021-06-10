@@ -106,7 +106,7 @@ ms.locfileid: "52843503"
 
     ![Microsoft Endpoint Configuration Manager wizard8 的影像](images/configmgr-membership-rules.png)
 
-9. 選取 **[下一步]**。
+9. 選取 [下一步]。
 
     ![Microsoft Endpoint Configuration Manager wizard9 的影像](images/configmgr-confirm.png)
 

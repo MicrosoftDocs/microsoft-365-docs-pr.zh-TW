@@ -30,7 +30,7 @@ ms.locfileid: "51187381"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -47,12 +47,12 @@ ms.locfileid: "51187381"
 | [收集調查套件](collect-investigation-package.md) | [電腦動作](machineaction.md) | 從 [機器](machine.md)收集調查套件。 |
 | [取得調查套件 SAS URI](get-package-sas-uri.md)       | [電腦動作](machineaction.md) | 取得下載調查套件的 URI。          |
 | [隔離電腦](isolate-machine.md)                             | [電腦動作](machineaction.md) | 從網路隔離 [電腦](machine.md) 。                 |
-| [獨立發行機器](unisolate-machine.md)            | [電腦動作](machineaction.md) | 獨立發行 [電腦](machine.md) 。               |
+| [將電腦從隔離中釋出](unisolate-machine.md)            | [電腦動作](machineaction.md) | 獨立發行 [電腦](machine.md) 。               |
 | [限制應用程式執行](restrict-code-execution.md)              | [電腦動作](machineaction.md) | 限制應用程式的執行。                             |
 | [移除應用程式限制](unrestrict-code-execution.md)            | [電腦動作](machineaction.md) | 移除應用程式執行限制。                   |
-| [執行防病毒掃描](run-av-scan.md)                              | [電腦動作](machineaction.md) | 在適用) 時，使用 Windows Defender (執行 AV 掃描。    |
-| [下架機](offboard-machine-api.md)                       | [電腦動作](machineaction.md) | 從 Microsoft Defender for Endpoint 下架 [電腦](machine.md) 。 |
-| [停止與隔離檔](stop-and-quarantine-file.md)           | [電腦動作](machineaction.md) | 停止執行機器上的檔案，並將它刪除。        |
+| [執行防毒掃描](run-av-scan.md)                              | [電腦動作](machineaction.md) | 在適用) 時，使用 Windows Defender (執行 AV 掃描。    |
+| [下機](offboard-machine-api.md)                       | [電腦動作](machineaction.md) | 從 Microsoft Defender for Endpoint 下架 [電腦](machine.md) 。 |
+| [停止並隔離檔案](stop-and-quarantine-file.md)           | [電腦動作](machineaction.md) | 停止執行機器上的檔案，並將它刪除。        |
 
 <br>
 

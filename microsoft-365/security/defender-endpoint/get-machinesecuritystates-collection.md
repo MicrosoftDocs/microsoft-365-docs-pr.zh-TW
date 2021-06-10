@@ -29,7 +29,7 @@ ms.locfileid: "51200362"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -47,7 +47,7 @@ GET /testwdatppreview/machinesecuritystates
 
 ## <a name="request-headers"></a>要求標頭
 
-Header | 值 
+頁首 | 值 
 :---|:---
 授權 | 載荷 {token}。 **必要欄位**。
 內容類型 | application/json

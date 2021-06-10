@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceNetworkInfo 表格
 description: 深入瞭解高級搜尋架構的 DeviceNetworkInfo 資料表中的網路設定資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，machinenetworkinfo，DeviceNetworkInfo，device，machine，mac，隧道，adapter，dns，dhcp，閘道，隧道
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，machinenetworkinfo，DeviceNetworkInfo，device，machine，mac，ip-pbx，adapter，dns，dhcp，閘道，隧道
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

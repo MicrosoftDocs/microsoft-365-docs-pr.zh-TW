@@ -23,9 +23,9 @@ ms.locfileid: "51199546"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中僅限雲端的先決條件
 
-*此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
+*此測試實驗室指南僅可用於企業測試環境的 Microsoft 365。*
 
-身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組建議的設定和條件式存取原則，可保護對與 Azure Active Directory (azure AD) 整合的所有服務的存取。
+身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組建議的設定和條件式存取原則，可保護所有與 Azure Active Directory (Azure AD) 整合的服務的存取。
 
 本文說明如何設定符合[僅限雲端先決條件組態](../security/office-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的 Microsoft 365 測試環境。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51199546"
 2. 設定具名位置
 3. 設定自助式密碼重設
 4. 設定多重要素驗證
-5. 啟用加入網域之 Windows 電腦的自動裝置註冊
+5. 啟用加入網域的 Windows 電腦的自動裝置註冊
 6. 設定 Azure AD 密碼保護 
 7. 啟用 Azure AD Identity Protection
 8. 為 Exchange Online 和商務用 Skype Online 啟用新式驗證
@@ -79,7 +79,7 @@ ms.locfileid: "51199546"
 
 ## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>階段5：啟用加入網域的 Windows 電腦的自動裝置註冊 
 
-遵循 [下列指示](/azure/active-directory/devices/hybrid-azuread-join-plan) ，啟用已加入網域之 Windows 電腦的自動裝置註冊。
+遵循[下列指示](/azure/active-directory/devices/hybrid-azuread-join-plan)，啟用已加入網域之 Windows 電腦的自動裝置註冊。
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>階段6：設定 Azure AD 密碼保護 
 

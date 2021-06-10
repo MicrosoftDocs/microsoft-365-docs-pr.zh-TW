@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Outlook.com 所接受或拒絕的電子郵件地址類型，以協助防止網路釣魚。
+description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Outlook 所接受或拒絕的電子郵件地址類型，以協助防止網路釣魚。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51203503"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-網路釣魚攻擊是對任何電子郵件組織造成的持續威脅。 除了使用 [冒牌 (偽造) 寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Exchange Online Protection (EOP) 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的來源位址（如本文所述）。 此強制已于2017年11月啟用。
+網路釣魚攻擊是對任何電子郵件組織造成的持續威脅。 除了使用 [冒牌 (偽造) 寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Exchange Online Protection (EOP) 和 Outlook 現在要求輸入郵件包括 RFC 相容的來源位址（如本文所述）。 此強制已于2017年11月啟用。
 
 **附註**：
 
@@ -90,7 +90,7 @@ ms.locfileid: "51203503"
 
 下列寄件者電子郵件地址無效：
 
-- **沒有寄件者位址**：部分自動化郵件不包含寄件者位址。 過去，當 Microsoft 365 或 Outlook.com 收到沒有寄件者位址的郵件時，此服務會新增下列預設值： address，使郵件可傳送：
+- **沒有寄件者位址**：部分自動化郵件不包含寄件者位址。 過去，當 Microsoft 365 或 Outlook .com 收到沒有寄件者位址的郵件時，此服務會新增下列預設值： address，使郵件可傳送：
 
   `From: <>`
 
@@ -124,16 +124,16 @@ ms.locfileid: "51203503"
 noreply.contoso.com IN MX .
 ```
 
-如需設定 MX 記錄的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
+如需設定 MX 記錄的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
 如需有關發佈 null MX 的詳細資訊，請參閱 [RFC 7505](https://tools.ietf.org/html/rfc7505)。
 
 ## <a name="override-from-address-enforcement"></a>從位址強制覆寫
 
-若要略過輸入電子郵件的寄件者位址需求，您可以使用 IP 允許清單 (連線篩選) 或郵件流程規則 (也稱為 transport rules) 如在 [Microsoft 365 中建立安全的寄件者清單中](create-safe-sender-lists-in-office-365.md)所述。
+若要略過輸入電子郵件的寄件者位址需求，您可以使用 IP 允許清單 (連線篩選) 或郵件流程規則 (也稱為 transport rules) 如[Microsoft 365 中的建立安全寄件者清單中](create-safe-sender-lists-in-office-365.md)所述。
 
-您無法覆寫從 Microsoft 365 傳送的輸出電子郵件的寄件者位址需求。 此外，Outlook.com 將不允許任何類型的覆寫（甚至是透過支援）。
+您無法覆寫從 Microsoft 365 傳送之外寄電子郵件的寄件者位址需求。 此外，Outlook .com 將不允許任何類型的覆寫，甚至是透過支援。
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>在 Microsoft 365 中防止及防禦 cybercrimes 的其他方式
 
-如需如何強化組織抵禦網路釣魚、垃圾郵件、資料違例及其他威脅的詳細資訊，請參閱 [保護 Microsoft 365 for business 方案的前10種方式](../../admin/security-and-compliance/secure-your-business-data.md)。
+如需如何強化組織抵禦網路釣魚、垃圾郵件、資料違例及其他威脅的詳細資訊，請參閱[保護商務方案 Microsoft 365 的前10種方式](../../admin/security-and-compliance/secure-your-business-data.md)。

@@ -27,13 +27,13 @@ ms.locfileid: "51198538"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 使用按鍵 (使用者名稱) 來找回使用者實體。
 
 ## <a name="permissions"></a>權限
@@ -41,7 +41,7 @@ ms.locfileid: "51198538"
 
 許可權類型 |   權限  |   許可權顯示名稱
 :---|:---|:---
-應用程式 |   已讀取的使用者。所有 | 「讀取所有使用者設定檔」
+應用程式 |   User.Read.All | 「讀取所有使用者設定檔」
 
 ## <a name="http-request"></a>HTTP 要求
 ```

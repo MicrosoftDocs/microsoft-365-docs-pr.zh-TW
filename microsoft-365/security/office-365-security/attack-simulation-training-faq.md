@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以深入瞭解 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織中有關攻擊模擬和訓練的部署考慮和常見問題。
+description: 系統管理員可以深入瞭解在 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織中，有關攻擊模擬和訓練的部署考慮和常見問題。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
@@ -29,7 +29,7 @@ ms.locfileid: "51203470"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻擊模擬訓練部署考慮和常見問題
 
-現已 [提供](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)攻擊模擬訓練。 攻擊模擬訓練可讓 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織，可讓您建立及管理以實際執行 weaponized 網路釣魚詐騙為供電的網路釣魚模擬模擬，以衡量及管理社交工程風險。 在合作與 Terranova 安全性中提供的超目標訓練，可協助改善知識並變更員工行為。
+現已 [提供](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)攻擊模擬訓練。 攻擊模擬訓練可讓 Microsoft 365 E5 或 Microsoft Defender Office 365 計畫2組織，利用實際執行的網路釣魚模擬來建立及管理網路釣魚模擬，以衡量及管理社交工程風險。 在合作與 Terranova 安全性中提供的超目標訓練，可協助改善知識並變更員工行為。
 
 如需如何開始使用攻擊模擬訓練的詳細資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
 
@@ -70,9 +70,9 @@ URL 信譽服務可能會識別攻擊模擬訓練所使用的一或多個 URLs �
 
 - 不正確收件者電子郵件地址。
 - 來賓使用者。
-- 在 Azure Active Directory (Azure AD) 中不再使用中的使用者。
+- Azure Active Directory (Azure AD) 中不再使用中的使用者。
 
-模擬中只會包含有效的非來賓使用者，具有有效的信箱。 如果您使用通訊群組或擁有郵件功能的安全性群組來為使用者設定目標，您可以使用[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) Cmdlet，以查看和驗證通訊群組成員。
+模擬中只會包含有效的非來賓使用者，具有有效的信箱。 如果您使用通訊群組或擁有郵件功能的安全性群組來為使用者設定目標，您可以在[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中使用[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) Cmdlet，以查看和驗證通訊群組成員。
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>攻擊模擬的訓練報告問題
 
@@ -124,7 +124,7 @@ URL 信譽服務可能會識別攻擊模擬訓練所使用的一或多個 URLs �
 - 提供其認證的使用者。
 - 將郵件報告為網路釣魚的使用者。
 
-如果使用者報告為網路釣魚的郵件不會在攻擊模擬訓練類比報告中取得，則可能會有 Exchange 郵件流程規則 (也稱為傳輸規則) 會封鎖所報告的郵件傳遞至 Microsoft。 確認任何郵件流程規則不會封鎖傳遞至下列電子郵件地址：
+如果使用者報告為網路釣魚的郵件不會在攻擊模擬訓練類比報告中取得，則可能會有 Exchange 郵件流程規則 (也稱為傳輸規則，) 會封鎖所報告的郵件傳送至 Microsoft。 確認任何郵件流程規則不會封鎖傳遞至下列電子郵件地址：
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -160,7 +160,7 @@ A：目前有5個當地語系化的負載可用。 已注意到，現有負載�
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>問：我該如何切換其他語言以取得系統管理員入口網站及訓練體驗？
 
-A：在 Microsoft 365 或 Office 365 中，語言設定為每個使用者帳戶的特定及集中式。 如需如何變更語言設定的指示，請參閱 [在 Microsoft 365 For Business 中變更您的顯示語言和](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)時區。
+A：在 Microsoft 365 或 Office 365 中，語言設定為個別使用者帳戶的特定及集中式。 如需如何變更語言設定的指示，請參閱[變更商務用 Microsoft 365 中的顯示語言和](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)時區。
 
 請注意，設定變更可能需要30分鐘的時間，才能同步處理所有服務。
 

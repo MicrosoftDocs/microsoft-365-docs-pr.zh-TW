@@ -85,6 +85,6 @@ Microsoft 365 身分識別、安全性和符合性功能是針對零信任而設
 
 針對發佈給新工作者的新遠端裝置，當工作者登入時，裝置會根據其在 RoamingDevices 群組中的成員資格，聯繫 Intune 雲端服務和其他服務，並為 Windows 10、Microsoft 365 Apps 企業版和 Edge 安裝最新的更新。 完成時，遠端裝置可供使用，並使用已安裝的 VPN 用戶端來存取內部部署資源和 Microsoft 365 網路，以進行持續更新。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [設定您組織中的混合式工作基礎結構](empower-people-to-work-remotely.md) 。

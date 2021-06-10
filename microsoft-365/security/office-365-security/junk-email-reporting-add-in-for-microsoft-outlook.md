@@ -34,7 +34,7 @@ ms.locfileid: "51203521"
 > [!NOTE]
 > 如果您目前並未使用垃圾郵件回報增益集，建議您改為 [報告訊息載入](enable-the-report-message-add-in.md) 宏或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md) 。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為垃圾郵件的誤報 (已標示為垃圾郵件) 、false 負片 (錯誤電子郵件允許) 和網路釣魚郵件。 如果您的組織未使用 Exchange Online Protection (例如，內部部署 Exchange 或電子郵件服務（Exchange Online) 以外），則您的垃圾郵件報告提交不會影響您的垃圾郵件篩選。
+microsoft Outlook 的垃圾郵件回報增益集，可讓使用者提交誤報 (正確的電子郵件，並標示為垃圾郵件) 、false 不利 (不良電子郵件允許) 和網路釣魚郵件至 Microsoft。 如果您的組織未使用 Exchange Online Protection (例如，內部部署 Exchange 或非 Exchange Online) 的電子郵件服務，則您的垃圾郵件報告提交不會影響您的垃圾郵件篩選。
 
 本主題說明如何安裝和使用垃圾郵件回報增益集。
 
@@ -42,10 +42,10 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 - 若要安裝垃圾郵件回報增益集，請參閱本文稍後的 [安裝垃圾郵件回報增益集](#install-the-junk-email-reporting-add-in) 一節。
 
-- 垃圾郵件回報增益集可與下列 Outlook 版本搭配使用：
+- 垃圾郵件回報增益集可搭配下列 Outlook 版本執行：
 
   - Outlook 2013 或更新版本
-  - Outlook 隨附于適用于企業的 Microsoft 365 應用程式
+  - 包含 Microsoft 365 Apps 企業版的 Outlook
 
 - 如需將郵件報告給 Microsoft 的詳細資訊，請參閱 [將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。
 
@@ -111,20 +111,20 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 - 您必須具備安裝增益集之電腦的系統管理員許可權。
 
-- 移至 <https://www.microsoft.com/download/details.aspx?id=18275> 並下載適用于您的 Office 版本的 .msi 檔案，以供您尋找的位置：
+- 移至 <https://www.microsoft.com/download/details.aspx?id=18275> 並下載適當的 .msi 檔案，讓您的 Office 版本成為易於尋找的位置：
 
   - **32** 位： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64** 位： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- 針對 Outlook 2013 或更新版本，唯一的必要條件是 Microsoft .NET Framework 2.0。 在 Windows 10 中，您不會從下載安裝 .NET Framework 2.0。
+- 若為 Outlook 2013 或更新版本，則唯一的必要條件是 Microsoft .NET Framework 2.0。 在 Windows 10 中，您不會從下載安裝 .NET Framework 2.0。
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>使用安裝精靈安裝垃圾郵件回報增益集
 
 1. 在您的電腦上，關閉 Outlook。
 
-2. 在 Windows 10 中，確認已啟用 .NET Framework 2.0。 如需相關指示，請參閱 [Enable the .Net Framework 3.5 In Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)。
+2. 在 Windows 10 中，確認已啟用 .NET Framework 2.0。 如需相關指示，請參閱[Enable the .NET Framework 3.5 in Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)。
 
-3. 找到您已下載的 .msi 檔案，然後按兩下它。
+3. 找到您下載的 .msi 檔案，然後在其上按兩下。
 
 4. 在 **[歡迎使用 Microsoft 垃圾郵件回報增益集安裝程式]** 頁面上，按 **[下一步]**。
 
@@ -175,7 +175,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
-若要確認您是否已成功安裝垃圾郵件回報增益集，請在 Outlook 中執行下列任一步驟：
+若要確認您是否已成功安裝垃圾郵件回報增益集，請在 Outlook 執行下列任一步驟：
 
 - 選取郵件或開啟郵件。 在功能區的 [ **首頁** ] 或 [ **訊息** ] 索引標籤中，按一下 [ **垃圾郵件**]，然後確認下列選項可供使用：
 
@@ -212,21 +212,21 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>解除安裝垃圾郵件回報增益集
 
-在您關閉 Outlook 後，請使用下列任何程式卸載垃圾郵件回報增益集：
+關閉 Outlook 後，請使用下列任何程式卸載垃圾郵件回報增益集：
 
-- **控制台**：按下 Windows 鍵 + R。在開啟的 [ **執行** ] 對話方塊中，輸入， `control appwiz.cpl` 然後按一下 **[確定]**。
+- **控制台**：按 Windows 鍵 + R。在開啟的 [**執行**] 對話方塊中，輸入， `control appwiz.cpl` 然後按一下 **[確定]**。
 
   在清單中尋找並選取 **Microsoft 垃圾郵件回報增益集** ，然後按一下 [ **卸載**]。
 
-- **Windows Installer 封裝**：尋找或下載適當的 .msi 檔案，然後按兩下該檔案。
+- **Windows Installer 套件**：尋找或下載適當的 .msi 檔案，然後按兩下該檔案。
 
   - **32** 位： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64** 位： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  在出現的對話方塊中，選取 [ **移除 Outlook 的 Microsoft 垃圾郵件回報增益集** ]，然後按 **[下一步]**。
+  在出現的對話方塊中，選取 [**移除 Outlook 的 Microsoft 垃圾郵件回報增益集**]，然後按 **[下一步]**。
 
-- **無訊息模式**：尋找或下載適當的 .msi 檔案。 在 [命令提示字元] 視窗中，以 .msi 檔案的位置取代， \<PathToFile\> 並執行下列其中一個命令：
+- **無訊息模式**：尋找或下載適當的 .msi 檔案。 在 [命令提示字元] 視窗中，換 \<PathToFile\> 成 .msi 檔的位置，然後執行下列其中一個命令：
 
   - **32** 位：
 
@@ -240,11 +240,11 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-當您在卸載後開啟 Outlook 時，[垃圾郵件]、[非垃圾郵件] 和 [網路釣魚報告] 選項都應該消失。
+當您在卸載後開啟 Outlook，垃圾郵件、非垃圾郵件和網路釣魚報告選項都應該消失。
 
 ## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>疑難排解垃圾郵件回報增益集
 
-在新增垃圾郵件報告 Add-In 後，您可能會遇到 Outlook 的問題。 本節說明您可能會遇到的問題，以及解決這些問題的秘訣。
+在新增垃圾郵件報告 Add-In 之後，您可能會遇到 Outlook 的問題。 本節說明您可能會遇到的問題，以及解決這些問題的秘訣。
 
 ### <a name="troubleshooting-for-users"></a>使用者疑難排解
 
@@ -268,7 +268,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 1. 驗證或將登錄機 `LoggingLevel` 碼設定為 "Verbose" 值：
 
-   - **32 位 Outlook on 32 Bit Windows**：
+   - **32-位 Windows 上的32位 Outlook**：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -277,7 +277,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
      "LoggingLevel"="Verbose"
      ```
 
-   - **32 位 Outlook on 64 Bit Windows**：
+   - **64-位 Windows 上的32位 Outlook**：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -295,7 +295,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
      "LoggingLevel"="Verbose"
      ```
 
-2. 重新開機 Outlook，並要求使用者在看到錯誤訊息時向後報告回來。
+2. 重新開機 Outlook，並要求使用者在看到錯誤訊息時向後報告。
 
 3. 收集下列位置中的記錄資訊：
 

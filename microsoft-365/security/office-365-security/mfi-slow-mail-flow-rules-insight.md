@@ -47,14 +47,14 @@ ms.locfileid: "51203486"
 
 當您按一下小工具上的 [ **查看詳細資料** ] 時，會出現一個快顯視窗，包含詳細資訊：
 
-- **規則**：您可以將游標置於摘要上方，以查看規則的所有條件、例外狀況及動作。 您可以按一下摘要，在 Exchange 系統管理中心 (EAC) 中編輯規則。
+- **規則**：您可以將游標置於摘要上方，以查看規則的所有條件、例外狀況及動作。 您可以按一下摘要，以編輯 Exchange 系統管理中心 (EAC) 中的規則。
 - **評估的郵件數目**：您可以按一下 [ **View sample messages** ]，以查看受規則影響之郵件範例的 [郵件追蹤](message-trace-scc.md) 結果。
 - **每封郵件所用的平均時間**
 - **郵件所用的中間時間**：將上半部分的時間資料與下半部的中間值分隔。
 
 ![在修正慢速郵件流程規則真知灼見上，按一下 [查看詳細資料] 後出現的詳細資料浮出控制項](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-如需郵件流程規則中的條件和例外狀況的相關資訊，請參閱 [郵件流程規則條件和例外狀況) 在 Exchange Online 中的 (謂語](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+如需郵件流程規則中的條件和例外狀況的相關資訊，請參閱[郵件流程規則條件和例外狀況) Exchange Online 中的 (謂語](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
 ## <a name="see-also"></a>另請參閱
 

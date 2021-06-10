@@ -92,7 +92,7 @@ Microsoft 365Defender 警示可能來自 microsoft defender for Endpoint、micro
 適用於 Office 365 的 Microsoft Defender | `fa{GUID}` <br> 範例：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
 適用於端點的 Microsoft Defender | `da` 或 `ed` 自訂偵測警示 <br> 
 適用於身分識別的 Microsoft Defender | `aa{GUID}` <br> 範例：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft 雲端 App 安全性 |`ca{GUID}` <br> 範例：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> 範例：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 
 

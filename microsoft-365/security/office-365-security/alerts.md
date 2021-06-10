@@ -17,7 +17,7 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 瞭解如何使用 Office 365 安全性 & 規範中心中的 [提醒] 功能，以查看及管理提醒，包括管理高級提醒。
+description: 瞭解如何使用 Office 365 安全性 & 相容性中心的 [提醒] 功能來查看及管理提醒，包括管理高級提醒。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -36,7 +36,7 @@ ms.locfileid: "51203531"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 
-使用安全性 & 合規性中心中的警示功能，以查看及管理組織的提醒，包括在 [Microsoft Cloud App Security 概要](/cloud-app-security/what-is-cloud-app-security)中管理高級提醒。
+使用安全性 & 合規性中心中的警示功能，以查看及管理組織的提醒，包括在[Microsoft Cloud App Security 概要](/cloud-app-security/what-is-cloud-app-security)中管理高級提醒。
 
 ## <a name="how-to-get-to-the-alerts-features"></a>如何取得警示功能
 
@@ -68,6 +68,6 @@ ms.locfileid: "51203531"
 
 |工具|描述|
 |---|---|
-|[管理提醒](../../compliance/create-activity-alerts.md)|使用活動提醒，在使用者于 Microsoft 365 中執行特定活動時，將電子郵件通知傳送給自己或其他管理員。 活動警示類似于搜尋審計記錄檔的事件，只是當您已建立警示的事件發生時，您會收到電子郵件。|
-|[管理高級提醒](/cloud-app-security/what-is-cloud-app-security)|使用 Microsoft 365 Cloud App Security 的「 **管理高級提醒** 」功能，設定可在 Microsoft 365 中提醒您可疑和反常活動的原則。 當您收到警示後，您可以調查可能有問題的情況，並視需要採取行動以解決安全性問題。|
+|[管理警示](../../compliance/create-activity-alerts.md)|使用活動提醒，當使用者在 Microsoft 365 中執行特定活動時，將電子郵件通知傳送給自己或其他管理員。 活動警示類似于搜尋審計記錄檔的事件，只是當您已建立警示的事件發生時，您會收到電子郵件。|
+|[管理高級提醒](/cloud-app-security/what-is-cloud-app-security)|使用 Microsoft 365 雲端 App 安全性的「**管理高級提醒**」功能，設定可在 Microsoft 365 中提醒您可疑和反常活動的原則。 當您收到警示後，您可以調查可能有問題的情況，並視需要採取行動以解決安全性問題。|
 |

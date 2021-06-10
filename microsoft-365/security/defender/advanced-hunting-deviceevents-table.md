@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceEvents 表格
 description: 深入瞭解其他裝置事件中的防毒程式、防火牆及其他事件種類 (DeviceEvents 的高級搜尋架構) 表格
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，security 事件，防毒程式，防火牆，exploit guard，DeviceEvents
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，security 事件，防毒程式，防火牆，exploit guard，DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "52023196"
 - Microsoft 365 Defender
 - 適用於端點的 Microsoft Defender
 
-Advanced 搜尋架構中的 [其他裝置] 事件或 `DeviceEvents` 表格包含各種事件種類的相關資訊，包括安全性控制（如 Windows Defender 防毒程式和 exploit protection）所觸發的事件。 [](advanced-hunting-overview.md) 使用這個參考來建立從此表格取回之資訊的查詢。
+advanced 搜尋架構中的 [其他裝置] 事件或 `DeviceEvents` 表格包含各種事件種類的相關資訊，包括安全性控制所觸發的事件，例如 Windows Defender 防毒軟體和 exploit protection。 [](advanced-hunting-overview.md) 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
 > 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的內建架構參照。

@@ -26,23 +26,23 @@ ms.locfileid: "51198056"
 ---
 # <a name="plan-for-security-amp-compliance"></a>規劃安全性 &amp; 合規性
 
-管理安全性與合規性是一種合作關係。 您負責保護您的資料、身分識別及裝置，但 Microsoft vigorously 會保護 Microsoft 365 服務。 您可以使用 Microsoft 365 和 Enterprise 可移動性 + Security (EMS) 搭配一起，以協助您為組織達成適當的保護層級。
+管理安全性與合規性是一種合作關係。 您負責保護您的資料、身分識別及裝置，但 Microsoft vigorously 會保護 Microsoft 365 服務。 您可以同時使用 Microsoft 365 和 Enterprise Mobility + Security (EMS) ，以協助您為組織達成適當的保護層級。
   
 ## <a name="step-1-review-capabilities"></a>步驟1：審閱功能
 
-在 [Office 365 海報的資訊保護] 中，將您自己的資訊保護功能定位在一起。 
+在 Office 365 海報的資訊保護中，為您提供資訊保護功能的方向。 
   
 [使用 Microsoft 365 部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>步驟2：檢查您的安全分數
 
-設定您的 Microsoft 365 訂閱後，請記下您的開始分數。 安全分數提供您可以採取的設定建議，以提升您的分數。 目標是瞭解您可以採取以保護您的環境，而不會對使用者生產力造成不良影響的機會。
+在設定 Microsoft 365 訂閱之後，請記下您的開始分數。 安全分數提供您可以採取的設定建議，以提升您的分數。 目標是瞭解您可以採取以保護您的環境，而不會對使用者生產力造成不良影響的機會。
   
 - [Office 365 安全分數簡介](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步驟3：規劃身分識別與裝置的存取保護
 
-保護您的 Microsoft 365 資料和服務存取權，對於防禦 cyberattacks 及防止資料遺失而言很重要。
+保護 Microsoft 365 資料和服務的存取權，對於防禦 cyberattacks 及防止資料遺失而言很重要。
   
 - [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
     
@@ -58,7 +58,7 @@ ms.locfileid: "51198056"
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步驟5：利用 Microsoft 365 安全性與 &amp; 合規性中心
 
-安全性與 &amp; 合規性中心提供您用來管理 Microsoft 365 安全性（包括威脅管理、資料管理及搜尋與調查）的控制項單一的視圖。 
+安全性與 &amp; 合規性中心提供您用來管理各種 Microsoft 365 安全性的控制項的單一視圖，包括威脅管理、資料控管，以及搜尋與調查。 
   
 - [移至安全性與 &amp; 合規性中心](./microsoft-365-compliance-center.md)
     
@@ -78,8 +78,8 @@ ms.locfileid: "51198056"
 
 在這些系統管理中心及儀表板中設定安全性和符合性設定，以保護您的 Microsoft 365 環境
   
-|**訂閱**|**管理 URL**|**儀表板和系統管理中心**|
+|**訂用帳戶**|**管理 URL**|**儀表板和系統管理中心**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 系統管理中心  <br/>  安全性與 &amp; 合規性中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint Business admin center 的系統管理中心和 OneDrive  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 系統管理中心  <br/>  安全性與 &amp; 合規性中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint 系統管理中心和商務用 OneDrive 系統管理中心  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 行動應用程式管理  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |

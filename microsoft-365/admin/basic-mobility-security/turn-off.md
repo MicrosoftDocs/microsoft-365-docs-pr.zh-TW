@@ -55,4 +55,4 @@ ms.locfileid: "52023866"
 3.  在警告對話方塊中，選取 **[是]**。
 
 >[!NOTE]
->如需在組織裝置仍處於封鎖狀態時解除封鎖裝置的更多步驟，請參閱博客文章 [從 Office 365 移除行動裝置管理的存取控制](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)。
+>如需更多步驟以解除封鎖裝置如果組織裝置仍處於封鎖狀態，請參閱博客文章[移除適用於 Office 365 的行動裝置管理中的存取控制](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)。

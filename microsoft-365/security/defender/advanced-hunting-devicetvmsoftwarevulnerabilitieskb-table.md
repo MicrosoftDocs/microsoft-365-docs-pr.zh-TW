@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 DeviceTvmSoftwareVulnerabilitiesKB 表格
 description: 了解由進階搜捕結構描述之 DeviceTvmSoftwareVulnerabilitiesKB 表格中之威脅與弱點管理所追蹤的軟體弱點。
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema，reference，kusto，table，column，data type，description，& 威脅，清查，漏洞管理，TVM，裝置管理、軟體、清查、弱點、CVE ID、CVSS、DeviceTvmSoftwareVulnerabilitiesKB
+keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、「Microsoft 365 Defender」、「Microsoft 365」、「m365」、「搜尋」、「遙測」、「架構」、「kusto」、「表格」、「資料類型」、「描述」、「威脅 & 弱點管理、TVM、裝置管理、軟體、清查、弱點、CVE ID
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
