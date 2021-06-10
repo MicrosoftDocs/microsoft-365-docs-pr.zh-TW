@@ -19,20 +19,20 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296680"
 ---
-# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="5d0de-103">奧蘭孤島的支援聯繫</span><span class="sxs-lookup"><span data-stu-id="5d0de-103">Contact support for Aland Islands</span></span>
+# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="69997-103">奧蘭孤島的支援聯繫</span><span class="sxs-lookup"><span data-stu-id="69997-103">Contact support for Aland Islands</span></span>
 
-<span data-ttu-id="5d0de-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="5d0de-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="69997-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="69997-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5d0de-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="5d0de-105">Phone number</span></span>
-<span data-ttu-id="5d0de-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="5d0de-106">08009 8462</span></span>
+## <a name="phone-number"></a><span data-ttu-id="69997-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="69997-105">Phone number</span></span>
+<span data-ttu-id="69997-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="69997-106">08009 8462</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5d0de-107">小時</span><span class="sxs-lookup"><span data-stu-id="5d0de-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5d0de-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="5d0de-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="69997-107">小時</span><span class="sxs-lookup"><span data-stu-id="69997-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="69997-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="69997-108">Billing Support:</span></span>
 
-<span data-ttu-id="5d0de-109">英文： Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="5d0de-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="69997-109">英文： Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="69997-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5d0de-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="5d0de-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="69997-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="69997-110">Technical Support:</span></span>
 
-<span data-ttu-id="5d0de-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="5d0de-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="69997-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="69997-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5d0de-112">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="5d0de-112">Local call charges apply</span></span>
+<span data-ttu-id="69997-112">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="69997-112">Local call charges apply</span></span>
