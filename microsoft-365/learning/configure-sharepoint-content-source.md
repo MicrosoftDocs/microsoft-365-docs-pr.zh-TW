@@ -22,10 +22,10 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/05/2021
 ms.locfileid: "52782774"
 ---
-# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a><span data-ttu-id="2f299-103">將 SharePoint 設定為 Microsoft Viva 教學 (Preview 的教學內容來源) </span><span class="sxs-lookup"><span data-stu-id="2f299-103">Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)</span></span>
+# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a><span data-ttu-id="9b6da-103">將 SharePoint 設定為 Microsoft Viva 教學 (Preview 的教學內容來源) </span><span class="sxs-lookup"><span data-stu-id="9b6da-103">Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2f299-104">產品預覽中尚未提供此功能。</span><span class="sxs-lookup"><span data-stu-id="2f299-104">This feature is not yet available in product preview.</span></span> 
+> <span data-ttu-id="9b6da-104">產品預覽中尚未提供此功能。</span><span class="sxs-lookup"><span data-stu-id="9b6da-104">This feature is not yet available in product preview.</span></span> 
 
 
 

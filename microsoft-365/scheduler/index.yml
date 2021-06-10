@@ -1,0 +1,32 @@
+### YamlMime:Hub
+title: Microsoft 365 的調度程式
+summary: 瞭解如何使用 Cortana 設定計劃會議，以進行 Microsoft 365。
+brand: m365
+metadata:
+  title: Microsoft 365 的調度程式
+  description: 瞭解如何使用 Cortana 設定計劃會議，以進行 Microsoft 365。
+  ms.service: exchange-online
+  ms.topic: hub-page
+  author: AshaIyengar21
+  ms.author: v-aiyengar
+  manager: serdars
+  audience: Admin
+  ms.date: 04/23/2021
+additionalContent:
+  sections:
+    - items:
+        - title: 什麼是 Microsoft 365 的調度程式？
+          summary: 深入瞭解 Microsoft 365 及其功能的計畫，以及它會如何受益。
+          url: scheduler-overview.md
+        - title: 信任和隱私權
+          summary: 深入瞭解 Microsoft 365 的計畫，以確保您的信任和隱私權受到保護。
+          url: scheduler-trust-privacy.md
+        - title: 設定 Microsoft 365 的調度程式
+          summary: 瞭解設定 Microsoft 365 的排程器所需的專案。
+          url: scheduler-setup.md
+        - title: 使用調度程式進行 Microsoft 365
+          summary: 瞭解如何使用 Microsoft 365 的調度程式。
+          url: scheduler-using.md
+        - title: 排程器的常見問題
+          summary: 深入瞭解調度程式的 Microsoft 365 和解答的常見問題。
+          url: scheduler-faqs.md
