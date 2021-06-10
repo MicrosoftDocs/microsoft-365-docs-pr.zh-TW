@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 55171429d3ea447de32eb7e2ec12b8b2c3542e95
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538384"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861704"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint 裝置控制可移除的儲存體保護
 
@@ -35,7 +35,7 @@ Microsoft Defender for Endpoint Device Control Control 儲存體 Protection 可�
 
 **功能** -根據各種裝置內容，避免安裝或未排除。
 
-**描述**
+**Windows 10 支援詳細資料**
 - 在電腦層級套用：對任何已登入的使用者套用相同的原則。
 - 支援 MEM 和 GPO。
 - 所列支援的「[裝置屬性](#device-properties)」。
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint Device Control Control 儲存體 Protection 可�
 
 **支援的平臺** Windows 10
 
-**描述**
+**macOS 支援詳細資料**
 - 在電腦層級套用：對任何已登入的使用者套用相同的原則
 - 如需 macOS 特定資訊，請參閱 [Device control for macOS](mac-device-control-overview.md)。
  
@@ -55,7 +55,7 @@ Microsoft Defender for Endpoint Device Control Control 儲存體 Protection 可�
 - *審核* 根據不同裝置內容讀取或寫入或執行「可移動儲存」的存取權，具有或不含排除。
 - *避免* 以不同裝置屬性為基礎，以或不含排除允許特定裝置的方式讀取或寫入或執行存取。
 
-**描述**
+**Windows 10 支援詳細資料**
 - 在任何機器或使用者或兩者上套用–只允許特定人員對特定電腦上的特定可移動儲存體執行讀取/寫入/執行存取。
 - 支援 MEM OMA-URI 和 GPO。
 - 所列支援的「[裝置屬性](#device-properties)」。
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint Device Control Control 儲存體 Protection 可�
 
 **支援的平臺** Windows 10
 
-**描述**
+**macOS 支援詳細資料**
 - 在電腦層級套用：對任何已登入的使用者套用相同的原則。
 - 如需 macOS 特定資訊，請參閱 [Device control for macOS](mac-device-control-overview.md)。
  

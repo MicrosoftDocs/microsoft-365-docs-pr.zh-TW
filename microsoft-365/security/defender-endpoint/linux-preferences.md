@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346375"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861548"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -139,7 +139,7 @@ ms.locfileid: "52346375"
 
 **(檔/目錄的路徑類型)**
 
-會指出 *path* 屬性參照的是檔案或目錄。 
+會指出 *path* 屬性參照的是檔案或目錄。
 
 |||
 |:---|:---|
@@ -397,7 +397,7 @@ ms.locfileid: "52346375"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":"pdf"
+            "extension":".pdf"
          },
          {
             "$type":"excludedFileName",
@@ -444,7 +444,7 @@ python -m json.tool mdatp_managed.json
 如果 JSON 格式正確，上述命令會將其輸出到終端，並傳回的退出程式碼 `0` 。 否則，會顯示描述問題的錯誤，且命令會傳回的退出程式碼 `1` 。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>驗證檔案上的 mdatp_managed.js是否如預期般運作
-若要確認您的/etc/opt/microsoft/mdatp/managed/mdatp_managed.js開啟中是否正常運作，您應該會在下列設定旁看到「[managed]」：  
+若要確認您的/etc/opt/microsoft/mdatp/managed/mdatp_managed.js開啟中是否正常運作，您應該會在下列設定旁看到「[managed]」：
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
 - passice_mode_enabled

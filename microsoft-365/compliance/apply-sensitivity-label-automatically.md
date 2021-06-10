@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ad095db005421a58806d2775d4958cf3be5f474e
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769290"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866736"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -60,7 +60,8 @@ ms.locfileid: "52769290"
     
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
     - 支援 Word、PowerPoint 和 Excel 等 Office 檔案。支援 Open XML 格式 (例如 .docx 和 .xlsx)，但不支援 Microsoft Office 97-2003 格式 (例如 .doc 和 .xls)。
-        - 這些檔案可在建立自動套用標籤原則之前或之後，以靜止方式自動套用標籤。 請注意，如果檔案是開啟工作階段的一部分 (檔案已開啟) ，則無法自動套用標籤。
+        - 這些檔案可在建立自動套用標籤原則之前或之後，以靜止方式自動套用標籤。 如果檔案是開啟工作階段的一部分 (檔案已開啟) ，則無法自動套用標籤。
+        - 目前，清單項目的附件不支援且不會自動套用標籤。
     - 租用戶中每日最多有 25,000 個自動套用標籤的檔案。
     - 每個租用戶最多 10 個自動套用標籤的原則，每個最多可用於 10 個網站（SharePoint 或 OneDrive）。
     - 自動標籤原則不會造成修改時間、修改者和日期的現有值變更 (對於兩個模擬模式和套用標籤時)。
@@ -189,7 +190,7 @@ ms.locfileid: "52769290"
 
 - 若為電腦版 Word 中的建議標籤，系統會標示觸發了建議的敏感性內容，讓使用者可以檢閱和移除敏感性內容，而不是套用建議的敏感度標籤。
 
-- 如需這些標籤在 Office 應用程式中的套用方式、範例螢幕擷取畫面，以及系統如何偵測到敏感性資訊的詳細資訊，請參閱[在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 如需這些標籤在 Office 應用程式中的套用方式、範例螢幕擷取畫面，以及系統如何偵測到敏感性資訊的詳細資訊，請參閱[在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/zh-TW/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 專用於 Azure 資訊保護的整合標籤用戶端：
 
@@ -265,7 +266,7 @@ ms.locfileid: "52769290"
     
     ![自動套用標籤的新原則精靈 ](../media/auto-labeling-wizard.png)
 
-4. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取其中一個範本，例如 **財務** 或 **隱私權**。 您可以使用 **[顯示下列內容的選項]** 下拉式清單來精簡搜尋。 或者，如果範本不符合您的需求，請選取 **[自訂原則]**。 選取 **[下一步]**。
+4. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取其中一個範本，例如 **財務** 或 **隱私權**。 您可以使用 **[顯示下列內容的選項]** 下拉式清單來精簡搜尋。 或者，如果範本不符合您的需求，請選取 **[自訂原則]**。 選取 [下一步]。
 
 5. 針對 **[命名您的自動套用標籤原則]** 頁面：提供唯一名稱，以及選擇性提供說明，以協助識別自動套用的標籤、位置和可識別要套用標籤之內容的條件。
 

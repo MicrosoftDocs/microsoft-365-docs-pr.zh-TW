@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841183"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861716"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制
 
@@ -42,13 +42,17 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 ## <a name="prepare-your-endpoints"></a>準備您的端點
 
 在具有反惡意軟體用戶端版本 **4.18.2103.3 或更新** 版本的 Windows 10 裝置上，部署可移除的儲存體存取控制。
-1. **4.18.2104 或更新版本**：新增 SerialNumberId、VID_PID、以 filepath 為基礎的 GPO 支援
+1. **4.18.2104 或更新版本**：新增 SerialNumberId、VID_PID、以 filepath 為基礎的 GPO 支援、ComputerSid
 
 2. **4.18.2105 或更新版本**：針對 HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId 新增萬用字元支援、特定電腦上的特定使用者組合、可移動 SSD (SANDISK 至尊 SSD) /USB 連接的 SCSI (UAS) 支援
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell 介面":::
 
+   > [!NOTE]
+   > Windows 安全性元件都不需要使用中，您可以執行可移動儲存體存取控制，而不限 Windows 安全性狀態。
+
 ## <a name="policy-properties"></a>原則屬性
+
 
 您可以使用下列屬性建立「可移動儲存」群組：
 
@@ -87,6 +91,8 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
     - MatchAny： [DescriptorIdList] 底下的屬性將是 **Or** relationship;例如，如果系統管理員為 DeviceID 和 InstancePathID，則對於每個連線的 USB，只要 USB 具有相同的 **DeviceID** 或 **InstanceID** 值，系統就會執行強制執行。
 
+
+
 以下是存取控制原則屬性：
 
 **屬性名稱： PolicyRuleId**
@@ -124,6 +130,14 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
     - AuditDenied：在存取遭到拒絕時定義通知和事件;必須一起使用 **Deny** 專案。
 
 當同一個媒體有衝突類型時，系統會將原則中的第一個類型。 衝突類型的範例為 **Allow** 和 **Deny**。
+
+**屬性名稱： Sid**
+
+1. 描述：定義是否對特定使用者或使用者群組套用此原則;一個專案最多可以有一個 Sid，而沒有任何 Sid 的專案則表示在機器上套用原則。
+
+**屬性名稱： ComputerSid**
+
+1. 描述：定義是否要將此原則套用到特定機器或機器群組上;一個專案最多可以有一個 ComputerSid，而且沒有任何 ComputerSid 的專案則表示在機器上套用原則。 如果您想要將專案套用至特定使用者和特定的機器，請將 Sid 和 ComputerSid 新增至相同的專案。
 
 **屬性名稱：選項**
 

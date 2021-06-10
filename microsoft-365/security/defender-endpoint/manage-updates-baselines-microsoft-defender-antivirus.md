@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/08/2021
-ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.date: 06/09/2021
+ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
+ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822271"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52862144"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -86,7 +86,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 <summary> 2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </summary>
 
 &ensp;安全性智慧更新版本： **1.341.8.0**  
-&ensp;發行日期： **2021 年6月4日**  
+&ensp;發行日期： **2021 年6月3日**  
 &ensp;Platform： **4.18.2105.4**  
 &ensp;Engine： **1.1.18200.4**  
 &ensp;支援階段： **安全性和重要更新**
@@ -102,15 +102,13 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 <summary> 四月-2021 (平臺： 4.18.2104.14 |Engine： 1.1.18100.5) </summary>
 
 &ensp;安全性智慧更新版本： **1.337.2.0**  
-&ensp;發行日期： **2021 年4月1日**  
-&ensp;Platform： **4.18.2104.14**  
+&ensp;發行日期： **2021 年4月26日**  (Engine：發行1.1.18100.6 可能是5、2021) &ensp; Platform： **4.18.2104.14**  
 &ensp;Engine： **1.1.18100.5**  
 &ensp;支援階段： **安全性和重要更新**
     
 ### <a name="whats-new"></a>新增功能
 - 其他行為監控邏輯
 - 改進的核心模式 keylogger 偵測
-- 新增控制項以管理[Microsoft Defender 更新](updates.md)的逐步式展示過程
 
 ### <a name="known-issues"></a>已知問題
 無已知問題  
@@ -119,7 +117,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 <summary> 三月份-2021 (平臺： 4.18.2103.7 |Engine： 1.1.18000.5) </summary>
 
 &ensp;安全性智慧更新版本： **1.335.36.0**  
-&ensp;發行日期： **2021 年4月1日**  
+&ensp;發行日期： **2021 年4月2日**  
 &ensp;Platform： **4.18.2103.7**  
 &ensp;Engine： **1.1.18000.5**  
 &ensp;支援階段： **安全性和重要更新**
