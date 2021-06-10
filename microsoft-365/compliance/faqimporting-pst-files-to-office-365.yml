@@ -31,7 +31,7 @@ sections:
   questions:
   - question: >
       必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？
-    answer: "您必須在 Exchange Online 中獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。\n  \n此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：\n  \n- 您必須在 Exchange Online 中獲派郵件收件者角色。 根據預設，這個角色會指派給組織管理及收件者管理角色群組。\n    \n    或者\n    \n- 您必須是組織中的全域系統管理員。\n    \n> [!TIP]\n> 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 \n  \n"
+    answer: "您必須在 Exchange Online 中獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。\n  \n此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：\n  \n- 您必須在 Exchange Online 中受指派為 [郵件收件者] 角色。根據預設，此角色會指派給 [組織管理] 與 [收件者管理] 角色群組。\n    \n    或者\n    \n- 您必須是組織中的全域系統管理員。\n    \n> [!TIP]\n> 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 \n  \n"
   - question: >
       Where is network upload available?
     answer: "網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、法國、德國、瑞士、挪威、歐洲、印度、東亞、東南亞、日本、南韓、澳洲和阿拉伯聯合大公國 (UAE)。我們會盡快在更多地區提供網路上傳服務。\n  \n"
@@ -82,7 +82,7 @@ sections:
       如需逐步指示，請參閱[使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)。
   - question: >
       必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？
-    answer: "您必須獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。\n  \n此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：\n  \n- 您必須在 Exchange Online 中獲派郵件收件者角色。 根據預設，這個角色會指派給組織管理及收件者管理角色群組。\n    \n    或者\n    \n- 您必須是組織中的全域系統管理員。\n    \n> [!TIP]\n> 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 \n  \n"
+    answer: "您必須獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。\n  \n此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：\n  \n- 您必須在 Exchange Online 中受指派為 [郵件收件者] 角色。根據預設，此角色會指派給 [組織管理] 與 [收件者管理] 角色群組。\n    \n    或者\n    \n- 您必須是組織中的全域系統管理員。\n    \n> [!TIP]\n> 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 \n  \n"
   - question: >
       Where is drive shipping available?
     answer: "磁碟機寄送的服務範圍目前包括美國、加拿大、巴西、英國、歐洲、印度、東亞、東南亞、日本、大韓民國和澳洲。 我們會盡快在更多地區提供磁碟機寄送服務。\n\n> [!NOTE]\n> 目前在德國和瑞士不開放使用磁碟機寄送匯入 PST 檔案。 當這些國家/地區開放磁碟機寄送時，將會更新此常見問題。\n  \n"

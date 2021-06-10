@@ -20,17 +20,17 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536607"
 ---
-# <a name="payment-information-for-ireland"></a><span data-ttu-id="afab0-103">愛爾蘭的付款資訊</span><span class="sxs-lookup"><span data-stu-id="afab0-103">Payment information for Ireland</span></span>
+# <a name="payment-information-for-ireland"></a><span data-ttu-id="bd9fa-103">愛爾蘭的付款資訊</span><span class="sxs-lookup"><span data-stu-id="bd9fa-103">Payment information for Ireland</span></span>
 
-<span data-ttu-id="afab0-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="afab0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="bd9fa-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="bd9fa-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="afab0-105">請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="afab0-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="bd9fa-105">請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="bd9fa-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="afab0-106">電匯</span><span class="sxs-lookup"><span data-stu-id="afab0-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="bd9fa-106">電匯</span><span class="sxs-lookup"><span data-stu-id="bd9fa-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="afab0-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="afab0-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="afab0-108">**SWIFT Code/BIC：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="afab0-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="afab0-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="afab0-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="afab0-110">**分類程式代碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="afab0-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="afab0-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="afab0-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="afab0-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="afab0-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="bd9fa-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="bd9fa-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="bd9fa-108">**SWIFT Code/BIC：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="bd9fa-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="bd9fa-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="bd9fa-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="bd9fa-110">**分類程式代碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="bd9fa-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="bd9fa-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="bd9fa-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="bd9fa-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="bd9fa-112">**Account Name:** MICROSOFT</span></span>

@@ -20,16 +20,16 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536199"
 ---
-# <a name="payment-information-for-venezuela"></a><span data-ttu-id="06e03-103">委內瑞拉的付款資訊</span><span class="sxs-lookup"><span data-stu-id="06e03-103">Payment information for Venezuela</span></span>
+# <a name="payment-information-for-venezuela"></a><span data-ttu-id="d156b-103">委內瑞拉的付款資訊</span><span class="sxs-lookup"><span data-stu-id="d156b-103">Payment information for Venezuela</span></span>
 
-<span data-ttu-id="06e03-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="06e03-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="d156b-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="d156b-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="06e03-105">請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="06e03-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="d156b-105">請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="d156b-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="06e03-106">電匯</span><span class="sxs-lookup"><span data-stu-id="06e03-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="d156b-106">電匯</span><span class="sxs-lookup"><span data-stu-id="d156b-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="06e03-107">**銀行：** 美洲銀行</span><span class="sxs-lookup"><span data-stu-id="06e03-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="06e03-108">**Branch：** 達拉斯</span><span class="sxs-lookup"><span data-stu-id="06e03-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="06e03-109">**SWIFT 程式碼：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="06e03-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="06e03-110">**帳戶號碼：** 4426587954</span><span class="sxs-lookup"><span data-stu-id="06e03-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="06e03-111">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="06e03-111">**Account Name:** Microsoft</span></span>
+<span data-ttu-id="d156b-107">**銀行：** 美洲銀行</span><span class="sxs-lookup"><span data-stu-id="d156b-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="d156b-108">**Branch：** 達拉斯</span><span class="sxs-lookup"><span data-stu-id="d156b-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="d156b-109">**SWIFT 程式碼：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="d156b-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="d156b-110">**帳戶號碼：** 4426587954</span><span class="sxs-lookup"><span data-stu-id="d156b-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="d156b-111">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="d156b-111">**Account Name:** Microsoft</span></span>
