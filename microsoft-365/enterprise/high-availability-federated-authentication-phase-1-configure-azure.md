@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 摘要：設定 Microsoft Azure 基礎結構，以裝載 Microsoft 365 的高可用性同盟驗證。
+description: 摘要：設定 Microsoft Azure 基礎結構以主控 Microsoft 365 的高可用性同盟驗證。
 ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "50929105"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性同盟驗證階段 1：設定 Azure
 
-在此階段中，您會在 Azure 中建立資源群組、虛擬網路 (VNet) 和可用性設定，以在階段2、3和4中主控虛擬機器。 您必須先完成此階段，再移至 [階段2：設定網域控制站](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 請參閱 [在 Azure 中部署 Microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) ，以瞭解所有階段。
+在此階段中，您會在 Azure 中建立資源群組、虛擬網路 (VNet) 和可用性設定，以在階段2、3和4中主控虛擬機器。 您必須先完成此階段，再移至 [階段2：設定網域控制站](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 如需所有階段，請參閱[在 Azure 中部署 Microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)。
   
 Azure 必須布建下列基本元件：
   
@@ -106,10 +106,10 @@ Azure 必須布建下列基本元件：
    
  **表格 L：區域網路的網址前置詞**
   
-現在，讓我們開始組建 Azure 基礎結構，以裝載 Microsoft 365 的同盟驗證。
+現在，讓我們開始組建 Azure 基礎結構，以架設 Microsoft 365 的同盟驗證。
   
 > [!NOTE]
-> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](/powershell/azure/get-started-azureps)。 
+> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱[開始使用 Azure PowerShell](/powershell/azure/get-started-azureps)。 
   
 首先，啟動 Azure PowerShell 提示並登入您的帳戶。
   
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> 若要根據您的自訂設定來產生現成 PowerShell 命令區塊，請使用此 [Microsoft Excel 配置活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
+> 若要根據您的自訂設定產生現成 PowerShell 命令區塊，請使用此 Microsoft Excel 設定活頁[簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 使用下列命令取得訂用帳戶名稱。
   
@@ -132,7 +132,7 @@ Get-AzSubscription | Sort Name | Select Name
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-設定 Azure 訂用帳戶。 以正確的名稱取代引號內的所有專案（包括 \< and > 字元）。
+設定您的 Azure 訂閱帳戶。以正確的名稱取代括號中的所有項目，包括 \< and > 字元。
   
 ```powershell
 $subscrName="<subscription name>"
@@ -159,25 +159,25 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 使用這些命令建立新的資源群組。
   
 ```powershell
-$locName="<an Azure location, such as West US>"
-$rgName="<Table R - Item 1 - Name column>"
+$locName="<an Azure location, such as West US>&quot;
+$rgName=&quot;<Table R - Item 1 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 2 - Name column>"
+$rgName=&quot;<Table R - Item 2 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 3 - Name column>"
+$rgName=&quot;<Table R - Item 3 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 4 - Name column>"
+$rgName=&quot;<Table R - Item 4 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 接下來，您要建立 Azure 虛擬網路及其子網。
   
 ```powershell
-$rgName="<Table R - Item 4 - Resource group name column>"
-$locName="<your Azure location>"
-$vnetName="<Table V - Item 1 - Value column>"
-$vnetAddrPrefix="<Table V - Item 4 - Value column>"
-$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
+$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
+$locName=&quot;<your Azure location>&quot;
+$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
+$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
+$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -283,7 +283,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 當您在階段 2、3 和 4 中建立虛擬機器時，將會需要這些名稱。
   
-使用這些 Azure PowerShell 命令，建立新的可用性設定集。
+使用下列 Azure PowerShell 命令建立新的可用性設定集。
   
 ```powershell
 $locName="<the Azure location for your new resource group>"
@@ -302,9 +302,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 **階段1：適用于 Microsoft 365 的高可用性同盟驗證的 Azure 基礎結構**
 
-![Azure 中使用 Azure 基礎結構之高可用性 Microsoft 365 同盟驗證的階段1](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![azure 中使用 azure 基礎結構的高可用性 Microsoft 365 同盟驗證的階段1](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 使用 [階段2：設定網域控制站](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 以繼續設定此工作負載。
   

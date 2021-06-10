@@ -293,7 +293,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 搜尋權限篩選不會適用於 Exchange 公用資料夾。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 - 如果信箱是取消授權或虛刪除的，Azure AD 屬性就不再同步處理至信箱。 如果信箱已被刪除時保留在信箱上，則保留在信箱中的內容仍受限於符合性界限或搜尋許可權篩選器（根據上次在刪除信箱前同步處理 Azure AD 屬性的時間）。 
 

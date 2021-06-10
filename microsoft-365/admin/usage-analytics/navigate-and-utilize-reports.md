@@ -65,7 +65,7 @@ ms.locfileid: "51579047"
 
 若要共用您的報表，只要選取 [共用] 按鈕 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 在頁面頂端。
 
-若要瞭解如何自訂報告，請參閱 [在 Microsoft 365 流量分析中自訂報告](customize-reports.md)。
+若要瞭解如何自訂報告，請參閱[在 Microsoft 365 流量分析中自訂報告](customize-reports.md)。
 
 您可以在 Power BI 說明文件中找到許多額外的資訊：
 

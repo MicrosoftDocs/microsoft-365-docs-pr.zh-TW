@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: 瞭解如何針對組織中的所有使用者設定適用于 Windows 10 的裝置原則，以確保它們以安全方式連接。
+description: 瞭解為套用至組織中所有使用者的 Windows 10 設定裝置原則，以確保以安全方式連線。
 ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,7 +37,7 @@ ms.locfileid: "51580267"
 ---
 # <a name="configure-windows-10-devices"></a>設定 Windows 10 裝置
 
-在設定期間，您會為 Windows 10 建立裝置原則，以套用至組織中的所有使用者。 當使用者利用其工作或學校帳戶登入其 Windows 10 裝置上的 Office 應用程式時，系統會自動套用您設定的設定，以確保使用者以安全的方式連接。
+在設定期間，您會為套用至組織中所有使用者的 Windows 10 建立裝置原則。 當使用者使用其工作或學校帳戶登入其 Windows 10 裝置上的 Office 應用程式時，會自動套用您設定的設定，以確保使用者以安全的方式連接。
   
 建議您在設定時接受預設設定。 安裝程式完成後，您可以建立更多原則，並將其設定為特定使用者群組。
   

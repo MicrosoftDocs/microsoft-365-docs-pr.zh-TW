@@ -44,7 +44,7 @@ ms.locfileid: "51579383"
 - 授權選項
 - 應用程式選擇
 - 角色
-- 大部分設定檔資訊，例如 **工作設定檔**、 **部門**、 **Office**、 **office phone** 及 **街道位址** 
+- 大部分設定檔資訊，例如 **工作設定檔**、**部門**、 **Office**、 **Office 電話** 及 **街道位址** 
 
 下列是使用者特有的資訊，而且不會儲存在範本中：
 
@@ -91,5 +91,5 @@ ms.locfileid: "51579383"
 
 [同時新增使用者並指派授權](add-users.md)
 
-[從 Microsoft 365 移除離職員工](remove-former-employee.md)
+[從 Microsoft 365 中移除前任員工](remove-former-employee.md)
   

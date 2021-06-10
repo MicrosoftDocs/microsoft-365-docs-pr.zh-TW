@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: 瞭解如何使用 Microsoft 365 商務版 Premium 中的 AutoPilot 上傳裝置。 您可以將設定檔指派給裝置或裝置群組。
+description: 瞭解如何使用 Microsoft 365 商務進階版中的 AutoPilot 上傳裝置。 您可以將設定檔指派給裝置或裝置群組。
 ms.openlocfilehash: 506ff44e3cb6656b19174e82688b5af141ea2b79
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -43,9 +43,9 @@ ms.locfileid: "51578480"
   
 - Windows 10，版本1703或更新版本
     
-- 尚未透過 Windows 現成體驗的新裝置
+- 尚未透過 Windows 全新體驗的新裝置
 
-1. 在 Microsoft 365 系統管理中心，選擇 [ **裝置**] \> **AutoPilot**。
+1. 在 Microsoft 365 系統管理中心，選擇 [**裝置**] \> **AutoPilot**。
   
 2. 在 [ **AutoPilot** ] 頁面上，選擇 [ **裝置** ] 索引標籤 [ \> **新增裝置**]。
     
@@ -57,7 +57,7 @@ ms.locfileid: "51578480"
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>針對裝置或裝置群組指派設定檔
 
-1. 在 [ **準備 Windows** ] 頁面上，選擇 [ **裝置** ] 索引標籤，然後選取一或多個裝置旁的核取方塊。 
+1. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤，然後選取一或多個裝置旁的核取方塊。 
     
 2. 在 [ **裝置** ] 面板上，從 [ **已指派的設定檔** ] 下拉式清單中選取設定檔。 
     

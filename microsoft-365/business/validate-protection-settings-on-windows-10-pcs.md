@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: 在 Windows 10 裝置上驗證 Microsoft 365 商務高級應用程式保護設定，並確認使用者無法將公司資料複製到個人檔案或非受管理的應用程式。
+description: 在 Windows 10 裝置上驗證 Microsoft 365 商務進階版應用程式保護設定，並確認使用者無法將公司資料複製到個人檔案或非受管理的應用程式。
 ms.openlocfilehash: e319ffa5149f055b5de45078facc8899acffc223
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,11 +34,11 @@ ms.locfileid: "51579855"
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>確認使用者無法在公司裝置上將公司資料複製到個人檔案
 
-在您[設定 App 保護原則](protection-settings-for-windows-10-devices.md)後，這些原則可能需要幾個小時才會在使用者的裝置上生效。 如果您已 **開啟** [ **防止使用者將公司資料複製到個人檔案，並強制使用者將公司的工作檔案儲存到** 公司所擁有的裝置 OneDrive] 設定，您可以在使用者的裝置連接至 Azure AD 並登入後，對其進行檢查。 
+在您[設定 App 保護原則](protection-settings-for-windows-10-devices.md)後，這些原則可能需要幾個小時才會在使用者的裝置上生效。 如果您已 **開啟**[**防止使用者將公司資料複製到個人檔案並強制使用者將工作檔案儲存到** 公司所擁有的裝置商務用 OneDrive] 設定，您可以在使用者的裝置連線至 Azure AD 並登入後，對其進行檢查。 
   
  **驗證連線設定**
   
-1. 使用 microsoft 365 商務版認證登入並聯機至 Azure AD 後，如 [設定 microsoft 365 商務版使用者的 Windows 裝置](set-up-windows-devices.md)中所述，請移至 [ **windows 設定** \> **帳戶**]， \> **存取工作或學校**。 選擇 [ **連線到 \<tenant name\> Azure AD**]，然後選擇 [ **資訊**]。
+1. 在您以 [Microsoft 365 商務進階版使用者的 Windows 裝置](set-up-windows-devices.md)登入 Microsoft 365 商務進階版認證並連接至 Azure AD 之後，請移至 **Windows 設定** \> **帳戶** \> **存取工作或學校**。 選擇 [ **連線到 \<tenant name\> Azure AD**]，然後選擇 [ **資訊**]。
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -48,7 +48,7 @@ ms.locfileid: "51579855"
   
  **確認您無法將公司資料貼到非受管理的應用程式中**
   
-1. 開啟由 Microsoft 365 商務版特優安裝的 Outlook 2016。
+1. 開啟 Microsoft 365 商務進階版安裝的 Outlook 2016。
     
 2. 開啟一封電子郵件，並從中複製部分內容。
     
@@ -64,11 +64,11 @@ ms.locfileid: "51579855"
 
  **驗證連線設定**
   
-1. 在您以本機使用者身分登入的 Windows 10 個人裝置上，移至 [ **Windows 設定**]，然後按一下或點擊 [ **帳戶** \> **存取工作或學校**]。
+1. 在您以本機使用者登入的 Windows 10 個人裝置上，移至 **Windows 設定**]，然後按一下或點擊 [**帳戶** \> **存取工作或學校**]。
     
-2. 在 [ **存取工作或學校**] 底下，選擇 **[連接]**。
+2. 在 [**存取工作或學校**] 底下，選擇 [**連線**]。
     
-3. 在 [ **設定公司或學校帳戶] 對話方塊** 的 [登入] 中輸入您的 Microsoft 365 商務版認證 \> ****。
+3. 在 [**設定公司或學校帳戶] 對話方塊** 的 [登入] 中輸入您的 Microsoft 365 商務進階版認證 \> ****。
     
 4. 在 [ **存取公司或學校** ] 頁面上，選擇 [ **公司或學校帳戶**]，然後選擇 [ **資訊**]。
     
@@ -80,7 +80,7 @@ ms.locfileid: "51579855"
   
  **確認您無法將公司資料貼到非受管理的應用程式中**
   
-1. 開啟 Outlook 2016，並在必要時新增您的 Microsoft 365 商務版帳戶，並使用您的 Microsoft 365 商務版認證登入。
+1. 如有必要，請開啟 Outlook 2016 並新增您的 Microsoft 365 商務進階版帳戶，並以您的 Microsoft 365 商務進階版認證登入。
     
 2. 開啟一封電子郵件，並從中複製部分內容。
     

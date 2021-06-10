@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: 探索如何使用 Microsoft 365 for business 移除使用者在其裝置或 Windows 電腦上的公司資料。
+description: 探索如何使用 Microsoft 365 商務用來移除使用者在其裝置或 Windows 電腦上的公司資料。
 ms.openlocfilehash: 2e1af384d83937d65fd5c8ae655d228df48422cd
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,11 +33,11 @@ ms.locfileid: "51579987"
 ---
 # <a name="remove-company-data-from-devices"></a>從裝置移除公司資料
 
-本文適用于 Microsoft 365 商務版 Premium。
+本文適用于 Microsoft 365 商務進階版。
 
 ## <a name="remove-company-data"></a>移除公司資料
 
-您可以使用 Microsoft 365 for business 來移除您的使用者在其 [裝置](app-protection-settings-for-android-and-ios.md) 或 [Windows 電腦](protection-settings-for-windows-10-devices.md) 上，且由 Microsoft 365 保護的公司資料。 **如果您從裝置移除公司資料，以後便無法還原**。 
+您可以使用商務用 Microsoft 365 來移除使用者在其[裝置](app-protection-settings-for-android-and-ios.md)上的公司資料，或 Microsoft 365 所保護[Windows 電腦](protection-settings-for-windows-10-devices.md)。 **如果您從裝置移除公司資料，以後便無法還原**。 
   
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
     

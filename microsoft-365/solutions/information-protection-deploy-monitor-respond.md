@@ -26,7 +26,7 @@ ms.locfileid: "50928421"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>監視和回應組織中的資料隱私權事件
 
-Microsoft 365 的功能可協助您在 operationalize 相關功能時，監控、調查組織中的資料隱私權事件，並加以回應。 針對上述各項，具有程式、程式和其他檔，對規章主體的符合性也很重要。
+Microsoft 365 功能可協助您在 operationalize 相關功能時，監測、調查和回應組織中的資料隱私權事件。 針對上述各項，具有程式、程式和其他檔，對規章主體的符合性也很重要。
 
 包括： 
 
@@ -56,7 +56,7 @@ Microsoft 365 的功能可協助您在 operationalize 相關功能時，監控�
 
 您的組織可能也想要針對其他目的（如其他法規遵從性需求或商務原因）執行監視和回應活動。 在整體監控和回應規劃、實施及管理等情況下，建立您的監控和回應架構，以進行資料隱私權。
 
-為了協助您開始使用 Microsoft 365 的監控和回應架構以取得資料隱私權規定，本文會列出 Microsoft 365 中有用的功能，以回答下列問題： 
+為了協助您開始使用 Microsoft 365 中的資料隱私權法規的監控和回應架構，本文列出了 Microsoft 365 中的有用功能，以回答下列問題： 
 
 - 在不同的資料類型和來源中，可以使用哪一天的監視、調查和報表技巧？
 - 處理資料主體要求 (Dsr) 及任何補救措施（如匿名、密文和刪除）時，所需的機制。
@@ -72,12 +72,12 @@ Microsoft 365 的功能可協助您在 operationalize 相關功能時，監控�
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的資料主體要求
 
-請參閱 [GDPR 和 CCPA 的資料主體要求](/compliance/regulatory/gdpr-dsr-Office365) ，以取得在 Microsoft 365 中回應 DSR 的資訊。
+如需在 Microsoft 365 中回應 DSR 的資訊，請參閱[GDPR 和 CCPA 的資料主體要求](/compliance/regulatory/gdpr-dsr-Office365)。
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>在 Microsoft Stream 中管理已刪除的使用者
 
-在 Microsoft Stream 中，當使用者從 Azure Active Directory (Azure AD) 中刪除時，如果其名稱在該點之前與發佈的資料流程影片相關聯，則其電子郵件地址仍會與影片產生關聯。 請參閱 [管理從 Microsoft Stream 刪除的使用者](/stream/managing-deleted-users) 以將其移除。
+在 Microsoft Stream 中，當使用者從 Azure Active Directory (Azure AD) 中刪除時，如果其名稱與在該點之前已發佈的資料流程影片相關聯，則其電子郵件地址會保持與影片相關聯。 請參閱 [管理從 Microsoft Stream 刪除的使用者](/stream/managing-deleted-users) 以將其移除。
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>以調查工具為內部的內幕風險管理
 
-[365 microsoft 的內幕風險管理](../compliance/insider-risk-management.md) 是 microsoft 規範系統管理中心的一項功能，可讓您偵測、調查和採取行動，以應對組織中的危險活動，以儘量降低內部風險。
+[Microsoft 365 中的內幕風險管理](../compliance/insider-risk-management.md)是 Microsoft 規範系統管理中心的一項功能，可讓您偵測、調查和採取行動，以應對組織中的危險活動，以儘量降低內部風險。

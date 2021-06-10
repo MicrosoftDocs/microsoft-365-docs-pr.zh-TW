@@ -28,7 +28,7 @@ ms.locfileid: "50909331"
 ---
 # <a name="tune-sharepoint-online-performance"></a>調整 SharePoint Online 效能
 
-本文包含其他文章的連結，可告訴您如何提高 SharePoint 線上的頁面下載時間效能。 本文是 Office 365 專案的 [網路規劃和效能調整](./network-planning-and-performance.md) 的一部分。
+本文包含其他文章的連結，可告訴您如何提高 SharePoint 線上的頁面下載時間效能。 本文是 Office 365 專案的[網路規劃與效能調整](./network-planning-and-performance.md)的一部分。
 
 ## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>SharePoint 線上效能進行微調微調的相關文章
 
@@ -60,7 +60,7 @@ ms.locfileid: "50909331"
 
 - [操作方法：如何避免在 SharePoint Online 中受到節流控制或封鎖](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [優化 SharePoint Online 新式入口網站頁面中的 Iframe](modern-iframe-optimization.md)
+- [優化 SharePoint Online 新式入口網站頁面中的 iframe](modern-iframe-optimization.md)
 
 - [優化 SharePoint Online 新式入口網站頁面的網頁元件效能](modern-web-part-optimization.md)
 

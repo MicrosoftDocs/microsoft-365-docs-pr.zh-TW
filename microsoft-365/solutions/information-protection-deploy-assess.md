@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 評估資料隱私權風險及識別敏感專案
+title: 評估資料隱私權風險，並使用 Microsoft 365 識別敏感專案
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -24,9 +24,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50929165"
 ---
-# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>使用 Microsoft 365 評估資料隱私權風險及識別敏感專案
+# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>評估資料隱私權風險，並使用 Microsoft 365 識別敏感專案
 
-在實施任何相關的改進動作（包括使用 Microsoft 365 功能和服務可實現）之前，先評估貴組織所遵循的資料隱私權規定和風險，這是一個重要的步驟。 
+在實施任何相關的改進動作（包括可使用 Microsoft 365 功能和服務時）之前，評估貴組織所遵循的資料隱私權規定和風險是一個重要的步驟。 
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>可能適用的資料隱私權法規
 
@@ -52,7 +52,7 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 在世界各地，其他範例包含德國國家標準 GDPR 實施法案 (BDSG) ，巴西資料保護法案 (LGPD) 及許多其他。
 
-## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>規章對應至 Microsoft 365 技術控制項類別
+## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>規章對應至 Microsoft 365 的技術控制項類別
 
 許多資料隱私權相關的規章都有重疊的需求，因此在開發任何技術控制架構之前，您應該瞭解他們所遵循的規章。 
 
@@ -60,17 +60,17 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 | 調節 | 文章/區段 | 節錄 | 適用的技術控制項類別 |
 |:-------|:-----|:-------|:-------|
-| GDPR | 第5篇 (1)  (f)  | 個人資料的處理方式是為了確保個人資料的適當安全性，包括防止未經授權或非法處理的保護，以及防止意外損毀、損毀或損毀，使用適當的技術或組織量值 ( ' 誠信和機密性」。  |   (全部)  <br> 身份識別 <br> 裝置 <br> 威脅防護 <br> 保護資訊 <br> 管理資訊 <br> 探索和回應 |
+| GDPR | 第5篇 (1)  (f)  | 個人資料的處理方式是為了確保個人資料的適當安全性，包括防止未經授權或非法處理的保護，以及防止意外損毀、損毀或損毀，使用適當的技術或組織量值 ( ' 誠信和機密性」。  |   (全部)  <br> 身分識別 <br> 裝置 <br> 威脅防護 <br> 保護資訊 <br> 監管資訊 <br> 探索和回應 |
 |  |  (32)  (1)  () 的文章 | 考慮美工的狀態、實施成本和性質、範圍、內容及處理目的，以及自然人員的權力和嚴重性變化可能性和嚴重性的風險，控制者及處理器應執行適當的技術和組織量值，以確保符合風險的安全性層級，包括適當的 alia： () 假名和加密的個人資料。 | 保護資訊 |
-|  | 專案 (13)  (2)  ()  | "...審計員會在取得個人資料的時間，提供下列進一步資訊的資料，以確保一般和透明的處理： () 儲存個人資料的期間，或是不可能的情況，用來判斷該期間的準則。 | 管理資訊 |
+|  | 專案 (13)  (2)  ()  | "...審計員會在取得個人資料的時間，提供下列進一步資訊的資料，以確保一般和透明的處理： () 儲存個人資料的期間，或是不可能的情況，用來判斷該期間的準則。 | 監管資訊 |
 |  | 本文 (15)  (1)  (e)  | 資料主體應具備從控制器確認取得的權利，如是否正在處理其相關的個人資料。在此情況下，您可以存取個人資料及下列資訊： (e) 是否有權利可以要求從控制者修正或擦除個人資料，或將有關資料主旨或物件處理的個人資料的處理限制在處理中。 | 探索和回應 |
-| LGPD | 文章46 | 處理代理程式應採用安全性、技術和管理措施，以保護個人資料免受未授權的存取和意外或非法的銷毀狀況、遺失、篡改、通訊或任何類型的錯誤或非法處理的情況。 | 保護資訊 <br> 管理資訊 <br> 探索和回應|
+| LGPD | 文章46 | 處理代理程式應採用安全性、技術和管理措施，以保護個人資料免受未授權的存取和意外或非法的銷毀狀況、遺失、篡改、通訊或任何類型的錯誤或非法處理的情況。 | 保護資訊 <br> 監管資訊 <br> 探索和回應|
 |  | 文章48 | 控制器必須與全國授權機構和資料主體進行通訊。可能會對資料主體產生風險或相關損毀的安全性事件發生。 | 探索和回應 |
 | HIPPA-高科技 | 45 CFR 164.312 (e)  (1)  | 執行技術安全性措施，以防止未經授權的存取透過電子通訊網路傳輸的電子受保護健康情況資訊。 | 保護資訊 |
 |  | 45 C.F.R。 164.312 (e)  (2)  (ii)  | 實施一種機制，在適當時，加密電子保護的健康情況資訊。 | 保護資訊 |
-|  | 45 CFR 164.312 (c)  (2)  | 實施電子方式，corroborate 未以授權方式變更或銷毀的電子受保護健康情況資訊。 | 管理資訊 |
-|  | 45 CFR 164.316 (b)  (1)  (i)  | 若要記錄此 subpart 所需的動作、活動或評估，請維護書面 (，該書面可能是) 的動作、活動或評估的電子化記錄。 | 管理資訊 |
-|  | 45 CFR 164.316 (b)  (1)  (ii)  | 將本節 (b)  (1) 本節的必要檔，保留從其建立日期的6年開始，或其最後一個生效的日期。 | 管理資訊 |
+|  | 45 CFR 164.312 (c)  (2)  | 實施電子方式，corroborate 未以授權方式變更或銷毀的電子受保護健康情況資訊。 | 監管資訊 |
+|  | 45 CFR 164.316 (b)  (1)  (i)  | 若要記錄此 subpart 所需的動作、活動或評估，請維護書面 (，該書面可能是) 的動作、活動或評估的電子化記錄。 | 監管資訊 |
+|  | 45 CFR 164.316 (b)  (1)  (ii)  | 將本節 (b)  (1) 本節的必要檔，保留從其建立日期的6年開始，或其最後一個生效的日期。 | 監管資訊 |
 |  | 45 C.F.R。 164.308 ()  (1)  (ii)  (D)  | 實施定期檢查資訊系統活動記錄的程式，例如審計記錄檔、存取報告及安全性事件追蹤報告 | 探索和回應 |
 |  | 45 C.F.R。 164.308 ()  (6)  (ii)  | 識別及回應可疑或已知的安全性事件;降低範圍盡可能，對被涵蓋之實體或業務關聯的安全性事件造成有害影響;及記錄安全性事件及其結果。 | 探索和回應 |
 |  | 45 C.F.R。 164.312 (b)  | 在包含或使用以電子保護健康情況資訊的資訊系統中，執行可記錄及檢查活動的硬體、軟體和程式性機制。 | 探索和回應 |
@@ -120,9 +120,9 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 ![個人資料類型](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-許多受資料隱私權法規制約的個人資料通常會收集並儲存在 Microsoft 365 外。 任何來自消費者對向的 web 或行動應用程式的個人資料，都必須從這類應用程式匯出至 Microsoft 365，以應對 Microsoft 365 中的資料隱私權進行審查。 
+許多受資料隱私權法規制約的個人資料通常會收集並儲存在 Microsoft 365 之外。 任何來自使用者對向的 web 或行動應用程式的個人資料，都必須從這類應用程式匯出至 Microsoft 365，才會受到 Microsoft 365 中的資料隱私權審查。 
 
-您的 Microsoft 365 中的資料隱私權曝光可能比您的 web 應用程式和 CRM 系統（此解決方案不具備）的限制。
+您在 Microsoft 365 中的資料隱私權洩密，對您的 web 應用程式和 CRM 系統的限制，可能會比這種解決方案不具位址。
 
 在評估風險設定檔時，請務必考慮下列常見的資料隱私權法規遵從性挑戰：
 
@@ -143,7 +143,7 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 為了滿足這類需求，組織應具備處理預防性、偵探和補救措施的程式與程式，以協助這類要求，請注意，有關員工的部分資訊可能會被視為商務持續性的重要因素。 例如，個人撰寫的檔案或執行函數的資訊。 
 
 >[!Note]
->如需 Microsoft 365 中個人資料的調查和修正技巧，請參閱 [監視和回應文章](information-protection-deploy-monitor-respond.md)。 您也可能會想要使用自動化的分類及保護架構，以確保個人資料在組織內部加以控制，以及避免該組織在惡意的主角情況下遭到離開。 如需詳細資訊，請參閱 [保護資訊文章](information-protection-deploy-protect-information.md) 。
+>如需 Microsoft 365 中個人資料的調查和修正技巧，請參閱[監視和回應文章](information-protection-deploy-monitor-respond.md)。 您也可能會想要使用自動化的分類及保護架構，以確保個人資料在組織內部加以控制，以及避免該組織在惡意的主角情況下遭到離開。 如需詳細資訊，請參閱 [保護資訊文章](information-protection-deploy-protect-information.md) 。
 >
  
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>組織對 B2B 案例中公司客戶的相關資料
@@ -167,9 +167,9 @@ B2B 資訊集合也是一項挑戰，因為您的組織可能需要將客戶名�
 
 瞭解風險和資料隱私權法規的危險性是一項重要的第一步，以基礎瞭解貴組織的個人資料案例為基礎。
 
-如果您沒有來自 Microsoft 365 環境中使用者的個人資料，或其局限于環境的某些部分，而且需要在使用者類型的資料暴露方面 predicated 技術控制權，則該技術控制可能只需要在環境的高風險部分（而非到處）使用。
+如果您的 Microsoft 365 環境中沒有使用者的個人資料，或其局限于環境中的特定部分，而且需要在使用者類型的資料暴露方面 predicated 技術控制權，則該技術控制可能只需要在環境的高風險部分（而非到處）使用。
 
-雖然外部組織或標準控制項設定建議（例如 Microsoft 365 中的合規性管理員）可能會協助通知您的控制策略，但您所選擇的實施方式應該是由資料清單認知所驅動，以量化實際風險的危險性。
+雖然外部組織或標準控制項設定建議，例如從 Microsoft 365 中的合規性管理員，但可協助告知您的控制策略，您的實施選擇應該是由資料清單認知所驅動，以量化實際風險的危險性。
 
 大多數的組織都會對上述其中一個案例產生一些風險。 採取整體的評估方法很重要。
 
@@ -193,7 +193,7 @@ GDPR 評估包含下列各節：
 
 此步驟包括識別特定的敏感資訊類型，這些類型受制于特定的規章控制，以及它們在 Microsoft 365 環境中的出現。 
 
-在您的環境中尋找包含個人的內容可能是一項艱巨的工作，以前的組合是使用符合性搜尋、eDiscovery、Advanced eDiscovery、DLP 和核查。 
+在您的環境中尋找包含個人的內容可能是一項艱巨的工作，先前會結合使用符合性搜尋、eDiscovery、Advanced eDiscovery、DLP 及審計。 
 
 透過 Microsoft 合規性系統管理中心的新 **資料分類** 方案，使用 [內容瀏覽器](../compliance/data-classification-content-explorer.md) 功能，可搭配內建或自訂的機密資訊類型（包括與個人資料相關的資訊類型）使用。
  
@@ -212,18 +212,18 @@ Microsoft 規範系統管理中心預先載入了100以上的敏感資訊類型�
 如需詳細資訊，請參閱下列文章：
 
 - [自訂內建的敏感性資訊類型](../compliance/customize-a-built-in-sensitive-information-type.md)
-- [瞭解敏感性資訊類型](../compliance/sensitive-information-type-learn-about.md)
+- [了解敏感性資訊類型](../compliance/sensitive-information-type-learn-about.md)
 - [在安全性與合規性中心建立自訂敏感性資訊類型](../compliance/create-a-custom-sensitive-information-type.md)
 - [在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>內容瀏覽器
 
-在您的環境中，判斷敏感專案發生的重要工具，是 Microsoft 365 合規性系統管理中心的新 [內容瀏覽器](../compliance/data-classification-content-explorer.md) 。 這是一種自動化的工具，可讓您整個 Microsoft 365 訂閱進行，以進行重要的敏感資訊類型及顯示結果的事件。
+在您的環境中，判斷敏感專案發生的重要工具，是 Microsoft 365 合規性系統管理中心內的新[內容瀏覽器](../compliance/data-classification-content-explorer.md)。 這是一種自動化的工具，可讓您整個 Microsoft 365 訂閱進行，針對敏感資訊類型和顯示結果的顯示，進行完整及日常掃描。
  
 新的內容瀏覽器工具可讓您使用內建的敏感資訊類型或自訂的資訊類型，快速識別環境中敏感專案的位置。 這可能會讓您建立程式並指派責任定期調查敏感專案的目前狀態和位置。
 
-除了本文中所述的其他步驟之外，這還提供一個起點，用以識別敏感專案的整體風險、準備工作和位置，以透過規劃的 Microsoft 365 設定和監控加以保護。 
+在本文中所述的其他步驟中，這會提供一個起點，用以識別敏感專案的整體風險、準備工作和位置，以透過規劃的 Microsoft 365 設定和監控加以保護。 
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>在您的環境中識別個人資料的其他方法
 
@@ -231,7 +231,7 @@ Microsoft 規範系統管理中心預先載入了100以上的敏感資訊類型�
 
 [本文](/compliance/regulatory/gdpr)提供如何使用內容搜尋來搜尋個人資料的詳細指南。 內容搜尋及其他探索技巧也會在 Dsr 中探索， [以供 GDPR 和 CCPA](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs)。
 
-在 [ [監視器] 和 [回應] 文章](information-protection-deploy-monitor-respond.md)中提供有關 Microsoft 365 中個人資料之調查和修正技巧的其他深入瞭解。
+有關 Microsoft 365 中個人資料之調查和修正技術的其他深入資訊，請在 [[監視器] 和 [回應] 文章](information-protection-deploy-monitor-respond.md)中提供。
 
 > [!NOTE]
 > 若要尋找儲存在內部部署檔案中的敏感資訊，請參閱 [Azure 資訊保護](/azure/information-protection/quickstart-findsensitiveinfo)。

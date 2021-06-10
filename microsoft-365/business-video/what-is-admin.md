@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for business 中的系統管理員
+title: Microsoft 365 的商務系統管理員
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解 Microsoft 365 for business 中的系統管理員角色。
+description: 深入瞭解商務用 Microsoft 365 中的系統管理員角色。
 ms.openlocfilehash: a4fcb60218069d73fe658a6dc4ef681a659ec70b
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578552"
 ---
-# <a name="what-is-a-microsoft-365-admin"></a>何謂 Microsoft 365 系統管理員？
+# <a name="what-is-a-microsoft-365-admin"></a>何謂 Microsoft 365 管理員？
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51578552"
 以下說明如何將使用者角色變更為系統管理員角色：
 
 1. 登入 Microsoft 365 時，請選取應用程式啟動器。 如果您看到 [系統管理] 按鈕，表示您是系統管理員。
-1. 選取 [系統 **管理員** ] 以移至 Microsoft 365 系統管理中心。
+1. 選取 [系統 **管理員**] 以移至 Microsoft 365 系統管理中心。
 1. 在左功能窗格中，選取 [ **使用者**]，然後選取 [作用中的 **使用者**]。
 1. 選取您要成為系統管理員的人員。使用者的詳細資料會顯示在 [右側] 對話方塊中。
 1. 選擇 [ **管理角色**]。
@@ -54,12 +54,12 @@ ms.locfileid: "51578552"
 您也可以為 IT 人員或服務建立專用的系統管理員帳戶：
 
 1. 登入 Microsoft 365 時，請選取應用程式啟動器。
-1. 選取 [系統 **管理員** ] 以移至 Microsoft 365 系統管理中心。
+1. 選取 [系統 **管理員**] 以移至 Microsoft 365 系統管理中心。
 1. 在左功能窗格中，選取 [ **使用者**]，然後選取 [作用中的 **使用者**]。
 1. 選取 [ **新增使用者**]。
 1. 輸入使用者的 **名字**、**姓氏**、**顯示名稱****和使用者名稱，然後** 選取 **[下一步]**。
-1. 選擇 [ **建立沒有產品許可證的使用者**]。 這會新增使用者，但您不需要每月付費訂閱。 選取 **[下一步]**。
+1. 選擇 [ **建立沒有產品許可證的使用者**]。 這會新增使用者，但您不需要每月付費訂閱。 選取 [下一步]。
 1. 開啟 **角色**。
-1. 清除核取方塊，然後選取其中一個系統管理員角色。 選取 **[下一步]**。
+1. 清除核取方塊，然後選取其中一個系統管理員角色。 選取 [下一步]。
 1. 請複查資訊，然後選取 **[完成新增]**。
-1. 選取 [關閉]。
+1. 選取 **[關閉]**。

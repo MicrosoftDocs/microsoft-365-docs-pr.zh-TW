@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 摘要：在 Microsoft Azure 中針對 Microsoft 365 的高可用性同盟驗證設定 Azure AD Connect。
+description: 摘要：針對 Microsoft Azure 中 Microsoft 365 的高可用性同盟驗證設定 Azure AD 連線。
 ms.openlocfilehash: 2bca2b758486b85d185870e2e14b495b8f084cb7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.locfileid: "50929405"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性同盟驗證階段5：設定 Microsoft 365 的同盟驗證
 
-在此最後一個在 Azure 基礎結構服務中為 Microsoft 365 部署高可用性同盟驗證的最後階段，您可以取得及安裝公用憑證授權單位單位所發出的憑證、驗證您的設定，然後在目錄同步處理伺服器上安裝並執行 Azure AD Connect。 Azure AD Connect 會為同盟驗證設定您的 Microsoft 365 訂閱和 Active Directory Federation Services (AD FS) 和 web 應用程式 proxy 伺服器。
+在此最後一個部署 Azure 基礎結構服務中 Microsoft 365 的高可用性同盟驗證的最後階段，您可以取得及安裝公用憑證授權單位單位所發出的憑證、驗證您的設定，然後在目錄同步處理伺服器上安裝並執行 Azure AD 連線。 Azure AD 連線針對同盟驗證，設定 Microsoft 365 訂閱和 Active Directory Federation Services (AD FS) 和 web 應用程式 proxy 伺服器。
   
-請參閱 [在 Azure 中部署 Microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) ，以瞭解所有階段。
+如需所有階段，請參閱[在 Azure 中部署 Microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)。
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>取得公用憑證並將其複製到目錄同步處理伺服器
 
@@ -37,7 +37,7 @@ ms.locfileid: "50929405"
     
 - 憑證必須有私密金鑰，而且可以儲存為 PFX 格式。
     
-此外，您的組織電腦和裝置必須信任發行數位憑證的公用憑證授權單位單位。 這項信任是透過從您的電腦和裝置上的「受信任的根憑證授權單位」存放區中安裝的公用憑證授權單位單位來建立。 執行 Microsoft Windows 的電腦通常會從一般使用的憑證授權單位單位安裝一組這類憑證。 若尚未安裝您的公用憑證授權單位單位的根憑證，則必須將其部署至您組織的電腦和裝置。
+此外，您的組織電腦和裝置必須信任發行數位憑證的公用憑證授權單位單位。 這項信任是透過從您的電腦和裝置上的「受信任的根憑證授權單位」存放區中安裝的公用憑證授權單位單位來建立。 執行 Microsoft Windows 的電腦一般會從一般使用的憑證授權單位單位安裝一組這類憑證。 若尚未安裝您的公用憑證授權單位單位的根憑證，則必須將其部署至您組織的電腦和裝置。
   
 如需有關同盟驗證之憑證需求的詳細資訊，請參閱 [同盟安裝和設定的必要條件](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)。
   
@@ -45,11 +45,11 @@ ms.locfileid: "50929405"
   
 ## <a name="verify-your-configuration"></a>驗證您的設定
 
-您現在應該可以為 Microsoft 365 設定 Azure AD Connect 及同盟驗證。 若要確定您是，以下是檢查清單：
+您現在應該可以為 Microsoft 365 設定 Azure AD 連線和同盟驗證。 若要確定您是，以下是檢查清單：
   
-- 您的組織的公用網域已新增至您的 Microsoft 365 訂閱。
+- 您組織的公用網域會新增至您的 Microsoft 365 訂閱。
     
-- 您組織的 Microsoft 365 使用者帳戶已設定為您組織的公用功能變數名稱，而且可成功登入。
+- 組織的 Microsoft 365 使用者帳戶會設定為您組織的公用功能變數名稱，而且可成功登入。
     
 - 您已根據您的公用功能變數名稱判斷同盟服務 FQDN。
     
@@ -65,29 +65,29 @@ ms.locfileid: "50929405"
   
 **Azure 中高可用性同盟驗證基礎結構的範例設定**
 
-![Azure 中高可用性 Microsoft 365 同盟驗證基礎結構的設定範例](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Azure 中設定高可用性 Microsoft 365 同盟驗證基礎結構的範例](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
-## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>執行 Azure AD Connect 以設定同盟驗證
+## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>執行 Azure AD 連線以設定同盟驗證
 
-Azure AD Connect 工具使用下列步驟來設定 AD FS 伺服器、web 應用程式 proxy 伺服器及 Microsoft 365 進行同盟驗證：
+Azure AD 連線工具使用下列步驟來設定 AD FS 伺服器、web 應用程式 proxy 伺服器及 Microsoft 365 以進行同盟驗證：
   
 1. 使用具有本機系統管理員許可權的網域帳戶，建立目錄同步處理伺服器的遠端桌面連線。
     
 2. 從目錄同步處理伺服器的桌面，開啟 Internet Explorer，然後移至 [https://aka.ms/aadconnect](https://aka.ms/aadconnect) 。
     
-3. 在 [ **Microsoft Azure Active Directory 連線]** 頁面上，按一下 [ **下載**]，然後按一下 [ **執行**]。
+3. 在 [ **Microsoft Azure Active Directory 連線**] 頁面上，按一下 [**下載**]，然後按一下 [**執行**]。
     
-4. 在 [ **歡迎使用 AZURE AD Connect]** 頁面上，按一下 [ **我同意**]，然後按一下 [ **繼續]。**
+4. 在 [**歡迎使用 Azure AD 連線**] 頁面上，按一下 [**我同意**]，然後按一下 [**繼續]。**
     
-5. 在 [ **快速設定** ] 頁面上，按一下 [ **自訂**]。
+5. 在 [ **Express 設定**] 頁面上，按一下 [**自訂**]。
     
 6. 在 [ **安裝必要元件** ] 頁面上，按一下 [ **安裝**]。
     
 7. 在 [使用者登入] 頁面上，按一下 [和 AD FS 的同盟]，然後按 [下一步]。
     
-8. 在 [連線 **到 AZURE AD]** 頁面上，輸入您的 Microsoft 365 訂閱全域管理員帳戶的名稱和密碼，然後按 **[下一步]**。
+8. 在 [**連線至 Azure AD** ] 頁面上，輸入 Microsoft 365 訂閱的全域系統管理員帳戶名稱和密碼，然後按 **[下一步]**。
     
-9. 在 [ **連接目錄]** 頁面上，確定已選取 **樹** 系中的 [您的內部部署 Active Directory 網域 (服務]) 樹系，輸入網域管理員帳戶的名稱和密碼，按一下 [ **新增目錄**]，然後按 **[下一步]**。
+9. 在 [**連線您的目錄**] 頁面上，確定已選取 **樹** 系中的內部部署 Active Directory 網域服務 (AD DS) 樹系，輸入網域管理員帳戶的名稱和密碼，然後按一下 [**新增目錄**]，再按 **[下一步]**。
     
 10. 在 [ **AZURE AD 登錄** 設定] 頁面上，按 **[下一步]**。
     

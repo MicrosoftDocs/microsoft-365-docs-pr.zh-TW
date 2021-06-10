@@ -41,7 +41,7 @@ ms.locfileid: "52706451"
 
 商務用 Microsoft 365 是一組完整的商業生產力和共同作業工具，例如 Outlook、Word、Excel 和其他 Office 產品，永遠都是最新的。 您可以使用易於管理的企業級安全性，保護所有 iOS、Android 和 Windows 10 裝置上的工作檔案。
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>觀賞：何謂 Microsoft 365 商務進階版
+## <a name="watch-what-is-microsoft-365-business-premium"></a>觀看：什麼是 Microsoft 365 商務進階版？
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   

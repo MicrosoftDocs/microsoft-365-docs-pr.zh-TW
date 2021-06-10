@@ -1,5 +1,5 @@
 ---
-title: 設定攻擊面降減功能
+title: 設定受攻擊面縮小功能
 description: 使用 Microsoft Intune、Microsoft Endpoint Configuration Manager、PowerShell Cmdlet 及群組原則來設定攻擊面降低。
 keywords: asr、攻擊面減少、windows defender、microsoft defender、防毒軟體、av
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770958"
 ---
-# <a name="configure-attack-surface-reduction-capabilities"></a>設定攻擊面降減功能
+# <a name="configure-attack-surface-reduction-capabilities"></a>設定受攻擊面縮小功能
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)

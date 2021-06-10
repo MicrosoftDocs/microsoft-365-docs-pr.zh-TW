@@ -28,7 +28,7 @@ ms.locfileid: "51579167"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生產力分數的隱私權控制
 
-生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。  組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 如需詳細資訊，請查看 [生產力排名一覽](productivity-score.md)。
+生產力分數透過使用 Microsoft 365 和技術經驗，為您組織的數位轉換旅程提供深入瞭解。  組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 如需詳細資訊，請查看 [生產力排名一覽](productivity-score.md)。
 
 您的隱私權對 Microsoft 很重要。 若要瞭解如何保護您的隱私權，請參閱 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。 生產力分數可讓您成為貴組織的 IT 系統管理員、存取隱私權設定，以協助確保您所能行動的任何生產力分數資訊，但不會危及您的組織對 Microsoft 的信任。
 
@@ -51,9 +51,9 @@ ms.locfileid: "51579167"
 - 報告讀取者
 - 使用狀況摘要報告閱讀程式
 
-將「報告讀取者」或「使用狀況摘要報告讀取者」角色指派給負責變更管理和採用的任何人員，但不一定是 IT 管理員。 此角色可讓他們存取 Microsoft 365 系統管理中心的完整生產力評分體驗。
+將「報告讀取者」或「使用狀況摘要報告讀取者」角色指派給負責變更管理和採用的任何人員，但不一定是 IT 管理員。 此角色可讓他們存取 Microsoft 365 系統管理中心內的完整生產力評分體驗。
 
-使用摘要報告讀取器角色必須透過 PowerShell Cmdlet 進行指派，直到它可從 Microsoft 365 admin center （2020之後）變為可指派。
+使用摘要報告讀取器角色必須透過 PowerShell Cmdlet 進行指派，直到在2020稍後的 Microsoft 365 系統管理中心變成可指派。
 
 指派使用狀況摘要報告讀取器角色與 PowerShell:
 
@@ -77,8 +77,8 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 若要取消選擇：
 
-1. 在系統管理中心中，移至 [**設定**] [   >   **組織設定**]  >  ****。
-2. 取消選取 [  **允許 Microsoft 365 使用方式資料以供人員經驗深入使用**] 方塊。 若要瞭解如何在 Intune configuration manager 中修改端點分析的資料共用設定，請選取 [ **深入瞭解**]。
+1. 在系統管理中心，移至 **設定** 的   >   **組織設定**  >  **生產力分數**。
+2. 取消選取 [**允許使用 Microsoft 365 流量資料以供人員經驗深入**] 核取方塊。 若要瞭解如何在 Intune configuration manager 中修改端點分析的資料共用設定，請選取 [ **深入瞭解**]。
 3. 選取 [  **儲存**]。
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="[組織設定] 頁面，您可以在其中選擇從人員經驗。":::

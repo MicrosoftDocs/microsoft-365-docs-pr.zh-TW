@@ -35,7 +35,7 @@ ms.locfileid: "50909283"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-如果您使用的是 Office 2007 產品和服務，請注意，這些應用程式的支援已結束。 請考慮移至 Microsoft 雲端（從 Microsoft 365 開始）。 請使用本文做為開始查看選項及規劃升級的起點。
+如果您使用 Office 2007 產品和服務，請注意，這些應用程式的支援已結束。 請考慮移至 Microsoft 雲端（從 Microsoft 365 開始）。 請使用本文做為開始查看選項及規劃升級的起點。
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 規劃藍圖
   
@@ -43,7 +43,7 @@ Office 2007 產品和服務的支援已結束。 下列藍圖可協助您立即�
 
 |**規劃內容**|**日期支援結束**|
 |:-----|:-----|
-|[Office 2007 終止支援藍圖](/DeployOffice/office-2007-end-support-roadmap) <br/> |2017 年 10 月 10 日  <br/> |
+|[Office 2007 結束支援藍圖](/DeployOffice/office-2007-end-support-roadmap) <br/> |2017 年 10 月 10 日  <br/> |
 |[Exchange 2007 終止支援藍圖](exchange-2007-end-of-support.md) <br/> |2017 年 4 月 11 日  <br/> |
 |[SharePoint Server 2007 終止支援藍圖](sharepoint-2007-end-of-support.md) <br/> |2017 年 10 月 10 日  <br/> |
 |[Project Server 2007 終止支援藍圖](project-server-2007-end-of-support.md) <br/> |2017 年 10 月 10 日  <br/> |
@@ -60,7 +60,7 @@ Microsoft 產品的支援結束後，還沒有其他專案：
 
 ## <a name="im-a-home-user-what-do-i-do"></a>我是家用版的使用者。 我該怎麼辦？
 
-如果您在家使用 Office 2007 產品和應用程式，請參閱 [此資訊](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
+如果您在家使用 Office 2007 產品和應用程式，請參閱[此資訊](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
      
 ## <a name="related-topics"></a>相關主題
 

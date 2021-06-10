@@ -29,11 +29,11 @@ ms.locfileid: "50929429"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-Microsoft 365 訂閱隨附個別服務的服務方案。 Microsoft 365 系統管理員經常需要在指派授權給使用者時停用特定的計畫。 透過本文中的指示，您可以在使用個別使用者帳戶或多個使用者帳戶的 PowerShell 停用特定的服務方案時，指派 Microsoft 365 授權。
+Microsoft 365 訂閱隨附個別服務的服務方案。 Microsoft 365 系統管理員經常需要在指派授權給使用者時停用特定的計畫。 透過本文中的指示，您可以在使用個別使用者帳戶或多個使用者帳戶的 PowerShell 來停用特定的服務方案時，指派 Microsoft 365 授權。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
 接下來，使用此命令列出租使用者的授權計畫。
@@ -67,7 +67,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 接下來，執行下列命令以查看您目前的訂閱：
   
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 在 [顯示]  `Get-MsolAccountSku` 命令中：
   
-- **AccountSkuId** 為您組織的訂閱 \<OrganizationName> ： \<Subscription> format。 是您在 \<OrganizationName> Microsoft 365 中註冊時所提供的值，且對您的組織而言是唯一的。 \<Subscription>值是針對特定訂閱。 例如，針對 litwareinc:ENTERPRISEPACK，組織名稱是 litwareinc，訂閱名稱是 ENTERPRISEPACK (Office 365 Enterprise E3) 。
+- **AccountSkuId** 為您組織的訂閱 \<OrganizationName> ： \<Subscription> format。 是您在 \<OrganizationName> Microsoft 365 註冊時所提供的值，且對於您的組織而言是唯一的。 \<Subscription>值是針對特定訂閱。 例如，針對 litwareinc:ENTERPRISEPACK，組織名稱是 litwareinc，訂閱名稱是 ENTERPRISEPACK (Office 365 企業版 E3) 。
     
 - **ActiveUnits** 為您為訂閱購買的授權數目。
     
@@ -91,7 +91,7 @@ Get-MsolAccountSku
     
 請注意包含您要授權之使用者的 Microsoft 365 訂閱 AccountSkuId。 此外，請確定有足夠的授權，可從 **ActiveUnits** ) 指派 (減去 **ConsumedUnits** 。
   
-接下來，執行此命令，以查看您所有訂閱中可用之 Microsoft 365 服務方案的詳細資料：
+接下來，執行下列命令，以查看您所有訂閱中可用之 Microsoft 365 服務方案的詳細資料：
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -101,7 +101,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
   
 以下是服務方案及其對應的 Microsoft 365 服務的部分清單。
 
-下表顯示 Microsoft 365 服務方案及其最常見服務的易記名稱。 您的服務方案清單可能不同。 
+下表顯示最常見服務的 Microsoft 365 服務方案及其易記名稱。 您的服務方案清單可能不同。 
   
 |**服務計劃**|**描述**|
 |:-----|:-----|
@@ -109,9 +109,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure 版權管理 (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |*先前命名為 Office 365 ProPlus* 的 Microsoft 365 應用程式 enterprise ()   <br/> |
+| `OFFICESUBSCRIPTION` <br/> |*(先前命名為 Office 365 專業增強版* 的 Microsoft 365 Apps 企業版)   <br/> |
 | `MCOSTANDARD` <br/> |商務用 Skype Online  <br/> |
-| `SHAREPOINTWAC` <br/> |辦公室   <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    

@@ -40,7 +40,7 @@ Microsoft 365 提供兩種安裝體驗：
 
 若要設定您的帳戶，請移至系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，選取左功能窗格中的 [**安裝**]，然後選取 [**設定**] 頁面上的 [**引導安裝程式**]。
 
-![啟動 Microsoft 365 應用程式商務版安裝精靈](../../media/o365b-guided-setup.png)
+![啟動 Microsoft 365 Apps 商務版安裝精靈](../../media/o365b-guided-setup.png)
 
 安裝精靈會引導您完成下列步驟：
 
@@ -48,17 +48,17 @@ Microsoft 365 提供兩種安裝體驗：
 
 2. 選擇和驗證您的網域，例如 contoso.com。
 
-3. 新增使用者並指派授權給他們，以供下載和安裝 Microsoft 365 應用程式。
+3. 新增使用者並指派授權給他們，讓他們可以下載及安裝 Microsoft 365 應用程式。
 
-4. 連接您的網域。
+4. 連線您的網域。
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>使用設定頁面以完成並管理您的設定
 
-若要存取系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 [**設定**] 頁面，請在功能窗格中選取 [**安裝**]。 根據您已購買的產品、您已設定的功能和系統管理員角色，可在這裡呈現來自 Microsoft 365 的工作和相關資訊。
+若要存取系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 [**設定**] 頁面，請在功能窗格中選取 [**安裝**]。 根據您已購買的產品、您已設定的功能和系統管理員角色、您在 Microsoft 365 中的工作和相關資訊都會在這裡呈現。
 
 您會看到依邏輯類別排列的完整安裝工作清單，包括您在安裝精靈中完成的工作。
 
-![Microsoft 365 商務版安裝頁面](../../media/o365b-setup-page.png)
+![business Microsoft 365 安裝程式頁面](../../media/o365b-setup-page.png)
 
 選擇 [View] （ **查看** ）任何工作以取得一覽資訊，例如任務描述、使用者影響、必要條件、實施工作以及安全性和採用統計資料，以協助您在繼續進行之前瞭解結果和影響。
 

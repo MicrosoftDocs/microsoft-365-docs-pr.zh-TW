@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 自訂您的登入頁面，並提供 Microsoft 365 的隱私權與同意通知。
+description: 自訂您的登入頁面，其中包含 Microsoft 365 的隱私權與同意通告。
 ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51579803"
 
 在您的登入頁面上加入隱私權與同意通知，您的商務或活動可讓執法機構針對線上罪犯收取法律費用。
 
-您可以使用您的署名自訂登入頁面。 您也可以新增文字，協助使用者登入，或指出法律需求或限制，以取得 Microsoft 365 資源的存取權。
+您可以使用您的署名自訂登入頁面。 您也可以新增文字，以協助使用者登入，或指出法律需求或限制，以取得 Microsoft 365 資源的存取權。
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>設計自訂登入頁面上的文字
 

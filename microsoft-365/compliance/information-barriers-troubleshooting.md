@@ -29,13 +29,13 @@ ms.locfileid: "50928003"
 > [!IMPORTANT]
 > 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <p>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<p>請務必 [連接至安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題：使用者意外封鎖，無法與 Microsoft 小組中的其他使用者通訊 
+## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題：使用者意外封鎖 Microsoft Teams 中的其他人進行通訊 
 
-在此情況下，使用者會在 Microsoft 小組中報告與其他人進行通訊的意外問題。 部分範例如下：
+在此情況下，使用者會在 Microsoft Teams 中報告與其他人進行通訊的意外問題。 部分範例如下：
 
-- 使用者可搜尋，但找不到 Microsoft 小組中的其他使用者。
-- 使用者可以找到，但無法選取 Microsoft 小組中的另一位使用者。
-- 使用者可以查看其他使用者，但無法將郵件傳送給 Microsoft 小組中的其他使用者。
+- 使用者可搜尋 Microsoft Teams 中的其他使用者，但找不到。
+- 使用者可以在 Microsoft Teams 中找到，但無法選取其他使用者。
+- 使用者可以查看其他使用者，但無法將郵件傳送到 Microsoft Teams 中的其他使用者。
 
 ### <a name="what-to-do"></a>處理方式
 
@@ -79,9 +79,9 @@ ms.locfileid: "50928003"
 
     **如果您仍有資訊屏障原則的問題，請與支援人員聯繫**。
 
-## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>問題：允許在 Microsoft 小組中封鎖的使用者之間進行通訊
+## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>問題：允許在 Microsoft Teams 封鎖的使用者之間進行通訊
 
-在此情況下，雖然資訊壁壘已定義、使用中且已套用，但應禁止彼此進行通訊的人員可以在 Microsoft 小組中互動及呼叫對方。
+在此情況下，雖然資訊壁壘已定義、使用中且已套用，但應禁止彼此進行通訊的人員可以在 Microsoft Teams 中互動及呼叫對方。
 
 ### <a name="what-to-do"></a>處理方式
 
@@ -91,7 +91,7 @@ ms.locfileid: "50928003"
 
     |**語法** _|_ *範例**|
     |:----------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan* 和 *alexw* for *Alex*。 |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365： *Megan* 的 *meganb* 中的兩個使用者帳戶，以及 *Alex* 的 *alexw* 。 |
 
     > [!TIP]
     > 您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`
@@ -102,13 +102,13 @@ ms.locfileid: "50928003"
 
     |**Results**|**接下來要執行的動作**|
     |:----------|:------------------|
-    | 未列出選定使用者 (s 的區段)  | 執行下列其中一項：<br/>-在 Azure Active Directory 中編輯使用者設定檔，將使用者指派至現有的網段。  (請參閱 [使用 Office 365 PowerShell 設定使用者帳戶屬性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。 ) <br/>-使用 [支援的資訊障礙屬性](information-barriers-attributes.md)定義區段。 然後， [定義新的原則](information-barriers-policies.md#part-2-define-information-barrier-policies) 或 [編輯現有的原則](information-barriers-edit-segments-policies.md#edit-a-policy) ，以包含該區段。 |
+    | 未列出選定使用者 (s 的區段)  | 執行下列其中一項：<br/>-在 Azure Active Directory 中編輯使用者設定檔，以將使用者指派至現有的區段。  (請參閱[使用 Office 365 PowerShell 設定使用者帳戶屬性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。 ) <br/>-使用 [支援的資訊障礙屬性](information-barriers-attributes.md)定義區段。 然後， [定義新的原則](information-barriers-policies.md#part-2-define-information-barrier-policies) 或 [編輯現有的原則](information-barriers-edit-segments-policies.md#edit-a-policy) ，以包含該區段。 |
     | 會列出網段，但不會將資訊障礙原則指派給那些區段 | 執行下列其中一項：<br/>- 為相關的每個區段[定義新的資訊屏障原則](information-barriers-policies.md#part-2-define-information-barrier-policies) <br/>- [編輯現有的資訊屏障原則](information-barriers-edit-segments-policies.md#edit-a-policy) ，將其指派給正確的區段 |
     | 列出各段，且每個區段都包含在資訊屏障原則中 | -執行 `Get-InformationBarrierPolicy` Cmdlet 以確認資訊屏障原則為作用中狀態。<br/>-執行 `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 以確認已套用原則<br/>-執行 `Start-InformationBarrierPoliciesApplication` Cmdlet 以套用所有作用中的資訊屏障原則 |
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>問題：我需要從資訊屏障原則中移除單一使用者
 
-在此情況下，資訊屏障原則會生效，且意外封鎖一或多個使用者與 Microsoft 小組中的其他使用者進行通訊。 您可以移除資訊屏障原則中的一或多個個別使用者，而不是完全移除資訊屏障原則。
+在此情況下，資訊屏障原則會生效，且意外封鎖一或多個使用者與 Microsoft Teams 中的其他使用者進行通訊。 您可以移除資訊屏障原則中的一或多個個別使用者，而不是完全移除資訊屏障原則。
 
 ### <a name="what-to-do"></a>處理方式
 
@@ -118,12 +118,12 @@ ms.locfileid: "50928003"
 
     |**語法**|**範例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan* 和 *alexw* for *Alex*。          |
-    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 您可以使用唯一識別使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> 在此範例中，我們參考 Office 365： *jeanp* 中的單一帳戶。 |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365： *Megan* 的 *meganb* 中的兩個使用者帳戶，以及 *Alex* 的 *alexw* 。          |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 您可以使用唯一識別使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> 在此範例中，我們會參考 Office 365： *jeanp* 中的單一帳戶。 |
 
 2. 檢查結果，以查看是否已指派資訊屏障原則，以及 (s) 屬於哪個區段 (s) 使用者。
 
-3. 若要從受資訊障礙影響的區段中移除使用者，請 [在 Azure Active Directory 中更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+3. 若要從受資訊障礙影響的區段中移除使用者，請[更新 Azure Active Directory 中的使用者設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 4. 等候大約30分鐘，以進行 FwdSync。 或者，執行 Cmdlet 以套用所有作用中的 `Start-InformationBarrierPoliciesApplication` 資訊屏障原則。
 
@@ -145,7 +145,7 @@ ms.locfileid: "50928003"
 
 2. 根據上一個步驟的結果，執行下列其中一個步驟：
   
-    |**狀態**|**後續步驟**|
+    |**狀態**|**下一步**|
     |:---------|:------------|
     | **未開始** | 若 **InformationBarrierPoliciesApplication** Cmdlet 已執行超過45分鐘，請複查您的審核記錄檔，以查看原則定義中是否有任何錯誤，或應用程式尚未啟動的其他一些原因。 |
     | **已失敗** | 若應用程式失敗，請複查您的審核記錄檔。 另外，請複查您的區段和原則。 是否有任何使用者被指派至多個區段？ 是否有任何區段被指派多個 poliicy？ 如有必要，請 [編輯區段](information-barriers-edit-segments-policies.md#edit-a-segment) 和/或 [編輯原則](information-barriers-edit-segments-policies.md#edit-a-policy)，然後再次執行 **InformationBarrierPoliciesApplication** Cmdlet。 |
@@ -157,15 +157,15 @@ ms.locfileid: "50928003"
 
 ### <a name="what-to-do"></a>處理方式
 
-請確定您的組織沒有適當的 [Exchange 通訊錄原則](/exchange/address-books/address-book-policies/address-book-policies) 。 這類原則會防止套用資訊屏障原則。
+請確定您的組織沒有適當的[Exchange 通訊錄原則](/exchange/address-books/address-book-policies/address-book-policies)。 這類原則會防止套用資訊屏障原則。
 
-1. 連接至 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 連線[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行 [Get-AddressBookPolicy](/powershell/module/exchange/get-addressbookpolicy) Cmdlet，並檢查結果。
 
-    |**Results**|**後續步驟**|
+    |**Results**|**下一步**|
     |:----------|:------------|
-    | Exchange 通訊錄原則會列出 | [移除通訊錄原則](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | 列出 Exchange 通訊錄原則 | [移除通訊錄原則](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | 無通訊錄原則存在 |檢查您的審計記錄檔，以找出原則應用程式失敗的原因 |
 
 3. [查看使用者帳戶、區段、原則或原則應用程式的狀態](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)。
@@ -211,5 +211,5 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 
 ## <a name="resources"></a>資源
 
-- [在 Microsoft 小組中定義資訊障礙的原則](information-barriers-policies.md)
+- [在 Microsoft Teams 中定義資訊障礙的原則](information-barriers-policies.md)
 - [資訊屏障](information-barriers.md)

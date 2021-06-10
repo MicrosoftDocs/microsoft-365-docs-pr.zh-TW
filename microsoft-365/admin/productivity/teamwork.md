@@ -28,7 +28,7 @@ ms.locfileid: "51579155"
 ---
 # <a name="teamwork--people-experiences"></a>團隊合作–人員經驗
 
-生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 「團隊合作」類別是「人員經驗」的一部分度量。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+生產力分數透過使用 Microsoft 365 和技術經驗，為您組織的數位轉換旅程提供深入瞭解。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 「團隊合作」類別是「人員經驗」的一部分度量。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -52,28 +52,28 @@ ms.locfileid: "51579155"
 
 ### <a name="primary-insight"></a>主要洞察力
 
-主要的洞察力是查看使用電子郵件和 Microsoft 小組的郵件進行通訊，以及與共享工作區中雲端上內容互動的所有人員。 在 Microsoft 365 中，Microsoft 365 群組是使用者在共用工作區中的基礎，其能夠將電子郵件傳送至群組信箱、在 SharePoint 小組網站上共用檔案，以及透過 Microsoft 小組傳送通道郵件。
+主要的洞察力是查看在 Microsoft Teams 上使用電子郵件和郵件進行通訊的所有人員，以及與共享工作區中雲端上的內容互動。 在 Microsoft 365 中，Microsoft 365 群組是讓使用者一起進入共用工作區的基礎，其可將電子郵件傳送至群組信箱、共用 SharePoint 小組網站上的檔，以及透過 Microsoft Teams 傳送通道郵件。
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="圖表顯示團隊合作分數中的主要洞察力。":::
 
 1. **標頭：** 提供 inyour 組織執行任何一項活動的重要衡量人員：
       - 透過 Exchange 將電子郵件傳送至群組信箱。
-      - 透過小組傳送通道郵件
+      - 透過 Teams 傳送通道郵件
       - 讀取和建立內容 (我們共同指的是 SharePoint 小組網站中的內容互動) 。
 
         在共用工作區) 內或外部，所有執行下列 (活動的人員所占的百分比：
         - 透過 Exchange 傳送電子郵件。
-        - 在 Microsoft 小組) 傳送訊息 (聊天或頻道訊息。
+        - 傳送郵件 (聊天或頻道訊息) 上 Microsoft Teams。
         - 在 OneDrive 或 SharePoint 上讀取及建立內容。
 
-            至少可以存取下列其中一項服務： Exchange、Microsoft 小組或 SharePoint
+            至少可以存取下列其中一項服務： Exchange、Microsoft Teams 或 SharePoint
 
 1. **Body：** 提供有關如何在共用工作區中進行通訊及互動的詳細資訊，在您的組織中執行時，其生產力可能會產生積極的結果。
 2. **視覺效果 (目前狀態) ：**
       - 水準條，藍色部分代表標頭中所表示的百分比
-      - 會強調用於計算標頭中所顯示百分比的分數 (分子/分母) 
-        - 分子：組織中透過 Exchange 傳送電子郵件至群組信箱的人員數量，或透過小組傳送通道郵件，或是在 SharePoint 小組網站中讀取及建立內容的人員人數。
-        - 分母：在組織中傳送電子郵件的人員人數（透過 Exchange 傳送電子郵件），或傳送郵件 (在 Microsoft 團隊上) 聊天或頻道訊息，或是在 OneDrive 或 SharePoint 上讀取及建立內容，而且可以存取至少下列其中一個服務： Exchange、Microsoft 團隊或 SharePoint。
+      - 好友動向分數 (分子/分母) 的分數，以用於計算標頭中顯示的百分比
+        - 分子：組織中透過 Exchange 傳送電子郵件至群組信箱的人員人數，或是透過 Teams 傳送通道郵件，或是在 SharePoint 小組網站中讀取及建立內容的人員人數。
+        - 分母：在組織中傳送電子郵件的人員人數 Exchange，或傳送訊息 (聊天或頻道訊息) Microsoft Teams 上，或是讀取及建立下列至少一項服務的許可權： OneDrive、SharePoint 或 Exchange。
    - 關鍵指標的對等基準值也會以百分比顯示。
 3. **查看有關團隊合作的資源：** 選取此連結可查看 [說明] 內容。
 
@@ -103,9 +103,9 @@ ms.locfileid: "51579155"
       - 傳送 **電子郵件**：彩色部分和分數代表將電子郵件傳送至群組信箱的人員所占的百分比。 分數是由下列專案所組成：
         - 分子：在過去28天內，將電子郵件傳送至群組信箱的人員。
         - 分母：在過去28天內傳送電子郵件的人員。 這是在通訊生產力分數主要洞察力中標示為寄送電子郵件的同一組人員。
-      - 傳送 **郵件**：彩色部分和分數代表在 Microsoft 小組中以通道傳送郵件的人員所占的百分比。 分數是由下列專案所組成：
+      - 傳送 **郵件**：彩色部分和分數代表在 Microsoft Teams 中以通道傳送郵件的人員所占的百分比。 分數是由下列專案所組成：
         - 分子：在過去28天內傳送通道訊息的人員。
-        - 分母：人們會在過去28天內傳送聊天或通道訊息。 這是在 [生產力分數] 的通訊類別主要洞察力中，標記為以 Microsoft 小組的方式傳送郵件的相同群組人員。
+        - 分母：人們會在過去28天內傳送聊天或通道訊息。 在 [生產力分數] 中，這是以「通訊」類別的主要洞察力標示為在 Microsoft Teams 中傳送訊息的相同群組人員。
     - **建立內容**：彩色部分和分數代表人員在 Microsoft 365 SharePoint 小組網站上讀取或建立內容的百分比。
         - 分子：在 Microsoft 365 群組連線的小組網站上讀取或建立內容的人員人數。
         - 分母：可以存取 SharePoint 的人員人數，誰在過去28天內 OneDrive 或 SharePoint 網站中讀取或建立任何類型的內容。
@@ -141,23 +141,23 @@ ms.locfileid: "51579155"
       - **內容讀取或建立：** 在過去28天內，每週讀取或建立內容之工作區的百分比（無天數/1 天/2-3 天/4 + 天）。
 4. **查看相關內容：** 選取此連結可查看 [說明] 內容。
 
-### <a name="use-of-teams-within-microsoft-teams"></a>在 Microsoft 小組內使用團隊
+### <a name="use-of-teams-within-microsoft-teams"></a>在 Microsoft Teams 內使用團隊
 
-:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="顯示 Microsoft 小組所使用的共用工作區數目的圖表。":::
+:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="顯示 Microsoft Teams 所使用之共用工作區數目的圖表。":::
 
-1. **標頭：** 顯示與 Microsoft 團隊小組相關聯之共用工作區的數目。
-2. **Body：** 提供與共享工作區相關聯之 Microsoft 小組小組的值相關資訊，以協助讓與他們相關的人員在合作時更有效。
-3. **視覺效果：** 環形圖表的彩色部分會反映已附加 Microsoft 團隊小組之工作區的百分比。 百分比的計算公式如下：
+1. **標頭：** 顯示與 Microsoft Teams 小組相關聯的共用工作區數目。
+2. **Body：** 提供與共享工作區相關聯的 Microsoft Teams 小組的值相關資訊，以協助讓與他們相關的人員在合作時更有效率。
+3. **視覺效果：** 環形圖表的彩色部分會反映已附加 Microsoft Teams 小組之工作區的百分比。 百分比的計算公式如下：
 
-      - 分子：貴組織中的共用工作區數目，其中包含與他們在過去28天內相關聯的 Microsoft 團隊團隊
+      - 分子：貴組織中的共用工作區數目，其 Microsoft Teams 小組與過去28天相關聯
       - 分母：您的組織中的最近28天共用工作區數目
 
-        環形圖表中央的數位代表與 Microsoft 團隊小組相關聯之共用工作區的總數。
+        環形圖表中央的數位代表具有相關聯 Microsoft Teams 小組的共用工作區總數。
 4. **查看相關內容：** 選取此連結可查看 [說明] 內容。
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) \
+[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) 
 [通訊–人員經驗](communication.md) (文章) \
 [內容共同作業–人員體驗](content-collaboration.md) (文章) \
 [會議–人員經驗](meetings.md) (文章) \

@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: 使用 Microsoft 365 保留標籤和原則來管理您的 Microsoft 365 環境中的個人資料。
+description: 使用 Microsoft 365 保留標籤和原則來管理 Microsoft 365 環境中的個人資料。
 ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -49,7 +49,7 @@ ms.locfileid: "50928433"
 
 針對資訊管理，資料隱私權規定一般會呼叫下列各項：
 
-- 您應該針對儲存在 Microsoft 365 中的個人資料，使用技術方案進行保留和刪除。
+- 您應該針對儲存在 Microsoft 365 中的個人資料，使用技術配置進行保留和刪除。
 - 如果您想要儲存個人資料，請將儲存資料的時間，告知其使用時間，這是前端網頁系統的標準作法。
 - 個人資料應受到保護，避免意外處理、遺失或篡改使用可驗證的方法。
 - 應該記錄針對個人資料執行的任何動作，而且檔應保留指定期間內。
@@ -68,7 +68,7 @@ ms.locfileid: "50928433"
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>管理 Microsoft 365 中的資訊管理
 
-若要開始，請參閱管理 Microsoft 365 中的 [資訊](../compliance/manage-information-governance.md) 管理和 [資料保留、刪除和銷毀](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
+若要開始，請參閱管理 Microsoft 365 中的[資訊](../compliance/manage-information-governance.md)管理和[資料保留、刪除及銷毀](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>開發容器、電子郵件和內容的資料保留時間表
 
@@ -84,10 +84,10 @@ ms.locfileid: "50928433"
 
 ### <a name="retention-policies-and-retention-labels"></a>保留原則和保留標籤
 
-使用 [保留原則和保留標籤](../compliance/retention.md) ，保留或刪除包含或預計包含個人資料之 Microsoft 365 中的內容。
+使用[保留原則和保留標籤](../compliance/retention.md)，保留或刪除包含或預計包含個人資料的 Microsoft 365 中的內容。
 
 ### <a name="records-management"></a>記錄管理
 
-使用可宣告內容 a 記錄的保留標籤，以對 Microsoft 365 中的資料執行 [記錄管理解決方案](../compliance/records-management.md) 。
+使用可宣告內容 a 記錄的保留標籤，以對 Microsoft 365 中的資料執行[記錄管理解決方案](../compliance/records-management.md)。
 
 針對資料隱私權，合法系所收到的資料主體要求 (Dsr) 會宣告一筆記錄，而且可以使用大量儲存或處置憑證，以遵守法規活動的保留規格。

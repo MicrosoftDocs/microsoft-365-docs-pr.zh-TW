@@ -1,5 +1,5 @@
 ---
-title: 從 Microsoft 365 for business 中刪除使用者
+title: 從商務 Microsoft 365 中刪除使用者
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何刪除 Microsoft 365 for business 中的使用者。
+description: 瞭解如何在 Microsoft 365 for business 中刪除使用者。
 ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51578924"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-當員工離開公司時，您必須從 Microsoft 365 商務版中移除。 在執行此作業之前，您應該封鎖他們存取公司檔案、保留其所建立的檔，以及執行與移除使用者相關的其他幾個系統管理員工作。
+當員工離開公司時，您必須將其從商務 Microsoft 365 中移除。 在執行此作業之前，您應該封鎖他們存取公司檔案、保留其所建立的檔，以及執行與移除使用者相關的其他幾個系統管理員工作。
 
 ## <a name="try-it"></a>試試看吧！
 

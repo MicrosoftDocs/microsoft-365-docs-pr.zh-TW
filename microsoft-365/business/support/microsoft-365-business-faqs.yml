@@ -40,10 +40,10 @@ sections:
       - 來自 Office 的商務應用程式 (Bookings、MileIQ<sup>1</sup>)。
 
 
-      **企業級的裝置管理和安全性功能**：
+      **Enterprise 級的裝置管理和安全性功能**：
 
 
-      - 協助提供來自 Microsoft Defender for Office 365 Plan 1 和 Microsoft Defender 利用防護等外部威脅（如網路釣魚和複雜惡意程式碼）的保護。
+      - 協助提供對 Microsoft Defender （如網路釣魚和複雜惡意程式碼）的外部威脅防護，以 Office 365 方案1和 Microsoft Defender 惡意探索防護。
 
       - 利用資料外洩防護原則和 Azure 資訊保護方案 1，協助控制及管理存取和傳送敏感性資訊的方式。
 
@@ -51,11 +51,11 @@ sections:
 
       - Office 的應用程式保護和使用 Intune 應用程式防護的其他行動裝置應用程式。
 
-      - Windows 10 電腦、macOS 及行動裝置的裝置管理，含 Intune 裝置管理。
+      - 使用 Intune 裝置管理的 Windows 10 電腦、macOS 及行動裝置裝置管理。
 
       - 使用多重要素驗證、自助密碼重設和條件式存取的身分識別保護。
 
-      - 跨各裝置的各裝置保護的一致性安全性設定 &mdash; ; 跨裝置保護公司資料;Microsoft Defender 防病毒，它永遠都在開啟及最新狀態。
+      - 跨各裝置的各裝置保護的一致性安全性設定 &mdash; ; 跨裝置保護公司資料;Microsoft Defender 防毒軟體，它永遠為 [開啟] 和 [最新的]。
 
 
       **簡化的裝置部署和使用者設定**：
@@ -73,7 +73,7 @@ sections:
       **其他權利**：
 
 
-      - Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另請參閱 [Microsoft 365 for business 服務說明](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+      - Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另請參閱[business service description Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
   - question: 誰應考慮採用 Microsoft 365 商務進階版？
     answer: >
       Microsoft 365 商務進階版是一項全面的雲端安全性解決方案，可讓您：
@@ -117,7 +117,7 @@ sections:
       Windows 10 商務版是一組雲端服務和裝置管理功能，這些功能彌補了 Windows 10 專業版的不足，並且啟用 Microsoft 365 商務進階版的集中式管理和安全性控制。
 
 
-      Windows 10 商務版也附帶特定的 Microsoft Defender 功能，例如控制資料夾存取和網路型威脅的網路保護。 它也包含 Windows AutoPilot，這是一項服務，可簡化新 Windows 10 電腦的部署。
+      Windows 10 商務版也附帶某些精品 Microsoft Defender 功能，例如控制的資料夾存取和網路型威脅的網路保護。 它也包含 Windows AutoPilot，這是一項服務，可簡化新 Windows 10 電腦的部署。
 
 
       如果您的裝置已取得 Windows 7、8 和 8.1 專業版的授權，Microsoft 365 商務進階版可讓您升級至 Windows 10 專業版，這是部署 Windows 10 商務版的必要條件。
@@ -136,16 +136,16 @@ sections:
       - **適用於 Office 行動裝置版應用程式的應用程式防護** 可協助應用程式保護 Office 資料，包括 iOS 和 Android 行動裝置上的電子郵件、行事曆、連絡人及文件，方法是強制執行如在規定時間內若未連接服務便刪除商務資料等原則、要求資訊僅儲存到商務用 OneDrive、要求提供 PIN/指紋驗證以存取 Office 應用程式，以及防止將公司資料從 Office 應用程式複製到個人應用程式。 Microsoft 365 商務進階版訂閱者也提供透過 Intune 取得其他行動裝置應用程式的行動裝置應用程式管理。
 
 
-      - **適用于 Windows 10 電腦的裝置管理** 可讓企業選擇設定和強制執行 Microsoft Defender 防防毒保護（如惡意程式碼、自動更新，以及在指定的時間後關閉螢幕）等功能。 此外，可以透過系統管理中心完全清除遺失或遭竊 Windows 10 裝置的商務應用程式和資料。
+      - **Windows 10 電腦裝置管理** 可讓企業選擇設定和強制執行惡意程式碼、自動更新，以及在指定時間後關閉螢幕的功能，例如 Microsoft Defender 防毒軟體保護。 此外，可以透過系統管理中心完全清除遺失或遭竊 Windows 10 裝置的商務應用程式和資料。
 
 
-      - **IOS、android & macOS 功能的裝置管理** 可協助企業安全地管理包括 IOS、Android、Windows 和 macOS 裝置的各種裝置生態系統。
+      - **iOS、android & macOS 功能的裝置管理** 可協助企業安全地管理包括 iOS、Android、Windows 和 macOS 裝置的各種裝置生態系統。
   - question: Microsoft 365 商務進階版如何協助保護組織中的電腦使其免受惡意攻擊？
     answer: >
-      使用 Microsoft 365 商務版管理的電腦受到 Microsoft Defender 防毒軟體的保護，也就是 No。 Windows 10 上排名第一的防毒功能，可較其他任何解決方案保護更多電腦免受病毒、惡意程式碼、間諜軟體及其他威脅攻擊。 透過 Microsoft 365 商務版 Premium，組織可以確保 Microsoft Defender 防防毒保護在其所有 Windows 10 裝置上都在執行，並永遠保持最新狀態。
+      使用 Microsoft 365 商務進階版管理的電腦受到 Microsoft Defender 防毒軟體保護，也就是「否」。 Windows 10 上排名第一的防毒功能，可較其他任何解決方案保護更多電腦免受病毒、惡意程式碼、間諜軟體及其他威脅攻擊。 透過 Microsoft 365 商務進階版，組織可以確保 Microsoft Defender 防毒軟體保護的執行，並在其所有 Windows 10 裝置上永遠保持最新狀態。
 
 
-      Windows 10 商務版也包含 Microsoft Defender 利用防護（一組新的入侵防護功能）。 它的其中一個功能（即「控制」資料夾存取）會鎖定資料夾，並防止未授權的應用程式存取使用者的重要檔案，以停止勒索軟體。
+      Windows 10 商務版也包含 Microsoft Defender 惡意探索防護（一組新的入侵防護功能）。 它的其中一個功能（即「控制」資料夾存取）會鎖定資料夾，並防止未授權的應用程式存取使用者的重要檔案，以停止勒索軟體。
   - question: Microsoft 365 商務標準版、Microsoft 365 商務進階版和 Microsoft 365 企業版之間有何差異？
     answer: >
       Microsoft 擁有小中型企業客戶在升級桌面和裝置的基礎結構時可能考量的各種生產力和安全性管理方案，而每一個方案提供越來越強大的特性及功能。
@@ -167,31 +167,31 @@ sections:
     answer: Microsoft 365 商務進階版試用版可供 CSP 使用。 稍後將為直接客戶提供試用版。
   - question: 客戶與合作夥伴在其組織中執行 Microsoft 365 商務進階版之前應該知道什麼？
     answer: >
-      想要體驗 Microsoft 365 商務版 Premium 完整功能的客戶，必須在其現有的桌上型電腦上執行 Windows 7、8.1 或 10 Pro<sup>2</sup> 。 現有的 Windows 10 專業版電腦應執行 Creators Update (如果尚未這麼做)。
+      想要體驗 Microsoft 365 商務進階版完整功能的客戶，必須在其現有桌面 Windows 7、8.1 或 10 Pro<sup>2</sup>上執行。 現有的 Windows 10 專業版電腦應執行 Creators Update (如果尚未這麼做)。
 - name: 部署
   questions:
   - question: 客戶在規劃 Microsoft 365 商務進階版部署時，應考慮哪些事項？
     answer: >
       成功部署 Microsoft 365 商務進階版的最直接途徑是與 Microsoft 合作夥伴接洽。 他們接受過大量訓練，遇到過各種不同的客戶案例，因此絕對最能了解您的環境和需求。 擁有資深 IT 人員的客戶，可以使用 [Microsoft 365 商務進階版入門](../microsoft-365-business-overview.md)來協助進行 Microsoft 365 商務進階版部署。
   - question: Microsoft 365 商務進階版是否包含完整的 Microsoft Intune 功能？
-    answer: 是的，已授權 Microsoft 365 商務版的訂戶使用完整的 Intune 功能，以供 iOS、Android、macOS 及其他跨平臺裝置管理使用。 在 Microsoft 365 商務版的簡化管理主控台中無法使用的功能，如協力廠商應用程式管理、Wi-Fi 設定檔的設定，以及 VPN 憑證，可在完整的 Intune 主控台中管理。
-  - question: Azure Active Directory (Azure AD) 優質 P1 是否隨附 Microsoft 365 商務版 Premium？
-    answer: 是的，Azure AD Premium P1 隨附于 Microsoft 商務版 Premium。
+    answer: 是的，已授權 Microsoft 365 商務進階版訂閱者使用 iOS、Android、macOS 和其他跨平臺裝置管理的完整 Intune 功能。 在 Microsoft 365 商務進階版的簡化管理主控台中無法使用的功能，如協力廠商應用程式管理、Wi-Fi 設定檔的設定，以及 VPN 憑證，可在完整的 Intune 主控台中進行管理。
+  - question: ) 進階版 P1 是否 Azure Active Directory (Azure AD 是否隨附 Microsoft 365 商務進階版？
+    answer: 是的，Azure AD 進階版 P1 隨附于 Microsoft 商務進階版中。
   - question: Microsoft 365 商務進階版是否允許客戶管理 Mac？
-    answer: Intune 可協助您安全地管理 iOS、Android、Windows 和 macOS 裝置。
+    answer: Intune 可協助您安全地管理 iOS、Android、Windows 及 macOS 裝置。
   - question: 什麼是 Windows AutoPilot？
     answer: >
-      Windows AutoPilot 是一項服務，可簡化新 Windows 10 電腦的部署。 使用者第一次登入 Microsoft 365 商務進階版時，便可完成此程序，&mdash;IT 人員完全不需要碰觸裝置&mdash;，只要利用 Microsoft 365 商務進階版的集中管理控制即可。 針對正在執行 Windows 10 專業版 Creators Update (或更新版本) 且已恢復出廠預設值的現有電腦，也可以使用 Windows AutoPilot。 有關 Windows AutoPilot 的詳細資訊，請參閱 [2017 年6月的博客文章](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/)。
+      Windows AutoPilot 是一項服務，可簡化新 Windows 10 電腦的部署。 使用者第一次登入 Microsoft 365 商務進階版時，便可完成此程序，&mdash;IT 人員完全不需要碰觸裝置&mdash;，只要利用 Microsoft 365 商務進階版的集中管理控制即可。 針對正在執行 Windows 10 專業版 Creators Update (或更新版本) 且已恢復出廠預設值的現有電腦，也可以使用 Windows AutoPilot。 您可以在[2017 年6月的博客文章](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/)中找到 Windows AutoPilot 的詳細資料。
 - name: 相容性
   questions:
   - question: 是否可以將 Office 365 附加元件新增至 Microsoft 365 商務進階版？
-    answer: 可以新增至 Microsoft 365 商務標準版的所有附加元件，都可以新增至 Microsoft 365 商務進階版。 這表示您可以購買 Office 365 Cloud App Security、Advanced 合規性、威脅情報、MyAnalytics、Power BI Pro 和音訊會議。
+    answer: 可以新增至 Microsoft 365 商務標準版的所有附加元件，都可以新增至 Microsoft 365 商務進階版。 這表示您可以購買 Office 365 雲端 App 安全性、高級規範、威脅情報、MyAnalytics、Power BI Pro 和音訊會議。
   - question: 是否可以將電話系統和通話方案新增至 Microsoft 365 商務進階版？
     answer: >
-      是的，您可以購買商務語音訂閱。 [商務語音](/microsoftteams/business-voice/whats-business-voice) 是一種電話語音解決方案，針對最高達300個使用者的中小企業，可捆綁電話系統、音訊會議、國內通話方案等等。 您將取得的電話系統功能包括語音信箱、來電者識別碼、通話駐留、來電轉接、自動語音應答及通話佇列。 <br> 若要瞭解您的國家或地區是否可使用商務語音，請參閱 [商務語音的國家和地區可用性](/microsoftteams/business-voice/country-region-availability)。 如需定價資訊，請參閱 [商務語音的定價](https://go.microsoft.com/fwlink/?linkid=2127221)。
-  - question: Microsoft 365 商務版客戶是否可以使用 Microsoft Defender for Endpoint？
+      是的，您可以購買商務語音訂閱。 [商務語音](/microsoftteams/business-voice/whats-business-voice)是一種電話語音解決方案，專為可300組成電話系統、音訊會議、國內通話方案等的中小企業，而設計。 電話系統的功能包括語音信箱、來電者識別碼、通話駐留、來電轉接、自動語音應答及通話佇列。 <br> 若要瞭解您的國家或地區是否可使用商務語音，請參閱 [商務語音的國家和地區可用性](/microsoftteams/business-voice/country-region-availability)。 如需定價資訊，請參閱 [商務語音的定價](https://go.microsoft.com/fwlink/?linkid=2127221)。
+  - question: Microsoft 365 商務進階版客戶可以使用 Microsoft Defender 做為端點嗎？
     answer: >
-      是的，當從 [Microsoft 雲端解決方案提供者](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)購買時，microsoft Defender for Endpoint 可以做為 Microsoft 365 商務版的附加元件。
+      是的，當從[Microsoft 雲端解決方案提供者](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)購買時，Microsoft Defender for Endpoint 可以做為 Microsoft 365 商務進階版的附加元件。
 - name: 合作夥伴商機
   questions:
   - question: 我可以在何處深入了解成為 Microsoft 合作夥伴的商機及優勢？
@@ -228,10 +228,10 @@ sections:
     answer: Microsoft 365 商務進階版無法將非正版 Windows 變成正版。 但 Microsoft 365 商務進階版的確可提供升級的權益，讓這些執行正版 Windows 7、8 或 8.1 專業版的客戶升級至最新正版的 Windows 10 專業版。
   - question: 什麼是 GDPR，以及 Microsoft 365 商務進階版如何協助客戶達成其合規性義務？
     answer: >
-      一般資料保護法規 (GDPR) 是完整的新隱私權法，可讓歐洲經濟共同體 (EU) 居民更能管控他們的「個人資料」，並要求組織維護個人資料的完整性。 GDPR 要求組織控制或處理繫結至歐盟居民的個人資料，如此只會使用符合 GDPR 對於個人資料處理要求之協力廠商資料處理者。 Microsoft 已在 2017 年 3 月對這些保證提供履約保證。 在 Microsoft 如何協助他們符合其他 GDPR 義務方面有問題的客戶，應瞭解 Microsoft 365 商務版 Premium (中可用的高級法規遵從性和安全性功能，例如，Azure 資訊保護、資料遺失防護、Defender for Office 365 等等，在) 和其他套件中 (例如，Microsoft 365 企業版 E5) 。 如需詳細資訊，請瀏覽 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
+      一般資料保護法規 (GDPR) 是完整的新隱私權法，可讓歐洲經濟共同體 (EU) 居民更能管控他們的「個人資料」，並要求組織維護個人資料的完整性。 GDPR 要求組織控制或處理繫結至歐盟居民的個人資料，如此只會使用符合 GDPR 對於個人資料處理要求之協力廠商資料處理者。 Microsoft 已在 2017 年 3 月對這些保證提供履約保證。 在 Microsoft 如何協助他們符合其他 GDPR 義務方面有問題的客戶，應瞭解 Microsoft 365 商務進階版 (中可用的高級規範與安全性功能，例如，Azure 資訊保護、資料遺失防護、Office 365 的 Defender 等) 及其他套件 (例如 Microsoft 365 企業版 E5) 。 如需詳細資訊，請瀏覽 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
 additionalContent: >-
   ## <a name="footnotes"></a>註腳
 
-  **1** 在美國、加拿大和英國提供。
+  **1** 可在美國、英國和加拿大使用。
 
-  **2** 執行 Windows 7 或 8.1 專業版的裝置，有資格在 Microsoft 365 商務進階版預覽版內升級至 Windows 10 專業版。
+  **2** 執行 Windows 7 或 8.1 Pro 的裝置適用于 Microsoft 365 商務進階版預覽內 Windows 10 專業版升級。

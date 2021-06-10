@@ -1,5 +1,5 @@
 ---
-title: Microsoft 小組中的開始和 pin 聊天
+title: Microsoft Teams 中的開始和 pin 碼聊天
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在 Microsoft 小組中開始和固定聊天。
+description: 瞭解如何在 Microsoft Teams 中開始和固定聊天。
 ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
