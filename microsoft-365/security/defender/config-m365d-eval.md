@@ -1,7 +1,7 @@
 ---
-title: 設定試用實驗室或試驗環境的 Microsoft 365 Defender 支柱
-description: 針對您的試用實驗室或試驗環境，設定 Microsoft 365 Defender 支柱，例如 Microsoft Defender for Office 365、Microsoft Defender 身分識別、Microsoft Cloud App Security 及 Microsoft Defender for Endpoint。
-keywords: 設定 Microsoft 365 Defender 試用版，Microsoft 365 Defender 試用版設定，設定 Microsoft 365 Defender 試驗專案，設定 Microsoft 365 Defender 支柱，Microsoft 365 Defender 支柱
+title: 設定試用實驗室或試驗環境 Microsoft 365 Defender 支柱
+description: 針對您的試用實驗室或試驗環境，針對 Office 365 設定 Microsoft 365 的 defender 支柱，例如 microsoft defender for、microsoft defender for Identity、Microsoft Cloud App Security 和 Microsoft defender for Endpoint。
+keywords: 設定 Microsoft 365 defender 試用版、Microsoft 365 Defender 試用版設定、設定 Microsoft 365 defender 試驗專案、設定 Microsoft 365 的 defender 支柱、Microsoft 365 Defender 支柱
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,264 +28,264 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933502"
 ---
-# <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a><span data-ttu-id="c383a-104">為您的試用實驗室或試驗環境設定 Microsoft 365 Defender 支柱</span><span class="sxs-lookup"><span data-stu-id="c383a-104">Configure Microsoft 365 Defender pillars for your trial lab or pilot environment</span></span>
+# <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a><span data-ttu-id="55df9-104">為您的試用實驗室或試驗環境設定 Microsoft 365 Defender 支柱</span><span class="sxs-lookup"><span data-stu-id="55df9-104">Configure Microsoft 365 Defender pillars for your trial lab or pilot environment</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="c383a-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="c383a-105">**Applies to:**</span></span>
-- <span data-ttu-id="c383a-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c383a-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="55df9-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="55df9-105">**Applies to:**</span></span>
+- <span data-ttu-id="55df9-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="55df9-106">Microsoft 365 Defender</span></span>
 
 
-<span data-ttu-id="c383a-107">建立 Microsoft 365 Defender 試驗實驗室或試驗環境並加以部署時，會有三個階段的處理常式：</span><span class="sxs-lookup"><span data-stu-id="c383a-107">Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:</span></span>
+<span data-ttu-id="55df9-107">建立 Microsoft 365 的 Defender 試用實驗室或試驗環境並加以部署時，會有三個階段的程式：</span><span class="sxs-lookup"><span data-stu-id="55df9-107">Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:</span></span>
 
-|<span data-ttu-id="c383a-108">[![階段 1：準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)</span><span class="sxs-lookup"><span data-stu-id="c383a-108">[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)</span></span><br/>[<span data-ttu-id="c383a-109">階段 1：準備</span><span class="sxs-lookup"><span data-stu-id="c383a-109">Phase 1: Prepare</span></span>](prepare-m365d-eval.md) |<span data-ttu-id="c383a-110">[![階段 2：設定](../../media/phase-diagrams/setup.png)](setup-m365deval.md)</span><span class="sxs-lookup"><span data-stu-id="c383a-110">[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-m365deval.md)</span></span><br/>[<span data-ttu-id="c383a-111">階段 2：設定</span><span class="sxs-lookup"><span data-stu-id="c383a-111">Phase 2: Set up</span></span>](setup-m365deval.md) |![第 3 階段：導入](../../media/phase-diagrams/onboard.png)<br/><span data-ttu-id="c383a-113">第 3 階段：導入</span><span class="sxs-lookup"><span data-stu-id="c383a-113">Phase 3: Onboard</span></span> | <span data-ttu-id="c383a-114">[![回到試驗](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)</span><span class="sxs-lookup"><span data-stu-id="c383a-114">[![Back to pilot](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)</span></span><br/>[<span data-ttu-id="c383a-115">回到試驗行動手冊</span><span class="sxs-lookup"><span data-stu-id="c383a-115">Back to pilot playbook</span></span>](m365d-pilot.md) |
+|<span data-ttu-id="55df9-108">[![階段 1：準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)</span><span class="sxs-lookup"><span data-stu-id="55df9-108">[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)</span></span><br/>[<span data-ttu-id="55df9-109">階段 1：準備</span><span class="sxs-lookup"><span data-stu-id="55df9-109">Phase 1: Prepare</span></span>](prepare-m365d-eval.md) |<span data-ttu-id="55df9-110">[![階段 2：設定](../../media/phase-diagrams/setup.png)](setup-m365deval.md)</span><span class="sxs-lookup"><span data-stu-id="55df9-110">[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-m365deval.md)</span></span><br/>[<span data-ttu-id="55df9-111">階段 2：設定</span><span class="sxs-lookup"><span data-stu-id="55df9-111">Phase 2: Set up</span></span>](setup-m365deval.md) |![第 3 階段：導入](../../media/phase-diagrams/onboard.png)<br/><span data-ttu-id="55df9-113">第 3 階段：導入</span><span class="sxs-lookup"><span data-stu-id="55df9-113">Phase 3: Onboard</span></span> | <span data-ttu-id="55df9-114">[![回到試驗](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)</span><span class="sxs-lookup"><span data-stu-id="55df9-114">[![Back to pilot](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)</span></span><br/>[<span data-ttu-id="55df9-115">回到試驗行動手冊</span><span class="sxs-lookup"><span data-stu-id="55df9-115">Back to pilot playbook</span></span>](m365d-pilot.md) |
 |--|--|--|--|
-|| |<span data-ttu-id="c383a-116">*您在這裡！*</span><span class="sxs-lookup"><span data-stu-id="c383a-116">*You are here!*</span></span> | |
+|| |<span data-ttu-id="55df9-116">*您在這裡！*</span><span class="sxs-lookup"><span data-stu-id="55df9-116">*You are here!*</span></span> | |
 
-<span data-ttu-id="c383a-117">您目前正在設定階段。</span><span class="sxs-lookup"><span data-stu-id="c383a-117">You're currently in the configuration phase.</span></span>
+<span data-ttu-id="55df9-117">您目前正在設定階段。</span><span class="sxs-lookup"><span data-stu-id="55df9-117">You're currently in the configuration phase.</span></span>
 
-<span data-ttu-id="c383a-118">準備工作是任何成功部署的關鍵。</span><span class="sxs-lookup"><span data-stu-id="c383a-118">Preparation is key to any successful deployment.</span></span> <span data-ttu-id="c383a-119">在本文中，您將指導您準備部署 Microsoft Defender 做為端點時所需考慮的點數。</span><span class="sxs-lookup"><span data-stu-id="c383a-119">In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender for Endpoint.</span></span>
-
-
-## <a name="microsoft-365-defender-pillars"></a><span data-ttu-id="c383a-120">Microsoft 365 Defender 支柱</span><span class="sxs-lookup"><span data-stu-id="c383a-120">Microsoft 365 Defender pillars</span></span>
-<span data-ttu-id="c383a-121">Microsoft 365 Defender 包含四個支柱。</span><span class="sxs-lookup"><span data-stu-id="c383a-121">Microsoft 365 Defender consists of four pillars.</span></span> <span data-ttu-id="c383a-122">雖然一個 pillar 可以為您的網路組織的安全性提供價值，但是啟用四個 Microsoft 365 Defender 支柱會為組織提供最大的價值。</span><span class="sxs-lookup"><span data-stu-id="c383a-122">Although one pillar can already provide value to your network organization's security, enabling the four Microsoft 365 Defender pillars will give your organization the most value.</span></span>
-
-![影像 of_Microsoft 365 Defender 解決方案，適用于使用者、Microsoft Defender 身分識別、端點 Microsoft Defender for Endpoint、雲端應用程式、Microsoft Cloud App Security 及 data、Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
-
-<span data-ttu-id="c383a-124">本節會引導您設定下列專案：</span><span class="sxs-lookup"><span data-stu-id="c383a-124">This section will guide you to configure:</span></span>
--   <span data-ttu-id="c383a-125">適用於 Office 365 的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="c383a-125">Microsoft Defender for Office 365</span></span>
--   <span data-ttu-id="c383a-126">適用於身分識別的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="c383a-126">Microsoft Defender for Identity</span></span> 
--   <span data-ttu-id="c383a-127">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="c383a-127">Microsoft Cloud App Security</span></span>
--   <span data-ttu-id="c383a-128">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="c383a-128">Microsoft Defender for Endpoint</span></span>
+<span data-ttu-id="55df9-118">準備工作是任何成功部署的關鍵。</span><span class="sxs-lookup"><span data-stu-id="55df9-118">Preparation is key to any successful deployment.</span></span> <span data-ttu-id="55df9-119">在本文中，您將指導您準備部署 Microsoft Defender 做為端點時所需考慮的點數。</span><span class="sxs-lookup"><span data-stu-id="55df9-119">In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender for Endpoint.</span></span>
 
 
-## <a name="configure-microsoft-defender-for-office-365"></a><span data-ttu-id="c383a-129">設定 Microsoft Defender for Office 365</span><span class="sxs-lookup"><span data-stu-id="c383a-129">Configure Microsoft Defender for Office 365</span></span>
+## <a name="microsoft-365-defender-pillars"></a><span data-ttu-id="55df9-120">Microsoft 365Defender 支柱</span><span class="sxs-lookup"><span data-stu-id="55df9-120">Microsoft 365 Defender pillars</span></span>
+<span data-ttu-id="55df9-121">Microsoft 365Defender 包含四個支柱。</span><span class="sxs-lookup"><span data-stu-id="55df9-121">Microsoft 365 Defender consists of four pillars.</span></span> <span data-ttu-id="55df9-122">雖然一個 pillar 可以為您的網路組織的安全性提供價值，但是啟用四個 Microsoft 365 的 Defender 支柱將為您的組織提供最大的價值。</span><span class="sxs-lookup"><span data-stu-id="55df9-122">Although one pillar can already provide value to your network organization's security, enabling the four Microsoft 365 Defender pillars will give your organization the most value.</span></span>
+
+![影像 of_Microsoft 365 defender 解決方案，適用于使用者、microsoft defender for Identity、端點 Microsoft defender for Endpoint、雲端應用程式、Microsoft Cloud App Security 及資料的 microsoft defender Office 365](../../media/mtp/m365pillars.png)
+
+<span data-ttu-id="55df9-124">本節會引導您設定下列專案：</span><span class="sxs-lookup"><span data-stu-id="55df9-124">This section will guide you to configure:</span></span>
+-   <span data-ttu-id="55df9-125">適用於 Office 365 的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="55df9-125">Microsoft Defender for Office 365</span></span>
+-   <span data-ttu-id="55df9-126">適用於身分識別的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="55df9-126">Microsoft Defender for Identity</span></span> 
+-   <span data-ttu-id="55df9-127">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="55df9-127">Microsoft Cloud App Security</span></span>
+-   <span data-ttu-id="55df9-128">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="55df9-128">Microsoft Defender for Endpoint</span></span>
+
+
+## <a name="configure-microsoft-defender-for-office-365"></a><span data-ttu-id="55df9-129">為 Office 365 設定 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="55df9-129">Configure Microsoft Defender for Office 365</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c383a-130">如果您已啟用 Office 365 的 Defender，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="c383a-130">Skip this step if you've already enabled Defender for Office 365.</span></span> 
+><span data-ttu-id="55df9-130">如果您已啟用 Office 365 的 Defender，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="55df9-130">Skip this step if you've already enabled Defender for Office 365.</span></span> 
 
-<span data-ttu-id="c383a-131">有一個稱為「 *Office 365 高級威脅防護* 」的 PowerShell 模組 (ORCA) 可協助判斷部分設定。</span><span class="sxs-lookup"><span data-stu-id="c383a-131">There's a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings.</span></span> <span data-ttu-id="c383a-132">當您在租使用者中以系統管理員身分執行時，ORCAReport 將協助產生反垃圾郵件、反網路釣魚和其他郵件衛生設定的評估。</span><span class="sxs-lookup"><span data-stu-id="c383a-132">When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings.</span></span> <span data-ttu-id="c383a-133">您可以從下載此模組 https://www.powershellgallery.com/packages/ORCA/ 。</span><span class="sxs-lookup"><span data-stu-id="c383a-133">You can download this module from https://www.powershellgallery.com/packages/ORCA/.</span></span> 
+<span data-ttu-id="55df9-131">有一個稱為「 *Office 365 高級威脅防護*」的 PowerShell 模組 (ORCA) ，以協助決定某些設定。</span><span class="sxs-lookup"><span data-stu-id="55df9-131">There's a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings.</span></span> <span data-ttu-id="55df9-132">當您在租使用者中以系統管理員身分執行時，ORCAReport 將協助產生反垃圾郵件、反網路釣魚和其他郵件衛生設定的評估。</span><span class="sxs-lookup"><span data-stu-id="55df9-132">When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings.</span></span> <span data-ttu-id="55df9-133">您可以從下載此模組 https://www.powershellgallery.com/packages/ORCA/ 。</span><span class="sxs-lookup"><span data-stu-id="55df9-133">You can download this module from https://www.powershellgallery.com/packages/ORCA/.</span></span> 
 
-1. <span data-ttu-id="c383a-134">流覽至 [Office 365 Security & 合規性中心](https://protection.office.com/homepage)  >  **威脅管理**  >  **原則**。</span><span class="sxs-lookup"><span data-stu-id="c383a-134">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**.</span></span>
+1. <span data-ttu-id="55df9-134">流覽至 [Office 365 安全性 & 規範中心](https://protection.office.com/homepage)  >  **威脅管理**  >  **原則**。</span><span class="sxs-lookup"><span data-stu-id="55df9-134">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**.</span></span>
 
    ![Image of_Office 365 Security & 合規性中心威脅管理原則頁面](../../media/mtp-eval-32.png)
  
-2. <span data-ttu-id="c383a-136">按一下 [ **反網路釣魚**]，選取 [ **建立** 並填入原則名稱和描述]。</span><span class="sxs-lookup"><span data-stu-id="c383a-136">Click **Anti-phishing**, select **Create** and fill in the policy name and description.</span></span> <span data-ttu-id="c383a-137">按 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="c383a-137">Click **Next**.</span></span>
+2. <span data-ttu-id="55df9-136">按一下 [ **反網路釣魚**]，選取 [ **建立** 並填入原則名稱和描述]。</span><span class="sxs-lookup"><span data-stu-id="55df9-136">Click **Anti-phishing**, select **Create** and fill in the policy name and description.</span></span> <span data-ttu-id="55df9-137">按 [下一步 **]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-137">Click **Next**.</span></span>
 
    ![Image of_Office 365 Security & 合規性中心反網路釣魚原則頁面，您可以在其中命名原則](../../media/mtp-eval-33.png)
 
    > [!NOTE]
-   > <span data-ttu-id="c383a-139">在 Microsoft Defender for Office 365 中編輯您的高級防網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="c383a-139">Edit your Advanced anti-phishing policy in Microsoft Defender for Office 365.</span></span> <span data-ttu-id="c383a-140">將 **高級網路釣魚閥值** 變更為 **2-嚴格**。</span><span class="sxs-lookup"><span data-stu-id="c383a-140">Change **Advanced Phishing Threshold** to **2 - Aggressive**.</span></span>
+   > <span data-ttu-id="55df9-139">在 Microsoft Defender 中編輯您的高級防網路釣魚原則，以供 Office 365。</span><span class="sxs-lookup"><span data-stu-id="55df9-139">Edit your Advanced anti-phishing policy in Microsoft Defender for Office 365.</span></span> <span data-ttu-id="55df9-140">將 **高級網路釣魚閥值** 變更為 **2-嚴格**。</span><span class="sxs-lookup"><span data-stu-id="55df9-140">Change **Advanced Phishing Threshold** to **2 - Aggressive**.</span></span>
 
-3. <span data-ttu-id="c383a-141">按一下 [ **新增條件** ] 下拉式功能表，然後選取您的網域 (s) 做為收件者網域。</span><span class="sxs-lookup"><span data-stu-id="c383a-141">Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain.</span></span> <span data-ttu-id="c383a-142">按 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="c383a-142">Click **Next**.</span></span>
+3. <span data-ttu-id="55df9-141">按一下 [ **新增條件** ] 下拉式功能表，然後選取您的網域 (s) 做為收件者網域。</span><span class="sxs-lookup"><span data-stu-id="55df9-141">Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain.</span></span> <span data-ttu-id="55df9-142">按 [下一步 **]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-142">Click **Next**.</span></span>
 
    ![Image of_Office 365 Security & 合規性中心反網路釣魚原則頁面，您可以在其中新增其應用程式的條件](../../media/mtp-eval-34.png)
  
-4. <span data-ttu-id="c383a-144">請複查您的設定。</span><span class="sxs-lookup"><span data-stu-id="c383a-144">Review your settings.</span></span> <span data-ttu-id="c383a-145">按一下 [ **建立這個原則** ] 以確認。</span><span class="sxs-lookup"><span data-stu-id="c383a-145">Click **Create this policy** to confirm.</span></span> 
+4. <span data-ttu-id="55df9-144">請複查您的設定。</span><span class="sxs-lookup"><span data-stu-id="55df9-144">Review your settings.</span></span> <span data-ttu-id="55df9-145">按一下 [ **建立這個原則** ] 以確認。</span><span class="sxs-lookup"><span data-stu-id="55df9-145">Click **Create this policy** to confirm.</span></span> 
 
    ![Image of_Office 365 Security & 相容性中心反網路釣魚原則頁面，您可以在其中檢查您的設定，然後按一下 [建立這個原則] 按鈕](../../media/mtp-eval-35.png)
  
-5. <span data-ttu-id="c383a-147">選取 [ **安全附件** ]，然後選取 [ **開啟 SharePoint]、[OneDrive] 和 [Microsoft 小組** ] 選項的 ATP。</span><span class="sxs-lookup"><span data-stu-id="c383a-147">Select **Safe Attachments** and select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** option.</span></span>
+5. <span data-ttu-id="55df9-147">選取 [**安全附件**]，然後選取 [**開啟 ATP] SharePoint、OneDrive 及 Microsoft Teams** ] 選項。</span><span class="sxs-lookup"><span data-stu-id="55df9-147">Select **Safe Attachments** and select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** option.</span></span>
 
-   ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在其中開啟 SharePoint、OneDrive 及 Microsoft 小組的 ATP](../../media/mtp-eval-36.png)
+   ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在此頁面上開啟 SharePoint、OneDrive 及 Microsoft Teams 的 ATP。](../../media/mtp-eval-36.png)
 
-6. <span data-ttu-id="c383a-149">按一下 [+] 圖示，以建立新的安全附件原則，並將其套用為網域的收件者網域。</span><span class="sxs-lookup"><span data-stu-id="c383a-149">Click the + icon to create a new safe attachment policy, apply it as recipient domain to your domains.</span></span> <span data-ttu-id="c383a-150">按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="c383a-150">Click **Save**.</span></span>
+6. <span data-ttu-id="55df9-149">按一下 [+] 圖示，以建立新的安全附件原則，並將其套用為網域的收件者網域。</span><span class="sxs-lookup"><span data-stu-id="55df9-149">Click the + icon to create a new safe attachment policy, apply it as recipient domain to your domains.</span></span> <span data-ttu-id="55df9-150">按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-150">Click **Save**.</span></span>
 
    ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在此頁面上建立新的安全附件原則](../../media/mtp-eval-37.png)
  
-7. <span data-ttu-id="c383a-152">接下來，選取 [ **安全連結** 原則]，然後按一下鉛筆圖示以編輯預設原則。</span><span class="sxs-lookup"><span data-stu-id="c383a-152">Next, select the **Safe Links** policy, then click the pencil icon to edit the default policy.</span></span>
+7. <span data-ttu-id="55df9-152">接下來，選取 [ **安全連結** 原則]，然後按一下鉛筆圖示以編輯預設原則。</span><span class="sxs-lookup"><span data-stu-id="55df9-152">Next, select the **Safe Links** policy, then click the pencil icon to edit the default policy.</span></span>
 
-8. <span data-ttu-id="c383a-153">請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。</span><span class="sxs-lookup"><span data-stu-id="c383a-153">Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected.</span></span> <span data-ttu-id="c383a-154">如需詳細資訊，請參閱 [安全連結設定](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) 。</span><span class="sxs-lookup"><span data-stu-id="c383a-154">See [Safe Links settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) for details.</span></span> <span data-ttu-id="c383a-155">按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="c383a-155">Click **Save**.</span></span> 
+8. <span data-ttu-id="55df9-153">請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。</span><span class="sxs-lookup"><span data-stu-id="55df9-153">Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected.</span></span> <span data-ttu-id="55df9-154">如需詳細資訊，請參閱 [安全連結設定](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) 。</span><span class="sxs-lookup"><span data-stu-id="55df9-154">See [Safe Links settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) for details.</span></span> <span data-ttu-id="55df9-155">按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-155">Click **Save**.</span></span> 
 
    ![Image of_Office 365 Security & 相容性中心] 頁面，顯示未選取 [使用者按一下安全時不會追蹤] 選項](../../media/mtp-eval-38.png)
 
-9. <span data-ttu-id="c383a-157">接下來選取 **反惡意** 代碼原則，選取預設值，然後選擇 [鉛筆] 圖示。</span><span class="sxs-lookup"><span data-stu-id="c383a-157">Next select the **Anti-malware** policy, select the default, and choose the pencil icon.</span></span>
+9. <span data-ttu-id="55df9-157">接下來選取 **反惡意** 代碼原則，選取預設值，然後選擇 [鉛筆] 圖示。</span><span class="sxs-lookup"><span data-stu-id="55df9-157">Next select the **Anti-malware** policy, select the default, and choose the pencil icon.</span></span>
 
-10. <span data-ttu-id="c383a-158">按一下 [ **設定** ]，然後選取 **[是] 並使用預設通知文字** ，以啟用 **惡意程式碼偵測回應**。</span><span class="sxs-lookup"><span data-stu-id="c383a-158">Click **Settings** and select **Yes and use the default notification text** to enable **Malware Detection Response**.</span></span> <span data-ttu-id="c383a-159">開啟 **通用附件類型 Filter** 。</span><span class="sxs-lookup"><span data-stu-id="c383a-159">Turn the **Common Attachment Types Filter** on.</span></span> <span data-ttu-id="c383a-160">按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="c383a-160">Click **Save**.</span></span>
+10. <span data-ttu-id="55df9-158">按一下 [**設定**]，然後選取 **[是] 並使用預設通知文字**，以啟用 **惡意程式碼偵測回應**。</span><span class="sxs-lookup"><span data-stu-id="55df9-158">Click **Settings** and select **Yes and use the default notification text** to enable **Malware Detection Response**.</span></span> <span data-ttu-id="55df9-159">開啟 **通用附件類型 Filter** 。</span><span class="sxs-lookup"><span data-stu-id="55df9-159">Turn the **Common Attachment Types Filter** on.</span></span> <span data-ttu-id="55df9-160">按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-160">Click **Save**.</span></span>
 
     ![Image of_Office 365 Security & 合規性中心] 頁面，顯示惡意程式碼偵測回應開啟時會啟用預設通知，而一般附件類型篩選已開啟](../../media/mtp-eval-39.png)
   
-11. <span data-ttu-id="c383a-162">流覽至 [Office 365 Security & 合規性中心](https://protection.office.com/homepage)  >  **搜尋**  >  **審核記錄檔搜尋**，然後開啟審計。</span><span class="sxs-lookup"><span data-stu-id="c383a-162">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Search** > **Audit log search** and turn Auditing on.</span></span>
+11. <span data-ttu-id="55df9-162">流覽至 [Office 365 安全性 & 相容性中心](https://protection.office.com/homepage)  >  **搜尋**  >  **審核記錄檔搜尋**，然後開啟審核。</span><span class="sxs-lookup"><span data-stu-id="55df9-162">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Search** > **Audit log search** and turn Auditing on.</span></span>
 
     ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在此開啟審核記錄搜尋](../../media/mtp-eval-40.png)
 
-12. <span data-ttu-id="c383a-164">整合 Microsoft Defender for Office 365 搭配 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="c383a-164">Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="c383a-165">流覽至 [Office 365 Security & 合規性中心](https://protection.office.com/homepage)  >  **威脅管理**  >  **瀏覽器**，然後選取螢幕右上角的 [ **Microsoft Defender for Endpoint] 設定**。</span><span class="sxs-lookup"><span data-stu-id="c383a-165">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **Microsoft Defender for Endpoint Settings** on the upper right corner of the screen.</span></span> <span data-ttu-id="c383a-166">在 [Defender for Endpoint connection] 對話方塊中，開啟 **[連線至 Microsoft Defender For endpoint**]。</span><span class="sxs-lookup"><span data-stu-id="c383a-166">In the Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.</span></span>
+12. <span data-ttu-id="55df9-164">使用 microsoft defender for Endpoint 整合 microsoft defender for Office 365。</span><span class="sxs-lookup"><span data-stu-id="55df9-164">Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="55df9-165">流覽至 [Office 365 安全性 & 規範中心](https://protection.office.com/homepage)  >  **威脅管理**  >  **瀏覽器**，並選取螢幕右上角的 [ **Microsoft Defender for Endpoint] 設定**。</span><span class="sxs-lookup"><span data-stu-id="55df9-165">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **Microsoft Defender for Endpoint Settings** on the upper right corner of the screen.</span></span> <span data-ttu-id="55df9-166">在 [Defender for endpoint connection] 對話方塊中，開啟 [ **Microsoft defender for endpoint**] 的連線。</span><span class="sxs-lookup"><span data-stu-id="55df9-166">In the Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.</span></span>
 
     ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在此頁面上開啟 Microsoft Defender for Endpoint connection。](../../media/mtp-eval-41.png)
 
-## <a name="configure-microsoft-defender-for-identity"></a><span data-ttu-id="c383a-168">設定 Microsoft Defender 身分識別</span><span class="sxs-lookup"><span data-stu-id="c383a-168">Configure Microsoft Defender for Identity</span></span>
+## <a name="configure-microsoft-defender-for-identity"></a><span data-ttu-id="55df9-168">設定 Microsoft Defender 身分識別</span><span class="sxs-lookup"><span data-stu-id="55df9-168">Configure Microsoft Defender for Identity</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c383a-169">如果您已啟用 Microsoft Defender 身分識別，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="c383a-169">Skip this step if you've already enabled Microsoft Defender for Identity</span></span>
+><span data-ttu-id="55df9-169">如果您已啟用 Microsoft Defender 身分識別，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="55df9-169">Skip this step if you've already enabled Microsoft Defender for Identity</span></span>
 
-1. <span data-ttu-id="c383a-170">流覽至 [microsoft 365 Security Center](https://security.microsoft.com/info) > 選取 [microsoft Defender 身分識別] 的 [**更多資源**]  >  \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c383a-170">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Microsoft Defender for Identity**.</span></span>
+1. <span data-ttu-id="55df9-170">流覽至 [Microsoft 365 的安全性中心](https://security.microsoft.com/info)> 選取 [Microsoft Defender 身分識別] 的 [**更多資源**]  >  \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="55df9-170">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Microsoft Defender for Identity**.</span></span>
 
    ![Image of_Microsoft 365 Security Center 頁面，其中有一個可為身分識別開啟 Microsoft Defender 的選項](../../media/mtp-eval-42.png)
 
-2. <span data-ttu-id="c383a-172">按一下 [ **建立** ]，以啟動 Microsoft Defender 身分識別嚮導。</span><span class="sxs-lookup"><span data-stu-id="c383a-172">Click **Create** to start the Microsoft Defender for Identity wizard.</span></span> 
+2. <span data-ttu-id="55df9-172">按一下 [ **建立** ]，以啟動 Microsoft Defender 身分識別嚮導。</span><span class="sxs-lookup"><span data-stu-id="55df9-172">Click **Create** to start the Microsoft Defender for Identity wizard.</span></span> 
 
    ![Image of_Microsoft 身分識別嚮導的 Defender] 頁面，您應該按一下 [建立] 按鈕](../../media/mtp-eval-43.png)
 
-3. <span data-ttu-id="c383a-174">選擇 [ **提供使用者名稱和密碼] 以連線至您的 Active Directory 樹** 系。</span><span class="sxs-lookup"><span data-stu-id="c383a-174">Choose **Provide a username and password to connect to your Active Directory forest**.</span></span>  
+3. <span data-ttu-id="55df9-174">選擇 [ **提供使用者名稱和密碼] 以連線至您的 Active Directory 樹** 系。</span><span class="sxs-lookup"><span data-stu-id="55df9-174">Choose **Provide a username and password to connect to your Active Directory forest**.</span></span>  
 
    ![鏡像 of_Microsoft 身分識別的 Defender 頁面](../../media/mtp-eval-44.png)
 
-4. <span data-ttu-id="c383a-176">輸入您的 Active Directory 內部部署認證。</span><span class="sxs-lookup"><span data-stu-id="c383a-176">Enter your Active Directory on-premises credentials.</span></span> <span data-ttu-id="c383a-177">這可以是具有 Active Directory 讀取權限的任何使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="c383a-177">This can be any user account that has read access to Active Directory.</span></span>
+4. <span data-ttu-id="55df9-176">輸入您的 Active Directory 內部部署認證。</span><span class="sxs-lookup"><span data-stu-id="55df9-176">Enter your Active Directory on-premises credentials.</span></span> <span data-ttu-id="55df9-177">這可以是具有 Active Directory 讀取權限的任何使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="55df9-177">This can be any user account that has read access to Active Directory.</span></span>
 
    ![Image of_Microsoft 用於身分識別目錄服務的 Defender 目錄服務] 頁面，您應該在這裡放置您的認證](../../media/mtp-eval-45.png)
 
-5. <span data-ttu-id="c383a-179">接下來，選擇 [將 **感應器安裝** 和傳輸檔案下載到您的網域控制站]。</span><span class="sxs-lookup"><span data-stu-id="c383a-179">Next, choose **Download Sensor Setup** and transfer file to your domain controller.</span></span>
+5. <span data-ttu-id="55df9-179">接下來，選擇 [將 **感應器安裝** 和傳輸檔案下載到您的網域控制站]。</span><span class="sxs-lookup"><span data-stu-id="55df9-179">Next, choose **Download Sensor Setup** and transfer file to your domain controller.</span></span>
 
    ![影像 of_Microsoft 身分識別] 頁面，您可以在其中選取 [下載感應器設定]](../../media/mtp-eval-46.png)
 
-6. <span data-ttu-id="c383a-181">針對身分識別感應器安裝執行 Microsoft Defender，並開始遵循此嚮導。</span><span class="sxs-lookup"><span data-stu-id="c383a-181">Execute the Microsoft Defender for Identity Sensor Setup and begin following the wizard.</span></span>
+6. <span data-ttu-id="55df9-181">針對身分識別感應器安裝執行 Microsoft Defender，並開始遵循此嚮導。</span><span class="sxs-lookup"><span data-stu-id="55df9-181">Execute the Microsoft Defender for Identity Sensor Setup and begin following the wizard.</span></span>
 
    ![Image of_Microsoft 用於身分識別的 Defender] 頁面，您應該按 [下一步] 遵循 Microsoft Defender for Identity 感應器嚮導](../../media/mtp-eval-47.png)
  
-7. <span data-ttu-id="c383a-183">在感應器部署類型中按 **[下一步]** 。</span><span class="sxs-lookup"><span data-stu-id="c383a-183">Click **Next** at the sensor deployment type.</span></span>
+7. <span data-ttu-id="55df9-183">在感應器部署類型中按 **[下一步]** 。</span><span class="sxs-lookup"><span data-stu-id="55df9-183">Click **Next** at the sensor deployment type.</span></span>
 
    ![影像 of_Microsoft 身分識別] 頁面，您應該在此按 [下一步] 移至下一頁面](../../media/mtp-eval-48.png)
  
-8. <span data-ttu-id="c383a-185">複製存取機碼，因為您需要在嚮導的下一步輸入它。</span><span class="sxs-lookup"><span data-stu-id="c383a-185">Copy the access key because you need to enter it next in the Wizard.</span></span>
+8. <span data-ttu-id="55df9-185">複製存取機碼，因為您需要在嚮導的下一步輸入它。</span><span class="sxs-lookup"><span data-stu-id="55df9-185">Copy the access key because you need to enter it next in the Wizard.</span></span>
 
    ![影像 of_the 感應器頁面，您應該在下一個 Microsoft Defender for Identity 感應器安裝精靈] 頁面中複製您需要輸入的訪問機碼。](../../media/mtp-eval-49.png)
  
-9. <span data-ttu-id="c383a-187">將存取機碼複製到嚮導，然後按一下 [ **安裝**]。</span><span class="sxs-lookup"><span data-stu-id="c383a-187">Copy the access key into the Wizard and click **Install**.</span></span> 
+9. <span data-ttu-id="55df9-187">將存取機碼複製到嚮導，然後按一下 [ **安裝**]。</span><span class="sxs-lookup"><span data-stu-id="55df9-187">Copy the access key into the Wizard and click **Install**.</span></span> 
 
    ![Image of_Microsoft 用於身分識別感應器的 Defender 嚮導] 頁面，您應該在此頁面上提供存取機碼，然後按一下 [安裝] 按鈕](../../media/mtp-eval-50.png)
 
-10. <span data-ttu-id="c383a-189">恭喜，您已在您的網域控制站上成功設定 Microsoft Defender 身分識別。</span><span class="sxs-lookup"><span data-stu-id="c383a-189">Congratulations, you've successfully configured Microsoft Defender for Identity on your domain controller.</span></span>
+10. <span data-ttu-id="55df9-189">恭喜，您已在您的網域控制站上成功設定 Microsoft Defender 身分識別。</span><span class="sxs-lookup"><span data-stu-id="55df9-189">Congratulations, you've successfully configured Microsoft Defender for Identity on your domain controller.</span></span>
 
     ![Image of_Microsoft 用於身分識別感應器的 Defender 安裝程式安裝完成，您應該按一下 [完成] 按鈕](../../media/mtp-eval-51.png)
  
-11. <span data-ttu-id="c383a-191">在 [ [Microsoft defender 身分識別](https://go.microsoft.com/fwlink/?linkid=2040449) 設定] 區段中，選取 [\* \* microsoft Defender for Endpoint \* \*]，然後開啟切換。</span><span class="sxs-lookup"><span data-stu-id="c383a-191">Under the [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select \*\*Microsoft Defender for Endpoint \*\*, then turn on the toggle.</span></span> <span data-ttu-id="c383a-192">按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="c383a-192">Click **Save**.</span></span> 
+11. <span data-ttu-id="55df9-191">在 [ [Microsoft defender 身分識別](https://go.microsoft.com/fwlink/?linkid=2040449) 設定] 區段中，選取 [\* \* microsoft Defender for Endpoint \* \*]，然後開啟切換。</span><span class="sxs-lookup"><span data-stu-id="55df9-191">Under the [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select \*\*Microsoft Defender for Endpoint \*\*, then turn on the toggle.</span></span> <span data-ttu-id="55df9-192">按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-192">Click **Save**.</span></span> 
 
     ![Image of_the Microsoft Defender 身分識別設定] 頁面，您應該在此頁面上開啟 Microsoft Defender 的端點切換功能](../../media/mtp-eval-52.png)
 
 
-## <a name="configure-microsoft-cloud-app-security"></a><span data-ttu-id="c383a-194">設定 Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="c383a-194">Configure Microsoft Cloud App Security</span></span>
+## <a name="configure-microsoft-cloud-app-security"></a><span data-ttu-id="55df9-194">設定 Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="55df9-194">Configure Microsoft Cloud App Security</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c383a-195">如果您已啟用 Microsoft Cloud App 安全性，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="c383a-195">Skip this step if you've already enabled Microsoft Cloud App Security.</span></span> 
+> <span data-ttu-id="55df9-195">如果您已啟用 Microsoft Cloud App Security，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="55df9-195">Skip this step if you've already enabled Microsoft Cloud App Security.</span></span> 
 
-1. <span data-ttu-id="c383a-196">流覽至 [microsoft](https://security.microsoft.com/info)  >    >  **Cloud App security** 的 microsoft 365 Security Center More Resources。</span><span class="sxs-lookup"><span data-stu-id="c383a-196">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.</span></span>
+1. <span data-ttu-id="55df9-196">流覽至 [Microsoft 365 的安全性中心](https://security.microsoft.com/info)  >  **其他資源**  >  **Microsoft Cloud App Security**。</span><span class="sxs-lookup"><span data-stu-id="55df9-196">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.</span></span>
 
    ![Image of_Microsoft 365 Security Center 頁面，您可以在其中看到 Microsoft Cloud App 卡片，應該按一下 [開啟] 按鈕](../../media/mtp-eval-53.png)
 
-2. <span data-ttu-id="c383a-198">在資訊提示中，針對身分識別整合 Microsoft Defender，請選取 [ **啟用 Microsoft defender 以進行識別資料整合**]。</span><span class="sxs-lookup"><span data-stu-id="c383a-198">At the information prompt to integrate Microsoft Defender for Identity, select **Enable Microsoft Defender for Identity data integration**.</span></span>
+2. <span data-ttu-id="55df9-198">在資訊提示中，針對身分識別整合 Microsoft Defender，請選取 [ **啟用 Microsoft defender 以進行識別資料整合**]。</span><span class="sxs-lookup"><span data-stu-id="55df9-198">At the information prompt to integrate Microsoft Defender for Identity, select **Enable Microsoft Defender for Identity data integration**.</span></span>
   
    ![Image of_the 資訊提示，針對識別整合 Microsoft Defender 以供您選取 [啟用 Microsoft Defender 身分識別資料整合] 連結](../../media/mtp-eval-54.png)
 
    > [!NOTE]
-   > <span data-ttu-id="c383a-200">如果您未看到此提示，這可能表示您的 Microsoft Defender 的身分識別資料整合已經啟用。</span><span class="sxs-lookup"><span data-stu-id="c383a-200">If you don’t see this prompt, it might mean that your Microsoft Defender for Identity data integration has already been enabled.</span></span> <span data-ttu-id="c383a-201">不過，如果您不確定，請與您的 IT 系統管理員聯繫以確認。</span><span class="sxs-lookup"><span data-stu-id="c383a-201">However, if you are not sure, contact your IT Administrator to confirm.</span></span> 
+   > <span data-ttu-id="55df9-200">如果您未看到此提示，這可能表示您的 Microsoft Defender 的身分識別資料整合已經啟用。</span><span class="sxs-lookup"><span data-stu-id="55df9-200">If you don’t see this prompt, it might mean that your Microsoft Defender for Identity data integration has already been enabled.</span></span> <span data-ttu-id="55df9-201">不過，如果您不確定，請與您的 IT 系統管理員聯繫以確認。</span><span class="sxs-lookup"><span data-stu-id="55df9-201">However, if you are not sure, contact your IT Administrator to confirm.</span></span> 
 
-3. <span data-ttu-id="c383a-202">移至 [ **設定**]，開啟 **Microsoft Defender 的身分識別整合** 切換，然後按一下 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="c383a-202">Go to **Settings**, turn on the **Microsoft Defender for Identity integration** toggle, then click **Save**.</span></span> 
+3. <span data-ttu-id="55df9-202">移至 **設定**，開啟 **Microsoft Defender 的身分識別整合** 切換，然後按一下 [**儲存**]。</span><span class="sxs-lookup"><span data-stu-id="55df9-202">Go to **Settings**, turn on the **Microsoft Defender for Identity integration** toggle, then click **Save**.</span></span> 
 
    ![影像 of_the 設定] 頁面，您應該在此頁面上開啟「Microsoft Defender 身分識別整合」切換，然後按一下 [儲存]](../../media/mtp-eval-55.png)
    
    > [!NOTE]
-   > <span data-ttu-id="c383a-204">針對新的 Microsoft Defender for Identity 實例，此整合切換功能會自動開啟。</span><span class="sxs-lookup"><span data-stu-id="c383a-204">For new Microsoft Defender for Identity instances, this integration toggle is automatically turned on.</span></span> <span data-ttu-id="c383a-205">在繼續進行下一個步驟之前，請確認已啟用 Microsoft Defender 的身分識別整合。</span><span class="sxs-lookup"><span data-stu-id="c383a-205">Confirm that your Microsoft Defender for Identity integration has been enabled before you proceed to the next step.</span></span>
+   > <span data-ttu-id="55df9-204">針對新的 Microsoft Defender for Identity 實例，此整合切換功能會自動開啟。</span><span class="sxs-lookup"><span data-stu-id="55df9-204">For new Microsoft Defender for Identity instances, this integration toggle is automatically turned on.</span></span> <span data-ttu-id="55df9-205">在繼續進行下一個步驟之前，請確認已啟用 Microsoft Defender 的身分識別整合。</span><span class="sxs-lookup"><span data-stu-id="55df9-205">Confirm that your Microsoft Defender for Identity integration has been enabled before you proceed to the next step.</span></span>
  
-4. <span data-ttu-id="c383a-206">在 [雲端探索設定] 底下，選取 [ **Microsoft Defender For Endpoint integration**]，然後啟用整合。</span><span class="sxs-lookup"><span data-stu-id="c383a-206">Under the Cloud discovery settings, select **Microsoft Defender for Endpoint integration**, then enable the integration.</span></span> <span data-ttu-id="c383a-207">按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="c383a-207">Click **Save**.</span></span>
+4. <span data-ttu-id="55df9-206">在 [雲端探索設定] 底下，選取 [ **Microsoft Defender For Endpoint integration**]，然後啟用整合。</span><span class="sxs-lookup"><span data-stu-id="55df9-206">Under the Cloud discovery settings, select **Microsoft Defender for Endpoint integration**, then enable the integration.</span></span> <span data-ttu-id="55df9-207">按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-207">Click **Save**.</span></span>
 
    ![Image of_the Microsoft Defender for Endpoint] 頁面，選取 [Microsoft defender for Endpoint integration] 下的 [封鎖 unsanctioned 應用程式] 核取方塊。](../../media/mtp-eval-56.png)
 
-5. <span data-ttu-id="c383a-210">在 [雲端探索設定] 底下，選取 [ **使用者豐富**]，然後啟用與 Azure Active Directory 的整合。</span><span class="sxs-lookup"><span data-stu-id="c383a-210">Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.</span></span>
+5. <span data-ttu-id="55df9-210">在 [雲端探索設定] 底下，選取 [**使用者豐富**]，然後啟用與 Azure Active Directory 的整合。</span><span class="sxs-lookup"><span data-stu-id="55df9-210">Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.</span></span>
 
-   ![[使用者豐富] 區段中的 [濃縮已發現使用者識別碼與 Azure Active Directory 使用者識別碼] 核取方塊的影像](../../media/mtp-eval-57.png)
+   ![已選取 [濃縮已探索使用者識別碼與 Azure Active Directory 使用者識別碼] 核取方塊的使用者豐富區段的影像](../../media/mtp-eval-57.png)
 
 
-## <a name="configure-microsoft-defender-for-endpoint"></a><span data-ttu-id="c383a-212">設定 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="c383a-212">Configure Microsoft Defender for Endpoint</span></span>
+## <a name="configure-microsoft-defender-for-endpoint"></a><span data-ttu-id="55df9-212">設定 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="55df9-212">Configure Microsoft Defender for Endpoint</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c383a-213">如果您已啟用 Microsoft Defender for Endpoint，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="c383a-213">Skip this step if you've already enabled Microsoft Defender for Endpoint.</span></span>
+><span data-ttu-id="55df9-213">如果您已啟用 Microsoft Defender for Endpoint，請略過此步驟。</span><span class="sxs-lookup"><span data-stu-id="55df9-213">Skip this step if you've already enabled Microsoft Defender for Endpoint.</span></span>
 
-1. <span data-ttu-id="c383a-214">流覽至 microsoft Defender security center 的 [microsoft 365 Security center](https://security.microsoft.com/info)  >  **More Resources**  >  \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c383a-214">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Defender Security Center**.</span></span> <span data-ttu-id="c383a-215">按一下 [開啟]。</span><span class="sxs-lookup"><span data-stu-id="c383a-215">Click **Open**.</span></span>
+1. <span data-ttu-id="55df9-214">流覽至 [Microsoft 365 的安全性中心](https://security.microsoft.com/info)  >  **其他資源**  >  **Microsoft Defender 資訊安全中心**。</span><span class="sxs-lookup"><span data-stu-id="55df9-214">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Defender Security Center**.</span></span> <span data-ttu-id="55df9-215">按一下 [開啟]。</span><span class="sxs-lookup"><span data-stu-id="55df9-215">Click **Open**.</span></span>
 
-   ![Microsoft 365 Security Center 頁面中的影像 of_Microsoft Defender Security Center 選項](../../media/mtp-eval-58.png)
+   ![Microsoft 365 安全性中心頁面中 of_Microsoft Defender 安全性中心選項的影像](../../media/mtp-eval-58.png)
  
-2. <span data-ttu-id="c383a-217">遵循 Microsoft Defender for Endpoint 嚮導。</span><span class="sxs-lookup"><span data-stu-id="c383a-217">Follow the Microsoft Defender for Endpoint wizard.</span></span> <span data-ttu-id="c383a-218">按 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="c383a-218">Click **Next**.</span></span> 
+2. <span data-ttu-id="55df9-217">遵循 Microsoft Defender for Endpoint 嚮導。</span><span class="sxs-lookup"><span data-stu-id="55df9-217">Follow the Microsoft Defender for Endpoint wizard.</span></span> <span data-ttu-id="55df9-218">按 [下一步 **]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-218">Click **Next**.</span></span> 
 
-   ![Microsoft Defender 安全中心歡迎使用嚮導頁面上的影像 of_the](../../media/mtp-eval-59.png)
+   ![of_the Microsoft Defender 資訊安全中心歡迎使用嚮導頁面的圖像](../../media/mtp-eval-59.png)
 
-3. <span data-ttu-id="c383a-220">選擇 [根據您慣用的資料儲存位置]、[資料保留原則]、[組織大小] 和 [加入宣告預覽] 功能。</span><span class="sxs-lookup"><span data-stu-id="c383a-220">Choose based on your preferred data storage location, data retention policy, organization size, and opt-in for preview features.</span></span>
+3. <span data-ttu-id="55df9-220">選擇 [根據您慣用的資料儲存位置]、[資料保留原則]、[組織大小] 和 [加入宣告預覽] 功能。</span><span class="sxs-lookup"><span data-stu-id="55df9-220">Choose based on your preferred data storage location, data retention policy, organization size, and opt-in for preview features.</span></span>
 
    ![Image of_the] 頁面上，選取您的資料儲存國家、保留原則及組織規模。](../../media/mtp-eval-60.png)
    
    > [!NOTE]
-   > <span data-ttu-id="c383a-223">您無法變更某些設定，例如，以後的資料儲存位置。</span><span class="sxs-lookup"><span data-stu-id="c383a-223">You cannot change some of the settings, like data storage location, afterwards.</span></span> 
+   > <span data-ttu-id="55df9-223">您無法變更某些設定，例如，以後的資料儲存位置。</span><span class="sxs-lookup"><span data-stu-id="55df9-223">You cannot change some of the settings, like data storage location, afterwards.</span></span> 
 
-   <span data-ttu-id="c383a-224">按 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="c383a-224">Click **Next**.</span></span> 
+   <span data-ttu-id="55df9-224">按 [下一步 **]**。</span><span class="sxs-lookup"><span data-stu-id="55df9-224">Click **Next**.</span></span> 
 
-4. <span data-ttu-id="c383a-225">按一下 [ **繼續** ]，它會布建您的 Microsoft Defender for Endpoint 租使用者。</span><span class="sxs-lookup"><span data-stu-id="c383a-225">Click **Continue** and it will provision your Microsoft Defender for Endpoint tenant.</span></span>
+4. <span data-ttu-id="55df9-225">按一下 [ **繼續** ]，它會布建您的 Microsoft Defender for Endpoint 租使用者。</span><span class="sxs-lookup"><span data-stu-id="55df9-225">Click **Continue** and it will provision your Microsoft Defender for Endpoint tenant.</span></span>
 
    ![影像 of_the 頁面提示您按一下 [繼續] 按鈕以建立您的雲端實例](../../media/mtp-eval-61.png)
 
-5. <span data-ttu-id="c383a-227">透過「群組原則」、「Microsoft 端點管理員」或執行本機腳本至 Microsoft Defender for Endpoint，將端點架上。</span><span class="sxs-lookup"><span data-stu-id="c383a-227">Onboard your endpoints through Group Policies, Microsoft Endpoint Manager or by running a local script to Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="c383a-228">為了簡便起見，本指南使用本機腳本。</span><span class="sxs-lookup"><span data-stu-id="c383a-228">For simplicity, this guide uses the local script.</span></span>
+5. <span data-ttu-id="55df9-227">透過「群組原則」、Microsoft 端點管理員或執行本機腳本至 Microsoft Defender for Endpoint，將您的端點上架。</span><span class="sxs-lookup"><span data-stu-id="55df9-227">Onboard your endpoints through Group Policies, Microsoft Endpoint Manager or by running a local script to Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="55df9-228">為了簡便起見，本指南使用本機腳本。</span><span class="sxs-lookup"><span data-stu-id="55df9-228">For simplicity, this guide uses the local script.</span></span>
 
-6. <span data-ttu-id="c383a-229">按一下 [ **下載套件** ]，然後將上架腳本複製到端點 (s) 。</span><span class="sxs-lookup"><span data-stu-id="c383a-229">Click **Download package** and copy the onboarding script to your endpoint(s).</span></span>
+6. <span data-ttu-id="55df9-229">按一下 [ **下載套件** ]，然後將上架腳本複製到端點 (s) 。</span><span class="sxs-lookup"><span data-stu-id="55df9-229">Click **Download package** and copy the onboarding script to your endpoint(s).</span></span>
 
    ![影像 of_page 提示您按一下 [下載套件] 按鈕，將上架腳本複製到您的端點或端點](../../media/mtp-eval-62.png)
 
-7. <span data-ttu-id="c383a-231">在您的端點上，以系統管理員身分執行上架腳本，然後選擇 [Y]。</span><span class="sxs-lookup"><span data-stu-id="c383a-231">On your endpoint, run the onboarding script as Administrator and choose Y.</span></span> 
+7. <span data-ttu-id="55df9-231">在您的端點上，以系統管理員身分執行上架腳本，然後選擇 [Y]。</span><span class="sxs-lookup"><span data-stu-id="55df9-231">On your endpoint, run the onboarding script as Administrator and choose Y.</span></span> 
 
    ![Image of_the 命令列，您可以在其中執行上架腳本，然後選擇 [Y] 繼續](../../media/mtp-eval-63.png)
 
-8. <span data-ttu-id="c383a-233">恭喜，您已架您的第一個端點。</span><span class="sxs-lookup"><span data-stu-id="c383a-233">Congratulations, you've onboarded your first endpoint.</span></span>
+8. <span data-ttu-id="55df9-233">恭喜，您已架您的第一個端點。</span><span class="sxs-lookup"><span data-stu-id="55df9-233">Congratulations, you've onboarded your first endpoint.</span></span>
 
    ![Image of_the 命令列，您可以在其中取得您已架第一個端點的確認。](../../media/mtp-eval-64.png)
 
-9. <span data-ttu-id="c383a-236">從 Microsoft Defender for Endpoint 嚮導複製並貼上偵測測試。</span><span class="sxs-lookup"><span data-stu-id="c383a-236">Copy-paste the detection test from the Microsoft Defender for Endpoint wizard.</span></span>
+9. <span data-ttu-id="55df9-236">從 Microsoft Defender for Endpoint 嚮導複製並貼上偵測測試。</span><span class="sxs-lookup"><span data-stu-id="55df9-236">Copy-paste the detection test from the Microsoft Defender for Endpoint wizard.</span></span>
 
    ![影像 of_the 執行偵測測試步驟，您應該按一下 [複製] 以複製您應該在命令提示字元中貼上的偵測測試腳本。](../../media/mtp-eval-65.png)
 
-10. <span data-ttu-id="c383a-238">將 PowerShell 腳本複製到提升許可權的命令提示字元，然後執行它。</span><span class="sxs-lookup"><span data-stu-id="c383a-238">Copy the PowerShell script to an elevated command prompt and run it.</span></span> 
+10. <span data-ttu-id="55df9-238">將 PowerShell 腳本複製到提升許可權的命令提示字元，然後執行它。</span><span class="sxs-lookup"><span data-stu-id="55df9-238">Copy the PowerShell script to an elevated command prompt and run it.</span></span> 
 
     ![影像 of_command 提示，您應該將 PowerShell 腳本複製到提升許可權的命令提示字元，然後執行它](../../media/mtp-eval-66.png)
 
-11. <span data-ttu-id="c383a-240">選取 [ **開始使用 Microsoft Defender For Endpoint** ] 從嚮導。</span><span class="sxs-lookup"><span data-stu-id="c383a-240">Select **Start using Microsoft Defender for Endpoint** from the Wizard.</span></span>
+11. <span data-ttu-id="55df9-240">選取 [ **開始使用 Microsoft Defender For Endpoint** ] 從嚮導。</span><span class="sxs-lookup"><span data-stu-id="55df9-240">Select **Start using Microsoft Defender for Endpoint** from the Wizard.</span></span>
 
     ![從嚮導中 of_the 的確認提示，您應該按一下 [開始使用 Microsoft Defender for Endpoint]](../../media/mtp-eval-67.png)
  
-12. <span data-ttu-id="c383a-242">流覽 [Microsoft Defender 安全中心](https://securitycenter.windows.com/)。</span><span class="sxs-lookup"><span data-stu-id="c383a-242">Visit the [Microsoft Defender Security Center](https://securitycenter.windows.com/).</span></span> <span data-ttu-id="c383a-243">移至 [ **設定** ]，然後選取 [ **高級功能**]。</span><span class="sxs-lookup"><span data-stu-id="c383a-243">Go to **Settings** and then select **Advanced features**.</span></span> 
+12. <span data-ttu-id="55df9-242">請造訪[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)。</span><span class="sxs-lookup"><span data-stu-id="55df9-242">Visit the [Microsoft Defender Security Center](https://securitycenter.windows.com/).</span></span> <span data-ttu-id="55df9-243">移至 **設定**，然後選取 [**高級功能**]。</span><span class="sxs-lookup"><span data-stu-id="55df9-243">Go to **Settings** and then select **Advanced features**.</span></span> 
 
-    ![您應選取 [高級功能] 的 [of_Microsoft Defender 安全性中心設定] 功能表中的影像](../../media/mtp-eval-68.png)
+    ![您應選取「高級功能」的 of_Microsoft Defender Security Center 設定功能表的影像](../../media/mtp-eval-68.png)
 
-13. <span data-ttu-id="c383a-245">開啟與 **Microsoft Defender 身分識別** 的整合。</span><span class="sxs-lookup"><span data-stu-id="c383a-245">Turn on the integration with **Microsoft Defender for Identity**.</span></span>  
+13. <span data-ttu-id="55df9-245">開啟與 **Microsoft Defender 身分識別** 的整合。</span><span class="sxs-lookup"><span data-stu-id="55df9-245">Turn on the integration with **Microsoft Defender for Identity**.</span></span>  
 
     ![Image of_Microsoft Defender Security Center Advanced 功能，您需要開啟的 Microsoft Defender 身分識別選項切換功能](../../media/mtp-eval-69.png)
 
-14. <span data-ttu-id="c383a-247">開啟與 **Office 365 威脅情報** 的整合。</span><span class="sxs-lookup"><span data-stu-id="c383a-247">Turn on the integration with **Office 365 Threat Intelligence**.</span></span>
+14. <span data-ttu-id="55df9-247">開啟與 **Office 365 威脅情報** 的整合。</span><span class="sxs-lookup"><span data-stu-id="55df9-247">Turn on the integration with **Office 365 Threat Intelligence**.</span></span>
 
-    ![Image of_Microsoft Defender Security Center Advanced features，Office 365 威脅情報選項切換，您必須開啟](../../media/mtp-eval-70.png)
+    ![Image of_Microsoft Defender 安全性中心的高級功能、Office 365 威脅情報選項切換功能（您必須開啟）](../../media/mtp-eval-70.png)
 
-15. <span data-ttu-id="c383a-249">開啟與 **Microsoft Cloud App Security** 的整合。</span><span class="sxs-lookup"><span data-stu-id="c383a-249">Turn on integration with **Microsoft Cloud App Security**.</span></span>
+15. <span data-ttu-id="55df9-249">開啟與 **Microsoft Cloud App Security** 的整合。</span><span class="sxs-lookup"><span data-stu-id="55df9-249">Turn on integration with **Microsoft Cloud App Security**.</span></span>
 
-    ![Image of_Microsoft Defender Security Center Advanced 功能，您需要開啟的 Microsoft Cloud App Security 選項切換功能](../../media/mtp-eval-71.png)
+    ![Image of_Microsoft Defender 安全性中心的高級功能、Microsoft Cloud App Security 選項切換功能（需要開啟）](../../media/mtp-eval-71.png)
 
-16. <span data-ttu-id="c383a-251">向中按向下方，然後按一下 [ **儲存偏好** 設定] 以確認新的整合。</span><span class="sxs-lookup"><span data-stu-id="c383a-251">Scroll down and click **Save preferences** to confirm the new integrations.</span></span>
+16. <span data-ttu-id="55df9-251">向中按向下方，然後按一下 [ **儲存偏好** 設定] 以確認新的整合。</span><span class="sxs-lookup"><span data-stu-id="55df9-251">Scroll down and click **Save preferences** to confirm the new integrations.</span></span>
 
     ![您需要按一下的影像 of_Save 偏好設定按鈕](../../media/mtp-eval-72.png)
 
-## <a name="start-the-microsoft-365-defender-service"></a><span data-ttu-id="c383a-253">開始使用 Microsoft 365 Defender 服務</span><span class="sxs-lookup"><span data-stu-id="c383a-253">Start the Microsoft 365 Defender service</span></span>
+## <a name="start-the-microsoft-365-defender-service"></a><span data-ttu-id="55df9-253">開始使用 Microsoft 365 Defender 服務</span><span class="sxs-lookup"><span data-stu-id="55df9-253">Start the Microsoft 365 Defender service</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c383a-254">從2020年6月1日開始，Microsoft 會自動為所有合格的承租人啟用 Microsoft 365 Defender 功能。</span><span class="sxs-lookup"><span data-stu-id="c383a-254">Starting June 1, 2020, Microsoft automatically enables Microsoft 365 Defender features for all eligible tenants.</span></span> <span data-ttu-id="c383a-255">如需詳細資訊，請參閱此 [Microsoft 技術小組文章](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 。</span><span class="sxs-lookup"><span data-stu-id="c383a-255">See this [Microsoft Tech Community article on license eligibility](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) for details.</span></span> 
+><span data-ttu-id="55df9-254">從2020年6月1日開始，Microsoft 會自動為所有合格的承租人啟用 Microsoft 365 Defender 功能。</span><span class="sxs-lookup"><span data-stu-id="55df9-254">Starting June 1, 2020, Microsoft automatically enables Microsoft 365 Defender features for all eligible tenants.</span></span> <span data-ttu-id="55df9-255">如需詳細資訊，請參閱《 [Microsoft Tech Community 的授權資格](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426)。</span><span class="sxs-lookup"><span data-stu-id="55df9-255">See this [Microsoft Tech Community article on license eligibility](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) for details.</span></span> 
 
 
-<span data-ttu-id="c383a-256">移至 [Microsoft 365 Security Center](https://security.microsoft.com/homepage)。</span><span class="sxs-lookup"><span data-stu-id="c383a-256">Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage).</span></span> <span data-ttu-id="c383a-257">流覽至 [ **設定** ]，然後選取 [ **Microsoft 365 Defender**]。</span><span class="sxs-lookup"><span data-stu-id="c383a-257">Navigate to **Settings** and then select **Microsoft 365 Defender**.</span></span>
+<span data-ttu-id="55df9-256">移至[Microsoft 365 安全性中心](https://security.microsoft.com/homepage)。</span><span class="sxs-lookup"><span data-stu-id="55df9-256">Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage).</span></span> <span data-ttu-id="55df9-257">流覽至 **設定**，然後選取 [ **Microsoft 365 Defender**]。</span><span class="sxs-lookup"><span data-stu-id="55df9-257">Navigate to **Settings** and then select **Microsoft 365 Defender**.</span></span>
 
-![<span data-ttu-id="c383a-258">從 Microsoft 365 安全性中心設定頁面影像 of_Microsoft 365 Defender 選項螢幕擷取畫面</span><span class="sxs-lookup"><span data-stu-id="c383a-258">Image of_Microsoft 365 Defender option screenshot from the Microsoft 365 Security Center Settings page</span></span> ](../../media/mtp-eval-72b.png) <br>
+![<span data-ttu-id="55df9-258">從 Microsoft 365 安全性中心設定頁面 of_Microsoft 365 Defender 選項螢幕擷取畫面</span><span class="sxs-lookup"><span data-stu-id="55df9-258">Image of_Microsoft 365 Defender option screenshot from the Microsoft 365 Security Center Settings page</span></span> ](../../media/mtp-eval-72b.png) <br>
 
-<span data-ttu-id="c383a-259">如需更完整的指導，請參閱 [開啟 Microsoft 365 Defender](m365d-enable.md)。</span><span class="sxs-lookup"><span data-stu-id="c383a-259">For a more comprehensive guidance, see [Turn on Microsoft 365 Defender](m365d-enable.md).</span></span> 
+<span data-ttu-id="55df9-259">如需更完整的指導，請參閱[開啟 Microsoft 365 Defender](m365d-enable.md)。</span><span class="sxs-lookup"><span data-stu-id="55df9-259">For a more comprehensive guidance, see [Turn on Microsoft 365 Defender](m365d-enable.md).</span></span> 
 
-<span data-ttu-id="c383a-260">恭喜！</span><span class="sxs-lookup"><span data-stu-id="c383a-260">Congratulations!</span></span> <span data-ttu-id="c383a-261">您剛剛建立 Microsoft 365 Defender 試用實驗室或試驗環境！</span><span class="sxs-lookup"><span data-stu-id="c383a-261">You've just created your Microsoft 365 Defender trial lab or pilot environment!</span></span> <span data-ttu-id="c383a-262">現在，您可以熟悉 Microsoft 365 Defender 使用者介面！</span><span class="sxs-lookup"><span data-stu-id="c383a-262">Now you can familiarize yourself with the Microsoft 365 Defender user interface!</span></span> <span data-ttu-id="c383a-263">查看您可以從下列 Microsoft 365 Defender 互動版指南中學到的內容，並瞭解如何使用每個儀表板做為日常安全性作業工作。</span><span class="sxs-lookup"><span data-stu-id="c383a-263">See what you can learn from the following Microsoft 365 Defender interactive guide and know how to use each dashboard for your day-to-day security operation tasks.</span></span>
+<span data-ttu-id="55df9-260">恭喜！</span><span class="sxs-lookup"><span data-stu-id="55df9-260">Congratulations!</span></span> <span data-ttu-id="55df9-261">您剛剛建立 Microsoft 365 的 Defender 試用實驗室或試驗環境！</span><span class="sxs-lookup"><span data-stu-id="55df9-261">You've just created your Microsoft 365 Defender trial lab or pilot environment!</span></span> <span data-ttu-id="55df9-262">現在，您可以熟悉 Microsoft 365 的 Defender 使用者介面！</span><span class="sxs-lookup"><span data-stu-id="55df9-262">Now you can familiarize yourself with the Microsoft 365 Defender user interface!</span></span> <span data-ttu-id="55df9-263">查看您可以從下列 Microsoft 365 Defender 互動版指南中學到的內容，並瞭解如何使用每個儀表板做為日常安全性作業工作。</span><span class="sxs-lookup"><span data-stu-id="55df9-263">See what you can learn from the following Microsoft 365 Defender interactive guide and know how to use each dashboard for your day-to-day security operation tasks.</span></span>
 
-[<span data-ttu-id="c383a-264">查看互動指南</span><span class="sxs-lookup"><span data-stu-id="c383a-264">Check out the interactive guide</span></span>](https://aka.ms/MTP-Interactive-Guide)
+[<span data-ttu-id="55df9-264">查看互動指南</span><span class="sxs-lookup"><span data-stu-id="55df9-264">Check out the interactive guide</span></span>](https://aka.ms/MTP-Interactive-Guide)
 
-<span data-ttu-id="c383a-265">接下來，您可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。</span><span class="sxs-lookup"><span data-stu-id="c383a-265">Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.</span></span>
+<span data-ttu-id="55df9-265">接下來，您可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。</span><span class="sxs-lookup"><span data-stu-id="55df9-265">Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="c383a-266">下一步</span><span class="sxs-lookup"><span data-stu-id="c383a-266">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="55df9-266">下一步</span><span class="sxs-lookup"><span data-stu-id="55df9-266">Next step</span></span>
 
-- <span data-ttu-id="c383a-267">[產生測試警示](generate-test-alert.md) -在您的 Microsoft 365 Defender 試用版實驗室中執行攻擊模擬。</span><span class="sxs-lookup"><span data-stu-id="c383a-267">[Generate a test alert](generate-test-alert.md) - Run an attack simulation in your Microsoft 365 Defender trial lab.</span></span>
+- <span data-ttu-id="55df9-267">[產生測試警示](generate-test-alert.md)-在 Microsoft 365 Defender 試用實驗室中執行攻擊模擬。</span><span class="sxs-lookup"><span data-stu-id="55df9-267">[Generate a test alert](generate-test-alert.md) - Run an attack simulation in your Microsoft 365 Defender trial lab.</span></span>
