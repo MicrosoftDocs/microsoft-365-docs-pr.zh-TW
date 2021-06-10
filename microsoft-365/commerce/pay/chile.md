@@ -20,16 +20,16 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536967"
 ---
-# <a name="payment-information-for-chile"></a><span data-ttu-id="9a4aa-103">智利的付款資訊</span><span class="sxs-lookup"><span data-stu-id="9a4aa-103">Payment information for Chile</span></span>
+# <a name="payment-information-for-chile"></a><span data-ttu-id="6f79e-103">智利的付款資訊</span><span class="sxs-lookup"><span data-stu-id="6f79e-103">Payment information for Chile</span></span>
 
-<span data-ttu-id="9a4aa-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="9a4aa-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="6f79e-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="6f79e-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="9a4aa-105">請只以 USD 支付。</span><span class="sxs-lookup"><span data-stu-id="9a4aa-105">Please pay in USD only.</span></span> <span data-ttu-id="9a4aa-106">若要處理付款，您的匯款通知必須提供您公司名稱和發票編號 (s) 。</span><span class="sxs-lookup"><span data-stu-id="9a4aa-106">For payment to be processed, your company name and invoice number(s) must be provided on your remittance advice.</span></span>
+<span data-ttu-id="6f79e-105">請只以 USD 支付。</span><span class="sxs-lookup"><span data-stu-id="6f79e-105">Please pay in USD only.</span></span> <span data-ttu-id="6f79e-106">若要處理付款，您的匯款通知必須提供您公司名稱和發票編號 (s) 。</span><span class="sxs-lookup"><span data-stu-id="6f79e-106">For payment to be processed, your company name and invoice number(s) must be provided on your remittance advice.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="9a4aa-107">電匯</span><span class="sxs-lookup"><span data-stu-id="9a4aa-107">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="6f79e-107">電匯</span><span class="sxs-lookup"><span data-stu-id="6f79e-107">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="9a4aa-108">**銀行：** 美洲銀行</span><span class="sxs-lookup"><span data-stu-id="9a4aa-108">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="9a4aa-109">**Branch：** 達拉斯</span><span class="sxs-lookup"><span data-stu-id="9a4aa-109">**Branch:** Dallas</span></span>  
-<span data-ttu-id="9a4aa-110">**SWIFT 程式碼：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="9a4aa-110">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="9a4aa-111">**帳戶號碼：** 4426587954</span><span class="sxs-lookup"><span data-stu-id="9a4aa-111">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="9a4aa-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="9a4aa-112">**Account Name:** Microsoft</span></span>
+<span data-ttu-id="6f79e-108">**銀行：** 美洲銀行</span><span class="sxs-lookup"><span data-stu-id="6f79e-108">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="6f79e-109">**Branch：** 達拉斯</span><span class="sxs-lookup"><span data-stu-id="6f79e-109">**Branch:** Dallas</span></span>  
+<span data-ttu-id="6f79e-110">**SWIFT 程式碼：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="6f79e-110">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="6f79e-111">**帳戶號碼：** 4426587954</span><span class="sxs-lookup"><span data-stu-id="6f79e-111">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="6f79e-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="6f79e-112">**Account Name:** Microsoft</span></span>

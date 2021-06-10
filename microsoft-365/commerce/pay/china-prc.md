@@ -20,18 +20,18 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536955"
 ---
-# <a name="payment-information-for-china-prc"></a><span data-ttu-id="87766-103">中國的付款資訊 (PRC) </span><span class="sxs-lookup"><span data-stu-id="87766-103">Payment information for China (PRC)</span></span>
+# <a name="payment-information-for-china-prc"></a><span data-ttu-id="c8a90-103">中國的付款資訊 (PRC) </span><span class="sxs-lookup"><span data-stu-id="c8a90-103">Payment information for China (PRC)</span></span>
 
-<span data-ttu-id="87766-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="87766-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="c8a90-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="c8a90-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="87766-105">請支付 CNY，並參照您的公司名稱和發票編號 (s) 付款匯款。</span><span class="sxs-lookup"><span data-stu-id="87766-105">Please pay in CNY and reference your company name and invoice number(s) on the payment remittance.</span></span>
+<span data-ttu-id="c8a90-105">請支付 CNY，並參照您的公司名稱和發票編號 (s) 付款匯款。</span><span class="sxs-lookup"><span data-stu-id="c8a90-105">Please pay in CNY and reference your company name and invoice number(s) on the payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="87766-106">電匯</span><span class="sxs-lookup"><span data-stu-id="87766-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="c8a90-106">電匯</span><span class="sxs-lookup"><span data-stu-id="c8a90-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="87766-107">**銀行：** 花旗 銀行</span><span class="sxs-lookup"><span data-stu-id="87766-107">**Bank:** Citibank</span></span>  
-<span data-ttu-id="87766-108">**Branch：** 香港</span><span class="sxs-lookup"><span data-stu-id="87766-108">**Branch:** Hong Kong</span></span>  
-<span data-ttu-id="87766-109">**SWIFT 程式碼：** CITIHKHX</span><span class="sxs-lookup"><span data-stu-id="87766-109">**SWIFT Code:** CITIHKHX</span></span>  
-<span data-ttu-id="87766-110">**CNAP 程式碼：** 989584000600</span><span class="sxs-lookup"><span data-stu-id="87766-110">**CNAP Code:** 989584000600</span></span>  
-<span data-ttu-id="87766-111">**帳戶號碼：** 1199527009</span><span class="sxs-lookup"><span data-stu-id="87766-111">**Account Number:** 1199527009</span></span>  
-<span data-ttu-id="87766-112">**帳戶名稱：** MICROSOFT 地區銷售公司</span><span class="sxs-lookup"><span data-stu-id="87766-112">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
-<span data-ttu-id="87766-113">**批註：以香港為單位透過 RMB RTGS 通道。**</span><span class="sxs-lookup"><span data-stu-id="87766-113">**Remark: Pay through RMB RTGS channel in HK.**</span></span>
+<span data-ttu-id="c8a90-107">**銀行：** 花旗 銀行</span><span class="sxs-lookup"><span data-stu-id="c8a90-107">**Bank:** Citibank</span></span>  
+<span data-ttu-id="c8a90-108">**Branch：** 香港</span><span class="sxs-lookup"><span data-stu-id="c8a90-108">**Branch:** Hong Kong</span></span>  
+<span data-ttu-id="c8a90-109">**SWIFT 程式碼：** CITIHKHX</span><span class="sxs-lookup"><span data-stu-id="c8a90-109">**SWIFT Code:** CITIHKHX</span></span>  
+<span data-ttu-id="c8a90-110">**CNAP 程式碼：** 989584000600</span><span class="sxs-lookup"><span data-stu-id="c8a90-110">**CNAP Code:** 989584000600</span></span>  
+<span data-ttu-id="c8a90-111">**帳戶號碼：** 1199527009</span><span class="sxs-lookup"><span data-stu-id="c8a90-111">**Account Number:** 1199527009</span></span>  
+<span data-ttu-id="c8a90-112">**帳戶名稱：** MICROSOFT 地區銷售公司</span><span class="sxs-lookup"><span data-stu-id="c8a90-112">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
+<span data-ttu-id="c8a90-113">**批註：以香港為單位透過 RMB RTGS 通道。**</span><span class="sxs-lookup"><span data-stu-id="c8a90-113">**Remark: Pay through RMB RTGS channel in HK.**</span></span>
