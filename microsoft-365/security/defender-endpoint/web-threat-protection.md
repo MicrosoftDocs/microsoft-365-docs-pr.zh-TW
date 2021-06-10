@@ -31,9 +31,9 @@ ms.locfileid: "51688942"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web 威脅防護是用於端點之 [web 保護](web-protection-overview.md) 的一部分。 它會使用 [網路保護](network-protection.md) 來保護您的裝置免受網頁威脅。 透過與 Microsoft Edge 和流行的協力廠商瀏覽器（如 Chrome 和 Firefox）整合，網頁威脅防護會停止網頁 proxy 以外的網頁威脅，並在離開或內部部署時保護裝置。 Web 威脅防護會停止存取網路釣魚網站、惡意程式碼向量、exploit 網站、不信任或低信譽網站，以及您在 [自訂指示器清單](manage-indicators.md)中封鎖的網站。
+Web 威脅防護是用於端點之 [web 保護](web-protection-overview.md) 的一部分。 它會使用 [網路保護](network-protection.md) 來保護您的裝置免受網頁威脅。 透過與 Microsoft Edge 和流行的協力廠商瀏覽器（如 Chrome 和 Firefox）整合，web 威脅防護會停止網頁 proxy 以外的網頁威脅，並在使用者離開或內部部署時，保護裝置。 Web 威脅防護會停止存取網路釣魚網站、惡意程式碼向量、exploit 網站、不信任或低信譽網站，以及您在 [自訂指示器清單](manage-indicators.md)中封鎖的網站。
 
 >[!Note]
 >裝置接收新的自訂指示器時，最多可能需要一小時。
@@ -46,7 +46,7 @@ Web 保護使用網路保護，在 Microsoft Edge 和協力廠商網頁瀏覽器
 - 使用 Intune 裝置設定、SCCM、群組原則或 MDM 解決方案開啟網路保護。 [進一步閱讀啟用網路保護的資訊](enable-network-protection.md)  
 
 >[!Note]
->若您將網路保護設定為 **僅供審核**，封鎖將無法使用。 此外，您也可以偵測和記錄嘗試只在 Microsoft Edge 上存取惡意和有害網站的嘗試。
+>若您將網路保護設定為 **僅供審核**，封鎖將無法使用。 此外，您也可以偵測和記錄只在 Microsoft Edge 上存取惡意和有害網站的嘗試。
 
 ## <a name="related-topics"></a>相關主題
 

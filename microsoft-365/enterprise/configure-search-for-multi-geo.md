@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 瞭解如何設定多地理位置環境中的搜尋。 只有部分用戶端（例如商務用 OneDrive）可以傳回多地理位置環境中的結果。
+description: 瞭解如何設定多地理位置環境中的搜尋。 在多地理位置環境中，只有部分用戶端（例如商務用 OneDrive）可以傳回結果。
 ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -44,7 +44,7 @@ ms.locfileid: "50911159"
 
 多地理位置環境一設定好之後，在 Delve 中搜尋的使用者就會取得來自所有地理位置的結果。
 
-Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的預覽。 針對儲存在衛星位置的檔案，會改為顯示該檔案類型的圖示。
+Delve 摘要和設定檔卡只會顯示在中央位置中儲存之檔案的預覽。針對儲存在衛星地理位置的檔案，則會改為顯示檔案類型的圖示。
 
 ### <a name="the-sharepoint-home-page"></a>SharePoint 首頁
 
@@ -151,7 +151,7 @@ Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的�
 
 3. 選取要設定的類別，請按一下右上角的 [設定] 圖示，然後按一下 [編輯頁面] 。在編輯模式中搜尋結果網頁會開啟。
 
-   ![在 [設定] 中編輯頁面選項](../media/configure-search-for-multi-geo-image2.png)
+   ![在設定中編輯頁面選項](../media/configure-search-for-multi-geo-image2.png)
 
 4. 在搜尋結果網頁組件中，請將指標移至網頁組件的右上角，按一下箭號，然後按一下功能表上的 [編輯網頁組件]。 搜尋結果網頁組件工具窗格隨即在網頁右上方的功能區下開啟。
 
@@ -168,7 +168,7 @@ Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的�
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>取得自訂搜尋應用程式，以顯示來自全部或部分地理位置的結果
 
-自訂搜尋應用程式會透過使用 SharePoint 搜尋 REST API 的要求指定查詢參數，來取得所有或部分地理位置的結果。 根據查詢參數，查詢會 fanned 至所有地理位置或某些地理位置。 例如，如果您只需要查詢地理位置的子集以尋找相關的資訊，您可以僅將其控制于這些位置。 如果要求成功，SharePoint 搜尋 REST API 會傳迴響應資料。
+自訂搜尋應用程式會透過指定含對 SharePoint 搜尋 REST API 之要求的查詢參數，以取得來自全部或部分地理位置的結果。視查詢參數而定，系統會將查詢展開傳送至所有地理位置或部分的地理位置。例如，如果您只需要查詢地理位置的子集來尋找相關資訊，您可以控制只對這些項目進行展開傳送。如果要求成功，SharePoint 搜尋 REST API 會傳回回應資料。
 
 ### <a name="requirement"></a>需求
 

@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 IdentityDirectoryEvents 表格
 description: 深入瞭解高級搜尋架構的 IdentityDirectoryEvents 資料表中的網域控制站和 Active Directory 事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，資料類型，描述，IdentityDirectoryEvents，網域控制站，Active Directory，身分識別，身分識別
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，資料類型，描述，IdentityDirectoryEvents，網域控制站，Active Directory，身分識別，身分識別
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -58,7 +58,7 @@ ms.locfileid: "51932998"
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountUpn` | string | 帳戶的使用者主要名稱 (UPN)  |
 | `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
-| `AccountObjectId` | string | Azure Active Directory 中帳戶的唯一識別碼 |
+| `AccountObjectId` | string | 帳戶在 Azure Active Directory 中的唯一識別碼 |
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
 | `DeviceName` | string | 裝置的完整功能變數名稱 (FQDN)  |
 | `IPAddress` | string | 通訊期間指派給裝置的 IP 位址 |

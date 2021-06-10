@@ -25,21 +25,21 @@ ms.locfileid: "50911373"
 
 您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入人力資源 (HR) 與事件相關的資料，例如使用者的辭職程度或使用者工作階層中的變更。 使用者可以使用 HR 資料來 [產生風險指示器，以協助](insider-risk-management.md) 您識別組織內使用者可能的惡意活動或資料竊取。
 
-設定資料指標以取得可供內幕風險管理原則用來產生風險指示器的工作，包含建立包含 HR 資料的 CSV 檔案。在 Azure Active Directory 中建立用於驗證的應用程式，在 Microsoft 365 規範中心內建立 HR 資料連線器，然後以排程的方式執行腳本 () 將 CSV 檔案中的 HR 資料 ingests 至 Microsoft 雲端，使其可供現有的「內部人員風險管理」解決方案使用。
+設定資料指標以取得可供內幕風險管理原則用來產生風險指示器的工作，包含建立包含 HR 資料的 CSV 檔案。在 Azure Active Directory 中建立用於驗證的應用程式，並在 Microsoft 365 規範中心內建立 hr 資料連線器，然後在排程的基礎上執行腳本 (，) 將 CSV 檔案中的 hr 資料 ingests 至 Microsoft 雲端，以供內部的風險管理解決方案使用。
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 決定要匯入 Microsoft 365 的人力資源案例和資料。 這將協助您決定需要建立的 CSV 檔案和 HR 連接器數目，以及如何產生及構造 CSV 檔案。 您所匯入的 HR 資料是由您想要執行的「內幕風險管理」原則所決定。 如需詳細資訊，請參閱步驟1。
+- 決定要匯入至 Microsoft 365 的人力資源案例和資料。 這將協助您決定需要建立的 CSV 檔案和 HR 連接器數目，以及如何產生及構造 CSV 檔案。 您所匯入的 HR 資料是由您想要執行的「內幕風險管理」原則所決定。 如需詳細資訊，請參閱步驟1。
 
 - 決定如何從組織的 HR 系統 (，定期) 中取得或匯出資料，並將其新增至您在步驟1中建立的 CSV 檔案。 您在步驟4中執行的腳本會將 CSV 檔案中的 HR 資料上傳至 Microsoft 雲端。
 
-- 在步驟3中建立 HR 連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟3中建立 HR 連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「在 Exchange Online 中管理角色群組」一文中的 [[建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色](/Exchange/permissions-exo/role-groups#modify-role-groups)群組] 區段。
 
 - 您在步驟4中執行的範例腳本會將您的 HR 資料上傳至 Microsoft 雲端，以供內部使用者風險管理解決方案使用。 在任何 Microsoft standard support 計畫或服務下，都不支援此範例腳本。 範例指令碼係依「現狀」提供，不含任何種類的擔保方式。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>步驟1：使用 HR 資料準備 CSV 檔案
 
-第一步是建立 CSV 檔案，該檔案包含連接器將匯入 Microsoft 365 的 HR 資料。 此資料將會由有問必答風險解決方案用來產生潛在的風險指示器。 下列 HR 案例的資料可匯入至 Microsoft 365：
+第一步是建立 CSV 檔案，該檔案包含連接器將匯入至 Microsoft 365 的 HR 資料。 此資料將會由有問必答風險解決方案用來產生潛在的風險指示器。 下列 HR 案例的資料可匯入至 Microsoft 365：
 
 - 員工辭職。 離開組織之使用者的相關資訊。
 
@@ -53,15 +53,15 @@ ms.locfileid: "50911373"
 
 |  原則範本 |  HR 資料類型 |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
-| 由去聲使用者竊取資料                   | 員工 resignations                                                 |
-| 一般資料洩漏                              | 不適用                                                        |
-| 依優先使用者的資料洩漏                    | 不適用                                                        |
-| 因不滿使用者的資料洩漏                 | 工作層級變更、效能檢查、效能改進計畫 |
+| 離職使用者竊取的資料                   | 員工 resignations                                                 |
+| 一般資料外洩                              | 不適用                                                        |
+| 優先使用者造成的資料外洩                    | 不適用                                                        |
+| 心懷不滿使用者造成的資料外洩                 | 工作層級變更、效能檢查、效能改進計畫 |
 | 一般安全性原則違規              | 不適用                                                        |
-| 脫離使用者的安全性原則違規   | 員工 resignations                                                 |
-| 依優先順序的使用者所破壞的安全性原則    | 不適用                                                        |
-| 不滿的使用者違反安全性原則 | 工作層級變更、效能檢查、效能改進計畫 |
-| 電子郵件中的冒犯性語言                     | 不適用                                                        |
+| 離職使用者造成的安全性原則違規   | 員工 resignations                                                 |
+| 優先使用者的安全性原則違規    | 不適用                                                        |
+| 心懷不滿使用者造成的安全性原則違規 | 工作層級變更、效能檢查、效能改進計畫 |
+| 電子郵件中包含攻擊性語言                     | 不適用                                                        |
 
 如需有關有問必答風險管理之原則範本的詳細資訊，請參閱 [有問必答風險管理原則](insider-risk-management-policies.md#policy-templates)。
 
@@ -207,11 +207,11 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 - 租使用者識別碼 (也稱為 *目錄識別碼*) 
 
-如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](/azure/active-directory/develop/quickstart-register-app)。
+如需在 Azure AD 中建立應用程式的逐步指示，請參閱[註冊名為 Microsoft 身分識別平臺的應用程式](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3-create-the-hr-connector"></a>步驟3：建立 HR 連接器
 
-下一步是在 Microsoft 365 規範中心內建立 HR 連接器。 在步驟4中執行腳本後，您建立的 HR 連接器會將 HR 資料從 CSV 檔案中攝取至您的 Microsoft 365 組織。 建立連接器之前，請確定您有一個 HR 案例清單，以及每個案例的對應 CSV 欄名稱。 設定連接器時，您必須將每個案例所需的資料對應到 CSV 檔案中的實際欄名稱。 或者，您可以在設定連接器時上傳範例 CSV 檔案，嚮導會協助您將欄的名稱對應至所需的資料類型。
+下一步是在 [Microsoft 365 規範中心] 中建立 HR 連接器。 在步驟4中執行腳本後，您建立的 hr 連接器會將 hr 資料從 CSV 檔案中攝取至您的 Microsoft 365 組織。 建立連接器之前，請確定您有一個 HR 案例清單，以及每個案例的對應 CSV 欄名稱。 設定連接器時，您必須將每個案例所需的資料對應到 CSV 檔案中的實際欄名稱。 或者，您可以在設定連接器時上傳範例 CSV 檔案，嚮導會協助您將欄的名稱對應至所需的資料類型。
 
 完成此步驟後，請務必複製當您建立連接器時所產生的工作識別碼。 當您執行腳本時，您會使用工作識別碼。
 
@@ -231,9 +231,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 6. 在 [檔對應方法] 頁面上，選取下列其中一個選項，然後按 **[下一步]**。
 
-   - **上傳範例** 檔案。 如果您選取此選項，請按一下 **[上傳範例** 檔案]，上傳您在步驟1中準備好的 CSV 檔案。 此選項可讓您快速從下拉式清單中選取 CSV 檔案中的欄名，將其對應至先前所選取之 HR 案例的資料類型。
+   - **Upload 範例** 檔案。 如果您選取此選項，請按一下 [ **Upload 範例** 檔案]，上傳您在步驟1中準備的 CSV 檔案。 此選項可讓您快速從下拉式清單中選取 CSV 檔案中的欄名，將其對應至先前所選取之 HR 案例的資料類型。
 
-   「或」
+   或
 
    - **手動提供對應的詳細資料**。 如果您選取此選項，則必須在 CSV 檔案中輸入欄的名稱，才能將其對應至先前所選取之 HR 案例的資料類型。
 
@@ -251,9 +251,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    1. **工作識別碼。** 在下一個步驟中，您將需要此工作識別碼來執行腳本。 您可以從這個頁面或從 [連接器飛出] 頁面複製此頁面。
 
-   1. **範例腳本的連結。** 按一下 [ **這裡** ] 連結，移至 GitHub 網站以存取範例腳本 (連結會開啟新的視窗) 。 將此視窗保持開啟，以便您可以在步驟4中複製腳本。 或者，您也可以將目的地做成書簽或複製 URL，以便在您執行腳本時可再次存取它。 您也可以在 [連接器] 飛入頁面上使用此連結。
+   1. **範例腳本的連結。** 按一下 [**這裡**] 連結，移至 GitHub 網站以存取範例腳本 (連結會開啟新的視窗) 。 將此視窗保持開啟，以便您可以在步驟4中複製腳本。 或者，您也可以將目的地做成書簽或複製 URL，以便在您執行腳本時可再次存取它。 您也可以在 [連接器] 飛入頁面上使用此連結。
 
-9. 按一下 [完成 **]**。
+9. 按一下 ****[完成]。
 
    新的連接器會顯示在 [ **連接器** ] 索引標籤上的清單中。
 
@@ -267,7 +267,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>步驟4：執行範例腳本以上傳 HR 資料
 
-設定 HR 連接器的最後一個步驟，是執行一個範例腳本，它會將您在步驟 1) 所建立之 CSV 檔案 (中所建立的 HR 資料上傳至 Microsoft 雲端。 具體說來，腳本會將資料上傳到 HR 連接器。 在您執行腳本後，您在步驟3中建立的 HR 連接器會將 HR 資料匯入至您的 Microsoft 365 組織，以供其他規範工具（例如有問必答風險管理解決方案）進行存取。 在您執行腳本後，請考慮排程任務每天定期執行它，使最新的員工終止資料上傳至 Microsoft 雲端。 請參閱 [排程腳本自動執行](#optional-step-6-schedule-the-script-to-run-automatically)。
+設定 HR 連接器的最後一個步驟，是執行一個範例腳本，它會將您在步驟 1) 所建立之 CSV 檔案 (中所建立的 HR 資料上傳至 Microsoft 雲端。 具體說來，腳本會將資料上傳到 HR 連接器。 在您執行腳本後，您在步驟3中建立的 hr 連接器會將 hr 資料匯入到您的 Microsoft 365 組織，以供其他規範工具（例如有問必答風險管理解決方案）進行存取。 在您執行腳本後，請考慮排程任務每天定期執行它，使最新的員工終止資料上傳至 Microsoft 雲端。 請參閱 [排程腳本自動執行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
 1. 移至您在上一個步驟中從左開啟的視窗，以利用範例腳本存取 GitHub 網站。 或者，您也可以開啟書簽網站或使用您複製的 URL。
 
@@ -277,7 +277,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 4. 如有需要，修改組織的範例腳本。
 
-5. 使用檔案名尾碼，將文字檔儲存為 Windows PowerShell script file `.ps1` ; 例如， `HRConnector.ps1` 。
+5. 使用檔案名尾碼，將文字檔儲存為 Windows PowerShell 腳本檔案 `.ps1` ; 例如， `HRConnector.ps1` 。
 
 6. 在您的本機電腦上開啟命令提示字元，然後移至您用來儲存腳本的目錄。
 
@@ -291,7 +291,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    | 參數 | 描述 |
    |:-----|:-----|:-----|
-   |`tenantId`|這是您在步驟2中取得之 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [ **一覽** ] 邊欄中取得組織的承租人識別碼。 這是用來識別您的組織。|
+   |`tenantId`|這是您在步驟2中取得 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [ **一覽** ] 邊欄中取得組織的承租人識別碼。 這是用來識別您的組織。|
    |`appId` |這是您在步驟2中您在 Azure AD 中建立之應用程式的 Azure AD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。 | 
    |`appSecret`|這是您在步驟2中您在 Azure AD 中建立之應用程式的 Azure AD 應用程式機密。 這也是用來進行驗證。|
    |`jobId`|這是您在步驟3中建立之 HR 連接器的工作識別碼。 這是用來將上傳至 Microsoft 雲端的 HR 資料與 HR connector 產生關聯。|
@@ -304,14 +304,14 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   上載成功時，腳本會顯示 **上傳成功** 郵件。
+   上載成功時，腳本會顯示 **Upload 成功** 的訊息。
 
    > [!NOTE]
    > 如果執行原則時發生問題，請參閱 [關於執行](/powershell/module/microsoft.powershell.core/about/about_execution_policies) 原則及 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) ，以取得設定執行原則的指導方針。
 
 ## <a name="step-5-monitor-the-hr-connector"></a>步驟5：監視 HR 連接器
 
-在您建立 HR 連接器並執行腳本以上傳 HR 資料之後，您可以在 Microsoft 365 規範中心中查看連接器和上傳狀態。 如果您安排定期定期執行腳本，您也可以在上次腳本執行後，查看目前的狀態。
+在您建立 hr 連接器並執行腳本以上傳 hr 資料後，您就可以在 Microsoft 365 規範中心中查看連接器和上傳狀態。 如果您安排定期定期執行腳本，您也可以在上次腳本執行後，查看目前的狀態。
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並按一下左側導覽中的 [ **資料連線器** ]。
 
@@ -331,9 +331,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 為了確保您的組織中的最新 HR 資料可用於像是「內部使用者風險管理」解決方案之類的工具，我們建議您排程腳本，使其定期定期執行，例如一天一次。 這也需要在類似的 (上更新 CSV 檔案中的 HR 資料（如果不相同）) 排程，使其包含離開組織之員工的最新資訊。 目標是上傳最新的 HR 資料，使 HR 連接器可供「內幕人員風險管理」解決方案使用。
 
-您可以在 Windows 中的 [任務排程器] 應用程式每天自動執行腳本。
+您可以在 Windows 中的工作排程器應用程式，每天自動執行腳本。
 
-1. 在您的本機電腦上，按一下 [Windows **開始** ] 按鈕，然後輸入 [ **任務計畫程式**]。
+1. 在您的本機電腦上，按一下 [Windows **開始**] 按鈕，然後輸入 [**任務** 排程器]。
 
 2. 按一下 [工作排程器] **應用程式以** 開啟它。
 
@@ -349,7 +349,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 6. 選取 [ **觸發器** ] 索引標籤，按一下 [ **新增**]，然後執行下列動作：
 
-   1. 在 [ **設定**] 底下，選取 [ **每日** ] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
+   1. 在 [**設定**] 底下，選取 [**每日**] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
 
    1. 在 [ **高級設定**] 下，確定已選取 [ **啟用** ] 核取方塊。
 

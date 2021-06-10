@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: 瞭解 Microsoft 365 for business 如何協助您 (GDPR) 程式的一般資料保護法規。
+description: 深入瞭解 Microsoft 365 商務版如何協助您使用一般資料保護法規 (GDPR) 程式。
 ms.openlocfilehash: c00dec46e47bde8afef8ffb2cd67dfc00ea98950
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,11 +28,11 @@ ms.locfileid: "50914495"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR 簡體：適用于小型企業的指南
 
- *使用 Microsoft 365 for business 來緩解及管理 GDPR 合規性* 
+ *使用商務用 Microsoft 365 來緩解及管理 GDPR 合規性* 
   
 一般資料保護法規 (GDPR) 是一種歐盟 (歐盟) 法規，規定組織應如何處理個人資料。 GDPR 是因為會在2018年5月25日強制進入。 如果您的商務銷售、提供服務給或採用歐盟的公民，則 [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) 將會影響您。 
   
-本文可協助您瞭解 GDPR 的功能、內容的原因，以及 Microsoft 365 for business 可如何協助您的組織遵循 GDPR。
+本文可協助您瞭解 GDPR 的功能、內容的原因，以及商務 Microsoft 365 如何可協助您的組織遵循 GDPR。
   
 ## <a name="a-quick-overview-of-the-gdpr"></a>GDPR 的快速綜述
 
@@ -54,7 +54,7 @@ GDPR 與下列資料類型相關：
   
 GDPR 狀態：「個人資料的處理應設計為服務于 mankind。」 GDPR 可在處理個人資料時使用同意，取得此目標。 這可能是詢問客戶是否要從您的公司接收電子郵件訊息的簡單行動。 當您想要使用資料進行行銷時，也表示您的網站上沒有其他自願退出核取方塊。 您必須使用 "clear affirmative act" 進行明確同意。 此外，您還必須保留或撤銷同意的記錄。
   
- **資料主體權利**
+ **資料主體權力**
   
 GDPR 會建立資料主體權力，這表示，相對於個人資料、客戶、員工、商務合作夥伴、用戶端、合同工、學生、供應商等等，有權：
   
@@ -88,7 +88,7 @@ GDPR 是關於您所處理的資料，而不是您擁有的員工人數。 它�
 
 您需要自行提問的第一個問題是：您是否要在網站的任何地方收集個人資料？ 例如，您可能會有要求輸入名稱和電子郵件地址的連絡人表單。 如果您想要傳送行銷電子郵件，請確定您已新增「自願加入」核取方塊，以解釋您將使用該資料的確切功能。 只有當收件者檢查此方塊時，才可以使用其個人資料進行行銷目的。
   
-此外，請確認儲存資料的資料庫受到保護。 您的網站主控公司或雲端儲存體廠商將可以提出建議。 如果您使用 Microsoft 365 for business，資料儲存會 GDPR 相容。 
+此外，請確認儲存資料的資料庫受到保護。 您的網站主控公司或雲端儲存體廠商將可以提出建議。 如果您使用商務用 Microsoft 365，資料儲存會 GDPR 相容。 
   
 ### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>我的公司在歐洲外。 GDPR 真的會影響我們嗎？
 
@@ -102,7 +102,7 @@ GDPR 是保護歐盟公民的規章。 如果貴公司現在與歐盟公民交�
     
 - 國際慈善團體會收集有關捐贈人的資料，並使用它來傳送有關捐贈的更新和要求。 GDPR 狀態： ' .。。出於直銷目的，處理個人資料時，可能會視為有合法的利益。 不過，組織中的責任是證明其利益會覆寫資料主體的利益。 公司 (或在這種情況下，慈善組織) 應一定會取得明確、明確的自願自願同意。
     
-如果客戶資料跨框線移動，也會套用 GDPR。 若要將雲端計算用於資料儲存，您必須確定服務完全 GDPR 相容。 如果資料儲存在資料保護記錄不佳的位置，就會發生很複雜的情況。 如果您使用 Microsoft 365 for business，我們就會提供正確的法律檔，以涵蓋 GDPR 的需求。
+如果客戶資料跨框線移動，也會套用 GDPR。 若要將雲端計算用於資料儲存，您必須確定服務完全 GDPR 相容。 如果資料儲存在資料保護記錄不佳的位置，就會發生很複雜的情況。 如果您使用商務用 Microsoft 365，我們就會有正確的法律檔，以涵蓋 GDPR 的需求。
   
 ### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>當然，我會收集資料，但其他公司會將資料儲存在一起。 可以讓我關閉掛接嗎？
 
@@ -110,9 +110,9 @@ GDPR 是保護歐盟公民的規章。 如果貴公司現在與歐盟公民交�
   
 - **資料控制器：** 個人或組織 (您可以使用決定收集資料的方式、內容及原因的接點) 。 他們可能會使用另一個公司的雲端伺服器儲存。 例如，收集客戶資料的網站是控制器。 
     
-- **資料處理器：** 個人或組織，代表控制器 (來儲存資料，) 並在要求時處理這些資料。 例如，Microsoft 365 Apps for business data storage 會擔當處理器，且完全符合 GDPR 規範。 
+- **資料處理器：** 個人或組織，代表控制器 (來儲存資料，) 並在要求時處理這些資料。 例如，Microsoft 365 Apps 商務版資料儲存區的作用相當於處理器，而且完全 GDPR 相容性。 
     
-    組織或系統可以同時擔當控制器和處理器。 Microsoft 365 for business 可以同時擔當 GDPR，也可以遵循這兩者。
+    組織或系統可以同時擔當控制器和處理器。 business Microsoft 365 可以同時擔當和遵循 GDPR。
     
 ### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>我仍然可以將行銷電子郵件傳送給我的老客戶嗎？
 
@@ -124,25 +124,25 @@ GDPR 不只會影響客戶資料;它也會延伸至員工資料。 新的 recrui
   
 就像現有員工和新的員工合約一樣，合同結尾的簽章不一定會有同意，尤其是當合約中使用非 affirmative 子句時。 在此情況下，您必須以與子句相關聯的明確方式來捕獲同意。 這表示哪種方式取決於您的員工合約，但在某些情況下，您可以使用「合法的利益」，並新增員工資料處理通知，以確保您的員工知道您會如何使用其資料。
   
-## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>使用 Microsoft 365 for business 滿足隱私權考慮
+## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>使用商務用 Microsoft 365 來滿足隱私權的考慮
 
 符合 GDPR，這是為了確保個人資料受到保護。 GDPR 具有一個概念，也就是透過設計和預設稱為隱私權。 這表示資料保護應該是「baked 至系統及產品」，讓隱私權的關注點成為次要性質。 
   
-就像更大的搭檔，在不影響安全性的情況下，需要有小型企業的方便性。 適用于企業的 Microsoft 365 是針對少於300員工的公司所設計。 小型公司可以使用 Microsoft 雲端式工具，以提升業務生產力。 使用 Microsoft 365 for business，小型企業可以管理電子郵件、檔、甚至會議和事件。 此外，它也包含內建的安全性措施和裝置管理，這對於 GDPR 合規性很重要。
+就像更大的搭檔，在不影響安全性的情況下，需要有小型企業的方便性。 商務用 Microsoft 365 是針對少於300名員工的公司所設計。 小型公司可以使用 Microsoft 雲端式工具，以提升業務生產力。 有了商務用 Microsoft 365，小型企業便可管理電子郵件、檔、甚至會議和事件。 此外，它也包含內建的安全性措施和裝置管理，這對於 GDPR 合規性很重要。
   
-Microsoft 365 for business 可透過下列方式，協助您使用 GDPR 處理常式：
+Microsoft 365 商務用下列方式可協助您進行 GDPR 處理常式：
   
 - **探索：** GDPR 規範的重要步驟是瞭解您擁有的資料。 
     
-- **管理：** 控制資料存取和管理其使用是 GDPR 中不可或缺的部分。 Microsoft 365 for business 會根據您想要套用至裝置的原則來保護商務資料。 在員工以遠端方式運作的時代，裝置管理非常重要。 Microsoft 365 for business 包括裝置管理功能，可確保所有裝置的資料受到保護。 例如，您可以指定您公司中的所有 Windows 10 裝置都受到 Windows Defender 的保護。 
+- **管理：** 控制資料存取和管理其使用是 GDPR 中不可或缺的部分。 商務用 Microsoft 365 會根據您想要套用至裝置的原則來保護商務資料。 在員工以遠端方式運作的時代，裝置管理非常重要。 商務用 Microsoft 365 包括可確保所有裝置的資料受到保護的裝置管理功能。 例如，您可以指定您公司中的所有 Windows 10 裝置都透過 Windows Defender 保護。 
     
-- **保護：** Microsoft 365 for business 是針對安全性而設計。 其裝置管理和資料保護控制可在您的整個商務網路（包括遠端裝置）上運作，以確保資料安全。 Microsoft 365 for business 提供控制項，例如 Office 應用程式中的隱私權設定及檔加密。 使用 Microsoft 365 for business，您可以執行 GDPR 相容性監控，以確定您已設定適當的保護等級。 
+- **保護：** 商務用 Microsoft 365 是針對安全性而設計。 其裝置管理和資料保護控制可在您的整個商務網路（包括遠端裝置）上運作，以確保資料安全。 Microsoft 365 商務用，可在 Office 應用程式和檔加密中提供控制項，例如隱私權設定。 使用商務用 Microsoft 365，您可以執行 GDPR 相容性監控，以確定您已設定正確的保護等級。 
     
-- **報告：** GDPR 非常著重于報告。 即便是擁有單一員工的公司，如果該業務處理大量的資料，則必須記錄並報告其程式。 Microsoft 365 for business 對較小型組織的報表需求不太好用。 
+- **報告：** GDPR 非常著重于報告。 即便是擁有單一員工的公司，如果該業務處理大量的資料，則必須記錄並報告其程式。 商務用 Microsoft 365 對較小型組織的報表需求不太好。 
     
     如審計記錄檔之類的工具可讓您追蹤和報告資料移動。 報表包括分類您收集和儲存的資料、對資料的處理方式，以及資料傳輸。 
     
-客戶、員工及用戶端正變得更清楚資料隱私權的重要性，而且現在會期望公司或組織尊重該隱私權。 Microsoft 365 for business 為您提供工具，以達成及維護 GDPR 合規性，而不需要對您的業務帶來大量的 upheaval。
+客戶、員工及用戶端正變得更清楚資料隱私權的重要性，而且現在會期望公司或組織尊重該隱私權。 Microsoft 365 商務用，可提供工具，以達成及維護 GDPR 合規性，而不需要對您的業務帶來大量 upheaval。
   
 ## <a name="next-steps"></a>後續步驟
 
@@ -150,7 +150,7 @@ Microsoft 365 for business 可透過下列方式，協助您使用 GDPR 處理�
   
 - 使用 [責任準備工作表](/compliance/regulatory/gdpr-arc)評估 GDPR 計畫。
     
-- 調查 [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) 做為實現和維護 GDPR 相容性的解決方案。 
+- 調查[business Microsoft 365](https://www.microsoft.com/microsoft-365/business) ，成為取得及維護 GDPR 相容性的解決方案。 
    
 
 > [!IMPORTANT]

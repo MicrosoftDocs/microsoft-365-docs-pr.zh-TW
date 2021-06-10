@@ -1,7 +1,7 @@
 ---
-title: 組織中的漏洞-威脅和弱點管理
-description: 列出常見的漏洞和披露 (CVE) 組織中執行的軟體弱點的識別碼。 由 Microsoft Defender for Endpoint 威脅和弱點管理功能探索。
-keywords: Microsoft Defender for Endpoint 威脅 & 漏洞管理、威脅和弱點管理、Microsoft Defender for Endpoint tvm 弱點頁面、尋找 tvm、tvm 弱點清單中的弱點（tvm 中的弱點詳細資料）
+title: 組織中的漏洞-威脅與弱點管理
+description: 列出常見的漏洞和披露 (CVE) 組織中執行的軟體弱點的識別碼。 由 Microsoft Defender for Endpoint 威脅與弱點管理功能探索。
+keywords: microsoft defender for endpoint 威脅 & 弱點管理，威脅與弱點管理，Microsoft defender for endpoint tvm 弱點] 頁面，透過 tvm 尋找弱點，tvm 弱點清單，tvm 中的弱點詳細資料
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,23 +25,23 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933070"
 ---
-# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織中的漏洞-威脅和弱點管理
+# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織中的漏洞-威脅與弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-威脅和弱點管理會在 Defender 中使用相同的信號，以進行 Endpoint protection，以掃描及偵測到漏洞。
+威脅和弱點管理會在 Defender 中使用相同的信號，以進行 endpoint protection，以掃描及偵測到漏洞。
 
 **弱點** 頁面會列出常見的漏洞和披露 (CVE) ID，列出您的裝置所公開的軟體弱點。 您也可以查看嚴重性、常見弱點計分系統 (CVSS) 分級、組織中的流行情況、相對應的破壞程度、威脅深入瞭解等等。
 
 >[!NOTE]
->如果沒有任何官方的 CVE 識別碼指派給一個弱點，該弱點名稱是由威脅和弱點管理所指派。
+>如果沒有任何正式的 CVE-ID 指派給弱點，則會由威脅與弱點管理指派漏洞名稱。
 
 >[!TIP]
 >若要取得有關新弱點事件的電子郵件，請參閱 [在 Microsoft Defender For Endpoint 中設定弱點電子郵件通知](configure-vulnerability-email-notifications.md)
@@ -50,12 +50,12 @@ ms.locfileid: "51933070"
 
 以幾種不同的方式存取弱點頁面：
 
-- 從 [Microsoft Defender Security Center](portal-overview.md)中的威脅和弱點管理導覽功能表中，選取 **弱點**
+- 從 [Microsoft Defender 資訊安全中心](portal-overview.md)中的威脅與弱點管理導覽功能表中選取 **弱點**
 - 全域搜尋
 
 ### <a name="navigation-menu"></a>流覽功能表
 
-移至 [威脅與弱點管理] 導覽功能表並選取 [ **弱點** ]，以開啟 cve 清單。
+移至 [威脅與弱點管理導覽] 功能表，然後選取 [**弱點**]，以開啟 cve 清單。
 
 ### <a name="vulnerabilities-in-global-search"></a>全域搜尋中的漏洞
 
@@ -97,7 +97,7 @@ ms.locfileid: "51933070"
 
 ### <a name="software-that-isnt-supported"></a>不支援的軟體
 
-Cve 未受到威脅 & 漏洞管理所支援的軟體，仍然存在於劣勢頁面中。 由於不支援軟體，所以只有有限的資料可供使用。
+cve & 威脅目前不支援的軟體弱點管理仍存在於劣勢頁面中。 由於不支援軟體，所以只有有限的資料可供使用。
 
 使用不受支援的軟體的 Cve，公開的裝置資訊將無法使用。 在「公開的裝置」區段中，選取「無法使用」選項，以不受支援的軟體進行篩選。
 
@@ -107,7 +107,7 @@ Cve 未受到威脅 & 漏洞管理所支援的軟體，仍然存在於劣勢頁�
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>儀表板中的最常見漏洞軟體
 
-1. 移至 [ [威脅與弱點管理] 儀表板](tvm-dashboard-insights.md) ，然後向左下至 **最常見的軟體** 構件。 您將會看到每個軟體中所發現的漏洞數量，以及威脅資訊，以及一段時間內的設備危險性的高階觀點。
+1. 移至 [[威脅與弱點管理] 儀表板](tvm-dashboard-insights.md)，向左下至 **最上層的軟體** 小工具。 您將會看到每個軟體中所發現的漏洞數量，以及威脅資訊，以及一段時間內的設備危險性的高階觀點。
 
     ![具有四欄的常見軟體卡：軟體、弱點、威脅、公開裝置。](images/tvm-top-vulnerable-software500.png)
 
@@ -115,13 +115,13 @@ Cve 未受到威脅 & 漏洞管理所支援的軟體，仍然存在於劣勢頁�
 3. 選取 [已 **發現的漏洞** ] 索引標籤。
 4. 選取您要調查的漏洞，以取得有關弱點詳細資料的詳細資訊
 
-    ![Windows Server 2019 深入查看一覽。](images/windows-server-drilldown.png)
+    ![Windows伺服器2019深入查看一覽。](images/windows-server-drilldown.png)
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>探索裝置頁面中的漏洞
 
 在 [裝置] 頁面中查看相關弱點資訊。
 
-1. 移至 Microsoft Defender 安全性中心導覽功能表列，然後選取裝置圖示。 [ **裝置] 清單** 頁面隨即開啟。
+1. 移至 [Microsoft Defender 資訊安全中心] 導覽功能表列，然後選取裝置圖示。 [ **裝置] 清單** 頁面隨即開啟。
 2. 在 [ **裝置] 清單** 頁面上，選取您要調查的裝置名稱。
 
     ![包含要調查之選定裝置的裝置清單。](images/tvm_machinetoinvestigate.png)
@@ -137,7 +137,7 @@ Cve 未受到威脅 & 漏洞管理所支援的軟體，仍然存在於劣勢頁�
 
 類似于軟體證據，我們現在會顯示我們在裝置上所套用的偵測邏輯，以表明其存在漏洞。 新的區段稱為「偵測邏輯」，在裝置頁面) 中發現的任何弱點中 (，並顯示偵測邏輯和來源。
 
-"OS Feature" 類別也會顯示在相關案例中。 CVE 會影響只有在特定作業系統元件啟用時才會執行有漏洞作業系統的裝置。 假設 Windows Server 2019 在其 DNS 元件中有弱點。 透過這項新功能，我們只會將此 CVE 附加到 Windows Server 2019 裝置，其作業系統中已啟用 DNS 功能。
+"OS Feature" 類別也會顯示在相關案例中。 CVE 會影響只有在特定作業系統元件啟用時才會執行有漏洞作業系統的裝置。 假設 DNS 元件中有 Windows Server 2019 有弱點。 使用這項新功能，我們只會將此 CVE 附加至 Windows Server 2019 裝置，其作業系統中已啟用 DNS 功能。
 
 ![偵測邏輯範例，列出在裝置和 Kb 上偵測到的軟體。](images/tvm-cve-detection-logic.png)
 
@@ -148,11 +148,11 @@ Cve 未受到威脅 & 漏洞管理所支援的軟體，仍然存在於劣勢頁�
 1. 開啟 [弱點] 頁面上的 CVE。
 2. 選取 [ **報表 inaccuracy** ]，隨即會開啟彈出窗格。
 3. 從下拉式功能表中選取 [inaccuracy] 類別，然後填入您的電子郵件地址和 inaccuracy 詳細資料。
-4. 選取 **[提交]**。 您的意見反應會立即傳送給威脅和弱點管理專家。
+4. 選取 **[提交]**。 您的意見反應會立即傳送給威脅與弱點管理專家。
 
 ## <a name="related-articles"></a>相關文章
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [安全性建議](tvm-security-recommendation.md)
 - [軟體庫存](tvm-software-inventory.md)
 - [儀表板深入解析](tvm-dashboard-insights.md)

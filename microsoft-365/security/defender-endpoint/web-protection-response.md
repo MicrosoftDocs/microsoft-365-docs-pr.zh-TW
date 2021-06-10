@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中回應 web 威脅
-description: 回應與惡意網站和有害網站相關的提醒。 瞭解網頁威脅防護如何透過網頁瀏覽器和 Windows 通知通知使用者
-keywords: web 保護，網頁威脅防護，網頁流覽，警示，回應，安全性，網路釣魚，惡意程式碼，exploit，網站，網路保護，Edge，Internet Explorer，Chrome，Firefox，網頁瀏覽器，通知，使用者，Windows 通知，封鎖頁面
+description: 回應與惡意網站和有害網站相關的提醒。 瞭解網頁威脅防護如何透過網頁瀏覽器通知使用者和 Windows 通知
+keywords: web 保護、網頁威脅防護、網頁流覽、提醒、回應、安全性、網路釣魚、惡意程式碼、exploit、網站、網路保護、Edge、Internet Explorer、Chrome、Firefox、網頁瀏覽器、通知、使用者、Windows 通知、封鎖頁面
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -31,7 +31,7 @@ ms.locfileid: "51688474"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Microsoft Defender for Endpoint 中的 Web 保護功能可讓您有效地調查與您自訂指示器清單中的惡意網站和網站相關的提醒。
 
@@ -68,12 +68,12 @@ Microsoft Defender for Endpoint 會針對惡意或可疑的 web 活動產生下�
 
 ## <a name="web-browser-and-windows-notifications-for-end-users"></a>使用者的網頁瀏覽器和 Windows 通知
 
-使用 Microsoft Defender for Endpoint 中的 web 保護，您的使用者將無法使用 Microsoft Edge 或其他瀏覽器來訪問惡意或有害的網站。 因為封鎖是透過 [網路保護](network-protection.md)來執行，所以他們會看到來自網頁瀏覽器的一般錯誤。 他們也會看到來自 Windows 的通知。
+使用 Microsoft Defender for Endpoint 中的 web 保護，您的使用者將無法使用 Microsoft Edge 或其他瀏覽器來訪問惡意或有害的網站。 因為封鎖是透過 [網路保護](network-protection.md)來執行，所以他們會看到來自網頁瀏覽器的一般錯誤。 他們也會看到 Windows 的通知。
 
-![Microsoft Edge 的影像，顯示403錯誤和 ](images/wtp-browser-blocking-page.png)
- *microsoft edge 封鎖* 的 Windows 通知網頁威脅
+![Microsoft Edge 的圖像顯示403錯誤，以及已封鎖 Windows 通知 ](images/wtp-browser-blocking-page.png)
+ *網頁威脅 Microsoft Edge*
 
-![Chrome 網頁瀏覽器的影像，顯示安全連線警告，以及 ](images/wtp-chrome-browser-blocking-page.png)
+![chrome 網頁瀏覽器的影像，顯示安全連線警告，以及 ](images/wtp-chrome-browser-blocking-page.png)
  *在 Chrome 上封鎖* 的 Windows 通知網頁威脅
 
 ## <a name="related-topics"></a>相關主題

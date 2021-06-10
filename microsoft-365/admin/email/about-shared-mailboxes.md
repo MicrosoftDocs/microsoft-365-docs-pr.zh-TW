@@ -68,7 +68,7 @@ ms.locfileid: "52635531"
 ## <a name="related-content"></a>相關內容
 
 [建立共用信箱](create-a-shared-mailbox.md) (文章) \
- (文章) [設定共用信箱](configure-a-shared-mailbox.md)
-[將使用者信箱轉換成共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章) \
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) \
+[設定共用信箱](configure-a-shared-mailbox.md) (文章)
+[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章)
+[從共用信箱移除授權](remove-license-from-shared-mailbox.md) (文章)
 [解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)

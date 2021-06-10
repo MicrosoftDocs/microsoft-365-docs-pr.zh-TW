@@ -33,7 +33,7 @@ ms.locfileid: "51688978"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 「威脅防護」報告提供組織中所產生之提醒的高層級資訊。 此報告包含趨勢資訊，顯示偵測來源、類別、嚴重性、狀態、分類，以及每次的通知決定。
 
@@ -61,7 +61,7 @@ ms.locfileid: "51688978"
 ## <a name="alert-summary"></a>警示摘要
 當警示趨勢顯示趨勢警示資訊時，警示摘要會顯示目前日期範圍內的警示資訊。
 
- 警示摘要可讓您向下流覽至已套用對應篩選的特定警示佇列。 例如，按一下 [偵測對應卡] 中的 EDR 列時，會透過結果顯示警示佇列，只顯示來自 EDR 偵測產生的警示。 
+ 警示摘要可讓您向下流覽至已套用對應篩選的特定警示佇列。 例如，按一下 [偵測對應卡] 中的 [EDR] 列時，將會透過結果顯示警示佇列，只會顯示出 EDR 偵測產生的警示。 
 
 >[!NOTE]
 >在 [摘要] 區段中反映的資料範圍是在目前日期之前的180天。 例如，如果今天的日期是2019年11月5日，則 [摘要] 區段中的資料將會反映從5月5日開始，2019到11月5日（2019）的數位。<br>
@@ -94,7 +94,7 @@ ms.locfileid: "51688978"
 
 1. 在 [**篩選 > 嚴重性**] 底下，選取 [**高**]
 2. 確定已取消選取 [ **嚴重性** ] 底下的其他所有選項。
-3. 選取 **套用**。 
+3. 選取 ****[套用]。 
 
 ## <a name="related-topic"></a>相關主題
 - [裝置健康情況和符合性報告](machine-reports.md)

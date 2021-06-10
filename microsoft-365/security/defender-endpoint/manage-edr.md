@@ -36,7 +36,7 @@ ms.locfileid: "51058748"
 ## <a name="in-this-section"></a>本節內容
 主題 | 描述 
 :---|:---
-[警示佇列](alerts-queue-endpoint-detection-response.md)| 查看 Microsoft Defender Security Center 中呈現的警示。
+[警示佇列](alerts-queue-endpoint-detection-response.md)| 在 Microsoft Defender 資訊安全中心中查看所呈現的警示。
 [裝置清單](machines-view-overview.md) | 瞭解您可以如何查看及管理裝置清單、管理裝置群組，以及調查裝置相關的警示。 
 [採取回應動作](respond-machine-alerts.md)| 對裝置和檔案採取回應動作，以快速回應偵測到的攻擊並包含威脅。
 [使用高級搜尋的查詢資料](advanced-hunting-query-language.md)| 使用強大的搜尋和查詢工具，主動搜尋整個組織的可能威脅。

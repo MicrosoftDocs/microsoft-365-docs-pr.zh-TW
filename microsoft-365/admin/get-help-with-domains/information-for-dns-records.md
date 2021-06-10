@@ -32,7 +32,7 @@ ms.locfileid: "52635723"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集建立 DNS 記錄所需的資訊
 
- 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>步驟1：尋找 TXT 記錄值，並確認
 
@@ -100,6 +100,6 @@ ms.locfileid: "52635723"
 
 ## <a name="related-content"></a>相關內容
 
-[網域常見問題解答](../setup/domains-faq.yml) (篇) \
-[尋找並修正新增網域或 DNS 記錄後的問題](find-and-fix-issues.md) (文章) \
+[網域常見問題集](../setup/domains-faq.yml) (文章)
+[尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
 [管理網域](index.yml) (連結頁面)

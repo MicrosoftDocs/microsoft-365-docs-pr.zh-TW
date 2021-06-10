@@ -1,7 +1,7 @@
 ---
 title: 使用高級搜尋來尋找跨裝置、電子郵件、應用程式和身分識別的威脅
 description: 研究常見搜尋案例，以及涵蓋裝置、電子郵件、應用程式和身分識別的範例查詢。
-keywords: 高級搜尋，Office365 資料，Windows 裝置，Office365 電子郵件正常化，電子郵件，應用程式，身分識別，威脅搜尋，網路威脅搜尋，搜尋，查詢，遙測，Microsoft 365，Microsoft 365 Defender
+keywords: advanced 搜尋，Office365 資料，Windows 裝置，Office365 電子郵件正規化，電子郵件，應用程式，身分識別，威脅搜尋，網路威脅搜尋，搜尋，查詢，遙測，Microsoft 365，Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,8 +37,8 @@ ms.locfileid: "51932962"
 
 Microsoft 365 Defender 中的[高級搜尋](advanced-hunting-overview.md)可讓您主動搜尋整個威脅：
 - Microsoft Defender for Endpoint 所管理的裝置
-- Microsoft 365 處理的電子郵件
-- Microsoft Cloud App Security 和 Microsoft Defender 身分識別追蹤的雲端應用程式活動、驗證事件和網域控制站活動
+- Microsoft 365 所處理的電子郵件
+- 由 Microsoft Cloud App Security 和 Microsoft Defender 身分識別所追蹤的雲端應用程式活動、驗證事件和網域控制站活動
 
 透過這種可視性層次，您可以快速尋找跨越網路各部分的威脅，包括抵達電子郵件或網頁的複雜入侵、提升本機許可權、取得許可權的網域認證，以及橫向移至您的裝置。 
 

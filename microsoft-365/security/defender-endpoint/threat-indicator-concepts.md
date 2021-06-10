@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51059303"
 ---
-# <a name="understand-threat-intelligence-concepts"></a>瞭解威脅智慧概念
+# <a name="understand-threat-intelligence-concepts"></a>了解威脅情報概念
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51059303"
 
 
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
 
 Advanced cybersecurity 攻擊是由多個複雜的惡意事件、屬性和內容資訊所組成。 識別和決定哪些活動符合可疑的工作可能是一項挑戰性的工作。 您對您的行業所知之已知屬性和反常活動的知識，都是知道何時將觀測行為視為可疑的情況的基礎。
 
@@ -64,12 +64,12 @@ IOCs 具有與警示定義的多對一關聯，讓警示定義可以有許多對
 主題 | 描述
 :---|:---
 [向 SIEM 工具提取偵測](configure-siem.md)| 深入瞭解提取偵測的不同方式。
-[在 Microsoft Defender for Endpoint 中啟用 SIEM 整合](enable-siem-integration.md)| 瞭解如何在入口網站的 [ **設定** ] 頁面中啟用 SIEM 整合功能，讓您可以使用及產生必要的資訊來設定支援的 SIEM 工具。
+[在 Microsoft Defender for Endpoint 中啟用 SIEM 整合](enable-siem-integration.md)| 瞭解如何在入口網站的 [**設定**] 頁面中啟用 SIEM 整合功能，讓您可以使用及產生必要的資訊來設定支援的 SIEM 工具。
 [設定 Splunk 以拉入 Microsoft Defender for Endpoint 偵測](configure-siem.md)| 瞭解如何安裝 REST API 模組化輸入應用程式和其他設定設定，以讓 Splunk 提取 Microsoft Defender for Endpoint 偵測。
 [設定 HP ArcSight 以拉入 Microsoft Defender for Endpoint 偵測](configure-arcsight.md)| 瞭解如何安裝 HP ArcSight REST FlexConnector 套件，以及您需要設定 ArcSight 以提取 Microsoft Defender for Endpoint 偵測的檔案。
-[Microsoft Defender for Endpoint 偵測欄位](api-portal-mapping.md) | 瞭解哪些資料欄位會公開成為警示 API 的一部分，以及這些欄位如何對應至 Microsoft Defender 安全中心。
+[Microsoft Defender for Endpoint 偵測欄位](api-portal-mapping.md) | 瞭解哪些資料欄位會公開成為警示 API 的一部分，以及它們如何對應 Microsoft Defender 資訊安全中心。
 [使用 REST API 提取 Microsoft Defender for Endpoint 偵測](pull-alerts-using-rest-api.md) | 使用用戶端認證 OAuth 2.0 流程，從使用 REST API 的 Microsoft Defender for Endpoint 提取偵測。
-[疑難排解 SIEM 工具整合問題](troubleshoot-siem.md) | 解決使用 SIEM 整合功能時可能遇到的問題。
+[為 SIEM 工具整合問題疑難排解](troubleshoot-siem.md) | 解決使用 SIEM 整合功能時可能遇到的問題。
 
 
 

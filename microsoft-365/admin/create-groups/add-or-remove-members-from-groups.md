@@ -42,7 +42,7 @@ ms.locfileid: "52635603"
 
 4. 搜尋或選取要新增的成員名稱。
 
-5. 選取 [儲存]。
+5. 選取 ****[儲存]。
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>將群組新增至系統管理員中心的成員
 
@@ -54,7 +54,7 @@ ms.locfileid: "52635603"
 
 4. 搜尋或選取您想要新增的群組名稱。
 
-5. 選取 [儲存]。
+5. 選取 ****[儲存]。
 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>從系統管理中心的群組中移除成員
 

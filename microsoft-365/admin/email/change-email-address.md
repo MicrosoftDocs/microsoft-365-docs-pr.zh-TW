@@ -34,7 +34,7 @@ ms.locfileid: "52635519"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>變更電子郵件地址以使用您的自訂網域
 
- 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 ::: moniker range="o365-worldwide"
 

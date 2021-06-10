@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何將電子郵件、連絡人及行事曆從 Google Workspace 遷移至 Microsoft 365 for business。
+description: 瞭解如何將電子郵件、連絡人及行事曆從 Google Workspace 遷移至商務用 Microsoft 365。
 ms.openlocfilehash: d6639032b379a2cd632b6ab6ee7e4082b1e7be0b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50913619"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
-您可以從 Google Workspace 使用管理員執行的遷移至 Exchange Online。 您可以一次或分階段遷移郵件。 下列步驟顯示如何一次遷移電子郵件資料。 如需詳細資訊，請參閱 [執行 a G Suite 遷移](/exchange/mailbox-migration/perform-g-suite-migration)。
+您可以使用從 Google Workspace Exchange Online 的系統管理員的遷移。 您可以一次或分階段遷移郵件。 下列步驟顯示如何一次遷移電子郵件資料。 如需詳細資訊，請參閱 [執行 a G Suite 遷移](/exchange/mailbox-migration/perform-g-suite-migration)。
 
 遷移程式需要數個步驟，而且可能需要數小時到數天內，視您要遷移的資料量而定。
 
@@ -56,7 +56,7 @@ ms.locfileid: "50913619"
 
      私密金鑰會儲存至裝置上的下載資料夾。
  
-1. 選取 [關閉]。 
+1. 選取 **[關閉]**。 
 
 ### <a name="enable-api-usage-for-the-project"></a>啟用專案的 API 使用方式
 
@@ -77,7 +77,7 @@ ms.locfileid: "50913619"
  
 1. 選擇 [ **授權**]。 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>針對移至 Microsoft 365 的郵件建立子域
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>建立要 Microsoft 365 郵件的子域
 
 1. 回到 **Google Workspace 管理** 主控台。
 1. 選取 [ **網域**]、[ **管理網域**]，然後 **新增網域別名**。 
@@ -86,8 +86,8 @@ ms.locfileid: "50913619"
 
     網域驗證通常只需要幾分鐘的時間，但可能需要長達48小時。
 
-1. 移至 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。
-1. 在 **Microsoft 365 系統管理中心** 的左側導覽中，選取 [ **全部顯示**]、[ **設定**]、[ **網域**]，然後 **新增網域**。 
+1. 移至[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 在 **Microsoft 365 系統管理中心** 的左側導覽中，選取 [**全部顯示**]、[**設定**]、[**網域**]，然後 **新增網域**。 
 1. 輸入您先前建立的子域，然後選取 [ **使用此網域**]。 
 1. 若要連接網域，請選取 [ **繼續**]。 
 1. 向下滾動並記下 MX 記錄、CNAME 記錄和 TXT 記錄。 
@@ -99,7 +99,7 @@ ms.locfileid: "50913619"
 
     可能需要一些時間，這些變更才會生效。  
 
-1. 回到您在 **Microsoft 365 系統管理中心** 中離開的位置，然後選取 [ **繼續**]。 
+1. 回到您在 **Microsoft 365 系統管理中心** 中離開的位置，然後選取 [**繼續**]。 
 
 您的網域現在已設定好。  
 
@@ -107,7 +107,7 @@ ms.locfileid: "50913619"
 
 在遷移開始之前，您必須使用新的子域建立使用者的電子郵件別名。 
 
-1. 若要開始下一個步驟，請在 Microsoft 365 系統管理中心的 [ **新增網域** ] 嚮導中，選取 [ **移至** 作用中使用者]。 
+1. 若要開始下一個步驟，請在 Microsoft 365 系統管理中心的 [**新增網域**] 嚮導中，選取 [**移至** 作用中使用者]。 
 1. 選取使用者，然後管理使用者 **名稱和電子郵件**。 
 1. 從 [ **網域** ] 下拉式清單中，選取您先前建立的子域。 
 1. 輸入使用者名稱，然後選取 [ **新增**]、[ **儲存變更**]，然後關閉視窗。 
@@ -118,8 +118,8 @@ ms.locfileid: "50913619"
 
 完成後，您就可以遷移。 
 
-1. 在 **Microsoft 365 系統管理中心** 的左側導覽中，向下滾動至 [系統 **管理中心**]，然後選取 [ **Exchange**]。 
-1. 在 [收件者] **底下，選擇**[ **遷移**]，選取 [ **新增**]， **遷移至 Exchange Online**，然後選擇 [ **G Suite 遷移** **]**，然後再 
+1. 在 **Microsoft 365 系統管理中心** 的左側導覽中，向下滾動至 [系統管理中心 **]，然後** 選取 [ **Exchange**]。 
+1. 在 [收件者]**底下，選擇**[**遷移**]，選取 [**新增**]，[**遷移至 Exchange Online**]，選擇 [ **G Suite 遷移** **]**，然後 
 1. 使用您要遷移的信箱清單建立 CSV 檔案。 請確定檔案遵循下列格式： 
 
     ```CSV
@@ -143,6 +143,6 @@ ms.locfileid: "50913619"
 1. 一旦狀態變更為 [已 **同步** 處理]，請選取 [ **完成此遷移批次**]，然後選取 **[是]**。 
 1. 完成此程式之後，您的狀態會變更為 [ **已完成**]。 
 1. 如有需要，您可以選取 [ **查看詳細** 資訊] 以取得有關遷移的詳細資訊。 
-1. 選取 [關閉]。 
-1. 開啟 Outlook 以確認已順利遷移 Google Workspace 中的所有電子郵件。
+1. 選取 **[關閉]**。 
+1. 開啟 Outlook，確認已順利遷移 Google Workspace 中的所有電子郵件。
 您也可以為行事曆專案和連絡人重複此專案。

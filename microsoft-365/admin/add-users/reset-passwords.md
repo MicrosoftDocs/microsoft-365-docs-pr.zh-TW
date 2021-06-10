@@ -122,8 +122,8 @@ ms.locfileid: "52635567"
   
 ## <a name="related-content"></a>相關內容
   
-[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章) \
- (篇文章) 中[重設密碼](../add-users/reset-passwords.md)
-[將個別使用者的密碼設為永不過期](set-password-to-never-expire.md) (篇文章) \
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
+[重設密碼](../add-users/reset-passwords.md) (文章)
+[設定個別使用者的密碼永不過期](set-password-to-never-expire.md) (文章)
 為[您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) \
 [Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 

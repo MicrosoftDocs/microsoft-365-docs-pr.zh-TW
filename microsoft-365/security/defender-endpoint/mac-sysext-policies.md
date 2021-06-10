@@ -69,7 +69,7 @@ ms.locfileid: "51932736"
 
 ### <a name="network-extension-policy"></a>網路擴充原則
 
-在端點偵測和回應功能中，Microsoft Defender for Endpoint on macOS 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。
+在端點偵測和回應功能的一部分中，macOS 的 Microsoft Defender for endpoint 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender 資訊安全中心入口網站。 下列原則允許網路分機執行這項功能。
 
 >[!NOTE]
 >JAMF 不具備內容篩選原則的內建支援，也就是在裝置上安裝 Microsoft Defender for Endpoint for the macOS 的網路分機。 此外，JAMF 有時會變更所要部署之原則的內容。
@@ -170,7 +170,7 @@ ms.locfileid: "51932736"
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. 在 JAMF 入口網站中，流覽至 [設定 **設定檔** ]，然後按一下 [ **上傳** ] 按鈕。 `com.microsoft.network-extension.signed.mobileconfig`當系統提示您輸入檔案時，請選取。
+5. 在 JAMF 入口網站中，流覽至 [設定 **設定檔**]，然後按一下 [ **Upload** ] 按鈕。 `com.microsoft.network-extension.signed.mobileconfig`當系統提示您輸入檔案時，請選取。
 
 ## <a name="intune"></a>Intune
 
@@ -179,7 +179,7 @@ ms.locfileid: "51932736"
 若要核准系統擴充：
 
 1. 在 Intune 中，開啟 [**管理**  >  **裝置** 設定]。 選取 [**管理**  >  **設定檔**  >  **建立設定檔**]。
-2. 選擇設定檔的名稱。 將 **平臺** 改為 MacOS **配置檔案類型 = 分機**。 選取 [建立]。
+2. 選擇設定檔的名稱。 將 **平臺** 改為 MacOS **配置檔案類型 = 分機**。 選取 [建立 **]**。
 3. 在 [索引標籤 `Basics` ] 中，為此新設定檔指定名稱。
 4. 在 [ `Configuration settings` ] 索引標籤中，在區段中新增下列專案 `Allowed system extensions` ：
 
@@ -308,7 +308,7 @@ sysext.xml: OK
 1.  在 Intune 中，開啟 [**管理**  >  **裝置** 設定]。 選取 [**管理**  >  **設定檔**  >  **建立設定檔**]。
 2. 選擇設定檔的名稱。 變更 **平臺 = macOS** 和 **配置檔案類型 = 自訂**。 選取 [ **設定**]。
 3.  開啟設定設定檔，並上傳 **sysext.xml**。 此檔案是在上述步驟中建立的。
-4.  選取 [確定]。
+4.  選取 **[確定]**。
 
     ![Intune 螢幕擷取畫面中的系統擴充](images/mac-system-extension-intune.png)
 

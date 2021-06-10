@@ -128,6 +128,6 @@ Run one of the following commands:
 
 ## <a name="related-content"></a>相關內容
 
-[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章) \
- (篇文章) 中[重設密碼](../add-users/reset-passwords.md)
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
+[重設密碼](../add-users/reset-passwords.md) (文章)
 [為您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) 

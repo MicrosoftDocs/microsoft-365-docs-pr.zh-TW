@@ -34,7 +34,7 @@ ms.locfileid: "51688258"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 透過經常和 prevalently 的複雜敵人和新威脅，您可以快速：
 
@@ -99,13 +99,13 @@ ms.locfileid: "51688258"
 在 [ **緩解** ] 區段中，複查可協助您增加組織對威脅抵禦能力的特定可行動建議清單。 追蹤的緩解措施清單包括：
 
 - **安全性更新**—部署弱點的安全性更新或修補程式
-- **Microsoft Defender 防病毒設定**
+- **Microsoft Defender 防毒軟體設定**
   - 安全性智慧版本
   - 雲端提供的保護  
   - 可能有害的應用程式 (PUA) 保護
   - 即時保護
  
-本節中的緩解資訊包含 [威脅和弱點管理](next-gen-threat-and-vuln-mgt.md)的資料，也就是從報告中各種連結提供的詳細深入資訊。
+本節中的緩解資訊包含來自[威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)的資料，也就是從報告中各種連結提供的詳細深入資訊。
 
 ![威脅分析報告「威脅分析報告 ](images/ta-mitigations.png)
  _緩解」區段_ 之 [緩解] 區段的影像
@@ -117,7 +117,7 @@ ms.locfileid: "51688258"
 - 圖表只會反映所追蹤的緩解。 請查看報告中未顯示圖表的其他緩解。
 - 緩解不會保證完全恢復。 提供的緩解反映改進恢復所需的最佳動作。
 - 如果裝置未將資料傳輸至服務，則會將裝置計為「無法使用」。
-- 防病毒相關的統計資料是以 Microsoft Defender 防病毒設定為基礎。 使用協力廠商防病毒解決方案的裝置可能會顯示為「已公開」。
+- 防病毒相關的統計資料是以 Microsoft Defender 防毒軟體設定為基礎。 使用協力廠商防病毒解決方案的裝置可能會顯示為「已公開」。
 
 ## <a name="related-topics"></a>相關主題
 - [使用高級搜尋主動尋找威脅](advanced-hunting-overview.md) 

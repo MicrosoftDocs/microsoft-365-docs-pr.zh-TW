@@ -104,8 +104,8 @@ ms.locfileid: "52635471"
 
 ## <a name="related-content"></a>相關內容
 
-[關於共用信箱](about-shared-mailboxes.md) (文章) \
+[關於共用信箱](about-shared-mailboxes.md) (文章)
 [建立共用信箱](create-a-shared-mailbox.md) (文章) \
- (文章) [設定共用信箱](configure-a-shared-mailbox.md)
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) \
+[設定共用信箱](configure-a-shared-mailbox.md) (文章)
+[從共用信箱移除授權](remove-license-from-shared-mailbox.md) (文章)
 [解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)

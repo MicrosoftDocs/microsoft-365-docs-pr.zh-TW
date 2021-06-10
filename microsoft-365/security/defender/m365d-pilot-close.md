@@ -1,7 +1,7 @@
 ---
 title: 摘要示範 Microsoft 365 Defender 專案結果
-description: 透過完成您的計分卡、分析報表結果，以及決定如何繼續進行，結束 Microsoft 365 Defender 專案的試驗。
-keywords: Microsoft 365 Defender 試驗，決定在試驗 Microsoft 365 Defender 專案之後要執行的工作、評估 Microsoft 365 Defender 的實際執行資訊、從 Microsoft 365 Defender 試驗轉換為部署、網路安全性、高級持續性威脅、企業安全性、裝置、裝置、自動調查和修正，以及高級搜尋
+description: 完成您的試驗 Microsoft 365 Defender 專案，方法是完成計分卡、分析報表結果，以及決定如何前移。
+keywords: Microsoft 365Defender 試驗，決定在試驗 Microsoft 365 defender 專案之後要執行的工作、評估 Microsoft 365 的 defender 以進行生產、從 Microsoft 365 Defender 試驗轉換為部署、網路安全性、高級持續威脅、企業安全性、裝置、裝置、自動調查和修正，以及高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,7 +45,7 @@ ms.locfileid: "51932866"
 
 您目前正在結束和摘要階段。
 
-您已執行的是僅限記憶體的高級攻擊模擬，可在網域控制站上遠端執行程式碼。 您已瞭解 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 偵測，以及如何在 stealthy 惡意活動上建立警示。 您也瞭解如何將不同來源的警示，與其他上下文資訊一起傳遞至 Microsoft 365 安全性中心入口網站中的單一事件。 遇到這類整合，可讓 SOC 分析員調查並採取必要的動作。 您也已經建立高級搜尋查詢，識別輸入電子郵件，使用者已開啟或儲存附件，並根據該查詢建立偵測。
+您已執行的是僅限記憶體的高級攻擊模擬，可在網域控制站上遠端執行程式碼。 您已瞭解 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 偵測，以及如何在 stealthy 惡意活動上建立警示。 您也瞭解如何將不同來源的警示，與其他上下文資訊一起傳遞到 Microsoft 365 安全性中心入口網站中的單一事件。 遇到這類整合，可讓 SOC 分析員調查並採取必要的動作。 您也已經建立高級搜尋查詢，識別輸入電子郵件，使用者已開啟或儲存附件，並根據該查詢建立偵測。
 
 所有測試結束之後，您已到達程式的結束。
 
@@ -61,7 +61,7 @@ ms.locfileid: "51932866"
 
 ## <a name="next-step"></a>下一步
 透過下列互動式指南深入瞭解 Microsoft 365 Defender 支柱：
-- [使用 Microsoft Defender for Office 365 保護您的組織](https://aka.ms/O365ATP-Interactive-Guide)
+- [使用 Microsoft Defender Office 365 來保護您的組織](https://aka.ms/O365ATP-Interactive-Guide)
 - [使用適用於身分識別的 Microsoft Defender 偵測可疑活動和潛在攻擊](https://aka.ms/AATP-Interactive-Guide)
-- [使用 Microsoft Cloud App Security 偵測威脅及管理提醒](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [偵測威脅並使用 Microsoft Cloud App Security 管理提醒](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
 - [使用 Microsoft Defender for Endpoint 調查和修正威脅](https://aka.ms/MDATP-IR-Interactive-Guide)

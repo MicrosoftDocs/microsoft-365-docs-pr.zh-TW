@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 在本文中，您將瞭解如何使用 Microsoft 365 的 PowerShell 來管理 SharePoint Online 使用者、群組及網站。
+description: 在本文中，您將瞭解如何使用 PowerShell 進行 Microsoft 365，以管理 SharePoint 線上使用者、群組及網站。
 ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -31,9 +31,9 @@ ms.locfileid: "50916723"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-如果您是使用大型使用者帳戶或群組清單的 SharePoint Online 系統管理員，而且想要更容易管理，則可以使用 Microsoft 365 PowerShell。 
+如果您是使用大型使用者帳戶或群組清單的 SharePoint Online 系統管理員，而且想要更容易管理，則可以使用 PowerShell Microsoft 365。 
 
-在您開始之前，本主題中的程式需要您連線至 SharePoint 線上。 如需相關指示，請參閱 [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+在您開始之前，本主題中的程式需要您連線至 SharePoint 線上。 如需相關指示，請參閱[連線以 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>取得網站、群組及使用者的清單
 
@@ -79,7 +79,7 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-您可以將這些命令複製並貼到 [記事本] 中，將 $tenant、$site 及 $user 的變數值變更為您環境中的實際值，然後將它貼到 SharePoint Online 管理命令介面視窗中，以執行這些命令。
+您可以將這些命令複製並貼到記事本、將 $tenant、$site 及 $user 的變數值變更為您環境中的實際值，然後將它貼到 SharePoint Online 管理命令介面視窗中，以執行這些命令。
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>將使用者新增至其他網站集合群組
 
@@ -133,7 +133,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 不過，使用 SharePoint 線上管理命令介面和 CSV 檔案，這是一種快速快捷的方式。 在此工作中，您將使用 Windows PowerShell 從網站集合安全性群組中移除使用者。 然後，您會使用 CSV 檔案，並從不同的網站中移除許多使用者。 
 
-我們將使用「Remove-SPOUser ' 指令指令，從網站集合群組中移除單一的 Microsoft 365 使用者，這樣就能看到命令語法。 語法的外觀如下：
+我們將使用「Remove-SPOUser ' 指令指令，只從網站集合群組中移除單一 Microsoft 365 使用者，這樣就能看到命令語法。 語法的外觀如下：
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -165,9 +165,9 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>自動管理大型使用者和群組清單
 
-若要將大量帳戶新增至 SharePoint 網站並授與許可權，您可以使用 Microsoft 365 系統管理中心、個別的 PowerShell 命令，或 PowerShell CSV 檔案。 在這些選項中，CSV 檔案是自動化此工作的最快方法。
+若要將大量帳戶新增至 SharePoint 網站並授與許可權，您可以使用 Microsoft 365 系統管理中心、個別的 PowerShell 命令，或是 PowerShell CSV 檔案。 在這些選項中，CSV 檔案是自動化此工作的最快方法。
 
-基本程式是建立 CSV 檔案，該檔案具有與 Windows PowerShell 腳本所需之參數對應的標題 (欄) 。 您可以在 Excel 中輕鬆建立這類清單，然後將它匯出為 CSV 檔案。 然後，您可以使用 Windows PowerShell 腳本，逐一查看 CSV 檔案中) 的記錄 (列，將使用者新增至群組，並將群組新增至網站。 
+基本程式是建立 CSV 檔案，該檔案具有對應至 Windows PowerShell 腳本所需參數的標題 (欄) 。 您可以在 Excel 中輕鬆建立這類清單，然後將它匯出為 CSV 檔案。 然後，您可以使用 Windows PowerShell 腳本，逐一查看 CSV 檔案中) 的記錄 (資料列，將使用者新增至群組，並將群組新增至網站。 
 
 例如，讓我們建立 CSV 檔案，以定義網站集合、群組和許可權的群組。 接下來，我們會建立 CSV 檔案，以將使用者填入群組。 最後，我們將建立並執行簡單的 Windows PowerShell 腳本，以建立及填入群組。
 
@@ -274,11 +274,11 @@ Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wra
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-這個報告非常簡單，您可以新增更多的程式碼，以建立包含更多詳細資訊的特定報告或報告。 不過，這會讓您瞭解如何使用 SharePoint Online 管理命令介面來管理 SharePoint 線上環境中的使用者。
+這個報告非常簡單，您可以新增更多的程式碼，以建立包含更多詳細資訊的特定報告或報告。 不過，這會讓您瞭解如何使用 SharePoint online 管理命令介面來管理 SharePoint 線上環境中的使用者。
    
 ## <a name="see-also"></a>另請參閱
 
-[連線至 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[連線 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [使用 PowerShell 管理 SharePoint Online](create-sharepoint-sites-and-add-users-with-powershell.md)
 

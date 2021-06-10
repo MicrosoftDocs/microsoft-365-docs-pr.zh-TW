@@ -40,7 +40,7 @@ ms.locfileid: "52635687"
   
 若要針對已安裝 Microsoft Office 2013、且執行 Windows 的任何裝置啟用新式驗證 (比如膝上型電腦和平板電腦)，您必須先設定下列登錄機碼。您必須在每部要啟用新式驗證的裝置上設定機碼：
   
-|**登錄機碼**|**Type**|**Value** |
+|**登錄機碼**|**類型**|**Value** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
@@ -53,7 +53,7 @@ ms.locfileid: "52635687"
 
 若要停用裝置上的新式驗證，請在裝置上設定下列登錄機碼：
   
-|**登錄機碼**|**Type**|**Value**|
+|**登錄機碼**|**類型**|**Value**|
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    

@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: 使用 Microsoft 365 的 PowerShell，設定您的 Microsoft 365 租使用者中個別或多個使用者帳戶的屬性。
+description: 使用 Microsoft 365 的 PowerShell，設定 Microsoft 365 承租人中個別或多個使用者帳戶的屬性。
 ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,9 +33,9 @@ ms.locfileid: "50911081"
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-若要在 Azure Active Directory PowerShell 中為 Graph 模組設定使用者帳戶的屬性，請使用 [**AzureADUser 指令程式**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) ，並指定要設定或變更的屬性。
+若要在 Graph 模組的 Azure Active Directory PowerShell 中設定使用者帳戶的屬性，請使用 [**AzureADUser 指令程式**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0)，並指定要設定或變更的屬性。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
    
 ### <a name="change-properties-for-a-specific-user-account"></a>變更特定使用者帳戶的屬性
 
@@ -149,9 +149,9 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-若要使用 Microsoft Azure Active Directory Module for Windows PowerShell 設定使用者帳戶的屬性，請使用 **Set-MsolUser** Cmdlet，並指定要設定或變更的屬性。
+若要使用 Windows PowerShell 的 Microsoft Azure Active Directory 模組設定使用者帳戶的屬性，請使用 **Set-MsolUser** Cmdlet，並指定要設定或變更的屬性。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
 >[!Note]
 >PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 *Msol* 的 Cmdlet。 從 PowerShell 執行這些 Cmdlet。

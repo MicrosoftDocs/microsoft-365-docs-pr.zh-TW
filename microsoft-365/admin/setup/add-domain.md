@@ -35,7 +35,7 @@ ms.locfileid: "52635675"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>將網域新增至 Microsoft 365
 
- 若您找不到所需功能，請 **[檢查網域常見問題集](domains-faq.yml)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](domains-faq.yml)**。 
   
  *若要新增、修改或移除網域，您 **必須** 是 [企業或企業方案](https://products.office.com/business/office)的 **全域系統管理員**。這些變更會影響整個承租人、*自訂* 的系統管理員或 *一般使用者* 無法進行這些變更。*  
 
@@ -103,7 +103,7 @@ ms.locfileid: "52635675"
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
     
-6. 選取 [儲存]。
+6. 選取 ****[儲存]。
 
 ## <a name="registrars-with-domain-connect"></a>使用網域連線的註冊機構
 
@@ -136,7 +136,7 @@ ms.locfileid: "52635675"
 
 ## <a name="related-content"></a>相關內容
 
-[網域常見問題解答](domains-faq.yml) (篇) \
+[網域常見問題集](domains-faq.yml) (文章)
 [什麼是網域？](../get-help-with-domains/what-is-a-domain.md) (文章)\
 [在 Microsoft 365 (文章中購買功能變數名稱](../get-help-with-domains/buy-a-domain-name.md)) \
 [設定您的網域](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (文章) 

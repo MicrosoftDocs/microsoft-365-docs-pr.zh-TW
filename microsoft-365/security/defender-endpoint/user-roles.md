@@ -1,6 +1,6 @@
 ---
 title: 建立及管理以角色為基礎的存取控制的角色
-description: 建立角色並定義指派給角色的許可權，作為 Microsoft Defender Security Center 中角色型存取控制執行的一部分。
+description: 在 Microsoft Defender 資訊安全中心中建立角色並定義指派給角色的許可權，做為以角色為基礎的存取控制執行的一部分
 keywords: 使用者角色、角色、存取 rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -31,17 +31,17 @@ ms.locfileid: "51059236"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>建立角色並將角色指派給 Azure Active Directory 群組
 
-下列步驟會引導您瞭解如何在 Microsoft Defender Security Center 中建立角色。 它假設您已建立 Azure Active Directory 使用者群組。
+下列步驟會引導您瞭解如何在 Microsoft Defender 資訊安全中心中建立角色。 它會假設您已建立 Azure Active Directory 使用者群組。
 
-1. 使用已指派安全性管理員或全域系統管理員角色的帳戶登入 [Microsoft Defender 安全中心](https://securitycenter.windows.com/) 。
+1. 使用已指派安全性管理員或全域系統管理員角色的帳戶登入[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)。
 
-2. 在功能窗格中，選取 [ **設定] > 角色**。
+2. 在功能窗格中，選取 [**設定 > 角色**]。
 
 3. 選取 [ **新增專案**]。
 
@@ -62,12 +62,12 @@ ms.locfileid: "51059236"
 
 - **查看資料**
     - **安全性作業** -查看入口網站中的所有安全性作業資料
-    - **威脅和弱點管理** -在入口網站中查看威脅和弱點管理資料
+    - **威脅及弱點管理**-View 威脅與弱點管理入口網站中的資料
 
 - **主動修正動作**
     - **安全性作業** -採取回應動作、核准或取消未決修正動作、管理允許/封鎖的自動化和指示器清單
-    - **威脅和弱點管理-例外處理** -建立新的例外狀況及管理作用中的例外狀況
-    - **威脅和弱點管理-修正處理** -提交新的修復要求、建立票證，以及管理現有的修復活動
+    - **威脅及弱點管理例外** 狀況-建立新的例外狀況及管理作用中的例外狀況
+    - **威脅與弱點管理修正處理**-提交新的修復要求、建立票證，以及管理現有的修復活動
 
 - **警示調查** -管理提醒、啟動自動化調查、執行掃描、收集調查套件、管理裝置標記，並只下載可遷移的可執行檔 (PE) 檔案 
 
@@ -85,7 +85,7 @@ ms.locfileid: "51059236"
     - **Advanced** 命令：
         - 透過即時回應從遠端裝置下載檔案
         - 從檔頁面下載 PE 和非 PE 檔案
-        - 將檔案上傳至遠端裝置
+        - 將檔案 Upload 至遠端裝置
         - 從檔案庫中查看腳本
         - 從檔案庫在遠端裝置上執行腳本
 
@@ -93,9 +93,9 @@ ms.locfileid: "51059236"
   
 ## <a name="edit-roles"></a>編輯角色
 
-1. 使用已指派安全性管理員或全域系統管理員角色的帳戶登入 [Microsoft Defender 安全中心](https://securitycenter.windows.com/) 。
+1. 使用已指派安全性管理員或全域系統管理員角色的帳戶登入[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)。
 
-2. 在功能窗格中，選取 [ **設定] > 角色**。
+2. 在功能窗格中，選取 [**設定 > 角色**]。
 
 3. 選取您要編輯的角色。
 
@@ -107,9 +107,9 @@ ms.locfileid: "51059236"
 
 ## <a name="delete-roles"></a>刪除角色
 
-1. 使用已指派安全性管理員或全域系統管理員角色的帳戶登入 [Microsoft Defender 安全中心](https://securitycenter.windows.com/) 。
+1. 使用已指派安全性管理員或全域系統管理員角色的帳戶登入[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)。
 
-2. 在功能窗格中，選取 [ **設定] > 角色**。
+2. 在功能窗格中，選取 [**設定 > 角色**]。
 
 3. 選取您想要刪除的角色。
 

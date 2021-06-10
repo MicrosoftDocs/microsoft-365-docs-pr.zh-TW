@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender REST API 的 Hello World 版
+title: Microsoft 365 Defender REST API 的 Hello World
 description: 瞭解如何建立應用程式，並使用權杖來存取 Microsoft 365 Defender APIs
 keywords: 應用程式、權杖、存取、aad、應用程式、應用程式註冊、powershell、腳本、全域管理員、許可權、microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51058620"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World 版
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,16 +46,16 @@ ms.locfileid: "51058620"
 
 1. 以 **全域系統管理員** 角色的使用者身分登入 [Azure](https://portal.azure.com) 。
 
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。
+2. 流覽至 **Azure Active Directory**  >  **App 註冊**  >  **新註冊**。
 
-   ![Microsoft Azure 的影像及應用程式註冊導覽](../../media/atp-azure-new-app2.png)
+   ![Microsoft Azure 及流覽至應用程式註冊的影像](../../media/atp-azure-new-app2.png)
 
 3. 在 [註冊] 表單中，選擇應用程式的名稱，然後選取 [ **註冊**]。 選取重新導向 URI 是選用的。 您不需要其中一個，即可完成此範例。
 
-4. 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**  >  **APIs 我的組織使用**>]，輸入 **microsoft 威脅防護**，然後選取 [ **microsoft 威脅防護**]。 您的應用程式現在可以存取 Microsoft 365 Defender。
+4. 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**  >  **APIs 我的組織使用**>]，輸入 **Microsoft 威脅防護**，然後選取 **Microsoft 威脅防護**。 您的應用程式現在可以存取 Microsoft 365 Defender。
 
    > [!TIP]
-   > *Microsoft 威脅防護* 是 Microsoft 365 Defender 的先前名稱，因此不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
+   > *Microsoft 威脅防護* 是 Microsoft 365 Defender 的先前名稱，而且不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
    ![API 許可權選取的影像](../../media/apis-in-my-org-tab.PNG)
 
    - 選擇 [**應用程式許可權**]  >  **事件。讀取。 [全部**] 並選取 [**新增許可權**]。
@@ -79,7 +79,7 @@ ms.locfileid: "51058620"
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>使用應用程式取得權杖，並使用權杖存取 API
 
-如需 Azure Active Directory 標記的詳細資訊，請參閱 [AZURE AD 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
+如需 Azure Active Directory 權杖的詳細資訊，請參閱[Azure AD 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
 
 > [!IMPORTANT]
 > 雖然此演示程式中的範例會鼓勵您貼上機密值以用於測試目的，您決不應該將 **機密硬編碼** 到生產中執行的應用程式。 協力廠商可以使用您的機密存取資源。 您可以使用 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates)，協助保護應用程式的機密。 如需如何保護應用程式的實際範例，請參閱 [使用 Azure Key Vault 管理伺服器應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/)。
@@ -172,10 +172,10 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [Microsoft 365Defender APIs 概述](api-overview.md)
 - [存取 Microsoft 365 Defender APIs](api-access.md)
 - [建立應用程式以存取沒有使用者的 Microsoft 365 Defender](api-create-app-web.md)
-- [建立應用程式以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md)
-- [建立具有對 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md)
+- [建立應用程式，以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md)
+- [建立具有 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md)
 - [使用 Azure Key Vault 管理伺服器應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 使用者登入和 API 存取的授權](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

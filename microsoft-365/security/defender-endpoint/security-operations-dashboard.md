@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender 安全中心安全性運作儀表板
+title: Microsoft Defender 資訊安全中心安全性作業儀表板
 description: 使用儀表板來識別具有風險的裝置、追蹤服務的狀態，以及查看有關裝置及警示的統計資料和資訊。
 keywords: 儀表板、警示、新、正在進行、已解決、風險、裝置風險、病毒感染、報告、統計資料、圖表、圖表、健康情況、作用中惡意程式碼偵測、威脅類別、類別、密碼 stealer、勒索軟體、入侵、威脅、低嚴重性、active 惡意程式碼
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51058719"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 安全中心安全性運作儀表板
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 資訊安全中心安全性作業儀表板
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51058719"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 **安全性作業儀表板** 是指端點偵測和回應功能的所在位置。 這可讓您在需要回應動作的情況下，以高層次的方式概括顯示偵測和高光的位置。 
 
@@ -122,10 +122,10 @@ ms.locfileid: "51058719"
 
 按一下使用者帳戶以查看使用者帳戶的詳細資料。 如需詳細資訊，請參閱 [調查使用者帳戶](investigate-user.md)。
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## <a name="related-topics"></a>相關主題
 - [瞭解 Microsoft Defender for Endpoint 入口網站](use.md)
-- [入口網站概述](portal-overview.md)
+- [入口網站概觀](portal-overview.md)
 - [查看威脅 & 漏洞管理儀表板](tvm-dashboard-insights.md)
 - [查看威脅分析儀表板並採取建議的緩解動作](threat-analytics.md)

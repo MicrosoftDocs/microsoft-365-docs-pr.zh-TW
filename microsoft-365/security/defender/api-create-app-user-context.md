@@ -1,5 +1,5 @@
 ---
-title: 建立應用程式以代表使用者存取 Microsoft 365 Defender APIs
+title: 建立應用程式，以代表使用者存取 Microsoft 365 Defender APIs
 description: 瞭解如何代表使用者存取 Microsoft 365 Defender APIs。
 keywords: 代表使用者、api、應用程式、使用者、存取權杖、token 等存取
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51060595"
 ---
-# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>建立應用程式以代表使用者存取 Microsoft 365 Defender APIs
+# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>建立應用程式，以代表使用者存取 Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,17 +38,17 @@ ms.locfileid: "51060595"
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-此頁面會說明如何建立應用程式，以讓單一使用者以程式設計方式存取 Microsoft 365 Defender。
+此頁面說明如何建立應用程式，以對單一使用者以程式設計方式存取 Microsoft 365 Defender。
 
-如果您需要以程式設計方式存取沒有定義之使用者的 Microsoft 365 Defender (例如，如果您正在撰寫後臺應用程式或幕後程式) ，請參閱 [Create a app to Access Microsoft 365 Defender （沒有使用者](api-create-app-web.md)）。 如果您需要為多個承租人提供存取權，例如，如果您正在服務大型組織或客戶群組，請參閱 Create a [app with a app to access to To Microsoft 365 Defender APIs](api-partner-access.md)。如果您不確定需要哪種類型的存取，請參閱 [入門](api-access.md)。
+如果您需要以程式設計方式存取 Microsoft 365 Defender，但沒有定義的使用者 (例如，如果您正在撰寫後臺應用程式或幕後程式) ，請參閱[Create a app to access Microsoft 365 Defender （沒有使用者](api-create-app-web.md)）。 如果您需要為多個承租人提供存取權，例如，如果您正在服務大型組織或客戶群組，請參閱 Create a [app with partner access to Microsoft 365 Defender APIs](api-partner-access.md)。如果您不確定需要哪種類型的存取，請參閱[入門](api-access.md)。
 
-Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並使用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft 365Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並利用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用這些 APIs：
 
 - 建立 Azure Active Directory (Azure AD) 應用程式。
 - 使用此應用程式取得存取權杖。
-- 使用權杖來存取 Microsoft 365 Defender API。
+- 使用權杖存取 Microsoft 365 Defender API。
 
 本文將說明如何：
 
@@ -66,9 +66,9 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
 1. 以 **全域系統管理員** 角色的使用者身分登入 [Azure](https://portal.azure.com) 。
 
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。
+2. 流覽至 **Azure Active Directory**  >  **App 註冊**  >  **新註冊**。
 
-   ![Microsoft Azure 的影像及應用程式註冊導覽](../../media/atp-azure-new-app2.png)
+   ![Microsoft Azure 及流覽至應用程式註冊的影像](../../media/atp-azure-new-app2.png)
 
 3. 在表單中，為您的應用程式選擇一個名稱，並輸入下列重新導向 URI 的資訊，然後選取 [ **註冊**]。
 
@@ -77,10 +77,10 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
    - **應用程式類型：** 公用用戶端
    - 重新 **導向 URI：**https://portal.azure.com
 
-4. 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**  >  **APIs 我的組織使用**>]，輸入 **microsoft 威脅防護**，然後選取 [ **microsoft 威脅防護**]。 您的應用程式現在可以存取 Microsoft 365 Defender。
+4. 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**  >  **APIs 我的組織使用**>]，輸入 **Microsoft 威脅防護**，然後選取 **Microsoft 威脅防護**。 您的應用程式現在可以存取 Microsoft 365 Defender。
 
    > [!TIP]
-   > *Microsoft 威脅防護* 是 Microsoft 365 Defender 的先前名稱，因此不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
+   > *Microsoft 威脅防護* 是 Microsoft 365 Defender 的先前名稱，而且不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
 
    ![API 許可權選取的影像](../../media/apis-in-my-org-tab.PNG)
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
 ## <a name="get-an-access-token"></a>取得存取權杖
 
-如需 Azure Active Directory 標記的詳細資訊，請參閱 [AZURE AD 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
+如需 Azure Active Directory 權杖的詳細資訊，請參閱[Azure AD 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
 
 ### <a name="get-an-access-token-using-powershell"></a>使用 PowerShell 取得存取權杖
 
@@ -132,9 +132,9 @@ $response.AccessToken
 
 ![權杖驗證的影像](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>使用權杖來存取 Microsoft 365 Defender API
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>使用權杖存取 Microsoft 365 Defender API
 
-1. 選擇您想要使用 (事件或「高級搜尋) 的 API。 如需詳細資訊，請參閱 [支援的 Microsoft 365 Defender APIs](api-supported.md)。
+1. 選擇您想要使用 (事件或「高級搜尋) 的 API。 如需詳細資訊，請參閱[支援的 Microsoft 365 Defender APIs](api-supported.md)。
 2. 在您要傳送的 HTTP 要求中，將授權標頭設定為 `"Bearer" <token>` ， *持有* 者為授權配置，而 *token* 為您驗證的權杖。
 3. 權杖會在一小時內到期。 在此期間，您可以使用相同的權杖傳送一個以上的要求。
 
@@ -151,11 +151,11 @@ $response.AccessToken
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [Microsoft 365Defender APIs 概述](api-overview.md)
 - [存取 Microsoft 365 Defender APIs](api-access.md)
 - [建立 "Hello world" 應用程式](api-hello-world.md)
 - [建立應用程式以存取沒有使用者的 Microsoft 365 Defender](api-create-app-web.md)
-- [建立具有對 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md)
+- [建立具有 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md)
 - [深入瞭解 API 限制和授權](api-terms.md)
 - [瞭解錯誤碼](api-error-codes.md)
 - [OAuth 2.0 使用者登入和 API 存取的授權](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

@@ -74,5 +74,5 @@ Microsoft Defender AV 可能不需要的應用程式 | 可能有害的應用程�
  |
  --- | ---
 企業行動力 + 安全性 E3<br>Azure Active Directory 進階版 P2 |    您可以使用企業行動力 + 安全性 E3 的所有功能來管理 MDM 裝置。 您可以使用 Azure Active Directory 進階版 P2 做為 Microsoft 受管理的電腦的選用功能。
-Microsoft 雲端 App 安全性 |  您可以搭配 Microsoft 受管理的電腦使用此選用功能。
+Microsoft Cloud App Security |  您可以搭配 Microsoft 受管理的電腦使用此選用功能。
 Azure 資訊保護 P2  | 您可以搭配 Microsoft 受管理的電腦使用此選用功能。

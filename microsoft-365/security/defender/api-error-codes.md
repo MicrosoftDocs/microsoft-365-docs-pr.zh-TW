@@ -1,6 +1,6 @@
 ---
-title: 常見的 Microsoft 365 Defender REST API 錯誤碼
-description: 深入瞭解常見的 Microsoft 365 Defender REST API 錯誤碼
+title: 常見 Microsoft 365 Defender REST API 錯誤碼
+description: 深入瞭解常見的 Microsoft 365 Defender REST API 錯誤代碼
 keywords: api、錯誤、代碼、常見錯誤、Microsoft 365 Defender、api 錯誤碼
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932878"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常見的 Microsoft 365 Defender REST API 錯誤碼
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常見 Microsoft 365 Defender REST API 錯誤碼
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -99,7 +99,7 @@ InternalServerError | 內部伺服器錯誤 (500)  | *附注：沒有錯誤訊�
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [Microsoft 365Defender APIs 概述](api-overview.md)
 - [支援的 Microsoft 365 Defender API](api-supported.md)
 - [存取 Microsoft 365 Defender APIs](api-access.md)
 - [深入瞭解 API 限制和授權](api-terms.md)

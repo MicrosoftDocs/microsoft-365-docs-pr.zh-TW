@@ -33,7 +33,7 @@ ms.locfileid: "51687622"
 
 
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
 **服務健康** 情況提供有關 Endpoint Service 之 Defender 的目前狀態資訊。 您可以驗證服務健康情況是否良好，或是否有目前的問題。 如果發生問題，您會看到資訊，例如偵測到問題的時間、初級的根本原因以及預期的解決時間。
 

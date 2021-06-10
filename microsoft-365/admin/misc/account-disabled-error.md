@@ -1,5 +1,5 @@
 ---
-title: 在網頁上的 Outlook 中取得帳戶停用的錯誤？
+title: 在 web 上的 Outlook 中取得帳戶停用的錯誤？
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -26,6 +26,6 @@ ms.locfileid: "50914939"
 ---
 # <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>在 web 上的 Outlook 中取得帳戶停用的錯誤
 
-如果您收到錯誤 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` ，當您嘗試在網頁上開啟 outlook (以前稱為 outlook web App) 時，您的帳戶已經停用，您的系統管理員可能已停用您對網頁上的 outlook 的存取。
+如果您收到錯誤 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` ，當您嘗試在 (網頁上開啟 Outlook （以前稱為 Outlook Web App) ）時，您的帳戶已停用，您的系統管理員可能已停用您對網頁 Outlook 的存取權。
 
-您的系統管理員可以遵循 [啟用或停用信箱的 Outlook Web App](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)主題中的步驟，修正此錯誤。
+您的系統管理員可以遵循[啟用或停用信箱的 Outlook Web App](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)主題中的步驟，修正此錯誤。

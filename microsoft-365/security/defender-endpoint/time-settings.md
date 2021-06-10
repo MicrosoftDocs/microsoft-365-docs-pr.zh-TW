@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender 安全中心時區設定
-description: 使用這裡所包含的資訊來設定 Microsoft Defender 安全中心時區設定和查看授權資訊。
+title: Microsoft Defender 資訊安全中心時區設定
+description: 使用這裡所包含的資訊設定 Microsoft Defender 資訊安全中心時區設定並查看授權資訊。
 keywords: 設定，Microsoft Defender，cybersecurity 威脅情報，Microsoft Defender for Endpoint，時區，utc，本機時間，授權
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932628"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender 安全中心時區設定
+# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender 資訊安全中心時區設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -68,12 +68,12 @@ Microsoft Defender for Endpoint 時區預設會設定為 UTC。
 3. 選取 [ **時區 UTC** ] 或 [本機時區]，例如-7:00。
 
 ### <a name="regional-settings"></a>地區設定
-若要對 Microsoft Defender for Endpoint 套用不同的日期格式，請使用 Internet Explorer (IE) 和 Microsoft Edge (Edge) 的區域設定。 如果您使用的是其他瀏覽器（如 Google Chrome），請遵循必要的步驟來變更該瀏覽器的時間和日期設定。 
+若要為 Microsoft Defender for Endpoint 套用不同的日期格式，請使用 Internet Explorer (IE) 和 Microsoft Edge (Edge) 的區域設定。 如果您使用的是其他瀏覽器（如 Google Chrome），請遵循必要的步驟來變更該瀏覽器的時間和日期設定。 
 
 
 **Internet Explorer (IE) 和 Microsoft Edge**
 
-IE 和 Microsoft Edge 使用 [控制台] 的 [**時鐘、語言及地區**] 選項中所設定的 **區域** 設定。 
+IE 和 Microsoft Edge 會使用 [控制台] 的 [**時鐘、語言及地區**] 選項中所設定的 **區域** 設定。 
 
 
 #### <a name="known-issues-with-regional-formats"></a>地區格式的已知問題

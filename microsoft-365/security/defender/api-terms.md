@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender APIs 授權和使用條款
-description: Microsoft 365 Defender 中 APIs 授權與使用條款的描述
+title: Microsoft 365Defender APIs 授權和使用條款
+description: Microsoft 365 Defender 中 APIs 的授權與使用條款的描述
 keywords: api、api、授權、條款、api、法律、通知、行為準則
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51057279"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender APIs 授權和使用條款
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365Defender APIs 授權和使用條款
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,13 +40,13 @@ ms.locfileid: "51057279"
 
 ## <a name="official-terms"></a>官方字詞
 
-Microsoft 365 Defender APIs 受 [microsoft APIs 授權和使用條款的](/legal/microsoft-apis/terms-of-use)制約。
+Microsoft 365Defender APIs 受[Microsoft APIs 授權和使用條款的](/legal/microsoft-apis/terms-of-use)制約。
 
 ## <a name="legal-notices"></a>法律通知
 
 Microsoft 和任何投稿人會授與您對 [此存放庫](https://github.com/MicrosoftDocs/microsoft-365-docs)中的 Microsoft 檔及其他內容的授權，在 [創造性 Commons 特性4.0 國際公開授權] 底下。 如需詳細資訊，請參閱 [授權](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE) 檔案。
 
-檔中參考的 microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 產品及服務，都可能是美國及/或其他國家/地區之 Microsoft 的商標或注冊商標。
+檔中參考的 microsoft、Windows、Microsoft Azure 和/或其他 microsoft 產品和服務，都可能是 Microsoft 在美國及（或）其他國家/地區的商標或注冊商標。
 
 此專案的授權不會授與您使用任何 Microsoft 名稱、徽標或商標的權利。 您可以在 [Microsoft 商標](https://go.microsoft.com/fwlink/?LinkID=254653)上找到 microsoft 的一般商標指導方針。
 
@@ -74,6 +74,6 @@ Microsoft 365 Defender APIs 具有節流閾值。
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [Microsoft 365Defender APIs 概述](api-overview.md)
 - [支援的 Microsoft 365 Defender API](api-supported.md)
 - [存取 Microsoft 365 Defender APIs](api-access.md)

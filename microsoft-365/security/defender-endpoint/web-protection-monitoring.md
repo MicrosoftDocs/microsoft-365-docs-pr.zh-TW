@@ -31,9 +31,9 @@ ms.locfileid: "51687420"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web 保護可讓您透過 Microsoft Defender Security Center 中 **報告 > web 保護** ，來監控組織的 web 流覽安全性。 報告包含的卡片可提供 web 威脅偵測統計資料。
+web 保護可讓您透過 Microsoft Defender 資訊安全中心中 **報告 > web 保護**，來監視組織的 web 流覽安全性。 報告包含的卡片可提供 web 威脅偵測統計資料。
 
 - **隨時間變化的 web 威脅防護** 偵測-此趨勢卡會在過去30天、過去3個月、過去6個月的 (，顯示在選取的時段內，由類型偵測到的 web 威脅數目) 
  

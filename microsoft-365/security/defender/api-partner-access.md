@@ -1,5 +1,5 @@
 ---
-title: 透過 Microsoft 365 Defender APIs 的合作夥伴存取
+title: 透過 Microsoft 365 Defender APIs 進行夥伴存取
 description: 瞭解如何建立可讓使用者以程式設計方式存取 Microsoft 365 Defender 的應用程式。
 keywords: partner，access，api，多租使用者，同意，存取權杖，應用程式
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51057280"
 ---
-# <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>建立具有對 Microsoft 365 Defender APIs 的合作夥伴存取權的應用程式
+# <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>使用 Microsoft 365 Defender APIs 建立具有夥伴存取權的應用程式
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,45 +38,45 @@ ms.locfileid: "51057280"
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-此頁面說明如何建立可以以程式設計方式存取 Microsoft 365 Defender 的 Azure Active Directory 應用程式，代表使用者跨多個承租人。 多租使用者應用程式對於提供大量使用者十分有用。
+此頁面說明如何建立可以以程式設計方式存取 Microsoft 365 Defender 的 Azure Active Directory 應用程式，代表多個承租人中的使用者。 多租使用者應用程式對於提供大量使用者十分有用。
 
-如果您需要以程式設計方式代表單一使用者存取 Microsoft 365 Defender，請參閱 [建立應用程式以代表使用者存取 microsoft 365 defender APIs](api-create-app-user-context.md)。 如果您需要在未明確定義的使用者的情況下存取 (例如，如果您正在撰寫後臺應用程式或幕後程式) ，請參閱 [Create a app to Access Microsoft 365 Defender （沒有使用者](api-create-app-web.md)）。 如果您不確定需要哪種類型的存取，請參閱 [入門](api-access.md)。
+如果您需要以程式設計方式代表單一使用者存取 Microsoft 365 defender，請參閱[建立應用程式，以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md)。 如果您需要在未明確定義的使用者的情況下存取 (例如，如果您正在撰寫後臺應用程式或幕後程式) ，請參閱[Create a app to access Microsoft 365 Defender （不含使用者](api-create-app-web.md)）。 如果您不確定需要哪種類型的存取，請參閱 [入門](api-access.md)。
 
-Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並使用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft 365Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並利用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用這些 APIs：
 
 - 建立 Azure Active Directory (Azure AD) 應用程式。
 - 使用此應用程式取得存取權杖。
-- 使用權杖來存取 Microsoft 365 Defender API。
+- 使用權杖存取 Microsoft 365 Defender API。
 
 因為此應用程式是多租使用者，所以您也需要每個租使用者代表其使用者的系統 [管理員同意](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) 。
 
 本文將說明如何：
 
 - 建立 **多承租人** Azure AD 應用程式
-- 取得您的應用程式的使用者管理員授權，以存取其所需資源的 Microsoft 365 Defender。
+- 從您的應用程式的使用者管理員取得授權的同意，以存取其所需資源的 Microsoft 365 Defender。
 - 取得 Microsoft 365 Defender 的存取權杖
 - 驗證 token
 
-Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 會協助您根據 Microsoft 365 Defender 功能自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft 365Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 會協助您根據 Microsoft 365 的 Defender 功能自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用 APIs：
 
 - 建立 **多承租人** Azure AD 應用程式。
-- 取得授權的 (同意) 您的應用程式的使用者管理員存取其所需的 Microsoft 365 Defender 資源。
+- 取得授權 (您的使用者管理員) ，以存取所需 Microsoft 365 Defender 資源。
 - 使用此應用程式取得存取權杖。
-- 使用權杖來存取 Microsoft 365 Defender API。
+- 使用權杖存取 Microsoft 365 Defender API。
 
-下列步驟可協助您建立多承租人 Azure AD 應用程式、取得 Microsoft 365 Defender 的存取權杖，以及驗證權杖。
+下列步驟可協助您建立多承租人 Azure AD 應用程式、取得存取權杖以 Microsoft 365 Defender 及驗證權杖。
 
 ## <a name="create-the-multi-tenant-app"></a>建立多租使用者應用程式
 
 1. 以 **全域系統管理員** 角色的使用者身分登入 [Azure](https://portal.azure.com) 。
 
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。
+2. 流覽至 **Azure Active Directory**  >  **App 註冊**  >  **新註冊**。
 
-   ![Microsoft Azure 的影像及應用程式註冊導覽](../../media/atp-azure-new-app2.png)
+   ![Microsoft Azure 及流覽至應用程式註冊的影像](../../media/atp-azure-new-app2.png)
 
 3. 在 [註冊] 表單中：
 
@@ -88,10 +88,10 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
    ![[註冊應用程式] 表單的影像](../..//media/atp-api-new-app-partner.png)
 
-4. 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**  >  **APIs 我的組織使用**>]，輸入 **microsoft 威脅防護**，然後選取 [ **microsoft 威脅防護**]。 您的應用程式現在可以存取 Microsoft 365 Defender。
+4. 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**  >  **APIs 我的組織使用**>]，輸入 **Microsoft 威脅防護**，然後選取 **Microsoft 威脅防護**。 您的應用程式現在可以存取 Microsoft 365 Defender。
 
    > [!TIP]
-   > *Microsoft 威脅防護* 是 Microsoft 365 Defender 的先前名稱，因此不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
+   > *Microsoft 威脅防護* 是 Microsoft 365 Defender 的先前名稱，而且不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
 
    ![API 許可權選取的影像](../../media/apis-in-my-org-tab.PNG)
 
@@ -121,7 +121,7 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
 9. 將應用程式新增至使用者的租使用者。
 
-   因為您的應用程式代表您的使用者與 Microsoft 365 Defender 互動，所以需要針對您想要使用它的每一個承租人進行核准。
+   由於您的應用程式代表使用者與 Microsoft 365 Defender 互動，因此需要針對您想要使用它的每一個承租人進行核准。
 
    使用者租使用者的 **全域系統管理員** 必須查看同意連結並核准您的應用程式。
 
@@ -241,11 +241,11 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>使用曲線取得存取權杖
 
 > [!NOTE]
-> 在 Windows 10 版本1803和更新版本上都預先安裝了卷。 若為其他版本的 Windows，請直接從 [官方卷網站](https://curl.haxx.se/windows/)下載並安裝工具。
+> 在 Windows 10，版本1803和更新版本上都預先安裝了卷。 若為其他版本的 Windows，請直接從[官方卷網站](https://curl.haxx.se/windows/)下載並安裝工具。
 
 1. 開啟命令提示字元，並將 CLIENT_ID 設定為您的 Azure 應用程式識別碼。
 1. 將 CLIENT_SECRET 設定為您的 Azure 應用程式密碼。
-1. 將 TENANT_ID 設定為要使用您的應用程式存取 Microsoft 365 Defender 之使用者的 Azure 租使用者識別碼。
+1. 將 TENANT_ID 設定為想要使用您的應用程式存取 Microsoft 365 Defender 之使用者的 Azure 租使用者識別碼。
 1. 執行下列命令：
 
 ```bash
@@ -267,9 +267,9 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 ![權杖驗證的影像](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>使用權杖來存取 Microsoft 365 Defender API
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>使用權杖存取 Microsoft 365 Defender API
 
-1. 選擇您想要使用 (事件或「高級搜尋) 的 API。 如需詳細資訊，請參閱 [支援的 Microsoft 365 Defender APIs](api-supported.md)。
+1. 選擇您想要使用 (事件或「高級搜尋) 的 API。 如需詳細資訊，請參閱[支援的 Microsoft 365 Defender APIs](api-supported.md)。
 2. 在您要傳送的 HTTP 要求中，將授權標頭設定為 `"Bearer" <token>` ， *持有* 者為授權配置，而 *token* 為您驗證的權杖。
 3. 權杖會在一小時內到期。 在此期間，您可以使用相同的權杖傳送一個以上的要求。
 
@@ -286,11 +286,11 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [Microsoft 365Defender APIs 概述](api-overview.md)
 - [存取 Microsoft 365 Defender APIs](api-access.md)
 - [建立 "Hello world" 應用程式](api-hello-world.md)
 - [建立應用程式以存取沒有使用者的 Microsoft 365 Defender](api-create-app-web.md)
-- [建立應用程式以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md)
+- [建立應用程式，以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md)
 - [深入瞭解 API 限制和授權](api-terms.md)
 - [瞭解錯誤碼](api-error-codes.md)
 - [使用 Azure Key Vault 管理伺服器應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/)

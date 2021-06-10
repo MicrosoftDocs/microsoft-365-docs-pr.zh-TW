@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: 深入瞭解 Office 365 中的 ' MSOID ' CNAME 記錄，可引導您使用最佳的驗證程式伺服器，讓您能更快速地進行回應。
+description: 深入瞭解 Office 365 中的 ' MSOID ' CNAME 記錄，可引導您使用最佳的驗證程式伺服器，讓您能夠取得更快的回應。
 monikerRange: o365-21vianet
 ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -39,8 +39,8 @@ ms.locfileid: "50914303"
   
 如果您的網域已遺失此 CNAME 記錄，這些應用程式會使用美國的預設驗證端點，這表示驗證速度可能會變慢。如果未正確設定此 CNAME 記錄，例如，如果您在 **[指向位址]** 中輸入錯誤，這些應用程式將無法進行驗證。
   
- **如果 Office 365 管理您網域的 DNS 記錄，** Office 365 為您設定此 CNAME 記錄。 
+ **如果 Office 365 管理網域的 DNS 記錄，** Office 365 會為您設定此 CNAME 記錄。 
   
  **如果您是在 dns 主機管理網域的 dns 記錄，** 您可以 [遵循 DNS 主機的指示](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)自行建立此記錄。
   
-如果您是在規劃 Office 365 部署，並且想要深入瞭解可能需要新增或更新的所有 DNS 記錄，請參閱 [下列內容： Office 365 的外部網域名稱系統記錄](../../enterprise/external-domain-name-system-records.md)。
+如果您打算 Office 365 部署，並且想要深入瞭解可能需要新增或更新的所有 DNS 記錄，請閱讀相關資訊[： Office 365 的外部網域名稱系統記錄](../../enterprise/external-domain-name-system-records.md)。

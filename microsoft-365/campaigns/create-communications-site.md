@@ -57,11 +57,11 @@ ms.locfileid: "50912231"
 ## <a name="set-it-up"></a>進行設定
 
 1. 登入https://Office.com。
-2. 在頁面左上角，選取應用程式啟動器圖示，然後選取 [ **SharePoint** ] 麻將牌。 如果您看不到 **SharePoint** 磚，請按一下 [ **網站** ] 磚或 [ **全部** ] （如果 SharePoint 不可見）。
-3. 在 SharePoint 首頁的頂端，按一下 [ **+ 建立網站** ]，然後選擇 [ **通訊] 網站** 選項。
+2. 在頁面左上角，選取應用程式啟動器圖示，然後選取 [ **SharePoint** ] 麻將牌。 如果您看不到 **SharePoint** 磚，請按一下 [**網站**] 磚或 [**全部**] （如果 SharePoint 不可見）。
+3. 在 SharePoint 首頁的頂端，按一下 [ **+ 建立網站**]，然後選擇 [**通訊] 網站** 選項。
 
-深入瞭解 [通訊網站](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) ，以及如何 [在 SharePoint Online 中建立通訊網站](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)。
+深入瞭解[通訊網站](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)，以及如何[在 SharePoint Online 中建立通訊網站](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)。
 
 ## <a name="admin-settings"></a>系統管理員設定
 
-如果您沒有看到 [ **+ 建立** 網站] 連結，Microsoft 365 可能無法使用自助網站架設。 若要建立小組網站，請與組織中的 Microsoft 365 管理人員聯繫。 如果您是 Microsoft 365 系統管理員，請參閱 [在 SharePoint online 中管理網站的建立](/sharepoint/manage-site-creation) ，以啟用組織的自助網站架設或在 [新的 SharePoint 系統管理中心中管理網站](/sharepoint/manage-sites-in-new-admin-center) ，以從 SharePoint 線上系統管理中心建立網站。
+如果您沒有看到 [ **+ 建立** 網站] 連結，則可能無法在 Microsoft 365 中使用自助網站架設。 若要建立小組網站，請與組織中的管理 Microsoft 365 人員聯繫。 如果您是 Microsoft 365 管理員，請參閱[在線上 SharePoint 中管理網站建立](/sharepoint/manage-site-creation)功能，以啟用組織的自助網站架設或[在新的 SharePoint 系統管理中心中管理網站](/sharepoint/manage-sites-in-new-admin-center)，以從 SharePoint Online 系統管理中心建立網站。

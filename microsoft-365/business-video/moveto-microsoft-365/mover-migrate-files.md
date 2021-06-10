@@ -1,5 +1,5 @@
 ---
-title: '將 Google 檔案遷移至 Microsoft 365 for business '
+title: '將 Google 檔案遷移至適用于 business 的 Microsoft 365 '
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何使用移動器將 Google 檔案遷移至 Microsoft 365 for business。
+description: 瞭解如何使用移動器將 Google 檔案遷移至 Microsoft 365 供商務使用。
 ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,18 +28,18 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50913571"
 ---
-# <a name="migrate-google-files-to-microsoft-365-for-business"></a>將 Google 檔案遷移至 Microsoft 365 for business 
+# <a name="migrate-google-files-to-microsoft-365-for-business"></a>將 Google 檔案遷移至適用于 business 的 Microsoft 365 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-當您移至 Microsoft 365 for business 時，您會想要從 Google Drive 遷移檔案。 您可以使用移動器應用程式，從個人和共用磁片磁碟機移動檔案。 如需詳細資訊，請參閱 [移動雲端遷移](/sharepointmigration/mover-plan-migration)。
+當您移至 Microsoft 365 供商務用時，您會想要從 Google 雲端硬碟遷移檔案。 您可以使用移動器應用程式，從個人和共用磁片磁碟機移動檔案。 如需詳細資訊，請參閱 [移動雲端遷移](/sharepointmigration/mover-plan-migration)。
 
 > [!NOTE]
-> 移動器會製作檔案複本，並將複本移至 Microsoft 365 for business。 原始檔案也會保留在 Google 磁片磁碟機中。
+> 移動器會製作檔案複本，並將複本移至 Microsoft 365 供商務使用。 原始檔案也會保留在 Google 磁片磁碟機中。
 
 ## <a name="before-you-start"></a>開始之前
 
-所有使用者都應該登入 Microsoft 365 for business，並設定其 OneDrive 的商務用。 若要這麼做，請移至 [office.com](https://office.com)，使用您的 Microsoft 365 商務版認證登入，然後選擇 OneDrive。
+所有使用者都應該登入 Microsoft 365 以供商務用，並設定其商務用 OneDrive。 若要這麼做，請移至[office.com](https://office.com)，使用您的商務用 Microsoft 365 來登入，然後選擇 [OneDrive]。
 
 ## <a name="try-it"></a>試試看吧！
 
@@ -66,9 +66,9 @@ ms.locfileid: "50913571"
 
     移動器顯示所探索的團隊磁片磁碟機和使用者磁片數目。 
 
-1. 在 [ **選取目的地**] 底下，選擇 [ **授權新的連接器**]，找到 **Office 365**，然後選取 [ **授權**]。
-1. 若要將許可權授與您的 Azure Active Directory 中的移動器應用程式，請流覽至 [aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth)。
-1. 選取 [ **Office 365 移動器**] **許可權**， **授與您公司的系統管理員同意**。
+1. 在 [**選取目的地**] 底下，選擇 [**授權新的連接器**]，找出 **Office 365**，然後選取 [**授權**]。
+1. 若要將許可權授與 Azure Active Directory 中的移動器應用程式，請流覽至[aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth)。
+1. 選取 [ **Office 365 移動器**]**許可權**，**授與您公司的系統管理員同意**。
 1. 選擇您的帳戶，查看許可權，然後選取 [ **接受**]。
 1. 選擇 [ **屬性** ]，然後確認 [ **需要使用者指派]？** 已開啟。
 1. 回到移動器應用程式，變更 **顯示名稱**（如有需要），選擇 [ **授權**]，然後選取 Microsoft 系統管理員帳戶。

@@ -121,7 +121,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    > [!div class="mx-imgBorder"]
    > ![MEM 基本屬性](images/mem03-1-basics.png)
 
-4. 按一下 [**下一步**]。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [**新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
+4. 按 [下一步 **]**。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [**新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
 
    > [!div class="mx-imgBorder"]
    > ![記憶體配置設定](images/mem04-2-configuration-settings.png)
@@ -162,7 +162,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    > [!div class="mx-imgBorder"]
    > ![MEM 適用性規則](images/mem07-5-applicability-rules.png)
 
-10. 按一下 [**下一步**]。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
+10. 按 [下一步 **]**。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
 
     > [!div class="mx-imgBorder"]
     > ![記憶審閱和建立](images/mem08-6-review-create.png)

@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 AlertEvidence 表格
 description: 深入瞭解與高級搜尋架構之 AlertEvidence 表格中的警示相關的資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，AlertInfo，alert，entities，證據，file，IP address，device，machine，使用者，帳戶
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，資料類型，描述，，警示，實體，證據，檔案，IP 位址，裝置，機器，使用者，帳戶
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51932580"
 **適用於：**
 - Microsoft 365 Defender
 
-[！附注] `AlertEvidence` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含各種實體（檔案、IP 位址、URLs、使用者或裝置）相關資訊，這些資訊與 Microsoft defender For Endpoint、Microsoft defender for Office 365、Microsoft Cloud App Security 和 Microsoft defender for Identity 相關聯。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `AlertEvidence` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含各種實體（檔案、IP 位址、URLs、使用者或裝置）相關資訊，這些資訊與 microsoft defender for Endpoint （適用于 Office 365、Microsoft Cloud App Security 和 Microsoft defender 身分識別）相關聯的提醒相關聯。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "51932580"
 | `AccountName` | 字串 | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
-| `AccountObjectId` | string | Azure Active Directory 中帳戶的唯一識別碼 |
+| `AccountObjectId` | string | 帳戶在 Azure Active Directory 中的唯一識別碼 |
 | `AccountUpn` | string | 帳戶的使用者主要名稱 (UPN)  |
 | `DeviceId` | string | 服務中裝置的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
