@@ -35,7 +35,7 @@ ms.locfileid: "51186062"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
 調查與特定警示、行為或事件相關聯之檔案的詳細資料，以協助判斷該檔案是否展示惡意活動、識別攻擊動機，以及瞭解遭到破壞的潛在範圍。
 

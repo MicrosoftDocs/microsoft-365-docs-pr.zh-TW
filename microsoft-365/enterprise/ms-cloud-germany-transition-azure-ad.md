@@ -1,5 +1,5 @@
 ---
-title: 從 Microsoft Cloud Deutschland 進行遷移的其他 Azure Active Directory 資訊
+title: 從 Microsoft Cloud Deutschland 遷移的其他 Azure Active Directory 資訊
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務時，其他 Azure Active Directory 資訊。
+description: 摘要：從 microsoft cloud 德國 (microsoft cloud Deutschland) 移至新德文 datacenter 區域中 Office 365 服務時的其他 Azure Active Directory 資訊。
 ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,19 +25,19 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923847"
 ---
-# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的其他 Azure Active Directory 資訊
+# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他 Azure Active Directory 資訊
 
-若要完成從 Azure 德文雲端移至 Azure public 雲端，建議您在 OpenID Connect (OIDC) 端點時，將應用程式的驗證端點、Azure Active Directory (Azure AD) 圖表和 MS Graph 端點更新為商業雲端端點，然後 `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` 開始報告商業性雲端端點。 
+若要完成從 azure 德文雲端移至 azure public 雲端，建議您在 Graph OpenID 連線 OIDC (端點時，將應用程式的驗證端點、Azure Active Directory (Azure AD) Graph 及 MS) 端點更新為商業雲端的使用者，然後 `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` 開始報告商業性雲端端點。 
  
 **我應該在何時進行此變更？**
 
-當您的租使用者完成從德文雲端遷移至商業雲端時，您會在 Azure/Office 入口網站中收到通知。 收到此通知之後，您有30天的時間可完成這些更新，讓您的應用程式繼續適用于從 Azure 德國雲端遷移到 Azure Public 雲端的承租人。
+當您的租使用者完成從德文雲端到商業雲端的遷移時，您會收到 Azure/Office 入口網站中的通知。 收到此通知之後，您有30天的時間可完成這些更新，讓您的應用程式繼續適用于從 Azure 德國雲端遷移到 Azure Public 雲端的承租人。
  
 更新您的登入授權有三個前置條件：
 
  - 您租使用者的 OIDC 探索端點會傳回 `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` AZURE AD public cloud 端點。
 
- - 如果您的租使用者已設定同盟，則 Active Directory Federation Services (AD FS) 會更新，以與 Azure AD Public 同步處理。 您可以依照指示更新 Azure AD Connect 設定，以進行此變更。
+ - 如果您的租使用者已設定同盟，則 Active Directory Federation Services (AD FS) 會更新，以與 Azure AD Public 同步處理。 您可以依照指示更新 Azure AD 連線設定，以進行此變更。
 
  - 您的應用程式所使用的資源應用程式（如果有的話）會修改為接受 Azure AD 德國和 Azure AD 公用所簽署的權杖。
  
@@ -59,16 +59,16 @@ ms.locfileid: "50923847"
 
 **我需要更新哪些專案？**
 
-1. 如果您是在 Azure 德國用來驗證 Azure 德國或 Office 365 德國使用者的應用程式，請確定在 `https://login.microsoftonline.com` 驗證內容中做為授權使用。
+1. 如果您是在 azure 德國用來驗證 azure 德國或 Office 365 德國使用者的應用程式，請確定在 `https://login.microsoftonline.com` 驗證內容中做為授權使用。
 
     - 請參閱 Azure AD 驗證上下文。
-    - 這兩者皆適用于您的應用程式的驗證，以及對您應用程式 (呼叫的任何 APIs 的驗證，也就是 Microsoft Graph，Azure AD Graph，Azure 資源管理員) 。
+    - 這兩者皆適用于您的應用程式的驗證，以及對您應用程式 (呼叫的任何 APIs 的驗證，也就是 Microsoft Graph，azure AD Graph，azure 資源管理員) 。
 
 2. 將 Azure AD Graph 端點更新為 `https://graph.windows.net` 。
 
 3. 將 MS Graph 端點更新為 `https://graph.microsoft.com` 。
 
-4. 更新任何德國 cloud 端點 (例如 Exchange Online 和 SharePoint Online) 的使用者，這些端點是應用程式用來成為公用雲端的使用者。
+4. 更新任何德國 cloud 端點 (例如 Exchange Online 和 SharePoint 線上) 所用的應用程式，讓應用程式成為公用雲端的端點。
 
 5. 更新環境參數，使其 `AzurePublic` (，而不是 `AzureGermany`) 中的系統管理工具和腳本：
 
@@ -81,7 +81,7 @@ ms.locfileid: "50923847"
 
 如果您發佈的應用程式可供租使用者以外的使用者使用，您可能需要變更您的應用程式註冊，以確保持續性。 其他使用您應用程式的承租人的移動時間可能會與租使用者的時間不同。 為了確保使用者永遠無法存取應用程式，您需要同意將您的應用程式從 Azure 德國同步處理到 Azure 公用。
 
-## <a name="additional-considerations"></a>其他考量因素
+## <a name="additional-considerations"></a>其他考量
 
 以下是 Azure AD 的其他一些考慮：
 
@@ -95,35 +95,35 @@ ms.locfileid: "50923847"
 
   - 在 Azure 入口網站中，建立 IPv6 命名的網路無法運作 `http://portal.microsoftazure.de/` 。 使用 Azure 入口網站 `https://portal.azure.com` 建立 IPv6 命名的網路。
  
-   - 您無法為 Azure Multi-Factor 驗證建立信任的 IP 位址範圍 (MFA) Microsoft Cloud Deutschland portal 中的服務設定。 使用 Azure AD portal for Office 365 服務來建立 Azure MFA 信任的 IP 位址範圍。
+   - 您無法為 Azure Multi-Factor 驗證建立信任的 IP 位址範圍 (MFA) Microsoft Cloud Deutschland portal 中的服務設定。 使用 azure AD 入口網站以取得 Office 365 服務，以建立 Azure MFA 信任的 IP 位址範圍。
 
 
 - 若為條件式存取： 
 
-  - 在完成 [AZURE AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) 遷移階段) 之後，才支援具有下列授與控制的條件式存取原則 (完成 Office 365 服務的遷移：
+  - 在完成[Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized)遷移階段) 之後，才支援具有下列授與控制的條件式存取原則 (完成 Office 365 服務的遷移：
 
     - 需要相容的裝置
     - 需要核准的應用程式
     - 需要應用程式保護原則
     
-  - 當租使用者啟用的安全性預設值為 [已停用] 或 [已存在租使用者的條件式存取原則] 時，條件式存取原則介面提供錯誤的警告。 您應該忽略警告或使用 Office 365 服務入口網站來管理條件式存取原則。 
+  - 當租使用者啟用的安全性預設值為 [已停用] 或 [已存在租使用者的條件式存取原則] 時，條件式存取原則介面提供錯誤的警告。 您應該忽略警告，或使用 Office 365 服務入口網站來管理條件式存取原則。 
 
 - 僅在租使用者遷移完成後（包括所有 office 工作負載遷移）之後，才會支援 Intune 案例。
 
-- Microsoft Cloud Deutschland 使用行動代理程式更新方法進行 MFA 要求的使用者，可看到使用者 ObjectId (GUID) ，而不是 Microsoft 驗證應用程式中的使用者主體名稱 (UPN) 。 在 Office 365 服務中完成 Azure AD 租使用者的遷移後，新的 Microsoft 驗證者啟用會顯示使用者的 Upn。 現有的 Microsoft 驗證者帳戶會繼續顯示使用者 ObjectId，但他們會繼續使用行動代理程式更新。 
+- Microsoft Cloud Deutschland 使用行動代理程式更新方法進行 MFA 要求的使用者，可看到使用者 ObjectId (GUID) ，而不是) 應用程式中的使用者主體名稱 (UPN Microsoft Authenticator。 當 Azure AD 租使用者完成且裝載在 Office 365 服務中之後，新的 Microsoft Authenticator 啟用會顯示使用者的 upn。 現有的 Microsoft Authenticator 帳戶會繼續顯示使用者 ObjectId，但他們會繼續使用行動代理程式更新。 
 
 - 針對10月 22 2019 日之後建立的承租人，當租使用者遷移至 Office 365 服務時，可能會為租使用者自動啟用安全性預設值。 租使用者管理員可以選擇讓安全性預設值保持啟用並登錄 MFA，也可以停用此功能。 如需詳細資訊，請參閱 [停用安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults)。 
 
   > [!NOTE]
-  > 在遷移期間，未自動啟用的組織可能會在未來自動註冊，因為啟用安全性預設值的功能會在 Office 365 服務中推出。 選擇明確停用或啟用安全性預設值的系統管理員可以在 **Azure Active Directory > 屬性** 下更新功能來執行此動作。 管理員明確啟用該功能之後，將不會自動啟用該功能。
+  > 在遷移期間，未自動啟用的組織可能會在未來自動註冊，因為啟用安全性預設值的功能會在 Office 365 服務中進行。 選擇明確停用或啟用安全性預設值的系統管理員可以更新 **Azure Active Directory > 屬性**] 底下的功能來執行此動作。 管理員明確啟用該功能之後，將不會自動啟用該功能。
 
-- 當租使用者在遷移後，就會有關于 Office 365 德國入口網站中的 Azure AD Connect 版本和 Office 365 入口網站版本的警告。 如果在遷移完成之後，版本警告不再顯示警告，可以忽略這種情況。 如果在遷移之前或之後有任何警告，請在任一入口網站中更新 Azure AD Connect。 警告訊息說：「我們偵測到您正在使用過期的目錄同步處理工具。 建議您移至 Microsoft 下載中心以取得最新版本的 Azure AD Connect。」
+- 當租使用者在進行遷移時，會出現有關 Office 365 德國入口網站中的 Azure AD 連線版本和 Office 365 入口網站的警告。 如果在遷移完成之後，版本警告不再顯示警告，可以忽略這種情況。 如果在遷移之前或之後有任何警告，請在任一入口網站中更新 Azure AD 連線。 警告訊息說：「我們偵測到您正在使用過期的目錄同步處理工具。 建議您移至 Microsoft 下載中心，以取得最新版的 Azure AD 連線。」
 
 ## <a name="more-information"></a>其他資訊
 
 開始：
 
-- [從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務](ms-cloud-germany-transition.md)
+- [從 Microsoft Cloud Deutschland 遷移至新德國資料中心區域的 Office 365 服務](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland 移轉協助](https://aka.ms/germanymigrateassist)
 - [如何選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 - [遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)

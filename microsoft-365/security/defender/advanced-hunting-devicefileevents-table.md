@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceFileEvents 表格
 description: 深入瞭解高級搜尋架構的 DeviceFileEvents 資料表中的檔案相關事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，filecreationevents，DeviceFileEvents，files，path，hash，sha1，sha256，md5
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，filecreationevents，DeviceFileEvents，files，path，hash，sha1，sha256，md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -80,7 +80,7 @@ ms.locfileid: "52022996"
 | `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
-| `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
+| `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據某些特性（例如從網際網路下載）將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
 | `InitiatingProcessTokenElevation` | string | 指出是否存在使用者存取控制的 Token 類型 (UAC) 許可權提升會套用至啟動事件的程式。 |
 | `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼 (PID)  |
 | `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |

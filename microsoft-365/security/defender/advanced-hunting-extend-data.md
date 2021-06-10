@@ -1,7 +1,7 @@
 ---
 title: 以適當的設定擴充高級搜尋範圍
-description: 檢查 Windows 裝置上的審計設定及其他設定，以協助確保您在高級搜尋中取得最全面的資料
-keywords: 高級搜尋、事件、資料透視、實體、審核設定、使用者帳戶管理、安全性群組管理、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365、Microsoft 365 Defender
+description: 檢查 Windows 裝置上的審計設定，以及其他設定，以協助確保您在高級搜尋中取得最全面的資料
+keywords: 高級搜尋、事件、資料透視、實體、審核設定、使用者帳戶管理、安全性群組管理、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365 Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,7 +36,7 @@ ms.locfileid: "51952665"
 - Microsoft 365 Defender
 - 適用於端點的 Microsoft Defender
 
-[[高級搜尋](advanced-hunting-overview.md)] 取決於來自各種來源的資料，包括您的裝置、Office 365 工作區、Azure AD 及 Microsoft Defender 身分識別。 若要盡可能取得最完整的資料，請務必在對應的資料來源中具備正確的設定。
+[[高級搜尋](advanced-hunting-overview.md)] 取決於來自各種來源的資料，包括您的裝置、您的 Office 365 工作區、Azure AD 及 Microsoft Defender 身分識別。 若要盡可能取得最完整的資料，請務必在對應的資料來源中具備正確的設定。
 
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Windows 裝置上的高級安全性審核
 開啟這些高級審核設定，以確保您取得裝置上活動的相關資料，包括本機帳戶管理、本機安全性群組管理及服務建立。
@@ -55,7 +55,7 @@ ms.locfileid: "51952665"
 | 網域控制站 | 從內部部署 Active Directory 傳送至 Microsoft Defender 以進行身分識別的資料，濃縮身分識別相關的資訊，例如帳戶詳細資料、登入活動和 Active Directory 查詢 | 多個資料表，包括 [IdentityInfo](advanced-hunting-identityinfo-table.md)、 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)及 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [安裝 Microsoft Defender 的身分識別感應器](/azure-advanced-threat-protection/install-atp-step4)<br>- [開啟相關的 Windows 事件](/azure-advanced-threat-protection/configure-event-collection) |
 
 >[!NOTE]
->本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 使用更多資料來源[開啟 Microsoft 365 Defender](m365d-enable.md)以搜尋威脅。 您可以遵循[從 microsoft defender for endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

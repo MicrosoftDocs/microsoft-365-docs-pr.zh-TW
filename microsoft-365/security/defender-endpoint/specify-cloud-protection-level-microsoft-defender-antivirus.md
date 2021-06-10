@@ -92,5 +92,5 @@ ms.locfileid: "52274901"
 ## <a name="related-articles"></a>相關文章
 
 - [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)
-- [啟用雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [啟動雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [如何建立及部署反惡意程式碼原則： Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

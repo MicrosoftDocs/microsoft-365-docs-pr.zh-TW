@@ -1,5 +1,5 @@
 ---
-title: 建立上架或脫離通知規則
+title: 建立上線或下線通知規則
 description: 使用本機上架或脫離腳本時取得通知。
 keywords: 上架，脫離，local，script，notification，rule
 search.product: eADQiWindows 10XVcnh
@@ -33,7 +33,7 @@ ms.locfileid: "51187119"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "51187119"
 
 ## <a name="before-you-begin"></a>開始之前
 您必須具有下列許可權：
- - 最小) 的 Microsoft 流程 (流程方案1。 如需詳細資訊，請參閱 [流程定價頁面](https://flow.microsoft.com/pricing/)。
+ - Microsoft Flow (至少 Flow 方案 1) 。 如需詳細資訊，請參閱[Flow 定價頁面](https://flow.microsoft.com/pricing/)。
  - Azure 資料表或 SharePoint 清單或文件庫/SQL DB
 
 ## <a name="create-the-notification-flow"></a>建立通知流程
@@ -73,11 +73,11 @@ ms.locfileid: "51187119"
    - 方法： "GET" 為取得裝置清單的值。
    - URI： Enter `https://api.securitycenter.microsoft.com/api/machines` 。
    - 驗證：選取 [Active Directory OAuth]。
-   - 租使用者：登入 https://portal.azure.com 並流覽至 **Azure Active Directory > 應用程式註冊** ，並取得租使用者識別碼值。
+   - 租使用者：登入 https://portal.azure.com 並流覽至 **Azure Active Directory > 應用程式註冊** 並取得租使用者識別碼值。
    - 觀眾： `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - 用戶端 ID: 登入 https://portal.azure.com 及流覽 **Azure Active Directory > 應用程式註冊** 並取得用戶端識別碼值。
+   - 用戶端 ID: 登入 https://portal.azure.com 及流覽至 **Azure Active Directory > 應用程式註冊** 並取得用戶端識別碼值。
    - 憑證類型：選取「機密」。
-   - 機密：登入 https://portal.azure.com 並流覽至 **Azure Active Directory > 應用程式註冊** ，並取得租使用者識別碼值。
+   - 機密：登入 https://portal.azure.com 並流覽至 **Azure Active Directory > 應用程式註冊** 並取得租使用者識別碼值。
 
     ![HTTP 條件的影像](images/http-conditions.png)
 
@@ -197,7 +197,7 @@ ms.locfileid: "51187119"
 ![電子郵件通知的影像](images/alert-notification.png)
 
 
-## <a name="tips"></a>秘訣
+## <a name="tips"></a>提示
 
 - 您可以使用 lastSeen 篩選：
     - 每60分鐘：

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 3872be343e51c4e28f946192256932b048a23791
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933898"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843207"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
 
@@ -32,7 +32,7 @@ ms.locfileid: "51933898"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - 虛擬桌面基礎結構 (VDI) 裝置
-- Windows 10，Windows Server 2019，Windows Server Nm-winserver-2008r2-2nd/2012R2/2016
+- Windows 10，Windows server 2019，Windows Server nm-winserver-2008r2-2nd/2012R2/2016
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -61,11 +61,11 @@ ms.locfileid: "51933898"
 > 在資源設定較低的環境中，VDI 引導程式可能會降低端點感應器上架的 Defender 速度。 
 
 
-### <a name="for-windows-10-or-windows-server-2019"></a>適用于 Windows 10 或 Windows Server 2019
+### <a name="for-windows-10-or-windows-server-2019"></a>Windows 10 或 Windows 伺服器2019
 
-1.  從服務上架嚮導中，開啟 [VDI 設定套件 .zip 檔案] (*WindowsDefenderATPOnboardingPackage.zip* 所下載的) 。 您也可以從 [Microsoft Defender Security Center](https://securitycenter.windows.com/)取得套件：
+1.  從服務上架嚮導中，開啟 .zip 檔案 (*WindowsDefenderATPOnboardingPackage.zip*) 的 VDI 設定套件。 您也可以從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得套件：
 
-    1.  在功能窗格中，選取 [**設定**] [上  >  **架**]。
+    1.  在功能窗格中，選取 [**設定** 上  >  **架**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 
@@ -73,7 +73,7 @@ ms.locfileid: "51933898"
 
     1. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
-2. 將檔案從 .zip 檔案解壓縮至路徑底下的 WindowsDefenderATPOnboardingPackage 資料夾中 `golden/master` `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。 
+2. 將 WindowsDefenderATPOnboardingPackage 資料夾中解壓縮的檔案從 .zip 檔複製到路徑底下的 `golden/master` 圖像中 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。 
 
     1. 如果您未針對每個裝置實施單一專案，請複製 WindowsDefenderATPOnboardingScript。
 
@@ -82,7 +82,7 @@ ms.locfileid: "51933898"
     > [!NOTE]
     > 如果您看不到 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 資料夾，它可能是隱藏的。 您必須選擇 [從檔案瀏覽器 **顯示隱藏的檔案和資料夾** ] 選項。
 
-3. 開啟 [本機群組原則編輯器] 視窗，並流覽至 [**電腦** 設定] [  >  **Windows 設定**  >  **腳本**  >  **啟動**]。
+3. 開啟 [本機群組原則編輯器] 視窗，並流覽至 [**電腦** 設定  >  **Windows 設定**  >  **腳本**  >  **啟動**]。
 
    > [!NOTE]
    > 網域群組原則也可用於上架非持續性的 VDI 裝置。
@@ -91,11 +91,11 @@ ms.locfileid: "51933898"
 
    - 針對每個裝置的單一專案：
    
-     選取 [ **PowerShell 腳本** ] 索引標籤，然後按一下 [ **新增** (Windows Explorer 會直接開啟您在先前複製上架腳本的路徑中) 。 流覽至上架 PowerShell script `Onboard-NonPersistentMachine.ps1` 。 不需要指定另一個檔案，因為會自動觸發該檔案。
+     選取 [ **PowerShell 腳本**] 索引標籤，然後按一下 [**新增** (] Windows Explorer 會直接開啟您在先前複製上架腳本的路徑中) 。 流覽至上架 PowerShell script `Onboard-NonPersistentMachine.ps1` 。 不需要指定另一個檔案，因為會自動觸發該檔案。
    
    - 針對每個裝置的多個專案：
    
-     選取 [ **腳本** ] 索引標籤，然後按一下 [ **新增** ] (Windows Explorer 會直接在您先前複製上架腳本的路徑中開啟) 。 流覽至上架 bash 腳本 `WindowsDefenderATPOnboardingScript.cmd` 。
+     選取 [**腳本**] 索引標籤，然後按一下 [**新增** (] Windows Explorer 會直接開啟您在先前複製上架腳本的路徑中) 。 流覽至上架 bash 腳本 `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. 測試您的解決方案：
 
@@ -111,11 +111,11 @@ ms.locfileid: "51933898"
    
       - 針對每個裝置的單一專案： 
     
-        檢查 Microsoft Defender Security Center 中的一個專案。
+        只檢查 Microsoft Defender 資訊安全中心中的一個專案。
 
       - 針對每個裝置的多個專案： 
        
-        檢查 Microsoft Defender Security Center 中的多個專案。
+        檢查 Microsoft Defender 資訊安全中心中的多個專案。
 
 6. 按一下功能窗格上的 [ **裝置] 清單** 。
 
@@ -155,9 +155,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 如需 DISM 命令和離線服務的詳細資訊，請參閱下列文章：
-- [使用 DISM 修改 Windows 映像](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM 影像管理 Command-Line 選項](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [縮小離線 Windows 映像中元件存放區的大小](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [使用 DISM 修改 Windows 影像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM 影像管理 Command-Line 選項](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [縮小離線 Windows 影像中的元件存放區大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 如果離線服務不是非持續性的 VDI 環境可行的選項，應採取下列步驟，以確保一致性及感應器的健全狀況：
 

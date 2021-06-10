@@ -48,11 +48,11 @@ ms.locfileid: "50924865"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-在 **2017 年10月 10** 日，Microsoft Office SharePoint Server 2007 已到達支援終止。 如果您未從 SharePoint Server 2007 遷移至 Microsoft 365 或更新版本的 SharePoint 伺服器內部部署，現在是開始規劃的時間。 本文提供的資源可協助您將資料移轉至 SharePoint 線上或升級 SharePoint 伺服器內部部署。
+在 **2017 年10月 10** 日，Microsoft Office SharePoint Server 2007 已到達支援終止。 如果您未從 SharePoint Server 2007 遷移至 Microsoft 365 或更新版本的 SharePoint Server 內部部署，現在是開始規劃的時間。 本文提供的資源可協助您將資料移轉至 SharePoint 線上或升級 SharePoint 伺服器內部部署。
   
 ## <a name="what-does-end-of-support-mean"></a>*支援終止的* 意義為何？
 
-SharePoint Server （如大多數的 Microsoft 產品）都具有支援週期，在這種情況下，Microsoft 會提供新功能、bug 修正、安全性修正等等。 此生命週期一般會從產品的初始發行版本持續10年。 此週期的結尾稱為產品的支援終止。 在支援結束後，Microsoft 不再提供：
+SharePoint伺服器與大多數的 Microsoft 產品一樣，都有支援週期，Microsoft 提供了新功能、bug 修正、安全性修正等等。 此生命週期一般會從產品的初始發行版本持續10年。 此週期的結尾稱為產品的支援終止。 在支援結束後，Microsoft 不再提供：
   
 - 可能發生問題的技術支援。
     
@@ -65,9 +65,9 @@ SharePoint Server （如大多數的 Microsoft 產品）都具有支援週期，
 您的 SharePoint Server 2007 伺服器陣列在10月 10 2017 日之後仍會運作，但不會發佈產品的進一步更新、修補程式或修正，包括安全性修補程式/修正程式。 Microsoft 支援已完全將其支援工作移至較新版本的產品。 因為您已不再支援或修補您的安裝，所以應該升級產品或遷移重要的資料。
   
 > [!TIP]
-> 若尚未計畫升級或遷移，請參閱： [SharePoint 2007 遷移選項](sharepoint-2007-migration-options.md) ，以瞭解開始位置的一些範例。 您也可以搜尋可協助升級或 Microsoft 365 遷移 (或兩者) 的 [Microsoft 合作夥伴](https://go.microsoft.com/fwlink/?linkid=841249) 。
+> 若尚未計畫升級或遷移，請參閱： [SharePoint 2007 遷移選項](sharepoint-2007-migration-options.md)，以瞭解開始位置的一些範例。 您也可以搜尋可協助升級或 Microsoft 365 遷移 (或兩者) 的[Microsoft 合作夥伴](https://go.microsoft.com/fwlink/?linkid=841249)。
   
-如需有關 Office 2007 伺服器及支援終止的詳細資訊，請參閱可 [協助您從 Office 2007 伺服器及用戶端升級的資源](upgrade-from-office-2007-servers-and-products.md)。
+如需 Office 2007 伺服器及支援終止的詳細資訊，請參閱可[協助您從 Office 2007 伺服器及用戶端升級的資源](upgrade-from-office-2007-servers-and-products.md)。
   
 ## <a name="what-are-my-options"></a>我有哪些選擇？
 
@@ -86,7 +86,7 @@ SharePoint Server （如大多數的 Microsoft 產品）都具有支援週期，
   
 ## <a name="where-can-i-go-next"></a>下一步可以做什麼？
 
-SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也可以使用線上 SharePoint，這是 Microsoft 365 的一部分線上服務。 您的選項如下：
+SharePoint伺服器可以安裝在您自己的伺服器上內部部署。 您也可以使用 SharePoint 線上，也就是 Microsoft 365 的一部分線上服務。 您的選項如下：
   
 - 線上遷移至 SharePoint。
     
@@ -94,41 +94,41 @@ SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也�
     
 - 請進行上述兩項操作。
     
-- 實施 [SharePoint 的混合](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 式解決方案。
+- 實施[SharePoint 的混合](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)式解決方案。
     
 請留意有關維護伺服器陣列、維護或遷移自訂專案，以及升級 SharePoint 伺服器需求之硬體相關的隱藏成本。 如有必要，可獎勵內部部署 SharePoint 伺服器陣列。 不過，如果您在舊版的 SharePoint 伺服器上執行伺服器陣列，但沒有大量自訂，您可以從遷移 SharePoint 線上中受益。
   
 > [!IMPORTANT]
-> 如果不經常使用 SharePoint 2007 中的內容，則會有另一個選項。 有些 SharePoint 管理員選擇建立 Microsoft 365 訂閱、設定新的 SharePoint Online 網站，然後徹底削減 SharePoint 2007，只需要在全新 SharePoint Online 網站上使用必要的檔。 然後，資料可以從 SharePoint 2007 網站排放成封存。 請考慮您的使用者如何使用 SharePoint 2007 安裝中的資料。 您可以有創造性的方式來管理您的需求。
+> 如果不經常使用 SharePoint 2007 中的內容，則會有另一個選項。 有些 SharePoint 管理員可以選擇建立 Microsoft 365 訂閱、設定新的 SharePoint Online 網站，然後徹底剪下 SharePoint 2007，只會將基本檔帶至全新的 SharePoint 線上網站。 然後，資料可以從 SharePoint 2007 網站排放成封存。 請考慮您的使用者如何使用 SharePoint 2007 安裝中的資料。 您可以有創造性的方式來管理您的需求。
   
-|**SharePoint 線上 (SPO)**|**SharePoint Server 內部部署**|
+|**SharePoint線上 (SPO)**|**SharePoint Server 內部部署**|
 |:-----|:-----|
 |高成本的時間 (規劃/執行/驗證)   <br/> |高成本的時間 (規劃/執行/驗證)   <br/> |
 |降低基金成本 (未購買硬體)   <br/> |基金 (硬體 + devs/系統管理員的成本較高)   <br/> |
 |遷移時成本為一次  <br/> |每個未來遷移重複的單一時間成本  <br/> |
 |低擁有權總成本/維護  <br/> |高擁有權總成本/維護  <br/> |
    
-當您遷移至 Microsoft 365 時，一次性移動會有較高的成本，但您可以組織資料，並決定要對雲端採取的功能和留下的功能。 但未來升級將會自動進行，而且您將不再需要管理硬體和軟體更新。 此外，您伺服器陣列的時間將由 Microsoft 服務等級協定 ([SLA](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement)) 所備份。
+當您將資料移轉至 Microsoft 365 時，一次性移動會有較低的成本，同時您可以組織資料，並決定要對雲端採取的內容，以及留下的功能。 但未來升級將會自動進行，而且您將不再需要管理硬體和軟體更新。 此外，您伺服器陣列的時間將由 Microsoft 服務等級協定 ([SLA](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement)) 所備份。
   
 ### <a name="migrate-to-sharepoint-online"></a>移轉至 SharePoint Online
 
-請確定 SharePoint 線上具有您需要的所有功能。 請參閱 [Microsoft 365 和 Office 365 服務說明](/office365/servicedescriptions/office-365-service-descriptions-technet-library)。
+請確定 SharePoint 線上具有您需要的所有功能。 請參閱[Microsoft 365 和 Office 365 服務描述](/office365/servicedescriptions/office-365-service-descriptions-technet-library)。
   
-您無法直接從 SharePoint 2007 遷移至 SharePoint 線上。 您的移動至 SharePoint 線上將會手動執行。 如果您升級為 SharePoint Server 2013 或 SharePoint Server 2016，您可以使用 SharePoint 遷移 API (將資訊遷移至商務用 OneDrive，例如) 。
+您無法直接從 SharePoint 2007 遷移至 SharePoint 線上。 您的移動至 SharePoint 線上將會手動執行。 如果您升級為 SharePoint server 2013 或 SharePoint Server 2016，您可以使用 SharePoint 遷移 API (將資訊遷移至商務用 OneDrive，例如) 。
   
 |**線上專業人員**|**線上 con**|
 |:-----|:-----|
 |Microsoft 提供 SPO 硬體和所有硬體管理。  <br/> |SharePoint Server 內部部署和 SPO 之間可用的功能可能會有所不同。  <br/> |
-|您是訂閱的全域系統管理員，而且可以指派系統管理員 SPO 網站。  <br/> |在內部部署 SharePoint Server 中，伺服器陣列管理員可以使用的部分動作不存在，也不一定包含在 Microsoft 365 的 SharePoint 系統管理員角色中。  <br/> |
+|您是訂閱的全域系統管理員，而且可以指派系統管理員 SPO 網站。  <br/> |在 SharePoint 伺服器內部部署中，伺服器陣列管理員可以使用的部分動作不存在，也不一定包含 Microsoft 365 中的 SharePoint 系統管理員角色。  <br/> |
 |Microsoft 會對底層的硬體和軟體套用修補程式、修正及更新。 <br/> |因為在服務中無法存取基礎檔案系統，所以自訂專案有限。  <br/> |
 |Microsoft 發佈 [服務等級協定](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) ，並快速移動以解決服務層級事件。 <br/> |備份與還原及其他修復選項會透過 SharePoint 線上的服務自動進行。 如果不使用，則會覆寫備份。 <br/> |
 |安全性測試和伺服器效能調整是由 Microsoft 在服務中持續執行。 <br/> |變更使用者介面及其他 SharePoint 功能會由服務安裝，而且可能需要切換開啟或關閉。 <br/> |
-|Microsoft 365 符合許多行業標準： [microsoft 規範服務](/compliance/regulatory/offering-home)。  <br/> |遷移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)協助是有限的。  <br/> 大部分的升級是手動或透過 [SharePoint 線上及 OneDrive 遷移內容藍圖](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)中所述的 SPO 遷移 API。  <br/> |
+|Microsoft 365 符合許多行業標準： [Microsoft 規範服務](/compliance/regulatory/offering-home)。  <br/> |遷移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)協助是有限的。  <br/> 大部分的升級是手動或透過[SharePoint 線上及 OneDrive 遷移內容藍圖](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)中所述的 SPO 遷移 API。  <br/> |
 |Microsoft 支援工程師和資料中心員工不會對您的訂閱進行無限制的系統管理員存取。 <br/> |若需要升級硬體以支援較新版本的 SharePoint，或若升級需要次要伺服器陣列，可能會有額外的成本。  <br/> |
 |合作夥伴可協助您將資料移轉到線上 SharePoint 的單一時間工作。  <br/> ||
 |線上產品會自動更新。 雖然功能可能取代，但沒有真正的支援端點。 <br/> ||
    
-如果您決定建立新的 Microsoft 365 網站，並將資料手動遷移至必要，請檢查您的 [Microsoft 365 選項](https://www.microsoft.com/microsoft-365/)。
+如果您決定建立新的 Microsoft 365 網站，並根據需要將資料手動遷移至該網站，請檢查[Microsoft 365 選項](https://www.microsoft.com/microsoft-365/)。
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>升級 SharePoint 伺服器內部部署
 
@@ -136,7 +136,7 @@ SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也�
   
 - SharePoint 2007 \> SharePoint server 2010 \> SharePoint server 2013 \> SharePoint server 2016
    
-若要從 SharePoint 2007 到 SharePoint Server 2016，表示有大量的投資，而且會涉及硬體的成本 (SQL server 也必須升級) 、軟體和管理。 必須升級或放棄自訂專案。
+若要從 SharePoint 2007 到 SharePoint Server 2016，表示有大量的時間投資，而且會涉及硬體的成本 (SQL 伺服器也必須升級) 、軟體和管理。 必須升級或放棄自訂專案。
   
 > [!NOTE]
 > 您可以維持生命週期的 SharePoint 2007 伺服器陣列，在新的硬體 (上安裝 SharePoint 伺服器2016伺服器陣列，讓個別的伺服器陣列執行並列) ，然後規劃並執行手動遷移內容 (，以下載及重新上傳內容，例如) 。 不過，請注意某些手動移動的陷阱，例如，移動檔會以執行手動移動的帳號別名取代最後修改的帳戶。 此外，請考慮必須在一段時間後完成的工作，例如重新建立網站、子網站、許可權和清單結構。 預先考慮您可以移至儲存區或刪除的資料，以降低遷移的影響。
@@ -164,9 +164,9 @@ SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也�
 |完全控制 SharePoint 伺服器陣列的所有層面，從伺服器硬體向上。  <br/> |所有中斷和修正都是貴公司的責任 (若您的產品並未超過支援服務) ，您可以接洽付費的 Microsoft 支援人員。  <br/> |
 |SharePoint Server 內部部署的完整功能集合，具有透過混合方式將內部部署伺服器陣列連線至 SharePoint Online 訂閱的選項。  <br/> |升級、修補程式、安全性修正程式，以及 SharePoint 伺服器的所有維護都受內部部署管理。  <br/> |
 |取得更佳自訂的完整存取權。  <br/> |[Microsoft 規範服務](/compliance/regulatory/offering-home) 必須手動設定內部部署。  <br/> |
-|在您的控制項) ，安全性測試和伺服器效能調整都是在您的內部部署 (執行。  <br/> |Microsoft 365 可能會讓 SharePoint 線上使用的功能，不會與內部部署 SharePoint 伺服器互動。  <br/> |
-|合作夥伴可協助您將資料移轉至下一版的 SharePoint Server (且超過) 。  <br/> |SharePoint 的伺服器網站不會自動使用 SharePoint 線上中所看到 [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) 憑證。  <br/> |
-|在內部部署 SharePoint Server 中完全控制命名慣例、備份及還原及其他修復選項。  <br/> |SharePoint Server 內部部署對產品生命週期保密。  <br/> |
+|在您的控制項) ，安全性測試和伺服器效能調整都是在您的內部部署 (執行。  <br/> |Microsoft 365 可能會讓 SharePoint 線上使用的功能，不會與 SharePoint 伺服器內部部署互動。  <br/> |
+|合作夥伴可協助您將資料移轉至下一版的 SharePoint Server (且超過) 。  <br/> |SharePoint 的伺服器網站不會自動使用 SharePoint 線上中所看到[SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016)憑證。  <br/> |
+|在內部部署 SharePoint Server 中完全控制命名慣例、備份及還原及其他修復選項。  <br/> |SharePoint伺服器內部部署對產品生命週期保密。  <br/> |
    
 ### <a name="upgrade-resources"></a>升級資源
 
@@ -188,16 +188,16 @@ SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也�
 
 如果您遷移的答案是由內部部署所提供的自我控制，以及 SharePoint Online 所提供的更低的擁有成本，您可以將 SharePoint Server 2013 或2016伺服器陣列連線至透過混合式 SharePoint 線上。 [深入瞭解 SharePoint 混合式解決方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)。
   
-如果您決定混合式 SharePoint 伺服器陣列將會對您的業務帶來好處，請熟悉現有類型的混合式，以及如何設定內部部署 SharePoint 伺服器陣列與 Microsoft 365 訂閱之間的連線。
+如果您決定混合式 SharePoint 伺服器陣列將會對您的業務帶來好處，請熟悉現有類型的混合，以及如何設定內部部署 SharePoint 伺服器陣列與 Microsoft 365 訂閱之間的連線。
   
 | 選項 | 描述 |
 |:-----|:-----|
-[Microsoft 合規性方案](/compliance/regulatory/offering-home)  <br/> |遷移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)協助是有限的。  <br/> 大部分的升級是手動或透過 [SharePoint 線上和 OneDrive 遷移內容藍圖](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)中所述的 SPO 遷移 API。  <br/> |
+[Microsoft 合規性方案](/compliance/regulatory/offering-home)  <br/> |遷移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)協助是有限的。  <br/> 大部分的升級是手動或透過[SharePoint 線上和 OneDrive 遷移內容藍圖](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)中所述的 SPO 遷移 API。  <br/> |
 |Microsoft 支援工程師和資料中心員工沒有任何無限制的系統管理員存取您的訂閱。<br/> |若需要升級硬體基礎結構以支援較新版本的 SharePoint，或若升級需要次要伺服器陣列，可能會有額外的成本。  <br/> |
 |合作夥伴可協助您將資料移轉到線上 SharePoint 的單一時間工作。  <br/> ||
 |線上產品會自動更新整個服務。 雖然功能可能取代，但沒有真正的支援端點。<br/> ||
    
-如果您決定建立新的 Microsoft 365 網站，並將資料手動遷移至必要，請檢查您的 [Microsoft 365 選項](https://www.microsoft.com/microsoft-365/)。
+如果您決定建立新的 Microsoft 365 網站，並根據需要將資料手動遷移至該網站，請檢查[Microsoft 365 選項](https://www.microsoft.com/microsoft-365/)。
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>升級 SharePoint 伺服器內部部署
 
@@ -205,7 +205,7 @@ SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也�
   
 - SharePoint 2007 \> SharePoint server 2010 \> SharePoint server 2013 \> SharePoint server 2016
    
-從 SharePoint 2007 到 SharePoint Server 2016 是一項大幅投資，而且會涉及硬體的成本 (SQL server 也必須升級) 、軟體和管理。 必須升級或放棄自訂專案。
+從 SharePoint 2007 到 SharePoint Server 2016 是一項大幅投資，而且會涉及硬體的成本 (SQL 伺服器也必須升級) 、軟體和管理。 必須升級或放棄自訂專案。
   
 > [!NOTE]
 > 您可以維持生命週期的 SharePoint 2007 伺服器陣列，在新的硬體 (上安裝 SharePoint 伺服器2016伺服器陣列，讓個別的伺服器陣列執行並列) ，然後規劃並執行手動遷移內容 (，以下載及重新上傳內容，例如) 。 不過，請注意手動移動的潛在缺陷，例如，移動檔會以執行手動移動的帳號別名取代上次修改的帳戶，以及必須在一段時間後完成的工作，例如重新建立網站、子網站、許可權和清單結構。 請考慮您可以移至儲存區或刪除的資料，以降低遷移的影響。
@@ -233,9 +233,9 @@ SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也�
 |完全控制 SharePoint 伺服器陣列的所有層面，從伺服器硬體向上。  <br/> |所有中斷和修正都是貴公司的責任。  (若您的產品尚不支援，您可以接洽付費的 Microsoft 支援人員。 )   <br/> |
 |SharePoint Server 內部部署的完整功能集合，具有透過混合方式將內部部署伺服器陣列連線至 SharePoint Online 訂閱的選項。  <br/> |升級、修補程式、安全性修正程式，以及 SharePoint 伺服器的所有維護都受內部部署管理。  <br/> |
 |取得更佳自訂的完整存取權。  <br/> |[Microsoft 規範服務](/compliance/regulatory/offering-home) 必須手動設定內部部署。  <br/> |
-|在您的內部部署中，安全性測試和伺服器效能調整是由您的內部部署所執行。  <br/> |Microsoft 365 可能使 SharePoint 線上使用的功能，無法與內部部署 SharePoint 伺服器互動  <br/> |
-|合作夥伴可協助您將資料移轉至下一版的 SharePoint Server (和) 以外。  <br/> |您的 SharePoint 伺服器網站不會自動使用 SharePoint Online 中所看到 [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) 憑證。  <br/> |
-|在內部部署 SharePoint Server 中完全控制命名慣例、備份及還原及其他修復選項。  <br/> |SharePoint Server 內部部署對產品生命週期保密。  <br/> |
+|在您的內部部署中，安全性測試和伺服器效能調整是由您的內部部署所執行。  <br/> |Microsoft 365 可能會讓 SharePoint 線上使用的功能，但不會與 SharePoint 伺服器內部部署互動  <br/> |
+|合作夥伴可協助您將資料移轉至下一版的 SharePoint Server (和) 以外。  <br/> |您的 SharePoint 伺服器網站不會自動使用 SharePoint Online 中所看到[SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016)憑證。  <br/> |
+|在內部部署 SharePoint Server 中完全控制命名慣例、備份及還原及其他修復選項。  <br/> |SharePoint伺服器內部部署對產品生命週期保密。  <br/> |
    
 ### <a name="upgrade-resources"></a>升級資源
 
@@ -257,16 +257,16 @@ SharePoint Server 可以在您自己的伺服器上安裝內部部署。 您也�
 
 如果您遷移的答案是由內部部署所提供的自我控制，以及 SharePoint Online 所提供的更低的擁有成本，您可以將 SharePoint Server 2013 或2016伺服器陣列連線至透過混合式 SharePoint 線上。 [深入瞭解 SharePoint 混合式解決方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
-如果您決定混合式 SharePoint 伺服器陣列將會對您的業務帶來好處，請熟悉現有類型的混合式，以及如何設定內部部署 SharePoint 伺服器陣列與 Microsoft 365 訂閱之間的連線。
+如果您決定混合式 SharePoint 伺服器陣列將會對您的業務帶來好處，請熟悉現有類型的混合，以及如何設定內部部署 SharePoint 伺服器陣列與 Microsoft 365 訂閱之間的連線。
   
-若要瞭解其運作方式的一個好方法是建立 Microsoft 365 開發/測試環境，您可以使用 [測試實驗室指南](m365-enterprise-test-lab-guides.md)加以設定。 在您取得試用版或購買的 Microsoft 365 訂閱後，您可以在 SharePoint Online 中建立網站集合、網站及文件庫，以供您遷移資料。 您可以使用遷移 API 手動遷移，或者，如果您想要透過混合式嚮導將「我的網站」內容遷移至 OneDrive 供商務使用。
+若要瞭解其運作方式的一個好方法，就是建立 Microsoft 365 開發/測試環境，您可以使用[測試實驗室指南](m365-enterprise-test-lab-guides.md)進行設定。 在您取得試用版或購買 Microsoft 365 訂閱後，您可以在 SharePoint Online 中建立網站集合、網站及文件庫，以便您可以將資料移轉至該位置。 您可以使用遷移 API 手動遷移，或者，如果您想透過混合式嚮導將「我的網站」內容遷移至商務用 OneDrive。
   
 > [!NOTE]
-> 請記住，若要使用 [混合] 選項，您的 SharePoint 2007 伺服器陣列將需要升級為 SharePoint Server 2013 或 SharePoint Server 2016，而不是內部部署。
+> 請記住，若要使用 [混合] 選項，您的 SharePoint 2007 伺服器陣列將需要升級為 SharePoint Server 2013 或 SharePoint server 2016，而不是內部部署。
   
 ## <a name="related-topics"></a>相關主題
 
-[疑難排解並繼續升級 (Office SharePoint Server 2007) ](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262967(v=office.12))
+[ (Office SharePoint Server 2007) 疑難排解及繼續升級](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262967(v=office.12))
   
 [ (SharePoint Server 2010 的升級問題疑難排解) ](/previous-versions/office/sharepoint-server-2010/cc262967(v=office.14))
   

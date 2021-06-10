@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932748"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843103"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>授與受管理的安全性服務提供者 (MSSP) access (預覽) 
 
@@ -41,9 +41,9 @@ ms.locfileid: "51932748"
 
 1. 在 [Defender for Endpoint] 中啟用以 [角色為基礎的存取控制](rbac.md) ，並使用 Active DIRECTORY (AD) 群組進行連線。
 
-2. 設定存取要求與布建的控管 [訪問套件](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) 。
+2. 設定存取要求與布建的控管 [訪問套件](/azure/active-directory/governance/identity-governance-overview) 。
 
-3. 在 [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve)中管理存取要求和審核。
+3. 在 [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve)中管理存取要求和審核。
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中啟用以角色為基礎的存取控制
 
@@ -58,7 +58,7 @@ ms.locfileid: "51932748"
 
 2. 為 Endpoint 的客戶 Defender 中的適當訪問層級建立適用于端點角色的 Defender。
 
-    若要在客戶 Microsoft Defender Security Center 中啟用 RBAC，請從具有全域管理員或安全性管理員許可權的使用者帳戶，存取 **設定 > 許可權 > 角色** 和「開啟角色」。
+    若要在客戶 Microsoft Defender 資訊安全中心中啟用 RBAC，請從具有全域管理員或安全性管理員許可權的使用者帳戶，存取 **設定 > 許可權 > 角色** 和「開啟角色」。
 
     ![MSSP 存取的影像](images/mssp-access.png)
 
@@ -92,7 +92,7 @@ ms.locfileid: "51932748"
 
     ![新目錄的影像](images/goverance-catalog.png)
 
-    進一步資訊，請參閱 [建立資源的目錄](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create)。
+    進一步資訊，請參閱 [建立資源的目錄](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
 
 3. **建立 MSSP 資源的存取套件客戶 AAD：身分識別控管**
@@ -109,7 +109,7 @@ ms.locfileid: "51932748"
     > [!div class="mx-imgBorder"]
     > ![新訪問套件的影像](images/new-access-package.png)
 
-    如需詳細資訊，請參閱 [建立新的 access 套件](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create)。
+    如需詳細資訊，請參閱 [建立新的 access 套件](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
 
 4. **提供存取權要求從客戶 AAD：身分識別控管 MSSP 資源的連結**
@@ -132,7 +132,7 @@ ms.locfileid: "51932748"
     範例： `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. 在 UI 的 [ **核准** ] 區段中核准或拒絕要求。
 
-    此時，已布建分析者存取權，且每個分析員都應該可以存取客戶的 Microsoft Defender 安全中心： `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    此時，已布建分析者存取權，且每個分析員都應該可以存取客戶的 Microsoft Defender 資訊安全中心：`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>相關主題
 - [存取 MSSP 客戶入口網站](access-mssp-portal.md)

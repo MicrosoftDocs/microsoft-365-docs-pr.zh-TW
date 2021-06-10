@@ -48,7 +48,7 @@ Windows 安全性應用程式是 Windows 10 版本1703和更新版本上的用�
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>在 Windows 安全性應用程式中審閱病毒和威脅防護設定
 
-![Windows 安全性應用程式中的病毒 & 威脅防護設定] 標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
+![Windows 安全性應用程式中的病毒與威脅防護設定標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
 
 1. 按一下工作列中的盾牌圖示，或搜尋 **Defender** 的 [開始] 功能表，以開啟 Windows 安全性應用程式。
 
@@ -57,7 +57,7 @@ Windows 安全性應用程式是 Windows 10 版本1703和更新版本上的用�
 下列各節說明如何在查看或與 Windows 安全性應用程式中 Microsoft Defender 防毒軟體所提供的威脅防護進行互動時執行一些最常見的工作。
 
 > [!NOTE]
-> 如果使用群組原則來設定及部署這些設定，本節中所述的設定將會變灰，且無法在個別端點上使用。 您必須先將透過「群組原則」物件所做的變更部署到個別的端點，設定 Windows 設定中的設定才會更新。 「[設定使用者與 Microsoft Defender 防毒軟體互動](configure-end-user-interaction-microsoft-defender-antivirus.md)」主題說明如何設定本機原則覆寫設定。
+> 如果使用群組原則來設定及部署這些設定，本節中所述的設定將會變灰，且無法在個別端點上使用。 必須先將透過群組原則物件進行的變更部署到個別端點，才能在 Windows 設定中更新設定。 「[設定使用者與 Microsoft Defender 防毒軟體互動](configure-end-user-interaction-microsoft-defender-antivirus.md)」主題說明如何設定本機原則覆寫設定。
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>使用 Windows 安全性 app 執行掃描
 

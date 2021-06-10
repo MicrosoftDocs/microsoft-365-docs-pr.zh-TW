@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 是否要將新的解決方案新增至規範中心、根據您的意見，更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您在不斷變更的相容性環境上保持最高的狀態。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706615"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843243"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -75,7 +75,7 @@ Outlook 版本和更新：
 
 ### <a name="advanced-ediscovery"></a>進階電子文件探索
 
-- **Advanced eDiscovery 集合** 現在支援 [新的集合工具和工作流程](/microsoft-365/compliance/collections-overview)。 其他新主題包括 [建立草稿集合](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)、 [將草稿集合認可至審閱集](/microsoft-365/compliance/commit-draft-collection)，以及 [集合統計資料和報告](/microsoft-365/compliance/collection-statistics-reports)。
+- **Advanced eDiscovery 集合** 現在支援 [新的集合工具和工作流程](/microsoft-365/compliance/collections-overview)。 其他新主題包括 [建立草稿集合](/microsoft-365/compliance/create-draft-collection)、 [將草稿集合認可至審閱集](/microsoft-365/compliance/commit-draft-collection)，以及 [集合統計資料和報告](/microsoft-365/compliance/collection-statistics-reports)。
 - 將審閱集中的 **檔匯出** 為 [Azure 儲存體](/microsoft-365/compliance/download-export-jobs)帳戶。
 - **Advanced eDiscovery 的預測編碼模組**。 首先請參閱新的 [預測編碼](/microsoft-365/compliance/predictive-coding-overview) 功能，以取代已撤銷的相關性模組。
 
@@ -169,22 +169,22 @@ Outlook 版本和更新：
 
 已新增或更新下列主題中的內容：
 
-- [深入瞭解 Endpoint DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [針對 DLP 原則傳送電子郵件通知並顯示原則提示](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [深入瞭解 Microsoft 365 資料遺失防護內部部署掃描器](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [從資料遺失防護開始使用內部部署掃描程式](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [使用端點資料外洩防護](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [開始使用端點資料外洩防護](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [深入瞭解 Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [針對 DLP 原則傳送電子郵件通知並顯示原則提示](/microsoft-365/compliance/use-notifications-and-policy-tips)
+- [深入瞭解 Microsoft 365 資料遺失防護內部部署掃描器](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [從資料遺失防護開始使用內部部署掃描程式](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
+- [使用端點資料外洩防護](/microsoft-365/compliance/endpoint-dlp-using)
+- [開始使用端點資料外洩防護](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>電子文件探索
 
 已新增或更新下列主題中的內容：
 
-- [Microsoft 365 電子檔探索工具中的解密](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
-- [關鍵字查詢與搜尋條件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Advanced eDiscovery 中的相關性模組退休](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
-- [使用腳本將使用者新增至核心 eDiscovery 案例中的保留](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
+- [Microsoft 365 電子檔探索工具中的解密](/microsoft-365/compliance/ediscovery-decryption)
+- [關鍵字查詢與搜尋條件](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
+- [Advanced eDiscovery 中的相關性模組退休](/microsoft-365/compliance/relevance-module-retirement)
+- [使用腳本將使用者新增至核心 eDiscovery 案例中的保留](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>加密
 
@@ -192,30 +192,30 @@ Outlook 版本和更新：
 
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS) 
 
-- [客戶管理的加密功能](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [使用 AD RMS Exchange Online 郵件加密](https://docs.microsoft.com/microsoft-365/compliance/information-rights-management-in-exchange-online)。 此服務的支援已被取代。 您無法再在 Exchange 混合式環境中使用 AD RMS。 請改為遷移到 Azure RMS。
+- [客戶管理的加密功能](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
+- [使用 AD RMS Exchange Online 郵件加密](/microsoft-365/compliance/information-rights-management-in-exchange-online)。 此服務的支援已被取代。 您無法再在 Exchange 混合式環境中使用 AD RMS。 請改為遷移到 Azure RMS。
 
 #### <a name="customer-key"></a>客戶金鑰
 
-- [租使用者層級 Microsoft 365 的客戶金鑰](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)
-- [安全性與合規性綜述](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+- [租使用者層級 Microsoft 365 的客戶金鑰](/microsoft-365/compliance/customer-key-tenant-level)
+- [安全性與合規性綜述](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>資訊版權管理 (IRM)
 
-- [將資訊版權管理 (IRM) 套用至清單或文件庫](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 這兩個國家/地區群不支援此設定：
+- [將資訊版權管理 (IRM) 套用至清單或文件庫](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 這兩個國家/地區群不支援此設定：
     - Microsoft Cloud for US Government
     - Microsoft Cloud 德國
     - 以中國為單位運作的 Azure 和 Microsoft 365) 
-- [將 IRM 設定為使用內部部署 AD RMS 伺服器](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 已棄用 Exchange 混合式環境中此服務的支援。
+- [將 IRM 設定為使用內部部署 AD RMS 伺服器](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 已棄用 Exchange 混合式環境中此服務的支援。
 
 ### <a name="sensitive-information-types"></a>敏感資訊類型
 
 已新增或更新下列主題中的內容：
 
-- [了解敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [使用 PowerShell 建立自訂的敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [建立自訂機密資訊類型，並以精確的資料符合型分類為基礎](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [敏感資訊類型實體定義](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [了解敏感性資訊類型](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [使用 PowerShell 建立自訂的敏感性資訊類型](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [建立自訂機密資訊類型，並以精確的資料符合型分類為基礎](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [敏感資訊類型實體定義](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 
 ### <a name="sensitivity-labels"></a>敏感度標籤

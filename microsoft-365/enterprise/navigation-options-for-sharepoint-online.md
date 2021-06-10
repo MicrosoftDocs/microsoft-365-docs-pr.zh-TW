@@ -39,7 +39,7 @@ ms.locfileid: "50923621"
 
 導覽提供者設定會大幅影響整個網站的效能，而且必須慎重考慮，以挑選流覽提供者和設定，以有效地伸縮 SharePoint 網站的需求。 有兩個現成的導覽提供者和自訂導覽實現。
 
-**如果您開啟網站的結構式流覽** 快取，則第一個選項（[**結構導覽**](#using-structural-navigation-in-sharepoint-online)）是 Sharepoint Online for 傳統 SharePoint 網站中的建議流覽選項。 此導覽提供者會顯示目前網站底下的流覽專案，並選擇性地顯示目前網站及其同輩。 它提供額外的功能，例如安全性修整和網站結構列舉。 如果停用快取，這會對效能及擴充性產生負面影響，而且可能會受到節流。
+**如果您開啟網站的結構式流覽** 快取，則第一個選項（[**結構導覽**](#using-structural-navigation-in-sharepoint-online)）是 SharePoint Online for 傳統 SharePoint 網站中的建議流覽選項。 此導覽提供者會顯示目前網站底下的流覽專案，並選擇性地顯示目前網站及其同輩。 它提供額外的功能，例如安全性修整和網站結構列舉。 如果停用快取，這會對效能及擴充性產生負面影響，而且可能會受到節流。
 
 第二個選項是 [**managed (中繼資料) 導覽**](#using-managed-navigation-and-metadata-in-sharepoint-online)）代表使用受管理的中繼資料字片語流覽專案。 建議您先停用安全修整，除非需要。 啟用此導覽提供者的安全性調整為安全的預設設定;不過，許多網站不需要安全性調整的額外負荷，因為導覽元素通常對網站的所有使用者都是一致的。 使用建議的設定來停用安全修整時，此導覽提供者不需要列舉網站結構，高擴充性會影響到可接受的效能。
 
@@ -61,9 +61,9 @@ ms.locfileid: "50923621"
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>在 SharePoint Online 中分析導覽效能
 
-[SharePoint 工具的頁面診斷](./page-diagnostics-for-spo.md)功能是 Microsoft Edge 和 Chrome 瀏覽器的瀏覽器擴充，可分析線上新式入口網站與傳統發佈網站頁面的 SharePoint。 此工具僅適用于線上 SharePoint，無法在 SharePoint 系統] 頁面上使用。
+[SharePoint 工具的頁面診斷](./page-diagnostics-for-spo.md)功能是 Microsoft Edge 和 Chrome 瀏覽器的瀏覽器擴充，可分析 SharePoint 線上新式入口網站和傳統發佈網站頁面。 此工具僅適用于線上 SharePoint，無法在 SharePoint 系統] 頁面上使用。
 
-工具會針對每個已分析的頁面產生報表，顯示頁面如何針對預先定義的規則集執行，並在測試結果超出基線值時顯示詳細資訊。 SharePoint 線上管理員和設計者可以使用工具來疑難排解效能問題，以確保新頁面在發佈之前已經過優化。
+工具會針對每個已分析的頁面產生報表，顯示頁面如何針對預先定義的規則集執行，並在測試結果超出基線值時顯示詳細資訊。 SharePoint線上管理員和設計者可以使用工具來疑難排解效能問題，以確保新頁面在發佈之前已經過優化。
 
 **SPRequestDuration** 特別是 SharePoint 處理頁面所需的時間。 大量導覽 (例如在導覽) 中包含頁面、複雜的網站階層，以及其他設定和拓撲選項，都可能會大幅增加持續時間。
 
@@ -73,7 +73,7 @@ ms.locfileid: "50923621"
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>如何實施結構性導覽快取
 
-在 [**網站設定**  >  **外觀與風格**  >  **導覽**] 底下，您可以驗證是否已選取全域導覽或目前導覽的結構導覽。 選取 [ **顯示頁面** 會對效能產生負面影響。
+在 [**網站設定** 的  >  **外觀與風格**  >  **導覽**] 底下，您可以驗證是否已選取全域導覽或目前導覽的結構導覽。 選取 [ **顯示頁面** 會對效能產生負面影響。
 
 ![選取 [顯示子網站] 的結構導覽](../media/SPONavOptionsStructuredShowSubsites.png)
 
@@ -99,11 +99,11 @@ ms.locfileid: "50923621"
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>如何執行受管理導覽和結果
 
-關於受管理導覽的詳細資料，有數個 docs.microsoft.com 文章。 例如，請參閱 [SharePoint Server 中受管理導覽的概述](/sharepoint/administration/overview-of-managed-navigation)。
+關於受管理導覽的詳細資料，有數個 docs.microsoft.com 文章。 例如，請參閱[SharePoint Server 中受管理導覽的概述](/sharepoint/administration/overview-of-managed-navigation)。
 
 為了實施受管理導覽，您可以使用與網站導覽結構相對應的 URLs 來設定字詞。 管理的導覽甚至可以手動策劃，以在許多情況下取代結構性導覽。 例如：
 
-![SharePoint 線上網站結構](../media/SPONavOptionsListOfSites.png))
+![SharePoint線上網站結構](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>使用搜尋導向的用戶端腳本
 
@@ -117,7 +117,7 @@ ms.locfileid: "50923621"
 
 資料提供者的範例是使用 **搜尋導向導覽**，這可讓您靈活地列舉流覽節點及有效處理安全性調整。
 
-另外還有其他常見的選項可建立 **自訂導覽提供者**。 如需建立自訂導覽提供者的進一步指導，請參閱 [SharePoint Online 入口網站的導覽解決方案](/sharepoint/dev/solution-guidance/portal-navigation) 。
+另外還有其他常見的選項可建立 **自訂導覽提供者**。 如需建立自訂導覽提供者的進一步指導，請參閱[SharePoint Online 入口網站的導覽解決方案](/sharepoint/dev/solution-guidance/portal-navigation)。
 
 使用搜尋您可以使用連續編目，利用背景中所建立的索引。 搜尋結果會從搜尋索引中提取，而結果會進行安全修整。 在需要安全性調整時，這通常會比預置的流覽提供者更快速。 使用搜尋結構導覽，尤其是當您有複雜的網站結構時，會大幅加快頁面載入時間。 這透過受管理導覽的主要優點是您可以從安全性調整中受益。
 
@@ -125,7 +125,7 @@ ms.locfileid: "50923621"
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>範例：取代主版頁面中的現成導覽代碼
 
-1. 流覽至 [網站設定] 頁面。
+1. 流覽至網站設定] 頁面。
 2. 按一下 [ **主版頁面**] 以開啟主版頁面圖庫。
 3. 您可以從這裡流覽文件庫，並下載檔案 `seattle.master` 。
 4. 使用文字編輯器編輯程式碼，並刪除下列螢幕擷取畫面中的程式碼區塊。<br/>![刪除顯示的程式碼區塊](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
@@ -221,7 +221,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ### <a name="about-the-javascript-file"></a>關於 JavaScript 檔案 .。。
 
 >[!NOTE]
->若使用自訂 JavaScript，請確定已啟用 public CDN，且檔案位於 CDN 位置。
+>如果使用自訂 JavaScript，請確定已啟用 public CDN，且檔案位於 CDN 位置。
 
 整個 JavaScript 檔如下：
 

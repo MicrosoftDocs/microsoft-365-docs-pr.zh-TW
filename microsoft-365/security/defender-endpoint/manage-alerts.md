@@ -32,7 +32,7 @@ ms.locfileid: "51186998"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Defender for Endpoint 會透過提醒通知您可能的惡意事件、屬性和內容資訊。 [ **安全性作業] 儀表板** 會顯示新警示的摘要，您可以在 [ **警示] 佇列** 中存取所有警示。
 
@@ -50,7 +50,7 @@ Defender for Endpoint 會透過提醒通知您可能的惡意事件、屬性和�
 
 
 ## <a name="suppress-alerts"></a>抑制提醒
-在某些情況下，您可能需要抑制 Microsoft Defender Security Center 中顯示的提醒。 Defender for Endpoint 可讓您針對已知的特殊警示（如組織中的已知工具或處理常式），建立抑制規則。
+在某些情況下，您可能需要抑制警告，使其不會出現在 Microsoft Defender 資訊安全中心中。 Defender for Endpoint 可讓您針對已知的特殊警示（如組織中的已知工具或處理常式），建立抑制規則。
 
 抑制規則可以從現有的警示建立。 您可以視需要停用或重新啟用。
 
@@ -126,7 +126,7 @@ Defender for Endpoint 會透過提醒通知您可能的惡意事件、屬性和�
 
 
 ## <a name="related-topics"></a>相關主題
-- [管理抑制規則](manage-suppression-rules.md)
+- [管理歸併規則](manage-suppression-rules.md)
 - [查看和組織 Microsoft Defender for Endpoint 警示佇列](alerts-queue.md)
 - [調查 Microsoft Defender for Endpoint 警示](investigate-alerts.md)
 - [調查與 Microsoft Defender for Endpoint alert 相關聯的檔案](investigate-files.md)

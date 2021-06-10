@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: 本文包含有關網路規劃、測試及遷移至 Office 365 的資訊連結。
+description: 本文包含對 Office 365 之網路規劃、測試及遷移之相關資訊的連結。
 ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -38,7 +38,7 @@ ms.locfileid: "50923585"
 
 本文是 [Office 365 的網路規劃與效能調整](./network-planning-and-performance.md)的一部分。
 
-如需針對 Microsoft 365 和其他 Microsoft 雲端平臺及服務優化網路的步驟，請參閱 [Microsoft 雲端網路 For Enterprise 建築師](../solutions/cloud-architecture-models.md) 海報。
+如需針對 Microsoft 365 和其他 Microsoft 雲端平臺及服務優化網路的步驟，請參閱[Microsoft 雲端網路，以取得 Enterprise 架構師](../solutions/cloud-architecture-models.md)海報。
    
 ## <a name="estimate-network-bandwidth-requirements"></a>預估網路頻寬需求
 <a name="EstimateBandwidthRequirements"> </a>
@@ -51,7 +51,7 @@ ms.locfileid: "50923585"
     
 2. 決定哪些 Office 365 服務與功能可供用戶端使用。 您可能需要一組人員搭配不同的服務或使用設定檔。
     
-3. 針對由用戶端組成的試驗群組測量網路使用狀況。 請確保試驗用戶端能代表組織中屬於各種不同設定檔及地理位置的人員。 您可以對照 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) 和 [Microsoft 小組](/microsoftteams/prepare-network) 舊的計算機，或是我們在自己網路上所執行的 [案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) ，來交叉檢查您的結果。 
+3. 針對由用戶端組成的試驗群組測量網路使用狀況。 請確保試驗用戶端能代表組織中屬於各種不同設定檔及地理位置的人員。 您可以對照我們舊的計算機，在您的[Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744)和[Microsoft Teams](/microsoftteams/prepare-network)或在我們自己的網路上執行的[案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)，以交叉檢查您的結果。 
     
 4. 從試驗群組的測量結果推算整個組織的需求，然後重新測試以驗證估計值，再變更您的網路設定。
     
@@ -108,7 +108,7 @@ ms.locfileid: "50923585"
     
 - [規劃連線到 Office 365 服務的網路裝置](plan-for-network-devices.md)
     
-- [Office 365 服務的安裝指南](setup-guides-for-microsoft-365.md)
+- [Office 365 服務的設定指南](setup-guides-for-microsoft-365.md)
  
 ## <a name="see-also"></a>另請參閱
 

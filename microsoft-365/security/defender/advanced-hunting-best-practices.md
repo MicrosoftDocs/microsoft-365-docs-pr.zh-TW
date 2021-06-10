@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的高級搜尋查詢最佳作法
 description: 瞭解如何使用高級搜尋來構建快速、有效率及無錯誤的威脅搜尋查詢
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema，kusto，避免超時、命令列、程式識別碼、優化、最佳作法
+keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、「Microsoft 365 Defender」、「Microsoft 365」、「m365」、「搜尋」、「查詢」、「遙測」、「架構」 kusto、[避免超時]、命令列、程式識別碼、優化
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -61,7 +61,7 @@ ms.locfileid: "51952689"
 - **剖析：請** 盡可能使用 [parse 運算子](/azure/data-explorer/kusto/query/parseoperator) 或剖析函數（如 [parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用正則運算式的 string 運算子或 [析取 () 函數](/azure/data-explorer/kusto/query/extractfunction)。 保留使用正則運算式以取得更複雜的案例。 [閱讀有關分析函數的詳細資訊](#parse-strings)
 - **篩選資料表不是運算式**-如果您可以在資料表欄上篩選，請勿在計算欄上篩選。
 - **無三個字元的字詞**，避免使用包含三個字元或更少的字詞來比較或篩選。 這些字詞不會編制索引，而且符合這些字詞將需要更多資源。
-- **專案可選擇性地** 透過只投影您所需的欄，使您的結果更容易理解。 在執行 [加入](/azure/data-explorer/kusto/query/joinoperator) 或類似作業之前，先投射特定欄，也有助於提升效能。
+- **Project 選擇性** 地讓您的結果更容易理解，只會投射出您需要的資料行。 在執行 [加入](/azure/data-explorer/kusto/query/joinoperator) 或類似作業之前，先投射特定欄，也有助於提升效能。
 
 ## <a name="optimize-the-join-operator"></a>優化 `join` 運算子
 [Join 運算子](/azure/data-explorer/kusto/query/joinoperator)會透過比對指定的欄中的值，合併兩個數據表中的資料行。 套用這些秘訣以優化使用此操作符的查詢。
@@ -265,7 +265,7 @@ SHA256,ThreatTypes,DetectionMethods
 若要瞭解所有支援的分析功能，請 [閱讀 Kusto 字串函數](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。 
 
 >[!NOTE]
->本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 使用更多資料來源[開啟 Microsoft 365 Defender](m365d-enable.md)以搜尋威脅。 您可以遵循[從 microsoft defender for endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [Kusto 查詢語言檔](/azure/data-explorer/kusto/query/)

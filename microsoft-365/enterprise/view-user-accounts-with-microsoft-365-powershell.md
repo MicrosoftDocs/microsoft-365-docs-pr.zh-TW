@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 來查看 Microsoft 365 使用者帳戶
+title: 使用 PowerShell View Microsoft 365 使用者帳戶
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -27,15 +27,15 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924645"
 ---
-# <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 來查看 Microsoft 365 使用者帳戶
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell View Microsoft 365 使用者帳戶
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以使用 Microsoft 365 系統管理中心來查看您的 Microsoft 365 租使用者帳戶。 PowerShell Microsoft 365 可啟用此功能，但也提供其他功能。
+您可以使用 Microsoft 365 系統管理中心來查看 Microsoft 365 租使用者的帳戶。 Microsoft 365 的 PowerShell 啟用此功能，但也提供其他功能。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 ### <a name="view-all-accounts"></a>查看所有帳戶
 
@@ -76,7 +76,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 根據預設， **AzureADUser** Cmdlet 只會顯示帳戶的 *ObjectID*、 *DisplayName* 及 *UserPrincipalName* 屬性。
 
-若要更選擇要顯示的內容，請搭配使用 **Select** Cmdlet 搭配 **AzureADUser 指令程式** 。 若要組合這兩個 Cmdlet，請使用 "管道" 字元 ( "|") ，它會通知 Azure Active Directory PowerShell 以取得一個命令的結果，並將其傳送至下一個命令。 以下是一個範例命令，會顯示每個使用者帳戶的 *DisplayName*、 *部門* 和 *UsageLocation* ：
+若要更選擇要顯示的內容，請搭配使用 **Select** Cmdlet 搭配 **AzureADUser 指令程式** 。 若要組合這兩個 Cmdlet，請使用 "管道" 字元 ( "|") ，它會告訴 Azure Active Directory PowerShell Graph 以取得一個命令的結果，並將其傳送至下一個命令。 以下是一個範例命令，會顯示每個使用者帳戶的 *DisplayName*、 *部門* 和 *UsageLocation* ：
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -104,9 +104,9 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 使用者帳戶有兩個來源： 
 
-- Windows Server Active Directory (AD) ，也就是從內部部署 AD 同步處理至雲端的帳戶。
+- Windows伺服器 Active Directory (AD) ，也就是從內部部署 AD 同步處理至雲端的帳戶。
 
-- Azure Active Directory (Azure AD) 直接在雲端中建立的 AD 帳戶。
+- Azure Active Directory (Azure ad) 在雲端中直接建立的 ad 帳戶。
 
 
 下列命令會指示 PowerShell 取得屬性 *DirSyncEnabled* 設定為 *True* 的所有使用者。 您可以使用它來尋找與內部部署 AD 同步處理的帳戶。
@@ -123,13 +123,13 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>根據共同屬性來查看帳戶
 
-若要更選擇要顯示的帳戶清單，您可以使用 **Where** Cmdlet 搭配 **AzureADUser** Cmdlet。 若要組合這兩個 Cmdlet，請使用 "管道" 字元 ( "|") ，它會通知 Azure Active Directory PowerShell 以取得一個命令的結果，並將其傳送至下一個命令。 以下範例命令只會顯示具有未指定使用位置的使用者帳戶：
+若要更選擇要顯示的帳戶清單，您可以使用 **Where** Cmdlet 搭配 **AzureADUser** Cmdlet。 若要組合這兩個 Cmdlet，請使用 "管道" 字元 ( "|") ，它會告訴 Azure Active Directory PowerShell Graph 以取得一個命令的結果，並將其傳送至下一個命令。 以下範例命令只會顯示具有未指定使用位置的使用者帳戶：
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-此命令會指導 Azure Active Directory PowerShell 的圖形：
+這個命令會指示 Azure Active Directory PowerShell Graph：
   
 1.  (**AzureADUser**) 取得使用者帳戶上的所有資訊，並將其傳送至下一個命令 (**|**) 。
     
@@ -153,7 +153,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="view-all-accounts"></a>查看所有帳戶
 
@@ -179,7 +179,7 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-**Get-MsolUser** 指令程式也有一組參數，用來篩選顯示的使用者帳戶集。 例如，針對未經許可的使用者清單 (已新增至 Microsoft 365 的使用者，但是尚未獲得授權使用任何服務) ，請執行下列命令：
+**Get-MsolUser** 指令程式也有一組參數，用來篩選顯示的使用者帳戶集。 例如，針對未經許可的使用者清單 (已新增至 Microsoft 365，但尚未授權使用任何服務) 的使用者，請執行下列命令：
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
@@ -259,7 +259,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
     
 - Islicensed 內容
     
-如果您需要其他屬性，例如使用者在其中運作的部門，以及他們使用 Microsoft 365 服務的國家/地區，您可以同時執行 **Get-MsolUser** 與 **Select** 資訊清單，以指定使用者帳戶屬性的清單。 以下為範例：
+如果您需要其他屬性（例如，使用者在其中運作的部門，以及他們使用 Microsoft 365 服務的國家/地區），您可以搭配 **Select** 資訊清單執行 **Get-MsolUser** ，以指定使用者帳戶屬性的清單。 以下為範例：
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -313,9 +313,9 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-如果您是使用目錄同步處理來建立及管理 Microsoft 365 使用者，您可以顯示已計畫 Microsoft 365 使用者的本機帳戶。 下列範例假設：
+如果您是使用目錄同步處理來建立及管理 Microsoft 365 使用者，您可以顯示 Microsoft 365 使用者已計畫的本機帳戶。 下列範例假設：
 
-- Azure AD Connect 設定為使用 ObjectGUID 的預設來源錨點。  (如需設定來源錨點的詳細資訊，請參閱 [AZURE AD Connect：設計概念](/azure/active-directory/hybrid/plan-connect-design-concepts)) 。
+- Azure AD 連線設定為使用 ObjectGUID 的預設來源錨點。  (如需設定來源錨點的詳細資訊，請參閱[AZURE AD 連線：設計概念](/azure/active-directory/hybrid/plan-connect-design-concepts)) 。
 - 已安裝 PowerShell 的 Active Directory 網域服務模組 (請參閱 [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)) 。
 
 ```powershell

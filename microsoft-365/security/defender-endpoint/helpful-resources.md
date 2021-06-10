@@ -1,7 +1,7 @@
 ---
 title: 有用的 Microsoft Defender for Endpoint resources
 description: 存取有用的資源，例如，與 Microsoft Defender for Endpoint 相關的博客及其他資源的連結
-keywords: Microsoft Defender 安全中心、產品簡介、brief、功能、授權
+keywords: Microsoft Defender 資訊安全中心，產品簡介，brief，功能，授權
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 727576ab75d77d12be0595c081586f411887da49
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165438"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843060"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>有用的 Microsoft Defender for Endpoint resources
 
@@ -32,12 +32,12 @@ ms.locfileid: "51165438"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 存取有用的資源，例如與 Microsoft Defender for Endpoint 相關的博客與其他資源的連結。
 
 ## <a name="endpoint-protection-platform"></a>Endpoint protection 平臺
-- [行業測試的最大得分](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+- [行業測試的最大得分](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [內下班：深入瞭解 Defender 核心版的高級技術以取得端點下一代保護](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
@@ -61,4 +61,4 @@ ms.locfileid: "51165438"
 
 - [自動化對您的安全小組帶來價值的方式](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [在 Microsoft Defender for Endpoint 中處理誤報/負片](defender-endpoint-false-positives-negatives.md)
+- [解決適用於端點的 Microsoft Defender 中的誤判/漏報](defender-endpoint-false-positives-negatives.md)

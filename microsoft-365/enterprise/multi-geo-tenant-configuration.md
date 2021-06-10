@@ -110,10 +110,10 @@ ms.locfileid: "50923645"
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive 佈建及 PDL 的影響
 
-如果使用者的租用戶中已建立 OneDrive 網站，設定其 PDL 不會自動移動其現有的 OneDrive。 若要移動使用者的 OneDrive，請參閱 [OneDrive 進行商務用異地移動](move-onedrive-between-geo-locations.md)。
+如果使用者的租用戶中已建立 OneDrive 網站，設定其 PDL 不會自動移動其現有的 OneDrive。 若要移動使用者的 OneDrive，請參閱[商務用 OneDrive 地理位置移動](move-onedrive-between-geo-locations.md)。
 
 > [!NOTE]
-> Exchange Online 會在 PLD 變更且 MailboxRegion 不再符合信箱資料庫地理位置碼時，自動重新安置使用者的信箱。 如需詳細資訊，請參閱 [在多地理位置環境中管理 Exchange Online 信箱](./administering-exchange-online-multi-geo.md)。
+> Exchange Online 會在 PLD 變更和 MailboxRegion 不再符合信箱資料庫地理位置代碼的情況時，自動重新安置使用者的信箱。 如需詳細資訊，請參閱[在多地理位置環境中管理 Exchange Online 信箱](./administering-exchange-online-multi-geo.md)。
 
 如果使用者在租用戶中沒有 OneDrive 網站，OneDrive 會根據其 PDL 值進行佈建，並假設使用者的 PDL 符合公司的其中一個衛星位置。
 

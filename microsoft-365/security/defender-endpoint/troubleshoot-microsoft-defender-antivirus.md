@@ -978,14 +978,14 @@ UAC </dt>
 <dt>錯誤碼： &lt; &gt; 與威脅狀態相關聯的錯誤碼的錯誤代碼結果代碼。標準 HRESULT 值。</dt>
 <dt>錯誤描述： &lt;錯誤描述 &gt; 錯誤的描述。</dt>簽章
 <dt>版本： &lt;定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意引擎 &gt; 版本</dt>請注意：每當 microsoft Defender 防毒程式、microsoft Security Essentials、惡意軟體移除工具或 System Center Endpoint Protection 偵測到惡意程式碼時，會還原下列系統設定和服務，惡意程式碼可能已變更：<ul>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>附注：每當 Microsoft Defender 防毒軟體、Microsoft Security Essentials、惡意軟體移除工具或 System Center Endpoint Protection 偵測到惡意軟體時，它會還原下列系統設定，以及惡意程式碼可能已變更的服務：<ul>
 <li>預設 Internet Explorer 或 Microsoft Edge 設定</li>
 <li>使用者存取控制設定</li>
 <li>Chrome 設定</li>
 <li>引導控制資料</li>
 <li>Regedit 和工作管理員登錄設定</li>
-<li>Windows 更新、背景智慧傳送服務和遠端過程呼叫服務</li>
-<li>Windows 作業系統檔</li></ul>
+<li>Windows更新、背景智慧傳送服務和遠端過程呼叫服務</li>
+<li>Windows作業系統檔案</li></ul>
 上述內容適用于下列用戶端和伺服器版本：
 <table>
 <tr>
@@ -997,7 +997,7 @@ UAC </dt>
 用戶端作業系統
 </td>
 <td>
-Windows Vista (Service Pack 1 或 Service Pack 2) ，Windows 7 和更新版本
+WindowsVista (service pack 1 或 service pack 2) Windows 7 及更新版本
 </td>
 </tr>
 <tr>
@@ -1005,7 +1005,7 @@ Windows Vista (Service Pack 1 或 Service Pack 2) ，Windows 7 和更新版本
 伺服器作業系統
 </td>
 <td>
-Windows Server 2008、Windows Server 2008 R2、Windows Server 2012 及 Windows Server 2016
+Windows伺服器2008、Windows server 2008 R2、Windows Server 2012 及 Windows Server 2016
 </td>
 </tr>
 </table>
@@ -1017,7 +1017,7 @@ Windows Server 2008、Windows Server 2008 R2、Windows Server 2012 及 Windows S
 使用者動作：
 </td>
 <td >
-不需要任何動作。 Microsoft Defender 防病毒已移除或隔離威脅。 
+不需要任何動作。 Microsoft Defender 防毒軟體移除或隔離威脅。 
 </td>
 </tr>
 <tr>
@@ -1043,7 +1043,7 @@ Windows Server 2008、Windows Server 2008 R2、Windows Server 2012 及 Windows S
 描述：
 </td>
 <td >
-當對惡意程式碼或其他可能不需要的軟體採取動作時，Microsoft Defender 防毒軟體會遇到非嚴重的錯誤。<br/>如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體對惡意程式碼或其他可能不需要的軟體採取動作時，發生非嚴重錯誤。<br/>如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
 <dt>ID: &lt; 威脅識別碼 &gt; </dt> 
@@ -1077,7 +1077,7 @@ Windows Server 2008、Windows Server 2008 R2、Windows Server 2012 及 Windows S
 <li>使用者：使用者已啟動</li>
 <li>系統：系統啟動</li>
 <li>即時：啟動即時元件</li>
-<li>IOAV：已啟動 IE 下載和 Outlook Express 附件</li>
+<li>IOAV： IE 下載和 Outlook Express 附件已初始化</li>
 <li>NIS：網路檢查系統</li>
 <li>IEPROTECT： IE-IExtensionValidation;這可防止惡意的網頁控制項</li>
 <li>ELAM) 上的初期啟動反惡意軟體 (。 這包括由啟動順序偵測到的惡意程式碼</li>
@@ -1100,7 +1100,7 @@ UAC </dt>
 <dt>錯誤碼： &lt; &gt; 與威脅狀態相關聯的錯誤碼的錯誤代碼結果代碼。標準 HRESULT 值。</dt>
 <dt>錯誤描述： &lt;錯誤描述 &gt; 錯誤的描述。</dt>簽章
 <dt>版本： &lt;定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意引擎 &gt; 版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -1109,7 +1109,7 @@ UAC </dt>
 使用者動作：
 </td>
 <td >
-不需要任何動作。 Microsoft Defender 防毒程式無法完成與惡意程式碼修復相關的工作。 這不是嚴重失敗。
+不需要任何動作。 Microsoft Defender 防毒軟體無法完成與惡意程式碼修復相關的任務。 這不是嚴重失敗。
 </td>
 </tr>
 <tr>
@@ -1135,7 +1135,7 @@ UAC </dt>
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式在對惡意程式碼或其他可能不需要的軟體採取動作時，發生嚴重錯誤。<br/>如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體對惡意程式碼或其他可能不需要的軟體採取動作時，發生嚴重錯誤。<br/>如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
 <dt>ID: &lt; 威脅識別碼 &gt; </dt> 
@@ -1169,7 +1169,7 @@ Microsoft Defender 防毒程式在對惡意程式碼或其他可能不需要的�
 <li>使用者：使用者已啟動</li>
 <li>系統：系統啟動</li>
 <li>即時：啟動即時元件</li>
-<li>IOAV：已啟動 IE 下載和 Outlook Express 附件</li>
+<li>IOAV： IE 下載和 Outlook Express 附件已初始化</li>
 <li>NIS：網路檢查系統</li>
 <li>IEPROTECT： IE-IExtensionValidation;這可防止惡意的網頁控制項</li>
 <li>ELAM) 上的初期啟動反惡意軟體 (。 這包括由啟動順序偵測到的惡意程式碼</li>
@@ -1354,19 +1354,19 @@ Microsoft Defender 防毒軟體用戶端已啟動並以健全的狀態運作。
 <dl>
 <dt>平臺版本： &lt;目前的平臺 &gt; 版本</dt>
 <dt>引擎版本： &lt; Antimalware Engine &gt; 版本</dt>
-<dt>網路即時檢查引擎版本 &lt; &gt; ：「網路即時檢查引擎</dt>」版本：
-<dt> &lt; 防毒軟體 &gt; </dt>簽章版本反間諜軟體簽章版本：
-<dt> &lt; 反 &gt; 間諜</dt>軟體簽章版本
-<dt>網路即時檢查簽章版本： &lt; 網路即時檢查 &gt; </dt>簽章版本 RTP 狀態： 
-<dt> &lt; 在 Access (狀態上 &gt; 啟用或停用的</dt>[
-<dt> &lt; 即時保護 &gt;)  (狀態</dt>]) 
-<dt>IOAV 狀態： &lt; IE 下載和 Outlook Express 附件狀態 &gt; (啟用或停用) </dt> 
-<dt>BM 狀態： &lt; 行為監視狀態 &gt; (啟用或停用) </dt>防毒軟體簽章： 
-<dt> &lt; 防病毒 &gt; </dt> 
-<dt> &lt; 軟體 &gt; </dt>簽章期限 (于
-<dt>最近一次的快速掃描保留天數：上次的 &lt; 快速掃描 &gt; </dt>保留天數) 
-<dt>上次完整掃描保留時間：上次完整掃描保留 &lt; &gt; 天數</dt> (
-<dt>: ?&lt;防病毒簽名建立 &gt; 時間</dt>
+<dt>網路即時檢查引擎版本： &lt; 網路即時檢查引擎 &gt; 版本</dt>
+<dt>防病毒簽名版本： &lt; 防 &gt; 病毒</dt>軟體簽章版本反間諜軟體簽章版本：
+<dt> &lt; 反間諜 &gt; 軟體簽名版本</dt>
+<dt>網路即時檢查簽章版本： &lt; 網路即時檢查 &gt; </dt>簽章版本
+<dt>RTP 狀態： &lt; 即時保護狀態 &gt; (啟用或</dt>停用) IOAV 狀態：在
+<dt> &lt; Access state 上啟用或停用的 &gt; BM 狀態</dt> 
+<dt>： IE 下載 &lt; &gt; </dt> 
+<dt> &lt; 和 Outlook) Express 附件狀態 (已 &gt; 啟用或已停用 () </dt>
+<dt>防病毒簽名保留時間 &lt;age &gt; (天數) </dt>反間諜軟體簽章
+<dt>保留天數： &lt; 反間諜軟體簽名保留 &gt; 天數 (天) </dt>上次的快速掃描保留天數
+<dt>：上次 &lt; &gt; 的快速掃描保留天數</dt> (
+<dt>過去的完整掃描保留時間：最近一次的完整掃描保留 &lt; &gt; 天數</dt>) 
+<dt>防病毒簽名建立時間 &lt; (防病毒簽名建立 &gt; 時間</dt>
 <dt>反間諜軟體簽名建立時間：？ &lt;反間諜軟體簽名 &gt; 建立時間</dt>
 <dt>上次快速掃描開始時間：？ &lt;上次快速掃描開始時間 &gt; </dt>
 <dt>上次快速掃描結束時間：？ &lt;上次快速掃描結束時間 &gt; </dt>
@@ -2098,7 +2098,7 @@ Microsoft Defender 防毒軟體嘗試下載和設定離線防毒程式時發生�
 描述：
 </td>
 <td >
-您的作業系統支援即將到期。 在不支援的作業系統上執行 Microsoft Defender 防毒程式，不是適當的解決方案來防禦威脅。
+您的作業系統支援即將到期。 在不支援的作業系統上執行 Microsoft Defender 防毒軟體，並不是適當的解決方案來防禦威脅。
 </td>
 </tr>
 <tr>
@@ -2124,7 +2124,7 @@ Microsoft Defender 防毒軟體嘗試下載和設定離線防毒程式時發生�
 描述：
 </td>
 <td >
-您的作業系統支援已過期。 在不支援的作業系統上執行 Microsoft Defender 防毒程式，不是適當的解決方案來防禦威脅。
+您的作業系統支援已過期。 在不支援的作業系統上執行 Microsoft Defender 防毒軟體，並不是適當的解決方案來防禦威脅。
 </td>
 </tr>
 <tr>
@@ -2150,7 +2150,7 @@ Microsoft Defender 防毒軟體嘗試下載和設定離線防毒程式時發生�
 描述：
 </td>
 <td >
-您的作業系統支援已過期。 您的作業系統不再支援 Microsoft Defender 防病毒，已停止運作，而且無法防範惡意程式碼威脅。
+您的作業系統支援已過期。 您的作業系統不再支援 Microsoft Defender 防毒軟體，已停止運作，而且無法防範惡意程式碼威脅。
 </td>
 </tr>
 <tr>
@@ -2176,7 +2176,7 @@ Microsoft Defender 防毒軟體嘗試下載和設定離線防毒程式時發生�
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒 Real-Time 保護功能發生錯誤，失敗。
+Microsoft Defender 防毒軟體 Real-Time 保護功能發生錯誤，且失敗。
 <dl>
 <dt>Feature： &lt; feature &gt; ，例如：
 <ul>
@@ -2188,7 +2188,7 @@ Microsoft Defender 防病毒 Real-Time 保護功能發生錯誤，失敗。
 </dt>
 <dt>錯誤碼： &lt;&gt;與威脅狀態相關聯的錯誤代碼結果代碼。標準 HRESULT 值。</dt>
 <dt>錯誤描述： &lt;錯誤描述 &gt; 錯誤的描述。</dt>
-<dt>原因： Microsoft Defender 防病毒即時防護已重新開機某項功能的原因。</dt>
+<dt>原因： Microsoft Defender 防毒軟體即時保護的原因已重新開機某項功能。</dt>
 </dl>
 </td>
 </tr>
@@ -2198,7 +2198,7 @@ Microsoft Defender 防病毒 Real-Time 保護功能發生錯誤，失敗。
 </td>
 <td >
 您應該重新開機系統，然後執行完整掃描，因為它&#39;可能一段時間沒有保護系統。
-Microsoft Defender 防病毒用戶端&#39;即時保護功能發生錯誤，因為其中一個服務無法啟動。 如果後面接著是3007事件識別碼，表示失敗為暫時的，反惡意軟體用戶端已從失敗中復原。 
+Microsoft Defender 防毒軟體用戶端&#39;s 即時保護功能發生錯誤，因為其中一個服務無法啟動。 如果後面接著是3007事件識別碼，表示失敗為暫時的，反惡意軟體用戶端已從失敗中復原。 
 </td>
 </tr>
 <tr>
@@ -2224,17 +2224,17 @@ Microsoft Defender 防病毒用戶端&#39;即時保護功能發生錯誤，因�
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒即時保護已重新開機功能。 建議您執行完整系統掃描，以偵測此代理程式中斷時可能錯過的任何專案。
+Microsoft Defender 防毒軟體即時保護已重新開機功能。 建議您執行完整系統掃描，以偵測此代理程式中斷時可能錯過的任何專案。
 <dl>
 <dt>Feature： &lt; feature &gt; ，例如：
 <ul>
 <li>存取</li>
-<li>IE 下載和 Outlook Express 附件</li>
+<li>IE 會下載並 Outlook Express 附件</li>
 <li>行為監控</li>
 <li>網路檢查系統</li>
 </ul>
 </dt>
-<dt>原因： Microsoft Defender 防病毒即時防護已重新開機某項功能的原因。</dt>
+<dt>原因： Microsoft Defender 防毒軟體即時保護的原因已重新開機某項功能。</dt>
 </dl>
 </td>
 </tr>
@@ -2269,7 +2269,7 @@ Microsoft Defender 防病毒即時保護已重新開機功能。 建議您執行
 描述：
 </td>
 <td >
-已啟用針對惡意程式碼和其他可能有害軟體的 Microsoft Defender 防病毒即時防護掃描。
+已啟用針對惡意程式碼和其他可能有害軟體的即時保護掃描 Microsoft Defender 防毒軟體。
 </td>
 </tr>
 <tr>
@@ -2295,7 +2295,7 @@ Microsoft Defender 防病毒即時保護已重新開機功能。 建議您執行
 描述：
 </td>
 <td >
-已停用 Microsoft Defender 防毒軟體和其他可能有害軟體的即時防護掃描。 
+已停用針對惡意程式碼和其他可能有害軟體的即時保護掃描 Microsoft Defender 防毒軟體。 
 </td>
 </tr>
 <tr>
@@ -2321,12 +2321,12 @@ Microsoft Defender 防病毒即時保護已重新開機功能。 建議您執行
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒即時保護功能設定已經變更。
+Microsoft Defender 防毒軟體即時保護功能設定已經變更。
 <dl>
 <dt>Feature： &lt; feature &gt; ，例如：
 <ul>
 <li>存取</li>
-<li>IE 下載和 Outlook Express 附件</li>
+<li>IE 會下載並 Outlook Express 附件</li>
 <li>行為監控</li>
 <li>網路檢查系統</li>
 </ul>
@@ -2358,7 +2358,7 @@ Microsoft Defender 防病毒即時保護功能設定已經變更。
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒設定已經變更。 如果這是未預期的事件，您應該檢查設定，因為這可能是惡意程式碼的結果。
+Microsoft Defender 防毒軟體設定已經變更。 如果這是未預期的事件，您應該檢查設定，因為這可能是惡意程式碼的結果。
 <dl>
 <dt>舊值： &lt;舊值號碼 &gt; 舊的防病毒設定值。</dt>
 <dt>新值： &lt;新值號碼 &gt; 新的防病毒設定值。</dt>
@@ -2388,7 +2388,7 @@ Microsoft Defender 防病毒設定已經變更。 如果這是未預期的事件
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒引擎因未預期的錯誤而終止。
+Microsoft Defender 防毒軟體引擎因未預期的錯誤而終止。
 <dl>
 <dt>失敗類型： &lt;失敗類型 &gt; ，例如：損毀或懸掛</dt>
 <dt>例外狀況碼： &lt; 錯誤碼 &gt; </dt> 

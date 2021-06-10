@@ -1,5 +1,5 @@
 ---
-title: 評估 Microsoft Defender for Endpoint
+title: 評估適用於端點的 Microsoft Defender
 ms.reviewer: ''
 description: 評估 Microsoft Defender for Endpoint 中的不同安全性功能。
 keywords: 攻擊面減少，評估，下一步，產生，保護
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d13f13872954978a14454d8f3c0e66970606bd21
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: e7f065c5f42b62885c3c0fde7b402490f86ec2ba
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218774"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843195"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint"></a>評估 Microsoft Defender for Endpoint 
+# <a name="evaluate-microsoft-defender-for-endpoint"></a>評估適用於端點的 Microsoft Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "51218774"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037) 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。
 
@@ -48,14 +48,14 @@ ms.locfileid: "51218774"
 - [評估 exploit protection](./evaluate-exploit-protection.md)
 - [評估網路保護](./evaluate-exploit-protection.md)
 - [評估受控資料夾存取權](./evaluate-controlled-folder-access.md)
-- [評估 application guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
-- [評估網路防火牆](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
+- [評估 application guard](/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
+- [評估網路防火牆](/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
 
 ## <a name="evaluate-next-generation-protection"></a>評估下一代保護
 
 下一代保護可協助偵測並封鎖最新威脅。
 
-- [評估防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
+- [評估防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
 
 ## <a name="see-also"></a>另請參閱
 

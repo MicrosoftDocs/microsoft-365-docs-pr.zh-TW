@@ -29,27 +29,27 @@ ms.locfileid: "50924669"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中式部署 PowerShell Cmdlet 來管理增益集
 
-做為 Microsoft 365 全域管理員，您可以透過 [集中式部署] 功能將 Office 增益集部署至使用者 (請參閱 [在系統管理中心部署 Office 增益集](../admin/manage/manage-deployment-of-add-ins.md)) 。 除了透過 Microsoft 365 系統管理中心部署 Office 增益集之外，您也可以使用 Microsoft PowerShell。 安裝 [適用于 Windows PowerShell 的 O365 集中式 Add-In 部署模組](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
+作為全域管理員 Microsoft 365，您可以透過 [集中式部署] 功能將 Office 增益集部署給使用者 (請參閱[在系統管理中心部署 Office 增益集](../admin/manage/manage-deployment-of-add-ins.md)) 。 除了透過 Microsoft 365 系統管理中心部署 Office 增益集之外，您也可以使用 Microsoft PowerShell。 [針對 Windows PowerShell 安裝 O365 集中式 Add-In 部署模組](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
 
-下載該模組之後，請開啟一般 Windows PowerShell 視窗，並執行下列 Cmdlet：
+下載該模組之後，請開啟一個一般 Windows PowerShell 視窗，並執行下列 Cmdlet：
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>使用您的系統管理員認證進行連線
+## <a name="connect-using-your-admin-credentials"></a>使用您的系統管理員認證連線
 
 在您可以使用集中式部署 Cmdlet 之前，您必須先登入。
   
 1. 開始 PowerShell。
     
-2. 使用您公司的系統管理員認證來連線至 PowerShell。 執行下列 Cmdlet。
+2. 使用您公司的系統管理員認證連線 PowerShell。 執行下列 Cmdlet。
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. 在 [ **輸入認證** ] 頁面中，輸入您的 Microsoft 365 全域系統管理員認證。 或者，您也可以直接在 Cmdlet 中輸入認證。 
+3. 在 [**輸入認證**] 頁面中，輸入您的 Microsoft 365 全域系統管理員認證。 或者，您也可以直接在 Cmdlet 中輸入認證。 
     
     執行下列 Cmdlet，將您的公司系統管理員認證指定為 PSCredential 物件。
     
@@ -60,9 +60,9 @@ ms.locfileid: "50924669"
   ```
 
 > [!NOTE]
-> 如需使用 PowerShell 的詳細資訊，請參閱 [Connect To Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md)。 
+> 如需使用 PowerShell 的詳細資訊，請參閱[連線 Microsoft 365 搭配 PowerShell](./connect-to-microsoft-365-powershell.md)。 
   
-## <a name="upload-an-add-in-manifest"></a>上傳增益集資訊清單
+## <a name="upload-an-add-in-manifest"></a>Upload 增益集資訊清單
 
 執行 **新的 OrganizationAdd** Cmdlet，從路徑（可以是檔案位置或 URL）上傳增益集資訊清單。 下列範例會顯示  _ManifestPath_ 參數值的檔案位置。 
   
@@ -76,9 +76,9 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>從 Office Store 上載增益集
+## <a name="upload-an-add-in-from-the-office-store"></a>從 Office 存放區 Upload 增益集
 
-執行 **OrganizationAddIn 指令程式** ，以從 Office 存放區上傳資訊清單。
+執行 **OrganizationAddIn** Cmdlet，以從 Office 儲存區上傳資訊清單。
   
 在下列範例中， **OrganizationAddIn** Cmdlet 會為美國位置和內容市場的增益集指定 AssetId。
   
@@ -86,12 +86,12 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-若要決定  _AssetId_ 參數的值，您可以從增益集的 Office STORE 網頁 URL 進行複製。 AssetIds 永遠以 "WA" 開頭，後面接數位。 例如，在上一個範例中，WA104099688 的 AssetId 值來源為增益集的 Office Store 網頁 URL： [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) 。
+若要決定 _AssetId_ 參數的值，您可以從增益集的 Office 儲存區網頁 URL 進行複製。 AssetIds 永遠以 "WA" 開頭，後面接數位。 例如，在上一個範例中，WA104099688 的 AssetId 值來源為增益集的 Office 儲存區網頁 URL： [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) 。
   
 _Locale_ 參數和 _ContentMarket_ 參數的值相同，並指出您嘗試安裝增益集的國家/地區。 格式為 en-US，fr-FR。 等等。 
   
 > [!NOTE]
-> 從 Office Store 上傳的增益集會在 Office 市集中的最新更新可用幾天內自動更新。 
+> 從 Office 儲存區上傳的增益集將會在 Office 存放區上的最新更新可用幾天內自動更新。 
   
 ## <a name="get-details-of-an-add-in"></a>取得增益集的詳細資料
 
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> 從 Office Store 上傳的增益集會在 Office 市集中的最新更新可用幾天內自動更新。 
+> 從 Office 儲存區上傳的增益集將會在 Office 存放區上的最新更新可用幾天內自動更新。 
   
 ## <a name="delete-an-add-in"></a>刪除增益集
 

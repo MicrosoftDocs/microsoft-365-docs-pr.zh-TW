@@ -147,7 +147,7 @@ ms.locfileid: "52281014"
 
 5. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，設定 Linux 上的 Microsoft Defender for Endpoint with 排除專案。
 
-    如需詳細資訊，請參閱 [在 Linux 上設定及驗證 Microsoft Defender For Endpoint 的排除](linux-exclusions.md)專案。
+    如需詳細資訊，請參閱[設定及驗證 Linux 上適用於端點的 Microsoft Defender 排除項目](linux-exclusions.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [調查代理程式健康情況問題](health-status.md)
+- [調查代理程式健康狀況問題](health-status.md)

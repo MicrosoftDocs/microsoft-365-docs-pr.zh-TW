@@ -1,5 +1,5 @@
 ---
-title: 將組織資料移轉至 Microsoft 365 企業版
+title: 將您的組織資料移轉至 Microsoft 365 企業版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,17 +24,17 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924069"
 ---
-# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>將組織資料移轉至 Microsoft 365 企業版
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>將您的組織資料移轉至 Microsoft 365 企業版
 
-## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>準備好將資料移轉至 Microsoft 365？
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>準備好將資料移轉至 Microsoft 365 嗎？
 
-我們的 [基本設定指示](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) 可協助您在盡可能短的時間內，使用 Microsoft 365 服務和應用程式。 這會跳過混合式案例和更高級的方法，以遷移至 Microsoft 365。 
+我們的[基本設定指示](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)可協助您在盡可能短的時間內，使用 Microsoft 365 服務和應用程式。 這會跳過混合式案例及更高級的方法來遷移至 Microsoft 365。 
   
-如果您想要協助您設定 Microsoft 365， [FastTrack](https://fasttrack.microsoft.com/office) 是部署 microsoft 365 的最簡單方法，您也可以登入並使用 [Microsoft 365 服務的設定指南](setup-guides-for-microsoft-365.md)。
+如果您想要協助 Microsoft 365 設定， [FastTrack](https://fasttrack.microsoft.com/office)是部署 Microsoft 365 的最簡單方式，您也可以登入並使用[Microsoft 365 服務的設定指南](setup-guides-for-microsoft-365.md)。
 
 ## <a name="migrate-email-to-microsoft-365"></a>將電子郵件遷移至 Microsoft 365
-- 使用 [Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)與 exchange 混合式進行遷移。  (管理員) 
-- 深入瞭解將 [電子郵件遷移至 Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)的不同方式。
+- 使用 [Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)透過 Exchange 混合式移轉。(系統管理員)
+- 深入瞭解將[電子郵件遷移至 Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)的不同方式。
 - 尋找[組織中人員可以移轉電子郵件、連絡人和行事曆](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)的其他方式。
 
 ## <a name="migrate-files-and-folders"></a>移轉檔案和資料夾

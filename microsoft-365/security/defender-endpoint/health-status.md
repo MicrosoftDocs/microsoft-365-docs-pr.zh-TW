@@ -1,5 +1,5 @@
 ---
-title: 調查代理程式健康情況問題
+title: 調查代理程式健康狀況問題
 description: 瞭解執行 mdatp health 命令時所傳回的值
 keywords: mdatp health，command，health，status，command，上架狀態
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281111"
 ---
-# <a name="investigate-agent-health-issues"></a>調查代理程式健康情況問題
+# <a name="investigate-agent-health-issues"></a>調查代理程式健康狀況問題
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

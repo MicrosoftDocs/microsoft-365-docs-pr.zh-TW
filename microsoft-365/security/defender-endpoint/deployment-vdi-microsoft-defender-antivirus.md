@@ -113,7 +113,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. 輸入名稱作為 **安全性情報 unpacker**。 移至 [**觸發器**] 索引標籤。選取 [**新增 ...** ] > [**每日**]，然後選取 **[確定]**。
 
-3. 移至 [**動作**] 索引標籤。選取 [**新增 ...** ] 在 [**程式/腳本**] 欄位中輸入 **PowerShell** 。 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`在 [**新增引數**] 欄位中輸入。 選取 [確定]。
+3. 移至 [**動作**] 索引標籤。選取 [**新增 ...** ] 在 [**程式/腳本**] 欄位中輸入 **PowerShell** 。 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`在 [**新增引數**] 欄位中輸入。 選取 **[確定]**。
 
 4. 您可以視需要選擇設定其他設定。
 
@@ -159,9 +159,9 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. 將原則設定為 [ **啟用**]，然後在 [ **選項**] 下，選取 [  **快速掃描**]。
 
-4. 選取 [確定]。 
+4. 選取 **[確定]**。 
 
-5. 像往常一樣部署您的群組原則物件。
+5. 如常部署您的群組原則物件。
 
 ## <a name="prevent-notifications"></a>防止通知
 
@@ -173,7 +173,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. 將原則設定為 [ **啟用**]，然後選取 **[確定]**。
 
-4. 像往常一樣部署您的群組原則物件。
+4. 如常部署您的群組原則物件。
 
 抑制通知，可防止在執行掃描時 Windows 10 的「動作中心」或進行修正動作時，Microsoft Defender 防毒軟體中顯示的通知。 不過，您的安全性運作小組會在 Microsoft Defender 資訊安全中心 () 中看到掃描的結果 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
 
@@ -196,9 +196,9 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. 將原則設定為 [ **停用**]。
 
-4. 選取 [確定]。
+4. 選取 **[確定]**。
 
-5. 像往常一樣部署您的群組原則物件。
+5. 如常部署您的群組原則物件。
 
 這個原則可防止在更新之後立即執行掃描。
 
@@ -210,7 +210,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. 將原則設定為 [ **啟用**]。
 
-4. 選取 [確定]。
+4. 選取 **[確定]**。
 
 5. 像往常一樣部署您的群組原則物件。
 

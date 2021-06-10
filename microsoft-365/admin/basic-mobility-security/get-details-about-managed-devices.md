@@ -41,7 +41,7 @@ ms.locfileid: "52782438"
 >[!NOTE]
 >本文中的命令和腳本也會傳回 [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)所管理之任何裝置的詳細資料。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您必須設定一些事項，才能執行本文所述的命令和腳本。
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 56d4ac95ab49310cc5fc74168158672e7a0d65d1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245693"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843219"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻擊面減少常見問題解答 (常見問題) 
 
@@ -44,7 +44,7 @@ ASR 最初是一項利用漏洞防護功能套件的功能，在 Windows 10 版�
 
 ## <a name="is-asr-supported-if-i-have-an-e3-license"></a>如果我有 E3 授權，是否支援 ASR？
 
-可以。 Windows Enterprise E3 和更新版本支援 ASR。 
+是。 Windows Enterprise E3 和更新版本支援 ASR。 
 
 ## <a name="which-features-are-supported-with-an-e5-license"></a>E5 授權支援哪些功能？
 
@@ -127,7 +127,7 @@ ASR 規則排除支援萬用字元、路徑及環境變數。 如需如何在 AS
 
 ## <a name="im-making-the-switch-from-a-third-party-security-solution-to-defender-for-endpoint-is-there-an-easy-way-to-export-rules-from-another-security-solution-to-asr"></a>我正在將協力廠商的安全性解決方案切換為端點的 Defender。 是否有「輕鬆」的方法可將規則從其他安全性解決方案匯出為 ASR？
 
-在大多數情況下，從使用 [Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection) 建議的基準建議開始，比嘗試從其他安全性解決方案匯入規則更為簡單且更好。 然後，使用審計模式、監控和分析等工具，設定新的解決方案，以符合您的獨特需求。 
+在大多數情況下，從使用 [Defender For Endpoint](/windows/security/threat-protection) 建議的基準建議開始，比嘗試從其他安全性解決方案匯入規則更為簡單且更好。 然後，使用審計模式、監控和分析等工具，設定新的解決方案，以符合您的獨特需求。 
 
 大部分 ASR 規則的預設設定（結合使用「Endpoint」端點的即時保護）都會針對大量的入侵和弱點進行保護。
 
@@ -135,7 +135,7 @@ ASR 規則排除支援萬用字元、路徑及環境變數。 如需如何在 AS
 
 ## <a name="does-asr-support-file-or-folder-exclusions-that-include-system-variables-and-wildcards-in-the-path"></a>ASR 是否支援在路徑中包含系統變數和萬用字元的檔案或資料夾排除專案？
 
-可以。 如需從 ASR 規則中排除檔案或資料夾的詳細資訊，請參閱 [從 asr 規則排除檔案和資料夾](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) ，並根據 [副檔名和資料夾位置來設定及驗證排除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) ，以瞭解如何在排除的檔案路徑中使用系統變數和萬用字元。
+是。 如需從 ASR 規則中排除檔案或資料夾的詳細資訊，請參閱 [從 asr 規則排除檔案和資料夾](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) ，並根據 [副檔名和資料夾位置來設定及驗證排除](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) ，以瞭解如何在排除的檔案路徑中使用系統變數和萬用字元。
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>是否依預設，ASR 規則涵蓋所有應用程式？
 
@@ -159,7 +159,7 @@ ASR 使用 Microsoft Defender 防毒軟體來封鎖應用程式。 目前無法�
 
 ## <a name="are-the-criteria-used-by-the-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-configurable-by-an-admin"></a>規則使用的準則是「封鎖可執行檔的執行，除非它們符合傳播、時期或受信任的清單準則」（由系統管理員加以設定）。
 
-錯誤。 此規則所用的準則是由 Microsoft cloud protection 所維護，可讓信任的清單持續更新世界各地收集的資料。 本機系統管理員沒有變更此資料的寫入權限。 如果您想要設定此規則以針對您的企業進行量身定制，您可以將特定的應用程式新增至排除清單，以避免觸發規則。
+否。 此規則所用的準則是由 Microsoft cloud protection 所維護，可讓信任的清單持續更新世界各地收集的資料。 本機系統管理員沒有變更此資料的寫入權限。 如果您想要設定此規則以針對您的企業進行量身定制，您可以將特定的應用程式新增至排除清單，以避免觸發規則。
 
 ## <a name="i-enabled-the-asr-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-after-some-time-i-updated-a-piece-of-software-and-the-rule-is-now-blocking-it-even-though-it-didnt-before-did-something-go-wrong"></a>我已啟用 ASR 規則， *封鎖可執行檔，除非符合流行、age 或受信任的清單準則*。 經過一段時間後，我就會更新某項軟體，而且規則現在會封鎖它，即使之前並未這樣。 發生問題？
 
@@ -175,7 +175,7 @@ ASR 使用 Microsoft Defender 防毒軟體來封鎖應用程式。 目前無法�
 
 ## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>建議您是否要啟用此規則、*封鎖從 Windows local security 機關子系統 (lsass.exe) 中竊取的認證*，以及 LSA 防護？
 
-若您也啟用了 [LSA 保護](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) ，啟用此規則將不會提供額外的保護。 規則和 LSA 保護的運作方式都很多，所以同時執行這兩個動作都是多餘的。 不過，有時候您可能無法啟用 LSA 保護。 在這種情況下，您可以啟用此規則，針對針對 lsass.exe 的惡意程式碼提供同等防護。
+若您也啟用了 [LSA 保護](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) ，啟用此規則將不會提供額外的保護。 規則和 LSA 保護的運作方式都很多，所以同時執行這兩個動作都是多餘的。 不過，有時候您可能無法啟用 LSA 保護。 在這種情況下，您可以啟用此規則，針對針對 lsass.exe 的惡意程式碼提供同等防護。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -183,6 +183,6 @@ ASR 使用 Microsoft Defender 防毒軟體來封鎖應用程式。 目前無法�
 * [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
 * [自訂受攻擊面縮小規則](customize-attack-surface-reduction.md)
 * [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
-* [Microsoft Defender 與其他防病毒/反惡意程式碼的相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+* [Microsoft Defender 與其他防病毒/反惡意程式碼的相容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 

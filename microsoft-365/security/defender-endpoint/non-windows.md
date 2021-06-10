@@ -1,6 +1,6 @@
 ---
 title: 非 Windows 平台版適用於端點的 Microsoft Defender
-description: 深入瞭解 Microsoft Defender for a 非 Windows 平臺的端點功能
+description: 瞭解適用于非 Windows 平臺的 Microsoft Defender for Endpoint 功能
 keywords: 非 windows，mac，macos，linux，android
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -35,15 +35,15 @@ ms.locfileid: "51957500"
 
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft 已在伺服器上擴充其業界領先的端點安全性功能，使其超越 Windows 和 Windows Server，以 macOS、Linux、Android 及不久 iOS。
+Microsoft 已在 Windows 和 Windows Server 之外擴充其業界領先的端點安全性功能，以 macOS、Linux、Android 及不久 iOS。
 
 組織面臨不同平臺和裝置的威脅。 我們的小組致力於建立並非 microsoft *的* 安全性解決方案，但 *在* microsoft 也致力於讓客戶能夠保護和保護其異構環境。 我們正在聆聽客戶的意見反應，並與我們的客戶密切合作，以建立符合其需求的解決方案。
 
-透過 Microsoft Defender for Endpoint，客戶可以在 Microsoft Defender Security Center 中的所有威脅和警示，以及跨 Windows 和非 Windows 平臺的整合視圖中受益，讓他們能夠更快速地評估及回應威脅。
+透過 Microsoft Defender for Endpoint，客戶可以從 Microsoft Defender 資訊安全中心、跨 Windows 和非 Windows 平臺的所有威脅和警示統一的觀點中受益，讓他們能取得環境中發生什麼事的完整畫面，讓他們能夠更快速地評估及回應威脅。
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 上適用於端點的 Microsoft Defender 
 
-MacOS 上的 Microsoft Defender for Endpoint 提供了防毒軟體和端點偵測和回應， (EDR) 的最新發行版本本 macOS 功能。 客戶可以透過 Microsoft 端點管理員和 Jamf 來部署及管理解決方案。 就像 macOS 的 Microsoft Office 應用程式一樣，Microsoft 自動更新是用來管理 Mac 更新上的 Microsoft Defender for Endpoint。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
+macOS 上的 Microsoft Defender for endpoint 提供了防毒軟體和端點偵測和回應 (EDR 最近發行版本本 macOS 的) 功能。 客戶可以透過 Microsoft 端點管理員和 Jamf 來部署及管理解決方案。 就像 macOS 上的 Microsoft Office 應用程式一樣，microsoft 自動更新是用來管理 Mac 更新上的 microsoft Defender for Endpoint。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 如需如何開始的詳細資訊，請造訪 macOS [檔](microsoft-defender-endpoint-mac.md)上的 Defender for Endpoint。
 
@@ -55,7 +55,7 @@ Linux 上的 Microsoft Defender for Endpoint 會為 Linux 伺服器提供預防�
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上適用於端點的 Microsoft Defender
 
-Android 上的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方案，適用于執行 Android 6.0 和更高版本的裝置。 支援 Android Enterprise (工作設定檔) 和裝置管理員模式。 在 Android 上，我們提供 web 保護，包括反網路釣魚、封鎖不安全的連線，以及自訂指示器的設定。 解決方案會將惡意程式碼和潛在有害的應用程式掃描 (PUA) ，並透過與 Microsoft 端點管理員和條件式存取的整合，提供額外的侵犯防護功能。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
+Android 上的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方案，適用于執行 Android 6.0 和更高版本的裝置。 同時支援 Android Enterprise (的工作設定檔) 和裝置管理員模式。 在 Android 上，我們提供 web 保護，包括反網路釣魚、封鎖不安全的連線，以及自訂指示器的設定。 解決方案會將惡意程式碼和潛在有害的應用程式掃描 (PUA) ，並透過與 Microsoft 端點管理員和條件式存取的整合，提供額外的侵犯防護功能。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
 
 如需如何開始的詳細資訊，請流覽 Android [檔](microsoft-defender-endpoint-android.md)上的 Microsoft Defender for Endpoint。
 
@@ -67,9 +67,9 @@ IOS 的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方�
 
 ## <a name="licensing-requirements"></a>授權需求 
 
-合格授權的使用者最多可在最多五個並行裝置上使用 Microsoft Defender 端點。 Microsoft Defender for Endpoint 也可從雲端解決方案供應商購買 (CSP) 。
+合格授權的使用者最多可在最多五個並行裝置上使用 Microsoft Defender 端點。 Microsoft Defender for Endpoint 也可從雲端解決方案提供者 (CSP) 購買。
 
-客戶可以透過獨立的 Microsoft Defender for Endpoint 授權，在 macOS 上取得 Microsoft Defender for Endpoint，作為 Microsoft 365 A5/E5 或 Microsoft 365 安全性的一部分。
+客戶可以透過獨立的 microsoft defender for endpoint 授權，在 Microsoft 365 A5/E5 或 Microsoft 365 安全性中取得 macOS 的 microsoft defender for endpoint on。
 
 在 Android 和 iOS 上的 Microsoft Defender for Endpoint 的最近宣告功能，包含在適用于合格授權使用者之五個合格裝置的一部分中。
 

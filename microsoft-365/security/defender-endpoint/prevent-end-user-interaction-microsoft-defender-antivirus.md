@@ -88,7 +88,7 @@ ms.locfileid: "52274913"
 
 ## <a name="related-articles"></a>相關文章
 
-- [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md)
+- [設定端點顯示的通知](configure-notifications-microsoft-defender-antivirus.md)
 
 - [設定使用者與 Microsoft Defender 防毒軟體互動互動](configure-end-user-interaction-microsoft-defender-antivirus.md)
 

@@ -32,7 +32,7 @@ ms.locfileid: "51185834"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 自動化資料夾排除可讓您指定自動調查將略過的資料夾。 
 
@@ -66,7 +66,7 @@ ms.locfileid: "51185834"
 3. 輸入資料夾詳細資料：
 
     - 資料夾
-    - Extensions
+    - 延伸模組
     - 檔案名稱
     - 描述
     
@@ -90,4 +90,4 @@ ms.locfileid: "51185834"
 
 ## <a name="related-topics"></a>相關主題
 - [管理自動化的允許/封鎖清單](manage-indicators.md)
-- [管理自動化檔上傳](manage-automation-file-uploads.md)
+- [管理自動化檔案上傳](manage-automation-file-uploads.md)

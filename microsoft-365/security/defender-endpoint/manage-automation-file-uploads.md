@@ -1,5 +1,5 @@
 ---
-title: 管理自動化檔上傳
+title: 管理自動化檔案上傳
 description: 啟用內容分析並設定將送出以進行分析的副檔名和電子郵件附件擴充功能
 keywords: 自動化，檔案，上傳，內容，分析，檔案，擴充，電子郵件，附件
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185846"
 ---
-# <a name="manage-automation-file-uploads"></a>管理自動化檔上傳
+# <a name="manage-automation-file-uploads"></a>管理自動化檔案上傳
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51185846"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
 
 啟用內容分析功能，讓某些檔案和電子郵件附件可自動上傳至雲端，以進行其他檢查，以進行自動調查。
 

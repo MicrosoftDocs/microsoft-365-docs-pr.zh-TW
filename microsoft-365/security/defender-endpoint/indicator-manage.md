@@ -34,7 +34,7 @@ ms.locfileid: "51185942"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
 1. 在功能窗格中，選取 [**設定**  >  **指示器**]。
@@ -73,7 +73,7 @@ expirationTime | DateTimeOffset | 指示器的到期時間，格式為 YYYY-MM-D
 recommendedActions | 字串 | TI 指標警示建議的動作。 **Optional**
 rbacGroupNames | 字串 | 標記將套用到的 RBAC 群組名稱的以逗號分隔的清單。 **Optional**
 類別 | 字串 | 警示的類別。 範例包括：執行和憑證存取。 **Optional**
-mitretechniques| 字串 | MITRE 以逗號分隔)  (的技術代碼/識別碼。 如需詳細資訊，請參閱 [Enterprise 戰術](https://attack.mitre.org/tactics/enterprise/)。 **選用** 建議您在 MITRE 技術時新增類別中的值。
+mitretechniques| 字串 | MITRE 以逗號分隔)  (的技術代碼/識別碼。 如需詳細資訊，請參閱[Enterprise 戰術](https://attack.mitre.org/tactics/enterprise/)。 **選用** 建議您在 MITRE 技術時新增類別中的值。
 
 如需詳細資訊，請參閱 [Microsoft Defender 的端點警示類別現在已與 MITRE ATT&CK！](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)。
 
@@ -81,5 +81,5 @@ mitretechniques| 字串 | MITRE 以逗號分隔)  (的技術代碼/識別碼。 
 ## <a name="see-also"></a>另請參閱
 - [建立指示器](manage-indicators.md)
 - [建立檔案的指示器](indicator-file.md)
-- [為 IPs 和 URLs/網域建立指示器](indicator-ip-domain.md)
+- [建立 IP 和 URL/網域的指示器](indicator-ip-domain.md)
 - [根據憑證建立指示器](indicator-certificates.md)

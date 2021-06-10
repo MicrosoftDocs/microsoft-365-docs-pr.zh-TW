@@ -1,6 +1,6 @@
 ---
 title: 用於切換至 Microsoft Defender 以進行端點的遷移指南
-description: 瞭解如何將非 Microsoft 365 Defender 解決方案的切換到 Microsoft Defender for Endpoint
+description: 瞭解如何將非 Microsoft 365 的 defender 解決方案切換至 Microsoft defender for Endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,14 +17,14 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: f834ab371b9d860c451c89bb1a4e7d64bdd6ec1f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7d6d92f3abc79552406c80a46a8c3390b91e31d0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934438"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843007"
 ---
-# <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>切換至 Microsoft Defender for Endpoint 和 Microsoft Defender 防毒軟體
+# <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>切換至 Microsoft Defender for 端點和 Microsoft Defender 防毒軟體
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,16 +36,16 @@ ms.locfileid: "51934438"
 
 ## <a name="migration-guides"></a>移轉指南
 
-如果您考慮使用 Microsoft Defender 防毒軟體從非 Microsoft 365 Defender 解決方案切換至 Microsoft Defender for Endpoint，請參閱我們的遷移指南。 選取最適合您在部署程式中的位置的案例，並參閱指導方針。
+如果您考慮使用 Microsoft Defender 防毒軟體將非 Microsoft 365 的 defender 解決方案切換至 Microsoft Defender for Endpoint，請參閱我們的遷移指南。 選取最適合您在部署程式中的位置的案例，並參閱指導方針。
 
 |案例 |指導方針 |
 |:--|:--|
-|您尚沒有 endpoint protection 解決方案，而且想要深入瞭解 Microsoft defender for Endpoint & Microsoft Defender 防病毒的運作方式。  |[Microsoft Defender for Endpoint 評估實驗室](evaluation-lab.md)   |
-|您已將 Microsoft Defender for Endpoint & Microsoft Defender 防病毒，並需要協助您設定及設定相關資訊。  |[Microsoft Defender for Endpoint 部署指南](deployment-phases.md)  |
-|您計畫要從 McAfee 端點安全性 (McAfee) 至 Microsoft Defender & Microsoft defender 防毒軟體的端點。 |[從 McAfee 切換至適用於端點的 Microsoft Defender](mcafee-to-microsoft-defender-migration.md) |
-|您計畫要從 Symantec Endpoint Protection (Symantec) 遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體。 |[從 Symantec 切換至適用於端點的 Microsoft Defender](symantec-to-microsoft-defender-endpoint-migration.md) |
-|您計畫從非 Microsoft 的 endpoint protection (解決方案進行遷移，而不是 McAfee 或 Symantec) microsoft Defender & Microsoft defender 防毒軟體的端點。 |[將參數設為 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
-|您已遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防病毒，您需要在後續步驟中執行協助，例如設定其他功能或微調安全性設定。 | [管理 Microsoft Defender for Endpoint，遷移後](manage-atp-post-migration.md) |
+|您尚沒有 endpoint protection 解決方案，而且想要深入瞭解 Microsoft Defender for endpoint & Microsoft Defender 防毒軟體的運作方式。  |[Microsoft Defender for Endpoint 評估實驗室](evaluation-lab.md)   |
+|您有 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體，需要協助您取得及設定所有東西。  |[Microsoft Defender for Endpoint 部署指南](deployment-phases.md)  |
+|您計畫要從 mcafee 端點安全性 (mcafee) 至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體進行遷移。 |[從 McAfee 切換至適用於端點的 Microsoft Defender](mcafee-to-microsoft-defender-migration.md) |
+|您打算從 symantec Endpoint Protection (symantec) 遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體。 |[從 Symantec 切換至適用於端點的 Microsoft Defender](symantec-to-microsoft-defender-endpoint-migration.md) |
+|您計畫從非 microsoft 的 endpoint protection (解決方案進行遷移，但不是 McAfee 或 Symantec) microsoft Defender for endpoint & Microsoft Defender 防毒軟體。 |[將參數設為 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
+|您已遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體，您需要在後續步驟中取得協助，例如設定其他功能或微調安全性設定。 | [管理 Microsoft Defender for Endpoint，遷移後](manage-atp-post-migration.md) |
 
 
 ## <a name="got-feedback"></a>收到意見反應？
@@ -54,6 +54,6 @@ ms.locfileid: "51934438"
 
 ## <a name="see-also"></a>另請參閱
 
-- [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)
-- [適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection?) 
+- [適用於端點的 Microsoft Defender](/windows/security/threat-protection)
+- [適用於 Office 365 的 Microsoft Defender](/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection?) 

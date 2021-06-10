@@ -1,5 +1,5 @@
 ---
-title: 使用敏感度標籤來設定事件回應的優先順序
+title: 使用敏感度標籤來排定事件回應的優先順序
 description: 瞭解如何使用敏感度標籤優先順序和調查事件
 keywords: 資訊、保護、資料、遺失、防護、標籤、dlp、事件、調查、調查
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51186122"
 ---
-# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>使用敏感度標籤來設定事件回應的優先順序  
+# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>使用敏感度標籤來排定事件回應的優先順序  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51186122"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 典型的高級持續威脅週期包含資料 exfiltration。 在安全性事件中，一定要能夠優先考慮敏感檔案可能會有危險的情況，以保護公司資料和資訊。
@@ -41,9 +41,9 @@ Defender for Endpoint 可使用敏感度標籤，讓安全性事件的優先順�
 瞭解如何使用資料敏感度標籤來設定事件調查的優先順序。
 
 >[!NOTE]
->已偵測到 Windows 10 版本1809或更新版本的標籤。
+>在 Windows 10，版本1809或更新版本中偵測到標籤。
 
-1. 在 Microsoft Defender Security Center 中，選取 [ **事件**]。 
+1. 在 Microsoft Defender 資訊安全中心中，選取 [**事件**]。 
 
 2. 向右流覽以查看 [ **資料敏感度** ] 欄。 此資料行會反映在與事件相關的裝置上看到的靈敏度標籤，以提供敏感檔案可能會受到事件影響的指示。
 
