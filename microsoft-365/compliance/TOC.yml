@@ -431,6 +431,8 @@
               href: archive-webexteams-data.md
             - name: 網頁
               href: archive-webpagecapture-data.md
+            - name: 網頁
+              href: archive-webpagecapture-data.md
             - name: Facebook Workplace
               href: archive-workplacefromfacebook-data.md
             - name: XIP
@@ -457,6 +459,8 @@
               href: archive-telus-network-data.md
             - name: Verizon Network
               href: archive-verizon-network-data.md
+            - name: WeChat (預覽)
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: 與合作夥伴配合以封存第三方資料
