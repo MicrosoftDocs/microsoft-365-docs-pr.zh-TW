@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 深入瞭解新的 Office 365 datacenter geos，以及如何使用資料派駐選項，將您的核心資料要求移至新的地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f752956506df98ea71d0d02886d14dc719ed9413
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60e04525843e8e7557eab2f804680d6d5dddd4d8
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921603"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904089"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>將核心資料移至新的 Microsoft 365 資料中心 geos
 
@@ -75,3 +75,5 @@ ms.locfileid: "50921603"
 [Microsoft Dynamics CRM Online 的新資料中心 geos](/power-platform/admin/new-datacenter-regions)
   
 [依地區的 Azure 服務](https://azure.microsoft.com/regions/)
+
+[Microsoft 365 多地理位置啟用租使用者的 Teams 體驗](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

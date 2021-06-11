@@ -18,13 +18,13 @@ ms.collection:
 description: 深入瞭解 Microsoft Defender 中 Office 365 方案2的自動化調查和回應功能中的修復動作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
-ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.date: 06/10/2021
+ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878769"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904125"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在 Office 365 中檢查和管理修正動作
 
@@ -52,16 +52,16 @@ ms.locfileid: "52878769"
    - 選取 [ **核准** ] 以啟動暫止的動作。
    - 選取 [ **拒絕** ] 以避免採取暫止的動作。
 
-## <a name="undo-one-remediation-action"></a>復原一個修正動作
+## <a name="change-or-undo-one-remediation-action"></a>變更或撤銷一個修正動作
 
 1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
-2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。
+2. 在 [ **記錄** ] 索引標籤上，選取您要變更或撤銷的動作。
 3. 在螢幕右側的窗格中，選取 [ **復原**]。
 
-## <a name="undo-multiple-remediation-actions"></a>復原多項修復動作
+## <a name="change-or-undo-multiple-remediation-actions"></a>變更或撤銷多項修復動作
 
 1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
-2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。 請務必選取具有相同動作類型的專案。 隨即開啟彈出窗格。
+2. 在 [ **記錄** ] 索引標籤上，選取您要變更或撤銷的動作。 請務必選取具有相同動作類型的專案。 隨即開啟彈出窗格。
 3. 在快顯視窗中，選取 [復原]。
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>在多個裝置間移除隔離檔

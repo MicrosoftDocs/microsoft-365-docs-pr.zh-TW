@@ -16,23 +16,21 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2aaf3d1c650713a7f6cfb7b9abb9f2232013d6db
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9fbe2b624bec6bbe17bcf6bc8d3f842ba1e43ad7
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274793"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903729"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a>收集 Microsoft Defender AV 評估的更新規範診斷資料
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>收集 Microsoft Defender 防毒軟體評估的更新規範診斷資料
 
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-本文說明如何收集可供 Microsoft 支援人員和工程小組使用的診斷資料，以協助疑難排解在更新規範增益集中使用 Microsoft Defender AV 評估區段時可能會遇到的問題。
+本文說明如何收集可供 Microsoft 支援人員和工程小組使用的診斷資料，以協助疑難排解在更新規範增益集中使用 Microsoft Defender 防毒軟體評估區段時可能遇到的問題。
 
 嘗試此程式之前，請先確定您已閱讀「[疑難排解 Microsoft Defender 防毒軟體報告](troubleshoot-reporting.md)」、[符合所有需求的必要條件]，並採取任何其他建議的疑難排解步驟。
 
@@ -42,9 +40,9 @@ ms.locfileid: "52274793"
         
     a. 開啟 [ **開始** ] 功能表。
 
-    b. 輸入 **cmd**。 在 **命令提示** 字元上按一下滑鼠右鍵，然後按一下 [以 **系統管理員身分執行**]。
+    b. 輸入 **cmd**。 在 **命令提示** 字元上按一下滑鼠右鍵，然後選取 [ **以系統管理員身分執行**]。
 
-    c. 輸入系統管理員認證或核准提示。
+    c. 指定系統管理員認證或核准提示。
         
 2. 流覽至 Windows Defender 目錄。 此為預設值 `C:\Program Files\Windows Defender` 。
 
@@ -58,7 +56,7 @@ ms.locfileid: "52274793"
 
 5. 將這些 .cab 檔複製到可供 Microsoft 支援人員存取的位置。 例如，您可以將密碼保護的 OneDrive 資料夾與我們共用。
 
-6. 使用 <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">更新規範支援電子郵件範本</a>傳送電子郵件，並使用下列資訊填寫範本：
+6. 使用 <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">更新規範支援電子郵件範本</a>傳送電子郵件，並使用下列資訊填寫範本：
   
     ```
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:

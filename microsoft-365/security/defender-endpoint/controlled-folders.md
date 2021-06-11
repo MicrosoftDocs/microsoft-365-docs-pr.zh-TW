@@ -11,18 +11,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 06/10/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845567"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904053"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控資料夾存取權來保護重要資料夾
 
@@ -89,9 +89,9 @@ ms.locfileid: "52845567"
 
 受控制的資料夾存取需要啟用[Microsoft Defender 防毒軟體即時保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>在 Microsoft Defender 資訊安全中心中檢查受控資料夾存取事件
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中審閱受控資料夾存取事件
 
-當事件和區塊成為其 [警示調查案例](investigate-alerts.md)的一部分時，它會提供端點的詳細報告。
+當事件和區塊成為 Microsoft 365 defender 入口網站中的[警示調查案例](investigate-alerts.md)時，Endpoint for Endpoint 會提供這些事件和區塊的詳細報告。  ([在 Microsoft 365 Defender 中查看 Microsoft Defender for Endpoint](../defender/microsoft-365-security-center-mde.md)。 ) 
 
 您可以使用 [ [高級搜尋](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)] 查詢 Microsoft Defender 的端點資料。 如果您使用的是「 [審核」模式](audit-windows-defender.md)，您可以使用 [高級搜尋](advanced-hunting-overview.md) 查看受控制的資料夾存取設定如何影響環境（如果已啟用）。
 
@@ -135,8 +135,4 @@ DeviceEvents
 > [!NOTE]
 > [Windows 系統資料夾](#windows-system-folders-are-protected-by-default)預設會受到保護，您無法將其從清單中移除。
 
-## <a name="see-also"></a>另請參閱
 
-- [評估受控資料夾存取權](evaluate-controlled-folder-access.md)
-- [自訂受控資料夾存取權](customize-controlled-folders.md)
-- [保護更多資料夾](customize-controlled-folders.md#protect-additional-folders)

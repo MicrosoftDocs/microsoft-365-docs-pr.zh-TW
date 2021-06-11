@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender 的使用者標記中識別特定的使用者群組，以 Office 365 方案2。 標記篩選可用於 Office 365 的通知、報告和調查中，以快速識別已標記的使用者。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fb948d63f7bc42839d6fae8a2138d4ad48d81f6
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 105e927e50f7b1d1217587587b8d7ee3b7d6bd4c
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879165"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904101"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的使用者標記
 
@@ -41,7 +41,9 @@ ms.locfileid: "52879165"
 在您將系統標記或自訂標記套用至使用者後，您可以使用這些標記做為預警、報告和調查中的篩選器：
 
 - [提醒](alerts.md)
+- [自訂警示原則](../../compliance/alert-policies.md#viewing-alerts)
 - [威脅瀏覽器和即時偵測](threat-explorer.md)
+- [電子郵件實體頁面](mdo-email-entity-page.md#other-innovations)
 - [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
 - [行銷活動檢視](campaigns.md)
 - 針對優先順序帳戶，您可以使用 Exchange 系統管理中心的「優先順序帳戶」報告 (EAC) 中的[電子郵件問題](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。
@@ -52,7 +54,7 @@ ms.locfileid: "52879165"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com/> 。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://security.microsoft.com/securitysettings/userTags> 。
+- 您於 <https://security.microsoft.com/> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://security.microsoft.com/securitysettings/userTags> 。
 
 - 您必須先在 Microsoft 365 Defender 入口網站中指派許可權，才能執行本文中的程式：
   - 若要建立、修改和刪除使用者標記，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。

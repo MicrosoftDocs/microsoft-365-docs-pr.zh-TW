@@ -16,16 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 55b06ca25047fe615bd0011528fbdbe5112a4533
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844979"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903849"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
@@ -97,7 +95,7 @@ ms.locfileid: "52844979"
 
 此外，當觸發某些攻擊面降低規則時，會產生警示。
 
-您可以在 Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 中或 Microsoft 365 的安全性中心 () 中查看所產生的通知和任何警示 [https://security.microsoft.com](https://security.microsoft.com) 。
+您可以在 Microsoft 365 Defender 入口網站 (中查看所產生的通知和任何警示， [https://security.microsoft.com](https://security.microsoft.com) () 之前稱為[Microsoft Defender 資訊安全中心](microsoft-defender-security-center.md)) 。
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高級搜尋和攻擊面降低事件
 
@@ -116,13 +114,13 @@ ms.locfileid: "52844979"
 - Windows伺服器，[版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-雖然攻擊面降減規則不需要[Windows E5 授權](/windows/deployment/deploy-enterprise-licenses)，但如果您有 Windows E5，就會取得高級管理功能。 這些功能只能在 Windows E5 中包含用於[端點的](microsoft-defender-endpoint.md)監控、分析和工作流程，以及[Microsoft 365 安全性中心](/microsoft-365/security/defender/overview-security-center)的報表和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用「事件檢視器」和 Microsoft Defender 防毒軟體記錄檔，以查看攻擊面減少規則事件。
+雖然攻擊面降減規則不需要[Windows E5 授權](/windows/deployment/deploy-enterprise-licenses)，但如果您有 Windows E5，就會取得高級管理功能。 這些功能只能在 Windows E5 中包含用於[端點的](microsoft-defender-endpoint.md)監控、分析和工作流程，以及[Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center)中的報告和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用「事件檢視器」和 Microsoft Defender 防毒軟體記錄檔，以查看攻擊面減少規則事件。
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>複查 Microsoft Defender 資訊安全中心中的攻擊面降低事件
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看攻擊面降低事件
 
 當警示調查案例中，Defender for Endpoint 提供事件和區塊的詳細報告。
 
-您可以使用 [ [高級搜尋](advanced-hunting-query-language.md)] 查詢 Defender 的端點資料。 如果您正在執行 [稽核模式](audit-windows-defender.md)，您可以使用高級搜尋來瞭解攻擊面降低規則如何影響您的環境。
+您可以使用 [[高級搜尋](advanced-hunting-query-language.md)]，在[Microsoft 365 defender](microsoft-defender-security-center.md)中查詢適用于端點資料的 defender。 如果您正在執行 [稽核模式](audit-windows-defender.md)，您可以使用高級搜尋來瞭解攻擊面降低規則如何影響您的環境。
 
 以下是範例查詢：
 
@@ -136,9 +134,13 @@ DeviceEvents
 您可以查看 Windows 事件記錄檔，以查看攻擊面減少規則所產生的事件：
 
 1. 下載 [評估套件](https://aka.ms/mp7z2w) ，並將檔案 *cfa-events.xml* 解壓至裝置上易於存取的位置。
+
 2. 在 [開始] 功能表中輸入文字 [*事件檢視器*]，以開啟 Windows 事件檢視器。
+
 3. 在 [ **動作**] 下，選取 [匯 **入自訂視圖 ...**]。
+
 4. 從解壓縮的位置選取檔案 *cfa-events.xml* 。 或者， [直接複製 XML](event-views.md)。
+
 5. 選取 **[確定]**。
 
 您可以建立篩選事件只顯示下列事件的自訂視圖，這些事件都與「受控資料夾存取」有關：
@@ -503,7 +505,7 @@ GUID:： `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 這項規則通常會在警告的另一個方面，以防止勒索軟體。
 
 > [!NOTE]
-> 您必須 [啟用雲端提供的保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 才能使用此規則。
+> 您必須 [啟用雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md) 才能使用此規則。
 
 此規則的引入時間：
 
@@ -518,9 +520,4 @@ Configuration Manager 名稱： `Use advanced protection against ransomware`
 
 GUID:： `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>另請參閱
 
-- [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
-- [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
-- [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
-- [與其他防病毒/反惡意程式碼解決方案的 Microsoft Defender 防毒軟體相容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

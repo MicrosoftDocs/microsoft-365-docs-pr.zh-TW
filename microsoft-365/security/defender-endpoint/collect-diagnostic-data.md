@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274779"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904041"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>收集 Microsoft Defender AV 診斷資料
 
@@ -43,9 +43,9 @@ ms.locfileid: "52274779"
 
     a. 開啟 [ **開始** ] 功能表。
 
-    b. 輸入 **cmd**。 在 **命令提示** 字元上按一下滑鼠右鍵，然後按一下 [以 **系統管理員身分執行**]。
+    b. 輸入 **cmd**。 在 **命令提示** 字元上按一下滑鼠右鍵，然後選取 [ **以系統管理員身分執行**]。
 
-    c. 輸入系統管理員認證或核准提示。
+    c. 指定系統管理員認證或核准提示。
 
 2. 流覽至 Microsoft Defender 目錄。 此為預設值 `C:\Program Files\Windows Defender` 。
 

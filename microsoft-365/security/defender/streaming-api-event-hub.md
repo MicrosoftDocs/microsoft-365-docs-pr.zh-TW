@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c62f175fc8227f64b9f18de78a2a793b2201691c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782366"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903813"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>設定 Microsoft 365 Defender 以將高級搜尋事件傳輸至您的 Azure 事件中樞
 
@@ -42,9 +42,12 @@ ms.locfileid: "52782366"
 3. 建立事件 Hub 命名空間，移至 **事件中樞 > 新增** 並選取適用于預期負載的定價層、輸送量單位和自動陀螺接。 如需詳細資訊，請參閱[定價-事件中心 |Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)。  
 
 ### <a name="add-contributor-permissions"></a>新增投稿者許可權 
-在建立事件 Hub 命名空間之後，您將需要將應用程式註冊服務主體新增為 Reader、Azure 事件中樞資料接收器，以及將登入 Microsoft 365 Defender 的使用者 (這也可以在資源群組或訂閱層級) 進行。 
+建立事件中心命名空間之後，您將需要：
+1. 定義將登入 Microsoft 365 Defender 的使用者。
 
-移至 **事件中心命名空間 > 的存取控制 (IAM) >** 在 **角色指派** 下新增及驗證。
+2. 如果您要連線至應用程式，請將應用程式註冊服務主體新增為 Reader，Azure Event Hub Data 接收器 (也可以在資源群組或訂閱層級) 進行此操作。 
+
+    移至 **事件中心命名空間 > 的存取控制 (IAM) >** 在 **角色指派** 下新增及驗證。
 
 ## <a name="enable-raw-data-streaming"></a>啟用原始資料資料流程
 
@@ -70,7 +73,7 @@ ms.locfileid: "52782366"
 
 ## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Azure 事件中樞中的事件架構
 
-```
+```JSON
 {
     "records": [
                     {
@@ -103,7 +106,7 @@ ms.locfileid: "52782366"
 
 2. 執行下列查詢以取得每個事件的資料類型對應：
  
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
