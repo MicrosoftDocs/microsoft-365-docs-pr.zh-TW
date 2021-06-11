@@ -19,24 +19,24 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295792"
 ---
-# <a name="contact-support-for-mongolia"></a><span data-ttu-id="93cbd-103">用於蒙古的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="93cbd-103">Contact support for Mongolia</span></span>
+# <a name="contact-support-for-mongolia"></a><span data-ttu-id="4bcef-103">用於蒙古的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="4bcef-103">Contact support for Mongolia</span></span>
 
-<span data-ttu-id="93cbd-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="93cbd-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="4bcef-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="4bcef-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="93cbd-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="93cbd-105">Phone number</span></span>
-<span data-ttu-id="93cbd-106">+ 7 499 922 86 23</span><span class="sxs-lookup"><span data-stu-id="93cbd-106">+7 499 922 86 23</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4bcef-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="4bcef-105">Phone number</span></span>
+<span data-ttu-id="4bcef-106">+ 7 499 922 86 23</span><span class="sxs-lookup"><span data-stu-id="4bcef-106">+7 499 922 86 23</span></span>
 
-## <a name="hours"></a><span data-ttu-id="93cbd-107">小時</span><span class="sxs-lookup"><span data-stu-id="93cbd-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="93cbd-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="93cbd-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4bcef-107">小時</span><span class="sxs-lookup"><span data-stu-id="4bcef-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4bcef-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="4bcef-108">Billing Support:</span></span>
 
-<span data-ttu-id="93cbd-109">俄文： Mon-Fri 10 AM-7 PM （莫斯科）</span><span class="sxs-lookup"><span data-stu-id="93cbd-109">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="4bcef-109">俄文： Mon-Fri 10 AM-7 PM （莫斯科）</span><span class="sxs-lookup"><span data-stu-id="4bcef-109">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="93cbd-110">英文： Mon-Fri 上午9點-下午5點（倫敦）</span><span class="sxs-lookup"><span data-stu-id="93cbd-110">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="4bcef-110">英文： Mon-Fri 上午9點-下午5點（倫敦）</span><span class="sxs-lookup"><span data-stu-id="4bcef-110">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="93cbd-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="93cbd-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4bcef-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="4bcef-111">Technical Support:</span></span>
 
-<span data-ttu-id="93cbd-112">俄文： Mon-Fri 7 AM-8 下午莫斯科</span><span class="sxs-lookup"><span data-stu-id="93cbd-112">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="4bcef-112">俄文： Mon-Fri 7 AM-8 下午莫斯科</span><span class="sxs-lookup"><span data-stu-id="4bcef-112">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="93cbd-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="93cbd-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4bcef-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="4bcef-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="93cbd-114">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="93cbd-114">International call charges apply</span></span>
+<span data-ttu-id="4bcef-114">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="4bcef-114">International call charges apply</span></span>

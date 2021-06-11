@@ -23,13 +23,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52845375"
 ---
-# <a name="list-devices-by-software"></a><span data-ttu-id="82afc-104">依軟體列出裝置</span><span class="sxs-lookup"><span data-stu-id="82afc-104">List devices by software</span></span>
+# <a name="list-devices-by-software"></a><span data-ttu-id="1d874-104">依軟體列出裝置</span><span class="sxs-lookup"><span data-stu-id="1d874-104">List devices by software</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="82afc-105">**適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="82afc-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="1d874-105">**適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="1d874-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="82afc-106">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="82afc-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="82afc-107">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="82afc-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="1d874-106">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="1d874-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="1d874-107">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="1d874-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,47 +37,47 @@ ms.locfileid: "52845375"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="82afc-108">取得安裝了此軟體的裝置參考清單。</span><span class="sxs-lookup"><span data-stu-id="82afc-108">Retrieve a list of device references that has this software installed.</span></span>
+<span data-ttu-id="1d874-108">取得安裝了此軟體的裝置參考清單。</span><span class="sxs-lookup"><span data-stu-id="1d874-108">Retrieve a list of device references that has this software installed.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="82afc-109">權限</span><span class="sxs-lookup"><span data-stu-id="82afc-109">Permissions</span></span>
-<span data-ttu-id="82afc-110">需要有下列其中一個許可權才能呼叫此 API。</span><span class="sxs-lookup"><span data-stu-id="82afc-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="82afc-111">若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md) 以取得詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="82afc-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1d874-109">權限</span><span class="sxs-lookup"><span data-stu-id="1d874-109">Permissions</span></span>
+<span data-ttu-id="1d874-110">需要有下列其中一個許可權才能呼叫此 API。</span><span class="sxs-lookup"><span data-stu-id="1d874-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="1d874-111">若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md) 以取得詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="1d874-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
 
-<span data-ttu-id="82afc-112">許可權類型</span><span class="sxs-lookup"><span data-stu-id="82afc-112">Permission type</span></span> |   <span data-ttu-id="82afc-113">權限</span><span class="sxs-lookup"><span data-stu-id="82afc-113">Permission</span></span>  |   <span data-ttu-id="82afc-114">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="82afc-114">Permission display name</span></span>
+<span data-ttu-id="1d874-112">許可權類型</span><span class="sxs-lookup"><span data-stu-id="1d874-112">Permission type</span></span> |   <span data-ttu-id="1d874-113">權限</span><span class="sxs-lookup"><span data-stu-id="1d874-113">Permission</span></span>  |   <span data-ttu-id="1d874-114">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="1d874-114">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="82afc-115">應用程式</span><span class="sxs-lookup"><span data-stu-id="82afc-115">Application</span></span> | <span data-ttu-id="82afc-116">已讀取軟體。所有</span><span class="sxs-lookup"><span data-stu-id="82afc-116">Software.Read.All</span></span> | <span data-ttu-id="82afc-117">「讀取威脅和弱點管理軟體資訊」</span><span class="sxs-lookup"><span data-stu-id="82afc-117">'Read Threat and Vulnerability Management Software information'</span></span>
-<span data-ttu-id="82afc-118">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="82afc-118">Delegated (work or school account)</span></span> | <span data-ttu-id="82afc-119">軟體. 讀取</span><span class="sxs-lookup"><span data-stu-id="82afc-119">Software.Read</span></span> | <span data-ttu-id="82afc-120">「讀取威脅和弱點管理軟體資訊」</span><span class="sxs-lookup"><span data-stu-id="82afc-120">'Read Threat and Vulnerability Management Software information'</span></span>
+<span data-ttu-id="1d874-115">應用程式</span><span class="sxs-lookup"><span data-stu-id="1d874-115">Application</span></span> | <span data-ttu-id="1d874-116">已讀取軟體。所有</span><span class="sxs-lookup"><span data-stu-id="1d874-116">Software.Read.All</span></span> | <span data-ttu-id="1d874-117">「讀取威脅和弱點管理軟體資訊」</span><span class="sxs-lookup"><span data-stu-id="1d874-117">'Read Threat and Vulnerability Management Software information'</span></span>
+<span data-ttu-id="1d874-118">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="1d874-118">Delegated (work or school account)</span></span> | <span data-ttu-id="1d874-119">軟體. 讀取</span><span class="sxs-lookup"><span data-stu-id="1d874-119">Software.Read</span></span> | <span data-ttu-id="1d874-120">「讀取威脅和弱點管理軟體資訊」</span><span class="sxs-lookup"><span data-stu-id="1d874-120">'Read Threat and Vulnerability Management Software information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="82afc-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="82afc-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1d874-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1d874-121">HTTP request</span></span>
 ```
 GET /api/Software/{Id}/machineReferences 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="82afc-122">要求標頭</span><span class="sxs-lookup"><span data-stu-id="82afc-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1d874-122">要求標頭</span><span class="sxs-lookup"><span data-stu-id="1d874-122">Request headers</span></span>
 
-| <span data-ttu-id="82afc-123">名稱</span><span class="sxs-lookup"><span data-stu-id="82afc-123">Name</span></span>        | <span data-ttu-id="82afc-124">類型</span><span class="sxs-lookup"><span data-stu-id="82afc-124">Type</span></span> | <span data-ttu-id="82afc-125">描述</span><span class="sxs-lookup"><span data-stu-id="82afc-125">Description</span></span>
+| <span data-ttu-id="1d874-123">名稱</span><span class="sxs-lookup"><span data-stu-id="1d874-123">Name</span></span>        | <span data-ttu-id="1d874-124">類型</span><span class="sxs-lookup"><span data-stu-id="1d874-124">Type</span></span> | <span data-ttu-id="1d874-125">描述</span><span class="sxs-lookup"><span data-stu-id="1d874-125">Description</span></span>
 |:--------------|:-------|:--------------|
-| <span data-ttu-id="82afc-126">授權</span><span class="sxs-lookup"><span data-stu-id="82afc-126">Authorization</span></span> | <span data-ttu-id="82afc-127">字串</span><span class="sxs-lookup"><span data-stu-id="82afc-127">String</span></span> | <span data-ttu-id="82afc-128">載荷 {token}。**必要**。</span><span class="sxs-lookup"><span data-stu-id="82afc-128">Bearer {token}.**Required**.</span></span>
+| <span data-ttu-id="1d874-126">授權</span><span class="sxs-lookup"><span data-stu-id="1d874-126">Authorization</span></span> | <span data-ttu-id="1d874-127">字串</span><span class="sxs-lookup"><span data-stu-id="1d874-127">String</span></span> | <span data-ttu-id="1d874-128">載荷 {token}。**必要**。</span><span class="sxs-lookup"><span data-stu-id="1d874-128">Bearer {token}.**Required**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="82afc-129">要求正文</span><span class="sxs-lookup"><span data-stu-id="82afc-129">Request body</span></span>
-<span data-ttu-id="82afc-130">空白</span><span class="sxs-lookup"><span data-stu-id="82afc-130">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="1d874-129">要求正文</span><span class="sxs-lookup"><span data-stu-id="1d874-129">Request body</span></span>
+<span data-ttu-id="1d874-130">空白</span><span class="sxs-lookup"><span data-stu-id="1d874-130">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="82afc-131">回應</span><span class="sxs-lookup"><span data-stu-id="82afc-131">Response</span></span>
-<span data-ttu-id="82afc-132">如果成功，這個方法會傳回 200 OK 和裝置清單，其中的軟體是安裝在本文中。</span><span class="sxs-lookup"><span data-stu-id="82afc-132">If successful, this method returns 200 OK and a list of devices with the software installed in the body.</span></span> 
+## <a name="response"></a><span data-ttu-id="1d874-131">回應</span><span class="sxs-lookup"><span data-stu-id="1d874-131">Response</span></span>
+<span data-ttu-id="1d874-132">如果成功，這個方法會傳回 200 OK 和裝置清單，其中的軟體是安裝在本文中。</span><span class="sxs-lookup"><span data-stu-id="1d874-132">If successful, this method returns 200 OK and a list of devices with the software installed in the body.</span></span> 
 
 
-## <a name="example"></a><span data-ttu-id="82afc-133">範例</span><span class="sxs-lookup"><span data-stu-id="82afc-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1d874-133">範例</span><span class="sxs-lookup"><span data-stu-id="1d874-133">Example</span></span>
 
-<span data-ttu-id="82afc-134">**請求**</span><span class="sxs-lookup"><span data-stu-id="82afc-134">**Request**</span></span>
+<span data-ttu-id="1d874-134">**請求**</span><span class="sxs-lookup"><span data-stu-id="1d874-134">**Request**</span></span>
 
-<span data-ttu-id="82afc-135">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="82afc-135">Here is an example of the request.</span></span>
+<span data-ttu-id="1d874-135">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="1d874-135">Here is an example of the request.</span></span>
 
 ```
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machineReferences
 ```
 
-<span data-ttu-id="82afc-136">**回應**</span><span class="sxs-lookup"><span data-stu-id="82afc-136">**Response**</span></span>
+<span data-ttu-id="1d874-136">**回應**</span><span class="sxs-lookup"><span data-stu-id="1d874-136">**Response**</span></span>
 
-<span data-ttu-id="82afc-137">以下是回應的範例。</span><span class="sxs-lookup"><span data-stu-id="82afc-137">Here is an example of the response.</span></span>
+<span data-ttu-id="1d874-137">以下是回應的範例。</span><span class="sxs-lookup"><span data-stu-id="1d874-137">Here is an example of the response.</span></span>
 
 ```json
 
@@ -101,6 +101,6 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
 }
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="82afc-138">相關主題</span><span class="sxs-lookup"><span data-stu-id="82afc-138">Related topics</span></span>
-- [<span data-ttu-id="82afc-139">風險威脅 & 弱點管理</span><span class="sxs-lookup"><span data-stu-id="82afc-139">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="82afc-140">威脅 & 弱點軟體清單</span><span class="sxs-lookup"><span data-stu-id="82afc-140">Threat & Vulnerability software inventory</span></span>](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+## <a name="related-topics"></a><span data-ttu-id="1d874-138">相關主題</span><span class="sxs-lookup"><span data-stu-id="1d874-138">Related topics</span></span>
+- [<span data-ttu-id="1d874-139">風險威脅 & 弱點管理</span><span class="sxs-lookup"><span data-stu-id="1d874-139">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="1d874-140">威脅 & 弱點軟體清單</span><span class="sxs-lookup"><span data-stu-id="1d874-140">Threat & Vulnerability software inventory</span></span>](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

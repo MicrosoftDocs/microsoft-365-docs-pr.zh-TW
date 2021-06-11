@@ -19,22 +19,22 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295568"
 ---
-# <a name="contact-support-for-panama"></a><span data-ttu-id="d3b43-103">巴拿馬的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="d3b43-103">Contact support for Panama</span></span>
+# <a name="contact-support-for-panama"></a><span data-ttu-id="6c9f3-103">巴拿馬的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="6c9f3-103">Contact support for Panama</span></span>
 
-<span data-ttu-id="d3b43-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="d3b43-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="6c9f3-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="6c9f3-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d3b43-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="d3b43-105">Phone number</span></span>
-<span data-ttu-id="d3b43-106">00800 051 0398</span><span class="sxs-lookup"><span data-stu-id="d3b43-106">00800 051 0398</span></span>
+## <a name="phone-number"></a><span data-ttu-id="6c9f3-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="6c9f3-105">Phone number</span></span>
+<span data-ttu-id="6c9f3-106">00800 051 0398</span><span class="sxs-lookup"><span data-stu-id="6c9f3-106">00800 051 0398</span></span>
 
-<span data-ttu-id="d3b43-107">選取選項4</span><span class="sxs-lookup"><span data-stu-id="d3b43-107">Select option 4</span></span>
+<span data-ttu-id="6c9f3-107">選取選項4</span><span class="sxs-lookup"><span data-stu-id="6c9f3-107">Select option 4</span></span>
 
-<span data-ttu-id="d3b43-108">輸入程式碼7007</span><span class="sxs-lookup"><span data-stu-id="d3b43-108">Enter code 7007</span></span>
+<span data-ttu-id="6c9f3-108">輸入程式碼7007</span><span class="sxs-lookup"><span data-stu-id="6c9f3-108">Enter code 7007</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d3b43-109">小時</span><span class="sxs-lookup"><span data-stu-id="d3b43-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="d3b43-110">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="d3b43-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="6c9f3-109">小時</span><span class="sxs-lookup"><span data-stu-id="6c9f3-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="6c9f3-110">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="6c9f3-110">Billing Support:</span></span>
 
-<span data-ttu-id="d3b43-111">西班牙文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="d3b43-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="6c9f3-111">西班牙文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="6c9f3-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="d3b43-112">技術支援：</span><span class="sxs-lookup"><span data-stu-id="d3b43-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="6c9f3-112">技術支援：</span><span class="sxs-lookup"><span data-stu-id="6c9f3-112">Technical Support:</span></span>
 
-<span data-ttu-id="d3b43-113">西班牙文：每週7天，每天24小時</span><span class="sxs-lookup"><span data-stu-id="d3b43-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="6c9f3-113">西班牙文：每週7天，每天24小時</span><span class="sxs-lookup"><span data-stu-id="6c9f3-113">Spanish: 24 hours a day, 7 days a week</span></span>

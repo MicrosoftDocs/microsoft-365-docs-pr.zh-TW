@@ -19,18 +19,18 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295556"
 ---
-# <a name="contact-support-for-paraguay"></a><span data-ttu-id="c21a6-103">以巴拉圭為中心的支援人員</span><span class="sxs-lookup"><span data-stu-id="c21a6-103">Contact support for Paraguay</span></span>
+# <a name="contact-support-for-paraguay"></a><span data-ttu-id="ebe0d-103">以巴拉圭為中心的支援人員</span><span class="sxs-lookup"><span data-stu-id="ebe0d-103">Contact support for Paraguay</span></span>
 
-<span data-ttu-id="c21a6-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="c21a6-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="ebe0d-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="ebe0d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c21a6-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="c21a6-105">Phone number</span></span>
-<span data-ttu-id="c21a6-106">009 800 441 0088</span><span class="sxs-lookup"><span data-stu-id="c21a6-106">009 800 441 0088</span></span>
+## <a name="phone-number"></a><span data-ttu-id="ebe0d-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="ebe0d-105">Phone number</span></span>
+<span data-ttu-id="ebe0d-106">009 800 441 0088</span><span class="sxs-lookup"><span data-stu-id="ebe0d-106">009 800 441 0088</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c21a6-107">小時</span><span class="sxs-lookup"><span data-stu-id="c21a6-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c21a6-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="c21a6-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="ebe0d-107">小時</span><span class="sxs-lookup"><span data-stu-id="ebe0d-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="ebe0d-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="ebe0d-108">Billing Support:</span></span>
 
-<span data-ttu-id="c21a6-109">西班牙文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="c21a6-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="ebe0d-109">西班牙文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="ebe0d-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c21a6-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="c21a6-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="ebe0d-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="ebe0d-110">Technical Support:</span></span>
 
-<span data-ttu-id="c21a6-111">西班牙文：每週7天，每天24小時</span><span class="sxs-lookup"><span data-stu-id="c21a6-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="ebe0d-111">西班牙文：每週7天，每天24小時</span><span class="sxs-lookup"><span data-stu-id="ebe0d-111">Spanish: 24 hours a day, 7 days a week</span></span>

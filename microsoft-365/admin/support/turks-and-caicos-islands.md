@@ -19,20 +19,20 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295040"
 ---
-# <a name="contact-support-for-turks-and-caicos-islands"></a><span data-ttu-id="60045-103">以土克斯及開科斯群島為中心的支援人員</span><span class="sxs-lookup"><span data-stu-id="60045-103">Contact support for Turks and Caicos Islands</span></span>
+# <a name="contact-support-for-turks-and-caicos-islands"></a><span data-ttu-id="4a10b-103">以土克斯及開科斯群島為中心的支援人員</span><span class="sxs-lookup"><span data-stu-id="4a10b-103">Contact support for Turks and Caicos Islands</span></span>
 
-<span data-ttu-id="60045-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="60045-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="4a10b-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="4a10b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="60045-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="60045-105">Phone number</span></span>
-<span data-ttu-id="60045-106">+ 1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="60045-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4a10b-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="4a10b-105">Phone number</span></span>
+<span data-ttu-id="4a10b-106">+ 1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="4a10b-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="60045-107">小時</span><span class="sxs-lookup"><span data-stu-id="60045-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="60045-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="60045-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4a10b-107">小時</span><span class="sxs-lookup"><span data-stu-id="4a10b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4a10b-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="4a10b-108">Billing Support:</span></span>
 
-<span data-ttu-id="60045-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="60045-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4a10b-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="4a10b-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="60045-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="60045-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4a10b-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="4a10b-110">Technical Support:</span></span>
 
-<span data-ttu-id="60045-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="60045-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4a10b-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="4a10b-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="60045-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="60045-112">International call charges apply</span></span>
+<span data-ttu-id="4a10b-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="4a10b-112">International call charges apply</span></span>
