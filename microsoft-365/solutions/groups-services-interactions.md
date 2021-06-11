@@ -23,626 +23,626 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52539200"
 ---
-# <a name="groups-services-interactions"></a><span data-ttu-id="088cf-103">群組服務互動</span><span class="sxs-lookup"><span data-stu-id="088cf-103">Groups services interactions</span></span>
+# <a name="groups-services-interactions"></a><span data-ttu-id="02b19-103">群組服務互動</span><span class="sxs-lookup"><span data-stu-id="02b19-103">Groups services interactions</span></span>
 
-<span data-ttu-id="088cf-104">Microsoft 365群組為 Microsoft 365 平臺內的一些服務和工作負載提供了共同的結構，可為使用者提供連線的體驗。</span><span class="sxs-lookup"><span data-stu-id="088cf-104">Microsoft 365 Groups provides a common fabric for a number of services and workloads within the Microsoft 365 platform to deliver a connected experience for end-users.</span></span> <span data-ttu-id="088cf-105">在其核心中，有 Microsoft 365 群組提供：</span><span class="sxs-lookup"><span data-stu-id="088cf-105">At its core, a Microsoft 365 group exists to provide:</span></span>
+<span data-ttu-id="02b19-104">Microsoft 365群組為 Microsoft 365 平臺內的一些服務和工作負載提供了共同的結構，可為使用者提供連線的體驗。</span><span class="sxs-lookup"><span data-stu-id="02b19-104">Microsoft 365 Groups provides a common fabric for a number of services and workloads within the Microsoft 365 platform to deliver a connected experience for end-users.</span></span> <span data-ttu-id="02b19-105">在其核心中，有 Microsoft 365 群組提供：</span><span class="sxs-lookup"><span data-stu-id="02b19-105">At its core, a Microsoft 365 group exists to provide:</span></span>
 
-- <span data-ttu-id="088cf-106"> (Azure AD) 管理成員資格的方式</span><span class="sxs-lookup"><span data-stu-id="088cf-106">A way to manage the membership (Azure AD)</span></span>
-- <span data-ttu-id="088cf-107">郵件和交談的位置若要執行 (Exchange 信箱、Microsoft Teams Yammer) </span><span class="sxs-lookup"><span data-stu-id="088cf-107">A place for messaging and conversations to take place (Exchange mailbox, Microsoft Teams, Yammer)</span></span>
-- <span data-ttu-id="088cf-108">儲存 (SharePoint 的檔案位置) </span><span class="sxs-lookup"><span data-stu-id="088cf-108">A place for files to be stored (SharePoint)</span></span>
-- <span data-ttu-id="088cf-109">排程 (Exchange 的行事曆) </span><span class="sxs-lookup"><span data-stu-id="088cf-109">A calendar for scheduling (Exchange)</span></span>
-- <span data-ttu-id="088cf-110">用於 (OneNote 的記錄的捕獲筆記) </span><span class="sxs-lookup"><span data-stu-id="088cf-110">A notebook for capturing notes (OneNote)</span></span>
+- <span data-ttu-id="02b19-106"> (Azure AD) 管理成員資格的方式</span><span class="sxs-lookup"><span data-stu-id="02b19-106">A way to manage the membership (Azure AD)</span></span>
+- <span data-ttu-id="02b19-107">郵件和交談的位置若要執行 (Exchange 信箱、Microsoft Teams Yammer) </span><span class="sxs-lookup"><span data-stu-id="02b19-107">A place for messaging and conversations to take place (Exchange mailbox, Microsoft Teams, Yammer)</span></span>
+- <span data-ttu-id="02b19-108">儲存 (SharePoint 的檔案位置) </span><span class="sxs-lookup"><span data-stu-id="02b19-108">A place for files to be stored (SharePoint)</span></span>
+- <span data-ttu-id="02b19-109">排程 (Exchange 的行事曆) </span><span class="sxs-lookup"><span data-stu-id="02b19-109">A calendar for scheduling (Exchange)</span></span>
+- <span data-ttu-id="02b19-110">用於 (OneNote 的記錄的捕獲筆記) </span><span class="sxs-lookup"><span data-stu-id="02b19-110">A notebook for capturing notes (OneNote)</span></span>
 
-<span data-ttu-id="088cf-111">在建立群組時，也會布建許多其他資源，但是直到第一次從服務存取後，才會顯示這些資源：</span><span class="sxs-lookup"><span data-stu-id="088cf-111">At the point of group creation, a number of other resources are also provisioned, however they are not visible until accessed for the first time from the service:</span></span>
+<span data-ttu-id="02b19-111">在建立群組時，也會布建許多其他資源，但是直到第一次從服務存取後，才會顯示這些資源：</span><span class="sxs-lookup"><span data-stu-id="02b19-111">At the point of group creation, a number of other resources are also provisioned, however they are not visible until accessed for the first time from the service:</span></span>
 
-- <span data-ttu-id="088cf-112">用於管理群組工作 (Planner) 的主機板</span><span class="sxs-lookup"><span data-stu-id="088cf-112">A board for managing group tasks (Planner)</span></span>
-- <span data-ttu-id="088cf-113">用於報告 (Power BI 的工作區) </span><span class="sxs-lookup"><span data-stu-id="088cf-113">A workspace for reporting (Power BI)</span></span>
-- <span data-ttu-id="088cf-114">共用影片 (Microsoft Stream) 的區域</span><span class="sxs-lookup"><span data-stu-id="088cf-114">An area for shared videos (Microsoft Stream)</span></span>
-- <span data-ttu-id="088cf-115">共用表單 (表單的區域) </span><span class="sxs-lookup"><span data-stu-id="088cf-115">An area for shared forms (Forms)</span></span>
+- <span data-ttu-id="02b19-112">用於管理群組工作 (Planner) 的主機板</span><span class="sxs-lookup"><span data-stu-id="02b19-112">A board for managing group tasks (Planner)</span></span>
+- <span data-ttu-id="02b19-113">用於報告 (Power BI 的工作區) </span><span class="sxs-lookup"><span data-stu-id="02b19-113">A workspace for reporting (Power BI)</span></span>
+- <span data-ttu-id="02b19-114">共用影片 (Microsoft Stream) 的區域</span><span class="sxs-lookup"><span data-stu-id="02b19-114">An area for shared videos (Microsoft Stream)</span></span>
+- <span data-ttu-id="02b19-115">共用表單 (表單的區域) </span><span class="sxs-lookup"><span data-stu-id="02b19-115">An area for shared forms (Forms)</span></span>
 
-<span data-ttu-id="088cf-116">在 Microsoft 365，其他服務可以與 Microsoft 365 群組互動，以將其他功能和功能提供給群組成員。</span><span class="sxs-lookup"><span data-stu-id="088cf-116">Across Microsoft 365, other services are able to interact with Microsoft 365 groups to deliver additional functionality and capabilities to group members.</span></span>
-<span data-ttu-id="088cf-117">這包括下列範例：</span><span class="sxs-lookup"><span data-stu-id="088cf-117">Examples of this include:</span></span>
+<span data-ttu-id="02b19-116">在 Microsoft 365，其他服務可以與 Microsoft 365 群組互動，以將其他功能和功能提供給群組成員。</span><span class="sxs-lookup"><span data-stu-id="02b19-116">Across Microsoft 365, other services are able to interact with Microsoft 365 groups to deliver additional functionality and capabilities to group members.</span></span>
+<span data-ttu-id="02b19-117">這包括下列範例：</span><span class="sxs-lookup"><span data-stu-id="02b19-117">Examples of this include:</span></span>
 
-- <span data-ttu-id="088cf-118">應用程式的 Power Apps</span><span class="sxs-lookup"><span data-stu-id="088cf-118">Power Apps for apps</span></span>
-- <span data-ttu-id="088cf-119">工作流程的 Power Automate</span><span class="sxs-lookup"><span data-stu-id="088cf-119">Power Automate for workflows</span></span>
-- <span data-ttu-id="088cf-120">以瀑布式專案管理為基礎的網頁和藍圖 Project</span><span class="sxs-lookup"><span data-stu-id="088cf-120">Project on the web and Roadmap for waterfall-based project management</span></span>
-- <span data-ttu-id="088cf-121">以通道為基礎之交談的 Teams</span><span class="sxs-lookup"><span data-stu-id="088cf-121">Teams for channel-based conversations</span></span>
-- <span data-ttu-id="088cf-122">Yammer 感興趣的社區</span><span class="sxs-lookup"><span data-stu-id="088cf-122">Yammer for communities of interest</span></span>
+- <span data-ttu-id="02b19-118">應用程式的 Power Apps</span><span class="sxs-lookup"><span data-stu-id="02b19-118">Power Apps for apps</span></span>
+- <span data-ttu-id="02b19-119">工作流程的 Power Automate</span><span class="sxs-lookup"><span data-stu-id="02b19-119">Power Automate for workflows</span></span>
+- <span data-ttu-id="02b19-120">以瀑布式專案管理為基礎的網頁和藍圖 Project</span><span class="sxs-lookup"><span data-stu-id="02b19-120">Project on the web and Roadmap for waterfall-based project management</span></span>
+- <span data-ttu-id="02b19-121">以通道為基礎之交談的 Teams</span><span class="sxs-lookup"><span data-stu-id="02b19-121">Teams for channel-based conversations</span></span>
+- <span data-ttu-id="02b19-122">Yammer 感興趣的社區</span><span class="sxs-lookup"><span data-stu-id="02b19-122">Yammer for communities of interest</span></span>
 
-## <a name="user-interactions-with-groups"></a><span data-ttu-id="088cf-123">與群組的使用者互動</span><span class="sxs-lookup"><span data-stu-id="088cf-123">User interactions with groups</span></span>
+## <a name="user-interactions-with-groups"></a><span data-ttu-id="02b19-123">與群組的使用者互動</span><span class="sxs-lookup"><span data-stu-id="02b19-123">User interactions with groups</span></span>
 
-<span data-ttu-id="088cf-124">Microsoft 365群組可以從各種介面建立及管理，既包括系統管理員和使用者。</span><span class="sxs-lookup"><span data-stu-id="088cf-124">Microsoft 365 Groups can be created and managed from a variety of interfaces, both by administrators and end-users.</span></span> 
+<span data-ttu-id="02b19-124">Microsoft 365群組可以從各種介面建立及管理，既包括系統管理員和使用者。</span><span class="sxs-lookup"><span data-stu-id="02b19-124">Microsoft 365 Groups can be created and managed from a variety of interfaces, both by administrators and end-users.</span></span> 
 
-### <a name="administrative-experiences"></a><span data-ttu-id="088cf-125">管理體驗</span><span class="sxs-lookup"><span data-stu-id="088cf-125">Administrative experiences</span></span>
+### <a name="administrative-experiences"></a><span data-ttu-id="02b19-125">管理體驗</span><span class="sxs-lookup"><span data-stu-id="02b19-125">Administrative experiences</span></span>
 
-<span data-ttu-id="088cf-126">管理員可以從一些工作負載系統管理中心、支援腳本的命令列介面，以及與 Graph API 互動的自訂應用程式，建立及管理 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-126">Administrators can create and manage Microsoft 365 groups from several of the workload admin centers, command-line interfaces that support scripting, as well as custom-built apps interacting with the Graph API.</span></span> <span data-ttu-id="088cf-127">這只是 Yammer 群組的例外狀況，必須從 Yammer web 介面中建立。</span><span class="sxs-lookup"><span data-stu-id="088cf-127">The only exception to this is Yammer groups – which must be created from within the Yammer web interface.</span></span>
+<span data-ttu-id="02b19-126">管理員可以從一些工作負載系統管理中心、支援腳本的命令列介面，以及與 Graph API 互動的自訂應用程式，建立及管理 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-126">Administrators can create and manage Microsoft 365 groups from several of the workload admin centers, command-line interfaces that support scripting, as well as custom-built apps interacting with the Graph API.</span></span> <span data-ttu-id="02b19-127">這只是 Yammer 群組的例外狀況，必須從 Yammer web 介面中建立。</span><span class="sxs-lookup"><span data-stu-id="02b19-127">The only exception to this is Yammer groups – which must be created from within the Yammer web interface.</span></span>
 
-<span data-ttu-id="088cf-128">**相關設定**</span><span class="sxs-lookup"><span data-stu-id="088cf-128">**Related settings**</span></span>
+<span data-ttu-id="02b19-128">**相關設定**</span><span class="sxs-lookup"><span data-stu-id="02b19-128">**Related settings**</span></span>
 
-<span data-ttu-id="088cf-129">跨越可管理群組設定的各種管理介面，有數個重疊，您應該注意。</span><span class="sxs-lookup"><span data-stu-id="088cf-129">Across the various administrative interfaces that can manage group settings exists several overlaps which you should be aware of.</span></span>
+<span data-ttu-id="02b19-129">跨越可管理群組設定的各種管理介面，有數個重疊，您應該注意。</span><span class="sxs-lookup"><span data-stu-id="02b19-129">Across the various administrative interfaces that can manage group settings exists several overlaps which you should be aware of.</span></span>
 
-<span data-ttu-id="088cf-130">**Microsoft 365 系統管理中心**</span><span class="sxs-lookup"><span data-stu-id="088cf-130">**Microsoft 365 admin center**</span></span>
+<span data-ttu-id="02b19-130">**Microsoft 365 系統管理中心**</span><span class="sxs-lookup"><span data-stu-id="02b19-130">**Microsoft 365 admin center**</span></span>
 
-<span data-ttu-id="088cf-131">在 Microsoft 365 系統管理中心中，預設會啟用群組的來賓存取權，就像允許擁有者新增來賓的能力一樣。</span><span class="sxs-lookup"><span data-stu-id="088cf-131">In the Microsoft 365 admin center, guest access to Groups is enabled by default, as is the ability to allow owners to add guests.</span></span> <span data-ttu-id="088cf-132">此系統管理中心中的群組沒有進一步的組織層級控制項可用。</span><span class="sxs-lookup"><span data-stu-id="088cf-132">There are no further organization-level controls available for Groups from this admin center.</span></span>
+<span data-ttu-id="02b19-131">在 Microsoft 365 系統管理中心中，預設會啟用群組的來賓存取權，就像允許擁有者新增來賓的能力一樣。</span><span class="sxs-lookup"><span data-stu-id="02b19-131">In the Microsoft 365 admin center, guest access to Groups is enabled by default, as is the ability to allow owners to add guests.</span></span> <span data-ttu-id="02b19-132">此系統管理中心中的群組沒有進一步的組織層級控制項可用。</span><span class="sxs-lookup"><span data-stu-id="02b19-132">There are no further organization-level controls available for Groups from this admin center.</span></span>
 
-<span data-ttu-id="088cf-133">**Azure AD 系統管理中心**</span><span class="sxs-lookup"><span data-stu-id="088cf-133">**Azure AD admin center**</span></span>
+<span data-ttu-id="02b19-133">**Azure AD 系統管理中心**</span><span class="sxs-lookup"><span data-stu-id="02b19-133">**Azure AD admin center**</span></span>
 
-<span data-ttu-id="088cf-134">Azure AD 系統管理中心提供的控制措施是使用者是否可以建立群組或指派 Azure 入口網站的擁有者，以及到期及命名原則設定。</span><span class="sxs-lookup"><span data-stu-id="088cf-134">The Azure AD admin center offers controls around whether users can create Groups or assign owners in Azure portals, as well as expiration and naming policy settings.</span></span>
+<span data-ttu-id="02b19-134">Azure AD 系統管理中心提供的控制措施是使用者是否可以建立群組或指派 Azure 入口網站的擁有者，以及到期及命名原則設定。</span><span class="sxs-lookup"><span data-stu-id="02b19-134">The Azure AD admin center offers controls around whether users can create Groups or assign owners in Azure portals, as well as expiration and naming policy settings.</span></span>
 
-<span data-ttu-id="088cf-135">系統管理中心還提供許多來賓邀請控制措施，可超越 Microsoft 365 系統管理中心以外的程度，例如限制非擁有者是否也可以邀請來賓的能力。</span><span class="sxs-lookup"><span data-stu-id="088cf-135">The admin center also provides a number of guest invitation control measures that go beyond that of the Microsoft 365 admin center, such as the ability to limit whether non-owners can also invite guests</span></span>
+<span data-ttu-id="02b19-135">系統管理中心還提供許多來賓邀請控制措施，可超越 Microsoft 365 系統管理中心以外的程度，例如限制非擁有者是否也可以邀請來賓的能力。</span><span class="sxs-lookup"><span data-stu-id="02b19-135">The admin center also provides a number of guest invitation control measures that go beyond that of the Microsoft 365 admin center, such as the ability to limit whether non-owners can also invite guests</span></span>
 
-<span data-ttu-id="088cf-136">**SharePoint**</span><span class="sxs-lookup"><span data-stu-id="088cf-136">**SharePoint**</span></span>
+<span data-ttu-id="02b19-136">**SharePoint**</span><span class="sxs-lookup"><span data-stu-id="02b19-136">**SharePoint**</span></span>
 
-<span data-ttu-id="088cf-137">SharePoint 網站是以擁有者、成員及訪客安全性群組的方式建立，其前兩個對應到其 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-137">SharePoint sites are created with Owner, Member and Visitor security groups, with the first two matching up to their Microsoft 365 Group counterparts.</span></span> <span data-ttu-id="088cf-138">雖然 SharePoint Online 網站的成員資格通常是由關聯的 Microsoft 365 群組管理，但不是雙向關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-138">While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 Group, it is not a bidirectional relationship.</span></span> <span data-ttu-id="088cf-139">Microsoft 365 群組層級成員資格的任何變更都會反映在 SharePoint 中，但如果 SharePoint 群組中的成員資格變更，則不會反映在 Microsoft 365 群組中。</span><span class="sxs-lookup"><span data-stu-id="088cf-139">Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.</span></span>
+<span data-ttu-id="02b19-137">SharePoint 網站是以擁有者、成員及訪客安全性群組的方式建立，其前兩個對應到其 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-137">SharePoint sites are created with Owner, Member and Visitor security groups, with the first two matching up to their Microsoft 365 Group counterparts.</span></span> <span data-ttu-id="02b19-138">雖然 SharePoint Online 網站的成員資格通常是由關聯的 Microsoft 365 群組管理，但不是雙向關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-138">While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 Group, it is not a bidirectional relationship.</span></span> <span data-ttu-id="02b19-139">Microsoft 365 群組層級成員資格的任何變更都會反映在 SharePoint 中，但如果 SharePoint 群組中的成員資格變更，則不會反映在 Microsoft 365 群組中。</span><span class="sxs-lookup"><span data-stu-id="02b19-139">Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.</span></span>
 
-### <a name="user-experiences"></a><span data-ttu-id="088cf-140">使用者經驗</span><span class="sxs-lookup"><span data-stu-id="088cf-140">User experiences</span></span>
+### <a name="user-experiences"></a><span data-ttu-id="02b19-140">使用者經驗</span><span class="sxs-lookup"><span data-stu-id="02b19-140">User experiences</span></span>
 
-<span data-ttu-id="088cf-141">使用者可以從 Microsoft 365 中的數個服務建立群組，而且在其他使用者只能與群組共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-141">End users can create groups from several of the services within Microsoft 365, and in others they can only share with a group.</span></span>
+<span data-ttu-id="02b19-141">使用者可以從 Microsoft 365 中的數個服務建立群組，而且在其他使用者只能與群組共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-141">End users can create groups from several of the services within Microsoft 365, and in others they can only share with a group.</span></span>
 
-<span data-ttu-id="088cf-142">下列服務允許使用者建立群組：</span><span class="sxs-lookup"><span data-stu-id="088cf-142">The following services allow creation of groups by end users:</span></span>
+<span data-ttu-id="02b19-142">下列服務允許使用者建立群組：</span><span class="sxs-lookup"><span data-stu-id="02b19-142">The following services allow creation of groups by end users:</span></span>
                          
-<span data-ttu-id="088cf-143">Outlookweb SharePoint 資料流程 Microsoft Teams 的 Planner Project Yammer</span><span class="sxs-lookup"><span data-stu-id="088cf-143">Outlook Planner Project for the web SharePoint  Stream  Microsoft Teams Yammer</span></span>
+<span data-ttu-id="02b19-143">Outlookweb SharePoint 資料流程 Microsoft Teams 的 Planner Project Yammer</span><span class="sxs-lookup"><span data-stu-id="02b19-143">Outlook Planner Project for the web SharePoint  Stream  Microsoft Teams Yammer</span></span>
 
-<span data-ttu-id="088cf-144">**群組的建立限制**</span><span class="sxs-lookup"><span data-stu-id="088cf-144">**Restriction of group creation**</span></span>
+<span data-ttu-id="02b19-144">**群組的建立限制**</span><span class="sxs-lookup"><span data-stu-id="02b19-144">**Restriction of group creation**</span></span>
 
-<span data-ttu-id="088cf-145">控制小組的蔓延的常見方法是限制哪些使用者可以建立。</span><span class="sxs-lookup"><span data-stu-id="088cf-145">A common approach to control sprawl of teams is to limit which users can create them.</span></span> <span data-ttu-id="088cf-146">這只能透過限制建立群組來完成。</span><span class="sxs-lookup"><span data-stu-id="088cf-146">This can only be done by limiting the creation of groups.</span></span> <span data-ttu-id="088cf-147">這樣做會影響從其他服務（可能為使用者必要）建立群組的能力。</span><span class="sxs-lookup"><span data-stu-id="088cf-147">Doing this impacts the ability to create groups from other services where that may be necessary for end-user.</span></span> <span data-ttu-id="088cf-148">Microsoft 365群組不支援限制從某些應用程式或服務建立群組，同時允許其他使用者的功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-148">Microsoft 365 Groups does not support the ability to restrict the creation of groups from some apps or services while allowing it from others.</span></span>
+<span data-ttu-id="02b19-145">控制小組的蔓延的常見方法是限制哪些使用者可以建立。</span><span class="sxs-lookup"><span data-stu-id="02b19-145">A common approach to control sprawl of teams is to limit which users can create them.</span></span> <span data-ttu-id="02b19-146">這只能透過限制建立群組來完成。</span><span class="sxs-lookup"><span data-stu-id="02b19-146">This can only be done by limiting the creation of groups.</span></span> <span data-ttu-id="02b19-147">這樣做會影響從其他服務（可能為使用者必要）建立群組的能力。</span><span class="sxs-lookup"><span data-stu-id="02b19-147">Doing this impacts the ability to create groups from other services where that may be necessary for end-user.</span></span> <span data-ttu-id="02b19-148">Microsoft 365群組不支援限制從某些應用程式或服務建立群組，同時允許其他使用者的功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-148">Microsoft 365 Groups does not support the ability to restrict the creation of groups from some apps or services while allowing it from others.</span></span>
 
-<span data-ttu-id="088cf-149">群組建立限制的體驗會因應用程式和服務而異：</span><span class="sxs-lookup"><span data-stu-id="088cf-149">The experience of group creation restriction varies between apps and services:</span></span>
+<span data-ttu-id="02b19-149">群組建立限制的體驗會因應用程式和服務而異：</span><span class="sxs-lookup"><span data-stu-id="02b19-149">The experience of group creation restriction varies between apps and services:</span></span>
 
 
-|<span data-ttu-id="088cf-150">應用程式或服務</span><span class="sxs-lookup"><span data-stu-id="088cf-150">App or service</span></span>|<span data-ttu-id="088cf-151">體驗</span><span class="sxs-lookup"><span data-stu-id="088cf-151">Experience</span></span>|
+|<span data-ttu-id="02b19-150">應用程式或服務</span><span class="sxs-lookup"><span data-stu-id="02b19-150">App or service</span></span>|<span data-ttu-id="02b19-151">體驗</span><span class="sxs-lookup"><span data-stu-id="02b19-151">Experience</span></span>|
 |:-------------|:---------|
-|<span data-ttu-id="088cf-152">Outlook</span><span class="sxs-lookup"><span data-stu-id="088cf-152">Outlook</span></span>|<span data-ttu-id="088cf-153">從 [人員] 頁面的新功能表移除 [**新增群組**] 選項</span><span class="sxs-lookup"><span data-stu-id="088cf-153">**New group** option is removed from New menu in people page</span></span>|
-|<span data-ttu-id="088cf-154">Planner</span><span class="sxs-lookup"><span data-stu-id="088cf-154">Planner</span></span>|<span data-ttu-id="088cf-155">**新計畫** 說明已關閉群組建立功能，並提供將計畫新增至現有的群組</span><span class="sxs-lookup"><span data-stu-id="088cf-155">**New plan** explains that group creation has been turned off and offers to add the plan to an existing group</span></span>|
-|<span data-ttu-id="088cf-156">網頁和藍圖的 Project</span><span class="sxs-lookup"><span data-stu-id="088cf-156">Project for the web and Roadmap</span></span>|<span data-ttu-id="088cf-157">**建立群組** 功能表說明群組建立限制，並建議使用現有的群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-157">**Create group** menu explains that group creation is restricted and suggests using an existing group.</span></span>|
-|<span data-ttu-id="088cf-158">SharePoint</span><span class="sxs-lookup"><span data-stu-id="088cf-158">SharePoint</span></span>|<span data-ttu-id="088cf-159">仍然可以建立未連接至群組的小組網站。</span><span class="sxs-lookup"><span data-stu-id="088cf-159">Still able to create a team site that is not connected to a group.</span></span>|
-|<span data-ttu-id="088cf-160">Stream</span><span class="sxs-lookup"><span data-stu-id="088cf-160">Stream</span></span>|<span data-ttu-id="088cf-161">**群組** 選項不會出現在 [ **建立] 功能表** 底下。</span><span class="sxs-lookup"><span data-stu-id="088cf-161">**Group** option does not appear under the **Create menu**.</span></span>|
-|<span data-ttu-id="088cf-162">Teams</span><span class="sxs-lookup"><span data-stu-id="088cf-162">Teams</span></span>|<span data-ttu-id="088cf-163">使用者無法使用新的群組建立小組，但仍然可以建立利用現有群組的小組。</span><span class="sxs-lookup"><span data-stu-id="088cf-163">User cannot create a team with a new group but can still create a team that utilizes an existing group.</span></span><br><br><span data-ttu-id="088cf-164">[**建立小組**] 按鈕會取代為 **群組中的 [建立小組**] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="088cf-164">**Create a team** button is replaced with **Create team from a group**.</span></span>|
-|<span data-ttu-id="088cf-165">Yammer</span><span class="sxs-lookup"><span data-stu-id="088cf-165">Yammer</span></span>|<span data-ttu-id="088cf-166">[**建立群組**] 選項會從 [主要群組/社區] 導覽中移除。</span><span class="sxs-lookup"><span data-stu-id="088cf-166">**Create a group** option is removed from main Groups/Communities navigation.</span></span>|
+|<span data-ttu-id="02b19-152">Outlook</span><span class="sxs-lookup"><span data-stu-id="02b19-152">Outlook</span></span>|<span data-ttu-id="02b19-153">從 [人員] 頁面的新功能表移除 [**新增群組**] 選項</span><span class="sxs-lookup"><span data-stu-id="02b19-153">**New group** option is removed from New menu in people page</span></span>|
+|<span data-ttu-id="02b19-154">Planner</span><span class="sxs-lookup"><span data-stu-id="02b19-154">Planner</span></span>|<span data-ttu-id="02b19-155">**新計畫** 說明已關閉群組建立功能，並提供將計畫新增至現有的群組</span><span class="sxs-lookup"><span data-stu-id="02b19-155">**New plan** explains that group creation has been turned off and offers to add the plan to an existing group</span></span>|
+|<span data-ttu-id="02b19-156">網頁和藍圖的 Project</span><span class="sxs-lookup"><span data-stu-id="02b19-156">Project for the web and Roadmap</span></span>|<span data-ttu-id="02b19-157">**建立群組** 功能表說明群組建立限制，並建議使用現有的群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-157">**Create group** menu explains that group creation is restricted and suggests using an existing group.</span></span>|
+|<span data-ttu-id="02b19-158">SharePoint</span><span class="sxs-lookup"><span data-stu-id="02b19-158">SharePoint</span></span>|<span data-ttu-id="02b19-159">仍然可以建立未連接至群組的小組網站。</span><span class="sxs-lookup"><span data-stu-id="02b19-159">Still able to create a team site that is not connected to a group.</span></span>|
+|<span data-ttu-id="02b19-160">Stream</span><span class="sxs-lookup"><span data-stu-id="02b19-160">Stream</span></span>|<span data-ttu-id="02b19-161">**群組** 選項不會出現在 [ **建立] 功能表** 底下。</span><span class="sxs-lookup"><span data-stu-id="02b19-161">**Group** option does not appear under the **Create menu**.</span></span>|
+|<span data-ttu-id="02b19-162">Teams</span><span class="sxs-lookup"><span data-stu-id="02b19-162">Teams</span></span>|<span data-ttu-id="02b19-163">使用者無法使用新的群組建立小組，但仍然可以建立利用現有群組的小組。</span><span class="sxs-lookup"><span data-stu-id="02b19-163">User cannot create a team with a new group but can still create a team that utilizes an existing group.</span></span><br><br><span data-ttu-id="02b19-164">[**建立小組**] 按鈕會取代為 **群組中的 [建立小組**] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="02b19-164">**Create a team** button is replaced with **Create team from a group**.</span></span>|
+|<span data-ttu-id="02b19-165">Yammer</span><span class="sxs-lookup"><span data-stu-id="02b19-165">Yammer</span></span>|<span data-ttu-id="02b19-166">[**建立群組**] 選項會從 [主要群組/社區] 導覽中移除。</span><span class="sxs-lookup"><span data-stu-id="02b19-166">**Create a group** option is removed from main Groups/Communities navigation.</span></span>|
 
-## <a name="services-interactions-with-groups"></a><span data-ttu-id="088cf-167">與群組的服務互動</span><span class="sxs-lookup"><span data-stu-id="088cf-167">Services interactions with groups</span></span>
+## <a name="services-interactions-with-groups"></a><span data-ttu-id="02b19-167">與群組的服務互動</span><span class="sxs-lookup"><span data-stu-id="02b19-167">Services interactions with groups</span></span>
 
-<span data-ttu-id="088cf-168">請參閱 Microsoft 365 海報中的群組，以取得不同群組類型的相關資訊、建立與管理的方式，以及少數的管理建議。</span><span class="sxs-lookup"><span data-stu-id="088cf-168">See the Groups in Microsoft 365 poster for information about different types of groups, how these are created and managed, and a few governance recommendations.</span></span>
+<span data-ttu-id="02b19-168">請參閱 Microsoft 365 海報中的群組，以取得不同群組類型的相關資訊、建立與管理的方式，以及少數的管理建議。</span><span class="sxs-lookup"><span data-stu-id="02b19-168">See the Groups in Microsoft 365 poster for information about different types of groups, how these are created and managed, and a few governance recommendations.</span></span>
 
-<span data-ttu-id="088cf-169">[![群組資訊圖的縮圖影像](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)</span><span class="sxs-lookup"><span data-stu-id="088cf-169">[![Thumb image for groups infographic](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)</span></span>
+<span data-ttu-id="02b19-169">[![群組資訊圖的縮圖影像](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)</span><span class="sxs-lookup"><span data-stu-id="02b19-169">[![Thumb image for groups infographic](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)</span></span>
 
-<span data-ttu-id="088cf-170">[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)</span><span class="sxs-lookup"><span data-stu-id="088cf-170">[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)</span></span>
+<span data-ttu-id="02b19-170">[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)</span><span class="sxs-lookup"><span data-stu-id="02b19-170">[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)</span></span>
 
-<span data-ttu-id="088cf-171">下表提供 Microsoft 365 群組與各種服務互動的概覽：</span><span class="sxs-lookup"><span data-stu-id="088cf-171">The following table provides an overview of Microsoft 365 Groups interactions with various services:</span></span>
+<span data-ttu-id="02b19-171">下表提供 Microsoft 365 群組與各種服務互動的概覽：</span><span class="sxs-lookup"><span data-stu-id="02b19-171">The following table provides an overview of Microsoft 365 Groups interactions with various services:</span></span>
 
-|<span data-ttu-id="088cf-172">產品</span><span class="sxs-lookup"><span data-stu-id="088cf-172">Product</span></span>|<span data-ttu-id="088cf-173">功能</span><span class="sxs-lookup"><span data-stu-id="088cf-173">Features</span></span>|<span data-ttu-id="088cf-174">服務</span><span class="sxs-lookup"><span data-stu-id="088cf-174">Does the service</span></span><br><span data-ttu-id="088cf-175">是否存在沒有群組的情況？</span><span class="sxs-lookup"><span data-stu-id="088cf-175">exist without a group?</span></span>|<span data-ttu-id="088cf-176">服務是否可以</span><span class="sxs-lookup"><span data-stu-id="088cf-176">Can the service</span></span><br><span data-ttu-id="088cf-177">建立群組？</span><span class="sxs-lookup"><span data-stu-id="088cf-177">create a group?</span></span>|<span data-ttu-id="088cf-178">刪除</span><span class="sxs-lookup"><span data-stu-id="088cf-178">Does deleting the</span></span><br><span data-ttu-id="088cf-179">實例刪除群組？</span><span class="sxs-lookup"><span data-stu-id="088cf-179">instance delete the group?</span></span>|
+|<span data-ttu-id="02b19-172">產品</span><span class="sxs-lookup"><span data-stu-id="02b19-172">Product</span></span>|<span data-ttu-id="02b19-173">功能</span><span class="sxs-lookup"><span data-stu-id="02b19-173">Features</span></span>|<span data-ttu-id="02b19-174">服務</span><span class="sxs-lookup"><span data-stu-id="02b19-174">Does the service</span></span><br><span data-ttu-id="02b19-175">是否存在沒有群組的情況？</span><span class="sxs-lookup"><span data-stu-id="02b19-175">exist without a group?</span></span>|<span data-ttu-id="02b19-176">服務是否可以</span><span class="sxs-lookup"><span data-stu-id="02b19-176">Can the service</span></span><br><span data-ttu-id="02b19-177">建立群組？</span><span class="sxs-lookup"><span data-stu-id="02b19-177">create a group?</span></span>|<span data-ttu-id="02b19-178">刪除</span><span class="sxs-lookup"><span data-stu-id="02b19-178">Does deleting the</span></span><br><span data-ttu-id="02b19-179">實例刪除群組？</span><span class="sxs-lookup"><span data-stu-id="02b19-179">instance delete the group?</span></span>|
 |:---|:---|:---|:---|:---|
-|<span data-ttu-id="088cf-180">Azure AD</span><span class="sxs-lookup"><span data-stu-id="088cf-180">Azure AD</span></span>|<span data-ttu-id="088cf-181">成員資格、群組控制項、來賓</span><span class="sxs-lookup"><span data-stu-id="088cf-181">Membership, Group controls, Guests</span></span>|<span data-ttu-id="088cf-182">是</span><span class="sxs-lookup"><span data-stu-id="088cf-182">Yes</span></span>|<span data-ttu-id="088cf-183">是</span><span class="sxs-lookup"><span data-stu-id="088cf-183">Yes</span></span>|<span data-ttu-id="088cf-184">是</span><span class="sxs-lookup"><span data-stu-id="088cf-184">Yes</span></span>|
-|<span data-ttu-id="088cf-185">Exchange</span><span class="sxs-lookup"><span data-stu-id="088cf-185">Exchange</span></span>|<span data-ttu-id="088cf-186">行事曆、信箱</span><span class="sxs-lookup"><span data-stu-id="088cf-186">Calendar, mailbox</span></span>|<span data-ttu-id="088cf-187">是</span><span class="sxs-lookup"><span data-stu-id="088cf-187">Yes</span></span>|<span data-ttu-id="088cf-188">是</span><span class="sxs-lookup"><span data-stu-id="088cf-188">Yes</span></span>|<span data-ttu-id="088cf-189">是</span><span class="sxs-lookup"><span data-stu-id="088cf-189">Yes</span></span>|
-|<span data-ttu-id="088cf-190">表單</span><span class="sxs-lookup"><span data-stu-id="088cf-190">Forms</span></span>|<span data-ttu-id="088cf-191">Form</span><span class="sxs-lookup"><span data-stu-id="088cf-191">Form</span></span>|<span data-ttu-id="088cf-192">是</span><span class="sxs-lookup"><span data-stu-id="088cf-192">Yes</span></span>|<span data-ttu-id="088cf-193">否</span><span class="sxs-lookup"><span data-stu-id="088cf-193">No</span></span>|<span data-ttu-id="088cf-194">否</span><span class="sxs-lookup"><span data-stu-id="088cf-194">No</span></span>|
-|<span data-ttu-id="088cf-195">OneNote</span><span class="sxs-lookup"><span data-stu-id="088cf-195">OneNote</span></span>|<span data-ttu-id="088cf-196">筆記本</span><span class="sxs-lookup"><span data-stu-id="088cf-196">Notebook</span></span>|<span data-ttu-id="088cf-197">是</span><span class="sxs-lookup"><span data-stu-id="088cf-197">Yes</span></span>|<span data-ttu-id="088cf-198">否</span><span class="sxs-lookup"><span data-stu-id="088cf-198">No</span></span>|<span data-ttu-id="088cf-199">否</span><span class="sxs-lookup"><span data-stu-id="088cf-199">No</span></span>|
-|<span data-ttu-id="088cf-200">Planner</span><span class="sxs-lookup"><span data-stu-id="088cf-200">Planner</span></span>|<span data-ttu-id="088cf-201">工作面板</span><span class="sxs-lookup"><span data-stu-id="088cf-201">Task board</span></span>|<span data-ttu-id="088cf-202">否</span><span class="sxs-lookup"><span data-stu-id="088cf-202">No</span></span>|<span data-ttu-id="088cf-203">是</span><span class="sxs-lookup"><span data-stu-id="088cf-203">Yes</span></span>|<span data-ttu-id="088cf-204">是</span><span class="sxs-lookup"><span data-stu-id="088cf-204">Yes</span></span>|
-|<span data-ttu-id="088cf-205">Power Apps 應用程式</span><span class="sxs-lookup"><span data-stu-id="088cf-205">Power Apps app</span></span>|<span data-ttu-id="088cf-206">應用程式</span><span class="sxs-lookup"><span data-stu-id="088cf-206">App</span></span>|<span data-ttu-id="088cf-207">是</span><span class="sxs-lookup"><span data-stu-id="088cf-207">Yes</span></span>|<span data-ttu-id="088cf-208">否</span><span class="sxs-lookup"><span data-stu-id="088cf-208">No</span></span>|<span data-ttu-id="088cf-209">否</span><span class="sxs-lookup"><span data-stu-id="088cf-209">No</span></span>|
-|<span data-ttu-id="088cf-210">Power Automate</span><span class="sxs-lookup"><span data-stu-id="088cf-210">Power Automate</span></span>|<span data-ttu-id="088cf-211">工作流程</span><span class="sxs-lookup"><span data-stu-id="088cf-211">Workflow</span></span>|<span data-ttu-id="088cf-212">是</span><span class="sxs-lookup"><span data-stu-id="088cf-212">Yes</span></span>|<span data-ttu-id="088cf-213">否</span><span class="sxs-lookup"><span data-stu-id="088cf-213">No</span></span>|<span data-ttu-id="088cf-214">否</span><span class="sxs-lookup"><span data-stu-id="088cf-214">No</span></span>|
-|<span data-ttu-id="088cf-215">Power BI (古典) </span><span class="sxs-lookup"><span data-stu-id="088cf-215">Power BI (classic)</span></span>|<span data-ttu-id="088cf-216">Workspace</span><span class="sxs-lookup"><span data-stu-id="088cf-216">Workspace</span></span>|<span data-ttu-id="088cf-217">否</span><span class="sxs-lookup"><span data-stu-id="088cf-217">No</span></span>|<span data-ttu-id="088cf-218">是</span><span class="sxs-lookup"><span data-stu-id="088cf-218">Yes</span></span>|<span data-ttu-id="088cf-219">是</span><span class="sxs-lookup"><span data-stu-id="088cf-219">Yes</span></span>|
-|<span data-ttu-id="088cf-220">Power BI (新) </span><span class="sxs-lookup"><span data-stu-id="088cf-220">Power BI (new)</span></span>|<span data-ttu-id="088cf-221">Workspace</span><span class="sxs-lookup"><span data-stu-id="088cf-221">Workspace</span></span>|<span data-ttu-id="088cf-222">是</span><span class="sxs-lookup"><span data-stu-id="088cf-222">Yes</span></span>|<span data-ttu-id="088cf-223">否</span><span class="sxs-lookup"><span data-stu-id="088cf-223">No</span></span>|<span data-ttu-id="088cf-224">是</span><span class="sxs-lookup"><span data-stu-id="088cf-224">Yes</span></span>|
-|<span data-ttu-id="088cf-225">Project 網頁版</span><span class="sxs-lookup"><span data-stu-id="088cf-225">Project for the web</span></span>|<span data-ttu-id="088cf-226">Project 計畫</span><span class="sxs-lookup"><span data-stu-id="088cf-226">Project plan</span></span>|<span data-ttu-id="088cf-227">是</span><span class="sxs-lookup"><span data-stu-id="088cf-227">Yes</span></span>|<span data-ttu-id="088cf-228">是</span><span class="sxs-lookup"><span data-stu-id="088cf-228">Yes</span></span>|<span data-ttu-id="088cf-229">否</span><span class="sxs-lookup"><span data-stu-id="088cf-229">No</span></span>|
-|<span data-ttu-id="088cf-230">藍圖</span><span class="sxs-lookup"><span data-stu-id="088cf-230">Roadmap</span></span>|<span data-ttu-id="088cf-231">藍圖</span><span class="sxs-lookup"><span data-stu-id="088cf-231">Roadmap</span></span>|<span data-ttu-id="088cf-232">是</span><span class="sxs-lookup"><span data-stu-id="088cf-232">Yes</span></span>|<span data-ttu-id="088cf-233">是</span><span class="sxs-lookup"><span data-stu-id="088cf-233">Yes</span></span>|<span data-ttu-id="088cf-234">否</span><span class="sxs-lookup"><span data-stu-id="088cf-234">No</span></span>|
-|<span data-ttu-id="088cf-235">SharePoint</span><span class="sxs-lookup"><span data-stu-id="088cf-235">SharePoint</span></span>|<span data-ttu-id="088cf-236">網站</span><span class="sxs-lookup"><span data-stu-id="088cf-236">Site</span></span>|<span data-ttu-id="088cf-237">是</span><span class="sxs-lookup"><span data-stu-id="088cf-237">Yes</span></span>|<span data-ttu-id="088cf-238">是</span><span class="sxs-lookup"><span data-stu-id="088cf-238">Yes</span></span>|<span data-ttu-id="088cf-239">是</span><span class="sxs-lookup"><span data-stu-id="088cf-239">Yes</span></span>|
-|<span data-ttu-id="088cf-240">Stream</span><span class="sxs-lookup"><span data-stu-id="088cf-240">Stream</span></span>|<span data-ttu-id="088cf-241">通道、影片</span><span class="sxs-lookup"><span data-stu-id="088cf-241">Channel, video</span></span>|<span data-ttu-id="088cf-242">是</span><span class="sxs-lookup"><span data-stu-id="088cf-242">Yes</span></span>|<span data-ttu-id="088cf-243">是</span><span class="sxs-lookup"><span data-stu-id="088cf-243">Yes</span></span>|<span data-ttu-id="088cf-244">是</span><span class="sxs-lookup"><span data-stu-id="088cf-244">Yes</span></span>|
-|<span data-ttu-id="088cf-245">Teams</span><span class="sxs-lookup"><span data-stu-id="088cf-245">Teams</span></span>|<span data-ttu-id="088cf-246">團隊</span><span class="sxs-lookup"><span data-stu-id="088cf-246">Team</span></span>|<span data-ttu-id="088cf-247">否</span><span class="sxs-lookup"><span data-stu-id="088cf-247">No</span></span>|<span data-ttu-id="088cf-248">是</span><span class="sxs-lookup"><span data-stu-id="088cf-248">Yes</span></span>|<span data-ttu-id="088cf-249">是</span><span class="sxs-lookup"><span data-stu-id="088cf-249">Yes</span></span>|
-|<span data-ttu-id="088cf-250">Yammer</span><span class="sxs-lookup"><span data-stu-id="088cf-250">Yammer</span></span>|<span data-ttu-id="088cf-251">群組</span><span class="sxs-lookup"><span data-stu-id="088cf-251">Group</span></span>|<span data-ttu-id="088cf-252">是</span><span class="sxs-lookup"><span data-stu-id="088cf-252">Yes</span></span>|<span data-ttu-id="088cf-253">是</span><span class="sxs-lookup"><span data-stu-id="088cf-253">Yes</span></span>|<span data-ttu-id="088cf-254">是</span><span class="sxs-lookup"><span data-stu-id="088cf-254">Yes</span></span>|
+|<span data-ttu-id="02b19-180">Azure AD</span><span class="sxs-lookup"><span data-stu-id="02b19-180">Azure AD</span></span>|<span data-ttu-id="02b19-181">成員資格、群組控制項、來賓</span><span class="sxs-lookup"><span data-stu-id="02b19-181">Membership, Group controls, Guests</span></span>|<span data-ttu-id="02b19-182">是</span><span class="sxs-lookup"><span data-stu-id="02b19-182">Yes</span></span>|<span data-ttu-id="02b19-183">是</span><span class="sxs-lookup"><span data-stu-id="02b19-183">Yes</span></span>|<span data-ttu-id="02b19-184">是</span><span class="sxs-lookup"><span data-stu-id="02b19-184">Yes</span></span>|
+|<span data-ttu-id="02b19-185">Exchange</span><span class="sxs-lookup"><span data-stu-id="02b19-185">Exchange</span></span>|<span data-ttu-id="02b19-186">行事曆、信箱</span><span class="sxs-lookup"><span data-stu-id="02b19-186">Calendar, mailbox</span></span>|<span data-ttu-id="02b19-187">是</span><span class="sxs-lookup"><span data-stu-id="02b19-187">Yes</span></span>|<span data-ttu-id="02b19-188">是</span><span class="sxs-lookup"><span data-stu-id="02b19-188">Yes</span></span>|<span data-ttu-id="02b19-189">是</span><span class="sxs-lookup"><span data-stu-id="02b19-189">Yes</span></span>|
+|<span data-ttu-id="02b19-190">Forms</span><span class="sxs-lookup"><span data-stu-id="02b19-190">Forms</span></span>|<span data-ttu-id="02b19-191">Form</span><span class="sxs-lookup"><span data-stu-id="02b19-191">Form</span></span>|<span data-ttu-id="02b19-192">是</span><span class="sxs-lookup"><span data-stu-id="02b19-192">Yes</span></span>|<span data-ttu-id="02b19-193">否</span><span class="sxs-lookup"><span data-stu-id="02b19-193">No</span></span>|<span data-ttu-id="02b19-194">否</span><span class="sxs-lookup"><span data-stu-id="02b19-194">No</span></span>|
+|<span data-ttu-id="02b19-195">OneNote</span><span class="sxs-lookup"><span data-stu-id="02b19-195">OneNote</span></span>|<span data-ttu-id="02b19-196">筆記本</span><span class="sxs-lookup"><span data-stu-id="02b19-196">Notebook</span></span>|<span data-ttu-id="02b19-197">是</span><span class="sxs-lookup"><span data-stu-id="02b19-197">Yes</span></span>|<span data-ttu-id="02b19-198">否</span><span class="sxs-lookup"><span data-stu-id="02b19-198">No</span></span>|<span data-ttu-id="02b19-199">否</span><span class="sxs-lookup"><span data-stu-id="02b19-199">No</span></span>|
+|<span data-ttu-id="02b19-200">Planner</span><span class="sxs-lookup"><span data-stu-id="02b19-200">Planner</span></span>|<span data-ttu-id="02b19-201">工作面板</span><span class="sxs-lookup"><span data-stu-id="02b19-201">Task board</span></span>|<span data-ttu-id="02b19-202">否</span><span class="sxs-lookup"><span data-stu-id="02b19-202">No</span></span>|<span data-ttu-id="02b19-203">是</span><span class="sxs-lookup"><span data-stu-id="02b19-203">Yes</span></span>|<span data-ttu-id="02b19-204">是</span><span class="sxs-lookup"><span data-stu-id="02b19-204">Yes</span></span>|
+|<span data-ttu-id="02b19-205">Power Apps 應用程式</span><span class="sxs-lookup"><span data-stu-id="02b19-205">Power Apps app</span></span>|<span data-ttu-id="02b19-206">應用程式</span><span class="sxs-lookup"><span data-stu-id="02b19-206">App</span></span>|<span data-ttu-id="02b19-207">是</span><span class="sxs-lookup"><span data-stu-id="02b19-207">Yes</span></span>|<span data-ttu-id="02b19-208">否</span><span class="sxs-lookup"><span data-stu-id="02b19-208">No</span></span>|<span data-ttu-id="02b19-209">否</span><span class="sxs-lookup"><span data-stu-id="02b19-209">No</span></span>|
+|<span data-ttu-id="02b19-210">Power Automate</span><span class="sxs-lookup"><span data-stu-id="02b19-210">Power Automate</span></span>|<span data-ttu-id="02b19-211">工作流程</span><span class="sxs-lookup"><span data-stu-id="02b19-211">Workflow</span></span>|<span data-ttu-id="02b19-212">是</span><span class="sxs-lookup"><span data-stu-id="02b19-212">Yes</span></span>|<span data-ttu-id="02b19-213">否</span><span class="sxs-lookup"><span data-stu-id="02b19-213">No</span></span>|<span data-ttu-id="02b19-214">否</span><span class="sxs-lookup"><span data-stu-id="02b19-214">No</span></span>|
+|<span data-ttu-id="02b19-215">Power BI (古典) </span><span class="sxs-lookup"><span data-stu-id="02b19-215">Power BI (classic)</span></span>|<span data-ttu-id="02b19-216">Workspace</span><span class="sxs-lookup"><span data-stu-id="02b19-216">Workspace</span></span>|<span data-ttu-id="02b19-217">否</span><span class="sxs-lookup"><span data-stu-id="02b19-217">No</span></span>|<span data-ttu-id="02b19-218">是</span><span class="sxs-lookup"><span data-stu-id="02b19-218">Yes</span></span>|<span data-ttu-id="02b19-219">是</span><span class="sxs-lookup"><span data-stu-id="02b19-219">Yes</span></span>|
+|<span data-ttu-id="02b19-220">Power BI (新) </span><span class="sxs-lookup"><span data-stu-id="02b19-220">Power BI (new)</span></span>|<span data-ttu-id="02b19-221">Workspace</span><span class="sxs-lookup"><span data-stu-id="02b19-221">Workspace</span></span>|<span data-ttu-id="02b19-222">是</span><span class="sxs-lookup"><span data-stu-id="02b19-222">Yes</span></span>|<span data-ttu-id="02b19-223">否</span><span class="sxs-lookup"><span data-stu-id="02b19-223">No</span></span>|<span data-ttu-id="02b19-224">是</span><span class="sxs-lookup"><span data-stu-id="02b19-224">Yes</span></span>|
+|<span data-ttu-id="02b19-225">Project 網頁版</span><span class="sxs-lookup"><span data-stu-id="02b19-225">Project for the web</span></span>|<span data-ttu-id="02b19-226">Project 計畫</span><span class="sxs-lookup"><span data-stu-id="02b19-226">Project plan</span></span>|<span data-ttu-id="02b19-227">是</span><span class="sxs-lookup"><span data-stu-id="02b19-227">Yes</span></span>|<span data-ttu-id="02b19-228">是</span><span class="sxs-lookup"><span data-stu-id="02b19-228">Yes</span></span>|<span data-ttu-id="02b19-229">否</span><span class="sxs-lookup"><span data-stu-id="02b19-229">No</span></span>|
+|<span data-ttu-id="02b19-230">藍圖</span><span class="sxs-lookup"><span data-stu-id="02b19-230">Roadmap</span></span>|<span data-ttu-id="02b19-231">藍圖</span><span class="sxs-lookup"><span data-stu-id="02b19-231">Roadmap</span></span>|<span data-ttu-id="02b19-232">是</span><span class="sxs-lookup"><span data-stu-id="02b19-232">Yes</span></span>|<span data-ttu-id="02b19-233">是</span><span class="sxs-lookup"><span data-stu-id="02b19-233">Yes</span></span>|<span data-ttu-id="02b19-234">否</span><span class="sxs-lookup"><span data-stu-id="02b19-234">No</span></span>|
+|<span data-ttu-id="02b19-235">SharePoint</span><span class="sxs-lookup"><span data-stu-id="02b19-235">SharePoint</span></span>|<span data-ttu-id="02b19-236">網站</span><span class="sxs-lookup"><span data-stu-id="02b19-236">Site</span></span>|<span data-ttu-id="02b19-237">是</span><span class="sxs-lookup"><span data-stu-id="02b19-237">Yes</span></span>|<span data-ttu-id="02b19-238">是</span><span class="sxs-lookup"><span data-stu-id="02b19-238">Yes</span></span>|<span data-ttu-id="02b19-239">是</span><span class="sxs-lookup"><span data-stu-id="02b19-239">Yes</span></span>|
+|<span data-ttu-id="02b19-240">Stream</span><span class="sxs-lookup"><span data-stu-id="02b19-240">Stream</span></span>|<span data-ttu-id="02b19-241">通道、影片</span><span class="sxs-lookup"><span data-stu-id="02b19-241">Channel, video</span></span>|<span data-ttu-id="02b19-242">是</span><span class="sxs-lookup"><span data-stu-id="02b19-242">Yes</span></span>|<span data-ttu-id="02b19-243">是</span><span class="sxs-lookup"><span data-stu-id="02b19-243">Yes</span></span>|<span data-ttu-id="02b19-244">是</span><span class="sxs-lookup"><span data-stu-id="02b19-244">Yes</span></span>|
+|<span data-ttu-id="02b19-245">Teams</span><span class="sxs-lookup"><span data-stu-id="02b19-245">Teams</span></span>|<span data-ttu-id="02b19-246">團隊</span><span class="sxs-lookup"><span data-stu-id="02b19-246">Team</span></span>|<span data-ttu-id="02b19-247">否</span><span class="sxs-lookup"><span data-stu-id="02b19-247">No</span></span>|<span data-ttu-id="02b19-248">是</span><span class="sxs-lookup"><span data-stu-id="02b19-248">Yes</span></span>|<span data-ttu-id="02b19-249">是</span><span class="sxs-lookup"><span data-stu-id="02b19-249">Yes</span></span>|
+|<span data-ttu-id="02b19-250">Yammer</span><span class="sxs-lookup"><span data-stu-id="02b19-250">Yammer</span></span>|<span data-ttu-id="02b19-251">群組</span><span class="sxs-lookup"><span data-stu-id="02b19-251">Group</span></span>|<span data-ttu-id="02b19-252">是</span><span class="sxs-lookup"><span data-stu-id="02b19-252">Yes</span></span>|<span data-ttu-id="02b19-253">是</span><span class="sxs-lookup"><span data-stu-id="02b19-253">Yes</span></span>|<span data-ttu-id="02b19-254">是</span><span class="sxs-lookup"><span data-stu-id="02b19-254">Yes</span></span>|
 
-<span data-ttu-id="088cf-255">當上表提供與 Microsoft 365 服務的群組互動的高層次概述時，您應該瞭解許多細微差別和複雜的情況。</span><span class="sxs-lookup"><span data-stu-id="088cf-255">While the table above provides a high-level overview of group interactions with Microsoft 365 services, there are a number of nuances and intricacies that you should understand.</span></span> <span data-ttu-id="088cf-256">下列各節將深入瞭解特定工作負載及其與群組的互動。</span><span class="sxs-lookup"><span data-stu-id="088cf-256">The following sections take a more in-depth look at the specific workloads and their interactions with groups.</span></span>
+<span data-ttu-id="02b19-255">當上表提供與 Microsoft 365 服務的群組互動的高層次概述時，您應該瞭解許多細微差別和複雜的情況。</span><span class="sxs-lookup"><span data-stu-id="02b19-255">While the table above provides a high-level overview of group interactions with Microsoft 365 services, there are a number of nuances and intricacies that you should understand.</span></span> <span data-ttu-id="02b19-256">下列各節將深入瞭解特定工作負載及其與群組的互動。</span><span class="sxs-lookup"><span data-stu-id="02b19-256">The following sections take a more in-depth look at the specific workloads and their interactions with groups.</span></span>
 
-## <a name="azure-ad"></a><span data-ttu-id="088cf-257">Azure AD</span><span class="sxs-lookup"><span data-stu-id="088cf-257">Azure AD</span></span>
+## <a name="azure-ad"></a><span data-ttu-id="02b19-257">Azure AD</span><span class="sxs-lookup"><span data-stu-id="02b19-257">Azure AD</span></span>
 
-<span data-ttu-id="088cf-258">Azure AD 在 Microsoft 365 中提供基礎的身分識別管理功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-258">Azure AD provides the underlying identity management capabilities across Microsoft 365.</span></span>
+<span data-ttu-id="02b19-258">Azure AD 在 Microsoft 365 中提供基礎的身分識別管理功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-258">Azure AD provides the underlying identity management capabilities across Microsoft 365.</span></span>
 
-<span data-ttu-id="088cf-259">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-259">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-259">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-259">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-260">群組成員資格</span><span class="sxs-lookup"><span data-stu-id="088cf-260">Group membership</span></span>
-- <span data-ttu-id="088cf-261">命名原則</span><span class="sxs-lookup"><span data-stu-id="088cf-261">Naming policy</span></span>
-- <span data-ttu-id="088cf-262">到期原則</span><span class="sxs-lookup"><span data-stu-id="088cf-262">Expiration policy</span></span>
-- <span data-ttu-id="088cf-263">客人</span><span class="sxs-lookup"><span data-stu-id="088cf-263">Guests</span></span>
-- <span data-ttu-id="088cf-264">群組的建立限制</span><span class="sxs-lookup"><span data-stu-id="088cf-264">Restriction of Group creation</span></span>
+- <span data-ttu-id="02b19-260">群組成員資格</span><span class="sxs-lookup"><span data-stu-id="02b19-260">Group membership</span></span>
+- <span data-ttu-id="02b19-261">命名原則</span><span class="sxs-lookup"><span data-stu-id="02b19-261">Naming policy</span></span>
+- <span data-ttu-id="02b19-262">到期原則</span><span class="sxs-lookup"><span data-stu-id="02b19-262">Expiration policy</span></span>
+- <span data-ttu-id="02b19-263">客人</span><span class="sxs-lookup"><span data-stu-id="02b19-263">Guests</span></span>
+- <span data-ttu-id="02b19-264">群組的建立限制</span><span class="sxs-lookup"><span data-stu-id="02b19-264">Restriction of Group creation</span></span>
 
-<span data-ttu-id="088cf-265">**Azure AD 是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-265">**Can Azure AD create a Group?**</span></span>
+<span data-ttu-id="02b19-265">**Azure AD 是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-265">**Can Azure AD create a Group?**</span></span>
 
-<span data-ttu-id="088cf-266">是的，可以從 Azure AD 建立 Microsoft 365 群組，既可以透過管理網頁入口網站，也可以透過 PowerShell 或 Graph API。</span><span class="sxs-lookup"><span data-stu-id="088cf-266">Yes, Microsoft 365 Groups can be created from Azure AD either through the administration web portal, through PowerShell, or Graph API.</span></span>
+<span data-ttu-id="02b19-266">是的，可以從 Azure AD 建立 Microsoft 365 群組，既可以透過管理網頁入口網站，也可以透過 PowerShell 或 Graph API。</span><span class="sxs-lookup"><span data-stu-id="02b19-266">Yes, Microsoft 365 Groups can be created from Azure AD either through the administration web portal, through PowerShell, or Graph API.</span></span>
 
-<span data-ttu-id="088cf-267">**Azure AD 是否存在沒有群組的情況？**</span><span class="sxs-lookup"><span data-stu-id="088cf-267">**Does Azure AD exist without a group?**</span></span>
+<span data-ttu-id="02b19-267">**Azure AD 是否存在沒有群組的情況？**</span><span class="sxs-lookup"><span data-stu-id="02b19-267">**Does Azure AD exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-268">是的，Azure AD 執行的服務數目很多，與 Microsoft 365 群組沒有關系。</span><span class="sxs-lookup"><span data-stu-id="088cf-268">Yes, Azure AD performs a great number of services that have no relation to Microsoft 365 Groups.</span></span> <span data-ttu-id="088cf-269">每個 Microsoft 365 群組都代表 Azure AD 中的一個物件。</span><span class="sxs-lookup"><span data-stu-id="088cf-269">Each Microsoft 365 group is represented as an object in Azure AD.</span></span>
+<span data-ttu-id="02b19-268">是的，Azure AD 執行的服務數目很多，與 Microsoft 365 群組沒有關系。</span><span class="sxs-lookup"><span data-stu-id="02b19-268">Yes, Azure AD performs a great number of services that have no relation to Microsoft 365 Groups.</span></span> <span data-ttu-id="02b19-269">每個 Microsoft 365 群組都代表 Azure AD 中的一個物件。</span><span class="sxs-lookup"><span data-stu-id="02b19-269">Each Microsoft 365 group is represented as an object in Azure AD.</span></span>
 
-<span data-ttu-id="088cf-270">**每個群組是否可以有多個 Azure AD 實例？**</span><span class="sxs-lookup"><span data-stu-id="088cf-270">**Can there be multiple instances of Azure AD per Group?**</span></span>
+<span data-ttu-id="02b19-270">**每個群組是否可以有多個 Azure AD 實例？**</span><span class="sxs-lookup"><span data-stu-id="02b19-270">**Can there be multiple instances of Azure AD per Group?**</span></span>
 
-<span data-ttu-id="088cf-271">否，Azure AD 只有一個實例。</span><span class="sxs-lookup"><span data-stu-id="088cf-271">No, there is only one instance of Azure AD.</span></span>
+<span data-ttu-id="02b19-271">否，Azure AD 只有一個實例。</span><span class="sxs-lookup"><span data-stu-id="02b19-271">No, there is only one instance of Azure AD.</span></span>
 
-<span data-ttu-id="088cf-272">**Azure AD 是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-272">**Can Azure AD be associated with multiple Groups?**</span></span>
+<span data-ttu-id="02b19-272">**Azure AD 是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-272">**Can Azure AD be associated with multiple Groups?**</span></span>
 
-<span data-ttu-id="088cf-273">是的，因為 Azure AD 是提供群組成員資格服務的基礎平臺。</span><span class="sxs-lookup"><span data-stu-id="088cf-273">Yes, because Azure AD is the underlying platform that provides the group membership service.</span></span>
+<span data-ttu-id="02b19-273">是的，因為 Azure AD 是提供群組成員資格服務的基礎平臺。</span><span class="sxs-lookup"><span data-stu-id="02b19-273">Yes, because Azure AD is the underlying platform that provides the group membership service.</span></span>
 
-<span data-ttu-id="088cf-274">**Azure AD 與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-274">**Can Azure AD’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-274">**Azure AD 與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-274">**Can Azure AD’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-275">否，Azure AD 是群組存在所在的基礎平臺。</span><span class="sxs-lookup"><span data-stu-id="088cf-275">No, Azure AD is the underlying platform where groups exist.</span></span>
+<span data-ttu-id="02b19-275">否，Azure AD 是群組存在所在的基礎平臺。</span><span class="sxs-lookup"><span data-stu-id="02b19-275">No, Azure AD is the underlying platform where groups exist.</span></span>
 
-<span data-ttu-id="088cf-276">**刪除此實例後，會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-276">**Does deleting the instance delete the Group?**</span></span>
+<span data-ttu-id="02b19-276">**刪除此實例後，會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-276">**Does deleting the instance delete the Group?**</span></span>
 
-<span data-ttu-id="088cf-277">刪除 Azure AD 中的群組將會刪除相關的群組相關服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-277">Deleting the group in Azure AD will delete relevant group-associated services and content.</span></span>
+<span data-ttu-id="02b19-277">刪除 Azure AD 中的群組將會刪除相關的群組相關服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-277">Deleting the group in Azure AD will delete relevant group-associated services and content.</span></span>
 
-## <a name="teams"></a><span data-ttu-id="088cf-278">Teams</span><span class="sxs-lookup"><span data-stu-id="088cf-278">Teams</span></span>
+## <a name="teams"></a><span data-ttu-id="02b19-278">Teams</span><span class="sxs-lookup"><span data-stu-id="02b19-278">Teams</span></span>
 
-<span data-ttu-id="088cf-279">Teams 是一個以聊天為中心的工作區，可提供單一介面，以與各種 Microsoft 和協力廠商服務互動，以提升共同作業。</span><span class="sxs-lookup"><span data-stu-id="088cf-279">Teams is a chat-centered workspace aimed at enhancing collaboration by providing a singular interface to interact with a variety of Microsoft and third-party services.</span></span>
+<span data-ttu-id="02b19-279">Teams 是一個以聊天為中心的工作區，可提供單一介面，以與各種 Microsoft 和協力廠商服務互動，以提升共同作業。</span><span class="sxs-lookup"><span data-stu-id="02b19-279">Teams is a chat-centered workspace aimed at enhancing collaboration by providing a singular interface to interact with a variety of Microsoft and third-party services.</span></span>
 
-<span data-ttu-id="088cf-280">根據預設，當建立小組時，與 Microsoft 365 群組相關聯的信箱和行事曆會從 Exchange 中的全域通訊清單及 Outlook 中隱藏。</span><span class="sxs-lookup"><span data-stu-id="088cf-280">By default, when a team is created, the mailbox and calendar associated with the Microsoft 365 group are hidden from both the Global Address List in Exchange, as well as Outlook.</span></span> <span data-ttu-id="088cf-281">如果使用者想要在相同的 Microsoft 365 群組上使用 Outlook 和 Teams，系統管理員可以手動覆寫此方式。</span><span class="sxs-lookup"><span data-stu-id="088cf-281">This can be manually overridden by an administrator if the user would like to use both Outlook and Teams on the same Microsoft 365 Group.</span></span>
+<span data-ttu-id="02b19-280">根據預設，當建立小組時，與 Microsoft 365 群組相關聯的信箱和行事曆會從 Exchange 中的全域通訊清單及 Outlook 中隱藏。</span><span class="sxs-lookup"><span data-stu-id="02b19-280">By default, when a team is created, the mailbox and calendar associated with the Microsoft 365 group are hidden from both the Global Address List in Exchange, as well as Outlook.</span></span> <span data-ttu-id="02b19-281">如果使用者想要在相同的 Microsoft 365 群組上使用 Outlook 和 Teams，系統管理員可以手動覆寫此方式。</span><span class="sxs-lookup"><span data-stu-id="02b19-281">This can be manually overridden by an administrator if the user would like to use both Outlook and Teams on the same Microsoft 365 Group.</span></span>
 
-<span data-ttu-id="088cf-282">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-282">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-282">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-282">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-283">交談</span><span class="sxs-lookup"><span data-stu-id="088cf-283">Conversations</span></span>
-- <span data-ttu-id="088cf-284">通道 &] 索引標籤</span><span class="sxs-lookup"><span data-stu-id="088cf-284">Channels & tabs</span></span>
-- <span data-ttu-id="088cf-285">會議</span><span class="sxs-lookup"><span data-stu-id="088cf-285">Meetings</span></span>
+- <span data-ttu-id="02b19-283">交談</span><span class="sxs-lookup"><span data-stu-id="02b19-283">Conversations</span></span>
+- <span data-ttu-id="02b19-284">通道 &] 索引標籤</span><span class="sxs-lookup"><span data-stu-id="02b19-284">Channels & tabs</span></span>
+- <span data-ttu-id="02b19-285">會議</span><span class="sxs-lookup"><span data-stu-id="02b19-285">Meetings</span></span>
 
-<span data-ttu-id="088cf-286">**可以 Teams 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-286">**Can Teams create a group?**</span></span>
+<span data-ttu-id="02b19-286">**可以 Teams 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-286">**Can Teams create a group?**</span></span>
 
-<span data-ttu-id="088cf-287">是的，建立新的小組將會建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-287">Yes, creating a new team will create a new Microsoft 365 group.</span></span> <span data-ttu-id="088cf-288">您也可以為目前沒有的群組建立小組。</span><span class="sxs-lookup"><span data-stu-id="088cf-288">It is also possible to create a team for an existing group that does not currently have one.</span></span>
+<span data-ttu-id="02b19-287">是的，建立新的小組將會建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-287">Yes, creating a new team will create a new Microsoft 365 group.</span></span> <span data-ttu-id="02b19-288">您也可以為目前沒有的群組建立小組。</span><span class="sxs-lookup"><span data-stu-id="02b19-288">It is also possible to create a team for an existing group that does not currently have one.</span></span>
 
-<span data-ttu-id="088cf-289">**是否有小組沒有群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-289">**Do teams exist without a group?**</span></span>
+<span data-ttu-id="02b19-289">**是否有小組沒有群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-289">**Do teams exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-290">否，不可能有小組沒有群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-290">No, it is not possible for a team to exist without a Group.</span></span>
+<span data-ttu-id="02b19-290">否，不可能有小組沒有群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-290">No, it is not possible for a team to exist without a Group.</span></span>
 
-<span data-ttu-id="088cf-291">**每個群組可以有多個團隊嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-291">**Can there be multiple teams per group?**</span></span>
+<span data-ttu-id="02b19-291">**每個群組可以有多個團隊嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-291">**Can there be multiple teams per group?**</span></span>
 
-<span data-ttu-id="088cf-292">否，小組和群組之間的關聯性是1:1。</span><span class="sxs-lookup"><span data-stu-id="088cf-292">No, the relationship between a team and a group is 1:1.</span></span>
+<span data-ttu-id="02b19-292">否，小組和群組之間的關聯性是1:1。</span><span class="sxs-lookup"><span data-stu-id="02b19-292">No, the relationship between a team and a group is 1:1.</span></span>
 
-<span data-ttu-id="088cf-293">**小組是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-293">**Can a team be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-293">**小組是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-293">**Can a team be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-294">否，小組自身只能與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-294">No, the team itself can only be associated with a single group.</span></span>
+<span data-ttu-id="02b19-294">否，小組自身只能與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-294">No, the team itself can only be associated with a single group.</span></span>
 
-<span data-ttu-id="088cf-295">**小組與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-295">**Can a team’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-295">**小組與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-295">**Can a team’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-296">否，小組只會與其最初關聯的群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-296">No, the team can only ever be associated with the group to which it was originally associated.</span></span>
+<span data-ttu-id="02b19-296">否，小組只會與其最初關聯的群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-296">No, the team can only ever be associated with the group to which it was originally associated.</span></span>
 
-<span data-ttu-id="088cf-297">**刪除小組是否刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-297">**Does deleting the team delete the group?**</span></span>
+<span data-ttu-id="02b19-297">**刪除小組是否刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-297">**Does deleting the team delete the group?**</span></span>
 
-<span data-ttu-id="088cf-298">是，刪除 Microsoft Teams 中的團隊將會刪除群組、群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-298">Yes, deleting the team in Microsoft Teams will delete the group, group-associated services, and content.</span></span>
+<span data-ttu-id="02b19-298">是，刪除 Microsoft Teams 中的團隊將會刪除群組、群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-298">Yes, deleting the team in Microsoft Teams will delete the group, group-associated services, and content.</span></span>
 
-## <a name="exchange"></a><span data-ttu-id="088cf-299">Exchange</span><span class="sxs-lookup"><span data-stu-id="088cf-299">Exchange</span></span>
+## <a name="exchange"></a><span data-ttu-id="02b19-299">Exchange</span><span class="sxs-lookup"><span data-stu-id="02b19-299">Exchange</span></span>
 
-<span data-ttu-id="088cf-300">Exchange Online 提供郵件、行事曆、連絡人及相關聯的功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-300">Exchange Online provides messaging, calendar, contact, and associated functionality.</span></span> <span data-ttu-id="088cf-301">在群組的內容中，只有單一資源與整個服務實例相關聯–而非相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-301">In the context of a Group, only a single resource is associated – as opposed to an entire service instance.</span></span>
+<span data-ttu-id="02b19-300">Exchange Online 提供郵件、行事曆、連絡人及相關聯的功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-300">Exchange Online provides messaging, calendar, contact, and associated functionality.</span></span> <span data-ttu-id="02b19-301">在群組的內容中，只有單一資源與整個服務實例相關聯–而非相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-301">In the context of a Group, only a single resource is associated – as opposed to an entire service instance.</span></span>
 
-<span data-ttu-id="088cf-302">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-302">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-302">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-302">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-303">信箱和行事曆</span><span class="sxs-lookup"><span data-stu-id="088cf-303">Mailbox and calendar</span></span>
-- <span data-ttu-id="088cf-304">能夠以電子郵件傳送所有群組成員</span><span class="sxs-lookup"><span data-stu-id="088cf-304">Ability to email all Group members</span></span>
-- <span data-ttu-id="088cf-305">儲存體 eDiscovery 目的 Teams 通道交談、Planner 批註</span><span class="sxs-lookup"><span data-stu-id="088cf-305">Storage of Teams channel conversations for eDiscovery purposes, Planner comments</span></span>
+- <span data-ttu-id="02b19-303">信箱和行事曆</span><span class="sxs-lookup"><span data-stu-id="02b19-303">Mailbox and calendar</span></span>
+- <span data-ttu-id="02b19-304">能夠以電子郵件傳送所有群組成員</span><span class="sxs-lookup"><span data-stu-id="02b19-304">Ability to email all Group members</span></span>
+- <span data-ttu-id="02b19-305">儲存體 eDiscovery 目的 Teams 通道交談、Planner 批註</span><span class="sxs-lookup"><span data-stu-id="02b19-305">Storage of Teams channel conversations for eDiscovery purposes, Planner comments</span></span>
 
-<span data-ttu-id="088cf-306">**可以 Exchange 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-306">**Can Exchange create a group?**</span></span>
+<span data-ttu-id="02b19-306">**可以 Exchange 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-306">**Can Exchange create a group?**</span></span>
 
-<span data-ttu-id="088cf-307">是的，您可以從 Exchange Online 系統管理中心，以及從 Outlook 中建立群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-307">Yes, it is possible to create a group from the Exchange Online admin center, as well as from Outlook.</span></span> <span data-ttu-id="088cf-308">您也可以將 Exchange 通訊群組清單轉換成 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-308">You can also convert Exchange distribution lists to Microsoft 365 groups.</span></span>
+<span data-ttu-id="02b19-307">是的，您可以從 Exchange Online 系統管理中心，以及從 Outlook 中建立群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-307">Yes, it is possible to create a group from the Exchange Online admin center, as well as from Outlook.</span></span> <span data-ttu-id="02b19-308">您也可以將 Exchange 通訊群組清單轉換成 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-308">You can also convert Exchange distribution lists to Microsoft 365 groups.</span></span>
 
-<span data-ttu-id="088cf-309">**是否 Exchange 存在沒有群組的情況？**</span><span class="sxs-lookup"><span data-stu-id="088cf-309">**Does Exchange exist without a Group?**</span></span>
+<span data-ttu-id="02b19-309">**是否 Exchange 存在沒有群組的情況？**</span><span class="sxs-lookup"><span data-stu-id="02b19-309">**Does Exchange exist without a Group?**</span></span>
 
-<span data-ttu-id="088cf-310">是的，Exchange Online 提供許多服務，包括共用信箱和行事曆，沒有任何群組關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-310">Yes, Exchange Online provides a number of services, including shared mailboxes and calendars, without any group association.</span></span>
+<span data-ttu-id="02b19-310">是的，Exchange Online 提供許多服務，包括共用信箱和行事曆，沒有任何群組關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-310">Yes, Exchange Online provides a number of services, including shared mailboxes and calendars, without any group association.</span></span>
 
-<span data-ttu-id="088cf-311">**每個群組是否可以有多個 Exchange 信箱或行事曆實例？**</span><span class="sxs-lookup"><span data-stu-id="088cf-311">**Can there be multiple instances of Exchange mailboxes or calendars per group?**</span></span>
+<span data-ttu-id="02b19-311">**每個群組是否可以有多個 Exchange 信箱或行事曆實例？**</span><span class="sxs-lookup"><span data-stu-id="02b19-311">**Can there be multiple instances of Exchange mailboxes or calendars per group?**</span></span>
 
-<span data-ttu-id="088cf-312">否，群組只能有單一 Exchange Online 信箱和行事曆。</span><span class="sxs-lookup"><span data-stu-id="088cf-312">No, there can only be a single Exchange Online mailbox and calendar for a group.</span></span>
+<span data-ttu-id="02b19-312">否，群組只能有單一 Exchange Online 信箱和行事曆。</span><span class="sxs-lookup"><span data-stu-id="02b19-312">No, there can only be a single Exchange Online mailbox and calendar for a group.</span></span>
 
-<span data-ttu-id="088cf-313">**信箱和行事曆是否可以與多個群組相關聯 Exchange？**</span><span class="sxs-lookup"><span data-stu-id="088cf-313">**Can Exchange mailboxes and calendars be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-313">**信箱和行事曆是否可以與多個群組相關聯 Exchange？**</span><span class="sxs-lookup"><span data-stu-id="02b19-313">**Can Exchange mailboxes and calendars be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-314">否，信箱和行事曆與群組之間有1:1 的關係。</span><span class="sxs-lookup"><span data-stu-id="088cf-314">No, the mailbox and calendar have a 1:1 relationship with the group.</span></span> <span data-ttu-id="088cf-315">您可以與其他使用者或群組共用信箱，但這不會建立任何形式的服務關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-315">It is possible to share the mailbox with other users or groups, however this does not establish any form of service association.</span></span>
+<span data-ttu-id="02b19-314">否，信箱和行事曆與群組之間有1:1 的關係。</span><span class="sxs-lookup"><span data-stu-id="02b19-314">No, the mailbox and calendar have a 1:1 relationship with the group.</span></span> <span data-ttu-id="02b19-315">您可以與其他使用者或群組共用信箱，但這不會建立任何形式的服務關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-315">It is possible to share the mailbox with other users or groups, however this does not establish any form of service association.</span></span>
 
-<span data-ttu-id="088cf-316">**Exchange 信箱或行事曆與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-316">**Can the Exchange mailbox or calendar’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-316">**Exchange 信箱或行事曆與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-316">**Can the Exchange mailbox or calendar’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-317">否，信箱和行事曆無法變更為不同的群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-317">No, the mailbox and calendar   cannot be changed to a different group.</span></span> <span data-ttu-id="088cf-318">不過，您可以在 Outlook 中或使用協力廠商工具，將內容從一個信箱移至另一個信箱。</span><span class="sxs-lookup"><span data-stu-id="088cf-318">However, the content can be moved from one mailbox to another within Outlook or by using a third-party tool.</span></span>
+<span data-ttu-id="02b19-317">否，信箱和行事曆無法變更為不同的群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-317">No, the mailbox and calendar   cannot be changed to a different group.</span></span> <span data-ttu-id="02b19-318">不過，您可以在 Outlook 中或使用協力廠商工具，將內容從一個信箱移至另一個信箱。</span><span class="sxs-lookup"><span data-stu-id="02b19-318">However, the content can be moved from one mailbox to another within Outlook or by using a third-party tool.</span></span>
 
-<span data-ttu-id="088cf-319">**刪除信箱會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-319">**Does deleting the mailbox delete the group?**</span></span>
+<span data-ttu-id="02b19-319">**刪除信箱會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-319">**Does deleting the mailbox delete the group?**</span></span>
 
-<span data-ttu-id="088cf-320">是的，在 Exchange 中刪除信箱將會刪除群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-320">Yes, deleting the mailbox in Exchange will delete the group as well as group-associated services and content.</span></span>
+<span data-ttu-id="02b19-320">是的，在 Exchange 中刪除信箱將會刪除群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-320">Yes, deleting the mailbox in Exchange will delete the group as well as group-associated services and content.</span></span>
 
-## <a name="forms"></a><span data-ttu-id="088cf-321">表單</span><span class="sxs-lookup"><span data-stu-id="088cf-321">Forms</span></span>
+## <a name="forms"></a><span data-ttu-id="02b19-321">Forms</span><span class="sxs-lookup"><span data-stu-id="02b19-321">Forms</span></span>
 
-<span data-ttu-id="088cf-322">表單提供 web 型問卷調查和測驗。</span><span class="sxs-lookup"><span data-stu-id="088cf-322">Forms provides web-based surveys and quizzes.</span></span>
+<span data-ttu-id="02b19-322">表單提供 web 型問卷調查和測驗。</span><span class="sxs-lookup"><span data-stu-id="02b19-322">Forms provides web-based surveys and quizzes.</span></span>
 
-<span data-ttu-id="088cf-323">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-323">**Key features provided to groups**</span></span>
+<span data-ttu-id="02b19-323">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-323">**Key features provided to groups**</span></span>
 
-- <span data-ttu-id="088cf-324">表單的擁有權</span><span class="sxs-lookup"><span data-stu-id="088cf-324">Ownership of forms</span></span>
+- <span data-ttu-id="02b19-324">表單的擁有權</span><span class="sxs-lookup"><span data-stu-id="02b19-324">Ownership of forms</span></span>
 
-<span data-ttu-id="088cf-325">**表單是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-325">**Can Forms create a group?**</span></span>
+<span data-ttu-id="02b19-325">**表單是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-325">**Can Forms create a group?**</span></span>
 
-<span data-ttu-id="088cf-326">否，表單無法建立群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-326">No, Forms cannot create a group.</span></span>
+<span data-ttu-id="02b19-326">否，表單無法建立群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-326">No, Forms cannot create a group.</span></span>
 
-<span data-ttu-id="088cf-327">**表單是否有沒有群組的功能？**</span><span class="sxs-lookup"><span data-stu-id="088cf-327">**Do forms exist without a group?**</span></span>
+<span data-ttu-id="02b19-327">**表單是否有沒有群組的功能？**</span><span class="sxs-lookup"><span data-stu-id="02b19-327">**Do forms exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-328">是的，您可以直接在使用者的帳戶中建立調查和測驗。</span><span class="sxs-lookup"><span data-stu-id="088cf-328">Yes, surveys and quizzes can be created directly in an end-user’s account.</span></span>
+<span data-ttu-id="02b19-328">是的，您可以直接在使用者的帳戶中建立調查和測驗。</span><span class="sxs-lookup"><span data-stu-id="02b19-328">Yes, surveys and quizzes can be created directly in an end-user’s account.</span></span>
 
-<span data-ttu-id="088cf-329">**每個群組可以有多個表單嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-329">**Can there be multiple forms per group?**</span></span>
+<span data-ttu-id="02b19-329">**每個群組可以有多個表單嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-329">**Can there be multiple forms per group?**</span></span>
 
-<span data-ttu-id="088cf-330">是的，可以有多個表單與一個群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-330">Yes, there can be multiple forms associated with a group.</span></span>
+<span data-ttu-id="02b19-330">是的，可以有多個表單與一個群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-330">Yes, there can be multiple forms associated with a group.</span></span>
 
-<span data-ttu-id="088cf-331">**表單是否可與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-331">**Can forms be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-331">**表單是否可與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-331">**Can forms be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-332">否，表單只可與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-332">No, a form can only be associated with a single group.</span></span>
+<span data-ttu-id="02b19-332">否，表單只可與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-332">No, a form can only be associated with a single group.</span></span>
 
-<span data-ttu-id="088cf-333">**表單與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-333">**Can a form’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-333">**表單與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-333">**Can a form’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-334">否，表單與群組建立關聯 (，或從個別) 取得擁有權時，無法將它移到另一個群組中。</span><span class="sxs-lookup"><span data-stu-id="088cf-334">No, once a form is associated with a group (either created directly within, or ownership transferred from an individual) it cannot be moved to another group.</span></span>
+<span data-ttu-id="02b19-334">否，表單與群組建立關聯 (，或從個別) 取得擁有權時，無法將它移到另一個群組中。</span><span class="sxs-lookup"><span data-stu-id="02b19-334">No, once a form is associated with a group (either created directly within, or ownership transferred from an individual) it cannot be moved to another group.</span></span>
 
-<span data-ttu-id="088cf-335">**刪除表單會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-335">**Does deleting the form delete the group?**</span></span>
+<span data-ttu-id="02b19-335">**刪除表單會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-335">**Does deleting the form delete the group?**</span></span>
 
-<span data-ttu-id="088cf-336">否，不可能從表單介面中刪除群組，只能從個別表單刪除。</span><span class="sxs-lookup"><span data-stu-id="088cf-336">No, it is not possible to delete a group from the Forms interface, only individual forms.</span></span>
+<span data-ttu-id="02b19-336">否，不可能從表單介面中刪除群組，只能從個別表單刪除。</span><span class="sxs-lookup"><span data-stu-id="02b19-336">No, it is not possible to delete a group from the Forms interface, only individual forms.</span></span>
 
-## <a name="onenote"></a><span data-ttu-id="088cf-337">OneNote</span><span class="sxs-lookup"><span data-stu-id="088cf-337">OneNote</span></span>
+## <a name="onenote"></a><span data-ttu-id="02b19-337">OneNote</span><span class="sxs-lookup"><span data-stu-id="02b19-337">OneNote</span></span>
 
-<span data-ttu-id="088cf-338">OneNote 是數位筆記本應用程式。</span><span class="sxs-lookup"><span data-stu-id="088cf-338">OneNote is a digital notebook application.</span></span> <span data-ttu-id="088cf-339">以群組建立的 OneNote 筆記本是關聯 SharePoint 網站中的檔案，而不是群組聯機服務。</span><span class="sxs-lookup"><span data-stu-id="088cf-339">The OneNote notebook created with a group is a file in the associated SharePoint site rather than a group-connected service.</span></span>
+<span data-ttu-id="02b19-338">OneNote 是數位筆記本應用程式。</span><span class="sxs-lookup"><span data-stu-id="02b19-338">OneNote is a digital notebook application.</span></span> <span data-ttu-id="02b19-339">以群組建立的 OneNote 筆記本是關聯 SharePoint 網站中的檔案，而不是群組聯機服務。</span><span class="sxs-lookup"><span data-stu-id="02b19-339">The OneNote notebook created with a group is a file in the associated SharePoint site rather than a group-connected service.</span></span>
 
-<span data-ttu-id="088cf-340">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-340">**Key features provided to groups**</span></span>
+<span data-ttu-id="02b19-340">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-340">**Key features provided to groups**</span></span>
 
-- <span data-ttu-id="088cf-341">儲存在群組相關 SharePoint 庫中的共用筆記本 () </span><span class="sxs-lookup"><span data-stu-id="088cf-341">Shared notebook (stored in the Group-associated SharePoint library)</span></span>
+- <span data-ttu-id="02b19-341">儲存在群組相關 SharePoint 庫中的共用筆記本 () </span><span class="sxs-lookup"><span data-stu-id="02b19-341">Shared notebook (stored in the Group-associated SharePoint library)</span></span>
 
-<span data-ttu-id="088cf-342">**可以 OneNote 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-342">**Can OneNote create a group?**</span></span>
+<span data-ttu-id="02b19-342">**可以 OneNote 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-342">**Can OneNote create a group?**</span></span>
 
-<span data-ttu-id="088cf-343">否，OneNote 應用程式無法建立群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-343">No, the OneNote application cannot create a group.</span></span>
+<span data-ttu-id="02b19-343">否，OneNote 應用程式無法建立群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-343">No, the OneNote application cannot create a group.</span></span>
 
-<span data-ttu-id="088cf-344">**是否有沒有群組的 OneNote 筆記本？**</span><span class="sxs-lookup"><span data-stu-id="088cf-344">**Do OneNote notebooks exist without a group?**</span></span>
+<span data-ttu-id="02b19-344">**是否有沒有群組的 OneNote 筆記本？**</span><span class="sxs-lookup"><span data-stu-id="02b19-344">**Do OneNote notebooks exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-345">是，筆記本可以直接在 OneDrive 或其他共用位置建立。</span><span class="sxs-lookup"><span data-stu-id="088cf-345">Yes, notebooks can be created directly in OneDrive or in other shared locations.</span></span>
+<span data-ttu-id="02b19-345">是，筆記本可以直接在 OneDrive 或其他共用位置建立。</span><span class="sxs-lookup"><span data-stu-id="02b19-345">Yes, notebooks can be created directly in OneDrive or in other shared locations.</span></span>
 
-<span data-ttu-id="088cf-346">**每個群組是否可以有多個 OneNote 筆記本？**</span><span class="sxs-lookup"><span data-stu-id="088cf-346">**Can there be multiple OneNote notebooks per group?**</span></span>
+<span data-ttu-id="02b19-346">**每個群組是否可以有多個 OneNote 筆記本？**</span><span class="sxs-lookup"><span data-stu-id="02b19-346">**Can there be multiple OneNote notebooks per group?**</span></span>
 
-<span data-ttu-id="088cf-347">是的，預設會建立筆記本，而且可以新增其他人，但是來自群組相關服務的任何 OneNote 連結，都不會進入預設的筆記本。</span><span class="sxs-lookup"><span data-stu-id="088cf-347">Yes, a notebook is created by default and others can be added, however any link to OneNote from group-associated services will always go to the default notebook.</span></span>
+<span data-ttu-id="02b19-347">是的，預設會建立筆記本，而且可以新增其他人，但是來自群組相關服務的任何 OneNote 連結，都不會進入預設的筆記本。</span><span class="sxs-lookup"><span data-stu-id="02b19-347">Yes, a notebook is created by default and others can be added, however any link to OneNote from group-associated services will always go to the default notebook.</span></span>
 
-<span data-ttu-id="088cf-348">**OneNote 的筆記本是否可以與多個群組產生關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-348">**Can a OneNote notebook be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-348">**OneNote 的筆記本是否可以與多個群組產生關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-348">**Can a OneNote notebook be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-349">否，筆記本會儲存在群組相關聯的 SharePoint 網站文件庫中，並從各種介面連結。</span><span class="sxs-lookup"><span data-stu-id="088cf-349">No, the notebook is stored in the group-associated SharePoint site library and linked from various interfaces.</span></span> <span data-ttu-id="088cf-350">不過，您可以與其他群組共用，其方式與個人共用的方式相同。</span><span class="sxs-lookup"><span data-stu-id="088cf-350">It can however be shared with other Groups in the same way it can be shared with individuals.</span></span>
+<span data-ttu-id="02b19-349">否，筆記本會儲存在群組相關聯的 SharePoint 網站文件庫中，並從各種介面連結。</span><span class="sxs-lookup"><span data-stu-id="02b19-349">No, the notebook is stored in the group-associated SharePoint site library and linked from various interfaces.</span></span> <span data-ttu-id="02b19-350">不過，您可以與其他群組共用，其方式與個人共用的方式相同。</span><span class="sxs-lookup"><span data-stu-id="02b19-350">It can however be shared with other Groups in the same way it can be shared with individuals.</span></span>
 
-<span data-ttu-id="088cf-351">**筆記本與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-351">**Can the notebook’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-351">**筆記本與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-351">**Can the notebook’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-352">否，筆記本本身會與群組產生關聯，而且可以從其他群組聯機服務直接存取，但是可以在 OneNote 應用程式內，將內容從一個筆記本移至另一個。</span><span class="sxs-lookup"><span data-stu-id="088cf-352">No, the notebook itself is associated with the group and can be directly accessed from other group-connected services, however the content can be moved from one notebook to another within the OneNote application.</span></span>
+<span data-ttu-id="02b19-352">否，筆記本本身會與群組產生關聯，而且可以從其他群組聯機服務直接存取，但是可以在 OneNote 應用程式內，將內容從一個筆記本移至另一個。</span><span class="sxs-lookup"><span data-stu-id="02b19-352">No, the notebook itself is associated with the group and can be directly accessed from other group-connected services, however the content can be moved from one notebook to another within the OneNote application.</span></span>
 
-<span data-ttu-id="088cf-353">**刪除筆記本刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-353">**Does deleting the notebook delete the group?**</span></span>
+<span data-ttu-id="02b19-353">**刪除筆記本刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-353">**Does deleting the notebook delete the group?**</span></span>
 
-<span data-ttu-id="088cf-354">否，但如果刪除 OneNote 筆記本，某些群組相關服務中的連結可能會中斷。</span><span class="sxs-lookup"><span data-stu-id="088cf-354">No, however if the OneNote notebook is deleted there may be broken links in some of the group-associated services.</span></span>
+<span data-ttu-id="02b19-354">否，但如果刪除 OneNote 筆記本，某些群組相關服務中的連結可能會中斷。</span><span class="sxs-lookup"><span data-stu-id="02b19-354">No, however if the OneNote notebook is deleted there may be broken links in some of the group-associated services.</span></span>
 
-## <a name="planner"></a><span data-ttu-id="088cf-355">Planner</span><span class="sxs-lookup"><span data-stu-id="088cf-355">Planner</span></span>
+## <a name="planner"></a><span data-ttu-id="02b19-355">Planner</span><span class="sxs-lookup"><span data-stu-id="02b19-355">Planner</span></span>
 
-<span data-ttu-id="088cf-356">Planner 是輕量群組任務管理服務。</span><span class="sxs-lookup"><span data-stu-id="088cf-356">Planner is a lightweight  group task management service.</span></span>
+<span data-ttu-id="02b19-356">Planner 是輕量群組任務管理服務。</span><span class="sxs-lookup"><span data-stu-id="02b19-356">Planner is a lightweight  group task management service.</span></span>
 
-<span data-ttu-id="088cf-357">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-357">**Key features provided to groups**</span></span>
+<span data-ttu-id="02b19-357">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-357">**Key features provided to groups**</span></span>
 
-- <span data-ttu-id="088cf-358">管理群組任務的外掛程式</span><span class="sxs-lookup"><span data-stu-id="088cf-358">Board for managing group tasks</span></span>
+- <span data-ttu-id="02b19-358">管理群組任務的外掛程式</span><span class="sxs-lookup"><span data-stu-id="02b19-358">Board for managing group tasks</span></span>
 
-<span data-ttu-id="088cf-359">**Planner 是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-359">**Can Planner create a group?**</span></span>
+<span data-ttu-id="02b19-359">**Planner 是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-359">**Can Planner create a group?**</span></span>
 
-<span data-ttu-id="088cf-360">是的，建立計畫將會建立新的群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-360">Yes, creation of a plan will create a new group.</span></span>
+<span data-ttu-id="02b19-360">是的，建立計畫將會建立新的群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-360">Yes, creation of a plan will create a new group.</span></span>
 
-<span data-ttu-id="088cf-361">**Planner 面板是否不存在群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-361">**Does a Planner board exist without a group?**</span></span>
+<span data-ttu-id="02b19-361">**Planner 面板是否不存在群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-361">**Does a Planner board exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-362">否，計畫必須與群組產生關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-362">No, a plan must be associated with a group.</span></span>
+<span data-ttu-id="02b19-362">否，計畫必須與群組產生關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-362">No, a plan must be associated with a group.</span></span>
 
-<span data-ttu-id="088cf-363">**每個群組可以有多個方案嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-363">**Can there be multiple plans per group?**</span></span>
+<span data-ttu-id="02b19-363">**每個群組可以有多個方案嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-363">**Can there be multiple plans per group?**</span></span>
 
-<span data-ttu-id="088cf-364">是，每個群組可以有多個方案。</span><span class="sxs-lookup"><span data-stu-id="088cf-364">Yes, there can be multiple plans per group.</span></span>
+<span data-ttu-id="02b19-364">是，每個群組可以有多個方案。</span><span class="sxs-lookup"><span data-stu-id="02b19-364">Yes, there can be multiple plans per group.</span></span>
 
-<span data-ttu-id="088cf-365">**方案是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-365">**Can a plan be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-365">**方案是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-365">**Can a plan be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-366">否，計畫只依靠群組成員資格來決定存取權。</span><span class="sxs-lookup"><span data-stu-id="088cf-366">No, a plan relies solely on the group membership to determine access.</span></span>
+<span data-ttu-id="02b19-366">否，計畫只依靠群組成員資格來決定存取權。</span><span class="sxs-lookup"><span data-stu-id="02b19-366">No, a plan relies solely on the group membership to determine access.</span></span>
 
-<span data-ttu-id="088cf-367">**方案與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-367">**Can a plan’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-367">**方案與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-367">**Can a plan’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-368">否，但是複製計畫會建立新的群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-368">No, however copying a plan creates a new group.</span></span>
+<span data-ttu-id="02b19-368">否，但是複製計畫會建立新的群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-368">No, however copying a plan creates a new group.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="088cf-369">任何其他應用程式所建立的群組不會自動顯示給使用者的 Planner。</span><span class="sxs-lookup"><span data-stu-id="088cf-369">A Group created by any other application will not show up in Planner automatically for a user.</span></span> <span data-ttu-id="088cf-370">若要先存取董事會，必須從另一個以群組為基礎的介面開啟它，例如 Outlook。</span><span class="sxs-lookup"><span data-stu-id="088cf-370">To access the board initially they will need to open it from another Group-based interface such as Outlook.</span></span>
+> <span data-ttu-id="02b19-369">任何其他應用程式所建立的群組不會自動顯示給使用者的 Planner。</span><span class="sxs-lookup"><span data-stu-id="02b19-369">A Group created by any other application will not show up in Planner automatically for a user.</span></span> <span data-ttu-id="02b19-370">若要先存取董事會，必須從另一個以群組為基礎的介面開啟它，例如 Outlook。</span><span class="sxs-lookup"><span data-stu-id="02b19-370">To access the board initially they will need to open it from another Group-based interface such as Outlook.</span></span>
 
-<span data-ttu-id="088cf-371">**刪除方案刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-371">**Does deleting the plan delete the group?**</span></span>
+<span data-ttu-id="02b19-371">**刪除方案刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-371">**Does deleting the plan delete the group?**</span></span>
 
-<span data-ttu-id="088cf-372">是的，刪除方案將會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-372">Yes, deleting the plan will delete the group and group-associated services and content.</span></span>
+<span data-ttu-id="02b19-372">是的，刪除方案將會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-372">Yes, deleting the plan will delete the group and group-associated services and content.</span></span>
 
-## <a name="power-apps"></a><span data-ttu-id="088cf-373">Power Apps</span><span class="sxs-lookup"><span data-stu-id="088cf-373">Power Apps</span></span>
+## <a name="power-apps"></a><span data-ttu-id="02b19-373">Power Apps</span><span class="sxs-lookup"><span data-stu-id="02b19-373">Power Apps</span></span>
 
-<span data-ttu-id="088cf-374">Power Apps 提供不含程式碼的應用程式開發畫布。</span><span class="sxs-lookup"><span data-stu-id="088cf-374">Power Apps provides a canvas for app development without code.</span></span>
+<span data-ttu-id="02b19-374">Power Apps 提供不含程式碼的應用程式開發畫布。</span><span class="sxs-lookup"><span data-stu-id="02b19-374">Power Apps provides a canvas for app development without code.</span></span>
 
-<span data-ttu-id="088cf-375">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-375">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-375">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-375">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-376">可以將應用程式與群組共用，以執行及修改</span><span class="sxs-lookup"><span data-stu-id="088cf-376">Apps can be shared with a group to be run and modified</span></span>
+- <span data-ttu-id="02b19-376">可以將應用程式與群組共用，以執行及修改</span><span class="sxs-lookup"><span data-stu-id="02b19-376">Apps can be shared with a group to be run and modified</span></span>
 
-<span data-ttu-id="088cf-377">**可以 Power Apps 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-377">**Can Power Apps create a group?**</span></span>
+<span data-ttu-id="02b19-377">**可以 Power Apps 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-377">**Can Power Apps create a group?**</span></span>
 
-<span data-ttu-id="088cf-378">否，Power Apps 無法建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-378">No, Power Apps cannot create a Microsoft 365 group.</span></span>
+<span data-ttu-id="02b19-378">否，Power Apps 無法建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-378">No, Power Apps cannot create a Microsoft 365 group.</span></span>
 
-<span data-ttu-id="088cf-379">**是否 Power Apps 存在沒有群組的功能？**</span><span class="sxs-lookup"><span data-stu-id="088cf-379">**Do Power Apps exist without a group?**</span></span>
+<span data-ttu-id="02b19-379">**是否 Power Apps 存在沒有群組的功能？**</span><span class="sxs-lookup"><span data-stu-id="02b19-379">**Do Power Apps exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-380">是的，您可以在 Power Apps 內建立應用程式，並將其存放在建立者帳戶中，直到共用或發佈。</span><span class="sxs-lookup"><span data-stu-id="088cf-380">Yes, apps can be created within Power Apps and reside within the creators account until shared or published.</span></span>
+<span data-ttu-id="02b19-380">是的，您可以在 Power Apps 內建立應用程式，並將其存放在建立者帳戶中，直到共用或發佈。</span><span class="sxs-lookup"><span data-stu-id="02b19-380">Yes, apps can be created within Power Apps and reside within the creators account until shared or published.</span></span>
 
-<span data-ttu-id="088cf-381">**每個群組可以有多個應用程式嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-381">**Can there be multiple apps per group?**</span></span>
+<span data-ttu-id="02b19-381">**每個群組可以有多個應用程式嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-381">**Can there be multiple apps per group?**</span></span>
 
-<span data-ttu-id="088cf-382">是的，可以有多個應用程式與群組共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-382">Yes, there can be multiple apps shared with a group.</span></span>
+<span data-ttu-id="02b19-382">是的，可以有多個應用程式與群組共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-382">Yes, there can be multiple apps shared with a group.</span></span>
 
-<span data-ttu-id="088cf-383">**是否可以將應用程式與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-383">**Can apps be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-383">**是否可以將應用程式與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-383">**Can apps be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-384">是的，您可以使用多個群組共用應用程式。</span><span class="sxs-lookup"><span data-stu-id="088cf-384">Yes, an app can be shared with multiple groups.</span></span>
+<span data-ttu-id="02b19-384">是的，您可以使用多個群組共用應用程式。</span><span class="sxs-lookup"><span data-stu-id="02b19-384">Yes, an app can be shared with multiple groups.</span></span>
 
-<span data-ttu-id="088cf-385">**應用程式與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-385">**Can an app’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-385">**應用程式與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-385">**Can an app’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-386">是的，因為 Power Apps 與 Microsoft 365 群組之間的關聯只會共用–該應用程式仍會與建立者一起使用。</span><span class="sxs-lookup"><span data-stu-id="088cf-386">Yes, as the association between Power Apps and a Microsoft 365 group is sharing only – the app still resides with the creator.</span></span>
+<span data-ttu-id="02b19-386">是的，因為 Power Apps 與 Microsoft 365 群組之間的關聯只會共用–該應用程式仍會與建立者一起使用。</span><span class="sxs-lookup"><span data-stu-id="02b19-386">Yes, as the association between Power Apps and a Microsoft 365 group is sharing only – the app still resides with the creator.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="088cf-387">[群組必須先啟用安全性，應用程式才能與其共用](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups)。</span><span class="sxs-lookup"><span data-stu-id="088cf-387">[Groups must be security enabled before apps can be shared with them](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups).</span></span>
+> <span data-ttu-id="02b19-387">[群組必須先啟用安全性，應用程式才能與其共用](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups)。</span><span class="sxs-lookup"><span data-stu-id="02b19-387">[Groups must be security enabled before apps can be shared with them](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups).</span></span>
 
-<span data-ttu-id="088cf-388">**刪除應用程式時，是否要刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-388">**Does deleting the app delete the group?**</span></span>
+<span data-ttu-id="02b19-388">**刪除應用程式時，是否要刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-388">**Does deleting the app delete the group?**</span></span>
 
-<span data-ttu-id="088cf-389">否，應用程式不會連線至群組，而不是與其共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-389">No, the apps are not connected to the group other than being shared with them.</span></span>
+<span data-ttu-id="02b19-389">否，應用程式不會連線至群組，而不是與其共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-389">No, the apps are not connected to the group other than being shared with them.</span></span>
 
-## <a name="power-automate"></a><span data-ttu-id="088cf-390">Power Automate</span><span class="sxs-lookup"><span data-stu-id="088cf-390">Power Automate</span></span>
+## <a name="power-automate"></a><span data-ttu-id="02b19-390">Power Automate</span><span class="sxs-lookup"><span data-stu-id="02b19-390">Power Automate</span></span>
 
-<span data-ttu-id="088cf-391"> (以前稱為 Microsoft Flow) 的 Power Automate 會提供工作流程和自動化服務。</span><span class="sxs-lookup"><span data-stu-id="088cf-391">Power Automate (formerly known as Microsoft Flow) provides workflows and automation services.</span></span>
+<span data-ttu-id="02b19-391"> (以前稱為 Microsoft Flow) 的 Power Automate 會提供工作流程和自動化服務。</span><span class="sxs-lookup"><span data-stu-id="02b19-391">Power Automate (formerly known as Microsoft Flow) provides workflows and automation services.</span></span>
 
-<span data-ttu-id="088cf-392">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-392">**Key features provided to groups**</span></span>
+<span data-ttu-id="02b19-392">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-392">**Key features provided to groups**</span></span>
 
-- <span data-ttu-id="088cf-393">工作流程可以與群組共用，以執行及修改。</span><span class="sxs-lookup"><span data-stu-id="088cf-393">Workflows can be shared with a group to be run and modified.</span></span>
+- <span data-ttu-id="02b19-393">工作流程可以與群組共用，以執行及修改。</span><span class="sxs-lookup"><span data-stu-id="02b19-393">Workflows can be shared with a group to be run and modified.</span></span>
 
-<span data-ttu-id="088cf-394">**可以 Power Automate 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-394">**Can Power Automate create a group?**</span></span>
+<span data-ttu-id="02b19-394">**可以 Power Automate 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-394">**Can Power Automate create a group?**</span></span>
 
-<span data-ttu-id="088cf-395">否，Power Automate 無法在與一個群組相關聯的內容中建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-395">No, Power Automate cannot create a Microsoft 365 group in the context of being associated with one.</span></span>
+<span data-ttu-id="02b19-395">否，Power Automate 無法在與一個群組相關聯的內容中建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-395">No, Power Automate cannot create a Microsoft 365 group in the context of being associated with one.</span></span>
 
-<span data-ttu-id="088cf-396">不過，您可以建立流程來執行各種作業，例如建立 Azure AD 安全性群組或更新 Microsoft 365 群組的成員資格。</span><span class="sxs-lookup"><span data-stu-id="088cf-396">It is possible however to create a flow that performs various operations such as creating an Azure AD security group or updating membership of a Microsoft 365 group.</span></span>
+<span data-ttu-id="02b19-396">不過，您可以建立流程來執行各種作業，例如建立 Azure AD 安全性群組或更新 Microsoft 365 群組的成員資格。</span><span class="sxs-lookup"><span data-stu-id="02b19-396">It is possible however to create a flow that performs various operations such as creating an Azure AD security group or updating membership of a Microsoft 365 group.</span></span>
 
-<span data-ttu-id="088cf-397">**是否有不含群組的流程？**</span><span class="sxs-lookup"><span data-stu-id="088cf-397">**Do flows exist without a group?**</span></span>
+<span data-ttu-id="02b19-397">**是否有不含群組的流程？**</span><span class="sxs-lookup"><span data-stu-id="02b19-397">**Do flows exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-398">是的，流程可以在 Power Automate 內建立，且位於建立者帳戶內，直到共用或發佈。</span><span class="sxs-lookup"><span data-stu-id="088cf-398">Yes, flows can be created within Power Automate and reside within the creators account until shared or published.</span></span>
+<span data-ttu-id="02b19-398">是的，流程可以在 Power Automate 內建立，且位於建立者帳戶內，直到共用或發佈。</span><span class="sxs-lookup"><span data-stu-id="02b19-398">Yes, flows can be created within Power Automate and reside within the creators account until shared or published.</span></span>
 
-<span data-ttu-id="088cf-399">**每個群組是否可以有多個資料流程？**</span><span class="sxs-lookup"><span data-stu-id="088cf-399">**Can there be multiple flows per group?**</span></span>
+<span data-ttu-id="02b19-399">**每個群組是否可以有多個資料流程？**</span><span class="sxs-lookup"><span data-stu-id="02b19-399">**Can there be multiple flows per group?**</span></span>
 
-<span data-ttu-id="088cf-400">是的，可以有多個資料流程與群組共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-400">Yes, there can be multiple flows shared with a group.</span></span>
+<span data-ttu-id="02b19-400">是的，可以有多個資料流程與群組共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-400">Yes, there can be multiple flows shared with a group.</span></span>
 
-<span data-ttu-id="088cf-401">**流程是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-401">**Can a flow be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-401">**流程是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-401">**Can a flow be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-402">是，可以與多個群組共用流程。</span><span class="sxs-lookup"><span data-stu-id="088cf-402">Yes, a flow can be shared with multiple groups.</span></span>
+<span data-ttu-id="02b19-402">是，可以與多個群組共用流程。</span><span class="sxs-lookup"><span data-stu-id="02b19-402">Yes, a flow can be shared with multiple groups.</span></span>
 
-<span data-ttu-id="088cf-403">**流程與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-403">**Can a flow’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-403">**流程與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-403">**Can a flow’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-404">是的，因為 Power Automate 與 Microsoft 365 群組之間的關聯只會共用–該流程仍會與建立者一起存在。</span><span class="sxs-lookup"><span data-stu-id="088cf-404">Yes, as the association between Power Automate and a Microsoft 365 group is sharing only – the flow still resides with the creator.</span></span>
+<span data-ttu-id="02b19-404">是的，因為 Power Automate 與 Microsoft 365 群組之間的關聯只會共用–該流程仍會與建立者一起存在。</span><span class="sxs-lookup"><span data-stu-id="02b19-404">Yes, as the association between Power Automate and a Microsoft 365 group is sharing only – the flow still resides with the creator.</span></span>
 
-<span data-ttu-id="088cf-405">**刪除流程會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-405">**Does deleting a flow delete the group?**</span></span>
+<span data-ttu-id="02b19-405">**刪除流程會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-405">**Does deleting a flow delete the group?**</span></span>
 
-<span data-ttu-id="088cf-406">否，像 Power Apps，資料流程並未連接至群組，而不是與其共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-406">No, like Power Apps, the flows are not connected to the group other than being shared with them.</span></span>
+<span data-ttu-id="02b19-406">否，像 Power Apps，資料流程並未連接至群組，而不是與其共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-406">No, like Power Apps, the flows are not connected to the group other than being shared with them.</span></span>
 
-## <a name="power-bi-classic"></a><span data-ttu-id="088cf-407">Power BI (古典) </span><span class="sxs-lookup"><span data-stu-id="088cf-407">Power BI (classic)</span></span>
+## <a name="power-bi-classic"></a><span data-ttu-id="02b19-407">Power BI (古典) </span><span class="sxs-lookup"><span data-stu-id="02b19-407">Power BI (classic)</span></span>
 
-<span data-ttu-id="088cf-408">Power BI 提供互動式資料導向儀表板和報表。</span><span class="sxs-lookup"><span data-stu-id="088cf-408">Power BI provides interactive data-driven dashboards and reports.</span></span>
+<span data-ttu-id="02b19-408">Power BI 提供互動式資料導向儀表板和報表。</span><span class="sxs-lookup"><span data-stu-id="02b19-408">Power BI provides interactive data-driven dashboards and reports.</span></span>
 
-<span data-ttu-id="088cf-409">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-409">**Key features provided to groups**</span></span>
+<span data-ttu-id="02b19-409">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-409">**Key features provided to groups**</span></span>
 
-- <span data-ttu-id="088cf-410">資料包告</span><span class="sxs-lookup"><span data-stu-id="088cf-410">Data reporting</span></span>
+- <span data-ttu-id="02b19-410">資料包告</span><span class="sxs-lookup"><span data-stu-id="02b19-410">Data reporting</span></span>
 
-<span data-ttu-id="088cf-411">**可以 Power BI 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-411">**Can Power BI create a group?**</span></span>
+<span data-ttu-id="02b19-411">**可以 Power BI 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-411">**Can Power BI create a group?**</span></span>
 
-<span data-ttu-id="088cf-412">是的，建立傳統的工作區將會建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-412">Yes, creating a classic workspace will create a Microsoft 365 group.</span></span>
+<span data-ttu-id="02b19-412">是的，建立傳統的工作區將會建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-412">Yes, creating a classic workspace will create a Microsoft 365 group.</span></span>
 
-<span data-ttu-id="088cf-413">**是否有不含群組的 Power BI 傳統工作區？**</span><span class="sxs-lookup"><span data-stu-id="088cf-413">**Does a Power BI classic workspace exist without a group?**</span></span>
+<span data-ttu-id="02b19-413">**是否有不含群組的 Power BI 傳統工作區？**</span><span class="sxs-lookup"><span data-stu-id="02b19-413">**Does a Power BI classic workspace exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-414">否， [Power BI 中的傳統工作區必須與群組產生關聯](/power-bi/collaborate-share/service-collaborate-power-bi-workspace)。</span><span class="sxs-lookup"><span data-stu-id="088cf-414">No, [a classic workspace in Power BI must be associated with a group](/power-bi/collaborate-share/service-collaborate-power-bi-workspace).</span></span>
+<span data-ttu-id="02b19-414">否， [Power BI 中的傳統工作區必須與群組產生關聯](/power-bi/collaborate-share/service-collaborate-power-bi-workspace)。</span><span class="sxs-lookup"><span data-stu-id="02b19-414">No, [a classic workspace in Power BI must be associated with a group](/power-bi/collaborate-share/service-collaborate-power-bi-workspace).</span></span>
 
-<span data-ttu-id="088cf-415">**每個群組是否可以有多個 Power BI 工作區？**</span><span class="sxs-lookup"><span data-stu-id="088cf-415">**Can there be multiple Power BI workspaces per group?**</span></span>
+<span data-ttu-id="02b19-415">**每個群組是否可以有多個 Power BI 工作區？**</span><span class="sxs-lookup"><span data-stu-id="02b19-415">**Can there be multiple Power BI workspaces per group?**</span></span>
 
-<span data-ttu-id="088cf-416">否，傳統的工作區和群組之間的關係為1:1。</span><span class="sxs-lookup"><span data-stu-id="088cf-416">No, the relationship between a classic workspace and a group is 1:1.</span></span>
+<span data-ttu-id="02b19-416">否，傳統的工作區和群組之間的關係為1:1。</span><span class="sxs-lookup"><span data-stu-id="02b19-416">No, the relationship between a classic workspace and a group is 1:1.</span></span>
 
-<span data-ttu-id="088cf-417">**工作區是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-417">**Can a workspace be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-417">**工作區是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-417">**Can a workspace be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-418">從技術上而言，在使用群組建立傳統的工作區時，內容可以與使用者和安全性群組在群組外共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-418">Technically no, while the classic workspace is created with the group, the content can be shared outside of the Group with users and security groups.</span></span>
+<span data-ttu-id="02b19-418">從技術上而言，在使用群組建立傳統的工作區時，內容可以與使用者和安全性群組在群組外共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-418">Technically no, while the classic workspace is created with the group, the content can be shared outside of the Group with users and security groups.</span></span>
 
-<span data-ttu-id="088cf-419">**工作區與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-419">**Can the workspace's association with a group change?**</span></span>
+<span data-ttu-id="02b19-419">**工作區與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-419">**Can the workspace's association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-420">否，傳統的工作區本身會與群組產生關聯，但是可以在 Power BI 介面內將內容移至另一個工作區，或是在本機上匯出內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-420">No, the classic workspace itself is associated with the Group, however the content can be moved from one workspace to another within the Power BI interface or by exporting contents locally.</span></span>
+<span data-ttu-id="02b19-420">否，傳統的工作區本身會與群組產生關聯，但是可以在 Power BI 介面內將內容移至另一個工作區，或是在本機上匯出內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-420">No, the classic workspace itself is associated with the Group, however the content can be moved from one workspace to another within the Power BI interface or by exporting contents locally.</span></span>
 
-<span data-ttu-id="088cf-421">**刪除工作區後，是否要刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-421">**Does deleting the workspace delete the group?**</span></span>
+<span data-ttu-id="02b19-421">**刪除工作區後，是否要刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-421">**Does deleting the workspace delete the group?**</span></span>
 
-<span data-ttu-id="088cf-422">是，在 Power BI 中刪除工作區將會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-422">Yes, deleting the workspace in Power BI will delete group and  group-associated services and content.</span></span>
+<span data-ttu-id="02b19-422">是，在 Power BI 中刪除工作區將會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-422">Yes, deleting the workspace in Power BI will delete group and  group-associated services and content.</span></span>
 
-## <a name="power-bi-new"></a><span data-ttu-id="088cf-423">Power BI (新) </span><span class="sxs-lookup"><span data-stu-id="088cf-423">Power BI (new)</span></span>
+## <a name="power-bi-new"></a><span data-ttu-id="02b19-423">Power BI (新) </span><span class="sxs-lookup"><span data-stu-id="02b19-423">Power BI (new)</span></span>
 
-<span data-ttu-id="088cf-424">Power BI 提供互動式資料導向儀表板和報表。</span><span class="sxs-lookup"><span data-stu-id="088cf-424">Power BI provides interactive data-driven dashboards and reports.</span></span>
+<span data-ttu-id="02b19-424">Power BI 提供互動式資料導向儀表板和報表。</span><span class="sxs-lookup"><span data-stu-id="02b19-424">Power BI provides interactive data-driven dashboards and reports.</span></span>
 
-<span data-ttu-id="088cf-425">在 Power BI 中建立新的工作區時，不會建立 Microsoft 365 群組，以任何其他方式建立群組，會在 Power BI 中建立新的 (非傳統) 的工作區。</span><span class="sxs-lookup"><span data-stu-id="088cf-425">While creating a new workspace in Power BI does not create a Microsoft 365 Group, creating a group by any other means creates a  new (not classic) workspace in Power BI.</span></span>
+<span data-ttu-id="02b19-425">在 Power BI 中建立新的工作區時，不會建立 Microsoft 365 群組，以任何其他方式建立群組，會在 Power BI 中建立新的 (非傳統) 的工作區。</span><span class="sxs-lookup"><span data-stu-id="02b19-425">While creating a new workspace in Power BI does not create a Microsoft 365 Group, creating a group by any other means creates a  new (not classic) workspace in Power BI.</span></span>
 
-<span data-ttu-id="088cf-426">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-426">**Key features provided to groups**</span></span>
+<span data-ttu-id="02b19-426">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-426">**Key features provided to groups**</span></span>
 
-- <span data-ttu-id="088cf-427">資料包告</span><span class="sxs-lookup"><span data-stu-id="088cf-427">Data reporting</span></span>
+- <span data-ttu-id="02b19-427">資料包告</span><span class="sxs-lookup"><span data-stu-id="02b19-427">Data reporting</span></span>
 
-<span data-ttu-id="088cf-428">**可以 Power BI 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-428">**Can Power BI create a group?**</span></span>
+<span data-ttu-id="02b19-428">**可以 Power BI 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-428">**Can Power BI create a group?**</span></span>
 
-<span data-ttu-id="088cf-429">不能，無法從新的 Power BI 介面建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-429">No, it is not possible to create a Microsoft 365 group from the new Power BI interface.</span></span>
+<span data-ttu-id="02b19-429">不能，無法從新的 Power BI 介面建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-429">No, it is not possible to create a Microsoft 365 group from the new Power BI interface.</span></span>
 
-<span data-ttu-id="088cf-430">**是否有不含群組的新 Power BI 工作區？**</span><span class="sxs-lookup"><span data-stu-id="088cf-430">**Does the new Power BI workspace exist without a group?**</span></span>
+<span data-ttu-id="02b19-430">**是否有不含群組的新 Power BI 工作區？**</span><span class="sxs-lookup"><span data-stu-id="02b19-430">**Does the new Power BI workspace exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-431">是的，您可以在 Power BI 中建立報表和工作區，而不會與 Microsoft 365 群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-431">Yes, it is possible to have reports and workspaces created in Power BI that are not associated with Microsoft 365 groups.</span></span>
+<span data-ttu-id="02b19-431">是的，您可以在 Power BI 中建立報表和工作區，而不會與 Microsoft 365 群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-431">Yes, it is possible to have reports and workspaces created in Power BI that are not associated with Microsoft 365 groups.</span></span>
 
-<span data-ttu-id="088cf-432">**每個群組是否可以有多個工作區？**</span><span class="sxs-lookup"><span data-stu-id="088cf-432">**Can there be multiple workspaces per group?**</span></span>
+<span data-ttu-id="02b19-432">**每個群組是否可以有多個工作區？**</span><span class="sxs-lookup"><span data-stu-id="02b19-432">**Can there be multiple workspaces per group?**</span></span>
 
-<span data-ttu-id="088cf-433">是的，[可透過單一群組共用 Power BI 所建立的多個工作區](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace)。</span><span class="sxs-lookup"><span data-stu-id="088cf-433">Yes, [multiple workspaces created by Power BI can be shared with a single group](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).</span></span>
+<span data-ttu-id="02b19-433">是的，[可透過單一群組共用 Power BI 所建立的多個工作區](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace)。</span><span class="sxs-lookup"><span data-stu-id="02b19-433">Yes, [multiple workspaces created by Power BI can be shared with a single group](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).</span></span>
 
-<span data-ttu-id="088cf-434">**工作區是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-434">**Can a workspace be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-434">**工作區是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-434">**Can a workspace be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-435">否，Power BI 所建立的工作區只能與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-435">No, a workspace created by Power BI can only be associated with a single group.</span></span>
+<span data-ttu-id="02b19-435">否，Power BI 所建立的工作區只能與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-435">No, a workspace created by Power BI can only be associated with a single group.</span></span>
 
-<span data-ttu-id="088cf-436">**工作區與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-436">**Can a workspace's association with a group change?**</span></span>
+<span data-ttu-id="02b19-436">**工作區與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-436">**Can a workspace's association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-437">[是] 和 [否]。</span><span class="sxs-lookup"><span data-stu-id="088cf-437">Yes and no.</span></span> <span data-ttu-id="088cf-438">由 Power BI 所建立的工作區一次只能與一個群組相關聯，但隨時可以變更關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-438">A workspace created by Power BI can only be associated with a single group at a time but can change the association at any time.</span></span> <span data-ttu-id="088cf-439">群組 Power BI 中所建立的工作區會永久關聯至該群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-439">A workspace created in Power BI by a group is permanently associated to that group.</span></span>
+<span data-ttu-id="02b19-437">[是] 和 [否]。</span><span class="sxs-lookup"><span data-stu-id="02b19-437">Yes and no.</span></span> <span data-ttu-id="02b19-438">由 Power BI 所建立的工作區一次只能與一個群組相關聯，但隨時可以變更關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-438">A workspace created by Power BI can only be associated with a single group at a time but can change the association at any time.</span></span> <span data-ttu-id="02b19-439">群組 Power BI 中所建立的工作區會永久關聯至該群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-439">A workspace created in Power BI by a group is permanently associated to that group.</span></span>
 
-<span data-ttu-id="088cf-440">**刪除工作區後，是否要刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-440">**Does deleting the workspace delete the group?**</span></span>
+<span data-ttu-id="02b19-440">**刪除工作區後，是否要刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-440">**Does deleting the workspace delete the group?**</span></span>
 
-<span data-ttu-id="088cf-441">是，在 Power BI 中刪除工作區將會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-441">Yes, deleting the workspace in Power BI will delete the group and group-associated services and content.</span></span>
+<span data-ttu-id="02b19-441">是，在 Power BI 中刪除工作區將會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-441">Yes, deleting the workspace in Power BI will delete the group and group-associated services and content.</span></span>
 
-## <a name="project-for-the-web"></a><span data-ttu-id="088cf-442">Project 網頁版</span><span class="sxs-lookup"><span data-stu-id="088cf-442">Project for the web</span></span>
+## <a name="project-for-the-web"></a><span data-ttu-id="02b19-442">Project 網頁版</span><span class="sxs-lookup"><span data-stu-id="02b19-442">Project for the web</span></span>
 
-<span data-ttu-id="088cf-443">Project 網頁提供建立專案計劃、甘特圖及路標的功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-443">Project for the web offers the ability to create project plans, Gantt charts, and roadmaps.</span></span>
-<span data-ttu-id="088cf-444">提供給群組的主要功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-444">Key features provided to groups.</span></span>
+<span data-ttu-id="02b19-443">Project 網頁提供建立專案計劃、甘特圖及路標的功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-443">Project for the web offers the ability to create project plans, Gantt charts, and roadmaps.</span></span>
+<span data-ttu-id="02b19-444">提供給群組的主要功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-444">Key features provided to groups.</span></span>
 
-- <span data-ttu-id="088cf-445">Project 方案</span><span class="sxs-lookup"><span data-stu-id="088cf-445">Project plans</span></span>
+- <span data-ttu-id="02b19-445">Project 方案</span><span class="sxs-lookup"><span data-stu-id="02b19-445">Project plans</span></span>
 
-<span data-ttu-id="088cf-446">**網頁可以 Project 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-446">**Can Project for the web create a group?**</span></span>
+<span data-ttu-id="02b19-446">**網頁可以 Project 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-446">**Can Project for the web create a group?**</span></span>
 
-<span data-ttu-id="088cf-447">是的，您可以直接從網頁 Project 建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-447">Yes, it is possible to create a new Microsoft 365 group directly from Project for the web.</span></span>
+<span data-ttu-id="02b19-447">是的，您可以直接從網頁 Project 建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-447">Yes, it is possible to create a new Microsoft 365 group directly from Project for the web.</span></span>
 
-<span data-ttu-id="088cf-448">**是否有沒有群組的專案？**</span><span class="sxs-lookup"><span data-stu-id="088cf-448">**Do projects exist without a group?**</span></span>
+<span data-ttu-id="02b19-448">**是否有沒有群組的專案？**</span><span class="sxs-lookup"><span data-stu-id="02b19-448">**Do projects exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-449">是的專案可以存在，但不會與 Microsoft 365 群組產生關聯，但是任務的指派需要群組關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-449">Yes, projects can exist without being associated with a Microsoft 365 group, however assignment of tasks requires group association.</span></span>
+<span data-ttu-id="02b19-449">是的專案可以存在，但不會與 Microsoft 365 群組產生關聯，但是任務的指派需要群組關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-449">Yes, projects can exist without being associated with a Microsoft 365 group, however assignment of tasks requires group association.</span></span>
 
-<span data-ttu-id="088cf-450">**每個群組是否可以有多個專案？**</span><span class="sxs-lookup"><span data-stu-id="088cf-450">**Can there be multiple projects per group?**</span></span>
+<span data-ttu-id="02b19-450">**每個群組是否可以有多個專案？**</span><span class="sxs-lookup"><span data-stu-id="02b19-450">**Can there be multiple projects per group?**</span></span>
 
-<span data-ttu-id="088cf-451">是的，您可以在單一群組中連接多個專案。</span><span class="sxs-lookup"><span data-stu-id="088cf-451">Yes, it is possible to connect multiple projects in a single group.</span></span>
+<span data-ttu-id="02b19-451">是的，您可以在單一群組中連接多個專案。</span><span class="sxs-lookup"><span data-stu-id="02b19-451">Yes, it is possible to connect multiple projects in a single group.</span></span>
 
-<span data-ttu-id="088cf-452">**專案是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-452">**Can project be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-452">**專案是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-452">**Can project be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-453">否，專案只能與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-453">No, a project can only be associated with a single group.</span></span>
+<span data-ttu-id="02b19-453">否，專案只能與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-453">No, a project can only be associated with a single group.</span></span>
 
-<span data-ttu-id="088cf-454">**專案與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-454">**Can a project’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-454">**專案與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-454">**Can a project’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-455">否，建立與群組的關聯之後，就無法變更。</span><span class="sxs-lookup"><span data-stu-id="088cf-455">No, once the association with a group is established, it cannot change.</span></span>
+<span data-ttu-id="02b19-455">否，建立與群組的關聯之後，就無法變更。</span><span class="sxs-lookup"><span data-stu-id="02b19-455">No, once the association with a group is established, it cannot change.</span></span>
 
-<span data-ttu-id="088cf-456">**刪除專案時是否刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-456">**Does deleting the project delete the group?**</span></span>
+<span data-ttu-id="02b19-456">**刪除專案時是否刪除群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-456">**Does deleting the project delete the group?**</span></span>
 
-<span data-ttu-id="088cf-457">否，在網站的 Project 中刪除專案不會刪除群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-457">No, deleting the project in Project for the web will not delete the group.</span></span>
+<span data-ttu-id="02b19-457">否，在網站的 Project 中刪除專案不會刪除群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-457">No, deleting the project in Project for the web will not delete the group.</span></span>
 
-## <a name="roadmap"></a><span data-ttu-id="088cf-458">藍圖</span><span class="sxs-lookup"><span data-stu-id="088cf-458">Roadmap</span></span>
+## <a name="roadmap"></a><span data-ttu-id="02b19-458">藍圖</span><span class="sxs-lookup"><span data-stu-id="02b19-458">Roadmap</span></span>
 
-<span data-ttu-id="088cf-459">藍圖提供使用 web 和 Project Online Project 建立專案藍圖的功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-459">Roadmap provides the ability to create project roadmaps with Project for the web and Project Online.</span></span>
+<span data-ttu-id="02b19-459">藍圖提供使用 web 和 Project Online Project 建立專案藍圖的功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-459">Roadmap provides the ability to create project roadmaps with Project for the web and Project Online.</span></span>
 
-<span data-ttu-id="088cf-460">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-460">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-460">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-460">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-461">Project 路線圖</span><span class="sxs-lookup"><span data-stu-id="088cf-461">Project roadmaps</span></span>
+- <span data-ttu-id="02b19-461">Project 路線圖</span><span class="sxs-lookup"><span data-stu-id="02b19-461">Project roadmaps</span></span>
 
-<span data-ttu-id="088cf-462">**藍圖是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-462">**Can Roadmap create a group?**</span></span>
+<span data-ttu-id="02b19-462">**藍圖是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-462">**Can Roadmap create a group?**</span></span>
 
-<span data-ttu-id="088cf-463">是的，您可以直接從藍圖建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-463">Yes, it is possible to create a new Microsoft 365 group directly from roadmap.</span></span>
+<span data-ttu-id="02b19-463">是的，您可以直接從藍圖建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-463">Yes, it is possible to create a new Microsoft 365 group directly from roadmap.</span></span>
 
-<span data-ttu-id="088cf-464">**是否有沒有群組的藍圖？**</span><span class="sxs-lookup"><span data-stu-id="088cf-464">**Does Roadmap exist without a group?**</span></span>
+<span data-ttu-id="02b19-464">**是否有沒有群組的藍圖？**</span><span class="sxs-lookup"><span data-stu-id="02b19-464">**Does Roadmap exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-465">是的，路線圖可以存在，而不與 Microsoft 365 群組相關聯，但是共用藍圖需要群組關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-465">Yes, roadmaps can exist without being associated with a Microsoft 365 group, however sharing the roadmap requires group association.</span></span>
+<span data-ttu-id="02b19-465">是的，路線圖可以存在，而不與 Microsoft 365 群組相關聯，但是共用藍圖需要群組關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-465">Yes, roadmaps can exist without being associated with a Microsoft 365 group, however sharing the roadmap requires group association.</span></span>
 
-<span data-ttu-id="088cf-466">**每個群組是否可以有多個路線圖？**</span><span class="sxs-lookup"><span data-stu-id="088cf-466">**Can there be multiple roadmaps per group?**</span></span>
+<span data-ttu-id="02b19-466">**每個群組是否可以有多個路線圖？**</span><span class="sxs-lookup"><span data-stu-id="02b19-466">**Can there be multiple roadmaps per group?**</span></span>
 
-<span data-ttu-id="088cf-467">是的，您可以將多個藍圖連線到單一群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-467">Yes, it is possible to connect multiple roadmaps to a single group.</span></span>
+<span data-ttu-id="02b19-467">是的，您可以將多個藍圖連線到單一群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-467">Yes, it is possible to connect multiple roadmaps to a single group.</span></span>
 
-<span data-ttu-id="088cf-468">**藍圖是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-468">**Can a roadmap be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-468">**藍圖是否可以與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-468">**Can a roadmap be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-469">否，藍圖只會與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-469">No, a roadmap can only be associated with a single group.</span></span>
+<span data-ttu-id="02b19-469">否，藍圖只會與單一群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-469">No, a roadmap can only be associated with a single group.</span></span>
 
-<span data-ttu-id="088cf-470">**藍圖與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-470">**Can a roadmap's association with a group change?**</span></span>
+<span data-ttu-id="02b19-470">**藍圖與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-470">**Can a roadmap's association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-471">否，建立與群組的關聯之後，就無法變更。</span><span class="sxs-lookup"><span data-stu-id="088cf-471">No, once the association with a group is established, it cannot change.</span></span>
+<span data-ttu-id="02b19-471">否，建立與群組的關聯之後，就無法變更。</span><span class="sxs-lookup"><span data-stu-id="02b19-471">No, once the association with a group is established, it cannot change.</span></span>
 
-<span data-ttu-id="088cf-472">**刪除藍圖之後刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-472">**Does deleting the roadmap delete the group?**</span></span>
+<span data-ttu-id="02b19-472">**刪除藍圖之後刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-472">**Does deleting the roadmap delete the group?**</span></span>
 
-<span data-ttu-id="088cf-473">否，刪除藍圖不會刪除群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-473">No, deleting the roadmap will not delete the group.</span></span>
+<span data-ttu-id="02b19-473">否，刪除藍圖不會刪除群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-473">No, deleting the roadmap will not delete the group.</span></span>
 
-## <a name="sharepoint"></a><span data-ttu-id="088cf-474">SharePoint</span><span class="sxs-lookup"><span data-stu-id="088cf-474">SharePoint</span></span>
+## <a name="sharepoint"></a><span data-ttu-id="02b19-474">SharePoint</span><span class="sxs-lookup"><span data-stu-id="02b19-474">SharePoint</span></span>
 
-<span data-ttu-id="088cf-475">SharePoint 是以網路為基礎的內容管理平臺，可提供許多 Microsoft 365 服務的儲存服務等功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-475">SharePoint is a web-based content management platform that provides among other things, storage services for a number of Microsoft 365 services.</span></span>
+<span data-ttu-id="02b19-475">SharePoint 是以網路為基礎的內容管理平臺，可提供許多 Microsoft 365 服務的儲存服務等功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-475">SharePoint is a web-based content management platform that provides among other things, storage services for a number of Microsoft 365 services.</span></span>
 
-<span data-ttu-id="088cf-476">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-476">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-476">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-476">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-477">文件庫</span><span class="sxs-lookup"><span data-stu-id="088cf-477">Document library</span></span>
-- <span data-ttu-id="088cf-478">存放 OneNote 筆記本的存放庫</span><span class="sxs-lookup"><span data-stu-id="088cf-478">Library for storage of OneNote notebook</span></span>
-- <span data-ttu-id="088cf-479">Teams wiki 檔案的儲存體</span><span class="sxs-lookup"><span data-stu-id="088cf-479">Storage of Teams wiki files</span></span>
+- <span data-ttu-id="02b19-477">文件庫</span><span class="sxs-lookup"><span data-stu-id="02b19-477">Document library</span></span>
+- <span data-ttu-id="02b19-478">存放 OneNote 筆記本的存放庫</span><span class="sxs-lookup"><span data-stu-id="02b19-478">Library for storage of OneNote notebook</span></span>
+- <span data-ttu-id="02b19-479">Teams wiki 檔案的儲存體</span><span class="sxs-lookup"><span data-stu-id="02b19-479">Storage of Teams wiki files</span></span>
 
-<span data-ttu-id="088cf-480">**可以 SharePoint 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-480">**Can SharePoint create a group?**</span></span>
+<span data-ttu-id="02b19-480">**可以 SharePoint 建立群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-480">**Can SharePoint create a group?**</span></span>
 
-<span data-ttu-id="088cf-481">是的，在 SharePoint 中建立小組網站時，預設會建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-481">Yes, creating a team site in SharePoint will create a Microsoft 365 group by default.</span></span> <span data-ttu-id="088cf-482">您也可以建立群組，並選擇性地建立現有網站的團隊。</span><span class="sxs-lookup"><span data-stu-id="088cf-482">It is also possible to create a group and, optionally, a team for an existing site.</span></span>
+<span data-ttu-id="02b19-481">是的，在 SharePoint 中建立小組網站時，預設會建立 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-481">Yes, creating a team site in SharePoint will create a Microsoft 365 group by default.</span></span> <span data-ttu-id="02b19-482">您也可以建立群組，並選擇性地建立現有網站的團隊。</span><span class="sxs-lookup"><span data-stu-id="02b19-482">It is also possible to create a group and, optionally, a team for an existing site.</span></span>
 
-<span data-ttu-id="088cf-483">**是否有沒有群組的 SharePoint 網站？**</span><span class="sxs-lookup"><span data-stu-id="088cf-483">**Do SharePoint sites exist without a group?**</span></span>
+<span data-ttu-id="02b19-483">**是否有沒有群組的 SharePoint 網站？**</span><span class="sxs-lookup"><span data-stu-id="02b19-483">**Do SharePoint sites exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-484">是的，SharePoint 提供許多非群組相關的服務和網站，例如通訊和 hub 網站。</span><span class="sxs-lookup"><span data-stu-id="088cf-484">Yes, SharePoint offers a number of non-group-associated services and sites such as communication and hub sites.</span></span> 
+<span data-ttu-id="02b19-484">是的，SharePoint 提供許多非群組相關的服務和網站，例如通訊和 hub 網站。</span><span class="sxs-lookup"><span data-stu-id="02b19-484">Yes, SharePoint offers a number of non-group-associated services and sites such as communication and hub sites.</span></span> 
 
-<span data-ttu-id="088cf-485">**每個群組可以有多個網站嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-485">**Can there be multiple sites per group?**</span></span>
+<span data-ttu-id="02b19-485">**每個群組可以有多個網站嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-485">**Can there be multiple sites per group?**</span></span>
 
-<span data-ttu-id="088cf-486">否，每個群組只能有一個網站。</span><span class="sxs-lookup"><span data-stu-id="088cf-486">No, there can only be a single site per group.</span></span> <span data-ttu-id="088cf-487">Teams 中的專用通道使用未連接至群組的其他網站。</span><span class="sxs-lookup"><span data-stu-id="088cf-487">Private channels in Teams use additional sites that are not connected to the group.</span></span>
+<span data-ttu-id="02b19-486">否，每個群組只能有一個網站。</span><span class="sxs-lookup"><span data-stu-id="02b19-486">No, there can only be a single site per group.</span></span> <span data-ttu-id="02b19-487">Teams 中的專用通道使用未連接至群組的其他網站。</span><span class="sxs-lookup"><span data-stu-id="02b19-487">Private channels in Teams use additional sites that are not connected to the group.</span></span>
 
-<span data-ttu-id="088cf-488">**是否可以將網站與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-488">**Can sites be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-488">**是否可以將網站與多個群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-488">**Can sites be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-489">技術否，但在使用群組建立網站時，內容可以與其他群組共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-489">Technically no, but while a site is created with a group, the content can be shared with other groups.</span></span>
+<span data-ttu-id="02b19-489">技術否，但在使用群組建立網站時，內容可以與其他群組共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-489">Technically no, but while a site is created with a group, the content can be shared with other groups.</span></span>
 
-<span data-ttu-id="088cf-490">**網站與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-490">**Can a site’s association with a group change?**</span></span>
+<span data-ttu-id="02b19-490">**網站與群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-490">**Can a site’s association with a group change?**</span></span>
 
-<span data-ttu-id="088cf-491">否，網站本身會與群組產生關聯，但是可以在 SharePoint 介面內，透過在本機匯出內容，或使用協力廠商工具，將內容移至介面中的另一個網站。</span><span class="sxs-lookup"><span data-stu-id="088cf-491">No, the site itself is associated with the group, however the content can be moved from one site to another within the SharePoint interface, by exporting content locally, or by using a third-party tool.</span></span>
+<span data-ttu-id="02b19-491">否，網站本身會與群組產生關聯，但是可以在 SharePoint 介面內，透過在本機匯出內容，或使用協力廠商工具，將內容移至介面中的另一個網站。</span><span class="sxs-lookup"><span data-stu-id="02b19-491">No, the site itself is associated with the group, however the content can be moved from one site to another within the SharePoint interface, by exporting content locally, or by using a third-party tool.</span></span>
 
-<span data-ttu-id="088cf-492">**刪除網站刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-492">**Does deleting the site delete the group?**</span></span>
+<span data-ttu-id="02b19-492">**刪除網站刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-492">**Does deleting the site delete the group?**</span></span>
 
-<span data-ttu-id="088cf-493">是，在 SharePoint 中刪除網站會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-493">Yes, deleting the site in SharePoint will delete group and group-associated services and content.</span></span>
+<span data-ttu-id="02b19-493">是，在 SharePoint 中刪除網站會刪除群組和群組相關聯的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-493">Yes, deleting the site in SharePoint will delete group and group-associated services and content.</span></span>
 
-## <a name="stream"></a><span data-ttu-id="088cf-494">Stream</span><span class="sxs-lookup"><span data-stu-id="088cf-494">Stream</span></span>
+## <a name="stream"></a><span data-ttu-id="02b19-494">Stream</span><span class="sxs-lookup"><span data-stu-id="02b19-494">Stream</span></span>
 
-<span data-ttu-id="088cf-495">Microsoft Stream 是一種影片主控和共用平臺。</span><span class="sxs-lookup"><span data-stu-id="088cf-495">Microsoft Stream is a video hosting and sharing platform.</span></span>
+<span data-ttu-id="02b19-495">Microsoft Stream 是一種影片主控和共用平臺。</span><span class="sxs-lookup"><span data-stu-id="02b19-495">Microsoft Stream is a video hosting and sharing platform.</span></span>
 
-<span data-ttu-id="088cf-496">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-496">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-496">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-496">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-497">影片儲存體</span><span class="sxs-lookup"><span data-stu-id="088cf-497">Video storage</span></span>
-- <span data-ttu-id="088cf-498">會議錄製 Teams</span><span class="sxs-lookup"><span data-stu-id="088cf-498">Teams meeting recording</span></span>
-- <span data-ttu-id="088cf-499">影片通道</span><span class="sxs-lookup"><span data-stu-id="088cf-499">Video channels</span></span>
+- <span data-ttu-id="02b19-497">影片儲存體</span><span class="sxs-lookup"><span data-stu-id="02b19-497">Video storage</span></span>
+- <span data-ttu-id="02b19-498">會議錄製 Teams</span><span class="sxs-lookup"><span data-stu-id="02b19-498">Teams meeting recording</span></span>
+- <span data-ttu-id="02b19-499">影片通道</span><span class="sxs-lookup"><span data-stu-id="02b19-499">Video channels</span></span>
 
-<span data-ttu-id="088cf-500">**Stream 是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-500">**Can Stream create a group?**</span></span>
+<span data-ttu-id="02b19-500">**Stream 是否可以建立群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-500">**Can Stream create a group?**</span></span>
 
-<span data-ttu-id="088cf-501">是的，您可以直接從 Stream 建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-501">Yes, it is possible to create a new Microsoft 365 group directly from Stream.</span></span>
+<span data-ttu-id="02b19-501">是的，您可以直接從 Stream 建立新的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-501">Yes, it is possible to create a new Microsoft 365 group directly from Stream.</span></span>
 
-<span data-ttu-id="088cf-502">**是否有不含群組的資料流程？**</span><span class="sxs-lookup"><span data-stu-id="088cf-502">**Does Stream exist without a group?**</span></span>
+<span data-ttu-id="02b19-502">**是否有不含群組的資料流程？**</span><span class="sxs-lookup"><span data-stu-id="02b19-502">**Does Stream exist without a group?**</span></span>
 
-<span data-ttu-id="088cf-503">是的，視頻通道和影片可以存在於 Stream 中，但不會與群組產生關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-503">Yes, video channels and videos can exist in Stream without being associated with a group.</span></span>
+<span data-ttu-id="02b19-503">是的，視頻通道和影片可以存在於 Stream 中，但不會與群組產生關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-503">Yes, video channels and videos can exist in Stream without being associated with a group.</span></span>
 
-<span data-ttu-id="088cf-504">**每個群組是否可以有多個影片和通道？**</span><span class="sxs-lookup"><span data-stu-id="088cf-504">**Can there be multiple videos and channels per Group?**</span></span>
+<span data-ttu-id="02b19-504">**每個群組是否可以有多個影片和通道？**</span><span class="sxs-lookup"><span data-stu-id="02b19-504">**Can there be multiple videos and channels per Group?**</span></span>
 
-<span data-ttu-id="088cf-505">是的，每個群組中可以有多個影片和頻道。</span><span class="sxs-lookup"><span data-stu-id="088cf-505">Yes, there can be multiple videos and channels in each group.</span></span>
+<span data-ttu-id="02b19-505">是的，每個群組中可以有多個影片和頻道。</span><span class="sxs-lookup"><span data-stu-id="02b19-505">Yes, there can be multiple videos and channels in each group.</span></span>
 
-<span data-ttu-id="088cf-506">**影片或通道是否可以與多個群組產生關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-506">**Can a video or channel be associated with multiple groups?**</span></span>
+<span data-ttu-id="02b19-506">**影片或通道是否可以與多個群組產生關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-506">**Can a video or channel be associated with multiple groups?**</span></span>
 
-<span data-ttu-id="088cf-507">是的，雖然使用群組建立影片或通道，但可與其他群組共用。</span><span class="sxs-lookup"><span data-stu-id="088cf-507">Yes, while a video or channel is created with a group, it can be shared with other groups.</span></span>
+<span data-ttu-id="02b19-507">是的，雖然使用群組建立影片或通道，但可與其他群組共用。</span><span class="sxs-lookup"><span data-stu-id="02b19-507">Yes, while a video or channel is created with a group, it can be shared with other groups.</span></span>
 
-<span data-ttu-id="088cf-508">**與其群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-508">**Can its association with a Group change?**</span></span>
+<span data-ttu-id="02b19-508">**與其群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-508">**Can its association with a Group change?**</span></span>
 
-<span data-ttu-id="088cf-509">是和否;Stream 中的影片是由原始的上載程式或會議錄製器所擁有，因此可以與任何群組相關聯，但是影片通道只會與其最初建立所在的群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-509">Yes and no; videos in Stream are owned by the original uploader or meeting recorder and so can be associated with any group, however video channels can only be associated with the group they were originally created in.</span></span>
+<span data-ttu-id="02b19-509">是和否;Stream 中的影片是由原始的上載程式或會議錄製器所擁有，因此可以與任何群組相關聯，但是影片通道只會與其最初建立所在的群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-509">Yes and no; videos in Stream are owned by the original uploader or meeting recorder and so can be associated with any group, however video channels can only be associated with the group they were originally created in.</span></span>
 
-<span data-ttu-id="088cf-510">**刪除影片或頻道會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-510">**Does deleting videos or channels delete the group?**</span></span>
+<span data-ttu-id="02b19-510">**刪除影片或頻道會刪除群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-510">**Does deleting videos or channels delete the group?**</span></span>
 
-<span data-ttu-id="088cf-511">否，刪除影片或頻道不會刪除群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-511">No, deleting videos or channels doesn’t delete the group.</span></span> <span data-ttu-id="088cf-512">不過，在 Stream 中刪除群組本身會刪除與群組相關聯的服務和內容，但實際的影片除外。</span><span class="sxs-lookup"><span data-stu-id="088cf-512">However, deleting the group itself in Stream will delete group-associated services and content, except for the actual videos.</span></span>
+<span data-ttu-id="02b19-511">否，刪除影片或頻道不會刪除群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-511">No, deleting videos or channels doesn’t delete the group.</span></span> <span data-ttu-id="02b19-512">不過，在 Stream 中刪除群組本身會刪除與群組相關聯的服務和內容，但實際的影片除外。</span><span class="sxs-lookup"><span data-stu-id="02b19-512">However, deleting the group itself in Stream will delete group-associated services and content, except for the actual videos.</span></span>
 
-## <a name="yammer"></a><span data-ttu-id="088cf-513">Yammer</span><span class="sxs-lookup"><span data-stu-id="088cf-513">Yammer</span></span>
+## <a name="yammer"></a><span data-ttu-id="02b19-513">Yammer</span><span class="sxs-lookup"><span data-stu-id="02b19-513">Yammer</span></span>
 
-<span data-ttu-id="088cf-514">Yammer 是一種企業社交平臺，可促進組織內部及組織之間的社區參與。</span><span class="sxs-lookup"><span data-stu-id="088cf-514">Yammer is an enterprise social platform designed to foster community engagement within and between organizations.</span></span>
+<span data-ttu-id="02b19-514">Yammer 是一種企業社交平臺，可促進組織內部及組織之間的社區參與。</span><span class="sxs-lookup"><span data-stu-id="02b19-514">Yammer is an enterprise social platform designed to foster community engagement within and between organizations.</span></span>
 
-<span data-ttu-id="088cf-515">在 Yammer 中建立群組 (以前稱為「群組」 ) 會建立信箱，但目前卻不會使用此功能。</span><span class="sxs-lookup"><span data-stu-id="088cf-515">Creating a community (formerly known as “group”) in Yammer creates a mailbox, but at present this is not used.</span></span>
+<span data-ttu-id="02b19-515">在 Yammer 中建立群組 (以前稱為「群組」 ) 會建立信箱，但目前卻不會使用此功能。</span><span class="sxs-lookup"><span data-stu-id="02b19-515">Creating a community (formerly known as “group”) in Yammer creates a mailbox, but at present this is not used.</span></span>
 
-<span data-ttu-id="088cf-516">與 Yammer 相關聯的 Microsoft 365 群組無法與 Microsoft Teams 中的小組一起使用。</span><span class="sxs-lookup"><span data-stu-id="088cf-516">A Microsoft 365 group that is associated with Yammer cannot be used with a team in Microsoft Teams.</span></span>
+<span data-ttu-id="02b19-516">與 Yammer 相關聯的 Microsoft 365 群組無法與 Microsoft Teams 中的小組一起使用。</span><span class="sxs-lookup"><span data-stu-id="02b19-516">A Microsoft 365 group that is associated with Yammer cannot be used with a team in Microsoft Teams.</span></span>
 
-<span data-ttu-id="088cf-517">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="088cf-517">**Key features provided to Groups**</span></span>
+<span data-ttu-id="02b19-517">**提供給群組的主要功能**</span><span class="sxs-lookup"><span data-stu-id="02b19-517">**Key features provided to Groups**</span></span>
 
-- <span data-ttu-id="088cf-518">交談區域</span><span class="sxs-lookup"><span data-stu-id="088cf-518">Conversation area</span></span>
+- <span data-ttu-id="02b19-518">交談區域</span><span class="sxs-lookup"><span data-stu-id="02b19-518">Conversation area</span></span>
 
-<span data-ttu-id="088cf-519">**可以 Yammer 建立 Microsoft 365 群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-519">**Can Yammer create a Microsoft 365 group?**</span></span>
+<span data-ttu-id="02b19-519">**可以 Yammer 建立 Microsoft 365 群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-519">**Can Yammer create a Microsoft 365 group?**</span></span>
 
-<span data-ttu-id="088cf-520">是的，在 Yammer 中建立新群組時，會建立新的 Microsoft 365 群組，如果已連線平臺，而且使用者具備建立群組的能力。</span><span class="sxs-lookup"><span data-stu-id="088cf-520">Yes, creating a new group in Yammer will create a new Microsoft 365 group, if the platforms are connected and the user has the ability to create a group.</span></span>
+<span data-ttu-id="02b19-520">是的，在 Yammer 中建立新群組時，會建立新的 Microsoft 365 群組，如果已連線平臺，而且使用者具備建立群組的能力。</span><span class="sxs-lookup"><span data-stu-id="02b19-520">Yes, creating a new group in Yammer will create a new Microsoft 365 group, if the platforms are connected and the user has the ability to create a group.</span></span>
 
-<span data-ttu-id="088cf-521">在 Yammer 自身以外的任何介面或服務中，都不能建立具有相關 Microsoft 365 群組的 Yammer 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-521">A Yammer group with associated Microsoft 365 group cannot be created in any interface or service other than Yammer itself.</span></span>
+<span data-ttu-id="02b19-521">在 Yammer 自身以外的任何介面或服務中，都不能建立具有相關 Microsoft 365 群組的 Yammer 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-521">A Yammer group with associated Microsoft 365 group cannot be created in any interface or service other than Yammer itself.</span></span>
 
-<span data-ttu-id="088cf-522">**Yammer 群組是否存在沒有 Microsoft 365 群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-522">**Does a Yammer group exist without a Microsoft 365 group?**</span></span>
+<span data-ttu-id="02b19-522">**Yammer 群組是否存在沒有 Microsoft 365 群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-522">**Does a Yammer group exist without a Microsoft 365 group?**</span></span>
 
-<span data-ttu-id="088cf-523">是的，您可以建立沒有 Microsoft 365 群組的 Yammer 群組。</span><span class="sxs-lookup"><span data-stu-id="088cf-523">Yes, it is possible to create a Yammer group without a Microsoft 365 group.</span></span>
+<span data-ttu-id="02b19-523">是的，您可以建立沒有 Microsoft 365 群組的 Yammer 群組。</span><span class="sxs-lookup"><span data-stu-id="02b19-523">Yes, it is possible to create a Yammer group without a Microsoft 365 group.</span></span>
 
-<span data-ttu-id="088cf-524">如果 Yammer 平臺未連接至 Microsoft 365 群組，或使用者沒有建立 Microsoft 365 群組的能力，Yammer 群組建立時不會有 Microsoft 365 群組關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-524">If the Yammer platform is not connected to Microsoft 365 groups, or users do not have the ability to create a Microsoft 365 group, Yammer groups are created without a Microsoft 365 group association.</span></span>
+<span data-ttu-id="02b19-524">如果 Yammer 平臺未連接至 Microsoft 365 群組，或使用者沒有建立 Microsoft 365 群組的能力，Yammer 群組建立時不會有 Microsoft 365 群組關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-524">If the Yammer platform is not connected to Microsoft 365 groups, or users do not have the ability to create a Microsoft 365 group, Yammer groups are created without a Microsoft 365 group association.</span></span>
 
-<span data-ttu-id="088cf-525">**每個 Microsoft 365 群組可以有多個 Yammer 群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="088cf-525">**Can there be multiple Yammer groups per Microsoft 365 group?**</span></span>
+<span data-ttu-id="02b19-525">**每個 Microsoft 365 群組可以有多個 Yammer 群組嗎？**</span><span class="sxs-lookup"><span data-stu-id="02b19-525">**Can there be multiple Yammer groups per Microsoft 365 group?**</span></span>
 
-<span data-ttu-id="088cf-526">否，Yammer 群組與 Microsoft 365 群組之間的關聯性是1:1。</span><span class="sxs-lookup"><span data-stu-id="088cf-526">No, the relationship between a Yammer group and a Microsoft 365 group is 1:1.</span></span>
+<span data-ttu-id="02b19-526">否，Yammer 群組與 Microsoft 365 群組之間的關聯性是1:1。</span><span class="sxs-lookup"><span data-stu-id="02b19-526">No, the relationship between a Yammer group and a Microsoft 365 group is 1:1.</span></span>
 
-<span data-ttu-id="088cf-527">**Yammer 群組是否可以與多個 Microsoft 365 群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="088cf-527">**Can a Yammer group be associated with multiple Microsoft 365 groups?**</span></span>
+<span data-ttu-id="02b19-527">**Yammer 群組是否可以與多個 Microsoft 365 群組相關聯？**</span><span class="sxs-lookup"><span data-stu-id="02b19-527">**Can a Yammer group be associated with multiple Microsoft 365 groups?**</span></span>
 
-<span data-ttu-id="088cf-528">否，Yammer 群組只會與單一 Microsoft 365 群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-528">No, the Yammer group can only be associated with a single Microsoft 365 group.</span></span> <span data-ttu-id="088cf-529">您可以與其他 Yammer 群組共用或移動公告。</span><span class="sxs-lookup"><span data-stu-id="088cf-529">It is possible for posts to be shared with or moved to other Yammer groups.</span></span>
+<span data-ttu-id="02b19-528">否，Yammer 群組只會與單一 Microsoft 365 群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-528">No, the Yammer group can only be associated with a single Microsoft 365 group.</span></span> <span data-ttu-id="02b19-529">您可以與其他 Yammer 群組共用或移動公告。</span><span class="sxs-lookup"><span data-stu-id="02b19-529">It is possible for posts to be shared with or moved to other Yammer groups.</span></span>
 
-<span data-ttu-id="088cf-530">**Yammer 群組與 Microsoft 365 群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="088cf-530">**Can a Yammer group’s association with a Microsoft 365 group change?**</span></span>
+<span data-ttu-id="02b19-530">**Yammer 群組與 Microsoft 365 群組的關聯是否可以變更？**</span><span class="sxs-lookup"><span data-stu-id="02b19-530">**Can a Yammer group’s association with a Microsoft 365 group change?**</span></span>
 
-<span data-ttu-id="088cf-531">否，Yammer 群組只會與其原來關聯的 Microsoft 365 群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="088cf-531">No, the Yammer group can only ever be associated with the Microsoft 365 group to which it was originally associated.</span></span>
+<span data-ttu-id="02b19-531">否，Yammer 群組只會與其原來關聯的 Microsoft 365 群組相關聯。</span><span class="sxs-lookup"><span data-stu-id="02b19-531">No, the Yammer group can only ever be associated with the Microsoft 365 group to which it was originally associated.</span></span>
 
-<span data-ttu-id="088cf-532">**刪除 Yammer 群組是否刪除 Microsoft 365 群組？**</span><span class="sxs-lookup"><span data-stu-id="088cf-532">**Does deleting the Yammer group delete the Microsoft 365 group?**</span></span>
+<span data-ttu-id="02b19-532">**刪除 Yammer 群組是否刪除 Microsoft 365 群組？**</span><span class="sxs-lookup"><span data-stu-id="02b19-532">**Does deleting the Yammer group delete the Microsoft 365 group?**</span></span>
 
-<span data-ttu-id="088cf-533">是，在 Yammer 中刪除群組將會刪除相關的 Microsoft 群組和群組相關的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="088cf-533">Yes, deleting the group in Yammer will delete related Microsoft group and group-associated services and content.</span></span>
+<span data-ttu-id="02b19-533">是，在 Yammer 中刪除群組將會刪除相關的 Microsoft 群組和群組相關的服務和內容。</span><span class="sxs-lookup"><span data-stu-id="02b19-533">Yes, deleting the group in Yammer will delete related Microsoft group and group-associated services and content.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="088cf-534">相關主題</span><span class="sxs-lookup"><span data-stu-id="088cf-534">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="02b19-534">相關主題</span><span class="sxs-lookup"><span data-stu-id="02b19-534">Related topics</span></span>
 
-[<span data-ttu-id="088cf-535">共同作業管理規劃逐步</span><span class="sxs-lookup"><span data-stu-id="088cf-535">Collaboration governance planning step-by-step</span></span>](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[<span data-ttu-id="02b19-535">共同作業管理規劃逐步</span><span class="sxs-lookup"><span data-stu-id="02b19-535">Collaboration governance planning step-by-step</span></span>](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[<span data-ttu-id="088cf-536">建立共同作業管理計畫</span><span class="sxs-lookup"><span data-stu-id="088cf-536">Create your collaboration governance plan</span></span>](collaboration-governance-first.md)
+[<span data-ttu-id="02b19-536">建立共同作業管理計畫</span><span class="sxs-lookup"><span data-stu-id="02b19-536">Create your collaboration governance plan</span></span>](collaboration-governance-first.md)

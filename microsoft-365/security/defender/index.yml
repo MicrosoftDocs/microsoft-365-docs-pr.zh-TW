@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: b10d9eebf8ed98e06e98c1e73722f7b3b0d7ba87
-  ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+  ms.openlocfilehash: 68909caf8844b5ea4d20029a04d1b7d81ca25e66
+  ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/25/2021
-  ms.locfileid: "52639388"
+  ms.lasthandoff: 06/10/2021
+  ms.locfileid: "52878445"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -42,7 +42,7 @@ landingContent:
       url: m365d-evaluation.md
     - text: 在實際執行中執行試驗專案
       url: m365d-pilot.md
-- title: 入門
+- title: 開始使用
   linkLists:
   - linkListType: get-started
     links:
@@ -59,31 +59,31 @@ landingContent:
   - linkListType: overview
     links:
     - text: 什麼是適用於身分識別的 Microsoft Defender？
-      url: /azure-advanced-threat-protection/what-is-atp
+      url: /defender-for-identity/what-is
     - text: 適用於身分識別的 Microsoft Defender 架構
-      url: /azure-advanced-threat-protection/atp-architecture
+      url: /defender-for-identity/architecture
 - title: 適用於 Office 365 的 Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是適用於 Office 365 的 Defender？
-      url: /office-365-security/defender-for-office-365
+      url: ../office-365-security/defender-for-office-365.md
     - text: 適用於 Office 365 的 Defender 服務描述
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
     - text: Microsoft 365 defender 中 Office 365 的 defender
-      url: /defender/microsoft-365-security-center-mdo
+      url: microsoft-365-security-center-mdo.md
     - text: 在 Microsoft 365 defender 中重新定向 Office 365 的 defender
-      url: /defender/microsoft-365-security-mdo-redirection
+      url: microsoft-365-security-mdo-redirection.md
 - title: 適用於端點的 Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是適用於端點的 Microsoft Defender？
-      url: /defender-endpoint/microsoft-defender-endpoint
+      url: ../defender-endpoint/microsoft-defender-endpoint.md
     - text: Microsoft 365 defender 中的端點的 defender
-      url: /defender/microsoft-365-security-cente
+      url: microsoft-365-security-center-mde.md
     - text: 在 Microsoft 365 defender 中重新導向用於端點的 Defender
-      url: /defender/microsoft-365-security-mde-redirection
+      url: ../defender/microsoft-365-security-mde-redirection.md
 - title: Microsoft 365 安全性中心
   linkLists:
   - linkListType: overview
@@ -114,7 +114,7 @@ landingContent:
       url: m365d-autoir.md
     - text: 尋找威脅
       url: advanced-hunting-overview.md
-- title: 參考資料
+- title: 參考
   linkLists:
   - linkListType: reference
     links:

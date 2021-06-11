@@ -13,7 +13,7 @@ metadata:
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
   ms.custom:
   - seo-marvel-apr2020
-  description: 尋找在 Exchange Online Protection (EOP) 篩選程式期間，有關已排入佇列、延遲或退回之郵件的最常見問題的答案。
+  description: 尋找 Exchange Online Protection (EOP) 篩選程式期間佇列中已排入佇列、延遲或退回之郵件的最常見問題的答案。
   ms.technology: mdo
   ms.prod: m365-security
   ms.openlocfilehash: c9c3343de6e61d660cf07e920661af8d996c3039
@@ -36,7 +36,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主題提供 Exchange Online Protection (EOP) 篩選程式期間已排入佇列、延遲或退回之郵件的常見問題解答。
+  本主題提供在 Exchange Online Protection (EOP) 篩選程式期間，已排入佇列、延遲或退回之郵件的常見問題解答。
 sections:
 - name: 忽略
   questions:

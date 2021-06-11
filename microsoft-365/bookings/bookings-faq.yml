@@ -23,15 +23,15 @@ sections:
   - question: >
       何謂 Microsoft 預約？
     answer: >
-      Microsoft 預約是 Microsoft 365 應用程式，可讓排程和管理約會變得更輕鬆。 預約包含 Web 型預約行事曆，並與 Outlook 整合，以優化員工的行事曆，讓您的客戶可以靈活地預定最適合他們的時間。 自動化的通知電子郵件會減少非展示的電子郵件，並減少重複排程任務的時間。 預約可協助您透過 Skype 或 Microsoft 小組輕鬆執行虛擬約會，並協助您透過小組中的預約應用程式來管理日常排程。 利用內建的自訂功能，預約設計可滿足任何組織的多個部分的需求。
+      Microsoft 預約是一種可輕鬆排程和管理約會的 Microsoft 365 應用程式。 預約包含 Web 型預約行事曆，並與 Outlook 整合，以優化員工的行事曆，讓您的客戶可以靈活地預訂最適合他們的時間。 自動化的通知電子郵件會減少非展示的電子郵件，並減少重複排程任務的時間。 預約可協助您透過 Skype 或 Microsoft Teams 輕鬆執行虛擬約會，並協助您透過 Teams 中的預約應用程式來管理日常排程。 利用內建的自訂功能，預約設計可滿足任何組織的多個部分的需求。
   - question: >
       如何使用 Microsoft 預定？
     answer: >
-      預定是線上服務，因此您不需要下載任何專案。 移至 Microsoft 365 Web 體驗中的應用程式選擇。 系統管理員也可以使用預約輔助應用程式，及時瞭解客戶及其約會的最新資訊。
+      預定是線上服務，因此您不需要下載任何專案。 請移至 Microsoft 365 網頁體驗中的應用程式選擇。 系統管理員也可以使用預約輔助應用程式，及時瞭解客戶及其約會的最新資訊。
   - question: >
-      誰有權存取 Microsoft 預約？
+      神秘可以存取 Microsoft 預定？
     answer: >
-      Microsoft 365 商務高級版、Microsoft 365 Business Standard、A3、A5、E3 和 E5 客戶在全球皆可使用且預設為「預定」。 您也可以在由世紀運作的 Office 365 中使用預定。
+      預設為全球的 Microsoft 365 商務進階版、Microsoft 365 商務標準版、A3、A5、E3 和 E5 客戶提供預訂。 在由世紀運作的 Office 365 中也提供預訂。
   - question: >
       我的客戶會看到我的個人或商務行事曆嗎？
     answer: >
@@ -43,7 +43,7 @@ sections:
   - question: >
       使用者如何存取預定應用程式？
     answer: >
-      Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 或的任何人，都是以系統管理員或檢視器角色中的教職員工成員身分加入的任何人員，都可以在 Microsoft 365 Web 體驗中的應用程式選擇範圍記憶體取預定。 IOS 和 Android 也可以使用隨附的應用程式。
+      授權任何 Microsoft 365 商務進階版、Microsoft 365 商務標準版、A3、A5、E3、E5 或已在系統管理員或檢視器角色中新增為教職員工成員的使用者，都可以在 Microsoft 365 的 Web 體驗內，于應用程式選擇中存取預定。 IOS 和 Android 也可以使用隨附的應用程式。
   - question: >
       我是否可以在自己的網站中使用預定？
     answer: >
@@ -55,7 +55,7 @@ sections:
   - question: >
       我們的 IT 部門是否可以控制使用者是否可以存取預定？
     answer: >
-      根據預設，可在 Microsoft 365 商務版、Microsoft 365 Business Standard、M365 A3/A5 和 E3/E5 租使用者中取得預約，但系統管理員可以選擇在 Microsoft 365 系統管理中心中將其關閉。 若要這麼做，請 [遵循下列指示](turn-bookings-on-or-off.md)。
+      根據預設，可在 Microsoft 365 商務進階版、Microsoft 365 商務標準版、M365 A3/A5 和 E3/E5 租使用者中取得預約，但系統管理員可以選擇在 Microsoft 365 系統管理中心關閉它。 若要這麼做，請 [遵循下列指示](turn-bookings-on-or-off.md)。
 
 
       若客戶想要對其承租人中的某些合格授權停用預約存取權，他們可以使用群組原則來限制授權或實施 OWA 信箱原則，以限制能夠建立新預約行事曆的人員。
@@ -67,27 +67,27 @@ sections:
     answer: >
       是的，可自訂且可用於各種案例的預訂。 當您設定預定的行事歷時，Web 排程頁面的許多方面，您可以自訂您的商務資訊、人員詳細資料、服務類型和排程原則。
   - question: >
-      原始預約 Web app 的所有功能是否皆可供 Microsoft 團隊使用？
+      原始預約 Web app 的所有功能是否皆可在 Microsoft Teams 中使用？
     answer: >
-      「輕量的預約」現在提供為小組中的應用程式。 初始宣告 [如下](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 您可以在 Web 應用程式中向外彈出快捷方式，並在安裝程式完成前的預約使用，而不需要離開小組。 跨平臺的資訊流程。
+      羽量級版本的預約現在可以做為 Teams 中的應用程式。 初始宣告 [如下](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 您可以在 Web 應用程式中向外彈出快捷方式，並在安裝程式完成前的預約使用，而不必離開 Teams。 跨平臺的資訊流程。
   - question: >
-      是否為預定小型企業服務或企業服務？
-    answer: "預約是企業和小型企業客戶的最佳解決方案，可跨越不同的行業。 使用案例包括：\n\n- 財務服務\n    - 磋商\n    - 銀行和保險業服務\n    - 納稅歸檔\n\n- 人力資源 (人力資源) \n    - 候選人面試\n    - 板載\n    - 權益協助\n    - 訓練和研討會\n\n- 醫療保健\n    - 患者走訪\n    - 提供者與提供者共同作業\n    - 保險諮詢\n\n- 政府 & 公開部門\n    - 法院 hearings 和試驗\n    - 公用服務\n    - 部門約會\n\n- 教育----12\n    - 父系教師會議\n    - 學校城鎮廳\n    - 學生 counselor 就診\n\n- 教育版--高等教育版\n    - 辦公時間\n    - 輔導\n    - 學生服務\n    - 考試註冊\n\n- 零售業\n    - 輔助購物\n    - 合同工排程\n    - 設計服務\n\n- 一般 Enterprise 和 small business 需求\n    - 客戶和用戶端會議\n    - 技術支援\n    - 法律檢查\n    - 設施\n"
+      是否為預定小型企業服務或 Enterprise 提供或兩者？
+    answer: "預約是適用于各行業的 Enterprise 和小型企業客戶的理想解決方案。 使用案例包括：\n\n- 財務服務\n    - 磋商\n    - 銀行和保險業服務\n    - 納稅歸檔\n\n- 人力資源 (人力資源) \n    - 候選人面試\n    - 板載\n    - 權益協助\n    - 訓練和研討會\n\n- 醫療保健\n    - 患者走訪\n    - 提供者與提供者共同作業\n    - 保險諮詢\n\n- 政府 & 公開部門\n    - 法院 hearings 和試驗\n    - 公用服務\n    - 部門約會\n\n- 教育----12\n    - 父系教師會議\n    - 學校城鎮廳\n    - 學生 counselor 就診\n\n- 教育版--高等教育版\n    - 辦公時間\n    - 輔導\n    - 學生服務\n    - 考試註冊\n\n- 零售業\n    - 輔助購物\n    - 合同工排程\n    - 設計服務\n\n- 一般 Enterprise 和小型企業需求\n    - 客戶和用戶端會議\n    - 技術支援\n    - 法律檢查\n    - 設施\n"
 - name: 定價和授權
   questions:
   - question: >
       如何取得 Microsoft 預定？
     answer: >
-      預定可供使用 Office 365 A3、A5、E3 和 E5 的客戶使用，以及 Microsoft 365 商務標準、Microsoft 365 商務版、A3、A5、E3 和 E5。 您可以使用預約搭配 iOS 和 Android 配套應用程式。 不能以獨立的應用程式形式進行預定。 必須啟用 outlook Web App 或 Web 上的 Outlook，才能使用預定，因為它會將資料儲存在 Outlook 內。
+      可供使用 Office 365 A3、A5、E3 及 e5 的客戶使用，以及 Microsoft 365 商務標準版、Microsoft 365 商務進階版、A3、A5、E3 及 E5。 您可以使用預約搭配 iOS 和 Android 配套應用程式。 不能以獨立的應用程式形式進行預定。 必須啟用 Web 上的 Outlook Web App 或 Outlook，才能使用預定，因為它會在 Outlook 中儲存資料。
 
 
       預約授權為產品提供完整功能，包括建立及管理行事曆。 當使用者新增為系統管理員或查看者角色中的人員時，也可讓使用者查看及編輯現有的行事曆。
   - question: >
-      我是否需要將我的電子郵件帳戶從我目前的提供者遷移至 Microsoft 365？
+      我需要將我的電子郵件帳戶從我目前的提供者遷移至 Microsoft 365 嗎？
     answer: >
-      您可以保留目前的提供者，但預約會將所有通知傳送至 Microsoft 365 帳戶中所用的電子郵件。
+      您可以保留目前的提供者，但預約會將所有通知傳送給您 Microsoft 365 帳戶中使用的電子郵件。
   - question: >
-      我的員工是否可以在沒有 Microsoft 365 帳戶的情況下使用預定？
+      我的員工是否可以使用沒有 Microsoft 365 帳戶的登記？
     answer: >
       是。 您可以使用任何電子郵件來新增您的員工，當有人預約約會時，他們仍會收到電子郵件確認和行事曆邀請。
   - question: >
@@ -119,21 +119,21 @@ sections:
 - name: 產品功能
   questions:
   - question: >
-      預定的行事曆顯示在我的 Microsoft 365 租使用者中？
+      在我的 Microsoft 365 租使用者中顯示預約行事曆的位置為何？
     answer: >
-      每個新的預約行事曆都會在 Exchange 中建立對應的信箱，以及 Azure Active Directory (AAD) 中的相關專案，其中的專案會列為未授權的使用者。
+      每個新的預約行事曆都會在 Exchange 中建立對應的信箱，以及 Azure Active Directory (AAD) 中的相關專案，其中的專案列為未授權的使用者。
   - question: >
       可否刪除先前建立的預約行事曆？
     answer: >
-      若要刪除預約行事曆，您必須刪除 Exchange 中相關聯的信箱。
+      若要刪除預約行事曆，您必須在 Exchange 中刪除相關聯的信箱。
   - question: >
       如果我建立行事曆，而其他人有權存取預約，是否可以查看我的行事曆？
     answer: >
-      只有在系統管理員或查看者角色中，已以人員身分新增為個人的任何人員，都能存取您透過 Web app (所建立的預約行事曆) 。 租使用者系統管理員將能夠查看 Exchange 和 AAD 中所有預約信箱的清單。
+      只有在系統管理員或查看者角色中，已以人員身分新增為個人的任何人員，都能存取您透過 Web app (所建立的預約行事曆) 。 租使用者系統管理員將可以在 Exchange 和 AAD 中查看所有預約信箱的清單。
   - question: >
       影片會議是否已整合至預定應用程式？
     answer: >
-      使用 Skype 或 Microsoft 團隊用戶端時，可在預訂內使用線上會議。 您可以在服務層級啟用線上會議，而您選擇的會議用戶端 (的 Skype 或小組) 將會成為已預約員工成員的預設設定。 若要加入線上會議，每個新約會都會有附加至約會的唯一會議連結，此外，事件和確認電子郵件中也會包含輕鬆加入選項。
+      使用 Skype 或 Microsoft Teams 用戶端時，可在預訂內使用線上會議。 您可以在服務層級啟用線上會議，而您選擇的會議用戶端 (Skype 或 Teams) 將會成為預約員工成員的預設設定。 若要加入線上會議，每個新約會都會有附加至約會的唯一會議連結，此外，事件和確認電子郵件中也會包含輕鬆加入選項。
   - question: >
       排程原則的運作方式？
     answer: >
@@ -154,11 +154,11 @@ sections:
   - question: >
       電子郵件通知是否可以以租使用者功能變數名稱形式傳送？
     answer: >
-      電子郵件地址是在 Microsoft 365 設定層級加以控制和管理，視您的網域設定設定而定。 您可以在 [這裡](/powershell/module/exchange/get-accepteddomain)找到詳細資訊。
+      電子郵件地址是在 [Microsoft 365 設定] 層級加以控制和管理，取決於 [網域設定] 設定。 您可以在 [這裡](/powershell/module/exchange/get-accepteddomain)找到詳細資訊。
   - question: >
-      是否能夠根據不同的服務或特定設定傳送短信訊息？
+      是否能夠傳送與不同服務或特定設定相關的簡訊郵件？
     answer: >
-      目前可在北美使用 SMS 訊息，而且會使用 Skype 或 Twilio 帳戶進行短信傳送。
+      目前在北美使用簡訊郵件，而 Skype 或 Twilio 帳戶將用於簡訊傳遞。
   - question: >
       預約約會會如何顯示在人員的行事曆上？
     answer: >
@@ -174,7 +174,7 @@ sections:
   - question: >
       是否可以保留未發佈的行事曆 (非上市公司) ，但仍可供指定的使用者存取？
     answer: >
-      是。 Web 應用程式中的 [預約頁面] 索引標籤上有核取方塊： **需要從「我的組織」到預訂的 Microsoft 365 或 Office 365 帳戶**。 選取此核取方塊會使自助頁面存取只會限制在您租使用者中的頁面。 位於 Web 應用程式建立和管理中的預約行事曆，只能由以系統管理員或檢視器角色新增為頁面人員的人員存取。
+      是。 Web 應用程式中的 [預定頁面] 索引標籤上有核取方塊：**需要從我的組織 Microsoft 365 或 Office 365 帳戶才能進行預訂**。 選取此核取方塊會使自助頁面存取只會限制在您租使用者中的頁面。 位於 Web 應用程式建立和管理中的預約行事曆，只能由以系統管理員或檢視器角色新增為頁面人員的人員存取。
 
 
       :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="預定中的預約頁面存取控制":::
@@ -189,7 +189,7 @@ sections:
   - question: >
       預定的行事曆是否可以複製或重複，是否可以 templatized 以方便擴充？
     answer: >
-      處理常式是使用圖形 API 來取得信箱詳細資料，然後使用這些詳細資料來建立新的信箱。 API 檔位於 [這裡](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
+      處理常式是使用 Graph API 來取得信箱詳細資料，然後使用這些詳細資料來建立新的信箱。 API 檔位於 [這裡](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
   - question: >
       哪些報表可用於預定？
     answer: >
@@ -215,7 +215,7 @@ sections:
   - question: >
       預定資料儲存在哪裡？
     answer: >
-      「預定」是 Microsoft 365 應用程式，表示所有資料都儲存在 Microsoft 365 平臺和 Exchange 中。 「預定」會遵循 Microsoft 所設定的所有資料儲存原則，這些原則與所有 Office 應用程式遵循的原則相同。 預定使用 Exchange 中的共用信箱來儲存客戶、人員、服務及約會詳細資料。 在 Exchange 中共用信箱的相容性原則也適用于預定信箱。 所有客戶資料 (，包括客戶在預約) 會在預訂中取得預約時所提供的資訊，並儲存在應用程式中，因此會儲存在 Exchange 中。 Microsoft 預約使用 Microsoft 365 所使用的相同原則，您可以在[這裡找到。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+      「預約」是指 Microsoft 365 的應用程式，表示所有資料都儲存在 Microsoft 365 平臺及 Exchange 中。 「預定」會遵循 Microsoft 所設定的所有資料儲存原則，這些原則與所有 Office 應用程式遵循的原則相同。 預約使用 Exchange 中的共用信箱來儲存客戶、人員、服務及約會詳細資料。 在 Exchange 中共用信箱的相容性原則也適用于預定信箱。 所有客戶資料 (，包括客戶在預約) 會在預訂中取得預約時所提供的資訊，並儲存在應用程式中，因此會儲存在 Exchange 中。 Microsoft 預約使用 Microsoft 365 所使用的相同原則，您可以在[這裡找到。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
   - question: >
       是否有任何方式可以集中管理所有使用者的預約行事曆？
     answer: >

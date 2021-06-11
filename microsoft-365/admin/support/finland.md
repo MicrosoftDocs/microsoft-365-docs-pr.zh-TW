@@ -19,22 +19,22 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296224"
 ---
-# <a name="contact-support-for-finland"></a><span data-ttu-id="dbba7-103">為芬蘭技術人員提供技術支援</span><span class="sxs-lookup"><span data-stu-id="dbba7-103">Contact support for Finland</span></span>
+# <a name="contact-support-for-finland"></a><span data-ttu-id="f5767-103">為芬蘭技術人員提供技術支援</span><span class="sxs-lookup"><span data-stu-id="f5767-103">Contact support for Finland</span></span>
 
-<span data-ttu-id="dbba7-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="dbba7-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="f5767-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f5767-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="dbba7-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="dbba7-105">Phone number</span></span>
-<span data-ttu-id="dbba7-106">0800 98462</span><span class="sxs-lookup"><span data-stu-id="dbba7-106">0800 98462</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f5767-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="f5767-105">Phone number</span></span>
+<span data-ttu-id="f5767-106">0800 98462</span><span class="sxs-lookup"><span data-stu-id="f5767-106">0800 98462</span></span>
 
-## <a name="hours"></a><span data-ttu-id="dbba7-107">小時</span><span class="sxs-lookup"><span data-stu-id="dbba7-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="dbba7-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="dbba7-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f5767-107">小時</span><span class="sxs-lookup"><span data-stu-id="f5767-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f5767-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="f5767-108">Billing Support:</span></span>
 
-<span data-ttu-id="dbba7-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="dbba7-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="f5767-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="f5767-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="dbba7-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="dbba7-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f5767-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="f5767-110">Technical Support:</span></span>
 
-<span data-ttu-id="dbba7-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="dbba7-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f5767-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="f5767-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="dbba7-112">替代電話號碼： 09 72 51 96 30</span><span class="sxs-lookup"><span data-stu-id="dbba7-112">Alternative Phone Number: 09 72 51 96 30</span></span>
+<span data-ttu-id="f5767-112">替代電話號碼： 09 72 51 96 30</span><span class="sxs-lookup"><span data-stu-id="f5767-112">Alternative Phone Number: 09 72 51 96 30</span></span>
 
-<span data-ttu-id="dbba7-113">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="dbba7-113">Local call charges apply</span></span>
+<span data-ttu-id="f5767-113">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="f5767-113">Local call charges apply</span></span>
