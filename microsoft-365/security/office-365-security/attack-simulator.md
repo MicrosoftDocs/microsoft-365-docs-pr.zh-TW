@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用攻擊模擬器，在其 Microsoft 365 E5 或 Microsoft Defender 中對 Office 365 計畫2組織執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624822"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878673"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
@@ -37,9 +37,9 @@ ms.locfileid: "52624822"
 
 > [!NOTE]
 >
-> 本文所述的攻擊模擬程式現在是唯讀的，而且已由 [Microsoft 365 安全中心](https://security.microsoft.com)的 **電子郵件 &** 共同作業節點中的 **攻擊模擬訓練** 所取代。 如需詳細資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
+> 如本文所述的攻擊模擬器現在是唯讀的，而且已由 Microsoft 365 Defender 入口網站中的「**電子郵件 &** 共同作業」節點中的「**攻擊模擬訓練**」所取代 <https://security.microsoft.com> 。 如需詳細資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
 >
-> 已停用從此版本的攻擊模擬程式啟動新模擬的功能。 不過，您仍然可以從90年1月24日到2021存取報告。
+> 已停用從此版本的攻擊模擬程式啟動新模擬的功能。 不過，您仍然可以存取報表，直到2021年4月24日。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 

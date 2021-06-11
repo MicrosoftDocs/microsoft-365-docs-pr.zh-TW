@@ -38,7 +38,7 @@ ms.locfileid: "52538852"
 
 透過 _追蹤敵人_，以提升您的高級搜尋知識，獲得新安全性分析師和經驗豐富威脅 hunters 的網路廣播系列。 該數列會逐步引導您建立您自己複雜的查詢的基本方法。 先從第一個影片開始，或跳到更多符合您經驗水準的視頻。
 
-| 職稱 | 描述 | Watch | 查詢 | 
+| 職稱 | 描述 | 觀看 | 查詢 | 
 |--|--|--|--|
 | 第1集： KQL 基礎 | 這一部分涵蓋 Microsoft 365 Defender 中的高級搜尋基本知識。 深入瞭解可用的高級搜尋資料和基本 KQL 語法及運算子。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14)  | [文字檔](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | 劇集2：聯接 | 繼續瞭解高級搜尋中的資料，以及如何將資料表結合在一起。 深入瞭解 `inner` 、 `outer` 、 `unique` 及 `semi` 加入，並瞭解預設 Kusto join 的細微差別 `innerunique` 。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33)  | [文字檔](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
@@ -48,7 +48,7 @@ ms.locfileid: "52538852"
 
 透過 L33TSP3AK 取得更多專家訓練 *： Microsoft 365 Defender 的高級搜尋*，這是一種網路廣播的網路廣播系列，用來尋找在 Microsoft 365 Defender 中使用「高級搜尋」來進行安全性調查的技術知識及實際技能。 
 
-| 職稱 | 描述 | Watch | 查詢 | 
+| 職稱 | 描述 | 觀看 | 查詢 | 
 |--|--|--|--|
 | 劇集1  | 在此中，您將瞭解執行高級搜尋查詢的不同最佳作法。 涵蓋的主題包括：如何優化您的查詢、使用勒索軟體的高級搜尋、將 JSON 當做動態類型處理，以及使用外部資料運算子。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34)  | [文字檔](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | 劇集2 | 在此中，您將瞭解如何透過收件匣轉寄規則調查和回應可疑或不尋常的登入位置和資料 exfiltration。 Sebastien Molendijk，Cloud Security CxE 的資深計畫經理，分享如何使用高級搜尋來調查使用 Microsoft Cloud App Security 資料的多階段事件。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07)  | [文字檔](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)

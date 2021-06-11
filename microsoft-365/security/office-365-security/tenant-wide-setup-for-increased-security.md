@@ -20,12 +20,12 @@ ms.custom:
 description: 本主題將引導您瞭解會影響 Microsoft 365 環境安全性的全租使用者設定的建議配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684168"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879213"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>設定 Microsoft 365 租用戶以提高安全性
 
@@ -42,9 +42,9 @@ ms.locfileid: "52684168"
 
 Office 365安全分數會根據您的定期活動和安全性設定來分析貴組織的安全性，並指定分數。 請先記下您目前的分數。 調整某些全租用戶將能提高您的分數。 您的目標不是達到滿分，而是要留意能保護您的環境，又不會對使用者的生產力造成負面影響的機會。 請參閱 [Microsoft 安全分數](../defender/microsoft-secure-score.md)。
 
-## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>調整 Microsoft 365 安全性中心的威脅管理原則
+## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>調整 Microsoft 365 Defender 入口網站中的威脅管理原則
 
-Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時，您也可以使用其中的報告和儀表板來進行監控並採取行動。 其中某些區域擁有預設的原則設定， 某些區域則不包含預設原則或規則。 請在威脅管理底下瀏覽以下原則，來調整威脅管理設定以營造更安全的環境。
+Microsoft 365 Defender 入口網站包含的功能可保護您的環境。 同時，您也可以使用其中的報告和儀表板來進行監控並採取行動。 其中某些區域擁有預設的原則設定， 某些區域則不包含預設原則或規則。 請在威脅管理底下瀏覽以下原則，來調整威脅管理設定以營造更安全的環境。
 
 <br>
 
@@ -57,7 +57,7 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 |**Microsoft Defender 中 Office 365 的安全附件**|否|在 [安全附件] 的主要頁面上，按一下 [ **通用設定** ]，然後開啟此設定： <ul><li>**針對 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender**</li></ul> <p> 使用下列設定來建立安全附件原則： <ul><li> **封鎖**：選取 [ **封鎖** ] 作為未知的惡意程式碼回應。</li><li>**啟用重新導向**：請選取此方塊並輸入電子郵件地址，例如系統管理員或隔離帳戶。</li><li>**若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍**：請選取此方塊。</li><li>**_適用_* 于： **收件者網域是** \> 選取您的網域。</li></ul> <p> 詳細資訊： [SharePoint、OneDrive 及 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)，並[設定安全附件原則](set-up-safe-attachments-policies.md)|
 |**Microsoft Defender 中 Office 365 的安全連結**|是|在 [安全連結] 的主要頁面上，按一下 [ **通用設定**]。 <ul><li>**使用 Office 365 下列專案中的安全連結**：驗證此設定已開啟。</li><li>**當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者按一下。</li></ul> <p> 使用下列設定建立安全連結原則： <ul><li>**在郵件中選取未知可能惡意 URLs 的動作**：確認此設定為 **開啟**。</li><li>**選取 Microsoft Teams 內未知或可能惡意的 URLs 的動作**：確認此設定為 **On**。</li><li>**對指向檔案的可疑連結和連結套用即時 URL 掃描**：請選取此方塊。</li><li>**等候 URL 掃描完成後，才能傳遞郵件**：請選取此方塊。</li><li>套用 **安全連結至組織內傳送的電子郵件**：複選此方塊</li><li>**不允許使用者依序按一下原始 URL**：請選取此方塊。</li><li>**適用** 于： **收件者網域是** \> 選取您的網域。</li></ul> <p> 詳細資訊： [設定安全連結原則](set-up-safe-links-policies.md)。|
 |**反垃圾郵件 (郵件篩選)**|是| 要監視的專案：垃圾郵件太多-選擇 [自訂設定]，然後編輯預設垃圾郵件篩選原則。 詳細資訊： [Microsoft 365 電子郵件 Anti-Spam 保護](anti-spam-protection.md)。|
-|***電子郵件驗證***|是|電子郵件驗證使用網域名稱系統 (DNS) 將可驗證的資訊新增到某電子郵件寄件者的電子郵件。 Microsoft 365 會為其預設網域 (onmicrosoft.com) 設定電子郵件驗證，但是 Microsoft 365 系統管理員也可以使用自訂網域的電子郵件驗證。 使用的三種驗證方法： <ul><li>寄件者原則框架 (或 SPF) 。</li><ul><li>如需安裝程式，請參閱[在 Microsoft 365 中設定 SPF 以協助防止欺詐](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>網域認證金鑰識別郵件 (DKIM)。</li><ul><li>請參閱 [使用 DKIM 驗證從您的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。</li><li>在您設定 DKIM 後，請在 [安全性中心] 中加以啟用。</li></ul><li>以網域為基礎的訊息認證、報告與一致性 (DMARC)。</li><ul><li>若為 DMARC 安裝，[請使用 DMARC 驗證 Microsoft 365 中的電子郵件](use-dmarc-to-validate-email.md)。</li></ul></ul>|
+|***電子郵件驗證***|是|電子郵件驗證使用網域名稱系統 (DNS) 將可驗證的資訊新增到某電子郵件寄件者的電子郵件。 Microsoft 365 會為其預設網域 (onmicrosoft.com) 設定電子郵件驗證，但是 Microsoft 365 系統管理員也可以使用自訂網域的電子郵件驗證。 使用的三種驗證方法： <ul><li>寄件者原則框架 (或 SPF) 。</li><ul><li>如需安裝程式，請參閱[在 Microsoft 365 中設定 SPF 以協助防止欺詐](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>網域認證金鑰識別郵件 (DKIM)。</li><ul><li>請參閱 [使用 DKIM 驗證從您的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。</li><li>在您設定 DKIM 後，請在 Microsoft 365 Defender 入口網站中啟用它。</li></ul><li>以網域為基礎的訊息認證、報告與一致性 (DMARC)。</li><ul><li>若為 DMARC 安裝，[請使用 DMARC 驗證 Microsoft 365 中的電子郵件](use-dmarc-to-validate-email.md)。</li></ul></ul>|
 |
 
 > [!NOTE]
@@ -73,16 +73,16 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 
 |儀表板|描述|
 |---|---|
-|[威脅管理儀表板](security-dashboard.md)|在安全性中心的 **[威脅管理]** 區段中，使用此儀表板來查看已經處理過的威脅，並將它視為一項實用工具，以此向商業決策者報告威脅調查和回應功能做了哪些舉動來保護貴企業。|
-|[威脅總管 (或即時偵測)](threat-explorer.md)|此功能同樣位於安全性中心的 **[威脅管理]** 區段中。 如果您要調查或遭受對租使用者的攻擊，請使用 Explorer (或即時偵測) 來分析威脅。 總管 (或即時偵測) 能顯示隨時間受到的攻擊量，而您可以依照威脅系列、攻擊者的基礎結構等項目來分析這份資料。 您也可以將任何可疑的電子郵件標記為 [事件清單]。|
-|報告 - 儀表板|在安全性中心的 **[報告]** 區段中，檢視您的 SharePoint Online 和 Exchange Online 組織的報告。 您也可以從 **[檢視報告]** 頁面存取 Azure Active Directory (Azure AD) 使用者登入報告、使用者活動報告和 Azure AD 稽核記錄。|
+|[威脅管理儀表板](security-dashboard.md)|在 Microsoft 365 Defender 入口網站的 [**威脅管理**] 區段中，使用此儀表板來查看已處理的威脅，並將其看作是針對威脅調查和回應功能執行哪些威脅調查和回應功能，以保護您的公司的便捷工具。|
+|[威脅總管 (或即時偵測)](threat-explorer.md)|這也位於 Microsoft 365 Defender 入口網站的 [**威脅管理**] 區段中。 如果您要調查或遭受對租使用者的攻擊，請使用 Explorer (或即時偵測) 來分析威脅。 總管 (或即時偵測) 能顯示隨時間受到的攻擊量，而您可以依照威脅系列、攻擊者的基礎結構等項目來分析這份資料。 您也可以將任何可疑的電子郵件標記為 [事件清單]。|
+|報告 - 儀表板|在 Microsoft 365 Defender 入口網站的 [**報告**] 區段中，查看您 SharePoint 線上和 Exchange Online 組織的審計報告。 您也可以從 **[檢視報告]** 頁面存取 Azure Active Directory (Azure AD) 使用者登入報告、使用者活動報告和 Azure AD 稽核記錄。|
 |
 
-![安全性中心儀表板](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Microsoft 365Defender 入口網站儀表板](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>設定其他 Exchange Online 全租用戶設定
 
-Exchange 系統管理中心中有許多安全性與保護控制項同時也包含在安全性中心中。 您不需要在這兩個地方都進行設定。 以下是建議的設定。
+以下是建議的設定。
 
 <br>
 

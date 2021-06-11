@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 95471f444117e1a44abe8de76c95cda52d5f7930
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3629df6dd88176f66ec6e0f1eeedb78771cc36ec
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842600"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879225"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的 Microsoft Defender Office 365
 
@@ -78,7 +78,7 @@ ms.locfileid: "52842600"
 |區域|變更描述|
 |---|---|
 |[電子郵件實體頁面](../office-365-security/mdo-email-entity-page.md)|此頁面 **整合** 了過去散落在不同頁面或檢視中的電子郵件資訊。 調查電子郵件是否有威脅和趨勢將會 *集中*。 標頭資訊和電子郵件預覽可透過相同的電子郵件頁面來存取，還有其他實用的電子郵件相關資訊。 同樣地，您可以在相同頁面的分頁上找到惡意檔案附件或 URL 的引爆狀態。 電子郵件實體頁面讓系統管理員和安全性作業小組能夠快速了解電子郵件威脅及其狀態，然後快速採取行動以判斷處理方式。|
-|[調查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|將[適用於 Office 365 的 Defender](/microsoft-365/security/office-365-security/defender-for-office-365) 和[適用於端點的 Defender](../defender-endpoint/automated-investigations.md) 的 AIR 功能結合在一起。 有了這些更新與改善功能，您的安全性作業小組就能在單一位置檢視電子郵件、共同作業內容、使用者帳戶和裝置上的自動化調查和補救動作的詳細資訊。|
+|[調查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|將[適用於 Office 365 的 Defender](/microsoft-365/security/office-365-security/defender-for-office-365) 和[適用於端點的 Defender](../defender-endpoint/automated-investigations.md) 的 AIR 功能結合在一起。 有了這些更新與改善功能，您的安全性作業小組就能在單一位置檢視電子郵件、共同作業內容、使用者帳戶和裝置上的自動化調查和補救動作的詳細資訊。|
 |[警示檢視](../../compliance/alert-policies.md)|Office 安全性與合規性中心中的「**查看通知**」彈出窗格現在包含 Microsoft 365 Defender 的連結。 按一下 [**開啟警示] 頁面** 連結，並 Microsoft 365 Defender 隨即開啟。 您可以按一下 [警示] 佇列中的任何 Office 365 警示來存取 [檢視警示 **]** 頁面。|
 |[攻擊模擬訓練](../office-365-security/attack-simulation-training-insights.md)|使用攻擊模擬訓練在組織中執行真實化的攻擊案例。 這些模擬攻擊可協助在真實的攻擊影響您的組織之前訓練您的員工。 攻擊模擬訓練包括更多選項、增強的報告，以及改善的訓練流程，可協助讓您的攻擊模擬與訓練案例更易於傳遞和管理。|
 |

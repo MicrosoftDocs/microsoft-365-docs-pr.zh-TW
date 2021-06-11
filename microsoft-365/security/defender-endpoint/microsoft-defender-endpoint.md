@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23a9b99a71d700bdeddb3398c592eeb778ceef23
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843551"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879252"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
 
@@ -74,7 +74,7 @@ Defender for Endpoint 使用 Windows 10 和 Microsoft 強健的雲端服務內�
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
 
 > [!TIP]
-> - 深入瞭解 Defender for Endpoint 中的最新增強功能： [Microsoft defender For endpoint](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)中的新功能。
+> - 深入瞭解 Defender for Endpoint 中的最新增強功能： [Microsoft defender For endpoint](whats-new-in-microsoft-defender-atp.md)中的新功能。
 > - Microsoft Defender for Endpoint 在最近的 MITRE 評估中示範業界一流的光學器件和偵測功能。 Read： [來自 MITRE ATT 的 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 <a name="tvm"></a>

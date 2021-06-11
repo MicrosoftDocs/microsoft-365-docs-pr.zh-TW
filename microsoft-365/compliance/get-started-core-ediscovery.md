@@ -82,15 +82,15 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
 - **EDiscovery Manager**：可以查看及管理他們建立或屬於的核心 eDiscovery 案例。 如果另一個 eDiscovery 管理員建立了案例，但沒有將第二個 eDiscovery 管理員新增為該案例的成員，則第二個 eDiscovery 管理員將無法在規範中心的核心 eDiscovery 頁面上查看或開啟此案例。 一般說來，您組織中的大部分人員都可以新增至 eDiscovery Manager 子組。
 
-- **Ediscovery 管理員**：可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子檔探索管理員也可以：
+- **Ediscovery 管理員**：可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子文件探索系統管理員還可以︰
 
   - 查看核心 eDiscovery 頁面上列出的所有案例。
   
-  - 管理組織中的任何案例後，將自己新增為案例成員。
+  - 在其自行新增為案例成員後，管理組織中的任何案例。
 
-  - 針對組織中的任何案例，存取及匯出案例資料。
+  - 存取和匯出組織中任何案例的案例資料。
 
-  因為存取範圍廣泛，所以組織應該只有少數管理員是 eDiscovery Administrators 子群組的成員。
+  由於存取權範圍廣泛，組織只應讓少數系統管理員成為電子文件探索系統管理員子群組的成員。
 
 如需有關 eDiscovery 許可權的詳細資訊，以及指派給 eDiscovery 管理員角色群組之每個角色的說明，請參閱 [指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
 

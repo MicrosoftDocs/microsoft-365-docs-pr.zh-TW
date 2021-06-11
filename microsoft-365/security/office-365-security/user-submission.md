@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 719bd2b86cae1c6a951cb34408ecb9d2b8da699a
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696583"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879201"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -56,9 +56,9 @@ ms.locfileid: "52696583"
 
 - 在自訂信箱的郵件上關閉 URL 掃描。 使用 [設定 Office 365 中的安全連結](set-up-safe-links-policies.md)原則，以建立安全連結原則，並將設定為 **Off** ，以在 **郵件中選取未知可能惡意 URLs 的動作**。
 
-- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱 [使用安全性 & 規範中心建立反惡意程式碼原則](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies)，將 **惡意軟體設定為零小時自動清除** **。**
+- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱 [使用安全性 & 規範中心建立反惡意程式碼原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，將 **惡意軟體設定為零小時自動清除** **。**
 
-- 建立垃圾郵件篩選原則，以停用自訂信箱中垃圾郵件和網路釣魚的零小時自動清除 (ZAP) 。 請參閱 [使用安全性 & 規範中心建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies)，並清除 **垃圾郵件 Zap** 和 **網路釣魚 zap** 的 **On** 核取方塊。
+- 建立垃圾郵件篩選原則，以停用自訂信箱中垃圾郵件和網路釣魚的零小時自動清除 (ZAP) 。 請參閱 [使用安全性 & 規範中心建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，並清除 **垃圾郵件 Zap** 和 **網路釣魚 zap** 的 **On** 核取方塊。
 
 - 停用自訂信箱中的垃圾郵件規則。 使用 [[設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)] 以停用垃圾郵件規則。 停用之後，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
 

@@ -60,9 +60,9 @@ ms.locfileid: "52302097"
 | 位置 | 設定 | 文章 |
 |:---|:---|:---|
 | 用戶端介面 | 啟用無周邊 UI 模式 | [防止使用者看到或與 Microsoft Defender 防毒軟體使用者介面互動](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
-| 用戶端介面 | 在用戶端需要執行動作時，向其顯示其他文字 | [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md) |
-| 用戶端介面 | 抑制所有通知 | [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md) |
-| 用戶端介面 | 抑制重新開機通知 | [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md) |
+| 用戶端介面 | 在用戶端需要執行動作時，向其顯示其他文字 | [設定端點顯示的通知](configure-notifications-microsoft-defender-antivirus.md) |
+| 用戶端介面 | 抑制所有通知 | [設定端點顯示的通知](configure-notifications-microsoft-defender-antivirus.md) |
+| 用戶端介面 | 抑制重新開機通知 | [設定端點顯示的通知](configure-notifications-microsoft-defender-antivirus.md) |
 | 排除項目 | 副檔名排除 | [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md) |
 | 排除項目 | 路徑排除 | [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md) |
 | 排除項目 | 處理常式排除 | [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md) | 
@@ -94,7 +94,7 @@ ms.locfileid: "52302097"
 | 修復 | 設定本機設定覆寫以執行排定的完整掃描以完成修復的時間 | [防止或允許使用者本機修改原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 修復 | 指定一周中的哪幾天執行排程完整掃描以完成修復 | [設定排定的 Microsoft Defender 防毒軟體掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 修復 | 指定一天中執行計畫完整掃描以完成修復的時間 | [設定排定的 Microsoft Defender 防毒軟體掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| 報告 | 關閉增強型通知 | [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md)
+| 報告 | 關閉增強型通知 | [設定端點顯示的通知](configure-notifications-microsoft-defender-antivirus.md)
 | 根 | 關閉 Microsoft Defender 防毒軟體 | 未使用 (此設定必須設定為 [ **未** 設定]，以確保任何已安裝的協力廠商防病毒應用程式正確運作) 
 | 根 | 定義位址以略過 proxy 伺服器 | 未使用 |
 | 根 | 定義 proxy 自動設定 (。用於連線至網路的 pac)  | 未使用 |
@@ -151,7 +151,7 @@ ms.locfileid: "52302097"
 | 威脅 | 指定偵測到預設動作時不應該採取的威脅警示層級 | [設定 Microsoft Defender 防毒軟體掃描的修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 威脅 | 指定當偵測到預設動作時不應該採取的威脅 | [設定 Microsoft Defender 防毒軟體掃描的修正](configure-remediation-microsoft-defender-antivirus.md) |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [管理及設定工具的參考主題](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

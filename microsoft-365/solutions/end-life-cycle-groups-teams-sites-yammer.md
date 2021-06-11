@@ -34,7 +34,7 @@ Microsoft 365群組和 Microsoft Teams 會使用多個連線的服務。 刪除�
 |服務|內容類型|
 |:------|:---------------|
 |Teams|通道交談，通道中的檔案|
-|表單|調查架構和結果|
+|Forms|調查架構和結果|
 |OneNote|筆記本|
 |Outlook|郵件和行事曆|
 |Planner|Project 狀態與任務資訊|
@@ -107,7 +107,7 @@ Teams 特有的內容主要是以交談的形式。
 - 影片仍可在資料流程中上傳、修改和刪除。
 - Power Automate 中的資料流程仍可建立、修改、刪除，並會繼續執行。  (如果需要將訊息張貼至已封存小組的通道，它們會失敗。 ) 
 
-## <a name="forms"></a>表單
+## <a name="forms"></a>Forms
 
 雖然表單可以從個別帳戶移至群組，但無法將它移動或複製到另一個群組。 當小組已刪除時，表單有三個可用選項。
 
@@ -198,7 +198,7 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，類似于其�
 
 相反地，如果報表不再需要使用中，但資料必須保留，則可以將資料[匯出至 Excel](/power-bi/visuals/power-bi-visualization-export-data)。
 
-## <a name="project"></a>專案
+## <a name="project"></a>Project
 
 在 web Project 中建立的專案和路線圖會與 Microsoft 365 群組產生關聯，並具有離群的方式，類似于 Power BI。
 

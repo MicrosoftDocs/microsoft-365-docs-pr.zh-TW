@@ -13,12 +13,12 @@ ms.collection:
 description: 瞭解如何查看所報告的訊息，並提供對您的使用者意見反應。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769122"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893725"
 ---
 # <a name="admin-review-for-reported-messages"></a>已報告訊息的系統管理員檢閱
 
@@ -39,9 +39,11 @@ ms.locfileid: "52769122"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
+- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com/> 。 若要直接移至 [ **提交** ] 頁面，請使用 <https://security.microsoft.com/reportsubmission> 。
+
 - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
-  - [Microsoft 365 Security center](permissions-microsoft-365-security-center.md)中的組織管理或安全性管理員。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo)中的組織管理。
+  - [Microsoft 365 Defender 入口網站](permissions-microsoft-365-security-center.md)中的組織管理或安全性管理員。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的組織管理。
 
 - 您也需要 Exchange Online PowerShell 的存取權。 如果您嘗試使用的帳戶不具備 Exchange Online PowerShell 的存取權，您會收到錯誤，指出 *在您的網域中指定電子郵件地址*。 如需啟用或停用 Exchange Online PowerShell 存取權的詳細資訊，請參閱下列主題：
   - [啟用或停用 Exchange Online PowerShell 的存取權](/powershell/exchange/disable-access-to-exchange-online-powershell)
@@ -49,9 +51,9 @@ ms.locfileid: "52769122"
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>設定用來通知使用者的郵件
 
-1. 在 [Microsoft 365 的安全性中心](../defender/overview-security-center.md)，移至 [原則] **& 規則** \> **威脅** 原則 \> **使用者報告的郵件設定**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **其他**] 區段 \> **使用者報告的郵件設定**。
 
-2. 如果您想要指定寄件者顯示名稱，請在 [系統管理員檢查結果] 區段的 [**電子郵件通知**] 下，選取要 **用來做為寄件者的 Office 365 電子郵件地址** 的方塊，然後輸入您想要使用的名稱。 這是 Outlook 會顯示的電子郵件地址，以及回復會移至哪一個位置。
+2. 在 [**使用者** 送出] 頁面上，如果您想要指定寄件者顯示名稱，請在 [系統管理] 的 [**電子郵件通知**] 區段中，選取 [**指定 Office 365 的電子郵件地址作為寄件者**] 的方塊，然後輸入您想要使用的名稱。 這是 Outlook 會顯示的電子郵件地址，以及回復會移至哪一個位置。
 
 3. 如果您想要自訂任何範本，請按一下 [ **自訂電子郵件通知**]。 在這個浮出控制項中，您將可以自訂下列專案：
     - 網路釣魚

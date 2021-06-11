@@ -10,20 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 系統管理員可以瞭解 Microsoft 365 安全性中心內的攻擊模擬訓練如何影響員工，以及如何從類比和訓練結果取得深入瞭解。
+description: 系統管理員可以瞭解 Microsoft 365 Defender 入口網站中的攻擊模擬訓練如何影響員工，以及如何從類比和訓練結果取得深入瞭解。
 ms.technology: mdo
-ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: e189864a42d025bb5ce720a6edb6c1c2c8c84623
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51600004"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878373"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>透過攻擊模擬訓練取得深入解析
 
+**適用** 于 [Office 365 方案2的 Microsoft Defender](defender-for-office-365.md)
+
 在攻擊模擬訓練中，Microsoft 會根據員工所經歷之類比和訓練的結果，提供深入的見解。 這些真知灼見會協助您及時瞭解員工的威脅準備工作進度，並建議您在後續步驟中，更好地準備員工和您的環境以進行攻擊。
 
-我們不斷努力擴充您可以使用的洞察力。 目前可使用行為影響及建議的動作。 若要開始，請[在 Microsoft 365 的安全性中心進行攻擊模擬訓練](https://security.microsoft.com/attacksimulator?viewid=overview)。
+我們不斷努力擴充您可以使用的洞察力。 目前可使用行為影響及建議的動作。 [在 Microsoft 365 Defender 入口網站中開始，以攻擊模擬訓練](https://security.microsoft.com/attacksimulator?viewid=overview)。
 
 ## <a name="behavior-impact-on-compromise-rate"></a>對折衷率影響的行為影響
 

@@ -19,7 +19,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中包含可能危險或有害郵件的隔離。
+description: 系統管理員可以在 Exchange Online Protection (EOP) 中瞭解隔離可能有害或不需要的郵件。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
@@ -38,7 +38,7 @@ ms.locfileid: "52333803"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱，隔離可用於存放可能危險或不需要的郵件。
+在 Microsoft 365 具有 Exchange Online 或獨立 Exchange Online Protection 中信箱的組織 (EOP) 組織沒有 Exchange Online 信箱，隔離可用於存放可能危險或不需要的郵件。
 
 如果找到 *任何* 包含惡意程式碼的附件，反惡意程式碼原則就會自動隔離郵件。 如需詳細資訊，請參閱 [在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 

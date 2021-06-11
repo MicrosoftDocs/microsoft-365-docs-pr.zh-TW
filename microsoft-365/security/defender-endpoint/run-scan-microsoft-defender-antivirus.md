@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/04/2021
+ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 3ee37d7220527c9032b630e02258c684b6c860b3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789168"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878799"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>設定和執行隨選 Microsoft Defender 防毒軟體掃描
 
@@ -29,28 +29,22 @@ ms.locfileid: "52789168"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-您可以在個別端點上執行隨選掃描。 這些掃描會立即開始，您可以定義掃描的參數，例如位置或類型。
+您可以在個別端點上執行隨選掃描。 這些掃描會立即開始，您可以定義掃描的參數，例如位置或類型。 當您執行掃描時，可以選擇三種類型：快速掃描、完整掃描及自訂掃描。 在大多數情況下，請使用快速掃描。 快速掃描會查看可能已註冊惡意程式碼的所有位置，例如登錄機碼和已知 Windows 開機檔案夾。 
 
-## <a name="quick-scan-versus-full-scan"></a>快速掃描與完整掃描
-
-快速掃描查看可能已註冊惡意程式碼的所有位置，例如登錄機碼和已知 Windows 開機檔案夾。
+結合 always on 即時保護，可在開啟及關閉檔時對其進行審閱; 每當使用者流覽至資料夾時，快速掃描可協助對以系統和內核層級惡意程式碼開頭的惡意程式碼提供強防護。 在大多數情況下，快速掃描足以滿足計畫或隨選掃描的建議選項。  [深入瞭解掃描類型](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan)。
 
 > [!IMPORTANT]
 > 執行本機掃描時，Microsoft Defender 防毒軟體會在[LocalSystem](/windows/win32/services/localsystem-account)帳戶的上下文中執行。 若為網路掃描，它會使用裝置帳戶的內容。 如果網域裝置帳戶沒有存取共用的適當許可權，則掃描將無法運作。 確定裝置具有存取網路共用的許可權。
 
-[！注意] 結合了 [always on 即時保護功能](configure-real-time-protection-microsoft-defender-antivirus.md)，快速掃描可為以系統和內核層級惡意程式碼開頭的惡意程式碼提供強大的覆蓋。 [永遠開啟] 即時保護會在開啟及關閉檔案時，以及每當使用者流覽至資料夾時，就會檢查檔案。 根據預設，在裝載的可拆卸裝置（例如 USB 磁片磁碟機）上執行快速掃描。 在大多數的情況下，快速掃描足以找到即時保護未挑選的惡意程式碼。
-
-當在端點上報告惡意程式碼威脅時，完整掃描會非常有用。 掃描可識別是否有任何非使用中的元件需要更徹底的清理。 不過，Microsoft 一般建議使用快速掃描，而不是完整掃描。 根據需要掃描的資料量和類型，完整掃描可能需要數小時或數天才能完成。 
-
-> [!TIP]
-> 若要深入瞭解快速和完整掃描之間的差異，請參閱 [快速掃描與完整掃描及自訂掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)。
-
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>使用 Microsoft 端點管理員執行掃描
 
 1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+
 2. 選擇 [ **Endpoint security**  >  **防病毒**]。
+
 3. 在索引標籤清單中，選取 [ **Windows 10 不健全的端點**]。
-4. 從提供的動作清單中，選取 [ **快速掃描** ] 或 [ **完全掃描**]。
+
+4. 從提供的動作清單中，選取 [ **快速掃描** (建議) 或 **完整掃描**]。
 
 [![影像 ](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
@@ -70,8 +64,10 @@ mpcmdrun.exe -scan -scantype 1
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>使用 Microsoft Intune 執行掃描
 
 1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
-2. 從側邊選取 [ **裝置 > 所有裝置** ]，然後選擇您要掃描的裝置。
-3. 選取 **.。。其他**。 從選項中，選取 [ **快速掃描** ] 或 [ **完全掃描**]。
+
+2. 從側邊選取 [**裝置**  >  **所有裝置**]，然後選擇您要掃描的裝置。
+
+3. 選取 **.。。其他**。 在 [選項] 中，選取 [ **快速掃描** (建議) 或 **完整掃描**]。
 
 ## <a name="use-the-windows-security-app-to-run-a-scan"></a>使用 Windows 安全性應用程式執行掃描
 
@@ -93,8 +89,3 @@ Start-MpScan
 
 如需允許哪些參數的詳細資訊，請參閱[Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="related-articles"></a>相關文章
-
-- [設定 Microsoft Defender 防毒軟體掃描選項](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [設定排定的 Microsoft Defender 防毒軟體掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

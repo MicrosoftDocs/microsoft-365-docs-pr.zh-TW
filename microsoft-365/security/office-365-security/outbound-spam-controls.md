@@ -42,7 +42,7 @@ ms.locfileid: "52538732"
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>管理員可控制輸出垃圾郵件的工作
 
-- **使用內建通知**：當使用者超過傳送限制的 [服務](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) ，且限制傳送電子郵件時，名為「 **使用者限制傳送電子郵件** 的預設警示原則」會傳送電子郵件通知給 **TenantAdmins** (**Global admins**) 群組的成員。 若要設定接收這些通知的人員，請參閱 [驗證受限使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 此外，已 **超過名稱電子郵件傳送限制** 的預設警示原則，以及 **可疑的電子郵件傳送模式** ，偵測到 **TenantAdmins** (**Global admins**) 群組的成員傳送電子郵件通知。 如需警示原則的詳細資訊，請參閱[Microsoft 365 中的警示原則](../../compliance/alert-policies.md)。
+- **使用內建通知**：當使用者超過傳送限制的 [服務](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) ，且限制傳送電子郵件時，名為「 **使用者限制傳送電子郵件** 的預設警示原則」會傳送電子郵件通知給 **TenantAdmins** (**Global admins**) 群組的成員。 若要設定接收這些通知的人員，請參閱 [驗證受限使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 此外，已 **超過名稱電子郵件傳送限制** 的預設警示原則，以及 **可疑的電子郵件傳送模式** ，偵測到 **TenantAdmins** (**Global admins**) 群組的成員傳送電子郵件通知。 如需有關警示原則的詳細資訊，請參閱 [Microsoft 365 中的警示原則](../../compliance/alert-policies.md)。
 
 - **複查來自協力廠商電子郵件提供者的垃圾郵件**：許多電子郵件服務（如 Outlook .com、Yahoo 和 AOL）都提供回應迴圈，在此情況下，如果服務中的任何使用者將電子 Microsoft 365 郵件標記為垃圾郵件，則會將郵件打包並送回我們進行審閱。 若要深入瞭解 Outlook .com 的寄件者支援，請移至 <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> 。
 

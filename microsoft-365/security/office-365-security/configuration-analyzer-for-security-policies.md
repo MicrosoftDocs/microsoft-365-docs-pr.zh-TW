@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何使用設定分析器，找出並修正低於標準防護和嚴格保護預設安全性原則的安全性原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d2ad1449730f392adc27c8ed2a8fc8e9ecc7a04
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789295"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878661"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的保護原則設定分析器
 
@@ -34,7 +34,7 @@ ms.locfileid: "52789295"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 security center 中的設定 analyzer 提供了一個集中位置，可找出並修正其設定低於標準[安全性原則](preset-security-policies.md)中的標準保護和嚴格保護設定檔設定的安全性原則。
+Microsoft 365 Defender 入口網站中的設定分析器提供一個集中位置，以找出並修正其設定低於標準[安全性原則](preset-security-policies.md)中的標準防護和嚴格保護設定檔設定的安全性原則。
 
 設定分析器會分析下列類型的原則：
 
@@ -57,27 +57,27 @@ Microsoft 365 security center 中的設定 analyzer 提供了一個集中位置�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以開啟安全性中心，網址為 <https://security.microsoft.com>。 若要直接移至 [設定 **分析器** ] 頁面，請使用 <https://security.microsoft.com/configurationAnalyzer> 。
+- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com> 。 若要直接移至 [設定 **分析器** ] 頁面，請使用 <https://security.microsoft.com/configurationAnalyzer> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須先在 [安全性中心] 中指派許可權，才能執行本文中的程式：
+- 您必須先在 Microsoft 365 Defender 入口網站中指派許可權，才能執行本文中的程式：
   - 若要使用設定分析器 **並** 更新安全性原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要唯讀存取設定分析器，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[Microsoft 365 security center 中的許可權](permissions-microsoft-365-security-center.md)。
+  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。
 
   > [!NOTE]
   >  
-  > - 將使用者新增至對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中的其他功能的 _安全性中心的_ 必要許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  > - 將使用者新增至對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
-## <a name="use-the-configuration-analyzer-in-the-security-center"></a>在安全中心使用設定分析器
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中使用設定分析器
 
-在 [安全性中心] 中，移至 [ **電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **範本化原則** 區段設定 \> **analyzer**。
+在 Microsoft 365 Defender 入口網站中，移至 **電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** \> **範本化原則** 區段設定 \> **analyzer**。
 
-設定分析器有兩個主要的索引標籤：
+[設定 **分析器** ] 頁面有兩個主要索引標籤：
 
 - **設定和建議**：選擇 [**標準**] 或 [**嚴格**]，然後將這些設定與您現有的安全性原則進行比較。 在結果中，您可以調整設定的值，使其具有與標準或嚴格相同的層級。
 - 設定 **偏移分析和記錄**：此 view 可讓您追蹤一段時間的原則變更。

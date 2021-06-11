@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275081"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878877"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
@@ -68,17 +68,21 @@ ms.locfileid: "52275081"
 
 透過威脅瀏覽器，您的安全性運作小組可以找到動作所影響的電子郵件，並可能復原動作。
 
+<br>
+
+****
+
 |案例|復原選項|深入了解|
 |---|---|---|
-|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾|-將郵件移至使用者的 [刪除的郵件] 資料夾<br/>-將郵件移至使用者的收件匣<br/>-刪除郵件|[尋找並調查 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)|
-|已隔離的電子郵件訊息或檔|-發行電子郵件或檔案<br/>-刪除電子郵件或檔|[以系統管理員身分管理被隔離的郵件](manage-quarantined-messages-and-files.md)|
+|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾|<ul><li>將郵件移至使用者的 [刪除的郵件] 資料夾</li><li>將郵件移至使用者的收件匣</li><li>刪除郵件</li></ul>|[尋找並調查 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)|
+|已隔離的電子郵件訊息或檔|<ul><li>發行電子郵件或檔案</li><li> 刪除電子郵件或檔</li></ul>|[以系統管理員身分管理被隔離的郵件](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-in-the-action-center"></a>復原動作中心的動作
 
 在「行動中心」中，您可以看到已採取的修復動作，並可能復原動作。
 
-1. 請移至 Microsoft 365 的安全性中心 (<https://security.microsoft.com>) 。
+1. 移至 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 。
 2. 在功能窗格中，選取 [ **動作中心**]。
 3. 選取 [ **記錄** ] 索引標籤，以查看已完成的動作清單。
 4. 選取專案。 其快顯視窗隨即開啟。

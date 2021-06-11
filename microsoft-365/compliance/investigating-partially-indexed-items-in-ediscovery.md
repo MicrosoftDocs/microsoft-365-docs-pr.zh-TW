@@ -183,6 +183,6 @@ ms.locfileid: "52311449"
 > 
 > - 清單錯誤標記，以及發生錯誤的對應檔案類型。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [EDiscovery 中已部分索引的專案](partially-indexed-items-in-content-search.md)

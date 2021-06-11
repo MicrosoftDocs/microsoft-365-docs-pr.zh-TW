@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52310837"
 ---
-# <a name="export-content-from-a-core-ediscovery-case"></a>從核心 eDiscovery 案例匯出內容
+# <a name="export-content-from-a-core-ediscovery-case"></a>從核心電子文件探索案例匯出內容
 
 成功執行與核心 eDiscovery 案例相關聯的搜尋之後，您可以匯出搜尋結果。 當您匯出搜尋結果時，信箱專案會下載到 PST 檔案或個別郵件。 當您從 SharePoint 和商務用 OneDrive 網站匯出內容時，會匯出原生 Office 檔和其他檔的副本。 包含每個匯出專案的資訊的 Results.csv 檔案，以及包含每個搜尋結果相關資訊的資訊清單檔)  (也會匯出。
   

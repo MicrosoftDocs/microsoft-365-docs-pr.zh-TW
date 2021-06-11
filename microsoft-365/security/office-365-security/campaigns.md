@@ -19,12 +19,12 @@ ms.collection:
 description: 深入瞭解 Microsoft Defender 中 Office 365 的市場即時檢視。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779440"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879129"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的即時檢視
 
@@ -33,7 +33,7 @@ ms.locfileid: "52779440"
 **適用於**
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 
-[活動] 視圖是 Microsoft Defender 中 Office 365 方案 2 (的功能，例如，Microsoft 365 E5 或組織搭配 Office 365 Plan 2 附加元件) 的 Defender。 Microsoft 365 security center 中的即時檢視會識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
+[活動] 視圖是 Microsoft Defender 中 Office 365 方案 2 (的功能，例如，Microsoft 365 E5 或組織搭配 Office 365 Plan 2 附加元件) 的 Defender。 Microsoft 365 Defender 入口網站中的即時檢視會識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
 
 - 更有效率地調查和回應網路釣魚攻擊。
 - 更進一步了解攻擊範圍。
@@ -54,11 +54,11 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 市場活動可能會短期，或可能跨越數天、數周或數天，具有有效和非使用中的期間。 您的特定組織可能會發起一個市場活動，否則您的組織可能會是多個公司的較大活動的一部分。
 
-## <a name="campaign-views-in-the-security-center"></a>安全中心的即時檢視
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 入口網站中的市場即時檢視
 
-您可以在 [Microsoft 365 security center](https://security.microsoft.com)中的 **電子郵件 &** 共同作業 \> **活動**，或是直接在上使用即時檢視 <https://security.microsoft.com/campaigns> 。
+您可以在 <https://security.microsoft.com> **電子郵件 &** 共同作業 \> **活動**，或是直接在 Microsoft 365 Defender 入口網站 () 中取得「活動」視圖 <https://security.microsoft.com/campaigns> 。
 
-![Microsoft 365 security center 中的活動一覽表](../../media/campaigns-overview.png)
+![Microsoft 365 Defender 入口網站中的活動概覽](../../media/campaigns-overview.png)
 
 您也可以從下列來源取得市場即時檢視：
 
@@ -67,7 +67,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 - **電子郵件 & 協同** \> 作業 **瀏覽器** \>**View** \>**網路釣魚** \>[**活動**] 索引標籤
 - **電子郵件 & 協同** \> 作業 **瀏覽器** \>**View** \>**惡意** \> 代碼[**活動**] 索引標籤
 
-若要存取即時檢視，您必須是「 **組織管理**」、「 **安全性管理員** **」或「安全性** 管理員」角色群組的成員，才能使用 [安全性中心]。 如需詳細資訊，請參閱[Microsoft 365 規範中心的許可權和 Microsoft 365 安全中心](permissions-microsoft-365-security-center.md)」。
+若要存取市場即時檢視，您必須是 Microsoft 365 Defender 入口網站的 **組織管理**、**安全性管理員** 或 **安全性讀者** 角色群組的成員。 如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。
 
 ## <a name="campaigns-overview"></a>市場活動概覽
 

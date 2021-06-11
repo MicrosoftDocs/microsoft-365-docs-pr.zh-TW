@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844967"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878565"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解決方案
 
@@ -66,9 +66,9 @@ Microsoft Cloud App Security 利用 Microsoft Defender for endpoint 端點信號
 商務用 Skype 整合提供一種方法，讓分析員透過來自入口網站的簡單按鈕，與可能已遭破壞的使用者或裝置擁有者進行通訊。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-使用 Microsoft 365 defender 時，microsoft defender for Endpoint 和各種 Microsoft security 解決方案組成的整合發佈前防護套件，可內部整合在端點、身分識別、電子郵件和應用程式中，以偵測、避免、調查和自動回應複雜的攻擊。 
+使用 Microsoft 365 defender、microsoft defender for Endpoint 及各種 Microsoft security 解決方案，可在內部整合在端點、身分識別、電子郵件和應用程式上，自行整合的整合前與後序 enterprise 防護套件，以偵測、避免、調查和自動回應複雜的攻擊。 
  
-[深入瞭解 Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)
+[深入瞭解 Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>相關主題

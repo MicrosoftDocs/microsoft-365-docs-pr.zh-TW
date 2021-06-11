@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) 和 Defender Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用 Office 365 的 Defender，您也會取得什麼額外內容？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f00e1e2356839e70acafb0f98a5424a1311082e7
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 6c126a777d50fae93efdc618a8ac474dcee7ed75
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793217"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878985"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender Office 365 security 的建議設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "52793217"
 > [!NOTE]
 > 信箱必須啟用垃圾郵件規則，篩選才能正確運作。 它預設為啟用，但是如果篩選似乎不在運作中，您應該加以檢查。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-本文說明預設設定，也是建議的標準和嚴格設定，以協助保護您的使用者。 這些表格包含 Microsoft 365 security center 中的設定，以及 PowerShell (Exchange Online PowerShell 或獨立 Exchange Online Protection，但沒有 PowerShell 信箱的組織 Exchange Online。
+本文說明預設設定，也是建議的標準和嚴格設定，以協助保護您的使用者。 這些表格包含 Microsoft 365 Defender 入口網站中的設定，以及 PowerShell (Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 沒有 Exchange Online 信箱) 的組織。
 
 > [!TIP]
 > Office 365 的高級威脅防護建議的設定分析器 (ORCA) 模組 PowerShell 可協助您 (系統管理員) 找到這些設定的目前值。 具體說來， **ORCAReport** Cmdlet 會產生反垃圾郵件、反網路釣魚和其他郵件衛生設定的評估。 您可以在中下載 ORCA 模組 <https://www.powershellgallery.com/packages/ORCA/> 。

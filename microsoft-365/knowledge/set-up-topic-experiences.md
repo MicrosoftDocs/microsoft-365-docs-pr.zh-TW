@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何設定 Microsoft Viva 主題
-ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930218"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893761"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定 Microsoft Viva 主題
 
@@ -60,8 +60,10 @@ ms.locfileid: "51930218"
 
 ## <a name="set-up-topics"></a>設定 [主題]
 
-設定主題
+> [!Note]
+> 第一次啟用主題探索時，可能需要長達兩周的時間，所有建議的主題都會出現在 [管理主題] 視圖中。 主題探索會隨著新內容或內容更新而繼續進行。 當組織中建議的主題數目隨著 Viva 主題評估新資訊的情況，正常情況會發生波動。
 
+設定主題
 1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，選取 [**安裝**]，然後查看 [檔案 **與內容**] 區段。
 2. 在 [檔案 **與內容**] 區段中，按一下 [**連線人員進行知識**]。
 
@@ -69,7 +71,7 @@ ms.locfileid: "51930218"
 
 3. 在 [**連線人員知識**] 頁面上，按一下 [**開始**]，逐步引導您完成安裝程式。
 
-    ![入門](../media/k-get-started.png) 
+    ![開始使用](../media/k-get-started.png) 
 
 4. 在 [ **選擇 Viva 主題如何尋找主題** ] 頁面上，您會設定主題探索。 在 [**選取 SharePoint 主題來源**] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 請選擇：
     - **所有網站**：貴組織的所有 SharePoint 網站。 這包括目前和未來的網站。
@@ -143,8 +145,6 @@ ms.locfileid: "51930218"
 12. 您將會傳回 [**連線人員前往知識**] 頁面。 在此頁面上，您可以選取 **[管理]**，以對設定進行任何變更。 
 
     ![套用的設定](../media/ksetup7.png)    
-
-請注意，第一次啟用主題探索時，可能需要長達兩周的時間，所有建議的主題都會出現在 [管理主題] 視圖中。 主題探索會隨著新內容或內容更新而繼續進行。 當組織中建議的主題數目隨著 Viva 主題評估新資訊的情況，正常情況會發生波動。
 
 ## <a name="manage-topic-experiences"></a>管理主題經驗
 

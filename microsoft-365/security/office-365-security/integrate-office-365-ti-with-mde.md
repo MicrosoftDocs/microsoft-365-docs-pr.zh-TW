@@ -19,12 +19,12 @@ description: 使用 microsoft defender for Office 365 搭配 microsoft defender 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6ad81102a9702a725f40fcdb5421a2b19b0086d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3f1d92d2433267b89398c7f7f582a8d1ee8cdba5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934030"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878601"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>將 microsoft defender 用於 Office 365 搭配 microsoft defender for Endpoint 使用
 

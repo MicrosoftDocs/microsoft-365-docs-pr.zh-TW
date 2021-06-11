@@ -19,16 +19,21 @@ description: 深入瞭解 Microsoft Defender 中 Office 365 方案2的自動化�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275069"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878769"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在 Office 365 中檢查和管理修正動作
 
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 隨著電子郵件的自動調查 & 共同作業會導致 verdicts （例如 *惡意* 或 *可疑*）建立某些修正動作。 在 Microsoft Defender for Office 365 中，修正動作可包含：
+
 - 封鎖 URL (按時) 
 - 虛刪除電子郵件訊息或聚簇
 - 隔離電子郵件或電子郵件附件
@@ -36,13 +41,9 @@ ms.locfileid: "52275069"
 
 除非安全運作小組批准，否則不會採取這些修復動作。 我們建議您儘快檢查及核准任何擱置的動作，以便您的自動化調查能夠及時完成。 在某些情況下，您可以復原修復動作。
 
-**適用於**
-- [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 ## <a name="approve-or-reject-pending-actions"></a>核准 (或拒絕) 擱置的動作
 
-1. 請移至 Microsoft 365 security center (<https://security.microsoft.com>) 並登入。
+1. 請移至 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 並登入。
 2. 在功能窗格中，選取 [ **動作中心**]。
 3. 在 [ **暫** 止] 索引標籤上，查看等候核准的動作清單。
 4. 選取清單中的項目。 其快顯視窗隨即開啟。 

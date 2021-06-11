@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ebff0a93acd505532773fbf5d714268df220c9a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 13b25300b6e5b42c860c58546f9c084a244b5f1f
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822006"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878913"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -43,14 +43,14 @@ EOP 使用輸出垃圾郵件原則做為組織的整體防禦垃圾郵件的一�
 
 系統管理員可以查看、編輯和設定 (，但不會刪除預設的輸出垃圾郵件原則) 。 為了獲得更多細微性，您也可以建立適用于組織中特定使用者、群組或網域的自訂輸出垃圾郵件原則。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
 
-您可以在「Microsoft 365 安全性中心」或「PowerShell (Exchange Online PowerShell 中設定輸出垃圾郵件原則，以 Microsoft 365 具有 Exchange Online 之信箱的組織;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
+您可以在 Microsoft 365 Microsoft 365 Defender 入口網站] 或 PowerShell (Exchange Online PowerShell 中設定輸出垃圾郵件原則，以 Microsoft 365 Exchange Online 組織使用的信箱。組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
 
 EOP 中的外寄垃圾郵件原則基本元素為：
 
 - **輸出垃圾郵件篩選原則**：指定輸出垃圾郵件篩選 verdicts 和通知選項的動作。
 - **輸出垃圾郵件篩選規則**：指定原則套用至) 外寄垃圾郵件篩選原則的優先順序和收件者篩選 (。
 
-當您在 [安全性中心] 管理輸出垃圾郵件原則時，這兩個元素之間的差異並不明顯。
+當您在 Microsoft 365 Defender 入口網站中管理輸出垃圾郵件原則時，這兩個元素之間的差異並不明顯。
 
 - 當您建立原則時，實際上是建立輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則，同時為這兩者使用相同的名稱。
 - 當您修改原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改外寄垃圾郵件篩選規則。 所有其他設定都會修改相關聯的輸出垃圾郵件篩選原則。
@@ -68,7 +68,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以開啟安全性中心，網址為 <https://security.microsoft.com>。 若要直接移至 [反垃圾郵件設定] 頁面，請使用 <https://security.microsoft.com/antispam>。
+- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com> 。 若要直接移至 [反垃圾郵件設定] 頁面，請使用 <https://security.microsoft.com/antispam>。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -87,11 +87,11 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 已 **超過名稱電子郵件傳送限制** 的預設 [警示原則](../../compliance/alert-policies.md)、已偵測 **到的可疑電子郵件**，以及 **限制傳送電子郵件的使用者** 已將電子郵件通知傳送給 **TenantAdmins** (**Global admins** 的成員。) 群組關於不尋常的外寄電子郵件活動，以及由於輸出垃圾郵件而封鎖的使用者。 如需詳細資訊，請參閱 [確認限制使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 建議您使用這些警示原則，而不是在輸出垃圾郵件原則中使用通知選項。
 
-## <a name="use-the-security-center-to-create-outbound-spam-policies"></a>使用安全中心建立輸出垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>使用 Microsoft 365 Defender 入口網站建立輸出垃圾郵件原則
 
-在 [安全性中心] 中建立自訂的輸出垃圾郵件原則，會同時使用相同的名稱建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
+在 Microsoft 365 Defender 入口網站中建立自訂的輸出垃圾郵件原則，會同時使用相同的名稱建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
 
 2. 在 [ **反垃圾郵件原則** ] 頁面上，按一下 [建立 ![ 圖示 ](../../media/m365-cc-sc-create-icon.png) **建立原則** ]，然後從下拉式清單中選取 [ **輸出** ]。
 
@@ -134,7 +134,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
        - 名為「 **使用者限制傳送電子郵件** 的活動警示」會通知系統管理員 (透過電子郵件和「 **查看提醒** 」頁面) 。
        - **當寄件者因** 在原則中傳送輸出垃圾郵件設定而遭到封鎖時，在 [通知特定人員] 中指定的任何收件者也都會收到通知。
        - 在下一天之後，使用者將無法再傳送任何郵件到以 UTC 時間為基礎。 系統管理員無法覆寫此區塊。
-     - **限制使用者傳送郵件**：電子郵件通知已傳送，使用者已新增至 [安全中心] 中的 [ **受限制的使用者**] <https://security.microsoft.com/restrictedusers> ，除非系統管理員從 **受限使用者** 移除電子郵件，否則使用者無法傳送電子郵件。系統管理員從清單中移除使用者後，該天的使用者將不會受到限制。 如需相關指示，請參閱 [在傳送垃圾郵件後移除受限使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
+     - **限制使用者傳送郵件**：電子郵件通知已傳送，使用者會新增至 Microsoft 365 Defender  <https://security.microsoft.com/restrictedusers> 入口網站中的限制使用者，而且使用者必須先將電子郵件從系統管理員的 **受限使用者** 移除，才能傳送電子郵件。系統管理員從清單中移除使用者後，該天的使用者將不會受到限制。 如需相關指示，請參閱 [在傳送垃圾郵件後移除受限使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
      - **無動作，只發出警示**：已傳送電子郵件通知。
 
    - 轉寄 **規則**：使用本節中的設定來控制自動將電子郵件轉送 **Exchange Online 信箱** 傳送至外部寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中控制自動外部電子郵件轉接](external-email-forwarding.md)。
@@ -175,9 +175,9 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 7. 在顯示的確認頁面上，按一下 [完成 **]**。
 
-## <a name="use-the-security-center-to-view-outbound-spam-policies"></a>使用安全中心來查看輸出垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>使用 Microsoft 365 Defender 入口網站來查看輸出垃圾郵件原則
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
 
 2. 在 [**反垃圾郵件原則**] 頁面上，尋找下列其中一個值：
    - **Type** 值為 **自訂輸出垃圾郵件原則**
@@ -192,15 +192,15 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 3. 當您按一下名稱來選取輸出垃圾郵件原則時，會在飛入的視窗中顯示原則設定。
 
-## <a name="use-the-security-center-to-modify-outbound-spam-policies"></a>使用 [安全性中心] 修改輸出垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>使用 Microsoft 365 Defender 入口網站修改輸出垃圾郵件原則
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
 
 2. 在 [ **反垃圾郵件原則** ] 頁面上，按一下 [名稱]，從清單中選取外寄垃圾郵件原則：
    - 您在 [ **類型** ] 欄中的值為 **自訂輸出垃圾郵件原則** 時所建立的自訂原則。
    - 名為 **反垃圾郵件輸出原則的預設原則 (預設)**。
 
-3. 在顯示的原則詳細資料飛出視窗中，在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 如需這些設定的詳細資訊，請參閱本文中的「 [安全性中心」建立外寄垃圾郵件原則](#use-the-security-center-to-create-outbound-spam-policies) 一節。
+3. 在顯示的原則詳細資料飛出視窗中，在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 如需這些設定的詳細資訊，請參閱本文的[使用 Microsoft 365 Defender 入口網站建立輸出垃圾郵件原則](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies)一節。
 
    針對預設輸出垃圾郵件原則，[套用 **至** ] 區段無法使用 (原則套用至所有人) ，而且您無法重新命名原則。
 
@@ -210,7 +210,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 您無法停用預設輸出垃圾郵件原則。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
 
 2. 在 [**反垃圾郵件原則**] 頁面上，按一下 [名稱]，從清單中選取 [**自訂輸出垃圾郵件原則** 的 **類型值**] 的原則。
 
@@ -228,14 +228,14 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 根據預設，輸出垃圾郵件原則的優先順序會根據它們在 (較舊的原則中所建立的順序來降低優先順序) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
 
-若要變更原則的優先順序，請在原則內容中按一下 [增加優先順序 **]** 或 [降低優先順序 **]** (您無法在安全性中心直接修改 [優先順序 **]** 編號)。 只有在您有多個原則時，變更原則的優先順序才有意義。
+若要變更原則的優先順序，請按一下 [**增加優先順序**] 或 [**降低優先順序**] 的原則 (您無法直接修改 Microsoft 365 Defender 入口網站) 中的 **優先順序** 號碼。 只有在您有多個原則時，變更原則的優先順序才有意義。
 
  **附註**：
 
-- 在 [安全性中心] 中，您在建立輸出垃圾郵件原則之後，您只能變更其優先順序。 在 PowerShell 中，您可以在建立垃圾郵件篩選規則時覆寫預設優先順序 (這會影響現有規則的優先順序)。
+- 在 Microsoft 365 Defender 入口網站中，您在建立輸出垃圾郵件原則之後，您只能變更其優先順序。 在 PowerShell 中，您可以在建立垃圾郵件篩選規則時覆寫預設優先順序 (這會影響現有規則的優先順序)。
 - 輸出垃圾郵件原則的處理順序會依顯示的順序 (第一個原則的 **Priority** 值為 0) 。 預設輸出垃圾郵件原則的優先順序值為 **最低**，您無法變更。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
 
 2. 在 [**反垃圾郵件原則**] 頁面上，從清單中選取 [選取具有 **自訂輸出垃圾郵件原則** 的 **類型值** 的原則]，然後按一下名稱。
 
@@ -248,11 +248,11 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 4. 完成後，請按一下原則詳細資料飛出視窗中的 [關閉 **]**。
 
-## <a name="use-the-security-center-to-remove-custom-outbound-spam-policies"></a>使用安全中心來移除自訂輸出垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>使用 Microsoft 365 Defender 入口網站來移除自訂輸出垃圾郵件原則
 
-當您使用 [安全性中心] 移除自訂輸出垃圾郵件原則時，會同時刪除垃圾郵件篩選規則和對應的垃圾郵件篩選原則。 您無法移除預設的輸出垃圾郵件原則。
+當您使用 Microsoft 365 Defender 入口網站移除自訂輸出垃圾郵件原則時，會同時刪除垃圾郵件篩選規則和對應的垃圾郵件篩選原則。 您無法移除預設的輸出垃圾郵件原則。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
 
 2. 在 [**反垃圾郵件原則**] 頁面上，按一下 [名稱]，從清單中選取 [**自訂輸出垃圾郵件原則** 的 **類型值**] 的原則。 在顯示的原則詳細資料飛出視窗頂端，按一下 ![更多動作圖示](../../media/m365-cc-sc-more-actions-icon.png) [其他動作 **]** \> ![刪除原則圖示](../../media/m365-cc-sc-delete-icon.png) [刪除原則 **]**。
 
@@ -278,10 +278,10 @@ EOP 中的外寄垃圾郵件原則基本元素為：
    **附註**：
 
    - 您可以建立新的輸出垃圾郵件篩選規則，並將現有的未關聯輸出垃圾郵件篩選原則指派給它。 輸出垃圾郵件篩選規則無法與一個以上的輸出垃圾郵件篩選原則相關聯。
-   - 您可以在 [安全性中心] PowerShell 中的新輸出垃圾郵件篩選原則上設定下列設定，直到您建立原則為止：
+   - 您可以在建立原則之前，于 Microsoft 365 Defender 入口網站中無法使用 PowerShell 中的新外寄垃圾郵件篩選原則上設定下列設定：
      - _在_ `$false` **HostedOutboundSpamFilterRule** Cmdlet) 上，建立新原則做為已停用 (。
      - 在 _\<Number\>_ **HostedOutboundSpamFilterRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
-   - 在您將原則指派給外寄垃圾郵件篩選規則之前，您在 PowerShell 中建立的新輸出垃圾郵件篩選原則不會顯示在 [安全性中心] 中。
+   - 在您將原則指派給外寄垃圾郵件篩選規則之前，您在 PowerShell 中建立的新輸出垃圾郵件篩選原則不會顯示在 Microsoft 365 Defender 入口網站中。
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>步驟1：使用 PowerShell 來建立輸出垃圾郵件篩選原則
 
@@ -387,7 +387,7 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 當您在 PowerShell 中修改惡意程式碼篩選原則時，如您依照「 [步驟1：使用 PowerShell 建立外寄垃圾郵件篩選原則](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) 」一節所述，您在建立原則時，可以使用相同的設定。
 
 > [!NOTE]
-> 您無法重新命名外寄垃圾郵件篩選原則 (**Set-HostedOutboundSpamFilterPolicy** 指令程式沒有 _Name_ 參數) 。 當您重新命名 security center 中的外寄垃圾郵件原則時，您只是重新命名輸出垃圾郵件篩選 _規則_。
+> 您無法重新命名外寄垃圾郵件篩選原則 (**Set-HostedOutboundSpamFilterPolicy** 指令程式沒有 _Name_ 參數) 。 當您在 Microsoft 365 Defender 入口網站中重新命名外寄垃圾郵件原則時，您只是重新命名輸出垃圾郵件篩選 _規則_。
 
 若要修改輸出垃圾郵件篩選原則，請使用下列語法：
 

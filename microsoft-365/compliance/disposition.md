@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監事和管理當您使用處置檢閱時的內容處置，或根據您進行的設定自動刪除標記為記錄的項目。
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594070"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878121"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -38,7 +38,7 @@ ms.locfileid: "52594070"
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>檢視內容處置的先決條件
 
-若要管理處置檢閱並確認記錄已刪除，您必須具備足夠的權限，而且必須啟用審核。
+若要管理處置檢閱並確認記錄已刪除，您必須具備足夠的權限，而且必須啟用審核。 也請注意處置的任何[限制](retention-limits.md#maximum-number-of-items-for-disposition)。
 
 ### <a name="permissions-for-disposition"></a>處置的權限
 
@@ -215,8 +215,6 @@ If you need additional information, visit the helpdesk website (https://support.
 這些項目會在 **[類型]** 欄中顯示 **[記錄已處置]**。 例如：
 
 ![未經處置檢閱而處置的項目](../media/records-disposed2.png)
-
-**[已處置項目]** 索引標籤中顯示的項目在處置後最多可保存七年，在此期間，每個記錄限制保存一百萬個項目。 如果您看到 **[計數]** 數字接近上限一百萬，而且您需要記錄的處置證明，請與 [Microsoft 支援服務](../business-video/get-help-support.md)聯繫。
 
 > [!NOTE]
 > 此功能使用來自[整合稽核記錄](search-the-audit-log-in-security-and-compliance.md)的資訊，因此需要[啟用並搜尋](turn-audit-log-search-on-or-off.md)稽核，以便擷取相應的事件。

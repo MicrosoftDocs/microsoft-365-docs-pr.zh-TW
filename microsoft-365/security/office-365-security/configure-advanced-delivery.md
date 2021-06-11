@@ -17,12 +17,12 @@ ms.custom: ''
 description: 系統管理員可以瞭解如何使用 Exchange Online Protection (EOP) 中的高級傳遞原則，以識別不應該在特定支援案例中篩選的郵件 (協力廠商網路釣魚模擬及傳送至安全性作業的郵件 (SecOps) 信箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9c1c6f7635b87e25adcb121db79f67d4ec1988f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: deaad11b6397cd53017c0972a624b67a9623887f
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788990"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879105"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>設定將協力廠商網路釣魚模擬的傳遞給使用者及未篩選的郵件以 SecOps 信箱
 
@@ -62,20 +62,20 @@ ms.locfileid: "52788990"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以開啟安全性中心，網址為 <https://security.microsoft.com>。 若要直接移至 [ **高級傳遞** ] 頁面，請開啟] <https://security.microsoft.com/advanceddelivery> 。
+- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com> 。 若要直接移至 [ **高級傳遞** ] 頁面，請開啟] <https://security.microsoft.com/advanceddelivery> 。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
-  - 若要在高級傳遞原則中建立、修改或移除已設定的設定，您必須是 **security center** 中的「**安全性管理員**」角色群組成員，以及 **Exchange Online** 中「**組織管理**」角色群組的成員。  
+  - 若要在高級傳遞原則中建立、修改或移除已設定的設定，您必須是 **Microsoft 365 Defender 入口網站** 中 **安全性管理員** 角色群組的成員，以及 **Exchange Online** 中 **組織管理** 角色群組的成員。  
   - 若要以唯讀方式存取高級傳遞原則，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[Microsoft 365 security center 中的許可權](permissions-microsoft-365-security-center.md)及[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)和[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
-  > 將使用者新增至對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中的其他功能的 _安全性中心的_ 必要許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  > 將使用者新增至對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
-## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用安全中心設定高級傳遞原則中的 SecOps 信箱
+## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender 入口網站來設定高級傳遞原則中的 SecOps 信箱
 
-1. 在 [安全性中心] 中，移至 [ **電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅** 原則 \> **規則** ] 區段 \> **高級傳遞**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅** 原則 \> **規則**] 區段 \> **高級傳遞**。
 
 2. 在 [ **高級傳遞** ] 頁面上，確認已選取 [ **SecOps 信箱** ] 索引標籤，然後執行下列其中一個步驟：
    - 按一下 [ ![ 編輯圖示] [ ](../../media/m365-cc-sc-edit-icon.png) **編輯**]。
@@ -93,9 +93,9 @@ ms.locfileid: "52788990"
 
 您設定的 SecOps 信箱專案會顯示在 [ **SecOps 信箱** ] 索引標籤上。若要進行變更，請按一下索引標籤 ![ ](../../media/m365-cc-sc-edit-icon.png) 上的 [編輯圖示 **編輯** ]。
 
-## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>使用安全中心設定高級傳遞原則中的協力廠商網路釣魚模擬
+## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender 入口網站來設定高級傳遞原則中的協力廠商網路釣魚模擬
 
-1. 在 [安全性中心] 中，移至 [ **電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅** 原則 \> **規則** ] 區段 \> **高級傳遞**。
+1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅** 原則 \> **規則**] 區段 \> **高級傳遞**。
 
 2. 在 [ **高級傳遞** ] 頁面上，選取 [ **網路釣魚類比** ] 索引標籤，然後執行下列其中一個步驟：
    - 按一下 [ ![ 編輯圖示] [ ](../../media/m365-cc-sc-edit-icon.png) **編輯**]。

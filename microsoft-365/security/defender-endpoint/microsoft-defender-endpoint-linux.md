@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843515"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893737"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
@@ -43,7 +43,7 @@ ms.locfileid: "52843515"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安裝 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 - 存取 Microsoft Defender 資訊安全中心入口網站
 - 使用 [systemd](https://systemd.io/) 系統管理員的 Linux 發行
@@ -101,7 +101,9 @@ ms.locfileid: "52843515"
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。 如需詳細資訊，請參閱 [疑難排解 Microsoft Defender for The Linux 上的 Microsoft Defender For Endpoint 的安裝問題](/microsoft-365/security/defender-endpoint/linux-support-install)。
 
-- 記憶體： 1 GB
+- 核心：最少2個，最可取的
+
+- 記憶體：最低 1 GB，優先順序為4
 
     > [!NOTE]
     > 請確認您在/var. 中有可用的磁碟空間。

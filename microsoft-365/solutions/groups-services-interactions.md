@@ -114,7 +114,7 @@ Outlookweb SharePoint 資料流程 Microsoft Teams 的 Planner Project Yammer
 |:---|:---|:---|:---|:---|
 |Azure AD|成員資格、群組控制項、來賓|是|是|是|
 |Exchange|行事曆、信箱|是|是|是|
-|表單|Form|是|否|否|
+|Forms|Form|是|否|否|
 |OneNote|筆記本|是|否|否|
 |Planner|工作面板|否|是|是|
 |Power Apps 應用程式|應用程式|是|否|否|
@@ -236,7 +236,7 @@ Exchange Online 提供郵件、行事曆、連絡人及相關聯的功能。 在
 
 是的，在 Exchange 中刪除信箱將會刪除群組相關聯的服務和內容。
 
-## <a name="forms"></a>表單
+## <a name="forms"></a>Forms
 
 表單提供 web 型問卷調查和測驗。
 

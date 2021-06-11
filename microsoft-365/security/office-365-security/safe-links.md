@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受網路釣魚和其他使用惡意 URLs 攻擊的攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d42d7563b5267f805756125d1764d506f1700e13
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 406450752085817cb49e3cf08a90c0087af3d94b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793025"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879285"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全連結
 
@@ -220,7 +220,7 @@ Office 365 應用程式可使用下列安全連結設定：
 
 - **不要讓使用者點擊 [安全連結至原始 url**]：允許或封鎖使用者在桌上出版本 Word、Excel、PowerPoint 及 Visio 中，按一下 [[警告] 頁面](#warning-pages-from-safe-links)中的原始 url。 預設值和建議值為 [ **開啟**]。
 
-若要設定 Office 365 應用程式的安全連結設定，請參閱[設定 Office 365 應用程式的安全連結保護](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security-center)。
+若要設定 Office 365 應用程式的安全連結設定，請參閱[設定 Office 365 應用程式的安全連結保護](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal)。
 
 如需標準和嚴格原則設定之建議值的詳細資訊，請參閱 [通用連結的通用設定](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links)。
 
@@ -257,7 +257,7 @@ Office 365 應用程式可使用下列安全連結設定：
 
 當使用中安全連結原則中的使用者在支援的應用程式中按一下封鎖的連結時，會移至 [ [封鎖的 URL 警告](#blocked-url-warning) ] 頁面。
 
-您可以在 [安全連結] 的 [通用設定] 中設定 URLs 清單。 如需相關指示，請參閱 Configure the the 「 [Block the URLs」清單](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security-center)。
+您可以在 [安全連結] 的 [通用設定] 中設定 URLs 清單。 如需相關指示，請參閱 Configure the the 「 [Block the URLs」清單](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
 **附註**：
 

@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c32026ab4f33a68b1f63cb000807671839f6bad
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821280"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878325"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -278,7 +278,7 @@ ms.locfileid: "52821280"
 > 當您完成設定時，請使用下列連結來開始工作負載調查：
 >
 >- [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
->- [使用安全中心管理 Office 365 的 Defender 中的隔離檔案](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)
+>- [使用 Microsoft 365 defender 入口網站管理 Defender 中的隔離檔案 Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [在 SharePoint 線上、OneDrive 或 Microsoft Teams 中找到惡意檔案時要執行的動作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
 

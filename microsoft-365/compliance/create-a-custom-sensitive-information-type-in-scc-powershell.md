@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合規性中心建立及匯入原則的自訂機密資訊類型。
-ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878241"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538698"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 建立自訂機密資訊類型
 
@@ -38,9 +38,6 @@ ms.locfileid: "52878241"
 請參閱本主題中 [需注意的潛在驗證問題](#potential-validation-issues-to-be-aware-of)。
 
 如需用於處理文字之 Boost.RegEx (先前稱為 RegEx++) 引擎的詳細資訊，請參閱 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).。
-
-> [!NOTE]
-> 如果您使用連字號 (&) 做為自訂機密資訊類型中關鍵字的一部分，請注意存在已知問題。 您應該在字元的周圍新增一個包含空格的字詞，以確保已正確識別該字元，例如，L & P _not_ l&p。
 
 ## <a name="sample-xml-of-a-rule-package"></a>規則套件的範例 XML
 

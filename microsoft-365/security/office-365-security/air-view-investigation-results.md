@@ -19,12 +19,12 @@ description: 在 Microsoft 365 的自動調查期間和之後，您可以查看�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275045"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878421"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
@@ -32,17 +32,21 @@ ms.locfileid: "52275045"
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在[Office 365 的 Microsoft Defender](defender-for-office-365.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您擁有必要的許可權，您可以在 [Microsoft 365 安全性中心] 中查看這些詳細資料。 調查詳細資料可提供您最新的狀態，以及核准任何擱置中動作的功能。
+在[Office 365 的 Microsoft Defender](defender-for-office-365.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您擁有必要的許可權，您可以在 Microsoft 365 Defender 入口網站中查看這些詳細資料。 調查詳細資料可提供您最新的狀態，以及核准任何擱置中動作的功能。
 
 > [!TIP]
-> 請參閱 Microsoft 365 security center 中的 [新增統一調查] 頁面。 若要深入瞭解，請參閱 [ (NEW！ ) 整合調查] 頁面](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
+> 請參閱 Microsoft 365 Defender 入口網站中新的整合調查頁面。 若要深入瞭解，請參閱 [ (NEW！ ) 整合調查] 頁面](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
 
 ## <a name="investigation-status"></a>調查狀態
 
 調查狀態會指出分析和動作的進度。 調查執行時，會變更狀態，以指出是否發現威脅，以及是否已核准動作。
 
+<br>
+
+****
+
 |狀態|描述|
-|:---|:---|
+|---|---|
 |**啟動中**|調查已觸發並等候開始執行。|
 |**正在執行**|調查過程已開始且正在進行中。 當 [待定的動作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) 獲得批准時，也會發生此狀態。|
 |**找不到威脅**|調查已完成，但找不到任何威脅 (使用者帳戶、電子郵件訊息、URL 或檔案) 皆已識別。 <p> **提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](threat-explorer.md)採取動作。|
@@ -58,7 +62,7 @@ ms.locfileid: "52275045"
 
 ## <a name="view-details-of-an-investigation"></a>檢視調查的詳細資料
 
-1. 請移至 Microsoft 365 security center (<https://security.microsoft.com>) 並登入。
+1. 請移至 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 並登入。
 2. 在功能窗格中，選取 [ **動作中心**]。
 3. 在 [ **擱置** ] 或 [歷程 **記錄** ] 索引標籤上，選取動作。 其快顯視窗隨即開啟。
 4. 在彈出窗格中，選取 [ **開啟調查] 頁面**。 
@@ -68,10 +72,10 @@ ms.locfileid: "52275045"
 
 某些類型的提醒會觸發 Microsoft 365 中的自動調查。 若要深入瞭解，請參閱 [觸發自動調查的警示原則](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
 
-1. 請移至 Microsoft 365 security center (<https://security.microsoft.com>) 並登入。
+1. 請移至 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 並登入。
 2. 在功能窗格中，選取 [ **動作中心**]。
 3. 在 [ **擱置** ] 或 [歷程 **記錄** ] 索引標籤上，選取動作。 其快顯視窗隨即開啟。
-4. 在彈出窗格中，選取 [ **開啟調查] 頁面**。 
+4. 在彈出窗格中，選取 [ **開啟調查] 頁面**。
 5. 選取 [ **警示** ] 索引標籤，以查看與該調查相關的所有警示清單。
 6. 選取清單中的專案，以開啟其彈出窗格。 您可以在這裡查看有關警示的詳細資訊。
 
