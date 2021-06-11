@@ -280,8 +280,6 @@
 #### [取得您的防毒軟體和反惡意程式碼更新](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [管理 Microsoft Defender 防毒軟體保護更新的來源](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [管理何時應下載並套用保護更新的排程](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-#####  [管理 Microsoft Defender 更新的漸進式推出程序](updates.md)
-#####  [設定 Microsoft Defender 更新的漸進式推出程序](configure-updates.md)
 ##### [管理 Microsoft Defender 防毒軟體更新和掃描已過時的端點](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [管理事件型強制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [管理行動裝置和虛擬機器 (VM) 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -513,8 +511,9 @@
 
 ###### [指標]()
 ####### [指示器方法和屬性](ti-indicator.md)
-####### [提交指示器](post-ti-indicator.md)
 ####### [清單指示器](get-ti-indicators-collection.md)
+####### [提交指示器](post-ti-indicator.md)
+####### [匯入指示器](import-ti-indicators.md)
 ####### [刪除指示器](delete-ti-indicator-by-id.md)
 
 ###### [IP]()

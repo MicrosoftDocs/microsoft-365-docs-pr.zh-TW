@@ -15,12 +15,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: 2c048207d0528856924b348697e1f7c48114e82a
-  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.openlocfilehash: ecf809c3fe771e38b6edc758d8f2654c0cb89ca6
+  ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52537280"
+  ms.lasthandoff: 06/10/2021
+  ms.locfileid: "52888334"
 landingContent:
 - title: 管理帳單與付款
   linkLists:
@@ -28,26 +28,28 @@ landingContent:
     links:
     - text: 檢視帳單或發票
       url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: 認識您的帳單或發票
+      url: billing-and-payments/understand-your-invoice2.md
+    - text: 支付訂閱費用
+      url: billing-and-payments/pay-for-your-subscription.md
     - text: 管理付款方式
       url: billing-and-payments/manage-payment-methods.md
-    - text: 認識您的帳單或發票
-      url: billing-and-payments/understand-your-invoice.md
-    - text: 管理帳單設定檔
-      url: billing-and-payments/manage-billing-profiles.md
-    - text: 管理計費帳戶
-      url: manage-billing-accounts.md
+    - text: 變更帳單地址
+      url: billing-and-payments/change-your-billing-addresses.md
 - title: 管理授權
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: 購買或移除授權
+      url: licenses/buy-licenses.md
     - text: 將授權指派給使用者
       url: ../admin/manage/assign-licenses-to-users.md
+    - text: 取消指派給使用者的授權
+      url: ../admin/manage/remove-licenses-from-users.md
     - text: 了解訂閱與授權
       url: licenses/subscriptions-and-licenses.md
-    - text: 購買訂閱授權
-      url: licenses/buy-licenses.md
-    - text: 從您的訂閱中移除授權
-      url: ./licenses/buy-licenses.md
+    - text: 下載永久軟體和產品授權金鑰
+      url: ../admin/setup/download-software-licenses-csp.md
 - title: 升級、續約或取消
   linkLists:
   - linkListType: how-to-guide
@@ -56,10 +58,10 @@ landingContent:
       url: subscriptions/upgrade-to-different-plan.md
     - text: 續約您的訂閱
       url: subscriptions/renew-your-subscription.md
-    - text: 取消訂閱
-      url: subscriptions/cancel-your-subscription.md
-    - text: 重新啟用您的訂閱
+    - text: 重新啟動您的訂閱
       url: subscriptions/reactivate-your-subscription.md
+    - text: 取消您的訂閱
+      url: subscriptions/cancel-your-subscription.md
     - text: 關閉您的帳戶
       url: close-your-account.md
 - title: 試用或購買
@@ -69,8 +71,10 @@ landingContent:
     - text: 試用或購買 Microsoft 365
       url: try-or-buy-microsoft-365.md
     - text: 從免費試用版購買訂閱
-      url: ./try-or-buy-microsoft-365.md
+      url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
     - text: 延長試用期
-      url: extend-your-trial.md
+      url: extend-your-trial.md#extend-your-trial
+    - text: 新增儲存空間
+      url: add-storage-space.md
     - text: 購買網域名稱
       url: ../admin/get-help-with-domains/buy-a-domain-name.md

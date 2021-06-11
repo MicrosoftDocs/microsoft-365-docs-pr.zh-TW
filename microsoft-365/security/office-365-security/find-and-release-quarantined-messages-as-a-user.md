@@ -20,12 +20,12 @@ ms.custom:
 description: 使用者可以了解如何在 Exchange Online Protection (EOP) 中查看和管理收到的隔離郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539116"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877869"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 尋找及釋出隔離的郵件
 
@@ -38,13 +38,26 @@ ms.locfileid: "52539116"
 
 在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或垃圾郵件。 如需詳細資訊，請參閱 [EOP 中的隔離區](quarantine-email-messages.md)。
 
-身為使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經系統認定為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 自 2020 年 4 月起，您可以查看或刪除收件者是您的已隔離網路釣魚 (不是高信賴度網路釣魚) 郵件。 您可以在安全性與合規性中心 (如果系統管理員已設定) 或[使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中查看和管理您的隔離郵件。
+作為隔離郵件的收件者，下表說明您能夠以一般使用者對郵件執行哪些操作：
+
+<br>
+
+****
+
+|隔離原因|檢視|發行|刪除|
+|---|:---:|:---:|:---:|
+|大量|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|垃圾郵件|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|網路釣魚 (不是高信賴度網路釣魚)|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)|
+|
+
+您可以在 Microsoft 365 Defender 入口網站或 (如果系統管理員已設定) 在[終端使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中檢視及管理隔離郵件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟安全性與合規性中心，請移至 <https://protection.office.com>。 若要直接開啟 [隔離區] 頁面，請移至 <https://protection.office.com/quarantine>。
+- 若要開啟 Microsoft 365 Defender 入口網站，請前往 <https://security.microsoft.com>。 若要直接開啟 [隔離區] 頁面，請移至 <https://security.microsoft.com/quarantine>。
 
-- 系統管理員可以設定郵件要先保留在隔離區中多久，然後才永久刪除 (反垃圾郵件原則)。 已在隔離區中到期的郵件將無法還原。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+- 系統管理員可以在反垃圾郵件原則中，設定郵件要先保留在隔離區中多久，然後才永久刪除。 已在隔離區中到期的郵件將無法還原。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 - 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 使用者可以直接從這些通知釋出垃圾郵件隔離郵件。 使用者可以直接從這些通知檢閱垃圾郵件隔離郵件 (非高信賴度網路釣魚郵件)。 如需詳細資訊，請參閱 [EOP 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
@@ -54,7 +67,7 @@ ms.locfileid: "52539116"
 
 ## <a name="view-your-quarantined-messages"></a>檢視隔離的郵件
 
-1. 在「安全性與合規性中心」內，移至 **[威脅管理]** \> **[檢閱]** \> **[隔離]**。
+1. 在 Microsoft 365 Defender 入口網站中，前往 **[電子郵件與共同作業]** \> **[檢閱]** \> **[隔離]**。
 
 2. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行] 可顯示最多七個資料行。 預設值會標上星號 (<sup>\*</sup>)：
 
@@ -89,21 +102,22 @@ ms.locfileid: "52539116"
      - **網路釣魚**
 
    - **原則類型**：依原則類型篩選郵件：
+     - **反惡意程式碼原則**
+     - **安全附件原則** (適用於 Office 365 的 Defender)
      - **反網路釣魚原則**
      - **託管的內容篩選原則** (反網路釣魚原則)
+     - **傳輸規則**
+
+     <sup>\*</sup>
 
    若要清除篩選，按一下 [清除]。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]。
 
 4. 使用 [結果排序依據] (預設為 [郵件識別碼] 按鈕) 和對應值來尋找特定郵件。 不支援萬用字元。 您可以依下列值進行搜尋：
 
    - **郵件識別碼**：郵件的全域唯一識別碼。 如果您在清單中選取某個郵件，出現的 [詳細資料] 飛出窗格中就會出現 [郵件識別碼] 值。 系統管理員可以使用 [郵件追蹤][](message-trace-scc.md) 來尋找郵件及其對應的郵件識別碼值。
-
    - **寄件者電子郵件地址**：單一寄件者的電子郵件地址。
-
    - **原則名稱**：使用郵件的整個原則名稱。 搜尋時不會區分大小寫。
-
    - **收件者電子郵件地址**：單一收件者的電子郵件地址。
-
    - **主旨**：使用郵件的完整主旨。 搜尋時不會區分大小寫。
 
    輸入搜尋準則後，請按一下![重新整理按鈕](../../media/scc-quarantine-refresh.png) [重新整理] 來篩選結果。
@@ -123,21 +137,13 @@ ms.locfileid: "52539116"
 當您選取清單中的電子郵件訊息時，[詳細資料] 飛出窗格中會出現下列郵件詳細資料：
 
 - **郵件識別碼**：郵件的全域唯一識別碼。
-
 - **寄件者位址**
-
 - **收到日期**：收到郵件的日期/時間。
-
 - **主旨**
-
 - **隔離原因**：顯示是否將郵件識別為 [垃圾郵件] 或 [大量] 或 [網路釣魚]。
-
 - **收件者**：如果郵件包含多個收件者，則必須按一下 [預覽郵件] 或 [檢視郵件標頭] 以查看完整的收件者清單。
-
 - **到期**：郵件會自動從隔離區永久刪除的日期/時間。
-
 - **已釋出給**：該封郵件曾釋出至的所有電子郵件地址 (如果有的話)。
-
 - **尚未釋出給**：該封郵件尚未釋出至的所有電子郵件地址 (如果有的話)。
 
 ### <a name="take-action-on-quarantined-email"></a>對隔離的電子郵件採取動作
@@ -169,7 +175,6 @@ ms.locfileid: "52539116"
 當您選取清單中的多個隔離郵件 (最多 100 個) 時，隨即會出現 [大量動作] 飛出窗格供您採取下列動作：
 
 - **釋出郵件**：這些選項與您釋出單一郵件時的選項相同，差別只在您無法選取 [將郵件釋出給特定收件者]；您只能選取 [將郵件釋出給所有收件者] 或 [將郵件釋出給其他人]。
-
 - **刪除郵件**：在出現的警告中按一下 [是] 之後，郵件就會立即遭到刪除，而不會傳送給原始收件者。
 
 完成時，請按一下 [關閉]。

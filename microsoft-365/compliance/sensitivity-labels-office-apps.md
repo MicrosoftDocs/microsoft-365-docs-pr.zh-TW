@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da3d971a1ef55d343ac1b61e6457981022c4c92
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6e22ca460acf96151ff54e3b2bbbe03ad1a97a27
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770374"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888394"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -61,7 +61,7 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[要求變更標籤的理由](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供自訂說明頁面的說明連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[使用變數動態標記](#dynamic-markings-with-variables)                                              | 2010           | 16.42+     | 2.42+ | 16.0.13328+ | 審查中 |
+|[使用變數動態標記](#dynamic-markings-with-variables)                                              | 2010           | 16.42+     | 2.42+ | 16.0.13328+ | 逐步推出 |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限：<br /> - 提示使用者](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 審查中   | 審查中         | 審查中                                                        |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 逐步推出：16.0.13628+ | 是 <sup>\*</sup>                                                        |

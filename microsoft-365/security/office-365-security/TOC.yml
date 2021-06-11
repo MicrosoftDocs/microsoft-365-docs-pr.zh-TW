@@ -14,7 +14,7 @@
           href: office-365-evaluation.md
         - name: 適用於 Office 365 的 Defender 的新增功能
           href: whats-new-in-defender-for-office-365.md
-        - name: Microsoft 365 安全性中心中的適用於 Office 365 的 Defender
+        - name: Microsoft 365 Defender 入口網站中的適用於 Office 365 的 Defender
           href: ../defender/microsoft-365-security-center-mdo.md
         - name: Exchange Online Protection
           items:
@@ -26,7 +26,7 @@
               href: quarantine-email-messages.md
         - name: 適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
           href: turn-on-mdo-for-spo-odb-and-teams.md
-        - name: Microsoft 365 安全性中心概觀
+        - name: Microsoft 365 Defender 入口網站概觀
           href: ../defender/overview-security-center.md
         - name: 電子郵件實體頁面
           href: mdo-email-entity-page.md
@@ -66,7 +66,7 @@
           href: protect-against-threats.md
         - name: 將適用於 Office 365 的 Defender 和適用於端點的 Defender 相整合
           href: integrate-office-365-ti-with-mde.md
-        - name: Microsoft 365 安全性中心的權限
+        - name: Microsoft 365 Defender 入口網站中的權限
           href: permissions-microsoft-365-security-center.md
         - name: 安全性與合規性中心中的權限
           href: permissions-in-the-security-and-compliance-center.md

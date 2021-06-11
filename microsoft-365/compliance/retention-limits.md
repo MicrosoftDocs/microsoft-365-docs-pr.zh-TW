@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 瞭解針對保留原則及保留標籤原則，每個原則的原則和專案數量上限。
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698961"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878049"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留原則和保留標籤原則的限制
 
@@ -82,3 +82,13 @@ SharePoint 範例：
 - **解決方案**：建立 20 個 SharePoint 保留原則，保留期間為 10 年，其中包括 100 個特定網站，並建立 80個 SharePoint 保留原則，保留期間為 4 年，其中包含 100 個特定網站。
     
     因為您不需要保留所有的 SharePoint 網站，您必須建立指定特定網站的保留原則。 由於保留原則不支援超過 100 個指定的網站，因此您必須針對兩個保留期間建立多個原則。 這些保留原則所包含的網站數量為上限，因此需要保留的下一個新網站不論保留期間都會需要新的保留原則。
+
+## <a name="maximum-number-of-items-for-disposition"></a>要處置的項目數目上限
+
+對於[內容處置](disposition.md)，有一些限制需要注意：
+
+- 每個保留標籤的每個階段有 1，000，000 個項目擱置處置
+
+- 處置項目後最多七年的處置證明，該期間每個保留標籤的限制為 1，000，000 個項目。 
+    
+    如果您需要標示為記錄之項目的處置證明高於此 1，000，000 上限，請連繫 [Microsoft 支援服務](../business-video/get-help-support.md)。
