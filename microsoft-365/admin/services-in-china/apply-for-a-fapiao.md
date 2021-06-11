@@ -41,7 +41,7 @@ ms.locfileid: "52332459"
   
 1. 在由世紀所運作的 Office 365 中支付款項後，您會收到訂單確認電子郵件，其中包含您的訂單號碼和發票管理系統的連結。 您可以使用電子郵件中的連結，在 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>] 中建立帳戶。
 
-    或
+    或者
 
 2. 您可以從系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>申請發票。
 

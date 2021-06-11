@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: a6271c1bd3714cfdffc606b7ada9b027e394216d
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866724"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845639"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行為封鎖和包含專案
 
@@ -46,11 +46,11 @@ ms.locfileid: "52866724"
 
 行為封鎖和包容功能可與使用的 Defender 的多個元件和功能搭配使用，以立即停止攻擊，並防止攻擊的進展。
 
-- [下一代保護](microsoft-defender-antivirus-in-windows-10.md) (包括 Microsoft Defender 防毒軟體) 可透過分析行為來偵測威脅，以及停止已開始執行的威脅。
+- [下一代保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (包括 Microsoft Defender 防毒軟體) 可透過分析行為來偵測威脅，以及停止已開始執行的威脅。
 
-- [端點偵測和回應](overview-endpoint-detection-response.md) (EDR) 接收網路、裝置和內核行為間的安全性信號。 當偵測到威脅時，即會建立警示。 相同類型的多個警示會匯總到事件中，這可讓安全性作業小組更輕鬆地調查和回應。
+- [端點偵測和回應](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) 接收網路、裝置和內核行為間的安全性信號。 當偵測到威脅時，即會建立警示。 相同類型的多個警示會匯總到事件中，這可讓安全性作業小組更輕鬆地調查和回應。
 
-- 除了透過 EDR 所收到的網路、端點和內核行為信號之外，該[端點的 Defender](overview-endpoint-detection-response.md)都具有各種身分識別、電子郵件、資料和應用程式的光纖。 [Microsoft 365 的 defender](../defender/microsoft-365-defender.md)、端點的 defender 的元件，以及與這些信號關聯的元件、引發偵測警示，以及連接事件中的相關警示。
+- 除了透過 EDR 所收到的網路、端點和內核行為信號之外，該[端點的 Defender](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)都具有各種身分識別、電子郵件、資料和應用程式的光纖。 [Microsoft 365 的 defender](/microsoft-365/security/defender/microsoft-threat-protection)、端點的 defender 的元件，以及與這些信號關聯的元件、引發偵測警示，以及連接事件中的相關警示。
 
 使用這些功能時，即使已開始執行，也可以阻止或封鎖更多威脅。 每當偵測到可疑行為時，就會包含威脅、建立警示，並在其蹤跡中停止威脅。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "52866724"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行為封鎖及包容元件
 
-- **用戶端、原則導向的 [攻擊面降低規則](attack-surface-reduction.md)** 預先定義的常見攻擊行為會因攻擊面減少規則而無法執行。 當這類行為企圖執行時，這些行為會在 Microsoft Defender 資訊安全中心中看作是 [https://securitycenter.windows.com](https://securitycenter.windows.com) 資訊性警示。 預設不會啟用 (攻擊面降低規則;您可以在 Microsoft Defender 資訊安全中心中設定原則。 ) 
+- **用戶端、原則導向的 [攻擊面降低規則](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** 預先定義的常見攻擊行為會因攻擊面減少規則而無法執行。 當這類行為企圖執行時，這些行為會在 Microsoft Defender 資訊安全中心中看作是 [https://securitycenter.windows.com](https://securitycenter.windows.com) 資訊性警示。 預設不會啟用 (攻擊面降低規則;您可以在 Microsoft Defender 資訊安全中心中設定原則。 ) 
 
 - **[用戶端行為封鎖](client-behavioral-blocking.md)** 會透過機器學習來偵測端點的威脅，然後自動封鎖並修正。 預設會啟用用戶端行為封鎖 (。 )  
 
@@ -93,7 +93,6 @@ ms.locfileid: "52866724"
 如 [elusive 威脅的熱實施中所述：以 AI 為導向的行為基礎的封鎖會在其追蹤中停止攻擊](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)。由於行為封鎖及包容能力，對全球各地的100組織所進行的認證盜竊攻擊已停止。 Spear-包含引誘檔的網路釣魚電子郵件會傳送給目標群組織。 如果收件者開啟附件，則相關的遠端檔能夠在使用者的裝置上執行程式碼，並載入 Lokibot 惡意程式碼，這會 stole 認證、挾帶竊取的資料，並等候來自命令和控制伺服器的進一步指示。 
 
 Defender for Endpoint 中的行為基礎裝置教學模型，在攻擊鏈中的兩個點上捕捉及停止攻擊者的技術：
-
 - 第一個保護層偵測到利用行為行為。 雲端中的裝置學習分類器已正確識別威脅，並立即指示用戶端裝置封鎖攻擊。
 - 第二個保護層，可協助停止攻擊超過第一層的情況、偵測到的處理常式 hollowing、停止該處理常式，並移除對應的檔案 (例如 Lokibot) 。 
 
@@ -121,7 +120,7 @@ Defender for Endpoint 中的行為基礎裝置教學模型，在攻擊鏈中的�
 
 ## <a name="next-steps"></a>後續步驟
 
-- [深入瞭解端點的 Defender](overview-endpoint-detection-response.md)
+- [深入瞭解端點的 Defender](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
 - [設定攻擊面減少規則](attack-surface-reduction.md)
 
@@ -129,4 +128,4 @@ Defender for Endpoint 中的行為基礎裝置教學模型，在攻擊鏈中的�
 
 - [查看最近的全域威脅活動](https://www.microsoft.com/wdsi/threats)
 
-- [取得 Microsoft 365 Defender 的概覽](../defender/microsoft-365-defender.md)
+- [取得 Microsoft 365 Defender 的概覽](/microsoft-365/security/defender/microsoft-threat-protection)

@@ -45,7 +45,7 @@ ms.locfileid: "52332867"
 在 [合規性管理員] 中，移至 [ **評估範本** ] 頁面。 您將會看到您的組織可使用的所有範本清單。 請務必瞭解包含的和特優範本之間的差異：
 
 - **包含的範本** 是組織的授權合約中所包含的範本。
- - [**特優範本**] 顯示您的組織可能選擇取得的其他範本 (請參閱 [服務條款](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)) 。
+ - **進階版範本** 顯示您的組織可能選擇取得的其他範本 (參考 [服務條款](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)) 。
 
 進一步閱讀 [如何查看和管理範本](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page)。
 
@@ -55,14 +55,14 @@ ms.locfileid: "52332867"
 ## <a name="included-templates"></a>包含的範本
 
 - [Microsoft 資料保護基準](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [GDPR](/compliance/regulatory/gdpr) Microsoft 365，Office 365，Intune) 的歐盟 (
+- [歐盟 GDPR](/compliance/regulatory/gdpr) (Microsoft 365，Office 365，Intune) 
 - [ISO 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs。 4和5
 
 > [!NOTE]
-> 針對美國政府社區 (GCC) 適中、GCC 高階及國防部門 (DoD) 客戶：除了以上所列的範本之外，還會包含 Cybersecurity 成熟度模型認證 (CMMC) 階層1到5範本。
+> 針對美國政府 Community (GCC) 適中、GCC 高及國防部門 (DoD) 客戶：除了以上所列的範本之外，還會包含 Cybersecurity 成熟度模型憑證 (CMMC) 層級1到5範本。
 
-## <a name="premium-templates"></a>精品範本
+## <a name="premium-templates"></a>進階版範本
 
 - AICPA/CICA 一般公認的隱私權原則 (GAPP)  (Microsoft 365) 
 - Alabama-原則621：資料洩密通知-草稿 (Microsoft 365) 
@@ -71,59 +71,59 @@ ms.locfileid: "52332867"
 - 安提瓜和 Barbuda-Data 保護法案/2013 (Microsoft 365) 
 - OMB 圓形編號的附錄 III A-130-聯邦自動化資訊資源的安全性
 - [阿根廷個人資料保護法案 25.326](/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365) 
-- 亞利桑那-安全性系統 (Microsoft 365) 中的入侵通知
-- Arkansas 程式碼標題4，副標題7，章節110，個人資訊保護法案 (Microsoft 365) 
+- 亞利桑那-安全系統 (Microsoft 365 中的安全性漏洞通知) 
+- Arkansas 程式碼標題4，副標題7，第110章，個人資訊保護法案 (Microsoft 365) 
 - ARMA-實施一般公認的記錄，使原則 (GARP)  (Microsoft 365) 
-- 亞美尼亞共和國的亞美尼亞法保護個人資料 (Microsoft 365) 
+- 亞美尼亞共和國的亞美尼亞法，保護個人資料 (Microsoft 365) 
 - 亞太地區 (APEC) 隱私權架構的經濟合作
-- 澳大利亞-.ASD 基本 8 (Microsoft 365) 
+- 澳大利亞-.asd 基本 8 (Microsoft 365) 
 - 澳大利亞-全國封存法案
-- 澳大利亞-公開記錄 Office 維多利亞記錄保留標準 (Microsoft 365) 
+- 澳大利亞-公開記錄 Office 維多利亞保留標準 (Microsoft 365) 
 - 澳大利亞-垃圾郵件法案 2003 (Microsoft 365) 
 - 澳大利亞隱私權 (信用報告) 程式碼 (Microsoft 365) 
 - 澳大利亞隱私權法案 (Microsoft 365) 
 - 澳大利亞能源部門網路安全性框架 (AESCSF)  (Microsoft 365) 
-- [澳大利亞資訊安全性註冊 Assessor 程式 (IRAP) 版本 3](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365) 
+- [澳大利亞資訊安全性註冊 Assessor 程式 (IRAP) 第3版](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365) 
 - [澳大利亞 Prudential 規章機關 CPS](/compliance/regulatory/offering-apra-australia) (Microsoft 365) 
 - 奧地利電訊法案 2003 (Microsoft 365) 
-- 巴哈馬-資料保護法案 (Microsoft 365) 
+- 巴哈馬資料保護法案 (Microsoft 365) 
 - 巴巴多斯-資料保護帳單 2019 (Microsoft 365) 
 - 巴巴多斯-電子交易法案 (Microsoft 365) 
 - 有關資訊的白俄羅斯法律，Informatization 及保護資訊 (Microsoft 365) 
-- 比利時-遵照對個人資料處理 (Microsoft 365) 的自然人員的保護。
+- 比利時-遵照對個人資料 (Microsoft 365 的處理，對自然人員的保護加以防範。) 
 - [比利時 NBB Dec 2015](/compliance/regulatory/offering-nbb-fsma-belgium) (Microsoft 365) 
 - 百慕達-電子交易法案 (Microsoft 365) 
 - 保護個人資料的波士尼亞和黑塞哥維那法律
 - 博茨瓦納-資料保護法案 (Microsoft 365) 
 - 巴西-消費者防護碼法律編號 8078 (Office 365) 
 - 巴西-一般資料保護法 (LGPD)  (Microsoft 365) 
-- 保護個人資料 2002 (Microsoft 365) 的保加利亞法律
+- 保護個人資料 2002 (Microsoft 365 的保加利亞法律) 
 - 加州-民事 Code Section 1798
 - 加州-資料庫侵犯法案 (加州 SB 1386) 
 - 加利福尼亞-教育版代碼-EDC，Title 3，除法14，Part 65，章節 2.5-社交媒體隱私權
 - 加州-隱私權 (CPRA)  (Microsoft 365) 
 - 加州-SB-327 資訊隱私權：連線裝置 (Microsoft 365) 
-- 加利福尼亞州的消費者信用報告代理人 (Microsoft 365) 
+- 加州消費者信用報告代理人法案 (Microsoft 365) 
 - [加州消費者隱私權法案 (CCPA) ](/compliance/regulatory/offering-ccpa) (Microsoft 365) 
 - 加拿大違反安全性保護法規 (Microsoft 365) 
-- 加拿大英屬哥倫比亞-隱私權 & Security-FOIPPA (Microsoft 365) 
-- [加拿大 Superintendent 金融機構的辦事處網路安全性 Self-Assessment 指南](/compliance/regulatory/offering-osfi-canada) (Microsoft 365) 
+- 加拿大英屬哥倫比亞-& Security-FOIPPA (Microsoft 365) 的資訊隱私權
+- [加拿大 Office 金融機構網路安全性 Self-Assessment 指南](/compliance/regulatory/offering-osfi-canada) (Microsoft 365) 的
 - 加拿大-個人健康資訊保護法案 (PHIPA) 2020 (Microsoft 365) 
 - 加拿大個人資訊保護和電子檔法案 (PIPEDA)  (Microsoft 365) 
 - 加拿大受保護的 B
-- 加拿大 Cybersecure-中小型組織 (Microsoft 365) 的基準網路安全性控制。
--  (Microsoft 365) ，CAN-垃圾郵件法案
+- 加拿大 Cybersecure-中小型組織的基準網路安全性控制 (Microsoft 365) 
+-  (Microsoft 365) 垃圾郵件法案
 - [CDSA 內容保護 & 安全性標準](/compliance/regulatory/offering-cdsa) (Microsoft 365) 
-- 中央的科威特 Cybersecurity Framework (Microsoft 365) 
+- 以科威特 Cybersecurity Framework (Microsoft 365 的中央插槽) 
 - [CFR-聯邦法規標題21的程式碼，第11部分，電子記錄，電子簽名](/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365) 
 - 兒童的線上隱私權保護規則 (COPPA)  (Microsoft 365) 
 - 中國-個人資訊安全性規格 (Microsoft 365) 
 - [CIS 實施群組1、群組2、群組3](/compliance/regulatory/offering-cis-benchmark)
 - [雲端安全性同盟 (CSA) Cloud Controls 矩陣 (CCM) ](/compliance/regulatory/offering-csa-star-attestation)
-- CMMC Level 1，Level 2，Level 3，Level 4，Level 5 (Microsoft 365) 
+- CMMC level 1，level 2，level 3，level 4，level 5 (Microsoft 365) 
 - CMS 資訊系統安全性和隱私權原則 (IS2P2)  (Microsoft 365) 
-- 所有的時 5 (Microsoft 365) 
-- Maryland State 政府的程式碼，政府機構 (Microsoft 365) 中的資訊保護
+- 時的 5 (Microsoft 365) 
+- 政府機關 (Microsoft 365 的資訊的 Maryland 狀態政府-防護的程式碼) 
 - 哥倫比亞-Decree No。 1377/2013 (Microsoft 365) 
 - 哥倫比亞-外部環形字母007，2018 (Microsoft 365) 
 - 哥倫比亞-法律 1266/2008-Habeas 資料法案 (Microsoft 365) 

@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/21/2021
 ms.locfileid: "52594094"
 ---
-# <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 proxy 和網際網路連線設定
+# <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 Proxy 和網際網路連線能力設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

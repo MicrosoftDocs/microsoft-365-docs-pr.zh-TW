@@ -18,7 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 瞭解如何驗證您的學校是否符合 Microsoft 365 教育版學術的定價。
+description: 瞭解如何驗證您的學校 Microsoft 365 教育版教育版定價的資格。
 ms.date: 07/21/2020
 ms.openlocfilehash: 7da6fbc73ece51c5d9b845487e344bbbdec679cf
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
@@ -29,20 +29,20 @@ ms.locfileid: "52333083"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>驗證 Microsoft 365 教育版訂閱的學術資格
 
-如果您是學術機構的一部分，您可以註冊 Microsoft 365 教育版免費試用版。 在 Microsoft 驗證您的學校的學術資格後，您可以購買 Microsoft 365 產品（學術價）。 這包括可免費使用的產品，例如 Office 365 A1 for 教職員工和 Office 365 A1 學生版。 您必須在免費試用版結束時，才能將其轉換為「教育版訂閱。
+如果您是學術機構的一部分，您可以註冊 Microsoft 365 教育版的免費試用版。 在 Microsoft 驗證學校的學術資格後，您可以購買 Microsoft 365 的產品，以學術價格購買。 這包括可免費使用的產品，例如教職員的 Office 365 A1，也就是學生 Office 365 A1。 您必須在免費試用版結束時，才能將其轉換為「教育版訂閱。
 
 本文說明如何確認學校的學術資格、檢查資格狀態，以及在您的學校獲得批准後，以學術價格購買訂閱。
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須已具備 Microsoft 365 教育版試用版訂閱。 如果您沒有試用訂閱，請 [造訪此網頁](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 並選取 [ **免費開始**]。
+您必須已有 Microsoft 365 教育版試用訂閱。 如果您沒有試用訂閱，請 [造訪此網頁](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 並選取 [ **免費開始**]。
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>確認您有試用訂閱
 
-如果您不確定是否有 Microsoft 365 教育版試用版訂閱，請使用下列步驟來確認您的執行。
+如果您不確定是否有 Microsoft 365 教育版試用訂閱，請使用下列步驟來確認您的執行。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a> ] 頁面。
-2. 請參閱 **office 365 a1 for 教職員試用** 版和 **office 365 A1 For 學生試用版**。 如果您未找到這些訂閱，請 [造訪此網頁](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ，並選取 [ **免費開始**]。
+1. 在 Microsoft 365 系統管理中心，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+2. 尋找教職員試用版的 **Office 365 A1** 和 **Office 365 A1 學生** 試用版。 如果您未找到這些訂閱，請 [造訪此網頁](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ，並選取 [ **免費開始**]。
 
 ## <a name="verify-your-schools-academic-eligibility"></a>驗證學校的學術資格
 
@@ -59,18 +59,18 @@ ms.locfileid: "52333083"
 
 在您有 Microsoft 365 教育版試用版之後，您可以隨時查看學校的學術資格狀態。
 
-1. 移至 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)。
+1. 移至[Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)。
 2. 在首頁上，尋找 **帳單** 卡。
     **帳單** 卡會指出驗證程式的狀態。 這張卡片顯示下列其中一種狀態：「核准」、「擱置」、「拒絕」或「新增您的網域」。
 
     > [!NOTE]
-    > 如果您看不到其中一個狀態，表示您沒有 Microsoft 365 教育版試用版訂閱。 若要開始免費試用版，請 [流覽此網頁](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ，並選取 [ **免費開始**]。
+    > 如果您看不到其中一個狀態，表示您沒有 Microsoft 365 教育版試用訂閱。 若要開始免費試用版，請 [流覽此網頁](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ，並選取 [ **免費開始**]。
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>以學術價格購買訂閱
 
 在您的學校資格驗證之後，您可以購買「學術價」的訂閱。 您也可以 [將免費試用版轉換為付費訂閱](../try-or-buy-microsoft-365.md)。 如果您想要轉換您的試用訂閱，您必須在試用期結束前執行。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。
+1. 在 Microsoft 365 系統管理中心，移至 **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>頁面。
 2. 若要查看學術服務，請選取 [ **教育** ] 索引標籤。
 
     > [!NOTE]
@@ -83,7 +83,7 @@ ms.locfileid: "52333083"
 
 您可以在 [ **產品** ] 頁面上找到免費試用訂閱的到期日。 您也可以擴充試用版。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a> ] 頁面。
+1. 在 Microsoft 365 系統管理中心，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 2. 尋找試用訂閱。
 3. 在 [ **記帳** ] 區段的 [ **免費試用訂閱**] 底下，會顯示到期日。
 4. 如果您想要擴充試用版，請選取 [ **擴充試用**]。 您每次免費試用訂閱只會執行一次此作業。
@@ -96,13 +96,13 @@ ms.locfileid: "52333083"
 
 ## <a name="next-steps"></a>後續步驟
 
-若要瞭解如何為您的學校部署 Microsoft 365，請造訪 [microsoft 365 教育版檔和資源](/microsoft-365/education/deploy/)。 接下來，您可以 [同時新增使用者並指派授權](../../admin/add-users/add-users.md)。 如有需要，您也可以 [為您的訂閱購買更多授權](../licenses/buy-licenses.md)。
+若要瞭解如何為您的學校部署 Microsoft 365，請造訪[Microsoft 365 教育版檔和資源](/microsoft-365/education/deploy/)。 接下來，您可以 [同時新增使用者並指派授權](../../admin/add-users/add-users.md)。 如有需要，您也可以 [為您的訂閱購買更多授權](../licenses/buy-licenses.md)。
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 的教育檔，供 IT 系統管理員](/education/itadmins) (文章連結) \
-[Microsoft 球隊教育](https://microsoft.com/education/products/teams/default.aspx) 版 (產品頁面) \
-[瞭解 Microsoft 365 for business 中的訂閱和授權](../licenses/subscriptions-and-licenses.md) (文章) \
+[Microsoft 365 教育版檔，以供 IT 系統管理員](/education/itadmins) (文章連結) \
+[Microsoft Teams 教育](https://microsoft.com/education/products/teams/default.aspx)版 (產品頁面) \
+[瞭解商務 Microsoft 365 中的訂閱與授權](../licenses/subscriptions-and-licenses.md) (文章) \
 [將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
 [購買或移除訂閱授權](../licenses/buy-licenses.md) (篇) \
 [將使用者移至其他訂閱](move-users-different-subscription.md) (文章)

@@ -42,11 +42,11 @@ ms.locfileid: "52327295"
 ![雲端安全性中心標誌的影像](images/cloudsecuritycenter-logo.png)| [雲端安全性中心](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark 的雲端安全性中心是一個全天候受管理服務，可提供保護、偵測 & 回應功能
 ![雲端 SOC 標誌的影像](images/cloudsoc-logo.png)| [雲端 SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | 雲端 SOC 會提供24/7 安全性監控服務，以 Microsoft 雲端為基礎，可協助您不斷改進安全性狀況
 ![CSIS 受管理偵測 & 回應標誌的影像](images/csis-logo.png)| [CSIS 受管理的偵測 & 回應](https://go.microsoft.com/fwlink/?linkid=2091005) | 24/7 監控和分析安全性警示，讓公司能夠採取行動的方式深入瞭解安全性事件的發生時間和方式
-![戴爾技術高級威脅防護標誌的影像](images/dell-logo.png)| [Dell 技術高級威脅防護](https://go.microsoft.com/fwlink/?linkid=2091004) | 專業監控服務，針對惡意行為和具有24/7 功能的異常情況
+![戴爾技術高級威脅防護標誌的影像](images/dell-logo.png)| [Dell 技術高級威脅防護](https://go.microsoft.com/fwlink/?linkid=2091004) | Professional 監控服務，以取得惡意行為和具有24/7 功能的異常情況
 ![DXC-Managed 端點威脅偵測和回應標誌的影像](images/dxc-logo.png)| [DXC 管理的端點威脅偵測和回應](https://go.microsoft.com/fwlink/?linkid=2090395) | 識別避開傳統安全性防護的端點威脅，並將其包含數小時或數分鐘，而不是數天
 ![ESentire 記錄檔的影像](images/esentire-logo.png) | [eSentire 受管理的偵測和回應](https://go.microsoft.com/fwlink/?linkid=2154970) | 透過 Microsoft Defender for Endpoint 進行的全天候威脅調查和回應。
 ![Expel 標誌的影像](images/expel-logo.png)| [Expel Microsoft Defender 端點的受管理偵測和回應](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel 可協助您偵測 Microsoft Defender 端點中的安全性風險，以協助您的安全性繼續。
-![NTT 安全性標誌的影像](images/ntt-logo.png)| [NTT 安全性](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT 的 EDR 服務提供24/7 的安全性監視 & 每個端點和網路之間的回應
+![NTT 安全性標誌的影像](images/ntt-logo.png)| [NTT 安全性](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT 的 EDR 服務可在您的端點和網路上提供24/7 的安全性監控 & 回應
 ![OneVinn 標誌的影像](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 Microsoft Defender 和 Azure Sentinel 上內置的 Managed 偵測和回應，已豐富 Onevinn 的威脅情報。
 ![仲裁網路標誌的影像](images/quorum-logo.png) | [仲裁網路](https://go.microsoft.com/fwlink/?linkid=2155202)| & 安全性工程服務的切削 edge 威脅搜尋。
 ![紅色的未圖符標誌影像](images/redcanary-logo.png)| [紅色未紅心](https://go.microsoft.com/fwlink/?linkid=2103852) | 紅色的新功能是現代小組的安全性作業合作夥伴，以分鐘為單位部署 MDR

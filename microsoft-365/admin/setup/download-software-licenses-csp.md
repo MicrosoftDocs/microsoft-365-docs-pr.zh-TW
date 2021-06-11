@@ -1,5 +1,5 @@
 ---
-title: 透過雲端解決方案供應商 (CSP) 程式，下載永久軟體和產品授權碼，以進行購買
+title: 下載透過雲端解決方案提供者 (CSP) 程式購買的永久軟體和產品授權碼。
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,7 +17,7 @@ search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
-description: 瞭解如何透過雲端方案提供者 (CSP) 程式，下載永久軟體購買的軟體和產品授權金鑰。
+description: 瞭解如何透過雲端解決方案提供者 (CSP) 程式，下載永久軟體購買的軟體和產品授權金鑰。
 ms.date: 01/27/2021
 ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
@@ -28,7 +28,7 @@ ms.locfileid: "52332399"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>下載永久軟體和產品授權碼
 
-本文說明如何針對透過雲端方案提供者 (CSP) 計畫購買的永久軟體，下載軟體和產品授權金鑰。
+本文說明如何針對透過雲端解決方案提供者 (CSP) 程式購買的永久軟體，下載軟體和產品授權碼。
 
 ## <a name="before-you-begin"></a>開始之前
 

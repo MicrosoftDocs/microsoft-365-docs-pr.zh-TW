@@ -90,7 +90,7 @@ ms.locfileid: "52583589"
 - [建立新主題](create-a-topic.md)：您可以為未透過探索找到的專案建立新的主題，或如果 AI 工具沒有找到足夠的證據可以建立主題。
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [在主題中心中管理主題](manage-topics.md)
 

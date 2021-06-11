@@ -18,7 +18,7 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: 瞭解如何透過 Microsoft 所認可的協力廠商合作夥伴，將授權新增至您的 Microsoft 365 訂閱。
+description: 瞭解如何將授權新增至您的 Microsoft 365 訂閱，以透過 Microsoft 所認可的協力廠商協力廠商合作夥伴購買。
 ms.date: 04/07/2021
 ms.openlocfilehash: 0e2a3779ae7d93eaaea660209bbc86a6843b553c
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
@@ -29,7 +29,7 @@ ms.locfileid: "52331751"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>透過大量授權服務中心新增授權到購買的訂閱
 
-如果您透過協力廠商合作夥伴購買 Microsoft 365 for business 或 Office 365 企業版方案，您必須透過該合作夥伴購買其他授權。 如果是向 Microsoft 已知的合作夥伴購買訂閱，您可以使用下列程序了解如何連絡您的合作夥伴。
+如果您為商務用 Microsoft 365，或透過協力廠商合作夥伴購買 Office 365 企業版計畫，您必須透過該夥伴購買額外的授權。 如果是向 Microsoft 已知的合作夥伴購買訂閱，您可以使用下列程序了解如何連絡您的合作夥伴。
   
 ::: moniker range="o365-worldwide"
 

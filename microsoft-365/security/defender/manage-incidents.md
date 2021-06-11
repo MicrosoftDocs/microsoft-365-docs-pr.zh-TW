@@ -114,7 +114,7 @@ Microsoft 365Defender 會根據警示屬性（如受影響的端點數目、受�
 
 若為解決的事件，請執行 [事件後檢查](first-incident-post.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)

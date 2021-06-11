@@ -32,7 +32,7 @@ ms.locfileid: "52331571"
 
 1. 系統管理員會使用中的表單尋找並聯系合作夥伴 <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> 。
 2. 合作夥伴將電子郵件要求傳送給客戶，以建立合作夥伴關係。
-3. 客戶接受 Microsoft 365 系統管理中心的邀請，並開始與合作夥伴合作。
+3. 客戶會接受 Microsoft 365 系統管理中心的邀請，並開始與協力廠商合作。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -47,7 +47,7 @@ ms.locfileid: "52331571"
 | 轉銷商 | 向您的組織或學校銷售 Microsoft 產品的合作夥伴。 |
 | 委派的管理員 | 可管理組織或學校產品及服務的合作夥伴。 在 Azure Active Directory (AD) 中，該夥伴是您租使用者的全域管理員。 此角色可讓他們管理服務，例如建立使用者帳戶、指派及管理授權，以及密碼重設。 |
 | 轉銷商 & 委派的系統管理員 | 向組織或學校銷售及管理 Microsoft 產品及服務的合作夥伴。 |
-| Partner | 您可以在您的租使用者中提供合作夥伴的使用者帳戶，並代表您使用其他 Microsoft 服務。 |
+| Partner | 您可以在您的租使用者中為合作夥伴提供使用者帳戶，並代表您使用其他 Microsoft 服務。 |
 | 顧問 | 合作夥伴可以為您重設密碼並處理支援事件。 |
 | Microsoft 產品 & 服務合約 (MPSA) partner | 如果您透過 MPSA 程式與多個合作夥伴合作，可以讓他們查看對方所做的購買。 |
 | 企業營運 (LOB) 合作夥伴 | 合作夥伴可以開發、提交及管理組織或學校特有的 LOB 應用程式。 |
@@ -75,7 +75,7 @@ ms.locfileid: "52331571"
 
 如果您已經有合作夥伴，但尚未簽署 Microsoft 客戶合約，您必須先接受該合約，才可代表您購買或管理您的訂閱。
 
-1. 如果您收到來自同伴的電子郵件，請選取連結以移至 Microsoft 365 系統管理中心，或移至 [ <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">接受合約</a> ] 頁面。
+1. 如果您收到來自同伴的電子郵件，請選取連結以移至 Microsoft 365 系統管理中心，或移至 [<a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">接受合約</a>] 頁面。
 2. 選取 [ **Microsoft 客戶合約** ] 的連結，並閱讀該檔。
 3. 核取方塊以確認您已閱讀該合約。
 4. 選取 [ **接受**]。

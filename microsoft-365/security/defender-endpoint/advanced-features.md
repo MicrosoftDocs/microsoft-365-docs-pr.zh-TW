@@ -175,7 +175,7 @@ ms.locfileid: "52845471"
 
 > [!NOTE]
 > Microsoft 威脅專家的 Defender for Endpoint 的功能可與[Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權搭配使用。
-## <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 啟用此設定時，會將 Defender 的端點信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用的深入瞭解。 轉寄的資料會儲存並處理雲端 App 安全性資料所在的相同位置。
 

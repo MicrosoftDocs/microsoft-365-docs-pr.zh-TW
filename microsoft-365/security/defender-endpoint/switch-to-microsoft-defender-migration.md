@@ -70,6 +70,6 @@ ms.locfileid: "52593498"
 
 **想要深入瞭解？請參閱 [適用于 Endpoint 的 Defender](microsoft-defender-endpoint.md)。**
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 - 繼續進行 [遷移的準備工作](switch-to-microsoft-defender-prepare.md)。
