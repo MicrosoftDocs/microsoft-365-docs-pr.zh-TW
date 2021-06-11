@@ -29,7 +29,7 @@ Microsoft 365 提供一套完整的工具，以在使用者共同作業時維持
 
 下表提供 Microsoft 365 中可用之相容性控制措施的快速參考。 以下各節提供進一步的資訊。
 
-|類別|描述|參考|
+|類別|描述|參考資料|
 |:-------|:----------|:--------|
 |資訊保留|||
 ||保留郵件和 SharePoint 內容的群組|[了解 SharePoint 和 OneDrive 的保留原則](../compliance/retention-policies-sharepoint.md)|

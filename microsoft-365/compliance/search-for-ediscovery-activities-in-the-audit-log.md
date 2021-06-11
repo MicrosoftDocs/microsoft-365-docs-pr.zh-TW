@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 瞭解當指派電子檔探索許可權的使用者在 Microsoft 365 規範中心執行內容搜尋、核心 eDiscovery 和 Advanced eDiscovery 工作時所記錄的事件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: cca0cdc02e2c23231637acf6eba2b07144266e36
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657690"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888406"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在稽核記錄中搜尋電子文件探索活動
 
@@ -48,7 +48,7 @@ ms.locfileid: "52657690"
   
 1. 移至 <https://compliance.microsoft.com> 並使用您的公司或學校帳戶登入。
 
-2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [**審計**]。
+2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**審計**]。
 
 3. 在 [**活動**] 下拉式清單中，于 [ **eDiscovery 活動**] 或 [ **Advanced eDiscovery 活動**] 底下，按一下一或多個要搜尋的活動。
 
@@ -71,10 +71,10 @@ ms.locfileid: "52657690"
 
 ## <a name="ediscovery-activities"></a>電子文件探索活動
 
-下表說明當系統管理員或 eDiscovery 管理員使用規範中心執行 eDiscovery 相關的活動，或是在安全性 & 合規性中心 PowerShell 中執行對應的指令程式時，所記錄的內容搜尋及核心 eDiscovery 活動。 請注意，在 Advanced eDiscovery 中執行的某些活動可能會在您搜尋此清單中的活動時傳回。
+下表說明當系統管理員或 eDiscovery 管理員使用 Microsoft 365 合規性中心執行 eDiscovery 相關活動時所記錄的內容搜尋和核心 eDiscovery 活動。 在 Advanced eDiscovery 中執行的某些活動可能會在您搜尋此清單中的活動時傳回。
   
 > [!NOTE]
-> 本節所述的 eDiscovery 活動提供與下一節所述 eDiscovery Cmdlet 活動類似的資訊。 我們建議您使用本節所述的 eDiscovery 活動，因為它們會出現在審計記錄搜尋結果的30分鐘內。 在審計記錄搜尋結果中顯示 eDiscovery Cmdlet 活動最多需要24小時。
+> 本節所述的 eDiscovery 活動提供與下一節所述 eDiscovery Cmdlet 活動類似的資訊。 我們建議您使用本節所述的 eDiscovery 活動，因為它們會出現在審計記錄搜尋結果的30分鐘內。 最多可能需要24小時才能讓 eDiscovery Cmdlet 活動出現在審核記錄搜尋結果中。
   
 |**易記名稱**|**作業**|**對應 Cmdlet**|**描述**|
 |:-----|:-----|:-----|:-----|
@@ -86,7 +86,7 @@ ms.locfileid: "52657690"
 |變更的搜尋許可權篩選  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |已變更搜尋許可權篩選。  <br/> |
 |已變更的 eDiscovery 案例保留變更搜尋查詢  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |已變更與 eDiscovery 案例相關聯的查詢型保留。 可能的變更包括編輯查詢或日期範圍以進行查詢型保留。  <br/> |
 |已下載內容搜尋預覽專案  <br/> |PreviewItemDownloaded  <br/> |不適用  <br/> |使用者透過按一下 [ **下載原始專案** ] 連結) 預覽搜尋結果，將專案下載到本機電腦 (。  <br/> |
-|列出的內容搜尋預覽專案  <br/> |PreviewItemListed  <br/> |不適用  <br/> |使用者按一下 [ **預覽搜尋結果** ] 來顯示 [預覽搜尋結果] 頁面，該頁面會從內容搜尋結果列出最多1000個專案。  <br/> |
+|列出的內容搜尋預覽專案  <br/> |PreviewItemListed  <br/> |不適用  <br/> |使用者按一下 [ **預覽搜尋結果** ]，以顯示 [預覽搜尋結果] 頁面，該頁面會從搜尋結果列出最多1000個專案。  <br/> |
 |已查看內容搜尋預覽專案  <br/> |PreviewItemRendered  <br/> |不適用  <br/> |EDiscovery 管理員會在預覽搜尋結果時按一下以查看專案。  <br/> |
 |建立內容搜尋  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |已建立新的內容搜尋。  <br/> |
 |已建立 eDiscovery 系統管理員  <br/> |CaseAdminAdded  <br/> |載入 eDiscoveryCaseAdmin  <br/> |使用者已新增為組織中的 eDiscovery 系統管理員。  <br/> |
@@ -108,14 +108,14 @@ ms.locfileid: "52657690"
 |已移除在內容搜尋中執行的清除動作  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |已刪除內容搜尋清除動作。  <br/> |
 |已移除搜尋報告  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |已刪除「內容搜尋匯出報告」動作。  <br/> |
 |開始分析內容搜尋  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |內容搜尋的結果已準備好在 Advanced eDiscovery 進行分析。  <br/> |
-|已開始內容搜尋  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |已開始內容搜尋。 當您使用 Microsoft 365 規範中心 GUI 建立或變更內容搜尋時，會自動啟動搜尋。 如果您使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 來建立或變更搜尋，則必須執行 **Start-ComplianceSearch** 指令程式，以啟動搜尋。  <br/> |
+|已開始內容搜尋  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |已開始內容搜尋。 當您使用 Microsoft 365 規範中心建立或變更內容搜尋時，會自動啟動搜尋。<br/> |
 |已開始匯出內容搜尋  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |使用者匯出內容搜尋的結果。  <br/> |
 |已開始匯出報告  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |使用者已匯出內容搜尋報告。  <br/> |
 |已停止內容搜尋  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |使用者停止內容搜尋。  <br/> |
-|(無)|CaseViewed|Get-ComplianceCase|使用者在規範中心的 **核心 eDiscovery** 頁面或 **Advanced eDiscovery** 頁面上查看案例清單，或執行 Get-ComplianceCase Cmdlet。|
-|(無)|SearchViewed|Get-ComplianceSearch|使用者在「搜尋」索引標籤上的 [ **搜尋** ] 索引標籤上) 所列的內容搜尋 (，或是執行 Cmdlet 來查看清單。 當使用者透過按一下案例) 中的 [ **搜尋** ] 索引標籤或執行 **Get-ComplianceSearch 案例** ] 命令，來查看與 eDiscovery (案例相關聯的內容搜尋清單時，也會記錄此活動。|
-|(無)|ViewedSearchExported|Get-ComplianceSearchAction 匯出|使用者已查看內容搜尋匯出工作清單， (列于規範中心的 [ **匯出**) ] 索引標籤上，或執行 Cmdlet。 當使用者在) 案例中的 [匯出] 索引標籤上，或執行 [ **Get-ComplianceSearchAction-Case 匯出**] 命令，在 [**匯出**] 索引標籤中查看匯出 (工作清單時，也會記錄此活動。|
-|(無)|ViewedSearchPreviewed|Get-ComplianceSearchAction 預覽|使用者在規範中心中預覽內容搜尋的結果，或執行 Cmdlet。|
+|(無)|CaseViewed|Get-ComplianceCase|使用者在規範中心中查看核心 eDiscovery 案例。 此事件的「審計記錄」包括已查看的案例名稱。 |
+|(無)|SearchViewed|Get-ComplianceSearch|使用者透過在核心 eDiscovery 案例的 [ **搜尋** ] 索引標籤上進行搜尋，或在 **內容搜尋** 頁面上存取搜尋，即可在規範中心中查看內容搜尋。 此事件的「審計記錄」包括所查看之搜尋的身分識別。|
+|(無)|ViewedSearchExported|Get-ComplianceSearchAction 匯出|使用者透過在 [**內容搜尋**] 頁面上的 **[匯出]** 索引標籤上，存取 [匯出]，即可在「規範中心」查看內容搜尋匯出。 當使用者查看與核心 eDiscovery 案例相關聯的匯出時，也會記錄此活動。|
+|(無)|ViewedSearchPreviewed|Get-ComplianceSearchAction 預覽|使用者在規範中心預覽內容搜尋的結果。 當使用者預覽與核心 eDiscovery 案例相關聯的搜尋結果時，也會記錄此活動。|
 |||||
   
 ## <a name="advanced-ediscovery-activities"></a>進階電子文件探索活動
@@ -153,7 +153,7 @@ ms.locfileid: "52657690"
 
 下表列出當系統管理員或使用者使用規範中心或在安全性 & 規範中心 PowerShell 中執行對應的指令程式時所記錄的 Cmdlet 審核記錄記錄。 「審計記錄」記錄中的詳細資訊與此表中所列的指令程式活動和上一節所述 eDiscovery 活動的不同。
   
-如先前所述，在審計記錄搜尋結果中顯示 eDiscovery Cmdlet 活動時，最多需要24小時的時間。
+如先前所述，最多可能需要24小時的 eDiscovery Cmdlet 活動會出現在審計記錄搜尋結果中。
   
 > [!TIP]
 > 下 **表的 [作業] 欄中** 的指令程式連結至 TechNet 的對應 Cmdlet 說明主題。 請移至 Cmdlet 說明主題，以取得每個 Cmdlet 可用參數的描述。 與 Cmdlet 搭配使用的參數和參數值，會包含在每個已記錄的 eDiscovery Cmdlet 活動的「審核記錄」專案中。 
@@ -185,6 +185,10 @@ ms.locfileid: "52657690"
 |已建立 eDiscovery 系統管理員  <br/> |[載入 eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) <br/> |使用者已新增為組織中的 eDiscovery 系統管理員。  <br/> |
 |刪除的 eDiscovery 系統管理員  <br/> |[Remove-eDiscoveryCaseAdmin](/powershell/module/exchange/remove-ediscoverycaseadmin) <br/> |已從您的組織中刪除 eDiscovery 系統管理員。  <br/> |
 |變更 eDiscovery 系統管理員成員資格  <br/> |[更新-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |您組織中的 eDiscovery 管理員清單已變更。 當 eDiscovery 管理員的清單取代為一組新的使用者時，就會記錄此活動。 新增或移除單一使用者時，會記錄 **eDiscoveryCaseAdmin** 或 **Remove-eDiscoveryCaseAdmin** 作業。  <br/> |
+|(無)|[Get-ComplianceCase](/powershell/module/exchange/get-compliancecase) <br/>|當使用者查看核心 eDiscovery 或 Advanced eDiscovery 案例的清單時會記錄此活動。 當使用者在核心 eDiscovery 中查看特定案例時，也會記錄此活動。 當使用者查看特定案例時，該審計記錄會包含已查看之案例的身分識別。 如果使用者只查看案例清單，則審計記錄不會包含案例身分識別。|
+|(無)|[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)|當使用者查看與核心 eDiscovery 案例相關聯的內容搜尋清單或搜尋清單時，就會記錄此活動。 當使用者查看特定內容搜尋或查看與核心 eDiscovery 案例相關聯的特定搜尋時，也會記錄此活動。 當使用者查看特定搜尋時，該審計記錄會包含所查看之搜尋的身分識別。 如果使用者只看到搜尋清單，則審計記錄不會包含搜尋身分識別。
+|(無)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|當使用者查看符合性搜尋動作清單時，就會記錄此活動 (例如匯出、預覽或清除) 或與核心 eDiscovery 案例相關聯的動作。 當使用者查看特定符合性搜尋動作 (例如匯出) 或查看與核心 eDiscovery 案例相關聯的特定動作時，也會記錄此活動。 當使用者查看搜尋動作時，審核記錄會包含已查看之搜尋動作的身分識別。 如果使用者只查看動作清單，則審計記錄不會包含動作身分識別。|
+||||
 
 ## <a name="detailed-properties-for-ediscovery-activities"></a>EDiscovery 活動的詳細屬性
 
@@ -207,7 +211,7 @@ ms.locfileid: "52657690"
 |ExtendedProperties  <br/> |內容搜尋、內容搜尋動作或電子檔探索案例中的其他屬性，例如執行活動時所使用的物件 GUID 和對應的指令程式和 Cmdlet 參數。  <br/> |
 |識別碼  <br/> |報表專案的識別碼。 識別碼可唯一識別審核記錄專案。  <br/> |
 |NonPIIParameters  <br/> | (的參數清單，但沒有任何值與 Operation 屬性中標出的指令程式) 搭配使用。 此屬性所列的參數與 [Parameters] 屬性中列出的參數相同。  <br/> |
-|ObjectId  <br/> |物件的 GUID 或名稱 (例如，「內容搜尋」或「eDiscovery 案例」) ，由 Operation 屬性中所列的活動所建立、變更或刪除）。 這個物件也會在審計記錄搜尋結果的 [專案] 欄中識別。  <br/> |
+|ObjectId  <br/> |物件的 GUID 或名稱 (例如，內容搜尋或核心 eDiscovery 案例) ，由 Operation 屬性中所列的活動所建立、存取、變更或刪除。 這個物件也會在審計記錄搜尋結果的 [專案] 欄中識別。  <br/> |
 |ObjectType  <br/> |使用者建立、刪除或修改的 eDiscovery 物件類型。例如，內容搜尋動作 (預覽、匯出或清除) 、eDiscovery 案例或內容搜尋。  <br/> |
 |作業  <br/> |對應至所執行 eDiscovery 活動的作業名稱。  <br/> |
 |OrganizationId  <br/> |Microsoft 365 組織的 GUID。  <br/> |
@@ -224,4 +228,4 @@ ms.locfileid: "52657690"
 |UserServicePlan  <br/> |您的組織所使用的訂閱。 針對 eDiscovery 活動，此屬性通常是空白的。  <br/> |
 |UserType  <br/> |執行作業的使用者類型。 下列值表示使用者類型。  <br/> 0一般使用者。 2組織中的系統管理員。 3 A Microsoft 資料中心系統管理員或資料中心系統帳戶。 4系統帳戶。 5應用程式。 6 A 服務主體。 |
 |版本  <br/> |會指出由記錄的操作屬性) 所識別之活動 (的版本號碼。  <br/> |
-|工作負載  <br/> |發生活動的 Theservice。 針對 eDiscovery 活動，此值是 **SecurityComplianceCenter**。  <br/> |
+|工作負載  <br/> |發生活動的服務。 針對 eDiscovery 活動，此值是 **SecurityComplianceCenter**。  <br/> |

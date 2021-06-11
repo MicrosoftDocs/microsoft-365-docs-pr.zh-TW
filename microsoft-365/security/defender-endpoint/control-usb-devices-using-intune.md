@@ -300,7 +300,7 @@ Microsoft Defender for Endpoint 也可以防止 USB 週邊設備在裝置上使�
    > [!div class="mx-imgBorder"]
    > ![建立 endpoint protection 設定檔](images/create-endpoint-protection-profile.png)
 
-4. 按一下 **[建立]**。  
+4. 按一下 ****[建立]。  
 
 5. 針對 **從 USB 執行的未簽署和不受信任的處理常式**，選擇 [ **封鎖**]。
 

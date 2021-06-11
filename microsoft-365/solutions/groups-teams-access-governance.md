@@ -29,7 +29,7 @@ ms.locfileid: "52538144"
 
 下表提供 Microsoft 365 中可用之存取控制的快速參考。 以下各節提供進一步的資訊。
 
-|類別|描述|參考|
+|類別|描述|參考資料|
 |:-------|:----------|:--------|
 |[成員資格]|||
 ||個人小組探索|[管理 Microsoft Teams 中的私營小組探索](/microsoftteams/manage-discovery-of-private-teams)|

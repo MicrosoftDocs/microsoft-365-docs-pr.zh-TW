@@ -1,7 +1,7 @@
 ---
-title: Microsoft 管理的桌面封存裝置
+title: Microsoft 受管理的電腦歸檔裝置
 description: 尚未退休，但仍可供您註冊，但會具有縮短支援壽命的裝置
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -18,12 +18,12 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218733"
 ---
-# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
+# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 受管理的電腦歸檔裝置
 
-為保證最佳的使用者體驗，Microsoft 受管理的桌面機在特定點對裝置的淘汰支援。 本文列出今後幾年中臨近退休的裝置，我們稱為「封存」。 如果您是使用已有的裝置開始使用 Microsoft 受管理的桌面，您應該仔細檢查此清單。
+為保證最佳的使用者體驗，Microsoft 受管理的電腦在特定點停用裝置的支援。 本文列出今後幾年中臨近退休的裝置，我們稱為「封存」。 如果您是使用已有的裝置開始使用 Microsoft 受管理的電腦，您應該仔細檢查此清單。
 
 >[!IMPORTANT]
->您現在仍然可以註冊這些裝置，但是使用 Microsoft 受管理的電腦時，其服務週期會比較短。 如果您要購買新的裝置，則應該從使用中 [裝置清單](./device-list.md)中使用模型。
+>您現在仍然可以註冊這些裝置，但是使用 Microsoft 受管理的電腦會使服務週期變短。 如果您要購買新的裝置，則應該從使用中 [裝置清單](./device-list.md)中使用模型。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -32,9 +32,9 @@ ms.locfileid: "51218733"
 
 
 >[!NOTE]
->在此表格中，「退休 date」是此模型將不再由 Microsoft 受管理的桌面所用的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的桌面移除，不論已註冊。
+>在此表格中，「退休 date」是指不再 Microsoft 受管理的電腦此模型將不再受支援的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的電腦中移除，而不論他們是否已註冊。
 
-#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
+#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 受管理的電腦歸檔裝置
 
 | Model  | 最低規格  | 其他需求   | 退休日期 |
 |---------|---------|---------|---------|
@@ -69,16 +69,16 @@ ms.locfileid: "51218733"
 |HP ZBook Firefly 14/15 G7 移動工作站 |256 GB/Intel i5/8 GB RAM |SKU 與9MZ22AV，需要 IR 相機| **2024年11月30日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | 無 | **2022年11月16日** |
 |移至表面| 128 GB/Intel 4415Y/8GB RAM | 無 | **2023年8月2日** |
-|Surface 膝上型電腦| 256 GB/Intel i5/8 GB RAM | 無 | **2022年5月20日** |
-|Surface 膝上型電腦2| 128 GB/Intel i5/8 GB RAM | 無 | **Oct 16，2023** |
+|Surface Laptop| 256 GB/Intel i5/8 GB RAM | 無 | **2022年5月20日** |
+|Surface Laptop 2| 128 GB/Intel i5/8 GB RAM | 無 | **Oct 16，2023** |
 |Surface Pro| 256 GB/Intel i5/8 GB RAM | 無 | **2022年6月15日** |
 |Surface Pro 6| 128 GB/Intel i5/8 GB RAM | 無 | **Oct 16，2023** |
 
 此外，裝置也必須：
 
-- 使用 Microsoft 受管理的電腦核准的影像。 當您定購裝置時，請確定您指定的是與 Microsoft 受管理的電腦搭配使用。
-- 尚未完成 Windows 第一次執行體驗。
-- 使用 [Device Registration](../get-started/register-devices-self.md) 功能向 Microsoft Managed Desktop 註冊
+- 讓影像核准 Microsoft 受管理的電腦。 當您定購裝置時，請確定您指定的裝置與 Microsoft 受管理的電腦搭配使用。
+- 尚未完成 Windows 初次執行體驗。
+- 使用[Device Registration](../get-started/register-devices-self.md)功能在 Microsoft 受管理的電腦中註冊
 
 #### <a name="more-help"></a>更多説明
 

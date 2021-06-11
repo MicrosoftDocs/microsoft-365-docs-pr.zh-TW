@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 的反垃圾郵件原則中所提供的高級垃圾郵件篩選 (ASF) 設定。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12f193ef61205e8568341c774b957ce4a9dd7988
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779419"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878229"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP 中的高級垃圾郵件篩選 (ASF) 設定
 
@@ -47,7 +47,7 @@ ms.locfileid: "52779419"
 > - 隔離中已篩選的郵件是否存在。
 > - `X-CustomSpam:`如本文所述，新增至郵件的特定 X 標頭欄位。
 
-下列各節說明 Microsoft 365 security center 中的反垃圾郵件原則中可用的 ASF 設定和選項，以及 Exchange Online PowerShell 或獨立 EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)和[Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) 。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+下列各節說明 Microsoft 365 Defender 入口網站中的反垃圾郵件原則，以及 Exchange Online PowerShell 或獨立 EOP 中的 ASF 設定和選項 PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)和[Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) 。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>啟用、停用或測試 ASF 設定
 
@@ -58,7 +58,7 @@ ms.locfileid: "52779419"
 - **Test**： ASF 會將對應的 X 標頭欄位新增到郵件中。  (*TestModeAction*) 值的 **測試模式** 所決定，郵件會發生什麼事：
   - **無**：郵件傳遞不會受到 ASF 偵測的影響。 郵件仍受限於 EOP 中的其他篩選類型和規則。
   - **新增預設的 X 標頭文字 (*AddXHeader*)**：會將 X 標頭值 `X-CustomSpam: This message was filtered by the custom spam filter option` 新增至郵件。 您可以使用收件匣規則或郵件流程規則中的這個值 (也稱為傳輸規則) 會影響郵件的傳遞。
-  - **傳送 Bcc 郵件 (*BccMessage*)**： TestModeBccToRecipients PowerShell 中 (*)* 參數值所指定的電子郵件地址會新增至郵件的 [密件副本] 欄位，而郵件會傳遞至其他的密件副本收件者。 在 [安全性中心] 中，您可以使用分號 (; ) 分隔多個電子郵件地址。 在 PowerShell 中，您可以使用逗號來分隔多個電子郵件地址。
+  - **傳送 Bcc 郵件 (*BccMessage*)**： TestModeBccToRecipients PowerShell 中 (*)* 參數值所指定的電子郵件地址會新增至郵件的 [密件副本] 欄位，而郵件會傳遞至其他的密件副本收件者。 在 Microsoft 365 Defender 入口網站中，您可以使用分號 (; ) 分隔多個電子郵件地址。 在 PowerShell 中，您可以使用逗號來分隔多個電子郵件地址。
 
   **附註**：
 

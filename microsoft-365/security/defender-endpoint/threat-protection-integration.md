@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint connector 可讓您將來自 Microsoft Defender 
 ### <a name="conditional-access"></a>條件式存取
 Microsoft Defender for Endpoint 的動態裝置風險分數已整合到條件式存取評估中，以確保只有安全裝置能夠存取資源。 
 
-### <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
+### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 Microsoft Cloud App Security 利用 Microsoft Defender for endpoint 端點信號，允許直接查看 cloud 應用程式使用方式，包括使用不受支援的雲端服務 (陰影 IT) 從所有 Microsoft Defender for Endpoint 受監視裝置。
 
 ### <a name="microsoft-defender-for-identity"></a>適用於身分識別的 Microsoft Defender

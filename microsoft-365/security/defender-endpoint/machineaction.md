@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da3722294957593fc9cb89abfaec13e45106eefc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a3b017a9a05964c15411668787b035f1052c68cf
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187381"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878277"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction 資源類型
 
@@ -53,6 +53,9 @@ ms.locfileid: "51187381"
 | [執行防毒掃描](run-av-scan.md)                              | [電腦動作](machineaction.md) | 在適用) 時，使用 Windows Defender (執行 AV 掃描。    |
 | [下機](offboard-machine-api.md)                       | [電腦動作](machineaction.md) | 從 Microsoft Defender for Endpoint 下架 [電腦](machine.md) 。 |
 | [停止並隔離檔案](stop-and-quarantine-file.md)           | [電腦動作](machineaction.md) | 停止執行機器上的檔案，並將它刪除。        |
+| [執行 live 回應](run-live-response.md)                     | [電腦動作](machineaction.md)  | 在裝置上執行 live response 命令順序                       |
+| [取得即時回應結果](get-live-response-result.md) | URL 實體      | 依其索引，檢索特定即時回應命令結果下載連結。 |
+|[取消機器動作](cancel-machine-action.md)                                | [電腦動作](machineaction.md)  | 取消使用中的機器動作。                                            |
 
 <br>
 
@@ -71,6 +74,7 @@ ms.locfileid: "51187381"
 | creationDateTimeUtc | DateTimeOffset | 動作的建立日期和時間。                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | 動作狀態更新的最後日期和時間。                                                                                                                                                     |
 | relatedFileInfo     | 類別          | 包含兩個屬性。 字串 ```fileIdentifier``` ，列舉的 ```fileIdentifierType``` 可能值為 "Sha1"，"Sha256"，"Md5"。                                                                         |
+
 
 
 ## <a name="json-representation"></a>Json 標記法

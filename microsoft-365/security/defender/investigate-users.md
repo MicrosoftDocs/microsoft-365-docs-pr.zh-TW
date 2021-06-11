@@ -84,7 +84,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 視需要進行處理內事件，繼續進行 [調查](investigate-incidents.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)

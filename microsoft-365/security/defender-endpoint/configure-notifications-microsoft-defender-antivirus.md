@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572342"
 ---
-# <a name="configure-the-notifications-that-appear-on-endpoints"></a>設定出現在端點上的通知
+# <a name="configure-the-notifications-that-appear-on-endpoints"></a>設定端點顯示的通知
 
 **適用於：**
 

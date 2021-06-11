@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 在您的商務帳單或發票的 Microsoft 365 上轉譯費用、帳單和付款資訊，以及如何變更採購訂單編號。
 ms.date: 05/04/2021
-ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635831"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888370"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解您的商務用 Microsoft 365 帳單或發票
 
@@ -129,6 +129,7 @@ ms.locfileid: "52635831"
 ## <a name="related-content"></a>相關內容
 
 [瞭解如何尋找及查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) \
+[在墨西哥 Microsoft 365 for business 的帳單資訊](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (文章) \
 [變更您的帳單位址](change-your-billing-addresses.md) (文章) \
 [變更組織的位址、技術連絡人電子郵件以及其他資訊](../../admin/manage/change-address-contact-and-more.md) (文章) \
 [付費 Microsoft 365 商務用訂閱](pay-for-your-subscription.md) (文章) \

@@ -92,7 +92,7 @@ ms.locfileid: "52572306"
 
     - 若要深入瞭解搭配 Power Automate 使用 Office 腳本的詳細資訊，請參閱[with Power Automate 執行 Office 腳本](/office/dev/scripts/develop/power-automate-integration)。
 
-8. 選取 [儲存 **]**。
+8. 選取 ****[儲存]。
 
     最多可能需要48個小時，Office 腳本設定的變更才會生效。
 

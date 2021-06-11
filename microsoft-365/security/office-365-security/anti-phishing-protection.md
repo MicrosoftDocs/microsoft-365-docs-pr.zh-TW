@@ -53,11 +53,11 @@ ms.locfileid: "52538336"
 
 EOP (，也就是 Microsoft 365 沒有 Microsoft Defender for Office 365) 的功能包含可協助您保護組織免受網路釣魚威脅的功能：
 
-- 欺詐 **情報**：使用哄騙情報洞察力，以查看來自外部和內部網域之郵件中的欺騙寄件者，並手動允許或封鎖所偵測到的寄件者。 如需詳細資訊，請參閱 [EOP 中的欺騙智慧洞察力](learn-about-spoof-intelligence.md)。
+- 欺詐 **情報**：使用哄騙情報洞察力，以查看來自外部和內部網域之郵件中的欺騙寄件者，並手動允許或封鎖所偵測到的寄件者。 如需詳細資訊，請參閱 [EOP 中的詐騙情報見解](learn-about-spoof-intelligence.md)。
 
 - **EOP 中的反網路釣魚原則**：開啟或關閉欺騙智慧，開啟或關閉 Outlook 中的未驗證寄件者識別碼，並指定封鎖的欺騙寄件者的動作。 如需詳細資訊，請參閱 [CONFIGURE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
-- **允許或封鎖租使用者在承租人允許/封鎖清單中**：當您覆寫欺騙智慧洞察力中的判定時，欺騙寄件者會變成隻會出現在 [租使用者允許/封鎖] 清單的 [ **偽造** ] 索引標籤上的 [手動允許] 或 [封鎖] 專案。 您也可以手動為欺騙寄件者建立允許或封鎖專案，以取得欺騙性的智慧。 如需詳細資訊，請參閱 [管理 EOP 中的承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
+- **在租用戶允許/封鎖清單中允許或封鎖詐騙寄件者**：當您覆寫詐騙情報見解中的決策時，詐騙寄件者會變成手動允許或封鎖項目，且只會出現在租用戶允許/封鎖清單的 **[詐騙]** 索引標籤上。 您也可以在詐騙情報偵測到詐騙寄件者之前，手動建立允許或封鎖項目。 如需詳細資訊，請參閱[管理 EOP 中的租用戶允許/封鎖清單](tenant-allow-block-list.md)。
 
 - **隱含電子郵件驗證**： EOP 可增強內送)  (電子郵件的標準電子郵件 [](use-dmarc-to-validate-email.md) [驗證檢查](set-up-spf-in-office-365-to-help-prevent-spoofing.md)，包括發 [件人信譽](use-dkim-to-validate-outbound-email.md)、寄件者記錄、收件者記錄、行為分析和其他高級技巧，以協助識別偽造的寄件者。 如需詳細資訊，請參閱 [Microsoft 365 中的電子郵件驗證](email-validation-and-authentication.md)。
 
