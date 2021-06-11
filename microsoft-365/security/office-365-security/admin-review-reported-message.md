@@ -13,12 +13,12 @@ ms.collection:
 description: 瞭解如何查看所報告的訊息，並提供對您的使用者意見反應。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 9e6969b6dee38135ee2d1d41bbcdb2561943d1fe
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893725"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878709"
 ---
 # <a name="admin-review-for-reported-messages"></a>已報告訊息的系統管理員檢閱
 
@@ -39,11 +39,13 @@ ms.locfileid: "52893725"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com/> 。 若要直接移至 [ **提交** ] 頁面，請使用 <https://security.microsoft.com/reportsubmission> 。
+
+- 您可以在中開啟 Microsoft 365 的安全性中心 <https://security.microsoft.com/> 。 若要直接移至 [ **提交** ] 頁面，請使用 <https://security.microsoft.com/reportsubmission> 。
 
 - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
-  - [Microsoft 365 Defender 入口網站](permissions-microsoft-365-security-center.md)中的組織管理或安全性管理員。
+  - [Microsoft 365 Security center](permissions-microsoft-365-security-center.md)中的組織管理或安全性管理員。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的組織管理。
+
 
 - 您也需要 Exchange Online PowerShell 的存取權。 如果您嘗試使用的帳戶不具備 Exchange Online PowerShell 的存取權，您會收到錯誤，指出 *在您的網域中指定電子郵件地址*。 如需啟用或停用 Exchange Online PowerShell 存取權的詳細資訊，請參閱下列主題：
   - [啟用或停用 Exchange Online PowerShell 的存取權](/powershell/exchange/disable-access-to-exchange-online-powershell)

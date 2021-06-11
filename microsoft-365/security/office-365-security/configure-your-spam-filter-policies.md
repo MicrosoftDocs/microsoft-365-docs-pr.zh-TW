@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2214baa1c205d4e0f634c5a07f4d55522d2ad6b1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822018"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879093"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -37,14 +37,14 @@ ms.locfileid: "52822018"
 
 系統管理員可以檢視、編輯、設定 (但不能刪除) 預設的反垃圾郵件原則。 若要提高精確性，您也可以建立自訂的反垃圾郵件原則，並套用至貴組織中的特定使用者、群組或網域。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
 
-您可以在 Microsoft 365 安全性中心或在 PowerShell (在 Exchange Online 中有信箱的組織中為適用於 Microsoft 365 的 Exchange Online PowerShell；在沒有 Exchange Online 信箱的組織中則為獨立 EOP PowerShell) 中設定反垃圾郵件原則。
+您可以在 Microsoft 365 Defender 入口網站或在 PowerShell (在 Exchange Online 中有信箱的組織中為適用於 Microsoft 365 的 Exchange Online PowerShell；在沒有 Exchange Online 信箱的組織中則為獨立 EOP PowerShell) 中設定反垃圾郵件原則。
 
 反垃圾郵件原則的基本元素有：
 
 - **垃圾郵件篩選原則**：指定垃圾郵件篩選裁決的動作和通知選項。
 - **垃圾郵件篩選規則**：指定垃圾郵件篩選原則的優先順序及收件者篩選器 (原則套用對象)。
 
-當您在安全性中心管理反垃圾郵件原則時，上述兩個元素的差異不大：
+當您在 Microsoft 365 Defender 入口網站中管理反垃圾郵件原則時，上述兩個元素的差異不大：
 
 - 當您建立ㄧ項反垃圾郵件原則時，其實只是以相同的名稱，同時建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
 - 當您修改反垃圾郵件原則時，與名稱、優先順序、已啟用或已停用、收件者篩選相關的設定皆會修改垃圾郵件篩選規則。 所有其他設定都會修改相關聯的垃圾郵件篩選原則。
@@ -62,7 +62,7 @@ ms.locfileid: "52822018"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以開啟安全性中心，網址為 <https://security.microsoft.com>。 若要直接移至 [反垃圾郵件原則 **]** 頁面，請使用 <https://security.microsoft.com/antispam>。
+- 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [反垃圾郵件原則 **]** 頁面，請使用 <https://security.microsoft.com/antispam>。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -79,11 +79,11 @@ ms.locfileid: "52822018"
 
 - 如需反垃圾郵件原則的建議設定，請參閱 [EOP 反垃圾郵件原則設定](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
-## <a name="use-the-security-center-to-create-anti-spam-policies"></a>使用安全性中心來建立反垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>使用 Microsoft 365 Defender 入口網站建立反垃圾郵件原則
 
-在安全性中心建立自訂的反垃圾郵件原則時，是同時建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則，且為兩者使用相同的名稱。
+在 Microsoft 365 Defender 入口網站建立自訂的反垃圾郵件原則時，是同時建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則，且為兩者使用相同的名稱。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則]** 選擇\> **反垃圾郵件**。
 
 2. 在 **反垃圾郵件原則** 頁面，按一下![建立圖示](../../media/m365-cc-sc-create-icon.png) **建立原則**，然後從下拉式選單中選取 **輸入**。
 
@@ -240,9 +240,9 @@ ms.locfileid: "52822018"
 
 9. 在顯示的確認頁面上，按一下 [完成 **]**。
 
-## <a name="use-the-security-center-to-view-anti-spam-policies"></a>使用安全性中心來檢視反垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>使用 Microsoft 365 Defender 入口網站檢視反垃圾郵件原則
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則]** 選擇\> **反垃圾郵件**。
 
 2. 在 [**反垃圾郵件原則**] 頁面上，尋找下列其中一個值：
    - [類型 **]** 值為 [自訂反垃圾郵件原則 **]**
@@ -257,15 +257,15 @@ ms.locfileid: "52822018"
 
 3. 當您按一下名稱以選取反垃圾郵件原則時，該原則設定會顯示在飛出視窗中。
 
-## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>使用安全性中心來修改反垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>使用 Microsoft 365 Defender 入口網站修改反垃圾郵件原則
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則]** 選擇\> **反垃圾郵件**。
 
 2. 在 [反垃圾郵件原則 **]** 頁面上，按一下清單中的名稱，以從中選取反垃圾郵件原則：
    - 您建立的自訂原則的 [類型 **]** 資料行中的值是 [自訂的反垃圾郵件原則 **]**。
    - 預設原則名為 **反垃圾郵件輸入原則 (預設值)**。
 
-3. 在顯示的原則詳細資料飛出視窗中，在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 如需設定的詳細資訊，請參閱本文章中的[使用安全性中心來建立反垃圾郵件原則](#use-the-security-center-to-create-anti-spam-policies)一節。
+3. 在顯示的原則詳細資料飛出視窗中，在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 如需設定的詳細資訊，請參閱本文章中的[使用 Microsoft 365 Defender 入口網站來建立反垃圾郵件原則](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)一節。
 
    若是預設反垃圾郵件原則，則無法使用 [套用至 **]** 區段 (原則會套用至每個人)，而且您無法重新命名原則。
 
@@ -275,7 +275,7 @@ ms.locfileid: "52822018"
 
 您無法停用預設的反垃圾郵件原則。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則]** 選擇\> **反垃圾郵件**。
 
 2. 在 [反垃圾郵件原則 **]** 頁面上，按一下名稱以從清單中選取具有 [類型值 **]** 為 [自訂反垃圾郵件 **]** 的規則。
 
@@ -293,14 +293,14 @@ ms.locfileid: "52822018"
 
 根據預設，系統是根據反垃圾郵件原則的建立順序給予優先順序 (較新原則的優先順序比較舊原則的優先順序低)。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
 
-若要變更原則的優先順序，請在原則內容中按一下 [增加優先順序 **]** 或 [降低優先順序 **]** (您無法在安全性中心直接修改 [優先順序 **]** 編號)。 只有在您有多個原則時，變更原則的優先順序才有意義。
+若要變更原則的優先順序，請在原則內容中按一下 [增加優先順序 **]** 或 [降低優先順序 **]** (您無法在 Microsoft 365 Defender 入口網站直接修改 [優先順序 **]** 編號)。 只有在您有多個原則時，變更原則的優先順序才有意義。
 
  **附註**：
 
-- 在安全性中心，您只能在建立反垃圾郵件原則後變更它的優先順序。 在 PowerShell 中，您可以在建立垃圾郵件篩選規則時覆寫預設優先順序 (這會影響現有規則的優先順序)。
+- 在 Microsoft 365 Defender 入口網站中，您只能在建立反垃圾郵件原則後變更它的優先順序。 在 PowerShell 中，您可以在建立垃圾郵件篩選規則時覆寫預設優先順序 (這會影響現有規則的優先順序)。
 - 反垃圾郵件原則會以其顯示的順序處理 (第一個原則的 **優先順序** 值為 0)。 預設反垃圾郵件原則的優先順序值為 **最低**，因此無法變更它。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則]** 選擇\> **反垃圾郵件**。
 
 2. 在 [反垃圾郵件原則 **]** 頁面上，按一下名稱以從清單中選取具有 [類型值 **]** 為 [自訂反垃圾郵件 **]** 的規則。
 
@@ -317,7 +317,7 @@ ms.locfileid: "52822018"
 
 當垃圾郵件篩選裁決要隔離郵件時，您可以設定使用者垃圾郵件通知，讓收件者知道寄給他們的郵件發生什麼事。 如需有關這些通知的詳細資訊，請參閱 [EOP 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則]** 選擇\> **反垃圾郵件**。
 
 2. 在 [反垃圾郵件原則 **]** 頁面上，按一下清單中的名稱，以從中選取反垃圾郵件原則：
    - 您建立的自訂原則的 [類型 **]** 資料行中的值是 [自訂的反垃圾郵件原則 **]**。
@@ -340,11 +340,11 @@ ms.locfileid: "52822018"
 
 4. 回到原則詳細資料飛出視窗，按一下 [關閉 **]**。
 
-## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>使用安全性中心來移除自訂的反垃圾郵件原則
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>使用 Microsoft 365 Defender 入口網站移除自訂反垃圾郵件原則
 
-若您使用安全性中心來移除自訂的反垃圾郵件原則時，會同時刪除垃圾郵件篩選規則與對應的垃圾郵件篩選原則。您無法移除預設的反垃圾郵件原則。
+若您使用 Microsoft 365 Defender 入口網站來移除自訂的反垃圾郵件原則時，會同時刪除垃圾郵件篩選規則與對應的垃圾郵件篩選原則。您無法移除預設的反垃圾郵件原則。
 
-1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則]** 選擇\> **反垃圾郵件**。
 
 2. 在 [反垃圾郵件原則 **]** 頁面上，按一下名稱以從清單中選取具有 [類型值 **]** 為 [自訂反垃圾郵件 **]** 的規則。 在顯示的原則詳細資料飛出視窗頂端，按一下 ![更多動作圖示](../../media/m365-cc-sc-more-actions-icon.png) [其他動作 **]** \> ![刪除原則圖示](../../media/m365-cc-sc-delete-icon.png) [刪除原則 **]**。
 
@@ -362,7 +362,7 @@ ms.locfileid: "52822018"
 
 下列反垃圾郵件原則設定僅適用於 PowerShell：
 
-- MarkAsSpamBulkMail 參數預設是 `On`。 此設定的效果已在本文章前面的[使用安全性中心來建立本反垃圾郵件原則](#use-the-security-center-to-create-anti-spam-policies)章節中說明。
+- MarkAsSpamBulkMail 參數預設是 `On`。 此設定的效果已在本文章前面的[使用 Microsoft 365 Defender 入口網站來建立本反垃圾郵件原則](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)章節中說明。
 
 - 使用者垃圾郵件隔離通知的下列設定：
   - DownloadLink 參數，用於顯示或隱藏 Outlook 的垃圾郵件報告工具連結。
@@ -378,11 +378,11 @@ ms.locfileid: "52822018"
  **附註**：
 
 - 您可以建立新的垃圾郵件篩選規則，並對其指派未關聯的現有垃圾郵件篩選原則。 垃圾郵件篩選規則無法與多個垃圾郵件篩選原則相關聯。
-- 您可以使用 PowerShell 對安全性中心中還沒有的新垃圾郵件篩選原則進行下列設定，直到您建立原則為止：
+- 您可以使用 PowerShell 對 Microsoft 365 Defender 入口網站中還沒有的新垃圾郵件篩選原則進行下列設定，直到您建立原則為止：
   - 建立「停用」的新原則 (在 **New-HostedContentFilterRule** Cmdlet 中啟用 `$false`)。
   - 在建立期間設定原則的優先順序 (在 **New-HostedContentFilterRule** Cmdlet 使用 _Priority_ _\<Number\>_)。
 
-- 您在 PowerShell 中建立的新垃圾郵件篩選原則不會顯示在安全性中心，直到您將該原則指派到垃圾郵件篩選規則。
+- 您在 PowerShell 中建立的新垃圾郵件篩選原則不會顯示在 Microsoft 365 Defender 入口網站中，直到您將該原則指派到垃圾郵件篩選規則。
 
 #### <a name="step-1-use-powershell-to-create-a-spam-filter-policy"></a>步驟 1：使用 PowerShell 建立垃圾郵件篩選原則
 
@@ -487,7 +487,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 除了下列項目外，當您如同本文章前面的[步驟 1：使用 PowerShell 建立垃圾郵件篩選原則](#step-1-use-powershell-to-create-a-spam-filter-policy) 章節所述在 PowerShell 中修改垃圾郵件篩選原則時，會出現相同的設定。
 
 - MakeDefault 可將指定的原則轉換成預設原則 (套用至每個人，一律 **最低** 優先順序，且無法刪除)，但只有當您在 PowerShell 中修改垃圾郵件篩選原則時才能使用。
-- 您無法重新命名垃圾郵件篩選原則(**Set-hostedcontentfilterpolicy** Cmdlet 沒有 Name 參數)。 當您在安全性中心中重新命名反垃圾郵件原則時，只會重新命名垃圾郵件篩選 _規則_。
+- 您無法重新命名垃圾郵件篩選原則(**Set-hostedcontentfilterpolicy** Cmdlet 沒有 Name 參數)。 當您在 Microsoft 365 Defender 入口網站中重新命名反垃圾郵件原則時，只會重新命名垃圾郵件篩選 _規則_。
 
 使用下列語法修改垃圾郵件篩選原則：
 

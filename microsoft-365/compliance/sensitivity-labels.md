@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730243"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878073"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -196,8 +196,7 @@ ms.locfileid: "52730243"
 
     ![Outlook 中的提示，要求使用者套用必要標籤](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
-    > [!NOTE]
-    > 並非所有應用程式或所有平台都提供文件及電子郵件適用的強制標籤。 如需詳細資訊，請參閱[要求使用者在電子郵件和文件中套用標籤](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) (部分機器翻譯)。
+    如需文件和電子郵件的強制標籤詳細資訊，請參閱[要求使用者在電子郵件和文件中套用標籤](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。
     
     若為容器，您必須在建立群組或網站時指派標籤。
     

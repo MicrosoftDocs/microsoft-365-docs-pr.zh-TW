@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Office 365 E5 及 P1 和 P2 客戶的 Microsoft Defender 現在，您可以透過電子郵件實體頁面看到每個電子郵件的360度。
-ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c45b45101c27e92dd0fa8776ca5d8ee9eb3af5b7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539092"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878457"
 ---
 # <a name="the-email-entity-page"></a>電子郵件實體頁面
 
@@ -34,12 +34,17 @@ Office 365 (或 MDO) E5 的 Microsoft Defender 管理員，以及 MDO P1 和 P2 
 
 ## <a name="reach-the-email-entity-page"></a>到達電子郵件實體頁面
 
-任何現有的安全性 & 合規性中心 (protection.office.com) 或新的 Microsoft 365 安全性中心 (security.microsoft.com) 將可讓您查看和使用 [電子郵件實體] 頁面。
+現有的安全性 & 合規性中心或新的 Microsoft 365 Defender 入口網站，可讓您查看和使用 [電子郵件實體] 頁面。
+
+<br>
+
+****
 
 |置中|URL|導覽|
 |---|---|---|
-|安全性與合規性 |protection.office.com|威脅管理 \> 瀏覽器|
-|Microsoft 365 安全性中心 |security.microsoft.com|電子郵件 & 協同 \> 流覽|
+|安全性與合規性中心|<https://protection.office.com>|威脅管理 \> 瀏覽器|
+|Microsoft 365Defender 入口網站|<https://security.microsoft.com>|電子郵件 & 協同 \> 流覽|
+|
 
 在 [威脅瀏覽器] 中，選取您要調查之電子郵件的主旨。 黃金線會顯示在該郵件的電子郵件飛出的頂端。 這個新的頁面邀請會閱讀「嘗試使用豐富資料的新電子郵件實體頁面 ...」。 選取以查看新的頁面。
 
@@ -89,17 +94,20 @@ Office 365 (或 MDO) E5 的 Microsoft Defender 管理員，以及 MDO P1 和 P2 
 
 ### <a name="detonation-details"></a>引爆詳細資料
 
-這些詳細資料是特殊的電子郵件附件和 URLs。
+這些詳細資料是特殊的電子郵件附件和 URLs。 使用者可以透過瀏覽器，將 [ *偵測技術* ] 篩選設定為 [檔案引爆] 或 [URL 引爆]，查看這些詳細資料。 針對檔案引爆篩選的電子郵件將會包含惡意檔案與引爆詳細資料，而篩選的 URLs 包含惡意 URL 及其引爆詳細資料。
 
-使用者將會看到在其信箱中找到的已知惡意附件或超連結的豐富引爆詳細資料，包括引爆鏈、引爆摘要、螢幕擷取畫面和觀察到的行為詳細資料，以協助客戶瞭解附件或 URL 被視為惡意和引爆的原因。
+使用者將會看到豐富的引爆詳細資訊，指出在其電子郵件中找到的已知惡意附件或 URLs，其引爆特定租使用者。 它會包含引爆鏈、引爆摘要、螢幕擷取畫面和觀察到的行為詳細資料，以協助客戶瞭解附件或 URL 被視為惡意和引爆的原因。
 
-- *引爆鏈*：單一檔案或 URL 引爆可以觸發多個 detonations。 引爆鏈追蹤 detonations 的路徑，包括導致判定的原始惡意檔案或 URL，以及引爆所影響的所有其他檔案或 URLs。 這些 URLs 或附加的檔案可能無法直接顯示在電子郵件中，但包括這項分析對於判斷找到的檔案或 URL 為何為惡意。
-- *引爆摘要*：這會提供下列資訊：
-  - 引爆時間範圍。
-  - 附加檔案或 URL 的判定。
-  - 相關資訊 (的檔案編號、URLs、IPs 或網域) ，也就是在引爆期間檢查的其他實體。
-- *引爆螢幕擷取畫面*：這會顯示在引爆程式期間所進行的螢幕擷取畫面 () 。
-- *引爆詳細資料*：這些是在引爆期間發生之每個程式的確切行為細節。
+1. *引爆鏈*。 單一檔案或 URL 引爆可以觸發多個 detonations。 引爆鏈追蹤 detonations 的路徑，包括導致判定的原始惡意檔案或 URL，以及引爆所影響的所有其他檔案或 URLs。 這些 URLs 或附加的檔案可能無法直接顯示在電子郵件中，但包括這項分析對於判斷找到的檔案或 URL 為何為惡意。  
+    > [!NOTE]
+    > 如果沒有找到任何連結到該專案的實體出現問題，或其為引爆，就會顯示最上層專案。
+
+1. *引爆摘要* 會提供引爆的基本摘要，例如 *分析時間*、引爆發生的時間、作業系統和應用程式、引爆發生所在的作業系統和應用程式、檔案大小及判定原因。
+1. *螢幕擷取畫面* 顯示引爆期間所捕獲的螢幕擷取畫面。 引爆期間可以有多個螢幕擷取畫面。 未捕獲任何螢幕擷取畫面
+    - 容器類型檔案，如 .zip 或 .rar。
+    - 如果 URL 會開啟直接下載檔案的連結。 不過，您會在引爆鏈中看到下載的檔案。
+1. *行為詳細資料* 是指像是在引爆期間發生的實際事件和 observables （包含 (引爆期間所找到的 URLs、IPs、網域和檔案）等行為詳細資料的匯出，而且可能會造成問題或良性) 。 請注意，這可能沒有任何行為的詳細資料：
+    - 像是保留其他檔案 .zip 或 .rar 的容器檔案。
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="引爆摘要的螢幕擷取畫面，顯示「標題 * 深入分析 *」底下的鏈、摘要、引爆詳細資料及螢幕擷取畫面。":::
 
