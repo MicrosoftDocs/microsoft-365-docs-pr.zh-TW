@@ -26,49 +26,49 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572798"
 ---
-# <a name="investigate-users-in-microsoft-365-defender"></a><span data-ttu-id="3699a-104">調查 Microsoft 365 Defender 中的使用者</span><span class="sxs-lookup"><span data-stu-id="3699a-104">Investigate users in Microsoft 365 Defender</span></span>
+# <a name="investigate-users-in-microsoft-365-defender"></a><span data-ttu-id="87adf-104">調查 Microsoft 365 Defender 中的使用者</span><span class="sxs-lookup"><span data-stu-id="87adf-104">Investigate users in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3699a-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="3699a-105">**Applies to:**</span></span>
+<span data-ttu-id="87adf-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="87adf-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="3699a-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3699a-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="87adf-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="87adf-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="3699a-107">您的一部分事件調查可以包含使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="3699a-107">Part of your incident investigation can include user accounts.</span></span> <span data-ttu-id="3699a-108">從事件的 [ **使用者** ] 索引標籤開始， **& 警示 >** *事件* **> 使用者**。</span><span class="sxs-lookup"><span data-stu-id="3699a-108">Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**.</span></span> 
+<span data-ttu-id="87adf-107">您的一部分事件調查可以包含使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="87adf-107">Part of your incident investigation can include user accounts.</span></span> <span data-ttu-id="87adf-108">從事件的 [ **使用者** ] 索引標籤開始， **& 警示 >** *事件* **> 使用者**。</span><span class="sxs-lookup"><span data-stu-id="87adf-108">Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**.</span></span> 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的使用者頁面範例":::
 
-<span data-ttu-id="3699a-110">若要快速摘要瞭解事件的使用者帳戶，請選取使用者帳戶名稱旁邊的核取記號。</span><span class="sxs-lookup"><span data-stu-id="3699a-110">To get a quick summary of a user account for the incident, select the check mark next to the user account name.</span></span> <span data-ttu-id="3699a-111">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="3699a-111">Here's an example.</span></span>
+<span data-ttu-id="87adf-110">若要快速摘要瞭解事件的使用者帳戶，請選取使用者帳戶名稱旁邊的核取記號。</span><span class="sxs-lookup"><span data-stu-id="87adf-110">To get a quick summary of a user account for the incident, select the check mark next to the user account name.</span></span> <span data-ttu-id="87adf-111">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="87adf-111">Here's an example.</span></span>
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 security center 中事件之使用者帳戶摘要窗格的範例":::
 
 > [!NOTE]
-> <span data-ttu-id="3699a-113">[使用者] 頁面會顯示 Azure Active Directory (Azure AD) 組織和群組，協助您瞭解與使用者相關聯的群組和許可權。</span><span class="sxs-lookup"><span data-stu-id="3699a-113">The User page shows Azure Active Directory (Azure AD) organization as well as groups, helping you understand the groups and permissions associated with a user.</span></span>
+> <span data-ttu-id="87adf-113">[使用者] 頁面會顯示 Azure Active Directory (Azure AD) 組織和群組，協助您瞭解與使用者相關聯的群組和許可權。</span><span class="sxs-lookup"><span data-stu-id="87adf-113">The User page shows Azure Active Directory (Azure AD) organization as well as groups, helping you understand the groups and permissions associated with a user.</span></span>
 
-<span data-ttu-id="3699a-114">在此 [飛出] 頁面中，您可以查看使用者威脅資訊，包括任何目前的事件、作用中的警示、風險層級，以及使用者曝光、帳戶、裝置等等。</span><span class="sxs-lookup"><span data-stu-id="3699a-114">In this fly-out page, you can review user threat information, including any current incidents, active alerts, and risk level as well as user exposure, accounts, devices, and more.</span></span>
+<span data-ttu-id="87adf-114">在此 [飛出] 頁面中，您可以查看使用者威脅資訊，包括任何目前的事件、作用中的警示、風險層級，以及使用者曝光、帳戶、裝置等等。</span><span class="sxs-lookup"><span data-stu-id="87adf-114">In this fly-out page, you can review user threat information, including any current incidents, active alerts, and risk level as well as user exposure, accounts, devices, and more.</span></span>
 
-<span data-ttu-id="3699a-115">此外，您可以直接在 Microsoft 365 的安全性中心採取行動，以處理已遭破壞的使用者，確認使用者已遭到破壞或要求他們重新登入。</span><span class="sxs-lookup"><span data-stu-id="3699a-115">In addition, you can take action directly in the Microsoft 365 security center to address a compromised user, confirming the user is compromised or requiring them to sign in again.</span></span>
+<span data-ttu-id="87adf-115">此外，您可以直接在 Microsoft 365 的安全性中心採取行動，以處理已遭破壞的使用者，確認使用者已遭到破壞或要求他們重新登入。</span><span class="sxs-lookup"><span data-stu-id="87adf-115">In addition, you can take action directly in the Microsoft 365 security center to address a compromised user, confirming the user is compromised or requiring them to sign in again.</span></span>
 
-<span data-ttu-id="3699a-116">您可以從這裡選取 [ **移至使用者] 頁面** ，以查看使用者帳戶的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="3699a-116">From here, you can select **Go to user page** to see the details of a user account.</span></span> <span data-ttu-id="3699a-117">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="3699a-117">Here's an example.</span></span>
+<span data-ttu-id="87adf-116">您可以從這裡選取 [ **移至使用者] 頁面** ，以查看使用者帳戶的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="87adf-116">From here, you can select **Go to user page** to see the details of a user account.</span></span> <span data-ttu-id="87adf-117">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="87adf-117">Here's an example.</span></span>
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Microsoft 365 security center 中事件的使用者帳戶頁面範例":::
 
-<span data-ttu-id="3699a-119">您也可以在 [ **使用者** ] 頁面上選取清單中的使用者帳戶名稱，以查看此頁面。</span><span class="sxs-lookup"><span data-stu-id="3699a-119">You can also see this page by selecting the name of the user account from the list on the **Users** page.</span></span>
+<span data-ttu-id="87adf-119">您也可以在 [ **使用者** ] 頁面上選取清單中的使用者帳戶名稱，以查看此頁面。</span><span class="sxs-lookup"><span data-stu-id="87adf-119">You can also see this page by selecting the name of the user account from the list on the **Users** page.</span></span>
 
-<span data-ttu-id="3699a-120">Microsoft 365 的安全性中心使用者頁面會結合 microsoft defender for Endpoint、microsoft defender 身分識別及 Microsoft Cloud App Security (的資訊，視您擁有) 的授權而定。</span><span class="sxs-lookup"><span data-stu-id="3699a-120">The Microsoft 365 security center user page combines information from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security (depending on what licenses you have).</span></span> 
+<span data-ttu-id="87adf-120">Microsoft 365 的安全性中心使用者頁面會結合 microsoft defender for Endpoint、microsoft defender 身分識別及 Microsoft Cloud App Security (的資訊，視您擁有) 的授權而定。</span><span class="sxs-lookup"><span data-stu-id="87adf-120">The Microsoft 365 security center user page combines information from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security (depending on what licenses you have).</span></span> 
 
-<span data-ttu-id="3699a-121">此頁面顯示使用者帳戶安全風險的特定資訊。</span><span class="sxs-lookup"><span data-stu-id="3699a-121">This page shows information specific to the security risk of a user account.</span></span> <span data-ttu-id="3699a-122">這包括協助評估風險及最近的事件，以及對使用者整體風險所帶來的警示。</span><span class="sxs-lookup"><span data-stu-id="3699a-122">This includes a score that helps assess risk and recent events and alerts that contributed to the overall risk of the user.</span></span>
+<span data-ttu-id="87adf-121">此頁面顯示使用者帳戶安全風險的特定資訊。</span><span class="sxs-lookup"><span data-stu-id="87adf-121">This page shows information specific to the security risk of a user account.</span></span> <span data-ttu-id="87adf-122">這包括協助評估風險及最近的事件，以及對使用者整體風險所帶來的警示。</span><span class="sxs-lookup"><span data-stu-id="87adf-122">This includes a score that helps assess risk and recent events and alerts that contributed to the overall risk of the user.</span></span>
 
-<span data-ttu-id="3699a-123">您可以從這個頁面執行下列其他動作：</span><span class="sxs-lookup"><span data-stu-id="3699a-123">From this page, you can do these additional actions:</span></span> 
+<span data-ttu-id="87adf-123">您可以從這個頁面執行下列其他動作：</span><span class="sxs-lookup"><span data-stu-id="87adf-123">From this page, you can do these additional actions:</span></span> 
 
-- <span data-ttu-id="3699a-124">將使用者帳戶標示為已遭破壞</span><span class="sxs-lookup"><span data-stu-id="3699a-124">Mark the user account as compromised</span></span>
-- <span data-ttu-id="3699a-125">需要使用者重新登入</span><span class="sxs-lookup"><span data-stu-id="3699a-125">Require the user to sign in again</span></span>
-- <span data-ttu-id="3699a-126">暫停使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="3699a-126">Suspend the user account</span></span>
-- <span data-ttu-id="3699a-127">請參閱 Azure Active Directory (Azure AD) 使用者帳戶設定</span><span class="sxs-lookup"><span data-stu-id="3699a-127">See the Azure Active Directory (Azure AD) user account settings</span></span>
-- <span data-ttu-id="3699a-128">查看使用者帳戶所擁有的檔案</span><span class="sxs-lookup"><span data-stu-id="3699a-128">View the files owned by the user account</span></span>
-- <span data-ttu-id="3699a-129">查看與此使用者共用的檔案。</span><span class="sxs-lookup"><span data-stu-id="3699a-129">View files shared with this user.</span></span> 
+- <span data-ttu-id="87adf-124">將使用者帳戶標示為已遭破壞</span><span class="sxs-lookup"><span data-stu-id="87adf-124">Mark the user account as compromised</span></span>
+- <span data-ttu-id="87adf-125">需要使用者重新登入</span><span class="sxs-lookup"><span data-stu-id="87adf-125">Require the user to sign in again</span></span>
+- <span data-ttu-id="87adf-126">暫停使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="87adf-126">Suspend the user account</span></span>
+- <span data-ttu-id="87adf-127">請參閱 Azure Active Directory (Azure AD) 使用者帳戶設定</span><span class="sxs-lookup"><span data-stu-id="87adf-127">See the Azure Active Directory (Azure AD) user account settings</span></span>
+- <span data-ttu-id="87adf-128">查看使用者帳戶所擁有的檔案</span><span class="sxs-lookup"><span data-stu-id="87adf-128">View the files owned by the user account</span></span>
+- <span data-ttu-id="87adf-129">查看與此使用者共用的檔案。</span><span class="sxs-lookup"><span data-stu-id="87adf-129">View files shared with this user.</span></span> 
 
-<span data-ttu-id="3699a-130">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="3699a-130">Here's an example.</span></span>
+<span data-ttu-id="87adf-130">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="87adf-130">Here's an example.</span></span>
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Microsoft 365 security center 中的事件之使用者帳戶的動作範例":::
 
@@ -80,12 +80,12 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 --> 
 
-## <a name="next-steps"></a><span data-ttu-id="3699a-132">後續步驟</span><span class="sxs-lookup"><span data-stu-id="3699a-132">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="87adf-132">後續步驟</span><span class="sxs-lookup"><span data-stu-id="87adf-132">Next steps</span></span>
 
-<span data-ttu-id="3699a-133">視需要進行處理內事件，繼續進行 [調查](investigate-incidents.md)。</span><span class="sxs-lookup"><span data-stu-id="3699a-133">As needed for in-process incidents, continue your [investigation](investigate-incidents.md).</span></span>
+<span data-ttu-id="87adf-133">視需要進行處理內事件，繼續進行 [調查](investigate-incidents.md)。</span><span class="sxs-lookup"><span data-stu-id="87adf-133">As needed for in-process incidents, continue your [investigation](investigate-incidents.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3699a-134">請參閱</span><span class="sxs-lookup"><span data-stu-id="3699a-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="87adf-134">另請參閱</span><span class="sxs-lookup"><span data-stu-id="87adf-134">See also</span></span>
 
-- [<span data-ttu-id="3699a-135">事件概觀</span><span class="sxs-lookup"><span data-stu-id="3699a-135">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="3699a-136">設定事件優先順序</span><span class="sxs-lookup"><span data-stu-id="3699a-136">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="3699a-137">管理事件</span><span class="sxs-lookup"><span data-stu-id="3699a-137">Manage incidents</span></span>](manage-incidents.md)
+- [<span data-ttu-id="87adf-135">事件概觀</span><span class="sxs-lookup"><span data-stu-id="87adf-135">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="87adf-136">設定事件優先順序</span><span class="sxs-lookup"><span data-stu-id="87adf-136">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="87adf-137">管理事件</span><span class="sxs-lookup"><span data-stu-id="87adf-137">Manage incidents</span></span>](manage-incidents.md)

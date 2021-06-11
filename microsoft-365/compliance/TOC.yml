@@ -245,7 +245,7 @@
               href: dlp-teams-default-policy.md
             - name: 深入了解 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
               href: dlp-on-premises-scanner-learn.md
-            - name: 了解 Microsoft 合規性中心擴充功能 (預覽)
+            - name: 了解 Microsoft 合規性延伸模組
               href: dlp-chrome-learn-about.md
             - name: 了解資料外洩防護警示儀表板
               href: dlp-alerts-dashboard-learn.md
@@ -267,7 +267,7 @@
               href: endpoint-dlp-getting-started.md
             - name: 為端點 DLP 設定裝置 Proxy 和網際網路連線設定
               href: endpoint-dlp-configure-proxy.md
-            - name: 開始使用 Microsoft 合規性中心擴充功能 (預覽)
+            - name: 開始使用 Microsoft 合規性延伸模組
               href: dlp-chrome-get-started.md
             - name: 開始使用資料外洩防護警示儀表板
               href: dlp-alerts-dashboard-get-started.md
@@ -694,14 +694,14 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: 評論案例內容
           items:
-            - name: 使用檢閱集儀表板
-              href: advanced-ediscovery-dashboard.md
-            - name: 檢視檢閱集中的文件
-              href: view-documents-in-review-set.md
             - name: 查詢和篩選檢閱集中的內容
               href: review-set-search.md
             - name: 標記檢閱集中的文件
               href: tagging-documents.md
+            - name: 檢視檢閱集中的文件
+              href: view-documents-in-review-set.md
+            - name: 使用檢閱集儀表板
+              href: advanced-ediscovery-dashboard.md
         - name: 分析案例內容
           href: analyzing-data-in-review-set.md
           items:
@@ -711,12 +711,20 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: 佈景主題
               href: themes-in-advanced-ediscovery.md
-            - name: 預測性編碼模組 (預覽)
+        - name: 使用預測性編碼 (預覽)
+          items:
+            - name: 快速入門：預測性編碼
+              href: predictive-coding-quick-start.md
+            - name: 了解預測性編碼
               href: predictive-coding-overview.md
-            - name: 使用相關性模組來分析內容
-              href: using-relevance.md
-            - name: 停用相關性模組
-              href: relevance-module-retirement.md
+            - name: 建立預測性編碼模型
+              href: predictive-coding-create-model.md
+            - name: 訓練預測性編碼模型
+              href: predictive-coding-train-model.md
+            - name: 套用預測範圍篩選條件
+              href: predictive-coding-apply-prediction-filter.md
+            - name: 預測性編碼參照
+              href: predictive-coding-reference.md
         - name: 匯出案例內容
           href: exporting-data-ediscover20.md
           items:

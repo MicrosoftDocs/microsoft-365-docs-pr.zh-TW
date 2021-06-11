@@ -28,44 +28,44 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572618"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a><span data-ttu-id="19bc7-103">使用 PowerShell 將 Microsoft 365 授權指派給使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="19bc7-103">Assign Microsoft 365 licenses to user accounts with PowerShell</span></span>
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a><span data-ttu-id="45ab2-103">使用 PowerShell 將 Microsoft 365 授權指派給使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="45ab2-103">Assign Microsoft 365 licenses to user accounts with PowerShell</span></span>
 
-<span data-ttu-id="19bc7-104">*本文適用於 Microsoft 365 企業版和 Office 365 企業版。*</span><span class="sxs-lookup"><span data-stu-id="19bc7-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="45ab2-104">*本文適用於 Microsoft 365 企業版和 Office 365 企業版。*</span><span class="sxs-lookup"><span data-stu-id="45ab2-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="19bc7-105">使用者必須先將授權方案的授權指派給他們的帳戶，才可使用任何 Microsoft 365 服務。</span><span class="sxs-lookup"><span data-stu-id="19bc7-105">Users can't use any Microsoft 365 services until their account has been assigned a license from a licensing plan.</span></span> <span data-ttu-id="19bc7-106">您可以使用 PowerShell 快速將授權指派給未授權的帳戶。</span><span class="sxs-lookup"><span data-stu-id="19bc7-106">You can use PowerShell to quickly assign licenses to unlicensed accounts.</span></span> 
+<span data-ttu-id="45ab2-105">使用者必須先將授權方案的授權指派給他們的帳戶，才可使用任何 Microsoft 365 服務。</span><span class="sxs-lookup"><span data-stu-id="45ab2-105">Users can't use any Microsoft 365 services until their account has been assigned a license from a licensing plan.</span></span> <span data-ttu-id="45ab2-106">您可以使用 PowerShell 快速將授權指派給未授權的帳戶。</span><span class="sxs-lookup"><span data-stu-id="45ab2-106">You can use PowerShell to quickly assign licenses to unlicensed accounts.</span></span> 
 
-<span data-ttu-id="19bc7-107">使用者帳戶必須先指派位置。</span><span class="sxs-lookup"><span data-stu-id="19bc7-107">User accounts must first be assigned a location.</span></span> <span data-ttu-id="19bc7-108">指定位置是在[Microsoft 365 系統管理中心](../admin/add-users/add-users.md)中建立新使用者帳戶的必要部分。</span><span class="sxs-lookup"><span data-stu-id="19bc7-108">Specifying a location is a required part of creating a new user account in the [Microsoft 365 admin center](../admin/add-users/add-users.md).</span></span> 
+<span data-ttu-id="45ab2-107">使用者帳戶必須先指派位置。</span><span class="sxs-lookup"><span data-stu-id="45ab2-107">User accounts must first be assigned a location.</span></span> <span data-ttu-id="45ab2-108">指定位置是在[Microsoft 365 系統管理中心](../admin/add-users/add-users.md)中建立新使用者帳戶的必要部分。</span><span class="sxs-lookup"><span data-stu-id="45ab2-108">Specifying a location is a required part of creating a new user account in the [Microsoft 365 admin center](../admin/add-users/add-users.md).</span></span> 
 
-<span data-ttu-id="19bc7-109">從您的內部部署 Active Directory 網域服務同步處理的帳戶預設不會有指定的位置。</span><span class="sxs-lookup"><span data-stu-id="19bc7-109">Accounts synchronized from your on-premises Active Directory Domain Services do not by default have a location specified.</span></span> <span data-ttu-id="19bc7-110">您可以從下列位置設定這些帳戶的位置：</span><span class="sxs-lookup"><span data-stu-id="19bc7-110">You can configure a location for these accounts from:</span></span>
+<span data-ttu-id="45ab2-109">從您的內部部署 Active Directory 網域服務同步處理的帳戶預設不會有指定的位置。</span><span class="sxs-lookup"><span data-stu-id="45ab2-109">Accounts synchronized from your on-premises Active Directory Domain Services do not by default have a location specified.</span></span> <span data-ttu-id="45ab2-110">您可以從下列位置設定這些帳戶的位置：</span><span class="sxs-lookup"><span data-stu-id="45ab2-110">You can configure a location for these accounts from:</span></span>
 
-- <span data-ttu-id="19bc7-111">Microsoft 365 系統管理中心</span><span class="sxs-lookup"><span data-stu-id="19bc7-111">The Microsoft 365 admin center</span></span>
- - [<span data-ttu-id="19bc7-112">PowerShell</span><span class="sxs-lookup"><span data-stu-id="19bc7-112">PowerShell</span></span>](configure-user-account-properties-with-microsoft-365-powershell.md)
- - <span data-ttu-id="19bc7-113">[Azure 入口網站](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **使用者**> 使用者帳戶 >**設定檔**  >  **連絡人資訊**  > ) 的 **國家或地區**。</span><span class="sxs-lookup"><span data-stu-id="19bc7-113">The [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Users**  > user account > **Profile** > **Contact info** > **Country or region**).</span></span>
+- <span data-ttu-id="45ab2-111">Microsoft 365 系統管理中心</span><span class="sxs-lookup"><span data-stu-id="45ab2-111">The Microsoft 365 admin center</span></span>
+ - [<span data-ttu-id="45ab2-112">PowerShell</span><span class="sxs-lookup"><span data-stu-id="45ab2-112">PowerShell</span></span>](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - <span data-ttu-id="45ab2-113">[Azure 入口網站](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **使用者**> 使用者帳戶 >**設定檔**  >  **連絡人資訊**  > ) 的 **國家或地區**。</span><span class="sxs-lookup"><span data-stu-id="45ab2-113">The [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Users**  > user account > **Profile** > **Contact info** > **Country or region**).</span></span>
 
 >[!Note]
-><span data-ttu-id="19bc7-114">瞭解如何使用 Microsoft 365 系統管理中心[指派授權給使用者帳戶](../admin/manage/assign-licenses-to-users.md)。</span><span class="sxs-lookup"><span data-stu-id="19bc7-114">[Learn how to assign licenses to user accounts](../admin/manage/assign-licenses-to-users.md) with the Microsoft 365 admin center.</span></span> <span data-ttu-id="19bc7-115">如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。</span><span class="sxs-lookup"><span data-stu-id="19bc7-115">For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).</span></span>
+><span data-ttu-id="45ab2-114">瞭解如何使用 Microsoft 365 系統管理中心[指派授權給使用者帳戶](../admin/manage/assign-licenses-to-users.md)。</span><span class="sxs-lookup"><span data-stu-id="45ab2-114">[Learn how to assign licenses to user accounts](../admin/manage/assign-licenses-to-users.md) with the Microsoft 365 admin center.</span></span> <span data-ttu-id="45ab2-115">如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。</span><span class="sxs-lookup"><span data-stu-id="45ab2-115">For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).</span></span>
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="19bc7-116">針對 Graph 模組，請使用 Azure Active Directory PowerShell</span><span class="sxs-lookup"><span data-stu-id="19bc7-116">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="45ab2-116">針對 Graph 模組，請使用 Azure Active Directory PowerShell</span><span class="sxs-lookup"><span data-stu-id="45ab2-116">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="19bc7-117">首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="19bc7-117">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="45ab2-117">首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="45ab2-117">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
 
-<span data-ttu-id="19bc7-118">接下來，使用此命令列出租使用者的授權計畫。</span><span class="sxs-lookup"><span data-stu-id="19bc7-118">Next, list the license plans for your tenant with this command.</span></span>
+<span data-ttu-id="45ab2-118">接下來，使用此命令列出租使用者的授權計畫。</span><span class="sxs-lookup"><span data-stu-id="45ab2-118">Next, list the license plans for your tenant with this command.</span></span>
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="19bc7-119">接下來，取得您想要新增授權的帳戶登入名稱，也稱為使用者主要名稱 (UPN) 。</span><span class="sxs-lookup"><span data-stu-id="19bc7-119">Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).</span></span>
+<span data-ttu-id="45ab2-119">接下來，取得您想要新增授權的帳戶登入名稱，也稱為使用者主要名稱 (UPN) 。</span><span class="sxs-lookup"><span data-stu-id="45ab2-119">Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).</span></span>
 
-<span data-ttu-id="19bc7-120">接下來，確定使用者帳戶已指派使用位置。</span><span class="sxs-lookup"><span data-stu-id="19bc7-120">Next, ensure that the user account has a usage location assigned.</span></span>
+<span data-ttu-id="45ab2-120">接下來，確定使用者帳戶已指派使用位置。</span><span class="sxs-lookup"><span data-stu-id="45ab2-120">Next, ensure that the user account has a usage location assigned.</span></span>
 
 ```powershell
 Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
 ```
 
-<span data-ttu-id="19bc7-121">若未指派任何使用位置，您可以使用下列命令指派其中一個：</span><span class="sxs-lookup"><span data-stu-id="19bc7-121">If there is no usage location assigned, you can assign one with these commands:</span></span>
+<span data-ttu-id="45ab2-121">若未指派任何使用位置，您可以使用下列命令指派其中一個：</span><span class="sxs-lookup"><span data-stu-id="45ab2-121">If there is no usage location assigned, you can assign one with these commands:</span></span>
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -73,7 +73,7 @@ $userLoc="<ISO 3166-1 alpha-2 country code>"
 Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
 ```
 
-<span data-ttu-id="19bc7-122">最後，指定使用者登入名稱和授權方案名稱，並執行這些命令。</span><span class="sxs-lookup"><span data-stu-id="19bc7-122">Finally, specify the user sign-in name and license plan name and run these commands.</span></span>
+<span data-ttu-id="45ab2-122">最後，指定使用者登入名稱和授權方案名稱，並執行這些命令。</span><span class="sxs-lookup"><span data-stu-id="45ab2-122">Finally, specify the user sign-in name and license plan name and run these commands.</span></span>
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -85,95 +85,95 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="19bc7-123">使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。</span><span class="sxs-lookup"><span data-stu-id="19bc7-123">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="45ab2-123">使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。</span><span class="sxs-lookup"><span data-stu-id="45ab2-123">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="19bc7-124">請注意，當 Graph 模組的更新[Azure Active Directory PowerShell](/powershell/azuread/v2/azureactivedirectory)中提供此模組的功能時，我們將開始取代此模組。</span><span class="sxs-lookup"><span data-stu-id="19bc7-124">Please note that we will begin to deprecate this module when the functionality of this module is available in the newer [Azure Active Directory PowerShell for Graph](/powershell/azuread/v2/azureactivedirectory) module.</span></span> <span data-ttu-id="19bc7-125">我們建議客戶建立新的 PowerShell 腳本，以使用更新的模組，而不是此模組。</span><span class="sxs-lookup"><span data-stu-id="19bc7-125">We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.</span></span>
+<span data-ttu-id="45ab2-124">請注意，當 Graph 模組的更新[Azure Active Directory PowerShell](/powershell/azuread/v2/azureactivedirectory)中提供此模組的功能時，我們將開始取代此模組。</span><span class="sxs-lookup"><span data-stu-id="45ab2-124">Please note that we will begin to deprecate this module when the functionality of this module is available in the newer [Azure Active Directory PowerShell for Graph](/powershell/azuread/v2/azureactivedirectory) module.</span></span> <span data-ttu-id="45ab2-125">我們建議客戶建立新的 PowerShell 腳本，以使用更新的模組，而不是此模組。</span><span class="sxs-lookup"><span data-stu-id="45ab2-125">We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.</span></span>
 
-<span data-ttu-id="19bc7-126">首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="19bc7-126">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="45ab2-126">首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="45ab2-126">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="19bc7-127">執行 `Get-MsolAccountSku` 命令，以查看組織中每個計畫可用的授權方案和可用的授權數目。</span><span class="sxs-lookup"><span data-stu-id="19bc7-127">Run the `Get-MsolAccountSku` command to view the available licensing plans and the number of available licenses in each plan in your organization.</span></span> <span data-ttu-id="19bc7-128">每個計畫中可用的授權數目 **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**。</span><span class="sxs-lookup"><span data-stu-id="19bc7-128">The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**.</span></span> <span data-ttu-id="19bc7-129">如需授權方案、授權及服務的詳細資訊，請參閱 [使用 PowerShell 查看授權和服務](view-licenses-and-services-with-microsoft-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="19bc7-129">For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).</span></span>
+<span data-ttu-id="45ab2-127">執行 `Get-MsolAccountSku` 命令，以查看組織中每個計畫可用的授權方案和可用的授權數目。</span><span class="sxs-lookup"><span data-stu-id="45ab2-127">Run the `Get-MsolAccountSku` command to view the available licensing plans and the number of available licenses in each plan in your organization.</span></span> <span data-ttu-id="45ab2-128">每個計畫中可用的授權數目 **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**。</span><span class="sxs-lookup"><span data-stu-id="45ab2-128">The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**.</span></span> <span data-ttu-id="45ab2-129">如需授權方案、授權及服務的詳細資訊，請參閱 [使用 PowerShell 查看授權和服務](view-licenses-and-services-with-microsoft-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="45ab2-129">For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).</span></span>
 
 >[!Note]
-><span data-ttu-id="19bc7-130">PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 **Msol** 的 Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="19bc7-130">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="19bc7-131">若要繼續使用這些 Cmdlet，您必須從 Windows PowerShell 執行。</span><span class="sxs-lookup"><span data-stu-id="19bc7-131">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="45ab2-130">PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 **Msol** 的 Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="45ab2-130">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="45ab2-131">若要繼續使用這些 Cmdlet，您必須從 Windows PowerShell 執行。</span><span class="sxs-lookup"><span data-stu-id="45ab2-131">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="19bc7-132">若要尋找組織中未授權的帳戶，請執行此命令。</span><span class="sxs-lookup"><span data-stu-id="19bc7-132">To find the unlicensed accounts in your organization, run this command.</span></span>
+<span data-ttu-id="45ab2-132">若要尋找組織中未授權的帳戶，請執行此命令。</span><span class="sxs-lookup"><span data-stu-id="45ab2-132">To find the unlicensed accounts in your organization, run this command.</span></span>
 
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-<span data-ttu-id="19bc7-133">您只能將授權指派給 **UsageLocation** 屬性設定為有效的 ISO 3166-1 Alpha-2 國家碼的使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="19bc7-133">You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code.</span></span> <span data-ttu-id="19bc7-134">例如，US 代表美國、FR 代表法國。</span><span class="sxs-lookup"><span data-stu-id="19bc7-134">For example, US for the United States, and FR for France.</span></span> <span data-ttu-id="19bc7-135">某些國家/地區沒有提供一些 Microsoft 365 服務。</span><span class="sxs-lookup"><span data-stu-id="19bc7-135">Some Microsoft 365 services aren't available in certain countries.</span></span> <span data-ttu-id="19bc7-136">如需詳細資訊，請參閱 [關於授許可權制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。</span><span class="sxs-lookup"><span data-stu-id="19bc7-136">For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span></span>
+<span data-ttu-id="45ab2-133">您只能將授權指派給 **UsageLocation** 屬性設定為有效的 ISO 3166-1 Alpha-2 國家碼的使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="45ab2-133">You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code.</span></span> <span data-ttu-id="45ab2-134">例如，US 代表美國、FR 代表法國。</span><span class="sxs-lookup"><span data-stu-id="45ab2-134">For example, US for the United States, and FR for France.</span></span> <span data-ttu-id="45ab2-135">某些國家/地區沒有提供一些 Microsoft 365 服務。</span><span class="sxs-lookup"><span data-stu-id="45ab2-135">Some Microsoft 365 services aren't available in certain countries.</span></span> <span data-ttu-id="45ab2-136">如需詳細資訊，請參閱 [關於授許可權制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。</span><span class="sxs-lookup"><span data-stu-id="45ab2-136">For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span></span>
     
-<span data-ttu-id="19bc7-137">若要尋找沒有 **UsageLocation** 值的帳戶，請執行此命令。</span><span class="sxs-lookup"><span data-stu-id="19bc7-137">To find accounts that don't have a **UsageLocation** value, run this command.</span></span>
+<span data-ttu-id="45ab2-137">若要尋找沒有 **UsageLocation** 值的帳戶，請執行此命令。</span><span class="sxs-lookup"><span data-stu-id="45ab2-137">To find accounts that don't have a **UsageLocation** value, run this command.</span></span>
 
 ```powershell
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-<span data-ttu-id="19bc7-138">若要設定帳戶的 **UsageLocation** 值，請執行下列命令。</span><span class="sxs-lookup"><span data-stu-id="19bc7-138">To set the **UsageLocation** value on an account, run this command.</span></span>
+<span data-ttu-id="45ab2-138">若要設定帳戶的 **UsageLocation** 值，請執行下列命令。</span><span class="sxs-lookup"><span data-stu-id="45ab2-138">To set the **UsageLocation** value on an account, run this command.</span></span>
 
 ```powershell
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-<span data-ttu-id="19bc7-139">例如：</span><span class="sxs-lookup"><span data-stu-id="19bc7-139">For example:</span></span>
+<span data-ttu-id="45ab2-139">例如：</span><span class="sxs-lookup"><span data-stu-id="45ab2-139">For example:</span></span>
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
-<span data-ttu-id="19bc7-140">如果您使用 **Get-MsolUser** Cmdlet，而不使用 **-All** 參數，則只會傳回前 500 個帳戶。</span><span class="sxs-lookup"><span data-stu-id="19bc7-140">If you use the **Get-MsolUser** cmdlet without using the **-All** parameter, only the first 500 accounts are returned.</span></span>
+<span data-ttu-id="45ab2-140">如果您使用 **Get-MsolUser** Cmdlet，而不使用 **-All** 參數，則只會傳回前 500 個帳戶。</span><span class="sxs-lookup"><span data-stu-id="45ab2-140">If you use the **Get-MsolUser** cmdlet without using the **-All** parameter, only the first 500 accounts are returned.</span></span>
 
-### <a name="assigning-licenses-to-user-accounts"></a><span data-ttu-id="19bc7-141">指派授權給使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="19bc7-141">Assigning licenses to user accounts</span></span>
+### <a name="assigning-licenses-to-user-accounts"></a><span data-ttu-id="45ab2-141">指派授權給使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="45ab2-141">Assigning licenses to user accounts</span></span>
     
-<span data-ttu-id="19bc7-142">若要將授權指派給使用者，請在 PowerShell 中使用下列命令。</span><span class="sxs-lookup"><span data-stu-id="19bc7-142">To assign a license to a user, use the following command in PowerShell.</span></span>
+<span data-ttu-id="45ab2-142">若要將授權指派給使用者，請在 PowerShell 中使用下列命令。</span><span class="sxs-lookup"><span data-stu-id="45ab2-142">To assign a license to a user, use the following command in PowerShell.</span></span>
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-<span data-ttu-id="19bc7-143">此範例會將 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權方案的授權指派給未授權的使用者 **belindan \@ litwareinc.com**：</span><span class="sxs-lookup"><span data-stu-id="19bc7-143">This example assigns a license from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to the unlicensed user **belindan\@litwareinc.com**:</span></span>
+<span data-ttu-id="45ab2-143">此範例會將 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權方案的授權指派給未授權的使用者 **belindan \@ litwareinc.com**：</span><span class="sxs-lookup"><span data-stu-id="45ab2-143">This example assigns a license from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to the unlicensed user **belindan\@litwareinc.com**:</span></span>
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-<span data-ttu-id="19bc7-144">若要將授權指派給所有未授權的使用者，請執行此命令。</span><span class="sxs-lookup"><span data-stu-id="19bc7-144">To assign a license to all unlicensed users, run this command.</span></span>
+<span data-ttu-id="45ab2-144">若要將授權指派給所有未授權的使用者，請執行此命令。</span><span class="sxs-lookup"><span data-stu-id="45ab2-144">To assign a license to all unlicensed users, run this command.</span></span>
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
 ```
   
 >[!Note]
-><span data-ttu-id="19bc7-145">您無法將多個授權指派給使用者，請使用相同的授權計畫。</span><span class="sxs-lookup"><span data-stu-id="19bc7-145">You can't assign multiple licenses to a user from the same licensing plan.</span></span> <span data-ttu-id="19bc7-146">如果您沒有足夠的可用授權，授權會依照 **Get-MsolUser** Cmdlet 所傳回的順序指派給使用者，直到可用的授權執行完畢為止。</span><span class="sxs-lookup"><span data-stu-id="19bc7-146">If you don't have enough available licenses, the licenses are assigned to users in the order that they're returned by the **Get-MsolUser** cmdlet until the available licenses run out.</span></span>
+><span data-ttu-id="45ab2-145">您無法將多個授權指派給使用者，請使用相同的授權計畫。</span><span class="sxs-lookup"><span data-stu-id="45ab2-145">You can't assign multiple licenses to a user from the same licensing plan.</span></span> <span data-ttu-id="45ab2-146">如果您沒有足夠的可用授權，授權會依照 **Get-MsolUser** Cmdlet 所傳回的順序指派給使用者，直到可用的授權執行完畢為止。</span><span class="sxs-lookup"><span data-stu-id="45ab2-146">If you don't have enough available licenses, the licenses are assigned to users in the order that they're returned by the **Get-MsolUser** cmdlet until the available licenses run out.</span></span>
 >
 
-<span data-ttu-id="19bc7-147">此範例會將 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權計畫中的授權指派給所有未授權的使用者：</span><span class="sxs-lookup"><span data-stu-id="19bc7-147">This example assigns licenses from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to all unlicensed users:</span></span>
+<span data-ttu-id="45ab2-147">此範例會將 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權計畫中的授權指派給所有未授權的使用者：</span><span class="sxs-lookup"><span data-stu-id="45ab2-147">This example assigns licenses from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to all unlicensed users:</span></span>
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-<span data-ttu-id="19bc7-148">本範例會將相同授權指派給美國的銷售部門中未授權的使用者：</span><span class="sxs-lookup"><span data-stu-id="19bc7-148">This example assigns those same licenses to unlicensed users in the Sales department in the United States:</span></span>
+<span data-ttu-id="45ab2-148">本範例會將相同授權指派給美國的銷售部門中未授權的使用者：</span><span class="sxs-lookup"><span data-stu-id="45ab2-148">This example assigns those same licenses to unlicensed users in the Sales department in the United States:</span></span>
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="19bc7-149">使用 Graph 模組的 Azure Active Directory PowerShell，將使用者移至不同訂閱 (授權方案) </span><span class="sxs-lookup"><span data-stu-id="19bc7-149">Move a user to a different subscription (license plan) with the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="45ab2-149">使用 Graph 模組的 Azure Active Directory PowerShell，將使用者移至不同訂閱 (授權方案) </span><span class="sxs-lookup"><span data-stu-id="45ab2-149">Move a user to a different subscription (license plan) with the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="19bc7-150">首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="19bc7-150">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="45ab2-150">首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="45ab2-150">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-<span data-ttu-id="19bc7-151">接下來，取得您要切換訂閱的使用者帳戶登入名稱，也稱為使用者主要名稱 (UPN) 。</span><span class="sxs-lookup"><span data-stu-id="19bc7-151">Next, get the sign-in name of the user account for which you want switch subscriptions, also known as the user principal name (UPN).</span></span>
+<span data-ttu-id="45ab2-151">接下來，取得您要切換訂閱的使用者帳戶登入名稱，也稱為使用者主要名稱 (UPN) 。</span><span class="sxs-lookup"><span data-stu-id="45ab2-151">Next, get the sign-in name of the user account for which you want switch subscriptions, also known as the user principal name (UPN).</span></span>
 
-<span data-ttu-id="19bc7-152">接下來，使用此命令列出租使用者 (授權方案) 的訂閱。</span><span class="sxs-lookup"><span data-stu-id="19bc7-152">Next, list the subscriptions (license plans) for your tenant with this command.</span></span>
+<span data-ttu-id="45ab2-152">接下來，使用此命令列出租使用者 (授權方案) 的訂閱。</span><span class="sxs-lookup"><span data-stu-id="45ab2-152">Next, list the subscriptions (license plans) for your tenant with this command.</span></span>
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="19bc7-153">接下來，列出使用者帳戶目前具有這些命令的訂閱。</span><span class="sxs-lookup"><span data-stu-id="19bc7-153">Next, list the subscriptions that the user account currently has with these commands.</span></span>
+<span data-ttu-id="45ab2-153">接下來，列出使用者帳戶目前具有這些命令的訂閱。</span><span class="sxs-lookup"><span data-stu-id="45ab2-153">Next, list the subscriptions that the user account currently has with these commands.</span></span>
 
 ```powershell
 $userUPN="<user account UPN>"
@@ -182,9 +182,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-<span data-ttu-id="19bc7-154">識別使用者目前已 (FROM 訂閱) 和使用者移至其中的訂閱 (TO 訂閱) 。</span><span class="sxs-lookup"><span data-stu-id="19bc7-154">Identify the subscription the user currently has (the FROM subscription) and the subscription to which the user is moving (the TO subscription).</span></span>
+<span data-ttu-id="45ab2-154">識別使用者目前已 (FROM 訂閱) 和使用者移至其中的訂閱 (TO 訂閱) 。</span><span class="sxs-lookup"><span data-stu-id="45ab2-154">Identify the subscription the user currently has (the FROM subscription) and the subscription to which the user is moving (the TO subscription).</span></span>
 
-<span data-ttu-id="19bc7-155">最後，指定 TO 及 FROM 訂閱名稱 (SKU 部分編號) 並執行這些命令。</span><span class="sxs-lookup"><span data-stu-id="19bc7-155">Finally, specify the TO and FROM subscription names (SKU part numbers) and run these commands.</span></span>
+<span data-ttu-id="45ab2-155">最後，指定 TO 及 FROM 訂閱名稱 (SKU 部分編號) 並執行這些命令。</span><span class="sxs-lookup"><span data-stu-id="45ab2-155">Finally, specify the TO and FROM subscription names (SKU part numbers) and run these commands.</span></span>
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
@@ -205,7 +205,7 @@ $licenses.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 ```
 
-<span data-ttu-id="19bc7-156">您可以使用下列命令來確認使用者帳戶的訂閱變更。</span><span class="sxs-lookup"><span data-stu-id="19bc7-156">You can verify the change in subscription for the user account with these commands.</span></span>
+<span data-ttu-id="45ab2-156">您可以使用下列命令來確認使用者帳戶的訂閱變更。</span><span class="sxs-lookup"><span data-stu-id="45ab2-156">You can verify the change in subscription for the user account with these commands.</span></span>
 
 ```powershell
 $licensePlanList = Get-AzureADSubscribedSku
@@ -213,10 +213,10 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="19bc7-157">請參閱</span><span class="sxs-lookup"><span data-stu-id="19bc7-157">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="45ab2-157">另請參閱</span><span class="sxs-lookup"><span data-stu-id="45ab2-157">See also</span></span>
 
-[<span data-ttu-id="19bc7-158">以 PowerShell 管理使用者帳戶、授權和群組</span><span class="sxs-lookup"><span data-stu-id="19bc7-158">Manage user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[<span data-ttu-id="45ab2-158">以 PowerShell 管理使用者帳戶、授權和群組</span><span class="sxs-lookup"><span data-stu-id="45ab2-158">Manage user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="19bc7-159">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="19bc7-159">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="45ab2-159">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="45ab2-159">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="19bc7-160">開始使用適用於 Microsoft 365 的 PowerShell</span><span class="sxs-lookup"><span data-stu-id="19bc7-160">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="45ab2-160">開始使用適用於 Microsoft 365 的 PowerShell</span><span class="sxs-lookup"><span data-stu-id="45ab2-160">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
