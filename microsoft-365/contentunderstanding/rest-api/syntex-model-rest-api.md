@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: SharePoint Syntex 文件瞭解模型 REST API 概觀。
-ms.openlocfilehash: 279c624bb818e5d8d33b476f997290269ff634cb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e661df76828db0d05f7c3492880259117b9f8bf1
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904193"
+ms.locfileid: "52908086"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>SharePoint Syntex 文件瞭解模型 REST API
 
@@ -24,14 +24,14 @@ ms.locfileid: "52904193"
 
 SharePoint Online (以及 SharePoint 2016 及更新版本內部部署) REST 服務支援使用 OData $batch 查詢選項，將多個要求合併為單一呼叫服務。 
 
-有關程式碼範例的詳細資訊和連結，請參閱[使用 REST API 執行批次要求](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis.md)。
+有關程式碼範例的詳細資訊和連結，請參閱[使用 REST API 執行批次要求](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)。
 
 ## <a name="prerequisites"></a>必要條件
 
 在開始使用之前，請確定您熟悉下列內容：
 
-- [認識 SharePoint REST 服務](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service.md) 
-- [使用 SharePoint REST 端點完成基本作業](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints.md)
+- [認識 SharePoint REST 服務](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service) 
+- [使用 SharePoint REST 端點完成基本作業](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
 
 ## <a name="rest-commands"></a>REST 命令
 
