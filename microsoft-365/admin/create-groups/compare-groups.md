@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 群組成員可以取得交談、檔案和行事曆活動、Stream 以及 Planner 的群組電子郵件與共用工作區。
-ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635591"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903837"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -89,7 +89,7 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 擁有群組信箱權限的使用者可以以信箱電子郵件地址的身分傳送或代表其傳送 (如果系統管理員已授與使用者執行該動作的權限)。 這對於說明和支援信箱特別有用，因為使用者可以透過「Contoso 支援」或「大樓 A 接待處」傳送電子郵件。
 
-目前無法將共用信箱移轉至 Microsoft 365 群組。 這是您需要的內容嗎？ 請告訴我們。 **[在這裡投票](https://go.microsoft.com/fwlink/?linkid=871518)**。
+無法將共用信箱移轉至 Microsoft 365 群組。 
 
 ## <a name="related-content"></a>相關內容
 

@@ -21,12 +21,12 @@ ms.custom:
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7570a925f4f24148874eada8a835ae473efaeb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650347"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904113"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "51650347"
 > [!IMPORTANT]
 > 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 的商務客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-適用於 Office 365 的 Microsoft Defender 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 適用於 Office 365 的 Defender 包括：
+適用於 Office 365 的 Microsoft Defender 可保護貴組織免於來自電子郵件訊息、連結 (URL)，與共同作業工具的惡意威脅。適用於 Office 365 的 Defender 包含:
 
 - **[威脅防護原則](#configure-microsoft-defender-for-office-365-policies)**：定義威脅防護原則，用來為組織設定適當的保護層級。
 
@@ -147,7 +147,7 @@ ms.locfileid: "51650347"
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>使用適用於 Office 365 的 Microsoft Defender 功能所需的權限
 
-若要在安全性與合規性中心存取適用於 Office 365 的 Microsoft Defender 功能，您必須獲指派適當的角色。 下表包括一些範例：
+若要在安全性與合規性中心存取適用於 Office 365 的 Microsoft Defender 功能，您必須獲指派適當的角色。下表包含一些範例：
 
 |角色或角色群組|可深入了解的資源|
 |---|---|
@@ -174,7 +174,7 @@ ms.locfileid: "51650347"
 
 我們會持續將新功能新增至適用於 Office 365 的 Microsoft Defender。 若要深入了解，請參閱下列資源：
 
-- [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供開發中和正在推出的新功能清單。
+- [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365)提供開發中和正在推出的新功能清單。
 
 - [適用於 Office 365 的 Microsoft Defender 服務描述](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)會描述適用於 Office 365 的 Defender 方案的功能與可用性。
 

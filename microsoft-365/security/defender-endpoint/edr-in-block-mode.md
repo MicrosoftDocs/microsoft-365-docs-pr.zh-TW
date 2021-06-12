@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 05/08/2021
+ms.date: 06/11/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 86bb27005365b625ee07feaa067c0ac488c3bb4b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302037"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908338"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>在封鎖模式中) 的端點偵測和回應 (EDR
 
@@ -62,7 +62,7 @@ ms.locfileid: "52302037"
 > [!IMPORTANT]
 > 在封鎖模式中開啟 EDR 之前，請確定符合[需求](#requirements-for-edr-in-block-mode)。
 
-1. 移至 Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。 
+1. 移至[Microsoft 365 Defender 入口網站](microsoft-defender-security-center.md)並登入。 
 
 2. 選擇 [**設定**  >  **高級功能**]。
 

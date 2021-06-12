@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fcf2310929937d1dacfc9c101d3e14414bad262b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903741"
+ms.locfileid: "52908074"
 ---
 # <a name="client-behavioral-blocking"></a>用戶端行為封鎖
 
@@ -46,7 +46,7 @@ ms.locfileid: "52903741"
 
 [Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)可以偵測可疑行為、惡意程式碼、fileless 及記憶體中的攻擊，以及裝置上的其他功能。 偵測到可疑行為時，Microsoft Defender 防毒軟體會監視並將這些可疑行為及其程式樹傳送至雲端保護服務。 機器學習會區別惡意應用程式與在毫秒內的良好行為，以及分類每個專案。 在幾乎即時的情況下，只要有惡意的偽像，該專案就會在裝置上遭到封鎖。 
 
-每當偵測到可疑行為時，就會產生警示，而且在[Microsoft 365 Defender](microsoft-defender-security-center.md) (（先前為 (的 Microsoft Defender 資訊安全中心) ) ）時會顯示[警示](alerts-queue.md) [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+每當偵測到可疑行為時，就會產生[警示](alerts-queue.md)，而且會在[Microsoft 365 Defender 入口網站](microsoft-defender-security-center.md)中看到 (以前是 Microsoft Defender 資訊安全中心) 。
 
 用戶端行為封鎖是有效的，因為它不只是協助防止攻擊的啟動，它可協助停止已開始執行的攻擊。 而且，以反應反應 [封鎖](feedback-loop-blocking.md) (另一個功能封鎖和包含) 的功能，您的組織中的其他裝置都可以攻擊。
 

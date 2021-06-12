@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 現有的 Office 365 客戶必須先提交要求，然後才能將其 Microsoft 365 服務資料移至新的地理位置的國家/地區期限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927309"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908242"
 ---
 # <a name="how-to-request-your-data-move"></a>如何要求資料移動
 
@@ -74,7 +74,7 @@ ms.locfileid: "50927309"
 
 [將核心資料移至新的 Office 365 資料中心 geos](moving-data-to-new-datacenter-geos.md)
 
-[資料移動一般常見問題集](data-move-faq.md)
+[資料移動一般常見問題集](data-move-faq.yml)
 
 [Microsoft Dynamics CRM Online 的新資料中心 geos](/power-platform/admin/new-datacenter-regions)
   

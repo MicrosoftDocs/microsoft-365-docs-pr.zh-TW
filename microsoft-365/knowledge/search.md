@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 瞭解您可以在 Microsoft Viva 中搜尋主題的方式。
-ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844728"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908062"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
 
@@ -23,9 +23,10 @@ ms.locfileid: "52844728"
 
 ## <a name="topic-answer"></a>主題答案
 
-當您在 Microsoft Search (中搜尋特定主題時（例如 "Saturn" ) ），如果有主題存在且找到該主題，則會在主題答案建議格式中顯示結果。
+當您從 SharePoint 開始] 頁面、Office .com 或已範圍的 SharePoint 網站搜尋特定主題時，如果有主題存在且找到該主題，則會在主題答案建議格式中顯示結果。
 
 主題答案會顯示：
+
 - 主題名稱
 - 替代名稱：主題的替代名稱或縮寫。
 - 定義：由 AI 提供或人員手動新增的主題描述。
@@ -36,12 +37,11 @@ ms.locfileid: "52844728"
 
 即使主題的答案卡未出現，也可以在搜尋結果中顯示 [主題] 頁面。
 
-Word、PowerPoint Outlook 和 Excel 中的搜尋結果也會在找到一個主題時顯示主題答案。
-
+Word、PowerPoint、Outlook 和 Excel 中的搜尋結果也會在找到一個主題時顯示主題答案。
 
 ## <a name="acronyms"></a>縮略字
 
-在 Viva 主題中，您可以手動編輯主題，以包含其為 <b>替代名稱</b>的縮寫。 這可讓僅以該主題的首字母縮寫的使用者進行搜尋，以找出透過 Microsoft 搜尋的主題答案。
+在 Viva 主題中，您可以手動編輯主題，以包含其為 *替代名稱* 的縮寫。 這可讓僅以該主題的首字母縮寫的使用者進行搜尋，以找出透過 Microsoft 搜尋的主題答案。
 
 [縮寫的答案](/microsoftsearch/manage-acronyms) 是 Microsoft Search 所提供的功能，且與 Viva 主題分開管理。
 
@@ -52,8 +52,13 @@ Word、PowerPoint Outlook 和 Excel 中的搜尋結果也會在找到一個主�
 若要尋找可預約工作旅行之相關資訊的使用者：
 
 - 如果有些使用者知道旅行工具名稱 (例如 "Concur" ) ，則建立書簽直接移至外部網站會比較容易。
+
 - 針對一般搜尋「旅行」的使用者，在「旅行」上建立一個主題，該主題具有期望看到的資訊。 請考慮在主題的描述中新增 Concur 外部網站的連結。 如果連結改改為 Microsoft 365 租使用者所主控的內部旅行預約網站，您可以將其新增至「釘住的資源」。
  
 ### <a name="search-results-priority"></a>搜尋結果優先順序 
 
 在使用者的搜尋體驗中，當使用者搜尋像 "旅行" 的字詞時，如果有可用的書簽，便會顯示書簽，以取代主題。
+
+## <a name="see-also"></a>另請參閱
+
+[Viva 主題概述](topic-experiences-overview.md)

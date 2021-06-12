@@ -10,22 +10,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275249"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908026"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虛擬桌面基礎結構 (VDI) 環境中 Microsoft Defender 防毒軟體的部署指南
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
@@ -175,7 +172,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 如常部署您的群組原則物件。
 
-抑制通知，可防止在執行掃描時 Windows 10 的「動作中心」或進行修正動作時，Microsoft Defender 防毒軟體中顯示的通知。 不過，您的安全性運作小組會在 Microsoft Defender 資訊安全中心 () 中看到掃描的結果 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+抑制通知，可防止在執行掃描時 Windows 10 的「動作中心」或進行修正動作時，Microsoft Defender 防毒軟體中顯示的通知。 不過，您的安全性作業小組會在[Microsoft 365 Defender 入口網站](microsoft-defender-security-center.md)中看到掃描的結果。
 
 > [!TIP]
 > 若要在 Windows 10 上開啟「行動中心」，請執行下列其中一個步驟：

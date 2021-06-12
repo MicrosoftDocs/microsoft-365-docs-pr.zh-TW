@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 資料移動是指 Microsoft 將租使用者的服務和相關資料移至新的資料中心地理位置時，會發生後端作業。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: c0ea94a80de993d4d1341b8f9b19850d7149583f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625254"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908110"
 ---
 # <a name="during-and-after-your-data-move"></a>資料移動期間和之後
 
@@ -122,7 +122,7 @@ Teams 檔案會儲存在 SharePoint 線上，且 Teams 的聊天室檔案會儲�
  
 [如何要求資料移動](request-your-data-move.md)
     
-[資料移動一般常見問題集](data-move-faq.md)
+[資料移動一般常見問題集](data-move-faq.yml)
   
 [Microsoft Dynamics CRM Online 的新資料中心 geos](/power-platform/admin/new-datacenter-regions)
   
