@@ -6,19 +6,19 @@
       items:
         - name: 什麼是 Microsoft 365 Defender?
           href: microsoft-365-defender.md
-        - name: Microsoft 365Defender 概述
+        - name: Microsoft 365 Defender 概觀
           href: overview-security-center.md
         - name: Microsoft 365 Defender 的新功能
           href: whats-new.md
-        - name: Microsoft 365 defender 中的端點的 defender
+        - name: Microsoft 365 安全性中心中的適用於端點的 Defender
           href: microsoft-365-security-center-mde.md
-        - name: Microsoft 365 defender 中 Office 365 的 defender
+        - name: Microsoft 365 Defender 中的適用於 Office 365 的 Defender
           href: microsoft-365-security-center-mdo.md
-        - name: 將 defender 的端點重新導向至 Microsoft 365 Defender
+        - name: 將適用於端點的 Defender 重新導向至 Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
         - name: 將 Office 365 安全性與合規性中心重新導向至 Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
-        - name: Microsoft 365與 Azure Sentinel 的 Defender 整合
+        - name: Microsoft 365 Defender 與 Azure Sentinel 的整合
           href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: 預覽功能
           href: preview.md
@@ -104,17 +104,17 @@
               href: investigate-alerts.md
             - name: 事件使用者
               href: investigate-users.md
-            - name: 回應第一個事件
+            - name: 回應您的第一個事件
               items:
                 - name: 簡介
                   href: first-incident-overview.md
                 - name: 準備
                   href: first-incident-prepare.md
-                - name: 步驟 1. 會審和分析
+                - name: 步驟 1。 分類和分析
                   href: first-incident-analyze.md
                 - name: 步驟 2. 修正
                   href: first-incident-remediate.md
-                - name: 步驟 3. 檢閱
+                - name: 步驟 3：檢視
                   href: first-incident-post.md
                 - name: 其他事件範例
                   items:
@@ -122,17 +122,17 @@
                       href: first-incident-path-phishing.md
                     - name: 身分識別
                       href: first-incident-path-identity.md
-            - name: 事件回應行動手冊
+            - name: 事件回應劇本
               href: /security/compass/incident-response-playbooks
             - name: 電子郵件通知
               href: get-incident-notifications.md
         - name: 威脅分析
           items:
-            - name: 追蹤和回應新興威脅
+            - name: 追蹤並回應新興威脅
               href: threat-analytics.md
-            - name: 瞭解分析報告
+            - name: 了解分析師報告
               href: threat-analytics-analyst-reports.md
-        - name: 自動調查及回應
+        - name: 自動化調查及回應
           items:
             - name: 概觀
               href: m365d-autoir.md
@@ -142,11 +142,11 @@
               href: m365d-remediation-actions.md
             - name: 使用重要訊息中心
               href: m365d-action-center.md
-            - name: 查看和管理修正動作
+            - name: 檢視和管理補救動作
               href: m365d-autoir-actions.md
-            - name: 查看詳細資料和結果
+            - name: 檢視詳細資料與報告
               href: m365d-autoir-results.md
-            - name: 位址誤報和否定
+            - name: 解決誤判和漏報
               href: m365d-autoir-report-false-positives-negatives.md
         - name: 進階搜捕
           items:
@@ -318,9 +318,9 @@
               items:
                 - name: 常見的 REST API 錯誤碼
                   href: api-error-codes.md
-                - name: 流式處理 API
+                - name: 串流 API
                   items:
-                    - name: Microsoft 365流式處理 API
+                    - name: Microsoft 365 串流 API
                       href: streaming-api.md
                     - name: 將進階搜尋事件串流到 Azure 事件中樞
                       href: streaming-api-event-hub.md
@@ -328,7 +328,7 @@
                       href: streaming-api-storage.md
                 - name: 進階搜捕 API
                   href: api-advanced-hunting.md
-                - name: 事件 APIs
+                - name: 事件 API
                   items:
                     - name: 事件方法和屬性
                       href: api-incident.md

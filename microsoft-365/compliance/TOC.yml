@@ -566,6 +566,8 @@
               href: configure-edge-to-export-search-results.md
             - name: 大量編輯多個內容搜尋
               href: bulk-edit-content-searches.md
+            - name: 在稽核記錄中搜尋電子文件探索活動
+              href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: 內容搜尋 PowerShell 指令碼
           items:
             - name: 對目標集合使用內容搜尋
