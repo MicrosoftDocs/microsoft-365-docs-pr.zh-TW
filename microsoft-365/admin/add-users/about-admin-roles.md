@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色 (如服務系統管理員) 會與商務功能對應，並提供在系統管理中心執行特定工作的權限。
-ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809032"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908050"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
-Microsoft 365 或 Office 365 訂閱隨附一組系統管理員角色，您可以使用 [Microsoft 365 系統管理中心] 將這些角色指派給組織中的使用者。 每個系統管理員角色會與常見的商務功能對應，並可讓組織中的人員在系統管理中心執行特定工作的權限。
+Microsoft 365 或 Office 365 訂閱隨附一組系統管理員角色，您可以使用 Microsoft 365 系統管理中心將這些角色指派給貴組織的使用者。各個系統管理員角色會對應常用的商務功能，並提供權限給貴組織內部人員，以在系統管理中心中執行特定工作。。
 
 Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Intune 角色。 不過，這些角色是 Azure AD 入口網站和 Intune 系統管理中心中可用角色的子集。
 
@@ -86,7 +86,7 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft 合作夥伴的委派系統管理
 
-如果您正與 Microsoft 合作夥伴合作，您可以指派系統管理員角色給他們。 他們也可以反過來指派系統管理員角色給您公司 (或他們公司) 中的使用者。 例如，如果他們正在設定並為您管理線上組織，您可能會想要他們這樣做。
+如果您正與 Microsoft 合作夥伴合作，您可以指派系統管理員角色給他們。他們也可以反過來指派系統管理員角色給您公司 (或他們公司) 中的使用者。例如，如果他們正在設定並為您管理線上組織，您可能會想要他們這樣做。
   
 合作夥伴可以指派以下角色： 
   
@@ -100,4 +100,5 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 [指派系統管理員角色](assign-admin-roles.md) (文章)
 [Microsoft 365 系統管理中心的 Azure AD 角色](azure-ad-roles-in-the-mac.md) (文章)
-[Exchange Online 系統管理員角色](about-exchange-online-admin-role.md) (文章)\ [Microsoft 365 系統管理中心中的活動](../activity-reports/activity-reports.md) (文章)
+[Microsoft 365 系統管理中心的活動報告](../activity-reports/activity-reports.md) (文章)
+[Exchange Online 系統管理員角色](about-exchange-online-admin-role.md) (文章)

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 瞭解針對保留原則及保留標籤原則，每個原則的原則和專案數量上限。
-ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878049"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908098"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留原則和保留標籤原則的限制
 
@@ -37,7 +37,7 @@ ms.locfileid: "52878049"
 
 在此 10，000 個原則限制內，每個工作負載的保留原則數量上限也有一些限制：
 
-- Exchange Online (任何設定)：1,800
+- Exchange (任何設定)：1,800
 - SharePoint 或 OneDrive：(自動包含所有網站)：13
 - SharePoint 或 OneDrive (包含或排除的特定位置)：2,600
 
@@ -49,10 +49,16 @@ ms.locfileid: "52878049"
 
 每個原則保留的專案數量上限：
 
-  - 1,000 個信箱 (使用者信箱或群組信箱)
-  - 1,000 個 Microsoft 365 群組
-  - 1000 個 Teams 私人聊天使用者
-  - 100 個網站 (OneDrive 或 SharePoint)
+- Exchange 信箱：1,000
+- Microsoft 365 群組：1,000
+- Teams 通道訊息：1,000
+- Teams 聊天：1,000
+- Yammer 社群訊息：1,000
+- Yammer 使用者訊息：1,000
+- SharePoint 網站：100
+- OneDrive 帳戶：100
+
+商務用 Skype 的範圍必須針對特定使用者，且每個原則支援的最大數目為 1,000。
 
 因為這些限制根據原則而異，因此如果您需要使用會導致超出這些數字的特定包含或排除，您可以建立具有相同保留設定的額外原則。 請參閱下一節中因此項緣由而使用多個保留原則的部分 [案例和解決方案](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers)。
 
@@ -91,4 +97,4 @@ SharePoint 範例：
 
 - 處置項目後最多七年的處置證明，該期間每個保留標籤的限制為 1，000，000 個項目。 
     
-    如果您需要標示為記錄之項目的處置證明高於此 1，000，000 上限，請連繫 [Microsoft 支援服務](../business-video/get-help-support.md)。
+如果您需要標示為記錄之項目的處置證明高於此 1，000，000 上限，請連繫 [Microsoft 支援服務](../business-video/get-help-support.md)。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 [保留標籤] 宣告記錄。
-ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730543"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903897"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用 [保留標籤] 宣告記錄
 
@@ -79,6 +79,18 @@ ms.locfileid: "52730543"
 使用保留標籤將文件標示為記錄的範例：
 
 ![標記為記錄之文件的詳細資料窗格](../media/recordversioning7.png)
+
+## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>搜尋已宣告記錄的具標籤項目的稽核記錄
+
+將項目標示為記錄的動作會記錄在稽核記錄中。
+
+對於 SharePoint 項目： 
+- 於 **[檔案和頁面活動]**，選取 **[已變更檔案的保留標籤]**。 此稽核事件適用於將項目標記為記錄、法規記錄或標準保留標記的保留標記。
+
+對於 Exchange 項目：
+- 於 **[Exchange 信箱活動]**，選取 **[已將訊息標記成一筆記錄]**。 此稽核事件適用於將項目標記為記錄或法規記錄的保留標記。
+
+如需搜尋這些事件的詳細資訊，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。
 
 ## <a name="next-steps"></a>後續步驟
 

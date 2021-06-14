@@ -273,7 +273,10 @@
 #### [偵測並封鎖潛在的垃圾應用程式](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [在群組原則中啟用和設定 Microsoft Defender 防毒軟體一律開啟保護](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [設定 Microsoft Defender 防毒軟體偵測的補救](configure-remediation-microsoft-defender-antivirus.md)
-#### [設定排程的快速或完整 Microsoft Defender 防毒軟體掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+#### [設定 Microsoft Defender 防毒軟體掃描](schedule-antivirus-scans.md)
+##### [使用群組原則排程防毒軟體掃描](schedule-antivirus-scans-group-policy.md)
+##### [使用 PowerShell 排程防毒軟體掃描](schedule-antivirus-scans-powershell.md)
+##### [使用 Windows Management Instrumentation (WMI) 的排程防毒軟體掃描](schedule-antivirus-scans-wmi.md)
 #### [在 Microsoft Defender 防毒軟體中使用有限的定期掃描](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [與其他安全性產品的相容性](microsoft-defender-antivirus-compatibility.md)
 
@@ -468,6 +471,8 @@
 ###### [使用應用程式內容取得存取權](exposed-apis-create-app-webapp.md)
 ###### [使用使用者內文取得存取權](exposed-apis-create-app-nativeapp.md)
 ###### [取得夥伴應用程式存取權](exposed-apis-create-app-partners.md)
+
+
 ##### [適用於端點的 Microsoft Defender API 結構描述]()
 ###### [受支援的適用於端點的 Microsoft Defender API](exposed-apis-list.md)
 ###### [常見的 REST API 錯誤碼](common-errors.md)
@@ -520,6 +525,7 @@
 ####### [取得 IP 相關警示](get-ip-related-alerts.md)
 ####### [取得 IP 統計資料](get-ip-statistics.md)
 
+
 ###### [機器]()
 ####### [電腦方法和屬性](machine.md)
 ####### [列出電腦](get-machines.md)
@@ -535,19 +541,23 @@
 ####### [取得遺失的 KB](get-missing-kbs-machine.md)
 ####### [設定裝置值](set-device-value.md)
 
+
 ###### [電腦動作]()
 ####### [電腦動作方法和屬性](machineaction.md)
 ####### [列出電腦動作](get-machineactions-collection.md)
 ####### [取得電腦動作](get-machineaction-object.md)
 ####### [收集調查套件](collect-investigation-package.md)
 ####### [取得調查套件 SAS URI](get-package-sas-uri.md)
+####### [取得即時回應結果](get-live-response-result.md)
 ####### [隔離電腦](isolate-machine.md)
 ####### [將電腦從隔離中釋出](unisolate-machine.md)
 ####### [限制應用程式執行](restrict-code-execution.md)
 ####### [移除應用程式限制](unrestrict-code-execution.md)
 ####### [執行防毒掃描](run-av-scan.md)
+####### [執行即時回應](run-live-response.md) 
 ####### [下機](offboard-machine-api.md)
 ####### [停止並隔離檔案](stop-and-quarantine-file.md)
+####### [取消電腦動作](cancel-machine-action.md)
 
 ###### [建議]()
 ####### [建議方法和屬性](recommendation.md)

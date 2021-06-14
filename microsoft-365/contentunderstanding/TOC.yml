@@ -70,3 +70,23 @@
       href: push-content-type-to-hub.md
     - name: 字詞庫報告
       href: term-store-analytics.md
+- name: REST API
+  items:
+    - name: 概觀
+      href: rest-api/syntex-model-rest-api.md
+    - name: 建立模型
+      href: rest-api/rest-createmodel-method.md
+    - name: GetByUniqueId
+      href: rest-api/rest-getbyuniqueid-method.md
+    - name: GetByTitle
+      href: rest-api/rest-getbytitle-method.md
+    - name: 套用模型
+      href: rest-api/rest-applymodel-method.md
+    - name: 取得模型和文件庫資訊
+      href: rest-api/rest-getmodelandlibraryinfo.md
+    - name: UpdateModelSettings
+      href: rest-api/rest-updatemodelsettings-method.md
+    - name: BatchDelete
+      href: rest-api/rest-batchdelete-method.md
+    - name: 建立分類要求
+      href: rest-api/rest-createclassificationrequest.md
