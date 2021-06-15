@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: ''
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,51 +19,51 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從命令列使用 PowerShell 建立及發佈保留標籤，而不受 Microsoft 365 合規性中心的影響。
-ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918219"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924960"
 ---
-# <a name="create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="a2129-103">使用 PowerShell 建立及發佈保留標籤</span><span class="sxs-lookup"><span data-stu-id="a2129-103">Create and publish retention labels by using PowerShell</span></span>
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="0692f-103">使用 PowerShell 建立及發佈保留標籤</span><span class="sxs-lookup"><span data-stu-id="0692f-103">Create and publish retention labels by using PowerShell</span></span>
 
-><span data-ttu-id="a2129-104">*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="a2129-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
+><span data-ttu-id="0692f-104">*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="0692f-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
 
-<span data-ttu-id="a2129-105">在您決定使用 [保留標籤](retention.md) 來協助您保留或刪除 Microsoft 365 中的文件和電子郵件後，您可能會發現您可能有許多，甚至數百個保留標籤供您建立及發佈。</span><span class="sxs-lookup"><span data-stu-id="a2129-105">After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish.</span></span> <span data-ttu-id="a2129-106">按縮放比例建立保留標籤的建議方法，是使用 Microsoft 365 合規性中心的 [檔案計畫](file-plan-manager.md)。</span><span class="sxs-lookup"><span data-stu-id="a2129-106">The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center.</span></span> <span data-ttu-id="a2129-107">不過，您也可以使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels)。</span><span class="sxs-lookup"><span data-stu-id="a2129-107">However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).</span></span>
+<span data-ttu-id="0692f-105">在您決定使用 [保留標籤](retention.md) 來協助您保留或刪除 Microsoft 365 中的文件和電子郵件後，您可能會發現您可能有許多，甚至數百個保留標籤供您建立及發佈。</span><span class="sxs-lookup"><span data-stu-id="0692f-105">After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish.</span></span> <span data-ttu-id="0692f-106">按縮放比例建立保留標籤的建議方法，是使用 Microsoft 365 合規性中心的 [檔案計畫](file-plan-manager.md)。</span><span class="sxs-lookup"><span data-stu-id="0692f-106">The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center.</span></span> <span data-ttu-id="0692f-107">不過，您也可以使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels)。</span><span class="sxs-lookup"><span data-stu-id="0692f-107">However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).</span></span>
   
-<span data-ttu-id="a2129-108">使用本文的資訊、範本檔和範例以及指令檔，來協助您以大量方式建立保留標籤，並以保留標籤原則發佈。</span><span class="sxs-lookup"><span data-stu-id="a2129-108">Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies.</span></span> <span data-ttu-id="a2129-109">然後，保留標籤可 [由系統管理員及使用者套用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)。</span><span class="sxs-lookup"><span data-stu-id="a2129-109">Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span></span>
+<span data-ttu-id="0692f-108">使用本文的資訊、範本檔和範例以及指令檔，來協助您以大量方式建立保留標籤，並以保留標籤原則發佈。</span><span class="sxs-lookup"><span data-stu-id="0692f-108">Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies.</span></span> <span data-ttu-id="0692f-109">然後，保留標籤可 [由系統管理員及使用者套用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)。</span><span class="sxs-lookup"><span data-stu-id="0692f-109">Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span></span>
 
-<span data-ttu-id="a2129-110">提供的指示不支援自動套用的保留標籤。</span><span class="sxs-lookup"><span data-stu-id="a2129-110">The supplied instructions don't support retention labels that are auto-applied.</span></span>
+<span data-ttu-id="0692f-110">提供的指示不支援自動套用的保留標籤。</span><span class="sxs-lookup"><span data-stu-id="0692f-110">The supplied instructions don't support retention labels that are auto-applied.</span></span>
 
-<span data-ttu-id="a2129-111">概觀：</span><span class="sxs-lookup"><span data-stu-id="a2129-111">Overview:</span></span> 
+<span data-ttu-id="0692f-111">概觀：</span><span class="sxs-lookup"><span data-stu-id="0692f-111">Overview:</span></span> 
 
-1. <span data-ttu-id="a2129-112">在 Excel 中建立保留標籤清單，以及其保留標籤原則清單。</span><span class="sxs-lookup"><span data-stu-id="a2129-112">In Excel, create a list of your retention labels and a list of their retention label policies.</span></span>
+1. <span data-ttu-id="0692f-112">在 Excel 中建立保留標籤清單，以及其保留標籤原則清單。</span><span class="sxs-lookup"><span data-stu-id="0692f-112">In Excel, create a list of your retention labels and a list of their retention label policies.</span></span>
 
-2. <span data-ttu-id="a2129-113">使用 PowerShell，在這些清單中建立保留標籤和保留標籤原則。</span><span class="sxs-lookup"><span data-stu-id="a2129-113">Use PowerShell to create the retention labels and retention label policies in those lists.</span></span>
+2. <span data-ttu-id="0692f-113">使用 PowerShell，在這些清單中建立保留標籤和保留標籤原則。</span><span class="sxs-lookup"><span data-stu-id="0692f-113">Use PowerShell to create the retention labels and retention label policies in those lists.</span></span>
   
-## <a name="disclaimer"></a><span data-ttu-id="a2129-114">免責聲明</span><span class="sxs-lookup"><span data-stu-id="a2129-114">Disclaimer</span></span>
+## <a name="disclaimer"></a><span data-ttu-id="0692f-114">免責聲明</span><span class="sxs-lookup"><span data-stu-id="0692f-114">Disclaimer</span></span>
 
-<span data-ttu-id="a2129-115">在任何 Microsoft 標準支援程式或服務下，不支援本文中提供的範例指令碼。</span><span class="sxs-lookup"><span data-stu-id="a2129-115">The sample scripts provided in this article aren't supported under any Microsoft standard support program or service.</span></span> <span data-ttu-id="a2129-116">範例指令碼係依「現狀」提供，不含任何種類的擔保方式。</span><span class="sxs-lookup"><span data-stu-id="a2129-116">The sample scripts are provided AS IS without warranty of any kind.</span></span> <span data-ttu-id="a2129-117">Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。</span><span class="sxs-lookup"><span data-stu-id="a2129-117">Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose.</span></span> <span data-ttu-id="a2129-118">使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。</span><span class="sxs-lookup"><span data-stu-id="a2129-118">The entire risk arising out of the use or performance of the sample scripts and documentation remains with you.</span></span> <span data-ttu-id="a2129-119">Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。</span><span class="sxs-lookup"><span data-stu-id="a2129-119">In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
+<span data-ttu-id="0692f-115">在任何 Microsoft 標準支援程式或服務下，不支援本文中提供的範例指令碼。</span><span class="sxs-lookup"><span data-stu-id="0692f-115">The sample scripts provided in this article aren't supported under any Microsoft standard support program or service.</span></span> <span data-ttu-id="0692f-116">範例指令碼係依「現狀」提供，不含任何種類的擔保方式。</span><span class="sxs-lookup"><span data-stu-id="0692f-116">The sample scripts are provided AS IS without warranty of any kind.</span></span> <span data-ttu-id="0692f-117">Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。</span><span class="sxs-lookup"><span data-stu-id="0692f-117">Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose.</span></span> <span data-ttu-id="0692f-118">使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。</span><span class="sxs-lookup"><span data-stu-id="0692f-118">The entire risk arising out of the use or performance of the sample scripts and documentation remains with you.</span></span> <span data-ttu-id="0692f-119">Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。</span><span class="sxs-lookup"><span data-stu-id="0692f-119">In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
   
-## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a><span data-ttu-id="a2129-120">步驟 1：建立 .csv 檔案以建立保留標籤</span><span class="sxs-lookup"><span data-stu-id="a2129-120">Step 1: Create a .csv file for the retention labels</span></span>
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a><span data-ttu-id="0692f-120">步驟 1：建立 .csv 檔案以建立保留標籤</span><span class="sxs-lookup"><span data-stu-id="0692f-120">Step 1: Create a .csv file for the retention labels</span></span>
 
-1. <span data-ttu-id="a2129-121">複製下列用於範本的範例 .csv 檔案，以及用於四個不同保留標籤的範例專案，並將其貼到 Excel 中。</span><span class="sxs-lookup"><span data-stu-id="a2129-121">Copy the following sample .csv file for a template and example entries for four different retention labels, and paste them into Excel.</span></span> 
+1. <span data-ttu-id="0692f-121">複製下列用於範本的範例 .csv 檔案，以及用於四個不同保留標籤的範例專案，並將其貼到 Excel 中。</span><span class="sxs-lookup"><span data-stu-id="0692f-121">Copy the following sample .csv file for a template and example entries for four different retention labels, and paste them into Excel.</span></span> 
 
-2. <span data-ttu-id="a2129-122">資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**</span><span class="sxs-lookup"><span data-stu-id="a2129-122">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+2. <span data-ttu-id="0692f-122">資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**</span><span class="sxs-lookup"><span data-stu-id="0692f-122">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
 
-2. <span data-ttu-id="a2129-123">將範例取代為您自行保留標籤和設定的專案。</span><span class="sxs-lookup"><span data-stu-id="a2129-123">Replace the examples with entries for your own retention labels and settings.</span></span> <span data-ttu-id="a2129-124">如需參數值的詳細資訊，請參閱 [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)。</span><span class="sxs-lookup"><span data-stu-id="a2129-124">For more information about the parameter values, see [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).</span></span>
+2. <span data-ttu-id="0692f-123">將範例取代為您自行保留標籤和設定的專案。</span><span class="sxs-lookup"><span data-stu-id="0692f-123">Replace the examples with entries for your own retention labels and settings.</span></span> <span data-ttu-id="0692f-124">如需參數值的詳細資訊，請參閱 [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)。</span><span class="sxs-lookup"><span data-stu-id="0692f-124">For more information about the parameter values, see [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).</span></span>
 
-3. <span data-ttu-id="a2129-125">將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。</span><span class="sxs-lookup"><span data-stu-id="a2129-125">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="a2129-126">例如：C: \>Scripts\Labels.csv</span><span class="sxs-lookup"><span data-stu-id="a2129-126">For example: C:\>Scripts\Labels.csv</span></span>
+3. <span data-ttu-id="0692f-125">將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。</span><span class="sxs-lookup"><span data-stu-id="0692f-125">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="0692f-126">例如：C: \>Scripts\Labels.csv</span><span class="sxs-lookup"><span data-stu-id="0692f-126">For example: C:\>Scripts\Labels.csv</span></span>
 
   
-<span data-ttu-id="a2129-127">附註：</span><span class="sxs-lookup"><span data-stu-id="a2129-127">Notes:</span></span>
+<span data-ttu-id="0692f-127">附註：</span><span class="sxs-lookup"><span data-stu-id="0692f-127">Notes:</span></span>
 
-- <span data-ttu-id="a2129-p106">如果 .csv 檔案包含的保留標籤與已存在的保留標籤同名，則指令碼會略過建立該保留標籤。不會建立重複的保留標籤。</span><span class="sxs-lookup"><span data-stu-id="a2129-p106">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
+- <span data-ttu-id="0692f-p106">如果 .csv 檔案包含的保留標籤與已存在的保留標籤同名，則指令碼會略過建立該保留標籤。不會建立重複的保留標籤。</span><span class="sxs-lookup"><span data-stu-id="0692f-p106">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
     
-- <span data-ttu-id="a2129-130">請勿變更或重新命名所提供範例 .csv 檔案中的欄標題，否則指令碼將會失敗。</span><span class="sxs-lookup"><span data-stu-id="a2129-130">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
+- <span data-ttu-id="0692f-130">請勿變更或重新命名所提供範例 .csv 檔案中的欄標題，否則指令碼將會失敗。</span><span class="sxs-lookup"><span data-stu-id="0692f-130">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-### <a name="sample-csv-file-for-retention-labels"></a><span data-ttu-id="a2129-131">保留標籤的範例 .csv 檔案</span><span class="sxs-lookup"><span data-stu-id="a2129-131">Sample .csv file for retention labels</span></span>
+### <a name="sample-csv-file-for-retention-labels"></a><span data-ttu-id="0692f-131">保留標籤的範例 .csv 檔案</span><span class="sxs-lookup"><span data-stu-id="0692f-131">Sample .csv file for retention labels</span></span>
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -72,24 +73,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a><span data-ttu-id="a2129-132">步驟 2：建立 .csv 檔案以建立保留標籤原則</span><span class="sxs-lookup"><span data-stu-id="a2129-132">Step 2: Create a .csv file for the retention label policies</span></span>
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a><span data-ttu-id="0692f-132">步驟 2：建立 .csv 檔案以建立保留標籤原則</span><span class="sxs-lookup"><span data-stu-id="0692f-132">Step 2: Create a .csv file for the retention label policies</span></span>
 
-1. <span data-ttu-id="a2129-133">複製下列用於範本的範例 .csv 檔案，以及用於三個不同保留標籤原則的範例專案，並將其貼到 Excel 中。</span><span class="sxs-lookup"><span data-stu-id="a2129-133">Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel.</span></span> 
+1. <span data-ttu-id="0692f-133">複製下列用於範本的範例 .csv 檔案，以及用於三個不同保留標籤原則的範例專案，並將其貼到 Excel 中。</span><span class="sxs-lookup"><span data-stu-id="0692f-133">Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel.</span></span> 
 
-2. <span data-ttu-id="a2129-134">資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**</span><span class="sxs-lookup"><span data-stu-id="a2129-134">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+2. <span data-ttu-id="0692f-134">資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**</span><span class="sxs-lookup"><span data-stu-id="0692f-134">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
 
-2. <span data-ttu-id="a2129-135">將範例取代為您自行保留標籤原則和其設定的專案。</span><span class="sxs-lookup"><span data-stu-id="a2129-135">Replace the examples with entries for your own retention label policies and their settings.</span></span> <span data-ttu-id="a2129-136">如需此 Cmdlet 參數值的詳細資訊，請參閱 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)。</span><span class="sxs-lookup"><span data-stu-id="a2129-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).</span></span>
+2. <span data-ttu-id="0692f-135">將範例取代為您自行保留標籤原則和其設定的專案。</span><span class="sxs-lookup"><span data-stu-id="0692f-135">Replace the examples with entries for your own retention label policies and their settings.</span></span> <span data-ttu-id="0692f-136">如需此 Cmdlet 參數值的詳細資訊，請參閱 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)。</span><span class="sxs-lookup"><span data-stu-id="0692f-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).</span></span>
 
-3. <span data-ttu-id="a2129-137">將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。</span><span class="sxs-lookup"><span data-stu-id="a2129-137">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="a2129-138">例如：`<path>Policies.csv`</span><span class="sxs-lookup"><span data-stu-id="a2129-138">For example: `<path>Policies.csv`</span></span>
+3. <span data-ttu-id="0692f-137">將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。</span><span class="sxs-lookup"><span data-stu-id="0692f-137">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="0692f-138">例如：`<path>Policies.csv`</span><span class="sxs-lookup"><span data-stu-id="0692f-138">For example: `<path>Policies.csv`</span></span>
 
 
-<span data-ttu-id="a2129-139">附註：</span><span class="sxs-lookup"><span data-stu-id="a2129-139">Notes:</span></span>
+<span data-ttu-id="0692f-139">附註：</span><span class="sxs-lookup"><span data-stu-id="0692f-139">Notes:</span></span>
   
-- <span data-ttu-id="a2129-p109">如果 .csv 檔案包含的保留標籤原則與已存在的保留標籤原則同名，則指令碼會略過建立該保留標籤原則。不會建立重複的保留標籤原則。</span><span class="sxs-lookup"><span data-stu-id="a2129-p109">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
+- <span data-ttu-id="0692f-p109">如果 .csv 檔案包含的保留標籤原則與已存在的保留標籤原則同名，則指令碼會略過建立該保留標籤原則。不會建立重複的保留標籤原則。</span><span class="sxs-lookup"><span data-stu-id="0692f-p109">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
     
-- <span data-ttu-id="a2129-142">請勿變更或重新命名所提供範例 .csv 檔案中的欄標題，否則指令碼將會失敗。</span><span class="sxs-lookup"><span data-stu-id="a2129-142">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
+- <span data-ttu-id="0692f-142">請勿變更或重新命名所提供範例 .csv 檔案中的欄標題，否則指令碼將會失敗。</span><span class="sxs-lookup"><span data-stu-id="0692f-142">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-### <a name="sample-csv-file-for-retention-policies"></a><span data-ttu-id="a2129-143">保留原則的範例 .csv 檔案</span><span class="sxs-lookup"><span data-stu-id="a2129-143">Sample .csv file for retention policies</span></span>
+### <a name="sample-csv-file-for-retention-policies"></a><span data-ttu-id="0692f-143">保留原則的範例 .csv 檔案</span><span class="sxs-lookup"><span data-stu-id="0692f-143">Sample .csv file for retention policies</span></span>
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -98,21 +99,21 @@ Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
 Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
-## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="a2129-144">步驟 3：建立 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="a2129-144">Step 3: Create the PowerShell script</span></span>
+## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="0692f-144">步驟 3：建立 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="0692f-144">Step 3: Create the PowerShell script</span></span>
 
-1. <span data-ttu-id="a2129-145">將以下 PowerShell 指令碼複製並貼到 [記事本] 中。</span><span class="sxs-lookup"><span data-stu-id="a2129-145">Copy and paste the following PowerShell script into Notepad.</span></span>
+1. <span data-ttu-id="0692f-145">將以下 PowerShell 指令碼複製並貼到 [記事本] 中。</span><span class="sxs-lookup"><span data-stu-id="0692f-145">Copy and paste the following PowerShell script into Notepad.</span></span>
 
-2. <span data-ttu-id="a2129-146">將檔案使用 **.ps1** 的副檔名儲存在容易找到的位置。</span><span class="sxs-lookup"><span data-stu-id="a2129-146">Save the file by using a file name extension of **.ps1** in a location that's easy to find.</span></span> <span data-ttu-id="a2129-147">例如：`<path>CreateRetentionSchedule.ps1`</span><span class="sxs-lookup"><span data-stu-id="a2129-147">For example: `<path>CreateRetentionSchedule.ps1`</span></span>
+2. <span data-ttu-id="0692f-146">將檔案使用 **.ps1** 的副檔名儲存在容易找到的位置。</span><span class="sxs-lookup"><span data-stu-id="0692f-146">Save the file by using a file name extension of **.ps1** in a location that's easy to find.</span></span> <span data-ttu-id="0692f-147">例如：`<path>CreateRetentionSchedule.ps1`</span><span class="sxs-lookup"><span data-stu-id="0692f-147">For example: `<path>CreateRetentionSchedule.ps1`</span></span>
 
-<span data-ttu-id="a2129-148">附註：</span><span class="sxs-lookup"><span data-stu-id="a2129-148">Notes:</span></span>
+<span data-ttu-id="0692f-148">附註：</span><span class="sxs-lookup"><span data-stu-id="0692f-148">Notes:</span></span>
 
-- <span data-ttu-id="a2129-149">指令碼會提示您提供前兩個步驟建立的兩個來源檔案：</span><span class="sxs-lookup"><span data-stu-id="a2129-149">The script prompts you to provide the two source files that you created in the previous two steps:</span></span>
-    - <span data-ttu-id="a2129-150">如果您沒有指定要建立保留標籤的來源檔案，指令碼會繼續開啟，以建立保留標籤原則。</span><span class="sxs-lookup"><span data-stu-id="a2129-150">If you don't specify the source file to create the retention labels, the script moves on to create the retention label policies.</span></span> 
-    - <span data-ttu-id="a2129-151">如果您沒有指定來源檔案來建立保留標籤原則，指令碼只會建立保留標籤。</span><span class="sxs-lookup"><span data-stu-id="a2129-151">If you don't specify the source file to create the retention label policies, the script creates the retention labels only.</span></span>
+- <span data-ttu-id="0692f-149">指令碼會提示您提供前兩個步驟建立的兩個來源檔案：</span><span class="sxs-lookup"><span data-stu-id="0692f-149">The script prompts you to provide the two source files that you created in the previous two steps:</span></span>
+    - <span data-ttu-id="0692f-150">如果您沒有指定要建立保留標籤的來源檔案，指令碼會繼續開啟，以建立保留標籤原則。</span><span class="sxs-lookup"><span data-stu-id="0692f-150">If you don't specify the source file to create the retention labels, the script moves on to create the retention label policies.</span></span> 
+    - <span data-ttu-id="0692f-151">如果您沒有指定來源檔案來建立保留標籤原則，指令碼只會建立保留標籤。</span><span class="sxs-lookup"><span data-stu-id="0692f-151">If you don't specify the source file to create the retention label policies, the script creates the retention labels only.</span></span>
 
-- <span data-ttu-id="a2129-152">指令碼會產生記錄檔，記錄執行的每個動作以及動作是否成功或失敗。</span><span class="sxs-lookup"><span data-stu-id="a2129-152">The script generates a log file that records each action it took and whether the action succeeded or failed.</span></span> <span data-ttu-id="a2129-153">如需相關指示，請參閱最後一個步驟，瞭解如何找出此記錄檔。</span><span class="sxs-lookup"><span data-stu-id="a2129-153">See the final step for instructions how to locate this log file.</span></span>
+- <span data-ttu-id="0692f-152">指令碼會產生記錄檔，記錄執行的每個動作以及動作是否成功或失敗。</span><span class="sxs-lookup"><span data-stu-id="0692f-152">The script generates a log file that records each action it took and whether the action succeeded or failed.</span></span> <span data-ttu-id="0692f-153">如需相關指示，請參閱最後一個步驟，瞭解如何找出此記錄檔。</span><span class="sxs-lookup"><span data-stu-id="0692f-153">See the final step for instructions how to locate this log file.</span></span>
 
-### <a name="powershell-script"></a><span data-ttu-id="a2129-154">PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="a2129-154">PowerShell script</span></span>
+### <a name="powershell-script"></a><span data-ttu-id="0692f-154">PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="0692f-154">PowerShell script</span></span>
 
 ```Powershell
 <#
@@ -734,29 +735,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-run-the-powershell-script"></a><span data-ttu-id="a2129-155">步驟 4：執行 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="a2129-155">Step 4: Run the PowerShell script</span></span>
+## <a name="step-4-run-the-powershell-script"></a><span data-ttu-id="0692f-155">步驟 4：執行 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="0692f-155">Step 4: Run the PowerShell script</span></span>
 
-<span data-ttu-id="a2129-156">首先，[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="a2129-156">First, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).</span></span>
+<span data-ttu-id="0692f-156">首先，[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="0692f-156">First, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).</span></span>
 
-<span data-ttu-id="a2129-157">然後，執行建立並發佈保留標籤的指令碼：</span><span class="sxs-lookup"><span data-stu-id="a2129-157">Then, run the script that creates and publishes the retention labels:</span></span>
+<span data-ttu-id="0692f-157">然後，執行建立並發佈保留標籤的指令碼：</span><span class="sxs-lookup"><span data-stu-id="0692f-157">Then, run the script that creates and publishes the retention labels:</span></span>
   
-1. <span data-ttu-id="a2129-158">在安全性與合規性中心 PowerShell 工作階段中，輸入路徑，後面跟著字元 `.\` 和指令碼的檔案名稱，然後按 ENTER 以執行指令碼。</span><span class="sxs-lookup"><span data-stu-id="a2129-158">In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script.</span></span> <span data-ttu-id="a2129-159">例如：</span><span class="sxs-lookup"><span data-stu-id="a2129-159">For example:</span></span>
+1. <span data-ttu-id="0692f-158">在安全性與合規性中心 PowerShell 工作階段中，輸入路徑，後面跟著字元 `.\` 和指令碼的檔案名稱，然後按 ENTER 以執行指令碼。</span><span class="sxs-lookup"><span data-stu-id="0692f-158">In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script.</span></span> <span data-ttu-id="0692f-159">例如：</span><span class="sxs-lookup"><span data-stu-id="0692f-159">For example:</span></span>
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
     ```
 
-2. <span data-ttu-id="a2129-160">指令碼會提示您輸入前面步驟建立的 .csv 檔案位置。</span><span class="sxs-lookup"><span data-stu-id="a2129-160">The script prompts you for the locations of the .csv files that you created in the previous steps.</span></span> <span data-ttu-id="a2129-161">輸入路徑，後面跟著字元 `.\` 和 .csv 檔案的檔案名稱，然後按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="a2129-161">Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER.</span></span> <span data-ttu-id="a2129-162">例如，針對第一個提示：</span><span class="sxs-lookup"><span data-stu-id="a2129-162">For example, for the first prompt:</span></span>
+2. <span data-ttu-id="0692f-160">指令碼會提示您輸入前面步驟建立的 .csv 檔案位置。</span><span class="sxs-lookup"><span data-stu-id="0692f-160">The script prompts you for the locations of the .csv files that you created in the previous steps.</span></span> <span data-ttu-id="0692f-161">輸入路徑，後面跟著字元 `.\` 和 .csv 檔案的檔案名稱，然後按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="0692f-161">Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER.</span></span> <span data-ttu-id="0692f-162">例如，針對第一個提示：</span><span class="sxs-lookup"><span data-stu-id="0692f-162">For example, for the first prompt:</span></span>
     
     ```powershell
     <path>.\Labels.csv
     ```
 
-## <a name="step-5-view-the-log-file-with-the-results"></a><span data-ttu-id="a2129-163">步驟 5：檢視記錄檔與結果</span><span class="sxs-lookup"><span data-stu-id="a2129-163">Step 5: View the log file with the results</span></span>
+## <a name="step-5-view-the-log-file-with-the-results"></a><span data-ttu-id="0692f-163">步驟 5：檢視記錄檔與結果</span><span class="sxs-lookup"><span data-stu-id="0692f-163">Step 5: View the log file with the results</span></span>
 
-<span data-ttu-id="a2129-164">使用指令碼建立的記錄檔來檢查結果，並找出任何需要解決的失敗。</span><span class="sxs-lookup"><span data-stu-id="a2129-164">Use the log file that the script created to check the results and identify any failures that need resolving.</span></span>
+<span data-ttu-id="0692f-164">使用指令碼建立的記錄檔來檢查結果，並找出任何需要解決的失敗。</span><span class="sxs-lookup"><span data-stu-id="0692f-164">Use the log file that the script created to check the results and identify any failures that need resolving.</span></span>
 
-<span data-ttu-id="a2129-165">您可以在下列位置找到記錄檔，但範例檔案名稱的位數可能會有所差異。</span><span class="sxs-lookup"><span data-stu-id="a2129-165">You can find the log file at the following location, although the digits in the example file name vary.</span></span>
+<span data-ttu-id="0692f-165">您可以在下列位置找到記錄檔，但範例檔案名稱的位數可能會有所差異。</span><span class="sxs-lookup"><span data-stu-id="0692f-165">You can find the log file at the following location, although the digits in the example file name vary.</span></span>
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt

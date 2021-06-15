@@ -26,26 +26,26 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: 深入瞭解在使用者的裝置遺失或遭盜時，可在 Microsoft 365 for business 以保護工作檔的設定。
-ms.openlocfilehash: 6b10ce73d3ebe936d3878724783d6076455a3552
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b640642d7f6ed9c83376f4cb2a0cdaa610e8159b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578240"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925292"
 ---
-# <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a><span data-ttu-id="21e95-103">在行動裝置遺失或遭竊時保護工作檔案</span><span class="sxs-lookup"><span data-stu-id="21e95-103">Protect work files when a mobile device is lost or stolen</span></span>
+# <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a><span data-ttu-id="1f3bb-103">在行動裝置遺失或遭竊時保護工作檔案</span><span class="sxs-lookup"><span data-stu-id="1f3bb-103">Protect work files when a mobile device is lost or stolen</span></span>
 
-<span data-ttu-id="21e95-104">原則設定會判斷該自動採取什麼措施來保護遺失或遭竊的裝置。</span><span class="sxs-lookup"><span data-stu-id="21e95-104">The policy settings determine what happens automatically to protect a device that is lost or stolen.</span></span> <span data-ttu-id="21e95-105">建議您在設定時接受預設值，以建立適用于所有使用者的 Android、iOS 和 Windows 10 應用程式原則。</span><span class="sxs-lookup"><span data-stu-id="21e95-105">We recommend that you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users.</span></span> <span data-ttu-id="21e95-106">設定完成後，您可以建立更多原則。</span><span class="sxs-lookup"><span data-stu-id="21e95-106">You can create more policies after setup completes.</span></span>
+<span data-ttu-id="1f3bb-104">原則設定會判斷該自動採取什麼措施來保護遺失或遭竊的裝置。</span><span class="sxs-lookup"><span data-stu-id="1f3bb-104">The policy settings determine what happens automatically to protect a device that is lost or stolen.</span></span> <span data-ttu-id="1f3bb-105">建議您在設定時接受預設值，以建立適用于所有使用者的 Android、iOS 和 Windows 10 應用程式原則。</span><span class="sxs-lookup"><span data-stu-id="1f3bb-105">We recommend that you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users.</span></span> <span data-ttu-id="1f3bb-106">設定完成後，您可以建立更多原則。</span><span class="sxs-lookup"><span data-stu-id="1f3bb-106">You can create more policies after setup completes.</span></span>
   
-## <a name="settings-that-protect-work-files"></a><span data-ttu-id="21e95-107">保護工作檔案的設定</span><span class="sxs-lookup"><span data-stu-id="21e95-107">Settings that protect work files</span></span>
+## <a name="settings-that-protect-work-files"></a><span data-ttu-id="1f3bb-107">保護工作檔案的設定</span><span class="sxs-lookup"><span data-stu-id="1f3bb-107">Settings that protect work files</span></span>
 
-<span data-ttu-id="21e95-108">以下設定可用來在使用者的裝置遺失或遭竊時保護工作檔案：</span><span class="sxs-lookup"><span data-stu-id="21e95-108">The following settings are available to protect work files if a user's device is lost or stolen:</span></span>
-  
-|||
+<span data-ttu-id="1f3bb-108">以下設定可用來在使用者的裝置遺失或遭竊時保護工作檔案：</span><span class="sxs-lookup"><span data-stu-id="1f3bb-108">The following settings are available to protect work files if a user's device is lost or stolen:</span></span>
+
+
+|<span data-ttu-id="1f3bb-109">設定</span><span class="sxs-lookup"><span data-stu-id="1f3bb-109">Setting</span></span>  <br/> |<span data-ttu-id="1f3bb-110">描述</span><span class="sxs-lookup"><span data-stu-id="1f3bb-110">Description</span></span>  <br/> |
 |:-----|:-----|
-|<span data-ttu-id="21e95-109">設定</span><span class="sxs-lookup"><span data-stu-id="21e95-109">Setting</span></span>  <br/> |<span data-ttu-id="21e95-110">描述</span><span class="sxs-lookup"><span data-stu-id="21e95-110">Description</span></span>  <br/> |
-|<span data-ttu-id="21e95-111">在下列天數之後刪除非作用中裝置上的工作檔案</span><span class="sxs-lookup"><span data-stu-id="21e95-111">Delete work files from an inactive device after this many days</span></span>  <br/> |<span data-ttu-id="21e95-112">如果裝置沒有用於您在此處指定的天數，系統就會自動刪除該裝置上儲存的任何工作檔。</span><span class="sxs-lookup"><span data-stu-id="21e95-112">If a device isn't used for the number of days that you specify here, any work files stored on the device are automatically deleted.</span></span>  <br/> |
-|<span data-ttu-id="21e95-113">強制使用者將所有工作檔案儲存到商務用 OneDrive</span><span class="sxs-lookup"><span data-stu-id="21e95-113">Force users to save all work files to OneDrive for Business</span></span>  <br/> |<span data-ttu-id="21e95-114">若此設定為 [**開啟**]，則只有商務用 OneDrive 工作檔案的可用儲存位置。</span><span class="sxs-lookup"><span data-stu-id="21e95-114">If this setting is **On**, the only available save location for work files is OneDrive for Business.</span></span>  <br/> |
-|<span data-ttu-id="21e95-115">加密工作檔案</span><span class="sxs-lookup"><span data-stu-id="21e95-115">Encrypt work files</span></span>  <br/> |<span data-ttu-id="21e95-116">將此設定保持 **開啟** ，讓工作檔案受到加密保護。</span><span class="sxs-lookup"><span data-stu-id="21e95-116">Keep this setting **On** so that work files are protected by encryption.</span></span> <span data-ttu-id="21e95-117">即使裝置遺失或被盜，任何人都無法讀取您的公司資料。</span><span class="sxs-lookup"><span data-stu-id="21e95-117">Even if the device is lost or stolen, no one can read your company data.</span></span>  <br/> |
+|<span data-ttu-id="1f3bb-111">在下列天數之後刪除非作用中裝置上的工作檔案</span><span class="sxs-lookup"><span data-stu-id="1f3bb-111">Delete work files from an inactive device after this many days</span></span>  <br/> |<span data-ttu-id="1f3bb-112">如果裝置沒有用於您在此處指定的天數，系統就會自動刪除該裝置上儲存的任何工作檔。</span><span class="sxs-lookup"><span data-stu-id="1f3bb-112">If a device isn't used for the number of days that you specify here, any work files stored on the device are automatically deleted.</span></span>  <br/> |
+|<span data-ttu-id="1f3bb-113">強制使用者將所有工作檔案儲存到商務用 OneDrive</span><span class="sxs-lookup"><span data-stu-id="1f3bb-113">Force users to save all work files to OneDrive for Business</span></span>  <br/> |<span data-ttu-id="1f3bb-114">若此設定為 [**開啟**]，則只有商務用 OneDrive 工作檔案的可用儲存位置。</span><span class="sxs-lookup"><span data-stu-id="1f3bb-114">If this setting is **On**, the only available save location for work files is OneDrive for Business.</span></span>  <br/> |
+|<span data-ttu-id="1f3bb-115">加密工作檔案</span><span class="sxs-lookup"><span data-stu-id="1f3bb-115">Encrypt work files</span></span>  <br/> |<span data-ttu-id="1f3bb-116">將此設定保持 **開啟** ，讓工作檔案受到加密保護。</span><span class="sxs-lookup"><span data-stu-id="1f3bb-116">Keep this setting **On** so that work files are protected by encryption.</span></span> <span data-ttu-id="1f3bb-117">即使裝置遺失或被盜，任何人都無法讀取您的公司資料。</span><span class="sxs-lookup"><span data-stu-id="1f3bb-117">Even if the device is lost or stolen, no one can read your company data.</span></span>  <br/> |
    
 

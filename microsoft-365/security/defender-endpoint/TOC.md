@@ -390,7 +390,7 @@
 ##### [調查裝置](investigate-machines.md)
 ##### [調查 IP 位址](investigate-ip.md)
 ##### [調查網域](investigate-domain.md)
-###### [調查正向 Proxy 背後發生的連線事件](investigate-behind-proxy.md)。
+###### [調查正向 Proxy 背後發生的連線事件](investigate-behind-proxy.md)
 ##### [調查使用者帳戶](investigate-user.md)
  
 #### [裝置清單]()
