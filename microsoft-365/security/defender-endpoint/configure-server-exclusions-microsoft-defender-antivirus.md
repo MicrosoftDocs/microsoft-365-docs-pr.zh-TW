@@ -6,26 +6,25 @@ description: Windows伺服器包含根據伺服器角色的自動排除。 您�
 keywords: 排除、伺服器、自動排除、自動、自訂、掃描 Microsoft Defender 防毒軟體
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
-ms.technology: mde
-ms.date: 02/10/2021
 ms.topic: article
-ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.custom: nextgen
+ms.date: 02/10/2021
+ms.openlocfilehash: 31d5c22d11a28c9604b2be3145ebd46715a6e5b3
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274757"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925512"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>設定 Windows 伺服器上的 Microsoft Defender 防毒軟體排除
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定 Microsoft Defender 以 Office 365 和保護機密資料，以防範網路釣魚、惡意程式碼和其他威脅。
-ms.openlocfilehash: 4b5142efbf4392f017cd9b96f6a9c36ef2000bb7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a995063cef6fdc42ad62079d49d58edc9d07b52c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245137"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924312"
 ---
 # <a name="increase-threat-protection"></a>加強威脅防護
 
@@ -79,10 +79,10 @@ ms.locfileid: "52245137"
 
 5. 針對規則套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
 
-6. 選取 ****[儲存]。
+6. 選取 **[儲存]**。
 
-|設定|開啟 Office 檔案的附件之前警告使用者||
-|---|---|---|
+|設定|開啟 Office 檔案的附件之前警告使用者|
+|---|---|
 |名稱|反內部的勒索軟體規則：警告使用者|
 |將此規則套用至 if。 . .|任何附件。 . . 副檔名符合。 . .|
 |指定字詞或片語|新增下列檔案類型：  <br/> .docm、xlsm、sltm、xla、xlam、xll、pptm、potm、ppam、ppsm、sldm|
@@ -111,7 +111,7 @@ ms.locfileid: "52245137"
 
 5. 套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
 
-6. 選取 ****[儲存]。
+6. 選取 **[儲存]**。
 
 |設定|開啟 Office 檔案的附件之前警告使用者|
 |---|---|
@@ -207,7 +207,7 @@ ms.locfileid: "52245137"
 
 2. 在 [**電子郵件以外套用至內容的設定**] 底下，選取 [ **Microsoft 365 Apps 企業版]，Office iOS 和 Android**。
 
-3. 選取 ****[儲存]。
+3. 選取 **[儲存]**。
 
 若要建立新的原則針對您網域中的所有收件者：
 
@@ -215,7 +215,7 @@ ms.locfileid: "52245137"
 
 2. 套用下表所列的設定。
 
-3. 選取 ****[儲存]。
+3. 選取 **[儲存]**。
 
 |設定或選項|建議的設定|
 |---|---|

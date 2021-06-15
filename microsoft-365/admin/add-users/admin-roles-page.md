@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 系統管理員角色會對應至商務職能，並提供在系統管理中心執行特定工作的許可權。 例如，服務系統管理員向 Microsoft 開啟支援票證。
+ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706199"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924560"
 ---
 # <a name="get-started-with-the-roles-page"></a>「角色」頁面快速入門
 
@@ -41,11 +41,12 @@ ms.locfileid: "52706199"
 
 ![篩選或匯入系統管理員角色](../../media/admin-role-page-options.png)
 
-|||
-|:-----|:-----|
-|  <br/> |使用 [ **匯出系統管理員] 清單** 可取得組織中所有系統管理員使用者的完整清單。 清單會儲存在 Excel .csv 檔案中。   <br/> |
-|  <br/> |使用 [ **搜尋** ] 搜尋系統管理員角色，並查看指派給該角色的使用者。   <br/> |
-|  <br/> |使用 **Filter** 變更所顯示之系統管理員角色的視圖。   <br/> |
+- 使用 [匯出系統管理員] 清單可取得組織中所有系統管理員使用者的完整清單。 清單會儲存在 Excel .csv 檔案中。
+
+- 使用 [搜尋] 搜尋系統管理員角色，並查看指派給該角色的使用者。
+
+- 使用 Filter 變更所顯示之系統管理員角色的視圖。
+
 
 ## <a name="get-the-most-out-of-the-roles"></a>充分利用角色
 

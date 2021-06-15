@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 深入瞭解商務協助計畫，以及它如何協助您的組織改進 Microsoft 365 商務的協助和使用。
-ms.openlocfilehash: ee0884ec1c95795a6a7847dfeaffdfcb2fac4beb
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768978"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924584"
 ---
 # <a name="business-assist-for-microsoft-365"></a>適用於 Microsoft 365 的 Business Assist
 
@@ -33,7 +33,7 @@ ms.locfileid: "52768978"
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|**快速啟動並運作** <br> 與小型企業專家合作，以設定可保護您公司的 Microsoft 365 功能，並讓其具備專業水準的外觀。 |**讓您公司內的每個人都具備** <br> 您的所有員工，而不只是負責人員，可以直接前往 Microsoft 專家，以取得更快的持續支援。 |**開啟業務潛力** <br> 深入瞭解未充分利用的功能，並取得如何讓訂閱獲得更多價值的建議。 |
+|與小型企業專家合作，以設定可保護您公司的 Microsoft 365 功能，並讓其具備專業水準的外觀。 |您的所有員工，而不只是負責人員，可以直接前往 Microsoft 專家，以取得更快的持續支援。 |深入瞭解未充分利用的功能，並取得如何讓訂閱獲得更多價值的建議。 |
 |**加速您的雲端遷移** <br> 取得個人化協助將您目前的所有檔案移 (電子郵件、儲存、檔及通訊) Microsoft 365。 |**輕鬆存取專家** <br> 我們的小組會選擇您最後一次的交談。 沒有可追蹤的票證、沒有機器人、沒有長期等候時間。 |**保持最新狀態** <br> 定期檢查，可協助您在新增服務功能時保持最新功能，以及貴公司的需求演變。 |
 | | | |
 

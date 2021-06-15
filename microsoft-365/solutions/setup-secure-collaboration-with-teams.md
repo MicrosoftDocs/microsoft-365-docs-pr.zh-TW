@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 瞭解如何在 Teams 中設定安全的內容共同作業，以根據其敏感度來保護您的資料。
-ms.openlocfilehash: 12c8bfd2c7c59e1cc4dcf149e394d2c7dc456530
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7a5b8f58cc5e4a23d2d143419f99ecdd87b949c1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539056"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924356"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>使用 Microsoft 365 和 Microsoft Teams 設定安全協同作業
 
@@ -178,7 +178,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Teams 和 SharePoint 中
 |:---|:---|
 |![設定和自訂小組訓練圖示](../media/set-up-customize-team-training.png)<br>**[設定和自訂您的小組](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint 共用及同步訓練圖示](../media/sharepoint-share-sync-training.png)<br>**[共用及同步處理](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams 上傳及尋找檔案訓練圖示](../media/smc-teams-upload-find-files-training.png)<br>**[Upload 及尋找檔](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![在小組和頻道中共同作業圖示](../media/teams-collaborate-channels-training.png)<br>**[小組和頻道共同作業](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![在小組和頻道中共同作業圖示](../media/teams-collaborate-channels-training.png)<br>**[小組和頻道共同作業](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>插圖
 

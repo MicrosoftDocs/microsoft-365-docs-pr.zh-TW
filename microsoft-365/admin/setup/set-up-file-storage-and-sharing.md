@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 瞭解如何使用 OneDrive 和小組網站來 Microsoft 365 儲存區和 Microsoft 365 檔案共用。
-ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635639"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924608"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在 Microsoft 365 中設定檔儲存與共享
 
@@ -56,12 +56,12 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
 ![顯示 Microsoft 365 產品如何使用 OneDrive 或小組網站的圖表](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
-以下是當您同時使用 OneDrive 和小組網站時，在每個位置中儲存內容的建議：
+以下是當您同時使用 OneDrive 和小組網站時，在每個位置中儲存內容的建議：<br/>
+
   
-||||
+|儲存位置|其用途|在這裡儲存的專案|
 |:-----|:-----|:-----|
-|**儲存位置** <br/> |**功能** <br/> |**在這裡儲存的專案** <br/> |
-|**OneDrive** <br/> |將內容儲存在 OneDrive 中，就像是在您的電腦上儲存檔案;任何人都無法輕易存取。  <br/> 如需詳細資訊，請參閱[什麼是商務用 OneDrive？](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |其他小組成員不需要定期共同作業或存取的商務檔。  <br/> |
+|**OneDrive** |將內容儲存在 OneDrive 中，就像是在您的電腦上儲存檔案;任何人都無法輕易存取。<br/> 如需詳細資訊，請參閱[什麼是商務用 OneDrive？](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |其他小組成員不需要定期共同作業或存取的商務檔。<br/> |
 |**SharePoint 小組網站** <br/> |協作。 當您建立 Microsoft 365 群組時 (例如，在 [Microsoft 365 系統管理中心] 中的 [Outlook]，或透過 Microsoft Teams) 建立團隊時，會為該群組建立 SharePoint 小組網站。 同樣地，當您從 SharePoint 首頁或新的 SharePoint 系統管理中心建立新的 SharePoint 小組網站時，也會建立 Microsoft 365 群組。 如需詳細資訊，請參閱[什麼是 SharePoint 小組網站？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)並[在 Online SharePoint 中建立小組網站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |具有共用擁有權的檔案。 建議您組織中每個工作單位使用不同的小組網站。 例如，若要將個人和財務檔存放在小型小組，請建立個別小組網站。  <br/> |
 
 > [!NOTE]

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 在本文中，您將瞭解可用於監視及維護 Microsoft 365 連線的工具和技術。
-ms.openlocfilehash: dfba158085e6642856049d7894b4156f42353236
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8fa0820cf9b7778001be5184041e5c96930a29dd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538804"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924196"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>監視 Microsoft 365 連線能力
 
@@ -33,7 +33,7 @@ ms.locfileid: "52538804"
   
 ## <a name="monitoring-microsoft-365-connectivity"></a>監控 Microsoft 365 連線能力
 
-|||
+|監控類型 |描述 |
 |:-----|:-----|
 |**取得新 Microsoft 365 端點的通知** <br/> |如果您正在[管理 Microsoft 365 端點](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)，當我們發佈新的端點時，您將會收到通知，您可以使用您最愛的 rss 讀取器訂閱 rss 摘要。 以下是如何透過[Outlook 訂閱](https://go.microsoft.com/fwlink/p/?LinkId=532416)，也可以[讓 RSS 摘要更新以電子郵件傳送給您](https://go.microsoft.com/fwlink/p/?LinkId=532417)。  <br/> |
 |**使用 System Center 監視 Microsoft 365** <br/> |如果您使用的是 Microsoft System Center，您可以下載[System Center 管理元件，以供 Office 365](https://www.microsoft.com/download/details.aspx?id=43708)開始監視 Microsoft 365 今天。 如需詳細的指導，請參閱管理元件作業指南。 <br/> |

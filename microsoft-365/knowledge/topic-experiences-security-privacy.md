@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題安全性和隱私權
-ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114059"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925488"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主題安全性和隱私權
 
@@ -57,6 +57,10 @@ ms.locfileid: "52114059"
 |檔案|僅具有來源內容存取權限的使用者可以看到檔案。|
 |頁面|僅具有來源內容存取權限的使用者可以看到頁面。|
 |網站|僅具有來源內容存取權限的使用者可以看到網站。|
+
+## <a name="users-personal-and-private-data"></a>使用者的個人及私人資料
+
+Viva 主題只會在您指定的 SharePoint 網站中探索主題。 不會包含使用者的個人儲存區，例如個人郵件或 OneDrive。
 
 ## <a name="best-practices"></a>最佳做法
 

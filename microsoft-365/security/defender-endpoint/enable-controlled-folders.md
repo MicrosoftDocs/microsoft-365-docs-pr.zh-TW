@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: ed0859e6018d171b48aac83d394eacbd2163c37b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861217"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924680"
 ---
 # <a name="enable-controlled-folder-access"></a>啟用受控資料夾存取權
 
@@ -50,7 +50,7 @@ ms.locfileid: "52861217"
 * Microsoft Defender 防毒軟體 **設定清單的本機系統管理員合併行為**
 * System Center Endpoint Protection **允許使用者新增排除和覆寫**
 
-如需停用本機清單合併的詳細資訊，請參閱 [防止或允許使用者從本機修改 Microsoft DEFENDER AV 原則設定](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
+如需停用本機清單合併的詳細資訊，請參閱 [防止或允許使用者從本機修改 Microsoft DEFENDER AV 原則設定](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)。
 
 ## <a name="windows-security-app"></a>Windows 安全性應用程式
 
@@ -92,7 +92,7 @@ ms.locfileid: "52861217"
 
 ## <a name="mobile-device-management-mdm"></a>移動裝置管理 (MDM) 
 
-使用 [/Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
+使用 [/Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 

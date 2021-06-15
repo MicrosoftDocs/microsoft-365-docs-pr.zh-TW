@@ -4,27 +4,25 @@ description: 您可以從掃描中排除檔案（如果這些檔案已由特定�
 keywords: Microsoft Defender 防毒軟體、處理、排除、檔案、掃描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 2fdc646cf616ff6a6fa36a83be3d2b1dd0432fbe
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 0470f4f03ba5fd6fc768a1e652f51b8c44207107
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274603"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925548"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>設定處理常式開啟之檔案的排除專案
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**

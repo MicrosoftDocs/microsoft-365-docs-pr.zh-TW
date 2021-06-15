@@ -1,6 +1,6 @@
 ---
-title: 執行及自訂排程和隨選掃描
-description: 在您的網路上，自訂和啟動端點的 Microsoft Defender 防毒軟體掃描。
+title: 執行及自訂排程及隨選的掃描。
+description: 在網路上的端點上自訂和發起 Microsoft Defender 防毒軟體掃描
 keywords: 掃描、排程、自訂、排除、排除檔案、修正、掃描結果、隔離、移除威脅、快速掃描、完整 Microsoft Defender 防毒軟體掃描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 31dbfa2ac6d5537f6d42c0bad612be5ef059368d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bce3fe1b6490803cb571a1a8a2387c19cc589114
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275273"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926232"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>自訂、啟動及審閱 Microsoft Defender 防毒軟體掃描和修正的結果
 

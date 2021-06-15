@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，以便您的服務（如電子郵件和商務用 Skype 線上）使用您自己的功能變數名稱。
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683124"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924500"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
@@ -66,18 +66,17 @@ ms.locfileid: "52683124"
   
 **如果您建立 TXT 記錄，請使用以下值：**
     
-|||||
+
+|記錄類型<br/> |別名或主機名稱 <br/> |值 <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**Record Type** (記錄類型) <br/> |**Alias** (別名) 或 **Host Name** (主機名稱) <br/> |**Value** (值) <br/> |**TTL** <br/> |
 |TXT  <br/> |請執行下列其中一項操作：輸入 **@** ，或是保留欄位空白，或輸入您的網域名稱。  <br/> > [!NOTE]> 不同的 DNS 主機對此欄位有不同的要求。           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。  <br/> |
    
 **如果您建立 MX 記錄，請使用以下值：**
     
-||||||
+|記錄類型|別名或主機名稱|Value (值)|Priority (優先順序)|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type** (記錄類型)|**Alias** (別名) 或 **Host Name** (主機名稱)|**Value** (值)|**Priority** (優先順序)|**TTL**|
-|MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
+|MX|輸入 **@** 或您的網域名稱。 |MS= ms *Xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx* **附注：** 這是一個範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
    
 ### <a name="save-the-record"></a>儲存記錄
 
@@ -110,13 +109,12 @@ ms.locfileid: "52683124"
 1. 在網域註冊機構網站上尋找區域，您可以在其中變更您網域的名稱伺服器，或是您可以使用自訂名稱伺服器的區域。
     
 2. 建立名稱伺服器記錄，或編輯現有的名稱伺服器記錄，使其符合下列值：
-    
-|||
-|:-----|:-----|
-|First nameserver (第一個名稱伺服器)  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|Second nameserver (第二個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Third nameserver (第三個名稱伺服器)  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|Fourth nameserver (第四個名稱伺服器)  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - 第一個名稱伺服器： ns1.bdm.microsoftonline.com
+    - 第二個名稱伺服器： ns2.bdm.microsoftonline.com
+    - 協力廠商名稱： ns3.bdm.microsoftonline.com
+    - 第四名稱伺服器名稱： ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > 最好新增四筆記錄，但如果您的註冊機構只支援二個，請新增 **ns1.bdm.microsoftonline.com** 及 **ns2.bdm.microsoftonline.com**。 
@@ -133,12 +131,10 @@ ms.locfileid: "52683124"
 1. 在網域註冊機構的網站上，找出您可編輯您網域之名稱伺服器的區域。
     
 2. 建立兩筆名稱伺服器記錄，或編輯現有的名稱伺服器記錄，以符合下列值：
+
+   - 第一個名稱伺服器： ns1.dns.partner.microsoftonline.cn
+   - 第二個名稱伺服器： ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|第一個名稱伺服器  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|Second nameserver (第二個名稱伺服器)  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > 您應該使用至少兩個名稱伺服器記錄。 如果有列出任何其他名稱伺服器，您可以將其刪除，或將其變更為 **ns3.dns.partner.microsoftonline.cn** 和 **ns4.dns.partner.microsoftonline.cn**。 
   
@@ -174,7 +170,7 @@ ms.locfileid: "52683124"
    
 8. 如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟9。
     
-9. 選取 ****[儲存]。 
+9. 選取 **[儲存]**。 
     
 此外，您還可以建立 CNAME 記錄，協助客戶找到您的網站。
   
@@ -184,7 +180,7 @@ ms.locfileid: "52683124"
 4.  在 [ **主機名稱或別名** ] 方塊中，輸入 **www**。
 5.  在 [指向 **位址** ] 方塊中，為您的網站輸入 (FQDN) 的完整功能變數名稱。 例如， **contoso.com**。
 6.  如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟6。
-7.  選取 ****[儲存]。
+7.  選取 **[儲存]**。
 
 在將名稱伺服器記錄更新為指向 Microsoft 之後，您的網域安裝已完成。 電子郵件會路由傳送至 Microsoft，而您的網站位址的流量仍會繼續前往您目前的網站主機。 '
     

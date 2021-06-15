@@ -4,28 +4,26 @@ description: 在 Microsoft Defender AV 中，啟用或停用使用者在本機�
 keywords: 本機覆寫、本機原則、群組原則、gpo、鎖定、合併、清單
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 4a35c6717fd7a1834364df32cf5570c83a5b776e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2d23ca6d98d86666d72b75723a2205fcd83b08d7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274517"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924240"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>防止或允許使用者本機修改 Microsoft Defender 防毒軟體原則設定
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**

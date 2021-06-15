@@ -11,13 +11,14 @@ author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
+ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eb7043451c4d80e3eca8b0703703ac6d7a459161
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: ec5cd489cae21b9140463d4ede72813ec014b3bb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302085"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926352"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>如何使用 Microsoft Defender for Endpoint 控制 USB 裝置和其他卸除式媒體
 
@@ -300,7 +301,7 @@ Microsoft Defender for Endpoint 也可以防止 USB 週邊設備在裝置上使�
    > [!div class="mx-imgBorder"]
    > ![建立 endpoint protection 設定檔](images/create-endpoint-protection-profile.png)
 
-4. 按一下 ****[建立]。  
+4. 按一下 **[建立]**。  
 
 5. 針對 **從 USB 執行的未簽署和不受信任的處理常式**，選擇 [ **封鎖**]。
 

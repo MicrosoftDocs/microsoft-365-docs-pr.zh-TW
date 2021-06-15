@@ -4,26 +4,25 @@ description: 根據檔案副檔名、檔案名或位置，將檔案從 Microsoft
 keywords: 排除專案、檔、副檔名、檔案類型、資料夾名稱、檔案名、掃描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 3d65275d504ece4ac298558e660fa70c32a76d06
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274529"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924276"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>根據副檔名和資料夾位置，設定及驗證排除
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 決定在使用者選擇 [說明] 時所要顯示或隱藏的 Office 功能，請使用 Office 系統管理中心中的「新增功能 Microsoft 365」功能，在 Windows 上 > Office 應用程式的新功能。
-ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915024"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924832"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理新功能會出現的 Office 功能
 
@@ -60,9 +60,8 @@ ms.locfileid: "50915024"
 
 新功能會根據下列排程顯示在頁面上：
 
-||||
+|通道|日期|採取行動|
 |:-----|:-----|:-----|
-|**通道** <br/> |**Date** <br/> |**採取行動** <br/> |
 |**目前** <br/> |每月15日  <br/> |每月發行前的 1-3 周 <br/> |
 |**每月企業** <br/> |月的第一  <br/> |主要版本之前兩周的新功能 |
 |**半年 Enterprise (預覽)** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能|

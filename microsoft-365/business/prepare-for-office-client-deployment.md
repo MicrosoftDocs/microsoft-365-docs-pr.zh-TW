@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 瞭解如何在 Windows 10 電腦上自動安裝32位 Office 應用程式，並將它們更新。
-ms.openlocfilehash: 868d06fadfef0f55b41131b7fdfbb368b9128405
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 843be426d817da1173769b3b66dc4c054179f0fd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580047"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924220"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>為商務 Microsoft 365 準備 Office 用戶端部署
 
@@ -59,14 +59,15 @@ ms.locfileid: "51580047"
     
 - **沒有任何 2016** Windows 安裝程式 (MSI) 獨立應用程式 (例如 Visio 或 Project) 。 Microsoft 365 以進行商務升級 Office Click-to-Run 版本的 Office 2016，而且無法使用 Office 2016 MSI 獨立應用程式。 
     
-下表顯示使用者/系統管理員可能需要採取的動作，視其開始狀態而定，若要從 business admin console Microsoft 365 取得32成功的 Office 部署 Click-to-Run 版本。
-  
-|**啟動 Office 安裝狀態**|**在 Microsoft 365 商務 Office 安裝之前採取的動作**|**結束狀態**|
+下表顯示使用者/系統管理員可能需要採取的動作，視其開始狀態而定，若要從 business admin console Microsoft 365 取得32成功的 Office 部署 Click-to-Run 版本。<br/>
+
+
+|啟動 Office 安裝狀態|在 Microsoft 365 商務 Office 安裝之前採取的動作|結束狀態|
 |:-----|:-----|:-----|
 |未安裝任何 Office 套件  <br/> |無  <br/> |使用 Click-to-Run 安裝 Office 2016 32 位  <br/> |
 |現有的隨選即用 32 位元版本的 Office (2016 或更舊版本)，且沒有獨立版本 App  <br/> |無  <br/> |視需要升級為 Office 2016 的最新32位 Click-to-Run 版本 **\*** <br/> |
 |現有 Click-to-Run 32 位版本的 Office 和 Click-to-Run 32 位或64位獨立 Office 應用程式 (例如 Visio、Project)   <br/> |無  <br/> |獨立應用程式不會受到影響。 套件已升級到隨選即用 32 位元版本的 Office 2016  <br/> |
-|現有的隨選即用 32 位元版本的 Office，以及任何 32 位元或 64 位元 (2016 除外) MSI 獨立版本 Office App  <br/> |無  <br/> |獨立應用程式不會受到影響。 套件已升級到隨選即用 32 位元版本的 Office 2016  <br/> ||||
+|現有的隨選即用 32 位元版本的 Office，以及任何 32 位元或 64 位元 (2016 除外) MSI 獨立版本 Office App  <br/> |無  <br/> |獨立應用程式不會受到影響。 套件已升級到隨選即用 32 位元版本的 Office 2016  <br/> |
 |任何現有的隨選即用 64 位元版本的 Office  <br/> |卸載64位 Office 應用程式（如果有的話）以32位 Office 應用程式來取代它們  <br/> |如果 Office 64 位元 App 遭到移除，則會安裝隨選即用 32 位元版本的 Office 2016  <br/> |
 |包含或不包含獨立版本 App 之現有的 MSI Office 2016 安裝  <br/> |解除安裝 MSI Office 2016。  <br/> |已安裝隨選即用 32 位元版本的 Office 2016。不會變更獨立版本 App  <br/> |
 |現有的 MSI Office 2013 (或更舊版本) 安裝和/或獨立版本 Office App  <br/> |無  <br/> |隨選即用 32 位元版本的 Office 2016 與既有的 MSI Office 安裝 (和獨立版本 App) 並存  <br/> |

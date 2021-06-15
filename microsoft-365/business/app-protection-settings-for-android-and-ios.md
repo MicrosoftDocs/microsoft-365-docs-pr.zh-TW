@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 瞭解如何在 Android 或 iOS 裝置上建立、編輯或刪除應用程式管理原則，以及保護工作檔。
-ms.openlocfilehash: 2e157737990c7aca6e87a676e90f62f0d40ad372
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 92dce1e8761e53b85df85f2a84f30ab307f63e6d
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580287"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925056"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>設定 Android 或 iOS 裝置的 App 保護設定
 
@@ -81,10 +81,10 @@ ms.locfileid: "51580287"
 ### <a name="settings-that-protect-work-files"></a>保護工作檔案的設定
 
 以下設定可用來在使用者的裝置遺失或遭竊時保護工作檔案：
-  
-|||
-|:-----|:-----|
+
+
 |設定  <br/> |描述  <br/> |
+|:-----|:-----|
 |在下列天數之後刪除非作用中裝置上的工作檔案  <br/> |如果裝置沒有用於您在此處指定的天數，將會自動刪除該裝置上儲存的任何工作檔。  <br/> |
 |強制使用者將所有工作檔案儲存到商務用 OneDrive  <br/> |若此設定為 [**開啟**]，則只有商務用 OneDrive 工作檔案的可用儲存位置。  <br/> |
 |加密工作檔案  <br/> |將此設定保持 **開啟** ，讓工作檔案受到加密保護。 即使裝置遺失或被盜，任何人都無法讀取您的公司資料。  <br/> |
@@ -92,10 +92,10 @@ ms.locfileid: "51580287"
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>控制使用者如何透過行動裝置存取 Office 檔案的設定
 
 下列設定可用來管理使用者如何存取 Office 工作檔案：
-  
-|||
-|:-----|:-----|
+
+
 |設定  <br/> |描述  <br/> |
+|:-----|:-----|
 |需要 PIN 或指紋才能存取 Office App  <br/> |如果此設定是 **在使用者在** 其行動裝置上使用 Office 應用程式之前，除了使用者的使用者名稱和密碼以外，還必須提供另一種形式的驗證。<br/> |
 |在登入失敗達下列次數時重設 PIN  <br/> |為了避免未經授權的使用者隨機猜測 PIN，當達到您指定的輸入錯誤次數時將會重設 PIN。  <br/> |
 |在 Office App 閒置下列時間之後要求使用者重新登入  <br/> |此設定會決定使用者在有多久之後才會收到重新登入的時間。  <br/> |

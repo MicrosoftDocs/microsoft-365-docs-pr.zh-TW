@@ -4,27 +4,25 @@ description: 在 Microsoft Defender AV 中啟用行為型、啟發式和即時�
 keywords: 啟發式、機器學習、行為監控、即時保護、always on、Microsoft Defender 防毒軟體、反惡意程式碼、安全性、Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 53b1e1474e0870388ec1cfaf214190eb0bdf7beb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: d8ce2ded8fd3270bcb095022c714f07d8030e1f7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274597"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925552"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>設定行為、啟發學習法和即時保護
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**

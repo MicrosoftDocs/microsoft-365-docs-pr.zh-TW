@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 瞭解可在 Microsoft 365 for business to secure Windows 10 裝置的設定。
-ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4859681d5e71a61b8a5dd58114bce899f485967a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578220"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925312"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>為 Windows 10 電腦編輯或建立裝置保護設定
 
@@ -67,10 +67,10 @@ ms.locfileid: "51578220"
 所有設定預設為 [ **開啟**]。 下列為可用的設定。
   
 如需詳細資訊，請參閱[Microsoft 365 中的保護功能進階版對應至 Intune 設定](map-protection-features-to-intune-settings.md)。 
-  
-|||
-|:-----|:-----|
+
+
 |設定  <br/> |描述  <br/> |
+|:-----|:-----|
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |使用能減少裝置受攻擊面的規則  <br/> |設定為 [開啟] 時，受攻擊面縮減能協助系統封鎖惡意程式碼通常會用來感染裝置的動作和 App。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[縮減受攻擊面](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以深入了解。  <br/> |

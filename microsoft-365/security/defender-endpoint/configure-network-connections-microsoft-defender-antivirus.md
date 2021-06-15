@@ -4,24 +4,24 @@ description: 設定和測試您與 Microsoft Defender 防毒軟體 cloud protect
 keywords: 防病毒，Microsoft Defender 防毒軟體，反惡意程式碼，安全性，Defender，cloud，入侵，保護層級
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ca5737a0224825a0c88159c4a3931cc0c310b69b
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 1fc0f76ece240c9d7efc92680c34b0477141f52b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788448"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925136"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>設定及驗證 Microsoft Defender 防毒軟體網路連線
 

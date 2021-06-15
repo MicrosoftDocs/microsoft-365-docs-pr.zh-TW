@@ -7,14 +7,16 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d93bf492f7cfea5a1ff863205085d853c4bbadb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917713"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925428"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>更新在 Microsoft 受管理的電腦中的處理方式
 
@@ -38,7 +40,7 @@ Microsoft 受管理的電腦會使用四個 Azure AD 群組來管理更新：
 - **廣泛**：上一個群組可提供功能和品質更新。 此群組包含租使用者中大部分的使用者，因此會在部署時優先于速度。 在環境最穩定的情況時，應該在這裡進行應用程式的測試。 
 
 ### <a name="moving-devices-between-update-groups"></a>在更新群組之間移動裝置
-您可能想要讓某些裝置接收最後的更新，以及您想要最先移的其他裝置。 若要將這些裝置移至適當的更新群組，請 [提交系統管理員支援要求](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) ，我們會為您移動裝置。 
+您可能想要讓某些裝置接收最後的更新，以及您想要最先移的其他裝置。 若要將這些裝置移至適當的更新群組，請 [提交系統管理員支援要求](../working-with-managed-desktop/admin-support.md) ，我們會為您移動裝置。 
 
 > [!NOTE]
 > 如果您需要將使用者移至不同的更新群組，請提交支援要求。 不要在更新群組之間自行移動裝置。 如果裝置移動不正確，將會造成嚴重的後果。 裝置可能會意外更新，而且原則可能會發生衝突，變更裝置設定。

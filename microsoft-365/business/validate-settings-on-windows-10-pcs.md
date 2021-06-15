@@ -1,5 +1,5 @@
 ---
-title: 驗證 Windows 10 PC 上的 App 保護設定
+title: 驗證 Windows 10 電腦的應用程式保護設定
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -26,14 +26,14 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 瞭解如何驗證商務應用程式保護設定的 Microsoft 365 是否會在使用者的 Windows 10 裝置上生效。
-ms.openlocfilehash: fcb463fd98f692f7d4802689e0c03fe4e3e648a1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 464a246a0da65dcffeb70946287ce4fa0e67ae7c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579835"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925252"
 ---
-# <a name="validate-device-protection-settings-on-windows-10-pcs"></a>驗證 Windows 10 電腦上的裝置保護設定
+# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>驗證 Windows 10 電腦的裝置保護設定
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>確認已設定 Windows 10 裝置原則
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636263"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925884"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -82,6 +82,23 @@ Microsoft 365Defender 會將相互關聯的分析和匯總相關的警報和自�
 | 嚴重性 | 事件的嚴重性是指它可對資產造成的影響。 嚴重性越高，影響就越大，而且通常需要最直接的注意。 |
 | 狀態 | 您可以根據事件狀態來限制顯示的事件清單，以查看哪些事件為作用中或已解決。 |
 |||
+
+## <a name="save-defined-filters-as-urls"></a>將定義的篩選儲存為 URLs
+
+在 [事件] 佇列中設定有用的篩選後，您可以將瀏覽器索引標籤的 URL 做成書簽，或是將它儲存為網頁上的連結、Word 檔或您選擇的位置。 這可讓您點擊存取事件佇列的主要視圖，例如：
+
+- 新的事件
+- 高嚴重性事件
+- 未指派的事件
+- 高嚴重性、未指派的事件
+- 指派給我的事件
+- 指派給我和 Microsoft Defender for Endpoint 的事件
+- 具有特定標記或標記的事件
+- 具有特定威脅類別的事件
+- 具有特定相關威脅的事件
+- 具有特定參與者的事件
+
+在您將有用的篩選視圖編譯並儲存為 URLs 之後，您可以使用它快速處理及設定佇列中的事件 [優先順序，以](manage-incidents.md) 進行後續分析。
 
 ## <a name="next-steps"></a>後續步驟
 

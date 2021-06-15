@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 瞭解如何使用格式副本及子畫面，以提升 SharePoint 線上傳統發佈網站上的影像效能。
-ms.openlocfilehash: 0f0dd078ce28b86fc998b2f83ac19d04b1a3ab02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907477"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924572"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint 線上傳統發佈網站的影像優化
 
@@ -35,9 +35,14 @@ ms.locfileid: "50907477"
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>使用子畫面加快影像載入速度
 
-|||
-|:-----|:-----|
-| 圖像 sprite 包含許多較小的影像。 使用 CSS 您可以選取複合影像的一部分，以絕對位置顯示頁面的特定部分。 基本上，您只需在頁面上移動單一影像，而不是載入多個影像，並透過小型視窗顯示該圖像的一小部分，在此視窗中，會向使用者顯示其子畫面影像的必要部分。 SharePoint線上使用 sprite，在 sprite spcommon.png 中顯示其各種圖示。  <br/>  如下所述：  <br/>  影像壓縮  <br/>  圖像優化  <br/>  SharePoint 影像轉譯  <br/> |![Spcommon 的螢幕擷取畫面](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+![Spcommon 的螢幕擷取畫面](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+
+圖像 sprite 包含許多較小的影像。 使用 CSS 您可以選取複合影像的一部分，以絕對位置顯示頁面的特定部分。 基本上，您只需在頁面上移動單一影像，而不是載入多個影像，並透過小型視窗顯示該圖像的一小部分，在此視窗中，會向使用者顯示其子畫面影像的必要部分。 SharePoint線上使用 sprite，在 sprite spcommon.png 檔案中顯示其各種圖示。
+
+如下所述：
+- 影像壓縮
+- 圖像優化
+- SharePoint 影像轉譯
    
 這可提高效能，因為您只下載一個影像，而不是多個，然後再快取並重複使用該影像。 即使圖像未保持快取，但只要有單一影像（而不是多個影像），此方法就會減少對伺服器的 HTTP 要求總數，以減少頁面載入時間。 這實際上是一種圖像捆綁的形式。 如果影像不經常變更（例如，如上所述的 SharePoint 範例中所示），這是非常實用的技巧。 您可以使用[Web Essentials](https://vswebessentials.com/)，協力廠商，以群組為基礎的專案，在 Microsoft Visual Studio 中輕鬆做到這一點。 如需詳細資訊，請參閱[SharePoint Online 中的縮制和捆綁](./minification-and-bundling-in-sharepoint-online.md)。
   

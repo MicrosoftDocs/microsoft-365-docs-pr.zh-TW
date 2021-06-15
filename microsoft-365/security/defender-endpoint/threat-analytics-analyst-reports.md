@@ -1,7 +1,7 @@
 ---
-title: 瞭解威脅分析中的分析報告區段
+title: 瞭解威脅分析中的分析報告區段。
 ms.reviewer: ''
-description: 深入瞭解每個威脅分析報告的分析報告區段。 瞭解它如何提供威脅、緩解、偵測、高級搜尋查詢等相關資訊。
+description: 威脅分析報告的報表區段如何提供威脅、緩解、偵測、高級搜尋查詢等相關資訊。
 keywords: 分析報告、威脅分析、偵測、高級搜尋查詢、緩解
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a442a642a71bd6bf3a52dbf3901c4367c2c10d8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e791249418503ada5d98b74c8ae273664851cc8e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844991"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926436"
 ---
-# <a name="understand-the-analyst-report-in-threat-analytics"></a>瞭解威脅分析中的分析報告
+# <a name="the-analyst-report-in-threat-analytics"></a>威脅分析中的分析報告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

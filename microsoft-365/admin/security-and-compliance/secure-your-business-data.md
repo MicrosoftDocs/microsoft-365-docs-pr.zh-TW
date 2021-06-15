@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 如何保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
+ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635959"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924620"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務方案 Microsoft 365 的前10種方式
 
@@ -35,7 +35,7 @@ ms.locfileid: "52635959"
 
 Microsoft 建議您完成下清單格中所列的工作，以套用至您的服務方案。
 
-||工作|Microsoft 365 商務標準版|Microsoft 365 商務進階版|
+|*數字*|工作|Microsoft 365 商務標準版|Microsoft 365 商務進階版|
 |---|---|---|---|
 |1|[設定多重要素驗證](secure-your-business-data.md#setup)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |第|[訓練您的使用者](secure-your-business-data.md#train)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -152,7 +152,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 針對每個規則套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 ****[儲存]。
+6. 選取 **[儲存]**。
     
 | 設定 | 開啟 Office 檔案的附件之前警告使用者 | 封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型 |
 |:-----|:-----|:-----|
@@ -188,7 +188,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 ****[儲存]。
+6. 選取 **[儲存]**。
 
 |設定|拒絕自動轉寄電子郵件至外部網域|
 |---|---|
@@ -326,7 +326,7 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 3. 在 [**電子郵件以外套用至內容的設定**] 底下，選取 [ **Office 365 應用程式**]，**當使用者按一下 [安全連結] 時**，請勿追蹤，而且 **不讓使用者點擊至原始 URL 的安全連結**。
 
-4. 選取 ****[儲存]。
+4. 選取 **[儲存]**。
 
 若要建立新的原則針對您網域中的所有收件者：
 
@@ -334,7 +334,7 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 2. 套用下表所列的設定。
 
-3. 選取 ****[儲存]。
+3. 選取 **[儲存]**。
 
 |設定或選項|建議的設定|
 |---|---|

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 深入瞭解由受世紀所運作的 Office 365，其設計目的是為了符合中國的安全、可靠及可伸縮雲端服務的需求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: bc416ca253d26cc5d391d226039223eac02720b0
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706367"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924716"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365
 
@@ -53,7 +53,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
   
 ## <a name="office-365-suite"></a>Office 365 套件
 
-|||
+|函數|可用性|
 |:-----|:-----|
 |自訂網域  <br/> |管理員可以建立及（或）使用透過中文特定網域提供者註冊的自訂網域。 如果您沒有自訂網域，您可以從網域註冊機構 [購買功能變數名稱](../get-help-with-domains/buy-a-domain-name.md) 。 如果您已經有一個，請 [找到您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> 此外，如果您使用 Office 365 SharePoint 線上服務建立公用網站，則中國網際網路合規性原則要求您取得網際網路內容提供者 (ICP) 號碼。  **附注：** 無法使用自訂功能變數名稱中不允許的字詞的自動驗證。           |
 |訂閱、帳單和技術支援  <br/> |由世紀所提供。 如需如何聯繫支援人員的資訊，請參閱[business support 的連絡人 Office 365](../../business-video/get-help-support.md)。  <br/> |
@@ -72,7 +72,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-|||
+|函數|可用性|
 |:-----|:-----|
 |透過電子郵件與組織外部的人員共用檔、文件庫或網站  <br/> |您可以使用此功能，但預設為關閉，因為使用它可能會讓您的國家/地區以外共用檔案。 系統管理員還是能夠將它開啟，但會出現警告訊息，指出它可能在您的國家/地區外進行檔案共用存取。 嘗試與組織外部的人員共用的使用者也會收到警告。 如需詳細資訊，請參閱[在 Office 365 中共用 SharePoint 檔案或資料夾](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。  <br/> |
 |Access Services  <br/> |支援 Access 2013，但新增 access 應用程式可能無法使用，因為這項功能將從 Office 365 停用，且 SharePoint 線上。 在 Office 365 和 SharePoint Online 中建立新的 access 型 web 應用程式和 access web 資料庫時，會停止2017年6月的和任何其餘 web 應用程式和 web 2018 資料庫的開始。 此外，Access 2010 功能不受支援，嘗試使用 Access 2010 資料庫會導致錯誤及可能的資料遺失。  <br/> |
@@ -91,7 +91,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
   
 ## <a name="outlook-web-app"></a>Outlook Web App
 
-|||
+|函數|可用性|
 |:-----|:-----|
 |Blackberry Business 雲端服務 (BBCS)   <br/> |無法使用，但是您可以使用 Exchange ActiveSync 裝置或從 (中的動作進行調查，BlackBerry 的無線電子郵件解決方案) 以執行 BlackBerry Enterprise Server (# #) 。  <br/> |
 |資訊版權管理  <br/> |即將推出。  <br/> |
@@ -167,8 +167,8 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 > [!IMPORTANT]
 >  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是免費的 web 式工具，可協助您設定內部部署組織與 Office 365 之間的混合式部署，或是完全遷移至 Office 365。 此工具會提出一些簡單的問題，然後根據您的回答來建立自訂的檢查清單，並指示如何設定混合式佈署。 強烈建議使用部署助理來設定混合部署。 > 對於不想升級或新增 Exchange 2013 CU5 伺服器的組織而言，Exchange 2013 SP1 組織可以在內部部署和 Exchange Online 組織之間設定共用的行事曆空閒/忙碌共用。 若要設定此混合部署功能，請參閱[使用由世紀運作的 Office 365 設定 Exchange 混合式部署功能](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
 
-|||  
-|---|---|
+|函數|可用性|
+|:-----|:-----|
 |共存和 Free/Busy 共用|在兩個或多個內部部署 Exchange 組織之間共用行事曆空閒/忙碌資訊，或在兩個世紀 Office 365 租使用者之間共用時，不支援。 這項功能即將推出！ | 
 |行事曆共用|Exchange 2013 SP1 及更高版本支援手動設定網際網路行事曆與其他內部部署 Exchange 或 Exchange Online 組織共用。 如需手動設定此功能的詳細資訊，請參閱 [啟用網際網路行事曆發佈](/exchange/enable-internet-calendar-publishing-exchange-2013-help)。 | 
 將 Apple mobile 裝置上的 Exchange 連絡人資料共用到 apple iCloud。 |此設定/功能預設為啟用。 管理員應該關閉此功能，以協助防止使用者共用組織外部的 Exchange 資料。 |
@@ -177,7 +177,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
    
 ## <a name="office"></a>Office
 
-|||
+|函數|可用性|
 |:-----|:-----|
 |從 [開啟的檔案從 **...] 開啟的** Office 應用程式。 \>  按鈕  <br/> |可用。 即將推出漫遊的功能。  <br/> |
 |使用 Microsoft 帳戶登入時，儲存至商務用 OneDrive  <br/> |若要在您的國家/地區內保留資料，當您使用 Microsoft 帳戶登入 Office 時，您無法將檔儲存至您的組織網站 (商務用 OneDrive) 。  <br/> |
@@ -185,13 +185,13 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
    
 ## <a name="office-client"></a>Office 用戶端
 
-|||
+|函數|可用性|
 |:-----|:-----|
 |管理 Office 用戶端中的帳戶 ()   <br/> |這項功能，以及要移至 Office 365 入口網站的其他功能，目前指向世界上的 Office 365 入口網站，您無法使用系統帳戶運作的 Office 365 登入。 這是正修正的已知問題。 同時，您可以使用 URL 登 https://portal.partner.microsoftonline.cn/ 入您的帳戶，並從那裡管理設定。 如需詳細資訊，請參閱[管理您的 Microsoft 365 Apps 企業版帳戶以取得由世紀運作的 Office 365](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
-|||
+|函數|可用性|
 |:-----|:-----|
 |插入和播放線上影片  <br/> |無法使用。  <br/> |
 |與 Bing 服務整合的資訊檢索窗格  <br/> |無法使用。  <br/> |
@@ -209,7 +209,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
    
 ## <a name="skype-for-business"></a>商務用 Skype
 
-|||
+|函數|可用性|
 |:-----|:-----|
 |支援商務用 Skype 的網域提供者  <br/> |您必須使用支援 SRV 記錄的中文特有網域提供者註冊您的網域。 如需如何註冊網域的詳細資訊，請參閱 [尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> |
 |電話撥入式會議 (為無法進入電腦的使用者加入會議的電話存取的功能)   <br/> |您可以在「商務用 Skype」和「商務用 Skype 系統管理中心」中看到電話撥入式會議與提供者的選項，但這些功能仍無法使用。 即將推出。  <br/> |

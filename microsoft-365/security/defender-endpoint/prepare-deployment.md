@@ -1,6 +1,6 @@
 ---
 title: 準備 Microsoft Defender for Endpoint 部署
-description: 在部署 Microsoft Defender for Endpoint 時，準備專案關係人核准、時程表、環境考慮和採用順序
+description: 準備專案關係人核准、時程表、環境考慮，以及部署 Microsoft Defender for Endpoint 的採用順序
 keywords: 部署、準備、專案關係人、時程表、環境、端點、伺服器、管理、採用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 13748662f6e53db86352b903828978729f78e6a8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842431"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925644"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>準備 Microsoft Defender for Endpoint 部署
 
@@ -105,7 +105,7 @@ Defender for Endpoint 支援兩種管理許可權的方式：
 
 Microsoft 建議利用 RBAC，以確保只有具備業務理由的使用者可以存取端點的 Defender。
 
-您可以在 [這裡](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)找到許可權準則的詳細資料。
+您可以在這裡找到許可權準則的詳細資料：[建立角色及指派角色給 Azure Active Directory 群組](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)。
 
 下列範例表用以識別您環境中的「網路防護作業中心」結構，可協助您決定環境所需的 RBAC 結構。
 
@@ -135,5 +135,6 @@ Microsoft 建議利用 RBAC，以確保只有具備業務理由的使用者可�
 
 ## <a name="next-step"></a>下一步
 
-![階段 2：設定](images/setup.png) <br>[階段2：安裝程式](production-deployment.md) |設定 Microsoft Defender for Endpoint 部署
-
+|||
+|:-------|:-----|
+|![階段 2：設定](images/setup.png) <br>[階段 2：設定](production-deployment.md) | 設定 Microsoft Defender for Endpoint 部署 |

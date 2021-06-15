@@ -1,18 +1,20 @@
 ---
 title: Microsoft 受管理的電腦的支援
-description: ''
+description: 說明 Microsoft 受管理的電腦的主動式和反應性事件管理。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 52bbbad5acac3b0407ffbf0cd78888d74cfb05d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846189"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925500"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的支援
 

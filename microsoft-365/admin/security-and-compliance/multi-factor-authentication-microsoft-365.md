@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多重要素驗證 (MFA) 會同時使用密碼，該密碼應該是強的，另外也是一種驗證方法。
-ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635771"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924728"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
@@ -150,7 +150,7 @@ ms.locfileid: "52635771"
 
 下表顯示啟用 MFA 與安全性預設、條件式存取原則和每一使用者帳戶設定的結果。
 
-||Enabled|停用|次要驗證方法|
+|*項目*|啟用|停用|次要驗證方法|
 |---|---|---|---|
 |**安全性預設**|無法使用條件式存取原則|可以使用條件式存取原則|Microsoft Authenticator 應用程式|
 |**條件式存取原則**|如果有任何啟用，您就無法啟用安全性預設值|如果已停用所有原則，則可啟用安全性預設|在註冊 MFA 期間由使用者指定|

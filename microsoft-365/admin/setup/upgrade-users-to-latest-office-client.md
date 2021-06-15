@@ -23,12 +23,13 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 深入瞭解如何將 Microsoft Office 升級為組織中使用者的最新 Office 用戶端。
-ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.topic: article
+ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860568"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924692"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的商務使用者 Microsoft 365 升級至最新的 Office 用戶端
 
