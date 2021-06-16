@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879201"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929872"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -56,21 +56,21 @@ ms.locfileid: "52879201"
 
 - 在自訂信箱的郵件上關閉 URL 掃描。 使用 [設定 Office 365 中的安全連結](set-up-safe-links-policies.md)原則，以建立安全連結原則，並將設定為 **Off** ，以在 **郵件中選取未知可能惡意 URLs 的動作**。
 
-- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱 [使用安全性 & 規範中心建立反惡意程式碼原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，將 **惡意軟體設定為零小時自動清除** **。**
+- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱 [使用 Microsoft 365 Defender 入口網站建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，將 **惡意程式碼以零小時自動清除** 設定為 **Off**。
 
-- 建立垃圾郵件篩選原則，以停用自訂信箱中垃圾郵件和網路釣魚的零小時自動清除 (ZAP) 。 請參閱 [使用安全性 & 規範中心建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，並清除 **垃圾郵件 Zap** 和 **網路釣魚 zap** 的 **On** 核取方塊。
+- 建立垃圾郵件篩選原則，以停用自訂信箱中垃圾郵件和網路釣魚的零小時自動清除 (ZAP) 。 請參閱 [使用 Microsoft 365 Defender 入口網站建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，並清除 **垃圾郵件 zap** 和 **網路釣魚 zap** 的 **On** 核取方塊。
 
 - 停用自訂信箱中的垃圾郵件規則。 使用 [[設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)] 以停用垃圾郵件規則。 停用之後，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
 
-在您確認您的信箱符合所有適用的先決條件後，請 [使用安全性 & 合規性中心，設定本文中的使用者提交信箱](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) () 。
+在您確認您的信箱符合所有適用的先決條件後，請執行[使用 Microsoft 365 Defender 入口網站](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox)中所指定的程式來設定使用者認可信箱。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者報送** ] 頁面，請使用 <https://protection.office.com/userSubmissionsReportMessage> 。
+- 您於 <https://security.microsoft.com/> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **提交** ] 頁面，請使用 <https://security.microsoft.com/reportsubmission> 。
 
 - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
 
-  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+  - [Microsoft 365 Defender 入口網站](permissions-in-the-security-and-compliance-center.md)中的 **組織管理** 或 **安全性管理員**。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
 
 - 您需要 Exchange Online PowerShell 的存取權。 如果您嘗試使用的帳戶不具備 Exchange Online PowerShell 的存取權，當您指定提交信箱時，您會收到如下的錯誤訊息：
@@ -82,9 +82,9 @@ ms.locfileid: "52879201"
   - [啟用或停用 Exchange Online PowerShell 的存取權](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Exchange Online 中的用戶端存取規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全性 & 規範中心設定使用者提交信箱
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>使用 Microsoft 365 Defender 入口網站來設定使用者報送信箱
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則**] \> **使用者報送**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **使用者報告的郵件設定** \> **使用者提交**。
 
 2. 在出現的 [ **使用者提交** ] 頁面中，選取下列其中一個選項：
 
@@ -100,7 +100,7 @@ ms.locfileid: "52879201"
 
         - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用報告訊息增益集或報告網路釣魚增益集報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
 
-      完成後，按一下 [儲存]。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
+      完成後，按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
     
     - **自訂最終使用者報告選項**：按一下此連結。 在出現的 [ **自訂最終使用者報告選項** ] 浮出控制項中，輸入垃圾郵件報告選項的描述性文字。 
     
@@ -109,7 +109,7 @@ ms.locfileid: "52879201"
         - **自動傳送報告**
         - **從不傳送報告**
        
-      完成後，按一下 [儲存]。
+      完成後，按一下 **[儲存]**。
 
         - **將報告的郵件傳送至**：進行下列其中一項選擇：
 

@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 使用者可以瞭解如何針對已傳送至其許可權之共用信箱的隔離郵件，查看並採取行動。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb915ad6ad6e6130d8704339559f4c370cef3a20
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 4d6aed4a6e3bc725635558a5e8394b671d11f47c
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599508"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929848"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>從共用信箱中查看和發行隔離的郵件
 
@@ -35,9 +35,9 @@ ms.locfileid: "51599508"
 
 現在，使用者不再需要自動對應來管理傳送至共用信箱的隔離郵件。 它只適用于運作。 有兩種不同的方法可以存取已傳送至共用信箱的隔離郵件：
 
-- 如果系統管理員已 [在反垃圾郵件原則中啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)，則可以存取共用信箱中使用者垃圾郵件通知的任何使用者，都可以按一下通知中的 [ **檢查** ] 按鈕，以移至安全性 & 規範中心內的隔離。 請注意，此方法只允許使用者管理傳送至共用信箱的隔離郵件。 使用者無法在此內容中管理自己的隔離訊息。
+- 如果系統管理員已 [在反垃圾郵件原則中啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)，則可以存取共用信箱中使用者垃圾郵件通知的任何使用者，都可以按一下通知中的 [**檢查**] 按鈕，以移至 Microsoft 365 Defender 入口網站中的隔離區。 請注意，此方法只允許使用者管理傳送至共用信箱的隔離郵件。 使用者無法在此內容中管理自己的隔離訊息。
 
-- 使用者可以 [前往安全性 & 規範中心內的隔離](find-and-release-quarantined-messages-as-a-user.md)。 根據預設，只會顯示傳送給使用者的郵件。 不過，使用者可以變更「**郵件識別碼」按鈕** 的 **排序結果** () **收件者的電子郵件地址**、輸入共用信箱的電子郵件地址，然後 **按一下 [** 重新整理]，以查看已傳送至共用信箱的隔離郵件。
+- 使用者可以[前往 Microsoft 365 Defender 入口網站中的隔離區](find-and-release-quarantined-messages-as-a-user.md)。 根據預設，只會顯示傳送給使用者的郵件。 不過，使用者可以變更「**郵件識別碼」按鈕** 的 **排序結果** () **收件者的電子郵件地址**、輸入共用信箱的電子郵件地址，然後 **按一下 [** 重新整理]，以查看已傳送至共用信箱的隔離郵件。
 
   ![根據收件者電子郵件地址排序隔離的郵件。](../../media/quarantine-sort-results-by-recipient-email-address.png)
 

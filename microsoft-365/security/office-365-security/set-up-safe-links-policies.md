@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender 中查看、建立、修改及刪除安全連結原則及全域安全連結設定，以供 Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ae52cfce53c3fa14253a94e72f1a2bccda9a86
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694494"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929824"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>為 Office 365 設定 Microsoft Defender 中的安全連結原則
 
@@ -43,7 +43,7 @@ ms.locfileid: "52694494"
 > [!NOTE]
 > 您可以在安全連結原則 **以外** 的安全連結保護中，設定全域設定。 如需相關指示，請參閱[設定 Microsoft Defender 中安全連結的通用設定 Office 365](configure-global-settings-for-safe-links.md)。
 
-您可以在 [安全性 & 合規性中心] 或 [PowerShell (Exchange Online PowerShell 中設定安全連結原則，以在 Microsoft 365 中使用信箱的合格 Exchange Online 組織。組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
+您可以在 Microsoft 365 Defender 入口網站或 PowerShell 中設定安全連結原則，以在 PowerShell 中使用信箱的合格 Microsoft 365 組織 (Exchange Online Exchange Online;組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
 
 安全連結原則的基本元素如下：
 
@@ -53,7 +53,7 @@ ms.locfileid: "52694494"
 > [!IMPORTANT]
 > 系統管理員應考慮 SafeLinks 的不同設定設定。 其中一個可用選項是在 SafeLinks 中包含使用者身分識別資訊。 這項功能可讓 *安全行動小組* 調查可能的使用者損損、採取糾正動作和限制昂貴的違規行為。
 
-當您在安全性 & 合規性中心管理安全連結原則時，這兩個元素之間的差異並不明顯：
+當您在 Microsoft 365 Defender 入口網站中管理安全連結原則時，這兩個元素之間的差異並不明顯：
 
 - 當您建立安全連結原則時，實際上是建立安全連結規則和關聯的安全連結原則，同時為這兩者使用相同的名稱。
 - 當您修改安全連結原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全連結規則。 所有其他設定都會修改相關聯的安全連結原則。
@@ -63,19 +63,19 @@ ms.locfileid: "52694494"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://protection.office.com/safelinksv2> 。
+- 您於 <https://security.microsoft.com/> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
-  - 若要建立、修改和刪除安全連結原則，您必須是 Security & 合規性中心的「**組織管理**」或「**安全性管理員**」角色群組的成員，**以及** Exchange Online 中的「**組織管理**」角色群組的成員。
+  - 若要建立、修改和刪除安全連結原則，您必須是 Microsoft 365 Defender 入口網站的 **組織管理** 或 **安全性管理員** 角色群組成員，**以及** Exchange Online 中 **組織管理** 角色群組的成員。
   - 若要對安全連結原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)和[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)和[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   > 
-  > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  > - 將使用者新增至 Microsoft 365 admin center 中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   . - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **View-Only 組織管理** 角色群組也會提供該功能的唯讀許可權。
 
 - 如需安全連結原則的建議設定，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
@@ -84,11 +84,11 @@ ms.locfileid: "52694494"
 
 - [新功能會連續新增至 Microsoft Defender 以供 Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的安全連結原則。
 
-## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>使用安全性 & 規範中心建立安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站建立安全連結原則
 
-在安全性 & 合規性中心建立自訂安全連結原則，會同時使用相同的名稱建立安全連結規則及相關聯的安全連結原則。
+在 Microsoft 365 Defender 入口網站中建立自訂安全連結原則，會同時為這兩者建立安全連結規則和相關聯的安全連結原則，同時也會同時使用相同的名稱。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **安全連結**。
 
 2. 在 [ **安全連結** ] 頁面上，按一下 [ **建立**]。
 
@@ -158,29 +158,29 @@ ms.locfileid: "52694494"
 
    完成後，請按一下 **[完成]**。
 
-## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>使用安全性 & 規範中心來查看安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站來查看安全連結原則
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **安全連結**。
 
 2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
 
    「即時」顯示原則詳細資料
 
-## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>使用安全性 & 規範中心來修改安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站修改安全連結原則
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [***原則] & 規則** \> **威脅** 原則 \> **安全連結**。
 
 2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
 
 3. 在 [原則詳細資料] 顯示的 [飛出] 中，按一下 [ **編輯原則**]。
 
-[飛出] 中的可用設定與 [ [使用安全性 & 規範中心] 建立安全連結原則](#use-the-security--compliance-center-to-create-safe-links-policies) 一節中所述。
+[飛出] 中的可用設定與 [[使用 Microsoft 365 Defender 入口網站建立安全連結原則](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)] 一節中所述相同。
 
 若要啟用或停用原則或設定原則優先順序順序，請參閱下列各節。
 
 ### <a name="enable-or-disable-safe-links-policies"></a>啟用或停用安全連結原則
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **安全連結**。
 
 2. 請注意 [ **狀態** ] 欄中的值：
 
@@ -197,11 +197,11 @@ ms.locfileid: "52694494"
 安全連結原則會以處理的順序顯示， (第一個原則的 **Priority** 值為 0) 。
 
 > [!NOTE]
-> 在安全性 & 規範中心，您只能在建立安全連結原則之後變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
+> 在 Microsoft 365 Defender 入口網站中，您可以在建立安全連結原則之後，才變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
 
-若要變更原則的優先順序，請在清單中將原則上移或下移 (您無法在安全性與合規性中心直接修改 [優先順序] 數字)。
+若要變更原則的優先順序，請在清單中向上或向下移動原則 (您無法直接修改 Microsoft 365 Defender 入口網站) 中的 **優先順序** 號碼。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **安全連結**。
 
 2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
 
@@ -217,9 +217,9 @@ ms.locfileid: "52694494"
 
 5. 完成時，請按一下 [關閉]。
 
-## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>使用安全性 & 規範中心移除安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站移除安全連結原則
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **安全連結**。
 
 2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
 
@@ -246,12 +246,12 @@ ms.locfileid: "52694494"
 > 
 > - 您可以建立新的安全連結規則，並將現有的未關聯的安全連結原則指派給它。 安全連結規則無法與一個以上的安全連結原則相關聯。
 > 
-> - 您可以在 [安全性 & 規範中心] PowerShell 中的新安全連結原則上設定下列設定，直到您建立原則為止：
+> - 您可以在建立原則之前，于 Microsoft 365 Defender 入口網站的新安全連結原則上設定下列設定 PowerShell：
 > 
 >   - _在_ `$false` **New-SafeLinksRule** Cmdlet) 上，建立新原則做為已停用 (。
 >   - 在 _\<Number\>_ **New-SafeLinksRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
 > 
-> - 您在 PowerShell 中建立的新安全連結原則不會顯示在安全性 & 規範中心，除非您將原則指派至安全連結規則。
+> - 在您將原則指派至安全連結規則之前，您在 PowerShell 中建立的新安全連結原則不會顯示在 Microsoft 365 Defender 入口網站中。
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>步驟1：使用 PowerShell 建立安全連結原則
 
@@ -360,7 +360,7 @@ Get-SafeLinksRule -Identity "Contoso Executives"
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>使用 PowerShell 修改安全連結原則
 
-您無法在 PowerShell 中重新命名安全連結原則 (**Set-SafeLinksPolicy** 指令程式沒有 _Name_ 參數) 。 當您在安全性 & 合規性中心重新命名安全連結原則時，您只會重新命名安全連結 _規則_。
+您無法在 PowerShell 中重新命名安全連結原則 (**Set-SafeLinksPolicy** 指令程式沒有 _Name_ 參數) 。 當您重新命名 Microsoft 365 Defender 入口網站中的安全連結原則時，您只是重新命名安全連結 _規則_。
 
 在 PowerShell 中修改安全連結原則的唯一進一步考慮，就是 (「[不要重新寫入下列 URLs」清單](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)) 的 _DoNotRewriteUrls_ 參數可用語法：
 
@@ -472,13 +472,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)。
 
-若要確認安全連結正在掃描郵件，請檢查可用的 Microsoft Defender Office 365 報告。 如需詳細資訊，請參閱[View Office 365 的 Defender 報告](view-reports-for-mdo.md)]，然後[在安全性 & 規範中心使用 Explorer](threat-explorer.md)。
+若要確認安全連結正在掃描郵件，請檢查可用的 Microsoft Defender Office 365 報告。 如需詳細資訊，請參閱[View Office 365 的 Defender 報告](view-reports-for-mdo.md)]，然後[在 Microsoft 365 Defender 入口網站中使用 Explorer](threat-explorer.md)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
 若要確認您是否已成功建立、修改或移除安全連結原則，請執行下列任一步驟：
 
-- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
+- 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **安全連結**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，以 \<Name\> 原則或規則名稱取代，執行下列命令，然後確認設定：
 

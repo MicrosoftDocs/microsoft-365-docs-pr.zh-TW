@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932878"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930268"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常見 Microsoft 365 Defender REST API 錯誤碼
 
@@ -62,7 +62,7 @@ DisabledFeature | 禁止 (403)  | 未啟用租使用者功能。
 DisallowedOperation | 禁止 (403)  | \<the disallowed operation and the reason\>.
 NotFound | 找不到 (404)  | 找不到一般錯誤訊息。
 ResourceNotFound | 找不到 (404)  | \<the requested resource\>找不到資源。
-InternalServerError | 內部伺服器錯誤 (500)  | *附注：沒有錯誤訊息，請重試作業，或與 Microsoft 聯繫（如果它未解決）*
+InternalServerError | 內部伺服器錯誤 (500)  | *附注：沒有錯誤訊息，請重試作業，或 [與 Microsoft 聯繫](/microsoft-365/business-video/get-help-support) （如果它未解決）*
 
 ## <a name="examples"></a>範例
 

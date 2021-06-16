@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933322"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930364"
 ---
 # <a name="resources"></a>資源
 
@@ -31,6 +31,7 @@ ms.locfileid: "51933322"
 
 
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -69,6 +70,7 @@ ms.locfileid: "51933322"
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -77,7 +79,8 @@ ms.locfileid: "51933322"
 
 若安裝時發生錯誤，安裝程式將只會報告一般失敗。
 
-詳細記錄會儲存至 `/var/log/microsoft/mdatp_install.log` 。 如果您在安裝時發生問題，請將此檔案傳送給我們，讓我們能夠協助您診斷原因。
+詳細記錄會儲存至 `/var/log/microsoft/mdatp/install.log` 。
+如果您在安裝時發生問題，請將此檔案傳送給我們，讓我們能夠協助您診斷原因。
 
 ## <a name="uninstall"></a>解除安裝
 
@@ -104,7 +107,7 @@ ms.locfileid: "51933322"
 |Group                 |案例                                                |命令                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |設定         |開啟/關閉即時保護                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|設定         |開啟/關閉行為監控                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|設定         |開啟/關閉行為監控                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |設定         |開啟/關閉雲端保護                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |設定         |開啟/關閉產品診斷程式                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |設定         |開啟/關閉自動範例提交                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

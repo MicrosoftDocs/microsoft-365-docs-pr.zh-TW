@@ -18,12 +18,12 @@ ms.custom:
 description: 深入瞭解安全性資訊和事件管理 (SIEM) 伺服器整合 Microsoft 365 雲端服務與應用程式
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599944"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929788"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>安全性資訊和事件管理 (SIEM) 伺服器整合 Microsoft 365 服務和應用程式
 
@@ -69,7 +69,7 @@ SIEM 伺服器可以接收來自多種 Microsoft 365 服務和應用程式的資
 
 設定 SIEM server 整合之前，請確定已開啟審核記錄。
 
-- 針對 SharePoint 線上、商務用 OneDrive 及 Azure Active Directory，[會在安全性 & 規範中心開啟審核記錄](../../compliance/turn-audit-log-search-on-or-off.md)。
+- 針對 SharePoint 線上、商務用 OneDrive 及 Azure Active Directory，[已在 Microsoft 365 Defender 入口網站中開啟審核記錄](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 - 如 Exchange Online，請參閱[管理信箱審核](../../compliance/enable-mailbox-auditing.md)。
 

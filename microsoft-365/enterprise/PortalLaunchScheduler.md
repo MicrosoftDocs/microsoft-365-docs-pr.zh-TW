@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: bf01f6ae93b424543a6a509f89961a1b7a0c9ad7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841663"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930256"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 入口網站啟動計畫程式啟動入口網站
 
@@ -116,7 +116,10 @@ ms.locfileid: "52841663"
 7. 決定誰需要立即查看網站，並將其資訊輸入 [豁免的 **使用者** ] 欄位。 這些使用者會從波形中排除，不會在發射之前、期間或之後重新導向。
 
     > [!NOTE]
-    > 最多可新增50個不同的使用者或安全性群組。 在聲波開始啟動之前，您需要超過50個人才能存取入口網站，請使用安全性群組。
+    > 最多50個不同的使用者或安全性群組可用於整個啟動。 每個啟動都彼此獨立，因此如果您排程另一個入口網站上的啟動，則可以使用最多50個使用者/安全性群組來啟動。 此外，每個浪潮最多可使用20個不同的使用者或安全性群組。 
+
+>入口網站啟動排程器支援安全性群組和啟用郵件功能的安全性群組。 
+
 
 8. 確認入口網站啟動詳細資料並選取 **排程**。 開始排程後，對 SharePoint 入口網站首頁所做的任何變更，都必須先接收正常的診斷結果，再繼續進行入口網站啟動。
 

@@ -3,7 +3,7 @@ title: Office 365 安全性, 適用於 Office 365 的 Microsoft Defender, EOP, M
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/13/2020
+ms.date: 06/11/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -16,26 +16,25 @@ ms.collection:
 description: Office 365 中的安全性，從 EOP 到適用於 Office 365 的 Defender 方案 1 和 2、標準與嚴格安全性組態等等。 了解您擁有哪些項目，以及如何保護您的屬性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29602d5fe62c84b9293522a94b71c550d360b3e3
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877797"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930244"
 ---
-# <a name="office-365-security-overview"></a>Office 365 安全性概觀
+# <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender Office 365 安全性概述
 
 **適用於**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 
-
-本文將向您介紹雲端中新的安全性屬性。 無論您是安全性作業中心的一員、該空間的新安全性系統管理員，還是想要進修的人員，讓我們開始吧。
+本文將為您提供新的 Microsoft Defender，以 Office 365 雲端中的安全性屬性。 無論您是安全性作業中心的一員、該空間的新安全性系統管理員，還是想要進修的人員，讓我們開始吧。
 
 > [!CAUTION]
 > 如果您使用 **Outlook.com**、**Microsoft 365 家用版** 或 **Microsoft 365 個人版**，並且需要 *安全連結* 或 *安全附件* 資訊，***按一下這個連結***：[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-## <a name="office-365-security-spelled-out"></a>闡明 Office 365 安全性
+## <a name="what-is-defender-for-office-365-security"></a>何謂 Office 365 安全性的 Defender
 
 每個 Office 365 訂閱都隨附安全性功能。 您可以採取的目標與動作取決於這些不同訂閱的焦點。 在 Office 365 安全性中，有三個主要安全性服務 (或產品) 繫結至您的訂閱類型：
 
@@ -57,8 +56,6 @@ Office 365 安全性建立在 EOP 提供的核心保護上。 EOP 存在於任�
 
 但是就架構而言，讓我們先將每個部分視為累積式安全性層，每個都強調安全性。 更多類似項目：
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
-
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP 和適用於 Office 365 的 Microsoft Defender 及其彼此之間的關係，強調服務，包括電子郵件驗證的注意事項。":::
 
 雖然這些服務都強調保護、偵測、調查及回應之間的目標，***所有** _ 服務都可以執行保護、偵測、調查及回應的 *_任何_** 目標。
@@ -73,8 +70,6 @@ Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsof
 > 如果您的訂閱不是 Office 365 E3 或 E5，您仍然可以檢查您是否有升級至適用於 Office 365 的 Microsoft Defender P1 的選項。 如果您有興趣，[此網頁](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids)列出適用於 Office 365 的 Microsoft Defender P1 升級的訂閱 (請查看頁面結尾以取得詳細內文)。
 
 ## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Office 365 安全性階梯，從 EOP 到適用於 Office 365 的 Microsoft Defender
-
-![EOP 和適用於 Office 365 的 Microsoft Defender 及其安全性強調，從保護與偵測到調查與回應。 應該針對 EOP 設定電子郵件驗證組態 (至少 DKIM 和 DMARC)。](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
 > 在以下頁面了解詳細資料：[Exchange Online Protection](exchange-online-protection-overview.md) 和[適用於 Office 365 的 Defender](defender-for-office-365.md)。
@@ -159,3 +154,4 @@ Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsof
 [使用威脅總管或即時偵測](threat-explorer.md)
 
 使用[適用於 Office 365 的 Microsoft Defender 中的攻擊模擬器](attack-simulator.md)
+

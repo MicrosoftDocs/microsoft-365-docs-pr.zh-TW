@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710715"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932863"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -263,9 +263,16 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 |處置檢閱 | 否| 是 |
 |最高 7 年的處置證明 | 否 |是，當您使用處置檢閱或項目被標示為記錄時|
 |稽核系統管理員活動| 是 | 是|
+|稽核保留動作| 否 | 是 <sup>\*</sup> |
 |識別要保留的項目： <br /> - 內容搜尋 <br /> - 資料分類頁面、內容總管，活動總管 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 
-請注意，您可以使用保留原則和保留標籤做為補充保留方法。例如：
+**註腳：**
+
+<sup>\*</sup> 對於不會將內容標示為記錄或監管記錄的保留標籤，稽核事件僅限於 SharePoint 中的項目已套用、變更或移除標籤時。 有關保留標籤的稽核詳細資料，請參閱此頁面上的[稽核保留動作](#auditing-retention-actions)一節。
+
+### <a name="combining-retention-policies-and-retention-labels"></a>合併保留原則和保留標籤
+
+您不必在只使用保留原則或只使用保留標記之間做出選擇。 這兩種方法可以一起使用，事實上，可以彼此互補，以得到更全面的解決方案。 例如：
 
 1. 您建立並設定將在內容上次修改後五年自動刪除內容的保留原則，並將該原則套用於所有 OneDrive 帳戶。
 
@@ -374,9 +381,31 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 
 由於寬限期期間的行為，如果您在 30 天內重新啟用此原則或將位置狀態變更回啟用狀態，則此期間原則會繼續執行，不會有任何資料永久遺失。
 
-## <a name="auditing-retention-configuration"></a>稽核保留設定
+## <a name="auditing-retention-configuration-and-actions"></a>稽核保留設定和動作
 
-[啟用稽核功能](turn-audit-log-search-on-or-off.md)後，系統會將保留原則和保留標籤的系統管理員動作儲存至稽核記錄。 例如，建立、設定或刪除保留原則或標籤後，系統會建立稽核事件。 如需完整清單，請參閱[保留原則和保留標籤活動](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)。
+當[啟用稽核](turn-audit-log-search-on-or-off.md)時，系統管理設定 (保留原則和保留標籤) 和保留動作 (僅保留標籤) 都支援保留的稽核事件。
+
+### <a name="auditing-retention-configuration"></a>稽核保留設定
+
+建立、重新設定或刪除保留原則或標籤時，保留原則和保留標籤的系統管理員設定會記錄為稽核事件。
+
+如需稽核事件的完整清單，請參閱[保留原則和保留標籤活動](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)。
+
+### <a name="auditing-retention-actions"></a>稽核保留動作
+
+記錄為稽核事件的保留動作僅適用於保留標籤，不適用於保留原則：
+
+- 當保留標籤從 SharePoint 中的項目進行套用、變更或移除時：
+    - 從 **[檔案和頁面活動]**，選取 **[已變更檔案的保留標籤]**。 
+
+- 當 SharePoint 中已標記的項目標示為記錄，且使用者已解除鎖定或鎖定該項目時：
+    - 從 **[檔案和頁面活動]**，選取 **[已將記錄狀態變更為未鎖定]** 和 **[已將記錄狀態變更為鎖定]**。
+
+- 將內容標示為記錄或監管記錄的保留標籤套用至 Exchange 中的項目時：
+    - 從 **[Exchange 信箱活動]**，選取 **[已將訊息標記成一筆記錄]**
+
+- 當 SharePoint 或 Exchange 中已標記的項目標示為記錄或監管記錄，且該項目已永久刪除時：
+    - 從 **[檔案和頁面活動]**，選取 **[已將刪除的檔案標示為記錄]**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>保留原則和保留標籤的 PowerShell Cmdlet
 

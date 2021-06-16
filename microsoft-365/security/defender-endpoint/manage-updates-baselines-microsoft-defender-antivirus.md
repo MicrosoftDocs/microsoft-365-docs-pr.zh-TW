@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/09/2021
-ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
-ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
+ms.date: 06/14/2021
+ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52862144"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929440"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -31,17 +31,13 @@ ms.locfileid: "52862144"
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防毒軟體
 
-有兩種與 Microsoft Defender 防毒軟體保持最新狀態相關的更新：
+將 Microsoft Defender 防毒軟體保持在最新狀態，是確保您的裝置具備防範新惡意程式碼和攻擊技巧所需的最新技術和功能。 請務必更新防防毒保護，即使 Microsoft Defender 防毒軟體是以[被動模式](microsoft-defender-antivirus-compatibility.md)執行。 有兩種與 Microsoft Defender 防毒軟體保持最新狀態相關的更新：
 
 - 安全性智慧更新
 - 產品更新
 
-> [!IMPORTANT]
-> 將 Microsoft Defender 防毒軟體保持在最新狀態，是確保您的裝置具備防範新惡意程式碼和攻擊技巧所需的最新技術和功能。
-> 
-> 即使在[被動模式下](./microsoft-defender-antivirus-compatibility.md)執行 Microsoft Defender 防毒軟體，也請務必更新防防毒保護。
-> 
-> 若要查看最新的引擎、平臺及簽章日期，請流覽[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+> [!TIP]
+> 若要查看最新的引擎、平臺及簽字日期，請造訪[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>安全性智慧更新
 
@@ -81,7 +77,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 - 效能改進;
 - 可維護性改進;和 
 -  (Cloud [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 的整合增強功能。
-<br/>
+<br/><br/>
 <details>
 <summary> 2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </summary>
 

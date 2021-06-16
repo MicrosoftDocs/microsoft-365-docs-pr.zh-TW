@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：瞭解已變更，以從 microsoft 雲端德國移動 (microsoft cloud Deutschland) 以 Office 365 新德文 datacenter 區域中的服務。
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591777"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930400"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>在新的德國資料中心區域遷移至 Office 365 服務之後，會有什麼變更？
 
@@ -32,7 +32,7 @@ ms.locfileid: "51591777"
 
 以下是 Microsoft Cloud Deutschland and new 德文 datacenter 地區的 Office 365 服務之間的主要差異。
 
-| Category | Microsoft Cloud Germany (Microsoft Cloud Deutschland) | 新德國資料中心區域中的 Office 365 服務 |
+| 類別 | Microsoft Cloud Germany (Microsoft Cloud Deutschland) | 新德國資料中心區域中的 Office 365 服務 |
 |:-------|:-----|:-------|
 | Microsoft 365 服務可供訂閱，且只有一個 Office 365 租用戶 | 15個服務 | 29個服務 <br><br> 如需詳細資訊，請參閱[不同的 Office 365 雲端服務選項之間的服務可用性為何？](ms-cloud-germany-transition.md#serv-avail)。 |
 | 新功能 | 將不會提供任何新功能。 | 新功能將可與 Office 365 服務一致。 |
@@ -75,6 +75,12 @@ ms.locfileid: "51591777"
 - 信箱會遷移成後端程式。 您組織中的使用者可能會在轉換期間的 Microsoft 雲端 Deutschland 或德國地區內，且屬於相同的全域通訊清單) 中相同 Exchange 組織 (的一部分。
 
 - 使用信箱所在之 URL 存取服務的 Outlook Web App 使用者，將會看到額外的驗證提示。 例如，如果使用者的信箱位於 Office 365 服務，而且使用者的 Outlook Web App 連線使用舊版端點 `outlook.office.de` ，使用者會先驗證 `login.microsoftonline.de` ，然後再驗證至 `login.microsoftonline.com` 。 遷移完成時，使用者可以 () 存取新的 URL `https://outlook.office365.com` ，而且他們只會看到單一、預期的登入要求。 
+
+## <a name="sharepoint-online"></a>SharePoint Online
+
+在 SharePoint 線上及商務用 OneDrive 中，您可以透過 Outlook 共用專案。 按 Outlook 按鈕之後，會建立可共用的連結，並將其推入 Outlook Web App 中的新郵件。
+
+在完成 SharePoint 線上的遷移之後，透過 Outlook 中的 SharePoint 線上及商務用 OneDrive 中共用專案已不再運作。 我們承認這是已知的問題。 不過，由於此 Outlook 功能位於棄用的路徑中，因此在完成棄用之前，不會規劃修正問題。
 
 ## <a name="office-services"></a>Office服務
 

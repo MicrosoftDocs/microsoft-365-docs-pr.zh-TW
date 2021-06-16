@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 本文提供保護您 Microsoft 365 訂閱之全域管理員存取權的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ade5fd8070a656f976caa75c16ab92cadb7b64a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1c929651f3e70a1aeef16cdf48d853d675820833
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929045"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926544"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保護您的 Microsoft 365 全域管理員帳戶
 
@@ -48,7 +48,7 @@ Microsoft 提供的功能可協助保護您的組織，但只有在您使用這�
 > [!Note]
 > 雖然本文著重于全域管理員帳戶，您還是應該考慮是否有其他具有廣域許可權的帳戶，以存取您訂閱中的資料，例如 eDiscovery 管理員或安全性或合規性管理員帳戶，都應該以相同的方式加以保護。 <br > 您可以建立全域管理員帳戶，而不需要新增任何授權。
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步驟 1. 建立專用的 Microsoft 365 全域管理員帳戶，並只在必要時使用它們
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步驟 1。 建立專用的 Microsoft 365 全域管理員帳戶，並只在必要時使用它們
 
 需要全域管理員許可權的系統管理工作相對較少，例如指派角色給使用者帳戶。 因此，請執行下列步驟，而不是使用已獲指派全域系統管理員角色的日常使用者帳戶：
   

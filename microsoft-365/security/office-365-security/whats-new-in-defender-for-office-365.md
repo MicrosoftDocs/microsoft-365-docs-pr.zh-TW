@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796063"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929548"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender Office 365 的新功能
 
@@ -89,7 +89,7 @@ ms.locfileid: "52796063"
   - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
   - 精確的時間篩選 (日、小時、半小時) 
 
-- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至 [**威脅管理** \> **檢查**]。 Office 365 方案 2) )  (Microsoft Defender
+- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件] &** 共同作業 \> ****。 )  (Office 365 方案2的 Microsoft Defender) 
 
 - Microsoft 365 **(預覽**[中的安全檔](safe-docs.md)) 
 

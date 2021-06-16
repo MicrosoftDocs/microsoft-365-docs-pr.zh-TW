@@ -20,12 +20,12 @@ description: 系統管理員可以瞭解如何為 SharePoint、OneDrive 及 Micr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 07aea9551faa280cd51bda1d57f017e0a24028ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 374e67626eab07cc8ab89a52554658a31e661eec
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203728"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929944"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
@@ -41,9 +41,9 @@ ms.locfileid: "51203728"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com> 開啟安全性與合規性中心。 若要直接移至 [ **ATP 安全附件** ] 頁面，請開啟] <https://protection.office.com/safeattachmentv2> 。
+- 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **安全附件** ] 頁面，請開啟] <https://security.microsoft.com/safeattachmentv2> 。
 
-- 若要開啟 SharePoint、OneDrive 及 Microsoft Teams 的安全附件，您必須是 [安全性 & 規範中心] 中「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+- 若要開啟 SharePoint、OneDrive 及 Microsoft Teams 的安全附件，您必須是 Microsoft 365 Defender 入口網站中「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - 若要使用 SharePoint 線上 PowerShell 以避免人員下載惡意檔案，您必須是[全域系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)的成員或 Azure AD 中[SharePoint 系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator)角色。
 
@@ -51,13 +51,13 @@ ms.locfileid: "51203728"
 
 - 允許最多30分鐘的設定才會生效。
 
-## <a name="step-1-use-the-security--compliance-center-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>步驟1：使用安全性 & 合規性中心開啟 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
+## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>步驟1：使用 Microsoft 365 Defender 入口網站開啟 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **通用設定**]。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則**「 \> **威脅** 原則 \> **安全附件**」，然後按一下 [**通用設定**]。
 
 2. 在顯示的 [**全域設定**] 中，移至 [**開啟 Office 365 的 Defender]，以取得 SharePoint、OneDrive 及 Microsoft Teams** 設定。 將切換移至右 ![ 切換開啟 ](../../media/scc-toggle-on.png) 以開啟 SharePoint、OneDrive 及 Microsoft Teams 的安全附件。
 
-   完成後，按一下 [儲存]。
+   完成後，按一下 **[儲存]**。
 
 ### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>使用 Exchange Online PowerShell 開啟 SharePoint、OneDrive 及 Microsoft Teams 的安全附件
 
@@ -86,11 +86,11 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 如需詳細的語法及參數資訊，請參閱 [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)。
 
-## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a>建議的步驟 3 () 使用安全性 & 合規性中心建立偵測到的檔案的警示原則
+## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>建議的步驟 3 () 使用 Microsoft 365 Defender 入口網站為偵測到的檔案建立警示原則
 
-您可以建立警示原則，當 SharePoint、OneDrive 及 Microsoft Teams 的安全附件偵測到惡意檔案時，通知您及其他系統管理員。 若要深入瞭解提醒，請參閱 [在安全性 & 規範中心建立活動警示](../../compliance/create-activity-alerts.md)。
+您可以建立警示原則，當 SharePoint、OneDrive 及 Microsoft Teams 的安全附件偵測到惡意檔案時，通知您及其他系統管理員。 若要深入瞭解提醒，請參閱[在 Microsoft 365 Defender 入口網站中建立活動警示](../../compliance/create-activity-alerts.md)。
 
-1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，移至 [ **警示** \> **警示原則** ] 或 [開啟] <https://protection.office.com/alertpolicies> 。
+1. 在 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)中，移至 [**原則] & 規則** \> **警示原則**] 或 [開啟] <https://security.microsoft.com/alertpolicies> 。
 
 2. 在 [ **警示原則** ] 頁面上，按一下 [ **新增警示原則**]。
 
@@ -99,7 +99,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
    - **名稱**：輸入唯一且具描述性的名稱。 例如，文件庫中的惡意檔案。
    - **描述**：輸入選用的描述。 例如，在 SharePoint 線上、OneDrive 或 Microsoft Teams 中偵測到惡意檔案時，會通知系統管理員。
    - **嚴重性**：保持選取的預設值為 [ **低** ]，或選取 [ **中** ] 或 [ **高**]。
-   - **選取類別**： [選取 **威脅管理**]。
+   - **類別**：選取 **威脅管理**。
 
    完成後，按 [下一步 **]**。
 
@@ -139,7 +139,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 - 若要確認您是否已成功開啟 SharePoint、OneDrive 及 Microsoft Teams 的安全附件，請使用下列其中一個步驟：
 
-  - 在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**威脅管理** \> **原則** \> **ATP 安全附件**]，選取 [**通用設定**]，然後確認 **SharePoint、OneDrive 及 Microsoft Teams 設定 Office 365 的 [開啟 Defender** ] 的值。
+  - 在 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)中，移至 [原則] **& 規則**[威脅原則] [ \>  \> **安全附件**]，選取 [**通用設定**]，然後確認 [**開啟 Office 365 的 Defender] 的值為 SharePoint、OneDrive 和 Microsoft Teams** 設定。
 
   - 在 Exchange Online PowerShell 中，執行下列命令來驗證屬性設定：
 
@@ -159,9 +159,9 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 - 若要確認您是否已成功設定偵測到的檔案的警示原則，請使用下列任何一項步驟：
 
-  - 在安全性 & 規範中心內，移至 **警示** \> **警示原則** \> 選取警示原則，然後驗證設定。
+  - 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **警示原則** \> 選取警示原則，然後驗證設定。
 
-  - 在 [安全性 & 規範中心] PowerShell 中， \<AlertPolicyName\> 以警示原則的名稱取代，執行下列命令，並確認屬性值：
+  - 在 Microsoft 365 Defender 入口網站 PowerShell 中， \<AlertPolicyName\> 以警示原則的名稱取代，執行下列命令，並確認屬性值：
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"

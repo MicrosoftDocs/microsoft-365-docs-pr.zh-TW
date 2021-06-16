@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3219b329c53c32e02cd29acdd41a48cd93b2e8bb
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934426"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930508"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>在 Defender 專案中執行您的試驗 Microsoft 365 
 
@@ -42,7 +42,7 @@ ms.locfileid: "51934426"
 ![執行 Microsoft 365 Defender 試驗的階段](../../media/pilotphases.png)
 
 
-執行試驗可協助您有效地判斷 adoptiing Microsoft 365 Defender 的優點。 在實際執行環境中啟用 Microsoft 365 的 Defender 並啟動您的使用案例之前，最好是規劃如何決定要在試驗專案中完成的工作，以及設定成功準則。 
+執行試驗可協助您有效地判斷採用 Microsoft 365 Defender 的益處。 在實際執行環境中啟用 Microsoft 365 的 Defender 並啟動您的使用案例之前，最好是規劃如何決定要在試驗專案中完成的工作，以及設定成功準則。 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用本次試驗行動手冊

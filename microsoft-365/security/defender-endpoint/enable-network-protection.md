@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: bde97638a39eef4561b898b2cf49e51bed6e77a5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861668"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926652"
 ---
 # <a name="turn-on-network-protection"></a>開啟網路保護
 
@@ -81,7 +82,7 @@ ms.locfileid: "52861668"
 
 ### <a name="mobile-device-management-mdm"></a>行動裝置管理 (MDM)
 
-使用 [/Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service PROVIDER (CSP) 以啟用或停用網路保護或啟用稽核模式。
+使用 [/Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service PROVIDER (CSP) 以啟用或停用網路保護或啟用稽核模式。
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft 端點管理員 (以前的 Intune) 
 

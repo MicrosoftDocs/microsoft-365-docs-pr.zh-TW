@@ -15,12 +15,12 @@ ms.custom:
 description: 深入瞭解 Exchange Online Protection (EOP) 可協助保護您的內部部署電子郵件組織，以進行獨立和混合式環境。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad083e828fbed27cce4b8929c1bee3081c983c17
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707281"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930160"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -34,7 +34,7 @@ ms.locfileid: "52707281"
 Exchange Online Protection (EOP) 是雲端架構篩選服務，可保護您的組織，避免垃圾郵件、惡意程式碼和其他電子郵件威脅。 EOP 包含 Exchange Online 信箱的所有 Microsoft 365 組織。
 
 > [!NOTE]
-> 您也可以自行提供 EOP，以保護內部部署信箱和混合式環境，以保護內部部署 Exchange 信箱。 如需詳細資訊，請參閱[獨立 Exchange Online Protection](/exchange/standalone-eop/standaonline-eop)。
+> 您也可以自行提供 EOP，以保護內部部署信箱和混合式環境，以保護內部部署 Exchange 信箱。 如需詳細資訊，請參閱[獨立 Exchange Online Protection](/exchange/standalone-eop/standalone-eop)。
 
 設定 EOP 安全性功能的步驟，以及與您在 Microsoft Defender Office 365 中所做的新增安全性比較，請參閱[防範威脅](protect-against-threats.md)。 建議的 EOP 功能設定可用於[EOP 和 Microsoft Defender Office 365 security 的建議設定](recommended-settings-for-eop-and-office365.md)。
 

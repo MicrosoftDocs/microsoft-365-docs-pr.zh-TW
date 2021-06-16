@@ -19,12 +19,12 @@ description: 針對 Office 365 活動管理 API 中的 Office 365 和相關威�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca8f86c831df16568ae569e7b21c7e0a33475948
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f3d6bbacb4a64060ecd03cbb28eee3256f41827e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203463"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929776"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM 與適用于 Microsoft Defender 的 Office 365 整合
 
@@ -67,7 +67,7 @@ SIEM server 或其他類似系統會輪詢此 **審核。一般** 工作負載�
 |
 
 > [!IMPORTANT]
-> 您必須是全域系統管理員，或已指派安全性 & 合規性中心的安全性系統管理員角色，才能設定 Office 365 的 Microsoft Defender 的 SIEM 整合。
+> 您必須是全域系統管理員，或擁有為 Microsoft 365 defender 入口網站指派的安全性系統管理員角色，才能為 Office 365 設定與 Microsoft defender 的 SIEM 整合。
 >
 > 您的 Microsoft 365 環境必須開啟審核記錄。 若要取得此相關協助，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 

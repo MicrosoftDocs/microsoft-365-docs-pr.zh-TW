@@ -20,12 +20,12 @@ description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd38b196c106a36fb1a1bfc0a441620b1c5b8ba5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203494"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932827"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint 線上、OneDrive 和 Microsoft Teams 中內建的病毒防護
 
@@ -68,7 +68,7 @@ Microsoft 365 病毒偵測引擎會以非同步方式執行， (獨立于 ShareP
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>OneDrive 同步處理用戶端嘗試同步處理已感染的檔案時，會發生什麼情況？
 
-OneDrive 同步處理用戶端將不會下載含有病毒的檔案。 同步處理用戶端會顯示無法同步處理檔案的通知。
+將惡意檔案上傳至 OneDrive 時，會將惡意檔案同步處理至本機電腦，然後再將其標記為惡意程式碼。 標記為惡意程式碼之後，使用者就無法再從其本機電腦開啟已同步處理的檔案。
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>適用于 Office 365 的 Microsoft Defender 擴充功能
 

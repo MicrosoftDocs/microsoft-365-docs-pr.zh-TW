@@ -15,18 +15,16 @@ ms.collection:
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
-ms.date: 09/24/2020
+ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 7d6d92f3abc79552406c80a46a8c3390b91e31d0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4d10de35358d528f004ee11e931fc6f41ce20482
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843007"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930496"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>切換至 Microsoft Defender for 端點和 Microsoft Defender 防毒軟體
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -42,13 +40,11 @@ ms.locfileid: "52843007"
 |:--|:--|
 |您尚沒有 endpoint protection 解決方案，而且想要深入瞭解 Microsoft Defender for endpoint & Microsoft Defender 防毒軟體的運作方式。  |[Microsoft Defender for Endpoint 評估實驗室](evaluation-lab.md)   |
 |您有 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體，需要協助您取得及設定所有東西。  |[Microsoft Defender for Endpoint 部署指南](deployment-phases.md)  |
-|您計畫要從 mcafee 端點安全性 (mcafee) 至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體進行遷移。 |[從 McAfee 切換至適用於端點的 Microsoft Defender](mcafee-to-microsoft-defender-migration.md) |
-|您打算從 symantec Endpoint Protection (symantec) 遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體。 |[從 Symantec 切換至適用於端點的 Microsoft Defender](symantec-to-microsoft-defender-endpoint-migration.md) |
-|您計畫從非 microsoft 的 endpoint protection (解決方案進行遷移，但不是 McAfee 或 Symantec) microsoft Defender for endpoint & Microsoft Defender 防毒軟體。 |[將參數設為 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
+|您計畫要從非 Microsoft endpoint protection 解決方案遷移至 Microsoft Defender for endpoint & Microsoft Defender 防毒軟體。 |[將參數設為 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
 |您已遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體，您需要在後續步驟中取得協助，例如設定其他功能或微調安全性設定。 | [管理 Microsoft Defender for Endpoint，遷移後](manage-atp-post-migration.md) |
 
 
-## <a name="got-feedback"></a>收到意見反應？
+## <a name="do-you-have-feedback-for-us"></a>您是否有我們的意見反應？
 
 讓我們知道您的想法！ 在頁面底部提交您的意見反應。 我們會將您的意見反應納入考慮，我們會繼續改進並新增遷移指南。
 

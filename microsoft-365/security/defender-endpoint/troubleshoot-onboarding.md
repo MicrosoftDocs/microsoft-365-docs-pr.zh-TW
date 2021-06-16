@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844871"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929692"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -334,6 +334,8 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 - 在使用者執行第一次登入時，裝置已關閉或重新開機
 - 在此案例中，即使已部署上架套件，也不會自動啟動 SENSE 服務
 
+<div class="alert"><b>附注：</b>在下列或更新的 Windows 版本上，在下列或更新的版本上啟動使用者登入是必要的： Windows 10，版本1809或 Windows Server 2019 （含[四月 22 2021 更新彙總套件](https://support.microsoft.com/kb/5001384)） </br> Windows 10，版本1909，含[四月2021更新彙總套件](https://support.microsoft.com/kb/5001396) </br> Windows 10，版本 2004/20H2，含[28 2021 年4月的更新彙總套件](https://support.microsoft.com/kb/5001391) </div> 
+<br></br>
 > [!NOTE]
 > 下列步驟僅適用于使用 Microsoft Endpoint Configuration Manager。 如需使用 Microsoft Endpoint Configuration Manager 上架的詳細資訊，請參閱[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 

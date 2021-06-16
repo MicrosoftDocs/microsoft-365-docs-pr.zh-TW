@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查和回應安全性 & 規範中心內的威脅。
+description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查並回應 Microsoft 365 Defender 入口網站中的威脅。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78c03b45063f4bc34b47ab003bcf00d2befab886
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1c79cc717a2dbe345627f99830590c674fa02f09
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204604"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929618"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的視圖
 
@@ -33,9 +33,9 @@ ms.locfileid: "51204604"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![威脅總管](../../media/ThreatExplorerFirstOpened.png)
+![威脅總管](../../media/explorer.png)
 
-[威脅瀏覽器](threat-explorer.md) (和即時偵測報告) 是強大的近即時工具，可協助安全性運作小組調查和回應安全性 & 合規性中心內的威脅。 Explorer (和即時偵測報告) 會以 Office 365 中的電子郵件和檔案顯示可疑惡意程式碼和網路釣魚程式的相關資訊，以及組織的其他安全性威脅和風險。
+[威脅瀏覽器](threat-explorer.md) (和即時偵測報告) 是強大的近即時工具，可協助安全性運作小組調查和回應 Microsoft 365 Defender 入口網站中的威脅。 Explorer (和即時偵測報告) 會以 Office 365 中的電子郵件和檔案顯示可疑惡意程式碼和網路釣魚程式的相關資訊，以及組織的其他安全性威脅和風險。
 
 - 如果您有[Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2，則會有 Explorer。
 - 如果您有 Microsoft Defender for Office 365 Plan 1，則會進行即時偵測。
@@ -58,7 +58,7 @@ ms.locfileid: "51204604"
 
 使用 [ **View** ] （查看）功能表來變更顯示的資訊。 工具提示可協助您決定要使用的視圖。
 
-![威脅瀏覽器視圖功能表](../../media/ThreatExplorerViewMenu.png)
+![威脅瀏覽器視圖功能表](../../media/all-email.png)
 
 選取視圖後，您就可以套用篩選器，並設定查詢進行進一步的分析。 下列各節提供 Explorer (或即時偵測) 中所提供的各種視圖的簡短概述。
 
@@ -66,7 +66,7 @@ ms.locfileid: "51204604"
 
 若要查看此報告，請在 Explorer (或即時偵測) 中，選擇 [ **view** \> **Email** \> **Malware**]。 此視圖顯示識別為包含惡意程式碼之電子郵件的相關資訊。
 
-![查看識別為惡意程式碼的電子郵件資料](../../media/ExplorerEmailMalwareMenu.png)
+![查看識別為惡意程式碼的電子郵件資料](../../media/detection-technology.png)
 
 按一下 [ **寄件者** ] 開啟您的查看選項清單。 使用此清單，透過寄件者、收件者、寄件者網域、主旨、偵測技術、保護狀態等方式來查看資料。
 
@@ -82,13 +82,13 @@ ms.locfileid: "51204604"
 
 若要查看此報告，請在 Explorer (或即時偵測) 中，選擇 [ **view** \> **Email** \> **釣魚網絡**]。 此視圖顯示視為網路釣魚企圖的電子郵件。
 
-![查看識別為網路釣魚企圖的電子郵件資料](../../media/ThreatExplorerEmailPhish.png)
+![查看識別為網路釣魚企圖的電子郵件資料](../../media/phish.png)
 
 按一下 [ **寄件者** ] 開啟您的查看選項清單。 使用此清單，依寄件者、收件者、寄件者網域、寄件者 IP、URL 網域、判定結果等方式來查看資料。
 
 例如，若要查看在已識別為網路釣魚企圖的 URLs 上按一下人員時採取的動作，請挑選清單中 **的 [依** 序顯示]，然後選取一或多個選項，然後按一下 [重新整理] 按鈕。
 
-![按一下網路釣魚報告的 [已判定選項]](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![按一下網路釣魚報告的 [已判定選項]](../../media/click-verdict.png)
 
 在圖表下方，查看特定訊息、URL 按一下、URLs 及電子郵件原始的詳細資料。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51204604"
 
 透過惡意程式碼系列來查看資訊，偵測技術 (偵測惡意軟體的方式) ，以及工作量 (OneDrive、SharePoint 或 Teams) 。
 
-![查看偵測到之惡意程式碼的資料](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![查看偵測到之惡意程式碼的資料](../../media/malware-family.png)
 
 在圖表下方，查看特定檔案的詳細資訊，例如附件檔案名、工作量、檔案大小、最後修改檔案的使用者等等。
 

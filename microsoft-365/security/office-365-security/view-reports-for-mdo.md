@@ -16,18 +16,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在安全性 & 規範中心中尋找並使用 Microsoft Defender for Office 365 的報告。
+description: 在 Microsoft 365 Defender 入口網站中尋找及使用 Microsoft Defender for Office 365 的報表。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: a5c45f58ee83de11712b198c85a8e423314289bf
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599896"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930206"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全性 & 規範中心的「報告」儀表板中，查看 Office 365 報告的 Defender
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站的報表儀表板中查看 Office 365 報表的 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "51599896"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-適用于 Office 365 組織的 Microsoft Defender (例如，Microsoft 365 E5 訂閱或 microsoft defender for Office 365 plan 1 或 microsoft defender for Office 365 plan 2 附加元件) 包含各種安全性相關的報表。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，您可以移至 [ **報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
+適用于 Office 365 組織的 Microsoft Defender (例如，Microsoft 365 E5 訂閱或 microsoft defender for Office 365 plan 1 或 microsoft defender for Office 365 plan 2 附加元件) 包含各種安全性相關的報表。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，可以前往 **報告** \> **電子郵件** 共同作業的電子郵件共同作業 \> **報告**，以在 Microsoft 365 Defender 入口網站中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://security.microsoft.com/emailandcollabreport> 。
 
-![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Microsoft 365 Defender 入口網站中的報表儀表板](../../media/user-reported-messages.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>適用於 Office 365 的 Defender 檔案類型報告
 
@@ -45,7 +45,7 @@ ms.locfileid: "51599896"
 
  報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。
 
-若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office 365 檔案類型的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPFileReport> 。
+若要查看報告，請開啟 [Microsoft 365 的 Defender 入口網站](https://security.microsoft.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office 365 檔案類型的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPFileReport> 。
 
 ![報表儀表板中 Office 365 檔案類型構件的 Defender](../../media/atp-file-types-report-widget.png)
 
@@ -127,7 +127,7 @@ ms.locfileid: "51599896"
 
 **ATP 郵件** 處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
 
-若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office 365 郵件部署的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPMessageReport> 。
+若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，然後移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 &** 共同作業報告]，然後選取 [ **Office 365 郵件處理的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPMessageReport> 。
 
 ![報表儀表板中 Office 365 郵件處置小工具的 Defender](../../media/atp-message-disposition-report-widget.png)
 
@@ -215,7 +215,7 @@ ms.locfileid: "51599896"
 
 不包括用戶端和網路延遲。
 
-若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **郵件延遲報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/mailLatencyReport?viewid=P50> 。
+若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 & 共同報告**]，然後按一下 [**郵件延遲報告**] 底下的 [**詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/mailLatencyReport> 。
 
 ![報表儀表板中的郵件延遲報告構件](../../media/mail-latency-report-widget.png)
 
@@ -268,7 +268,7 @@ ms.locfileid: "51599896"
 
 **Url 威脅防護報告** 可提供偵測到之威脅的摘要和趨勢視圖，以及在 URL 按一下上做為 [安全連結](safe-links.md)的一部分所採取的動作。 若已套用安全連結原則的使用者沒有選取 [不 **追蹤使用者點擊** ] 選項，則此報告將不會有按一下其資料的使用者。
 
-若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **URL 保護報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
+若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 & 共同報告**]，然後按一下 [ **URL 保護報告**] 底下的 [**查看詳細資料**] 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
 ![報表儀表板中的 URL 保護報告構件](../../media/url-protection-report-widget.png)
 
@@ -336,8 +336,8 @@ ms.locfileid: "51599896"
 |報告|主題|
 |---|---|
 |**Explorer** (microsoft defender for Office 365 plan 2) 或 **即時** 偵測 (Microsoft defender for Office 365 Plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
-|**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
-|**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)|
+|**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告](view-email-security-reports.md)|
+|**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[在 Microsoft 365 Defender 入口網站中查看郵件流程報告](view-mail-flow-reports.md)|
 |**安全連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示過去7天中安全連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |僅 PowerShell) ， **EOP 和 Microsoft Defender for Office 365 (的郵件流量結果**。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**EOP 和 Defender Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
@@ -345,16 +345,16 @@ ms.locfileid: "51599896"
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>流覽 Office 365 報表的 Defender 時，需要哪些許可權？
 
-為了查看和使用本文所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
+為了查看和使用本文所述的報表，您必須是 Microsoft 365 Defender 入口網站中下列其中一個角色群組的成員：
 
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取者**
+- **全域讀取器**
 
-如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-**附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 的安全性 & 合規性中心 _和_ 許可權中所需的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+**附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
@@ -362,6 +362,6 @@ ms.locfileid: "51599896"
 
 ## <a name="related-topics"></a>相關主題
 
-[安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
+[Microsoft 365 Defender 入口網站中的智慧報告和洞察力](reports-and-insights-in-security-and-compliance.md)
 
 [角色許可權 (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

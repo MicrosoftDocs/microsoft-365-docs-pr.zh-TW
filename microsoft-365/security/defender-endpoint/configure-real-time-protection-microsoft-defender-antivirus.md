@@ -4,28 +4,25 @@ description: 啟用和設定 Microsoft Defender 防毒軟體即時保護功能�
 keywords: 防毒程式，即時保護，rtp，機器教學，行為監控，試探法
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.date: 12/16/2019
-ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1e39e42b79a2a767473c4473434da249a0d07228
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 313646c69417082583b27bcfbab540131043ce76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275129"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926664"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>在群組原則中啟用和設定 Microsoft Defender 防毒軟體一律開啟保護
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**

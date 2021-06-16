@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1b03c2671939a3e8e3011b78b8f1484ef02979ea
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245371"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930184"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -111,7 +111,6 @@ Microsoft 安全評分已更新改進的動作，以支援[Azure Active Director
 * 安全性系統管理員
 * Exchange 系統管理員
 * SharePoint 系統管理員
-* 帳戶管理員
 
 ### <a name="read-only-roles"></a>唯讀角色
 
@@ -119,7 +118,7 @@ Microsoft 安全評分已更新改進的動作，以支援[Azure Active Director
 
 * 技術支援管理員
 * 使用者系統管理員
-* 服務管理員
+* 服務支援管理員
 * 安全性讀取者
 * 安全性操作員
 * 全域讀取者

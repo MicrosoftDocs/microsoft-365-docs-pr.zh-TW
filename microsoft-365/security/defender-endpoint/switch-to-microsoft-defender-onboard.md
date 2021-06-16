@@ -17,16 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 939fea5b815827f5afbe6cdf78fd9335da6337e8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 832414e9b2a88114cafafbba78e22ea656cc7949
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594058"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930460"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>切換至 Microsoft Defender 的端點-階段3：板載
 
@@ -78,7 +80,7 @@ ms.locfileid: "52594058"
 
 |作業系統  |指導方針  |
 |---------|---------|
-| Windows 10 <p>Windows Server 2019 <p>Windows伺服器，版本1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | 請參閱 [執行偵測測試](run-detection-test.md)。 <p>流覽 Defender for Endpoint 示範案例網站 ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) ，然後嘗試一或多個案例。 例如，嘗試 **雲端提供的保護** 示範案例。    |
+| Windows 10 <p>Windows Server 2019 <p>Windows伺服器，版本1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | 請參閱 [執行偵測測試](run-detection-test.md)。 <p>流覽 Defender for Endpoint 示範案例網站 ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) ，然後嘗試一或多個案例。 例如，嘗試 **雲端提供的保護** 示範案例。    |
 | macOS：<p>11.3.1 (大型 Sur)  <p>10.15 (Catalina) <p>10.14 (Mojave)     | 下載並使用 DIY 應用程式 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <p>如需詳細資訊，請參閱 [macOS 上的 Defender For Endpoint](microsoft-defender-endpoint-mac.md)。        |
 | Linux：<p>RHEL 7.2 +<p>CentOS Linux 7.2 +<p>Ubuntu 16 LTS 或更高版本 LTS<p>SLES 12 +<p>Debian 9 +<p>Oracle Linux 7。2 | 1. 執行下列命令，並尋找 **1** 的結果： <br/>`mdatp health --field real_time_protection_enabled`. <p>2. 開啟終端視窗，並執行下列命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. 執行下列命令，列出任何偵測到的威脅： <br/>`mdatp threat list`. <p>如需詳細資訊，請參閱 [Linux 上的 Defender For Endpoint](microsoft-defender-endpoint-linux.md)。 |
 

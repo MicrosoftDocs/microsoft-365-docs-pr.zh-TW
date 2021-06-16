@@ -20,12 +20,12 @@ ms.custom:
 description: 本主題將引導您瞭解會影響 Microsoft 365 環境安全性的全租使用者設定的建議配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 623ea316d1ad92790b8818504970a1d35401f617
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879213"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929572"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>設定 Microsoft 365 租用戶以提高安全性
 
@@ -63,9 +63,9 @@ Microsoft 365 Defender 入口網站包含的功能可保護您的環境。 同�
 > [!NOTE]
 > 如果是非標準部署的 SPF、混合式部署及疑難排解： [Microsoft 365 如何使用寄件者原則框架 (SPF) 以避免欺騙](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
-## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>在安全性 & 規範中心內，查看儀表板與報告
+## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看儀表板和報告
 
-請瀏覽以下報告與儀表板來深入了解您環境的健康狀況。 若您的組織使用 Office 365 服務，這些報告中的資料會變得更豐富。 現在，請先熟悉您可以監控與採取動作的項目。 如需詳細資訊，請參閱 [安全性 & 規範中心內的報告](../../compliance/reports-in-security-and-compliance.md)。
+請瀏覽以下報告與儀表板來深入了解您環境的健康狀況。 若您的組織使用 Office 365 服務，這些報告中的資料會變得更豐富。 現在，請先熟悉您可以監控與採取動作的項目。 如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的報告](../../compliance/reports-in-security-and-compliance.md)。
 
 <br>
 

@@ -286,12 +286,14 @@
               href: ms-cloud-germany-transition-add-experience.md
             - name: 其他資訊
               items:
-                - name: Azure AD
-                  href: ms-cloud-germany-transition-azure-ad.md
-                - name: 裝置
-                  href: ms-cloud-germany-transition-add-devices.md
                 - name: AD FS 移轉步驟
                   href: ms-cloud-germany-transition-add-adfs.md
+                - name: Azure AD
+                  href: ms-cloud-germany-transition-azure-ad.md
+                - name: CSP
+                  href: ms-cloud-germany-transition-add-csp.md
+                - name: 裝置
+                  href: ms-cloud-germany-transition-add-devices.md
                 - name: 電子文件探索
                   href: ms-cloud-germany-transition-add-scc.md
 - name: 身分識別
