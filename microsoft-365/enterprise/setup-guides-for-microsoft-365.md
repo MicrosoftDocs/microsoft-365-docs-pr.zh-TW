@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用安裝指南加快 Microsoft 365 或 Office 365 的規劃與設定。
-ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d2e4f29a3f6d484c8586194258c3157bc73fb9e1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454144"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964617"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服務的設定指南
 
@@ -34,22 +34,22 @@ Microsoft 365 和 Office 365 安裝指南為您提供規劃及部署租使用者
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>如何在 Microsoft 365 系統管理中心中存取安裝指南
 
-您可以從 Microsoft 365 系統管理中心的「[安裝指導](https://aka.ms/setupguidance)方針」頁面存取安裝指南。 您可以追蹤進度的狀態，而且您可以隨時退回以完成指南。 若要到達 **安裝指導** 頁面：
+安裝指南可從 Microsoft 365 系統管理中心中的「[安裝指南](https://aka.ms/setupguidance)」頁面進行存取。 您可以追蹤進度的狀態，而且您可以隨時退回以完成指南。 若要到達 **安裝指導** 頁面：
 
-1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)，移至 **首頁**。
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移至 **首頁**。
 
 2. 找到 **訓練 & 輔助** 卡。 
 
-   ![訓練 Microsoft 365 系統管理中心的 & 手冊卡](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![訓練 & 手冊卡 Microsoft 365 系統管理中心](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
 3. 選取 [ **自訂安裝指導** 方針]。
 
-   ![Microsoft 365 系統管理中心之安裝指導頁面的螢幕擷取畫面](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Microsoft 365 系統管理中心中安裝指導頁面的螢幕擷取畫面](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->需要租使用者管理員許可權，才能存取 Microsoft 365 系統管理中心。
+>需要租使用者管理員許可權才能存取 Microsoft 365 系統管理中心。
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>安裝指南在 Microsoft 365 系統管理中心內的運作方式為何？
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>安裝指南在 Microsoft 365 系統管理中心中的運作方式為何？
 
 每個指南都會提供逐步指示、資源、文章，以及在需要時使用的腳本，以進行設定變更。 這些指南為您提供各種選擇，以反映小型和大型組織的特定需求。 此外，指導方針也包含對新的和更有經驗之系統管理員的協助。
 
@@ -96,11 +96,11 @@ Windows虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服�
 
 [Microsoft Edge 安裝指南](https://aka.ms/edgeadvisor)可協助您設定 Enterprise 網站探索，以查看您的組織中所存取的網站可能需要使用 IE 模式、複查及設定重要的安全性功能、設定隱私權原則及其他原則，以符合組織的需求，以及管理裝置上的 web access。 您可以將 Microsoft Edge 下載至個別裝置，也可以使用 Configuration Manager 或 Microsoft Intune，向您示範如何在您的組織中部署多位使用者。 
 
-### <a name="microsoft-search-setup-guide"></a>Microsoft Search 設定指南
+### <a name="microsoft-search-setup-guide"></a>Microsoft 搜尋安裝指南
 
-Microsoft 搜尋可協助您的組織找到他們所需的專案，以完成他們的工作。 不論是搜尋人員、檔案、組織結構圖、網站或解答常見問題，您的組織都可以在其整個 workday 中使用 Microsoft 搜尋，以取得答案。
+Microsoft 搜尋可協助您的組織找到其所需完成的工作。 不論是搜尋人員、檔案、組織結構圖、網站或解答常見問題，您的組織都可以在其整個 workday 中使用 Microsoft 搜尋，以取得答案。
 
-[Microsoft search 設定指南](https://aka.ms/MicrosoftSearchSetup)可協助您設定 microsoft 搜尋，是否要將其試驗給使用者群組，或將其推廣給您組織中的每個人。您將指派搜尋系統管理員和搜尋編輯器，然後為您的使用者自訂搜尋經驗及其他選項，例如，將 Bing 副檔名新增至 Chrome，或將 Bing 設定為預設搜尋引擎。
+[Microsoft 搜尋設定指南](https://aka.ms/MicrosoftSearchSetup)可協助您設定 Microsoft 搜尋是否要將其試驗給使用者群組，或將其推廣給組織中的每個人。您將指派搜尋系統管理員和搜尋編輯器，然後為您的使用者自訂搜尋經驗及其他選項，例如，將 Bing 副檔名新增至 Chrome，或將 Bing 設定為預設搜尋引擎。
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager 共同管理安裝指南
 
@@ -157,7 +157,7 @@ Microsoft 搜尋可協助您的組織找到他們所需的專案，以完成他�
 
 Microsoft Exchange OnlineProtection (EOP) 是雲端式電子郵件篩選服務，用以防範垃圾郵件和惡意程式碼，其功能可保護您的組織不會違反郵件原則。 
 
-使用[Exchange Online Protection 設定指南](https://aka.ms/EOPguidance)來設定 EOP，方法是選取三個部署案例中的哪一個部署案例 &mdash; 、混合式 (混合式內部部署和雲端) 信箱，或所有雲端信箱都 &mdash; 符合您的組織。 此指南提供資訊和資源，可設定及審閱使用者的授權、在 Microsoft 365 系統管理中心中指派許可權，以及在安全性 & 規範中心設定組織的反惡意程式碼和垃圾郵件原則。 
+使用[Exchange Online Protection 設定指南](https://aka.ms/EOPguidance)來設定 EOP，方法是選取三個部署案例中的哪一個部署案例 &mdash; 、混合式 (混合式內部部署和雲端) 信箱，或所有雲端信箱都 &mdash; 符合您的組織。 此指南提供資訊和資源，用以設定及審閱使用者的授權、在 Microsoft 365 系統管理中心中指派許可權，以及在安全性 & 規範中心設定組織的反惡意程式碼和垃圾郵件原則。 
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>適用于 Office 365 advisor 的 Microsoft Defender
 
@@ -217,8 +217,3 @@ Microsoft Exchange OnlineProtection (EOP) 是雲端式電子郵件篩選服務�
 
 針對使用 configuration manager 的組織，您可以使用「 [configuration manager advisor 的 Deploy 和更新 Microsoft 365 Apps](https://aka.ms/oppinstall)來產生腳本，該腳本會以 FastTrack 工程師建議的最佳作法來設定 Microsoft 365 Apps 部署。 使用此指南可建立您的部署群組、自訂您的 Office 應用程式和功能、設定動態或精益安裝，然後執行腳本以建立以您的部署為目標的應用程式、自動部署規則和裝置集合。 
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>整合協力廠商 cloud app 與 Azure AD
-
-整合協力廠商應用程式與 Azure Active Directory (Azure AD) ，以改善使用者體驗，並提供額外的安全性層級。 透過這種端對端的體驗，您可以直接從此嚮導執行大部分設定。 在適當的地方，我們會將您重新導向至對應的設定頁面。
-
-使用 [ [整合協力廠商 cloud app](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) ] 嚮導來整合協力廠商 cloud App 與 Azure AD。

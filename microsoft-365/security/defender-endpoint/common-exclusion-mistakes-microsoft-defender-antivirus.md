@@ -15,21 +15,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/17/2021
-ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/15/2021
+ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538060"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950128"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>定義排除時應避免的常見錯誤
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-您可以為不想 Microsoft Defender 防毒軟體掃描的專案定義排除清單。 這類排除的專案可能包含使您的裝置受到攻擊的威脅。 
-
-本文說明在定義排除時，應避免的常見錯誤。 
+您可以為不想 Microsoft Defender 防毒軟體掃描的專案定義排除清單。 這類排除的專案可能包含使您的裝置受到攻擊的威脅。 本文說明在定義排除時，應避免的常見錯誤。 
 
 在定義您的排除清單之前，請參閱[建議以定義排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)專案。
 
@@ -231,7 +227,9 @@ ms.locfileid: "52538060"
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
@@ -272,9 +270,3 @@ Microsoft Defender 防毒軟體服務會使用 LocalSystem 帳戶在系統內容
 
 如需如何在排除清單中使用萬用字元的詳細資訊，請參閱在 [檔案名和資料夾路徑或副檔名排除清單中使用萬用字元](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 。
 
-## <a name="related-articles"></a>相關文章
-
-- [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
-- [根據副檔名和資料夾位置，設定及驗證排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [設定及驗證由進程開啟之檔案的排除專案](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [設定 Windows 伺服器上的 Microsoft Defender 防毒軟體排除](configure-server-exclusions-microsoft-defender-antivirus.md)

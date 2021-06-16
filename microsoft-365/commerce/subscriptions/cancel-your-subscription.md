@@ -19,17 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: 如果您的使用者授權少於 25 個，您可以在系統管理中心取消商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: 04/08/2021
-ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 18e7ca5cec91e1614808f2087ce0394f33a45c7a
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929452"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950080"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
 > [!IMPORTANT]
-> 本文僅適用於商務用 Microsoft 365 訂閱。 如果您有 Microsoft 365 家用版或個人版，請參閱[取消 Microsoft 365 訂閱](https://support.microsoft.com/zh-TW/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b)。
+> 本文僅適用於商務用 Microsoft 365 訂閱。 如果您有 Microsoft 365 家用版或個人版，請參閱[取消 Microsoft 365 訂閱](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)。
 
 *資格：* 如果您指派給使用者的授權少於 25 個，您可以隨時在 Microsoft 365 系統管理中心線上取消商務用 Microsoft 365 試用版或付費訂閱。 如果您指派給使用者的授權超過 25 個，請減少為少於 25 個，或[連絡支援人員以取消您的訂閱](../../business-video/get-help-support.md)。
 

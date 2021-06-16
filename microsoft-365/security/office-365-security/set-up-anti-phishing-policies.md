@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788412"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964882"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -143,7 +143,7 @@ ms.locfileid: "52788412"
   - 針對寄件者相片中的問號，SPF 或 DKIM 最為重要。
   - 在 [via] 標籤上，確認 DKIM 簽章中的網域，或 [ **郵件發件** 人位址相符 (] 或 [寄件者] 位址中) 網域的子域。
 
-如需詳細資訊，請參閱[識別可疑郵件中的 Outlook .com 和 Outlook 網頁](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+如需詳細資訊，請參閱[識別 Outlook .com 中的可疑郵件和 Outlook 網頁版](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的反網路釣魚原則中的獨佔設定
 
@@ -209,10 +209,14 @@ ms.locfileid: "52788412"
   - **顯示不尋常字元的秘訣**：寄件者位址包含不尋常的字元集，例如數學符號和文字，或是混合的大小寫字母) 在受保護的寄件者或網域中 (。
 
   > [!IMPORTANT]
+  > 即使已關閉模擬安全性秘訣， **我們還是建議** 您使用郵件流程規則 (也稱為傳輸規則) ，將下列郵件頭新增至郵件：
   >
-  > 即使已關閉模擬安全性秘訣，**我們還是建議您使用** 郵件流程規則 (也稱為傳輸規則) 新增名為 **X-MS-Exchange-EnableFirstContactSafetyTip** 的郵件頭，並 **啟用** 對郵件的值。 安全提示會在第一次從寄件者收到郵件時通知收件者，或是不經常從寄件者取得郵件。 這項功能會針對潛在的模仿攻擊，新增額外的安全性防護層。
+  > - 標頭名稱： **X-毫秒-Exchange EnableFirstContactSafetyTip**
+  > - 標頭值： **啟用**
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="具有多個收件者之類比保護的安全提示文字。":::
+  > 安全提示會在第一次從寄件者收到郵件時通知收件者，或是不經常從寄件者取得郵件。 這項功能會針對潛在的模仿攻擊，新增額外的安全性防護層。
+  >
+  > ![具有多個收件者之類比保護的安全提示文字。](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 - **信箱智慧**：啟用或停用使用者的智慧 (AI) ，可決定使用者的電子郵件模式與經常的連絡人。 此設定可協助 AI 辨別來自合法和模擬寄件者的郵件。
 

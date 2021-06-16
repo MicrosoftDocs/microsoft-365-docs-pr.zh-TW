@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概觀。
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908316"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950020"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概觀 
 
-Viva 主題使用 Microsoft AI 技術（Microsoft 365、microsoft Graph、搜尋及其他元件及服務），在日常使用的 Microsoft 365 應用程式中，讓您的使用者掌握知識，從 SharePoint 新式頁面、Microsoft Search 及在 Word 中搜尋，PowerPoint，Outlook，及 Excel。
+Viva 主題使用 Microsoft AI 技術、Microsoft 365、microsoft Graph、搜尋及其他元件和服務，以在日常使用的 Microsoft 365 應用程式中，將知識帶入您的使用者，並從 SharePoint 新式頁面、Microsoft 搜尋，以及在 Word、PowerPoint、Outlook 和 Excel 中搜尋。
 
 <br/>
 
@@ -142,10 +142,8 @@ Microsoft 365 系統管理中心中的管理控制可讓您管理 Viva 主題。
 
 系統可能會詢問您允許查看其日常工作中的主題的使用者，主題對他們來說是否實用。 系統會查看這些回應，並使用它們來改善主題醒目提示，並協助決定主題摘要和主題詳細資料中顯示的內容。
 
-此外，具有適當權限的使用者可以標記與主題相關的項目 (例如 Yammer 交談)，並將它們新增到特定主題。 
-
 如需詳細資訊，請參閱 [主題探索和 curation](./topic-experiences-discovery-curation.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Microsoft 搜尋來尋找 Viva 主題中的主題](./search.md)
+[使用 Microsoft 搜尋在 Viva 主題中尋找主題](./search.md)

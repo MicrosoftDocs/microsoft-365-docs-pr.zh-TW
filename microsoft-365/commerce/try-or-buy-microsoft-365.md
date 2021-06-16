@@ -16,19 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150
-description: 為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 Apps 商務版註冊30天免費試用版。
+search.appverid: GEA150
+description: 為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 商務版應用程式註冊30天免費試用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583445"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950044"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>嘗試或購買商務用 Microsoft 365 訂閱
 
-Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您的組織，Microsoft 會為您執行這項工作。 Microsoft 管理裝置，防範實際威脅，並為您的組織提供最新的商務軟體。 您可以為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 Apps 商務版註冊免費試用訂閱，並將其試用30天。
+Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您的組織，Microsoft 會為您執行這項工作。 Microsoft 管理裝置，防範實際威脅，並為您的組織提供最新的商務軟體。 您可以為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 商務版應用程式註冊免費試用訂閱，並將其試用30天。
 
 > [!NOTE]
 > 當您註冊免費試用版時，必須使用信用卡。 當您的免費試用期結束時，您的試用訂閱會自動轉換為付費訂閱。 在試用期結束之前，您的信用卡不會記帳。
@@ -43,13 +43,13 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>事前準備
 
 您不需要現有的 Microsoft 帳戶即可註冊免費試用版。 針對本文中的所有其他程式，您必須是組織的全域或計費系統管理員。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>嘗試免費試用訂閱
 
-您是新的客戶，而且您還沒有 Microsoft 的帳戶？ 使用這些步驟來建立帳戶，並註冊 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 Apps 商務版的免費試用訂閱。
+您是新的客戶，而且您還沒有 Microsoft 的帳戶？ 使用這些步驟來建立帳戶，並註冊 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 商務版應用程式的免費試用訂閱。
 
 1. 移至 [ <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 產品] 網站</a>。
 2. 選取您要註冊的計畫，例如 **Microsoft 365 商務標準版**，向下滾動頁面，然後選取 [**嘗試1個月可用**]。
@@ -62,7 +62,7 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 
 如果您想要在試用之前購買您的訂閱，請使用下列步驟：
 
-1. 在 Microsoft 365 系統管理中心，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在 Microsoft 365 系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 2. 在 [ **產品** ] 頁面上，找到您要購買的訂閱。
 3. 在 [ **授權** ] 區段中，選取 [ **購買訂閱**]。
 4. 選擇您訂閱的每月或每年承諾，然後選取 [ **簽出**]。
@@ -83,13 +83,13 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 
 ## <a name="cancel-your-free-trial-subscription"></a>取消免費試用訂閱
 
-如果您決定在免費試用期結束之前取消試用訂閱，請移至 Microsoft 365 系統管理中心，然後[關閉重複計費](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 當您的月結束時，試用期會自動到期，而您的信用卡也會向您 \' 收費。
+如果您決定在免費試用期結束之前取消試用訂閱，請移至 Microsoft 365 系統管理中心，然後[關閉定期計費](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 當您的月結束時，試用期會自動到期，而您的信用卡也會向您 \' 收費。
 
 ## <a name="try-a-different-subscription"></a>嘗試其他訂閱
 
 如果您已具備商務用訂閱的 Microsoft 365，您可以使用 Microsoft 365 系統管理中心嘗試不同的訂閱。
 
-當您透過 Microsoft 365 系統管理中心新增訂閱時，會將新的訂閱與同一個組織關聯 (網域命名空間，) 為現有的訂閱。 這項關聯可讓您更輕鬆地在訂閱間移動組織中的使用者，或為他們指派所需之其他產品的授權。
+當您透過 Microsoft 365 系統管理中心新增訂閱時，新的訂閱會與同一個組織產生關聯 (網域命名空間) 作為現有的訂閱。 這項關聯可讓您更輕鬆地在訂閱間移動組織中的使用者，或為他們指派所需之其他產品的授權。
 
 1. 在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。
 2. 在 [ **購買服務** ] 頁面上，您會看到您的組織可使用的計畫。 選擇您要嘗試的 Microsoft 365 方案。
@@ -101,7 +101,7 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 
 ## <a name="buy-a-different-subscription"></a>購買其他訂閱
 
-如果您已具備商務用訂閱的 Microsoft 365，可流覽 Microsoft 365 系統管理中心為您的組織購買不同的訂閱。
+如果您已具備商務用訂閱的 Microsoft 365，您可以流覽 Microsoft 365 系統管理中心為您的組織購買不同的訂閱。
 
 當您透過系統管理中心購買其他訂閱時，新的訂閱會與同一個組織相關聯 (功能變數名稱空間) 成為現有的訂閱。 這可讓您更容易在訂閱間移動組織中的使用者，或為他們指派所需之其他訂閱的授權。
 

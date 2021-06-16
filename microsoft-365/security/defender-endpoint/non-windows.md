@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4714ad9a4388654cbf865ed54afe260a67d724f
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: dc5710a73685c67eff17c0f281bd14e48707e60f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957500"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964785"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>非 Windows 平台版適用於端點的 Microsoft Defender
 
@@ -43,15 +43,30 @@ Microsoft 已在 Windows 和 Windows Server 之外擴充其業界領先的端點
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 上適用於端點的 Microsoft Defender 
 
-macOS 上的 Microsoft Defender for endpoint 提供了防毒軟體和端點偵測和回應 (EDR 最近發行版本本 macOS 的) 功能。 客戶可以透過 Microsoft 端點管理員和 Jamf 來部署及管理解決方案。 就像 macOS 上的 Microsoft Office 應用程式一樣，microsoft 自動更新是用來管理 Mac 更新上的 microsoft Defender for Endpoint。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
+macOS 的「Microsoft Defender for Endpoint」提供防毒軟體和端點偵測及回應 (三個最新發行版本本) 的 EDR macOS 功能。 客戶可以透過 Microsoft 端點管理員和 Jamf 來部署及管理解決方案。 就像 macOS 上的 Microsoft Office 應用程式一樣，microsoft 自動更新是用來管理 Mac 更新上的 microsoft Defender for Endpoint。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 如需如何開始的詳細資訊，請造訪 macOS [檔](microsoft-defender-endpoint-mac.md)上的 Defender for Endpoint。
+
+>[!NOTE]
+>MacOS 端點上目前不支援下列功能：
+>- 資料外洩防護
+>- 即時回應
+>- SIEM
+
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
 Linux 上的 Microsoft Defender for Endpoint 會為 Linux 伺服器提供預防性 (AV) 功能。 這包括完整的命令列體驗，可供您設定及管理代理程式、起始掃描及管理威脅。 我們支援最常見的六個舊版 Linux 伺服器發行： RHEL 7.2 +、CentOS Linux 7.2 +、Ubuntu 16 LTS 或更高 LTS、SLES 12 +、Debian 9 + 及 Oracle Linux 7.2。 您可以使用 Puppet、Ansible 或使用現有的 Linux 設定管理工具，部署及設定 Linux 上的 Microsoft Defender for Endpoint。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
 
 如需如何開始的詳細資訊，請流覽 Linux [檔](microsoft-defender-endpoint-linux.md)上的 Microsoft Defender for Endpoint。
+
+>[!NOTE]
+>在 Linux 端點上目前不支援下列功能：
+>- 資料外洩防護
+>- 即時回應
+>- SIEM
+
+
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上適用於端點的 Microsoft Defender
 
@@ -69,7 +84,7 @@ IOS 的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方�
 
 合格授權的使用者最多可在最多五個並行裝置上使用 Microsoft Defender 端點。 Microsoft Defender for Endpoint 也可從雲端解決方案提供者 (CSP) 購買。
 
-客戶可以透過獨立的 microsoft defender for endpoint 授權，在 Microsoft 365 A5/E5 或 Microsoft 365 安全性中取得 macOS 的 microsoft defender for endpoint on。
+客戶可以透過獨立 microsoft defender for endpoint 授權，在 macOS 取得 microsoft defender for endpoint，也可以在 Microsoft 365 A5/E5 或 Microsoft 365 安全性] 中取得。
 
 在 Android 和 iOS 上的 Microsoft Defender for Endpoint 的最近宣告功能，包含在適用于合格授權使用者之五個合格裝置的一部分中。
 
