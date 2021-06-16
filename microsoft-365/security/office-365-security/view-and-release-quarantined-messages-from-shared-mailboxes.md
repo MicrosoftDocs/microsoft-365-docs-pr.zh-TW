@@ -17,26 +17,25 @@ ROBOTS: NOINDEX
 description: 使用者可以瞭解如何針對已傳送至其許可權之共用信箱的隔離郵件，查看並採取行動。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d6aed4a6e3bc725635558a5e8394b671d11f47c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 4b958bb07660f4e0c93865300e190c713148a21d
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929848"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933046"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>從共用信箱中查看和發行隔離的郵件
 
 > [!NOTE]
 > 本文中所述的功能目前在預覽中，無法供所有人使用，而且可能會變更。
 
-使用者可以管理被隔離的郵件，而這些郵件是以 [EOP 中的使用者身分發現和發行隔離郵件](find-and-release-quarantined-messages-as-a-user.md)所述的其中一位收件者。 不過，如果使用者擁有信箱的「完整存取」和「代理傳送」或「代理傳送者」許可權（如[Exchange Online 中共用信箱](/exchange/collaboration-exo/shared-mailboxes)所述），共用信箱又該如何處理呢？
+使用者可以管理被隔離的郵件，而這些郵件是以 [EOP 中的使用者身分發現和發行隔離郵件](find-and-release-quarantined-messages-as-a-user.md)所述的其中一位收件者。 不過，如果使用者擁有信箱的「完整存取」和「代理傳送」或「代理傳送者」許可權（如 [Exchange Online 中共用信箱](/exchange/collaboration-exo/shared-mailboxes)所述），**共用** 信箱又該如何處理呢？
 
 先前，使用者能夠管理傳送至共用信箱的隔離郵件時，系統管理員可以將自動對應啟用，以供系統管理員在使用者存取另一個信箱) 時，預設會啟用該共用 (信箱。 不過，視使用者有權存取的信箱大小和數目而定，當 Outlooks 嘗試開啟使用者可以存取的 *所有* 信箱時，效能會受到影響。 基於這個理由，許多系統管理員會選擇 [移除共用信箱的自動對應](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
 現在，使用者不再需要自動對應來管理傳送至共用信箱的隔離郵件。 它只適用于運作。 有兩種不同的方法可以存取已傳送至共用信箱的隔離郵件：
 
 - 如果系統管理員已 [在反垃圾郵件原則中啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)，則可以存取共用信箱中使用者垃圾郵件通知的任何使用者，都可以按一下通知中的 [**檢查**] 按鈕，以移至 Microsoft 365 Defender 入口網站中的隔離區。 請注意，此方法只允許使用者管理傳送至共用信箱的隔離郵件。 使用者無法在此內容中管理自己的隔離訊息。
-
 - 使用者可以[前往 Microsoft 365 Defender 入口網站中的隔離區](find-and-release-quarantined-messages-as-a-user.md)。 根據預設，只會顯示傳送給使用者的郵件。 不過，使用者可以變更「**郵件識別碼」按鈕** 的 **排序結果** () **收件者的電子郵件地址**、輸入共用信箱的電子郵件地址，然後 **按一下 [** 重新整理]，以查看已傳送至共用信箱的隔離郵件。
 
   ![根據收件者電子郵件地址排序隔離的郵件。](../../media/quarantine-sort-results-by-recipient-email-address.png)

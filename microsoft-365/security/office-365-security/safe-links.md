@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受網路釣魚和其他使用惡意 URLs 攻擊的攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9775c67a35d45595f68cd364dc4d70e9985b7e9e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 240056565d88977aa7019f5a14e2db98a8dbb6db
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930520"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933188"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全連結
 
@@ -294,7 +294,7 @@ Office 365 應用程式可使用下列安全連結設定：
 
 每個安全連結原則都包含 **[不要重新寫入下列 URLs** 清單，您可以使用此清單來指定不會以安全連結掃描來重新寫入 URLs。 換句話說，此清單允許包含在原則中的使用者存取指定的 URLs，否則會受到安全連結的封鎖。 您可以在不同的安全連結原則中設定不同的清單。 原則處理會在第一 (後停止，最高優先順序) 原則會套用至使用者。 因此，只有一個不重新 **寫入下列 URLs** 清單會套用至包含在多個作用中安全連結原則中的使用者。
 
-若要將專案新增至新的或現有的安全連結原則中的清單，請參閱[使用 Microsoft 365 Defender 入口網站建立安全連結原則](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)，或[使用 Microsoft 365 Defender 入口網站修改安全連結原則](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
+若要將專案新增至新的或現有的安全連結原則中的清單，請參閱 [建立安全連結原則](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) 或 [修改安全連結原則](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
 **附註**：
 

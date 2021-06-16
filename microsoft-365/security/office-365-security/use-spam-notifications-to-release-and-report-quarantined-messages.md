@@ -21,12 +21,12 @@ ms.custom:
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中瞭解隔離郵件的使用者垃圾郵件通知。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30f82abc245a2f6022bd1a75b57e9d20e3e32a32
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 71f2a33ad83f94895c396f92c18753bfca7f2905
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929884"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933164"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用使用者垃圾郵件通知來釋放及報告隔離的郵件
 
@@ -51,16 +51,11 @@ ms.locfileid: "52929884"
 使用者垃圾郵件通知包含每個隔離郵件的下列資訊：
 
 - **寄件者**：隔離郵件的傳送名稱和電子郵件地址。
-
 - **Subject**：隔離郵件的主旨行文字。
-
 - **日期**： UTC 中 (隔離郵件的日期和時間) 。
-
 - **封鎖寄件者**：按一下此連結可將寄件者新增至信箱上的 [封鎖的寄件者] 清單。 如需詳細資訊，請參閱[封鎖郵件寄件者](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
-
-- **發行**：針對垃圾郵件 (不會) 郵件的網路釣魚，您可以在這裡放開郵件，而不需要隔離 Microsoft 365 Defender 入口網站。
-
-- **檢查**：按一下此連結可移至 Microsoft 365 Defender 入口網站中的隔離區，您可以根據郵件被隔離的原因來 () view、release、delete 或 report 您的隔離郵件。 如需詳細資訊，請參閱 [在 EOP 中尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。
+- **發行**：針對垃圾郵件 (不會) 郵件的網路釣魚，您可以在這裡放開郵件，而不需要 **隔離** Microsoft 365 Defender 入口網站。
+- **檢查**：按一下此連結可移至 Microsoft 365 Defender 入口網站中的 **隔離區**，您可以根據郵件被隔離的原因來 () view、release、delete 或 report 您的隔離郵件。 如需詳細資訊，請參閱 [在 EOP 中尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。
 
 ![最終使用者垃圾郵件通知範例](../../media/end-user-spam-notification.png)
 

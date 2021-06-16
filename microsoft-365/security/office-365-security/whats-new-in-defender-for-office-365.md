@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929548"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932815"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender Office 365 的新功能
 
@@ -42,13 +42,13 @@ ms.locfileid: "52929548"
 > [!TIP]
 > 目前還沒有 Microsoft Defender 用於 Office 365 嗎？ [連絡人銷售人員開始試用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
 
-## <a name="aprilmay-2021"></a>四月/5 月2021 
+## <a name="aprilmay-2021"></a>四月/5 月2021
 
 - [電子郵件實體頁面](mdo-email-entity-page.md)：針對威脅、驗證和偵測、引爆詳細資料和全新的電子郵件預覽體驗的電子郵件，統一的360度觀點。
 - [Office 365 管理 API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)：更新為 EmailEvents (RecordType 28) 以新增傳遞動作、原始和最新的傳遞位置，以及更新的偵測詳細資料。
-- [Office 365 的 Defender 威脅分析](/microsoft-365/security/defender/threat-analytics)：查看使用中威脅的演員、流行的技術和攻擊面，以及來自 Microsoft 研究員的大量報表，以進行持續的活動。 
+- [Office 365 的 Defender 威脅分析](/microsoft-365/security/defender/threat-analytics)：查看使用中威脅的演員、流行的技術和攻擊面，以及來自 Microsoft 研究員的大量報表，以進行持續的活動。
 
-## <a name="februarymarch-2021"></a>二月份/2021 年 
+## <a name="februarymarch-2021"></a>二月份/2021 年
 
 - 在[搜尋體驗](threat-explorer.md)中使用警示識別碼及 Alert-Explorer 導覽) 進行搜尋的警示識別碼整合 (
 - 將[搜尋體驗](threat-explorer.md)中從9990到200000匯出記錄的限制提高
@@ -89,7 +89,7 @@ ms.locfileid: "52929548"
   - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
   - 精確的時間篩選 (日、小時、半小時) 
 
-- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件] &** 共同作業 \> ****。 )  (Office 365 方案2的 Microsoft Defender) 
+- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要在安全性 & 規範中心中查看安全性構件，請移至「**威脅管理**」 \> ****。 )  (Microsoft Defender for Office 365 Plan 2) 
 
 - Microsoft 365 **(預覽**[中的安全檔](safe-docs.md)) 
 

@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a39c6a3b287933ff79f94b00e364d7a45378bd1f
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929872"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933080"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -36,9 +36,7 @@ ms.locfileid: "52929872"
 在 Microsoft 365 具有 Exchange Online 信箱的組織中，您可以指定信箱以接收使用者報告為惡意或非惡意的郵件。 當使用者使用各種報告選項送出郵件時，您可以使用此信箱來截取郵件 (只) 或接收郵件副本 (傳送至自訂信箱和 Microsoft) 。 這項功能可搭配下列郵件報告選項使用：
 
 - [報告訊息增益集](enable-the-report-message-add-in.md)
-
 - [報表網路釣魚增益集](enable-the-report-phish-add-in.md)
-
 - [協力廠商報表工具](#third-party-reporting-tools)
 
 將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統 [管理員提交](admin-submission.md)將郵件報告給 Microsoft。
@@ -52,17 +50,17 @@ ms.locfileid: "52929872"
 
 - 建立 exchange 郵件流程規則以設定垃圾郵件信賴等級，以略過自訂信箱上的垃圾郵件篩選。 請參閱 [使用 EAC 建立郵件流程規則，](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 設定郵件的 scl 設定為將 scl 設定為 **略過垃圾郵件篩選**。
 
-- 關閉自訂信箱中的惡意程式碼的掃描附件。 使用 [在 Office 365 中設定安全附件](set-up-safe-attachments-policies.md)原則，以建立安全附件原則，設定為 [**關閉****安全附件未知惡意程式碼回應**]。
+- [建立安全附件原則](set-up-safe-attachments-policies.md) ，其中包含已關閉安全附件掃描的自訂信箱 (**安全附件未知惡意程式碼回應** 區段 \> **off**) 。
 
-- 在自訂信箱的郵件上關閉 URL 掃描。 使用 [設定 Office 365 中的安全連結](set-up-safe-links-policies.md)原則，以建立安全連結原則，並將設定為 **Off** ，以在 **郵件中選取未知可能惡意 URLs 的動作**。
+- [建立安全連結原則](set-up-safe-links-policies.md)，其中包含關閉 [安全連結] 掃描的自訂信箱 (**請選取 [郵件中未知可能惡意 URLs 的動作**] \> ) 。
 
-- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱 [使用 Microsoft 365 Defender 入口網站建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，將 **惡意程式碼以零小時自動清除** 設定為 **Off**。
+- 建立包含自訂信箱的 [反惡意程式碼原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，其中會關閉惡意程式碼的零小時自動清除 (ZAP)  (**保護設定**] 區段 \> 。) 未選取惡意程式碼的 **自動清除** 功能。
 
-- 建立垃圾郵件篩選原則，以停用自訂信箱中垃圾郵件和網路釣魚的零小時自動清除 (ZAP) 。 請參閱 [使用 Microsoft 365 Defender 入口網站建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，並清除 **垃圾郵件 zap** 和 **網路釣魚 zap** 的 **On** 核取方塊。
+- [建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) ，其中包含的自訂信箱，針對網路釣魚使用的垃圾郵件和 zap 會關閉 (**0 小時自動清除** 區段 \> **已啟用零小時自動清除** ]。 (不會) 選取 ZAP) 。
 
-- 停用自訂信箱中的垃圾郵件規則。 使用 [[設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)] 以停用垃圾郵件規則。 停用之後，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
+- 停用自訂信箱中的垃圾郵件規則。 使用 [[設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)] 以停用垃圾郵件規則。 停用之後，EOP 無法根據垃圾郵件篩選判定動作將郵件移至 [垃圾郵件] 資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
 
-在您確認您的信箱符合所有適用的先決條件後，請執行[使用 Microsoft 365 Defender 入口網站](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox)中所指定的程式來設定使用者認可信箱。
+在您確認您的信箱符合所有適用的先決條件後，您可以使用本文中的程式來設定使用者認可信箱。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -84,58 +82,45 @@ ms.locfileid: "52929872"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>使用 Microsoft 365 Defender 入口網站來設定使用者報送信箱
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **使用者報告的郵件設定** \> **使用者提交**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅** 原則 \> **其他**] 區段 \> **使用者報告的郵件設定** \> **使用者提交**。
 
-2. 在出現的 [ **使用者提交** ] 頁面中，選取下列其中一個選項：
+2. 在 [**使用者** 送出] 頁面上，您所看到的內容取決於 [ **Microsoft Outlook 報告**] [訊息] 按鈕設定為 [**關閉**] 或 [**開啟**]。
 
-      1. **啟用 Outlook (建議) 的報告郵件功能**：若您使用報表訊息增益集、網頁上 Outlook 的報表網路增益集或內建報告，請選取此選項，然後設定下列設定：
+   - **Microsoft Outlook 報告訊息按鈕** \>**開啟** ![開啟切換 ](../../media/scc-toggle-on.png) ：如果您使用報告訊息增益集、網頁上 Outlook 的報表仿冒增益集或內建報告，請選取這個選項，然後設定下列設定：
+     - **將報告的郵件傳送至**：選取下列其中一個選項：
+       - **Microsoft**：不使用使用者送出信箱 (所有報告的郵件都會移至 Microsoft) 。
+       - **Microsoft 和我的組織信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 使用者送出會同時移至 Microsoft 進行分析，以及您的系統管理員或安全性作業小組的自訂信箱進行分析。
+       - **我的組織信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 如果您只想要將郵件移至系統管理員或安全性作業小組進行分析，請使用此選項。 除非系統管理員自行轉寄，否則郵件不會移至 Microsoft。
 
-    - **自訂使用者確認訊息**：按一下此連結。 在出現的 [ **自訂確認訊息** ] 浮出視窗中，設定下列設定：
+          > [!IMPORTANT]
+          >
+          > 美國政府組織 (GCC、GCC 高及 DoD) 只能設定 **我的組織的信箱**。 其他兩個選項會停用。
+          >
+          > 如果組織已設定為僅傳送至自訂信箱，將不會傳送報告的郵件以進行重新掃描，而且使用者報告的郵件入口網站將永遠會是空的。
 
-        - **提交之前**：在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用報告訊息增益集或報告網路釣魚增益集報告郵件之前看到的描述性文字。 您可以使用變數% type%，以包含提交類型 (垃圾郵件、非垃圾郵件、網路釣魚網路等等 ) 。
+       不論您選取要 **傳送報告的郵件** 值，都可以使用下列設定：
 
-          如所述，如果您選取將報告的郵件傳送給 Microsoft 的選項，下列文字也會新增至通知：
+       - **讓使用者選擇是否要將其郵件報告給 Microsoft**
+       - **選取 [使用者可使用的報告選項** ] 區段：請至少選取下列選項中的一個：
+         - **傳送郵件之前向我提問**
+         - **無條件報告訊息**
+         - **從不報告訊息**
+
+          > [!CAUTION]
+          > 如果您已在網頁信箱原則上使用 Outlook 來[停用網頁 Outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)，但您設定了先前的任何設定，將郵件報告給 microsoft，使用者就可以使用報表郵件增益集或報表網路釣魚增益集，在網頁上的 Outlook 中報告郵件給 microsoft。
+
+     - **使用者報告經驗區段**
+       - 在 [**報告**] 索引卷 **標** 中：在 [標題] 和 [**訊息**] 方塊中，輸入使用者在使用報告郵件增益集或報表網路釣魚增益集報告郵件之前看到的描述性文字。 您可以使用變數% type%，以包含提交類型 (垃圾郵件、非垃圾郵件、網路釣魚網路等等 ) 。
+       - 在 [**報告**] 索引卷 **標** 中：在 [標題] 和 [**確認訊息**] 方塊中，輸入使用者在使用報告訊息增益集或報表網路釣魚增益集報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
+
+       如頁面上所示，如果您選取將報告的郵件傳送給 Microsoft 的選項，下列文字也會新增至通知：
 
           > 您的電子郵件會向 Microsoft 提交，以進行分析。 有些電子郵件可能包含個人或機密資訊。
 
-        - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用報告訊息增益集或報告網路釣魚增益集報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
+   - **Microsoft Outlook 報告訊息按鈕** \>**關閉** ![關閉切換 ](../../media/scc-toggle-off.png) ：如果您使用協力廠商報表工具，而不是報告郵件增益集、報告網路釣魚增益集或 Outlook 網頁上的內建報告，請選取這個選項，然後設定下列設定：
+     - 選取 [ **使用此自訂信箱以接收使用者報告的提交**]。 在出現的方塊中，輸入可接收電子郵件之現有 Exchange Online 信箱的電子郵件地址。
 
-      完成後，按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
-    
-    - **自訂最終使用者報告選項**：按一下此連結。 在出現的 [ **自訂最終使用者報告選項** ] 浮出控制項中，輸入垃圾郵件報告選項的描述性文字。 
-    
-      在 **報告訊息時顯示** 的 [選項] 底下，在下列選項中至少選取一個選項：
-        - **傳送報告之前向我提問**
-        - **自動傳送報告**
-        - **從不傳送報告**
-       
-      完成後，按一下 **[儲存]**。
-
-        - **將報告的郵件傳送至**：進行下列其中一項選擇：
-
-        - **Microsoft (建議)**：不使用使用者提交信箱 (所有報告的郵件都移至 Microsoft) 。
-
-        - **Microsoft 和自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 使用者送出會同時移至 Microsoft 進行分析，以及您的系統管理員或安全性作業小組的自訂信箱進行分析。
-
-        - **僅限自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 如果您只想要將郵件移至系統管理員或安全性作業小組進行分析，請使用此選項。 除非系統管理員自行轉寄，否則郵件不會移至 Microsoft。
-
-          > [!NOTE]
-          > 美國政府組織 (GCC、GCC-H 及 DoD) 只能設定 **自訂信箱**。 其他兩個選項會停用。
-
-          > [!NOTE]
-          > 如果組織已設定為僅傳送至自訂信箱，將不會傳送報告的郵件以進行重新掃描，而且使用者報告的郵件入口網站將永遠會是空的。
-
-      完成後，請按一下 [ **確認**]。
-
-      > [!CAUTION]
-      > 如果您已在網頁信箱原則上使用 Outlook 來[停用網頁 Outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報表郵件增益集或報告網路釣魚增益集，在網頁上的 Outlook 中報告郵件給 microsoft。
-
-
-    2. **停用 Outlook 的報告郵件功能**：若您使用協力廠商報表工具，而不是報告郵件增益集、報告網路釣魚增益集或網頁上 Outlook 內建的報表，請選取這個選項，然後設定下列設定：
-
-       選取 [ **使用此自訂信箱以接收使用者報告的提交**]。 在出現的方塊中，輸入已在 Office 365 的現有信箱的電子郵件地址。 這必須是可接收電子郵件 Exchange Online 中的現有信箱。
-
-       完成後，請按一下 [ **確認**]。
+   完成後，請按一下 [ **確認**]。 若要清除這些值，請按一下 [**還原**]
 
 ## <a name="third-party-reporting-tools"></a>協力廠商報表工具
 
