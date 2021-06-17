@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d2edc5d429d124412134b466753b65506d2dd7a9
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 50b05b98ba507e120bbd6a3dc09f4633dac3a005
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772182"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998773"
 ---
 # <a name="get-domain-statistics-api"></a>取得網域統計資料 API
 
@@ -65,7 +65,7 @@ GET /api/domains/{domain}/stats
 
 ## <a name="request-headers"></a>要求標頭
 
-頁首 | 值 
+標頭 | 值 
 :---|:---
 授權 | 載荷 {token}。 **必要欄位**。
 
@@ -75,7 +75,7 @@ GET /api/domains/{domain}/stats
 :---|:---|:---
 lookBackHours | Int32 | 定義我們回叫以取得統計資料的小時數。 預設為30天。 此為選擇性欄位。
 
-## <a name="request-body"></a>要求正文
+## <a name="request-body"></a>要求內文
 空白
 
 ## <a name="response"></a>回應
@@ -101,7 +101,7 @@ GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookB
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
     "host": "example.com",
-    "orgPrevalence": "4070",
+    "organizationPrevalence": 4070,
     "orgFirstSeen": "2017-07-30T13:23:48Z",
     "orgLastSeen": "2017-08-29T13:09:05Z"
 }

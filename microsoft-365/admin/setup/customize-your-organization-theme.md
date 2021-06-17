@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 瞭解如何在 Microsoft 365 中變更導覽列頂端的預設主題，並加以自訂，使其符合您公司的徽標或色彩。
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908158"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998797"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
@@ -74,7 +74,7 @@ ms.locfileid: "52908158"
 
 2. 在 [**群組**] 底下，您最多可以選擇5個 Microsoft 365 群組可以查看您的群組主題，而不是使用預設主題。 您也可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存 **]**。
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織中使用者群組的預設主題":::
 
@@ -82,16 +82,13 @@ ms.locfileid: "52908158"
 
 在 [ **徽標** ] 頁面上，您可以新增您的徽標，並指定使用者在選取標誌時所要流覽的 URL。
 
-- **預設徽標**：新增指向您的徽標的 URL 位置。 請確定 URL 使用 HTTPS。 如果您要上傳標誌，請確定其為小於10kb。 您的預設標誌可以是 JPG、PNG、GIF 或 SVG 格式。 若為 SVG 影像，將會調整大小以垂直容納24圖元。 JPG、PNG、GIF 圖像會調整為符合 200 x 48 圖元。
+- **預設徽標**：新增指向您的徽標的 URL 位置。 請確定 URL 使用 HTTPS。 新增 HTTPS 影像 url 允許匿名存取，而且不需要驗證。 針對預設主題，您也可以選擇上載小於10kb 的標誌影像。 您的預設標誌可以是 JPG、PNG、GIF 或 SVG 格式。 若為 SVG 影像，將會調整大小以垂直容納24圖元。 JPG、PNG、GIF 圖像會調整為符合 200 x 48 圖元。 標誌的方位比例會永遠保留。
 - **替代標誌**：新增指向您的徽標的 URL 位置。 您的替代標誌應經過優化，以用於 Office 深色主題。 與預設標誌相同的需求。
 - **按一下連結**：新增指向您的標誌的 URL 位置。 您可以使用您的徽標作為任何公司資源的連結，例如公司的網站。
 
 選取 **[儲存]** 以儲存變更。
 
 您可以隨時移除您的徽標。 只需回到 [ **徽標** ] 頁面，然後選取 [ **移除**]。
-
-> [!NOTE]
-> 根據預設，我們會先顯示大部分組織所使用的標誌選項。 上傳選項只適用于預設主題和非群組主題。
   
 ## <a name="colors-choose-theme-colors"></a>色彩：選擇主題色彩
 

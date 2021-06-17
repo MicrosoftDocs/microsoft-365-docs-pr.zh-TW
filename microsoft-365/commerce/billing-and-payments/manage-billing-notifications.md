@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 瞭解如何管理接收帳單通知電子郵件和發票附件的人員。
 ms.date: 03/17/2021
-ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888358"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998761"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帳單通知和發票附件
 
@@ -43,7 +43,7 @@ ms.locfileid: "52888358"
 
 計費通知電子郵件會以組織的慣用語言傳送。 若要變更慣用語言，請使用下列步驟。
 
-1. 在 Microsoft 365 系統管理中心，移至 [**計費**] [帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">通知</a>] 頁面。
+1. 在 Microsoft 365 系統管理中心中，移至 [**帳單**] [帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">通知</a>] 頁面。
 2. 在 [ **帳單通知設定** ] 區段中，選取 [ **編輯通知設定**]。
 3. 在 [ **帳單通知設定** ] 窗格中的 [ **喜好語言** ] 下，選取您要使用的語言，然後選取 [ **儲存**]。
 
@@ -58,7 +58,7 @@ ms.locfileid: "52888358"
 3. 在右窗格的 [指派的系統 **管理員** ] 索引標籤上，選取 [ **新增**]。
 4. 在 [ **新增系統管理員** ] 窗格中，輸入使用者的顯示名稱或使用者名稱，然後從建議清單中選取使用者。
 5. 在您完成之前，新增多個使用者。
-6. 選取 ****[儲存]。 使用者已新增至指派的系統管理員清單。
+6. 選取 [儲存 **]**。 使用者已新增至指派的系統管理員清單。
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>使用 [帳單通知] 頁面移除系統管理員角色
 
@@ -87,9 +87,6 @@ ms.locfileid: "52888358"
 3. 在右窗格中，輸入您要使用的電子郵件地址，然後選取 [ **儲存**]。
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>以電子郵件附件形式接收組織的發票
-
-> [!NOTE]
-> 計費系統管理員也可以執行本節中的步驟。
 
 您可以將組織發票的複本附加為 PDF 檔案，以在新發票準備好時開具發票通知電子郵件。 使用下列步驟，以附件形式接收發票。
 
@@ -130,6 +127,6 @@ ms.locfileid: "52888358"
 ## <a name="related-content"></a>相關內容
 
 [檢視帳單](view-your-bill-or-invoice.md) (文章)\
-[在墨西哥 Microsoft 365 for business 的帳單資訊](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (文章) \
+[墨西哥企業的 Microsoft 365 帳單資訊](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (文章)
 [瞭解商務用 Microsoft 365 帳單或發票](understand-your-invoice2.md) (文章) \
 [同時新增使用者並指派授權](../../admin/add-users/add-users.md) (文章) 

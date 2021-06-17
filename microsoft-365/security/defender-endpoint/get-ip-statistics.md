@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4919f082c115d8a57960ec49532b6cda6a63833f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770082"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998725"
 ---
 # <a name="get-ip-statistics-api"></a>取得 IP 統計資料 API
 
@@ -73,7 +73,7 @@ GET /api/ips/{ip}/stats
 :---|:---|:---
 lookBackHours | Int32 | 定義我們回叫以取得統計資料的小時數。 預設為30天。 此為選擇性欄位。
 
-## <a name="request-body"></a>要求正文
+## <a name="request-body"></a>要求內文
 空白
 
 ## <a name="response"></a>回應
@@ -99,7 +99,7 @@ GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBac
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
     "ipAddress": "10.209.67.177",
-    "orgPrevalence": "63515",
+    "organizationPrevalence": 63515,
     "orgFirstSeen": "2017-07-30T13:36:06Z",
     "orgLastSeen": "2017-08-29T13:32:59Z"
 }

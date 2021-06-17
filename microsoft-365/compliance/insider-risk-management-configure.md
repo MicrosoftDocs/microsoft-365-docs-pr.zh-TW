@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9e1b7a18bea09d10cb133ce9106df45533a72172
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 18d6079141d7fe0cd5b4c7187f51e5fa7079b844
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445227"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998749"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -38,13 +38,13 @@ ms.locfileid: "51445227"
 - Microsoft 365 E5 訂閱 (付費或試用版) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365A5 訂閱 (付費或試用版本) 
-- Microsoft 365A3 訂閱 + Microsoft 365 A5 符合性附加元件
-- Microsoft 365A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365 A5 訂閱 (付費或試用版) 
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 規範附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 「內幕人員風險管理附加元件」
 - Microsoft 365G5 訂閱 (付費或試用版) 
 - Microsoft 365 G3 訂閱 + Microsoft 365 G5 相容性附加元件
 - Microsoft 365 G3 訂閱 + Microsoft 365 G5 內部風險管理附加元件
-- Office 365E3 訂閱 + Enterprise 行動性和安全性 E3 + Microsoft 365 E5 合規性附加元件
+- Office 365 E3 訂閱 + Enterprise 行動性和安全性 E3 + Microsoft 365 E5 合規性附加元件
 
 包含在「內幕風險管理」原則中的使用者必須指派上述其中一個授權。
 
@@ -61,14 +61,14 @@ ms.locfileid: "51445227"
 
 | **角色群組** | **角色權限** |
 | :------------- | :------------------- |
-| **有問必答風險管理** | 使用此角色群組來管理單一群組中的組織測試人員風險管理。 新增指派管理員、分析員、調查人員和審計員的所有使用者帳戶，您可以在單一群組中設定「有問必答風險管理」許可權。 這個角色群組包含所有的「內幕風險管理」許可權角色和相關聯的許可權。 這項設定是快速開始使用「內幕風險管理」的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。 |
-| **測試人員風險管理系統管理員** | 使用此角色群組開始設定「有問必答風險管理」和更新後的成員，以將內幕風險管理員與定義的群組隔離。 這個角色群組中的使用者可以啟用和查看分析 insights，以及建立、讀取、更新和刪除內部使用者風險管理原則、全域設定和角色群組指派。 |
+| **有問必答風險管理** | 使用此角色群組來管理單一群組中的組織測試人員風險管理。 新增指派管理員、分析員、調查人員和審計員的所有使用者帳戶，您可以在單一群組中設定「有問必答風險管理」許可權。 這個角色群組包含所有的「內幕風險管理」許可權角色和相關聯的許可權。 這項設定是快速開始使用「內幕風險管理」的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。 使用此設定時，您應該確定永遠至少有一個使用者指派給此角色，以確保您的原則如預期般運作，這樣使用者才能建立及編輯原則、設定方案設定，以及審閱原則狀況警告。|
+| **測試人員風險管理系統管理員** | 使用此角色群組開始設定「有問必答風險管理」和更新後的成員，以將內幕風險管理員與定義的群組隔離。 這個角色群組中的使用者可以啟用和查看分析 insights，以及建立、讀取、更新和刪除內部使用者風險管理原則、全域設定和角色群組指派。 使用此設定時，您應該確定永遠至少有一個使用者指派給此角色，以確保您的原則如預期般運作，這樣使用者才能建立及編輯原則、設定方案設定，以及審閱原則狀況警告。 |
 | **測試人員風險管理分析員** | 使用此群組將權限指派給將擔任測試人員風險案例分析員的使用者。 這個角色群組中的使用者可以存取及流覽所有的內幕人士風險管理提醒、案例、分析真知灼見及通知範本。 他們無法存取「內部使用者風險」內容瀏覽器。 |
 | **測試人員風險管理調查員** | 使用此群組將權限指派給將擔任測試人員風險資料調查員的使用者。 在所有情況下，此角色群組中的使用者都可以存取所有的內幕程式風險管理提醒、案例、通知範本及內容瀏覽器。 |
 | **內部人員風險管理審計員** | 使用此群組可將許可權指派給使用者，以進行審核的「內幕風險管理」活動。 這個角色群組中的使用者可以存取「內幕人員風險審核記錄」。 |
 
 > [!NOTE]
-> Privileged Identity Management (PIM) 上目前不支援這些角色群組。 若要深入瞭解 PIM，請參閱[在 Privileged Identity Management 中指派 AZURE AD role](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)。
+> 特殊權限身分識別管理 (PIM) 上目前不支援這些角色群組。 若要深入瞭解 PIM，請參閱[在特殊權限身分識別管理中指派 Azure AD role](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)。
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>將使用者新增至「內幕風險管理」角色群組
 
@@ -102,7 +102,7 @@ ms.locfileid: "51445227"
 
 完成下列步驟以啟用「內幕風險分析」：
 
-1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)，移至「**內幕人員風險管理**」。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)中，移至「**有問必答風險管理**」。
 2. 在 [有問必答風險管理 **概述**] 索引標籤上 **，選取 [在** 您的組織卡片中掃描上的 **會員風險**]。此動作會開啟組織的分析掃描。 您也可以在組織中開啟掃描，方法是導覽至「**內幕風險設定**  >  **分析」 (預覽)** 並啟用 **掃描您租使用者的使用者活動，以識別潛在的內幕電腦風險**。
 3. 在 [ **分析詳細資料** ] 窗格中，選取 [ **執行掃描]，以啟動組織的掃描**。 分析掃描結果最多可能需要24小時的時間，才能獲得深入查看報告。
 
@@ -123,7 +123,7 @@ ms.locfileid: "51445227"
 - 心懷不滿使用者造成的安全性原則違規
 - 心懷不滿使用者造成的資料外洩
 
-如需設定組織 Microsoft 365 HR connector 的逐步指引，請參閱[設定連接器以匯入 HR 資料](import-hr-data.md)文章。 設定 HR 連接器之後，請回到這些設定步驟。
+如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱 [設定連接器以匯入 HR 資料](import-hr-data.md) 文章。 設定 HR 連接器之後，請回到這些設定步驟。
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護 (DLP) 原則
 
@@ -160,7 +160,7 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
 有問必答風險管理支援從實體控制和存取平臺匯入使用者和記錄資料。 實體聲譽徽章授予連接器可讓您從 JSON 檔案中拉入 access 資料，包括使用者 IDs、存取點 IDs、存取時間和日期，以及存取狀態。 此資料可協助推動測試人員風險管理原則中的警示指標，且是在組織中設定完整風險管理覆蓋範圍的重要部分。 如果您為組織設定一個以上的實體聲譽徽章授予連接器，「內部使用者風險管理」會自動從所有實體聲譽徽章授予連接器中拉出指示器。 來自實體聲譽徽章授予連接器的資訊，會在使用所有有問必答風險原則範本時，補充其他會員風險的信號。
 
 >[!IMPORTANT]
->若要使用內部的風險管理原則，並與透過您實體控制和存取平臺中的事件資料的去聲和終止使用者相關的信號資料，您也必須設定 Microsoft 365 HR 連接器。 如果您啟用實體聲譽徽章授予連接器，但未啟用 Microsoft 365 HR connector，「內部使用者風險管理原則」只會處理組織中使用者未授權實體存取的事件。
+>若要使用或關聯使用實體控制和存取平臺之事件資料的委任及終止使用者相關的通知資料，您也必須設定 Microsoft 365 HR connector。 如果您啟用實體聲譽徽章授予連接器但未啟用 Microsoft 365 HR connector，「內部使用者風險管理」原則只會處理組織中使用者未授權實體存取的事件。
 
 如需設定組織之實體聲譽徽章授予連接器的逐步指引，請參閱 [設定連接器以匯入實體聲譽徽章授予資料](import-physical-badging-data.md) 文章。 在您設定連接器之後，請回到這些設定步驟。
 
@@ -178,12 +178,12 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
 
 在設定原則之前，請定義下列「內幕人員風險設定」：
 
-1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至「**內幕風險管理**」，然後從任何頁面的右上角選取「**有問必答風險設定**」。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)內，移至「 **有問必答風險管理** 」，然後從任何頁面的右上角選取「 **有問必答風險設定** 」。
 2. 在 [ **隱私權** ] 頁面上，選取顯示原則警示的個人資訊的隱私權設定。
 3. **在 [指標**] 頁面上，選取您要套用到所有內部使用者風險原則的警示指示器。
 
     >[!IMPORTANT]
-    >您必須選取一或多個指標，才能接收您原則中所定義之危險活動的警示。 如果設定中未設定指示器，指標將無法在內部的風險原則中選擇。
+    >您必須選取一或多個指標，才能接收您原則中所定義之危險活動的警示。 如果 [設定] 中未設定指示器，指標將無法在內部的風險原則中選擇。
 
 4. 在 [ **原則時段** ] 頁面上，選取 [原則時段](insider-risk-management-settings.md#policy-timeframes) ，當使用者觸發內部使用者風險原則的相符時，就會變成作用中的使用者。
 5. 在 [ **智慧** 偵測] 頁面上，為「內部人員風險原則」設定下列設定：
@@ -192,11 +192,11 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
     - [警示音量層級](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint 警示狀態](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [網域設定](insider-risk-management-settings.md#domains-preview)
-6. 在 [**匯出提醒**] 頁面上，根據需要，使用 Office 365 管理 APIs 啟用「匯出會員風險警示資訊」。
+6. 在 [ **匯出提醒** ] 頁面上，根據需要，使用 Office 365 管理 APIs 啟用「匯出的會員風險警示資訊」。
 7. 在 [ **優先順序使用者群組** ] 頁面上，建立 [優先順序] 使用者群組，並在 **步驟 3** 中建立使用者時新增使用者。
-8. 在 [ **Power Automate 流程**] 頁面上，設定來自「內幕風險流程」範本的流程，或是建立新的流程。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#power-automate-flows-preview) 」文章。
+8. 在 [ **電源自動流程** ] 頁面上，設定「內幕人員風險流程範本」的流程，或是建立新的流程。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#power-automate-flows-preview) 」文章。
 9. 在 [ **優先順序資產] 頁面** 上，設定優先順序資產，以使用實體聲譽徽章授予連接器所匯入的實體控制和存取平臺中的資料。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#priority-physical-assets-preview) 」文章。
-10. 在 [ **Microsoft Teams** ] 頁面上，啟用與「內幕風險管理」的 Microsoft Teams 整合，以自動建立小組以進行案例或使用者共同作業。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#microsoft-teams-preview) 」文章。
+10. 在 [ **Microsoft 小組** ] 頁面上，讓 Microsoft 團隊能夠與「內幕風險管理」整合，以自動建立小組以進行案例或使用者共同作業。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#microsoft-teams-preview) 」文章。
 11. 選取 [ **儲存** ] 以啟用內部使用者風險原則的這些設定。
 
 ## <a name="step-6-create-an-insider-risk-management-policy"></a>步驟6：建立內部人員風險管理原則

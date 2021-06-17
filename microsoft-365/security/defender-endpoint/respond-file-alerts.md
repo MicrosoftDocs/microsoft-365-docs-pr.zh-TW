@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844067"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998785"
 ---
 # <a name="take-response-actions-on-a-file"></a>對檔案採取回應動作
 
@@ -35,7 +35,7 @@ ms.locfileid: "52844067"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
-停用或隔離檔案或封鎖檔案，以快速回應偵測到的攻擊。 對檔案採取動作後，您可以在「行動中心」中檢查活動詳細資料。
+停用或隔離檔案或封鎖檔案，以快速回應偵測到的攻擊。 對檔案採取動作後，您可以在重要訊息中心中查看活動詳細資料。
 
 回應動作可用於檔案的詳細設定檔頁面面。 在此頁面上，您可以透過切換新的檔案 **頁面**，在新的和舊的頁面配置之間切換。 本文的其餘部分將說明較新的頁面配置。
 
@@ -68,7 +68,7 @@ ms.locfileid: "52844067"
 > 只有在下列情況中才能採取此動作：
 >
 > - 您正在執行動作的裝置執行 Windows 10，版本1703或更新版本
-> - 檔案不屬於受信任的協力廠商發行者，或未由 Microsoft 簽署
+> - 檔案不屬於受信任的協力廠商發行者，或是未由 Microsoft 簽署
 > - Microsoft Defender 防毒軟體必須至少在被動模式下執行。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體相容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 **Stop 和隔離** 檔動作包括停止執行中的程式、隔離檔案，以及刪除持久性資料（例如登錄機碼）。
@@ -82,7 +82,7 @@ ms.locfileid: "52844067"
 
 1. 選取您要停止和隔離的檔案。 您可以從下列任何視圖中選取檔案，或使用搜尋方塊：
 
-   - **警示** -按一下專案時程表中的 [描述] 或 [詳細資料] 中對應的連結。
+   - **警示** -按一下警示故事時程表中的 [描述] 或 [詳細資料] 中對應的連結。
    - **搜尋框** **-從下拉式功能表** 中選取檔案，並輸入檔案名
 
    > [!NOTE]
@@ -128,14 +128,14 @@ ms.locfileid: "52844067"
 
 2. 輸入下列命令，然後按 **enter**：
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> 在某些情況下， **ThreatName** 可能會顯示為： EUS： Win32/CustomEnterpriseBlock！ cl。
->
-> 在過去30天內，在此裝置上已隔離的所有自訂封鎖檔案都會還原為端點。
+   > [!NOTE]
+   > 在某些情況下， **ThreatName** 可能會顯示為： EUS： Win32/CustomEnterpriseBlock！ cl。
+   >
+   > 在過去30天內，在此裝置上已隔離的所有自訂封鎖檔案都會還原為端點。
 
 > [!IMPORTANT]
 > 被隔離成可能網路威脅的檔案可能無法復原。 如果使用者嘗試在隔離後還原檔案，該檔案可能無法存取。 這可能是因為系統已無法再有存取該檔案的網路認證。 一般來說，這是暫時登入系統或共用資料夾，且存取權杖已到期的結果。
@@ -234,15 +234,13 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
 > [!NOTE]
 > 由於 Microsoft Security Center 入口網站中的後端處理流程，在檔提交與更新的 Defender 中的「深入分析」功能之間可能有10分鐘的延遲。
 
-收集樣本時，端點會在安全的環境中執行檔案。 然後，它會建立觀測行為和相關聯之專案的詳細報告，例如在裝置上丟棄的檔案、IPs 的通訊以及登錄修改。
-
 ### <a name="submit-files-for-deep-analysis"></a>提交檔案進行深入分析
 
 1. 選取您要提交以進行深入分析的檔案。 您可以從下列任何一種視圖中選取或搜尋檔案：
 
-    - 警示-從專案時程表的 **描述** 或 **詳細資料** 中選取檔連結
+    - **警示** -從警示故事時程表的 **描述** 或 **詳細資料** 中選取檔案連結
     - **裝置清單**-從 [**組織中裝置** 的 **描述** 或 **詳細資料**] 區段中選取檔連結。
-    - 搜尋框 **-從下拉式功能表** 中選取檔案，並輸入檔案名
+    - **搜尋框** **-從下拉式功能表** 中選取檔案，並輸入檔案名
 
 2. 在檔視圖的 [ **深入分析** ] 索引標籤中，選取 [ **提交**]。
 
@@ -251,7 +249,7 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
    > [!NOTE]
    > 只支援 PE 檔案，包括 _.exe_ 和 _.dll_ 檔案。
 
-隨即會顯示進度列，並提供分析的不同階段的資訊。 然後您就可以在分析完成時查看報告。
+   隨即會顯示進度列，並提供分析的不同階段的資訊。 然後您就可以在分析完成時查看報告。
 
 > [!NOTE]
 > 根據裝置可用性而定，範例集合時間可能會不同。 範例集合的超時為 3-小時。 如果目前沒有線上 Windows 10 設備報告，此集合就會失敗，且作業會中斷。 您可以重新提交檔案進行深入分析，以取得檔案的新資料。
@@ -277,11 +275,14 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
 如果您在嘗試提交檔案時遇到問題，請嘗試下列每個疑難排解步驟。
 
 1. 確定有問題的檔案是 PE 檔案。 PE 檔案一般會有 _.exe_ 或 _.dll_ 副檔名 (可執行程式或應用程式) 。
+
 2. 請確定服務具有存取權，但仍然存在且未損毀或修改的檔案。
+
 3. 請稍等片刻，然後再次嘗試提交檔案。 佇列可能已滿，或發生暫時連線或通訊錯誤。
+
 4. 若未設定範例集合原則，則預設行為為允許範例集合。 如果已設定，請確認原則設定允許範例集合，再提交檔案。 設定範例集合後，請檢查下列登錄值：
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -291,6 +292,7 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
     ```
 
 1. 透過「群組原則」變更組織單位。 如需詳細資訊，請參閱 [Configure With Group Policy](configure-endpoints-gp.md)。
+
 1. 如果這些步驟無法解決問題，請與 [winatp@microsoft.com](mailto:winatp@microsoft.com)聯繫。
 
 ## <a name="related-topics"></a>相關主題
