@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7b95fc487a8ee3e82e0f215b34aa564e063534af
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5ca147c9e69168b2f15aa69bba8728567b782fa9
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772074"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984457"
 ---
 # <a name="machine-resource-type"></a>電腦資源類型
 
@@ -55,6 +55,7 @@ ms.locfileid: "52772074"
 [按標籤尋找電腦](find-machines-by-tag.md) | [電腦](machine.md) 集合 | 依 [標記](machine-tags.md)尋找電腦。
 [取得遺失的 KB](get-missing-kbs-machine.md) | KB 集合 | 取得與電腦識別碼相關聯的遺失 Kb 清單。
 [設定裝置值](set-device-value.md)| [電腦](machine.md) 集合 | 設定 [裝置的值](tvm-assign-device-value.md)。
+[更新電腦](update-machine-method.md) |[電腦](machine.md) 集合 | 取得機器的更新狀態。
 
 ## <a name="properties"></a>屬性
 

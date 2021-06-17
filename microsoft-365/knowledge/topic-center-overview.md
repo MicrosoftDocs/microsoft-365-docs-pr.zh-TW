@@ -1,6 +1,5 @@
 ---
-title: Microsoft Viva 主題中的主題中心概述
-description: 深入瞭解 Microsoft Viva 主題中的主題中心。
+title: 主題中心簡介 Microsoft Viva Topics
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -14,16 +13,17 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+description: 深入瞭解 Microsoft Viva Topics 中的主題中心。
+ms.openlocfilehash: f782be90e6cd6fa12e57df87ebb1057e58bdca19
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583589"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984925"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva 主題中的主題中心概述
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>主題中心簡介 Microsoft Viva Topics
 
-在 Microsoft Viva 主題中，主題中心是現代的 SharePoint 網站，可充當組織的知識中心。 它是在 Microsoft 365 系統管理中心的[Viva 主題設定](set-up-topic-experiences.md)期間建立。
+在 Microsoft Viva Topics 中，主題中心是現代的 SharePoint 網站，可充當組織的知識中心。 它是在 Microsoft 365 系統管理中心的[Viva 主題設定](set-up-topic-experiences.md)期間建立。
 
 主題中心的預設首頁包含 [ **主題** ] 網頁元件，所有授權的使用者都可以在此網頁元件中查看其連線的主題。 
 
@@ -69,7 +69,7 @@ ms.locfileid: "52583589"
 
 ## <a name="manage-topics-page"></a>[管理主題] 頁面
 
-若要使用主題中心的 [ **管理主題** ] 頁面，您必須具有「知識管理員」角色所需的「管理主題」許可權。 您的系統管理員可以在[知識管理安裝](set-up-topic-experiences.md)期間將這些許可權指派給使用者，或使用 Microsoft 365 系統管理中心的系統管理員[來新增新](topic-experiences-knowledge-rules.md)使用者。
+若要使用主題中心的 [ **管理主題** ] 頁面，您必須具有「知識管理員」角色所需的「管理主題」許可權。 您[的系統](topic-experiences-knowledge-rules.md)管理員可以在[Viva 主題設定](set-up-topic-experiences.md)期間，將這些許可權指派給使用者，或使用 Microsoft 365 系統管理中心後，系統管理員可以新增新的使用者。
 
 在 [ **管理主題** ] 頁面上，主題儀表板會顯示您可以從指定的來源位置識別的所有主題（您可以存取）。 每個主題都會顯示已探索該主題的日期。 已獲指派「管理主題」許可權的使用者可以查看未確認的主題，並選擇：
 

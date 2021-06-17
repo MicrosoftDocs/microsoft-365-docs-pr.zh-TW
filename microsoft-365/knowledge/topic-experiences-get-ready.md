@@ -1,6 +1,6 @@
 ---
-title: 讓您的環境做好準備 Microsoft Viva 主題的準備
-description: 讓您的環境做好準備，您可以使用 Microsoft Viva 主題為您的使用者提供盡可能多的內容。
+title: 讓環境做好準備以供 Microsoft Viva Topics
+description: 讓您的環境做好準備，讓您的使用者可以使用 Microsoft Viva Topics 提供盡可能多的內容。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,26 +10,26 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917389"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984877"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>讓您的環境做好準備 Microsoft Viva 主題的準備
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>讓環境做好準備以供 Microsoft Viva Topics
 
 若要充分利用 Viva 主題，您想要有盡可能多的內容納入主題探索，使您可以為使用者提供一組豐富的主題。 但是應使用何種內容做為主題探索？ 如何在保持控制的情況下，最大化已編制索引的內容？ 範圍中的內容越多，人工智慧所能探索的洞察力就越好。 本文將引導您完成規劃步驟，以確保您包含適當的內容，而且您具有適當的人員和資源，讓使用者具備良好的體驗。
 
 若要規劃 Viva 主題，您必須：
 
-![遷移、連接、現代化、安全及識別步驟，以上架至知識管理](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![遷移、連接、現代化、安全，並識別用於上架的 Viva 主題的步驟。](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [將內容遷移至 SharePoint](#1-migrate-content-to-microsoft-365)
     - 主題索引僅包括 SharePoint 網站上的內容。
       - 盡可能將重要內容遷移至從外部來源 SharePoint 線上。
       - 為內容來源設定高潛力 tacit 知識的優先順序。
-      - 強調知識管理的優點，以鼓勵使用者將內容從 OneDrive 移至 SharePoint 網站。
+      - 反白顯示 Viva 主題的優點，以鼓勵使用者將內容從 OneDrive 移至 SharePoint 網站。
 
 2. [將資訊連線至 Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - 今後，可將外部內容放入知識圖形，並變為可用。
@@ -73,7 +73,7 @@ ms.locfileid: "50917389"
 
 如果您無法遷移部分內容，請使用 Microsoft Graph 進行連線：
 
-- 請考慮實施[Graph 內容連接器](/microsoftsearch/connectors-overview)。 您可以使用連接器將外部內容編入 microsoft Graph，讓使用者可以透過 microsoft 搜尋探索該內容。
+- 請考慮實施[Graph 內容連接器](/microsoftsearch/connectors-overview)。 您可以使用連接器將外部內容編入 Microsoft Graph，讓使用者可以透過 Microsoft 搜尋探索該內容。
 - 未來的發展會將外部資料引入 Viva 主題。
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. 現代化 SharePoint 頁面
@@ -104,7 +104,7 @@ ms.locfileid: "50917389"
 
 除了許可權之外，您還可以控制透過主題所發現之專案的範圍。 您永遠可以控制已編制索引的專案。
 
-管理員可以在 Microsoft 365 系統管理中心設定索引。 當您設定 [知識管理](set-up-topic-experiences.md)時，您可以：
+管理員可以設定 Microsoft 365 系統管理中心的索引。 當您設定 [Viva 主題](set-up-topic-experiences.md)時，您可以：
 
 - 允許在所有 SharePoint 網站之間進行探索，或指定要包含或排除主題來源的網站。
 - 在有敏感性字詞的地方，您也可以按名稱排除主題。 例如，如果您有敏感性專案的名稱，而您不希望顯示重點項目或卡片，無論使用者的權限為何，都可以排除該專案名稱。
@@ -128,9 +128,9 @@ ms.locfileid: "50917389"
 | 設定 Viva 主題 | 擁有主題的管理和品質 | 根據其專業知識為主題貢獻。 |
 | 確定已強制執行安全性和符合性標準，並可瞭解授權合約。| 會執行「建立」、「編輯」、「刪除」及「拒絕」主題等主題管理工作。 支援主題參與者的任務。 | Curates 主題頁面上的資訊和內容，包括哪些人員和資源釘住在該主題。 |
 
-在使用者的工作內容中，使用者會看到好友動向和卡片，例如流覽 SharePoint 中的現代頁面。 您可以控制主題的使用者經驗。
+在使用者的工作內容中，使用者會看到醒目和卡片，例如流覽 SharePoint 中的現代頁面。 您可以控制主題的使用者經驗。
 
-- 神秘可以查看主題？ 主題可見度是在 Microsoft 365 系統管理中心設定。 選擇要允許查看主題的群組：
+- 神秘可以查看主題？ 主題可見度是在 Microsoft 365 系統管理 Center 中設定。 選擇要允許查看主題的群組：
   - 組織中的所有人。 "Everyone" 不包括來賓，這是目錄中的所有內部使用者
   - 只有選取的人員或安全性群組 (此選項是好的，您仍會 Viva 主題，所以您可以使用) 的使用者子集進行測試。 若要讓客人查看主題，您必須使用 [選取的人員或安全性群組] 選項，並授與授權。
   - 沒有人。

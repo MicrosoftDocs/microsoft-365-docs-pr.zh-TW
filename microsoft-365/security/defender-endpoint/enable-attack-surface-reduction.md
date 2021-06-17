@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: 5bdb7ed46bdf01d4fb6075f310b98dcdb98a5a7f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771918"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984793"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
@@ -54,7 +54,7 @@ ms.locfileid: "52771918"
 > [!IMPORTANT]
 > 目前，當您在 Microsoft 端點管理員 (MEM) 中設定 asr 規則時，不支援三種 asr 規則的警告模式。 若要深入瞭解，請參閱 [不支援警告模式的案例](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
-強烈建議使用具有 Windows E5 授權 (或類似授權 SKU) 的 ASR 規則，以利用[Microsoft Defender for](microsoft-defender-endpoint.md) endpoint (Defender for endpoint) 中提供的高級監控和報告功能。 不過，如果您有另一個授權（如 Windows Professional 或 Windows E3 未包含高級監控和報告功能），您可以在觸發 ASR 規則時，在每個端點上建立您自己的監控和報告工具， (例如事件轉發) 。
+強烈建議使用具有 Windows E5 授權 (或類似授權 SKU) 的 ASR 規則，以利用[Microsoft Defender for](microsoft-defender-endpoint.md) endpoint (Defender for endpoint) 中提供的高級監控和報告功能。 不過，如果您有另一個授權（如 Windows Professional 或 Windows E3 未包含高級監控和報告功能），您可以在觸發 ASR 規則時，將您自己的監控和報告工具，放在每個端點上產生的事件之上 (例如，事件轉移) 。
 
 > [!TIP]
 > 若要深入瞭解 Windows 授權，請參閱[Windows 10 授權](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)並取得[Windows 10 的大量授權指南](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
@@ -172,9 +172,9 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 >[!NOTE]
 > 衝突處理：
-> 
+>
 > 如果您指派裝置兩個不同的 ASR 原則，處理衝突的方式就是已指派不同狀態的規則，不會就地進行衝突管理，且結果為錯誤。
-> 
+>
 > 非衝突的規則不會導致錯誤，而且會正確套用規則。 結果是套用第一個規則，後續的非衝突規則會合並到原則中。
 
 ## <a name="mdm"></a>Mdm
@@ -251,7 +251,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 > [!WARNING]
 > 如果您使用 Intune、Configuration Manager 或其他企業級管理平臺來管理電腦和裝置，管理軟體會在啟動時覆寫所有衝突的 PowerShell 設定。 若要讓使用者使用 PowerShell 定義值，請在管理平臺中使用規則的「使用者定義」選項。
 
-1. 在 [開始] 功能表中 **，以滑鼠** 按右鍵 [ **Windows PowerShell** ]，然後選取 [以 **系統管理員身分執行**]。
+1. 在 [開始] 功能表中輸入 **powershell** ，在 **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [**以系統管理員身分執行**]。
 
 2. 輸入下列 Cmdlet：
 

@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769314"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985447"
 ---
 # <a name="view-attack-surface-reduction-events"></a>檢視受攻擊面縮小事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ ms.locfileid: "52769314"
 
 本文列出所有事件、其相關的功能或設定，並說明如何建立自訂視圖，以篩選至特定事件。
 
-如果您有 E5 訂閱，並使用[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，請在 Windows 安全性中深入報告事件和區塊。
+如果您有 E5 訂閱，並使用[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，請在 Windows 安全性中深入報告事件、區塊和警告。
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>使用自訂的視圖查看攻擊面降低功能
 
@@ -54,11 +55,12 @@ ms.locfileid: "52769314"
     - 攻擊面減少事件自訂視圖： *asr-events.xml*
     - 網路/保護事件自訂視圖： *np-events.xml*
 
-2. 在 [開始] 功能表中輸入 **事件檢視器** ，然後開啟 [ **事件檢視器**]。
+2. 在 [開始] 功能表中輸入 **事件檢視器**，然後開啟 **事件檢視器**。
 
 3. 選取 [**動作** 匯  >  **入自訂視圖 ...** ]
 
-    ![動畫醒目提示在奇偶檢視器視窗左邊的匯入自訂視圖](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![動畫醒目提示在奇偶檢視器視窗左邊的匯入自訂視圖](images/events-import.gif)
 
 4. 流覽至您要從中抽出之自訂視圖之 XML 檔案的位置，並加以選取。
 
@@ -72,15 +74,14 @@ ms.locfileid: "52769314"
 
 2. 在左窗格的 [ **動作**] 下，選取 [ **建立自訂視圖 ...]。**
 
-    ![動畫顯示 [事件檢視器] 視窗中的 [建立自訂視圖] 選項](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![動畫顯示 [事件檢視器] 視窗中的 [建立自訂視圖] 選項](images/events-create.gif)
 
-3. 移至 [XML] 索引標籤，然後選取 [ **手動編輯查詢**]。 您會看到一則警告，指出您使用 [XML] 選項時，您無法使用 [ **篩選** ] 索引標籤編輯查詢。 選取 [是]。
+3. 移至 [XML] 索引標籤，然後選取 [ **手動編輯查詢**]。 您會看到一則警告，指出您使用 [XML] 選項時，您無法使用 [ **篩選** ] 索引標籤編輯查詢。 選取 **[是]**。
 
 4. 將您要篩選事件的功能的 XML 程式碼貼到 XML 區段中。
 
-5. 選取 **[確定]**。 指定篩選的名稱。
-
-6. 它會建立自訂視圖，篩選為只顯示與該功能相關的事件。
+5. 選取 **[確定]**。 指定篩選的名稱。 這會建立自訂視圖，篩選為只顯示與該功能相關的事件。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>針對攻擊面減少規則事件的 XML
 
@@ -145,7 +146,7 @@ ms.locfileid: "52769314"
 2. 展開 [**應用程式及服務記錄] > Microsoft > Windows** 然後移至下表中 [**提供者/來源**] 底下所列的資料夾。
 3. 在子專案上按兩下以查看事件。 在事件中向裡移動，以找出您想要的事件。
 
-   ![使用事件檢視器顯示的動畫](/windows/security/threat-protection/images/event-viewer)
+   ![使用事件檢視器顯示的動畫](images/event-viewer.gif)
 
 功能 | 提供者/來源 | 事件識別碼 | 描述
 :-|:-|:-:|:-

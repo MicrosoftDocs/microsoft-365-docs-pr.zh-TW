@@ -14,16 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782870"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985417"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自訂受攻擊面縮小規則
 
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,6 +38,7 @@ ms.locfileid: "52782870"
 瞭解如何自訂攻擊面減少規則，方法是 [排除檔案和資料夾](#exclude-files-and-folders) ，或 [將自訂文字新增至](#customize-the-notification) 使用者電腦上出現的通知警示。
 
 您可以針對執行下列任何版本和版本的裝置，設定攻擊面減少規則 Windows：
+
 - Windows 10 專業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
 - Windows 10 企業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
 - Windows伺服器，[版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
@@ -44,11 +46,11 @@ ms.locfileid: "52782870"
 
 ## <a name="exclude-files-and-folders"></a>排除檔案和資料夾
 
-您可以選擇排除受攻擊面降低規則所評估的檔案和資料夾。 排除之後，即使攻擊面降低規則偵測到該檔案包含惡意行為，檔案也不會執行封鎖。
+您可以選擇排除受攻擊面降低規則所評估的檔案和資料夾。 排除時，即使攻擊面降低規則會偵測到檔案包含惡意行為，檔案也不會執行封鎖。
 
 例如，您會考慮勒索軟體的以下規則：
 
-勒索軟體的原則是專門設計用來協助企業客戶降低勒索軟體攻擊的風險，同時確保商務持續性。 根據預設，勒索軟體規則會在警告的兩側發生錯誤，並防止尚未具備足夠信譽和信任的檔案。 若要 reemphasize，勒索軟體規則只會觸發未獲得足夠肯定信譽和流行的檔案，根據數百萬客戶的使用量計量。 通常，區塊會自行解決，因為每個檔案的「信譽和信任」值會隨著非問題的使用量而逐漸升級。
+勒索軟體的原則是專門設計用來協助企業客戶降低勒索軟體攻擊的風險，同時確保商務持續性。 根據預設，勒索軟體規則會在警告一側發生錯誤，並防止尚未具備足夠信譽和信任的檔案。 若要 reemphasize，勒索軟體規則只會觸發未獲得足夠肯定信譽和流行的檔案，根據數百萬客戶的使用量計量。 通常，區塊會自行解決，因為每個檔案的「信譽和信任」值會隨著非問題的使用量而逐漸升級。
 
 在未及時解決區塊問題的情況下，客戶 _可以自行解決問題：使用_ 自助服務機制或損害指示器 (IOC) 型「允許清單」功能，自行解除封鎖檔。  
 
@@ -97,7 +99,7 @@ ms.locfileid: "52782870"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除檔案和資料夾
 
-1. 在 [開始] 功能表中輸入 **powershell** ，以滑鼠右鍵按一下 **Windows PowerShell** 並選取 [以 **系統管理員身分執行**]
+1. 在 [開始] 功能表中輸入 **powershell** ，在 **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [以 **系統管理員身分執行**]
 2. 輸入下列 Cmdlet：
 
     ```PowerShell
@@ -119,7 +121,7 @@ ms.locfileid: "52782870"
 
 ## <a name="related-topics"></a>相關主題
 
-* [使用攻擊面減少規則來減少攻擊面](attack-surface-reduction.md)
-* [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
-* [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
-* [受攻擊面縮小常見問題集](attack-surface-reduction.md)
+- [使用攻擊面減少規則來減少攻擊面](attack-surface-reduction.md)
+- [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
+- [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
+- [受攻擊面縮小常見問題集](attack-surface-reduction.md)

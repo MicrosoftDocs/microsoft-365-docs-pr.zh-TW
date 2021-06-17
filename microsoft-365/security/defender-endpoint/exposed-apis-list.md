@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788832"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984997"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>受支援的適用於端點的 Microsoft Defender API
 
@@ -62,7 +62,7 @@ ms.locfileid: "52788832"
 :---|:---
 [進階搜捕](run-advanced-query-api.md) | 從 API 執行查詢。
 [警示方法和屬性](alerts.md) | 執行 API 通話（如 \- 取得提醒、建立警示、更新警示等等）。
-[匯出每台裝置的評估方法和屬性](get-assessment-methods-properties.md) | 執行 API 通話，例如 \- 匯出安全設定評估、匯出軟體清查評估，以及匯出軟體漏洞評估。
+[匯出每台裝置的評估方法和屬性](get-assessment-methods-properties.md) | 執行 API 呼叫，以依據每個裝置來收集漏洞評估，例如： \- 匯出安全設定評估、匯出軟體清查評估、匯出軟體漏洞評估，以及增量匯出軟體漏洞評估。
 [自動化調查方法和屬性](investigation.md) | 執行 API 通話（如 \- 取得調查的集合）。
 [取得網域相關警示](get-domain-related-alerts.md) | 執行 API 通話，例如 \- 取得與網域相關的裝置、網域統計資料等等。
 [檔案方法和屬性](files.md) | 執行 API 通話，例如 \- get file information、file 相關的警示、檔相關的裝置及檔案統計資料。

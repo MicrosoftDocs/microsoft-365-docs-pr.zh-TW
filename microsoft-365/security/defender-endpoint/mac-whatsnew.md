@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a6415ec7d39bceeb4b68de164bbdcf6ef34755ff
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842779"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984769"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
@@ -37,6 +37,10 @@ ms.locfileid: "52842779"
 
 > [!IMPORTANT]
 > 在 macOS 11 (Big Sur) 上，Microsoft Defender for Endpoint 需要其他設定設定檔。 如果您是現有的客戶從舊版的 macOS 升級，請務必部署 [此頁面](mac-sysext-policies.md)所列的其他設定檔。
+
+## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
+
+- 解決此問題：從 Microsoft Defender for Endpoint 和其他應用程式同時存取金鑰鏈時，可能會造成金鑰鏈損毀。
 
 ## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0) 
 
@@ -186,9 +190,9 @@ ms.locfileid: "52842779"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> 為了確保您的 macOS 裝置的最大保護，以及將 macOS 原生安全性更新的 Apple 停止傳遞到高於 [current – 2] 的作業系統版本，macOS 塞拉里昂 [10.12] 上不再支援 Mac 部署和更新的 MDATP。 Mac 更新及增強功能的 MDATP 會傳送至執行版本 Catalina 的裝置 [10.15]、Mojave [10.14] 和 [高塞拉里昂] [10.13]。 
+> 為確保您的 macOS 裝置的最大保護，以及將 macOS 原生安全性更新的 Apple 停止傳遞到舊于 [current – 2] 的作業系統版本，macOS 塞拉里昂 [10.12] 上不再支援 Mac 部署和更新的 MDATP。 MDATP for Mac 更新及增強功能將會傳送至執行版本 Catalina [10.15]、Mojave [10.14] 和 High 塞拉里昂 [10.13] 的裝置。 
 >
-> 如果您已有部署至您的塞拉里昂 [10.12] 裝置的 Mac MDATP，請升級至最新的 macOS 版本，以避免遺失保護的風險。
+> 如果您已將 Mac 部署至您的塞拉里昂 [10.12] 裝置，請升級至最新的 macOS 版本，以避免遺失保護的風險。
 
 - 效能 & bug 修正的增強功能
 

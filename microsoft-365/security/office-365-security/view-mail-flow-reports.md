@@ -19,12 +19,12 @@ description: 系統管理員可以深入瞭解安全性 & 合規性中心的「�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245669"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985501"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -35,7 +35,7 @@ ms.locfileid: "52245669"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-除了安全性 & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中所提供的郵件流程報告之外，「報告」儀表板也提供各種額外的郵件流程報告，可協助您監視 Microsoft 365 組織。
+除了安全性 & 合規性中心的 [郵件流程儀表板](mail-flow-insights-v2.md) 中所提供的郵件流程報告之外，「報告」儀表板還提供各種額外的郵件流程報告，可協助您監視 Microsoft 365 組織。
 
 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表**] 儀表板，在 [安全性 & 規範中心](https://protection.office.com)中查看這些報告 \> ****。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
 
@@ -95,29 +95,29 @@ ms.locfileid: "52245669"
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
 
-## <a name="exchange-transport-rule-report"></a>Exchange 傳輸規則報告
+## <a name="exchange-transport-rule-report"></a>Exchange transport rule 報告
 
-**Exchange transport rule report** 會顯示郵件流程規則 (也稱為傳輸規則) 在組織內的內送和外寄郵件上的效果。
+**Exchange transport rule report** 會顯示郵件流程規則 (也稱為傳輸規則) 組織中內送和外寄郵件的效果。
 
-若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Exchange 傳輸規則**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
+若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **Exchange Transport rule**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
-![在報告儀表板中 Exchange 傳輸規則小工具](../../media/transport-rule-report-widget.png)
+![報告儀表板中的 Exchange transport rule widget](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange 傳輸規則報告的報表檢視
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange transport rule 報告的報表檢視
 
 報表檢視提供下列圖表：
 
-- **資料查看方式： Exchange 傳輸規則** \>**分解方式：方向**：此圖顯示受傳輸規則影響的 **輸入** 和 **輸出** 郵件數目。
+- **資料查看依據： Exchange 傳輸規則** \>**分解方式：方向**：此圖顯示受傳輸規則影響的 **輸入** 和 **輸出** 郵件數目。
 
-- **資料查看方式： Exchange 傳輸規則** \>**分解方式：嚴重性**：此圖表顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及 **低嚴重性** 郵件。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+- **資料查看依據： Exchange 傳輸規則** \>**分解方式：嚴重性**：此圖表顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及 **低嚴重性** 郵件。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **依下列方式查看資料： DLP Exchange 傳輸規則** \>**分解方式：方向**：此圖顯示受資料遺失防護 (DLP) 傳輸規則所影響的 **輸入** 和 **輸出** 郵件數目。 您可以選取下列選項來進一步精煉圖表：
+- **依下列方式查看資料： DLP Exchange transport rules** \>**分解方式：方向**：此圖顯示受資料遺失防護 (DLP) 傳輸規則所影響的 **輸入** 和 **輸出** 郵件數目。 您可以選取下列選項來進一步精煉圖表：
 
   - **顯示資料：所有 DLP transport rules**
   - **顯示下列專案的資料：已遭破壞的使用者**
   - **顯示資料：偵測到的內容量下限美國愛國法案**
 
-- **依下列方式查看資料： DLP Exchange 傳輸規則** \>**分解方式：方向**：此 View 顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及受 DLP transport rules 影響的 **低嚴重性** 郵件。 您可以選取下列選項來進一步精煉圖表：
+- **依下列方式查看資料： DLP Exchange transport rules** \>**分解方式：方向**：此 View 顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及受 DLP transport rules 影響的 **低嚴重性** 郵件。 您可以選取下列選項來進一步精煉圖表：
 
   - **顯示資料：所有 DLP transport rules**
   - **顯示下列專案的資料：已遭破壞的使用者**
@@ -129,13 +129,13 @@ ms.locfileid: "52245669"
 - 方向值
 - 嚴重性值
 
-![Exchange 傳輸規則報告中的報表檢視](../../media/transport-rule-report-report-view.png)
+![Exchange transport rule 報告中的報表檢視](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange 傳輸規則報告的詳細資料表格視圖
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange transport rule 報告的詳細資料表格視圖
 
 如果您按一下 [ **查看詳細資料] 表格**，顯示的資訊將取決於您所查看的圖表：
 
-- **資料查看方式： Exchange 傳輸規則**：
+- **依下列方式查看資料： Exchange Transport rules**：
 
   - **Date**
   - **傳輸規則**
@@ -145,7 +145,7 @@ ms.locfileid: "52245669"
   - **嚴重性**
   - **方向**
 
-- **依下列方式查看資料： DLP Exchange 傳輸規則**：
+- 透過 **下列方式查看資料： DLP Exchange transport rules**：
 
   - **Date**
   - **DLP 原則**
@@ -166,7 +166,7 @@ ms.locfileid: "52245669"
 
 ## <a name="forwarding-report"></a>轉接報告
 
-轉寄 **報告** 顯示組織自動轉寄的郵件至外部網域的 Exchange Online 信箱。 轉寄的郵件可能會造成安全性或規範風險，而且可能會指出已遭破壞的帳戶。
+轉寄 **報告** 顯示組織自動轉寄給來自 Exchange Online 信箱的外部網域的郵件。 轉寄的郵件可能會造成安全性或規範風險，而且可能會指出已遭破壞的帳戶。
 
 若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **轉接報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -339,8 +339,8 @@ ms.locfileid: "52245669"
   - **使用者** 模擬：郵件因嘗試模擬使用者 (郵件寄件者) （已在反網路釣魚原則的類比保護設定中所定義）而篩選。
   - **網域** 模擬：郵件因嘗試模擬防網路釣魚原則之類比保護設定中所定義的網域而篩選出來。
 - 檔案 **及 URL 引爆 (Defender for Office 365)**：
-  - **檔引爆**：以安全附件原則篩選的郵件。
-  - **URL 引爆**：以安全連結原則篩選的郵件。
+  - 檔案 **引爆**：以 Safe 附件原則篩選的郵件。
+  - **URL 引爆**：透過 Safe 連結原則篩選的郵件。
 - **投遞後保護和 zap (ATP) 或 zap (EOP)**： zap 表示自動清除零小時。
 
 如果您選取資料表格中的資料列，則會在飛入的電子郵件計數中顯示進一步細分。
@@ -380,11 +380,11 @@ ms.locfileid: "52245669"
 
 - **電子郵件總數**
 - **Edge 允許** 和 **edge 篩選**
-- **非惡意** 代碼、**安全附件偵測** <sup>\*</sup> 、**反惡意程式碼引擎偵測** 和 **規則訊息**
+- **不是惡意** 代碼、 **Safe 附件偵測** <sup>\*</sup> 、**反惡意程式碼引擎偵測** 和 **規則訊息**
 - **不是網路釣魚詐騙**、 **DMARC 失敗**、 **模仿偵測**、 **欺騙偵測** 和 **網路釣魚偵測**
 - **沒有偵測 URL 引爆** 及 **url 引爆偵測**<sup>\*</sup>
 - **非垃圾郵件** 和  **垃圾郵件**
-- **非惡意的電子郵件**、**安全連結偵測** <sup>\*</sup> 和 **ZAP**
+- **非惡意的電子郵件**、 **Safe 連結偵測** <sup>\*</sup> 和 **ZAP**
 
 <sup>\*</sup>Office 365 的 Defender
 
@@ -395,14 +395,14 @@ ms.locfileid: "52245669"
 - **Date**
 - **電子郵件總數**
 - **已篩選 Edge**
-- **反惡意程式碼引擎、安全附件、已篩選的規則**。。
+- **反惡意程式碼引擎、Safe 附件、篩選的規則**。。
   - 已 **篩選的規則**：由於郵件流程規則而篩選的郵件 (也稱為傳輸規則) 。
 - **DMARC，類比，欺騙，網路釣魚篩選**：
   - **DMARC**：由於郵件失敗的 DMARC 驗證檢查而篩選的郵件。
 - **URL 引爆偵測**
 - **已篩選的反垃圾郵件**
 - **移除的 ZAP**
-- **安全連結偵測**
+- **Safe 連結偵測**
 
 如果您選取資料表格中的資料列，則會在飛入的電子郵件計數中顯示進一步細分。
 
@@ -450,7 +450,7 @@ ms.locfileid: "52245669"
 
   ![傳送和接收的電子郵件報告中的方向視圖](../../media/sent-and-received-email-report-direction-view.png)
 
-- **向下** \> 鑽取 **惡意軟體 (反惡意程式碼)**：這項選擇會帶您前往 [電子郵件報告中的惡意](view-email-security-reports.md#malware-detections-in-email-report)代碼偵測。
+- **向下** \> 鑽取 **惡意軟體 (反惡意程式碼)**：這項選擇會帶您前往惡意程式碼偵測 [報告](view-email-security-reports.md#malware-detections-report)。
 
 - **向下** \> 鑽取 **垃圾郵件偵測)**：這項選擇會帶您前往 [垃圾郵件偵測報告](view-email-security-reports.md#spam-detections-report)。
 
@@ -545,7 +545,7 @@ ms.locfileid: "52245669"
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取者**
+- **全域讀取器**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18823db8ca8d4bfa82b8ab6265ee8a0902a13e79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925889"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984697"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
@@ -51,15 +51,11 @@ IT 技術支援 | 當我們的技術支援人員在 Microsoft 受管理的電腦
 
 **若要新增系統管理連絡人**
 
-1.  登入 [Microsoft 受管理電腦的入口網站](https://aka.ms/mwaasportal)。 
+1.  登入[Microsoft 端點管理員](https://endpoint.microsoft.com)。 
 
-2.  在 [支援] 底下，選取 [系統管理連絡人]。 
+2.  在 [**租使用者管理**] 下，尋找 [ **Microsoft 受管理的電腦**] 區段，然後選取 [**管理連絡人**]。 
 
-    ![在支援功能表，接近頂端選取的系統管理連絡人](../../media/admincontacts.png)
-
-3. 選取 [新增]。
-
-    ![在系統管理入口網站 [匯出並重新整理] 左方的 [新增]按鈕](../../media/adminadd.png)
+3. 選取 ****[新增]。
 
 4.  選取 [重點領域] 並輸入連絡人資訊。 
 

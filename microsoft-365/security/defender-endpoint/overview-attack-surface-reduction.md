@@ -19,25 +19,26 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: b6fb9bb327816b7e166a443a0d07932d30421a19
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6b3c88f23d3ceffbca588c80b05266d12147ca39
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771690"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985021"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>攻擊面降減功能的概覽
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [註冊免費試用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-您的攻擊面是您的組織容易遭到 cyberthreats 和攻擊的所有地方。 Defender for Endpoint 包含許多功能，可協助減少攻擊面。 觀看下列影片以深入瞭解攻擊面降低。<p>
+攻擊面是您的組織易於 cyberthreats 和攻擊的所有地方。 Defender for Endpoint 包含許多功能，可協助減少攻擊面。 觀看下列影片以深入瞭解攻擊面降低。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
@@ -47,10 +48,10 @@ ms.locfileid: "52771690"
 
 | 文章 | 描述 |
 |:---|:---|
-| [硬體隔離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在啟動和執行時，保護及維護系統的完整性。 透過地域和遠端認證來驗證系統完整性。 而且，使用 Microsoft Edge 容器隔離可協助防範惡意網站。 |
+| [硬體隔離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在啟動和執行時，保護及維護系統的完整性。 透過地域和遠端認證來驗證系統完整性。 對 Microsoft Edge 使用容器隔離，以協助抵禦惡意網站。 |
 | [應用程式控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用應用程式控制，讓應用程式必須獲得信任才能執行。 |
 | [受控資料夾存取權](controlled-folders.md) | 協助防止惡意或可疑的應用程式 (包括檔案加密的勒索軟體) 惡意軟體變更您的重要系統資料夾中的檔案 (需要 Microsoft Defender 防毒軟體)  |
 | [網路保護](network-protection.md) | 將保護功能擴充至組織裝置上的網路流量和連線能力。  (需要 Microsoft Defender 防毒軟體)  |
-| [入侵防護](exploit-protection.md) | 協助保護您組織使用的作業系統和應用程式。 Exploit protection 也可搭配協力廠商的防病毒解決方案使用。 |
+| [入侵防護](exploit-protection.md) | 協助保護貴組織使用的作業系統和應用程式不會受到利用。 Exploit protection 也可搭配協力廠商的防病毒解決方案使用。 |
 | [受攻擊面縮小規則](attack-surface-reduction.md) | 利用可協助阻止惡意程式碼的智慧型規則，減少應用程式中的漏弱點 (攻擊面)。  (需要 Microsoft Defender 防毒軟體) 。 |
 | [裝置控制](device-control-report.md) | 監視和控制裝置上所使用的媒體，例如組織中的可移動儲存裝置和 USB 磁片磁碟機，以防止資料遺失。 |

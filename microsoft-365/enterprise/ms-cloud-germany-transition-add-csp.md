@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：與從 Microsoft Cloud Deutschland 進行遷移相關的雲端解決方案提供者的其他資訊。
-ms.openlocfilehash: 7a7c377d8e0b72a0179ff28a93018f88d22a5325
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52931044"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984913"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>雲端解決方案供應商的其他資訊
 
@@ -37,6 +37,6 @@ CSP 客戶租使用者將遷移至新的德國資料中心區域，並連結至�
 
 ## <a name="missing-subscriptions-in-azure"></a>Azure 中遺失訂閱
 
-[訂閱和授權轉換 (階段 3) ](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)完成之後，雲端方案提供者將無法存取 Azure 訂閱。
+[訂閱和授權轉換 (階段 3) ](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer)完成之後，雲端方案提供者將無法存取 Azure 訂閱。
 
 若要復原存取權，請遵循下列步驟，以 [提升管理所有 Azure 訂閱和管理群組的存取權](/azure/role-based-access-control/elevate-access-global-admin)。

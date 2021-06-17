@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933152"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985489"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租用戶允許/封鎖清單中
 
@@ -40,13 +40,13 @@ ms.locfileid: "52933152"
 
 在 Microsoft 365 具有 Exchange Online 或獨立 Exchange Online Protection 中信箱的組織 (EOP) 組織沒有 Exchange Online 信箱，您可能會反對 EOP 篩選判定。 例如，良好的郵件可能會標示為壞的 (誤報) 或不良郵件可以透過 (誤報) 。
 
-Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單為您提供一種方式，可以手動覆寫 Microsoft 365 篩選 verdicts。 承租人允許/封鎖清單是在郵件流程期間和使用者按一下時使用。 您可以指定下列覆寫類型：
+Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單提供了一種方式，可供您手動覆寫 Microsoft 365 篩選 verdicts。 承租人允許/封鎖清單是在郵件流程期間和使用者按一下時使用。 您可以指定下列覆寫類型：
 
 - 要封鎖的 URLs。
 - 要封鎖的檔案。
 - 要允許或封鎖的欺騙寄件者。 [！注意] 如果您在 [哄騙情報洞察力](learn-about-spoof-intelligence.md)中覆寫 allow 或 block 判定，則哄騙寄件者會變成隻會出現在 [租使用者允許/封鎖] 清單的 [ **哄騙** ] 索引標籤上的手動允許或封鎖專案。 您也可以在這裡，以欺騙的寄件者的方式手動建立允許或封鎖專案，以供欺詐情報偵測到。
 
-本文說明如何在 Microsoft 365 Defender 入口網站中的使用者或 PowerShell (Exchange Online PowerShell 中設定使用者在 Microsoft 365 中使用信箱的 Exchange Online 組織的專案。組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
+本文說明如何在 Microsoft 365 Defender 入口網站中的承租人允許/封鎖清單中設定專案，或在 PowerShell 中使用信箱的 Microsoft 365 組織使用 PowerShell (Exchange Online Exchange Online;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -92,7 +92,7 @@ Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單為您提�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>在承租人允許/封鎖清單中使用 Microsoft 365 Defender 入口網站建立封鎖 URL 專案
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
 
 2. 在 [ **承租人允許/封鎖清單** ] 頁面上，確認已選取 [ **URLs** ] 索引標籤，然後按一下 [ ![ 封鎖圖示 ](../../media/m365-cc-sc-create-icon.png) **區塊**]。
 
@@ -108,9 +108,9 @@ Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單為您提�
 
 4. 完成後，按一下 **[新增]**。
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>在承租人允許/封鎖清單中使用 Microsoft 365 的 Defender 入口網站來建立封鎖檔專案
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>在承租人允許/封鎖清單中使用 Microsoft 365 Defender 入口網站建立封鎖檔案專案
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
 
 2. 在 [ **承租人允許/封鎖清單** **] 頁面** 上，選取 [檔案] 索引標籤，然後按一下 [ ![ 封鎖圖示 ](../../media/m365-cc-sc-create-icon.png) **區塊**]。
 
@@ -134,7 +134,7 @@ Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單為您提�
 - 當您設定網域對的 allow 或封鎖專案時，來自該網域對的郵件就不會再出現在欺騙性智慧洞察力中。
 - 欺騙寄件者的專案永不過期。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
 
 2. 在 [ **租使用者允許/封鎖清單** ] 頁面上，選取 [ **哄騙** ] 索引標籤，然後按一下 [ ![ 封鎖圖示] [ ](../../media/m365-cc-sc-create-icon.png) **新增**]。
 
@@ -149,7 +149,7 @@ Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單為您提�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 入口網站來查看承租人允許/封鎖清單中的專案
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
 
 2. 選取您想要的索引標籤。 可用的欄取決於您所選取的索引標籤：
 
@@ -201,7 +201,7 @@ Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單為您提�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 入口網站修改承租人允許/封鎖清單中的專案
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
 
 2. 選取 [包含您要修改之專案類型的] 索引標籤：
    - **URL**
@@ -221,7 +221,7 @@ Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單為您提�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 入口網站從承租人允許/封鎖清單中移除專案
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **規則** 區段 \> **承租人允許/封鎖清單**。
 
 2. 選取 [包含您要移除之專案類型的] 索引標籤：
    - **URL**
@@ -245,7 +245,7 @@ New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1
 這個範例會為永不到期的指定檔案新增封鎖檔專案。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 這個範例會新增 contoso.com 及所有子域 (的封鎖 URL 專案（例如，contoso.com、www.contoso.com 及 xyz.abc.contoso.com) ）。 因為我們未使用 ExpirationDate 或 NoExpiration 參數，所以專案會在30天后到期。

@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: 是否要將新的解決方案新增至規範中心、根據您的意見，更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您在不斷變更的相容性環境上保持最高的狀態。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 1884989abba56a7da68a2a1372132015a81f5e03
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843243"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985009"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
-是否要將新的解決方案加入[Microsoft 365 規範中心](microsoft-365-compliance-center.md)、根據您的意見，更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您在不斷變更的相容性環境上保持最高的狀態。 請參閱下列內容，查看目前的 Microsoft 365 法規遵從性的新功能。
+是否要將新的解決方案新增至[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)、根據您的意見反應更新現有的功能，或推出全新和更新的檔，Microsoft 365 可協助您在不斷變更的規範環境上保持最高的狀態。 請參閱下列內容，查看目前的 Microsoft 365 法規遵從性的新功能。
 
 > [!NOTE]
 > 有些規範功能會以不同的速度向客戶推出。 如果您還沒有看到功能，請嘗試將您新增至 [目標版本](/office365/admin/manage/release-options-in-office-365)。
@@ -35,6 +35,27 @@ ms.locfileid: "52843243"
 > [!TIP]
 > 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](/office365/admin/whats-new-in-preview)<br>[SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](../security/defender/whats-new.md)<br><br>
 並流覽[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)，以瞭解已啟動、正在開發中、已取消或之前發行的 Microsoft 365 功能。
+
+## <a name="may-2021"></a>2021 年 5 月
+
+### <a name="data-loss-prevention"></a>資料外洩防護
+
+- [規劃資料遺失防護](dlp-overview-plan-for-dlp.md)策略的新指導方針。
+
+### <a name="retention-and-records-management"></a>保留和記錄管理
+
+- 如果您從 SharePoint 網站或 OneDrive 帳戶發行保留原則，您就不需要等候30天的寬限期，就能刪除網站或帳戶。 客戶的常見要求，此變更現在已完成所有承租人。
+- 在預覽中， **多階段處置檢查**：系統管理員現在可以為保留標籤新增五個連續的 [處置檢查](disposition.md) 階段，而且檢閱者可以將其他使用者新增至其「處置考核」階段。 您也可以自訂電子郵件通知和提醒。
+
+### <a name="sensitive-information-types"></a>敏感資訊類型
+
+- 新增新增資訊以協助您 [修改關鍵字字典](sit-modify-keyword-dictionary.md)。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+- 在 [預覽] 中，當您為 [群組和網站設定敏感度標籤]( sensitivity-labels-teams-groups-sites.md)時，便可使用「**驗證內容**」的新設定。 當使用者存取已套用標籤的 SharePoint 網站時，此選項與 Azure AD 條件式存取原則搭配使用，以強制執行更嚴格的條件。 在您設定此設定之前，請先確認您已閱讀相依性 [和限制](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) 。
+- 僅為 Exchange 設定的 [自動標記原則](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)，可支援套用加密的敏感度標籤，**讓使用者可以** 為 [不要轉寄] 或 [Encrypt-Only] 選項指派許可權。
+- [必要標籤](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)現在一般可用於所有的 Office 應用程式，所有平臺上。
 
 ## <a name="april-2021"></a>2021 年 4 月
 
@@ -146,12 +167,12 @@ Outlook 版本和更新：
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
 - **DoD 支援**。 支援含 DoD 環境的美國政府承租人。
-- **僅限加密 Outlook**。 Outlook 的加密選項會在您選取 [[讓使用者指派許可權](encryption-sensitivity-labels.md#let-users-assign-permissions)] 時包括 Encrypt-Only。
-- **在 Office 應用程式中強制執行內建標籤**。 更新[指引](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)當您已安裝 Azure 資訊保護統一標記用戶端時，如何在 Office 應用程式中強制執行內建標籤。
+- **僅適用于 Outlook 的加密**。 當您選取 [ [讓使用者指派許可權](encryption-sensitivity-labels.md#let-users-assign-permissions)] 時，Outlook 的加密選項會包括 Encrypt-Only。
+- **在 Office app 中強制執行內建標籤**。 更新 [指引](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) 當您已安裝 Azure 資訊保護統一標記用戶端時，如何在 Office app 中強制執行內建標籤。
 
 ## <a name="february-2021"></a>2021 年 2 月
 
-以下是在二月份 Microsoft 365 法規遵從性解決方案和內容的一些變更。
+以下是 Microsoft 365 規範解決方案和二月份的內容的一些變更。
 
 ### <a name="auditing"></a>稽核
 
@@ -171,7 +192,7 @@ Outlook 版本和更新：
 
 - [深入瞭解 Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [針對 DLP 原則傳送電子郵件通知並顯示原則提示](/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [深入瞭解 Microsoft 365 資料遺失防護內部部署掃描器](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [深入瞭解 Microsoft 365 資料遺失防護內部部署掃描程式](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
 - [從資料遺失防護開始使用內部部署掃描程式](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
 - [使用端點資料外洩防護](/microsoft-365/compliance/endpoint-dlp-using)
@@ -181,9 +202,9 @@ Outlook 版本和更新：
 
 已新增或更新下列主題中的內容：
 
-- [Microsoft 365 電子檔探索工具中的解密](/microsoft-365/compliance/ediscovery-decryption)
+- [Microsoft 365 eDiscovery tools 中的解密](/microsoft-365/compliance/ediscovery-decryption)
 - [關鍵字查詢與搜尋條件](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Advanced eDiscovery 中的相關性模組退休](/microsoft-365/compliance/relevance-module-retirement)
+- [在高級 eDiscovery 中停用相關性模組](/microsoft-365/compliance/relevance-module-retirement)
 - [使用腳本將使用者新增至核心 eDiscovery 案例中的保留](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>加密
@@ -193,20 +214,20 @@ Outlook 版本和更新：
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS) 
 
 - [客戶管理的加密功能](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [使用 AD RMS Exchange Online 郵件加密](/microsoft-365/compliance/information-rights-management-in-exchange-online)。 此服務的支援已被取代。 您無法再在 Exchange 混合式環境中使用 AD RMS。 請改為遷移到 Azure RMS。
+- [使用 AD RMS 的 Exchange Online 郵件加密](/microsoft-365/compliance/information-rights-management-in-exchange-online)。 此服務的支援已被取代。 您無法再在 Exchange 混合式環境中使用 AD RMS。 請改為遷移到 Azure RMS。
 
 #### <a name="customer-key"></a>客戶金鑰
 
-- [租使用者層級 Microsoft 365 的客戶金鑰](/microsoft-365/compliance/customer-key-tenant-level)
+- [承租人層級的 Microsoft 365 客戶金鑰](/microsoft-365/compliance/customer-key-tenant-level)
 - [安全性與合規性綜述](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>資訊版權管理 (IRM)
 
 - [將資訊版權管理 (IRM) 套用至清單或文件庫](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 這兩個國家/地區群不支援此設定：
-    - Microsoft Cloud for US Government
+    - 適用于美國政府的 Microsoft 雲端
     - Microsoft Cloud 德國
-    - 以中國為單位運作的 Azure 和 Microsoft 365) 
-- [將 IRM 設定為使用內部部署 AD RMS 伺服器](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 已棄用 Exchange 混合式環境中此服務的支援。
+    - 在中國) 中，Azure 和 Microsoft 365 由世紀運作
+- [將 IRM 設定為使用內部部署 AD RMS 伺服器](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 在 Exchange 混合式環境中，此服務的支援已被取代。
 
 ### <a name="sensitive-information-types"></a>敏感資訊類型
 
@@ -222,16 +243,16 @@ Outlook 版本和更新：
 
 已新增或更新下列主題中的內容：
 
-- **SharePoint 外部共用**。 [容器標籤](sensitivity-labels-teams-groups-sites.md)從 SharePoint 網站進行外部共用的選項現在會以正式發行。 此外，Microsoft 365 系統管理中心和 Planner 現在支援套用這些敏感度標籤。 
+- **SharePoint 外部共用**。 [容器標籤](sensitivity-labels-teams-groups-sites.md)從 SharePoint 網站進行外部共用的選項現在會以正式發行。 此外，Microsoft 365 admin center 和 Planner 現在支援套用這些敏感度標籤。 
 - **共同撰寫和 AutoSave**。 在非實際執行承租人中，會以預覽進行測試，將加密檔的 [共同撰寫和 AutoSave](sensitivity-labels-coauthoring.md) 發行。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-### <a name="support-for-card-content-in-teams"></a>Teams 中的卡片內容支援
+### <a name="support-for-card-content-in-teams"></a>支援小組中的卡片內容
 
-下列 Microsoft 365 規範解決方案現在支援透過 Teams 訊息中的應用程式所產生的[卡片內容](/microsoftteams/platform/task-modules-and-cards/what-are-cards)的偵測：
+下列 Microsoft 365 規範解決方案現在支援透過小組訊息中的應用程式所產生的 [卡片內容](/microsoftteams/platform/task-modules-and-cards/what-are-cards) 的偵測：
 
-- **核心和 Advanced eDiscovery**。 現在，卡片內容可以 [保留](create-ediscovery-holds.md#preserve-card-content) 或納入 [搜尋](/microsoftteams/ediscovery-investigation#search-for-card-content) (套用至內容搜尋) 。
+- **核心和高級 eDiscovery**。 現在，卡片內容可以 [保留](create-ediscovery-holds.md#preserve-card-content) 或納入 [搜尋](/microsoftteams/ediscovery-investigation#search-for-card-content) (套用至內容搜尋) 。
 - **Audit**。 [卡片] 活動現在會 [記錄到審核記錄](/microsoftteams/audit-log-events#teams-activities)檔。
 - **保留原則**。 現在可以使用保留原則來 [保留和刪除卡片內容](retention-policies-teams.md#whats-included-for-retention-and-deletion)。
 
@@ -248,7 +269,7 @@ Outlook 版本和更新：
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>聚光燈：有問必答風險解決方案的新內容
 
-Microsoft 365 法規遵從性內容小組正在運作中建立「內容解決方案」檔，以推廣相容性功能如何搭配使用，以協助符合您的合規性目標。
+Microsoft 365 合規性內容小組正在運作中建立「內容解決方案」檔，以提升如何搭配使用相容性功能，以協助符合您的合規性目標。
 
 第一個是將內幕程式風險解決方案結合在一起的內容：通訊法規遵從性、內幕風險管理、資訊障礙及特殊的訪問管理。 以下是您將會發現的內容：
 
@@ -277,7 +298,7 @@ Microsoft 365 法規遵從性內容小組正在運作中建立「內容解決方
 - Teams 媒體訊息 (影像、程式碼片段、影片、wiki 影像) 
 - Teams 儲存區中儲存的 Teams 通話和會議錄製
 - Teams 聊天通知
-- 使用 Cortana Teams 聊天建議
+- Cortana Teams 聊天建議
 - Teams 狀態郵件
 - Exchange Online 的使用者和信號資訊
 

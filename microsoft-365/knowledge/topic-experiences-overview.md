@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概觀。
-ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950020"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984901"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概觀 
 
@@ -39,14 +39,14 @@ Viva Topics 使用 AI 來自動搜尋並識別組織中的 *主題*。 它會編
 
 主題是透過下列專案向使用者顯示：
 
-- [主題著重](topic-experiences-overview.md#topic-highlights)于 SharePoint 頁面
+- SharePoint 頁面上的[突出顯示主題](topic-experiences-overview.md#sharepoint-highlights)
 - [搜尋結果](topic-experiences-overview.md#search-results)中的主題答案
 - 在[office 應用程式](topic-experiences-overview.md#office-application-search)中搜尋
 - [主題中心](topic-experiences-overview.md#topic-center) 首頁
 
-### <a name="topic-highlights"></a>主題醒目提示
+### <a name="sharepoint-highlights"></a>SharePoint 要聞
 
-在 SharePoint 新聞和頁面上的內容中提及主題時，您會看到該主題有醒目提示。 您可以從醒目提示開啟主題摘要。 從摘要的標題開啟主題詳細資料，以查看 [完整主題] 頁面。 您可以自動識別提及的主題，也可以透過頁面作者直接參考主題，將其新增至頁面。 
+在 SharePoint 新聞和頁面上的內容中提及主題時，您會看到該主題有醒目提示。 您可以從醒目提示開啟主題摘要。 從摘要的標題開啟主題詳細資料，以查看 [完整主題] 頁面。 您可以自動識別提及的主題，也可以透過頁面作者直接參照。 
 
    ![顯示主題要聞的螢幕擷取畫面。](../media/knowledge-management/saturn.png) 
 

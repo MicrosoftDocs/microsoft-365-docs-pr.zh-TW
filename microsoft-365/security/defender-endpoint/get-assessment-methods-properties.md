@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63f8490984886b8b95e5c090865b5384a0ba04fb
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ace9f55b0b083faaeeb620700a43a1216c4451c2
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789337"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984865"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>匯出每台裝置的評估方法和屬性
 
@@ -34,8 +34,6 @@ ms.locfileid: "52789337"
 
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## <a name="api-description"></a>API 描述
 
 提供以每個裝置為基礎拉威脅與弱點管理資料之 APIs 的方法和屬性詳細資料。 有不同的 API 呼叫可取得不同的資料類型。 一般而言，每個 API 通話包含組織中裝置的必要資料。
@@ -44,13 +42,15 @@ ms.locfileid: "52789337"
 >
 > 除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
 
-您可以使用三個 API 方法來找回 (匯出) 不同類型的資訊：
+您可以使用 [匯出評估] APIs，以 (匯出) 不同的資訊類型：
 
-1. 匯出安全設定評估
+- [1. 匯出安全設定評估](#1-export-secure-configurations-assessment)
 
-2. 匯出軟體清查評估
+- [2. 匯出軟體清查評估](#2-export-software-inventory-assessment)
 
-3. 匯出軟體弱點評估
+- [3. 匯出軟體漏洞評估](#3-export-software-vulnerabilities-assessment)
+
+對應至匯出資訊類型的 APIs 會在第1、2和3節中說明。
 
 針對每個方法，有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能很大，所以可供檢索的方式有兩種：
 
@@ -148,6 +148,7 @@ GeneratedTime | string | 產生匯出的時間。
 :---|:---|:---
 匯出軟體漏洞評估 **(OData)** | 調查集合請參閱： [3.2 屬性 (OData) ](#32-properties-odata) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 的每個唯一組合的專案。 API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法最適合小型組織，且少於 100 K 裝置。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。
 透過檔案匯出軟體漏洞評估 **()** | 調查實體請參閱：3.3 透過檔案 [ (的屬性) ](#33-properties-via-files) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 的每個唯一組合的專案。 此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：1。  呼叫 API 以取得所有組織資料的下載 URLs 清單。 2.  使用下載 URLs 下載所有檔案，並視需要處理資料。
+**Delta export** 軟體漏洞評估 **(OData)** | 調查集合請參閱： [3.4 屬性 Delta export OData) ](#34-properties-delta-export-odata) | 會傳回表格，其中每個唯一的組合： DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 及 EventTimestamp。 <br><br> API 將組織中的資料提取為 Json 回應，遵循 OData 的通訊協定。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 不同于完整的軟體漏洞評估 (OData) -用於取得組織之軟體漏洞評估的整個快照。 [增量匯出 OData API 呼叫是用來只取得所選日期和目前日期之間所發生的變更， (「delta」 API 通話) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export OData API 通話也可以用來計算不同的 KPIs，例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」  <br><br> 因為對軟體弱點的 Delta export OData API 呼叫只會傳回目標日期範圍的資料，所以不會被視為 _完整匯出_。
 
 ### <a name="32-properties-odata"></a>3.2 屬性 (OData) 
 
@@ -179,6 +180,32 @@ VulnerabilitySeverityLevel | string | 依威脅環境影響的 CVSS 分數和動
 :---|:---|:---
 匯出檔案 | 陣列 \[ 字串\]  | 用於存放組織目前快照之檔案的下載 URLs 清單。
 GeneratedTime | string | 產生匯出的時間。
+
+### <a name="34-properties-delta-export-odata"></a>3.4 屬性 (delta export OData) 
+
+屬性 (識別碼)  | 資料類型 | 描述
+:---|:---|:---
+CveId | string | 指派給常見漏洞及披露 (CVE) system 的安全性弱點的唯一識別碼。
+CvssScore | string | CVE 的 CVSS 分數。
+DeviceId | string | 服務中裝置的唯一識別碼。
+DeviceName | string | 裝置 (FQDN) 的完整功能變數名稱。
+DiskPaths | 陣列 [字串] | 在裝置上安裝產品的磁片證據。
+EventTimestamp | 字串 | 找到此 delta 事件的時間。
+ExploitabilityLevel | string | 此弱點的 exploitability 層級 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) 
+FirstSeenTimestamp | string | 第一次在裝置上看到此項產品的 CVE。
+識別碼 | string | 記錄的唯一識別碼。  
+LastSeenTimestamp | string | 最後一次在裝置上看到 CVE。
+OSPlatform | string | 裝置上所執行作業系統的平臺。 這表示特定作業系統，包括相同系列內的變體，例如 Windows 10 和 Windows 7。 如需詳細資訊，請參閱 tvm 支援的作業系統和平臺。
+RbacGroupName | string | 以角色為基礎的存取控制 (RBAC) 群組。 如果此裝置並未指派給任何 RBAC 群組，此值將會是「未指派」。 如果組織不包含任何 RBAC 群組，則此值會是 "None"。
+RecommendationReference | string | 與此軟體相關的建議識別碼參照。
+RecommendedSecurityUpdate  | string | 軟體廠商提供的安全性更新名稱或描述，以解決此弱點。
+RecommendedSecurityUpdateId  | string | 對應的指導或知識庫 (KB) 文章的適用安全性更新或識別碼識別碼
+RegistryPaths  | 陣列 [字串] | 產品已安裝在裝置中的登錄證據。
+SoftwareName | string | 軟體產品的名稱。
+SoftwareVendor | string | 軟體廠商的名稱。
+SoftwareVersion | string | 軟體產品的版本號碼。
+狀態 | 字串 | **新**   (裝置) 上引進的新弱點。 **固定**   (是否有不再存在於裝置上的弱點，也就是) 修正。 **更新**  針對已變更之裝置上的弱點 (。 可能的變更如下： CVSS 評分、exploitability 層級、嚴重性層級、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。
+VulnerabilitySeverityLevel | string | 依威脅環境影響的 CVSS 分數和動態因素所指派給安全性弱點的嚴重性等級。
 
 ## <a name="see-also"></a>另請參閱
 
