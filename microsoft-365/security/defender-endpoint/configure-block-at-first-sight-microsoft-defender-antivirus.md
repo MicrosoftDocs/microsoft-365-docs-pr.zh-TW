@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/15/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274949"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964696"
 ---
 # <a name="turn-on-block-at-first-sight"></a>第一次看見時即開啟封鎖
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
@@ -34,7 +31,7 @@ ms.locfileid: "52274949"
 本文會詳述名為「第一次看見時即封鎖」的防毒/反惡意軟體之功能，並說明如何為貴組織啟用第一次看見時即封鎖之功能。 
 
 > [!TIP]
-> 本文適用于管理組織安全性設定的企業系統管理員和 IT 專業人員。 如果您不是企業系統管理員或 IT 專業人員，但若您對 [第一次看見時即封鎖] 功能有疑問，請參閱 [不是企業系統管理員或 IT 專業人員？](#not-an-enterprise-admin-or-it-pro)。
+> 本文適用于管理組織安全性設定的企業系統管理員和 IT 專業人員。 如果您不是企業系統管理員或 IT 專業人員，但若您對 [第一次看見時即封鎖] 功能有疑問，請參閱 [不是企業系統管理員或 IT 專業人員？](#not-an-enterprise-admin-or-it-pro) 章節。
 
 ## <a name="what-is-block-at-first-sight"></a>什麼是 [第一次看見時即封鎖]？
 
@@ -55,7 +52,7 @@ Microsoft Defender 防毒軟體使用多個偵測和防護技術，以提供準�
 ![Microsoft Defender 防毒軟體工程清單](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> 若要深入瞭解，請參閱此部落格： [瞭解 Microsoft Defender 進階威脅防護新一代保護功能的核心](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
+> 若要深入瞭解，請參閱 [(部落格) 瞭解適用於端點的 Microsoft Defender 新一代保護功能核心的進階技術](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>關於 [第一次看見時即封鎖] 功能的一些資訊
 
@@ -149,7 +146,9 @@ Microsoft Defender 防毒軟體使用多個偵測和防護技術，以提供準�
 
 ## <a name="validate-block-at-first-sight-is-working"></a>驗證 [第一次看見時即封鎖] 功能是否有效
 
-若要驗證該功能是否有效，請遵循 [[驗證您的網路與雲端網路間的連結]](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud) 指南。
+若要驗證該功能是否正常運作，請下載 [[第一次看見時即封鎖] 樣本檔案](https://demo.wd.microsoft.com/Page/BAFS)。 若要下載該檔案，你需要在 Azure AD 中擁有一個已被指派安全性系統管理員或全域管理員角色的帳戶。
+
+若要驗證該已啟用雲端的保護是否正常運作，請遵循 [[驗證您的網路與雲端間的連結]](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud) 指南。 
 
 ## <a name="turn-off-block-at-first-sight"></a>關閉 [第一次看見時即封鎖] 功能
 
