@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 瞭解如何在 Microsoft 365 中變更導覽列頂端的預設主題，並加以自訂，使其符合您公司的徽標或色彩。
-ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998797"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006910"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
@@ -70,7 +70,7 @@ ms.locfileid: "52998797"
 
 您最多可以建立四個額外的群組主題。
 
-1. 在 [ **一般** ] 頁面上，輸入主題的名稱。
+1. 在 [ **一般** ] 頁面上，輸入新主題的名稱。
 
 2. 在 [**群組**] 底下，您最多可以選擇5個 Microsoft 365 群組可以查看您的群組主題，而不是使用預設主題。 您也可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
 

@@ -328,6 +328,8 @@
                       href: streaming-api-event-hub.md
                     - name: 將進階搜尋事件串流到您的儲存體帳戶
                       href: streaming-api-storage.md
+                    - name: 設定您的事件中樞
+                      href: configure-event-hub.md
                 - name: 進階搜捕 API
                   href: api-advanced-hunting.md
                 - name: 事件 API

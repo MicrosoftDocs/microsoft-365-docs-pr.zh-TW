@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: bb3e378c13507e354cdd1d739214c1c2d9d6aa98
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879093"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950092"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -307,7 +307,7 @@ ms.locfileid: "52879093"
 3. 在顯示的原則詳細資料飛出視窗的頂端，根據目前的優先順序值和自訂原則數目，您會看到 [增加優先順序 **]** 或 [降低優先順序 **]**：
    - [優先順序 **]** 值為 **0** 的反垃圾郵件原則只有 [降低優先順序 **]** 選項可用。
    - 具有最低 [優先順序 **]** 值為 (例如 **3**) 的反垃圾郵件原則只有 [增加優先順序 **]** 選項可用。
-   - 如果您有三個或多個反垃圾郵件原則，則最高與最低優先順序值之間的原則，其 [增加優先順序 **]** 和 [降低優先順序 **]** 選項會同時可用。
+   - 如果您有三個或多個反垃圾郵件原則，則最高與最低優先順序值之間的原則，其 [增加優先順序] 和 [降低優先順序] 選項會同時可用。
 
    按一下 ![增加優先順序圖示](../../media/m365-cc-sc-increase-icon.png) [增加優先順序 **]** 或 ![降低優先順序圖示](../../media/m365-cc-sc-decrease-icon.png) [降低優先順序 **]** 以變更 [優先順序 **]** 值。
 

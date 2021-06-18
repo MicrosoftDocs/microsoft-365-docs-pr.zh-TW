@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 您必須是商務訂閱的系統管理員，才可在 Microsoft 365 商務進階版中取得系統管理員協助或線上或電話支援。
-ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
-ms.translationtype: MT
+description: 您必須是商務訂閱的系統管理員，才能在 MMicrosoft 365 商務進階版中取得系統管理協助或線上或電話支援。
+ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635899"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984745"
 ---
 # <a name="get-support"></a>取得支援
 
-## <a name="watch-get-help-or-support"></a>觀賞：取得協助或支援 
+## <a name="watch-get-help-or-support"></a>觀看：取得說明或支援 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -258,6 +258,6 @@ ms.locfileid: "52635899"
 
 ## <a name="related-content"></a>相關內容
 
- (篇文章) 中[尋找檔與訓練](find-help-answers.md)
-[員工快速設定](employee-quick-setup.md) (文章) \
-[Microsoft 365 商務進階版安裝 (影片的概述](setup-overview.md)) 
+[尋找文件和訓練](find-help-answers.md) (文章)\
+[員工快速設定](employee-quick-setup.md) (文章)\
+[Microsoft 365 商務進階版設定的概觀](setup-overview.md) (影片)

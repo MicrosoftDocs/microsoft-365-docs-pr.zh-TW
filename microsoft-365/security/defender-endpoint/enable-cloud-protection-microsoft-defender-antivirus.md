@@ -10,17 +10,17 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: e7b7a0ba5c301829633c27f3add8f7f7daa70dfd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924704"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007176"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>開啟雲端提供的保護
 
@@ -146,7 +146,7 @@ SubmitSamplesConsent
 
 2. 在左功能表列上選取 [ **病毒 & 威脅防護** 磚 (] 或 [盾牌] 圖示) 然後 **& [病毒威脅防護設定** ] 標籤：
 
-    ![Windows 安全性應用程式中的病毒與威脅防護設定標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="病毒 & 威脅防護設定的螢幕擷取畫面":::
 
 3. 確認已將 **雲端式保護** 和 **自動範例提交** 切換為 [ **開啟**]。
 

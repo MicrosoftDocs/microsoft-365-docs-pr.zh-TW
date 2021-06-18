@@ -20,19 +20,19 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 瞭解 Office 365 和 Microsoft 365 中用於加密的各種憑證、技術及傳輸層安全性 (TLS) 密碼套件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e7e50ea399cd694f512e0538de3f7e67c63ee0e3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919349"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007546"
 ---
 # <a name="technical-reference-details-about-encryption"></a>關於加密的技術參考詳細資料
 
 請參閱本文以瞭解[在 Office 365 中用於加密](encryption.md)的憑證、技術和 TLS 密碼套件。 本文也提供規劃取代的詳細資料。
   
 - 如果您正在尋找概要資訊，請參閱[Encryption in Office 365](encryption.md)。
-- 如果您正在尋找設定資訊，請參閱[Office 365 企業版中的設定加密](set-up-encryption.md)。
+- 如果您正在尋找設定資訊，請參閱[Office 365 Enterprise 中的設定加密](set-up-encryption.md)。
 - 如需特定版本 Windows 所支援之密碼套件的詳細資訊，請參閱[TLS/SSL (Schannel SSP) 中的密碼套件](/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 憑證擁有權和管理
@@ -52,6 +52,9 @@ Office 365 所支援的所有密碼套件都使用 FIPS 140-2 的可接受演算
 Tls 和 TLS 之前的 SSL 是使用安全性憑證來加密電腦之間連線的加密通訊協定，可安全地透過網路進行通訊。 Office 365 支援 tls 版本 1.2 (tls 1.2) 。
 
 TLS 版本1.3 目前不支援 (TLS 1.3) 。
+
+> [!IMPORTANT]
+> 請注意 TLS 版本取代，如果有更新的版本，則 *不應該使用* 該版本。 如果舊版服務不需要 TLS 1.0 或1.1，您應該將它們停用。
   
 ## <a name="support-for-tls-10-and-11-deprecation"></a>支援 TLS 1.0 和1.1 棄用
 
@@ -73,30 +76,29 @@ TLS 使用 *密碼套件*（加密演算法的集合）建立安全連線。 Off
 
 Office 365 會先嘗試使用最安全的密碼套件進行連線，以回應連接要求。 如果連線無法運作，Office 365 會嘗試在清單中嘗試第二個最安全的密碼套件，依此類推。 服務會連續按清單，直到接受連接為止。 同樣地，當 Office 365 要求連線時，接收服務會選擇是否要使用 TLS 和要使用的密碼套件。
 
-> [!IMPORTANT]
-> 請注意 TLS 版本取代，如果有更新的版本，則 *不應該使用* 該版本。 目前不支援 TLS 1.3。 如果舊版服務不需要 TLS 1.0 或1.1，您應該將它們停用。
-
-| 密碼套件 | 金鑰交換演算法/強度 | 轉寄保密 | 密碼/強度 | 驗證演算法 |
+| 加密套件名稱 | 金鑰交換演算法/強度 | 轉寄保密 | 密碼/強度 | 驗證演算法/強度 |
 |:-----|:-----|:-----|:-----|:-----|
-|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|是 <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|是 <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 <br/>     |ECDH/192 <br/>|是 <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br/>     |ECDH/128 <br/>|是 <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|是 <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|是 <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |否 <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |否 <br/> |AES/256 <br/>|RSA/112 <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384  <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
-這些密碼套件支援 TLS 1.0 和1.1 通訊協定，直到其版本到期為止。 針對已取得「日期」為2020年1月15日的 GCC 高和 DoD 環境，而全球和 GCC 的環境為2020。
+下列密碼套件支援 TLS 1.0 和1.1 通訊協定，直到其版本到期為止。 若為 GCC 的高和 DoD 環境（即已過時的日期為2020年1月15日）。 在全球和 GCC 的環境中，日期為2020年10月15日。
 
-| 通訊協定 | 加密套件名稱 | 金鑰交換演算法/強度 | 轉寄保密支援 | 驗證演算法/強度 | 密碼/強度 |
+| 通訊協定 | 加密套件名稱 | 金鑰交換演算法/強度 | 轉寄保密 | 密碼/強度 | 驗證演算法/強度 | 
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |否  <br/>  |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |否  <br/>  |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> |RSA/112  <br/>  |否   <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> |RSA/112  <br/>  |否   <br/> |RSA/112  <br/> |AES/256  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA        <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA        <br/> | RSA/112   <br/> | 否   <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
+
+某些 Office 365 產品 (包含 Microsoft Teams) 使用[Azure 前端](/azure/frontdoor/front-door-overview)以終止 TLS 連線並有效地路由網路流量。 必須啟用至少一個 [Azure 前端 OVER TLS 1.2 的密碼套件](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-) ，才能成功連線到這些產品。 針對 Windows 10 及以上版本，我們建議啟用一或兩個 ECDHE 密碼套件，以取得更好的安全性。 Windows 7、8和8.1 與 Azure 前門的 ECDHE 密碼套件不相容，且已提供 DHE 密碼套件，以與這些作業系統相容。
 
 ## <a name="related-articles"></a>相關文章
 
@@ -111,3 +113,5 @@ Office 365 會先嘗試使用最安全的密碼套件進行連線，以回應連
 [TLS/SSL 加密增強 (Windows IT 中心) ](/previous-versions/windows/it-pro/windows-vista/cc766285(v=ws.10))
   
 [在 Office 365 和 Office 365 GCC 中準備 TLS 1.2](/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
+
+[Azure 前端所支援的目前密碼套件為何？](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)

@@ -530,6 +530,8 @@
 ####### [按標籤尋找電腦](find-machines-by-tag.md)
 ####### [取得遺失的 KB](get-missing-kbs-machine.md)
 ####### [設定裝置值](set-device-value.md)
+####### [更新電腦](update-machine-method.md)
+
 
 
 ###### [電腦動作]()

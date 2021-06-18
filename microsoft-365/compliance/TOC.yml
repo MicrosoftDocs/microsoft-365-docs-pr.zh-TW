@@ -1,11 +1,11 @@
 - name: Microsoft 365 合規性
   href: index.yml
+- name: Microsoft 365 合規性的新功能
+  href: whats-new.md
 - name: 入門
   items:
     - name: 快速執行合規性的工作
       href: compliance-quick-tasks.md
-    - name: Microsoft 365 合規性中心的新功能
-      href: whats-new.md
     - name: Microsoft 365 解決方案目錄
       href: microsoft-365-solution-catalog.md
     - name: Microsoft 365 合規性中心

@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/28/2020
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bc7c84e089b08c440512f8a8bf7583f41394f2ca
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275369"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007623"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>審閱 Microsoft Defender 防毒軟體掃描結果
 
@@ -47,7 +47,7 @@ Microsoft Defender 防毒軟體掃描完成後，不論是[按需](run-scan-micr
 Get-MpThreatDetection
 ```
 
-![PowerShell Cmdlet 和輸出的螢幕擷取畫面](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell Cmdlet 和輸出的螢幕擷取畫面":::
 
 您可以指定 `-ThreatID` 將輸出限制為只顯示特定威脅的偵測。
 
@@ -57,7 +57,7 @@ Get-MpThreatDetection
 Get-MpThreat
 ```
 
-![PowerShell 的螢幕擷取畫面](images/defender/wdav-get-mpthreat.png)
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell 程式碼":::
 
 如需如何搭配 Microsoft Defender 防毒軟體使用 PowerShell 的詳細資訊，請參閱[Use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)和[Defender Cmdlet](/powershell/module/defender/) 。
 

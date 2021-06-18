@@ -1,5 +1,5 @@
 ---
-title: 建立資料完全相符活動的通知 (預覽)
+title: 建立精確資料比對活動的通知
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何建立資料完全相符活動的通知。
+description: 了解如何建立精確資料比對活動的通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919359"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007558"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>建立資料完全相符活動的通知 (預覽)
+# <a name="create-notifications-for-exact-data-match-activities"></a>建立精確資料比對活動的通知
 
 在[使用資料完全相符 (EDM) 建立自訂敏感性資訊類型時](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)，在[稽核記錄](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中會建立許多活動。 您可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell Cmdlet建立通知，讓您知道這些活動何時發生：
 
@@ -33,9 +33,6 @@ ms.locfileid: "50919359"
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
-
-> [!NOTE]
-> 為 EDM 活動建立通知的功能僅適用於 World Wide 雲端和 GCC 雲端。
 
 ## <a name="pre-requisites"></a>先決條件
 

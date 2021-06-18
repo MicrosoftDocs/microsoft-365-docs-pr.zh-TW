@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: 指派授權取決於您要指派產品授權給特定使用者，還是要將使用者授權指派給特定產品。
 ms.date: 04/26/2021
-ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537532"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007006"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
@@ -59,7 +59,7 @@ ms.locfileid: "52537532"
 
 ::: moniker range="o365-germany"
 
- 1. 在系統管理中心，前往 [帳單 **]** \> [授權 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">]</a> 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ ms.locfileid: "52537532"
 
 ::: moniker range="o365-germany"
 
- 1. 在系統管理中心，前往 [帳單 **]** \> [授權 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">]</a> 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
 
@@ -117,7 +117,7 @@ ms.locfileid: "52537532"
 
 ::: moniker range="o365-germany"
 
- 1. 在系統管理中心，移至 [使用者 **]** \> [作用中使用者 <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">]</a> 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
@@ -129,11 +129,12 @@ ms.locfileid: "52537532"
 
 
 2. 選取您要指派授權的使用者名稱旁的圓圈。
-3. 在頂端選取三個點 (更多動作)，然後選取 [管理產品授權 **]**。
-4. 在 **[管理產品授權]** 窗格中，選取 **[新增到現有產品授權指派]** \> **[下一步]**。
-5. 在 **[新增到現有產品]** 窗格中，針對您已選取要指派授權的使用者，將開關切換到 **[開啟]** 位置。\
-    根據預設，與這些授權相關的所有服務都會自動指派給使用者。 您可以限制使用者能使用的服務。 針對您不想讓使用者使用的服務，將開關切換至 **[關閉]** 位置。
-6. 在窗格底部，選取 **[新增]** \> **[關閉]**。  
+3. 在頂端選取 **[管理產品授權]**。
+4. 在 **[管理產品授權]** 窗格中，選取 **[指派更多： 保留現有的授權，並指派更多授權]** \> **[下一步]**。
+5. 在 **[授權]** 下，選取您想要讓所選使用者擁有之授權的方塊。
+    根據預設，與這些授權相關的所有服務都會自動指派給使用者。 您可以限制使用者能使用的服務。 針對您不想讓使用者使用的服務，取消選取方塊。
+6. 在窗格底部，選取 **[儲存變更]**。  
+    如果您沒有足夠的授權給每個人，您可能必須購買其他授權。
 
 
 > [!NOTE]
@@ -149,7 +150,7 @@ ms.locfileid: "52537532"
 
 ::: moniker range="o365-germany"
 
- 1. 在系統管理中心，移至 [使用者 **]** \> [作用中使用者 <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">]</a> 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 

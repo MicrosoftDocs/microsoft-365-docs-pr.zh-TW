@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加強貴組織對密碼攻擊的防護，禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635971"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006922"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 
@@ -112,7 +112,7 @@ ms.locfileid: "52635971"
   
 ### <a name="ban-common-passwords"></a>禁用常見密碼
 
-建立密碼時，您應對使用者提出的最重要的密碼要求是禁用常見密碼，使貴組織更不容易受到暴力密碼破解攻擊。 常見的使用者密碼包括 **abcdefg**、**password**、**monkey**。
+建立密碼時，您應對使用者提出的最重要的密碼要求是禁用常見密碼，使貴組織更不容易受到暴力密碼破解攻擊。 常見的使用者密碼包括：**abcdefg**、**password**、**monkey**。
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>教育使用者不要在其他位置重複使用組織密碼
 
@@ -131,6 +131,8 @@ ms.locfileid: "52635971"
 ## <a name="next-steps"></a>後續步驟
 
 想要了解有關管理密碼的更多資訊嗎？ 以下是一些建議閱讀：
+
+- [Microsoft 密碼指引](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008) (強大的網站密碼是否有用？)
 

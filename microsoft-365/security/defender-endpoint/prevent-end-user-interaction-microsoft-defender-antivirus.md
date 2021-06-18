@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 06ee2f1cb68df0a957818e1fccb45628487c39fd
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ff0e134d38288b12cbc46dc3ca5f103fbf8c7ad9
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274913"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007659"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>防止使用者看到或與 Microsoft Defender 防毒軟體使用者介面互動
 
@@ -40,18 +40,18 @@ ms.locfileid: "52274913"
 
 設定為 [ **啟用**] 時：
 
-![沒有盾牌圖示與病毒和威脅防護區段的 Windows 安全性螢幕擷取畫面](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows 安全性，但沒有盾牌圖示與病毒和威脅防護區段":::
 
 設定為 [ **停** 用] 或 [未設定] 時：
 
-![顯示盾牌圖示及病毒和威脅防護區段 Windows 安全性的螢幕擷取畫面](images/defender/wdav-headless-mode-off-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有盾牌圖示及威脅防護區段 Windows 安全性的螢幕擷取畫面":::
 
 >[!NOTE]
 >隱藏介面也會使 Microsoft Defender 防毒軟體通知不會出現在端點上。 仍會顯示 Microsoft Defender for Endpoint 通知。 您也可以個別 [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md)
 
 在舊版的 Windows 10 中，設定會隱藏 Windows Defender 用戶端介面。 如果使用者嘗試開啟它，他們會收到警告說：「您的系統管理員已限制存取此應用程式」。
 
-![Windows 10 中的無周邊模式啟用時的警告訊息，版本低於1703](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Windows 10 中的無周邊模式啟用時的警告訊息，版本低於1703":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>使用群組原則從使用者隱藏 Microsoft Defender AV 介面
 

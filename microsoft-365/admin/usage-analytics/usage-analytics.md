@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635387"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007162"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
 
@@ -68,7 +68,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 「啟用與授權」頁面提供 Microsoft 365 啟用的報告;也就是有多少使用者已下載和啟用 Office 的應用程式，以及您的組織已指派多少個授權。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 
-- **啟用** &ndash;追蹤服務方案 (例如，Microsoft 365 Apps 企業版、Project 和 Visio) 組織中的啟用。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
+- **啟用** &ndash;追蹤服務方案 (例如，Microsoft 365 企業版應用程式、Project 和 Visio) 組織中的啟用。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
 
 - **授權** &ndash; 此報告包含授權類型、指派每個授權類型的使用者計數，以及每個月的授權指派發佈的概述。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 
@@ -105,7 +105,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>如何取得此儀表板相關聯的 pbit 檔案？
 
-您可以從 [Microsoft 下載中心](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)存取 pbit 檔案。
+您可以從 [Microsoft 下載中心](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)存取 pbit 檔案。 
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>神秘可以查看儀表板和報告？
 
@@ -129,7 +129,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>範本應用程式中的資料與使用狀況報告中的資料有何差異？
 
-您在範本應用程式中所看到的基礎資料，會比對 Microsoft 365 系統管理中心的活動報告中所看到的資料。 主要差異在於，在「系統管理中心」資料中的「系統管理中心」資料可用於過去的7/30/90/180 天，而範本應用程式每月顯示最多12個月的資料。
+您在範本應用程式中所看到的基礎資料，會比對 Microsoft 365 系統管理中心中的活動報告所看到的資料。 主要差異在於，在「系統管理中心」資料中的「系統管理中心」資料可用於過去的7/30/90/180 天，而範本應用程式每月顯示最多12個月的資料。
 
 此外，範本應用程式中的使用者層級詳細資料只適用于已獲指派產品授權並執行活動的使用者的最後一個完整月份。
 

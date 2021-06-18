@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964696"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007392"
 ---
 # <a name="turn-on-block-at-first-sight"></a>第一次看見時即開啟封鎖
 
@@ -82,7 +82,7 @@ Microsoft Defender 防毒軟體使用多個偵測和防護技術，以提供準�
    - **雲端掃描檔案的時間延長**：50
    - **在提交範例之前提示使用者**：在不進行提示的情況下，傳送所有資料
 
-   ![Intune Config](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 第一次看見時即封鎖設定":::
 
 4. 儲存您的設定。
 
@@ -136,7 +136,7 @@ Microsoft Defender 防毒軟體使用多個偵測和防護技術，以提供準�
 
 2. 選取 **[病毒與威脅防護]**，然後在 **[病毒與威脅防護設定]** 底下，選取 **[管理設定]**。
 
-   ![Windows 安全性應用程式中的病毒與威脅防護設定標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows 安全性應用程式中的病毒與威脅防護設定標籤的螢幕擷取畫面":::
 
 3. 確認已開啟 **[雲端提供的保護]** 和 **[自動樣本提交]**。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Exchange 保留的運作方式。
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861128"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985429"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解 Exchange 的保留
 
@@ -34,7 +34,7 @@ ms.locfileid: "52861128"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留與刪除包含的內容
 
-使用保留原則和保留標籤可以保留和删除下列 Exchange 項目：帶有任何附件的郵件 (包括草稿)、具有結束日期的工作和附註。 
+使用保留原則和保留標籤可以保留和删除下列來自使用者信箱和共用信箱的 Exchange 項目：帶有任何附件的郵件 (包括已接收的郵件、草稿、已傳送的郵件)、具有結束日期的工作和附註。 
 
 保留原則支援具有結束日期的行事曆項，但保留標籤不支援。
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a25a2ec513cd7c25f9f6ddf3d5e328928837bf2d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: b2a6ee7c3f3ea2fb31b31d2f1db178bfd9847fbc
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275141"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007466"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>執行和檢查 Microsoft Defender Offline 掃描的結果
 
@@ -69,7 +69,7 @@ Microsoft Defender Offline 會使用端點上可用的最新保護更新;每當�
 
 提示會透過通知進行，類似如下所示：
 
-![顯示需要執行的 Windows 通知 Microsoft Defender Offline](images/defender/notification.png)
+:::image type="content" source="../../media/notification.png" alt-text="要執行的通知 Microsoft Defender Offline":::
 
 在 Windows Defender 用戶端中也會通知使用者。
 
@@ -77,7 +77,7 @@ Microsoft Defender Offline 會使用端點上可用的最新保護更新;每當�
 
 Microsoft Defender Offline 掃描會在 **惡意程式碼修復狀態** 下指出為 **需要離線掃描**。
 
-![Microsoft 端點管理員指出需要 Microsoft Defender Offline 掃描](images/defender/sccm-wdo.png)
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="需要 Microsoft Defender Offline 掃描":::
 
 ## <a name="configure-notifications"></a>設定通知
 

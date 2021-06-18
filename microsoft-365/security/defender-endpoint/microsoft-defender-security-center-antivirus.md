@@ -15,17 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926520"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007440"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows 安全性應用程式中的 Microsoft Defender 防毒軟體
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
@@ -48,7 +45,7 @@ Windows 安全性應用程式是 Windows 10 版本1703和更新版本上的用�
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>在 Windows 安全性應用程式中審閱病毒和威脅防護設定
 
-![Windows 安全性應用程式中的病毒與威脅防護設定標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows 安全性應用程式中的病毒和威脅防護設定":::
 
 1. 按一下工作列中的盾牌圖示，或搜尋 **Defender** 的 [開始] 功能表，以開啟 Windows 安全性應用程式。
 
@@ -69,7 +66,7 @@ Windows 安全性應用程式是 Windows 10 版本1703和更新版本上的用�
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>檢查安全性智慧更新版本，並在 Windows 安全性應用程式中下載最新的更新
 
-![安全性智慧版本號碼資訊](images/defender/wdav-wdsc-defs.png)
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="安全性智慧版本號碼":::
 
 1. 搜尋 [*安全性*] 的 [開始] 功能表，然後選取 [ **Windows 安全性**]，以開啟 Windows 安全性應用程式。
 

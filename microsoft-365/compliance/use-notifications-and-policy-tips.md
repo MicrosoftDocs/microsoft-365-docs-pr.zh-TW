@@ -20,34 +20,36 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何將原則提示新增至資料遺失防護 (DLP) 原則，以通知使用者他們使用與 DLP 原則衝突的內容。
-ms.openlocfilehash: c9756c9ebfc39427d665a6fc83d73070f8cdf52d
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: f4a4700f4250289ee3614320499bc7fbaa16d582
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114349"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007534"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
-您可以使用資料遺失防護 (DLP) 原則，識別、監視和保護不同 Office 365 中的機密資訊。 您想要使用此機密資訊的組織中的人員保持與 DLP 原則的相容性，但是您不想要將它們封鎖，而不需要讓他們完成工作。 這是電子郵件通知和原則提示可助您做的地方。
+您可以使用資料遺失防護 (DLP) 原則，識別、監視和保護跨 Office 365 的敏感資訊。 您想要使用此機密資訊的組織中的人員保持與 DLP 原則的相容性，但是您不想要將它們封鎖，而不需要讓他們完成工作。 這是電子郵件通知和原則提示可助您做的地方。
   
 ![訊息列會顯示 Excel 2016 中的原則提示](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
-原則提示是當有人使用與 DLP 原則衝突的內容時出現的通知或警告，例如，包含個人身分識別資訊 (PII) 的商務用 OneDrive 網站上的 Excel 活頁簿等內容，以及與外部使用者共用。
+原則提示是指當有人使用與 DLP 原則衝突的內容時所顯示的通知或警告，例如，Excel 活頁簿的 OneDrive，包含個人身分識別資訊 (PII) 和與外部使用者共用的網站。
   
 您可以使用電子郵件通知和原則提示來增加知名度，協助教育組織的原則。 您也可以讓使用者選擇覆寫原則，以便在有有效的業務需求或原則偵測到誤報時，不會封鎖這些原則。
   
-在安全性與 &amp; 合規性中心中，當您建立 DLP 原則時，您可以將使用者通知設定為：
+在 [規範中心] 中，當您建立 DLP 原則時，您可以將使用者通知設定為：
   
 - 傳送電子郵件通知給您選擇的描述問題的人員。
+> [!NOTE]
+> 通知電子郵件會以不受保護的狀態傳送。
     
 - 顯示與 DLP 原則衝突之內容的原則提示：
     
-  - 針對網頁 Outlook 和 Outlook 2013 及更新版本的電子郵件，原則提示會出現在撰寫郵件的收件者上方的郵件上方。
+  - 針對 Outlook 網頁版和 Outlook 2013 和更新版本中的電子郵件，原則提示會出現在撰寫郵件的收件者上方的郵件上方。
     
-  - 若為商務用 OneDrive 帳戶或 SharePoint Online 網站中的檔，原則提示會顯示在專案上的警告圖示。 若要查看詳細資訊，您可以選取專案，然後選擇 ![ 頁面右上角的 [資訊資訊窗格] 圖示， ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 以開啟 [詳細資料] 窗格。 
+  - 對於商務用 OneDrive 的商務帳戶或 SharePoint 線上網站，原則提示會以顯示在專案上的警告圖示表示。 若要查看詳細資訊，您可以選取專案，然後選擇 ![ 頁面右上角的 [資訊資訊窗格] 圖示， ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 以開啟 [詳細資料] 窗格。 
     
-  - 對於儲存在 DLP 原則中的商務用 OneDrive 網站或 SharePoint 線上網站上的 Excel、PowerPoint 和 Word 檔，原則提示會出現在訊息列和 Backstage view ( **File** 功能表 \> **資訊**) 。
+  - 針對儲存在 OneDrive for Business site or SharePoint Online 網站（包含在 DLP 原則中）的 Excel、PowerPoint 和 Word 檔，原則提示會出現在訊息列和 Backstage **view ( 檔案** 功能表 \> **資訊**) 。
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>將使用者通知新增至 DLP 原則
 
@@ -69,13 +71,13 @@ ms.locfileid: "52114349"
     
 6. 若要選擇您想要 DLP 原則保護的位置，請執行下列其中一項操作：
     
-   - **在 Office 365** \> **下一步** 選擇所有位置。
+   - **在** \> **[下一步]** 中選擇 Office 365 的所有位置。
     
    - 選擇 [ **讓我選擇特定位置** \> **] [下一步]**。
     
-   若要包含或排除整個位置（例如所有 Exchange 電子郵件或所有 OneDrive 帳戶），請將該位置的 **狀態** 切換為 [開啟] 或 [關閉]。 
+   若要包含或排除整個位置（例如所有 Exchange 電子郵件或所有 OneDrive 帳戶），請切換該位置的 **狀態** 。 
     
-   若只要包含特定的 SharePoint 網站或 OneDrive 帳戶，請將 **狀態** 切換為 [開啟]，然後按一下 [**包含**] 底下的連結，選擇特定的網站或帳戶。 
+   若只要包含特定的 SharePoint 網站或 OneDrive 帳戶，請將 **狀態** 切換為 [開啟]，然後按一下 [ **包含** ] 底下的連結，選擇特定的網站或帳戶。 
     
 7. 選擇 [ **使用高級設定** \> **] [下一步]**。
     
@@ -109,7 +111,7 @@ ms.locfileid: "52114349"
   
 根據預設，通知會顯示網站上專案類似下列的文字。 通知文字會個別針對每個規則進行設定，因此顯示的文字會隨相符的規則而有所不同。
 
-|**如果 DLP 原則規則執行此動作 .。。**|**SharePoint 或商務用 OneDrive 檔的預設通知是說 .。。**|**否則 Outlook 郵件的預設通知就會指出 .。。**|
+|**如果 DLP 原則規則執行此動作 .。。**|**否則，SharePoint 或 OneDrive 商務檔的預設通知即會指出 .。。**|**否則，Outlook 郵件的預設通知就會指出 .。。**|
 |:-----|:-----|:-----|
 |傳送通知但不允許覆寫  <br/> |此專案與您組織中的原則相衝突。  <br/> |您的電子郵件與您組織中的原則相衝突。  <br/> |
 |封鎖存取、傳送通知及允許覆寫  <br/> |此專案與您組織中的原則相衝突。 如果您未解決此衝突，則可能會封鎖對此檔案的存取。  <br/> |您的電子郵件與您組織中的原則相衝突。 郵件未傳遞給所有收件者。  <br/> |
@@ -124,7 +126,7 @@ ms.locfileid: "52114349"
 |**令 牌**|**描述**|
 |:-----|:-----|
 |%%AppliedActions%%  <br/> |套用至內容的動作。  <br/> |
-|%%ContentURL%%  <br/> |SharePoint Online 網站或商務用 OneDrive 網站上檔的 URL。  <br/> |
+|%%ContentURL%%  <br/> |SharePoint Online 網站上的檔或商務用 OneDrive 的網站 URL。  <br/> |
 |%%MatchedConditions%%  <br/> |內容所符合的條件。 使用此權杖，向人員告知內容可能的問題。  <br/> |
    
 ![顯示標記顯示位置的通知訊息](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
@@ -143,7 +145,7 @@ ms.locfileid: "52114349"
     
 ![原則提示選項](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
-例如，您可以將 DLP 原則套用到偵測個人身分識別資訊 (PII) 的商務用 OneDrive 網站，而且此原則有三個規則：
+例如，您可以將 DLP 原則套用至 OneDrive 用於偵測個人身分識別資訊 (PII) 的商務網站，而且此原則具有三個規則：
   
 1. 第一個規則：如果在檔中偵測到此敏感資訊的實例少於五個，且該檔與組織內的人員共用，則 [ **傳送通知** ] 動作會顯示原則提示。 針對原則提示，不需要覆寫選項，因為此規則只是通知人員，而不會封鎖存取。 
     
@@ -159,9 +161,9 @@ ms.locfileid: "52114349"
     
 - 如果最嚴格規則中的原則提示允許人員覆寫規則，則覆寫此規則也將會覆寫內容符合的任何其他規則。
     
-## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>商務用 OneDrive 網站和 SharePoint Online 網站上的原則提示
+## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>商務網站 OneDrive 和 SharePoint Online 網站的原則提示
 
-當商務用 OneDrive 網站或 SharePoint Online 網站上的檔符合 DLP 原則中的規則，且該規則使用原則提示時，原則提示會在檔上顯示特殊的圖示：
+當商務用 OneDrive 或 SharePoint Online 網站上的檔符合 DLP 原則中的規則，且該規則使用原則提示時，原則提示會在檔上顯示特殊的圖示：
   
 1. 如果規則傳送有關檔案的通知，就會顯示警告圖示。
     
@@ -193,9 +195,9 @@ DLP 原則同步處理至網站，而且會定期及非同步評估 contented，
 
 您可以從電子郵件通知中單獨自訂原則提示的文字。 與電子郵件通知的自訂文字不同 (請參閱上述章節) 中原則提示的自訂文字不接受 HTML 或標記。 相反地，[原則提示] 的自訂文字只會以256個字元的限制顯示純文字。
   
-## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>網頁 Outlook 和 Outlook 2013 及更新版本的原則提示
+## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Outlook 網頁版和 Outlook 2013 和更新版本中的原則提示
 
-當您在 web 上的 Outlook 和 Outlook 2013 和更新版本撰寫電子郵件時，如果您新增的內容符合 DLP 原則中的規則，則會看到原則提示，而且該規則會使用原則提示。 原則提示會出現在郵件上方，收件者的上方，郵件會撰寫中。
+當您在 web 和 Outlook 2013 和更新版本的 Outlook 中撰寫新的電子郵件時，如果您在 DLP 原則中新增符合規則的內容，則會看到原則提示，而且該規則會使用原則提示。 原則提示會出現在郵件上方，收件者的上方，郵件會撰寫中。
   
 ![撰寫郵件頂端的原則提示](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
   
@@ -211,20 +213,20 @@ DLP 原則同步處理至網站，而且會定期及非同步評估 contented，
   
 請注意，當您將敏感資訊新增至電子郵件時，新增敏感資訊和顯示原則提示之間可能會有延遲。
 
-### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 和更新版本支援顯示僅限某些條件的原則提示
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 和更新版本支援只顯示某些條件的原則提示
 
-目前，Outlook 2013 和更新版本支援只顯示這些條件的原則提示：
+目前，Outlook 2013 和更新版本支援只顯示這些狀況的原則提示：
 
 - 內容包含
 - 內容已共用
 
-請注意，例外狀況和所有的情況都是在 Outlook 中運作，其將會符合內容，並強制執行內容的保護動作。 但尚未支援使用者顯示原則提示。 
+請注意，例外狀況和所有這些條件都是在 Outlook 中運作，其將會符合內容，並強制執行內容的保護動作。 但尚未支援使用者顯示原則提示。 
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 系統管理中心與安全性與 &amp; 合規性中心的原則提示
 
-原則提示可使用 Exchange 系統管理中心內建立的 dlp 原則和郵件流程規則，或是在安全性與合規性中心內建立的 dlp 原則一起運作 &amp; ，但不能同時搭配兩者使用。 這是因為這些原則儲存在不同的位置，但是原則秘訣只能從單一位置進行繪製。
+原則秘訣可以搭配在 Exchange 系統管理中心中建立的 DLP 原則和郵件流程規則，或是在安全性與合規性中心建立的 DLP 原則使用 &amp; ，但不能同時使用這兩者。 這是因為這些原則儲存在不同的位置，但是原則秘訣只能從單一位置進行繪製。
   
-如果您已在 Exchange 系統管理中心中設定原則提示，則在安全性與合規性中心內設定的任何原則提示，都 &amp; 不會顯示在網頁上 Outlook 中的使用者，Outlook 2013 和更新版本，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保目前的 Exchange 郵件流程規則 (也稱為 transport rules) 繼續運作，直到您選擇切換至 [安全性與 &amp; 合規性中心]。
+如果您已在 Exchange 系統管理中心中設定原則提示，在 [安全性與合規性中心] 中所設定的任何原則提示，都 &amp; 不會顯示在網頁和 outlook 2013 和更新版本中 outlook 的使用者，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保目前的 Exchange 郵件流程規則 (也稱為 transport rules) 會繼續運作，直到您選擇切換至 [安全性與 &amp; 合規性中心]。
   
 請注意，當原則提示只能從單一位置繪製時，系統會永遠傳送電子郵件通知，即使您同時在安全性 &amp; 與合規性中心和 Exchange 系統管理中心中使用 DLP 原則也是一樣。
   
@@ -238,18 +240,18 @@ DLP 原則同步處理至網站，而且會定期及非同步評估 contented，
 |封鎖存取、傳送通知及允許覆寫  <br/> |您的電子郵件與您組織中的原則相衝突。  <br/> |
 |封鎖存取及傳送通知  <br/> |您的電子郵件與您組織中的原則相衝突。  <br/> |
    
-## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint 和 Word 中的原則提示
+## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint 及 Word 中的原則提示
 
-當人員使用 Excel、PowerPoint 和 Word 的桌上出版本中的機密內容時，原則秘訣可以即時通知他們內容與 DLP 原則衝突。 這需要：
+當人員使用 Excel 的桌上出版本中的機密內容，PowerPoint 和 Word 時，原則秘訣可以即時通知內容與 DLP 原則衝突。 這需要：
   
-- Office 檔會儲存在商務用 OneDrive 網站或 SharePoint 線上網站上。
+- Office 檔儲存在商務網站的 OneDrive 或 SharePoint 線上網站上。
     
 - 此網站包含在設定為使用原則提示的 DLP 原則中。
     
-Office 桌面程式會自動從 Office 365 同步處理 DLP 原則，然後掃描檔，以確保它們不會與您的 DLP 原則和即時顯示原則提示產生衝突。
+Office 桌面程式會直接從 Office 365 自動同步處理 DLP 原則，然後掃描檔，以確保它們不會與您的 DLP 原則和即時顯示原則提示產生衝突。
 
 > [!NOTE]
-> Office 桌面應用程式會自行掃描檔，以判斷是否應該顯示 DLP 原則秘訣;它們不會顯示 SharePoint 線上網站或商務用 OneDrive 網站已確定的原則提示，都應該顯示在檔案上。 因此，您在 SharePoint 線上網站或商務用 OneDrive 網站中所看到的桌面應用程式中，您可能不一定會看到 DLP 原則提示。 相反地，網頁上的 Office 應用程式只會顯示 SharePoint Online 網站或商務用 OneDrive 網站已確定的 DLP 原則提示。
+> Office 桌面應用程式會自行掃描檔，以判斷是否應該顯示 DLP 原則秘訣;它們不會顯示 SharePoint 線上網站或商務網站 OneDrive 所決定的原則提示，都應該顯示在檔案中。 因此，您可能不會在 SharePoint 線上網站或商務網站 OneDrive 中所看到的桌面應用程式中，永遠都看不到 DLP 原則提示。 相反地，網頁上的 Office 應用程式只會顯示 SharePoint 線上網站或商務網站 OneDrive 的 DLP 原則提示，應該會加以顯示。
   
 根據您設定 DLP 原則中原則提示的方式，使用者可以選擇乾脆忽略原則提示、覆寫具有或沒有業務理由的原則，或報告誤報。
   
@@ -265,9 +267,9 @@ Office 桌面程式會自動從 Office 365 同步處理 DLP 原則，然後掃�
   
 ![Excel 2016 的 Backstage 中的原則提示選項](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
-在上述 Office 每個桌面程式中，使用者可以選擇關閉原則提示。 關閉時，簡單通知的原則提示不會出現在 [檔案] 索引標籤上 **的 [檔案** ] 索引標籤或 Backstage view (中) 。 不過，有關封鎖和覆寫的原則秘訣仍會出現，而且他們仍會收到電子郵件通知。 此外，關閉原則提示不會從套用的任何 DLP 原則中免除檔。 
+在每個 Office 桌面程式中，使用者都可以選擇關閉原則提示。 關閉時，簡單通知的原則提示不會出現在 [檔案] 索引標籤上 **的 [檔案** ] 索引標籤或 Backstage view (中) 。 不過，有關封鎖和覆寫的原則秘訣仍會出現，而且他們仍會收到電子郵件通知。 此外，關閉原則提示不會從套用的任何 DLP 原則中免除檔。 
   
-### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 及 Word 2016 中的原則提示的預設文字
+### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 及 Word 2016 中原則提示的預設文字
 
 原則提示預設會在已開啟檔的郵件列和 Backstage 檢視上顯示類似下列的文字。 通知文字會個別針對每個規則進行設定，因此顯示的文字會隨相符的規則而有所不同。
 
@@ -277,7 +279,7 @@ Office 桌面程式會自動從 Office 365 同步處理 DLP 原則，然後掃�
 |封鎖存取、傳送通知及允許覆寫  <br/> |此檔案與您組織中的原則相衝突。 如果您未解決此衝突，則可能會封鎖對此檔案的存取。 移 **至 [檔案** ] 功能表以取得詳細資訊。  <br/> |
 |封鎖存取及傳送通知  <br/> |此檔案與您組織中的原則相衝突。 如果您未解決此衝突，則可能會封鎖對此檔案的存取。 移 **至 [檔案** ] 功能表以取得詳細資訊。  <br/> |
    
-### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint 和 Word 中的原則提示的自訂文字
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Excel、PowerPoint 及 Word 中的原則提示的自訂文字
 
 您可以從電子郵件通知中單獨自訂原則提示的文字。 與電子郵件通知的自訂文字不同 (請參閱上述章節) 中原則提示的自訂文字不接受 HTML 或標記。 相反地，[原則提示] 的自訂文字只會以256個字元的限制顯示純文字。
   
