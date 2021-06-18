@@ -16,30 +16,30 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 389d9ad4a3e5fc876e7bded89389202e95bfda45
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879117"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007066"
 ---
-# <a name="live-response-command-examples"></a><span data-ttu-id="64788-104">即時回應命令範例</span><span class="sxs-lookup"><span data-stu-id="64788-104">Live response command examples</span></span>
+# <a name="live-response-command-examples"></a><span data-ttu-id="a7a8e-104">即時回應命令範例</span><span class="sxs-lookup"><span data-stu-id="a7a8e-104">Live response command examples</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="64788-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="64788-105">**Applies to:**</span></span>
-- [<span data-ttu-id="64788-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="64788-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="64788-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="64788-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="a7a8e-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="a7a8e-105">**Applies to:**</span></span>
+- [<span data-ttu-id="a7a8e-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="a7a8e-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="a7a8e-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a7a8e-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="64788-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="64788-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="64788-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="64788-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="a7a8e-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="a7a8e-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="a7a8e-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="64788-110">深入瞭解 live response 中使用的常見命令，並查看其一般使用方式的範例。</span><span class="sxs-lookup"><span data-stu-id="64788-110">Learn about common commands used in live response and see examples on how they are typically used.</span></span>
+<span data-ttu-id="a7a8e-110">深入瞭解 live response 中使用的常見命令，並查看其一般使用方式的範例。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-110">Learn about common commands used in live response and see examples on how they are typically used.</span></span>
 
-<span data-ttu-id="64788-111">您可以執行基本或高級 live 回應命令，視授與您的角色而定。</span><span class="sxs-lookup"><span data-stu-id="64788-111">Depending on the role that's been granted to you, you can run basic or advanced live response commands.</span></span> <span data-ttu-id="64788-112">如需基本及高級命令的詳細資訊，請參閱 [使用即時回應調查裝置上的實體](live-response.md)。</span><span class="sxs-lookup"><span data-stu-id="64788-112">For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).</span></span>
+<span data-ttu-id="a7a8e-111">您可以執行基本或高級 live 回應命令，視授與您的角色而定。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-111">Depending on the role that's been granted to you, you can run basic or advanced live response commands.</span></span> <span data-ttu-id="a7a8e-112">如需基本及高級命令的詳細資訊，請參閱 [使用即時回應調查裝置上的實體](live-response.md)。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-112">For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).</span></span>
 
 
-## <a name="analyze"></a><span data-ttu-id="64788-113">分析</span><span class="sxs-lookup"><span data-stu-id="64788-113">analyze</span></span> 
+## <a name="analyze"></a><span data-ttu-id="a7a8e-113">分析</span><span class="sxs-lookup"><span data-stu-id="a7a8e-113">analyze</span></span> 
 
 ```console
 # Analyze the file malware.txt
@@ -51,7 +51,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## <a name="connections"></a><span data-ttu-id="64788-114">連接</span><span class="sxs-lookup"><span data-stu-id="64788-114">connections</span></span>
+## <a name="connections"></a><span data-ttu-id="a7a8e-114">連接</span><span class="sxs-lookup"><span data-stu-id="a7a8e-114">connections</span></span>
 
 ```console
 # List active connections in json format using parameter name
@@ -63,7 +63,7 @@ connections -output json
 connections json
 ```
 
-## <a name="dir"></a><span data-ttu-id="64788-115">迪爾</span><span class="sxs-lookup"><span data-stu-id="64788-115">dir</span></span>
+## <a name="dir"></a><span data-ttu-id="a7a8e-115">迪爾</span><span class="sxs-lookup"><span data-stu-id="a7a8e-115">dir</span></span>
 
 ```console
 # List files and sub-folders in the current folder
@@ -80,21 +80,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## <a name="fileinfo"></a><span data-ttu-id="64788-116">fileinfo</span><span class="sxs-lookup"><span data-stu-id="64788-116">fileinfo</span></span>
+## <a name="fileinfo"></a><span data-ttu-id="a7a8e-116">fileinfo</span><span class="sxs-lookup"><span data-stu-id="a7a8e-116">fileinfo</span></span>
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## <a name="findfile"></a><span data-ttu-id="64788-117">findfile</span><span class="sxs-lookup"><span data-stu-id="64788-117">findfile</span></span>
+## <a name="findfile"></a><span data-ttu-id="a7a8e-117">findfile</span><span class="sxs-lookup"><span data-stu-id="a7a8e-117">findfile</span></span>
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## <a name="getfile"></a><span data-ttu-id="64788-118">getfile</span><span class="sxs-lookup"><span data-stu-id="64788-118">getfile</span></span>
+## <a name="getfile"></a><span data-ttu-id="a7a8e-118">getfile</span><span class="sxs-lookup"><span data-stu-id="a7a8e-118">getfile</span></span>
 
 ```console
 # Download a file from a machine
@@ -108,18 +108,30 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 >[!NOTE]
 >
-> <span data-ttu-id="64788-119">下列檔案類型 **無法** 從 Live Response 中使用此命令下載：</span><span class="sxs-lookup"><span data-stu-id="64788-119">The following file types **cannot** be downloaded using this command from within Live Response:</span></span>
+> <span data-ttu-id="a7a8e-119">下列檔案類型 **無法** 從 Live Response 中使用此命令下載：</span><span class="sxs-lookup"><span data-stu-id="a7a8e-119">The following file types **cannot** be downloaded using this command from within Live Response:</span></span>
 >
-> * [<span data-ttu-id="64788-120">重新分析點檔案</span><span class="sxs-lookup"><span data-stu-id="64788-120">Reparse point files</span></span>](/windows/desktop/fileio/reparse-points/)
-> * [<span data-ttu-id="64788-121">疏鬆檔案</span><span class="sxs-lookup"><span data-stu-id="64788-121">Sparse files</span></span>](/windows/desktop/fileio/sparse-files/)
-> * <span data-ttu-id="64788-122">空白檔</span><span class="sxs-lookup"><span data-stu-id="64788-122">Empty files</span></span>
-> * <span data-ttu-id="64788-123">虛擬檔案或尚未在本機完全呈現的檔案</span><span class="sxs-lookup"><span data-stu-id="64788-123">Virtual files, or files that are not fully present locally</span></span>
+> * [<span data-ttu-id="a7a8e-120">重新分析點檔案</span><span class="sxs-lookup"><span data-stu-id="a7a8e-120">Reparse point files</span></span>](/windows/desktop/fileio/reparse-points/)
+> * [<span data-ttu-id="a7a8e-121">疏鬆檔案</span><span class="sxs-lookup"><span data-stu-id="a7a8e-121">Sparse files</span></span>](/windows/desktop/fileio/sparse-files/)
+> * <span data-ttu-id="a7a8e-122">空白檔</span><span class="sxs-lookup"><span data-stu-id="a7a8e-122">Empty files</span></span>
+> * <span data-ttu-id="a7a8e-123">虛擬檔案或尚未在本機完全呈現的檔案</span><span class="sxs-lookup"><span data-stu-id="a7a8e-123">Virtual files, or files that are not fully present locally</span></span>
 >
-> <span data-ttu-id="64788-124">[PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)**支援這些** 檔案類型。</span><span class="sxs-lookup"><span data-stu-id="64788-124">These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true).</span></span>
+> <span data-ttu-id="a7a8e-124">[PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)**支援這些** 檔案類型。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-124">These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true).</span></span>
 >
-> <span data-ttu-id="64788-125">如果您在 Live Response 中使用此命令有問題，請使用 PowerShell 做為替代方式。</span><span class="sxs-lookup"><span data-stu-id="64788-125">Use PowerShell as an alternative, if you have problems using this command from within Live Response.</span></span>
+> <span data-ttu-id="a7a8e-125">如果您在 Live Response 中使用此命令有問題，請使用 PowerShell 做為替代方式。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-125">Use PowerShell as an alternative, if you have problems using this command from within Live Response.</span></span>
 
-## <a name="processes"></a><span data-ttu-id="64788-126">過程</span><span class="sxs-lookup"><span data-stu-id="64788-126">processes</span></span>
+## <a name="library"></a><span data-ttu-id="a7a8e-126">圖書館</span><span class="sxs-lookup"><span data-stu-id="a7a8e-126">library</span></span>
+
+```console
+# List files in the library
+library
+```
+
+```console
+# Delete a file from the library
+library delete script.ps1
+```
+
+## <a name="processes"></a><span data-ttu-id="a7a8e-127">過程</span><span class="sxs-lookup"><span data-stu-id="a7a8e-127">processes</span></span>
 ```console
 # Show all processes
 processes
@@ -140,7 +152,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## <a name="putfile"></a><span data-ttu-id="64788-127">putfile</span><span class="sxs-lookup"><span data-stu-id="64788-127">putfile</span></span>
+## <a name="putfile"></a><span data-ttu-id="a7a8e-128">putfile</span><span class="sxs-lookup"><span data-stu-id="a7a8e-128">putfile</span></span>
 
 ```console
 # Upload file from library
@@ -157,7 +169,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## <a name="registry"></a><span data-ttu-id="64788-128">登錄</span><span class="sxs-lookup"><span data-stu-id="64788-128">registry</span></span>
+## <a name="registry"></a><span data-ttu-id="a7a8e-129">登錄</span><span class="sxs-lookup"><span data-stu-id="a7a8e-129">registry</span></span>
 
 ```console
 # Show information about the values in a registry key
@@ -170,7 +182,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## <a name="remediate"></a><span data-ttu-id="64788-129">修復</span><span class="sxs-lookup"><span data-stu-id="64788-129">remediate</span></span>
+## <a name="remediate"></a><span data-ttu-id="a7a8e-130">修復</span><span class="sxs-lookup"><span data-stu-id="a7a8e-130">remediate</span></span>
 
 ```console
 # Remediate file in specific path
@@ -187,7 +199,7 @@ remediate process 7960
 remediate list
 ```
 
-## <a name="run"></a><span data-ttu-id="64788-130">運行</span><span class="sxs-lookup"><span data-stu-id="64788-130">run</span></span>
+## <a name="run"></a><span data-ttu-id="a7a8e-131">運行</span><span class="sxs-lookup"><span data-stu-id="a7a8e-131">run</span></span>
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -200,10 +212,10 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
 >[!NOTE]
 >
-> <span data-ttu-id="64788-131">針對長時間執行命令，例如 "**run**" 或 "**getfile**"，您可能想要在命令的結尾使用 ' **&** ' 符號，以在背景中執行該動作。</span><span class="sxs-lookup"><span data-stu-id="64788-131">For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.</span></span>
-> <span data-ttu-id="64788-132">這可讓您繼續調查機器，並在使用 '**fg**' [basic 命令](live-response.md#basic-commands)完成時，回到背景命令。</span><span class="sxs-lookup"><span data-stu-id="64788-132">This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).</span></span>
+> <span data-ttu-id="a7a8e-132">針對長時間執行命令，例如 "**run**" 或 "**getfile**"，您可能想要在命令的結尾使用 ' **&** ' 符號，以在背景中執行該動作。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-132">For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.</span></span>
+> <span data-ttu-id="a7a8e-133">這可讓您繼續調查機器，並在使用 '**fg**' [basic 命令](live-response.md#basic-commands)完成時，回到背景命令。</span><span class="sxs-lookup"><span data-stu-id="a7a8e-133">This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).</span></span>
 >
-## <a name="scheduledtask"></a><span data-ttu-id="64788-133">scheduledtask</span><span class="sxs-lookup"><span data-stu-id="64788-133">scheduledtask</span></span>
+## <a name="scheduledtask"></a><span data-ttu-id="a7a8e-134">scheduledtask</span><span class="sxs-lookup"><span data-stu-id="a7a8e-134">scheduledtask</span></span>
 
 ```console
 # Get all scheduled tasks
@@ -221,7 +233,7 @@ scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Eva
 ```
 
 
-## <a name="undo"></a><span data-ttu-id="64788-134">撤銷</span><span class="sxs-lookup"><span data-stu-id="64788-134">undo</span></span>
+## <a name="undo"></a><span data-ttu-id="a7a8e-135">撤銷</span><span class="sxs-lookup"><span data-stu-id="a7a8e-135">undo</span></span>
 
 ```console
 # Restore remediated registry
@@ -238,15 +250,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 undo file c:\Users\user\Desktop\malware.exe
 ```
 
-
-## <a name="library"></a><span data-ttu-id="64788-135">圖書館</span><span class="sxs-lookup"><span data-stu-id="64788-135">library</span></span>
-
-```console
-# List files in the library
-library
-```
-
-```console
-# Delete a file from the library
-library delete script.ps1
-```
