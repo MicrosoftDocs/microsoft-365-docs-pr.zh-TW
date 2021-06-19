@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878325"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029606"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -61,8 +61,8 @@ ms.locfileid: "52878325"
 |防網路釣魚保護|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |反垃圾郵件保護|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子郵件的零小時自動清除 () |[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|保護電子郵件中的惡意 URLs 和檔案，以及 Office 檔中的檔 (安全連結和安全附件) |[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|開啟 SharePoint、OneDrive 和 Microsoft Teams 工作負載的安全附件|[適用於 Office 365 的 Microsoft Defender](turn-on-mdo-for-spo-odb-and-teams.md)|
+|保護電子郵件中的惡意 URLs 和檔案，以及 Office 檔中的檔 (Safe 連結及 Safe 附件) |[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|開啟 SharePoint、OneDrive 和 Microsoft Teams 工作負載的 Safe 附件|[適用於 Office 365 的 Microsoft Defender](turn-on-mdo-for-spo-odb-and-teams.md)|
 |進階防網路釣魚保護|[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色及權限
@@ -139,11 +139,12 @@ ms.locfileid: "52878325"
        - **如果信箱智慧偵測到模仿的使用者** <sup>\*</sup> ：選取 **[將郵件移至收件者的垃圾郵件資料夾**] (標準) 或 **隔離郵件** (Strict) 。
        - **如果偵測到郵件為欺騙**：請選取 **[將郵件移至收件者的垃圾郵件資料夾** ] (標準) 或 **隔離郵件** (Strict) 。
      - **安全性秘訣 & 指示** 區段：設定下列設定：
+       - **顯示第一個連絡人安全提示**：選取 [ (開啟) ]。
        - **顯示使用者模擬安全提示** <sup>\*</sup> ：選取 (開啟) ]。
        - **顯示網域模擬安全提示** <sup>\*</sup> ：選取 (開啟) ]。
        - **顯示使用者模擬不尋常的字元安全提示** <sup>\*</sup> ：選取 (開啟) 。
        - **顯示 (？ ) 以取得未驗證之寄件者的欺騙**：選取 (開啟) 。
-       - **顯示「透過」標記**：如果此設定可用，請選取 (開啟) 。
+       - **顯示「透過」標記**：選取 (開啟) 。
 
      完成後，按一下 [儲存]。
 
@@ -151,7 +152,7 @@ ms.locfileid: "52878325"
 
 4. 按一下 [**儲存**]，然後按一下 [**關閉**]
 
-如需設定反網路釣魚原則的詳細指示，請參閱[在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)及[設定 Microsoft Defender 中的反網路釣魚原則，以供 Office 365](configure-atp-anti-phishing-policies.md)。
+如需設定反網路釣魚原則的詳細指示，請參閱[在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)及[設定 Microsoft Defender 中的反網路釣魚原則，以供 Office 365](configure-mdo-anti-phishing-policies.md)。
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>第3部分-EOP 中的反垃圾郵件保護
 
@@ -169,22 +170,22 @@ ms.locfileid: "52878325"
 
 如需設定反垃圾郵件原則的詳細指示，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>第4部分-防範惡意 URLs 和檔案 (安全連結和檔案中的安全附件 Office 365) 
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>第4部分-從惡意 URLs 和檔案 (在 Office 365 的 Defender 中 Safe 連結及 Safe 附件進行防護) 
 
-在包含[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的訂閱中，可使用從惡意 URLs 和檔案進行時間的防護。 它是透過 [安全附件](safe-attachments.md) 和 [安全連結](safe-links.md) 原則來設定。
+在包含[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的訂閱中，可使用從惡意 URLs 和檔案進行時間的防護。 它是透過[Safe 附件](safe-attachments.md)和[Safe 連結](safe-links.md)原則進行設定。
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全附件原則
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>SafeMicrosoft Defender 中 Office 365 的附件原則
 
-若要設定 [安全附件](safe-attachments.md)，請至少建立一個安全連結原則。
+若要設定[Safe 附件](safe-attachments.md)，請至少建立一個 Safe 連結原則。
 
-1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **建立**]。
+1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理** \> **原則** \> **ATP Safe 附件**]，然後按一下 [**建立**]。
 
-2. 在出現的 [ **新增安全附件原則** ] 嚮導中，設定下列設定：
+2. 在出現的 [**新增 Safe 附件原則] 原則** 中，設定下列設定：
 
    - 在 [ **名稱** ] 方塊中，輸入 `Block malware` ，然後按 **[下一步]**。
 
    - 在 [**設定**] 頁面上，設定下列設定：
-     - 在 [ **安全附件未知惡意程式碼回應** ] 區段中，選擇 [ **封鎖**]。
+     - 在 [ **Safe 附件未知惡意程式碼回應**] 區段中，選擇 [**封鎖**]。
      - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
 
      按 [下一步 **]**。
@@ -193,21 +194,21 @@ ms.locfileid: "52878325"
 
 4. 請複查您的設定，然後按一下 **[完成]**。
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全連結原則
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>SafeMicrosoft Defender 中 Office 365 的連結原則
 
-若要設定 [安全連結](safe-links.md)，請複查及編輯安全連結的全域設定，並至少建立一個安全連結原則。
+若要設定[Safe 連結](safe-links.md)，請複查及編輯 Safe 連結的全域設定，以及至少建立一個 Safe 連結原則。
 
-1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，然後按一下 [ **通用設定**]，然後設定下列設定：
+1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理** \> **原則** \> **ATP Safe 連結**]，然後按一下 [**通用設定**]，然後設定下列設定：
 
-   - 驗證 **使用下列專案中的安全連結：已開啟應用程式 Office 365** ： ![ 切換開啟 ](../../media/scc-toggle-on.png) 。
-   - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
+   - Verify **in： Office 365 應用程式中使用 Safe 連結**：開啟開啟] ![ ](../../media/scc-toggle-on.png) 。
+   - **請勿追蹤使用者按一下 Safe 連結時**：請關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
    - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
 
    完成後，按一下 [儲存]。
 
-2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
+2. 回到主要 Safe 連結] 頁面上，按一下 [**建立**]。
 
-3. 在出現的 [ **建立安全連結原則** ] 嚮導中，設定下列設定：
+3. 在出現的 [**建立 Safe 連結原則**] 嚮導中，設定下列設定：
 
    - 在 [ **名稱** ] 方塊中，輸入名稱，例如 `Safe Links` ]，然後按 **[下一步]**。
 
@@ -227,14 +228,14 @@ ms.locfileid: "52878325"
 
 若要深入了解，請參閱[設定安全連結原則](set-up-safe-links-policies.md)。
 
-## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第5部分-確認 SharePoint、OneDrive 和 Microsoft Teams 的安全附件已開啟
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第5部分-確認 SharePoint、OneDrive 和 Microsoft Teams 的 Safe 附件已開啟
 
 工作負載（如 SharePoint、OneDrive 和 Teams）是為了共同作業而建立的。 使用 Office 365 的 Defender 可協助封鎖和偵測小組網站及文件庫中識別為惡意的檔案。 您可以在 [這裡](mdo-for-spo-odb-and-teams.md)進一步閱讀該功能的詳細資訊。
 
 > [!IMPORTANT]
 > **開始此程式之前，請確定已為您的 Microsoft 365 環境開啟審核記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)！
 
-1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **通用設定**]。
+1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理** \> **原則** \> **ATP Safe 附件**]，然後按一下 [**通用設定**]。
 
 2. 確認 **SharePoint、OneDrive 和 Microsoft Teams 切換功能的 [開啟 Office 365 的 Defender]，以查看** 右邊： ![ 切換] ](../../media/scc-toggle-on.png) ，然後按一下 [**儲存**]。
 
@@ -278,7 +279,7 @@ ms.locfileid: "52878325"
 > 當您完成設定時，請使用下列連結來開始工作負載調查：
 >
 >- [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
->- [使用 Microsoft 365 defender 入口網站管理 Defender 中的隔離檔案 Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+>- [使用 Microsoft 365 Defender 入口網站管理 Defender 中的隔離檔案 Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [在 SharePoint 線上、OneDrive 或 Microsoft Teams 中找到惡意檔案時要執行的動作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
 

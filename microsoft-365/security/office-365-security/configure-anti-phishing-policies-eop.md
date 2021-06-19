@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何使用或不具有 Exchange Online 信箱，來建立、修改和刪除 Exchange Online Protection (EOP) 組織中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cd006146d8ae41196b63c658ae54e875d730bcc
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 2aaeb10eaa3c06e721df3cf7a00658482e6ffc0c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932851"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029918"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中設定反網路釣魚原則
 
@@ -35,14 +35,14 @@ ms.locfileid: "52932851"
 
 具有 Exchange Online 信箱的組織可以設定 Microsoft 365 Defender 入口網站或 Exchange Online PowerShell 中的反網路釣魚原則。 獨立 EOP 組織只能使用 Microsoft 365 Defender 入口網站。
 
-如需建立及修改可用於 Office 365 microsoft defender 的更高級防網路釣魚原則的詳細資訊，請參閱[在 microsoft defender 中設定 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+如需建立及修改可用於 Office 365 microsoft defender 的更高級防網路釣魚原則的詳細資訊，請參閱[在 microsoft defender 中設定 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。
 
 反網路釣魚原則的基本元素如下：
 
 - **反網路釣魚原則**：指定要啟用或停用的網路釣魚防護，以及要套用選項的動作。
 - **反網路釣魚規則**：指定原則套用至) 以進行反網路釣魚原則的優先順序和收件者篩選 (。
 
-當您在 Microsoft 365 Defender 入口網站中管理反網路釣魚原則時，這兩個元素之間的差異並不明顯。
+當您在 Microsoft 365 Defender 入口網站中管理反網路釣魚原則時，這兩個元素之間的差異不明顯。
 
 - 當您建立反網路釣魚原則時，實際上是建立反網路釣魚規則，同時也為這兩者使用相同的名稱建立了關聯的反網路釣魚原則。
 - 當您修改反網路釣魚原則時，與名稱、優先順序、啟用或停用的名稱和收件者篩選器相關的設定會修改反網路釣魚規則。 所有其他設定會修改關聯的反網路釣魚原則。
@@ -87,7 +87,7 @@ ms.locfileid: "52932851"
 
 在 Microsoft 365 Defender 入口網站中建立自訂的反網路釣魚原則，會同時使用相同的名稱建立反網路釣魚規則和相關聯的反網路釣魚原則。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** 網頁] 頁面上，按一下 [ ![ 建立圖示 ](../../media/m365-cc-sc-create-icon.png) **建立**]。
 
@@ -130,9 +130,6 @@ ms.locfileid: "52932851"
      - **Show (？ ) （未驗證的寄件者以取得哄騙**）：如果郵件未通過 SPF 或 DKIM 檢查 **，且** 郵件未透過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)，則會在 Outlook 中的寄件者相片中新增問號。
      - **顯示「透過**」標籤：將透過 tag (chris@contoso.com 透過 Fabrikam.com) 新增至 [寄件者] 位址，如果不同于 DKIM 簽章中的網域或郵件的 [ **發件** 人] 位址。
 
-       > [!NOTE]
-       > 目前，「 **透過」標記** 設定並非所有組織皆可使用。 如果您沒有顯示「**透過」標記** 設定，則會使用 [**顯示 (？ ) 針對您組織中未驗證的寄件者進行欺騙** 設定）來控制 [問號]**和**[via] 標記。
-
      若要開啟設定，請選取核取方塊。 若要將它關閉，請清除核取方塊。
 
    完成後，按 [下一步 **]**。
@@ -145,7 +142,7 @@ ms.locfileid: "52932851"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>使用 Microsoft 365 Defender 入口網站來查看反網路釣魚原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** ] 頁面上，下列屬性會顯示在反網路釣魚原則的清單中：
 
@@ -158,7 +155,7 @@ ms.locfileid: "52932851"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>使用 Microsoft 365 Defender 入口網站修改反網路釣魚原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** ] 頁面上，按一下清單中的名稱，以選取原則。
 
@@ -172,7 +169,7 @@ ms.locfileid: "52932851"
 
 您無法停用預設的反網路釣魚原則。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** ] 頁面上，按一下清單中的名稱，以選取自訂原則。
 
@@ -194,10 +191,10 @@ ms.locfileid: "52932851"
 
  **附註**：
 
-- 在 Microsoft 365 Defender 入口網站中，您只能在建立後變更反網路釣魚原則的優先順序。 在 PowerShell 中，您可以在建立反網路釣魚規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
+- 在 Microsoft 365 Defender 入口網站中，您只能在建立反網路釣魚原則之後，才能變更其優先順序。 在 PowerShell 中，您可以在建立反網路釣魚規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
 - 反網路釣魚原則會依顯示的連續處理 (第一個原則的 **Priority** 值為 0) 。 預設的反網路釣魚原則的優先順序值是 **最低** 的，您無法變更。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** ] 頁面上，按一下清單中的名稱，以選取自訂原則。
 
@@ -214,7 +211,7 @@ ms.locfileid: "52932851"
 
 當您使用 Microsoft 365 Defender 入口網站移除自訂的反網路釣魚原則時，會同時刪除反網路釣魚規則和對應的反網路釣魚原則。 您無法移除預設的反網路釣魚原則。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
 
 2. 按一下原則的名稱，從清單中選取自訂原則。 在顯示的原則詳細資料飛出視窗頂端，按一下 ![更多動作圖示](../../media/m365-cc-sc-more-actions-icon.png) [其他動作 **]** \> ![刪除原則圖示](../../media/m365-cc-sc-delete-icon.png) [刪除原則 **]**。
 
@@ -249,7 +246,7 @@ ms.locfileid: "52932851"
   - _在_ `$false` **AntiPhishRule** Cmdlet) 上，建立新原則做為已停用 (。
   - 在 _\<Number\>_ **AntiPhishRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
 
-- 在您將原則指派至反網路釣魚規則之前，您在 PowerShell 中所建立的新反網路釣魚原則不會顯示在 Microsoft 365 Defender 入口網站中。
+- 在您指派原則至反網路釣魚規則之前，您在 PowerShell 中所建立的新反網路釣魚原則不會顯示在 Microsoft 365 Defender 入口網站中。
 
 #### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>步驟1：使用 PowerShell 建立反網路釣魚原則
 
@@ -349,7 +346,7 @@ Get-AntiPhishRule -Identity "Contoso Executives"
 除了下列專案之外，當您在 PowerShell 中修改反網路釣魚原則時，如您在建立原則時，依照 [步驟1：使用 PowerShell 建立反網路釣魚原則](#step-1-use-powershell-to-create-an-anti-phish-policy) 中所述，您可以在本文中修改反網路釣魚原則時，使用相同設定。
 
 - _MakeDefault_ 參數會將指定的原則轉換成預設原則 (套用至每個使用者，永遠 **最低** 的優先順序，而且您無法刪除只有當您在 PowerShell 中修改反網路釣魚原則時，才可使用此參數) 。
-- 您無法重新命名反網路釣魚原則 (**AntiPhishPolicy** 指令程式沒有 _Name_ 參數) 。 當您在 Microsoft 365 Defender 入口網站中重新命名防網路釣魚原則時，您只是重新命名反網路釣魚 _規則_。
+- 您無法重新命名反網路釣魚原則 (**AntiPhishPolicy** 指令程式沒有 _Name_ 參數) 。 當您重新命名 Microsoft 365 Defender 入口網站中的反網路釣魚原則時，您只會重新命名反網路釣魚 _規則_。
 
 若要修改反網路釣魚原則，請使用下列語法：
 
@@ -458,7 +455,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 若要確認您是否已在 EOP 中成功設定反網路釣魚原則，請執行下列任一步驟：
 
-- 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請按一下 [名稱]，然後在顯示的浮出控制項中查看詳細資料，以選取清單中的原則。
+- 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請按一下 [名稱]，然後在顯示的浮出控制項中查看詳細資料，以選取清單中的原則。
 
 - 在 Exchange Online PowerShell 中， \<Name\> 以原則或規則的名稱取代，執行下列命令，然後確認設定：
 

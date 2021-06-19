@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 98ea631536bbfa9e1858f70ae3a0ea9de8743572
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028820"
+ms.locfileid: "53029774"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行為封鎖和包含專案
 
@@ -36,9 +36,9 @@ ms.locfileid: "53028820"
 
 ## <a name="overview"></a>概觀
 
-目前的威脅環境會因 [fileless 惡意](/windows/security/threat-protection/intelligence/fileless-threats) 代碼而溢出，但離土地的高多態威脅，隨著傳統解決方案的變化速度，可持續保持和人工運作的攻擊，以適應敵人在受損的裝置上找到的內容。 傳統的安全性解決方案不足以停止這類攻擊;您需要 (AI) 和裝置學習 (ML) 備份的功能（例如行為封鎖及包容）包含在[Defender for Endpoint](/windows/security)中。 
+目前的威脅環境會因 [fileless 惡意](/windows/security/threat-protection/intelligence/fileless-threats) 代碼而溢出，但離土地的高多態威脅，隨著傳統解決方案的變化速度，可持續保持和人工運作的攻擊，以適應敵人在受損的裝置上找到的內容。 傳統的安全性解決方案不足以停止這類攻擊;您需要 (AI) 和裝置學習 (ML) 備份的功能（例如行為封鎖及包容）包含在[Defender for Endpoint](/windows/security)中。
 
-行為封鎖和包容功能可在威脅已開始執行時，根據其行為和程式樹，協助識別及停止威脅。 下一代保護、EDR 和 Defender 用於端點元件和功能，可搭配行為封鎖和包容功能一起運作。 
+行為封鎖和包容功能可在威脅已開始執行時，根據其行為和程式樹，協助識別及停止威脅。 下一代保護、EDR 和 Defender 用於端點元件和功能，可搭配行為封鎖和包容功能一起運作。
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行為封鎖和包含專案":::
 
@@ -50,7 +50,7 @@ ms.locfileid: "53028820"
 
 - 除了透過 EDR 所收到的網路、端點和內核行為信號之外，該[端點的 Defender](overview-endpoint-detection-response.md)都具有各種身分識別、電子郵件、資料和應用程式的光纖。 [Microsoft 365 Defender](../defender/microsoft-365-defender.md)的元件、端點程式的 Defender 處理常式及相關聯的信號、引發偵測警示，以及連接事件中的相關警示。
 
-使用這些功能時，即使已開始執行，也可以阻止或封鎖更多威脅。 每當偵測到可疑行為時，就會包含威脅、建立警示，並在其蹤跡中停止威脅。 
+使用這些功能時，即使已開始執行，也可以阻止或封鎖更多威脅。 每當偵測到可疑行為時，就會包含威脅、建立警示，並在其蹤跡中停止威脅。
 
 下圖顯示由行為封鎖及包容功能所觸發之警示的範例：
 
@@ -58,13 +58,13 @@ ms.locfileid: "53028820"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行為封鎖及包容元件
 
-- **用戶端、原則導向的 [攻擊面降低規則](attack-surface-reduction.md)** 預先定義的常見攻擊行為會因攻擊面減少規則而無法執行。 當這類行為企圖執行時，可以在 Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) 做為資訊性警示。 預設不會啟用攻擊面減少規則;您可以在[Microsoft 365 Defender](microsoft-defender-security-center.md)中設定您的原則。
+- **用戶端、原則導向的 [攻擊面降低規則](attack-surface-reduction.md)** 預先定義的常見攻擊行為會因攻擊面減少規則而無法執行。 當這類行為企圖執行時，可以在 Microsoft 365 Defender 中看到這些行為 <https://security.microsoft.com> 以資訊性警示。 預設不會啟用攻擊面減少規則;您可以在[Microsoft 365 Defender](microsoft-defender-security-center.md)中設定您的原則。
 
-- **[用戶端行為封鎖](client-behavioral-blocking.md)** 會透過機器學習來偵測端點的威脅，然後自動封鎖並修正。 預設會啟用用戶端行為封鎖 (。 )  
+- **[用戶端行為封鎖](client-behavioral-blocking.md)** 會透過機器學習來偵測端點的威脅，然後自動封鎖並修正。 預設會啟用用戶端行為封鎖 (。 ) 
 
-- 反應反應 **[-環路封鎖](feedback-loop-blocking.md)** (也稱為快速防護) 威脅偵測透過行為情報加以觀察。 威脅已停止，無法在其他端點上執行。  (反應-迴圈封鎖預設為啟用。 )  
+- 反應反應 **[-環路封鎖](feedback-loop-blocking.md)** (也稱為快速防護) 威脅偵測透過行為情報加以觀察。 威脅已停止，無法在其他端點上執行。  (反應-迴圈封鎖預設為啟用。 ) 
 
-- **[在封鎖模式中) 的端點偵測和回應 (EDR](edr-in-block-mode.md)** 會封鎖並包含透過破壞性保護所觀測到的惡意專案或行為。 即使 Microsoft Defender 防毒軟體不是主要的防病毒解決方案，封鎖模式中的 EDR 仍可運作。 預設不會啟用封鎖模式中的 (EDR;在 Microsoft 365 Defender 中將其開啟。 )  
+- **[在封鎖模式中) 的端點偵測和回應 (EDR](edr-in-block-mode.md)** 會封鎖並包含透過破壞性保護所觀測到的惡意專案或行為。 即使 Microsoft Defender 防毒軟體不是主要的防病毒解決方案，封鎖模式中的 EDR 仍可運作。 預設不會啟用封鎖模式中的 (EDR;在 Microsoft 365 Defender 中將其開啟。 ) 
 
 預期會有更多的行為封鎖和包容領域，因為 Microsoft 會繼續改進威脅防護的功能和功能。 若要查看現在已計畫及推出的專案，請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)。
 
@@ -88,12 +88,12 @@ ms.locfileid: "53028820"
 
 ### <a name="example-1-credential-theft-attack-against-100-organizations"></a>範例1：針對100組織的認證盜竊攻擊
 
-如 [elusive 威脅的熱實施中所述：以 AI 為導向的行為基礎的封鎖會在其追蹤中停止攻擊](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)。由於行為封鎖及包容能力，對全球各地的100組織所進行的認證盜竊攻擊已停止。 Spear-包含引誘檔的網路釣魚電子郵件會傳送給目標群組織。 如果收件者開啟附件，則相關的遠端檔能夠在使用者的裝置上執行程式碼，並載入 Lokibot 惡意程式碼，這會 stole 認證、挾帶竊取的資料，並等候來自命令和控制伺服器的進一步指示。 
+如 [elusive 威脅的熱實施中所述：以 AI 為導向的行為基礎的封鎖會在其追蹤中停止攻擊](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)。由於行為封鎖及包容能力，對全球各地的100組織所進行的認證盜竊攻擊已停止。 Spear-包含引誘檔的網路釣魚電子郵件會傳送給目標群組織。 如果收件者開啟附件，則相關的遠端檔能夠在使用者的裝置上執行程式碼，並載入 Lokibot 惡意程式碼，這會 stole 認證、挾帶竊取的資料，並等候來自命令和控制伺服器的進一步指示。
 
 Defender for Endpoint 中的行為基礎裝置教學模型，在攻擊鏈中的兩個點上捕捉及停止攻擊者的技術：
 
 - 第一個保護層偵測到利用行為行為。 雲端中的裝置學習分類器已正確識別威脅，並立即指示用戶端裝置封鎖攻擊。
-- 第二個保護層，可協助停止攻擊超過第一層的情況、偵測到的處理常式 hollowing、停止該處理常式，並移除對應的檔案 (例如 Lokibot) 。 
+- 第二個保護層，可協助停止攻擊超過第一層的情況、偵測到的處理常式 hollowing、停止該處理常式，並移除對應的檔案 (例如 Lokibot) 。
 
 在偵測和停止攻擊時，系統會觸發及顯示[Microsoft 365 Defender 入口網站](microsoft-defender-security-center.md)中的警示（如「初始存取警示」） (先前 Microsoft Defender 資訊安全中心) ：
 
@@ -107,15 +107,15 @@ Defender for Endpoint 中的行為基礎裝置教學模型，在攻擊鏈中的�
 
 :::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="Juicy 薯片惡意程式碼的 NTLM 警示":::
 
-威脅已變成惡意程式碼;它是一種稱為「Juicy 薯片」之 notorious 駭客工具的新功能之前的變種，它是被攻擊者在裝置上取得許可權提升所用的。 
+威脅已變成惡意程式碼;它是一種稱為「Juicy 薯片」之 notorious 駭客工具的新功能之前的變種，它是被攻擊者在裝置上取得許可權提升所用的。
 
 觸發警示之後的分鐘數，會分析檔案，並確認是否有惡意。 其進程已停止並封鎖，如下圖所示：
 
 :::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="封鎖專案":::
 
-在專案遭到封鎖之後的幾分鐘內，相同檔案的多個實例會在相同的裝置上封鎖，以防其他攻擊者或其他惡意程式碼無法在裝置上部署。 
+在專案遭到封鎖之後的幾分鐘內，相同檔案的多個實例會在相同的裝置上封鎖，以防其他攻擊者或其他惡意程式碼無法在裝置上部署。
 
-本範例顯示使用行為封鎖和包容功能，會自動偵測、包含並封鎖威脅。 
+本範例顯示使用行為封鎖和包容功能，會自動偵測、包含並封鎖威脅。
 
 ## <a name="next-steps"></a>後續步驟
 

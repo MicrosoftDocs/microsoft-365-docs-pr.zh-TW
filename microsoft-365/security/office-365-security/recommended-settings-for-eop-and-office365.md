@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) 和 Defender Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用 Office 365 的 Defender，您也會取得什麼額外內容？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c126a777d50fae93efdc618a8ac474dcee7ed75
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 031dd6ffe05c700b65fb56da90a49ed194c17321
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878985"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029510"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender Office 365 security 的建議設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "52878985"
 > [!NOTE]
 > 信箱必須啟用垃圾郵件規則，篩選才能正確運作。 它預設為啟用，但是如果篩選似乎不在運作中，您應該加以檢查。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-本文說明預設設定，也是建議的標準和嚴格設定，以協助保護您的使用者。 這些表格包含 Microsoft 365 Defender 入口網站中的設定，以及 PowerShell (Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 沒有 Exchange Online 信箱) 的組織。
+本文說明預設設定，也是建議的標準和嚴格設定，以協助保護您的使用者。 這些表格包含 Microsoft 365 Defender 入口網站中的設定，以及 PowerShell (Exchange Online PowerShell 或獨立 Exchange Online Protection 的組織，PowerShell 沒有 Exchange Online 信箱) 。
 
 > [!TIP]
 > Office 365 的高級威脅防護建議的設定分析器 (ORCA) 模組 PowerShell 可協助您 (系統管理員) 找到這些設定的目前值。 具體說來， **ORCAReport** Cmdlet 會產生反垃圾郵件、反網路釣魚和其他郵件衛生設定的評估。 您可以在中下載 ORCA 模組 <https://www.powershellgallery.com/packages/ORCA/> 。
@@ -169,19 +169,19 @@ ms.locfileid: "52878985"
 >
 > - Office 365 的 Microsoft Defender 中的預設反網路釣魚原則為所有收件者提供[欺騙保護](set-up-anti-phishing-policies.md#spoof-settings)和信箱智慧。 不過，預設原則中並未設定或啟用其他可用的模擬 [保護](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 功能和 [高級設定](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 。 若要啟用所有保護功能，請修改預設的反網路釣魚原則，或建立其他的反網路釣魚原則。
 >
-> - 沒有預設的安全連結原則或安全附件原則，可自動保護組織中的所有收件者。 若要取得保護，您必須建立至少一個安全連結原則及安全附件原則。
+> - 沒有預設的 Safe 連結原則或 Safe 附件原則，可自動保護組織中的所有收件者。 若要取得保護，您必須建立至少一個 Safe 連結原則及 Safe 附件原則。
 >
-> - [SharePoint、OneDrive 和 Microsoft Teams](mdo-for-spo-odb-and-teams.md)保護和[安全檔](safe-docs.md)保護的安全附件，不會對安全連結原則產生任何依賴性。
+> - [Safe SharePoint、OneDrive 及 Microsoft Teams](mdo-for-spo-odb-and-teams.md)保護和[Safe 檔](safe-docs.md)保護的附件，對 Safe 連結原則沒有任何相依性的依賴性。
 
 如果您的訂閱包含用於 Office 365 的 Microsoft defender，或您已購買 Office 365 做為附加元件的 defender，請設定下列標準或嚴格設定。
 
 ### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的反網路釣魚原則設定
 
-EOP 客戶會如先前所述，取得基本的反網路釣魚，但 Office 365 的 Microsoft Defender 包含更多的功能和控制，可協助防範、偵測和修正攻擊。 若要建立及設定這些原則，請參閱[在 Office 365 中設定 Defender 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+EOP 客戶會如先前所述，取得基本的反網路釣魚，但 Office 365 的 Microsoft Defender 包含更多的功能和控制，可協助防範、偵測和修正攻擊。 若要建立及設定這些原則，請參閱[在 Office 365 中設定 Defender 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的反網路釣魚原則中的模擬設定
 
-如需這些設定的詳細資訊，請參閱[Microsoft Defender 的反網路釣魚原則中的模仿設定 Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要設定這些設定，請參閱[在 Office 365 中設定 Defender 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+如需這些設定的詳細資訊，請參閱[Microsoft Defender 的反網路釣魚原則中的模仿設定 Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要設定這些設定，請參閱[在 Office 365 中設定 Defender 中的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。
 
 <br>
 
@@ -221,7 +221,7 @@ EOP 客戶會如先前所述，取得基本的反網路釣魚，但 Office 365 �
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的反網路釣魚原則中的高級設定
 
-如需此設定的詳細資訊，請參閱[Microsoft Defender 的反網路釣魚原則中的高級網路釣魚閥值 Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要設定此設定，請參閱[設定 Office 365 的 Defender 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+如需此設定的詳細資訊，請參閱[Microsoft Defender 的反網路釣魚原則中的高級網路釣魚閥值 Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要設定此設定，請參閱[設定 Office 365 的 Defender 中的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。
 
 <br>
 
@@ -232,13 +232,13 @@ EOP 客戶會如先前所述，取得基本的反網路釣魚，但 Office 365 �
 |**網路釣魚電子郵件閾值** <p> _PhishThresholdLevel_|**1-標準** <p> `1`|**2-嚴格** <p> `2`|**3-更嚴格** <p> `3`||
 |
 
-### <a name="safe-links-settings"></a>安全連結設定
+### <a name="safe-links-settings"></a>Safe連結設定
 
-Office 365 的 Defender 中的安全連結包含全域設定，這些設定適用于包含在使用中安全連結原則中的所有使用者，以及每個安全連結原則特有的設定。 如需詳細資訊，請參閱[Office 365 的 Defender 安全連結](safe-links.md)。
+SafeOffice 365 的 Defender 中的連結包含全域設定，這些設定適用于所有包含在使用中 Safe 連結原則的使用者，以及每個 Safe 連結原則特有的設定。 如需詳細資訊，請參閱[Safe 的 Defender 連結 Office 365](safe-links.md)。
 
-#### <a name="global-settings-for-safe-links"></a>安全連結的通用設定
+#### <a name="global-settings-for-safe-links"></a>Safe 連結的全域設定
 
-若要設定這些設定，請參閱[設定 Office 365 的 Defender 中安全連結的通用設定](configure-global-settings-for-safe-links.md)。
+若要設定這些設定，請參閱[設定 Safe 的 Defender 中連結的通用設定 Office 365](configure-global-settings-for-safe-links.md)。
 
 在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
@@ -248,19 +248,19 @@ Office 365 的 Defender 中的安全連結包含全域設定，這些設定適�
 
 |安全性功能名稱|預設|標準版|嚴格|Comment|
 |---|:---:|:---:|:---:|---|
-|**使用下列專案中的安全連結： Office 365 應用程式** <p> _EnableSafeLinksForO365Clients_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|在支援的 Office 365 桌面和行動 (iOS 和 Android) 應用程式中使用安全連結。 如需詳細資訊，請參閱[Office 365 應用程式的安全連結設定](safe-links.md#safe-links-settings-for-office-365-apps)。|
+|**使用下列專案中 Safe 連結： Office 365 應用程式** <p> _EnableSafeLinksForO365Clients_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|使用支援的 Office 365 桌面和行動 (iOS 和 Android) 應用程式中 Safe 連結。 如需詳細資訊，請參閱[Safe 連結設定 Office 365 應用程式](safe-links.md#safe-links-settings-for-office-365-apps)。|
 |**當使用者在 Office 365 應用程式中按一下受保護的連結時，請勿追蹤** <p> _TrackClicks_|開啟 <p> `$false`|關閉 <p> `$true`|關閉 <p> `$true`|關閉此設定 (將 _TrackClicks_ 設定為 `$true`) 追蹤使用者在支援 Office 365 應用程式中的按一下。|
 |**請勿讓使用者在 Office 365 應用程式中，按原始 URL。** <p> _AllowClickThrough_|開啟 <p> `$false`|開啟 <p> `$false`|開啟 <p> `$false`|開啟此設定 (將 _AllowClickThrough_ 設定為 `$false`) ，可防止在支援的 Office 365 應用程式中，依序按一下至原始 URL。|
 |
 
-#### <a name="safe-links-policy-settings"></a>安全連結原則設定
+#### <a name="safe-links-policy-settings"></a>Safe連結原則設定
 
-若要設定這些設定，請參閱[在 Microsoft Defender 中為 Office 365 設定安全連結原則](set-up-safe-links-policies.md)。
+若要設定這些設定，請參閱[在 Microsoft Defender 中設定 Office 365 的 Safe 連結原則](set-up-safe-links-policies.md)。
 
 在 PowerShell 中，您可以使用這些設定的 [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) 和 [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
 > [!NOTE]
-> 如先前所述，沒有預設的安全連結原則。 [預設] 欄中的值是您建立的新安全連結原則中的預設值。
+> 如前文所述，沒有預設的 Safe 連結原則。 [預設] 欄中的值是您建立的新 Safe 連結原則中的預設值。
 
 <br>
 
@@ -272,18 +272,18 @@ Office 365 的 Defender 中的安全連結包含全域設定，這些設定適�
 |**選取 Microsoft Teams 內未知或可能惡意的 URLs 的動作** <p> _EnableSafeLinksForTeams_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**針對可疑的連結和指向檔案的連結套用即時 URL 掃描** <p> _ScanUrls_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**等待 URL 掃描完成再傳遞郵件** <p> _DeliverMessageAfterScan_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
-|**對組織內傳送的電子郵件套用安全連結** <p> _EnableForInternalSenders_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**套用 Safe 連結至組織內傳送的電子郵件** <p> _EnableForInternalSenders_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**不要追蹤使用者點選** <p> _DoNotTrackUserClicks_|關閉 <p> `$false`|關閉 <p> `$false`|關閉 <p> `$false`|關閉此設定 (將 _DoNotTrackUserClicks_ 設定為 `$false`) 追蹤使用者按一下。|
 |**不允許使用者點選原始 URL** <p> _DoNotAllowClickThrough_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|開啟此設定 (將 _DoNotAllowClickThrough_ 設定為 `$true`) ，可防止依序按一下原始 URL。|
 |
 
-### <a name="safe-attachments-settings"></a>安全附件設定
+### <a name="safe-attachments-settings"></a>Safe附件設定
 
-Microsoft Defender for Office 365 中的安全附件包括與安全附件原則無關聯的全域設定，以及每個安全連結原則特有的設定。 如需詳細資訊，請參閱[Office 365 的 Defender 安全附件](safe-attachments.md)。
+SafeMicrosoft Defender for Office 365 中的附件包含與 Safe 附件原則沒有關系的全域設定，以及每個 Safe 連結原則特有的設定。 如需詳細資訊，請參閱[Safe 的 Defender Office 365 附件](safe-attachments.md)。
 
-#### <a name="global-settings-for-safe-attachments"></a>安全附件的通用設定
+#### <a name="global-settings-for-safe-attachments"></a>Safe 附件的全域設定
 
-若要設定這些設定，請參閱開啟[Microsoft 365 E5 中](safe-docs.md) [SharePoint、OneDrive 及 Microsoft Teams 和安全檔的安全附件](turn-on-mdo-for-spo-odb-and-teams.md)。
+若要設定這些設定，請參閱在 Safe 中[開啟 SharePoint、OneDrive 及 Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)及[Microsoft 365 E5 檔](safe-docs.md)的 Safe 附件。
 
 在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
@@ -294,18 +294,18 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 |安全性功能名稱|預設|標準版|嚴格|Comment|
 |---|:---:|:---:|:---:|---|
 |**針對 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender** <p> _EnableATPForSPOTeamsODB_|開啟 <p> `$true`|開啟 <p> `$true`||
-|**開啟 Office 用戶端的安全檔** <p> _EnableSafeDocs_|開啟 <p> `$true`|開啟 <p> `$true`|此設定僅可用於 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱[適用于 Microsoft Defender 的安全檔 Office 365](safe-docs.md)。|
-|**即使安全檔識別為惡意檔案，也允許人員按一下受保護的檢視** <p> _AllowSafeDocsOpen_|關閉 <p> `$false`|關閉 <p> `$false`|此設定與安全檔相關。|
+|**開啟 Office 用戶端的 Safe 檔** <p> _EnableSafeDocs_|開啟 <p> `$true`|開啟 <p> `$true`|此設定僅可用於 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱[Safe 的 Microsoft Defender 檔 Office 365](safe-docs.md)。|
+|**即使 Safe 檔識別為惡意檔案，也可讓使用者依序按一下 [受保護的檢視]** <p> _AllowSafeDocsOpen_|關閉 <p> `$false`|關閉 <p> `$false`|此設定與 Safe 檔相關。|
 |
 
-#### <a name="safe-attachments-policy-settings"></a>安全附件原則設定
+#### <a name="safe-attachments-policy-settings"></a>Safe附件原則設定
 
-若要設定這些設定，請參閱[設定 Office 365 的 Defender 中的安全附件原則](set-up-safe-attachments-policies.md)。
+若要設定這些設定，請參閱[設定 Safe 的 Defender Office 365 附件原則](set-up-safe-attachments-policies.md)。
 
 在 PowerShell 中，您可以使用這些設定的 [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
 > [!NOTE]
-> 如先前所述，沒有預設的安全附件原則。 [預設] 欄中的值是您建立的新安全附件原則中的預設值。
+> 如先前所述，沒有預設的 Safe 附件原則。 [預設] 欄中的值是您建立的新 Safe 附件原則中的預設值。
 
 <br>
 
@@ -313,7 +313,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 |安全性功能名稱|預設|標準版|嚴格|Comment|
 |---|:---:|:---:|:---:|---|
-|**安全附件未知的惡意程式碼回應** <p> _Action_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
+|**Safe附件未知的惡意程式碼回應** <p> _Action_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
 |**偵測時重新導向附件** ： **啟用重新導向** <p> _Redirect_ <p> _RedirectAddress_|Off，但沒有指定電子郵件地址。 <p> `$true` <p> 無|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|
 |**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。** <p> _ActionOnError_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |

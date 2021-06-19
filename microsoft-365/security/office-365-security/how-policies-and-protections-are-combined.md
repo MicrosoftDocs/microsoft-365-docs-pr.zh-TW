@@ -1,6 +1,6 @@
 ---
 title: 電子郵件保護的順序和優先順序
-keywords: 安全性、惡意程式碼、Microsoft 365、M365、security center、microsoft defender for Endpoint、microsoft defender for Office 365、microsoft defender 身分識別
+keywords: 安全性、惡意程式碼、Microsoft 365、M365、security center、Microsoft 365 Defender 入口網站、microsoft defender for Endpoint、microsoft defender for Office 365、microsoft defender 身分識別
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539008"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029282"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
@@ -45,14 +45,14 @@ ms.locfileid: "52539008"
 
   ****
 
-  |優先順序|電子郵件保護|Category|要管理的位置|
+  |優先順序|電子郵件保護|類別|要管理的位置|
   |---|---|---|---|
   |1|惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
   |第|網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |個|高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |4 |詐騙|CAT：欺騙|[EOP 中的欺騙智慧洞察力](learn-about-spoof-intelligence.md)|
-  |位<sup>\*</sup>| (受保護的使用者模擬使用者模擬) |UIMP|[在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|網域模擬 (受保護的網域) |DIMP|[在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
+  |位<sup>\*</sup>| (受保護的使用者模擬使用者模擬) |UIMP|[在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|網域模擬 (受保護的網域) |DIMP|[在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)|
   |7 |垃圾郵件|CAT： SPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |8 |大量|CAT：大量|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |

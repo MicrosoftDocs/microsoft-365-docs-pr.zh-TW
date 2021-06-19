@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 中的 Microsoft Defender Office 365
-description: 瞭解從 Office 365 安全性與合規性中心到 Microsoft 365 Defender 的變更。
+description: 深入瞭解安全性 & 規範中心到 Microsoft 365 Defender 的變更。
 keywords: Microsoft 365 安全性，已開始使用 Microsoft 365 Defender，microsoft defender for Office 365，microsoft defender for Endpoint，MDO，MDE，單一窗格的玻璃，新的安全性入口網站，新的 Defender 安全性入口網站
 ms.date: 02/21/2021
 ms.author: tracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 15b1b152966c9c09bf77bea15b9b651f739c3566
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 219689783dbd98c1b6dfa09a2164cc4d350ffd9c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028952"
+ms.locfileid: "53029630"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的 Microsoft Defender Office 365
 
@@ -34,13 +34,13 @@ ms.locfileid: "53028952"
 
 ## <a name="quick-reference"></a>快速參考
 
-下表列出 Office 365 安全性 & 規範中心及 Microsoft 365 Defender 之間的導覽變更。
+下表列出安全性 & 規範中心和 Microsoft 365 Defender 之間的導覽變更。
 
 <br>
 
 ****
 
-|[Office 365安全性 & 合規性](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 合規性中心](https://compliance.microsoft.com/homepage)|[Exchange 系統管理中心](https://admin.exchange.microsoft.com/#/)|
+|[安全性與合規性中心](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 合規性中心](https://compliance.microsoft.com/homepage)|[Exchange 系統管理中心](https://admin.exchange.microsoft.com)|
 |---|---|---|---|
 |警示|<ul><li>[警示原則](https://security.microsoft.com/alertpolicies)</li><li>[事件 & 警示](https://security.microsoft.com/alerts)</li></ul>|[提醒頁面](https://compliance.microsoft.com/homepage)||
 |分類||請參閱[Microsoft 365 合規性中心](https://compliance.microsoft.com/homepage)||
@@ -56,10 +56,11 @@ ms.locfileid: "53028952"
 |服務保證||請參閱[Microsoft 365 合規性中心](https://compliance.microsoft.com/homepage)||
 |監督||請參閱[Microsoft 365 合規性中心](https://compliance.microsoft.com/homepage)||
 |電子文件探索||請參閱[Microsoft 365 合規性中心](https://compliance.microsoft.com/homepage)||
+|||||
 
-[Microsoft 365 Defender](./overview-security-center.md) <https://security.microsoft.com> 結合現有 Microsoft 安全性入口網站的安全性功能，包括 Office 365 安全性 & 規範中心。 此改善的中心可協助安全性小組更有效且有效率地地保護其組織免受威脅。
+[Microsoft 365 Defender](./overview-security-center.md) <https://security.microsoft.com> 結合現有 Microsoft 安全性入口網站的安全性功能，包括安全性 & 規範中心。 此改善的中心可協助安全性小組更有效且有效率地地保護其組織免受威脅。
 
-如果您熟悉 Office 365 安全性與合規性入口網站 (protection.office.com) ，本文將說明 Microsoft 365 Defender 中的一些變更與改進。
+如果您熟悉安全性 & 規範中心 (protection.office.com) ，本文將說明 Microsoft 365 Defender 中的一些變更與改進。
 
 深入瞭解好處： [Microsoft 365 Defender 綜述](overview-security-center.md)
 
@@ -92,7 +93,7 @@ Office 365 的使用者可以保護您的組織免受電子郵件訊息、連結
 
 [自訂偵測規則](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) 可以從先進的搜尋查詢中建立，以協助您主動留意可能表示遭到破壞活動和配置錯誤裝置的事件。
 
-以下是 Microsoft Defender for Office 365 中的[高級搜尋範例](advanced-hunting-example.md)。  
+以下是 Microsoft Defender for Office 365 中的[高級搜尋範例](advanced-hunting-example.md)。
 
 ### <a name="action-center"></a>控制中心
 
@@ -114,11 +115,11 @@ Office 365 的使用者可以保護您的組織免受電子郵件訊息、連結
 
 ### <a name="email--collaboration"></a>電子郵件與共同作業
 
-追蹤和調查對您使用者的電子郵件的威脅、追蹤行銷活動等等。 如果您曾使用 Office 365 安全性與合規性中心，則這會是熟悉的。
+追蹤和調查對您使用者的電子郵件的威脅、追蹤行銷活動等等。 如果您已使用安全性 & 規範中心，這會很熟悉。
 
 :::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="電子郵件 & 的 [快速啟動] 功能表上 (或 MSDO) ，位於 Microsoft 365 Defender 左邊。":::
 
-#### <a name="email-entity-page"></a>電子郵件實體頁面 
+#### <a name="email-entity-page"></a>電子郵件實體頁面
 
 「 [電子郵件實體」頁面](../office-365-security/mdo-email-entity-page.md)已 *統一* 分散于過去不同頁面或視圖上的電子郵件資訊。 調查電子郵件是否有威脅和趨勢將會 *集中*。 標頭資訊和電子郵件預覽可透過相同的電子郵件頁面來存取，還有其他實用的電子郵件相關資訊。 同樣地，您可以在相同頁面的分頁上找到惡意檔案附件或 URL 的引爆狀態。 電子郵件實體頁面讓系統管理員和安全性作業小組能夠快速了解電子郵件威脅及其狀態，然後快速採取行動以判斷處理方式。
 
@@ -130,8 +131,8 @@ Office 365 的使用者可以保護您的組織免受電子郵件訊息、連結
 
 > [!NOTE]
 > DomainKeys 識別的郵件 (DKIM) 可確保目的地電子郵件系統信任從您的自訂網域傳送輸出的郵件。
-> 針對 Office 365 使用者的 Defender，您現在可以透過 Microsoft 365 Defender *管理及輪替* DKIM 機碼， <https://security.microsoft.com/threatpolicy> 或流覽至 **原則 & 規則** \> **威脅原則** \> **DKIM**。
-> 
+> 針對 Office 365 使用者的 Defender，您現在可以透過 Microsoft 365 Defender *管理及輪替* DKIM 機碼： <https://security.microsoft.com/threatpolicy> 或流覽至 **Policy & 規則** 的原則 \>  \> \> **規則**] 區段 \> **DKIM**。
+>
 > 如需詳細資訊，請參閱 [使用 DKIM 驗證從您的自訂網域傳送的輸出電子郵件](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)。
 
 ## <a name="whats-changed"></a>變更的項目
@@ -145,7 +146,7 @@ Office 365 的使用者可以保護您的組織免受電子郵件訊息、連結
 |區域|變更描述|
 |---|---|
 |[調查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|將[適用於 Office 365 的 Defender](/microsoft-365/security/office-365-security/defender-for-office-365) 和[適用於端點的 Defender](../defender-endpoint/automated-investigations.md) 的 AIR 功能結合在一起。 有了這些更新與改善功能，您的安全性作業小組就能在單一位置檢視電子郵件、共同作業內容、使用者帳戶和裝置上的自動化調查和補救動作的詳細資訊。|
-|[警示佇列](../../compliance/alert-policies.md)|Office 安全性與合規性中心中的「**查看提醒**」彈出窗格現在包含 Microsoft 365 Defender 的連結。 按一下 [**開啟警示] 頁面** 連結，然後 Microsoft 365 Defender 隨即開啟。 您可以按一下 [警示] 佇列中的任何 Office 365 警示來存取 [檢視警示 **]** 頁面。|
+|[警示佇列](../../compliance/alert-policies.md)|安全性 & 規範中心內的「**查看通知**」彈出窗格現在包含 Microsoft 365 Defender 的連結。 按一下 [**開啟警示] 頁面** 連結，然後 Microsoft 365 Defender 隨即開啟。 您可以按一下 [警示] 佇列中的任何 Office 365 警示來存取 [檢視警示 **]** 頁面。|
 |[攻擊模擬訓練](../office-365-security/attack-simulation-training-insights.md)|使用攻擊模擬訓練在組織中執行真實化的攻擊案例。 這些模擬攻擊可協助在真實的攻擊影響您的組織之前訓練您的員工。 攻擊模擬訓練包括更多選項、增強的報告，以及改善的訓練流程，可協助讓您的攻擊模擬與訓練案例更易於傳遞和管理。|
 |
 
@@ -172,11 +173,11 @@ Office 365 的使用者可以保護您的組織免受電子郵件訊息、連結
 
 您可以使用 **導覽** 來快速導覽端點或電子郵件與共同作業頁面。 請注意，您會在這裡的項目將取決於您是否擁有適用於 Office 365 的 Defender 和/或適用於端點的 Defender 授權。
 
-也包含 **Office 365 安全性與合規性中心** 的連結供比較。 最後一個是描述最近的更新的 **新功能** 頁面的連結。
+同時還包含 **安全性 & 規範中心** 的連結，以進行比較。 最後一個是描述最近的更新的 **新功能** 頁面的連結。
 
 ## <a name="related-information"></a>相關資訊
 
-- [將 Office 365 安全性與合規性中心重新導向至 Microsoft 365 Defender](microsoft-365-security-mdo-redirection.md)
+- [將安全性 & 規範中心重新導向至 Microsoft 365 Defender](microsoft-365-security-mdo-redirection.md)
 - [控制中心](./m365d-action-center.md)
 - [電子郵件與共同作業警示](../../compliance/alert-policies.md#default-alert-policies)
 - [自訂偵測規則](/microsoft-365/security/defender-endpoint/custom-detection-rules)

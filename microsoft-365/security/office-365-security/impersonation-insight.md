@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解類比真知灼見的運作方式。 他
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029012"
+ms.locfileid: "53029666"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Office 365 的 Defender 中的模仿洞察力
 
@@ -53,7 +53,6 @@ ms.locfileid: "53029012"
 - 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 **反網路釣魚** 網頁上的類比洞察力，請使用 <https://security.microsoft.com/antiphishing> 。 若要直接移至 [模擬 **洞察力** ] 頁面，請使用 <https://security.microsoft.com/impersonationinsight> 。
 
 - 您必須在 Microsoft 365 Defender 入口網站中指派許可權，才能執行本文中的程式：
-
   - **組織管理**
   - **安全性系統管理員**
   - **安全性讀取者**
@@ -63,7 +62,7 @@ ms.locfileid: "53029012"
 
   **附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
-- 您可以在 Microsoft Defender 的反網路釣魚原則中啟用和設定模擬保護，以供 Office 365。 預設不會啟用類比保護。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+- 您可以在 Microsoft Defender 的反網路釣魚原則中啟用和設定模擬保護，以供 Office 365。 預設不會啟用類比保護。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中開啟類比洞察力
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14033ffeb3d08efad7f45eb4c319ac0401b7df09
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 7891d61de7581a896a6599004eae91a4e47e1581
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028450"
+ms.locfileid: "53029942"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>疑難排解 Microsoft 365 Defender 服務問題
 
@@ -56,5 +56,3 @@ ms.locfileid: "53028450"
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>如何建立檔案/URL 的例外狀況？
 
 誤報是指偵測為惡意但不是威脅的檔案或 URL。 您可以建立指示器並定義排除專案，以解除封鎖並允許某些檔案/URLs。 請參閱 [在 Defender For Endpoint 中的位址誤報/負片](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives)。
-
-

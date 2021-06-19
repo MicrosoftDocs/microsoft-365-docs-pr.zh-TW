@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft 365 中找出網路釣魚郵件的原因，以及如何防止未來更多網路釣魚郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537844"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029342"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
@@ -40,11 +40,11 @@ ms.locfileid: "52537844"
 
 如果您的訂閱包含 Microsoft Defender for Office 365，您可以使用[Office 365 威脅情報](office-365-ti.md)來識別也收到網路釣魚郵件的其他使用者。 您可以使用其他選項封鎖網路釣魚郵件：
 
-- [Microsoft Defender 中 Office 365 的安全連結](set-up-safe-links-policies.md)
+- [SafeMicrosoft Defender 中 Office 365 的連結](set-up-safe-links-policies.md)
 
-- [Microsoft Defender 中 Office 365 的安全附件](set-up-safe-attachments-policies.md)
+- [SafeMicrosoft Defender 中 Office 365 的附件](set-up-safe-attachments-policies.md)
 
-- [Microsoft Defender 中 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的 **高級網路釣魚閥** 值從 **Standard** 增加為 **積極**、 **更積極** 或 **最積極** 的。
+- [Microsoft Defender 中 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的 **高級網路釣魚閥** 值從 **Standard** 增加為 **積極**、 **更積極** 或 **最積極** 的。
 
 確認已開啟這些 Office 365 功能的 Defender。
 
@@ -66,7 +66,7 @@ ms.locfileid: "52537844"
 
 - 來自欺騙寄件者的電子郵件 (郵件的 [寄件者] 位址不符合郵件的來源，) 會歸為 Office 365 的 Defender 中的網路釣魚。 有時哄騙是良性的，有時候使用者不想要隔離特定欺騙寄件者的郵件。 若要將影響降至最低，請定期查看 [哄騙情報洞察力](learn-about-spoof-intelligence.md)、[承租人允許/封鎖清單](tenant-allow-block-list.md)中的 [**偽造**] 索引標籤，以及 [欺騙偵測報告](view-email-security-reports.md#spoof-detections-report)。 當您已複習允許和封鎖的欺騙性寄件者，並做任何必要的覆寫後，您就可以自信地 [設定反網路釣魚原則中的欺騙情報](set-up-anti-phishing-policies.md#spoof-settings) ，以 **隔離** 可疑郵件，而不是將可疑郵件傳遞至使用者的 [垃圾郵件] 資料夾。
 
-- 您可以在 Microsoft Defender for Office 365 中，為模擬 (網域或使用者) ，重複上述步驟。 模仿報告位於 **威脅管理** \> **儀表板** \> **Insights** 底下。
+- 您可以在 Microsoft Defender for Office 365 中，為模擬 (網域或使用者) ，重複上述步驟。 模擬報告可在 [**威脅管理** \> **儀表板**] \> **Insights** 下找到。
 
 - 定期查看「 [威脅防護狀態」報告](view-reports-for-mdo.md#threat-protection-status-report)。
 

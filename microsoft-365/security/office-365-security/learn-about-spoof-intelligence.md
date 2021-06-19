@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中的欺騙智慧洞察力。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94dc1e438f913c1103154afb8803ef4cf89f64af
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 08b9586edf565c4f69c51f732511d3a0956ae500
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028808"
+ms.locfileid: "53029246"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺騙智慧洞察力
 
@@ -53,16 +53,13 @@ ms.locfileid: "53028808"
   - 寄件者位於郵寄清單中 (又稱為討論清單) ，而且郵寄清單會將來自原始寄件者的電子郵件轉送至郵寄清單上的所有參與者。
   - 外部公司代表其他公司傳送電子郵件 (例如，自動化報表或軟體即服務公司) 。
 
-
 您可以使用 Microsoft 365 Defender 入口網站中的 **欺騙智慧洞察力**，快速找出可合法傳送您未驗證的電子郵件的欺騙寄件者，以 (未通過 SPF、DKIM 或 DMARC) 檢查的網域郵件，以及手動允許這些寄件者。
-
 
 透過允許已知寄件者從已知位置傳送哄騙郵件，您可以減少誤報 (已標示為錯誤) 的良好電子郵件。 透過監視允許的欺騙寄件者，您可以提供額外的安全性層級，以防止不安全的郵件到達您的組織中。
 
 同樣地，您也可以查看哄騙情報所允許的欺騙寄件者，並手動封鎖欺騙性智慧洞察力中的寄件者。
 
 本文的其餘部分將說明如何使用 Microsoft 365 Defender 入口網站和 PowerShell (Exchange Online PowerShell 中的欺騙智慧洞察力，以 Microsoft 365 具有 Exchange Online 信箱的組織;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
-
 
 > [!NOTE]
 >
@@ -89,7 +86,7 @@ ms.locfileid: "53028808"
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
-- 您可以在 EOP 和 Microsoft Defender for Office 365 中，啟用並停用欺騙性智慧中的反網路釣魚原則。 預設會啟用欺騙智慧。 如需詳細資訊，請參閱[在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)或[設定 Microsoft Defender 中的反網路釣魚原則，以進行 Office 365](configure-atp-anti-phishing-policies.md)。
+- 您可以在 EOP 和 Microsoft Defender for Office 365 中，啟用並停用欺騙性智慧中的反網路釣魚原則。 預設會啟用欺騙智慧。 如需詳細資訊，請參閱[在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)或[設定 Microsoft Defender 中的反網路釣魚原則，以進行 Office 365](configure-mdo-anti-phishing-policies.md)。
 
 - 如需適用于哄騙情報的建議設定，請參閱 [EOP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
@@ -126,7 +123,7 @@ ms.locfileid: "53028808"
   - **外部**：冒牌寄件者位於外部網域。
 - **動作**： **允許** 或 **封鎖** 此值：
   - **允許**：網域失敗明確的電子郵件驗證檢查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及 [DMARC](use-dmarc-to-validate-email.md)) 。 不過，網域已通過我們的隱含電子郵件驗證檢查 ([複合驗證](email-validation-and-authentication.md#composite-authentication)) 。 因此，不會對郵件採取任何反欺詐動作。
-  - 已 **封鎖**：來自欺騙性網域 _和_ 傳送基礎結構的郵件會因欺騙性智慧而標示為壞。 對哄騙郵件採取的動作是由預設的反網路釣魚原則或自訂的反網路釣魚原則所控制 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+  - 已 **封鎖**：來自欺騙性網域 _和_ 傳送基礎結構的郵件會因欺騙性智慧而標示為壞。 對哄騙郵件採取的動作是由預設的反網路釣魚原則或自訂的反網路釣魚原則所控制 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。
 
 您可以按一下 [選取的欄標題] 來排序結果。
 

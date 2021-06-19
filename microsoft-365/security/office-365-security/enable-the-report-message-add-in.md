@@ -17,12 +17,12 @@ ms.collection:
 description: 瞭解如何為個別使用者或您的整個組織啟用 Outlook 和 Outlook 網頁版的報告訊息或報告網路釣魚增益集。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7e5136e6d1a118df2e0e91f09a79a9a63e88052
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8949322b0b691d59e59e5f7b80d2b9650e4115d5
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028580"
+ms.locfileid: "53029906"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>啟用報告訊息或報告網路釣魚增益集
 
@@ -34,17 +34,17 @@ ms.locfileid: "53028580"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果您是使用 Exchange Online 信箱的 Microsoft 365 組織中的系統管理員，我們建議您在 Microsoft 365 Defender 中使用提交入口網站。 如需詳細資訊，請參閱 [使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
+> 如果您是使用 Exchange Online 信箱的 Microsoft 365 組織中的系統管理員，我們建議您在 Microsoft 365 Defender 入口網站中使用提交入口網站。 如需詳細資訊，請參閱 [使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 
-「Outlook」和「Outlook」 (上的「outlook」和「Outlook」的報告訊息和報告網路增益集（以前稱為 Outlook Web App）) 可讓使用者輕鬆報告誤報， (正確的電子郵件會標示為壞的) 或 false 的電子郵件， (錯誤的電子郵件可供 Microsoft 及其公司的分析使用。 
+「Outlook」和「Outlook」 (上的「outlook」和「Outlook」的報告訊息和報告網路增益集（以前稱為 Outlook Web App）) 可讓使用者輕鬆報告誤報， (正確的電子郵件會標示為壞的) 或 false 的電子郵件， (錯誤的電子郵件可供 Microsoft 及其公司的分析使用。
 
-Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 例如，假設有人使用「報告網路釣魚增益集」報告許多郵件。 此資訊會顯示在安全性儀表板及其他報告中。 貴組織的安全性小組可以使用此資訊來表示可能需要更新防網路釣魚原則。 
+Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 例如，假設有人使用「報告網路釣魚增益集」報告許多郵件。 此資訊會顯示在安全性儀表板及其他報告中。 貴組織的安全性小組可以使用此資訊來表示可能需要更新防網路釣魚原則。
 
-您可以安裝報告訊息或報告網路釣魚增益集。 如果您想要讓使用者報告垃圾郵件和網路釣魚郵件，請在您的組織中部署報告訊息增益集。 如需詳細資訊，請參閱 Enable the Report Message 增益集。 
+您可以安裝報告訊息或報告網路釣魚增益集。 如果您想要讓使用者報告垃圾郵件和網路釣魚郵件，請在您的組織中部署報告訊息增益集。 如需詳細資訊，請參閱 Enable the Report Message 增益集。
 
-報告郵件增益集提供的選項可報告垃圾郵件和網路釣魚郵件。 系統管理員可以為組織啟用「報告訊息增益集」，個別使用者可以自行自行安裝。 
+報告郵件增益集提供的選項可報告垃圾郵件和網路釣魚郵件。 系統管理員可以為組織啟用「報告訊息增益集」，個別使用者可以自行自行安裝。
 
-報告網路釣魚增益集提供的選項可報告僅網路釣魚郵件。 系統管理員可以為組織啟用「報告網路釣魚增益集」，個別使用者可以自行自行安裝。 
+報告網路釣魚增益集提供的選項可報告僅網路釣魚郵件。 系統管理員可以為組織啟用「報告網路釣魚增益集」，個別使用者可以自行自行安裝。
 
 如果您是個別的使用者，您可以為自己啟用增益集。
 
@@ -65,7 +65,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 - 若為組織安裝，必須設定組織使用 OAuth 驗證。 如需詳細資訊，請參閱 [判斷是否集中式部署的增益集可為您的組織運作](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-- 管理員必須是全域系統管理員角色群組的成員。 如需詳細資訊，請參閱 [Microsoft 365 Defender 中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 管理員必須是全域系統管理員角色群組的成員。 如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。
 
 - 如需如何使用報告郵件功能報告訊息的詳細資訊，請參閱 [在 Outlook 中報告誤報和漏報](report-false-positives-and-false-negatives.md)。
 
@@ -74,7 +74,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 ## <a name="get-the-report-message-add-in"></a>取得報告訊息增益集
 
-### <a name="get-the-add-in-for-yourself"></a>取得您自己的增益集
+### <a name="get-the-report-message-add-in-for-yourself"></a>自行取得報告訊息增益集
 
 1. 移至 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，並搜尋報告訊息增益集。 若要直接移至報告訊息增益集，請移至 <https://appsource.microsoft.com/product/office/wa104381180> 。
 
@@ -98,7 +98,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
   > [!div class="mx-imgBorder"]
   > ![網頁型 Outlook 報告訊息增益集圖示](../../media/owa-report-message-icon.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>取得組織的增益集
+### <a name="get-the-report-message-add-in-for-your-organization"></a>取得組織的報告訊息增益集
 
 > [!NOTE]
 > 在您的組織中顯示增益集可能需要長達12小時。
@@ -124,13 +124,11 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 7. 在出現的 [ **設定增益集** ] 頁面中，設定下列設定：
 
    - **指派的使用者**：選取下列其中一個值：
-
      - **所有人** (預設) 
      - **特定使用者/群組**
      - **就我自己**
 
    - **部署方法**：選取下列其中一個值：
-
      - **Fixed (預設)**：增益集會自動部署至指定的使用者，且無法加以移除。
      - **可用**：使用者可以在 **Home** \> **Get 增益集** \> **管理管理** 的位置安裝增益集。
      - **選用**：增益集會自動部署至指定的使用者，但是可以選擇加以移除。
@@ -161,7 +159,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 ## <a name="get-the-report-phishing-add-in"></a>取得報告網路釣魚增益集
 
-### <a name="get-the-add-in-for-yourself"></a>取得您自己的增益集
+### <a name="get-the-report-phishing-add-in-for-yourself"></a>取得您自己的報表網路釣魚增益集
 
 1. 移至 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，並搜尋報表網路釣魚增益集。
 
@@ -182,7 +180,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
   > [!div class="mx-imgBorder"]
   > ![網頁型 Outlook 報告網路釣魚增益集圖示](../../media/OWA-ReportPhishing.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>取得組織的增益集
+### <a name="get-the-report-phishing-add-in-for-your-organization"></a>取得組織的報表網路釣魚增益集
 
 > [!NOTE]
 > 在您的組織中顯示增益集可能需要長達12小時。
@@ -206,13 +204,11 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 7. 在出現的 [ **設定增益集** ] 頁面中，設定下列設定：
 
    - **指派的使用者**：選取下列其中一個值：
-
      - **所有人** (預設) 
      - **特定使用者/群組**
      - **就我自己**
 
    - **部署方法**：選取下列其中一個值：
-
      - **Fixed (預設)**：增益集會自動部署至指定的使用者，且無法加以移除。
      - **可用**：使用者可以在 **Home** \> **Get 增益集** \> **管理管理** 的位置安裝增益集。
      - **選用**：增益集會自動部署至指定的使用者，但是可以選擇加以移除。

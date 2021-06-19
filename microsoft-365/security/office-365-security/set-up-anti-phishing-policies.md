@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964882"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029366"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -62,7 +62,7 @@ ms.locfileid: "52964882"
 
 - [在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)
 
-- [在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)
+- [在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)
 
 本文的其餘部分將說明 EOP 和 Defender for Office 365 中的反網路釣魚原則中可用的設定。
 
@@ -131,9 +131,6 @@ ms.locfileid: "52964882"
 - **啟用未經驗證的寄件者問號 (？ ) 符號？**：當此設定開啟時，如果郵件未通過 SPF 或 DKIM 檢查， **且** 郵件未透過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)，則會在寄件者的相片中新增一個問號。 關閉此設定時，不會將問號新增到寄件者的相片。
 
 - **啟用**「透過」標籤？ <sup>\*</sup> ：當此設定開啟時，如果寄件者位址 <u></u>中的網域 (電子郵件) 客戶程式中顯示的郵件寄件者不同于 DKIM 簽章中的網域或 **郵件的** 寄件者位址中的網域，則會在 [寄件者] 方塊中新增 [via] 標記 (chris@contoso.com 透過 fabrikam.com) 。 如需這些位址的詳細資訊，請參閱 [電子郵件標準的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
-
-> [!NOTE]
-> 目前，「透過」標籤 **？** 設定無法在所有組織中使用。 如果您沒有 **enable "via" 標記？** 設定，問號 **和** via 標籤都是由您組織中的 [ **啟用未經驗證的寄件者問號 (？ ) 符號？** ] 設定所控制。
 
 若要防止問號或 via 標記新增至特定寄件者的郵件，您可以使用下列選項：
 

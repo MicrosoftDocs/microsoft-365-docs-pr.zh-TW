@@ -19,12 +19,12 @@ description: 系統管理員可以深入瞭解安全性 & 合規性中心的「�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985501"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029451"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985501"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> 本主題中所述的大部分報告都可在 Exchange 系統管理中心 (EAC) 中取得。 如需詳細資訊，請參閱 [新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。 [Exchange transport rule 報告](view-email-security-reports.md#exchange-transport-rule-report)可在 Microsoft 365 Defender 入口網站中取得。
 
 除了安全性 & 合規性中心的 [郵件流程儀表板](mail-flow-insights-v2.md) 中所提供的郵件流程報告之外，「報告」儀表板還提供各種額外的郵件流程報告，可協助您監視 Microsoft 365 組織。
 
@@ -166,7 +169,7 @@ ms.locfileid: "52985501"
 
 ## <a name="forwarding-report"></a>轉接報告
 
-轉寄 **報告** 顯示組織自動轉寄給來自 Exchange Online 信箱的外部網域的郵件。 轉寄的郵件可能會造成安全性或規範風險，而且可能會指出已遭破壞的帳戶。
+轉寄 **報告** 顯示組織自動轉寄的郵件至外部網域的 Exchange Online 信箱。 轉寄的郵件可能會造成安全性或規範風險，而且可能會指出已遭破壞的帳戶。
 
 若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **轉接報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -421,7 +424,9 @@ ms.locfileid: "52985501"
 
 ## <a name="sent-and-received-email-report"></a>傳送和接收的電子郵件報告
 
-「 **傳送及接收的電子郵件** 報告」是一個智慧報告，顯示傳入和傳出電子郵件的相關資訊，包括垃圾郵件偵測、惡意程式碼，以及識別為「良好」的電子郵件。 此報告與 [郵件流程狀態報表](#mailflow-status-report) 之間的差異為：此報告不包含 edge protection 所封鎖之郵件的相關資料。請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為一封郵件。
+「 **傳送及接收的電子郵件** 報告」是一個智慧報告，顯示傳入和傳出電子郵件的相關資訊，包括垃圾郵件偵測、惡意程式碼，以及識別為「良好」的電子郵件。 此報告與 [郵件流程狀態報表](#mailflow-status-report) 之間的差異為：此報告不包含 edge protection 所封鎖之郵件的相關資料。
+
+**附注：請** 務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為一封郵件。
 
 報表的匯總視圖和詳細資料檢視允許90天的篩選。
 

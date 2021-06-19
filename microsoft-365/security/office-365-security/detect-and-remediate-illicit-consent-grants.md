@@ -14,16 +14,16 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 中的攻擊。
+description: 瞭解如何辨識和修正非法同意授與 Microsoft 365 中的攻擊。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c3c3c06974feb2dab3985a60938fe7d543543c3
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028916"
+ms.locfileid: "53029858"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -33,9 +33,9 @@ ms.locfileid: "53028916"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**摘要** 了解如何識別並修正在 Office 365 中的非法同意授權。
+**摘要** 瞭解如何辨識和修正非法同意授與 Microsoft 365 中的攻擊。
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什麼是 Office 365 中的非法同意授權攻擊？
+## <a name="what-is-the-illicit-consent-grant-attack-in-microsoft-365"></a>非法的同意授與 Microsoft 365 中的攻擊是什麼？
 
 在非法同意授權攻擊中，攻擊者會建立已註冊 Azure 的應用程式，要求存取連絡人資訊、電子郵件或文件等資料。 然後，攻擊者誘騙使用者授權該應用程式同意透過網路釣魚攻擊，或透過插入非法程式碼到信任的網站，來存取其資料。 在非法應用程式獲得授權之後，就擁有資料的帳戶層級存取權，而不需要組織帳戶。 一般補救步驟，例如重設遭入侵帳戶的密碼或要求帳戶的多重要素驗證 (MFA)，對這類型攻擊是無效的，因為這些是第三方應用程式，而且在組織外部。
 
@@ -44,21 +44,23 @@ ms.locfileid: "53028916"
 > [!IMPORTANT]
 > 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security (MCAS) 具有偵測、調查和修正 OAuth 應用程式的工具。 此 MCAS 文章包含的教學課程，說明如何 [調查 OAuth 應用程式的風險](/cloud-app-security/investigate-risky-oauth)。 您也可以設定 [OAuth 的應用程式原則](/cloud-app-security/app-permission-policy) ，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 中的非法同意授權攻擊的外觀如何？
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>非法同意授與 Microsoft 365 的攻擊外觀。
 
 您必須搜尋「 **審計記錄** 檔」，以尋找此攻擊的簽署，也稱為折衷 (IOC) 。 如果組織擁有許多 Azure 註冊應用程式和大量使用者，最佳做法就是每週檢閱您的組織同意授權。
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>尋找此攻擊徵象的步驟
 
-1. 開啟 **Microsoft 365 Defender** 入口網站，網址為 <https://security.microsoft.com> 。
+1. 在中開啟 **Microsoft 365 Defender** 入口網站 <https://security.microsoft.com> ，然後選取 [**審計**]。
 
-2. 流覽至 [ **搜尋** ]，然後選取 [ **審核記錄搜尋**]。
+2. 在開啟的 [ **審計** ] 頁面上，確認已選取 [ **搜尋] 索引** 標籤，然後設定下列設定：
+   - **日期和時間範圍**
+   - **活動**：確認已選取 [ **顯示所有活動的結果** ]。
 
-3. 搜尋 (所有活動和所有使用者) 並輸入開始日期和結束日期（如有需要），然後按一下 [ **搜尋**]。
+   完成後，請按一下 [ **搜尋**]。
 
-4. 按一下 [ **篩選結果** ]，並在 [ **活動** ] 欄位中輸入應用程式同意。
+3. 按一下 [ **活動** ] 欄，排序結果，並尋找 **同意應用程式**。
 
-5. 按一下結果以查看活動的詳細資料。 按一下 [ **詳細資訊** ] 以取得活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
+4. 從清單中選取一個專案，以查看活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
 
 > [!NOTE]
 >
@@ -73,9 +75,7 @@ ms.locfileid: "53028916"
 如果您有上面所列的一或多個 IOC 執行個體，則必須進一步調查，以明確確認發生了攻擊。 您可以使用下列三種方法中的任何一種來確認攻擊：
 
 - 使用 Azure Active Directory 入口網站來清查應用程式及其權限。 此方法很徹底，但是一次只能檢查一個使用者，如果要檢查的使用者很多，這會非常耗時。
-
 - 使用 PowerShell 來清查應用程式及其權限。 這是最快也最徹底的方法，而且負擔最小。
-
 - 讓您的使用者個別檢查其應用程式和授權，並將結果報告給系統管理員以進行修正。
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>使用您組織中的存取權來清查應用程式。
@@ -84,23 +84,19 @@ ms.locfileid: "53028916"
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>使用 Azure Active Directory 入口網站的步驟
 
-您可以使用 [Azure Active Directory 入口網站](https://portal.azure.com/)來查閱任何個人使用者已獲授權的應用程式。
+您可以使用 Azure Active Directory 入口網站，查看任何個別使用者已授與許可權的應用程式 <https://portal.azure.com> 。
 
 1. 使用系統管理許可權登入 Azure 入口網站。
-
 2. 選取 [Azure Active Directory] 刀鋒視窗。
-
 3. 選取 [使用者]。
-
 4. 選取您要檢閱的使用者。
-
 5. 選取 [應用程式]。
 
 這會顯示指派給使用者的應用程式，以及應用程式的許可權。
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>請您的使用者列舉其應用程式存取權的步驟
 
-請您的使用者前往 https://myapps.microsoft.com，並在那裡查看自己的應用程式存取權。 他們應該能夠查看具有存取權的所有應用程式、查看相關的詳細資料 (包括存取範圍)，並能夠撤銷可疑或非法應用程式的權限。
+請您的使用者前往 <https://myapps.microsoft.com>，並在那裡查看自己的應用程式存取權。 他們應該能夠查看具有存取權的所有應用程式、查看相關的詳細資料 (包括存取範圍)，並能夠撤銷可疑或非法應用程式的權限。
 
 ### <a name="steps-for-doing-this-with-powershell"></a>使用 PowerShell 執行此動作的步驟
 
@@ -109,9 +105,7 @@ ms.locfileid: "53028916"
 #### <a name="pre-requisites"></a>先決條件
 
 - 已安裝 Azure AD PowerShell 程式庫。
-
 - 將執行指令碼的租用戶的全域系統管理員權限。
-
 - 將執行指令碼的電腦上的本機系統管理員。
 
 > [!IMPORTANT]
@@ -121,7 +115,7 @@ ms.locfileid: "53028916"
 
 2. 將[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)腳本從 GitHub 下載或複製到您要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
 
-3. 以系統管理員身分開啟 PowerShell 執行個體，然後開啟您要儲存指令碼的資料夾。
+3. 以系統管理員身分開啟 PowerShell 會話，並開啟您用來儲存腳本的資料夾。
 
 4. 使用 [Connect-AzureAD](/powershell/module/azuread/connect-azuread) Cmdlet 連線至您的目錄。
 
@@ -153,14 +147,10 @@ ms.locfileid: "53028916"
 當您識別出有非法權限的應用程式之後，有多種方式可移除該存取權。
 
 - 您可以在 Azure Active Directory 入口網站中撤銷應用程式的權限，方法是：
-
-  - 在 [Azure Active Directory 使用者] 刀鋒視窗中瀏覽至受影響的使用者。
-
-  - 選取 [應用程式]。
-
-  - 選取非法應用程式。
-
-  - 按一下向下切入中的 [移除]。
+  1. 在 [Azure Active Directory 使用者] 刀鋒視窗中瀏覽至受影響的使用者。
+  2. 選取 [應用程式]。
+  3. 選取非法應用程式。
+  4. 按一下向下切入中的 [移除]。
 
 - 您可以依照[移除-AzureADOAuth2PermissionGrant](/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant) 中的步驟，使用 PowerShell 撤銷 QAuth 同意授權。
 
@@ -175,19 +165,13 @@ ms.locfileid: "53028916"
 您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用 [Microsoft 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Microsoft 365 租用戶的最佳做法。
 
 - 要在前 30 天內完成的工作。 這些工作會有立即的影響，而且對您的使用者影響較低。
-
 - 要在 90 天內完成的工作。 這些工作需要多一些時間來計劃及實作，但是可以大幅改善您的安全性狀態。
-
 - 90 天之後。 這些增強功能會在您的前 90 天工作內建置。
 
-## <a name="see-also"></a>另請參閱：
+## <a name="see-also"></a>另請參閱
 
 - [我的應用程式清單中有未預期的應用程式](/azure/active-directory/application-access-unexpected-application)，在系統管理員知道有未預期應用程式具有資料存取權之後，此文章可引導系統管理員完成可能需要採取的不同動作。
-
 - [整合應用程式與 Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) 是同意與權限的高階概觀。
-
 - [開發我的應用程式時發生問題](/azure/active-directory/active-directory-application-dev-development-content-map)提供各種同意相關文章的連結。
-
 - [Azure Active Directory (Azure AD) 中的應用程式按服務主體物件](/azure/active-directory/develop/active-directory-application-objects)提供應用程式模型核心的應用程式和服務主體物件的概觀。
-
 - [管理應用程式的存取權](/azure/active-directory/active-directory-managing-access-to-apps)概述系統管理員用來管理使用者對應用程式的存取權的功能。

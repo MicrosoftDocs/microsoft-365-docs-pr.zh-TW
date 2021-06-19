@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解如何尋找及使用 Microsoft 365 Defe
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022912"
+ms.locfileid: "53029547"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告
 
@@ -157,7 +157,9 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的類型視圖
 
-當您開啟報表時，預設會選取 [ **類型** ] 索引標籤。 根據預設，此視圖包含的圖表和詳細資料表格已設定為下列篩選：
+![郵件流程狀態報表中的類型視圖](../../media/mail-flow-status-report-type-view.png)
+
+在 [ **郵件流程狀態報表** ] 頁面上，預設會選取 [ **類型** ] 索引標籤。 根據預設，此視圖包含的圖表和詳細資料表格已設定為下列篩選：
 
 - **日期 (UTC)** 過去7天。
 - **郵件方向**：
@@ -175,7 +177,7 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 圖表是依 **類型** 值進行組織。
 
-您可以按一下 [ **篩選器** ] 或按一下 [圖表圖例] 中的值來變更這些篩選。
+您可以按一下 [ **篩選**] 以變更這些篩選。
 
 下列資訊會顯示在圖形下方的詳細資料表格中：
 
@@ -200,9 +202,9 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 每個匯出的 .csv 檔會限制為150000列。 如果該天的資料包含超過150000列，則會建立多個 .csv 檔案。
 
-![郵件流程狀態報表中的類型視圖](../../media/mail-flow-status-report-type-view.png)
-
 ### <a name="direction-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的方向視圖
+
+![郵件流程狀態報表中的方向視圖](../../media/mail-flow-status-report-direction-view.png)
 
 如果您按一下 [ **方向** ] 索引標籤，則會使用 [ **類型** ] 視圖中的相同預設篩選器。
 
@@ -220,11 +222,11 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 每個匯出的 .csv 檔會限制為150000列。 如果該天的資料包含超過150000列，則會建立多個 .csv 檔案。
 
-![郵件流程狀態報表中的方向視圖](../../media/mail-flow-status-report-direction-view.png)
-
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的漏斗視圖
 
 **漏斗** 視圖顯示 Microsoft 的電子郵件威脅防護功能如何篩選組織中的內送和外寄電子郵件。 它提供有關電子郵件總數的詳細資訊，以及設定的威脅防護功能（包括 edge protection、反惡意程式碼、反網路釣魚、反垃圾郵件和反欺詐）對此計數的影響。
+
+![郵件流程狀態報表中的漏斗圖視圖](../../media/mail-flow-status-report-funnel-view.png)
 
 如果您按一下 [ **漏斗** ] 索引標籤，此 view 預設會包含 [圖表] 和 [詳細資料] 表格設定為下列篩選：
 
@@ -289,8 +291,6 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 在 [ **日期**] 下，選擇範圍，然後 **按一下 [** 套用]。 目前篩選的資料會匯出至 .csv 檔案。
 
 每個匯出的 .csv 檔會限制為150000列。 如果資料包含超過150000列，則會建立多個 .csv 檔案。
-
-![郵件流程狀態報表中的漏斗圖視圖](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的技術視圖
 
@@ -460,14 +460,23 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 在 [ **提交** ] 頁面上，您可以按一下 [ **篩選** ]，然後選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
 
 - **報告日期**： **開始時間** 和 **結束時間**
-- **提交類型**： **電子郵件**、 **URL** 或 **檔案**
+- **提交類型**：
+  - **電子郵件**
+  - **URL**
+  - **檔案**
 - **提交識別碼**
 - **網路消息識別碼**
 - **Sender**
 - **名稱**
 - **提交者**
-- **提交原因**： **非垃圾郵件**、 **網路釣魚詐騙**、 **惡意** 代碼或 **垃圾郵件**
-- **重新掃描狀態**： **擱置** 或 **已完成**
+- **提交原因**：
+  - **非垃圾郵件**
+  - **網路釣魚**
+  - **惡意程式碼**
+  - **垃圾郵件**
+- **重新掃描狀態**：
+  - **等待**
+  - **已完成**
 
 圖表下方的 [詳細資料] 表格會顯示相同的資訊，並具有相同的 **群組** 或 **自訂欄** 選項，與在 **電子郵件 &** 共同作業報送中 **提交的 [分析**] 索引標籤 \> ****。 如需詳細資訊，請參閱 [View admin 報送 To Microsoft](admin-submission.md#view-admin-submissions-to-microsoft)。
 
@@ -772,7 +781,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
-Office 365 的「 **URL 威脅防護」報告** 可用於的 Microsoft Defender。 如需詳細資訊，請參閱 [URL 威脅防護報告](view-reports-for-mdo.md#url-threat-protection-report)。
+**URL 威脅防護報告** 只適用于 Office 365 的 Microsoft Defender。 如需詳細資訊，請參閱 [URL 威脅防護報告](view-reports-for-mdo.md#url-threat-protection-report)。
 
 ## <a name="user-reported-messages-report"></a>使用者報告的訊息報告
 

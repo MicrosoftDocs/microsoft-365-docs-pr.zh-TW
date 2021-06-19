@@ -21,12 +21,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中的反網路釣魚保護功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538336"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029234"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚保護
 
@@ -65,7 +65,7 @@ EOP (，也就是 Microsoft 365 沒有 Microsoft Defender for Office 365) 的功
 
 適用於 Office 365 的 Microsoft Defender 包含額外和進階的防網路釣魚功能：
 
-- **Microsoft Defender 中 Office 365 的反網路釣魚原則**：針對特定郵件寄件者和寄件者網域、信箱智慧設定及可調整的高級網路釣魚臨界值，設定模擬防護設定。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 如需 EOP 中 Office 365 和反網路釣魚原則中的反網路釣魚原則之間差異的詳細資訊，請參閱[Microsoft 365 中的反網路釣魚原則](set-up-anti-phishing-policies.md)。
+- **Microsoft Defender 中 Office 365 的反網路釣魚原則**：針對特定郵件寄件者和寄件者網域、信箱智慧設定及可調整的高級網路釣魚臨界值，設定模擬防護設定。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)。 如需 EOP 中 Office 365 和反網路釣魚原則中的反網路釣魚原則之間差異的詳細資訊，請參閱[Microsoft 365 中的反網路釣魚原則](set-up-anti-phishing-policies.md)。
 
 - **即時檢視**：機器學習和其他試探法識別及分析與整個服務和組織有關之協同網頁網路攻擊的相關訊息。 如需詳細資訊，請參閱[Microsoft Defender 中 Office 365 的市場即時檢視](campaigns.md)。
 
