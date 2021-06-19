@@ -1,10 +1,10 @@
-- name: Microsoft 365 的調度程式
+- name: Microsoft 365 Scheduler
   href: scheduler-overview.md
-- name: 信任和隱私權
+- name: 信任與隱私權
   href: scheduler-trust-privacy.md
-- name: 設定 Microsoft 365 的調度程式
+- name: 設定 Microsoft 365 Scheduler
   href: scheduler-setup.md
-- name: 如何使用 Microsoft 365 的調度程式
+- name: 如何使用 Microsoft 365 Scheduler
   href: scheduler-using.md
-- name: Microsoft 365 常見問題的調度器
+- name: Microsoft 365 Scheduler 的常見問題集
   href: scheduler-faqs.md
