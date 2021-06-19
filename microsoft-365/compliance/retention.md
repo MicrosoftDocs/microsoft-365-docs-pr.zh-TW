@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932863"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007498"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -268,7 +268,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 
 **註腳：**
 
-<sup>\*</sup> 對於不會將內容標示為記錄或監管記錄的保留標籤，稽核事件僅限於 SharePoint 中的項目已套用、變更或移除標籤時。 有關保留標籤的稽核詳細資料，請參閱此頁面上的[稽核保留動作](#auditing-retention-actions)一節。
+<sup>\*</sup> 對於不會將內容標示為記錄或監管記錄的保留標籤，僅限於 SharePoint 或 OneDrive 中的項目已套用、變更或移除標籤時，才會稽核事件。 有關保留標籤的稽核詳細資料，請參閱此頁面上的[稽核保留動作](#auditing-retention-actions)一節。
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>合併保留原則和保留標籤
 
@@ -373,9 +373,11 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 
 ## <a name="releasing-a-policy-for-retention"></a>發佈保留原則
 
-如果您的保留原則沒有保留鎖定，您可以隨時刪除您的原則，以便有效地關閉先前套用的保留設定。 您也可以保留此原則，但是移除 SharePoint 的網站或 OneDrive 的帳戶，或將位置狀態變更為關閉，或停用該原則。
+如果您的保留原則沒有保留鎖定，您可以隨時刪除您的原則，以便有效地關閉先前套用的保留設定。 您也可以保留此原則，但是將位置狀態變更為關閉，或停用該原則。 如果您的原則設定為包含 SharePoint 的特定網站或 OneDrive 帳戶，您也可以編輯原則以移除其中一或多個項目，以為這些網站或帳戶釋出原則。
  
 當您執行任何這些動作時，任何受限於原則保留的 SharePoint 或 OneDrive 內容會繼續保留 30 天，以避免意外的資料遺失。 在這個 30 天寬限期內，已刪除的檔案仍會保留 (檔案會繼續新增至文件保留庫)，但是定期清除文件保留庫的計時器工作會暫停，因此您可以在必要時還原這些檔案。
+
+此 30 天寬限期的例外是，當您更新此原則以排除 SharePoint 的一或多個網站或 OneDrive 帳戶時；在此案例中，計時器工作會刪除文件保留庫中這些位置的檔案，而不會延遲 30 天。
 
 如需文件保留庫的詳細資訊，請參閱[保留如何用於 SharePoint 和 OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
 
@@ -395,7 +397,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 
 記錄為稽核事件的保留動作僅適用於保留標籤，不適用於保留原則：
 
-- 當保留標籤從 SharePoint 中的項目進行套用、變更或移除時：
+- 當從 SharePoint 或 OneDrive 中的項目套用、變更或移除保留標籤時：
     - 從 **[檔案和頁面活動]**，選取 **[已變更檔案的保留標籤]**。 
 
 - 當 SharePoint 中已標記的項目標示為記錄，且使用者已解除鎖定或鎖定該項目時：
@@ -404,7 +406,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 - 將內容標示為記錄或監管記錄的保留標籤套用至 Exchange 中的項目時：
     - 從 **[Exchange 信箱活動]**，選取 **[已將訊息標記成一筆記錄]**
 
-- 當 SharePoint 或 Exchange 中已標記的項目標示為記錄或監管記錄，且該項目已永久刪除時：
+- 當 SharePoint、OneDrive 或 Exchange 中已標記的項目標示為記錄或監管記錄，且該項目已永久刪除時：
     - 從 **[檔案和頁面活動]**，選取 **[已將刪除的檔案標示為記錄]**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>保留原則和保留標籤的 PowerShell Cmdlet
