@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903825"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028848"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解決適用於端點的 Microsoft Defender 中的誤判/漏報
 
@@ -41,7 +41,7 @@ ms.locfileid: "52903825"
 
 ![在端點中定義 false 正值和負值](images/false-positives-overview.png)
 
-幸運的是，您可以採取步驟解決並減少這類問題。 如果您在[Microsoft 365 Defender](microsoft-defender-security-center.md) (（以前稱為 Microsoft Defender 資訊安全中心) ）中看到誤報/負片，您的安全性作業可以採取步驟來處理這些錯誤，方法是使用下列程式：
+幸運的是，您可以採取步驟解決並減少這類問題。 如果您在[Microsoft 365 Defender](microsoft-defender-security-center.md)中看到誤報/負片 (先前為 Microsoft Defender 資訊安全中心) ，您的安全性作業可以採取步驟來處理這些錯誤，方法是使用下列程式：
 
 1.  [審閱和分類提醒](#part-1-review-and-classify-alerts) 
 2.  [複查所執行的修復動作](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ ms.locfileid: "52903825"
 
 在您分類或抑制警示之前，請先判斷警示是否正確、誤報或良性。
 
-1. 請移至 Microsoft 365 Defender 入口網站 ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
+1. 移至 Microsoft 365 Defender 入口網站 ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
 
 2. 在功能窗格中，選擇 [ **警示佇列**]。
 
@@ -84,7 +84,7 @@ ms.locfileid: "52903825"
 
 警示可以分類為 Microsoft 365 Defender 中的誤報或 true 陽性。 分類提醒可協助訓練 Microsoft Defender for Endpoint，這樣一來，您就能看到更真實的通知，以及更少的錯誤警示。
 
-1. 請移至 Microsoft 365 Defender 入口網站 ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
+1. 移至 Microsoft 365 Defender 入口網站 ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
 
 2. 選取 [ **提醒佇列**]，然後選取警示。
 
@@ -97,9 +97,9 @@ ms.locfileid: "52903825"
 
 ### <a name="suppress-an-alert"></a>抑制警示
 
-如果您的提醒是誤報或為 true，但不重要的事件，您可以在 Microsoft 365 Defender 中抑制這些警示。 抑制提醒有助於減少安全性作業儀表板中的噪音。 
+如果您有警示是誤報或為 true，但為不重要的事件，您可以在 Microsoft 365 Defender 抑制這些警示。 抑制提醒有助於減少安全性作業儀表板中的噪音。 
 
-1. 請移至 Microsoft 365 Defender 入口網站 ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
+1. 移至 Microsoft 365 Defender 入口網站 ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
 
 2. 在功能窗格中，選取 [ **警示佇列**]。
 
@@ -247,7 +247,7 @@ ms.locfileid: "52903825"
 
 指標[ (特別](/microsoft-365/security/defender-endpoint/manage-indicators)、有損損或 IoCs) 可讓您的安全性作業小組定義實體的偵測、預防和排除。 例如，您可以在 Microsoft Defender for Endpoint 中指定要省略的掃描和修正動作中的某些檔案。 您也可以使用指示器，針對特定的檔案、IP 位址或 URLs 產生警示。
 
-若要將實體指定為 Microsoft Defender for Endpoint 的排除專案，請為這些實體建立 "allow" 標記。 Microsoft Defender for Endpoint 中的這類「允許」指示器適用于 [下一代保護](microsoft-defender-antivirus-in-windows-10.md)、 [端點偵測和回應](overview-endpoint-detection-response.md)，以及 [自動調查 & 修復](/microsoft-365/security/defender-endpoint/automated-investigations)。
+若要將實體指定為 Microsoft Defender for Endpoint 的排除專案，請為這些實體建立 "allow" 標記。 Microsoft Defender for Endpoint 中的這類「允許」指示器適用于[下一代保護](microsoft-defender-antivirus-in-windows-10.md)、[端點偵測及回應](overview-endpoint-detection-response.md)及[自動化調查 & 修復](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 可為下列專案建立 "Allow" 指示器：
 
@@ -276,7 +276,7 @@ ms.locfileid: "52903825"
 - 反惡意軟體用戶端版本為4.18.1906 或更新版本 
 - 裝置執行 Windows 10、版本1709或更新版本） 
 
-在[Microsoft 365 Defender](microsoft-defender-security-center.md)中已開啟自訂網路指示器。 若要深入瞭解，請參閱 [高級功能](/microsoft-365/security/defender-endpoint/advanced-features)。
+在[Microsoft 365 Defender](microsoft-defender-security-center.md)中開啟自訂網路指示器。 若要深入瞭解，請參閱 [高級功能](/microsoft-365/security/defender-endpoint/advanced-features)。
 
 #### <a name="indicators-for-application-certificates"></a>應用程式憑證的標記 
 
@@ -438,7 +438,7 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 > [!IMPORTANT]
 > 建議使用 *完整的自動化* ，以進行自動調查和修復。 請勿關閉這些功能，因為是誤報。 相反地，使用 ["allow" 標記來定義例外](#indicators-for-microsoft-defender-for-endpoint)狀況，並將自動調查和修正設定為自動採取適當的動作。 遵循 [此指南](automation-levels.md#levels-of-automation) 可協助減少您的安全作業小組必須處理的提醒數目。 
 
-## <a name="still-need-help"></a>仍需要協助嗎？
+## <a name="still-need-help"></a>是否仍需要協助？
 
 如果您已完成本文中的所有步驟，但仍需要協助，請與技術支援人員聯繫。
 
@@ -452,4 +452,4 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 
 [管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)
 
-[Microsoft 365 Defender 入口網站的概覽](/microsoft-365/security/defender-endpoint/use) 
+[Microsoft 365 Defender 入口網站概述](/microsoft-365/security/defender-endpoint/use) 

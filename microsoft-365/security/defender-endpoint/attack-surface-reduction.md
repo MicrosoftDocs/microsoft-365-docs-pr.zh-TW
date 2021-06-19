@@ -16,19 +16,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984985"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028784"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>攻擊面減少規則為何很重要
@@ -91,7 +90,7 @@ ms.locfileid: "52984985"
 
 ## <a name="notifications-and-alerts"></a>通知與提醒
 
-每當觸發攻擊面降低規則時，就會在裝置上顯示通知。 您可以 [自訂](customize-attack-surface-reduction.md#customize-the-notification) 您公司詳細資料和連絡人資訊的通知。
+每當觸發攻擊面降低規則時，就會在裝置上顯示通知。 您可以使用公司詳細資料和連絡資訊[自訂通知](customize-attack-surface-reduction.md#customize-the-notification)。
 
 此外，當觸發某些攻擊面降低規則時，會產生警示。
 
@@ -127,7 +126,7 @@ Windows Professional 或 Windows E3 授權無法使用這些高級功能。 不�
 
 您可以使用 [[高級搜尋](advanced-hunting-query-language.md)]，在[Microsoft 365 Defender](microsoft-defender-security-center.md)中查詢 Defender 的端點資料。 如果您正在執行 [稽核模式](audit-windows-defender.md)，您可以使用高級搜尋來瞭解攻擊面降低規則可能會如何影響您的環境。
 
-以下是範例查詢：
+範例查詢如下：
 
 ```kusto
 DeviceEvents
@@ -160,7 +159,7 @@ DeviceEvents
 
 ## <a name="attack-surface-reduction-rules"></a>受攻擊面縮小規則
 
-下表與子小節分別說明15個攻擊面降減規則。 攻擊面降低規則會依規則名稱依字母順序列出。
+下表與子小節分別說明16個攻擊面降低規則。 攻擊面降低規則會依規則名稱依字母順序列出。
 
 如果您是使用群組原則或 PowerShell 來設定攻擊面降低規則，則需要 Guid。 另一方面，如果您使用 Microsoft 端點管理員或 Microsoft Intune，便不需要 guid。
 

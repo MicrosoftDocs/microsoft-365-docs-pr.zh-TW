@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022767"
+ms.locfileid: "53028520"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
 
@@ -144,9 +144,11 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 如果您是新的安全性分析，請參閱 [回應第一個事件的簡介](incidents-overview.md) 以取得其他資訊，並逐步執行範例事件。
 
+如需有關 Microsoft 產品之事件回應的詳細資訊，請參閱 [本文](/security/compass/incident-response-overview)。
+
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Microsoft 365 Defender 的安全性操作範例
 
-以下是 Microsoft 365 Defender 的安全性運作範例。
+以下是 Microsoft 365 Defender 的安全性作業 (SecOps) 的範例。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Microsoft 365 Defender 安全性作業的範例":::
 
@@ -169,11 +171,19 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 您可以使用每日、每月、每季及每年的工作來更新或修改程式、原則及安全性設定。
 
+### <a name="secops-resources-across-microsoft-products"></a>跨 Microsoft 產品 SecOps 資源
+
+如需跨 Microsoft 產品 SecOps 的詳細資訊，請參閱下列資源：
+
+- [Capabilities](/security/compass/security-operations-capabilities)
+- [最佳作法](/security/compass/security-operations)
+- [影片及投影片](/security/compass/security-operations-videos-and-decks)
+
 ## <a name="next-steps"></a>後續步驟
 
 **如果您是新的** 安全性分析和事件回應：
 
-- 請參閱[第一個 incident 演練的回應](first-incident-overview.md)，以取得 Microsoft 365 Defender 入口網站中的一般分析、修正及事件後檢查的指導教程，並有攻擊的範例。
+- 請參閱[第一個 incident 演練的回應](first-incident-overview.md)，以取得在 Microsoft 365 Defender 入口網站中的一般分析、修正及事件後檢查，並提供範例攻擊的指導教程。
 
 **如果您已體驗** 安全性分析和事件回應：
 
@@ -181,7 +191,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
   - 根據嚴重性及其他因素，查看應 [優先](incident-queue.md) 考慮哪些事件。 
 
-  - [管理事件](manage-incidents.md)，包括重新命名、指派、分類，以及根據您的事件管理工作流程新增標記和批註。
+  - [管理事件](manage-incidents.md)，包括重新命名、指派、分類及新增以您的事件管理工作流程為基礎的標記和批註。
 
   - 進行事件 [調查](investigate-incidents.md) 。
 

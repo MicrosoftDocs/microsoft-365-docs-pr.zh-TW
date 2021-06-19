@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的隔離檔案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d5011248d1c0fc0daab0d04e1cca39e26e34bd
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 59bdfdaddbc091467bfd2ccddc2c40377955fab3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878889"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028988"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -41,11 +41,11 @@ ms.locfileid: "52878889"
 
 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以在 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中，查看、下載和刪除隔離的檔案。
 
-您可以在 Microsoft 365 Defender 入口網站或 PowerShell (Exchange Online PowerShell 中，使用 Microsoft 365 的信箱來查看及管理隔離的郵件。組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
+您可以在 Microsoft 365 Defender 入口網站中查看及管理隔離的郵件，或在 PowerShell 中使用信箱的 Microsoft 365 組織使用 PowerShell (Exchange Online Exchange Online;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟 Microsoft 365 Defender 入口網站，請移至 <https://security.microsoft.com> 。 若要直接開啟 [隔離區] 頁面，請移至 <https://security.microsoft.com/quarantine>。
+- 若要開啟 Microsoft 365 Defender 入口網站，請前往 <https://security.microsoft.com>。 若要直接開啟 [隔離區] 頁面，請移至 <https://security.microsoft.com/quarantine>。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "52878889"
 - 隔離的郵件會在自動刪除之前保留在預設時間段內：
   - 30天的反垃圾郵件原則隔離的郵件 (垃圾郵件、網路釣魚和大量電子郵件) 。 這是預設值和最大值。 若要設定 (較低) 此值，請參閱 [設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
   - 包含惡意程式碼的郵件為15天。
-  - 針對 Office 365 的 SharePoint、OneDrive 及 Microsoft Teams 中的安全附件隔離的檔案的15天。
+  - 在 Office 365 的 Safe 附件中，SharePoint、OneDrive 及 Microsoft Teams 所隔離的檔案的15天。
 
   當郵件從隔離區到期時，您無法復原。
 
@@ -72,7 +72,7 @@ ms.locfileid: "52878889"
 
 ### <a name="view-quarantined-email"></a>查看隔離的電子郵件
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 **Email & 協同** \> **查看** \> **隔離區**。
+1. 在 Microsoft 365 Defender 入口網站中，前往 **[電子郵件與共同作業]** \> **[檢閱]** \> **[隔離]**。
 
 2. 在 [ **隔離** ] 頁面上，確認 [被 **隔離的視圖** ] 設定為預設值 **電子郵件**。
 
@@ -109,7 +109,7 @@ ms.locfileid: "52878889"
      - **高信賴網路釣魚**
    - **原則類型**：依原則類型篩選郵件：
      - **反惡意程式碼原則**
-     - **安全附件原則**
+     - **Safe附件原則**
      - **反網路釣魚原則**
      - **託管的內容篩選原則** (反網路釣魚原則)
      - **傳輸規則**
@@ -195,16 +195,16 @@ ms.locfileid: "52878889"
 
 完成時，請按一下 [關閉]。
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>使用 Microsoft 365 defender 入口網站管理 Defender 中的隔離檔案 Office 365
-
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>使用 Microsoft 365 Defender 入口網站管理 Defender 中的隔離檔案 Office 365
 > [!NOTE]
 > 本節中隔離檔的程式僅適用于 Office 365 方案1和計畫2訂閱者的 Microsoft Defender。
 
-在具有 Office 365 的 Defender 的組織中，系統管理員可以管理 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的隔離檔案。 若要啟用這些檔案的保護，請參閱[開啟安全附件以取得 SharePoint、OneDrive 及 Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)。
+在具有 Office 365 的 Defender 的組織中，系統管理員可以管理 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的隔離檔案。 若要啟用這些檔案的保護，請參閱[開啟 SharePoint、OneDrive 和 Microsoft Teams 的 Safe 附件](turn-on-mdo-for-spo-odb-and-teams.md)。
 
 ### <a name="view-quarantined-files"></a>查看隔離的檔案
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 **Email & 協同** \> **查看** \> **隔離區**。
+1. 在 Microsoft 365 Defender 入口網站中，前往 **[電子郵件與共同作業]** \> **[檢閱]** \> **[隔離]**。
+
 
 2. 在 [**隔離**] 頁面上，變更 [隔離至 **值] 檔的****視圖**。 您可以按一下可用的欄標題，依序排序欄位。
 
@@ -276,6 +276,6 @@ ms.locfileid: "52878889"
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [預覽-get-quarantinemessage](/powershell/module/exchange/preview-quarantinemessage)：請注意，此 Cmdlet 只適用于郵件，而不是從 SharePoint、OneDrive 和 Microsoft Teams 的安全附件隔離檔案。
+- [預覽-get-quarantinemessage](/powershell/module/exchange/preview-quarantinemessage)：請注意，此 Cmdlet 只適用于郵件，而不是 SharePoint、OneDrive 和 Microsoft Teams 的 Safe 附件隔離的檔案。
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

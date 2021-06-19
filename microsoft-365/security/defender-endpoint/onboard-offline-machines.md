@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed33f67695fddc78c0bac646f72ca0c48887bb04
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 73110d89c39319825cc8dc8e347d137de52a510a
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844415"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028376"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>沒有網際網路存取 Microsoft Defender for Endpoint 的板載裝置
 
@@ -52,7 +52,7 @@ ms.locfileid: "52844415"
 - [Microsoft Defender for Endpoint service 的板載伺服器](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [設定裝置 Proxy 和網際網路連線能力設定](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## <a name="on-premise-devices"></a>內部部署裝置
+## <a name="on-premises-devices"></a>內部部署裝置
 
 - 安裝 Azure Log Analytics (以前稱為 OMS 閘道) ，可充當 proxy 或 hub：
   - [Azure 記錄分析代理程式](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)

@@ -20,12 +20,12 @@ ms.custom:
 description: 使用者可以了解如何在 Exchange Online Protection (EOP) 中查看和管理收到的隔離郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 02119130df847da48f0c25ba13cbb321c83f59dd
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877869"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028388"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 尋找及釋出隔離的郵件
 
@@ -38,18 +38,6 @@ ms.locfileid: "52877869"
 
 在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或垃圾郵件。 如需詳細資訊，請參閱 [EOP 中的隔離區](quarantine-email-messages.md)。
 
-作為隔離郵件的收件者，下表說明您能夠以一般使用者對郵件執行哪些操作：
-
-<br>
-
-****
-
-|隔離原因|檢視|發行|刪除|
-|---|:---:|:---:|:---:|
-|大量|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
-|垃圾郵件|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
-|網路釣魚 (不是高信賴度網路釣魚)|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)|
-|
 
 您可以在 Microsoft 365 Defender 入口網站或 (如果系統管理員已設定) 在[終端使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中檢視及管理隔離郵件。
 

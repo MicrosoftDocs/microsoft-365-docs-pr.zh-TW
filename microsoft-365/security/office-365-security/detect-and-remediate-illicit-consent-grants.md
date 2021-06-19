@@ -18,12 +18,12 @@ description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c3c3c06974feb2dab3985a60938fe7d543543c3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538300"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028916"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -50,7 +50,7 @@ ms.locfileid: "52538300"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>尋找此攻擊徵象的步驟
 
-1. 開啟 **安全性 & 規範中心** ，網址為 <https://protection.office.com> 。
+1. 開啟 **Microsoft 365 Defender** 入口網站，網址為 <https://security.microsoft.com> 。
 
 2. 流覽至 [ **搜尋** ]，然後選取 [ **審核記錄搜尋**]。
 
@@ -143,7 +143,7 @@ ms.locfileid: "52538300"
 
 ## <a name="determine-the-scope-of-the-attack"></a>判斷攻擊的範圍
 
-當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [安全性 & 合規性中心](../../compliance/search-the-audit-log-in-security-and-compliance.md)搜尋 **審核記錄**。
+當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md)中搜尋 **審核記錄**。
 
 > [!IMPORTANT]
 > 您必須在攻擊之前啟用 [信箱稽核][](../../compliance/enable-mailbox-auditing.md) 和 [系統管理員與使用者的活動稽核][](../../compliance/turn-audit-log-search-on-or-off.md)，才能獲得此訊息。

@@ -1,5 +1,5 @@
 ---
-title: 疑難排解 Microsoft 365 的 Defender 服務問題
+title: 疑難排解 Microsoft 365 Defender 服務問題
 description: 尋找已知 Microsoft 365 Defender 問題的解決方案和解決方法
 keywords: 疑難排解 Microsoft 365 Defender、疑難排解、Microsoft Defender for Identity、問題、附加元件、設定頁面
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 81da6c6ef46798ac656e7d5f0f374bf2c722583d
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 14033ffeb3d08efad7f45eb4c319ac0401b7df09
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782738"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028450"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>疑難排解 Microsoft 365 的 Defender 服務問題
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>疑難排解 Microsoft 365 Defender 服務問題
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,17 +35,17 @@ ms.locfileid: "52782738"
 **適用於：**
 - Microsoft 365 Defender
 
-本節說明當您使用 Microsoft 365 Defender 服務時可能會發生的問題。
+本節說明當您使用 Microsoft 365 Defender 服務時可能發生的問題。
 
-## <a name="i-dont-see-microsoft-365-defender-content"></a>我看不到 Microsoft 365 的 Defender 內容
+## <a name="i-dont-see-microsoft-365-defender-content"></a>看不到 Microsoft 365 Defender 內容
 
 如果您在流覽窗格中看不到 [事件]、[重要訊息中心] 或 [搜尋] 等功能，您必須確認您的承租人具有適當的授權。
 
 如需詳細資訊，請參閱[必要條件](prerequisites.md)。
 
-## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft defender for Identity 警示未顯示在 Microsoft 365 Defender 事件中
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender for Identity 警示不會顯示在 Microsoft 365 Defender 事件中
 
-如果您已在環境中部署 Microsoft Defender，但在 Microsoft 365 defender 事件中卻沒有看到身分識別警示，您必須確定已啟用 Microsoft Cloud App Security 和 Defender 的身分識別整合。
+如果您已在環境中部署 Microsoft Defender，但在 Microsoft 365 Defender 事件中卻沒有看到身分識別警示，您必須確定已啟用 Microsoft Cloud App Security 和 Defender 的身分識別整合。
 
 如需詳細資訊，請參閱 [Microsoft Defender For Identity integration](/cloud-app-security/mdi-integration)。
 

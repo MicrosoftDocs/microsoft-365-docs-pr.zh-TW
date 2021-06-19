@@ -16,12 +16,12 @@ description: 查看並調查惡意程式碼釣魚企圖。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877893"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028535"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>使用 Microsoft Defender 中 Office 365 的威脅瀏覽器的電子郵件安全性
 
@@ -45,38 +45,32 @@ ms.locfileid: "52877893"
 
 若要查看以 Microsoft 365 技術排序的電子郵件中偵測到惡意程式碼，請使用 Explorer 的[電子郵件 > 惡意](threat-explorer-views.md#email--malware)代碼視圖 (或即時偵測) 。 惡意程式碼是預設的視圖，所以當您開啟 Explorer 時，可能會立即選取它。
 
-1. 在 [安全性 & 規範中心] (<https://protection.office.com>) 中，選擇 [ **威脅管理** \> **瀏覽器** (] 或 [ **即時** 偵測]) 。 (此範例使用總管。)
-
-   如果您正在集中 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 滾動至 **電子郵件 & 協同**  >  **瀏覽器**。
+1. 在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，選擇 [**電子郵件 & 協同** \> **流覽**] (或 **即時** 偵測) 。  (本範例會使用 Explorer。如果您是在收斂 Microsoft 365 Defender 入口網站 (https://security.microsoft.com/) 滾動至 **電子郵件 & 協同**  >  **瀏覽器**，則 ) 。
 
    從這裡開始，在視圖中，選擇必要時要調查 (的特定時間框架) ，並依 [瀏覽器](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)的流覽方式，將篩選的重點放在一起。
 
-2. 在 [ **視圖** ] 功能表中，選擇 [ **電子郵件** \> **惡意** 代碼]。
-
-   > [!div class="mx-imgBorder"]
-   > ![總管的檢視功能表](../../media/ExplorerViewEmailMalwareMenu.png)
+2. 在 [**視圖**] 功能表中，選擇 [**電子郵件**] 底下的 **惡意** 代碼。
 
 3. 按一下 [ **寄件者**]，然後選擇 [ **基本** \> **偵測技術**]。
 
-   您的偵測技術現在可做為報告的篩選器。
+   
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="惡意程式碼偵測技術":::
 
-   > [!div class="mx-imgBorder"]
-   > ![惡意程式碼偵測技術](../../media/ExplorerEmailMalwareDetectionTech.png)
+   您的偵測技術現在可做為報告的篩選器。
 
 4. 選擇 [選項]。 然後選取 [重新整理] **按鈕，套用** 該篩選。
 
-   > [!div class="mx-imgBorder"]
-   > ![選取的偵測技術](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="選取的偵測技術"::: 
 
    報告會進行重新整理，以顯示惡意程式碼在電子郵件中偵測到的結果，並使用您選取的技術選項。 您可以從這裡進行進一步分析。 
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>查看網路釣魚 URL，然後按一下 [已判定資料]
 
-您可以透過電子郵件中的 URLs 來查看網路釣魚嘗試，包括允許、封鎖和覆蓋的 URLs 清單。 若要識別所按一下的 URLs，必須設定 [安全連結](safe-links.md) 。 請確定您已設定 [安全連結原則](set-up-safe-links-policies.md) 的 [保護] 和 [記錄] 按一下 [安全連結] 中的 [verdicts]。
+您可以透過電子郵件中的 URLs 來查看網路釣魚嘗試，包括允許、封鎖和覆蓋的 URLs 清單。 若要識別所按一下的 URLs，必須設定[Safe 連結](safe-links.md)。 請務必設定[Safe 連結原則](set-up-safe-links-policies.md)，以在按 Safe 連結的情況時，按一下 [保護] 和 [記錄]。
 
 若要查看郵件中的網路釣魚 URLs，並按一下網路釣魚郵件中 URLs，請使用瀏覽器或即時偵測的 [**電子郵件**  >  **網路釣魚**](threat-explorer-views.md#email--phish)視圖。
 
-1. 在 [安全性 & 規範中心] (<https://protection.office.com>) 中，選擇 [ **威脅管理** \> **瀏覽器** (] 或 [ **即時** 偵測]) 。 (此範例使用總管。)
+1. 在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，選擇 [**電子郵件 & 協同** \> **流覽**] (或 **即時** 偵測) 。 (此範例使用總管。)
 
 2. 在 [ **視圖** ] 功能表中，選擇 [ **電子郵件** \> **釣魚網絡**]。
 
@@ -87,14 +81,13 @@ ms.locfileid: "52877893"
 
 4. 選取一個或多個選項（例如 **封鎖** 和 **封鎖**），然後在與套用該篩選的選項相同的列上選取 [重新整理 **] 按鈕。** (請勿重新整理瀏覽器視窗。)
 
-   > [!div class="mx-imgBorder"]
-   > ![URL 和按一下結果](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL 和按一下結果":::
 
    報告會重新整理以在報告下的 [URL] 索引標籤上顯示兩個不同的 URL 表格：
 
    - **Top URLs** 是您篩選的郵件中 URLs，以及每個 URL 的電子郵件傳遞動作計數。 在網路釣魚電子郵件視圖中，此清單通常包含合法的 URLs。 攻擊者會在其郵件中混合使用良好和不良的 URLs，以嘗試傳遞，但它們會使惡意連結看起來更有趣。 URLs 的表格依總的電子郵件總數排序，但是此欄位是隱藏的，以簡化視圖。
 
-   - **上** 指按一下的安全連結-包裝 URLs，依總按一下計數排序。 此欄位也不會顯示，以簡化視圖。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些通常是可疑或惡意的 URLs。 不過，此視圖可以包含不是威脅的 URLs，但位於網路釣魚郵件中。 在這裡未顯示 URL 按一下已開啟的連結。
+   - **上** 指按一下的 Safe 連結包裝 URLs，依總按一下計數排序。 此欄位也不會顯示，以簡化視圖。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些通常是可疑或惡意的 URLs。 不過，此視圖可以包含不是威脅的 URLs，但位於網路釣魚郵件中。 在這裡未顯示 URL 按一下已開啟的連結。
 
    這兩個 URL 表格會依照傳送動作和位置，顯示網路釣魚電子郵件中的最上層 URLs。 [！注意] 表格會顯示因警告而封鎖或訪問的 URL 按一下，因此您可以看到向使用者呈現的潛在不良連結，以及使用者所按一下的連結。 您可以從這裡進行進一步分析。 例如，在圖表下方，您可以在組織環境中所封鎖的電子郵件訊息中看到最上層 URLs。
 
@@ -122,7 +115,7 @@ ms.locfileid: "52877893"
 ## <a name="start-automated-investigation-and-response"></a>啟動自動調查及回應
 
 > [!NOTE]
-> 您可以在 *Microsoft Defender Office 365 方案 2* 和 *Office 365 E5* 中取得自動化調查和回應功能。
+> Microsoft Defender 的「自動化調查和回應」功能可在 *Office 365 方案 2* 和 *Office 365 E5* 中取得。
 
 [自動化調查和回應](automated-investigation-response-office.md) 可儲存您的安全性運作小組時間和精力，以調查及緩解 cyberattacks。 除了設定會觸發安全性劇本的警示，您可以在總管中的檢視啟動自動化調查及回應程序。 如需詳細資訊，請參閱 [範例：安全性管理員會從瀏覽器觸發調查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 

@@ -1,6 +1,6 @@
 ---
 title: 將 Microsoft 365 Defender 事件資料流程給您的儲存體帳戶
-description: 瞭解如何設定 Microsoft 365 Defender 以將高級搜尋事件傳輸至您的儲存體帳戶。
+description: 瞭解如何設定 Microsoft 365 Defender，將高級搜尋事件傳輸至您的儲存體帳戶。
 keywords: 原始資料匯出，流式 API，API，事件中心，Azure 儲存體，儲存體帳戶，高級搜尋，原始資料共用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4e706bbb2246bd0629db721373ffcd4164d123d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fa61e2fd0591d375a17bad6e166a76c1ca40862e
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772455"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028880"
 ---
-# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>設定 Microsoft 365 Defender 以將高級搜尋事件傳輸至您的儲存體帳戶
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>設定 Microsoft 365 Defender 將高級搜尋事件傳輸至您的儲存體帳戶
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "52772455"
 
 1. 在您的租使用者中建立[儲存體帳戶](/azure/storage/common/storage-account-overview)。
 
-2. 登入您的 [Azure 租](https://ms.portal.azure.com/)使用者，移至訂閱 **> 訂閱 > 資源提供者 > 登錄至 Microsoft。**
+2. 登入您的 [Azure 租](https://ms.portal.azure.com/)使用者，移至訂閱 **> 訂閱 > 資源提供者 > 註冊至 Microsoft。 Insights**。
 
 ## <a name="enable-raw-data-streaming"></a>啟用原始資料資料流程：
 
-1. 以 ***全域管理員** _ 或 _ *_安全性管理員_* * 的身分登入 [Microsoft 365 Defender security center](https://security.microsoft.com) 。
+1. 以 ***全域管理員** _ 或 _ *_安全性管理員_* * 的身分登入 [Microsoft 365 Defender 的安全性中心](https://security.microsoft.com)。
 
 2. 前往 Microsoft Defender 資訊安全中心中的 [[資料匯出設定] 頁面](https://security.microsoft.com/settings/mtp_settings/raw_data_export)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "52772455"
 
 - 每一列都包含事件名稱、端點的端點接收事件、其所屬的租使用者 (您只會從租使用者) 中取得事件，並在名為 "properties" 的屬性中取得事件為 JSON 格式的事件。
 
-- 如需 Microsoft 365 的 Defender 事件架構的詳細資訊，請參閱[高級搜尋一覽](../defender/advanced-hunting-overview.md)。
+- 如需 Microsoft 365 Defender 事件之架構的詳細資訊，請參閱[高級搜尋一覽](../defender/advanced-hunting-overview.md)。
 
 
 ## <a name="data-types-mapping"></a>資料類型對應
@@ -102,6 +102,6 @@ ms.locfileid: "52772455"
 
 ## <a name="related-topics"></a>相關主題
 - [高級搜尋一覽](../defender/advanced-hunting-overview.md)
-- [Microsoft 365Defender 資料流程 API](streaming-api.md)
-- [將 Microsoft 365 的 Defender 事件資料流程至您的 Azure 儲存體帳戶](streaming-api-storage.md)
+- [Microsoft 365 Defender流式處理 API](streaming-api.md)
+- [將 Microsoft 365 Defender 事件資料流程至您的 Azure 儲存體帳戶](streaming-api-storage.md)
 - [Azure 儲存體帳戶檔](/azure/storage/common/storage-account-overview)

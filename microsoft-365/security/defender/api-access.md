@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1fbba132e664f4773496eac7123a0a408db5b3bd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 03fd82cd5dc24653b6d67fa47cc225d355bfac45
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058623"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028796"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>存取 Microsoft 365 Defender APIs
 
@@ -38,7 +38,7 @@ ms.locfileid: "51058623"
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-Microsoft 365Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並充分利用 Microsoft 365 Defender 的功能。
+Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並充分利用 Microsoft 365 Defender 的功能。
 
 一般來講，您必須採取下列步驟，才能使用 APIs：
 
@@ -88,7 +88,7 @@ Microsoft 365Defender 會透過一組程式設計 APIs 來公開其大部分資�
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365Defender APIs 概述](api-overview.md)
+- [Microsoft 365 DefenderAPIs 概述](api-overview.md)
 - [OAuth 2.0 使用者登入和 API 存取的授權](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [使用 Azure Key Vault 管理伺服器應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [建立存取 Microsoft 365 的 "Hello world" 應用程式 APIs](api-hello-world.md)

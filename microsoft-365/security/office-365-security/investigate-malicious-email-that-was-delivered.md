@@ -20,12 +20,12 @@ description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ef29493bd68166b88bba3ef5905f0427823b4015
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933370"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028845"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>調查 Office 365 中傳遞的惡意電子郵件
 
@@ -51,7 +51,7 @@ ms.locfileid: "51933370"
 
 - 您的組織有為反垃圾郵件、反惡意程式碼、反網路釣魚等定義的原則。 請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。
 
-- 您是全域系統管理員，或您已在安全性 & 合規性中心內指派安全性管理員或搜尋和清除角色。 請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 在某些動作中，您也必須已指派新的預覽角色。
+- 您是全域系統管理員，或您已在 Microsoft 365 Defender 中指派安全性管理員或搜尋和清除角色。 請參閱[Microsoft 365 Defender 中的許可權](permissions-in-the-security-and-compliance-center.md)。 在某些動作中，您也必須已指派新的預覽角色。
 
 ### <a name="preview-role-permissions"></a>預覽角色許可權
 
@@ -67,10 +67,10 @@ ms.locfileid: "51933370"
 |
 
 > [!NOTE]
-> *Preview* 是角色，不是角色群組;預覽角色必須新增至現有的角色群組，以供) Office 365 (使用 <https://protection.office.com> 。 移至 [ **許可權**]，然後編輯現有的角色群組，或新增「 **預覽** 」角色所指派的新角色群組。
-> 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性 & 規範中心會指派安全性管理員和安全性讀取者角色，以 (<https://protection.office.com>) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> *Preview* 是角色，不是角色群組;預覽角色必須新增至現有的角色群組，以供) Office 365 (使用 <https://security.microsoft.com> 。 移至 [ **許可權**]，然後編輯現有的角色群組，或新增「 **預覽** 」角色所指派的新角色群組。
+> 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性管理員和安全性讀取者角色會指派 Microsoft 365 Defender (<https://security.microsoft.com>) 。 若要深入瞭解角色和許可權，請參閱[Microsoft 365 Defender 中的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 一旦系統管理員在電子郵件上執行這些動作，就會產生相同的審計記錄，並在 Office 365 安全性 & 規範中心 () 中看到 <https://protection.office.com> 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
+我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 當系統管理員在電子郵件上執行這些動作後，就會產生相同的審計記錄，並可在 Office 365 Microsoft 365 Defender () 中看到 <https://security.microsoft.com> 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>尋找已傳遞的可疑電子郵件
 
@@ -79,13 +79,11 @@ ms.locfileid: "51933370"
 > [!NOTE]
 > 瀏覽器中的預設搜尋目前不包含 Zapped 的專案。  這適用于所有的視圖，例如惡意程式碼或網路釣魚視圖。 若要包含 Zapped 的專案，您需要新增 **傳遞動作** 集，並將其新增至包含 **的** 物件。 如果您包括所有選項，您會看到所有傳遞動作結果，包括 Zapped 專案。
 
-1. **流覽至威脅瀏覽器**：移至 <https://protection.office.com> 並使用您的工作或學校帳戶登入 Office 365。 這會帶您前往安全性 & 規範中心。
+1. **流覽至威脅瀏覽器**：移至 <https://security.microsoft.com> 並使用您的工作或學校帳戶登入 Office 365。 這會帶您 Microsoft 365 Defender。
 
-2. 在 [左導覽快速啟動] 中，選擇 [ **威脅管理** \> **瀏覽器**]。
+2. 在 [左導覽快速啟動] 中，選擇 [ **電子郵件 & 協同** \> **流覽**]。
 
-    ![使用 [傳遞動作] 和 [傳遞位置] 欄位的 Explorer。](../../media/ThreatExFields.PNG)
-
-    您可能會注意到 [新增 **特殊動作** ] 欄。 這項功能的目的是告知管理員處理電子郵件的結果。 您可以在與 **傳遞動作** 和 **傳遞位置** 相同的地方存取 [**特殊動作**] 欄。 在威脅瀏覽器的電子郵件時程表結束時，可能會更新特殊的動作，這是一項新功能，其目的是讓系統管理員更熟悉搜尋體驗。
+      您可能會注意到 [新增 **特殊動作** ] 欄。 這項功能的目的是告知管理員處理電子郵件的結果。 您可以在與 **傳遞動作** 和 **傳遞位置** 相同的地方存取 [**特殊動作**] 欄。 在威脅瀏覽器的電子郵件時程表結束時，可能會更新特殊的動作，這是一項新功能，其目的是讓系統管理員更熟悉搜尋體驗。
 
 3. **威脅瀏覽器中的視圖**：在 [ **視圖** ] 功能表中，選擇 [ **所有電子郵件**]。
 
