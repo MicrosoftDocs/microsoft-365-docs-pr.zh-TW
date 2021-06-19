@@ -17,64 +17,64 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed33f67695fddc78c0bac646f72ca0c48887bb04
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 73110d89c39319825cc8dc8e347d137de52a510a
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844415"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028376"
 ---
-# <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a><span data-ttu-id="137e0-104">沒有網際網路存取 Microsoft Defender for Endpoint 的板載裝置</span><span class="sxs-lookup"><span data-stu-id="137e0-104">Onboard devices without Internet access to Microsoft Defender for Endpoint</span></span>
+# <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a><span data-ttu-id="bf63d-104">沒有網際網路存取 Microsoft Defender for Endpoint 的板載裝置</span><span class="sxs-lookup"><span data-stu-id="bf63d-104">Onboard devices without Internet access to Microsoft Defender for Endpoint</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="137e0-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="137e0-105">**Applies to:**</span></span>
-- [<span data-ttu-id="137e0-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="137e0-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="137e0-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="137e0-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="bf63d-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="bf63d-105">**Applies to:**</span></span>
+- [<span data-ttu-id="bf63d-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="bf63d-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="bf63d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="bf63d-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="137e0-108">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="137e0-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="137e0-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="137e0-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="bf63d-108">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="bf63d-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="bf63d-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="bf63d-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-<span data-ttu-id="137e0-110">若沒有網際網路存取的板載裝置，您必須採取下列一般步驟：</span><span class="sxs-lookup"><span data-stu-id="137e0-110">To onboard devices without Internet access, you'll need to take the following general steps:</span></span>
+<span data-ttu-id="bf63d-110">若沒有網際網路存取的板載裝置，您必須採取下列一般步驟：</span><span class="sxs-lookup"><span data-stu-id="bf63d-110">To onboard devices without Internet access, you'll need to take the following general steps:</span></span>
 
 > [!IMPORTANT] 
-> <span data-ttu-id="137e0-111">下列步驟僅適用于執行舊版 Windows 的裝置，例如： Windows Server 2016 及更早版本或 Windows 8.1 和更舊版本。</span><span class="sxs-lookup"><span data-stu-id="137e0-111">The steps below are applicable only to devices running previous versions of Windows such as: Windows Server 2016 and earlier or Windows 8.1 and earlier.</span></span>
+> <span data-ttu-id="bf63d-111">下列步驟僅適用于執行舊版 Windows 的裝置，例如： Windows Server 2016 及更早版本或 Windows 8.1 和更舊版本。</span><span class="sxs-lookup"><span data-stu-id="bf63d-111">The steps below are applicable only to devices running previous versions of Windows such as: Windows Server 2016 and earlier or Windows 8.1 and earlier.</span></span>
 
 > [!NOTE]
-> - <span data-ttu-id="137e0-112">在透過 ' TelemetryProxyServer ' 登錄或 GPO 進行設定時，不能將 OMS 閘道伺服器當做 proxy 用於中斷連線 Windows 10 或 Windows 伺服器2019裝置。</span><span class="sxs-lookup"><span data-stu-id="137e0-112">An OMS gateway server cannot be used as proxy for disconnected Windows 10 or Windows Server 2019 devices when configured via 'TelemetryProxyServer' registry or GPO.</span></span>
-> - <span data-ttu-id="137e0-113">若為 Windows 10 或 Windows 伺服器 2019-當您可以使用 TelemetryProxyServer 時，必須指向標準 proxy 裝置或裝置。</span><span class="sxs-lookup"><span data-stu-id="137e0-113">For Windows 10 or Windows Server 2019 - while you may use TelemetryProxyServer, it must point to a standard proxy device or appliance.</span></span>
-> - <span data-ttu-id="137e0-114">此外，在中斷連線環境中 Windows 10 或 Windows 伺服器2019必須能夠透過內部檔案或網頁伺服器離線更新憑證信任清單。</span><span class="sxs-lookup"><span data-stu-id="137e0-114">In addition, Windows 10 or Windows Server 2019 in disconnected environments must be able to update Certificate Trust Lists offline via an internal file or web server.</span></span>
-> - <span data-ttu-id="137e0-115">如需離線更新 Ctl 的詳細資訊，請參閱 [Configure a file or web server To CONFIGURE CTL files](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。</span><span class="sxs-lookup"><span data-stu-id="137e0-115">For more information about updating CTLs offline, see [Configure a file or web server to download the CTL files](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).</span></span>
+> - <span data-ttu-id="bf63d-112">在透過 ' TelemetryProxyServer ' 登錄或 GPO 進行設定時，不能將 OMS 閘道伺服器當做 proxy 用於中斷連線 Windows 10 或 Windows 伺服器2019裝置。</span><span class="sxs-lookup"><span data-stu-id="bf63d-112">An OMS gateway server cannot be used as proxy for disconnected Windows 10 or Windows Server 2019 devices when configured via 'TelemetryProxyServer' registry or GPO.</span></span>
+> - <span data-ttu-id="bf63d-113">若為 Windows 10 或 Windows 伺服器 2019-當您可以使用 TelemetryProxyServer 時，必須指向標準 proxy 裝置或裝置。</span><span class="sxs-lookup"><span data-stu-id="bf63d-113">For Windows 10 or Windows Server 2019 - while you may use TelemetryProxyServer, it must point to a standard proxy device or appliance.</span></span>
+> - <span data-ttu-id="bf63d-114">此外，在中斷連線環境中 Windows 10 或 Windows 伺服器2019必須能夠透過內部檔案或網頁伺服器離線更新憑證信任清單。</span><span class="sxs-lookup"><span data-stu-id="bf63d-114">In addition, Windows 10 or Windows Server 2019 in disconnected environments must be able to update Certificate Trust Lists offline via an internal file or web server.</span></span>
+> - <span data-ttu-id="bf63d-115">如需離線更新 Ctl 的詳細資訊，請參閱 [Configure a file or web server To CONFIGURE CTL files](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。</span><span class="sxs-lookup"><span data-stu-id="bf63d-115">For more information about updating CTLs offline, see [Configure a file or web server to download the CTL files](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).</span></span>
 
-<span data-ttu-id="137e0-116">如需上架方法的詳細資訊，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="137e0-116">For more information about onboarding methods, see the following articles:</span></span>
-- [<span data-ttu-id="137e0-117">將上一版 Windows 上線</span><span class="sxs-lookup"><span data-stu-id="137e0-117">Onboard previous versions of Windows</span></span>](/microsoft-365/security/defender-endpoint/onboard-downlevel)
-- [<span data-ttu-id="137e0-118">Microsoft Defender for Endpoint service 的板載伺服器</span><span class="sxs-lookup"><span data-stu-id="137e0-118">Onboard servers to the Microsoft Defender for Endpoint service</span></span>](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
-- [<span data-ttu-id="137e0-119">設定裝置 Proxy 和網際網路連線能力設定</span><span class="sxs-lookup"><span data-stu-id="137e0-119">Configure device proxy and Internet connectivity settings</span></span>](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
+<span data-ttu-id="bf63d-116">如需上架方法的詳細資訊，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="bf63d-116">For more information about onboarding methods, see the following articles:</span></span>
+- [<span data-ttu-id="bf63d-117">將上一版 Windows 上線</span><span class="sxs-lookup"><span data-stu-id="bf63d-117">Onboard previous versions of Windows</span></span>](/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [<span data-ttu-id="bf63d-118">Microsoft Defender for Endpoint service 的板載伺服器</span><span class="sxs-lookup"><span data-stu-id="bf63d-118">Onboard servers to the Microsoft Defender for Endpoint service</span></span>](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
+- [<span data-ttu-id="bf63d-119">設定裝置 Proxy 和網際網路連線能力設定</span><span class="sxs-lookup"><span data-stu-id="bf63d-119">Configure device proxy and Internet connectivity settings</span></span>](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## <a name="on-premise-devices"></a><span data-ttu-id="137e0-120">內部部署裝置</span><span class="sxs-lookup"><span data-stu-id="137e0-120">On-premise devices</span></span>
+## <a name="on-premises-devices"></a><span data-ttu-id="bf63d-120">內部部署裝置</span><span class="sxs-lookup"><span data-stu-id="bf63d-120">On-premises devices</span></span>
 
-- <span data-ttu-id="137e0-121">安裝 Azure Log Analytics (以前稱為 OMS 閘道) ，可充當 proxy 或 hub：</span><span class="sxs-lookup"><span data-stu-id="137e0-121">Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:</span></span>
-  - [<span data-ttu-id="137e0-122">Azure 記錄分析代理程式</span><span class="sxs-lookup"><span data-stu-id="137e0-122">Azure Log Analytics Agent</span></span>](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - <span data-ttu-id="137e0-123">[安裝和設定 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender，& 識別碼的端點工作區金鑰</span><span class="sxs-lookup"><span data-stu-id="137e0-123">[Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID</span></span>
+- <span data-ttu-id="bf63d-121">安裝 Azure Log Analytics (以前稱為 OMS 閘道) ，可充當 proxy 或 hub：</span><span class="sxs-lookup"><span data-stu-id="bf63d-121">Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:</span></span>
+  - [<span data-ttu-id="bf63d-122">Azure 記錄分析代理程式</span><span class="sxs-lookup"><span data-stu-id="bf63d-122">Azure Log Analytics Agent</span></span>](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+  - <span data-ttu-id="bf63d-123">[安裝和設定 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender，& 識別碼的端點工作區金鑰</span><span class="sxs-lookup"><span data-stu-id="bf63d-123">[Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID</span></span>
 
-- <span data-ttu-id="137e0-124">相同網路的 Azure 記錄分析中的離線裝置</span><span class="sxs-lookup"><span data-stu-id="137e0-124">Offline devices in the same network of Azure Log Analytics</span></span>
-  -  <span data-ttu-id="137e0-125">將 MMA 設定為指向：</span><span class="sxs-lookup"><span data-stu-id="137e0-125">Configure MMA to point to:</span></span>
-     - <span data-ttu-id="137e0-126">Azure Log Analytics IP 為 proxy</span><span class="sxs-lookup"><span data-stu-id="137e0-126">Azure Log Analytics IP as a proxy</span></span>
-     - <span data-ttu-id="137e0-127">用於端點的 Defender 工作區金鑰 & 識別碼</span><span class="sxs-lookup"><span data-stu-id="137e0-127">Defender for Endpoint workspace key & ID</span></span>
+- <span data-ttu-id="bf63d-124">相同網路的 Azure 記錄分析中的離線裝置</span><span class="sxs-lookup"><span data-stu-id="bf63d-124">Offline devices in the same network of Azure Log Analytics</span></span>
+  -  <span data-ttu-id="bf63d-125">將 MMA 設定為指向：</span><span class="sxs-lookup"><span data-stu-id="bf63d-125">Configure MMA to point to:</span></span>
+     - <span data-ttu-id="bf63d-126">Azure Log Analytics IP 為 proxy</span><span class="sxs-lookup"><span data-stu-id="bf63d-126">Azure Log Analytics IP as a proxy</span></span>
+     - <span data-ttu-id="bf63d-127">用於端點的 Defender 工作區金鑰 & 識別碼</span><span class="sxs-lookup"><span data-stu-id="bf63d-127">Defender for Endpoint workspace key & ID</span></span>
 
-## <a name="azure-virtual-machines"></a><span data-ttu-id="137e0-128">Azure 虛擬機器</span><span class="sxs-lookup"><span data-stu-id="137e0-128">Azure virtual machines</span></span>
-- <span data-ttu-id="137e0-129">設定及啟用 [Azure 記錄分析工作區](/azure/azure-monitor/platform/gateway)</span><span class="sxs-lookup"><span data-stu-id="137e0-129">Configure and enable [Azure Log Analytics workspace](/azure/azure-monitor/platform/gateway)</span></span>
+## <a name="azure-virtual-machines"></a><span data-ttu-id="bf63d-128">Azure 虛擬機器</span><span class="sxs-lookup"><span data-stu-id="bf63d-128">Azure virtual machines</span></span>
+- <span data-ttu-id="bf63d-129">設定及啟用 [Azure 記錄分析工作區](/azure/azure-monitor/platform/gateway)</span><span class="sxs-lookup"><span data-stu-id="bf63d-129">Configure and enable [Azure Log Analytics workspace](/azure/azure-monitor/platform/gateway)</span></span>
 
-    - <span data-ttu-id="137e0-130">安裝 Azure Log Analytics 閘道 (（以前稱為 OMS 閘道) 以充當 proxy 或 hub）：</span><span class="sxs-lookup"><span data-stu-id="137e0-130">Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:</span></span>
-      - [<span data-ttu-id="137e0-131">Azure 記錄分析閘道</span><span class="sxs-lookup"><span data-stu-id="137e0-131">Azure Log Analytics Gateway</span></span>](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - <span data-ttu-id="137e0-132">[安裝和設定 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender，& 識別碼的端點工作區金鑰</span><span class="sxs-lookup"><span data-stu-id="137e0-132">[Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID</span></span>
-    - <span data-ttu-id="137e0-133">在不同的 OMS 閘道網路中的離線 Azure Vm</span><span class="sxs-lookup"><span data-stu-id="137e0-133">Offline Azure VMs in the same network of OMS Gateway</span></span>
-      - <span data-ttu-id="137e0-134">將 Azure Log Analytics IP 設定為 proxy</span><span class="sxs-lookup"><span data-stu-id="137e0-134">Configure Azure Log Analytics IP as a proxy</span></span>
-      - <span data-ttu-id="137e0-135">Azure 記錄分析的工作區機碼 & 識別碼</span><span class="sxs-lookup"><span data-stu-id="137e0-135">Azure Log Analytics Workspace Key & ID</span></span>
+    - <span data-ttu-id="bf63d-130">安裝 Azure Log Analytics 閘道 (（以前稱為 OMS 閘道) 以充當 proxy 或 hub）：</span><span class="sxs-lookup"><span data-stu-id="bf63d-130">Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:</span></span>
+      - [<span data-ttu-id="bf63d-131">Azure 記錄分析閘道</span><span class="sxs-lookup"><span data-stu-id="bf63d-131">Azure Log Analytics Gateway</span></span>](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+      - <span data-ttu-id="bf63d-132">[安裝和設定 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender，& 識別碼的端點工作區金鑰</span><span class="sxs-lookup"><span data-stu-id="bf63d-132">[Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID</span></span>
+    - <span data-ttu-id="bf63d-133">在不同的 OMS 閘道網路中的離線 Azure Vm</span><span class="sxs-lookup"><span data-stu-id="bf63d-133">Offline Azure VMs in the same network of OMS Gateway</span></span>
+      - <span data-ttu-id="bf63d-134">將 Azure Log Analytics IP 設定為 proxy</span><span class="sxs-lookup"><span data-stu-id="bf63d-134">Configure Azure Log Analytics IP as a proxy</span></span>
+      - <span data-ttu-id="bf63d-135">Azure 記錄分析的工作區機碼 & 識別碼</span><span class="sxs-lookup"><span data-stu-id="bf63d-135">Azure Log Analytics Workspace Key & ID</span></span>
 
-    - <span data-ttu-id="137e0-136">Azure Defender</span><span class="sxs-lookup"><span data-stu-id="137e0-136">Azure Defender</span></span>
-      - [<span data-ttu-id="137e0-137">安全性原則 \> 記錄分析工作區</span><span class="sxs-lookup"><span data-stu-id="137e0-137">Security Policy \> Log Analytics Workspace</span></span>](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [<span data-ttu-id="137e0-138">威脅偵測 \> 允許 Endpoint To Endpoint 存取我的資料</span><span class="sxs-lookup"><span data-stu-id="137e0-138">Threat Detection \> Allow Defender for Endpoint to access my data</span></span>](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - <span data-ttu-id="bf63d-136">Azure Defender</span><span class="sxs-lookup"><span data-stu-id="bf63d-136">Azure Defender</span></span>
+      - [<span data-ttu-id="bf63d-137">安全性原則 \> 記錄分析工作區</span><span class="sxs-lookup"><span data-stu-id="bf63d-137">Security Policy \> Log Analytics Workspace</span></span>](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [<span data-ttu-id="bf63d-138">威脅偵測 \> 允許 Endpoint To Endpoint 存取我的資料</span><span class="sxs-lookup"><span data-stu-id="bf63d-138">Threat Detection \> Allow Defender for Endpoint to access my data</span></span>](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-        <span data-ttu-id="137e0-139">如需詳細資訊，請參閱使用 [安全性原則](/azure/security-center/tutorial-security-policy)。</span><span class="sxs-lookup"><span data-stu-id="137e0-139">For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).</span></span>
+        <span data-ttu-id="bf63d-139">如需詳細資訊，請參閱使用 [安全性原則](/azure/security-center/tutorial-security-policy)。</span><span class="sxs-lookup"><span data-stu-id="bf63d-139">For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).</span></span>
