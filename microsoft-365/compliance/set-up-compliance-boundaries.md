@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可以在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 23ff50b9cd0ab0178962f7be9f1cedfbd6a7a1f7
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878025"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022339"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -40,9 +40,9 @@ ms.locfileid: "52878025"
   
 - 內容搜尋中的搜尋許可權篩選功能會控制 eDiscovery 管理員和調查人員可搜尋的內容位置。 這表示 Fourth Coffee 機構內的電子文件探索管理員和調查人員只能搜尋 Fourth Coffee 子公司內的內容位置。 Coho Winery 子公司也有相同的限制。
 
-- 角色群組為符合性界限提供下列功能：
+- [角色群組](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) 為符合性界限提供下列功能：
 
-  - 控制哪些人員可以查看安全性 & 合規性中心內的 eDiscovery 案例。 這表示電子文件探索管理員和調查人員只能查看其機構內的電子文件探索案例。
+  - 控制在 Microsoft 365 合規性中心中誰可以查看 eDiscovery 案例。 這表示電子文件探索管理員和調查人員只能查看其機構內的電子文件探索案例。
 
   - 控制誰可以指派成員至 eDiscovery 案例。 這表示電子文件探索管理員和調查人員只能將成員指派給其本身為成員的案例。
 
@@ -52,29 +52,21 @@ ms.locfileid: "52878025"
   
 [步驟1：識別使用者屬性以定義您的機構](#step-1-identify-a-user-attribute-to-define-your-agencies)
 
-[步驟2：以 Microsoft 支援檔作為要求來同步處理使用者屬性與 OneDrive 帳戶](#step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts)
+[步驟2：建立每個代理人的角色群組](#step-2-create-a-role-group-for-each-agency)
 
-[步驟3：建立每個代理人的角色群組](#step-3-create-a-role-group-for-each-agency)
+[步驟3：建立搜尋許可權篩選以強制執行規范界限](#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
-[步驟4：建立搜尋許可權篩選以強制執行規范界限](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
-
-[步驟5：建立內部公司調查的 eDiscovery 案例](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
+[步驟4：建立內部公司調查的 eDiscovery 案例](#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 ## <a name="before-you-set-up-compliance-boundaries"></a>設定規范界限之前
 
-您必須先滿足下列必要條件， (您的 Azure Active Directory (Azure AD) 屬性必須能夠順利同步到步驟 2) 中的使用者 OneDrive 帳戶 (：
-
-- 使用者必須獲指派 Exchange Online 授權和 SharePoint 線上授權。
-
-- 使用者信箱的大小必須至少為 10 MB。 如果使用者的信箱小於 10 MB，用來定義您的組織的屬性不會同步到使用者的 OneDrive 帳戶。
-
-- 規範界限和用來建立搜尋許可權篩選的屬性，都需要 Azure Active Directory (Azure AD) 屬性同步處理至使用者信箱。 若要確認您要使用的屬性已同步處理，請在 Exchange Online PowerShell 中執行[Get-User](/powershell/module/exchange/get-user) Cmdlet。 此 Cmdlet 的輸出會顯示同步處理至 Exchange Online 的 Azure AD 屬性。
+- 使用者必須被指派 Exchange Online 授權。 若要確認這一點，請在 Exchange Online PowerShell 中使用[Get-User](/powershell/module/exchange/get-user) Cmdlet。
 
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>步驟1：識別使用者屬性以定義您的機構
 
-第一步是選擇要使用的 Azure AD 屬性，以定義您的機構。 此屬性是用來建立「搜尋許可權」篩選，它會限制 eDiscovery 管理員只搜尋指派此屬性之特定值之使用者的內容位置。 例如，假設 Contoso 決定使用 [ **部門** ] 屬性。 此屬性的值為第四個咖啡分公司中的使用者，則為  `FourthCoffee`  Coho Winery 子公司中的使用者的值 `CohoWinery` 。 在步驟4中，您可以使用這一  `attribute:value`  對 (例如， *部門： FourthCoffee*) 來限制 eDiscovery 管理員可搜尋的使用者內容位置。 
+第一步是選擇用來定義您的機構的屬性。 此屬性是用來建立「搜尋許可權」篩選，它會限制 eDiscovery 管理員只搜尋指派此屬性之特定值之使用者的內容位置。 例如，假設 Contoso 決定使用 [ **部門** ] 屬性。 此屬性的值為第四個咖啡分公司中的使用者，則為  `FourthCoffee`  Coho Winery 子公司中的使用者的值 `CohoWinery` 。 在步驟3中，您可以使用這  `attribute:value`  對 (例如， *部門： FourthCoffee*) 來限制 eDiscovery 管理員可搜尋的使用者內容位置。 
   
-以下是您可以用於規範界限的 Azure AD 使用者屬性清單：
+以下是您可以用於規範界限的使用者屬性範例：
   
 - Company
 
@@ -84,34 +76,11 @@ ms.locfileid: "52878025"
 
 - 辦公室
 
-- C (兩個字母的國家代碼) <sup>*</sup>
+- CountryOrRegion (兩個字母的國家/地區碼) 
 
-  > [!NOTE]
-  > <sup>*</sup>此屬性會對應至在 Exchange Online PowerShell 中執行 **Get-User** Cmdlet 所傳回的 CountryOrRegion 屬性。 Cmdlet 會傳回當地語系化的國家名稱，該名稱會從兩個字母的國家碼轉譯。 如需詳細資訊，請參閱 [Set-User](/powershell/module/exchange/set-user) Cmdlet 參考文章中的 CountryOrRegion 參數描述。
+如需完整清單，請參閱支援的 [信箱篩選器](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)的完整清單。
 
-雖然有更多使用者屬性可供使用，尤其是針對 Exchange 信箱的情況下，上述屬性是 OneDrive 目前支援的屬性。
-  
-## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>步驟2：以 Microsoft 支援檔作為要求來同步處理使用者屬性與 OneDrive 帳戶
-
-> [!IMPORTANT]
-> 不再需要此步驟。 從2021年6月開始，信箱篩選會套用至商務用 OneDrive。 將屬性同步處理至 OneDrive 的要求將會遭到拒絕，因為它已不再需要。 這篇文章將于近期更新。
-
-下一步是以 Microsoft 支援檔為要求，將您在步驟1中所選擇的 Azure AD 屬性同步處理至組織中的所有 OneDrive 帳戶。 進行此同步處理之後，您在步驟1中所選擇的屬性 (及其值) 會對應至名為的隱藏 managed 屬性 `ComplianceAttribute` 。 您可以在步驟4中使用此屬性為 OneDrive 建立搜尋許可權篩選。
-  
-當您將要求提交給 Microsoft 支援時包含下列資訊：
-  
-- 組織的預設網功能變數名稱稱
-
-- 步驟1中 (的 Azure AD 屬性名稱) 
-
-- 以下是支援要求目的的標題或描述：「啟用相容性安全性篩選器的 Azure AD 商務用 OneDrive 同步處理」。 這有助於將要求路由傳送至實現要求的 eDiscovery 工程團隊。
-
-在進行工程變更，並將屬性同步處理至 OneDrive 後，Microsoft 支援將會向您傳送所做變更的組建編號，以及預估的部署日期。 在您提交支援要求後，部署程式通常需要4–6周。
-  
-> [!IMPORTANT]
-> 您可以在部署此屬性變更之前，先完成步驟3到步驟5。 但是執行內容搜尋時，不會從搜尋許可權篩選中指定的 OneDrive 帳戶傳回檔，直到部署屬性同步處理之後。
-  
-## <a name="step-3-create-a-role-group-for-each-agency"></a>步驟3：建立每個代理人的角色群組
+## <a name="step-2-create-a-role-group-for-each-agency"></a>步驟2：建立每個代理人的角色群組
 
 下一步是在安全性 & 規範中心建立角色群組，以與您的機構相符。 建議您複製內建的電子文件探索管理員群組、新增適當的成員，以及移除可能不適用於您需求的角色，來建立角色群組。 如需有關 eDiscovery 相關角色的詳細資訊，請參閱 [指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
   
@@ -129,14 +98,14 @@ ms.locfileid: "52878025"
   
 為了符合 Contoso 合規性邊界案例的需求，您也可以移除「調查人員」角色群組中的 **保留** 和 **匯出** 角色，以防止調查人員在內容位置上放置保留，以及從案例中匯出內容。
 
-## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>步驟4：建立搜尋許可權篩選以強制執行規范界限
+## <a name="step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>步驟3：建立搜尋許可權篩選以強制執行規范界限
 
 在您為每個代理商建立角色群組之後，下一步是建立搜尋許可權篩選器，將每個角色群組關聯至特定的代理人，並定義規範界限本身。 您必須為每個代理人建立一個搜尋許可權篩選。 如需建立安全性許可權篩選的詳細資訊，請參閱 [設定內容搜尋的許可權篩選](permissions-filtering-for-content-search.md)。
   
 以下是用來建立搜尋許可權篩選以用於規範界限的語法。
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>*'" -Action <Action>
 ```
 
 以下是命令中每個參數的描述：
@@ -145,16 +114,14 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 
 - `Users`：指定套用此篩選器的使用者或群組，將其套用至執行的搜尋動作。 針對相容性界限，此參數會指定您在建立篩選的代理人中，您在步驟 3) 中所建立的角色群組 (。 附注這是多重值參數，因此您可以包含一或多個角色群組，以逗號分隔。
 
-- `Filters`：指定篩選的搜尋準則。 針對規範界限，您可以定義下列篩選器。 每個套用至內容位置。 
+- `Filters`：指定篩選的搜尋準則。 針對規範界限，您可以定義下列篩選器。 每個套用至內容位置。
 
-    - `Mailbox`：指定參數中定義的角色群組  `Users` 可以搜尋的信箱。 針對符合性界限，  *ComplianceAttribute*  是您在步驟1中識別的相同屬性，而  *AttributeValue*  會指定該代理人。 此篩選器允許角色群組的成員只搜尋特定機構中的信箱。例如， `"Mailbox_Department -eq 'FourthCoffee'"` 。 
-
-    - `Site`：指定參數中定義的角色群組可以搜尋的 OneDrive 帳戶 `Users` 。 若為 OneDrive 篩選，請使用實際的字串 `ComplianceAttribute` 。 這會對應至您在步驟1中所識別的相同屬性，而該屬性會因您在步驟2中提交的支援要求而同步處理至 OneDrive 帳戶;*AttributeValue* 指定的代理人。 此篩選器允許角色群組的成員只搜尋特定機構內的 OneDrive 帳戶;例如， `"Site_ComplianceAttribute -eq 'FourthCoffee'"` 。
+    - `Mailbox`：指定參數中定義的角色群組可以搜尋的信箱或 OneDrive 帳戶 `Users` 。 此篩選器允許角色群組的成員只搜尋特定機構中的信箱或 OneDrive 帳戶;例如， `"Mailbox_Department -eq 'FourthCoffee'"` 。
 
     - `Site_Path`：指定參數中定義的角色群組 `Users` 可以進行搜尋的 SharePoint 網站。 *SharePointURL* 會指定該角色群組的成員可以搜尋的代理人中的網站。 例如，  `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 請注意 `Site` ， `Site_Path` 篩選器是由 **-或** 運算子所連接。
 
      > [!NOTE]
-     > 參數的語法 `Filters` 包含 *篩選器清單*。 篩選清單是一個包含信箱篩選器和以逗號分隔之網站篩選的篩選器。 在上面的範例中，請注意，逗號分隔 **Mailbox_ComplianceAttribute** 和 **Site_ComplianceAttribute**： `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` 。 在執行內容搜尋時處理此篩選器時，會從 [篩選] 清單中建立兩個搜尋許可權篩選：一個信箱篩選器和一個網站篩選器。 使用篩選器清單的另一種方法是，為每個代理人建立兩個個別的「搜尋許可權」篩選：信箱屬性的單一搜尋許可權篩選，以及網站屬性的一個篩選器。 在任何情況下，結果都是相同的。 使用篩選清單或建立個別的「搜尋許可權」篩選是很重要的考慮。
+     > 參數的語法 `Filters` 包含 *篩選器清單*。 篩選清單是一個包含信箱篩選器和以逗號分隔的網站路徑篩選器的篩選器。 在上面的範例中，請注意，逗號分隔 **Mailbox_MailboxPropertyName** 和 **Site_Path**： `-Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>*'"` 。 在執行內容搜尋時處理此篩選器時，會從 [篩選] 清單中建立兩個搜尋許可權篩選：一個信箱篩選器和一個 SharePoint 篩選器。 使用篩選器清單的另一種方法是，為每個代理人建立兩個不同的「搜尋許可權」篩選：信箱屬性的單一搜尋許可權篩選，以及 SharePoint 網站屬性的一個篩選。 在任何情況下，結果都是相同的。 使用篩選清單或建立個別的「搜尋許可權」篩選是很重要的考慮。
 
 - `Action`：指定篩選所套用的搜尋動作類型。 例如，  `-Action Search` 只有當參數中定義的角色群組的成員執行搜尋時，才會套用篩選器 `Users` 。 在此情況下，匯出搜尋結果時不會套用篩選器。 針對規範界限，請使用，  `-Action All` 篩選器會套用到所有的搜尋動作。 
 
@@ -165,26 +132,26 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 ### <a name="fourth-coffee"></a>第四個咖啡
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
 
 ### <a name="coho-winery"></a>Coho Winery
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
-## <a name="step-5-create-an-ediscovery-case-for-intra-agency-investigations"></a>步驟5：建立內部公司調查的 eDiscovery 案例
+## <a name="step-4-create-an-ediscovery-case-for-intra-agency-investigations"></a>步驟4：建立內部公司調查的 eDiscovery 案例
 
-最後一個步驟是在 Microsoft 365 規範中心建立核心 eDiscovery 案例或 Advanced eDiscovery 案例，然後將您在步驟3中建立的角色群組新增為案例成員。 這會產生使用規範界限的兩個重要特徵：
+最後一個步驟是在 Microsoft 365 合規性中心中建立核心 eDiscovery 案例或 Advanced eDiscovery 案例，然後將您在步驟2中建立的角色群組新增為案例成員。 這會產生使用規範界限的兩個重要特徵：
   
 - 只有新增至案例之角色群組的成員，才能夠在安全性 & 規範中心中查看和存取案例。 例如，如果第四個「咖啡調查人員」角色群組是案例的唯一成員，則第四個咖啡 eDiscovery 管理員角色群組的成員 (或任何其他角色群組的成員) 將無法查看或存取此案例。
 
-- 當指派給案例的角色群組成員執行與案例相關聯的搜尋時，他們只能夠搜尋其組織內的內容位置， (由您在步驟4中建立的「搜尋許可權」篩選所定義。 ) 
+- 當指派給案例的角色群組成員執行與案例相關聯的搜尋時，他們只能夠搜尋其組織內的內容位置， (由您在步驟3中建立的「搜尋許可權」篩選所定義。 ) 
 
 若要建立案例並指派成員：
 
-1. 移至 Microsoft 365 規範中心內的 **核心 eDiscovery** 或 **Advanced eDiscovery** 頁面，並建立案例。
+1. 移至 Microsoft 365 合規性中心中的 **核心 eDiscovery** 或 **Advanced eDiscovery** 頁面，並建立案例。
 
 2. 在案例清單中，按一下您建立的案例名稱。
 
@@ -243,16 +210,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 以下是在建立規範界限之搜尋許可權篩選時使用 **Region** 參數的範例。 這假設第四個咖啡分公司位於北美，且 Coho Winery 位於歐洲。 
   
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
+New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'" -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
 ```
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
+New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'" -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
 
 在多地理位置環境中搜尋和匯出內容時，請牢記下列事項。
   
-- **[地區]** 參數不會控制 Exchange 信箱的搜尋。 當您搜尋信箱時，會搜尋所有資料中心。 若要限制搜尋 Exchange 信箱的範圍，請在建立或變更搜尋許可權篩選時使用 **Filters** 參數。 
+- **[地區]** 參數不會控制 Exchange 信箱的搜尋。 當您搜尋信箱時，會搜尋所有資料中心。 若要限制搜尋 Exchange 信箱的範圍，請在建立或變更搜尋許可權篩選時使用 **Filters** 參數。
 
 - 若要讓 ediscovery 管理員在多個 SharePoint 區域中進行搜尋，您需要為該 ediscovery 管理員建立不同的使用者帳戶，以在「搜尋許可權」篩選中使用，以指定 SharePoint 網站或 OneDrive 帳戶所在的地區。 如需設定此選項的詳細資訊，請參閱[內容搜尋](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的「在 SharePoint 多地理位置環境中搜尋內容」一節。
 
@@ -296,31 +263,25 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 搜尋權限篩選不會適用於 Exchange 公用資料夾。
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
-- 如果信箱是取消授權或虛刪除的，Azure AD 屬性就不再同步處理至信箱。 如果信箱已被刪除時保留在信箱上，則保留在信箱中的內容仍受限於符合性界限或搜尋許可權篩選器（根據上次在刪除信箱前同步處理 Azure AD 屬性的時間）。 
+- 如果信箱已取消授權或虛刪除，使用者將不會被視為符合性界限內。 如果信箱在刪除時保留在信箱上，保留在信箱中的內容仍受限於合規性界限或搜尋許可權篩選。
 
-    此外，如果信箱是解除授權或虛刪除，使用者的信箱與 OneDrive 帳戶之間的同步處理會停止。 OneDrive 帳戶之符合性屬性的最後一個衝壓值會保持有效。
+- 如果為使用者執行規范界限和搜尋許可權篩選，建議您不要刪除使用者的信箱，而不是刪除其 OneDrive 帳戶。 換句話說，如果您刪除使用者的信箱，您也應該移除使用者的 OneDrive 帳戶，因為 mailbox_RecipientFilter 是用來強制 OneDrive 的搜尋許可權篩選。
 
-- 符合性屬性每7天會從使用者的 Exchange 信箱同步處理到其 OneDrive 帳戶。 如先前所述，只有當使用者同時指派 Exchange Online 和 SharePoint 線上授權，且使用者的信箱至少 10 MB 時，才會發生此同步處理。
+- 規範界限和搜尋許可權篩選器，取決於在 Exchange、OneDrive 和 SharePoint 中的內容上加蓋的屬性，以及此衝壓內容的後續編制索引。
 
-- 如果使用者的信箱和 OneDrive 帳戶都執行規范界限和搜尋許可權篩選，則建議您不要刪除使用者的信箱，而非刪除其 OneDrive 帳戶。 換句話說，如果您刪除使用者的信箱，您也應該移除該使用者的 OneDrive 帳戶。
-
-- 在某些情況下 (例如退回員工) ，而使用者可能會有兩個或多個 OneDrive 帳戶。 在這些情況下，只會同步處理 Azure AD 中的使用者相關的主要 OneDrive 帳戶。
-
-- 規範界限和搜尋許可權篩選器，取決於在 Exchange、OneDrive 及 SharePoint 中的內容上加蓋的屬性，以及此衝壓內容的後續編制索引。 
-
-- 建議您不要使用排除篩選 (例如 `-not()` 在搜尋許可權篩選) 中使用以內容為基礎的規範界限。 若最近更新之屬性的內容尚未編制索引，使用排除篩選可能會產生意外的結果。 
+- 建議您不要使用排除篩選 (例如 `-not()` 在搜尋許可權篩選) 中使用以內容為基礎的規範界限。 若最近更新之屬性的內容尚未編制索引，使用排除篩選可能會產生意外的結果。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**神秘可以使用 New-ComplianceSecurityFilter 和 Set-ComplianceSecurityFilter Cmdlet) 來建立及管理搜尋許可權篩選 (？**
+**誰可以使用 New-ComplianceSecurityFilter 和 Set-ComplianceSecurityFilter Cmdlet) 來建立及管理搜尋許可權篩選 (？**
   
-若要建立、查看及修改搜尋許可權篩選，您必須是 Security & 合規性中心內「組織管理」角色群組的成員。
+若要建立、查看及修改搜尋許可權篩選，您必須是 Microsoft 365 規範中心內「組織管理」角色群組的成員。
   
 **若將 eDiscovery 管理員指派給跨越多個機關的一個以上角色群組，他們會如何在一個機構或另一個機構搜尋內容？**
   
-EDiscovery 管理員可以將參數新增至其搜尋查詢，將搜尋限制在特定的代理人。 例如，如果組織已將 **CustomAttribute10** 屬性指定給不同的機構，他們可以在搜尋查詢中附加下列專案，以在特定機構中搜尋信箱和 OneDrive 帳戶： `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>` 。
+EDiscovery 管理員可以將參數新增至其搜尋查詢，將搜尋限制在特定的代理人。 例如，如果組織已將 **CustomAttribute10** 屬性指定給不同的機構，他們可以在搜尋查詢中附加下列專案，以在特定機構中搜尋信箱和 OneDrive 帳戶：  `CustomAttribute10:<value>` 。
   
 **若在搜尋許可權篩選中做為符合性屬性的屬性值已變更，會發生什麼事？**
   
@@ -328,7 +289,7 @@ EDiscovery 管理員可以將參數新增至其搜尋查詢，將搜尋限制在
   
 **EDiscovery 管理員可以從兩個不同的規範界限查看內容嗎？**
   
-是的，您可以在搜尋 Exchange 信箱時，將 eDiscovery 管理員新增至雙方都能看到這兩個機構的角色群組。 不過，當搜尋 SharePoint 網站和 OneDrive 帳戶時，只有當機構位於相同地區或地理位置時，eDiscovery 管理員才能搜尋不同規範界限中的內容。 **附注：** 由於搜尋 SharePoint 中的內容，而且 OneDrive 並未依地理位置系結，所以這些網站的限制不適用於 Advanced eDiscovery。
+是的，您可以在搜尋 Exchange 信箱時，將 eDiscovery 管理員新增至雙方可看到這兩個機構的角色群組進行。 不過，當搜尋 SharePoint 網站和 OneDrive 帳戶時，只有當機構位於相同地區或地理位置時，eDiscovery 管理員才能搜尋不同規範界限中的內容。 **附注：** 這種網站限制不適用於「高級 eDiscovery」，因為搜尋 SharePoint 中的內容，而且 OneDrive 並未依地理位置系結。
   
 **搜尋許可權篩選器適用于 eDiscovery 案例保留、Microsoft 365 保留原則或 DLP？**
   
@@ -340,4 +301,4 @@ EDiscovery 管理員可以將參數新增至其搜尋查詢，將搜尋限制在
   
 **組織中可以建立的「搜尋許可權」篩選的數目上限為何？**
   
-可在組織中建立的「搜尋許可權」篩選的數目沒有限制。 不過，當搜尋許可權篩選超過100時，搜尋效能會受到影響。 若要盡可能使組織中的「搜尋許可權」篩選的數目盡可能小，請盡可能建立篩選，將 Exchange、SharePoint 和 OneDrive 的規則結合成單一搜尋許可權篩選。
+可在組織中建立的「搜尋許可權」篩選的數目沒有限制。 不過，當搜尋許可權篩選超過100時，搜尋效能會受到影響。 若要盡可能使組織中的「搜尋許可權」篩選的數目盡可能小，請盡可能建立篩選，將 Exchange、SharePoint 及 OneDrive 的規則結合成單一搜尋許可權篩選。

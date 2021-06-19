@@ -1,6 +1,6 @@
 ---
 title: 匯出每台裝置的評估方法和屬性
-description: 提供用於提取 "威脅與弱點管理" 資料的 APIs 資訊。 有不同的 API 呼叫可取得不同的資料類型。 一般而言，每個 API 通話包含組織中裝置的必要資料。 因為資料量可能很大，所以有兩種方法可供檢索
+description: 提供用於提取 "威脅與弱點管理" 資料的 APIs 資訊。 有不同的 API 呼叫可取得不同的資料類型。 一般而言，每個 API 通話包含組織中裝置的必要資料。
 keywords: api，api，export 評估，每個裝置評估，每個機器評估、弱點評估報告、裝置弱點評估、裝置弱點報告、安全設定評估、安全設定報告、軟體漏洞評估、軟體弱點報告、電腦的弱點報告、
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ace9f55b0b083faaeeb620700a43a1216c4451c2
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 3e5a91a33a4207daa30f1054f03655c846d297ec
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984865"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022435"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>匯出每台裝置的評估方法和屬性
 
@@ -54,7 +54,7 @@ ms.locfileid: "52984865"
 
 針對每個方法，有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能很大，所以可供檢索的方式有兩種：
 
-- **OData**  API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法最適合 _小型組織，且少於 100 K 裝置_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
+- **JSON 回應**  API 將組織中的所有資料都提取為 JSON 回應。 這種方法最適合 _小型組織，且少於 100 K 裝置_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
 
 - 透過檔案此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
 
@@ -62,7 +62,7 @@ ms.locfileid: "52984865"
 
   - 使用下載 URLs 下載所有檔案，並視需要處理資料。
 
-使用 _OData_ _或透過_ 檔案收集 (所收集的資料，) 目前狀態的目前快照，且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
+使用 _JSON 回應__或透過_ 檔案 (收集的資料) 目前狀態的目前快照，而且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
 
 ## <a name="1-export-secure-configurations-assessment"></a>1. 匯出安全設定評估
 
@@ -72,10 +72,10 @@ ms.locfileid: "52984865"
 
 方法 | 資料類型 | 描述
 :---|:---|:---
-匯出 secure configuration 評估 **(OData)** | 依裝置集合的安全設定。 請參閱： [1.2 屬性 (OData) ](#12-properties-odata) | 會傳回資料表，其中包含對應之 DeviceId，ConfigurationId 的每個唯一組合的專案。 API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法最適合小型組織，且少於 100 K 裝置。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。
-透過檔案匯出 secure configuration 評估 **()** | 依裝置集合的安全設定。 請參閱： [1.2 屬性 (OData) ](#12-properties-odata) | 會傳回資料表，其中包含對應之 DeviceId，ConfigurationId 的每個唯一組合的專案。 此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：1。  呼叫 API 以取得所有組織資料的下載 URLs 清單。 2.  使用下載 URLs 下載所有檔案，並視需要處理資料。
+匯出 secure configuration 評估 **(JSON 回應)** | 依裝置集合的安全設定。 請參閱： [1.2 屬性 (JSON 回應) ](#12-properties-json-response) | 會傳回資料表，其中包含對應之 DeviceId，ConfigurationId 的每個唯一組合的專案。 API 將組織中的所有資料都提取為 JSON 回應。 這種方法最適合小型組織，且少於 100 K 裝置。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。
+透過檔案匯出 secure configuration 評估 **()** | 依裝置集合的安全設定。 請參閱：1.3 透過檔案 [ (的屬性) ](#13-properties-via-files) | 會傳回資料表，其中包含對應之 DeviceId，ConfigurationId 的每個唯一組合的專案。 此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：1。  呼叫 API 以取得所有組織資料的下載 URLs 清單。 2.  使用下載 URLs 下載所有檔案，並視需要處理資料。
 
-### <a name="12-properties-odata"></a>1.2 屬性 (OData) 
+### <a name="12-properties-json-response"></a>1.2 屬性 (JSON 回應) 
 
 屬性 (識別碼)  | 資料類型 | 描述
 :---|:---|:---
@@ -109,10 +109,10 @@ GeneratedTime | string | 產生匯出的時間。
 
 方法 | 資料類型 | 描述
 :---|:---|:---
-匯出軟體清查評估 **(OData)** | 依裝置集合的軟體清查。 請參閱： [2.2 屬性 (OData) ](#22-properties-odata) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 的每個唯一組合的專案。 API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法最適合小型組織，且少於 100 K 裝置。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。
+匯出軟體清查評估 **(JSON 回應)** | 依裝置集合的軟體清查。 請參閱： [2.2 屬性 (JSON 回應) ](#22-properties-json-response) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 的每個唯一組合的專案。 API 將組織中的所有資料都提取為 JSON 回應。 這種方法最適合小型組織，且少於 100 K 裝置。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。
 透過檔案匯出軟體清查評估 **()** | 依裝置檔案清點軟體。 請參閱：2.3 透過檔案 [ (的屬性) ](#23-properties-via-files) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 的每個唯一組合的專案。 此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：1。  呼叫 API 以取得所有組織資料的下載 URLs 清單。 2.  使用下載 URLs 下載所有檔案，並視需要處理資料。
 
-### <a name="22-properties-odata"></a>2.2 屬性 (OData) 
+### <a name="22-properties-json-response"></a>2.2 屬性 (JSON 回應) 
 
 屬性 (識別碼)  | 資料類型 | 描述
 :---|:---|:---
@@ -146,11 +146,11 @@ GeneratedTime | string | 產生匯出的時間。
 
 方法 | 資料類型 | 描述
 :---|:---|:---
-匯出軟體漏洞評估 **(OData)** | 調查集合請參閱： [3.2 屬性 (OData) ](#32-properties-odata) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 的每個唯一組合的專案。 API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法最適合小型組織，且少於 100 K 裝置。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。
+匯出軟體漏洞評估 **(JSON 回應)** | 調查集合請參閱： [3.2 屬性 (JSON 回應) ](#32-properties-json-response) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 的每個唯一組合的專案。 API 將組織中的所有資料都提取為 JSON 回應。 這種方法最適合小型組織，且少於 100 K 裝置。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。
 透過檔案匯出軟體漏洞評估 **()** | 調查實體請參閱：3.3 透過檔案 [ (的屬性) ](#33-properties-via-files) | 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 的每個唯一組合的專案。 此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：1。  呼叫 API 以取得所有組織資料的下載 URLs 清單。 2.  使用下載 URLs 下載所有檔案，並視需要處理資料。
-**Delta export** 軟體漏洞評估 **(OData)** | 調查集合請參閱： [3.4 屬性 Delta export OData) ](#34-properties-delta-export-odata) | 會傳回表格，其中每個唯一的組合： DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 及 EventTimestamp。 <br><br> API 將組織中的資料提取為 Json 回應，遵循 OData 的通訊協定。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 不同于完整的軟體漏洞評估 (OData) -用於取得組織之軟體漏洞評估的整個快照。 [增量匯出 OData API 呼叫是用來只取得所選日期和目前日期之間所發生的變更， (「delta」 API 通話) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export OData API 通話也可以用來計算不同的 KPIs，例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」  <br><br> 因為對軟體弱點的 Delta export OData API 呼叫只會傳回目標日期範圍的資料，所以不會被視為 _完整匯出_。
+**差異匯出** 軟體漏洞評估 **(JSON 回應)** | 調查集合請參閱： [3.4 屬性 Delta export (JSON 回應) ](#34-properties-delta-export-json-response) | 會傳回表格，其中每個唯一的組合： DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 及 EventTimestamp。 <br><br> API 將組織中的資料提取為 JSON 回應。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 與完整的軟體漏洞評估 (JSON 回應) （用來透過設備取得組織的軟體漏洞評估整個快照）不同之處在于，只會使用增量匯出 OData API 呼叫，只提取選取日期和目前日期之間所發生的變更 (「delta」 API 通話) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export OData API 通話也可以用來計算不同的 KPIs，例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」  <br><br> 因為對軟體弱點的 Delta export OData API 呼叫只會傳回目標日期範圍的資料，所以不會被視為 _完整匯出_。
 
-### <a name="32-properties-odata"></a>3.2 屬性 (OData) 
+### <a name="32-properties-json-response"></a>3.2 屬性 (JSON 回應) 
 
 屬性 (識別碼)  | 資料類型 | 描述
 :---|:---|:---
@@ -181,7 +181,7 @@ VulnerabilitySeverityLevel | string | 依威脅環境影響的 CVSS 分數和動
 匯出檔案 | 陣列 \[ 字串\]  | 用於存放組織目前快照之檔案的下載 URLs 清單。
 GeneratedTime | string | 產生匯出的時間。
 
-### <a name="34-properties-delta-export-odata"></a>3.4 屬性 (delta export OData) 
+### <a name="34-properties-delta-export-json-response"></a>3.4 屬性 (差異匯出 JSON 回應) 
 
 屬性 (識別碼)  | 資料類型 | 描述
 :---|:---|:---

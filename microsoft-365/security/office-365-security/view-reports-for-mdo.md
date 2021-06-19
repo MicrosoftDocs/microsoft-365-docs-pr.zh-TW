@@ -1,5 +1,5 @@
 ---
-title: 在報表儀表板中查看 Office 365 報表的 Defender
+title: 檢視適用於 Office 365 的 Microsoft Defender 報告
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,18 +16,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在 Microsoft 365 Defender 入口網站中尋找及使用 Microsoft Defender for Office 365 的報表。
+description: 系統管理員可以瞭解如何針對 Microsoft 365 Defender 入口網站中提供的 Office 365 報告尋找和使用 Defender。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5c45f58ee83de11712b198c85a8e423314289bf
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 5b9279614571c123ad92f1684f86175b410c6c5c
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930206"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022817"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站的報表儀表板中查看 Office 365 報表的 Defender
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看 Office 365 報表的 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,230 +35,67 @@ ms.locfileid: "52930206"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-適用于 Office 365 組織的 Microsoft Defender (例如，Microsoft 365 E5 訂閱或 microsoft defender for Office 365 plan 1 或 microsoft defender for Office 365 plan 2 附加元件) 包含各種安全性相關的報表。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，可以前往 **報告** \> **電子郵件** 共同作業的電子郵件共同作業 \> **報告**，以在 Microsoft 365 Defender 入口網站中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://security.microsoft.com/emailandcollabreport> 。
+適用于 Office 365 組織的 Microsoft Defender (例如，Microsoft 365 E5 訂閱或 microsoft defender for Office 365 plan 1 或 microsoft defender for Office 365 plan 2 附加元件) 包含各種安全性相關的報表。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，您可以在 Microsoft 365 Defender 入口網站中透過 **報告** \> **&** 共同作業 \> **電子郵件 &** 共同作業報告來查看這些報告。 若要直接移至 [ **電子郵件 &** 共同作業報告] 頁面上，開啟 <https://security.microsoft.com/emailandcollabreport> 。
 
-![Microsoft 365 Defender 入口網站中的報表儀表板](../../media/user-reported-messages.png)
-
-## <a name="defender-for-office-365-file-types-report"></a>適用於 Office 365 的 Defender 檔案類型報告
-
-**Office 365 檔案類型的 Defender 報告** 報告會向您顯示以 [安全附件](safe-attachments.md)方式偵測為惡意的檔案類型。
-
- 報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。
-
-若要查看報告，請開啟 [Microsoft 365 的 Defender 入口網站](https://security.microsoft.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office 365 檔案類型的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPFileReport> 。
-
-![報表儀表板中 Office 365 檔案類型構件的 Defender](../../media/atp-file-types-report-widget.png)
+![Microsoft 365 Defender 入口網站中的電子郵件 & 共同作業報告] 頁面](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
-> 您也可以在[Office 365 郵件處理報告的 Defender](#defender-for-office-365-message-disposition-report)中使用此報告中的資訊。
+>
+> 不需要 Office 365 Defender 的電子郵件安全性報告會在[Microsoft 365 Defender 入口網站中的「查看電子郵件安全性報告](view-email-security-reports.md)」中說明加以說明。
+>
+> 與郵件流程相關的報告現在位於 Exchange 系統管理中心 (EAC) 。 如需這些報告的詳細資訊，請參閱[新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Office 365 檔案類型的 Defender 報表檢視報告
-
-您可使用下列檢視：
-
-- **資料查看依據：** 檔案：此圖表包含下列資訊：
-
-  - **惡意 Excel 附件**
-  - **惡意的 Flash 附件**
-  - **惡意的 PDF 附件**
-  - **惡意 PowerPoint 附件**
-  - **惡意 URLs**
-  - **惡意的 Word 附件**
-  - **惡意可執行附件**
-  - **別人**
-
-  當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 EOP 中 [安全附件](safe-attachments.md) 和 [反惡意程式碼保護](anti-malware-protection.md)偵測到的惡意檔案類型細目。
-
-  ![Office 365 檔案類型的 Defender 中的檔案查看報告](../../media/atp-file-types-report-file-view.png)
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中顯示的相同檔案類型值。
-
-- **資料查看方式：訊息**：此圖表包含下列資訊：
-
-  - **封鎖存取**
-  - **取代郵件**
-  - **監控的郵件**
-  - 以 **動態電子郵件傳遞取代**：如需詳細資訊，請參閱 [在安全附件原則中傳遞](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
-
-  ![Office 365 檔案類型的 Defender 中的郵件視圖報告](../../media/atp-file-types-report-message-view.png)
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中可用的相同郵件處置值，以及已傳遞的其他 **郵件** 值。
-
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Office 365 檔案類型的 Defender 的詳細資料表格視圖報告
-
-如果您按一下 [ **查看詳細資料] 表格**，此報告可提供最近10天內所有按一下動作的近乎即時視圖。 顯示的資訊取決於您所看到的圖表：
-
-- **資料查看依據：** 檔案：
-
-  - **Date**
-  - **收件者位址**
-  - **寄件者位址**
-  - **郵件識別碼**：郵件頭的 **Message-ID** 標頭欄位中可用，且應該是唯一的。 範例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (記下角括弧) 。
-  - **檔案**
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中顯示的相同檔案類型值。
-
-- **資料查看依據：訊息**：
-
-  - **Date**
-  - **收件者位址**
-  - **寄件者位址**
-  - **郵件識別碼**
-  - **檔案**
-  - **主旨**
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中可用的相同郵件處置值，以及已傳遞的其他 **郵件** 值。
-
-若要回到 [報表] 視圖，請按一下 [ **view report**]。
-
-## <a name="defender-for-office-365-message-disposition-report"></a>適用於 Office 365 的 Defender 郵件處置報告
-
-**ATP 郵件** 處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
-
-若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，然後移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 &** 共同作業報告]，然後選取 [ **Office 365 郵件處理的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPMessageReport> 。
-
-![報表儀表板中 Office 365 郵件處置小工具的 Defender](../../media/atp-message-disposition-report-widget.png)
+## <a name="safe-attachments-file-types-report"></a>Safe附件檔案類型報告
 
 > [!NOTE]
-> 您也可以在[Office 365 檔案類型報告的 Defender](#defender-for-office-365-file-types-report)中使用此報告中的資訊。
+> **Safe 附件檔案類型報告** 會最終消失。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Office 365 郵件處理報告的 Defender 報表檢視
+## <a name="safe-attachments-message-disposition-report"></a>Safe附件郵件處理報告
 
-您可使用下列檢視：
-
-- **資料查看方式：訊息**：此圖表包含下列資訊：
-
-  - **封鎖存取**
-  - **取代郵件**
-  - **監控的郵件**
-  - 以 **動態電子郵件傳遞取代**：如需詳細資訊，請參閱 [在安全附件原則中傳遞](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
-
-  ![Office 365 檔案類型的 Defender 中的郵件視圖報告](../../media/atp-file-types-report-message-view.png)
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中可用的相同郵件處置值，以及已傳遞的其他 **郵件** 值。
-
-- **資料查看依據：** 檔案：此圖表包含下列資訊：
-
-  - **惡意 Excel 附件**
-  - **惡意的 Flash 附件**
-  - **惡意的 PDF 附件**
-  - **惡意 PowerPoint 附件**
-  - **惡意 URLs**
-  - **惡意的 Word 附件**
-  - **惡意可執行附件**
-  - **別人**
-
-  當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 EOP 中 [安全附件](safe-attachments.md) 和 [反惡意程式碼保護](anti-malware-protection.md)偵測到的惡意檔案類型細目。
-
-  ![Office 365 檔案類型的 Defender 中的檔案查看報告](../../media/atp-file-types-report-file-view.png)
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中顯示的相同檔案類型值。
-
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Office 365 郵件處理報告的 Defender 的詳細資料表格視圖
-
-如果您按一下 [ **查看詳細資料] 表格**，此報告可提供最近10天內所有按一下動作的近乎即時視圖。 顯示的資訊取決於您所看到的圖表：
-
-- **資料查看依據：訊息**：
-
-  - **Date**
-  - **收件者位址**
-  - **寄件者位址**
-  - **郵件識別碼**
-  - **檔案**
-  - **主旨**
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中可用的相同郵件處置值，以及已傳遞的其他 **郵件** 值。
-
-- **資料查看依據：** 檔案：
-
-  - **Date**
-  - **收件者位址**
-  - **寄件者位址**
-  - **郵件識別碼**
-  - **檔案**
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
-
-  - **開始日期** 和 **結束日期**
-  - 圖表中顯示的相同檔案類型值。
-
-若要回到 [報表] 視圖，請按一下 [ **view report**]。
+> [!NOTE]
+> **Safe 附件郵件處理報告** 會最後消失。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
 
 ## <a name="mail-latency-report"></a>郵件延遲報告
 
-**郵件延遲報告** 會向您顯示組織內的郵件傳遞和引爆延遲的匯總視圖。 服務中的郵件傳遞時間受到多種因素的影響，而且絕對傳遞時間（秒）通常不是成功或問題的明確指示。 在一天內的傳遞時間可能會被視為另一天的平均傳遞時間，或反過來。 **郵件延遲報告** 會嘗試根據觀察到的其他郵件傳遞時間的統計資料，以限定郵件傳遞：
-
-- 第 **50 個百分點**：這是郵件傳遞時間的中間部分。 您可以將此值視為平均傳遞時間。
-- **90%**：這表示郵件傳遞的高延遲。 只有10% 的郵件花費的時間超過此值才能傳遞。
-- **99th 百分點**：這表示郵件傳遞的最高延遲。
+**郵件延遲報告** 會向您顯示組織內的郵件傳遞和引爆延遲的匯總視圖。 服務中的郵件傳遞時間受到多種因素的影響，而且絕對傳遞時間（秒）通常不是成功或問題的明確指示。 在一天內的傳遞時間可能會被視為另一天的平均傳遞時間，或反過來。 這會嘗試根據對其他郵件的觀察傳遞時間的統計資料來傳遞郵件。
 
 不包括用戶端和網路延遲。
 
-若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 & 共同報告**]，然後按一下 [**郵件延遲報告**] 底下的 [**詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/mailLatencyReport> 。
+若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，然後移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 &** 共同作業報告]。 在 [ **電子郵件 &** 共同作業報告] 頁面上，尋找 [ **郵件延遲報告** ]，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/mailLatencyReport> 。
 
-![報表儀表板中的郵件延遲報告構件](../../media/mail-latency-report-widget.png)
+![「電子郵件 & 協同報告」頁面上的郵件延遲報告構件](../../media/mail-latency-report-widget.png)
 
-### <a name="report-view-for-the-mail-latency-report"></a>郵件延遲報告的報表檢視
+在 [ **郵件延遲報告** ] 頁面上，[ **郵件延遲報告** ] 頁面上提供下列索引標籤：
 
-當您開啟報表時，預設會選取 [ **50 百分位數** ] 索引標籤。
+- 第 **50 個百分點**：這是郵件傳遞時間的中間部分。 您可以將此值視為平均傳遞時間。 預設會選取此索引標籤。
+- **90%**：這表示郵件傳遞的高延遲。 只有10% 的郵件花費的時間超過此值才能傳遞。
+- **99th 百分點**：這表示郵件傳遞的最高延遲。
 
-此視圖預設會包含以下列篩選設定的圖表：
-
-- **日期**：過去7天
-- **郵件視圖**：
-  - 引爆郵件
-
-此圖顯示組織成下列類別的郵件：
+不論選取的索引標籤為何，圖表都會顯示組織成下列類別的郵件：
 
 - **郵件傳遞延遲**
-- **引爆延遲**
+- **Detonations**
 
 當您將游標移到圖表中的某個類別時，您可以查看每個類別中的延遲明細。
 
-![郵件延遲報告](../../media/mail-latency-report.png)
+![第50百分位數郵件延遲報告的視圖](../../media/mail-latency-report-50th-percentile-view.png)
 
-如果您按一下報表檢視中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
+如果您按一下 [ **篩選**]，您可以透過下列值來篩選圖表和詳細資料表格：
 
-- 所有郵件
-- 包含附件或 URLs 的郵件
+- **日期 (UTC)**： **開始日期** 和 **結束日期**
+- **郵件視圖**：下列其中一個值：
+  - **所有郵件**
+  - **包含附件或 URLs 的郵件**
+  - **引爆郵件**
 
-如果您按一下 [ **90 百分位數** ] 索引標籤或 [ **99th 百分位數** ] 索引標籤，則會使用第 **50 個百分位數** 視圖中的相同預設篩選器。
+當您完成設定篩選 **時，請按一下 [** 套用]、[ **取消**] 或 [ **清除篩選**]。
 
-### <a name="details-table-view-for-the-mail-latency-report"></a>郵件延遲報告的詳細資料表格視圖
+在圖表下方的 [詳細資料] 表格中，可使用下列資訊：
 
-[詳細資料] 表格視圖會顯示下列資訊：
-
-- **Date**
-- **百分位數**
+- **日期 (UTC)**
+- **百分位數**： **50**、 **90** 或 **99**
 - **訊息計數**
 - **整體延遲**
-
-![郵件延遲報告詳細資料](../../media/mail-latency-report-details.png)
-
-上述顯示于11月14日，所有傳遞和引爆的郵件所經歷的平均延遲為 **108.033** 秒。
-
-[詳細資料] 表格包含每個索引標籤上的相同資訊。
 
 ## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
@@ -266,53 +103,44 @@ ms.locfileid: "52930206"
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
-**Url 威脅防護報告** 可提供偵測到之威脅的摘要和趨勢視圖，以及在 URL 按一下上做為 [安全連結](safe-links.md)的一部分所採取的動作。 若已套用安全連結原則的使用者沒有選取 [不 **追蹤使用者點擊** ] 選項，則此報告將不會有按一下其資料的使用者。
+**url 威脅防護報告** 可提供偵測到之威脅的摘要和趨勢視圖，以及在 URL 按一下上做為 [Safe 連結](safe-links.md)的一部分所採取的動作。 在套用 Safe 連結原則的使用者上，按一下 [不 **追蹤使用者點擊**] 選項時，此報告不會有按一下資料。
 
-若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 & 共同報告**]，然後按一下 [ **URL 保護報告**] 底下的 [**查看詳細資料**] 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
+若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，然後移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 &** 共同作業報告]。 在 [ **電子郵件 &** 共同作業報告] 頁面上，找到 [ **URL 保護] 頁面** ，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
-![報表儀表板中的 URL 保護報告構件](../../media/url-protection-report-widget.png)
+![電子郵件 & 協同報告] 頁面上的 URL 保護報告構件](../../media/url-protection-report-widget.png)
+
+下列各節將說明 [ **URL 威脅防護** 報告] 頁面上可用的視圖。
 
 > [!NOTE]
-> 這是一項 *保護趨勢報告*，表示資料代表較大資料集的趨勢。 因此，在這種情況下，不會即時提供匯總視圖中的資料，但 [詳細資料] 表格視圖中的資料則是如此，您可能會看到這兩種視圖之間稍有差異。
+> 這是一項 *保護趨勢報告*，表示資料代表較大資料集的趨勢。 因此，在這種情況下，圖表中的資料並不是即時的，但是 [詳細資料] 表格中的資料是，因此您可能會看到兩者之間的差異稍有不同。 圖表每四小時重新整理一次，並包含過去90天的資料。
 
-### <a name="report-view-for-the-url-threat-protection-report"></a>URL 威脅防護報告的報表檢視
+### <a name="view-data-by-url-click-protection-action"></a>依 URL 查看資料按一下 [保護動作]
 
-**URL 威脅防護** 報告有兩個匯總的視圖，每四個小時都會重新整理一次，以顯示過去90天的資料：
+![Url 威脅防護報告中的 URL 按一下保護動作視圖](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL 按一下保護動作**：顯示組織中的使用者按下 URL 按一下數目及按一下的結果：
+**依 URL 的查看資料按一下 [保護動作**] 視圖，會顯示組織中使用者的 URL 按一下數目，以及按一下的結果。
 
-  - **封鎖** (禁止使用者流覽至 URL) 
-  - 在使用者選擇繼續導覽 URL 的 (**封鎖和點擊**) 
-  - 在 **掃描期間按一下流覽** (使用者已在掃描完成之前按一下連結) 
+- **允許**：允許使用者流覽至 URL。
+- 已 **封鎖**：已封鎖使用者流覽至 URL。
+- **封鎖並按一下透過**：使用者已選擇繼續導覽 URL。
+- 在 **掃描期間按一下流覽**：使用者已在掃描完成之前按一下連結。
 
-  按一下表示使用者已透過封鎖頁面按一下至惡意網站 (系統管理員可以停用 [安全連結) 原則] 中的 click。
+按一下表示使用者已透過封鎖頁面按一下至惡意網站 (系統管理員可以停用 Safe 連結原則) 中的按一下。
 
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
+如果您按一下 [ **篩選**]，您可以在出現的浮出控制項中選取下列一或多個值，以修改報告和詳細資料表格：
 
-  - **開始日期** 和 **結束日期**
-  - 可使用的 [保護動作]，加上 **允許 (使用者** 流覽至 URL) 的值。
+- **日期 (UTC)**： **開始日期** 和 **結束日期**
+- **偵測**：
+  - **允許**
+  - **封鎖**
+  - **封鎖並按一下**
+  - **在掃描期間按一下**
+- **網域**：報告結果中列出的 URL 網域。
+- **收件者**
 
-  ![Url 威脅防護報告中的 URL 按一下保護動作視圖](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+當您完成設定篩選 **時，請按一下 [** 套用]、[ **取消**] 或 [ **清除篩選**]。
 
-- **依應用程式按一下 url**：會顯示支援安全連結之應用程式的 url 按一下數目：
-
-  - **電子郵件用戶端**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Teams**
-  - **其他**
-
-  如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
-
-  - **開始日期** 和 **結束日期**
-  - 可用的應用程式。
-
-### <a name="details-table-view-for-the-url-threat-protection-report"></a>URL 威脅防護報告的詳細資料表格視圖
-
-如果您按一下 [ **查看詳細資料] 表格**，則報告會提供最近7天內組織內所有按一下動作的近乎即時視圖，其詳細資料如下：
+圖表下方的 [詳細資料] 表格提供下列最近7天內所有按一下動作的近乎即時視圖：
 
 - **按一下 [時間]**
 - **使用者**
@@ -320,16 +148,43 @@ ms.locfileid: "52930206"
 - **Action**
 - **應用程式**
 
-如果您按一下 [詳細資料] 表格視圖中的 [**篩選器**]，可以篩選與報表檢視中相同的準則，**以及以逗號分隔的****網域** 或收件者。
+### <a name="view-data-by-url-click-by-application"></a>依 URL 查看資料依應用程式按一下
 
-> [!NOTE]
-> **網域** 篩選器是指報告結果中所列的 URL 網域。 
+![URL 威脅防護報告中的 [依應用程式視圖按一下 URL]](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
-若要回到 [報表] 視圖，請按一下 [ **view report**]。
+**依 URL 的 View data 依序按一下 [應用程式** 視圖]，會顯示支援 Safe 連結的應用程式的 URL 按一下數目：
+
+- **電子郵件用戶端**
+- **PowerPoint**
+- **Word**
+- **Excel**
+- **OneNote**
+- **Visio**
+- **Teams**
+- **別人**
+
+如果您按一下 [ **篩選**]，您可以在出現的浮出控制項中選取下列一或多個值，以修改報告和詳細資料表格：
+
+- **日期 (UTC)**： **開始日期** 和 **結束日期**
+- **偵測**：圖表中可用的應用程式。
+- **網域**：報告結果中列出的 URL 網域。
+- **收件者**
+
+當您完成設定篩選 **時，請按一下 [** 套用]、[ **取消**] 或 [ **清除篩選**]。
+
+圖表下方的 [詳細資料] 表格提供下列最近7天內所有按一下動作的近乎即時視圖：
+
+- **按一下 [時間]**
+- **使用者**
+- **URL**
+- **Action**
+- **應用程式**
 
 ## <a name="additional-reports-to-view"></a>要查看的其他報告
 
 除了本文所述的報告之外，還有其他幾個報告可供使用，如下表所述：
+
+<br>
 
 ****
 
@@ -337,8 +192,8 @@ ms.locfileid: "52930206"
 |---|---|
 |**Explorer** (microsoft defender for Office 365 plan 2) 或 **即時** 偵測 (Microsoft defender for Office 365 Plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
 |**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告](view-email-security-reports.md)|
-|**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[在 Microsoft 365 Defender 入口網站中查看郵件流程報告](view-mail-flow-reports.md)|
-|**安全連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示過去7天中安全連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|**Safe 連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示在過去7天中 Safe 連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |僅 PowerShell) ， **EOP 和 Microsoft Defender for Office 365 (的郵件流量結果**。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**EOP 和 Defender Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -358,7 +213,7 @@ ms.locfileid: "52930206"
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
-如果您未在 Office 365 報告中看到您的 Defender 資料，請仔細檢查您的原則設定是否正確。 您的組織必須定義[安全連結原則](set-up-safe-links-policies.md)及[安全附件原則](set-up-safe-attachments-policies.md)，Office 365 防護功能才能進行。 另請參閱 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
+如果您未在 Office 365 報告中看到您的 Defender 資料，請仔細檢查您的原則設定是否正確。 您的組織必須已定義[Safe 連結原則](set-up-safe-links-policies.md)及[Safe 附件原則](set-up-safe-attachments-policies.md)，才能使用 Defender，Office 365 保護功能即就地。 另請參閱 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>相關主題
 

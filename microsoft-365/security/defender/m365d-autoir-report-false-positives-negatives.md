@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 Defender 中處理誤報或漏報
+title: 在 Microsoft 365 Defender 中處理誤報或虛假的否定
 description: Microsoft 365 Defender 中的 AIR 是否已錯過或錯誤地偵測到什麼專案？ 瞭解如何將誤報或錯誤否定提交給 Microsoft 進行分析。
 keywords: 自動化，調查，警示，修正，誤報，false 負數
 search.appverid: met150
@@ -21,21 +21,21 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 3cffa97d26b2b28de8d9e45d7030e0931a7ba072
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269573"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022531"
 ---
-# <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中處理誤報或漏報
+# <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中處理誤報或虛假的否定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用於：**
 - Microsoft 365 Defender
 
-任何威脅防護解決方案有時都會發生誤報或負片。 如果 Microsoft 365 Defender 中的[自動化調查和回應功能](m365d-autoir.md)未接或錯誤地偵測到某項，您的安全性作業小組可以採取下列步驟：
+任何威脅防護解決方案有時都會發生誤報或負片。 如果 Microsoft 365 Defender 錯過或誤偵測某項[功能的自動化調查和回應功能](m365d-autoir.md)，則您的安全作業小組可以採取下列步驟：
 
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () 
@@ -72,5 +72,4 @@ ms.locfileid: "52269573"
 ## <a name="see-also"></a>另請參閱
 
 - [檢視自動調查的詳細資料和結果](m365d-autoir-results.md)
-- [使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅](advanced-hunting-overview.md)
-- [解決適用於端點的 Microsoft Defender 中的誤判/漏報](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [主動搜尋 Microsoft 365 Defender 中的高級搜尋威脅](advanced-hunting-overview.md)

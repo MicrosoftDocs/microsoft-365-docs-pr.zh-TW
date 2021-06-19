@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 使用內容搜尋許可權篩選，讓 eDiscovery 管理員只搜尋您組織中信箱和網站的子集。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c36263466e103c0401e51b42b5d7ec3f6e2b4f9c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 654df250fb6816c215a3a3e28bd6456c6f88ab6e
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245345"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022471"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>設定內容搜尋的權限篩選
 
@@ -93,8 +93,8 @@ ms.locfileid: "52245345"
 |:-----|:-----|
 | _Action_ <br/> | _Action_ 參數會指定篩選所套用的搜尋動作類型。 可能的內容搜尋動作是︰  <br/><br/> **匯出：** 匯出搜尋結果時套用篩選器。  <br/> **預覽：** 在預覽搜尋結果時會套用篩選器。  <br/> **清除：** 清除搜尋結果時，會套用篩選器。  <br/> **搜尋：** 在執行搜尋時會套用篩選器。  <br/> **All：** 篩選器會套用到所有的搜尋動作。  <br/> |
 | _FilterName_ <br/> |_FilterName_ 參數會指定許可權篩選器的名稱。 此名稱是用來在使用 **Get-ComplianceSecurityFilter**、**Set-ComplianceSecurityFilter,** 和 **Remove-ComplianceSecurityFilter** Cmdlet 時識別篩選器。  <br/> |
-| _篩選_ <br/> | _Filters_ 參數會指定相容性安全性篩選器的搜尋準則。 您可以建立三種不同類型的篩選：  <br/><br/> **信箱篩選：** 這種篩選類型會指定由  _users_ 參數) 所指派的使用者 (所指派的信箱可供搜尋。 此篩選器類型的語法為 **Mailbox_** _MailboxPropertyName_，其中  _MailboxPropertyName_ 會指定用於限定可搜尋之信箱的信箱屬性。 例如，信箱篩選器  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 允許指派此篩選器的使用者僅搜尋 CustomAttribute10 屬性中具有值 "OttawaUsers" 的信箱。  <br/>  任何支援的可篩選收件者屬性均可用於  _MailboxPropertyName_ 屬性。 如需支援的屬性清單，請參閱可 [篩選的-RecipientFilter 參數屬性](/powershell/exchange/recipientfilter-properties)。  <br/><br/> **信箱內容篩選：** 此篩選器類型會套用到可搜尋的內容。 它會指定所指派使用者可搜尋的信箱內容。 此篩選器類型的語法為 **MailboxContent_** _SearchablePropertyName： Value_，其中  _SearchablePropertyName_ 會指定關鍵字查詢語言 (KQL) 可在內容搜尋中指定的屬性。 例如，信箱內容篩選器  `MailboxContent_recipients:contoso.com` 允許指派此篩選器的使用者，只搜尋傳送至 contoso.com 網域中收件者的郵件。  <br/>  如需可搜尋郵件屬性的清單，請參閱 [內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。 <br/> <br/> **重要：**  單一搜尋篩選無法包含信箱篩選器和信箱內容篩選器。 若要在單一篩選中結合這些專案，您必須使用 [篩選器清單](#using-a-filters-list-to-combine-filter-types)。  不過，篩選可以包含相同類型的更複雜查詢。 例如，  `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`  <br/><br/> **網站與網站內容篩選：** 有兩個 SharePoint 和商務用 OneDrive 網站相關篩選，您可以用來指定所指派使用者可搜尋的網站或網站內容：  <br/><br/> - **Site_** _SearchableSiteProperty_ <br/> - **SiteContent_** _SearchableSiteProperty_ <br/><br/>  這兩個篩選器是可互換的。 例如，  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 並傳回  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 相同的結果。 不過，為了協助您識別篩選的功能，您可以使用  `Site_` 來指定與網站相關的屬性 (例如網站 URL) ，並  `SiteContent_` 指定內容相關屬性 (例如檔案類型）。 例如，篩選器  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 允許指派此篩選器的使用者只搜尋網站集合中的內容 https://contoso.sharepoint.com/sites/doctors 。 篩選器  `"SiteContent_FileExtension -eq 'docx'"` 會允許指派此篩選器的使用者僅搜尋 word 檔 (word 2007 和更新版本) 。  <br/><br/>  如需可搜尋的網站屬性清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 在可 **查詢** 的資料行中，以 **Yes** 標示的屬性，可以用來建立網站或網站內容篩選。  <br/><br/> **重要：** 您必須建立搜尋許可權篩選，以明確避免使用者搜尋特定服務 (中的內容位置，例如防止使用者搜尋任何 Exchange 信箱或任何 SharePoint 網站) 。 換句話說，建立搜尋許可權篩選可讓使用者搜尋組織中的所有 SharePoint 網站，不會妨礙該使用者搜尋信箱。 例如，若要讓 SharePoint 系統管理員只搜尋 SharePoint 網站，您必須建立篩選，以防止其搜尋信箱。 同樣地，若要讓 Exchange 管理員只搜尋信箱，您必須建立篩選，以防止使用者搜尋網站。           |
-| _Users_ <br/> |_Users_ 參數會指定將此篩選器套用至其內容搜尋的使用者。 依其別名或主要 SMTP 位址識別使用者。 您可以指定以逗號分隔的多個值，或者您也可以使用值 **All** 將篩選器指派給所有使用者。  <br/> 您也可以使用  _Users_ 參數來指定安全性 & 規範中心角色群組。 這可讓您建立自訂角色群組，然後為該角色群組指派搜尋權限篩選器。 例如，假設您有多國公司的美國子公司的 eDiscovery 管理員的自訂角色群組。 您可以使用  _Users_ 參數，使用角色群組的 Name 屬性來指定此角色群組 () 然後使用  _Filter_ 參數，只允許搜尋美國的信箱。  <br/> 使用此參數，無法指定通訊群組。  <br/> |
+| _篩選_ <br/> | _Filters_ 參數會指定相容性安全性篩選器的搜尋準則。 您可以建立三種不同類型的篩選：  <br/><br/> **信箱或 OneDrive 篩選：** 這種篩選類型會指定 _使用者_ 參數所指定的信箱和 OneDrive 帳戶 () 可供搜尋。 此篩選器類型的語法為 **Mailbox_** _MailboxPropertyName_，其中 _MailboxPropertyName_ 會指定用於限定信箱及可搜尋 OneDrive 帳戶的信箱屬性。 例如，信箱篩選器 `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 允許指派此篩選器的使用者只搜尋 CustomAttribute10 屬性值為 "OttawaUsers" 的信箱和 OneDrive 帳戶。  <br/>  任何支援的可篩選收件者屬性均可用於  _MailboxPropertyName_ 屬性。 如需支援的屬性清單，請參閱可 [篩選的-RecipientFilter 參數屬性](/powershell/exchange/recipientfilter-properties)。  <br/><br/> **信箱內容篩選：** 此篩選器類型會套用到可搜尋的內容。 它會指定所指派使用者可搜尋的信箱內容。 此篩選器類型的語法為 **MailboxContent_** _SearchablePropertyName： Value_，其中  _SearchablePropertyName_ 會指定關鍵字查詢語言 (KQL) 可在內容搜尋中指定的屬性。 例如，信箱內容篩選器  `MailboxContent_recipients:contoso.com` 允許指派此篩選器的使用者，只搜尋傳送至 contoso.com 網域中收件者的郵件。  <br/>  如需可搜尋郵件屬性的清單，請參閱 [內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。 <br/> <br/> **重要：**  單一搜尋篩選無法包含信箱篩選器和信箱內容篩選器。 若要在單一篩選中結合這些專案，您必須使用 [篩選器清單](#using-a-filters-list-to-combine-filter-types)。  不過，篩選可以包含相同類型的更複雜查詢。 例如，  `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`  <br/><br/> **網站與網站內容篩選：** 有兩個 SharePoint 和商務用 OneDrive 網站相關篩選，您可以用來指定所指派使用者可搜尋的網站或網站內容：  <br/><br/> - **Site_** _SearchableSiteProperty_ <br/> - **SiteContent_** _SearchableSiteProperty_ <br/><br/>  這兩個篩選器是可互換的。 例如，  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 並傳回  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 相同的結果。 不過，為了協助您識別篩選的功能，您可以使用  `Site_` 來指定與網站相關的屬性 (例如網站 URL) ，並  `SiteContent_` 指定內容相關屬性 (例如檔案類型）。 例如，篩選器  `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"` 允許指派此篩選器的使用者只搜尋網站集合中的內容 https://contoso.sharepoint.com/sites/doctors 。 篩選器  `"SiteContent_FileExtension -eq 'docx'"` 會允許指派此篩選器的使用者僅搜尋 word 檔 (word 2007 和更新版本) 。  <br/><br/>  如需可搜尋的網站屬性清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 在可 **查詢** 的資料行中，以 **Yes** 標示的屬性，可以用來建立網站或網站內容篩選。  <br/><br/> **重要：** 您必須建立搜尋許可權篩選，以明確避免使用者搜尋特定服務 (中的內容位置，例如防止使用者搜尋任何 Exchange 信箱或任何 SharePoint 網站) 。 換句話說，建立搜尋許可權篩選可讓使用者搜尋組織中的所有 SharePoint 網站，不會妨礙該使用者搜尋信箱。 例如，若要讓 SharePoint 系統管理員只搜尋 SharePoint 網站，您必須建立篩選，以防止其搜尋信箱。 同樣地，若要讓 Exchange 管理員只搜尋信箱，您必須建立篩選，以防止使用者搜尋網站。           |
+| _使用者_ <br/> |_Users_ 參數會指定將此篩選器套用至其內容搜尋的使用者。 依其別名或主要 SMTP 位址識別使用者。 您可以指定以逗號分隔的多個值，或者您也可以使用值 **All** 將篩選器指派給所有使用者。  <br/> 您也可以使用  _Users_ 參數來指定安全性 & 規範中心角色群組。 這可讓您建立自訂角色群組，然後為該角色群組指派搜尋權限篩選器。 例如，假設您有多國公司的美國子公司的 eDiscovery 管理員的自訂角色群組。 您可以使用  _Users_ 參數，使用角色群組的 Name 屬性來指定此角色群組 () 然後使用  _Filter_ 參數，只允許搜尋美國的信箱。  <br/> 使用此參數，無法指定通訊群組。  <br/> |
    
 ### <a name="using-a-filters-list-to-combine-filter-types"></a>使用篩選清單組合篩選器類型
 
@@ -110,18 +110,12 @@ ms.locfileid: "52245345"
 
 使用篩選器清單時，請牢記下列事項：
 
-- 您必須使用篩選清單來建立包含 **信箱** 篩選器和 **MailboxContent** 篩選的篩選器。 
-
-- 如先前所建議，您不需要使用篩選清單，在單一搜尋許可權篩選中包含 **網站** 和 **SiteContent** 篩選器。 例如，您可以使用 **-或** 運算子組合 **網站** 和 **SiteContent** 篩選器。
-
-   ```powershell
-   -Filters "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"
-   ```
+- 您必須使用篩選清單來建立包含 **信箱** 篩選器和 **MailboxContent** 篩選的篩選器。
 
 - 篩選清單的每個元件都可以包含複雜的篩選語法。 例如，信箱和網站篩選可包含以 **-或** 運算子分隔的多個篩選：
 
    ```powershell
-   -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
+   -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
    ```
 
 ## <a name="examples-of-creating-search-permissions-filters"></a>建立搜尋許可權篩選的範例
@@ -202,7 +196,7 @@ New-ComplianceSecurityFilter -FilterName NoSaraJanet -Users All -Filters "Mailbo
 本範例會使用篩選清單來合併信箱和網站篩選器。
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
 ## <a name="get-compliancesecurityfilter"></a>Get-ComplianceSecurityFilter
@@ -217,8 +211,8 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 |:-----|:-----|
 | _Action_| _Action_ 參數會指定篩選所套用的搜尋動作類型。 可能的內容搜尋動作是︰ <br/><br/> **匯出：** 匯出搜尋結果時套用篩選器。  <br/> **預覽：** 在預覽搜尋結果時會套用篩選器。  <br/> **清除：** 清除搜尋結果時，會套用篩選器。  <br/> **搜尋：** 在執行搜尋時會套用篩選器。  <br/> **All：** 篩選器會套用到所有的搜尋動作。  <br/> |
 | _FilterName_|_FilterName_ 參數會指定許可權篩選器的名稱。 |
-| _篩選_| _Filters_ 參數會指定相容性安全性篩選器的搜尋準則。 您可以建立兩種不同類型的篩選： <br/><br/>**信箱篩選：** 這種篩選類型會指定由  _users_ 參數) 所指派的使用者 (所指派的信箱可供搜尋。 此篩選器類型的語法為 **Mailbox_** _MailboxPropertyName_，其中  _MailboxPropertyName_ 會指定用於限定可搜尋之信箱的信箱屬性。 例如，信箱篩選器  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 允許指派此篩選器的使用者僅搜尋 CustomAttribute10 屬性中具有值 "OttawaUsers" 的信箱。  任何支援的可篩選收件者屬性均可用於  _MailboxPropertyName_ 屬性。 如需支援的屬性清單，請參閱可 [篩選的-RecipientFilter 參數屬性](/powershell/exchange/recipientfilter-properties)。 <br/><br/>**信箱內容篩選：** 此篩選器類型會套用到可搜尋的內容。 它會指定所指派使用者可搜尋的信箱內容。 此篩選器類型的語法為 **MailboxContent_** _SearchablePropertyName： Value_，其中  _SearchablePropertyName_ 會指定關鍵字查詢語言 (KQL) 可在內容搜尋中指定的屬性。 例如，信箱內容篩選器  `MailboxContent_recipients:contoso.com` 允許指派此篩選器的使用者，只搜尋傳送至 contoso.com 網域中收件者的郵件。  如需可搜尋郵件屬性的清單，請參閱 [內容搜尋的關鍵字查詢](keyword-queries-and-search-conditions.md)。 <br/><br/>**網站與網站內容篩選：** 有兩個 SharePoint 和商務用 OneDrive 網站相關篩選，您可以用來指定所指派使用者可搜尋的網站或網站內容： <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent** _ *SearchableSiteProperty*<br/><br/>這兩個篩選器是可互換的。 例如，  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 並傳回  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 相同的結果。 不過，為了協助您識別篩選的功能，您可以使用  `Site_` 來指定與網站相關的屬性 (例如網站 URL) ，並  `SiteContent_` 指定內容相關屬性 (例如檔案類型）。 例如，篩選器  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 允許指派此篩選器的使用者只搜尋網站集合中的內容 https://contoso.spoppe.com/sites/doctors 。 篩選器  `"SiteContent_FileExtension -eq 'docx'"` 會允許指派此篩選器的使用者僅搜尋 word 檔 (word 2007 和更新版本) 。  <br/><br/>如需可搜尋的網站屬性清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 在可 **查詢** 的資料行中，以 **Yes** 標示的屬性，可以用來建立網站或網站內容篩選。 <br/><br/>          |
-| _Users_|_Users_ 參數會指定將此篩選器套用至其內容搜尋的使用者。 因為這是多重值屬性，所以使用此參數指定使用者或使用者群組時，會覆寫現有的使用者清單。 請參閱下列語法範例，以瞭解新增及移除選取的使用者。 <br/><br/>您也可以使用  _Users_ 參數來指定安全性 & 規範中心角色群組。 這可讓您建立自訂角色群組，然後為該角色群組指派搜尋權限篩選器。 例如，假設您有多國公司的美國子公司的 eDiscovery 管理員的自訂角色群組。 您可以使用  _Users_ 參數，使用角色群組的 Name 屬性來指定此角色群組 () 然後使用  _Filter_ 參數，只允許搜尋美國的信箱。 <br/><br/>使用此參數，無法指定通訊群組。 |
+| _篩選_| _Filters_ 參數會指定相容性安全性篩選器的搜尋準則。 您可以建立兩種不同類型的篩選： <br/><br/>**信箱和 OneDrive 篩選：** 這種篩選類型會指定 _使用者_ 參數所指定的信箱和 OneDrive 帳戶 () 可供搜尋。 此篩選器類型的語法為 **Mailbox_** _MailboxPropertyName_，其中  _MailboxPropertyName_ 會指定用於限定可搜尋之信箱的信箱屬性。 例如，信箱篩選器  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` 允許指派此篩選器的使用者僅搜尋 CustomAttribute10 屬性中具有值 "OttawaUsers" 的信箱。  任何支援的可篩選收件者屬性均可用於  _MailboxPropertyName_ 屬性。 如需支援的屬性清單，請參閱可 [篩選的-RecipientFilter 參數屬性](/powershell/exchange/recipientfilter-properties)。 <br/><br/>**信箱內容篩選：** 此篩選器類型會套用到可搜尋的內容。 它會指定所指派使用者可搜尋的信箱內容。 此篩選器類型的語法為 **MailboxContent_** _SearchablePropertyName： Value_，其中  _SearchablePropertyName_ 會指定關鍵字查詢語言 (KQL) 可在內容搜尋中指定的屬性。 例如，信箱內容篩選器  `MailboxContent_recipients:contoso.com` 允許指派此篩選器的使用者，只搜尋傳送至 contoso.com 網域中收件者的郵件。  如需可搜尋郵件屬性的清單，請參閱 [內容搜尋的關鍵字查詢](keyword-queries-and-search-conditions.md)。 <br/><br/>**網站與網站內容篩選：** 有兩個 SharePoint 和商務用 OneDrive 網站相關篩選，您可以用來指定所指派使用者可搜尋的網站或網站內容： <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent** _ *SearchableSiteProperty*<br/><br/>這兩個篩選器是可互換的。 例如，  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 並傳回  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 相同的結果。 不過，為了協助您識別篩選的功能，您可以使用  `Site_` 來指定與網站相關的屬性 (例如網站 URL) ，並  `SiteContent_` 指定內容相關屬性 (例如檔案類型）。 例如，篩選器  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` 允許指派此篩選器的使用者只搜尋網站集合中的內容 https://contoso.spoppe.com/sites/doctors 。 篩選器  `"SiteContent_FileExtension -eq 'docx'"` 會允許指派此篩選器的使用者僅搜尋 word 檔 (word 2007 和更新版本) 。  <br/><br/>如需可搜尋的網站屬性清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 在可 **查詢** 的資料行中，以 **Yes** 標示的屬性，可以用來建立網站或網站內容篩選。 <br/><br/>          |
+| _使用者_|_Users_ 參數會指定將此篩選器套用至其內容搜尋的使用者。 因為這是多重值屬性，所以使用此參數指定使用者或使用者群組時，會覆寫現有的使用者清單。 請參閱下列語法範例，以瞭解新增及移除選取的使用者。 <br/><br/>您也可以使用  _Users_ 參數來指定安全性 & 規範中心角色群組。 這可讓您建立自訂角色群組，然後為該角色群組指派搜尋權限篩選器。 例如，假設您有多國公司的美國子公司的 eDiscovery 管理員的自訂角色群組。 您可以使用  _Users_ 參數，使用角色群組的 Name 屬性來指定此角色群組 () 然後使用  _Filter_ 參數，只允許搜尋美國的信箱。 <br/><br/>使用此參數，無法指定通訊群組。 |
 
 ## <a name="examples-of-changing-search-permissions-filters"></a>變更搜尋許可權篩選的範例
 

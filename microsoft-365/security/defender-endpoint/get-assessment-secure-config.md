@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984853"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022387"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>匯出每個裝置的安全設定評估
 
@@ -39,7 +39,7 @@ ms.locfileid: "52984853"
 
 有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能很大，所以可供檢索的方式有兩種：
 
-- [匯出安全設定評估 **ODATA**](#1-export-secure-configuration-assessment-odata)： API 會將組織中的所有資料都提取為 Json 回應，遵循 OData 通訊協定。 這種方法最適合 _小型組織，且少於 100 K 裝置_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
+- [匯出安全設定評估 **JSON 回應**](#1-export-secure-configuration-assessment-json-response)： API 將組織中的所有資料都提取為 JSON 回應。 這種方法最適合 _小型組織，且少於 100 K 裝置_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
 
 - [匯出安全設定評估](#2-export-secure-configuration-assessment-via-files)：透過檔案：此 API 解決方案可讓更快更可靠的資料量增加。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
 
@@ -53,7 +53,7 @@ ms.locfileid: "52984853"
 >
 > 除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
 
-## <a name="1-export-secure-configuration-assessment-odata"></a>1. 匯出 secure configuration 評估 (OData) 
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 匯出 secure configuration 評估 (JSON 回應) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法描述
 

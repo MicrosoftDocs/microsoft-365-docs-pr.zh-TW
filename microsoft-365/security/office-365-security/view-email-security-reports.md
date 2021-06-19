@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告
+title: 檢視電子郵件安全性報告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在 Microsoft 365 Defender 入口網站中取得。
+description: 系統管理員可以瞭解如何尋找及使用 Microsoft 365 Defender 入口網站中提供的電子郵件安全性報告。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d46aec8601d19234eed8682955ffef27b7e9b467
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985202"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022912"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告
 
@@ -56,20 +56,20 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 匯總視圖會顯示過去90天的資料，詳細資料檢視會顯示過去30天的資料。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在已 **遭破壞的使用者** 上，按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/CompromisedUsers> 。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，尋找 **遭破壞的使用者** ，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/CompromisedUsers> 。
 
-按一下 [ **查看詳細資料**] 之後，您可以按一下 [ **篩選** ]，然後在出現的浮出控制項中選取下列一或多個值，以篩選圖表和詳細資料表格：
+在 [已 **遭破壞的使用者** ] 頁面上，您可以按一下 [ **篩選** ]，然後在出現的飛出視窗中，選取下列一或多個值，以篩選圖表和詳細資料表格：
 
 - **日期 (UTC)**： **開始日期** 和 **結束日期**。
 - **活動**：
   - **可疑**：使用者帳戶已傳送可疑的電子郵件，而且受到限制傳送電子郵件的風險。
   - **限制**：由於高度可疑的模式，使用者帳戶已限制傳送電子郵件。
 
-完成篩選後， **請按一下 [** 套用] 或 [ **取消**]。
+當您完成設定篩選 **時，請按一下 [** 套用]、[ **取消**] 或 [ **清除篩選**]。
 
 ![已遭破壞之使用者報告中的報表檢視](../../media/compromised-users-report-activity-view.png)
 
-在圖形下方的表格中，您可以看到下列詳細資料：
+在圖形下方的 [詳細資料] 表格中，您可以看到下列詳細資料：
 
 - **建立時間**
 - **User ID**
@@ -79,34 +79,25 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 **Exchange transport rule** report 會顯示郵件流程規則 (也稱為傳輸規則) 組織中內送和外寄郵件的效果。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 **Exchange transport rule** 上，按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/ETRRuleReport> 。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，尋找 [ **Exchange transport rule** ]，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/ETRRuleReport> 。
 
 ![「電子郵件 & 共同作業報告」頁面上的 Exchange 傳輸規則小工具](../../media/transport-rule-report-widget.png)
 
-按一下 [ **查看詳細** 資料] 之後，即可使用下列圖表和資料：
+在 [ **Exchange transport rule 報告** ] 頁面上，下列各節將說明可用的圖表和資料。
 
-- **依 Exchange 傳輸規則** \> 查看資料 **依方向的圖表細目**：此圖顯示受郵件流程規則影響的 **輸入** 和 **輸出** 郵件數目。
+### <a name="chart-breakdown-by-direction"></a>依方向的圖表分解
 
-- **依 Exchange 傳輸規則** \> 查看資料 **依嚴重性顯示圖表細目**：此圖顯示 **高嚴重性**、 **中嚴重性** 和 **低嚴重性** 郵件的數目。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+![Exchange transport rule 報告中 Exchange Transport rules 的方向視圖](../../media/transport-rule-report-etr-direction-view.png)
 
-- **按 DLP Exchange transport Rules** \> 查看資料 **依方向的圖表分解**：此圖顯示受資料遺失防護 (DLP) 郵件流程規則所影響的 **輸入** 和 **輸出** 郵件數目。
+如果您 **依方向選取 [圖表分解**]，可使用下列圖表：
 
-- **按 DLP Exchange transport Rules** \> 查看資料 **依嚴重性顯示圖表細目**：此視圖顯示受 DLP 郵件流程規則影響的 **高嚴重性**、 **中嚴重性** 和 **低嚴重性** 郵件數目。
+- 透過 **Exchange 傳輸規則來查看資料**：受郵件流程規則影響的 **輸入** 和 **輸出** 郵件數目。
+- **以 DLP Exchange 傳輸規則來查看資料**：受資料遺失防護 (DLP) 郵件流程規則所影響的 **輸入** 和 **輸出** 郵件數目。
 
-如需 **Exchange transport rules 選項的查看資料** ，下列資訊會顯示在圖形下方的詳細資料表格中：
-
-- **Date**
-- **傳輸規則**
-- **主旨**
-- **寄件者位址**
-- **收件者位址**
-- **嚴重性**
-- **方向**
-
-若要讓 **DLP Exchange transport rules 選項查看資料** ，下列資訊會顯示在圖形下方的詳細資料表格中：
+下列資訊會顯示在圖形下方的詳細資料表格中：
 
 - **Date**
-- **DLP 原則**
+- **Dlp 原則** (只 **依 dlp Exchange Transport rules 來查看資料**) 
 - **傳輸規則**
 - **主旨**
 - **寄件者位址**
@@ -116,25 +107,59 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 您可以在出現的浮出控制項中按一下 [ **篩選** ] 並選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
 
-- **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **方向**： **輸出** 和 **輸入**
 - **嚴重性**： **高嚴重性**、 **中低嚴重性** 和 **低嚴重性**
 
-![Exchange transport rule 報告中的報表檢視](../../media/transport-rule-report-report-view.png)
+當您完成設定篩選 **時，請按一下 [** 套用]、[ **取消**] 或 [ **清除篩選**]。
+
+### <a name="chart-breakdown-by-severity"></a>依嚴重性的圖表細目
+
+![Exchange transport rule 報告中 Exchange Transport rules 的嚴重性視圖](../../media/transport-rule-report-etr-severity-view.png)
+
+如果您 **依嚴重性選取 [圖表分解**]，可使用下列圖表：
+
+- 透過 **Exchange 傳輸規則來查看資料**：**高嚴重性**、**中嚴重性** 和 **低嚴重性** 郵件的數目。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+
+- **按 Dlp Exchange transport rules 來查看資料**：受 dlp 郵件流程規則影響的 **高嚴重性**、 **中嚴重性** 和 **低嚴重性** 郵件數目。
+
+下列資訊會顯示在圖形下方的詳細資料表格中：
+
+- **Date**
+- **Dlp 原則** (只 **依 dlp Exchange Transport rules 來查看資料**) 
+- **傳輸規則**
+- **主旨**
+- **寄件者位址**
+- **收件者位址**
+- **嚴重性**
+- **方向**
+
+您可以在出現的浮出控制項中按一下 [ **篩選** ] 並選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
+
+- **日期 (UTC)** **開始日期** 和 **結束日期**
+- **方向**： **輸出** 和 **輸入**
+- **嚴重性**： **高嚴重性**、 **中低嚴重性** 和 **低嚴重性**
+
+當您完成設定篩選 **時，請按一下 [** 套用]、[ **取消**] 或 [ **清除篩選**]。
+
+## <a name="forwarding-report"></a>轉接報告
+
+> [!NOTE]
+> 您現在可以在 EAC 中使用轉寄 **報告** 。 如需詳細資訊，請參閱 [新 EAC 中的自動轉寄郵件報告](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)。
 
 ## <a name="mailflow-status-report"></a>郵件流程狀態報表
 
 **郵件流程狀態報表** 是一個智慧報告，顯示傳入和傳出電子郵件、垃圾郵件偵測、惡意程式碼、識別為「良好」之電子郵件的相關資訊，以及有關允許或封鎖在 edge 上之電子郵件的資訊。 這是唯一包含 edge protection 資訊的報告，它會顯示在 Exchange Online Protection (EOP) 中，允許在評估之前封鎖多少封電子郵件。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 **郵件流程狀態摘要** 上，按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/mailflowStatusReport> 。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，尋找 **郵件流程狀態摘要** ，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/mailflowStatusReport> 。
 
 ![[電子郵件 & 共同作業報告] 頁面上的 [郵件流程狀態摘要] 小工具](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的類型視圖
 
-當您開啟報表時，預設會選取 [ **類型** ] 索引標籤。 根據預設，此視圖包含的圖表和使用下列篩選器設定的資料表：
+當您開啟報表時，預設會選取 [ **類型** ] 索引標籤。 根據預設，此視圖包含的圖表和詳細資料表格已設定為下列篩選：
 
-- **日期**：過去7天。
+- **日期 (UTC)** 過去7天。
 - **郵件方向**：
   - **入境**
   - **出境**
@@ -152,7 +177,7 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 您可以按一下 [ **篩選器** ] 或按一下 [圖表圖例] 中的值來變更這些篩選。
 
-此資料表包含下列資訊：
+下列資訊會顯示在圖形下方的詳細資料表格中：
 
 - **方向**
 - **類型**
@@ -183,9 +208,9 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 圖表是依 **方向** 值進行組織。
 
-您可以按一下 [ **篩選器** ] 或按一下 [圖表圖例] 中的值來變更這些篩選。 會使用 [ **類型** ] 視圖中的相同篩選器。
+您可以按一下 [ **篩選**] 以變更這些篩選。 會使用 [ **類型** ] 視圖中的相同篩選器。
 
-資料表格包含的資訊來自 **類型** view。
+詳細資料表格包含的資訊來自 **類型** view。
 
 [ **選擇類別** ] 如需詳細資料，可用的選取專案和行為與「 **類型** 」視圖相同。
 
@@ -201,19 +226,18 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 **漏斗** 視圖顯示 Microsoft 的電子郵件威脅防護功能如何篩選組織中的內送和外寄電子郵件。 它提供有關電子郵件總數的詳細資訊，以及設定的威脅防護功能（包括 edge protection、反惡意程式碼、反網路釣魚、反垃圾郵件和反欺詐）對此計數的影響。
 
-如果您按一下 [ **漏斗** ] 索引標籤，此 view 預設會包含圖表和使用下列篩選設定的資料表：
+如果您按一下 [ **漏斗** ] 索引標籤，此 view 預設會包含 [圖表] 和 [詳細資料] 表格設定為下列篩選：
 
 - **日期**：過去7天。
 
 - **方向**：
-
   - **入境**
   - **出境**
   - **組織內**：此計數是針對在租使用者中傳送的郵件進行計數;亦即，寄件者 abc@domain.com 會傳送給收件者 xyz@domain.com (與輸入和外寄) 分開計數。
 
-匯總 view 和 data table view 允許90天的篩選。
+匯總視圖和詳細資料表格視圖允許90天的篩選。
 
-如果您按一下 [ **篩選**]，則可以篩選圖表和資料表格。
+您可以按一下 [ **篩選**] 以變更這些篩選。 會使用 [ **類型** ] 視圖中的相同篩選器。
 
 此圖顯示按下列方式組織的電子郵件計數：
 
@@ -231,7 +255,7 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 若要個別查看以 EOP 或 Defender 為 Office 365 篩選的電子郵件，請按一下 [圖表圖例] 中的值。
 
-此資料表包含下列資訊（以遞減的日期順序顯示）：
+[詳細資料] 表格包含下列資訊（以遞減的日期順序顯示）：
 
 - **Date**
 - **電子郵件總數**
@@ -253,7 +277,7 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
   - **URL 引爆**：透過 Safe 連結原則篩選的郵件。
 - **投遞後保護和 zap (ATP) 或 zap (EOP)**：零小時自動清除 (針對惡意程式碼、垃圾郵件和網路釣魚的 ZAP) 。
 
-如果您選取資料表格中的資料列，則會在飛入的電子郵件計數中顯示進一步細分。
+如果您選取 [詳細資料] 表格中的列，則會在飛入的電子郵件計數中顯示進一步細分。
 
 #### <a name="export-from-funnel-view"></a>從漏斗視圖匯出
 
@@ -272,19 +296,18 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 **技術視圖** 類似 **漏斗** 圖模式，可提供設定威脅防護功能的更細微細節。 您可以從圖表中查看郵件如何在威脅防護的不同階段進行分類。
 
-如果您按一下 [ **技術視圖** ] 索引標籤，此視圖預設會包含圖表和使用下列篩選所設定的資料表：
+如果您按一下 [ **技術視圖** ] 索引標籤，此視圖預設會包含 [圖表] 和 [詳細資料] 表格設定為下列篩選：
 
 - **日期**：過去7天。
 
 - **方向**：
-
   - **入境**
   - **出境**
   - **組織內**：此計數是針對承租人中的郵件，亦即 寄件者 abc@domain.com 會傳送至收件者 xyz@domain.com (與輸入和輸出) 分開計數
 
-匯總 view 和 data table view 允許90天的篩選。
+匯總視圖和詳細資料表格視圖允許90天的篩選。
 
-如果您按一下 [ **篩選**]，則可以篩選圖表和資料表格。
+您可以按一下 [ **篩選**] 以變更這些篩選。 會使用 [ **類型** ] 視圖中的相同篩選器。
 
 此圖顯示組織成下列類別的郵件：
 
@@ -301,9 +324,9 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 當您將游標移到圖表中的某個類別時，您可以看到該類別中的郵件數目。
 
-此資料表包含下列資訊（以遞減的日期順序顯示）：
+[詳細資料] 表格包含下列資訊（以遞減的日期順序顯示）：
 
-- **Date**
+- **日期 (UTC)**
 - **電子郵件總數**
 - **已篩選 Edge**
 - **規則郵件**：由於郵件流程規則而篩選的郵件 (也稱為傳輸規則) 。
@@ -317,7 +340,7 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 <sup>\*</sup>Office 365 的 Defender
 
-如果您選取資料表格中的資料列，則會在飛入的電子郵件計數中顯示進一步細分。
+如果您選取 [詳細資料] 表格中的列，則會在飛入的電子郵件計數中顯示進一步細分。
 
 #### <a name="export-from-tech-view"></a>從技術視圖匯出
 
@@ -338,13 +361,13 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 匯總 view 篩選允許90天，而 [詳細資料表格篩選] 只允許10天。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 **電子郵件中偵測到惡意** 代碼，按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/MalwareDetections> 。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [**電子郵件 &** 共同作業報告] 頁面上，尋找 [**在電子郵件中偵測到惡意** 代碼]，然後按一下 [ **View** 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/MalwareDetections> 。
 
 ![電子郵件 & 協同報告] 頁面上電子郵件小工具中的惡意程式碼偵測](../../media/malware-detections-widget.png)
 
-按一下 [ **查看詳細資料**] 之後，您可以按一下 [ **篩選** ] 並選取 [篩選]，以篩選圖表和詳細資料表格：
+在 [ **惡意** 代碼偵測報告] 頁面上，您可以按一下 [ **篩選** ] 並選取下列其中一個值，以篩選圖表和詳細資料表格：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **方向**： **輸入** 和 **輸出**
 
 ![電子郵件中的惡意程式碼偵測報表檢視](../../media/malware-detections-report-view.png)
@@ -366,7 +389,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 ## <a name="spam-detections-report"></a>垃圾郵件偵測報告
 
 > [!NOTE]
-> 在2021年6月30日， **垃圾郵件偵測報告** 將會消失。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
+> **垃圾郵件偵測報告** 會最後移出。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
 
 ## <a name="spoof-detections-report"></a>欺騙偵測報告
 
@@ -379,15 +402,23 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 <sup>\*</sup> 最後，您將可以使用超過90天的篩選。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 **欺騙** 偵測上，按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/SpoofMailReportV2> 。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，找出 **欺騙** 偵測，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/SpoofMailReportV2> 。
 
 ![電子郵件 & 協同報告] 頁面上的欺騙偵測小工具](../../media/spoof-detections-widget.png)
 
+此圖表顯示下列資訊：
+
+- **通過**
+- **失敗**
+- **SoftPass**
+- **無**
+- **其他**
+
 當您將滑鼠停留在圖表中的某一天 (資料點) 時，您可以看到偵測到的冒牌郵件數目及原因。
 
-按一下 [ **查看詳細資料**] 之後，您可以按一下 [ **篩選** ] 並選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
+在 [ **偽造郵件報告** ] 頁面上，您可以按一下 [ **篩選** ]，然後選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **結果**：
   - **通過**
   - **失敗**
@@ -398,7 +429,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 ![Microsoft 365 Defender 入口網站中的 [偽造郵件報告] 頁面](../../media/spoof-detections-report-page.png)
 
-在圖形下方的表格中，您可以看到下列詳細資料：
+在圖形下方的 [詳細資料] 表格中，您可以看到下列詳細資料：
 
 - **Date**
 - **偽裝的使用者**
@@ -413,6 +444,35 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 如需複合驗證結果代碼的詳細資訊，請參閱[反垃圾郵件郵件頭 in Microsoft 365](anti-spam-message-headers.md)。
 
+## <a name="submissions-report"></a>提交報告
+
+**提交** 報告會顯示系統管理員針對分析報告之專案的相關資訊。 如需詳細資訊，請參閱 [使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
+
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，找到 [ **提交** ]，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/adminSubmissionReport> 。 若要移至 [Microsoft 365 Defender 入口網站中的系統管理提交](admin-submission.md)，按一下 [**移至提交**]。
+
+![電子郵件 & 協同報告] 頁面上的提交小工具](../../media/submissions-report-widget.png)
+
+此圖表顯示下列資訊：
+
+- **等待**
+- **已完成**
+
+在 [ **提交** ] 頁面上，您可以按一下 [ **篩選** ]，然後選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
+
+- **報告日期**： **開始時間** 和 **結束時間**
+- **提交類型**： **電子郵件**、 **URL** 或 **檔案**
+- **提交識別碼**
+- **網路消息識別碼**
+- **Sender**
+- **名稱**
+- **提交者**
+- **提交原因**： **非垃圾郵件**、 **網路釣魚詐騙**、 **惡意** 代碼或 **垃圾郵件**
+- **重新掃描狀態**： **擱置** 或 **已完成**
+
+圖表下方的 [詳細資料] 表格會顯示相同的資訊，並具有相同的 **群組** 或 **自訂欄** 選項，與在 **電子郵件 &** 共同作業報送中 **提交的 [分析**] 索引標籤 \> ****。 如需詳細資訊，請參閱 [View admin 報送 To Microsoft](admin-submission.md#view-admin-submissions-to-microsoft)。
+
+![Microsoft 365 Defender 入口網站中的「提交報告」頁面](../../media/submissions-report-page.png)
+
 ## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
 「**威脅防護狀態**」報告適用于 EOP 和 Defender Office 365;不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不會[Safe SharePoint、OneDrive 及 Microsoft Teams 的附件](mdo-for-spo-odb-and-teams.md)所偵測到之惡意檔案的相關資訊。
@@ -421,14 +481,14 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 **附注：請** 務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **威脅防護狀態**] 中，按一下 [ **查看詳細資料**]。 若要直接前往報告，請開啟下列其中一個 URLs：
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 & 協同報告** ] 頁面上，找出 **威脅防護狀態** ，然後按一下 [ **查看詳細資料**]。 若要直接前往報告，請開啟下列其中一個 URLs：
 
 - Office 365 的 Defender：<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP <https://security.microsoft.com/reports/TPSAggregateReport>
 
 ![「電子郵件 & 協同報告」頁面上的威脅防護狀態構件](../../media/threat-protection-status-report-widget.png)
 
-依預設，按一下 [ **查看詳細** 資料] 之後，圖表會顯示過去7天的資料。 如果您按一下 [ **篩選**]，可以選取90天的日期範圍 (試用訂閱可能限制為30天) 。 [詳細資料] 表格允許篩選30天。
+根據預設，圖表會顯示過去7天的資料。 如果您按一下 [**威脅防護狀態報表**] 頁面上的 [**篩選**]，您可以選取90天的日期範圍 (試用訂閱可能限制為30天) 。 [詳細資料] 表格允許篩選30天。
 
 下列各節將說明可用的視圖。
 
@@ -446,7 +506,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 如果您按一下 [ **篩選**]，則可以使用下列篩選器：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **偵測**：**電子郵件惡意** 代碼、**電子郵件網路釣魚** 或 **內容惡意** 代碼
 - **受保護**： **MDO** (Office 365) 或 **EOP** 的 Defender
 - **標記**：依已套用指定使用者標記的使用者或群組來篩選結果 (包含優先順序帳戶) 。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
@@ -493,7 +553,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 如果您按一下 [ **篩選**]，則可以使用下列篩選器：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **偵測**
 - **受保護**： **MDO** (Office 365) 或 **EOP** 的 Defender
 - **方向**
@@ -534,7 +594,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 如果您按一下 [ **篩選**]，則可以使用下列篩選器：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **偵測**
 - **受保護**： **MDO** (Office 365) 或 **EOP** 的 Defender
 - **方向**
@@ -572,7 +632,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 如果您按一下 [ **篩選**]，則可以使用下列篩選器：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **偵測**
 - **受保護**： **MDO** (Office 365) 或 **EOP** 的 Defender
 - **方向**
@@ -613,7 +673,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 如果您按一下 [ **篩選**]，則可以使用下列篩選器：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **偵測**
 - **受保護**： **MDO** (Office 365) 或 **EOP** 的 Defender
 - **方向**
@@ -636,14 +696,14 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 在圖表下方的 [詳細資料] 表格中，可使用下列資訊：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **位置**
 - **偵測到**
 - **惡意軟體名稱**
 
 如果您按一下 [ **篩選**]，則可以使用下列篩選器：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **偵測**： **反惡意程式碼引擎** 或 **檔引爆**
 
 當您完成設定篩選 **時，請按一下 [** 套用]、[ **取消**] 或 [ **清除篩選**]。
@@ -677,7 +737,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 如果您按一下 [ **篩選**]，則可以使用下列篩選器：
 
-- **日期**： **開始日期** 和 **結束日期**
+- **日期 (UTC)** **開始日期** 和 **結束日期**
 - **偵測**
 - **受保護**： **MDO** (Office 365) 或 **EOP** 的 Defender
 - **方向**
@@ -695,13 +755,13 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 **主要惡意** 代碼報告會顯示 [EOP 中的反惡意程式碼防護](anti-malware-protection.md)所偵測到的各種惡意程式碼。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **主要惡意** 代碼] 上，按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/TopMalware> 。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，尋找 [ **主要惡意** 代碼]，然後按一下 [ **詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/TopMalware> 。
 
 ![「電子郵件 & 協同報告」頁面上的主要惡意程式碼小工具](../../media/top-malware-report-widget.png)
 
 當您將游標移到圓形圖中的楔形上方時，您可以看到惡意程式碼類型的名稱，以及偵測到該惡意程式碼的郵件數目。
 
-按一下 [ **查看詳細資料**] 之後，報表頁面上便會顯示較大的餅版本圖表。圖表下方的 [詳細資料] 表格會顯示下列資訊：
+在「 **主要惡意程式碼報告** 」頁面上，報表頁面上會顯示較大的餅版本圖表。圖表下方的 [詳細資料] 表格會顯示下列資訊：
 
 - **主要惡意程式碼**
 - **Count**
@@ -721,11 +781,11 @@ Office 365 的「 **URL 威脅防護」報告** 可用於的 Microsoft Defender�
 
 「 **使用者報告的訊息** 報告」顯示使用者已使用 [報告郵件增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)舉報為垃圾郵件、網路釣魚企圖或良好郵件的相關資訊。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 & 共同作業報告** \> **使用者報告的訊息**。 在 [ **使用者報告的郵件**] 上，按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/userSubmissionReport> 。 若要移至 [Microsoft 365 Defender 入口網站中的系統管理提交](admin-submission.md)，按一下 [**移至提交**]。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，找出 **使用者報告的訊息** ，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/userSubmissionReport> 。 若要移至 [Microsoft 365 Defender 入口網站中的系統管理提交](admin-submission.md)，按一下 [**移至提交**]。
 
 ![「電子郵件 & 共同作業報告」頁面上的使用者報告的訊息小工具](../../media/user-reported-messages-widget.png)
 
-按一下 [ **查看詳細資料**] 之後，您可以按一下 [ **篩選** ]，然後在出現的浮出控制項中選取下列一或多個值，以篩選圖表和詳細資料表格：
+在 [ **使用者報告的郵件** ] 頁面上，您可以按一下 [ **篩選** ]，然後在出現的浮出控制項中，選取下列一或多個值，以篩選圖表和詳細資料表格：
 
 - **報告日期**： **開始時間** 和 **結束時間**
 - **報告者**
@@ -752,7 +812,7 @@ Office 365 的「 **URL 威脅防護」報告** 可用於的 Microsoft Defender�
 
 ![使用者報告的訊息報告](../../media/user-reported-messages-report.png)
 
-在圖形下方的表格中，您可以看到下列詳細資料：
+在圖形下方的 [詳細資料] 表格中，您可以看到下列詳細資料：
 
 - **電子郵件主旨**
 - **報告者**

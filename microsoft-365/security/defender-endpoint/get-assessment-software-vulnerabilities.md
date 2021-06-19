@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea05d37ebcd0953dd109f524775a55cf8d6b3683
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984961"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022867"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>每個裝置的匯出軟體漏洞評估
 
@@ -39,7 +39,7 @@ ms.locfileid: "52984961"
 
 有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能非常大，所以可供檢索的方式有兩種：
 
-1. [匯出軟體漏洞評估 OData](#1-export-software-vulnerabilities-assessment-odata)  API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法適用于 _低於 100 K 裝置的小型組織_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
+1. [匯出軟體漏洞評估 **JSON 回應**](#1-export-software-vulnerabilities-assessment-json-response)  API 將組織中的所有資料都提取為 Json 回應。 這種方法適用于 _低於 100 K 裝置的小型組織_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
 
 2. 透過檔案[匯出軟體漏洞評估](#2-export-software-vulnerabilities-assessment-via-files)此 API 解決方案可讓大量的資料更快速且可靠地進行。 針對大型組織，建議使用透過檔案，且包含超過 100 K 個裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
 
@@ -47,8 +47,8 @@ ms.locfileid: "52984961"
 
    - 使用下載 URLs 下載所有檔案，並視需要處理資料。
 
-3. [Delta export 軟體漏洞評估 OData](#3-delta-export-software-vulnerabilities-assessment-odata)  會傳回表格，其中每個唯一的組合： DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 及 EventTimestamp。
-API 將組織中的資料提取為 Json 回應，遵循 OData 的通訊協定。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 <br><br> 不同于完整的軟體漏洞評估 (OData) -用於取得組織之軟體漏洞評估的整個快照。 [增量匯出 OData API 呼叫是用來只取得所選日期和目前日期之間所發生的變更， (「delta」 API 通話) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export OData API 通話也可以用來計算不同的 KPIs，例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」 <br><br> 因為對軟體弱點的 Delta export OData API 呼叫只會傳回目標日期範圍的資料，所以不會被視為 _完整匯出_。
+3. [Delta export 軟體漏洞評估 **JSON 回應**](#3-delta-export-software-vulnerabilities-assessment-json-response)  會傳回表格，其中每個唯一的組合： DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 及 EventTimestamp。
+API 將組織中的資料提取為 Json 回應。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 <br><br> 與完整的「軟體弱點評估 (JSON 回應) 」（用來取得組織的軟體漏洞評估整個快照）不同（「增量匯出 OData API 呼叫）是用來只提取選取日期和目前日期之間所發生的變更 (「delta」 API 通話) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export JSON 回應 API 通話也可以用來計算不同的 KPIs 例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」 <br><br> 因為軟體弱點的 Delta export JSON 回應 API 呼叫只會傳回目標日期範圍的資料，所以不會被視為 _完整匯出_。
 
 使用 _OData_ _或透過_ 檔案收集 (所收集的資料，) 目前狀態的目前快照，且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
 
@@ -56,17 +56,17 @@ API 將組織中的資料提取為 Json 回應，遵循 OData 的通訊協定。
 >
 > 除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
 
-## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. 匯出軟體漏洞評估 (OData) 
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. 匯出軟體漏洞評估 (JSON 回應) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法描述
 
 此 API 回應包含每個裝置已安裝軟體的所有資料。 會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CVEID 的每個唯一組合的專案。
 
-#### <a name="limitations"></a>限制
+#### <a name="111-limitations"></a>1.1.1 限制
 
->- 頁面大小上限為200000。
->
->- 此 API 的速率限制為每分鐘30個通話，每小時1000個通話。
+- 頁面大小上限為200000。
+
+- 此 API 的速率限制為每分鐘30個通話，每小時1000個通話。
 
 ### <a name="12-permissions"></a>1.2 許可權
 
@@ -89,15 +89,16 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 - $top –傳回的結果數 (不會傳回 @odata nextLink，因此不會拉入所有資料) 
 
 ### <a name="15-properties"></a>1.5 屬性
->
+
 >[!Note]
 >
->- 每筆記錄大約是1KB 的資料。 為您選擇正確的 pageSize 參數時，您應該考慮使用此帳戶。
+>- 每筆記錄大約是 1 KB 的資料。 為您選擇正確的 pageSize 參數時，您應該考慮使用此帳戶。
 >
 >- 其他一些欄可能會在回應中傳回。 這些欄是暫存檔的，而且可能會被移除，請只使用記錄的資料行。
 >
 >- 下表中所定義的屬性依字母順序依屬性識別碼列出。  執行此 API 時，所產生的輸出不一定會依照此表中所列的順序傳回。
->
+
+<br/>
 
 屬性 (識別碼)  | 資料類型 | 描述 | 傳回值的範例
 :---|:---|:---|:---
@@ -335,17 +336,17 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="3-delta-export-software-vulnerabilities-assessment-odata"></a>3. Delta export 軟體漏洞評估 (OData) 
+## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. 增量匯出軟體漏洞評估 (JSON 回應) 
 
 ### <a name="31-api-method-description"></a>3.1 API 方法描述
 
-會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 的每個唯一組合的專案。 API 將組織中的資料提取為 Json 回應，遵循 OData 的通訊協定。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 不同于完整的軟體漏洞評估 (OData) -用於取得組織之軟體漏洞評估的整個快照。 [增量匯出 OData API 呼叫是用來只取得所選日期和目前日期之間所發生的變更， (「delta」 API 通話) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export OData API 通話也可以用來計算不同的 KPIs，例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」
+會傳回資料表，其中包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 的每個唯一組合的專案。 API 將組織中的資料提取為 Json 回應。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 與完整的軟體漏洞評估 (JSON 回應) （用來取得組織的軟體漏洞評估整個快照）不同時，會使用 delta export JSON 回應 API 呼叫，只提取選取日期和目前日期之間所發生的變更， ("delta" API 呼叫) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export JSON 回應 API 通話也可以用來計算不同的 KPIs 例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」
 
 >[!NOTE]
 >
->強烈建議您在一周內至少使用一次裝置 API 呼叫的完整匯出軟體漏洞評估，而裝置 (delta) API 將此額外的匯出軟體弱點變更為一周的所有其他日子。  與其他評估 OData API 不同的是，「delta export」不是完整匯出。 Delta export 只會包含選取日期和目前日期之間所發生的變更 (「delta」 API 呼叫) 。
+>強烈建議您在一周內至少使用一次裝置 API 呼叫的完整匯出軟體漏洞評估，而裝置 (delta) API 將此額外的匯出軟體弱點變更為一周的所有其他日子。  與其他評估 JSON 回應 APIs 不同的是，「delta export」不是完整匯出。 Delta export 只會包含選取日期和目前日期之間所發生的變更 (「delta」 API 呼叫) 。
 
-#### <a name="limitations"></a>限制
+#### <a name="311-limitations"></a>3.1.1 限制
 
 - 頁面大小上限為200000。
 
@@ -379,10 +380,10 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 每個傳回的記錄包含由裝置 OData API 的完整出口軟體漏洞評估中的所有資料，另外還有兩個額外的欄位：  _**EventTimestamp**_ 和 _**Status**_。
 
 >[!NOTE]
->-回應中可能傳回其他一些欄。 這些欄是暫存檔的，而且可能會被移除，所以請只使用記錄的資料行。
+>- 其他一些欄可能會在回應中傳回。 這些欄是暫存檔的，而且可能會被移除，所以請只使用記錄的資料行。
 >
->-在下表中定義的屬性依屬性識別碼列出字母順序。  執行此 API 時，所產生的輸出不一定會依照此表中所列的順序傳回。
-<br>
+>- 下表中所定義的屬性依字母順序依屬性識別碼列出。  執行此 API 時，所產生的輸出不一定會依照此表中所列的順序傳回。
+<br><br/>
 
 屬性 (識別碼)  | 資料類型 | 描述 | 傳回值的範例
 :---|:---|:---|:---
@@ -411,12 +412,12 @@ VulnerabilitySeverityLevel | string | 依威脅環境影響的 CVSS 分數和動
 #### <a name="clarifications"></a>澄清
 
 - 若軟體從版本1.0 更新為版本2.0，而且這兩個版本都會公開至 CVE-A，您會收到2個不同的事件：  
-   a. 固定– CVE-已修正版本1。0  
-   b. 新增– CVE-已新增版本2。0
+   1. 固定– CVE-已修正版本1。0  
+   1. 新增– CVE-已新增版本2。0
 
 - 例如，如果特定弱點 (例如，在特定時間內第一 (次看到) （例如，1.0 年1月10日) ），而軟體更新至版本2.0 （也是對相同的 CVE-A 所公開），您將會收到這兩個分隔的事件：  
-   a. Fixed – CVE-X，FirstSeenTimestamp 年1月10日，第1版，0。  
-   b. 新增– CVE-X，FirstSeenTimestamp 年1月10日，版本2.0。
+   1. Fixed – CVE-X，FirstSeenTimestamp 年1月10日，第1版，0。  
+   1. 新增– CVE-X，FirstSeenTimestamp 年1月10日，版本2.0。
 
 ### <a name="36-examples"></a>3.6 範例
 

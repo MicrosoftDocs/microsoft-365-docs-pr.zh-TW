@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984841"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022879"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>每個裝置匯出軟體清查評估
 
@@ -37,7 +37,7 @@ ms.locfileid: "52984841"
 >
 有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能很大，所以可供檢索的方式有兩種：
 
-- [匯出軟體清查評估 **OData**](#1-export-software-inventory-assessment-odata) API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法最適合 _小型組織，且少於 100 K 裝置_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
+- [匯出軟體清查評估 **JSON 回應**](#1-export-software-inventory-assessment-json-response) API 將組織中的所有資料都提取為 Json 回應。 這種方法最適合 _小型組織，且少於 100 K 裝置_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
 
 - 透過[檔案匯出軟體清查評估](#2-export-software-inventory-assessment-via-files) 此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
 
@@ -51,7 +51,7 @@ ms.locfileid: "52984841"
 >
 > 除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
 
-## <a name="1-export-software-inventory-assessment-odata"></a>1. 匯出軟體清查評估 (OData) 
+## <a name="1-export-software-inventory-assessment-json-response"></a>1. 匯出軟體清查評估 (JSON 回應) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法描述
 
@@ -88,11 +88,13 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!NOTE]
 >
->-每筆記錄大約 0.5 KB 的資料。 為您選擇正確的 pageSize 參數時，您應該考慮使用此帳戶。
-
->-在下表中定義的屬性依屬性識別碼列出字母順序。 執行此 API 時，所產生的輸出不一定會依照此表中所列的順序傳回。
+>- 每筆記錄大約 0.5 KB 的資料。 為您選擇正確的 pageSize 參數時，您應該考慮使用此帳戶。
 >
->-回應中可能傳回其他一些欄。 這些欄是暫存檔的，而且可能會被移除，請只使用記錄的資料行。
+>- 下表中所定義的屬性依字母順序依屬性識別碼列出。 執行此 API 時，所產生的輸出不一定會依照此表中所列的順序傳回。
+>
+>- 其他一些欄可能會在回應中傳回。 這些欄是暫存檔的，而且可能會被移除，請只使用記錄的資料行。
+
+<br/>
 
 屬性 (識別碼)  | 資料類型 | 描述 | 傳回值的範例
 :---|:---|:---|:---
@@ -246,12 +248,14 @@ GET /api/machines/SoftwareInventoryExport
 
 >[!Note]
 >
->- 這些檔案是以多行 Json 格式的 gzip 壓縮 &。
+>- 這些檔案是以多行 JSON 格式的 gzip 壓縮 &。
 >
 >- 下載 URLs 只會在3小時內有效。 否則您可以使用參數。
 >
->_ 若要下載最大的資料下載速度，您可以確定從資料所在的相同 Azure 地區下載。
->
+>- 為了獲得最大的下載速度，您可以確保從您的資料所在的相同 Azure 地區下載。
+
+<br/><br/>
+
 屬性 (識別碼)  | 資料類型 | 描述 | 傳回值的範例
 :---|:---|:---|:---
 匯出檔案 | 陣列 \[ 字串\] | 用於存放組織目前快照之檔案的下載 URLs 清單 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]

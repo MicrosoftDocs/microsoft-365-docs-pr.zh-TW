@@ -1,6 +1,6 @@
 ---
 title: 自動調查的詳細資料和結果
-description: 在 Microsoft 365 Defender 中查看自動調查的結果和重要結果
+description: 在 Microsoft 365 Defender 中查看自動調查的結果與主要調查結果
 keywords: 自動, 調查, 結果, 分析, 詳細資料, 修正, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ad774fc36f4f167cb7a4e695b9f572ceb55b968b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274673"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022548"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調查的詳細資料和結果
 
@@ -35,9 +35,9 @@ ms.locfileid: "52274673"
 **適用於：**
 - Microsoft 365 Defender
 
-使用 Microsoft 365 Defender 時，當[自動調查](m365d-autoir.md)執行時，系統會在自動調查程式期間和之後使用該調查的詳細資料。 如果您擁有[必要權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 此 view 提供您的最新狀態，以及核准任何擱置中動作的功能。 
+透過 Microsoft 365 Defender，當[自動調查](m365d-autoir.md)執行時，在自動調查程式期間和之後都可以使用該調查的詳細資料。 如果您擁有[必要權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 此 view 提供您的最新狀態，以及核准任何擱置中動作的功能。 
 
-![調查詳細資料](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調查詳細資料":::
 
 ## <a name="new-unified-investigation-page"></a> (NEW！ ) 整合調查頁面
 
@@ -45,7 +45,7 @@ ms.locfileid: "52274673"
 
 - Office 365 安全性 & 規範中心 (中的任何調查頁面 [https://protection.office.com](https://protection.office.com)) 
 - Microsoft Defender 資訊安全中心 (中的任何調查頁面 [https://securitycenter.windows.com](https://securitycenter.windows.com)) 
-- Microsoft 365 security center (中的任何事件或行動中心體驗 [https://security.microsoft.com](https://security.microsoft.com)) 
+- Microsoft 365 Defender 入口網站 (中的任何事件或行動中心體驗 [https://security.microsoft.com](https://security.microsoft.com)) 
 
 ## <a name="open-the-investigation-details-view"></a>開啟調查詳細資料檢視
 
@@ -89,13 +89,13 @@ ms.locfileid: "52274673"
 
 以下為範例。
 
-![事件詳細資料](../../media/mtp-incidentdetails-tabs.png)
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="事件詳細資料":::
 
 ## <a name="investigation-details"></a>調查詳細資料
 
 使用調查詳細資料檢視，查看與調查相關的過去、目前和待核准的活動。 以下為範例。
 
-![調查詳細資料](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調查詳細資料":::
 
 在調查詳細資料檢視中，您可以在 [調查圖表]、[警示]、[裝置]、[身分識別]、[重要結果]、[實體]、**[記錄]**，以及 [待核准的動作] 索引標籤上查看資訊，如下表所述。
 
@@ -108,7 +108,7 @@ ms.locfileid: "52274673"
 | **提醒**    | 列出與調查相關聯的警示。 警示可能來自使用者裝置上的威脅防護功能、Office 應用程式、Microsoft Cloud App Security 及其他 Microsoft 365 Defender 功能。|
 | **裝置** | 列出調查中包含的裝置及其修正層級。  (修正層級會對應至 [裝置群組的自動化層級](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。 )  |
 | **信箱** |列出受偵測到之威脅影響的信箱。  |
-| **Users**  | 列出受偵測到之威脅影響的使用者帳戶。 |
+| **使用者**  | 列出受偵測到之威脅影響的使用者帳戶。 |
 | **證據** | 列出由警示或調查引發的證據片段。 包括 verdicts (*惡意*、 *可疑*、 *未知* 或 *未發現威脅*) 和修正狀態。 |
 | **Entities**  | 提供每個已分析之實體的詳細資料，包括每個實體類型的判定 (*惡意*、 *可疑* 或沒有) 中 *找到的威脅* 。|
 |**Log**    | 提供觸發警示之後所採取之所有調查動作的按時間排序的詳細視圖。|
@@ -116,5 +116,5 @@ ms.locfileid: "52274673"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [查看和管理修正動作](m365d-autoir-actions.md)
+- [檢視和管理補救動作](m365d-autoir-actions.md)
 - [深入瞭解修復動作](m365d-remediation-actions.md)

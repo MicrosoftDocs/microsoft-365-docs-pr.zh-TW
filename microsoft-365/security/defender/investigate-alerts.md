@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782906"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022676"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的警示
 
@@ -40,13 +40,13 @@ ms.locfileid: "52782906"
 
 在 Microsoft 365 Defender 中，會將相關的警示彙集在一起，以形成[事件](incidents-overview.md)。 事件一定會提供更廣泛的攻擊內容，不過，當需要深入分析時，分析警示可能很重要。 
 
-[ **警示] 佇列** 會顯示目前的警示集。 您可以在 [Microsoft 365 安全性中心] 的 [快速啟動] ([security.microsoft.com](https://security.microsoft.com)) ] 中，從事件中取得警示佇列 **& 警示 > 警示**。
+[ **警示] 佇列** 會顯示目前的警示集。 您可以從事件中取得警示佇列， **& 警示 >** Microsoft 365 Defender 入口網站 ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上的警示。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警示佇列的範例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警示佇列的範例":::
 
-來自不同 microsoft security 解決方案（如 microsoft defender for Endpoint、microsoft defender for Office 365 和 Microsoft 365 Defender）的警示會顯示在這裡。
+不同 microsoft security 解決方案（如 microsoft defender for Endpoint、microsoft defender for Office 365 和 Microsoft 365 Defender）中的警示會出現在這裡。
 
-根據預設，Microsoft 365 security center 中的 [警示] 佇列會顯示過去30天的 [新增] 和 [進度] 警示。 最新的警示是在清單頂端，您可以先查看它。 
+根據預設，Microsoft 365 Defender 入口網站中的 [警示] 佇列會顯示過去30天的新和進行中的警示。 最新的警示是在清單頂端，您可以先查看它。 
 
 您可以從預設的 [提醒] 佇列中，選取 [ **篩選** ]，以查看 **篩選** 窗格，您可以從中指定提醒的子集。 以下為範例。
 
@@ -56,7 +56,7 @@ ms.locfileid: "52782906"
 
 - 嚴重性
 - 狀態
-- Category
+- 類別
 - 偵測來源
 - 標記
 - 原則
@@ -66,7 +66,7 @@ ms.locfileid: "52782906"
 
 若要查看 [主要提醒] 頁面，請選取警示的名稱。 以下為範例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全性中心內警示的詳細資料頁面範例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 Defender 入口網站中警示的詳細資料頁面範例":::
 
 您也可以從 [**管理警示**] 窗格中選取 [**開啟主要警示] 頁面** 動作。
 
@@ -75,12 +75,12 @@ ms.locfileid: "52782906"
 - 警示案例，這是以時間順序與此警示相關的事件及警示鏈
 - 摘要詳細資料
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全性中心內警示的詳細資料頁面範例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 Defender 入口網站中警示的詳細資料頁面範例":::
 
 在 [警示] 頁面中，您可以選取任何實體旁的省略號 () **...** ]，以查看可用的動作，例如開啟警示頁面或將警示連結至另一個事件。
 
 ### <a name="alert-sources"></a>警示來源
-Microsoft 365Defender 警示可能來自 microsoft defender for Endpoint、microsoft defender for Office 365 和 Microsoft Cloud App Security 等解決方案。 您可能會注意到警示中帶有前置字元的警示。 下表提供指導方針，可協助您瞭解根據警示上的前置字母，警示來源的對應。
+Microsoft 365 Defender 警示可能來自 microsoft defender for Endpoint、microsoft defender for Office 365 及 Microsoft Cloud App Security 等解決方案。 您可能會注意到警示中帶有前置字元的警示。 下表提供指導方針，可協助您瞭解根據警示上的前置字母，警示來源的對應。
 
 > [!NOTE]
 > - 預置的 Guid 只是針對整合的經驗，例如整合的警示佇列、整合的提醒頁面、整合調查和整合事件。<br>
@@ -92,15 +92,13 @@ Microsoft 365Defender 警示可能來自 microsoft defender for Endpoint、micro
 適用於 Office 365 的 Microsoft Defender | `fa{GUID}` <br> 範例：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
 適用於端點的 Microsoft Defender | `da` 或 `ed` 自訂偵測警示 <br> 
 適用於身分識別的 Microsoft Defender | `aa{GUID}` <br> 範例：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> 範例：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
-
-
+Microsoft 雲端 App 安全性 |`ca{GUID}` <br> 範例：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 ### <a name="analyze-affected-assets"></a>分析受影響的資產
 
 [ **採取的動作** ] 區段包含受影響的資產清單，例如信箱、裝置，以及受此警示影響的使用者。 
 
-您也可以選取 [**操作中心] 中** 的 [查看]，以在 [Microsoft 365 安全性中心] 中查看重要訊息 **中心** 的 [**記錄**] 索引標籤 
+您也可以 **在 [操作中心**] 中選取 [view] （查看），以在 Microsoft 365 Defender 入口網站中查看 **動作中心** 的 [**記錄**] 索引卷 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>追蹤警示案例中的警示角色
 
@@ -143,7 +141,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 範例：`ca123a456b-c789-1d2e-12f
 
 以下為範例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Microsoft 365 安全性中心內警示上的動作範例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Microsoft 365 Defender 入口網站上警示的動作範例":::
 
 其他動作的清單取決於警示類型。
 
@@ -151,7 +149,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 範例：`ca123a456b-c789-1d2e-12f
 
 當您完成對警示的分析而且可以解決後，請移至 [ **管理警示** ] 窗格中的警示，並將 it 狀態標示為 [ **已解決** ]，然後將其歸類為 **錯誤警示** 或 **True 警示**。 若為 true 警示，請在 **判斷** 欄位中指定警示的威脅類型。
 
-分類提醒並指定其決定可協助調整 Microsoft 365 Defender，以提供更真實的警示及較少的虛假警示。
+分類提醒並指定其判斷，可協助調整 Microsoft 365 Defender，以提供更真實的警示及較少的虛假警示。
 
 ## <a name="next-steps"></a>後續步驟
 

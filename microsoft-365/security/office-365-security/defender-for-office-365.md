@@ -21,12 +21,12 @@ ms.custom:
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904113"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022351"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
@@ -122,13 +122,7 @@ ms.locfileid: "52904113"
 報告會即時更新，提供您最新的深入解析。 這些報告也提供建議並警示您即將發生的潛在威脅。 預先定義的報告包括下列：
 
 - [威脅總管 (或即時偵測)](threat-explorer.md)
-
 - [威脅防護狀態報告](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [適用於 Office 365 的 Defender 檔案類型報告](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [適用於 Office 365 的 Defender 郵件處置報告](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - ... 還有更多功能。
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>使用威脅調查及回應功能

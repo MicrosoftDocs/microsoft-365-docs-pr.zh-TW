@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925884"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022728"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -36,17 +36,17 @@ ms.locfileid: "52925884"
 **適用於：**
 - Microsoft 365 Defender
 
-Microsoft 365Defender 會將相互關聯的分析和匯總相關的警報和自動調查套用到事件中。 Microsoft 365若 Microsoft 365 Defender 跨整個產品套件的端對端可視性，則您也會針對僅可識別為惡意的活動，觸發唯一的警示。 這種觀點可讓您的安全性分析更廣泛的攻擊案例，以協助他們更好地瞭解及處理整個組織中的複雜威脅。
+Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調查套用到事件中。 Microsoft 365 Defender 也會針對 Microsoft 365 Defender 跨整個產品套件的端對端 visibility，，針對只識別為惡意的活動，觸發唯一警示。 這種觀點可讓您的安全性分析更廣泛的攻擊案例，以協助他們更好地瞭解及處理整個組織中的複雜威脅。
 
 [ **事件] 佇列** 顯示跨裝置、使用者和信箱建立的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。 
 
-您可以從事件中取得事件佇列， **& 警示 >** Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上的事件。 以下為範例。
+您可以從事件中取得事件佇列 **& 警示 >** Microsoft 365 Defender 入口網站 ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上的事件。 以下為範例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件佇列的範例":::
 
 **最新的 [事件及警示**] 區段會顯示過去24小時所收到的警示和事件數目圖表。
 
-根據預設，Microsoft 365 security center 中的事件佇列會顯示過去六個月所看到的事件。 最近的事件是在清單頂端，您可以先查看此專案。
+根據預設，Microsoft 365 Defender 入口網站中的事件佇列會顯示過去六個月所看到的事件。 最近的事件是在清單頂端，您可以先查看此專案。
 
 事件佇列具有可自訂的欄 (選取 **[選擇欄** ]) ，可讓您深入瞭解事件或受影響的實體的不同特性。 這可協助您作出有關分析的事件優先順序決定。
 
