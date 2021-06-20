@@ -19,411 +19,411 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f680cfb30de5b6904e5fa489cca368550195b4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203673"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028772"
 ---
-# <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a><span data-ttu-id="17855-103">在政治活動開發/測試環境中建立小組網站</span><span class="sxs-lookup"><span data-stu-id="17855-103">Create team sites in a political campaign dev/test environment</span></span>
+# <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a><span data-ttu-id="210c4-103">在政治活動開發/測試環境中建立小組網站</span><span class="sxs-lookup"><span data-stu-id="210c4-103">Create team sites in a political campaign dev/test environment</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-<span data-ttu-id="17855-104">**適用於**</span><span class="sxs-lookup"><span data-stu-id="17855-104">**Applies to**</span></span>
+<span data-ttu-id="210c4-104">**適用於**</span><span class="sxs-lookup"><span data-stu-id="210c4-104">**Applies to**</span></span>
 
-- [<span data-ttu-id="17855-105">適用於 Office 365 的 Microsoft Defender 方案 2</span><span class="sxs-lookup"><span data-stu-id="17855-105">Microsoft Defender for Office 365 plan 2</span></span>](defender-for-office-365.md)
-- 
- <span data-ttu-id="17855-106">**摘要：** 在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。</span><span class="sxs-lookup"><span data-stu-id="17855-106">**Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment.</span></span> 
+- [<span data-ttu-id="210c4-105">適用於 Office 365 的 Microsoft Defender 方案 2</span><span class="sxs-lookup"><span data-stu-id="210c4-105">Microsoft Defender for Office 365 plan 2</span></span>](defender-for-office-365.md)
+
+ <span data-ttu-id="210c4-106">**摘要：** 在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。</span><span class="sxs-lookup"><span data-stu-id="210c4-106">**Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment.</span></span> 
    
-<span data-ttu-id="17855-p101">使用本文所述指示來建立開發/測試環境，其中包含針對 [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解決方案的四種不同類型的 SharePoint Online 小組網站。這些網站會在主題 10 中詳細說明，主題 10 的標題為 **「SharePoint 和商務用 OneDrive」**。</span><span class="sxs-lookup"><span data-stu-id="17855-p101">Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.</span></span>
+<span data-ttu-id="210c4-p101">使用本文所述指示來建立開發/測試環境，其中包含針對 [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解決方案的四種不同類型的 SharePoint Online 小組網站。這些網站會在主題 10 中詳細說明，主題 10 的標題為 **「SharePoint 和商務用 OneDrive」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-p101">Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.</span></span>
 
-## <a name="phase-1-create-your-political-campaign-devtest-environment"></a><span data-ttu-id="17855-109">階段 1：建立政治活動開發/測試環境</span><span class="sxs-lookup"><span data-stu-id="17855-109">Phase 1: Create your political campaign dev/test environment</span></span>
+## <a name="phase-1-create-your-political-campaign-devtest-environment"></a><span data-ttu-id="210c4-109">階段 1：建立政治活動開發/測試環境</span><span class="sxs-lookup"><span data-stu-id="210c4-109">Phase 1: Create your political campaign dev/test environment</span></span>
 
-<span data-ttu-id="17855-110">首先，請依照[設定政治活動開發/測試環境的群組和使用者](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)中的指示來建立訂閱、使用者和群組。</span><span class="sxs-lookup"><span data-stu-id="17855-110">First, follow the instructions in [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) to create your subscriptions, users, and groups.</span></span>
+<span data-ttu-id="210c4-110">首先，請依照[設定政治活動開發/測試環境的群組和使用者](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)中的指示來建立訂閱、使用者和群組。</span><span class="sxs-lookup"><span data-stu-id="210c4-110">First, follow the instructions in [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) to create your subscriptions, users, and groups.</span></span>
 
-## <a name="phase-2-create-labels"></a><span data-ttu-id="17855-111">階段 2：建立標籤</span><span class="sxs-lookup"><span data-stu-id="17855-111">Phase 2: Create labels</span></span>
+## <a name="phase-2-create-labels"></a><span data-ttu-id="210c4-111">階段 2：建立標籤</span><span class="sxs-lookup"><span data-stu-id="210c4-111">Phase 2: Create labels</span></span>
 
-<span data-ttu-id="17855-112">在這個階段中，您會為 SharePoint Online 小組網站的文件資料夾，建立不同安全性層級的標籤。</span><span class="sxs-lookup"><span data-stu-id="17855-112">In this phase, you create the labels for the different levels of security for SharePoint Online team site document folders.</span></span>
+<span data-ttu-id="210c4-112">在這個階段中，您會為 SharePoint Online 小組網站的文件資料夾，建立不同安全性層級的標籤。</span><span class="sxs-lookup"><span data-stu-id="210c4-112">In this phase, you create the labels for the different levels of security for SharePoint Online team site document folders.</span></span>
 
-1. <span data-ttu-id="17855-113">如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="17855-113">If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription.</span></span> <span data-ttu-id="17855-114">如需說明，請參閱[在何處登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。</span><span class="sxs-lookup"><span data-stu-id="17855-114">For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
+1. <span data-ttu-id="210c4-p102">如果需要，請使用試用訂閱的全域系統管理員帳戶憑證登入系統管理中心。 如需說明，請參閱 [在何處登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。</span><span class="sxs-lookup"><span data-stu-id="210c4-p102">If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
 
-2. <span data-ttu-id="17855-115">從 [Microsoft Office 首頁] 索引標籤中，按一下 [管理] 磚。</span><span class="sxs-lookup"><span data-stu-id="17855-115">From the **Microsoft Office Home** tab, click the **Admin** tile.</span></span>
+2. <span data-ttu-id="210c4-115">從 [Microsoft Office 首頁] 索引標籤中，按一下 [管理] 磚。</span><span class="sxs-lookup"><span data-stu-id="210c4-115">From the **Microsoft Office Home** tab, click the **Admin** tile.</span></span>
 
-3. <span data-ttu-id="17855-116">從瀏覽器的新 [Microsoft 365 系統管理中心] 索引標籤中，按一下 [系統管理中心] > [安全性與合規性]。</span><span class="sxs-lookup"><span data-stu-id="17855-116">From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.</span></span>
+3. <span data-ttu-id="210c4-116">從瀏覽器的新 [Microsoft 365 系統管理中心] 索引標籤中，按一下 [系統管理中心] > [安全性與合規性]。</span><span class="sxs-lookup"><span data-stu-id="210c4-116">From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.</span></span>
 
-4. <span data-ttu-id="17855-117">從瀏覽器的新 [首頁 - 安全性與合規性] 索引標籤中，按一下 [分類] > [標籤]。</span><span class="sxs-lookup"><span data-stu-id="17855-117">From the new **Home - Security & Compliance** tab of your browser, click **Classifications > Labels**.</span></span>
+4. <span data-ttu-id="210c4-117">從瀏覽器的新 [首頁 - 安全性與合規性] 索引標籤中，按一下 [分類] > [標籤]。</span><span class="sxs-lookup"><span data-stu-id="210c4-117">From the new **Home - Security & Compliance** tab of your browser, click **Classifications > Labels**.</span></span>
 
-5. <span data-ttu-id="17855-118">從 [首頁] > [標籤] 窗格中，按一下 [建立標籤]。</span><span class="sxs-lookup"><span data-stu-id="17855-118">From the **Home > Labels** pane, click **Create a label**.</span></span>
+5. <span data-ttu-id="210c4-118">從 [首頁] > [標籤] 窗格中，按一下 [建立標籤]。</span><span class="sxs-lookup"><span data-stu-id="210c4-118">From the **Home > Labels** pane, click **Create a label**.</span></span>
 
-6. <span data-ttu-id="17855-119">在 [命名您的標籤] 窗格中，鍵入 **Internal**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-119">On the **Name your label** pane, type **Internal**, and then click **Next**.</span></span>
+6. <span data-ttu-id="210c4-119">在 [命名您的標籤] 窗格中，鍵入 **Internal**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-119">On the **Name your label** pane, type **Internal**, and then click **Next**.</span></span>
 
-7. <span data-ttu-id="17855-120">在 [標籤設定] 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-120">On the **Label settings** pane, click **Next**.</span></span>
+7. <span data-ttu-id="210c4-120">在 [標籤設定] 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-120">On the **Label settings** pane, click **Next**.</span></span>
 
-8. <span data-ttu-id="17855-121">在 [檢閱您的設定] 窗格中，按一下 [建立此標籤]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="17855-121">On the **Review your settings** pane, click **Create this label**, and then click **Close**.</span></span>
+8. <span data-ttu-id="210c4-121">在 [檢閱您的設定] 窗格中，按一下 [建立此標籤]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="210c4-121">On the **Review your settings** pane, click **Create this label**, and then click **Close**.</span></span>
 
-9. <span data-ttu-id="17855-122">重複步驟 5-8，逐一設定下列其他標籤：</span><span class="sxs-lookup"><span data-stu-id="17855-122">Repeat steps 5-8 for these additional labels:</span></span>
+9. <span data-ttu-id="210c4-122">重複步驟 5-8，逐一設定下列其他標籤：</span><span class="sxs-lookup"><span data-stu-id="210c4-122">Repeat steps 5-8 for these additional labels:</span></span>
 
-   - <span data-ttu-id="17855-123">Private</span><span class="sxs-lookup"><span data-stu-id="17855-123">Private</span></span>
-   - <span data-ttu-id="17855-124">敏感性</span><span class="sxs-lookup"><span data-stu-id="17855-124">Sensitive</span></span>
-   - <span data-ttu-id="17855-125">高度機密</span><span class="sxs-lookup"><span data-stu-id="17855-125">Highly Confidential</span></span>
+   - <span data-ttu-id="210c4-123">私人</span><span class="sxs-lookup"><span data-stu-id="210c4-123">Private</span></span>
+   - <span data-ttu-id="210c4-124">敏感性</span><span class="sxs-lookup"><span data-stu-id="210c4-124">Sensitive</span></span>
+   - <span data-ttu-id="210c4-125">高度機密</span><span class="sxs-lookup"><span data-stu-id="210c4-125">Highly Confidential</span></span>
 
-10. <span data-ttu-id="17855-126">從 [首頁] > [標籤] 窗格中，按一下 [Publish labels]\(發佈標籤)。</span><span class="sxs-lookup"><span data-stu-id="17855-126">From the **Home > Labels** pane, click **Publish labels**.</span></span>
+10. <span data-ttu-id="210c4-126">從 [首頁] > [標籤] 窗格中，按一下 [Publish labels]\(發佈標籤)。</span><span class="sxs-lookup"><span data-stu-id="210c4-126">From the **Home > Labels** pane, click **Publish labels**.</span></span>
 
-11. <span data-ttu-id="17855-127">在 [選擇要發佈的標籤] 窗格中，按一下 [選擇要發佈的標籤]。</span><span class="sxs-lookup"><span data-stu-id="17855-127">On the **Choose labels to publish** pane, click **Choose labels to publish**.</span></span>
+11. <span data-ttu-id="210c4-127">在 [選擇要發佈的標籤] 窗格中，按一下 [選擇要發佈的標籤]。</span><span class="sxs-lookup"><span data-stu-id="210c4-127">On the **Choose labels to publish** pane, click **Choose labels to publish**.</span></span>
 
-12. <span data-ttu-id="17855-128">在 [Choose labels]\(選擇標籤) 窗格中，按一下 [新增] 並選取所有四個標籤。</span><span class="sxs-lookup"><span data-stu-id="17855-128">On the **Choose labels** pane, click **Add** and select all four labels.</span></span>
+12. <span data-ttu-id="210c4-128">在 [Choose labels]\(選擇標籤) 窗格中，按一下 [新增] 並選取所有四個標籤。</span><span class="sxs-lookup"><span data-stu-id="210c4-128">On the **Choose labels** pane, click **Add** and select all four labels.</span></span>
 
-13. <span data-ttu-id="17855-129">按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="17855-129">Click **Done**.</span></span>
+13. <span data-ttu-id="210c4-129">按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="210c4-129">Click **Done**.</span></span>
 
-14. <span data-ttu-id="17855-130">在 [選擇要發佈的標籤] 窗格上，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-130">On the **Choose labels to publish** pane, click **Next**.</span></span>
+14. <span data-ttu-id="210c4-130">在 [選擇要發佈的標籤] 窗格上，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-130">On the **Choose labels to publish** pane, click **Next**.</span></span>
 
-15. <span data-ttu-id="17855-131">在 [選擇位置] 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-131">On the **Choose locations** pane, click **Next**.</span></span>
+15. <span data-ttu-id="210c4-131">在 [選擇位置] 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-131">On the **Choose locations** pane, click **Next**.</span></span>
 
-16. <span data-ttu-id="17855-132">在 [命名您的原則] 窗格上，於 [名稱] 中鍵入 **Campaign**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-132">On the **Name your policy** pane, type **Campaign** in **Name**, and then click **Next**.</span></span>
+16. <span data-ttu-id="210c4-132">在 [命名您的原則] 窗格上，於 [名稱] 中鍵入 **Campaign**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-132">On the **Name your policy** pane, type **Campaign** in **Name**, and then click **Next**.</span></span>
 
-17. <span data-ttu-id="17855-133">在 [檢閱您的設定] 窗格中，按一下 [發佈標籤]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="17855-133">On the **Review your settings** pane, click **Publish labels**, and then click **Close**.</span></span>
+17. <span data-ttu-id="210c4-133">在 [檢閱您的設定] 窗格中，按一下 [發佈標籤]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="210c4-133">On the **Review your settings** pane, click **Publish labels**, and then click **Close**.</span></span>
 
-## <a name="phase-3-create-your-sharepoint-online-team-sites"></a><span data-ttu-id="17855-134">階段 3：建立 SharePoint Online 小組網站</span><span class="sxs-lookup"><span data-stu-id="17855-134">Phase 3: Create your SharePoint Online team sites</span></span>
+## <a name="phase-3-create-your-sharepoint-online-team-sites"></a><span data-ttu-id="210c4-134">階段 3：建立 SharePoint Online 小組網站</span><span class="sxs-lookup"><span data-stu-id="210c4-134">Phase 3: Create your SharePoint Online team sites</span></span>
 
-<span data-ttu-id="17855-135">在這個階段，您可以為政治活動建立及設定 SharePoint Online 小組網站，其對應到四種類型的 SharePoint Online 小組網站。</span><span class="sxs-lookup"><span data-stu-id="17855-135">In this phase, you create and configure SharePoint Online team sites for your political campaign corresponding to the four types of SharePoint Online team sites.</span></span>
+<span data-ttu-id="210c4-135">在這個階段，您可以為政治活動建立及設定 SharePoint Online 小組網站，其對應到四種類型的 SharePoint Online 小組網站。</span><span class="sxs-lookup"><span data-stu-id="210c4-135">In this phase, you create and configure SharePoint Online team sites for your political campaign corresponding to the four types of SharePoint Online team sites.</span></span>
 
-### <a name="campaign-wide-team-site"></a><span data-ttu-id="17855-136">整個活動的小組網站</span><span class="sxs-lookup"><span data-stu-id="17855-136">Campaign wide team site</span></span>
+### <a name="campaign-wide-team-site"></a><span data-ttu-id="210c4-136">整個活動的小組網站</span><span class="sxs-lookup"><span data-stu-id="210c4-136">Campaign wide team site</span></span>
 
-<span data-ttu-id="17855-137">若要建立公用的基準 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="17855-137">To create a baseline public SharePoint Online team site, do the following:</span></span>
+<span data-ttu-id="210c4-137">若要建立公用的基準 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="210c4-137">To create a baseline public SharePoint Online team site, do the following:</span></span>
 
-1. <span data-ttu-id="17855-138">如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="17855-138">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
+1. <span data-ttu-id="210c4-138">如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="210c4-138">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
 
-2. <span data-ttu-id="17855-139">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="17855-139">In the list of tiles, click **SharePoint**.</span></span>
+2. <span data-ttu-id="210c4-139">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="210c4-139">In the list of tiles, click **SharePoint**.</span></span>
 
-3. <span data-ttu-id="17855-140">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-140">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
+3. <span data-ttu-id="210c4-140">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-140">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
 
-4. <span data-ttu-id="17855-141">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-141">On the **Create a site** page, click **Team site**.</span></span>
+4. <span data-ttu-id="210c4-141">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-141">On the **Create a site** page, click **Team site**.</span></span>
 
-5. <span data-ttu-id="17855-142">在 [網站名稱] 中，鍵入 **「整個活動」**。</span><span class="sxs-lookup"><span data-stu-id="17855-142">In **Site name**, type **Campaign wide**.</span></span>
+5. <span data-ttu-id="210c4-142">在 [網站名稱] 中，鍵入 **「整個活動」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-142">In **Site name**, type **Campaign wide**.</span></span>
 
-6. <span data-ttu-id="17855-143">在 [小組網站描述] 中，鍵入 **「整個活動的 SharePoint 網站」**。</span><span class="sxs-lookup"><span data-stu-id="17855-143">In **Team site description**, type **SharePoint site for the entire campaign**.</span></span>
+6. <span data-ttu-id="210c4-143">在 [小組網站描述] 中，鍵入 **「整個活動的 SharePoint 網站」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-143">In **Team site description**, type **SharePoint site for the entire campaign**.</span></span>
 
-7. <span data-ttu-id="17855-144">在 [隱私權設定] 中，選取 [公用 - 組織中的任何人都可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-144">In **Privacy settings**, select **Public - anyone in the organization can access this site**, and then click **Next**.</span></span>
+7. <span data-ttu-id="210c4-144">在 [隱私權設定] 中，選取 [公用 - 組織中的任何人都可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-144">In **Privacy settings**, select **Public - anyone in the organization can access this site**, and then click **Next**.</span></span>
 
-8. <span data-ttu-id="17855-145">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="17855-145">On the **Who do you want to add?** pane, click **Finish**.</span></span>
+8. <span data-ttu-id="210c4-145">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="210c4-145">On the **Who do you want to add?** pane, click **Finish**.</span></span>
 
-<span data-ttu-id="17855-146">接下來，針對 [Internal]\(內部) 標籤設定整個活動小組網站的文件資料夾。</span><span class="sxs-lookup"><span data-stu-id="17855-146">Next, configure the documents folder of the Campaign wide team site for the Internal label.</span></span>
+<span data-ttu-id="210c4-146">接下來，針對 [Internal]\(內部) 標籤設定整個活動小組網站的文件資料夾。</span><span class="sxs-lookup"><span data-stu-id="210c4-146">Next, configure the documents folder of the Campaign wide team site for the Internal label.</span></span>
 
-1. <span data-ttu-id="17855-147">在瀏覽器的 [Campaign wide-Home]\(整個活動 - 首頁) 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="17855-147">In the **Campaign wide-Home** tab of your browser, click **Documents**.</span></span>
+1. <span data-ttu-id="210c4-147">在瀏覽器的 [Campaign wide-Home]\(整個活動 - 首頁) 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="210c4-147">In the **Campaign wide-Home** tab of your browser, click **Documents**.</span></span>
 
-2. <span data-ttu-id="17855-148">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-148">Click the settings icon, and then click **Library settings**.</span></span>
+2. <span data-ttu-id="210c4-148">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-148">Click the settings icon, and then click **Library settings**.</span></span>
 
-3. <span data-ttu-id="17855-149">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="17855-149">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
+3. <span data-ttu-id="210c4-149">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="210c4-149">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
 
-4. <span data-ttu-id="17855-150">在 [設定 - 套用標籤] 中，選取 [Internal (內部)]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="17855-150">In **Settings-Apply Label**, select **Internal**, and then click **Save**.</span></span>
+4. <span data-ttu-id="210c4-150">在 [設定 - 套用標籤] 中，選取 [Internal (內部)]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="210c4-150">In **Settings-Apply Label**, select **Internal**, and then click **Save**.</span></span>
 
-### <a name="campaign-project-1-team-site"></a><span data-ttu-id="17855-151">活動專案 1 小組網站</span><span class="sxs-lookup"><span data-stu-id="17855-151">Campaign project 1 team site</span></span>
+### <a name="campaign-project-1-team-site"></a><span data-ttu-id="210c4-151">活動專案 1 小組網站</span><span class="sxs-lookup"><span data-stu-id="210c4-151">Campaign project 1 team site</span></span>
 
-<span data-ttu-id="17855-152">若要為活動內部的專案建立私用的基準 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="17855-152">To create a baseline private SharePoint Online team site for a project within the campaign, do the following:</span></span>
+<span data-ttu-id="210c4-152">若要為活動內部的專案建立私用的基準 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="210c4-152">To create a baseline private SharePoint Online team site for a project within the campaign, do the following:</span></span>
 
-1. <span data-ttu-id="17855-153">如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="17855-153">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
+1. <span data-ttu-id="210c4-153">如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="210c4-153">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
 
-2. <span data-ttu-id="17855-154">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="17855-154">In the list of tiles, click **SharePoint**.</span></span>
+2. <span data-ttu-id="210c4-154">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="210c4-154">In the list of tiles, click **SharePoint**.</span></span>
 
-3. <span data-ttu-id="17855-155">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-155">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
+3. <span data-ttu-id="210c4-155">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-155">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
 
-4. <span data-ttu-id="17855-156">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-156">On the **Create a site** page, click **Team site**.</span></span>
+4. <span data-ttu-id="210c4-156">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-156">On the **Create a site** page, click **Team site**.</span></span>
 
-5. <span data-ttu-id="17855-157">在 [網站名稱] 中，鍵入 **「活動專案 1」**。</span><span class="sxs-lookup"><span data-stu-id="17855-157">In **Site name**, type **Campaign project 1**.</span></span>
+5. <span data-ttu-id="210c4-157">在 [網站名稱] 中，鍵入 **「活動專案 1」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-157">In **Site name**, type **Campaign project 1**.</span></span>
 
-6. <span data-ttu-id="17855-158">在 [小組網站描述] 中，鍵入 **「活動專案 1 的 SharePoint 網站」**。</span><span class="sxs-lookup"><span data-stu-id="17855-158">In **Team site description,** type **SharePoint site for Campaign project 1**.</span></span>
+6. <span data-ttu-id="210c4-158">在 [小組網站描述] 中，鍵入 **「活動專案 1 的 SharePoint 網站」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-158">In **Team site description,** type **SharePoint site for Campaign project 1**.</span></span>
 
-7. <span data-ttu-id="17855-159">在 [隱私權設定] 中，選取 [私人 - 只有成員可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-159">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
+7. <span data-ttu-id="210c4-159">在 [隱私權設定] 中，選取 [私人 - 只有成員可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-159">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
 
-8. <span data-ttu-id="17855-160">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="17855-160">On the **Who do you want to add?** pane, click **Finish**.</span></span>
+8. <span data-ttu-id="210c4-160">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="210c4-160">On the **Who do you want to add?** pane, click **Finish**.</span></span>
 
-<span data-ttu-id="17855-161">接下來，為「活動專案 1」小組網站的文件資料夾設定「私用」標籤。</span><span class="sxs-lookup"><span data-stu-id="17855-161">Next, configure the documents folder of the Campaign project 1 team site for the Private label.</span></span>
+<span data-ttu-id="210c4-161">接下來，為「活動專案 1」小組網站的文件資料夾設定「私用」標籤。</span><span class="sxs-lookup"><span data-stu-id="210c4-161">Next, configure the documents folder of the Campaign project 1 team site for the Private label.</span></span>
 
-1. <span data-ttu-id="17855-162">在瀏覽器的 [Campaign project 1-Home (活動專案 1 - 首頁)] 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="17855-162">In the **Campaign project 1-Home** tab of your browser, click **Documents**.</span></span>
+1. <span data-ttu-id="210c4-162">在瀏覽器的 [Campaign project 1-Home (活動專案 1 - 首頁)] 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="210c4-162">In the **Campaign project 1-Home** tab of your browser, click **Documents**.</span></span>
 
-2. <span data-ttu-id="17855-163">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-163">Click the settings icon, and then click **Library settings**.</span></span>
+2. <span data-ttu-id="210c4-163">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-163">Click the settings icon, and then click **Library settings**.</span></span>
 
-3. <span data-ttu-id="17855-164">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="17855-164">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
+3. <span data-ttu-id="210c4-164">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="210c4-164">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
 
-4. <span data-ttu-id="17855-165">在 [設定 - 套用標籤] 中，選取 [私用]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="17855-165">In **Settings-Apply Label**, select **Private**, and then click **Save**.</span></span>
+4. <span data-ttu-id="210c4-165">在 [設定 - 套用標籤] 中，選取 [私用]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="210c4-165">In **Settings-Apply Label**, select **Private**, and then click **Save**.</span></span>
 
-### <a name="campaign-marketing-team-site"></a><span data-ttu-id="17855-166">活動行銷小組網站</span><span class="sxs-lookup"><span data-stu-id="17855-166">Campaign marketing team site</span></span>
+### <a name="campaign-marketing-team-site"></a><span data-ttu-id="210c4-166">活動行銷小組網站</span><span class="sxs-lookup"><span data-stu-id="210c4-166">Campaign marketing team site</span></span>
 
-<span data-ttu-id="17855-167">若要為活動行銷資源建立敏感性層級的隔離 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="17855-167">To create a sensitive-level isolated SharePoint Online team site for campaign marketing resources, do the following:</span></span>
+<span data-ttu-id="210c4-167">若要為活動行銷資源建立敏感性層級的隔離 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="210c4-167">To create a sensitive-level isolated SharePoint Online team site for campaign marketing resources, do the following:</span></span>
 
-1. <span data-ttu-id="17855-168">使用本機電腦上的瀏覽器，並以全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="17855-168">Using a browser on your local computer, sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
+1. <span data-ttu-id="210c4-168">使用本機電腦上的瀏覽器，並以全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="210c4-168">Using a browser on your local computer, sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
 
-2. <span data-ttu-id="17855-169">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="17855-169">In the list of tiles, click **SharePoint**.</span></span>
+2. <span data-ttu-id="210c4-169">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="210c4-169">In the list of tiles, click **SharePoint**.</span></span>
 
-3. <span data-ttu-id="17855-170">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-170">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
+3. <span data-ttu-id="210c4-170">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-170">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
 
-4. <span data-ttu-id="17855-171">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-171">On the **Create a site** page, click **Team site**.</span></span>
+4. <span data-ttu-id="210c4-171">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-171">On the **Create a site** page, click **Team site**.</span></span>
 
-5. <span data-ttu-id="17855-172">在 [小組網站名稱] 中，鍵入 **「活動行銷」**。</span><span class="sxs-lookup"><span data-stu-id="17855-172">In **Team site name**, type **Campaign marketing**.</span></span>
+5. <span data-ttu-id="210c4-172">在 [小組網站名稱] 中，鍵入 **「活動行銷」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-172">In **Team site name**, type **Campaign marketing**.</span></span>
 
-6. <span data-ttu-id="17855-173">在 [小組網站描述] 中，鍵入 **「活動行銷 (敏感) 的 SharePoint 網站」**。</span><span class="sxs-lookup"><span data-stu-id="17855-173">In **Team site description**, type **SharePoint site for campaign marketing (sensitive)**.</span></span>
+6. <span data-ttu-id="210c4-173">在 [小組網站描述] 中，鍵入 **「活動行銷 (敏感) 的 SharePoint 網站」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-173">In **Team site description**, type **SharePoint site for campaign marketing (sensitive)**.</span></span>
 
-7. <span data-ttu-id="17855-174">在 [隱私權設定] 中，選取 [私人 - 只有成員可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-174">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
+7. <span data-ttu-id="210c4-174">在 [隱私權設定] 中，選取 [私人 - 只有成員可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-174">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
 
-8. <span data-ttu-id="17855-175">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="17855-175">On the **Who do you want to add?** pane, click **Finish**.</span></span>
+8. <span data-ttu-id="210c4-175">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="210c4-175">On the **Who do you want to add?** pane, click **Finish**.</span></span>
 
-9. <span data-ttu-id="17855-176">在瀏覽器中新的 [活動行銷] 索引標籤上，在工具列中按一下設定圖示，然後按一下 [網站權限]。</span><span class="sxs-lookup"><span data-stu-id="17855-176">On the new **Campaign marketing** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
+9. <span data-ttu-id="210c4-176">在瀏覽器中新的 [活動行銷] 索引標籤上，在工具列中按一下設定圖示，然後按一下 [網站權限]。</span><span class="sxs-lookup"><span data-stu-id="210c4-176">On the new **Campaign marketing** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
 
-10. <span data-ttu-id="17855-177">在 [網站權限] 窗格中，按一下 [進階權限設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-177">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
+10. <span data-ttu-id="210c4-177">在 [網站權限] 窗格中，按一下 [進階權限設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-177">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
 
-11. <span data-ttu-id="17855-178">在瀏覽器的新 [權限] 索引標籤中，按一下 [存取要求設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-178">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
+11. <span data-ttu-id="210c4-178">在瀏覽器的新 [權限] 索引標籤中，按一下 [存取要求設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-178">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
 
-12. <span data-ttu-id="17855-179">在 **[存取要求設定]** 對話方塊中，清除 **[允許成員共用網站以及個別檔案和資料夾]** 和 **[允許成員邀請其他人加入網站成員群組]** 核取方塊，在 **[傳送存取的所有要求]** 中鍵入 **ITAdmin1@**\<your organization name\>**.onmicrosoft.com**，然後按一下 **[確定]**。</span><span class="sxs-lookup"><span data-stu-id="17855-179">In the **Access Request Settings** dialog box, clear the **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** check boxes, type **ITAdmin1@**\<your organization name\>**.onmicrosoft.com** in **Send all requests for access**, and then click **OK**.</span></span>
+12. <span data-ttu-id="210c4-179">在 **[存取要求設定]** 對話方塊中，清除 **[允許成員共用網站以及個別檔案和資料夾]** 和 **[允許成員邀請其他人加入網站成員群組]** 核取方塊，在 **[傳送存取的所有要求]** 中鍵入 **ITAdmin1@**\<your organization name\>**.onmicrosoft.com**，然後按一下 **[確定]**。</span><span class="sxs-lookup"><span data-stu-id="210c4-179">In the **Access Request Settings** dialog box, clear the **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** check boxes, type **ITAdmin1@**\<your organization name\>**.onmicrosoft.com** in **Send all requests for access**, and then click **OK**.</span></span>
 
-13. <span data-ttu-id="17855-180">按一下清單中的 [活動行銷成員]。</span><span class="sxs-lookup"><span data-stu-id="17855-180">Click **Campaign marketing Members** in the list.</span></span>
+13. <span data-ttu-id="210c4-180">按一下清單中的 [活動行銷成員]。</span><span class="sxs-lookup"><span data-stu-id="210c4-180">Click **Campaign marketing Members** in the list.</span></span>
 
-14. <span data-ttu-id="17855-181">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="17855-181">On the **People and Groups** page, click **New**.</span></span>
+14. <span data-ttu-id="210c4-181">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="210c4-181">On the **People and Groups** page, click **New**.</span></span>
 
-15. <span data-ttu-id="17855-182">在 [共用] 對話方塊中，輸入 **Senior and strategic staff**，選取它，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="17855-182">In the **Share** dialog box, type **Senior and strategic staff**, select it, and then click **Share**.</span></span>
+15. <span data-ttu-id="210c4-182">在 [共用] 對話方塊中，輸入 **Senior and strategic staff**，選取它，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="210c4-182">In the **Share** dialog box, type **Senior and strategic staff**, select it, and then click **Share**.</span></span>
 
-16. <span data-ttu-id="17855-183">為 **分析人員** 群組和 **Regular1** 使用者帳戶重複步驟 14 與 15。</span><span class="sxs-lookup"><span data-stu-id="17855-183">Repeat steps 14 and 15 for the **Analytics staff** group and the **Regular1** user account.</span></span>
+16. <span data-ttu-id="210c4-183">為 **分析人員** 群組和 **Regular1** 使用者帳戶重複步驟 14 與 15。</span><span class="sxs-lookup"><span data-stu-id="210c4-183">Repeat steps 14 and 15 for the **Analytics staff** group and the **Regular1** user account.</span></span>
 
-17. <span data-ttu-id="17855-184">按一下瀏覽器上的 [上一頁] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="17855-184">Click the back button on your browser.</span></span>
+17. <span data-ttu-id="210c4-184">按一下瀏覽器上的 [上一頁] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="210c4-184">Click the back button on your browser.</span></span>
 
-18. <span data-ttu-id="17855-185">按一下清單中的 [活動行銷擁有者]。</span><span class="sxs-lookup"><span data-stu-id="17855-185">Click **Campaign marketing Owners** in the list.</span></span>
+18. <span data-ttu-id="210c4-185">按一下清單中的 [活動行銷擁有者]。</span><span class="sxs-lookup"><span data-stu-id="210c4-185">Click **Campaign marketing Owners** in the list.</span></span>
 
-19. <span data-ttu-id="17855-186">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="17855-186">On the **People and Groups** page, click **New**.</span></span>
+19. <span data-ttu-id="210c4-186">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="210c4-186">On the **People and Groups** page, click **New**.</span></span>
 
-20. <span data-ttu-id="17855-187">在 [共用] 對話方塊中，鍵入 **IT 人員**，並加以選取，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="17855-187">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
+20. <span data-ttu-id="210c4-187">在 [共用] 對話方塊中，鍵入 **IT 人員**，並加以選取，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="210c4-187">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
 
-21. <span data-ttu-id="17855-188">按一下瀏覽器上的 [上一頁] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="17855-188">Click the back button on your browser.</span></span>
+21. <span data-ttu-id="210c4-188">按一下瀏覽器上的 [上一頁] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="210c4-188">Click the back button on your browser.</span></span>
 
-22. <span data-ttu-id="17855-189">關閉瀏覽器中的 [人員與群組] 索引標籤，按一下瀏覽器中的 [活動行銷 - 首頁] 索引標籤，然後關閉 [網站權限] 窗格。</span><span class="sxs-lookup"><span data-stu-id="17855-189">Close the **People and Groups** tab in your browser, click the **Campaign marketing-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
+22. <span data-ttu-id="210c4-189">關閉瀏覽器中的 [人員與群組] 索引標籤，按一下瀏覽器中的 [活動行銷 - 首頁] 索引標籤，然後關閉 [網站權限] 窗格。</span><span class="sxs-lookup"><span data-stu-id="210c4-189">Close the **People and Groups** tab in your browser, click the **Campaign marketing-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
 
-<span data-ttu-id="17855-190">以下是設定權限的結果：</span><span class="sxs-lookup"><span data-stu-id="17855-190">Here are the results of configuring permissions:</span></span>
+<span data-ttu-id="210c4-190">以下是設定權限的結果：</span><span class="sxs-lookup"><span data-stu-id="210c4-190">Here are the results of configuring permissions:</span></span>
 
-- <span data-ttu-id="17855-191">**「活動行銷 - 成員」** 的 SharePoint 群組僅包含 **資深和策略人員** 群組 (其中包含 Candidate、ChiefOfStaff 和 Strategic1 使用者帳戶)、**活動行銷** 群組 (其中包含全域系統管理員使用者帳戶)、**分析人員** 群組 (其中包含 DataScientist1 使用者帳戶)，以及 **Regular1** 使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="17855-191">The **Campaign marketing-Members** SharePoint group contains only the **Senior and strategic staff** group (which contains the Candidate, ChiefOfStaff, and Strategic1 user accounts), the **Campaign marketing** group (which contains the global administrator user account), the **Analytics staff** group (which contains the DataScientist1 user account), and the **Regular1** user account.</span></span>
+- <span data-ttu-id="210c4-191">**「活動行銷 - 成員」** 的 SharePoint 群組僅包含 **資深和策略人員** 群組 (其中包含 Candidate、ChiefOfStaff 和 Strategic1 使用者帳戶)、**活動行銷** 群組 (其中包含全域系統管理員使用者帳戶)、**分析人員** 群組 (其中包含 DataScientist1 使用者帳戶)，以及 **Regular1** 使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="210c4-191">The **Campaign marketing-Members** SharePoint group contains only the **Senior and strategic staff** group (which contains the Candidate, ChiefOfStaff, and Strategic1 user accounts), the **Campaign marketing** group (which contains the global administrator user account), the **Analytics staff** group (which contains the DataScientist1 user account), and the **Regular1** user account.</span></span>
 
-- <span data-ttu-id="17855-192">**「活動行銷 - 擁有者」** 的 SharePoint 群組僅包含 **IT 人員** 群組 (其中僅包含 ITAdmin1 和 ITAdmin2 使用者帳戶)。</span><span class="sxs-lookup"><span data-stu-id="17855-192">The **Campaign marketing-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
+- <span data-ttu-id="210c4-192">**「活動行銷 - 擁有者」** 的 SharePoint 群組僅包含 **IT 人員** 群組 (其中僅包含 ITAdmin1 和 ITAdmin2 使用者帳戶)。</span><span class="sxs-lookup"><span data-stu-id="210c4-192">The **Campaign marketing-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
 
-- <span data-ttu-id="17855-193">**「活動行銷 - 訪客」** 的 SharePoint 群組未包含任何群組或使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="17855-193">The **Campaign marketing-Visitors** SharePoint group contains no groups or user accounts.</span></span>
+- <span data-ttu-id="210c4-193">**「活動行銷 - 訪客」** 的 SharePoint 群組未包含任何群組或使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="210c4-193">The **Campaign marketing-Visitors** SharePoint group contains no groups or user accounts.</span></span>
 
-- <span data-ttu-id="17855-194">成員無法修改網站層級的權限 (這只能由 **「活動行銷 - 擁有者」** 群組成員來執行)。</span><span class="sxs-lookup"><span data-stu-id="17855-194">Members cannot modify site-level permissions (this can only be done by members of the **Campaign marketing-Owners** group).</span></span>
+- <span data-ttu-id="210c4-194">成員無法修改網站層級的權限 (這只能由 **「活動行銷 - 擁有者」** 群組成員來執行)。</span><span class="sxs-lookup"><span data-stu-id="210c4-194">Members cannot modify site-level permissions (this can only be done by members of the **Campaign marketing-Owners** group).</span></span>
 
-- <span data-ttu-id="17855-195">其他使用者帳戶無法存取網站或其資源，但可以將電子郵件傳送至 ITAdmin1 使用者帳戶信箱，以要求存取網站。</span><span class="sxs-lookup"><span data-stu-id="17855-195">Other user accounts cannot access the site or its resources, but can request access to the site, which will send an email to the ITAdmin1 user account mailbox.</span></span>
+- <span data-ttu-id="210c4-195">其他使用者帳戶無法存取網站或其資源，但可以將電子郵件傳送至 ITAdmin1 使用者帳戶信箱，以要求存取網站。</span><span class="sxs-lookup"><span data-stu-id="210c4-195">Other user accounts cannot access the site or its resources, but can request access to the site, which will send an email to the ITAdmin1 user account mailbox.</span></span>
 
-<span data-ttu-id="17855-196">接下來，為「活動行銷」小組網站的文件資料夾設定「敏感性」標籤。</span><span class="sxs-lookup"><span data-stu-id="17855-196">Next, configure the documents folder of the Campaign marketing team site for the Sensitive label.</span></span>
+<span data-ttu-id="210c4-196">接下來，為「活動行銷」小組網站的文件資料夾設定「敏感性」標籤。</span><span class="sxs-lookup"><span data-stu-id="210c4-196">Next, configure the documents folder of the Campaign marketing team site for the Sensitive label.</span></span>
 
-1. <span data-ttu-id="17855-197">在瀏覽器的 [活動行銷 - 首頁] 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="17855-197">In the **Campaign marketing-Home** tab of your browser, click **Documents**.</span></span>
+1. <span data-ttu-id="210c4-197">在瀏覽器的 [活動行銷 - 首頁] 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="210c4-197">In the **Campaign marketing-Home** tab of your browser, click **Documents**.</span></span>
 
-2. <span data-ttu-id="17855-198">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-198">Click the settings icon, and then click **Library settings**.</span></span>
+2. <span data-ttu-id="210c4-198">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-198">Click the settings icon, and then click **Library settings**.</span></span>
 
-3. <span data-ttu-id="17855-199">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="17855-199">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
+3. <span data-ttu-id="210c4-199">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="210c4-199">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
 
-4. <span data-ttu-id="17855-200">在 [設定 - 套用標籤] 中，選取 [敏感性]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="17855-200">In **Settings-Apply Label**, select **Sensitive**, and then click **Save**.</span></span>
+4. <span data-ttu-id="210c4-200">在 [設定 - 套用標籤] 中，選取 [敏感性]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="210c4-200">In **Settings-Apply Label**, select **Sensitive**, and then click **Save**.</span></span>
 
-<span data-ttu-id="17855-p103">接下來，設定一個資料外洩防護 (DLP) 原則，該原則會在使用者與組織外部共用具敏感性標籤的 SharePoint Online 小組網站上的文件時，即會通知使用者。此 DLP 原則會套用到活動行銷網站中的資源。</span><span class="sxs-lookup"><span data-stu-id="17855-p103">Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label outside the organization. This DLP policy will apply to resources in the Campaign marketing site.</span></span>
+<span data-ttu-id="210c4-p103">接下來，設定一個資料外洩防護 (DLP) 原則，該原則會在使用者與組織外部共用具敏感性標籤的 SharePoint Online 小組網站上的文件時，即會通知使用者。此 DLP 原則會套用到活動行銷網站中的資源。</span><span class="sxs-lookup"><span data-stu-id="210c4-p103">Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label outside the organization. This DLP policy will apply to resources in the Campaign marketing site.</span></span>
 
-1. <span data-ttu-id="17855-203">從瀏覽器的 [Microsoft Office 首頁] 索引標籤，按一下 [安全性與合規性] 磚。</span><span class="sxs-lookup"><span data-stu-id="17855-203">From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.</span></span>
+1. <span data-ttu-id="210c4-203">從瀏覽器的 [Microsoft Office 首頁] 索引標籤，按一下 [安全性與合規性] 磚。</span><span class="sxs-lookup"><span data-stu-id="210c4-203">From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.</span></span>
 
-2. <span data-ttu-id="17855-204">在瀏覽器的新 [安全性與合規性] 索引標籤上，按一下 [資料外洩防護] > [原則]。</span><span class="sxs-lookup"><span data-stu-id="17855-204">On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
+2. <span data-ttu-id="210c4-204">在瀏覽器的新 [安全性與合規性] 索引標籤上，按一下 [資料外洩防護] > [原則]。</span><span class="sxs-lookup"><span data-stu-id="210c4-204">On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
 
-3. <span data-ttu-id="17855-205">在 [資料外洩防護] 窗格中，按一下 [+ 建立原則]。</span><span class="sxs-lookup"><span data-stu-id="17855-205">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
+3. <span data-ttu-id="210c4-205">在 [資料外洩防護] 窗格中，按一下 [+ 建立原則]。</span><span class="sxs-lookup"><span data-stu-id="210c4-205">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
 
-4. <span data-ttu-id="17855-206">在 [從範本開始或建立自訂原則] 窗格中，按一下 [自訂]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-206">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
+4. <span data-ttu-id="210c4-206">在 [從範本開始或建立自訂原則] 窗格中，按一下 [自訂]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-206">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
 
-5. <span data-ttu-id="17855-207">在 [命名您的原則] 窗格的 [名稱] 中，鍵入 **Sensitive label SharePoint Online team sites**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-207">In the **Name your policy** pane, type **Sensitive label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
+5. <span data-ttu-id="210c4-207">在 [命名您的原則] 窗格的 [名稱] 中，鍵入 **Sensitive label SharePoint Online team sites**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-207">In the **Name your policy** pane, type **Sensitive label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
 
-6. <span data-ttu-id="17855-208">在 [選擇位置] 窗格中，按一下 [Let me choose specific locations]\(讓我選擇特定位置)，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-208">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
+6. <span data-ttu-id="210c4-208">在 [選擇位置] 窗格中，按一下 [Let me choose specific locations]\(讓我選擇特定位置)，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-208">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
 
-7. <span data-ttu-id="17855-209">在位置清單中，停用 [Exchange 電子郵件] 和 [OneDrive 帳戶] 位置，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-209">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
+7. <span data-ttu-id="210c4-209">在位置清單中，停用 [Exchange 電子郵件] 和 [OneDrive 帳戶] 位置，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-209">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
 
-8. <span data-ttu-id="17855-210">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [編輯]。</span><span class="sxs-lookup"><span data-stu-id="17855-210">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
+8. <span data-ttu-id="210c4-210">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [編輯]。</span><span class="sxs-lookup"><span data-stu-id="210c4-210">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
 
-9. <span data-ttu-id="17855-211">在 [選擇要保護的內容類型] 窗格中，從下拉式方塊按一下 [新增]，然後按一下 [標籤]。</span><span class="sxs-lookup"><span data-stu-id="17855-211">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
+9. <span data-ttu-id="210c4-211">在 [選擇要保護的內容類型] 窗格中，從下拉式方塊按一下 [新增]，然後按一下 [標籤]。</span><span class="sxs-lookup"><span data-stu-id="210c4-211">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
 
-10. <span data-ttu-id="17855-212">在 [標籤] 窗格中，按一下 [+ 新增] 並選取 [敏感性] 標籤，然後依序按一下 [新增] 和 [完成]。</span><span class="sxs-lookup"><span data-stu-id="17855-212">In the **Labels** pane, click **+ Add**, select the **Sensitive** label, click **Add**, and then click **Done**.</span></span>
+10. <span data-ttu-id="210c4-212">在 [標籤] 窗格中，按一下 [+ 新增] 並選取 [敏感性] 標籤，然後依序按一下 [新增] 和 [完成]。</span><span class="sxs-lookup"><span data-stu-id="210c4-212">In the **Labels** pane, click **+ Add**, select the **Sensitive** label, click **Add**, and then click **Done**.</span></span>
 
-11. <span data-ttu-id="17855-213">在 [Choose the types of content to protect]\(選擇要保護的內容類型) 窗格中，按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="17855-213">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
+11. <span data-ttu-id="210c4-213">在 [Choose the types of content to protect]\(選擇要保護的內容類型) 窗格中，按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="210c4-213">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
 
-12. <span data-ttu-id="17855-214">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-214">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
+12. <span data-ttu-id="210c4-214">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-214">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
 
-13. <span data-ttu-id="17855-215">在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?) 窗格中，按一下 [Customize the tip and email]\(自訂提示和電子郵件)。</span><span class="sxs-lookup"><span data-stu-id="17855-215">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
+13. <span data-ttu-id="210c4-215">在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?) 窗格中，按一下 [Customize the tip and email]\(自訂提示和電子郵件)。</span><span class="sxs-lookup"><span data-stu-id="210c4-215">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
 
-14. <span data-ttu-id="17855-216">在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知) 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)。</span><span class="sxs-lookup"><span data-stu-id="17855-216">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
+14. <span data-ttu-id="210c4-216">在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知) 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)。</span><span class="sxs-lookup"><span data-stu-id="210c4-216">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
 
-15. <span data-ttu-id="17855-217">在文字方塊中，鍵入或貼上下列內容：</span><span class="sxs-lookup"><span data-stu-id="17855-217">In the text box, type or paste in the following:</span></span>
+15. <span data-ttu-id="210c4-217">在文字方塊中，鍵入或貼上下列內容：</span><span class="sxs-lookup"><span data-stu-id="210c4-217">In the text box, type or paste in the following:</span></span>
 
-    - <span data-ttu-id="17855-p104">若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。</span><span class="sxs-lookup"><span data-stu-id="17855-p104">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
+    - <span data-ttu-id="210c4-p104">若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。</span><span class="sxs-lookup"><span data-stu-id="210c4-p104">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
 
-16. <span data-ttu-id="17855-221">按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="17855-221">Click **OK**.</span></span>
+16. <span data-ttu-id="210c4-221">按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-221">Click **OK**.</span></span>
 
-17. <span data-ttu-id="17855-222">在 [如果偵測到機密資訊要如何處理?] 窗格中，清除 [禁止人員共用及限制共用內容的存取] 核取方塊，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-222">In the **What do you want to do if we detect sensitive info?** pane, clear the **Block people from sharing, and restrict access to shared content** check box, and then click **Next**.</span></span>
+17. <span data-ttu-id="210c4-222">在 [如果偵測到機密資訊要如何處理?] 窗格中，清除 [禁止人員共用及限制共用內容的存取] 核取方塊，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-222">In the **What do you want to do if we detect sensitive info?** pane, clear the **Block people from sharing, and restrict access to shared content** check box, and then click **Next**.</span></span>
 
-18. <span data-ttu-id="17855-223">在 [要先開啟原則或測試內容嗎?] 窗格中，按一下 [是] 立即將它開啟，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-223">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
+18. <span data-ttu-id="210c4-223">在 [要先開啟原則或測試內容嗎?] 窗格中，按一下 [是] 立即將它開啟，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-223">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
 
-19. <span data-ttu-id="17855-224">在 [檢閱您的設定] 窗格中，按一下 [建立]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="17855-224">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
+19. <span data-ttu-id="210c4-224">在 [檢閱您的設定] 窗格中，按一下 [建立]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="210c4-224">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
 
-### <a name="campaign-strategy-team-site"></a><span data-ttu-id="17855-225">活動策略小組網站</span><span class="sxs-lookup"><span data-stu-id="17855-225">Campaign strategy team site</span></span>
+### <a name="campaign-strategy-team-site"></a><span data-ttu-id="210c4-225">活動策略小組網站</span><span class="sxs-lookup"><span data-stu-id="210c4-225">Campaign strategy team site</span></span>
 
-<span data-ttu-id="17855-226">若要為活動策略資源建立高度機密層級的隔離 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="17855-226">To create an isolated SharePoint Online team site at the highly confidential level for campaign strategy resources, do the following:</span></span>
+<span data-ttu-id="210c4-226">若要為活動策略資源建立高度機密層級的隔離 SharePoint Online 小組網站，請執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="210c4-226">To create an isolated SharePoint Online team site at the highly confidential level for campaign strategy resources, do the following:</span></span>
 
-1. <span data-ttu-id="17855-227">如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="17855-227">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
+1. <span data-ttu-id="210c4-227">如果需要，請使用本機電腦上的瀏覽器，並使用全域管理員帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="210c4-227">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) using your global administrator account.</span></span>
 
-2. <span data-ttu-id="17855-228">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="17855-228">In the list of tiles, click **SharePoint**.</span></span>
+2. <span data-ttu-id="210c4-228">在磚清單中，按一下 [SharePoint]。</span><span class="sxs-lookup"><span data-stu-id="210c4-228">In the list of tiles, click **SharePoint**.</span></span>
 
-3. <span data-ttu-id="17855-229">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-229">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
+3. <span data-ttu-id="210c4-229">在瀏覽器的新 [SharePoint] 索引標籤上，按一下 [+ 建立網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-229">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
 
-4. <span data-ttu-id="17855-230">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="17855-230">On the **Create a site** page, click **Team site**.</span></span>
+4. <span data-ttu-id="210c4-230">在 [建立網站] 頁面上，按一下 [小組網站]。</span><span class="sxs-lookup"><span data-stu-id="210c4-230">On the **Create a site** page, click **Team site**.</span></span>
 
-5. <span data-ttu-id="17855-231">在 [小組網站名稱] 中，鍵入 **「活動策略」**。</span><span class="sxs-lookup"><span data-stu-id="17855-231">In **Team site name**, type **Campaign strategy**.</span></span>
+5. <span data-ttu-id="210c4-231">在 [小組網站名稱] 中，鍵入 **「活動策略」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-231">In **Team site name**, type **Campaign strategy**.</span></span>
 
-6. <span data-ttu-id="17855-232">在 [小組網站描述] 中，鍵入 **「活動策略的 SharePoint 網站 (高度機密)」**。</span><span class="sxs-lookup"><span data-stu-id="17855-232">In **Team site description**, type **SharePoint site for campaign strategy (highly confidential)**.</span></span>
+6. <span data-ttu-id="210c4-232">在 [小組網站描述] 中，鍵入 **「活動策略的 SharePoint 網站 (高度機密)」**。</span><span class="sxs-lookup"><span data-stu-id="210c4-232">In **Team site description**, type **SharePoint site for campaign strategy (highly confidential)**.</span></span>
 
-7. <span data-ttu-id="17855-233">在 [隱私權設定] 中，選取 [私人 - 只有成員可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-233">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
+7. <span data-ttu-id="210c4-233">在 [隱私權設定] 中，選取 [私人 - 只有成員可以存取此網站]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-233">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
 
-8. <span data-ttu-id="17855-234">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="17855-234">On the **Who do you want to add?** pane, click **Finish**.</span></span>
+8. <span data-ttu-id="210c4-234">在 [您想要新增誰?] 窗格上，按一下 [完成]。</span><span class="sxs-lookup"><span data-stu-id="210c4-234">On the **Who do you want to add?** pane, click **Finish**.</span></span>
 
-9. <span data-ttu-id="17855-235">在瀏覽器中新的 [活動策略] 索引標籤上，在工具列中按一下設定圖示，然後按一下 [網站權限]。</span><span class="sxs-lookup"><span data-stu-id="17855-235">On the new **Campaign strategy** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
+9. <span data-ttu-id="210c4-235">在瀏覽器中新的 [活動策略] 索引標籤上，在工具列中按一下設定圖示，然後按一下 [網站權限]。</span><span class="sxs-lookup"><span data-stu-id="210c4-235">On the new **Campaign strategy** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
 
-10. <span data-ttu-id="17855-236">在 [網站權限] 窗格中，按一下 [進階權限設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-236">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
+10. <span data-ttu-id="210c4-236">在 [網站權限] 窗格中，按一下 [進階權限設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-236">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
 
-11. <span data-ttu-id="17855-237">在瀏覽器的新 [權限] 索引標籤中，按一下 [存取要求設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-237">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
+11. <span data-ttu-id="210c4-237">在瀏覽器的新 [權限] 索引標籤中，按一下 [存取要求設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-237">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
 
-12. <span data-ttu-id="17855-238">在 [存取要求設定] 對話方塊中，清除 [允許成員共用網站以及個別檔案和資料夾] 和 [允許成員邀請其他人加入網站成員群組]\(亦即清除所有三個核取方塊)，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="17855-238">In the **Access Request Settings** dialog box, clear **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** (so that all three check boxes are cleared), and then click **OK**.</span></span>
+12. <span data-ttu-id="210c4-238">在 [存取要求設定] 對話方塊中，清除 [允許成員共用網站以及個別檔案和資料夾] 和 [允許成員邀請其他人加入網站成員群組]\(亦即清除所有三個核取方塊)，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-238">In the **Access Request Settings** dialog box, clear **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** (so that all three check boxes are cleared), and then click **OK**.</span></span>
 
-13. <span data-ttu-id="17855-239">按一下清單中的 [活動策略成員]。</span><span class="sxs-lookup"><span data-stu-id="17855-239">Click **Campaign strategy Members** in the list.</span></span>
+13. <span data-ttu-id="210c4-239">按一下清單中的 [活動策略成員]。</span><span class="sxs-lookup"><span data-stu-id="210c4-239">Click **Campaign strategy Members** in the list.</span></span>
 
-14. <span data-ttu-id="17855-240">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="17855-240">On the **People and Groups** page, click **New**.</span></span>
+14. <span data-ttu-id="210c4-240">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="210c4-240">On the **People and Groups** page, click **New**.</span></span>
 
-15. <span data-ttu-id="17855-241">在 [共用] 對話方塊中，輸入 **Senior and strategic staff**，選取它，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="17855-241">In the **Share** dialog box, type **Senior and strategic staff**, select it, and then click **Share**.</span></span>
+15. <span data-ttu-id="210c4-241">在 [共用] 對話方塊中，輸入 **Senior and strategic staff**，選取它，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="210c4-241">In the **Share** dialog box, type **Senior and strategic staff**, select it, and then click **Share**.</span></span>
 
-16. <span data-ttu-id="17855-242">按一下清單中的 [活動策略擁有者]。</span><span class="sxs-lookup"><span data-stu-id="17855-242">Click **Campaign strategy Owners** in the list.</span></span>
+16. <span data-ttu-id="210c4-242">按一下清單中的 [活動策略擁有者]。</span><span class="sxs-lookup"><span data-stu-id="210c4-242">Click **Campaign strategy Owners** in the list.</span></span>
 
-17. <span data-ttu-id="17855-243">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="17855-243">On the **People and Groups** page, click **New**.</span></span>
+17. <span data-ttu-id="210c4-243">在 [人員與群組] 頁面上，按一下 [新增]。</span><span class="sxs-lookup"><span data-stu-id="210c4-243">On the **People and Groups** page, click **New**.</span></span>
 
-18. <span data-ttu-id="17855-244">在 [共用] 對話方塊中，鍵入 **IT 人員**，並加以選取，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="17855-244">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
+18. <span data-ttu-id="210c4-244">在 [共用] 對話方塊中，鍵入 **IT 人員**，並加以選取，然後按一下 [共用]。</span><span class="sxs-lookup"><span data-stu-id="210c4-244">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
 
-19. <span data-ttu-id="17855-245">按一下瀏覽器上的 [上一頁] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="17855-245">Click the back button on your browser.</span></span>
+19. <span data-ttu-id="210c4-245">按一下瀏覽器上的 [上一頁] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="210c4-245">Click the back button on your browser.</span></span>
 
-20. <span data-ttu-id="17855-246">關閉瀏覽器中的 [人員與群組] 索引標籤，按一下瀏覽器中的 [活動策略 - 首頁] 索引標籤，然後關閉 [網站權限] 窗格。</span><span class="sxs-lookup"><span data-stu-id="17855-246">Close the **People and Groups** tab in your browser, click the **Campaign strategy-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
+20. <span data-ttu-id="210c4-246">關閉瀏覽器中的 [人員與群組] 索引標籤，按一下瀏覽器中的 [活動策略 - 首頁] 索引標籤，然後關閉 [網站權限] 窗格。</span><span class="sxs-lookup"><span data-stu-id="210c4-246">Close the **People and Groups** tab in your browser, click the **Campaign strategy-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
 
-<span data-ttu-id="17855-247">以下是設定權限的結果：</span><span class="sxs-lookup"><span data-stu-id="17855-247">Here are the results of configuring permissions:</span></span>
+<span data-ttu-id="210c4-247">以下是設定權限的結果：</span><span class="sxs-lookup"><span data-stu-id="210c4-247">Here are the results of configuring permissions:</span></span>
 
-- <span data-ttu-id="17855-248">**「活動策略 - 成員」** 的 SharePoint 群組僅包含 **資深和策略人員** 群組 (其中僅包含 Candidate、ChiefOfStaff 和 Strategic1 使用者帳戶) 和 **活動策略** 群組 (其中僅包含全域系統管理員使用者帳戶)。</span><span class="sxs-lookup"><span data-stu-id="17855-248">The **Campaign strategy-Members** SharePoint group contains only the **Senior and strategic staff** group (which contains only the Candidate, ChiefOfStaff, and Strategic1 user accounts) and the **Campaign strategy** group (which contains only the global administrator user account).</span></span>
+- <span data-ttu-id="210c4-248">**「活動策略 - 成員」** 的 SharePoint 群組僅包含 **資深和策略人員** 群組 (其中僅包含 Candidate、ChiefOfStaff 和 Strategic1 使用者帳戶) 和 **活動策略** 群組 (其中僅包含全域系統管理員使用者帳戶)。</span><span class="sxs-lookup"><span data-stu-id="210c4-248">The **Campaign strategy-Members** SharePoint group contains only the **Senior and strategic staff** group (which contains only the Candidate, ChiefOfStaff, and Strategic1 user accounts) and the **Campaign strategy** group (which contains only the global administrator user account).</span></span>
 
-- <span data-ttu-id="17855-249">**「活動策略 - 擁有者」** 的 SharePoint 群組僅包含 **IT 人員** 群組 (其中僅包含 ITAdmin1 和 ITAdmin2 使用者帳戶)。</span><span class="sxs-lookup"><span data-stu-id="17855-249">The **Campaign strategy-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
+- <span data-ttu-id="210c4-249">**「活動策略 - 擁有者」** 的 SharePoint 群組僅包含 **IT 人員** 群組 (其中僅包含 ITAdmin1 和 ITAdmin2 使用者帳戶)。</span><span class="sxs-lookup"><span data-stu-id="210c4-249">The **Campaign strategy-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
 
-- <span data-ttu-id="17855-250">**「活動策略 - 訪客」** 的 SharePoint 群組未包含任何群組或使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="17855-250">The **Campaign strategy-Visitors** SharePoint group contains no groups or user accounts.</span></span>
+- <span data-ttu-id="210c4-250">**「活動策略 - 訪客」** 的 SharePoint 群組未包含任何群組或使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="210c4-250">The **Campaign strategy-Visitors** SharePoint group contains no groups or user accounts.</span></span>
 
-- <span data-ttu-id="17855-251">成員無法修改網站層級的權限 (這只能由 **「活動策略 - 擁有者」** 群組成員來執行)。</span><span class="sxs-lookup"><span data-stu-id="17855-251">Members cannot modify site-level permissions (this can only be done by members of the **Campaign strategy-Owners** group).</span></span>
+- <span data-ttu-id="210c4-251">成員無法修改網站層級的權限 (這只能由 **「活動策略 - 擁有者」** 群組成員來執行)。</span><span class="sxs-lookup"><span data-stu-id="210c4-251">Members cannot modify site-level permissions (this can only be done by members of the **Campaign strategy-Owners** group).</span></span>
 
-- <span data-ttu-id="17855-p105">其他使用者帳戶無法存取網站或其資源，或要求存取網站。網站的額外權限必須由全域管理員或 **「活動策略 - 擁有者」** 群組成員來執行。</span><span class="sxs-lookup"><span data-stu-id="17855-p105">Other user accounts cannot access the site or its resources or request access to the site. Additional permissions to the site must be done by the global administrator or by a member of the **Campaign strategy-Owners** group.</span></span>
+- <span data-ttu-id="210c4-p105">其他使用者帳戶無法存取網站或其資源，或要求存取網站。網站的額外權限必須由全域管理員或 **「活動策略 - 擁有者」** 群組成員來執行。</span><span class="sxs-lookup"><span data-stu-id="210c4-p105">Other user accounts cannot access the site or its resources or request access to the site. Additional permissions to the site must be done by the global administrator or by a member of the **Campaign strategy-Owners** group.</span></span>
 
-<span data-ttu-id="17855-254">接下來，為「活動策略」小組網站的文件資料夾設定「高度機密」標籤。</span><span class="sxs-lookup"><span data-stu-id="17855-254">Next, configure the documents folder of the Campaign strategy team site for the Highly Confidential label.</span></span>
+<span data-ttu-id="210c4-254">接下來，為「活動策略」小組網站的文件資料夾設定「高度機密」標籤。</span><span class="sxs-lookup"><span data-stu-id="210c4-254">Next, configure the documents folder of the Campaign strategy team site for the Highly Confidential label.</span></span>
 
-1. <span data-ttu-id="17855-255">在瀏覽器的 [活動策略 - 首頁] 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="17855-255">In the **Campaign strategy-Home** tab of your browser, click **Documents**.</span></span>
+1. <span data-ttu-id="210c4-255">在瀏覽器的 [活動策略 - 首頁] 索引標籤中，按一下 [文件]。</span><span class="sxs-lookup"><span data-stu-id="210c4-255">In the **Campaign strategy-Home** tab of your browser, click **Documents**.</span></span>
 
-2. <span data-ttu-id="17855-256">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="17855-256">Click the settings icon, and then click **Library settings**.</span></span>
+2. <span data-ttu-id="210c4-256">按一下設定圖示，然後按一下 [文件庫設定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-256">Click the settings icon, and then click **Library settings**.</span></span>
 
-3. <span data-ttu-id="17855-257">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="17855-257">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
+3. <span data-ttu-id="210c4-257">在 [權限與管理] 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)。</span><span class="sxs-lookup"><span data-stu-id="210c4-257">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
 
-4. <span data-ttu-id="17855-258">在 [設定 - 套用標籤] 中，選取 [高度機密]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="17855-258">In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**.</span></span>
+4. <span data-ttu-id="210c4-258">在 [設定 - 套用標籤] 中，選取 [高度機密]，然後按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="210c4-258">In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**.</span></span>
 
-<span data-ttu-id="17855-p106">接下來，設定 DLP 原則；當使用者在組織外部共用具「高度機密」標籤之 SharePoint Online 小組網站上的文件時，即會封鎖使用者。此 DLP 原則會套用到活動策略網站中的資源。</span><span class="sxs-lookup"><span data-stu-id="17855-p106">Next, configure a DLP policy that blocks users when they share a document on a SharePoint Online team site with the Highly Confidential label outside the organization. This DLP policy will apply to resources in the Campaign strategy site.</span></span>
+<span data-ttu-id="210c4-p106">接下來，設定 DLP 原則；當使用者在組織外部共用具「高度機密」標籤之 SharePoint Online 小組網站上的文件時，即會封鎖使用者。此 DLP 原則會套用到活動策略網站中的資源。</span><span class="sxs-lookup"><span data-stu-id="210c4-p106">Next, configure a DLP policy that blocks users when they share a document on a SharePoint Online team site with the Highly Confidential label outside the organization. This DLP policy will apply to resources in the Campaign strategy site.</span></span>
 
-1. <span data-ttu-id="17855-261">如果需要，請使用本機電腦上的瀏覽器，並使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="17855-261">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) with an account that has the Security Administrator or Company Administrator role.</span></span>
+1. <span data-ttu-id="210c4-261">如果需要，請使用本機電腦上的瀏覽器，並使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心 (<https://admin.microsoft.com>)。</span><span class="sxs-lookup"><span data-stu-id="210c4-261">If needed, use a browser on your local computer and sign in to the admin center (<https://admin.microsoft.com>) with an account that has the Security Administrator or Company Administrator role.</span></span>
 
-2. <span data-ttu-id="17855-262">從瀏覽器的 [Microsoft Office 首頁] 索引標籤，按一下 [安全性與合規性] 磚。</span><span class="sxs-lookup"><span data-stu-id="17855-262">From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.</span></span>
+2. <span data-ttu-id="210c4-262">從瀏覽器的 [Microsoft Office 首頁] 索引標籤，按一下 [安全性與合規性] 磚。</span><span class="sxs-lookup"><span data-stu-id="210c4-262">From the **Microsoft Office Home** tab in your browser, click the **Security & Compliance** tile.</span></span>
 
-3. <span data-ttu-id="17855-263">在瀏覽器的新 [安全性與合規性] 索引標籤上，按一下 [資料外洩防護] > [原則]。</span><span class="sxs-lookup"><span data-stu-id="17855-263">On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
+3. <span data-ttu-id="210c4-263">在瀏覽器的新 [安全性與合規性] 索引標籤上，按一下 [資料外洩防護] > [原則]。</span><span class="sxs-lookup"><span data-stu-id="210c4-263">On the new **Security & Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
 
-4. <span data-ttu-id="17855-264">在 [資料外洩防護] 窗格中，按一下 [+ 建立原則]。</span><span class="sxs-lookup"><span data-stu-id="17855-264">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
+4. <span data-ttu-id="210c4-264">在 [資料外洩防護] 窗格中，按一下 [+ 建立原則]。</span><span class="sxs-lookup"><span data-stu-id="210c4-264">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
 
-5. <span data-ttu-id="17855-265">在 [從範本開始或建立自訂原則] 窗格中，按一下 [自訂]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-265">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
+5. <span data-ttu-id="210c4-265">在 [從範本開始或建立自訂原則] 窗格中，按一下 [自訂]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-265">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
 
-6. <span data-ttu-id="17855-266">在 [命名您的原則] 窗格的 [名稱] 中，鍵入 **Highly Confidential label SharePoint Online team sites**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-266">In the **Name your policy** pane, type **Highly Confidential label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
+6. <span data-ttu-id="210c4-266">在 [命名您的原則] 窗格的 [名稱] 中，鍵入 **Highly Confidential label SharePoint Online team sites**，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-266">In the **Name your policy** pane, type **Highly Confidential label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
 
-7. <span data-ttu-id="17855-267">在 [選擇位置] 窗格中，按一下 [Let me choose specific locations]\(讓我選擇特定位置)，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-267">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
+7. <span data-ttu-id="210c4-267">在 [選擇位置] 窗格中，按一下 [Let me choose specific locations]\(讓我選擇特定位置)，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-267">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
 
-8. <span data-ttu-id="17855-268">在位置清單中，停用 [Exchange 電子郵件] 和 [OneDrive 帳戶] 位置，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-268">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
+8. <span data-ttu-id="210c4-268">在位置清單中，停用 [Exchange 電子郵件] 和 [OneDrive 帳戶] 位置，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-268">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
 
-9. <span data-ttu-id="17855-269">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [編輯]。</span><span class="sxs-lookup"><span data-stu-id="17855-269">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
+9. <span data-ttu-id="210c4-269">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [編輯]。</span><span class="sxs-lookup"><span data-stu-id="210c4-269">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
 
-10. <span data-ttu-id="17855-270">在 [選擇要保護的內容類型] 窗格中，從下拉式方塊按一下 [新增]，然後按一下 [標籤]。</span><span class="sxs-lookup"><span data-stu-id="17855-270">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
+10. <span data-ttu-id="210c4-270">在 [選擇要保護的內容類型] 窗格中，從下拉式方塊按一下 [新增]，然後按一下 [標籤]。</span><span class="sxs-lookup"><span data-stu-id="210c4-270">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
 
-11. <span data-ttu-id="17855-271">在 [標籤] 窗格中，按一下 [+ 新增]，並選取 [高度機密] 標籤，然後依序按一下 [新增] 和 [完成]。</span><span class="sxs-lookup"><span data-stu-id="17855-271">In the **Labels** pane, click **+ Add**, select the **Highly Confidential** label, click **Add**, and then click **Done**.</span></span>
+11. <span data-ttu-id="210c4-271">在 [標籤] 窗格中，按一下 [+ 新增]，並選取 [高度機密] 標籤，然後依序按一下 [新增] 和 [完成]。</span><span class="sxs-lookup"><span data-stu-id="210c4-271">In the **Labels** pane, click **+ Add**, select the **Highly Confidential** label, click **Add**, and then click **Done**.</span></span>
 
-12. <span data-ttu-id="17855-272">在 [Choose the types of content to protect]\(選擇要保護的內容類型) 窗格中，按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="17855-272">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
+12. <span data-ttu-id="210c4-272">在 [Choose the types of content to protect]\(選擇要保護的內容類型) 窗格中，按一下 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="210c4-272">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
 
-13. <span data-ttu-id="17855-273">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-273">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
+13. <span data-ttu-id="210c4-273">在 [Customize the types of sensitive info you want to protect]\(自訂您要保護的機密資訊類型) 窗格中，按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-273">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
 
-14. <span data-ttu-id="17855-274">在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?) 窗格中，按一下 [Customize the tip and email]\(自訂提示和電子郵件)。</span><span class="sxs-lookup"><span data-stu-id="17855-274">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
+14. <span data-ttu-id="210c4-274">在 [What do you want to do if we detect sensitive info?]\(如果偵測到機密資訊要如何處理?) 窗格中，按一下 [Customize the tip and email]\(自訂提示和電子郵件)。</span><span class="sxs-lookup"><span data-stu-id="210c4-274">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
 
-15. <span data-ttu-id="17855-275">在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知) 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)。</span><span class="sxs-lookup"><span data-stu-id="17855-275">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
+15. <span data-ttu-id="210c4-275">在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知) 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)。</span><span class="sxs-lookup"><span data-stu-id="210c4-275">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
 
-16. <span data-ttu-id="17855-276">在文字方塊中，鍵入或貼上下列內容：</span><span class="sxs-lookup"><span data-stu-id="17855-276">In the text box, type or paste in the following:</span></span>
+16. <span data-ttu-id="210c4-276">在文字方塊中，鍵入或貼上下列內容：</span><span class="sxs-lookup"><span data-stu-id="210c4-276">In the text box, type or paste in the following:</span></span>
 
-    - <span data-ttu-id="17855-p107">若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。</span><span class="sxs-lookup"><span data-stu-id="17855-p107">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
+    - <span data-ttu-id="210c4-p107">若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。</span><span class="sxs-lookup"><span data-stu-id="210c4-p107">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
 
-17. <span data-ttu-id="17855-280">按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="17855-280">Click **OK**.</span></span>
+17. <span data-ttu-id="210c4-280">按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-280">Click **OK**.</span></span>
 
-18. <span data-ttu-id="17855-281">在 [如果偵測到機密資訊要如何處理?] 窗格中，選取 [需要有業務上的正當理由才能覆寫]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-281">In the **What do you want to do if we detect sensitive info?** pane, select **Require a business justification to override**, and then click **Next**.</span></span>
+18. <span data-ttu-id="210c4-281">在 [如果偵測到機密資訊要如何處理?] 窗格中，選取 [需要有業務上的正當理由才能覆寫]，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-281">In the **What do you want to do if we detect sensitive info?** pane, select **Require a business justification to override**, and then click **Next**.</span></span>
 
-19. <span data-ttu-id="17855-282">在 [要先開啟原則或測試內容嗎?] 窗格中，按一下 [是] 立即將它開啟，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="17855-282">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
+19. <span data-ttu-id="210c4-282">在 [要先開啟原則或測試內容嗎?] 窗格中，按一下 [是] 立即將它開啟，然後按一下 [下一步]。</span><span class="sxs-lookup"><span data-stu-id="210c4-282">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
 
-20. <span data-ttu-id="17855-283">在 [檢閱您的設定] 窗格中，按一下 [建立]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="17855-283">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
+20. <span data-ttu-id="210c4-283">在 [檢閱您的設定] 窗格中，按一下 [建立]，然後按一下 [關閉]。</span><span class="sxs-lookup"><span data-stu-id="210c4-283">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
 
-<span data-ttu-id="17855-284">遵循[使用 Office 365 系統管理中心啟用 Azure RMS](/information-protection/deploy-use/activate-office365) 中的指示。</span><span class="sxs-lookup"><span data-stu-id="17855-284">Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](/information-protection/deploy-use/activate-office365).</span></span>
+<span data-ttu-id="210c4-284">遵循[使用 Office 365 系統管理中心啟用 Azure RMS](/information-protection/deploy-use/activate-office365) 中的指示。</span><span class="sxs-lookup"><span data-stu-id="210c4-284">Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](/information-protection/deploy-use/activate-office365).</span></span>
 
-<span data-ttu-id="17855-285">接著，遵循下列步驟，為 Azure 資訊保護設定新的限域原則與子標籤，以提供保護及權限：</span><span class="sxs-lookup"><span data-stu-id="17855-285">Next, configure Azure Information Protection with a new scoped policy and sub-label for protection and permissions with the following steps:</span></span>
+<span data-ttu-id="210c4-285">接著，遵循下列步驟，為 Azure 資訊保護設定新的限域原則與子標籤，以提供保護及權限：</span><span class="sxs-lookup"><span data-stu-id="210c4-285">Next, configure Azure Information Protection with a new scoped policy and sub-label for protection and permissions with the following steps:</span></span>
 
-1. <span data-ttu-id="17855-286">使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="17855-286">Sign in to the admin center with an account that has the Security Administrator or Company Administrator role.</span></span> <span data-ttu-id="17855-287">如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。</span><span class="sxs-lookup"><span data-stu-id="17855-287">For help, see [Where to sign in to Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
+1. <span data-ttu-id="210c4-286">使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="210c4-286">Sign in to the admin center with an account that has the Security Administrator or Company Administrator role.</span></span> <span data-ttu-id="210c4-287">如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。</span><span class="sxs-lookup"><span data-stu-id="210c4-287">For help, see [Where to sign in to Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
 
-2. <span data-ttu-id="17855-288">在您瀏覽器的個別索引標籤中，移至 Azure 入口網站 (<https://portal.azure.com>)。</span><span class="sxs-lookup"><span data-stu-id="17855-288">In a separate tab of your browser, go to the Azure portal (<https://portal.azure.com>).</span></span>
+2. <span data-ttu-id="210c4-288">在您瀏覽器的個別索引標籤中，移至 Azure 入口網站 (<https://portal.azure.com>)。</span><span class="sxs-lookup"><span data-stu-id="210c4-288">In a separate tab of your browser, go to the Azure portal (<https://portal.azure.com>).</span></span>
 
-3. <span data-ttu-id="17855-289">在搜尋窗格中，輸入 **[資訊]**，然後按一下 **Azure 資訊保護**。</span><span class="sxs-lookup"><span data-stu-id="17855-289">In the search pane, type **information**, and then click **Azure Information Protection**.</span></span>
+3. <span data-ttu-id="210c4-289">在搜尋窗格中，輸入 **[資訊]**，然後按一下 **Azure 資訊保護**。</span><span class="sxs-lookup"><span data-stu-id="210c4-289">In the search pane, type **information**, and then click **Azure Information Protection**.</span></span>
 
-4. <span data-ttu-id="17855-290">按一下 [標籤]。</span><span class="sxs-lookup"><span data-stu-id="17855-290">Click **Labels**.</span></span>
+4. <span data-ttu-id="210c4-290">按一下 [標籤]。</span><span class="sxs-lookup"><span data-stu-id="210c4-290">Click **Labels**.</span></span>
 
-5. <span data-ttu-id="17855-291">以滑鼠右鍵按一下 [高度機密] 標籤，然後再按一下 [新增子標籤]。</span><span class="sxs-lookup"><span data-stu-id="17855-291">Right-click the **Highly Confidential** label, and then click **Add a sub-label**.</span></span>
+5. <span data-ttu-id="210c4-291">以滑鼠右鍵按一下 [高度機密] 標籤，然後再按一下 [新增子標籤]。</span><span class="sxs-lookup"><span data-stu-id="210c4-291">Right-click the **Highly Confidential** label, and then click **Add a sub-label**.</span></span>
 
-6. <span data-ttu-id="17855-292">在 [名稱] 中鍵入 **CampaignStrategy**，並在 [描述] 中鍵入 **活動策略小組網站中的文件標籤**。</span><span class="sxs-lookup"><span data-stu-id="17855-292">Type **CampaignStrategy** in **Name** and **Label for documents in the Campaign strategy team site** in **Description**.</span></span>
+6. <span data-ttu-id="210c4-292">在 [名稱] 中鍵入 **CampaignStrategy**，並在 [描述] 中鍵入 **活動策略小組網站中的文件標籤**。</span><span class="sxs-lookup"><span data-stu-id="210c4-292">Type **CampaignStrategy** in **Name** and **Label for documents in the Campaign strategy team site** in **Description**.</span></span>
 
-7. <span data-ttu-id="17855-293">在 [為包含此標籤的文件與電子郵件設定權限] 中，按一下 [保護]。</span><span class="sxs-lookup"><span data-stu-id="17855-293">In **Set permissions for documents and emails containing this label**, click **Protect**.</span></span>
+7. <span data-ttu-id="210c4-293">在 [為包含此標籤的文件與電子郵件設定權限] 中，按一下 [保護]。</span><span class="sxs-lookup"><span data-stu-id="210c4-293">In **Set permissions for documents and emails containing this label**, click **Protect**.</span></span>
 
-8. <span data-ttu-id="17855-294">在 [保護] 區段中，按一下 [Azure (雲端金鑰)]。</span><span class="sxs-lookup"><span data-stu-id="17855-294">In the **Protection** section, click **Azure (cloud key)**.</span></span>
+8. <span data-ttu-id="210c4-294">在 [保護] 區段中，按一下 [Azure (雲端金鑰)]。</span><span class="sxs-lookup"><span data-stu-id="210c4-294">In the **Protection** section, click **Azure (cloud key)**.</span></span>
 
-9. <span data-ttu-id="17855-295">在 [保護] 刀鋒視窗中，按一下 [保護設定] 下的 [+ 新增權限]。</span><span class="sxs-lookup"><span data-stu-id="17855-295">On the **Protection** blade, under **Protection settings**, click **+ Add permissions**.</span></span>
+9. <span data-ttu-id="210c4-295">在 [保護] 刀鋒視窗中，按一下 [保護設定] 下的 [+ 新增權限]。</span><span class="sxs-lookup"><span data-stu-id="210c4-295">On the **Protection** blade, under **Protection settings**, click **+ Add permissions**.</span></span>
 
-10. <span data-ttu-id="17855-296">在 [新增權限] 刀鋒視窗中，按一下 [指定使用者與群組] 下的 [+ 瀏覽目錄]。</span><span class="sxs-lookup"><span data-stu-id="17855-296">On the **Add permissions** blade, under **Specify users and groups**, click **+ Browse directory**.</span></span>
+10. <span data-ttu-id="210c4-296">在 [新增權限] 刀鋒視窗中，按一下 [指定使用者與群組] 下的 [+ 瀏覽目錄]。</span><span class="sxs-lookup"><span data-stu-id="210c4-296">On the **Add permissions** blade, under **Specify users and groups**, click **+ Browse directory**.</span></span>
 
-11. <span data-ttu-id="17855-297">在 [AAD 使用者和群組] 窗格中，選取 [資深和策略人員]，然後按一下 [選取]。</span><span class="sxs-lookup"><span data-stu-id="17855-297">On the **AAD Users and Groups** pane, select **Senior and strategic staff**, and then click **Select**.</span></span>
+11. <span data-ttu-id="210c4-297">在 [AAD 使用者和群組] 窗格中，選取 [資深和策略人員]，然後按一下 [選取]。</span><span class="sxs-lookup"><span data-stu-id="210c4-297">On the **AAD Users and Groups** pane, select **Senior and strategic staff**, and then click **Select**.</span></span>
 
-12. <span data-ttu-id="17855-298">在 [選擇預設的權限，或設定自訂] 下，按一下 [自訂]，然後選取 [檢視權限]、[編輯內容]、[儲存]、[回覆]、[全部回覆] 核取方塊。</span><span class="sxs-lookup"><span data-stu-id="17855-298">Under **Choose permissions from the preset or set custom**, click **Custom**, and then click the **View Rights**, **Edit Content**, **Save**, **Reply**, and **Reply all** check boxes.</span></span>
+12. <span data-ttu-id="210c4-298">在 [選擇預設的權限，或設定自訂] 下，按一下 [自訂]，然後選取 [檢視權限]、[編輯內容]、[儲存]、[回覆]、[全部回覆] 核取方塊。</span><span class="sxs-lookup"><span data-stu-id="210c4-298">Under **Choose permissions from the preset or set custom**, click **Custom**, and then click the **View Rights**, **Edit Content**, **Save**, **Reply**, and **Reply all** check boxes.</span></span>
 
-13. <span data-ttu-id="17855-299">按兩次 [確定]。</span><span class="sxs-lookup"><span data-stu-id="17855-299">Click **OK** twice.</span></span>
+13. <span data-ttu-id="210c4-299">按兩次 [確定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-299">Click **OK** twice.</span></span>
 
-14. <span data-ttu-id="17855-300">在 [子標籤] 刀鋒視窗中，按一下 [儲存]，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="17855-300">On the **Sub-label** blade, click **Save**, and then click **OK**.</span></span>
+14. <span data-ttu-id="210c4-300">在 [子標籤] 刀鋒視窗中，按一下 [儲存]，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-300">On the **Sub-label** blade, click **Save**, and then click **OK**.</span></span>
 
-15. <span data-ttu-id="17855-301">在 [Azure 資訊保護] 刀鋒視窗中，按一下 [原則] > [+ 新增原則]。</span><span class="sxs-lookup"><span data-stu-id="17855-301">On the **Azure Information protection** blade, click **Policies > + Add a new policy**.</span></span>
+15. <span data-ttu-id="210c4-301">在 [Azure 資訊保護] 刀鋒視窗中，按一下 [原則] > [+ 新增原則]。</span><span class="sxs-lookup"><span data-stu-id="210c4-301">On the **Azure Information protection** blade, click **Policies > + Add a new policy**.</span></span>
 
-16. <span data-ttu-id="17855-302">在 [名稱] 中鍵入 **CampaignStrategy**，並在 [描述] 中鍵入 **活動策略小組網站中的文件**。</span><span class="sxs-lookup"><span data-stu-id="17855-302">Type **CampaignStrategy** in **Name** and **Documents in the Campaign strategy team site** in **Description**.</span></span>
+16. <span data-ttu-id="210c4-302">在 [名稱] 中鍵入 **CampaignStrategy**，並在 [描述] 中鍵入 **活動策略小組網站中的文件**。</span><span class="sxs-lookup"><span data-stu-id="210c4-302">Type **CampaignStrategy** in **Name** and **Documents in the Campaign strategy team site** in **Description**.</span></span>
 
-17. <span data-ttu-id="17855-303">按一下 [選取取得此原則的使用者或群組] > [使用者/群組]，然後選取 [資深和策略人員]。</span><span class="sxs-lookup"><span data-stu-id="17855-303">Click **Select which users or groups get this policy > User/Groups**, and then select **Senior and strategic staff**.</span></span>
+17. <span data-ttu-id="210c4-303">按一下 [選取取得此原則的使用者或群組] > [使用者/群組]，然後選取 [資深和策略人員]。</span><span class="sxs-lookup"><span data-stu-id="210c4-303">Click **Select which users or groups get this policy > User/Groups**, and then select **Senior and strategic staff**.</span></span>
 
-18. <span data-ttu-id="17855-304">按一下 **[選取]\> [確定]**。</span><span class="sxs-lookup"><span data-stu-id="17855-304">Click **Select \> OK**.</span></span>
+18. <span data-ttu-id="210c4-304">按一下 **[選取]\> [確定]**。</span><span class="sxs-lookup"><span data-stu-id="210c4-304">Click **Select \> OK**.</span></span>
 
-19. <span data-ttu-id="17855-p109">按一下 [新增或移除標籤]。在 [原則: 新增或移除標籤] 窗格中，按一下 [CampaignStrategy]，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="17855-p109">Click **Add or remove labels**. In the **Policy: Add or remove labels** pane, click **CampaignStrategy**, and then click **OK**.</span></span>
+19. <span data-ttu-id="210c4-p109">按一下 [新增或移除標籤]。在 [原則: 新增或移除標籤] 窗格中，按一下 [CampaignStrategy]，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-p109">Click **Add or remove labels**. In the **Policy: Add or remove labels** pane, click **CampaignStrategy**, and then click **OK**.</span></span>
 
-20. <span data-ttu-id="17855-307">按一下 [儲存]，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="17855-307">Click **Save**, and then click **OK**.</span></span>
+20. <span data-ttu-id="210c4-307">按一下 [儲存]，然後按一下 [確定]。</span><span class="sxs-lookup"><span data-stu-id="210c4-307">Click **Save**, and then click **OK**.</span></span>
 
-<span data-ttu-id="17855-308">您現在準備好開始建立這四個網站中的文件，以及使用不同的使用者帳戶來測試其存取。</span><span class="sxs-lookup"><span data-stu-id="17855-308">You are now ready to begin creating documents in these four sites and test access to them with various user accounts.</span></span>
+<span data-ttu-id="210c4-308">您現在準備好開始建立這四個網站中的文件，以及使用不同的使用者帳戶來測試其存取。</span><span class="sxs-lookup"><span data-stu-id="210c4-308">You are now ready to begin creating documents in these four sites and test access to them with various user accounts.</span></span>
 
-<span data-ttu-id="17855-309">若要使用 Azure 資訊保護和此新標籤來保護文件，您必須在測試電腦上 [安裝 Azure 資訊保護用戶端](/information-protection/rms-client/install-client-app)，並從系統管理中心安裝 Office，然後使用試用訂用帳戶 **「資深和策略人員」** 群組中的帳戶登入 Microsoft Word。</span><span class="sxs-lookup"><span data-stu-id="17855-309">To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.</span></span>
+<span data-ttu-id="210c4-309">若要使用 Azure 資訊保護和此新標籤來保護文件，您必須在測試電腦上 [安裝 Azure 資訊保護用戶端](/information-protection/rms-client/install-client-app)，並從系統管理中心安裝 Office，然後使用試用訂用帳戶 **「資深和策略人員」** 群組中的帳戶登入 Microsoft Word。</span><span class="sxs-lookup"><span data-stu-id="210c4-309">To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="17855-310">另請參閱</span><span class="sxs-lookup"><span data-stu-id="17855-310">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="210c4-310">另請參閱</span><span class="sxs-lookup"><span data-stu-id="210c4-310">See Also</span></span>
 
-[<span data-ttu-id="17855-311">適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南</span><span class="sxs-lookup"><span data-stu-id="17855-311">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[<span data-ttu-id="210c4-311">適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南</span><span class="sxs-lookup"><span data-stu-id="210c4-311">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
-[<span data-ttu-id="17855-312">設定政治活動開發/測試環境的群組和使用者</span><span class="sxs-lookup"><span data-stu-id="17855-312">Configure groups and users for a political campaign dev/test environment</span></span>](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
+[<span data-ttu-id="210c4-312">設定政治活動開發/測試環境的群組和使用者</span><span class="sxs-lookup"><span data-stu-id="210c4-312">Configure groups and users for a political campaign dev/test environment</span></span>](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
-[<span data-ttu-id="17855-313">雲端採用測試實驗室指南 (TLG)</span><span class="sxs-lookup"><span data-stu-id="17855-313">Cloud adoption Test Lab Guides (TLGs)</span></span>](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="210c4-313">雲端採用測試實驗室指南 (TLG)</span><span class="sxs-lookup"><span data-stu-id="210c4-313">Cloud adoption Test Lab Guides (TLGs)</span></span>](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[<span data-ttu-id="17855-314">Microsoft 365 解決方案與架構中心</span><span class="sxs-lookup"><span data-stu-id="17855-314">Microsoft 365 solution and architecture center</span></span>](../../solutions/index.yml)
+[<span data-ttu-id="210c4-314">Microsoft 365 解決方案與架構中心</span><span class="sxs-lookup"><span data-stu-id="210c4-314">Microsoft 365 solution and architecture center</span></span>](../../solutions/index.yml)
