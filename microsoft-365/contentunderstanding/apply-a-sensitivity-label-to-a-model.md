@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 本文將討論如何在 SharePoint Syntex 中將敏感度標籤套用至模型。
-ms.openlocfilehash: 2ddfd6ffe11e8e01e32b6e1b5ddf65763e4ae381
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ebcd398799e7c8addd96d5941427628d3db5ad43
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022411"
+ms.locfileid: "53028940"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中將敏感度標籤套用至模型
 
 您可以在 Microsoft SharePoint Syntex 中輕鬆套用 [敏感度標籤](../compliance/sensitivity-labels.md) 到文件瞭解模型。 表單處理模型尚未能使用此功能。
 
-敏感度等級讓您可以在您的模型識別的文件中套用加密、共用及條件式存取原則。 例如，您希望您的模型不僅識別將上傳到您文檔庫且包含銀行帳號或信用卡號的任何財務文件，而且還對它們套用 *加密* 敏感度標籤，以限制誰可以存取該內容以及可以如何使用它。 Syntex 模型會採用[標籤順序](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)規則，且不會覆寫使用者對檔案手動套用的現有標籤。 
+敏感度等級讓您可以在您的模型識別的文件中套用加密、共用及條件式存取原則。 例如，您希望您的模型不僅識別將上傳到您文檔庫且包含銀行帳號或信用卡號的任何財務文件，而且還對它們套用 *加密* 敏感度標籤，以限制誰可以存取該內容以及可以如何使用它。 SharePoint Syntex 模型會採用[標籤順序](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)規則，且不會覆寫使用者對檔案手動套用的現有標籤。 
 
 透過模型首頁上的模型設定，您可以將現有的敏感度標籤套用至你的模型。 標籤必須已發佈，並可以在模型設定中選取。
 
