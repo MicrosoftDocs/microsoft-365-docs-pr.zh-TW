@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934390"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028496"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界測試中最高評分
 
@@ -43,7 +43,7 @@ MITRE 測試方法的核心是模擬真實世界的攻擊，以了解解決方�
 
 - 以 ATT&CK 為基礎的 Microsoft 365 Defender 評估 - 2020 年 5 月： [在真實世界偵測中領先](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender 在攻擊鏈的階段中提供近 100% 的涵蓋範圍。 它傳遞了對於攻擊者活動領先的全新可見度。 可見度大幅減少依賴特定的設定變更之安全性作業中心和廠商解決方案的手動工作。 Microsoft 365 Defender 在可見度上也有最短的間隔，降低攻擊者未偵測的操作能力。
+ Microsoft 365 Defender 在攻擊鏈的階段中提供近 100% 的涵蓋範圍。 它傳遞了對於攻擊者活動領先的全新可見度。 可見度大幅減少依賴特定的設定變更之安全性作業中心和廠商解決方案的手動工作。 Microsoft 365 Defender 在可見度上也有最短的間隔，降低攻擊者未偵測的操作能力。
 
 ## <a name="next-generation-protection"></a>新一代保護技術
 
@@ -89,7 +89,7 @@ SE Labs 會測試產品和服務所使用的一系列解決方案，以偵測和
 
 - 企業端點保護 2020 年 10 月 - 12 月：[AAA 獎](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/)<sup>**最新**</sup>
 
-    Microsoft 的新一代保護產品已停止所有公開和鎖定目標攻擊。 Microsoft Defender 防毒軟體以封鎖惡意 URL、處理惡意探索，以及正確分類合法的應用程式和網站的能力，獲得如此良好的結果。
+    Microsoft 的新一代保護產品已停止所有公開和鎖定目標攻擊。Microsoft Defender 防毒軟體以封鎖惡意 URL、處理惡意探索，以及正確分類合法的應用程式和網站的能力，獲得如此良好的結果。
 
 - 企業端點保護 2020 年 7 月 - 9 月：[AAA 獎](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 

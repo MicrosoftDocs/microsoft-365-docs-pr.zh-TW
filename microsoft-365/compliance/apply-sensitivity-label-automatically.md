@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984805"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029000"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -369,3 +369,17 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
+
+## <a name="tips-to-increase-labeling-reach"></a>增加套用標籤觸及率的秘訣
+
+雖然自動套用標籤是分類、標記及保護貴組織擁有之 Office 檔案的其中一個最有效率的方法，但請檢查您是否可以使用任何其他方法來補充它，以增加套用標籤觸及率：
+
+- 當您使用 [Microsoft Azure 資訊保護統一標籤用戶端](/azure/information-protection/rms-client/aip-clientv2)：
+    
+    - 對於內部部署資料存放區 (例如網路共用和 SharePoint Server 文件庫) 中的檔案：使用 [掃描器](/azure/information-protection/deploy-aip-scanner) 以探索這些檔案中的敏感性資訊，並適當地標記它們。 如果您計畫移轉或上傳這些檔案至 Microsoft 365 中的 SharePoint，請先使用掃描器標記檔案，然後再將它們移至雲端。
+    
+    - 如果您在使用敏感度標籤之前已使用其他套用標籤解決方案：使用 PowerShell 和 [進階設定以重複使用這些解決方案中的標籤](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions)。
+
+- 在提供使用者進行套用敏感度標籤的訓練之後，鼓勵 [手動套用標籤](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。 當您確信使用者瞭解要套用哪個標籤時，請考慮將預設標籤和強制套用標籤設定為 [原則設定](sensitivity-labels.md#what-label-policies-can-do)。 
+
+此外，請考慮在 SharePoint 中 [預設將新檔案標示為敏感性](/sharepoint/sensitive-by-default)，以防止來賓存取新增的檔案，直到至少有一個 DLP 原則掃描檔案內容。
