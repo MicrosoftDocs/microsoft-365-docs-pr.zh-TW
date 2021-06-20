@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: fcba6e2f3939115d6dfbaae80d322246bdeadee9
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028772"
+ms.locfileid: "53029894"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 
@@ -34,8 +34,8 @@ ms.locfileid: "53028772"
 
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 
- **摘要：** 在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。 
-   
+ **摘要：** 在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
+
 使用本文所述指示來建立開發/測試環境，其中包含針對 [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解決方案的四種不同類型的 SharePoint Online 小組網站。這些網站會在主題 10 中詳細說明，主題 10 的標題為 **「SharePoint 和商務用 OneDrive」**。
 
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>階段 1：建立政治活動開發/測試環境
@@ -46,43 +46,46 @@ ms.locfileid: "53028772"
 
 在這個階段中，您會為 SharePoint Online 小組網站的文件資料夾，建立不同安全性層級的標籤。
 
-1. 如果需要，請使用試用訂閱的全域系統管理員帳戶憑證登入系統管理中心。 如需說明，請參閱 [在何處登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，請使用試用訂閱的全域系統管理員帳戶認證來登入 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>)。如需說明，請參閱[在何處登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 從 [Microsoft Office 首頁] 索引標籤中，按一下 [管理] 磚。
+2. 從您開始所在的 [首頁 **]**，按一下 [顯示全部 **]**。 在顯示的 [系統管理中心 **]** 區段中，按一下 [合規性 **]**。
 
-3. 從瀏覽器的新 [Microsoft 365 系統管理中心] 索引標籤中，按一下 [系統管理中心] > [安全性與合規性]。
+3. 從 Microsoft 365 合規性中心的 [首頁 **]**，前往 [解決方案 **]** 區段 \> [資訊保護 **]**。 若要直接前往 [資訊保護 **]** 頁面，請使用 <https://compliance.microsoft.com//informationprotection>。
 
-4. 從瀏覽器的新 [首頁 - 安全性與合規性] 索引標籤中，按一下 [分類] > [標籤]。
+4. 在 [資訊保護 **]** 頁面上，確認已選取 [標籤 **]** 標記，然後按一下 [建立標籤圖示![]](../../media/m365-cc-sc-create-icon.png) **建立標籤**。
 
-5. 從 [首頁] > [標籤] 窗格中，按一下 [建立標籤]。
+5. [新增敏感度標籤 **]** 精靈隨即會開啟。 在 [名稱與描述 **]** 步驟上，輸入下列值：
+   - **名稱**：輸入 **內部**。
+   - **顯示名稱**
+   - **給使用者的描述**
 
-6. 在 [命名您的標籤] 窗格中，鍵入 **Internal**，然後按一下 [下一步]。
+   完成後，按 [下一步 **]**。
 
-7. 在 [標籤設定] 窗格中，按一下 [下一步]。
+6. 在 [標籤設定] 窗格中，按一下 [下一步]。
 
-8. 在 [檢閱您的設定] 窗格中，按一下 [建立此標籤]，然後按一下 [關閉]。
+7. 在 [檢閱您的設定] 窗格中，按一下 [建立此標籤]，然後按一下 [關閉]。
 
-9. 重複步驟 5-8，逐一設定下列其他標籤：
+8. 重複步驟 5-8，逐一設定下列其他標籤：
 
    - 私人
    - 敏感性
    - 高度機密
 
-10. 從 [首頁] > [標籤] 窗格中，按一下 [Publish labels]\(發佈標籤)。
+9. 從 [首頁] > [標籤] 窗格中，按一下 [Publish labels]\(發佈標籤)。
 
-11. 在 [選擇要發佈的標籤] 窗格中，按一下 [選擇要發佈的標籤]。
+10. 在 [選擇要發佈的標籤] 窗格中，按一下 [選擇要發佈的標籤]。
 
-12. 在 [Choose labels]\(選擇標籤) 窗格中，按一下 [新增] 並選取所有四個標籤。
+11. 在 [Choose labels]\(選擇標籤) 窗格中，按一下 [新增] 並選取所有四個標籤。
 
-13. 按一下 [完成]。
+12. 按一下 [完成]。
 
-14. 在 [選擇要發佈的標籤] 窗格上，按一下 [下一步]。
+13. 在 [選擇要發佈的標籤] 窗格上，按一下 [下一步]。
 
-15. 在 [選擇位置] 窗格中，按一下 [下一步]。
+14. 在 [選擇位置] 窗格中，按一下 [下一步]。
 
-16. 在 [命名您的原則] 窗格上，於 [名稱] 中鍵入 **Campaign**，然後按一下 [下一步]。
+15. 在 [命名您的原則] 窗格上，於 [名稱] 中鍵入 **Campaign**，然後按一下 [下一步]。
 
-17. 在 [檢閱您的設定] 窗格中，按一下 [發佈標籤]，然後按一下 [關閉]。
+16. 在 [檢閱您的設定] 窗格中，按一下 [發佈標籤]，然後按一下 [關閉]。
 
 ## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>階段 3：建立 SharePoint Online 小組網站
 
@@ -374,7 +377,7 @@ ms.locfileid: "53028772"
 
 接著，遵循下列步驟，為 Azure 資訊保護設定新的限域原則與子標籤，以提供保護及權限：
 
-1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在您瀏覽器的個別索引標籤中，移至 Azure 入口網站 (<https://portal.azure.com>)。
 
