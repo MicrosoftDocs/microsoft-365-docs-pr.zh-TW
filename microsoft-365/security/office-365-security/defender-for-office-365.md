@@ -21,12 +21,12 @@ ms.custom:
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bdb1e16c20b623934bb4fb994fcb8c6ef5f5ff0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028452"
+ms.locfileid: "53029870"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
@@ -96,9 +96,9 @@ ms.locfileid: "53028452"
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>設定適用於 Office 365 的 Microsoft Defender 原則
 
-有了適用於 Office 365 的 Microsoft Defender，您組織的安全性小組可以依據 Microsoft 365 Defender 中的防護原則設定保護 (移至 <https://security.microsoft.com> \> **電子郵件與共同與共同作業** \> **原則和規則**。)
+有了適用於 Office 365 的 Microsoft Defender，您組織的安全性團隊可以在 Microsoft 365 Defender 入口網站中定義原則來設定保護 (移至 <https://security.microsoft.com> \> [電子郵件與共同作業 **]** \> [原則和規則 **]**。)
 
-觀看[此影片](https://www.youtube.com/watch?v=vivvTmWJ_3c)瞭解更多資訊。 
+觀看[此影片](https://www.youtube.com/watch?v=vivvTmWJ_3c)瞭解更多資訊。
 
 > [!TIP]
 > 如需要定義的原則快速清單，請參閱[防範威脅](protect-against-threats.md)。
@@ -113,11 +113,11 @@ ms.locfileid: "53028452"
 
 - **[適用於 SharePoint、OneDrive 及 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)**：透過找出並封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時保護您的組織。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender](turn-on-mdo-for-spo-odb-and-teams.md)。
 
-- **[適用於 Office 365 的 Defender 中的防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**：偵測模擬使用者和內部或自訂網域的嘗試。 適用於電腦學習模型和進階模擬偵測演算法，以避免網路釣魚攻擊。 若要深入了解，請參閱[在適用於 Office 365 的 Microsoft Defender 中設定防網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+- **[適用於 Office 365 的 Defender 中的防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**：偵測模擬使用者和內部或自訂網域的嘗試。 適用於電腦學習模型和進階模擬偵測演算法，以避免網路釣魚攻擊。 若要深入了解，請參閱[在適用於 Office 365 的 Microsoft Defender 中設定防網路釣魚原則](configure-mdo-anti-phishing-policies.md)。
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>檢視適用於 Office 365 的 Microsoft Defender 報告
 
-適用於 Office 365 的 Microsoft Defender 包括進階[報告儀表板](view-reports-for-mdo.md)，用來監視適用於 Office 365 的 Defender 的效能。 您可以在 Microsoft 365 Defender 入口網站中的 **報告** \> **儀表板** 存取它。
+適用於 Office 365 的 Microsoft Defender 包含[報告](view-reports-for-mdo.md)可用來監視適用於 Office 365 的 Defender。 您可以在 Microsoft 365 Defender 入口網站中存取報告，其位於 [報告 **]** \> [電子郵件和共同作業報告 **]** \> [電子郵件和共同作業報告 **]**，或直接透過 <https://security.microsoft.com/securityreports> 存取。
 
 報告會即時更新，提供您最新的深入解析。 這些報告也提供建議並警示您即將發生的潛在威脅。 預先定義的報告包括下列：
 
@@ -141,16 +141,19 @@ ms.locfileid: "53028452"
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>使用適用於 Office 365 的 Microsoft Defender 功能所需的權限
 
-若要在 Microsoft 365 Defender 中存取適用於 Office 365 的 Defender 功能，您必須獲派適當的角色。下表包含一些範例：
+若要存取適用於 Office 365 的 Microsoft Defender 功能，您必須獲指派適當的角色。下表包含一些範例：
+
+<br>
+
+****
 
 |角色或角色群組|可深入了解的資源|
 |---|---|
-|全域系統管理員 (可在 Azure Active Directory 或 Microsoft 365 Defender 指派)|[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)|
-|安全性系統管理員 (可在 Azure Active Directory 或 Microsoft 365 Defender 指派)|[Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Microsoft 365 Defender 中的權限](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|搜尋和清除 (這僅可在 Microsoft 365 Defender 中指派)|[Microsoft 365 Defender 中的權限](permissions-in-the-security-and-compliance-center.md)|
-
-如需詳細資訊，請參閱 [Microsoft 365 Defender 中的權限](permissions-in-the-security-and-compliance-center.md)。
+|全域系統管理員 (組織管理)|您可以在 Azure Active Directory 或 Microsoft 365 Defender 入口網站中指派此角色。 如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。|
+|安全性系統管理員|您可以在 Azure Active Directory 或 Microsoft 365 Defender 入口網站中指派此角色。 如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。|
+|Exchange Online 中的組織管理|[Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
+|搜尋和清除|此角色僅可在 Microsoft 365 Defender 入口網站或 Microsoft 365 合規性中心中取得。 如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)以及 [Microsoft 365 合規性中心中的權限](../../compliance/microsoft-365-compliance-center-permissions.md)。|
+|||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>取得適用於 Office 365 的 Microsoft Defender
 
@@ -177,4 +180,3 @@ ms.locfileid: "53028452"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 - [Microsoft 365 Defender 中的自動化調查及回應 (AIR)](../defender/m365d-autoir.md)
-
