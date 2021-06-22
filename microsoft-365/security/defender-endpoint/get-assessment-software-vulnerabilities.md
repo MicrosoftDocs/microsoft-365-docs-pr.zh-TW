@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 87fb5c62b520168a686cc0b95a321becdd4656ba
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022867"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052960"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>每個裝置的匯出軟體漏洞評估
 
@@ -48,9 +48,9 @@ ms.locfileid: "53022867"
    - 使用下載 URLs 下載所有檔案，並視需要處理資料。
 
 3. [Delta export 軟體漏洞評估 **JSON 回應**](#3-delta-export-software-vulnerabilities-assessment-json-response)  會傳回表格，其中每個唯一的組合： DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 及 EventTimestamp。
-API 將組織中的資料提取為 Json 回應。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 <br><br> 與完整的「軟體弱點評估 (JSON 回應) 」（用來取得組織的軟體漏洞評估整個快照）不同（「增量匯出 OData API 呼叫）是用來只提取選取日期和目前日期之間所發生的變更 (「delta」 API 通話) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export JSON 回應 API 通話也可以用來計算不同的 KPIs 例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」 <br><br> 因為軟體弱點的 Delta export JSON 回應 API 呼叫只會傳回目標日期範圍的資料，所以不會被視為 _完整匯出_。
+API 將組織中的資料提取為 Json 回應。 回應已分頁，所以您可以 @odata 使用來自回應的 nextLink 欄位，以提取下一個結果。 <br><br> 與完整的「軟體弱點評估 (JSON 回應) 」（用來取得組織之軟體漏洞評估的整個快照）不同，「增量匯出 API 呼叫」是用來只提取選取日期和目前日期之間所發生的變更， ("delta" API 呼叫) 。 您不需要每次獲得大量資料的完整匯出，只會取得新的、已修復和更新之弱點的特定資訊。 Delta export JSON 回應 API 通話也可以用來計算不同的 KPIs 例如「修復多少個漏洞？」。 或「我的組織新增了多少個新的漏洞？」 <br><br> 因為軟體弱點的 Delta export JSON 回應 API 呼叫只會傳回目標日期範圍的資料，所以不會被視為 _完整匯出_。
 
-使用 _OData_ _或透過_ 檔案收集 (所收集的資料，) 目前狀態的目前快照，且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
+使用 _Json 回應__或透過_ 檔案 (收集的資料) 目前狀態的目前快照，而且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
 
 > [!Note]
 >
@@ -377,7 +377,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="35-properties"></a>3.5 屬性
 
-每個傳回的記錄包含由裝置 OData API 的完整出口軟體漏洞評估中的所有資料，另外還有兩個額外的欄位：  _**EventTimestamp**_ 和 _**Status**_。
+每個傳回的記錄包含由裝置 API 完整匯出軟體漏洞評估中的所有資料，另外還有兩個額外的欄位：  _**EventTimestamp**_ 和 _**Status**_。
 
 >[!NOTE]
 >- 其他一些欄可能會在回應中傳回。 這些欄是暫存檔的，而且可能會被移除，所以請只使用記錄的資料行。

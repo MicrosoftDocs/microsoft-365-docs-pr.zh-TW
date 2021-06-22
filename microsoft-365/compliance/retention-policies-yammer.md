@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Yammer 的保留原則。
-ms.openlocfilehash: a8d047845b986029d393816982e6bede3db71485
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: d4988eee419a38497d4fa35cdb3e2f7fec103688
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861560"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052924"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解 Yammer 的保留
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 這項功能處於預覽，且尚未提供給所有客戶。
+> 此功能處於預覽階段，可能會有所變更。
 
 本文中的資訊可補充[了解保留原則](retention.md)，因為其包含 Yammer 專用的資訊。
 

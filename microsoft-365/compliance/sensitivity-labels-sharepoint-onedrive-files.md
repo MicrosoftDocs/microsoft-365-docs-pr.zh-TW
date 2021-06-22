@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 及 OneDrive 中啟用 Word、Excel 和 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: d4c0f9b4c280394dd63820320ba7ca30e349c361
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: e123dbd523bdaa648ee66b6ef56ee071b917fd86
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878037"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052972"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -68,7 +68,7 @@ ms.locfileid: "52878037"
 
 這些新功能僅適用于 [敏感度標籤](sensitivity-labels.md) 。 如果您目前已具備 Azure 資訊保護標籤，請先將它們遷移至靈敏度標籤，讓您可以針對您上傳的新檔案啟用這些功能。 如需說明，請參閱[如何將 Azure 資訊保護標籤移轉至統一的敏感度標籤](/azure/information-protection/configure-policy-migrate-labels)。
 
-在 Windows 上使用 OneDrive sync 應用程式版本19.002.0121.0008 或更新版本，以及 Mac 版上的19.002.0107.0008 或更新版本。 這兩個版本都發行于2019年1月28日，而且目前已發佈給所有的振鈴。 如需詳細資訊，請參閱[OneDrive 發行附注](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在 SharePoint 和 OneDrive 中啟用 Office 檔的靈敏度標籤之後，會提示執行舊版本的 sync 應用程式的使用者進行更新。
+使用 Windows 上的 OneDrive 同步處理應用程式版本19.002.0121.0008 或更新版本，以及 Mac 版上的19.002.0107.0008 或更新版本。 這兩個版本都發行于2019年1月28日，而且目前已發佈給所有的振鈴。 如需詳細資訊，請參閱[OneDrive 發行附注](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在 SharePoint 和 OneDrive 中啟用 Office 檔的靈敏度標籤之後，會提示執行舊版本的 sync 應用程式的使用者進行更新。
 
 ## <a name="limitations"></a>限制
 
@@ -78,7 +78,7 @@ ms.locfileid: "52878037"
 
 - SharePoint 和 OneDrive 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，當您在 SharePoint 和 OneDrive 中為 Office 檔案啟用敏感度標籤之後，請完成下列工作：
     
-    1. 請確定您已將[Azure 資訊保護標籤遷移](/azure/information-protection/configure-policy-migrate-labels)至敏感度標籤，並從 Microsoft 365 規範中心[發行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
+    1. 請確定您已將[Azure 資訊保護標籤遷移](/azure/information-protection/configure-policy-migrate-labels)至敏感度標籤，並從 Microsoft 365 合規性中心[發佈](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
     2. 下載標示的檔案，然後將其上傳至 SharePoint 或 OneDrive 中的原始位置。
 
 - 當套用加密的標籤有下列任何[加密](encryption-sensitivity-labels.md#configure-encryption-settings)設定時，SharePoint 和 OneDrive 無法處理加密的檔案：
@@ -103,8 +103,6 @@ ms.locfileid: "52878037"
 
 - 如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，則使用者可能無法在其 OneDrive sync 資料夾中儲存對檔案所做的變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到 [紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。 相反地，他們可以關閉並重新開啟檔案，或使用 Office 網頁版。
 
-- 如果已標示的檔上傳至 SharePoint 或 OneDrive，且標籤是使用服務主體名稱的帳戶來套用加密，則無法在 Office 網頁版中開啟該檔。 範例案例包括 Microsoft Cloud App Security，以及透過電子郵件傳送給 Teams 的檔案。
-
 - 使用者可能會在離線或轉入睡眠模式後遇到儲存問題，而不是使用 Office 網頁版時，他們會使用桌面和行動應用程式來使用 Word、Excel 或 PowerPoint。 針對這些使用者，當他們繼續其 Office 應用程式會話，並嘗試儲存變更時，會看到 [上傳失敗] 訊息，其選項是儲存副本，而不是儲存原始檔案。 
 
 - 以下列方式加密的檔無法在 Office 網頁版中開啟：
@@ -120,13 +118,13 @@ ms.locfileid: "52878037"
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>如何在 SharePoint 和 OneDrive (自願加入) 中啟用敏感度標籤
 
-您可以使用 Microsoft 365 規範中心或使用 PowerShell 來啟用新功能。 隨著 SharePoint 和 OneDrive 的所有租使用者層級設定變更，此變更大約需要15分鐘的時間才能生效。
+您可以使用 Microsoft 365 合規性中心，或使用 PowerShell 來啟用新功能。 隨著 SharePoint 和 OneDrive 的所有租使用者層級設定變更，此變更大約需要15分鐘的時間才能生效。
 
 ### <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>使用規範中心來啟用敏感度標籤支援
 
 這個選項是為 SharePoint 和 OneDrive 啟用敏感度標籤的最簡單方式，但是您必須以您租使用者的全域管理員身分登入。
 
-1. 以全域管理員身分登入 [Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至 **解決方案**  >  **資訊保護**
+1. 以全域管理員身分登入 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，並流覽至 **解決方案**  >  **資訊保護**
     
     如果您沒有立即看到這個選項，請先選取 [全部顯示]。 
 

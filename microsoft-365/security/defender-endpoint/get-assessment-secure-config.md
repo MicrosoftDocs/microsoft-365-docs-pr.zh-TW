@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 7d39dddf4928b3bcb28fb008bcccd83c67f60177
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022387"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053176"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>匯出每個裝置的安全設定評估
 
@@ -47,7 +47,7 @@ ms.locfileid: "53022387"
 
   - 使用下載 URLs 下載所有檔案，並視需要處理資料。
 
-使用 _OData_ _或透過_ 檔案收集 (所收集的資料，) 目前狀態的目前快照，且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
+使用 _JSON 回應__或透過_ 檔案 (收集的資料) 目前狀態的目前快照，而且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
 
 > [!Note]
 >

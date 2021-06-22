@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245957"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053152"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>裝置探索常見問題
 
@@ -65,7 +65,7 @@ ms.locfileid: "52245957"
  根據預設，在 Windows 10 版本1809或更新版本上執行的所有架裝置都是在捕獲和分析下列通訊協定： ARP、CDP、DHCP、DHCPv6、IP (標頭) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (標頭) 、UDP (標頭) 、WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>您在 Standard discovery 中用於使用中探測的通訊協定為何？
- 當裝置設定為執行標準探索時，會使用下列通訊協定來探測公開的服務： ARP、FTP、HTTP、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL
+ 當裝置設定成執行標準探索時，會使用下列通訊協定來探測公開的服務： ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、CrestonCIP、IphoneSync、
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>如何排除目標，使其不會透過標準探索來探測？
  如果您的網路上有不應該主動探測的裝置，您也可以定義排除清單以避免掃描這些裝置。 設定可在 [裝置探索設定] 頁面中取得。
@@ -91,4 +91,5 @@ ms.locfileid: "52245957"
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>是否可以板載找到的受管理裝置？
  是。 網路中未受管理的端點會向您的網路引進弱點和風險。 將其上架至服務可提高安全性。 
 
-
+## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>我注意到，未受管理的裝置健康狀態永遠都是「Active」，為何？
+不管實際的狀態為何，未受管理的裝置健康狀態會在設備清查的標準保留期間內暫時為「Active」。

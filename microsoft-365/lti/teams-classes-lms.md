@@ -12,20 +12,20 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: 整合您的教學管理系統中 Microsoft Teams 類別
-ms.openlocfilehash: 287b9f1cadfdcf3adafdca91f4a351865bbcf3bc
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+description: 整合 Learning 管理系統中的 Microsoft Teams 類別
+ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821268"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053248"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>使用具有 Blackboard 的 Microsoft Teams 類別
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-Microsoft Teams 類別是 (LTI) 應用程式的學習工具互通性，可協助教育者和學生輕鬆流覽其教學管理系統 (LMS) 和 Teams。 使用者可以直接從 LMS 中存取與其課程相關聯的類別小組。
+Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協助教育者和學生輕鬆流覽其 Learning 管理系統 (LMS) 和 Teams。 使用者可以直接從 LMS 中存取與其課程相關聯的類別小組。
 
 ## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>核准 Microsoft Azure 租使用者中的應用程式
 
@@ -37,7 +37,7 @@ Microsoft Teams 類別是 (LTI) 應用程式的學習工具互通性，可協助
 
 2. 請根據下列範例重新導向 Microsoft Identity 平臺系統管理員同意端點：
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > 以您組織的 Microsoft 租使用者識別碼取代 {承租人}。

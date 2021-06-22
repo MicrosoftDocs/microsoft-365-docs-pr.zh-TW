@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f9a4b7679a33d6722336ee5412e4992389ba915f
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ec3887cd37ddb412df3ae78300c1f9e9c60ecc
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694410"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053044"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "52694410"
 
 本節不包含準備目標目錄中 MailUser 使用者物件所需的特定步驟，也不會包含用於提交遷移批次的範例命令。 請參閱 [準備目標使用者物件以供遷移](#prepare-target-user-objects-for-migration) 以取得此資訊。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>了解必要條件
 
 跨承租人信箱移動功能需要 [Azure Key Vault](/azure/key-vault/basic-concepts) 才能建立租使用者對特定的 Azure 應用程式，以安全地儲存和存取憑證/機密，以供從一個租使用者對另一個租使用者進行驗證及授權，並移除在承租人間共用憑證/機密的任何需求。 
 
@@ -122,6 +122,7 @@ ms.locfileid: "52694410"
 6. 腳本會暫停，並且要求您接受或同意在此程式期間建立的 Exchange 信箱遷移應用程式。 範例如下。
 
     ```powershell
+    PS C:\PowerShell\> # Note: the below User.Invite.All permission is optional, and will only be used to retrieve access token to send invitation email to source tenant
     PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureResourceLocation "Brazil Southeast" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
@@ -134,7 +135,7 @@ ms.locfileid: "52694410"
     Pay-As-You-Go (ewe23423-a3327-34232-343... Admin@fabrikam... Pay-As-You-Go                           AzureCloud                              dsad938432-dd8e-s9034-bf9a-83984293n43
     Auditing setup successfully for Cross-TenantMovesVault
     Exchange application given access to KeyVault Cross-TenantMovesVault
-    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - Directory.ReadWrite.All. Exchange - Mailbox.Migration
+    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - User.Invite.All. Exchange - Mailbox.Migration
     Admin consent URI for fabrikam.onmicrosoft.com tenant admin is -
     https://login.microsoftonline.com/fabrikam.onmicrosoft.com/adminconsent?client_id=6fea6ere-0dwe-404d-ad35-c71a15cers5c&redirect_uri=https://office.com
     Admin consent URI for contoso.onmicrosoft.com tenant admin is -
@@ -175,7 +176,7 @@ ms.locfileid: "52694410"
    > [!NOTE]
    > 如果您未收到這封電子郵件或找不到，則目標租使用者管理員會提供直接 URL，可供您用來接受邀請。 URL 應在目標租使用者 admin 的遠端 PowerShell 會話的成績單中。
 
-3. 在 Microsoft 365 系統管理中心或遠端 PowerShell 會話中，建立一或多個擁有郵件功能的安全性群組，以控制目標租使用者所允許的信箱清單，以從來源租使用者提取 (移動) 。 您不需要事先填入此群組，但必須至少提供一個群組，才能執行安裝步驟 (script) 。 不支援嵌套群組。 
+3. 在 [Microsoft 365 系統管理中心] 或 [遠端 PowerShell] 會話中，建立一或多個擁有郵件功能的安全性群組，以控制目標租使用者從來源租使用者提取 (移動) 所允許的信箱清單。 您不需要事先填入此群組，但必須至少提供一個群組，才能執行安裝步驟 (script) 。 不支援嵌套群組。 
 
 4. 從 GitHub 存放庫在以下位置下載來源承租人安裝程式的 SetupCrossTenantRelationshipForResourceTenant.ps1 腳本： [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 。 
 
@@ -296,7 +297,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 遷移的使用者必須存在於目標租使用者中，並以特定屬性 Exchange Online 系統 () 標示，以啟用跨承租人的移動。 系統會針對未在目標租使用者中正確設定的使用者，移動系統會失敗。 下列各節將詳細說明目標租使用者的 MailUser 物件需求。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>了解必要條件
   
 您必須確定在目標群組織中設定下列物件和屬性。  
 
@@ -716,7 +717,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
    | 資訊障礙                              |
    | Office 365 進階版的資訊保護   |
    | Office 365 標準的資訊保護  |
-   | 透過 MyAnalytics 的真知灼見                           |
+   | Insights MyAnalytics                           |
    | Microsoft 365高級審計                   |
    | Microsoft Bookings                                |
    | Microsoft 商務中心                         |
