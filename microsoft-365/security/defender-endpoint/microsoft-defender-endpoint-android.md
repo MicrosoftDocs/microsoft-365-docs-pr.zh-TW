@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 499ac9a6ee81bacb79cd83993d510f87e11c62c6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceccd9e3c8a8137f672e7be519675034a84c7881
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844715"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055110"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上適用於端點的 Microsoft Defender
 
@@ -44,7 +44,7 @@ ms.locfileid: "52844715"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上安裝 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>了解必要條件
 
 -   **使用者的**
 
@@ -72,7 +72,8 @@ ms.locfileid: "52844715"
 
 ### <a name="system-requirements"></a>系統需求
 
--   執行 Android 6.0 和更新版本的 android 裝置。
+-   執行 Android 6.0 和更新版本的行動電話。 **目前不支援執行 Android 的平板電腦和其他行動裝置。** 
+
 -   Intune 公司入口網站應用程式從[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)和安裝下載。 需要有裝置註冊，才能強制執行 Intune 裝置合規性原則。
 
 ### <a name="installation-instructions"></a>安裝指示

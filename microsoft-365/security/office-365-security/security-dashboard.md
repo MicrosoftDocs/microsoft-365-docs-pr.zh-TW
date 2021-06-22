@@ -19,21 +19,21 @@ ms.custom:
 description: 使用新的安全性儀表板來複查 Office 365 威脅防護狀態，並查看並處理安全性警示。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1504c84f0657dd049b63908d56c4ec6cca4871de
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274409"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055154"
 ---
-# <a name="security-dashboard"></a>安全性儀表板
+# <a name="security-dashboard-in-the-security--compliance-center"></a>安全性 & 規範中心的安全性儀表板
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>基本功能及如何開啟安全性儀表板
 
-[安全性 & 合規性中心](../../compliance/microsoft-365-compliance-center.md)可讓您的組織管理資料保護和符合性。 假設您有必要的許可權，安全性儀表板可讓您檢查威脅防護狀態，以及查看和處理安全性警示。
+安全性 & 合規性中心， <https://protection.office.com> 可讓您的組織管理資料保護和符合性。 假設您有必要的許可權，安全性儀表板可讓您檢查威脅防護狀態，以及查看和處理安全性警示。
 
 觀賞影片以取得概要，然後閱讀本文以深入瞭解。
 
@@ -41,10 +41,10 @@ ms.locfileid: "52274409"
 
 根據您組織的訂閱內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全球每週威脅偵測、惡意程式碼等，如下列各節所述。
 
-若要查看安全性儀表板，請在 [安全性 & 合規性中心](../../compliance/microsoft-365-compliance-center.md)，移至 [ **威脅管理**] \> **儀表板**。
+若要在安全性 & 規範中心中查看安全性儀表板，請移至 [ **威脅管理** \> **儀表板**]。 若要直接移至 [安全性] 儀表板，請使用 <https://protection.office.com/searchandinvestigation/dashboard> 。
 
 > [!NOTE]
-> 您必須是全域系統管理員、安全性管理員或安全性讀者，才可查看安全性儀表板。 有些小元件需要其他許可權才能進行查看。 若要深入瞭解，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> 您必須是全域系統管理員、安全性管理員或安全性讀者，才可查看安全性儀表板。 有些小元件需要其他許可權才能進行查看。 若要深入瞭解，請參閱 [安全性 & 規範中心 [中的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="threat-management-summary"></a>威脅管理摘要
 
@@ -52,11 +52,16 @@ ms.locfileid: "52274409"
 
 ![安全性儀表板-威脅管理摘要構件](../../media/SecDash-ThreatMgmtSummary.png)
 
-威脅管理摘要中所看到的資訊取決於您訂閱所包含的內容。 下表說明 Office 365 E3 和 Office 365 E5 所包含的資訊。
+威脅管理摘要中所看到的資訊取決於您的訂閱所包含的內容。 下表說明 Office 365 E3 和 Office 365 E5 所包含的資訊。
+
+<br>
+
+****
 
 |Office 365 E3|Office 365 E5|
 |---|---|
 |封鎖惡意程式碼郵件<br>封鎖網路釣魚郵件<br>使用者所報告的郵件<br><br><br><br>|封鎖惡意程式碼郵件<br>封鎖網路釣魚郵件<br>使用者所報告的郵件<br>已封鎖零天惡意程式碼<br>偵測到的高級網路釣魚郵件<br>封鎖惡意 URLs|
+|
 
 若要查看或存取威脅管理摘要小工具，您必須具有查看 Office 365 報告之 Defender 的許可權。 若要深入瞭解，請參閱[查看 Office 365 報表的 Defender 時，所需的許可權為何？](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)。
 
@@ -68,10 +73,15 @@ ms.locfileid: "52274409"
 
 詳細資料會視您的 Microsoft 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) ，含或不含[Microsoft Defender for Office 365](defender-for-office-365.md)。
 
+<br>
+
+****
+
 |如果您的訂閱包括 .。。|您將會看到這些詳細資料|
 |---|---|
 |EOP，但不是 Microsoft Defender for Office 365|EOP 所偵測到並封鎖的惡意電子郵件。<p> 請參閱 [威脅防護狀態報表 (EOP) ](view-email-security-reports.md#threat-protection-status-report)。|
-|適用於 Office 365 的 Microsoft Defender|EOP 和 Defender Office 365 偵測並封鎖惡意的內容和惡意電子郵件 <p> 反惡意程式碼引擎、[零小時自動清除](zero-hour-auto-purge.md)及 Office 365 功能的 defender 等的獨特電子郵件累計計數，包含 Office 365) 中的[安全連結](safe-links.md)、[安全附件](safe-attachments.md)和[防網路釣魚](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)等 (。 <p> 請參閱 [威脅防護狀態報表](view-reports-for-mdo.md#threat-protection-status-report)。|
+|適用於 Office 365 的 Microsoft Defender|EOP 和 Defender Office 365 偵測並封鎖惡意的內容和惡意電子郵件 <p> 反惡意程式碼引擎、[零小時自動清除](zero-hour-auto-purge.md)及 Office 365 功能的 defender 等的獨特電子郵件累計計數，包含 Office 365) 中的[保管庫連結](safe-links.md)、[保管庫附件](safe-attachments.md)和[防網路釣魚](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) (。 <p> 請參閱 [威脅防護狀態報表](view-reports-for-mdo.md#threat-protection-status-report)。|
+|
 
 若要查看或存取威脅防護狀態構件，您必須具有查看 Office 365 報告之 Defender 的許可權。 若要深入瞭解，請參閱[查看 Office 365 報表的 Defender 所需的許可權為何？](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -83,12 +93,17 @@ ms.locfileid: "52274409"
 
 度量單位如下表所述進行計算：
 
+<br>
+
+****
+
 |計量|計算方式|
 |---|---|
 |掃描的郵件|已掃描的電子郵件數目乘以收件者數目|
 |威脅已停止|識別為包含惡意軟體的電子郵件數目乘以收件者數目|
 |封鎖[Office 365 的 Defender](defender-for-office-365.md)|Office 365 被 Defender 封鎖的電子郵件數目乘以收件者數目|
 |傳遞後移除|以 [零小時自動清除](zero-hour-auto-purge.md) 乘以的收件者人數所移除的郵件數目|
+|
 
 ## <a name="malware"></a>惡意程式碼
 
@@ -98,7 +113,7 @@ ms.locfileid: "52274409"
 
 ## <a name="insights"></a>深入解析
 
-不只是深入瞭解應該檢查的 surface key 問題，也包括要考慮的建議和動作。
+Insights 不僅應該檢查 surface key 問題，也包含要考慮的建議和動作。
 
 ![Smart insights](../../media/smartinsights.png)
 
@@ -122,7 +137,7 @@ ms.locfileid: "52274409"
 
 若要查看或存取最近的威脅管理提醒小工具，您必須具有查看提醒的許可權。 若要深入瞭解，請參閱 [查看提醒所需的 RBAC 許可權](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-articles"></a>相關文章
 
 [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)
 

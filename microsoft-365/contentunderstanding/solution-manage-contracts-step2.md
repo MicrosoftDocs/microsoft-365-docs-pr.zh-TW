@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 Microsoft Teams，透過使用 Microsoft 365 解決方案來建立您的合約管理通道。
-ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 099487279482385760e05d9b166ae80c665d931e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841171"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054748"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步驟 2. 使用 Microsoft Teams 建立您的合約管理通道
 
@@ -31,7 +31,8 @@ ms.locfileid: "52841171"
 
      ![[文章] 索引標籤。](../media/content-understanding/posts.png)
 
-- **具有成員的位置，以查看已核准的合約，以瞭解何時可以提交付款。** 在 Teams 中，您可以建立一個付款通道，**以** 列出需要提交至付款的所有合約。 您可以輕鬆地擴充此方案，改為將此資訊直接寫入協力廠商財務應用程式 (例如 Dynamics CRM) 。
+- **具有成員的位置，以查看已核准的合約，以瞭解何時可以提交付款。** 在 SharePoint 中，您將需要建立一個 **For 付出** 清單，並包含 **客戶**、**合同工** 和 **費用金額** 的欄，選取 [**單行文字**] 做為欄類型。 您必須將的「增加 **比率**」清單新增為合約管理通道中的 Teams] 索引標籤，類似于 [您在 [**合約**]](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab)索引標籤中所執行的動作。[費用 **比率**] 索引標籤會列出所有需要提交以進行付款的合約。 您可以輕鬆地擴充此方案，改為將此資訊直接寫入協力廠商財務應用程式 (例如 Dynamics CRM) 。 
+
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>將 SharePoint 文件庫附加至 [合約] 索引標籤
 
@@ -39,22 +40,22 @@ ms.locfileid: "52841171"
 
 附加 SharePoint 文件庫之後，您就可以透過預設清單視圖來查看任何分類合約。
 
-   ![清單視圖。](../media/content-understanding/list-view.png)
+   ![SharePoint 程式庫的清單視圖。](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>自訂 [您的合約] 索引標籤視圖
 
 > [!NOTE]
 > 本節參考的程式碼範例包含在「[合約管理解決方案資產存放庫](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)」中的檔案[ContractTileFormatting.js上](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json)。
 
-雖然 Teams 可讓您在平鋪視圖中查看您的合約，但您可能會想要自訂它，以查看您想要在合同卡中顯示的合約資料。 例如，對於 [ **合約** ] 索引標籤，成員可以查看合同卡片上的客戶、合同工和費用金額，這一點很重要。 所有這些欄位都是透過已套用至文件庫的 SharePoint Syntex 模型從每個合約中解壓縮。 您也想要將磚標題列變更為不同狀態的不同色彩，讓成員可以輕鬆查看合約在核准程式中的位置。 例如，所有核准的合約都會有藍色標頭欄。
+雖然 Teams 可讓您在平鋪視圖中查看您的合約，但您可能會想要自訂它，以查看您想要在合同卡中顯示的合約資料。 例如，對於 [ **合約** ] 索引標籤，成員可以查看合同卡片上的客戶、合同工和費用金額，這一點很重要。 所有這些欄位都會透過您的文件庫所套用 SharePoint Syntex 模型從每個合約中解壓縮。 您也想要將磚標題列變更為不同狀態的不同色彩，讓成員可以輕鬆查看合約在核准程式中的位置。 例如，所有核准的合約都會有藍色標頭欄。
 
-   ![清單視圖。](../media/content-understanding/tile.png)
+   ![SharePoint 文件庫的平鋪視圖。](../media/content-understanding/tile.png)
 
 您使用的自訂圖格視圖，需要您變更用來格式化目前麻將牌視圖的 JSON 檔案。 您可以透過查看檔案 [ 上的ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) ，參考用來建立卡片視圖的 JSON 檔案。 在下列各節中，您將會看到合約卡片中的功能的特定程式碼區段。
 
 如果您想要在 Teams 通道中查看或變更您的視圖的 JSON 代碼，請在 Teams 通道中，選取 [視圖] 下拉式功能表，然後選取 [**格式化目前的視圖**]。
 
-   ![json 格式。](../media/content-understanding/jason-format.png)
+   ![Teams 通道中 json 格式的螢幕擷取畫面。](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>卡片大小和圖形
 
@@ -105,7 +106,7 @@ ms.locfileid: "52841171"
 
 ## <a name="extracted-fields"></a>提取的欄位
 
-每個合約卡都會顯示三個欄位，每個合約 (的 *用戶端*、 *合同工* 和 *費用金額*) 中解壓縮。 此外，您也想要顯示 Syntex 用來識別檔的 SharePoint 模型所分類的時間/日期。
+每個合約卡都會顯示三個欄位，每個合約 (的 *用戶端*、 *合同工* 和 *費用金額*) 中解壓縮。 此外，您也想要顯示由用來識別檔的 SharePoint Syntex 模型所分類的時間/日期。
 
 在 [ [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file] 中，下列各節定義上述各項。
 

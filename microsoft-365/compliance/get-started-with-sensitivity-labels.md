@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始部署敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 550a1a84df88340de14caff08284ef6a8cadc9e9
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b5e6c8d6d2972b6aa050e3805c51327a6cf1058c
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022483"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055088"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -90,7 +90,7 @@ ms.locfileid: "53022483"
 |探索、標記和保護儲存在內部部署資料存放區中的檔案 |[部署 Azure 資訊保護掃描器以自動分類和保護檔案](/azure/information-protection/deploy-aip-scanner)|
 |探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |在 Power BI 中套用和檢視標籤，並在服務外儲存該資料時加以保護|[在 Power BI 套用敏感度標籤](/power-bi/admin/service-security-sensitivity-label-overview)|
-|監視並了解組織中使用敏感度標籤的方法|[了解您的資料 - 資料分類概觀](data-classification-overview.md) <br /><br /> [開始使用資料分類](data-classification-overview.md)|
+|監視並了解組織中使用敏感度標籤的方法|[了解資料分類](data-classification-overview.md)|
 |將敏感度標籤延伸至第三方應用程式和服務|[Microsoft 資訊保護 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
 |將敏感度標籤延伸至 Azure Blob 儲存體、Azure 檔案、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 中的內容|[在 Azure Purview 中自動為您的內容加上標籤](/azure/purview/create-sensitivity-label) |
 

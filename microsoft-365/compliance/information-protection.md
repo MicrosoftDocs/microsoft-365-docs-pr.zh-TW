@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: 實施 Microsoft 資訊保護 (MIP) 可協助您保護敏感性資訊，無論這些資料儲存在某處在或傳輸中。
-ms.openlocfilehash: 2de9b1e4a3901477df883287a1ee350885de5513
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1d8e0340e518bcc66399dcc667e030efca89316a
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683688"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055098"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>請參閱 Microsoft 365 中的 Microsoft 資訊保護。
 
@@ -77,7 +77,7 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 |:------|:------------|:---------------------|
 |[資料外洩防護](dlp-learn-about-dlp.md)| 協助防止意外共用敏感性項目。 | [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)|
 |[端點資料外洩防護](endpoint-dlp-learn-about.md)| 將 DLP 功能延伸到在 Windows 10 電腦上使用及共用的項目。 | [開始使用端點資料外洩防護](endpoint-dlp-getting-started.md)|
-|[Microsoft 合規性延伸模組 (預覽)](dlp-chrome-learn-about.md) | 將 DLP 功能延伸至 Chrome 瀏覽器 | [開始使用 Microsoft 合規性擴充功能 (預覽)](dlp-chrome-get-started.md)|
+|[Microsoft 合規性延伸模組](dlp-chrome-learn-about.md) | 將 DLP 功能延伸至 Chrome 瀏覽器 | [開始使用 Microsoft 合規性延伸模組](dlp-chrome-get-started.md)|
 |[Microsoft 365 資料外洩防護內部部署掃描器 (預覽)](dlp-on-premises-scanner-learn.md)|將檔案活動的 DLP 監視以及這些檔案的保護動作延伸到內部部署檔案共用、SharePoint 資料夾和文件庫。|[開始使用 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)](dlp-on-premises-scanner-get-started.md)|
 |[保護 Microsoft Teams 中聊天和頻道訊息中的敏感性資訊](dlp-microsoft-teams.md) | 將部分 DLP 功能延伸至 Teams 聊天和頻道訊息 | [了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)](dlp-teams-default-policy.md)|
 

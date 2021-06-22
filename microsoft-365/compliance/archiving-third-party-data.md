@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從社交媒體平臺、立即訊息平臺及檔共同作業平臺匯入協力廠商資料，以 Microsoft 365 信箱。
-ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861200"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054770"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
@@ -35,7 +35,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 
 ## <a name="third-party-data-connectors"></a>協力廠商資料連接器
 
-下表列出 Microsoft 365 規範中心提供的協力廠商資料連線器。 該表也會摘要說明您在 Microsoft 365 匯入及封存後，您可以套用至協力廠商資料的相容性解決方案。 請參閱 [下一節](#overview-of-compliance-solutions-that-support-third-party-data) ，以取得每個規範解決方案的詳細說明，以及它如何受益協力廠商資料。
+下表列出 Microsoft 365 合規性中心中可用的協力廠商資料連線器。 該表也會摘要說明您在 Microsoft 365 匯入及封存後，您可以套用至協力廠商資料的相容性解決方案。 請參閱 [下一節](#overview-of-compliance-solutions-that-support-third-party-data) ，以取得每個規範解決方案的詳細說明，以及它如何受益協力廠商資料。
 
 > [!TIP]
 > 按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
@@ -69,8 +69,11 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 |[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Salesforce 交談 <sup>2</sup>](archive-salesforcechatter-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[信號 <sup>1</sup>](archive-signal-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[商務用 Skype <sup>2</sup>](archive-skypeforbusiness-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[寬延時間 eDiscovery <sup>2</sup>](archive-slack-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Symphony <sup>2</sup>](archive-symphony-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Telegram <sup>1</sup>](archive-telegram-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[TELUS 網路 <sup>1</sup>](archive-telus-network-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[文字分隔 <sup>2</sup>](archive-text-delimited-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
@@ -134,12 +137,12 @@ Microsoft 365 中的[記錄管理](records-management.md)功能可讓您將協�
 |TeleMessage 資料連線器  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Android 歸檔器 | 是 | 否 | 否 |
-|在&T 簡訊/MMS 網路存檔器 | 是 | 否 | 否 |
-|電鈴簡訊/MMS 網路歸檔器 | 是 | 否 | 否 |
+|在&的 SMS/MMS 網路存檔器 | 是 | 否 | 否 |
+|鈴聲 SMS/MMS 網路歸檔器 | 是 | 否 | 否 |
 |Enterprise數位歸檔器 | 是 | 否 | 否 |
-|O2 簡訊和語音網路存檔器 | 是         | 否 | 否 |
-|TELUS 簡訊網路存檔器 | 是 | 否 | 否 |
-|Verizon 簡訊/MMS 網路歸檔器 | 是 | 否 | 否 |
+|O2 SMS 和語音網路歸檔器 | 是         | 否 | 否 |
+|TELUS SMS 網路存檔器 | 是 | 否 | 否 |
+|Verizon SMS/MMS 網路存檔器 | 是 | 否 | 否 |
 |WeChat 歸檔器 | 是 | 否 | 否 |
 |WhatsApp 歸檔器 | 是 | 否 | 否 |
 |||||

@@ -1,5 +1,5 @@
 ---
-title: 使用者提交原則
+title: 使用者報告的郵件設定
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -17,14 +17,14 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052984"
+ms.locfileid: "53055118"
 ---
-# <a name="user-submissions-policy"></a>使用者提交原則
+# <a name="user-reported-message-settings"></a>使用者報告的郵件設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,16 @@ ms.locfileid: "53052984"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在 Microsoft 365 具有 Exchange Online 信箱的組織中，您可以指定信箱以接收使用者報告為惡意或非惡意的郵件。 當使用者使用各種報告選項送出郵件時，您可以使用此信箱來截取郵件 (只) 或接收郵件副本 (傳送至自訂信箱和 Microsoft) 。 這項功能可搭配下列郵件報告選項使用：
+在 Microsoft 365 具有 Exchange Online 信箱的組織中，您可以指定信箱以接收使用者報告為惡意或非惡意的郵件。 當使用者使用各種報告選項報告郵件時，您可以使用此信箱來截取郵件 (只) 或接收郵件副本 (傳送至自訂信箱和 Microsoft) 。 這項功能可搭配下列郵件報告選項使用：
 
 - [報告訊息增益集](enable-the-report-message-add-in.md)
 - [報表網路釣魚增益集](enable-the-report-phish-add-in.md)
 - [協力廠商報表工具](#third-party-reporting-tools)
 
-將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統 [管理員提交](admin-submission.md)將郵件報告給 Microsoft。
+將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統 [管理員提交](admin-submission.md)將郵件報告給 Microsoft。 這些設定以前稱為使用者提交原則。
 
   > [!NOTE]
-  > 如果[Outlook 網頁版中已停用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)報告，則在這裡啟用使用者提交將會覆寫該設定，並讓使用者在 Outlook 網頁版中再次報告郵件。
+  > 如果[Outlook 網頁版中已停用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)報告，則在這裡啟用使用者報告的訊息將會覆寫該設定，並且讓使用者能夠在 Outlook 網頁版中重新報告郵件。
 
 ## <a name="custom-mailbox-prerequisites"></a>自訂信箱必要條件
 

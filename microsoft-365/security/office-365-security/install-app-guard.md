@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488308"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055260"
 ---
 # <a name="application-guard-for-office-for-admins"></a>適用于系統管理員的 Office 應用程式防護
 
@@ -29,7 +29,7 @@ ms.locfileid: "51488308"
 
 Microsoft Defender 應用程式防護 for Office (Application Guard for Office) 協助防止不可信的檔案存取受信任的資源，讓您的企業安全地抵禦新的和新興的攻擊。 本文指導管理員如何針對 Office 的應用程式防護，設定可預覽的裝置。 它提供有關系統需求和安裝步驟的資訊，以便在裝置上啟用 Office 的應用程式防護。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>了解必要條件
 
 ### <a name="minimum-hardware-requirements"></a>最低硬體需求
 
@@ -120,7 +120,6 @@ Microsoft Defender 應用程式防護 for Office (Application Guard for Office) 
 ## <a name="configure-application-guard-for-office"></a>設定 Office 的應用程式防護
 
 Office 支援下列原則，可讓您設定 Office 應用程式防護的功能。 這些原則可以透過「群組原則」或「 [Office 雲端原則服務](/DeployOffice/overview-office-cloud-policy-service)」加以設定。
-在 [使用者設定系統管理範本] 中檢查群組原則設定，以查看系統管理員設定的設定 **\\ \\ Microsoft Office 2016 \\ Security 設定 \\ 信任中心 \\ 應用程式防護**。
 
 
 > [!NOTE]
@@ -189,7 +188,7 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
 Office 的應用程式防護會與 Microsoft Defender for Endpoint 整合，以針對隔離環境中發生的惡意活動提供監控和警示。
 
-[Microsoft E365 E5 中的安全檔](/microsoft-365/security/office-365-security/safe-docs)是一種功能，可使用 microsoft Defender for Endpoint 掃描在 Office 的應用程式防護中開啟的檔。 若為其他保護層級，使用者在決定掃描的結果之後，就無法在 Office 留下應用程式防護。
+[microsoft E365 E5 中的保管庫檔](/microsoft-365/security/office-365-security/safe-docs)是一種功能，可使用 microsoft Defender for Endpoint 掃描在 Office 的應用程式防護中開啟的檔。 若為其他保護層級，使用者在決定掃描的結果之後，就無法在 Office 留下應用程式防護。
 
 Microsoft Defender for Endpoint 是一種安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 如需此平臺的詳細資訊，請參閱 [Microsoft Defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要深入瞭解如何將裝置上架至此平臺，請參閱 [在 Microsoft Defender For Endpoint service 中的板載裝置](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
@@ -234,6 +233,9 @@ Application Guard 會使用虛擬容器，將不受信任的檔與系統隔離�
 ## <a name="known-issues"></a>已知問題
 
 * 選取 [網路連結] (`http` 或 `https`) 並不會開啟瀏覽器。
-* 目前不支援在使用 Application Guard 所開啟 Office 檔中 (rtf) 內容或圖像貼上 rtf 格式。
-* 不受支援的檔案類型保護原則的預設設定為封鎖開啟不受信任的資訊版權管理檔案類型 (IRM) 、CSV 或 HTML。
+* 複製型貼上保護原則的預設設定為僅啟用文字的剪貼簿存取。
+* 不受支援的檔案類型保護原則的預設設定為封鎖開啟不受信任的受信任檔案類型（已加密或具備資訊版權管理 (IRM) 設定）。 這包括使用加密 (機密或高度機密) 的 Microsoft 資訊保護敏感度標籤的檔案。
+* 目前不支援 CSV 和 HTML 檔案。
+* 目前 Office 的應用程式防護無法搭配 NTFS 壓縮的磁片區。 如果您看到錯誤 "ERROR_VIRTUAL_DISK_LIMITATION" 請嘗試解壓縮該磁片區。
 * 更新 .NET 可能會導致檔無法在應用程式防護中開啟。 作為解決方法，使用者可以在發生這種失敗時，重新開機其裝置。 深入瞭解在[嘗試開啟 Windows Defender 應用程式防護或 Windows 沙箱時，收到錯誤訊息時](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)出現問題的詳細資訊。
+* 如需詳細資訊，請參閱[常見問題-Microsoft Defender 應用程式防護。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

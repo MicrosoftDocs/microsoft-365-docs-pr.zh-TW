@@ -12,14 +12,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 SharePoint Syntex 來識別協定檔案，並使用 Microsoft 365 解決方案提取資料。
-ms.openlocfilehash: b4b11b1bdb980b0ee7629af0cbecbb126a5ae5e5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636203"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054494"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步驟 1. 使用 SharePoint Syntex 來識別合約檔案及提取資料
+# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步驟 1。 使用 SharePoint Syntex 來識別合約檔案及提取資料
 
 您的組織需要從您接收的許多檔案中識別和分類所有合約檔的方法。 您也想能夠在每個識別 (的合約檔案中快速查看數個重要元素，例如， *客戶*、 *合同工* 和 *費用金額*) 。 若要這麼做，您可以使用[SharePoint Syntex](index.md)建立檔理解模型，並將其套用至文件庫。
 
@@ -29,7 +29,7 @@ ms.locfileid: "52636203"
 
 1. 首先，您必須尋找至少五個範例檔案，您可以用來 "訓練" 模型，以搜尋您嘗試識別 (合約) 之內容類型的特定特性。 
 
-2. 使用 SharePoint Syntex，建立新的檔理解模型。 您必須先 [建立分類符](create-a-classifier.md)，才能使用您的範例檔案。 訓練分類器與範例檔案，您可以教它搜尋您在公司合同中所看到的特定特性。 例如， [建立一個 "釋義"](create-a-classifier.md#create-an-explanation) ，搜尋您的合約中的特定字串，例如 *服務合約*、 *合約條款* 和 *補償*。 您甚至可以訓練說明，以在檔的特定區段中尋找這些字串，或位於其他字串旁邊。 當您認為您已使用所需的資訊訓練您的分類程式時，您可以在範例檔案的範例集合上測試模型，以查看其效率。 測試完成之後，您可以視需要選擇變更您的說明，使其更有效率。 
+2. 使用 SharePoint Syntex 建立新的檔理解模型。 您必須先 [建立分類符](create-a-classifier.md)，才能使用您的範例檔案。 訓練分類器與範例檔案，您可以教它搜尋您在公司合同中所看到的特定特性。 例如， [建立一個 "釋義"](create-a-classifier.md#create-an-explanation) ，搜尋您的合約中的特定字串，例如 *服務合約*、 *合約條款* 和 *補償*。 您甚至可以訓練說明，以在檔的特定區段中尋找這些字串，或位於其他字串旁邊。 當您認為您已使用所需的資訊訓練您的分類程式時，您可以在範例檔案的範例集合上測試模型，以查看其效率。 測試完成之後，您可以視需要選擇變更您的說明，使其更有效率。 
 
 3. 在您的模型中，您可以 [建立解壓縮程式](create-an-extractor.md) ，以從每個合約提取特定的資料片段。 例如，對於每個合約，您最關心的資訊是用戶端是誰、合同工的名稱，以及總成本。
 
@@ -37,7 +37,7 @@ ms.locfileid: "52636203"
 
    ![文件庫中的合約](../media/content-understanding/doc-lib-solution.png)
 
-5. 如果您有合約的保留需求，也可以使用您的模型來套用 [保留標籤](apply-a-retention-label-to-a-model.md) ，以防止在指定的時間內刪除您的合約。
+5. 如果您的合約有保留或安全性需求，您也可以使用您的模型套用 [保留標籤](apply-a-retention-label-to-a-model.md) 或 [敏感度標籤](apply-a-sensitivity-label-to-a-model.md) ，以防止在指定的時間內刪除您的合約，或限制可以存取合約的人員。
 
 ## <a name="steps-to-create-and-train-your-model"></a>建立及訓練模型的步驟
 
@@ -198,6 +198,11 @@ ms.locfileid: "52636203"
 6. 在 [**模型 > 合同**] 頁面上，在 [**此模型** 的文件庫] 區段中，您會看到所列 SharePoint 網站的 URL。
 
     ![顯示此模型區段之文件庫的「合約首頁」螢幕擷取畫面。](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. 在 [**設定** 文檔  >  **庫設定**] 底下：
+
+   - 新增一欄 [ **狀態** ]， **然後選取 [選擇]** 做為欄類型。
+   - 套用「 **審閱**」、「 **核准**」和「 **拒絕** 」值。
 
 將模型套用至文件庫之後，您可以開始將檔上傳至網站並查看結果。
 

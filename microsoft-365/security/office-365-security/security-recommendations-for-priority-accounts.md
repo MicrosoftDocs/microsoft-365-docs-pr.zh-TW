@@ -20,12 +20,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何提升安全性設定，以及如何在其 Microsoft 365 組織中提升優先順序帳戶的安全性設定，以及使用報表、警示和調查。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632218"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055253"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中優先順序帳戶的安全性建議
 
@@ -36,6 +36,8 @@ ms.locfileid: "51632218"
 Microsoft 365 和 Microsoft Defender for Office 365 包含數個主要功能，可為優先順序帳戶提供額外的安全性層級。 本文說明這些功能及其用法。
 
 ![圖示表單中安全性建議的摘要](../../media/security-recommendations-for-priority-users.png)
+
+<br>
 
 ****
 
@@ -61,7 +63,7 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含數個主要功能，�
 
 - 您可以使用 Exchange Online 中的[驗證原則](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)和[用戶端存取規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)，封鎖或允許特定使用者的基本驗證和舊版驗證通訊協定，例如 POP3、IMAP4 和已驗證的 SMTP。
 
-- 您可以停用個別信箱上的 POP3 和 IMAP4 存取權。 您可以在組織層級停用已驗證的 SMTP，並在仍需要該 SMTP 的特定信箱上啟用該 SMTP。 如需相關指示，請參閱下列主題：
+- 您可以停用個別信箱上的 POP3 和 IMAP4 存取權。 您可以在組織層級停用已驗證的 SMTP，並在仍需要該 SMTP 的特定信箱上啟用該 SMTP。 如需相關指示，請參閱下列文章：
   - [啟用或停用使用者 POP3 或 IMAP4 存取權](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [啟用或停用已驗證的用戶端 SMTP 提交 (SMTP 驗證) ](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
@@ -77,7 +79,7 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含數個主要功能，�
 
 「預設」安全性原則是一個方便且集中的位置，可將建議的嚴格原則設定套用至 EOP 和 Defender for Office 365 中的所有保護。 如需詳細資訊，請參閱[EOP 和 Microsoft Defender for Office 365 中的預先設定安全性原則](preset-security-policies.md)。
 
-如需有關嚴格原則設定如何與預設和標準原則設定不同的詳細資訊，請參閱[EOP 和 Microsoft Defender 的建議設定，以 Office 365 安全性](recommended-settings-for-eop-and-office365.md)。
+如需嚴格原則設定與預設和標準原則設定的區別之詳細資訊，請參閱[EOP 和 Microsoft Defender 的建議設定，以 Office 365 安全性](recommended-settings-for-eop-and-office365.md)。
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>將使用者標記套用至優先順序帳戶
 
@@ -85,7 +87,7 @@ Microsoft Defender 中 Office 365 方案 2 (Microsoft 365 E5 或附加元件訂�
 
 「**優先順序帳戶**」是一種內建的使用者標記， (稱為 _系統_ 標籤) ，可供您用來識別涉及優先順序帳戶的事件及警示。 如需 **優先順序帳戶** 的詳細資訊，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
 
-您也可以建立自訂標記，進一步識別和分類您的優先順序帳戶。 如需詳細資訊，請參閱 [User tags](user-tags.md)。 請注意，您可以在與自訂使用者標籤位於相同介面中 (系統標記) 管理 **優先順序帳戶** 。
+您也可以建立自訂標記，進一步識別和分類您的優先順序帳戶。 如需詳細資訊，請參閱 [User tags](user-tags.md)。 您可以在與自訂使用者標籤位於相同介面中 (系統標記) 管理 **優先順序帳戶** 。
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>監視警示、報告和偵測中的優先順序帳戶
 
@@ -97,8 +99,8 @@ Microsoft Defender 中 Office 365 方案 2 (Microsoft 365 E5 或附加元件訂�
 
 |功能|描述|
 |---|---|
-|警示|受影響使用者的使用者標記是可見的，而且在安全性 & 合規性中心的 [ **View alerts** ] 頁面上以篩選器形式提供。 如需詳細資訊，請參閱 [查看提醒](../../compliance/alert-policies.md#viewing-alerts)。|
-|威脅總管 <p> 即時偵測|在 **威脅瀏覽器** 中 (microsoft defender for Office 365 plan 2) 或 **即時** 偵測 (microsoft defender for Office 365 Plan 1) ，使用者標記會顯示在 [電子郵件格線] 視圖和 [電子郵件詳細資料] 浮出視窗中。 使用者標記也可以做為可篩選的屬性。 如需詳細資訊，請參閱  [威脅資源管理器中的標記](threat-explorer.md#tags-in-threat-explorer)。|
+|警示|受影響使用者的使用者標記是可見的，而且可在 Microsoft 365 Defender 入口網站的 [**提醒**] 頁面上做為篩選。 如需詳細資訊，請參閱 [查看提醒](../../compliance/alert-policies.md#viewing-alerts)。|
+|總管 <p> 即時偵測|在 **Explorer** (defender for Office 365 Plan 2) 或 **即時** 偵測 (Defender for Office 365 Plan 1) ，使用者標記會顯示在 [電子郵件格線] 視圖和 [電子郵件詳細資料] 浮出視窗中。 使用者標記也可以做為可篩選的屬性。 如需詳細資訊，請參閱  [Explorer 中的標記](threat-explorer.md#tags-in-threat-explorer)。|
 |行銷活動檢視|使用者標記是 Microsoft Defender 的 [市場即時檢視] 中的眾多可篩選屬性之一，用於 Office 365 方案2。 如需詳細資訊，請參閱 [即時檢視](campaigns.md)。|
 |威脅防護狀態報告|在實際 **威脅防護狀態報表** 中的所有 views 和詳細資料表格中，您可以依 **優先順序帳戶** 來篩選結果。 如需詳細資訊，請參閱 [威脅防護狀態報表](view-email-security-reports.md#threat-protection-status-report)。|
 |優先順序帳戶報告的電子郵件問題|Exchange 系統管理中心的優先順序帳戶報告 (EAC) 的 **電子郵件問題**，包含 **優先順序帳戶** 之未傳遞和延遲郵件的相關資訊。 如需詳細資訊，請參閱 [優先順序帳戶報告的電子郵件問題](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
@@ -119,7 +121,7 @@ Microsoft 365 提供下列資源，協助您在組織中告知使用者：
 |概念|資源|描述|
 |---|---|---|
 |Microsoft 365|[可自訂的教學路徑](/office365/customlearning/)|這些資源可協助您將組織中使用者的訓練放在一起。|
-|Microsoft 365 安全性|[學習模組：利用內建的內建、智慧的安全性來保護您的組織 Microsoft 365](/learn/modules/security-with-microsoft-365)|此模組可讓您描述 Microsoft 365 安全性功能如何協同運作，並闡明這些安全性功能的優點。|
+|Microsoft 365 安全性|[Learning 模組：使用內建的智慧安全性保護組織安全 Microsoft 365](/learn/modules/security-with-microsoft-365)|此模組可讓您描述 Microsoft 365 安全性功能如何協同運作，並闡明這些安全性功能的優點。|
 |多重要素驗證|[雙步驟驗證：其他驗證頁面為何？](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|本文可協助使用者瞭解哪些多重要素驗證，以及如何在您的組織中使用它。|
 |攻擊模擬訓練|[開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)|Office 365 方案2的 Microsoft Defender 中的攻擊模擬訓練，可讓系統管理員針對特定使用者群組設定、啟動和追蹤模擬網路釣魚攻擊。|
 

@@ -15,12 +15,12 @@ ms.custom:
 description: 在本文中，您將瞭解可用來 Microsoft Exchange Online Protection (EOP) 系統管理員的報告和疑難排解工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841435"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054382"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
@@ -35,30 +35,17 @@ ms.locfileid: "52841435"
 
 ## <a name="usage-reports"></a>使用情況報告
 
-**Microsoft 365 群組活動**：查看已建立及使用之 Microsoft 365 群組數目的相關資訊。
+- **Microsoft 365 群組活動**：查看已建立及使用之 Microsoft 365 群組數目的相關資訊。 如需詳細資訊，請參閱系統[管理中心的 Microsoft 365 報告-Microsoft 365 群組](../../admin/activity-reports/office-365-groups.md)。
+- **電子郵件活動**：查看有關您整個組織中傳送、接收和讀取的郵件數目，以及特定使用者的資訊。 如需詳細資訊，請參閱[admin center 中的 Microsoft 365 報告-電子郵件活動](../../admin/activity-reports/email-activity.md)。
+- **電子郵件應用程式使用狀況**：查看使用的電子郵件應用程式的相關資訊。 這包括每個應用程式的連線總數，以及所連接之 Outlook 的版本。 如需詳細資訊，請參閱系統[管理中心的 Microsoft 365 報告-電子郵件應用程式使用](../../admin/activity-reports/email-apps-usage.md)。
+- **信箱使用狀況**：查看信箱的「傳送或讀取活動」) 使用的儲存空間、配額消耗、專案計數及最後一項活動的相關資訊 (。 如需詳細資訊，請參閱[在系統管理中心中 Microsoft 365 報告-信箱使用量](../../admin/activity-reports/mailbox-usage.md)。
 
-**電子郵件活動**：查看您整個組織中傳送、接收和讀取的郵件數目，以及特定使用者的相關資訊。
-
-**電子郵件應用程式使用狀況**：查看使用的電子郵件應用程式的相關資訊。 這包括每個應用程式的連線總數，以及所連接之 Outlook 的版本。
-
-**信箱使用狀況**：查看信箱的「傳送或讀取活動」) 使用的儲存空間、配額消耗、專案計數及最後一項活動的相關資訊 (。
-
-如需詳細資訊，請參閱下列資源：
-
-- [Microsoft 365系統管理中心的報告-Microsoft 365 群組](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365系統管理中心內的報告-電子郵件活動](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365系統管理中心的報告-電子郵件應用程式使用方式](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365系統管理中心的報告-信箱使用量](../../admin/activity-reports/mailbox-usage.md)
-
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的安全性 & 符合性報告
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 defender 入口網站中的安全性報告
 
 這些增強型報告提供 EOP 系統管理員的互動式報告經驗（包括摘要資訊），以及深入查看詳細資訊的功能。
 
-**Office 365 的 Defender**：查看有關安全連結的資訊，以及屬於 Office 365 Microsoft Defender 一部分的安全附件。
-
-**EOP**：查看組織中惡意程式碼偵測、欺騙性郵件、垃圾郵件偵測和郵件流程的相關資訊。
-
-[View Office 365 的 Defender 報告](view-reports-for-mdo.md)
+- **Office 365 的 Defender**：查看有關保管庫連結的資訊，以及保管庫屬於 Microsoft Defender Office 365 的附件。 如需詳細資訊，請參閱[在 Microsoft 365 Defender 入口網站中查看 Office 365 報表的 Defender](view-reports-for-mdo.md)。
+- **EOP**：查看組織中惡意程式碼偵測、欺騙性郵件、垃圾郵件偵測和郵件流程的相關資訊。 如需詳細資訊，請參閱[在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告](view-email-security-reports.md)。
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自訂報告
 
@@ -70,7 +57,7 @@ ms.locfileid: "52841435"
 
 您可以使用此資訊來有效地回答使用者的問題、疑難排解郵件流程問題、驗證原則變更，以及緩解聯繫技術支援以尋求協助的需求。
 
-請參閱 [安全性 & 規範中心中的郵件追蹤](message-trace-scc.md)。
+請參閱[Microsoft 365 Defender 入口網站中的郵件追蹤](message-trace-scc.md)。
 
 ## <a name="audit-logging"></a>稽核記錄
 
@@ -79,6 +66,8 @@ ms.locfileid: "52841435"
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>報告和郵件追蹤資料的可用性與延遲
 
 下表說明可使用 EOP 報告和郵件追蹤資料的時間及時間長短。
+
+<br>
 
 ****
 

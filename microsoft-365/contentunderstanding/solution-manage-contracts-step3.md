@@ -12,20 +12,20 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 Power Automate 建立您使用 Microsoft 365 解決方案處理合約的流程。
-ms.openlocfilehash: 0ddcbeff6c8bd119850e3e4ea45db2513e774433
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e6c1d1e53363f996241efb2394189853d840c6c2
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636251"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054457"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>步驟 3. 使用 Power Automate 建立流程以處理您的合約
 
-您已建立您的合約管理通道，並已附加您的 SharePoint 文件庫。 下一步是建立 Power Automate 流程，處理您的 SharePoint Syntex 模型所識別和分類的合約。 您可以[在 SharePoint 文件庫中建立 Power Automate 流程，以](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)執行此步驟。
+您已建立您的合約管理通道，並已附加您的 SharePoint 文件庫。 下一步是建立 Power Automate 流程處理您的 SharePoint Syntex 模型所識別和分類的合約。 您可以[在 SharePoint 文件庫中建立 Power Automate 流程，以](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)執行此步驟。
 
 針對您的合約管理解決方案，您想要建立 Power Automate 流程以執行下列動作：
 
--  在 SharePoint Syntex 模型分類合約後，請將合同狀態變更為 [**正在審查**]。
+-  在您的 SharePoint Syntex 模型分類合約後，請將合同狀態變更為 [**正在審查**]。
 - 然後，便會檢查合約，並以核准或拒絕。
 - 針對核准的合約，合約資訊會發佈到標籤以進行付款處理。
 - 若為被拒絕的合約，會通知小組進行進一步的分析。 
@@ -36,7 +36,7 @@ ms.locfileid: "52636251"
 
 ## <a name="prepare-your-contract-for-review"></a>準備您的合約以供審查
 
-當您 SharePoint Syntex 檔理解模型識別和分類合約時，Power Automate 流程會先將狀態變更為 [**評審**]。
+當您 SharePoint Syntex 檔理解模型識別並分類合約時，Power Automate 流程會先將狀態變更為 [**評審**]。
 
 ![更新狀態。](../media/content-understanding/flow-overview.png)
 
@@ -127,9 +127,9 @@ ms.locfileid: "52636251"
 ```
 
 
-## <a name="conditional"></a>條件
+## <a name="conditional-context"></a>條件式內容
 
-在您的流程中，您必須建立一個條件，讓您的合約會核准或拒絕。
+在您的流程中，您必須建立一個條件，讓您的合約會  [核准](#if-the-contract-is-approved) 或 [拒絕](#if-the-contract-is-rejected)。
 
 ![條件。](../media/content-understanding/condition.png)
 
@@ -152,6 +152,19 @@ ms.locfileid: "52636251"
 - 在流程中，您會建立下列專案，以將核准的合約移至 [ **以付出比率** ] 索引標籤。
 
    ![Flow 要移動的專案以支付。](../media/content-understanding/ready-for-payout.png)
+
+    若要從 Teams 卡片取得所需資訊的運算式，請使用下表所示的值。
+ 
+    |名稱     |Expression |
+    |---------|-----------|
+    | 核准狀態  | body ( ' Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response ' ) ？['submitActionId']         |
+    | 核准者     | body ( ' Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response ' ) ？[' 回應程式 '][displayName ']        |
+    | 核准日期     | body ( ' Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response ' ) ？['responseTime']         |
+    | 註解     | body ( ' Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response ' ) ？[' data ']['acComments']         |
+    
+    下列範例會示範如何使用 Power Automate 中的 [公式] 方塊寫入運算式。
+
+   ![顯示運算式公式的 Power Automate 中的螢幕擷取畫面。](../media/content-understanding/expression-formula-power-automate.png)    
 
 - 表示已核准合約的適應性卡，會建立併發布到合約管理通道。
 
@@ -250,11 +263,11 @@ ms.locfileid: "52636251"
 
 - 在您的流程中，您會取出合約檔，將狀態變更為 [已 **拒絕**]，然後再將檔案存回。
 
-   ![Flow 狀態為「已拒絕」。](../media/content-understanding/reject-flow.png)
+   ![合同檔案中的 Flow 狀態已遭拒絕。](../media/content-understanding/reject-flow.png)
 
 - 在您的流程中，您會建立一個自我調整卡，表明已拒絕該合約。
 
-   ![Flow 狀態為「已拒絕」。](../media/content-understanding/reject-flow-item.png)
+   ![在最適適應性卡上，Flow 狀態會顯示為 [拒絕]。](../media/content-understanding/reject-flow-item.png)
 
 下列程式碼是在 Power Automate 流程中用於此步驟的 JSON。
 
