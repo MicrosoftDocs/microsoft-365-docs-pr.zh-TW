@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862064"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062138"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>網路裝置探索和弱點管理
 
@@ -34,11 +34,6 @@ ms.locfileid: "51862064"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> **掃描和管理網路裝置目前是公開預覽**<br>
-> 此預覽版本提供時沒有服務等級協定，不建議用於實際執行工作負載。 某些功能可能不受支援，或可能具有有限的功能。
-> 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint preview 功能](preview.md)。
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 

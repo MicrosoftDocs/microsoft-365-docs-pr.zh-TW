@@ -1,6 +1,6 @@
 ---
 title: 裝置探索概觀
-description: 瞭解如何利用 Microsoft 365 Defender 中的端點探索，尋找您網路中未受管理的裝置
+description: 瞭解如何利用 Microsoft 365 Defender 中的端點探索，在您的網路中尋找未受管理的裝置
 keywords: 裝置探索，探索，被動式，主動，網路，可視性，伺服器，工作站，板載，未受管理的裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636239"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062210"
 ---
 # <a name="device-discovery-overview"></a>裝置探索概觀
 
@@ -35,7 +35,6 @@ ms.locfileid: "52636239"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 保護您的環境需要清查您網路中的裝置。 不過，網路中的對應裝置通常會成本高、富有挑戰性且耗時。 
 

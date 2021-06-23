@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何在 Microsoft 365 中建立封存和刪除原則，以自動將專案移至使用者的封存信箱。
-ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919529"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062162"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中的信箱封存和刪除原則
 
@@ -276,7 +276,7 @@ ms.locfileid: "50919529"
 
 4. 您可以在步驟2中重新執行命令，以驗證指派給預設信箱計畫的保留原則已變更。
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 - 保留存留期的計算方式？ 信箱專案的保留天數會從傳遞日期或專案建立的日期開始計算，例如未傳送但由使用者建立的草稿郵件。 當受管理的資料夾助理員處理信箱中的項目時，它會針對其保留標記具有 [刪除並允許復原] 或 [永久刪除] 保留動作的所有項目，加上開始日期和到期日的戳記。 具有封存標籤的專案會以移動日期標記。 
 
@@ -294,6 +294,6 @@ ms.locfileid: "50919529"
     |永不刪除  <br/> |此標記可防止保留原則刪除專案。  <br/> |內建  <br/> |自己使用者可以套用此標記。  <br/> |
     |個人 1 年移至封存  <br/> |在1年後將專案移至封存信箱。  <br/> |內建  <br/> |自己使用者可以套用此標記。  <br/> |
 
-    > <sup>\*</sup>使用者可以使用「復原刪除的郵件」工具 Outlook 和 (Outlook （以前稱為 Outlook Web App) ）在已刪除專案的保留期間內復原已刪除的專案，這在 Exchange Online 中預設為14天。 系統管理員可以使用 Windows PowerShell 將刪除的專案保留期間增加至最長30天。 如需詳細資訊，請參閱：[在 Outlook 中復原已刪除的專案 Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)並[變更 Exchange Online 中信箱的已刪除專案保留期間。](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>使用者可以使用 Outlook 和 Outlook 網頁版中的 [復原刪除的郵件] 工具， (先前稱為 Outlook Web App) ，以在刪除的專案保留期間內復原已刪除的專案，預設值為在 Exchange Online 中的14天。 系統管理員可以使用 Windows PowerShell 將刪除的專案保留期間增加至最長30天。 如需詳細資訊，請參閱：[在 Outlook 中復原已刪除的專案 Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)並[變更 Exchange Online 中信箱的已刪除專案保留期間。](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
 - 使用 **可復原的專案14天移至** 封存保留標記有助於在使用者主要信箱的 [可復原的專案] 資料夾中釋放儲存空間。 當使用者的信箱處於保留狀態時，這是很有用的，這表示永遠不會永久刪除使用者的信箱。 在不將專案移至封存信箱時，可能會到達主要信箱中 [可復原的專案] 資料夾的儲存配額。 如需這項功能及其避免方式的詳細資訊，請參閱 [增加保留信箱的可復原專案配額](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)。

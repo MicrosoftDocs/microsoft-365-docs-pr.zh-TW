@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用 Microsoft 365 Defender 入口網站中的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和電子郵件附件傳送給 Microsoft 以重新掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b671ce5a44c7be61331a121b49e96658cf14bab1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964798"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061993"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -91,7 +91,8 @@ ms.locfileid: "52964798"
 
 5. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-   ![新的 URL 提交範例](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![新的 URL 提交範例](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>將可疑 URL 傳送給 Microsoft
 
@@ -105,7 +106,8 @@ ms.locfileid: "52964798"
 
 4. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-   ![新的電子郵件提交範例](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![新的電子郵件提交範例](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>將可疑的電子郵件附件提交給 Microsoft
 
@@ -119,7 +121,8 @@ ms.locfileid: "52964798"
 
 4. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-   ![新附件提交範例](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![新附件提交範例](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>查看對 Microsoft 的系統管理員報送
 
@@ -157,7 +160,8 @@ ms.locfileid: "52964798"
 
      當您完成時 **，按一下 [** 套用]。
 
-     ![管理員報送的新篩選選項](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![管理員報送的新篩選選項](../../media/admin-submission-filters.png)
 
    - 若要群組專案，請按一下 [ **群組** ]，然後從下拉式清單中選取下列其中一個值：
      - **無**
@@ -170,7 +174,7 @@ ms.locfileid: "52964798"
 
 ### <a name="admin-submission-rescan-details"></a>系統管理員提交重新掃描詳細資料
 
-在系統管理提交中送出的郵件會重新掃描，並顯示在提交詳細資料浮出控制項中的結果：
+在系統管理提交中提交的郵件會經過檢查，並顯示在提交詳細資料浮出的結果中：
 
 - 寄件者在傳遞電子郵件時，電子郵件驗證是否失敗。
 - 任何有關可能會影響或覆寫郵件決策的原則點擊的資訊。
@@ -214,7 +218,8 @@ ms.locfileid: "52964798"
 
      當您完成時 **，按一下 [** 套用]。
 
-    ![使用者提交的新篩選選項](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![使用者提交的新篩選選項](../../media/admin-submission-reported-messages.png)
 
    - 若要群組專案，請按一下 [ **群組** ]，然後從下拉式清單中選取下列其中一個值：
      - **無**
@@ -245,4 +250,5 @@ ms.locfileid: "52964798"
 - **報告垃圾郵件**
 - **觸發調查**
 
-![動作按鈕上的新選項](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![動作按鈕上的新選項](../../media/admin-submission-main-action-button.png)

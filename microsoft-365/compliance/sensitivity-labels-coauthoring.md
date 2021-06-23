@@ -13,23 +13,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796051"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062188"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 此功能處於預覽階段，可能會有所變更。 
->
-> 在測試租用戶而非生產租用戶中啟用此功能，原因是：
-> - 這項功能會變更標記中繼資料，並非所有平台上的所有應用程式目前都支援這項變更
-> - 啟用此功能後，您無法自己停用此功能
+> 此功能處於預覽階段，可能會有所變更。
 
 啟用此設定以支援 Office 桌面應用程式 [共同撰寫](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) ，如此一來，當 [敏感度標籤](sensitivity-labels.md) 標記和加密檔案時，多個使用者可以同時編輯這些檔案。
 
@@ -37,7 +33,7 @@ ms.locfileid: "52796051"
 
 此外，啟用此功能會導致這些已標記和加密的檔案支援 [自動儲存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 功能。
 
-若要閱讀發行公告，請參閱這篇部落格文章：[宣佈在 Microsoft 資訊保護加密的文件上共同撰寫並標示更新](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)。
+若要閱讀初始發行公告，請參閱這篇部落格文章：[宣佈在 Microsoft 資訊保護加密的文件上共同撰寫並標示更新](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)。
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>敏感度標籤的中繼資料變更
 
@@ -76,15 +72,13 @@ ms.locfileid: "52796051"
 
 開啟此功能之前，請確定您了解下列必要條件。
 
-- 您必須使用測試租用戶來進行此預覽。
-
 - 您必須是全域系統管理員才能開啟此功能。
 
 - 必須為租用戶啟用 [SharePoint 和 OneDrive 中 Office 檔案](sensitivity-labels-sharepoint-onedrive-files.md) 的敏感度標記。 如果此功能尚未啟用，當您選取設定以開啟具有敏感度標籤的檔案共同撰寫時，就會自動啟用此功能。
 
 - Microsoft 365 Apps 企業版：
-    - **Windows**：預覽：[目前通道 (預覽)](https://office.com/insider)
-    - **macOS**: 預覽：[目前通道 (預覽)](https://office.com/insider)
+    - **Windows**：最低版本 2105：6 月 18
+    - **macOS**：最小版本 16.50
     - **iOS**：尚未支援
     - **Android**：尚未支援
 
@@ -142,34 +136,26 @@ ms.locfileid: "52796051"
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>如何啟用具有敏感度標籤的檔案共同撰寫
 
 > [!CAUTION]
-> 開啟此設定是單向動作。此功能為預覽版時，請只在非實際執行環境中進行測試，且只有在您閱讀並了解中繼資料變更、必要條件、限制，以及此頁面上記錄的任何已知問題之後，再進行測試。
+> 開啟此設定是單向動作。此功能為預覽版時，請只在您閱讀並了解中繼資料變更、必要條件、限制，以及此頁面上記錄的任何已知問題之後，再加以啟用。
 
-在預覽期間，您必須使用特定的 URL，以在 Microsoft 365 合規性中心存取此設定。
+1. 以租用戶全域系統管理員的身分登入 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 
-1. 使用下列連結，以測試租用戶全域系統管理員的身分登入 Microsoft 365 合規性中心：
+2. 在瀏覽窗格中，選取 **[設定]** > **[共同撰寫具有敏感度等級的檔案]**。
+
+2. 在 **共同撰寫包含敏感度標籤的檔案 (預覽)** 頁面上，閱讀摘要描述、必要條件、預期項目，以及開啟此設定後無法關閉的警告。
     
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    此連結會直接將您帶至租用戶設定，**共同撰寫具有敏感度標記的檔案**。
-
-    > [!IMPORTANT]
-    > 在您繼續之前，請檢查您是否已登入不會影響您的使用者的測試租用戶： 
-    >
-    > 選取合規性中心右上方具有您帳戶縮寫的圓圈，並確認租用戶名稱確實顯示您預期的測試租用戶。
-    
-2. 閱讀摘要描述、必要條件、預期項目，以及開啟此設定後無法關閉的警告。 然後依序選取 **開啟具有敏感度標籤的檔案共同撰寫** 以及 **套用**：
+    然後依序選取 **開啟具有敏感度標籤的檔案共同撰寫** 以及 **套用**：
     
     ![開啟具有敏感度標籤之檔案共同撰寫的選項](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. 在您測試這項新功能進行共同撰寫之前，請等候 24 小時，讓此設定在整個環境中進行複製。
+3. 在您使用這項新功能進行共同撰寫之前，請等候 24 小時，讓此設定在整個環境中進行複製。
 
 ## <a name="contact-support-if-you-need-to-disable-this-feature"></a>如果您需要停用此功能，請聯絡客戶支援
 
 > [!IMPORTANT]
 > 如果您需要停用此功能，請注意標籤資訊可能會遺失。
 
-為租用戶啟用具有敏感度標籤的檔案共同撰寫之後，您無法自己停用此設定。 這就是為什麼在啟用此設定之前，務必先查看並了解必要條件、結果和限制。 這也是我們建議您使用測試租用戶而非生產租用戶來測試此功能的原因。
+為租用戶啟用具有敏感度標籤的檔案共同撰寫之後，您無法自己停用此設定。 這就是為什麼在啟用此設定之前，務必先查看並了解必要條件、結果和限制。
 
 ![顯示已針對敏感度標籤開啟共同撰寫的選項](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 

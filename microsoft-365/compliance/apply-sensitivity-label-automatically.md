@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029000"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061891"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -74,7 +74,7 @@ ms.locfileid: "53029000"
     - 如果您有套用 IRM 加密的 Exchange 郵件流程規則或資料外洩防護 (DLP) 原則：當內容由這些規則或原則和自動套用標籤原則識別時，則會套用標籤。 如果該標籤套用加密，則會忽略 Exchange 郵件流程規則或 DLP 原則的 IRM 設定。 不過，如果該標籤並未套用加密，除了標籤以外，還會套用郵件流程規則或 DLP 原則的 IRM 設定。
     - 當有一個相符項目使用自動套用標籤時，具有 IRM 加密而沒有標籤的電子郵件，將會由具有任何加密設定的標籤取代。
     - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤：
-        - 推出：如果標籤針對 [加密](encryption-sensitivity-labels.md) 進行設定，則不會套用加密。
+        - 如果標籤針對 [加密](encryption-sensitivity-labels.md) 進行設定，則不會套用加密。
         - 如果標籤設定為套用 [動態標記](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，請注意，這可能導致人員名稱會在組織的外部。
     - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是傳送電子郵件的人員。 目前無法為自動加密的所有內建電子郵件訊息，設定版權管理員擁有者。
     
@@ -190,7 +190,7 @@ ms.locfileid: "53029000"
 
 - 若為電腦版 Word 中的建議標籤，系統會標示觸發了建議的敏感性內容，讓使用者可以檢閱和移除敏感性內容，而不是套用建議的敏感度標籤。
 
-- 如需這些標籤在 Office 應用程式中的套用方式、範例螢幕擷取畫面，以及系統如何偵測到敏感性資訊的詳細資訊，請參閱[在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/zh-TW/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 如需這些標籤在 Office 應用程式中的套用方式、範例螢幕擷取畫面，以及系統如何偵測到敏感性資訊的詳細資訊，請參閱[在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 專用於 Azure 資訊保護的整合標籤用戶端：
 
@@ -266,7 +266,7 @@ ms.locfileid: "53029000"
     
     ![自動套用標籤的新原則精靈 ](../media/auto-labeling-wizard.png)
 
-4. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取其中一個範本，例如 **財務** 或 **隱私權**。 您可以使用 **[顯示下列內容的選項]** 下拉式清單來精簡搜尋。 或者，如果範本不符合您的需求，請選取 **[自訂原則]**。 選取 [下一步]。
+4. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取其中一個範本，例如 **財務** 或 **隱私權**。 您可以使用 **[顯示下列內容的選項]** 下拉式清單來精簡搜尋。 或者，如果範本不符合您的需求，請選取 **[自訂原則]**。 選取 **[下一步]**。
 
 5. 針對 **[命名您的自動套用標籤原則]** 頁面：提供唯一名稱，以及選擇性提供說明，以協助識別自動套用的標籤、位置和可識別要套用標籤之內容的條件。
 

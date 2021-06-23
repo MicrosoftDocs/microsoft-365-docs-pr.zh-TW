@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從社交媒體平臺、立即訊息平臺及檔共同作業平臺匯入協力廠商資料，以 Microsoft 365 信箱。
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054770"
+ms.locfileid: "53061727"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
@@ -143,7 +143,6 @@ Microsoft 365 中的[記錄管理](records-management.md)功能可讓您將協�
 |O2 SMS 和語音網路歸檔器 | 是         | 否 | 否 |
 |TELUS SMS 網路存檔器 | 是 | 否 | 否 |
 |Verizon SMS/MMS 網路存檔器 | 是 | 否 | 否 |
-|WeChat 歸檔器 | 是 | 否 | 否 |
 |WhatsApp 歸檔器 | 是 | 否 | 否 |
 |||||
 

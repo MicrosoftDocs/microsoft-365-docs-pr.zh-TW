@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 資料遺失防護參考材料
-ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 5c01b6419a9af100cfaedccbd5a9c4923ca3e42f
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572558"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061786"
 ---
 # <a name="data-loss-prevention-reference"></a>資料遺失防護參考
  
@@ -110,9 +110,6 @@ DLP policies are applied to sensitive items across Microsoft 365 locations and c
 如果您選擇包含或排除特定 SharePoint 網站，則 DLP 原則只能包含不超過 100 項此類包含或排除。 雖然有這個限制，但您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
 
 如果您選擇包含或排除特定的 OneDrive 帳戶或群組，則 DLP 原則不能包含超過 100 個使用者帳戶或 50 個群組作為包含或排除。
-
-> [!NOTE]
-> 使用帳戶或群組的商務用 OneDrive 原則範圍目前處於公開預覽。 在此階段期間，您可以隨著 DLP 原則包含或排除使用者帳戶和群組。 不支援在相同原則中同時使用包含和排除。
   
 ### <a name="rules"></a>規則
 
@@ -542,7 +539,7 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
  
 ## <a name="permissions"></a>權限
 
-您的合規性小組中將建立 DLP 原則的成員必須具備安全性與合規性中心的權限。 根據預設，您的租用戶系統管理員具備安全性與合規性中心的存取權，且能夠將權限授與法務人員和其他人員，而不必將租用戶系統管理員的所有權限授與他們。若要這樣做，建議您：
+根據預設，全域系統管理員、安全性管理員及合規性系統管理員都有權建立及套用 DLP 原則。 您要建立 DLP 原則的其他法規遵從性小組成員必須具備安全性與 &amp; 合規性中心的許可權。 根據預設，您的租使用者系統管理員將可以存取此位置，並可讓合規性監察官和其他人員存取安全 &amp; 規範中心，但不會將租使用者管理員的擁有權限授與他們。為做到這一點，建議您執行下列動作：
   
 1. 在 Microsoft 365 中建立一個群組，並將法務人員新增至此群組。
     

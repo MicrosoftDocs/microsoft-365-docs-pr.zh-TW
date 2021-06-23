@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933778"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062160"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>從協力廠商 HIPS 遷移到 ASR 規則
 
@@ -146,8 +146,8 @@ ms.locfileid: "51933778"
 - **攻擊面減少規則**-ASR 規則不會涵蓋這些案例，因為它們是 Microsoft Defender for Endpoint 內建保護的一部分。
 - **其他建議的功能**-防篡改保護 (加入宣告，從) Intune 進行管理，可防止對 DisableAntiVirus、DisableAntiSpyware、DisableRealtimeMonitoring、DisableOnAccessProtection、DisableBehaviorMonitoring 和 DisableIOAVProtection 登錄機碼進行未經授權的變更 (和更多) 。
 
-另請參閱
+請參閱
 
-- [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
+- [受攻擊面縮小常見問題集](attack-surface-reduction-faq.yml)
 - [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
 - [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)

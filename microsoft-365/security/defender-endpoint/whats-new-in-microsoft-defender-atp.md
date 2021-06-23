@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844187"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062248"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender 新功能
 
@@ -46,6 +46,16 @@ ms.locfileid: "52844187"
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
+## <a name="june-2021"></a>2021 年 6 月
+
+- [裝置探索](device-discovery.md) <br> 協助您找出連接至公司網路的非管理裝置，不需要額外裝置或繁瑣的處理常式變更。 使用架裝置，您可以在網路中尋找未受管理的裝置，並評估漏洞和風險。 然後，您可以將已探索的裝置上架，以降低網路中具有非受管理端點的相關風險。
+
+   > [!IMPORTANT]
+   > Standard discovery 會成為從2021年7月19日開始之所有客戶的預設模式。 您可以選擇透過 [設定] 頁面保留基本模式。 
+
+
+- [裝置群組定義](/microsoft-365/security/defender-endpoint/machine-groups) 現在可以包含每個條件的多個值。 您可以將多個標記、裝置名稱和網域設定為單一裝置群組的定義。
+
 ## <a name="march-2021"></a>2021 年 3 月
 - [使用 Microsoft Defender 資訊安全中心管理無法篡改的保護](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> 您可以使用稱為 *租使用者附加* 的方法，在 Windows 10、Windows Server 2016 及 Windows Server 2019 上管理防篡改保護設定。 
 
@@ -61,7 +71,7 @@ ms.locfileid: "52844187"
 - [威脅及弱點管理 macOS 支援](tvm-supported-os.md)<br> macOS 的威脅和弱點管理現在位於公開預覽中，它會持續偵測 macOS 裝置上的漏洞，以協助您著重于風險，以協助您排定修正優先順序。 若要深入瞭解，請參閱[Microsoft Tech Community 博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
 
-## <a name="august-2020"></a>2020年 8月
+## <a name="august-2020"></a>2020 年 8 月
 - [Android 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何在 Android 上安裝、設定及使用 Microsoft Defender for Endpoint。
 
 

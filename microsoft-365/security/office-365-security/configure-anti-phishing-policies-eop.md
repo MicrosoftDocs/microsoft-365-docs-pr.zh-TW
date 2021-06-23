@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何使用或不具有 Exchange Online 信箱，來建立、修改和刪除 Exchange Online Protection (EOP) 組織中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1dcfba32a5c76915c8c905d55b69712162efac48
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054570"
+ms.locfileid: "53062229"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中設定反網路釣魚原則
 
@@ -126,11 +126,14 @@ ms.locfileid: "53054570"
      - **將郵件移至收件者的 [垃圾郵件] 資料夾**
      - **隔離郵件**
 
-   - **安全性秘訣 & 指示器**：只有在您選取 [在上一頁上 **啟用欺騙情報** ] 時，才可使用此設定：
-     - **Show (？ ) （未驗證的寄件者以取得哄騙**）：如果郵件未通過 SPF 或 DKIM 檢查 **，且** 郵件未透過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)，則會在 Outlook 中的寄件者相片中新增問號。
-     - **顯示「透過**」標籤：將透過 tag (chris@contoso.com 透過 Fabrikam.com) 新增至 [寄件者] 位址，如果不同于 DKIM 簽章中的網域或郵件的 [ **發件** 人] 位址。
+   - **安全性秘訣 & 指示器**：
+     - **顯示第一個連絡人安全提示**：如需詳細資訊，請參閱 [第一個連絡人安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
+     - **Show (？ ) （未驗證的寄件者以取得哄騙**） <sup>\*</sup> ：如果郵件未通過 SPF 或 DKIM 檢查 **，且** 郵件未透過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)，則會在 Outlook 中的寄件者相片中新增問號。
+     - **顯示「透過**」標籤 <sup>\*</sup> ：將透過 Tag (chris@contoso.com 透過 fabrikam.com) 新增至 [寄件者] 位址，如果不同于 DKIM 簽章中的網域或郵件的 [**發件** 人] 位址。
 
      若要開啟設定，請選取核取方塊。 若要將它關閉，請清除核取方塊。
+
+     <sup>\*</sup> 只有在先前頁面上選取 [ **啟用哄騙情報** ] 時，才可使用此設定。 如需詳細資訊，請參閱未 [驗證寄件者](set-up-anti-phishing-policies.md#unauthenticated-sender)。
 
    完成後，按 [下一步 **]**。
 

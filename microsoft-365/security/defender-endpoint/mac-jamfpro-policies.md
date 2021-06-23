@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e26bb85fc74b6be49a9f8116792a7f28e8fa7e05
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b6c2c9fe82486030814e89a0ff655d8f631064e4
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842263"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062313"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf 的 macOS 原則上設定 Microsoft Defender for 端點 Pro
 
@@ -90,8 +90,8 @@ ms.locfileid: "52842263"
 3. 輸入下列詳細資料：
 
    **一般**
-   - 名稱： macOS 上的 MDATP 上架
-   - 描述： MDATP EDR 上架 macOS
+   - 名稱： MDATP 上架 macOS
+   - 描述： macOS 的 MDATP EDR 上架
    - 類別：無
    - 分配方法：自動安裝
    - 層級：電腦層級
@@ -106,32 +106,31 @@ ms.locfileid: "52842263"
 
     ![上傳檔案屬性清單檔案的影像](images/jamfpro-plist-file.png)
 
-7. 選取 [ **開啟** ]，然後選取上架檔案。
+6. 選取 [ **開啟** ]，然後選取上架檔案。
 
     ![上架檔案的影像](images/jamfpro-plist-file-onboard.png)
 
-8. 選取 [ **Upload**]。 
+7. 選取 [ **Upload**]。 
 
     ![上傳 plist 檔的影像](images/jamfpro-upload-plist.png)
 
-
-9. 選取 [ **範圍** ] 索引標籤。
+8. 選取 [ **範圍** ] 索引標籤。
 
     ![範圍] 索引標籤的影像](images/jamfpro-scope-tab.png)
 
-10. 選取目的電腦。
+9. 選取目的電腦。
 
     ![目的電腦的影像](images/jamfpro-target-computer.png)
 
     ![目標影像](images/jamfpro-targets.png) 
 
-11. 選取 ****[儲存]。
+10. 選取 **[儲存]**。
 
     ![部署目的電腦的映射](images/jamfpro-deployment-target.png)
 
     ![選取目的電腦的影像](images/jamfpro-target-selected.png)
 
-12. 選取 **[完成]**。
+11. 選取 **[完成]**。
 
     ![目標群組電腦的影像](images/jamfpro-target-group.png)
 
@@ -139,11 +138,72 @@ ms.locfileid: "52842263"
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>步驟3：設定 Microsoft Defender for Endpoint 設定
 
-1.  使用下列 Microsoft Defender for Endpoint configuration 設定：
+您可以使用 JAMF Pro GUI 編輯 Microsoft Defender 設定的個別設定，或是在文字編輯器中建立設定 Plist，並將其上傳至 JAMF Pro 使用舊版方法。
+
+請注意，您必須使用完整的 `com.microsoft.wdav` **首選項網域**，Microsoft Defender 只會使用此名稱，並 `com.microsoft.wdav.ext` 載入其 managed 設定！
+
+ (`com.microsoft.wdav.ext` 當您更喜歡使用 GUI 方法，但也需要設定尚未新增至架構的設定時，版本可以用於極少的情況。 ) 
+
+### <a name="gui-method"></a>GUI 方法
+
+1. 從[Defender 的 GitHub 存放庫下載檔案](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)schema.js，並將其儲存至本機檔案：
+
+    ```bash
+    curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
+    ```
+
+2. 在 [電腦-> 設定設定檔] 下建立新的設定檔，在 [ **一般** ] 索引標籤上輸入下列詳細資料：
+
+    ![新設定檔](images/644e0f3af40c29e80ca1443535b2fe32.png)
+
+    - 名稱： MDATP MDAV 設定設定
+    - 描述：\<blank\>
+    - 類別：無 (預設) 
+    - 層級：電腦層級 (預設) 
+    - 分配方法：自動安裝 (預設) 
+
+3. 向下滾動至 **應用程式 & 自訂設定**] 索引標籤，選取 [**外部應用程式**]，然後按一下 [**新增**]，然後使用 [**自訂架構**] 做為偏好設定網域使用
+
+    ![新增自訂架構](images/4137189bc3204bb09eed3aabc41afd78.png)
+
+4. `com.microsoft.wdav`以偏好設定網域的身分輸入，按一下 [**新增架構**]，並 **Upload** 在步驟1下載的檔案上 schema.js。 按一下 **[儲存]**。
+
+    ![Upload 架構](images/a6f9f556037c42fabcfdcb1b697244cf.png)
+
+5. 您可以在 [ **喜好設定網域** 內容] 底下看到下列所有支援的 Microsoft Defender 設定設定。 按一下 [ **新增/移除屬性** ] 以選取您想要管理的設定，然後按一下 **[確定]** 以儲存變更。 將不會將 (設定左取消選取的受管理的設定中，使用者將可以在其電腦上設定這些設定。 ) 
+
+    ![選取受管理的設定](images/817b3b760d11467abe9bdd519513f54f.png)
+
+6. 將設定值變更為所需的值。 您可以按一下 [ **詳細資訊** ] 以取得特定設定的檔。  (您可以按一下 [ **Plist 預覽** ]，以檢查設定 Plist 的外觀。 按一下 [ **表單編輯器** ] 以回到視覺編輯器。 ) 
+
+    ![變更設定值](images/a14a79efd5c041bb8974cb5b12b3a9b6.png)
+
+7. 選取 [ **範圍** ] 索引標籤。
+
+    ![設定設定檔範圍](images/9fc17529e5577eefd773c658ec576a7d.png)
+
+8. 選取 [ **Contoso 的電腦群組**]。
+
+9. 選取 [ **新增**]，然後選取 [ **儲存**]。
+
+    ![設定設定-新增](images/cf30438b5512ac89af1d11cbf35219a6.png)
+
+    ![設定設定-儲存](images/6f093e42856753a3955cab7ee14f12d9.png)
+
+10. 選取 **[完成]**。 您將會看到新的設定 **設定檔**。
+
+    ![設定設定-完成](images/dd55405106da0dfc2f50f8d4525b01c8.png)
+
+Microsoft Defender 會隨著時間新增新的設定。 這些新設定會新增至架構，而新版本會發佈給 Github。
+您需要做的所有更新是：下載更新的架構、編輯現有的設定檔，以及在 **應用程式 & 自訂設定**] 索引標籤上 **編輯架構**。
+
+### <a name="legacy-method"></a>舊方法
+
+1. 使用下列 Microsoft Defender for Endpoint configuration 設定：
 
     - enableRealTimeProtection
     - passiveMode
-    
+
     >[!NOTE]
     >預設未開啟，如果您打算為 macOS 執行協力廠商 AV，請將其設為 `true` 。
 
@@ -153,10 +213,10 @@ ms.locfileid: "52842263"
     - excludedFileName
     - exclusionsMergePolicy
     - allowedThreats
-    
+
     >[!NOTE]
     >EICAR.TXT 位於範例上，如果您想要透過概念證明，請將它移除，尤其是在您測試 EICAR.TXT 時。
-        
+
     - disallowedThreatActions
     - potentially_unwanted_application
     - archive_bomb
@@ -164,7 +224,7 @@ ms.locfileid: "52842263"
     - automaticSampleSubmission
     - 標籤
     - hideStatusMenuIcon
-    
+
      如需詳細資訊，請參閱 [Jamf 設定檔的屬性清單](mac-preferences.md#property-list-for-jamf-configuration-profile)。
 
      ```XML
@@ -270,16 +330,15 @@ ms.locfileid: "52842263"
 
 2. 將檔案儲存為 `MDATP_MDAV_configuration_settings.plist` 。
 
+3. 在 Jamf Pro 儀表板中，開啟 [**電腦**]，然後有設定配置 **檔**。 按一下 [[*新增 (* ]，然後切換至 **[一般** ] 索引標籤。
 
-3.  在 Jamf Pro 儀表板中，選取 **[一般**]。
-
-    ![新 Jamf Pro 儀表板的影像](images/644e0f3af40c29e80ca1443535b2fe32.png)
+    ![新設定檔](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
 4. 輸入下列詳細資料：
 
     **一般**
     
-    - 名稱： MDATP MDAV 配置設定
+    - 名稱： MDATP MDAV 設定設定
     - 描述：\<blank\>
     - 類別：無 (預設) 
     - 分配方法：自動安裝 (預設) 
@@ -318,7 +377,7 @@ ms.locfileid: "52842263"
     >![配置設定的映射 intune 檔案上傳](images/8e69f867664668796a3b2904896f0436.png)
 
 
-11. 選取 ****[儲存]。 
+11. 選取 **[儲存]**。 
 
     ![配置設定的影像儲存影像](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -343,7 +402,6 @@ ms.locfileid: "52842263"
 16. 選取 **[完成]**。 您將會看到新的設定 **設定檔**。
 
     ![設定設定檔影像的影像](images/dd55405106da0dfc2f50f8d4525b01c8.png)
-
 
 ## <a name="step-4-configure-notifications-settings"></a>步驟4：設定通知設定
 
@@ -430,7 +488,7 @@ ms.locfileid: "52842263"
     **一般** 
     
     - 名稱： MDATP MDAV MAU 設定
-    - 描述： MDATP macOS 的 Microsoft AutoUpdate 設定
+    - 描述： macOS 的 MDATP 的 Microsoft AutoUpdate 設定
     - 類別：無 (預設) 
     - 分配方法：自動安裝 (預設) 
     - 層級：電腦層級 (預設) 
@@ -460,7 +518,7 @@ ms.locfileid: "52842263"
 
     ![設定 uplimg 的影像](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. 選取 ****[儲存]。
+11. 選取 **[儲存]**。
 
     ![設定 saveimg 的影像](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -561,7 +619,7 @@ ms.locfileid: "52842263"
 
 15. 選取 ****[新增]。 
 
-16. 選取 ****[儲存]。 
+16. 選取 **[儲存]**。 
     
 17. 選取 **[完成]**。
     
@@ -616,7 +674,7 @@ ms.locfileid: "52842263"
 
     ![配置設定的影像新增影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 ****[儲存]。
+9. 選取 **[儲存]**。
 
     ![配置設定 saveimag 的影像](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -671,7 +729,7 @@ ms.locfileid: "52842263"
 
    ![配置設定 addima 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 ****[儲存]。
+9. 選取 **[儲存]**。
 
    ![配置設定 sysext 範圍的影像](images/sysext-scope.png)
 
@@ -690,14 +748,14 @@ ms.locfileid: "52842263"
 2. 按一下 [ **新增**]，然後輸入下列 **選項** 的詳細資料：
 
     - 索引標籤 **一般**： 
-        - **名稱**： Microsoft Defender ATP 網路分機
+        - **名稱**： MICROSOFT Defender ATP 網路擴充
         - **描述**： macOS 10.15 (Catalina) 或更新版本
         - **類別**：無 *(預設)*
         - **分配方法**：自動安裝 *(預設)*
         - **層級**：電腦層級 *(預設)*
 
     - 索引標籤 **內容篩選**：
-        - **篩選名稱**： Microsoft Defender ATP 內容篩選器
+        - **篩選名稱**： MICROSOFT Defender ATP 內容篩選器
         - **識別碼**： `com.microsoft.wdav`
         - 保留 *未* 選取 **服務位址**、**組織**、**使用者名稱**、**密碼**、**憑證** 空白 (**包含**) 
         - **篩選順序**： Inspector
@@ -721,7 +779,7 @@ ms.locfileid: "52842263"
 
     ![配置設定 adim 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. 選取 ****[儲存]。
+7. 選取 **[儲存]**。
 
     ![設定 savimg netextscop 的映射](images/netext-scope.png)
 
@@ -770,7 +828,7 @@ ms.locfileid: "52842263"
     
     ![自動產生電腦畫面描述的螢幕擷取畫面](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-7. 選取 [開啟]。 將 **顯示名稱** 設為 **Microsoft Defender 進階威脅防護和 Microsoft Defender 防毒軟體**。
+7. 選取 [開啟]。 將 **顯示名稱** 設定為 **Microsoft Defender 高級威脅防護和 Microsoft Defender 防毒軟體**。
 
     **資訊清單** 檔案不是必要的。 Microsoft Defender for Endpoint 可運作但沒有資訊清單檔案。
     
@@ -780,7 +838,7 @@ ms.locfileid: "52842263"
     
      ![[設定設定] [限制] 索引標籤的影像](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. 選取 ****[儲存]。 套件會上傳至 Jamf Pro。 
+8. 選取 **[儲存]**。 套件會上傳至 Jamf Pro。 
 
    ![Configuration settings pack upl jamf pro 映射](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -799,7 +857,7 @@ ms.locfileid: "52842263"
 
 11. **一般說來** 請輸入下列詳細資料：
 
-    - 顯示名稱： MDATP 上架 Contoso 200329 v 100.86.92 或更新版本
+    - 顯示名稱： MDATP 上架 200329 v 100.86.92 或更新版本
 
     ![設定 settingsmdatponboard 的影像 ](images/625ba6d19e8597f05e4907298a454d28.png)
 
@@ -808,17 +866,17 @@ ms.locfileid: "52842263"
     ![重複簽入設定設定的影像](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-13. 選取 ****[儲存]。 
+13. 選取 **[儲存]**。 
  
 14. 選取 **> 設定的套件**。
  
     ![配置設定套件設定的影像](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-15. 選取 [ **Microsoft Defender 進階威脅防護和 Microsoft Defender 防毒軟體**] 旁邊的 [**新增**] 按鈕。
+15. 選取 [ **Microsoft Defender 高級威脅防護和 Microsoft Defender 防毒軟體**] 旁邊的 [**新增**] 按鈕。
 
     ![設定 MDATP 和 MDA 新增的影像](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. 選取 ****[儲存]。
+16. 選取 **[儲存]**。
 
     ![設定 settingssavimg 的影像](images/9d6e5386e652e00715ff348af72671c6.png)
 

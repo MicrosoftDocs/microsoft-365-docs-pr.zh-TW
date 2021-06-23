@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Microsoft Defender Office 365 的組織中可用的高級防網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054540"
+ms.locfileid: "53061883"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則
 
@@ -230,7 +230,7 @@ ms.locfileid: "53054540"
        - **隔離郵件**
 
    - **安全性秘訣 & 指示器**：設定下列設定：
-     - **顯示第一個連絡人安全提示**：此安全提示會取代建立郵件流程規則的需求， (也稱為傳輸規則) ，該會將名為 **X-MS Exchange-EnableFirstContactSafetyTip** 的標頭新增為郵件的 **啟用** 值。
+     - **顯示第一個連絡人安全提示**：如需詳細資訊，請參閱 [第一個連絡人安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
      - **顯示使用者模擬安全提示**：只有當您選取 [**允許使用者** 在前一頁上保護] 時，才可使用此設定。
      - **顯示網域模擬安全提示**：只有在先前頁面上選取 [**啟用要保護的網域**] 時，才可使用此設定。
      - **顯示使用者模擬不尋常的字元安全提示** 只有在您選取 [**讓使用者能夠保護** 或 **啟用網域以** 在前一頁上保護] 時，才可使用此設定。

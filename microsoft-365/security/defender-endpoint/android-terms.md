@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7a5aa5e049159761c46e2103f7b1ecdd1499f3cd
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934618"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061640"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Android 應用程式授權條款上的 Microsoft Defender for Endpoint
 
@@ -56,7 +56,7 @@ ms.locfileid: "51934618"
 
 1.  **INSTALLATION AND USE RIGHTS.**
 
-    1.  **安裝和使用。** 您可以在已啟用 Android 的裝置或您擁有或控制的裝置上，安裝和使用此應用程式的任何數目的副本。 您可以使用此應用程式與貴公司的 Microsoft Defender for Endpoint 或線上服務（包含 Microsoft Defender for Endpoint 功能）有效訂閱。
+    1.  **安裝和使用。** 您可以在已啟用 Android 的裝置或您擁有或控制的裝置上，安裝和使用此應用程式的任何數目的副本。 
 
     2.  **更新。** 您可能需要更新或升級至 Microsoft Defender for Endpoint，才能進行完整功能。 有些功能可能無法在所有國家/地區使用。
 

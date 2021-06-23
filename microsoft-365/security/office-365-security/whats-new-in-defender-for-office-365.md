@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932815"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062205"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender Office 365 的新功能
 
@@ -42,6 +42,14 @@ ms.locfileid: "52932815"
 > [!TIP]
 > 目前還沒有 Microsoft Defender 用於 Office 365 嗎？ [連絡人銷售人員開始試用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
 
+## <a name="june-2021"></a>2021 年 6 月
+
+- 反網路釣魚原則中的新第一個連絡人安全提示設定。 當收件者第一次從寄件者接收電子郵件，或是不經常接收寄件者的電子郵件時，就會顯示此安全提示。 如需此設定及設定方式的詳細資訊，請參閱下列文章：
+
+- [第一個連絡人安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)
+- [在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)
+
 ## <a name="aprilmay-2021"></a>四月/5 月2021
 
 - [電子郵件實體頁面](mdo-email-entity-page.md)：針對威脅、驗證和偵測、引爆詳細資料和全新的電子郵件預覽體驗的電子郵件，統一的360度觀點。
@@ -54,6 +62,7 @@ ms.locfileid: "52932815"
 - 將[搜尋體驗](threat-explorer.md)中從9990到200000匯出記錄的限制提高
 - 從 7 (先前的限制到[搜尋體驗](threat-explorer.md)中的30天內，擴充 Explorer (和即時的偵測) 資料保留和搜尋限制) 
 - 瀏覽器中新的搜尋功能稱為模擬的 **網域** 和模擬 **使用者** (和即時偵測) 搜尋受保護的使用者或網域的類比攻擊。 如需詳細資訊，請參閱 [詳細資料](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Office 365 方案1或計畫2的 Microsoft Defender) 
+- 當收件者第一次從寄件者接收電子郵件，或是不經常接收寄件者的電子郵件時，新增第一個連絡人安全提示。 如需此設定的詳細資訊，以及如何使用 Exchange 郵件流程 (規則（也稱為傳輸規則) ）加以設定，請參閱[第一個連絡人安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -91,7 +100,7 @@ ms.locfileid: "52932815"
 
 - [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要在安全性 & 規範中心中查看安全性構件，請移至「**威脅管理**」 \> ****。 )  (Microsoft Defender for Office 365 Plan 2) 
 
-- Microsoft 365 **(預覽**[中的安全檔](safe-docs.md)) 
+- [保管庫 Microsoft 365 中的檔](safe-docs.md) **(預覽)**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -127,7 +136,7 @@ ms.locfileid: "52932815"
 
 您知道 Microsoft Defender for Office 365 已提供兩種方案嗎？ [深入瞭解每個方案包含的內容](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

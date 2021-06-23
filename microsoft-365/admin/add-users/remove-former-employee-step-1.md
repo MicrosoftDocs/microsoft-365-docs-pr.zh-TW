@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 封鎖離職員工的登入，並封鎖 Microsoft 365 服務的存取權。
-ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840847"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061828"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步驟 1-防止離職員工登入並封鎖 Microsoft 365 服務的存取權
 
@@ -41,12 +41,12 @@ ms.locfileid: "52840847"
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 2. 選取使用者名稱旁的方塊，然後選取 [ **重設密碼**]。
 3. 輸入新密碼，然後選取 [ **重設**]。  (不要將其傳送給他們。 ) 
-4. 選取使用者的名稱以移至其屬性窗格，然後在 [ **帳戶** ] 索引標籤上，選取 [ **啟動登出**]。
+4. 選取使用者的名稱以移至其屬性窗格，然後在 [ **帳戶** ] 索引標籤上，選取 [登出 **所有會話**]。
 
 在一小時內，或在他們保留目前的 Microsoft 365 頁面時，系統會提示他們重新登入。 存取權杖適用于一個小時，所以時程表取決於該權杖所留下的時間，以及是否要流覽至目前的網頁。
   
 > [!IMPORTANT]
-> 如果使用者是在網頁上的 Outlook，只要在其信箱中按一下 [流覽]，就不會立即啟用。 當他們選取不同的麻將牌（例如 OneDrive，或重新整理其瀏覽器）時，就會啟動登出。
+> 如果使用者在 Outlook 網頁版，只要在其信箱中按一下滑鼠，就不會立即將其彈出。 當他們選取不同的麻將牌（例如 OneDrive，或重新整理其瀏覽器）時，就會啟動登出。
   
 若要使用 PowerShell 立即登出使用者，請參閱 [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) Cmdlet。
   
