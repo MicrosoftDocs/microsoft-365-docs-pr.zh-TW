@@ -241,7 +241,7 @@
 #### [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
 #### [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
 #### [自訂受攻擊面縮小規則](customize-attack-surface-reduction.md)
-#### [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
+#### [受攻擊面縮小常見問題集](attack-surface-reduction-faq.yml)
 #### [檢視受攻擊面縮小事件](event-views.md)
 #### [針對受攻擊面縮小使用稽核模式](audit-windows-defender.md)
 

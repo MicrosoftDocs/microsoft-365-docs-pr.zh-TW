@@ -1,7 +1,7 @@
 - name: Microsoft 365 系統管理中心說明
   href: index.yml
   items:
-    - name: 開始使用
+    - name: 入門
       href: setup/index.yml
       items:
         - name: 註冊
@@ -74,14 +74,10 @@
       items:
         - name: 關於由 21Vianet 營運的 Office 365
           href: services-in-china/services-in-china.md
-        - name: 購買或試用訂閱
-          href: ../commerce/try-or-buy-microsoft-365.md?view=o365-21vianet
         - name: 下載由 21Vianet 營運的 Android 版 Office 365 Office 應用程式
           href: services-in-china/download-office-app-for-Android.md
         - name: 下載由 21Vianet 營運的 iOS 版 Office 365 Office 應用程式
           href: services-in-china/download-office-app-for-iOS.md
-        - name: 檢視您的帳單或取得發票
-          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md?view=o365-21vianet
         - name: 申請發票
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure 資訊保護支援
