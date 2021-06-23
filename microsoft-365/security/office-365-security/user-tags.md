@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender 的使用者標記中識別特定的使用者群組，以 Office 365 方案2。 標記篩選可用於 Office 365 的通知、報告和調查中，以快速識別已標記的使用者。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 105e927e50f7b1d1217587587b8d7ee3b7d6bd4c
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 3ac53891e0eb106ab3681251cc4cb8c969b51f8a
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904101"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083113"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的使用者標記
 
@@ -56,20 +56,20 @@ ms.locfileid: "52904101"
 
 - 您於 <https://security.microsoft.com/> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://security.microsoft.com/securitysettings/userTags> 。
 
-- 您必須先在 Microsoft 365 Defender 入口網站中指派許可權，才能執行本文中的程式：
+- 您必須在 Microsoft 365 Defender 入口網站中指派許可權，才能執行本文中的程式：
   - 若要建立、修改和刪除使用者標記，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要在現有的使用者標記中新增及移除成員，您必須是「 **組織管理**」、「 **安全性管理員**」或「 **安全操作員** 」角色群組的成員。
   - 若要唯讀的使用者標記存取權，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
+  如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。
 
   > [!NOTE]
   >
-  > - 將使用者新增至 Microsoft 365 admin center 中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  > - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - 使用者標記管理是由「 **標記讀取器** 」和「標籤 **管理員** 」角色所控制。
 
-- 您也可以在 Microsoft 365 系統管理中心管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
+- 您也可以在 Microsoft 365 系統管理中心中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
 
 - 如需 (系統管理員帳戶) 保護 _特權帳戶_ 的詳細資訊，請參閱 [本主題](/azure/architecture/framework/security/critical-impact-accounts)。
 
@@ -114,7 +114,7 @@ ms.locfileid: "52904101"
    - **Tag**： user 標記的名稱。 請注意，這包括內建的 **優先順序帳戶** 系統標記。
    - **適用** 于：成員數目
    - **上次修改日期**
-   - **建立于**
+   - **建立時間**
 
 3. 當您按一下名稱來選取使用者標記時，詳細資料會顯示在浮出控制項中。
 
@@ -124,14 +124,14 @@ ms.locfileid: "52904101"
 
 2. 在 [ **使用者標記** ] 頁面上，選取清單中的 [使用者] 標籤，然後按一下 [ ![ 編輯標記圖示] [ ](../../media/m365-cc-sc-edit-icon.png) **編輯標記**]。
 
-3. 在出現的 [詳細資料] 浮出控制項中，如本文稍早[使用 Microsoft 365 Defender 入口網站來建立使用者標記](#use-the-microsoft-365-defender-portal-to-create-user-tags)一節所述，可提供相同的嚮導和設定。
+3. 在出現的 [詳細資料] 浮出控制項中，您可以使用本文前面的[使用 Microsoft 365 Defender 入口網站建立使用者標記](#use-the-microsoft-365-defender-portal-to-create-user-tags)一節所述的相同嚮導和設定。
 
    **附註**：
 
    - [ **定義** 標籤] 頁面不適用於內建的「 **優先順序帳戶** 」系統磁碟區標，所以您無法重新命名此標記或變更描述。
    - 您無法重新命名自訂標記，但您可以變更描述。
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>使用 Microsoft 365 Defender 入口網站來移除使用者標記
+## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>使用 Microsoft 365 Defender 入口網站移除使用者標記
 
 > [!NOTE]
 > 您無法移除內建的 [ **優先順序帳戶** 系統] 標記。

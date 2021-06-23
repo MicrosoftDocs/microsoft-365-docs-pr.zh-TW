@@ -16,12 +16,12 @@ description: 查看並調查惡意程式碼釣魚企圖。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebe76536c5ed309ca16777e85c5cdf919d0fb5c
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029882"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082993"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>使用 Microsoft Defender 中 Office 365 的威脅瀏覽器的電子郵件安全性
 
@@ -43,7 +43,7 @@ ms.locfileid: "53029882"
 
 ## <a name="view-malware-detected-in-email"></a>查看電子郵件中偵測到的惡意程式碼
 
-若要查看以 Microsoft 365 技術排序的電子郵件中偵測到惡意程式碼，請使用 Explorer 的[電子郵件 > 惡意](threat-explorer-views.md#email--malware)代碼視圖 (或即時偵測) 。 惡意程式碼是預設的視圖，所以當您開啟 Explorer 時，可能會立即選取惡意程式碼。
+若要查看以 Microsoft 365 技術排序的電子郵件中偵測到惡意程式碼，請使用 Explorer 的 [**電子郵件 \> 惡意**](threat-explorer-views.md#email--malware)代碼視圖 (或即時偵測) 。 惡意程式碼是預設的視圖，所以當您開啟 Explorer 時，可能會立即選取惡意程式碼。
 
 1. 在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，選擇 [**電子郵件 & 協同** \> **流覽**] (或 **即時** 偵測;本範例會使用 Explorer) 。
 
@@ -65,7 +65,7 @@ ms.locfileid: "53029882"
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>查看網路釣魚 URL，然後按一下 [已判定資料]
 
-您可以透過電子郵件中的 URLs 來查看網路釣魚嘗試，包括允許、封鎖和覆蓋的 URLs 清單。 若要識別所按一下的 URLs，必須設定[Safe 連結](safe-links.md)。 請務必設定[Safe 連結原則](set-up-safe-links-policies.md)，以在按 Safe 連結的情況時，按一下 [保護] 和 [記錄]。
+您可以透過電子郵件中的 URLs 來查看網路釣魚嘗試，包括允許、封鎖和覆蓋的 URLs 清單。 若要識別所按一下的 URLs，必須設定[保管庫連結](safe-links.md)。 請務必設定[保管庫連結原則](set-up-safe-links-policies.md)，以在按保管庫連結的情況時，按一下 [保護] 和 [記錄]。
 
 1. 在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，選擇 [**電子郵件 & 協同** \> **流覽**] (或 **即時** 偵測;本範例會使用 Explorer) 。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53029882"
 
    - **Top URLs** 是您篩選的郵件中 URLs，以及每個 URL 的電子郵件傳遞動作計數。 在網路釣魚電子郵件視圖中，此清單通常包含合法的 URLs。 攻擊者會在其郵件中混合使用良好和不良的 URLs，以嘗試傳遞，但它們會使惡意連結看起來更有趣。 URLs 的表格依總的電子郵件總數排序，但是此欄位是隱藏的，以簡化視圖。
 
-   - **上** 指按一下的 Safe 連結包裝 URLs，依總按一下計數排序。 此欄位也不會顯示，以簡化視圖。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些通常是可疑或惡意的 URLs。 不過，此視圖可以包含不是威脅的 URLs，但位於網路釣魚郵件中。 在這裡未顯示 URL 按一下已開啟的連結。
+   - **上** 指按一下的保管庫連結包裝 URLs，依總按一下計數排序。 此欄位也不會顯示，以簡化視圖。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些通常是可疑或惡意的 URLs。 不過，此視圖可以包含不是威脅的 URLs，但位於網路釣魚郵件中。 在這裡未顯示 URL 按一下已開啟的連結。
 
    這兩個 URL 表格會依照傳送動作和位置，顯示網路釣魚電子郵件中的最上層 URLs。 [！注意] 表格會顯示因警告而封鎖或訪問的 URL 按一下，因此您可以看到向使用者呈現的潛在不良連結，以及使用者所按一下的連結。 您可以從這裡進行進一步分析。 例如，在圖表下方，您可以在組織環境中所封鎖的電子郵件訊息中看到最上層 URLs。
 

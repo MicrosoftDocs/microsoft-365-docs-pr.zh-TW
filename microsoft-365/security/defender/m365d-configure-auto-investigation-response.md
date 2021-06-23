@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: d3acf24d12b72a92af4246afdf11f67e01c45b2c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4275339e048a4197590c91c5904733ce99b22f9f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022497"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083437"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的自動化調查和回應功能
 
@@ -73,7 +73,7 @@ Microsoft 提供內建的 [警示原則](../../compliance/alert-policies.md) ，
 
 Office 365 中的安全性設定可協助保護電子郵件和內容。 若要查看或變更這些設定，請遵循 [防範威脅](../office-365-security/protect-against-threats.md)的指導方針。
 
-1. 在 Microsoft 365 Defender 入口網站 ([https://security.microsoft.com](https://security.microsoft.com)) 中，移至 [原則] **& 規則** \> **威脅原則**。
+1. 在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，移至 [原則] **& 規則** \> **威脅原則**。
 
 2. 請確定已設定下列所有原則。 若要取得説明和建議，請參閱 [防止威脅](/microsoft-365/security/office-365-security/protect-against-threats)。
    - [反惡意程式碼](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -82,9 +82,9 @@ Office 365 中的安全性設定可協助保護電子郵件和內容。 若要�
    - [安全連結](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [反垃圾郵件](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-3. 請確定已開啟[SharePoint、OneDrive 和 Microsoft Teams 的 Microsoft Defender Office 365](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) 。
+3. 請確定已開啟[SharePoint、OneDrive 和 Microsoft Teams 的保管庫附件](../office-365-security/mdo-for-spo-odb-and-teams.md)。
 
-4. 請確定 [電子郵件保護的零小時自動清除](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 有效。
+4. 請確定 Exchange Online 中的 ZAP) 會生效，[以零小時自動清除 (](../office-365-security/zero-hour-auto-purge.md) 。
 
 5.  (此步驟是選用的。 ) 複查 Microsoft 365 合規性中心 () 中的[Office 365 警示原則](../../compliance/alert-policies.md)。 [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 「威脅管理」類別中有許多預設的警示原則。 其中一些警示可以觸發自動調查和回應。 若要深入瞭解，請參閱 [預設警示原則](../../compliance/alert-policies.md#default-alert-policies)。
 

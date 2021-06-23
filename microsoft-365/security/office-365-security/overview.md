@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性，從 EOP 到適用於 Office 365 的 Defender 方案 1 和 2、標準與嚴格安全性組態等等。 了解您擁有哪些項目，以及如何保護您的屬性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: db458f0a3a3ac2cc4a06d0827844e156798f6505
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930244"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083653"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender Office 365 安全性概述
 
@@ -112,7 +112,7 @@ Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsof
 
 因此，適用於 Office 365 的 Microsoft Defender P2 會擴展房屋的 ***調查與回應*** 端，並且新增新的搜捕強度。 自動化。
 
-在適用於 Office 365 的 Microsoft Defender P2 中，主要搜捕工具稱為 **威脅總管**，而非即時偵測。 當您流覽至 Microsoft 365 defender 入口網站時，如果看到威脅瀏覽器，則表示您正在 Microsoft defender 中 Office 365 P2。
+在適用於 Office 365 的 Microsoft Defender P2 中，主要搜捕工具稱為 **威脅總管**，而非即時偵測。 當您流覽至 Microsoft 365 Defender 入口網站時，如果看到威脅瀏覽器，表示您正在 Microsoft Defender 中 Office 365 P2。
 
 若要了解適用於 Office 365 的 Microsoft Defender P1 和 P2 的詳細資料，請 **[進入本文](defender-for-office-365.md)**。
 
@@ -125,7 +125,7 @@ Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsof
 
 |適用於 Office 365 的 Defender 方案 1|適用於 Office 365 的 Defender 方案 2|
 |---|---|
-|設定、保護和偵測功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全連結](safe-links.md)</li><li>[適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[適用於 Office 365 的 Defender 中的反網路釣魚防護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|適用於 Office 365 的 Defender 方案 1 的功能 <p> --- 以及 --- <p> 自動化、調查、補救和教育功能： <ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
+|設定、保護和偵測功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全連結](safe-links.md)</li><li>[適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[適用於 Office 365 的 Defender 中的反網路釣魚防護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|適用於 Office 365 的 Defender 方案 1 的功能 <p> --- 以及 --- <p> 自動化、調查、補救和教育功能： <ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬訓練](attack-simulation-training.md)</li></ul>|
 |
 
 - 適用於 Office 365 的 Microsoft Defender 方案 2 隨附於 Office 365 E5、Office 365 A5 和 Microsoft 365 E5。
@@ -153,5 +153,4 @@ Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsof
 
 [使用威脅總管或即時偵測](threat-explorer.md)
 
-使用[適用於 Office 365 的 Microsoft Defender 中的攻擊模擬器](attack-simulator.md)
-
+使用 [攻擊模擬訓練](attack-simulation-training.md)

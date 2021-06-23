@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender Office 365 的保護功能上套用標準和嚴格的原則設定
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879009"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083485"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的預設安全性原則
 
@@ -80,9 +80,9 @@ ms.locfileid: "52879009"
     - [類比設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高級網路釣魚臨界值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - 名為 **Standard Standard Security policy** and Strict Standard **Security Policy** 的 [安全連結原則](set-up-safe-links-policies.md)。
+  - 保管庫名為 **Standard Standard security policy** and **Strict standard security policy** 的 [連結原則](set-up-safe-links-policies.md)。
 
-  - 名為 **Standard Standard Security policy** and Strict Standard **Security Policy** 的 [安全附件原則](set-up-safe-attachments-policies.md)。
+  - 保管庫名為 **Standard Standard security policy** and **Strict standard security policy** 的 [附件原則](set-up-safe-attachments-policies.md)。
 
 請注意，您可以將 EOP 保護套用至不同于 Microsoft Defender Office 365 保護的使用者。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52879009"
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com> 。 若要直接移至 [ **預先設定的安全性原則** ] 頁面，請使用 <https://security.microsoft.com/presetSecurityPolicies> 。
+- 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **預先設定的安全性原則** ] 頁面，請使用 <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -117,9 +117,9 @@ ms.locfileid: "52879009"
 
   **附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中其他功能所需的許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
-### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>使用 Microsoft 365 Defender 入口網站將預設的安全性原則指派給使用者
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>使用 Microsoft 365 Defender 入口網站將預置的安全性原則指派給使用者
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **範本化原則**] 區段中的 \> **安全性原則**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **範本化原則**] 區段 \> 中的 **安全性原則**。
 
 2. 在 [ **標準防護** ] 或 [ **嚴格防護**] 底下，按一下 [ **編輯**]。
 
@@ -132,7 +132,7 @@ ms.locfileid: "52879009"
 
    針對使用者或群組，您可以使用大部分識別碼 (名稱、顯示名稱、別名、電子郵件地址、帳戶名稱等)，但會在結果中顯示對應的顯示名稱。 針對使用者，接著輸入星號 (\*) 來查看所有可用的值。
 
-   - **排除這些使用者、群組和網域**：若要為原則適用的內部收件者新增例外 (收件者例外)，請選取此選項並設定例外。 設定和行為就像是條件。
+   - **排除這些使用者、群組和網域**：若要新增原則套用至 (收件者例外狀況) 的內部收件者例外狀況，請選取此選項並設定例外狀況。 設定和行為就像是條件。
 
    完成後，按 [下一步 **]**。
 

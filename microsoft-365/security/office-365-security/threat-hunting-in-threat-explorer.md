@@ -16,12 +16,12 @@ description: 在 Microsoft 365 Defender 入口網站中使用威脅瀏覽器或�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930092"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083557"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 威脅瀏覽器中的威脅搜尋
 
@@ -68,7 +68,7 @@ ms.locfileid: "52930092"
 
 Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽器* 的子集 (也稱為計畫2中的 *Explorer*) 搜尋工具。 在此系列文章中，大部分的範例是使用完整威脅瀏覽器建立的。 管理員應該在即時偵測中測試任何步驟，以查看其適用的位置。
 
-若要開啟 Explorer 工具，請移至 **Microsoft 365 Defender portal**  >  **Email & 協同**  >  **瀏覽器**。 依預設，您會到達 **惡意軟體** 頁面，但使用 [View] （ **查看** ）下拉式功能表以熟悉您的選項。 如果您要搜尋網路釣魚網路，或鑽研至威脅活動，請選擇這些視圖。
+若要開啟 Explorer 工具，請移至 **Microsoft 365 Defender 入口網站**  >  **電子郵件 &** 共同  >  **瀏覽器**。 依預設，您會到達 **惡意軟體** 頁面，但使用 [View] （ **查看** ）下拉式功能表以熟悉您的選項。 如果您要搜尋網路釣魚網路，或鑽研至威脅活動，請選擇這些視圖。
 
 > [!div class="mx-imgBorder"]
 > ![威脅瀏覽器中的 View 下拉式清單](../../media/view-drop-down.png)
@@ -267,11 +267,11 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 
 若要深入了解角色和權限，請參閱下列資源：
 
-- [Microsoft 365 Defender 入口網站中的權限](permissions-in-the-security-and-compliance-center.md)
+- [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)
 - [Exchange Online 中的功能權限](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 - [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md) 
 - [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](mdo-for-spo-odb-and-teams.md) 

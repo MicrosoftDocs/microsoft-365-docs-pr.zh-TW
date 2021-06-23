@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Microsoft cybersecurity 小組的主要建議，用以實施安全性功能，以保護您的 Microsoft 365 環境。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67febc328706121360b2b34e054ae8e208355b89
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 05ea4103abecb10d4eedddf8d5043e339b58804c
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879251"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083149"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>安全性藍圖-前30天、90天和之後的頭等大事
 
@@ -78,7 +78,7 @@ ms.locfileid: "52879251"
 
 |適用範圍|工作|
 |---|---|
-|安全性管理|<ul><li>檢查 () 環境的建議動作安全得分 <https://securescore.office.com> 。</li><li>繼續定期查看 Microsoft 365 Defender 入口網站、雲端 App 安全性和 SIEM 工具中的儀表板和報告。</li><li>尋找並執行軟體更新。</li><li>使用[Office 365 威脅智慧](office-365-ti.md)) 中包含的[攻擊模擬器](attack-simulator.md) (，進行攻擊模擬，以進行 spear 網路釣魚、密碼噴塗和暴力密碼攻擊。</li><li>在 [調查] 索引標籤) 上的雲端 App 安全性 (中查看內建報表，以尋找共用風險。</li><li>檢查 [合規性管理員](../../compliance/compliance-manager.md) 以查看適用于貴組織 (的規章狀態，例如 GDPR、NIST 800-171) 。</li></ul>|
+|安全性管理|<ul><li>檢查 () 環境的建議動作安全得分 <https://securescore.office.com> 。</li><li>繼續定期查看 Microsoft 365 Defender 入口網站、雲端 App 安全性及 SIEM 工具中的儀表板和報告。</li><li>尋找並執行軟體更新。</li><li>使用[Office 365 威脅智慧](office-365-ti.md)) 所包含的[攻擊模擬訓練](attack-simulation-training.md) (，進行 spear 網路釣魚、密碼噴塗和強力密碼攻擊的攻擊模擬。</li><li>在 [調查] 索引標籤) 上的雲端 App 安全性 (中查看內建報表，以尋找共用風險。</li><li>檢查 [合規性管理員](../../compliance/compliance-manager.md) 以查看適用于貴組織 (的規章狀態，例如 GDPR、NIST 800-171) 。</li></ul>|
 |威脅防護|針對系統管理員帳戶實作增強型防護： <ul><li>設定 PAWs) 管理活動的特殊許可權 [存取 (工作站](/security/compass/privileged-access-devices) 。</li><li>設定[AZURE AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)。</li><li>設定安全性資訊和事件管理 (SIEM) 工具，從 Office 365、雲端 App 安全性及其他服務（包括 AD FS）收集記錄資料。 「審核記錄」只會將資料儲存在90天。 在 SIEM 工具中擷取這項資料，可讓您將資料儲存更長的時間。</li></ul>|
 |身分識別和存取管理|<ul><li>為所有使用者啟用並強制執行 MFA。</li><li>實施一組 [條件式存取和相關原則](microsoft-365-policies-configurations.md)。</li></ul>|
 |資訊保護| 改編和實作資訊保護原則。 這些資源包括範例： <ul><li>[GDPR 的 Office 365 資訊保護](/compliance/regulatory/gdpr)</li><li>[為 Teams 設定三層保護](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> 針對 Microsoft 365 (中儲存的資料，使用 Microsoft 365 中的資料遺失防護原則和監視工具，而不是雲端 App 安全性) 。 <p> 使用雲端 App 安全性搭配 Microsoft 365，以進行高級警示功能 (以外的資料遺失防護) 。|
@@ -93,7 +93,7 @@ ms.locfileid: "52879251"
 
 |適用範圍|工作|
 |---|---|
-|安全性管理|<ul><li>使用安全分數 () ，繼續規劃下一個動作 <https://securescore.office.com> 。</li><li>繼續定期查看 Microsoft 365 Defender 入口網站、雲端 App 安全性和 SIEM 工具中的儀表板和報告。</li><li>繼續尋找並執行軟體更新。</li><li>將 eDiscovery 整合到您的法律和威脅回應流程。</li></ul>|
+|安全性管理|<ul><li>使用安全分數 () ，繼續規劃下一個動作 <https://securescore.office.com> 。</li><li>繼續定期查看 Microsoft 365 Defender 入口網站、雲端 App 安全性及 SIEM 工具中的儀表板和報告。</li><li>繼續尋找並執行軟體更新。</li><li>將 eDiscovery 整合到您的法律和威脅回應流程。</li></ul>|
 |威脅防護|<ul><li>針對內部部署 (AD、AD FS) 上的身分識別元件，執行安全的許可權 [存取](/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) 。</li><li>使用雲端 App 安全性監視內部擁有者威脅。</li><li>使用雲端 App 安全性探索陰影 SaaS 的使用方式。</li></ul>|
 |身分識別與存取管理|<ul><li>調整原則及工作處理程式。</li><li>使用 Azure AD Identity Protection 來識別內幕威脅。</li></ul>|
 |資訊保護|精簡資訊保護原則： <ul><li>Microsoft 365 和 Office 365 敏感性標籤與資料遺失防護 (DLP) 或 Azure 資訊保護。</li><li>雲端 App 安全性原則及警示。</li></ul>|

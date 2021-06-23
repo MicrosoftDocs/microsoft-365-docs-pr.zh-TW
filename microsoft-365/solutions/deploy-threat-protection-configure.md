@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: daa85b406b0fcb56dee55d9f49d39e247d0b6264
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 48a51b8ec880726bdd2121f2eaf0d78f5cd6b3e0
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583697"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083461"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 設定威脅防護功能
 
@@ -31,8 +31,7 @@ ms.locfileid: "52583697"
 
 [多重要素驗證](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) 要求使用者使用電話或驗證器應用程式來驗證其身分識別。 [條件式存取原則](/azure/active-directory/conditional-access/overview)定義必須滿足的特定需求，使用者才能存取 Microsoft 365 中的應用程式和資料。 MFA 和條件式存取原則共同運作，以保護您的組織。 例如，如果有人嘗試使用未啟用 MFA 的帳戶登入行動裝置，且條件式存取原則要求 MFA 生效，該使用者便無法登入。  
 
-Microsoft 已測試並建議一組特定的條件式存取和相關原則，以保護所有 SaaS 應用程式的存取，尤其是 Microsoft 365。 建議使用原則進行基準、機密和高管制的保護。 從執行基準保護的原則開始。 
-
+Microsoft 已測試並建議一組特定的條件式存取和相關原則，以保護所有 SaaS 應用程式的存取，尤其是 Microsoft 365。 建議使用原則進行基準、機密和高管制的保護。 從執行基準保護的原則開始。
 
 設定身分[ ![ 識別與裝置存取的常見原則，](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png) 
  [請參閱較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
@@ -55,6 +54,7 @@ Microsoft 已測試並建議一組特定的條件式存取和相關原則，以�
 [Microsoft Defender For Identity](/defender-for-identity/what-is) 是雲端式的安全性解決方案，可搭配您的內部部署 Active Directory 網域服務與您的內部部署 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。
 
 Microsoft Defender for Identity 可讓安全性作業 (SecOps) 分析員和安全性專業人員，以偵測混合式環境中的高級攻擊：
+
 - 使用以教學為基礎的分析來監控使用者、實體行為和活動。
 - 保護儲存在 Active Directory 中的使用者身分識別和認證。
 - 識別並調查整個狙殺鍊中的可疑使用者活動和進階攻擊。
@@ -76,9 +76,9 @@ Microsoft Defender for Identity 可讓安全性作業 (SecOps) 分析員和安�
 
 ## <a name="step-3-turn-on-microsoft-365-defender"></a>步驟3：開啟 Microsoft 365 Defender
 
-[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)會將信號和協調功能合併成單一的解決方案。 透過整合型 Microsoft 365 Defender 解決方案，安全性專業人員可以結合上述每一種產品接收及決定威脅的完整範圍及影響，以進行威脅。如何進入環境、受到影響的內容，以及目前對組織的影響。 Microsoft 365Defender 採取自動動作，以防止或停止攻擊及自我修復受影響的信箱、端點和使用者身分識別。
+[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)會將信號和分割功能結合成單一解決方案。 透過整合的 Microsoft 365 Defender 解決方案，安全性專業人員可以結合上述每一種產品接收及決定威脅的完整範圍及影響，以進行威脅。如何進入環境、受到影響的內容，以及目前對組織的影響。 Microsoft 365 Defender 採取自動動作，以防止或停止攻擊及自我修復受影響的信箱、端點和使用者身分識別。
 
-Microsoft 365Defender 已統一所有工作負載的提醒、事件、自動化調查與回應，以及每個工作負載的高級搜尋 (microsoft defender for Identity、microsoft defender for Office 365、microsoft defender for Endpoint，以及 Microsoft Cloud App Security) ，變成單一的玻璃體驗。 新功能會連續新增至 Microsoft 365 Defender;請考慮改為接收預覽功能。
+Microsoft 365 Defender 統一的提醒、事件、自動化調查和回應，以及跨工作負載的高級搜尋 (microsoft defender for Identity、microsoft defender for Office 365、microsoft defender for Endpoint 及 Microsoft Cloud App Security) ，變成單一的玻璃體驗。 新功能會連續新增至 Microsoft 365 Defender;請考慮改為接收預覽功能。
 
 ### <a name="to-set-up-microsoft-365-defender"></a>若要設定 Microsoft 365 Defender
 
@@ -90,16 +90,20 @@ Microsoft 365Defender 已統一所有工作負載的提醒、事件、自動化�
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Microsoft 365 Defender 的詳細資訊
 
-- [什麼是 Microsoft 365 Defender？](../security/defender/microsoft-365-defender.md)
+- [什麼是 Microsoft 365 Defender?](../security/defender/microsoft-365-defender.md)
 - [Microsoft 365 Defender 的新功能](../security/defender/whats-new.md)
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>步驟4：為 Office 365 設定 Microsoft Defender
 
 [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)會保護您的組織免受電子郵件中的惡意威脅 (附件和 URLs) 、Office 檔和協同作業工具。 下錶針對 Microsoft 365 E5 中包含的 Office 365 功能及功能，列出 Microsoft Defender：
 
+<br>
+
+****
+
 |設定、保護及偵測功能|自動化、調查、修正及教育功能|
-|:---|:---|
-|[安全附件](../security/office-365-security/safe-attachments.md)<br/>[安全連結](../security/office-365-security/safe-links.md)<br/>[安全文件](../security/office-365-security/safe-docs.md)<br/>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/> [Microsoft 365 中的反網路釣魚保護](../security/office-365-security/anti-phishing-protection.md)|[威脅追蹤工具](../security/office-365-security/threat-trackers.md)<br/>[威脅總管](../security/office-365-security/threat-explorer.md)<br/>[自動調查及回應](../security/office-365-security/office-365-air.md)<br/>[攻擊模擬器](../security/office-365-security/attack-simulator.md)|
+|---|---|
+|[安全附件](../security/office-365-security/safe-attachments.md) <p> [安全連結](../security/office-365-security/safe-links.md) <p> [安全文件](../security/office-365-security/safe-docs.md) <p> [適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Microsoft 365 中的反網路釣魚保護](../security/office-365-security/anti-phishing-protection.md)|[威脅追蹤工具](../security/office-365-security/threat-trackers.md) <p> [威脅總管](../security/office-365-security/threat-explorer.md) <p> [自動調查及回應](../security/office-365-security/office-365-air.md) <p> [攻擊模擬訓練](../security/office-365-security/attack-simulation-training.md)|
 |
 
 透過 Microsoft Defender 的 Office 365，您組織中的人員可以更安全地進行通訊及共同作業，其電子郵件內容和 Office 檔具有威脅防護。
@@ -119,8 +123,7 @@ Microsoft 365Defender 已統一所有工作負載的提醒、事件、自動化�
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>步驟5：設定 Microsoft Defender for Endpoint
 
-[Microsoft Defender For Endpoint](/windows/security/threat-protection) 會保護您的組織裝置 (也稱為端點) 從 cyberthreats、高級攻擊和資料違例。 安全小組在管理其端點的安全性時，效率會更高。 穩健的工具可協助組織使用具有 [威脅和弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞偵測，以不斷處理未經修補的系統。 自動偵測和修正功能，例如 [攻擊面降低](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、 [下一代保護](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、 [端點偵測和回應](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)，以及 [自動調查和修正](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) ，可協助您保護裝置安全地抵禦惡意程式碼。 在這些功能上，客戶可以取得主動通知，並在需要時與 Microsoft 威脅專家，作為自願加入的管理搜尋服務的一部分進行諮詢。 
-
+[Microsoft Defender For Endpoint](/windows/security/threat-protection) 會保護您的組織裝置 (也稱為端點) 從 cyberthreats、高級攻擊和資料違例。 安全小組在管理其端點的安全性時，效率會更高。 穩健的工具可協助組織使用具有 [威脅和弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞偵測，以不斷處理未經修補的系統。 自動偵測和修正功能，例如 [攻擊面降低](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、 [下一代保護](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、 [端點偵測和回應](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)，以及 [自動調查和修正](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) ，可協助您保護裝置安全地抵禦惡意程式碼。 在這些功能上，客戶可以取得主動通知，並在需要時與 Microsoft 威脅專家，作為自願加入的管理搜尋服務的一部分進行諮詢。
 
 ### <a name="set-up-microsoft-defender-for-endpoint"></a>設定 Microsoft Defender for Endpoint
 
@@ -156,11 +159,12 @@ Microsoft 365Defender 已統一所有工作負載的提醒、事件、自動化�
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>步驟7：監控狀態並採取動作
 
-設定並部署威脅防護服務和功能之後，下一步是監視威脅偵測，並採取適當的動作。 您最好的起點是 Microsoft 365 的安全性中心 ([https://security.microsoft.com](https://security.microsoft.com)) ，您可以在其中監視和管理您的所有 Microsoft 身分識別、資料、裝置、應用程式和基礎結構的安全性。 
+設定並部署威脅防護服務和功能之後，下一步是監視威脅偵測，並採取適當的動作。 您最好的起點是 Microsoft 365 的安全性中心 ([https://security.microsoft.com](https://security.microsoft.com)) ，您可以在其中監視和管理您的所有 Microsoft 身分識別、資料、裝置、應用程式和基礎結構的安全性。
 
 ![Microsoft 365 安全性中心](../media/solutions-architecture-center/m365-security-center.png)
 
 Microsoft 365 的安全性中心是供安全性管理員和安全性作業小組所用。 在 Microsoft 365 的安全性中心，您可以：
+
 - 以 [安全得分](/microsoft-365/security/defender/microsoft-secure-score)查看組織的整體安全性健康情況。
 - [監視和查看](../security/defender-endpoint/threat-protection-reports.md) 您的身分識別、資料、裝置、應用程式和基礎結構狀態的報告。
 - 透過[事件](/microsoft-365/security/defender/incident-queue)連線警示上的點。
@@ -183,17 +187,24 @@ Harvard 甘迺迪 School [Cybersecurity 活動手冊](https://go.microsoft.com/f
 
 Microsoft 365 提供下列資源，協助您在組織中告知使用者：
 
-|概念  |資源  |
-|---------|---------|
-|Microsoft 365     |[可自訂的教學路徑](/office365/customlearning/) <p>這些資源可協助您將組織中使用者的訓練放在一起        |
-|Microsoft 365 安全性 |[學習模組：利用內建的內建、智慧的安全性來保護您的組織 Microsoft 365](/learn/modules/security-with-microsoft-365) <p>此模組可讓您描述 Microsoft 365 安全性功能如何協同運作，並闡明這些安全性功能的優點。 |
-|多重要素驗證     | [雙步驟驗證：其他驗證頁面為何？](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>本文可協助使用者瞭解哪些多重要素驗證，以及如何在您的組織中使用它。    |
+<br>
+
+****
+
+|概念|資源|
+|---|---|
+|Microsoft 365|[可自訂的教學路徑](/office365/customlearning/) <p> 這些資源可協助您將組織中使用者的訓練放在一起|
+|Microsoft 365 安全性|[Learning 模組：使用內建的智慧安全性保護組織安全 Microsoft 365](/learn/modules/security-with-microsoft-365) <p> 此模組可讓您描述 Microsoft 365 安全性功能如何協同運作，並闡明這些安全性功能的優點。|
+|多重要素驗證|[雙步驟驗證：其他驗證頁面為何？](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p> 本文可協助使用者瞭解哪些多重要素驗證，以及如何在您的組織中使用它。|
+|
 
 除了這項指導之外，Microsoft 也建議您的使用者採取本文所述的動作： [保護您的帳戶和裝置免受駭客和惡意](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)代碼的攻擊。 這些動作包括：
+
 - 使用強式密碼
-- 保護裝置 
+- 保護裝置
 - 啟用非管理裝置的 Windows 10 和 Mac 電腦 (上的安全性功能) 
-    
+
 Microsoft 也建議您採取下列文章中建議的動作來保護其個人電子郵件帳戶：
+
 - [協助保護您的 Outlook .com 電子郵件帳戶](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [使用2步驟驗證保護您的 Gmail 帳戶](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

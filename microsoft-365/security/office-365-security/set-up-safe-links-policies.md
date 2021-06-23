@@ -1,5 +1,5 @@
 ---
-title: 為 Office 365 設定 Microsoft Defender 中的安全連結原則
+title: 在 Microsoft Defender 中設定 Office 365 的保管庫連結原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何在 Microsoft Defender 中查看、建立、修改及刪除安全連結原則及全域安全連結設定，以供 Office 365。
+description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改和刪除保管庫連結原則及全域保管庫連結設定。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb157792f0f9e80e4a974b59aebaa2e1991c5d0b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933116"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082753"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>為 Office 365 設定 Microsoft Defender 中的安全連結原則
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中設定 Office 365 的保管庫連結原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,63 +36,63 @@ ms.locfileid: "52933116"
 > [!IMPORTANT]
 > 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](defender-for-office-365.md) 的商務客戶。 如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱[Advanced Outlook .com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[Microsoft Defender for Office 365](defender-for-office-365.md)中的安全連結提供郵件流程內輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 與連結的時間。 如需詳細資訊，請參閱[Microsoft Defender 中 Office 365 的安全連結](safe-links.md)。
+保管庫[Microsoft Defender for Office 365](defender-for-office-365.md)中的連結提供郵件流程內輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 與連結的時間。 如需詳細資訊，請參閱[保管庫 Office 365 的 Microsoft Defender 連結](safe-links.md)。
 
-沒有內建或預設的安全連結原則。 若要取得 URLs 的安全連結掃描，您必須建立一個或多個安全連結原則，如本文所述。
+沒有內建或預設的保管庫連結原則。 若要取得保管庫的連結掃描 URLs，您需要建立一個或多個保管庫連結原則，如本文所述。
 
 > [!NOTE]
 >
-> 您可以在安全連結原則 **以外** 的安全連結保護中，設定全域設定。 如需相關指示，請參閱[設定 Microsoft Defender 中安全連結的通用設定 Office 365](configure-global-settings-for-safe-links.md)。
+> 您可以在保管庫連結原則 **之外**，設定保管庫連結保護的全域設定。 如需相關指示，請參閱[Configure global settings for 保管庫 Office 365 的 Microsoft Defender 中的連結](configure-global-settings-for-safe-links.md)。
 >
-> 系統管理員應考慮安全連結的不同設定。 其中一個可用選項是將使用者身分識別資訊包含在 [安全連結] 中。 這項功能可讓 *安全行動小組* 調查可能的使用者損損、採取糾正動作和限制昂貴的違規行為。
+> 系統管理員應考慮保管庫連結的不同設定。 其中一個可用選項是將使用者身分識別資訊加入保管庫連結中。 這項功能可讓 *安全行動小組* 調查可能的使用者損損、採取糾正動作和限制昂貴的違規行為。
 
-您可以在 Microsoft 365 Defender 入口網站或 PowerShell 中設定安全連結原則，以在 PowerShell 中使用信箱的合格 Microsoft 365 組織 (Exchange Online Exchange Online;組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
+您可以設定 Microsoft 365 Defender 入口網站中的保管庫連結原則或 PowerShell (Exchange Online PowerShell，以供具有 Microsoft 365 信箱的合格 Exchange Online 組織使用。組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
 
-安全連結原則的基本元素如下：
+保管庫連結原則的基本元素如下：
 
-- **安全連結原則**：開啟安全連結保護，開啟即時 URL 掃描，指定在傳遞郵件之前是否等候即時掃描，請開啟 [內部郵件的掃描]，指定是否要在 URLs 追蹤使用者按一下，並指定是否允許使用者按一下原始 URL 的 trough。
+- **安全連結原則**：開啟保管庫連結保護，開啟即時 URL 掃描，指定在傳遞郵件之前是否等候即時掃描，請開啟 [內部郵件的掃描]，指定是否要在 URLs 上追蹤使用者按一下，並指定是否允許使用者按一下 [trough] 至原始 URL。
 - **安全連結規則**：指定原則套用至) 的優先順序和收件者篩選 (。
 
-當您在 Microsoft 365 Defender 入口網站中管理安全連結原則時，這兩個元素之間的差異並不明顯：
+當您在 Microsoft 365 Defender 入口網站中管理保管庫連結原則時，這兩個元素之間的差異並不明顯：
 
-- 當您建立安全連結原則時，實際上是建立安全連結規則和關聯的安全連結原則，同時為這兩者使用相同的名稱。
-- 當您修改安全連結原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全連結規則。 所有其他設定都會修改相關聯的安全連結原則。
-- 當您移除安全連結原則時，會移除安全連結規則和相關聯的安全連結原則。
+- 當您建立保管庫連結原則時，實際上是建立安全連結規則和關聯的安全連結原則，同時為這兩者使用相同的名稱。
+- 當您修改保管庫連結原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全連結規則。 所有其他設定都會修改相關聯的安全連結原則。
+- 當您移除保管庫連結原則時，會移除安全連結規則和相關聯的安全連結原則。
 
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的[使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies)一節。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的[使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定保管庫連結原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies)一節。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您於 <https://security.microsoft.com/> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
+- 您於 <https://security.microsoft.com/> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [**保管庫連結**] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
-  - 若要建立、修改和刪除安全連結原則，您必須是 Microsoft 365 Defender 入口網站的 **組織管理** 或 **安全性管理員** 角色群組成員，**以及** Exchange Online 中 **組織管理** 角色群組的成員。
-  - 若要對安全連結原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
+  - 若要建立、修改和刪除保管庫連結原則，您必須是 Microsoft 365 Defender 入口網站中 **組織管理** 或 **安全性管理員** 角色群組的成員，**以及** Exchange Online 中 **組織管理** 角色群組的成員。
+  - 若要對保管庫連結原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)和[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)及[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   >
-  > - 將使用者新增至 Microsoft 365 admin center 中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  > - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   . - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **View-Only 組織管理** 角色群組也會提供該功能的唯讀許可權。
 
-- 如需安全連結原則的建議設定，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
+- 如需保管庫連結原則的建議設定，請參閱[保管庫連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - 最多允許30分鐘，以套用新的或更新的原則。
 
-- [新功能會連續新增至 Microsoft Defender 以供 Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的安全連結原則。
+- [新功能會連續新增至 Microsoft Defender 以供 Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的保管庫連結原則。
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站建立安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站建立保管庫連結原則
 
-在 Microsoft 365 Defender 入口網站中建立自訂安全連結原則，會同時為這兩者建立安全連結規則和相關聯的安全連結原則，同時也會同時使用相同的名稱。
+在 Microsoft 365 Defender 入口網站中建立自訂的保管庫連結原則，會同時使用相同的名稱建立安全連結規則和相關聯的安全連結原則。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則**[威脅原則原則] \>  \> 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則 & 規則** 威脅原則原則] \>  \> 區段 \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，按一下 [ ![ 建立圖示 ](../../media/m365-cc-sc-create-icon.png) **建立**]。
+2. 在 [**保管庫連結**] 頁面上，按一下 [ ![ 建立圖示 ](../../media/m365-cc-sc-create-icon.png) **建立**]。
 
-3. [ **新增安全連結原則** ] 嚮導隨即開啟。 在 [ **命名您的原則** ] 頁面上，設定下列設定：
+3. 隨即會開啟 [**新增保管庫連結原則**] 嚮導。 在 [ **命名您的原則** ] 頁面上，設定下列設定：
 
    - **名稱**：輸入原則的唯一描述性名稱。
    - **說明**：輸入原則的選擇性說明。
@@ -115,14 +115,14 @@ ms.locfileid: "52933116"
    完成後，按 [下一步 **]**。
 
 5. 在出現的 [ **保護設定** ] 頁面上，設定下列設定：
-   - **在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟** ]，可對電子郵件中的連結啟用安全連結保護。 如果您開啟此設定，則可以使用下列設定：
+   - **在郵件中選取未知可能惡意 URLs 的動作**：選擇 [**開啟**]，可對電子郵件中的連結啟用保管庫連結保護。 如果您開啟此設定，則可以使用下列設定：
      - **對指向檔案的可疑連結和連結套用即時 URL 掃描**：選取此選項可在電子郵件訊息中啟用連結的即時掃描。 如果您在下列設定上開啟此設定，請使用：
        - **等候 URL 掃描完成後，才會傳遞郵件**：選取此選項可等到即時 URL 掃描完成之後，才會傳遞郵件。
-     - 套用 **安全連結至組織內傳送的電子郵件**：選取此選項，即可將安全連結原則套用至內部寄件者和內部收件者之間的郵件。
-   - **在 Microsoft Teams 內選取未知或可能惡意 URLs 的動作**：選取 [**開啟**] 以啟用 Teams 中的連結的安全連結保護。
+     - 套用 **保管庫連結至組織內傳送的電子郵件**：選取此選項可將保管庫連結原則套用至內部寄件者和內部收件者之間的郵件。
+   - **在 Microsoft Teams 內選取未知或可能惡意 URLs 的動作**：選取 [**開啟**] 以啟用 Teams 中連結的保管庫連結保護。
    - **請勿追蹤使用者點擊：請** 將此設定保留為未選取狀態，以啟用追蹤使用者按一下電子郵件中的 URLs。
    - **不允許使用者依序按一下原始 url**：選取此選項，可在 [警告頁面](safe-links.md#warning-pages-from-safe-links)中封鎖使用者按一下原始 url。
-   - **請勿重新寫入下列 URLs**：允許存取以安全連結封鎖的指定 URLs。
+   - **請勿重新寫入下列 URLs**：允許存取保管庫連結所封鎖的指定 URLs。
 
      在方塊中，輸入您想要的 URL 或值，然後按一下 [ **新增**]。 視需要重複此步驟多次。
 
@@ -130,9 +130,9 @@ ms.locfileid: "52933116"
 
      如需輸入語法，請參閱「 [不要重新寫入下列 URLs 的輸入語法」清單](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
 
-   如需這些設定的詳細資訊，請參閱 Microsoft Teams 的電子郵件訊息和[安全連結設定](safe-links.md#safe-links-settings-for-microsoft-teams)[的安全連結設定](safe-links.md#safe-links-settings-for-email-messages)。
+   如需這些設定的詳細資訊，請參閱[保管庫連結設定保管庫的電子郵件訊息](safe-links.md#safe-links-settings-for-email-messages)和[Microsoft Teams 的連結設定](safe-links.md#safe-links-settings-for-microsoft-teams)。
 
-   如需標準和嚴格原則設定的建議值，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
+   如需標準和嚴格原則設定的建議值，請參閱[保管庫連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
    完成後，按 [下一步 **]**。
 
@@ -150,32 +150,32 @@ ms.locfileid: "52933116"
 
 8. 在顯示的確認頁面上，按一下 [完成 **]**。
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站來查看安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站來查看保管庫連結原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則**[威脅原則原則] \>  \> 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則 & 規則** 威脅原則原則] \>  \> 區段 \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，下列屬性會顯示在安全連結原則的清單中：
+2. 在 [**保管庫連結**] 頁面上，下列屬性會顯示在保管庫連結原則的清單中：
    - **名稱**
    - **狀態**
    - **優先順序**
 
 3. 當您按一下名稱來選取原則時，原則設定會顯示在浮出控制項中。
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站修改安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站修改保管庫連結原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則**[威脅原則原則] \>  \> 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**原則 & 規則** 威脅原則原則] \>  \> 區段 \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，按一下 [名稱] 以選取清單中的原則。
+2. 在 [**保管庫連結**] 頁面上，按一下 [名稱] 以選取清單中的原則。
 
-3. 在顯示的原則詳細資料飛出視窗中，在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 如需這些設定的詳細資訊，請參閱本文的[使用 Microsoft 365 Defender 入口網站建立安全連結原則](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)一節。  
+3. 在顯示的原則詳細資料飛出視窗中，在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 如需這些設定的詳細資訊，請參閱在本文中[使用 Microsoft 365 Defender 入口網站來建立保管庫連結原則](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)一節。  
 
 若要啟用或停用原則或設定原則優先順序順序，請參閱下列各節。
 
-### <a name="enable-or-disable-safe-links-policies"></a>啟用或停用安全連結原則
+### <a name="enable-or-disable-safe-links-policies"></a>啟用或停用保管庫連結原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，按一下 [名稱] 以選取清單中的原則。
+2. 在 [**保管庫連結**] 頁面上，按一下 [名稱] 以選取清單中的原則。
 
 3. 在顯示的原則詳細資料飛出視窗頂端，您會看到下列其中一個值：
    - **原則關閉**：若要開啟原則，請按一下 ![開啟圖示](../../media/m365-cc-sc-turn-on-off-icon.png) [開啟 **]**。
@@ -187,20 +187,20 @@ ms.locfileid: "52933116"
 
 回到主要原則頁面，原則的 [狀態 **]** 值將會是 [開啟 **]** 或 [關閉 **]**。
 
-### <a name="set-the-priority-of-safe-links-policies"></a>設定安全連結原則的優先順序
+### <a name="set-the-priority-of-safe-links-policies"></a>設定保管庫連結原則的優先順序
 
-根據預設，安全連結的優先順序會根據它們在 (較舊原則中所建立的順序來降低優先順序) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
+根據預設，保管庫連結的優先順序是根據在 (較舊原則中建立的順序，而不是舊原則) 的優先順序。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
 
 若要變更原則的優先順序，請在原則內容中按一下 [增加優先順序 **]** 或 [降低優先順序 **]** (您無法在 Microsoft 365 Defender 入口網站直接修改 [優先順序 **]** 編號)。 只有在您有多個原則時，變更原則的優先順序才有意義。
 
 **附注**：
 
-- 在 Microsoft 365 Defender 入口網站中，您可以在建立安全連結原則之後，才變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
-- 安全連結原則會依顯示的連續處理 (第一個原則的 **Priority** 值為 0) 。 如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
+- 在 Microsoft 365 Defender 入口網站中，您只可以在建立保管庫連結原則之後，變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
+- 保管庫連結原則會依顯示的連續處理 (第一個原則的 **Priority** 值為 0) 。 如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，按一下 [名稱] 以選取清單中的原則。
+2. 在 [**保管庫連結**] 頁面上，按一下 [名稱] 以選取清單中的原則。
 
 3. 在顯示的原則詳細資料飛出視窗的頂端，根據目前的優先順序值和自訂原則數目，您會看到 [增加優先順序 **]** 或 [降低優先順序 **]**：
    - **優先順序** 值為 **0** 的原則只有 [**降低優先順序**] 選項可用。
@@ -211,17 +211,17 @@ ms.locfileid: "52933116"
 
 4. 完成後，請按一下原則詳細資料飛出視窗中的 [關閉 **]**。
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站移除安全連結原則
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站移除保管庫連結原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，按一下 [名稱] 以選取清單中的原則。 在顯示的原則詳細資料飛出視窗頂端，按一下 ![更多動作圖示](../../media/m365-cc-sc-more-actions-icon.png) [其他動作 **]** \> ![刪除原則圖示](../../media/m365-cc-sc-delete-icon.png) [刪除原則 **]**。
+2. 在 [**保管庫連結**] 頁面上，按一下 [名稱] 以選取清單中的原則。 在顯示的原則詳細資料飛出視窗頂端，按一下 ![更多動作圖示](../../media/m365-cc-sc-more-actions-icon.png) [其他動作 **]** \> ![刪除原則圖示](../../media/m365-cc-sc-delete-icon.png) [刪除原則 **]**。
 
 3. 在顯示的確認對話方塊中，按一下 [是 **]**。
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定保管庫連結原則
 
-如先前所述，安全連結原則包含安全連結原則和安全連結規則。
+如先前所述，保管庫連結原則包含安全連結原則和安全連結規則。
 
 在 PowerShell 中，安全連結原則與安全連結規則之間的差異很明顯。 您可以使用 **\* -SafeLinksPolicy** Cmdlet 來管理安全連結原則，也可以使用 **\* -SafeLinksRule** Cmdlet 來管理安全連結規則。
 
@@ -229,9 +229,9 @@ ms.locfileid: "52933116"
 - 在 PowerShell 中，您可以分別修改 [安全連結原則] 和 [安全連結] 規則中的設定。
 - 當您移除 PowerShell 的安全連結原則時，不會自動移除對應的安全連結規則，反之亦然。
 
-### <a name="use-powershell-to-create-safe-links-policies"></a>使用 PowerShell 建立安全連結原則
+### <a name="use-powershell-to-create-safe-links-policies"></a>使用 PowerShell 建立保管庫連結原則
 
-在 PowerShell 中建立安全連結原則的過程包括兩個步驟：
+在 PowerShell 中建立保管庫連結原則的過程包括兩個步驟：
 
 1. 建立安全連結原則。
 2. 建立安全連結規則，以指定套用規則的安全連結原則。
@@ -240,11 +240,11 @@ ms.locfileid: "52933116"
 >
 > - 您可以建立新的安全連結規則，並將現有的未關聯的安全連結原則指派給它。 安全連結規則無法與一個以上的安全連結原則相關聯。
 >
-> - 您可以在建立原則之前，于 Microsoft 365 Defender 入口網站的新安全連結原則上設定下列設定 PowerShell：
+> - 您可以在建立原則之前，在 PowerShell 中的新安全連結原則上設定下列設定 Microsoft 365 Defender，直到您建立原則為止：
 >   - _在_ `$false` **New-SafeLinksRule** Cmdlet) 上，建立新原則做為已停用 (。
 >   - 在 _\<Number\>_ **New-SafeLinksRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
 >
-> - 在您將原則指派至安全連結規則之前，您在 PowerShell 中建立的新安全連結原則不會顯示在 Microsoft 365 Defender 入口網站中。
+> - 在您將原則指派至安全連結規則之前，您在 PowerShell 中所建立的新安全連結原則不會顯示在 Microsoft 365 Defender 入口網站中。
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>步驟1：使用 PowerShell 建立安全連結原則
 
@@ -267,7 +267,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 - 開啟已按一下的即時掃描 URLs，包括指向檔案的按一下連結。
 - 等候 URL 掃描完成後，才能傳遞郵件。
 - 開啟內部郵件的 URL 掃描及重新寫入。
-- 追蹤與安全連結保護 (相關的使用者按一下。我們不會使用 _DoNotTrackUserClicks_ 參數，而預設值則是 $false，這表示會追蹤) 的使用者按一下。
+- 追蹤與保管庫連結保護相關的使用者點擊 (我們不使用 _DoNotTrackUserClicks_ 參數，預設值為 $false，這表示會追蹤使用者按一下) 。
 - 不允許使用者依序按一下原始 URL。
 
 ```PowerShell
@@ -353,7 +353,7 @@ Get-SafeLinksRule -Identity "Contoso Executives"
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>使用 PowerShell 修改安全連結原則
 
-您無法在 PowerShell 中重新命名安全連結原則 (**Set-SafeLinksPolicy** 指令程式沒有 _Name_ 參數) 。 當您重新命名 Microsoft 365 Defender 入口網站中的安全連結原則時，您只是重新命名安全連結 _規則_。
+您無法在 PowerShell 中重新命名安全連結原則 (**Set-SafeLinksPolicy** 指令程式沒有 _Name_ 參數) 。 當您重新命名 Microsoft 365 Defender 入口網站的保管庫連結原則時，您只會重新命名安全連結 _規則_。
 
 在 PowerShell 中修改安全連結原則的唯一進一步考慮，就是 (「[不要重新寫入下列 URLs」清單](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)) 的 _DoNotRewriteUrls_ 參數可用語法：
 
@@ -386,7 +386,7 @@ Set-SafeLinksRule -Identity "<RuleName>" <Settings>
 
 ### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>使用 PowerShell 來啟用或停用安全連結規則
 
-啟用或停用 PowerShell 中的安全連結規則可啟用或停用安全連結規則和指派的安全連結原則)  (的整體安全連結原則。
+啟用或停用 PowerShell 中的安全連結規則可啟用或停用整個保管庫連結原則 (安全連結規則和指派的安全連結原則) 。
 
 若要啟用或停用 PowerShell 中的安全連結規則，請使用下列語法：
 
@@ -465,13 +465,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)。
 
-若要確認安全連結正在掃描郵件，請檢查可用的 Microsoft Defender Office 365 報告。 如需詳細資訊，請參閱[View Office 365 的 Defender 報告](view-reports-for-mdo.md)]，然後[在 Microsoft 365 Defender 入口網站中使用 Explorer](threat-explorer.md)。
+若要驗證保管庫的連結是否正在掃描郵件，請檢查可用的 Microsoft Defender 以 Office 365 報告。 如需詳細資訊，請參閱[View Office 365 的 Defender 報告](view-reports-for-mdo.md)]，然後[在 Microsoft 365 Defender 入口網站中使用 Explorer](threat-explorer.md)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
-若要確認您是否已成功建立、修改或移除安全連結原則，請執行下列任一步驟：
+若要確認您是否已成功建立、修改或移除保管庫連結原則，請執行下列任一步驟：
 
-- 在 Microsoft 365 Defender 入口網站中，移至 [原則] **& 規則** \> **威脅** 原則 \> **安全連結**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
+- 在 Microsoft 365 Defender 入口網站中，移至 [**原則] & 規則** \> **威脅原則** \> **保管庫連結**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，以 \<Name\> 原則或規則名稱取代，執行下列命令，然後確認設定：
 

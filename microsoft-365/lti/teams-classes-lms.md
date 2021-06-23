@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 整合 Learning 管理系統中的 Microsoft Teams 類別
-ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 940c5c695d602ddce6ea49b1f914f2345fbeb7e5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053248"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083240"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>使用具有 Blackboard 的 Microsoft Teams 類別
 
@@ -63,8 +63,6 @@ Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協�
 3. 選取 [ **註冊 lti 1.3/優點工具**]。
 
 4. 輸入 (Blackboard 或 Microsoft) 所提供的第一個用戶端 IDs，然後選取 [ **提交**]。
-
-   ![具有欄位來輸入用戶端識別碼的 LTI 註冊工具](../media/lti-media/register-tool.png)
 
 5. 請複查預先填入的設定，並確定工具狀態標示為 [已核准]。
 

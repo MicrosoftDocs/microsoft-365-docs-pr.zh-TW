@@ -18,12 +18,12 @@ description: 瞭解如何辨識和修正非法同意授與 Microsoft 365 中的�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029858"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083005"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -50,9 +50,9 @@ ms.locfileid: "53029858"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>尋找此攻擊徵象的步驟
 
-1. 在中開啟 **Microsoft 365 Defender** 入口網站 <https://security.microsoft.com> ，然後選取 [**審計**]。
+1. 在中開啟 **Microsoft 365 Defender 入口網站** <https://security.microsoft.com> ，然後選取 [**審計**]。 或者，若要直接移至 [ **審計** ] 頁面，請使用 <https://security.microsoft.com/auditlogsearch> 。
 
-2. 在開啟的 [ **審計** ] 頁面上，確認已選取 [ **搜尋] 索引** 標籤，然後設定下列設定：
+2. 在 [ **審計** ] 頁面上，確認已選取 [ **搜尋] 索引** 標籤，然後設定下列設定：
    - **日期和時間範圍**
    - **活動**：確認已選取 [ **顯示所有活動的結果** ]。
 
@@ -137,7 +137,7 @@ ms.locfileid: "53029858"
 
 ## <a name="determine-the-scope-of-the-attack"></a>判斷攻擊的範圍
 
-當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md)中搜尋 **審核記錄**。
+當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 Defender 入口網站](../../compliance/search-the-audit-log-in-security-and-compliance.md)中搜尋 **審核記錄**。
 
 > [!IMPORTANT]
 > 您必須在攻擊之前啟用 [信箱稽核][](../../compliance/enable-mailbox-auditing.md) 和 [系統管理員與使用者的活動稽核][](../../compliance/turn-audit-log-search-on-or-off.md)，才能獲得此訊息。
@@ -165,10 +165,10 @@ ms.locfileid: "53029858"
 您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用 [Microsoft 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Microsoft 365 租用戶的最佳做法。
 
 - 要在前 30 天內完成的工作。 這些工作會有立即的影響，而且對您的使用者影響較低。
-- 要在 90 天內完成的工作。 這些工作需要多一些時間來計劃及實作，但是可以大幅改善您的安全性狀態。
-- 90 天之後。 這些增強功能會在您的前 90 天工作內建置。
+- 工作要 90 天後完成。這些工作需要多一些時間來計劃及實作，但是可以大幅改善您的安全性狀態。
+- 超過 90 天。這些增強功能會在您的前 90 天工作內建置。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [我的應用程式清單中有未預期的應用程式](/azure/active-directory/application-access-unexpected-application)，在系統管理員知道有未預期應用程式具有資料存取權之後，此文章可引導系統管理員完成可能需要採取的不同動作。
 - [整合應用程式與 Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) 是同意與權限的高階概觀。

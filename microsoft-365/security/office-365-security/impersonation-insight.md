@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解類比真知灼見的運作方式。 他
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029666"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083401"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Office 365 的 Defender 中的模仿洞察力
 
@@ -58,7 +58,7 @@ ms.locfileid: "53029666"
   - **安全性讀取者**
   - **全域讀取器**
 
-  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
+  如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。
 
   **附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 

@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055118"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083533"
 ---
 # <a name="user-reported-message-settings"></a>使用者報告的郵件設定
 
@@ -68,7 +68,7 @@ ms.locfileid: "53055118"
 
 - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
 
-  - [Microsoft 365 Defender 入口網站](permissions-in-the-security-and-compliance-center.md)中的 **組織管理** 或 **安全性管理員**。
+  - **組織管理** 或 **安全性管理員** [Microsoft 365 Defender 入口網站](permissions-microsoft-365-security-center.md)中的許可權。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
 
 - 您需要 Exchange Online PowerShell 的存取權。 如果您嘗試使用的帳戶不具備 Exchange Online PowerShell 的存取權，當您指定提交信箱時，您會收到如下的錯誤訊息：

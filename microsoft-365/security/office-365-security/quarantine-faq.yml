@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
+  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625410"
+  ms.lasthandoff: 06/23/2021
+  ms.locfileid: "53083641"
 title: 隔離的郵件常見問題
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,14 +82,14 @@ sections:
   - question: >
       我是否可以一次放開或報告一封以上的隔離郵件？
     answer: >
-      在 [安全性 & 規範中心] 中，您可以一次選取及發行最多100封郵件。
+      在 Microsoft 365 Defender 入口網站中，您最多可以一次選取及發行100封郵件。
 
 
       系統管理員可以使用 Exchange Online PowerShell 或獨立 EOP PowerShell 中的[Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)和[Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) Cmdlet，以大量尋找及釋放隔離的郵件，並大量報告誤報。
   - question: >
       搜尋隔離郵件時，是否支援萬用字元？ 是否可以搜尋特定網域的隔離郵件？
     answer: >-
-      在安全性 & 規範中心內不支援萬用字元。 例如，在搜尋寄件者時，您必須指定完整的電子郵件地址。 不過，您可以在 Exchange Online PowerShell 或獨立 EOP PowerShell 中使用萬用字元。
+      Microsoft 365 Defender 入口網站不支援萬用字元。 例如，在搜尋寄件者時，您必須指定完整的電子郵件地址。 不過，您可以在 Exchange Online PowerShell 或獨立 EOP PowerShell 中使用萬用字元。
 
 
       例如，將下列 PowerShell 程式碼複製到 [記事本] 中，並將檔案儲存為 .ps1 中易於尋找 (的位置，例如 C:\Data\QuarantineRelease.ps1) 。

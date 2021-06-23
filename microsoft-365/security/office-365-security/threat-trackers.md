@@ -18,12 +18,12 @@ ms.collection:
 description: 深入瞭解威脅追蹤器（包括新的重要追蹤追蹤器），以協助您的組織維持在安全性上的關注。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d7585df980fca322a3bc5ce28f2ef2f7f53284e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 0a5db47ccd3e1686b6b49174cb9b3c24256b8cbd
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929994"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083041"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
@@ -50,10 +50,10 @@ ms.locfileid: "52929994"
 
 追蹤器只是您使用[Microsoft Defender Office 365 方案 2](office-365-ti.md)所能獲得的眾多極佳功能。 威脅追蹤器包括 [Noteworth](#noteworthy-trackers)追蹤器、 [趨勢](#trending-trackers)追蹤器、 [追蹤的查詢](#tracked-queries)，以及 [已儲存的查詢](#saved-queries)。
 
-若要查看和使用您組織的威脅追蹤追蹤器，請移至 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 然後選擇 [**電子郵件 &** 共同作業 \> **威脅追蹤** 器]。
+若要為您的組織查看和使用威脅追蹤追蹤器，請移至 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) ，然後選擇 [**電子郵件 &** 共同作業 \> **威脅追蹤** 器]。
 
 > [!NOTE]
-> 若要使用威脅追蹤追蹤器，您必須是全域系統管理員、安全性管理員或安全性讀取者。 請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
+> 若要使用威脅追蹤追蹤器，您必須是全域系統管理員、安全性管理員或安全性讀取者。 請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。
 
 ### <a name="noteworthy-trackers"></a>注意追蹤追蹤
 
@@ -89,24 +89,24 @@ ms.locfileid: "52929994"
 
 請記住，您可以按一下右下角的 [**意見** 反應] 按鈕，隨時提供我們對此或其他 Microsoft 365 安全性功能的意見反應。
 
-![Microsoft 365Defender 入口網站](../../media/microsoft-365-defender-portal.png)
+![Microsoft 365 Defender 入口網站](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>追蹤器和 Microsoft Defender for Office 365
 
-透過我們的 inaugural 值得注意的威脅，我們會強調 [安全附件](safe-attachments.md)所偵測到的高級惡意程式碼威脅。 如果您是 Office 365 企業版 E5 客戶，而且不是使用[Microsoft Defender 進行 Office 365](defender-for-office-365.md)，則應該是它包含在您的訂閱中。 即使您有其他安全性工具篩選您 Office 365 服務的電子郵件流程，Office 365 的 Defender 也會提供值。 不過，當您主要的電子郵件安全性解決方案是透過 Office 365 時，反垃圾郵件和[安全連結](safe-links.md)功能的效果最佳。
+透過我們的 inaugural 值得注意的威脅，我們會強調[保管庫附件](safe-attachments.md)所偵測到的高級惡意程式碼威脅。 如果您是 Office 365 企業版 E5 客戶，而且不是使用[Microsoft Defender 進行 Office 365](defender-for-office-365.md)，則應該是它包含在您的訂閱中。 即使您有其他安全性工具篩選您 Office 365 服務的電子郵件流程，Office 365 的 Defender 也會提供值。 不過，當您主要的電子郵件安全性解決方案是透過 Office 365 時，反垃圾郵件和[保管庫連結](safe-links.md)功能才能發揮最佳效果。
 
 ![Microsoft 365 Defender 入口網站中的 Microsoft Defender Office 365](../../media/policies.png)
 
-在當今威脅 riddled 世界中，只執行傳統的反惡意程式碼掃描，表示您未受到攻擊的程度不足。 當今更為複雜的攻擊者使用常用工具，以建立新的、經過模糊處理或延遲的攻擊，而這些攻擊會因傳統的簽章型反惡意程式碼引擎而無法辨識。 [安全附件] 功能會取得電子郵件附件，並在虛擬環境中引爆它們，以判斷它們是否安全或惡意。 此引爆程式會開啟虛擬電腦環境中的每個檔案，然後觀察在開啟該檔案後會發生什麼情況。 不論是 PDF、壓縮檔或 Office 檔，惡意程式碼都會隱藏在檔案中，只有在受害者在其電腦上開啟時，才啟用。 透過 detonating 和分析電子郵件流程中的檔案，Office 365 功能的 Defender 會根據行為、檔信譽及許多啟發式規則，尋找這些威脅。
+在當今威脅 riddled 世界中，只執行傳統的反惡意程式碼掃描，表示您未受到攻擊的程度不足。 當今更為複雜的攻擊者使用常用工具，以建立新的、經過模糊處理或延遲的攻擊，而這些攻擊會因傳統的簽章型反惡意程式碼引擎而無法辨識。 保管庫附件功能會取得電子郵件附件，並在虛擬環境中引爆它們，以判斷是否為安全或惡意的。 此引爆程式會開啟虛擬電腦環境中的每個檔案，然後觀察在開啟該檔案後會發生什麼情況。 不論是 PDF、壓縮檔或 Office 檔，惡意程式碼都會隱藏在檔案中，只有在受害者在其電腦上開啟時，才啟用。 透過 detonating 和分析電子郵件流程中的檔案，Office 365 功能的 Defender 會根據行為、檔信譽及許多啟發式規則，尋找這些威脅。
 
-新的值得注意的威脅篩選會顯示最近透過安全附件偵測到的專案。 這些偵測是指在您的電子郵件流程或其他客戶的電子郵件中，未 Microsoft 365 先前找到的新惡意檔案專案。 請留意值得注意之威脅追蹤追蹤專案中的專案，查看其目標，並查看 [高級分析] 索引標籤 (所顯示的引爆詳細資料，請按一下瀏覽器中的電子郵件主題) 。 附注您只會在 [安全附件] 功能所偵測到的電子郵件上找到此索引標籤-這項值得注意的追蹤器包含該篩選，但您也可以在瀏覽器中使用該篩選器進行其他搜尋
+新的值得注意的威脅篩選會顯示最近透過保管庫附件偵測到的專案。 這些偵測是指在您的電子郵件流程或其他客戶的電子郵件中，未 Microsoft 365 先前找到的新惡意檔案專案。 請留意值得注意之威脅追蹤追蹤專案中的專案，查看其目標，並查看 [高級分析] 索引標籤 (所顯示的引爆詳細資料，請按一下瀏覽器中的電子郵件主題) 。 附注您只會在保管庫附件功能所偵測到的電子郵件上找到此索引標籤-這項值得注意的追蹤器包含該篩選，但您也可以在瀏覽器中使用該篩選器進行其他搜尋。
 
 ## <a name="next-steps"></a>後續步驟
 
 - 如果您的組織還沒有這些 Office 365 威脅調查和回應功能，請參閱[如何取得 Office 365 威脅調查和回應功能？](office-365-ti.md)。
 
-- 確定您的安全性小組已指派正確的角色和許可權。 您必須是全域系統管理員，或具備 Microsoft 365 Defender 入口網站中所指派的安全性系統管理員或搜尋和清除角色。 請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 確定您的安全性小組已指派正確的角色和許可權。 您必須是全域系統管理員，或具有 Microsoft 365 Defender 入口網站中所指派的安全性系統管理員或搜尋和清除角色。 請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。
 
 - 在您的 Microsoft 365 環境中觀賞要顯示的新追蹤器。 若有可用，您可以在 [這裡](https://https://security.microsoft.com/)找到追蹤追蹤器。 移至 **電子郵件 & 協同** \> **威脅追蹤** 器。
 
-- 若尚未這麼做，請深入瞭解並為您的組織（包括[安全連結](safe-links.md)和[安全附件](safe-attachments.md)）設定[Microsoft Defender Office 365](defender-for-office-365.md) 。
+- 若尚未這麼做，請深入瞭解和設定適用于貴組織的[Microsoft Defender Office 365](defender-for-office-365.md) ，包括[保管庫連結](safe-links.md)和[保管庫附件](safe-attachments.md)。

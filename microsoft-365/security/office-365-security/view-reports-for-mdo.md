@@ -20,12 +20,12 @@ description: 系統管理員可以瞭解如何針對 Microsoft 365 Defender 入�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b9279614571c123ad92f1684f86175b410c6c5c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022817"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083509"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看 Office 365 報表的 Defender
 
@@ -45,15 +45,15 @@ ms.locfileid: "53022817"
 >
 > 與郵件流程相關的報告現在位於 Exchange 系統管理中心 (EAC) 。 如需這些報告的詳細資訊，請參閱[新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
-## <a name="safe-attachments-file-types-report"></a>Safe附件檔案類型報告
+## <a name="safe-attachments-file-types-report"></a>保管庫附件檔案類型報告
 
 > [!NOTE]
-> **Safe 附件檔案類型報告** 會最終消失。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
+> **保管庫附件檔案類型報告** 會最終消失。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
 
-## <a name="safe-attachments-message-disposition-report"></a>Safe附件郵件處理報告
+## <a name="safe-attachments-message-disposition-report"></a>保管庫附件郵件處理報告
 
 > [!NOTE]
-> **Safe 附件郵件處理報告** 會最後消失。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
+> **保管庫附件郵件處理報告** 會最後消失。 「 [威脅防護狀態」報告](#threat-protection-status-report)中提供相同的資訊。
 
 ## <a name="mail-latency-report"></a>郵件延遲報告
 
@@ -103,7 +103,7 @@ ms.locfileid: "53022817"
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
-**url 威脅防護報告** 可提供偵測到之威脅的摘要和趨勢視圖，以及在 URL 按一下上做為 [Safe 連結](safe-links.md)的一部分所採取的動作。 在套用 Safe 連結原則的使用者上，按一下 [不 **追蹤使用者點擊**] 選項時，此報告不會有按一下資料。
+**url 威脅防護報告** 可提供偵測到之威脅的摘要和趨勢視圖，以及在 URL 按一下上做為 [保管庫連結](safe-links.md)的一部分所採取的動作。 在套用保管庫連結原則的使用者上，按一下 [不 **追蹤使用者點擊**] 選項時，此報告不會有按一下資料。
 
 若要查看報告，請開啟 [Microsoft 365 Defender 入口網站](https://security.microsoft.com)，然後移至 [**報告** \> **電子郵件 &** 共同作業 \> **電子郵件 &** 共同作業報告]。 在 [ **電子郵件 &** 共同作業報告] 頁面上，找到 [ **URL 保護] 頁面** ，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
@@ -125,7 +125,7 @@ ms.locfileid: "53022817"
 - **封鎖並按一下透過**：使用者已選擇繼續導覽 URL。
 - 在 **掃描期間按一下流覽**：使用者已在掃描完成之前按一下連結。
 
-按一下表示使用者已透過封鎖頁面按一下至惡意網站 (系統管理員可以停用 Safe 連結原則) 中的按一下。
+按一下表示使用者已透過封鎖頁面按一下至惡意網站 (系統管理員可以停用保管庫連結原則) 中的按一下。
 
 如果您按一下 [ **篩選**]，您可以在出現的浮出控制項中選取下列一或多個值，以修改報告和詳細資料表格：
 
@@ -152,7 +152,7 @@ ms.locfileid: "53022817"
 
 ![URL 威脅防護報告中的 [依應用程式視圖按一下 URL]](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
-**依 URL 的 View data 依序按一下 [應用程式** 視圖]，會顯示支援 Safe 連結的應用程式的 URL 按一下數目：
+**依 URL 的 View data 依序按一下 [應用程式** 視圖]，會顯示支援保管庫連結的應用程式的 URL 按一下數目：
 
 - **電子郵件用戶端**
 - **PowerPoint**
@@ -193,7 +193,7 @@ ms.locfileid: "53022817"
 |**Explorer** (microsoft defender for Office 365 plan 2) 或 **即時** 偵測 (Microsoft defender for Office 365 Plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
 |**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告](view-email-security-reports.md)|
 |**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|**Safe 連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示在過去7天中 Safe 連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**保管庫連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示在過去7天中保管庫連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |僅 PowerShell) ， **EOP 和 Microsoft Defender for Office 365 (的郵件流量結果**。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**EOP 和 Defender Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -207,13 +207,13 @@ ms.locfileid: "53022817"
 - **安全性讀取者**
 - **全域讀取器**
 
-如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。
 
 **附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
-如果您未在 Office 365 報告中看到您的 Defender 資料，請仔細檢查您的原則設定是否正確。 您的組織必須已定義[Safe 連結原則](set-up-safe-links-policies.md)及[Safe 附件原則](set-up-safe-attachments-policies.md)，才能使用 Defender，Office 365 保護功能即就地。 另請參閱 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
+如果您未在 Office 365 報告中看到您的 Defender 資料，請仔細檢查您的原則設定是否正確。 您的組織必須已定義[保管庫連結原則](set-up-safe-links-policies.md)及[保管庫附件原則](set-up-safe-attachments-policies.md)，才能使用 Defender，Office 365 保護功能即就地。 另請參閱 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>相關主題
 

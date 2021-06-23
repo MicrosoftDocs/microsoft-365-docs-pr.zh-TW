@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 中的攻擊模擬器
+title: 安全性 & 規範中心內的攻擊模擬器
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以瞭解如何使用攻擊模擬器，在其 Microsoft 365 E5 或 Microsoft Defender 中對 Office 365 計畫2組織執行模擬網路釣魚和密碼攻擊。
+description: 系統管理員可以瞭解如何使用 Security & Complance Center 中的攻擊模擬器，在其 Microsoft 365 E5 或 Microsoft Defender 中執行模擬網路釣魚和密碼攻擊，以 Office 365 方案2組織。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: aa10c30644562a156964ebaa1d63145047ca9264
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878673"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082861"
 ---
-# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
+# <a name="attack-simulator-in-the-security--compliance-center"></a>安全性 & 規範中心內的攻擊模擬器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52878673"
 
 > [!NOTE]
 >
-> 如本文所述的攻擊模擬器現在是唯讀的，而且已由 Microsoft 365 Defender 入口網站中的「**電子郵件 &** 共同作業」節點中的「**攻擊模擬訓練**」所取代 <https://security.microsoft.com> 。 如需詳細資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
+> 本文所述的攻擊模擬程式現在是唯讀的，而且已由 Microsoft 365 Defender 入口網站中的「**電子郵件 &** 共同作業」節點中的「**攻擊模擬訓練**」所取代 <https://security.microsoft.com> 。 如需詳細資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
 >
 > 已停用從此版本的攻擊模擬程式啟動新模擬的功能。 不過，您仍然可以存取報表，直到2021年4月24日。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccff6abcfcd1a2da32a8e1614a2de45afed69aef
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 52fa73774933ba90e8ca92dd1b337f983f5446c5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842995"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082909"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的基本需求
 
@@ -39,7 +39,7 @@ ms.locfileid: "52842995"
 
 > [!TIP]
 > - 深入瞭解 Endpoint for endpoint 的最新增強功能：[適用于 endpoint 的 Defender 技術 Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
-> - 在最近的 MITRE 評估中，以試用版的端點示範業界一流的光學器件和偵測功能。 Read： [來自 MITRE ATT 的 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
+> - 在最近的 MITRE 評估中，以試用版的端點示範業界一流的光學器件和偵測功能。 讀取：[從 MITRE ATT 中 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 ## <a name="licensing-requirements"></a>授權需求
 
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 - Windows 10 企業版E5
 - Windows 10 教育版 A5
 - Microsoft 365 E5 (M365 E5) 包含 Windows 10 企業版 E5
-- Microsoft 365A5 (M365 A5) 
+- Microsoft 365 A5 (M365 A5) 
 - Microsoft 365 E5 安全性
 - Microsoft 365 A5 安全性
 - 適用於端點的 Microsoft Defender
@@ -214,7 +214,7 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 
 如果您的組織已透過群組原則或其他方法關閉 Microsoft Defender 防毒軟體，必須從此群組原則中排除架裝置。
 
-如果您是上架伺服器，而且 Microsoft Defender 防毒軟體不是伺服器上使用中的反惡意程式碼，則需要將 Microsoft Defender 防毒軟體設定為進入被動模式或已卸載。 設定取決於伺服器版本。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體相容性](/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
+如果您是上架伺服器，而且 Microsoft Defender 防毒軟體不是伺服器上使用中的反惡意程式碼，則需要將 Microsoft Defender 防毒軟體設定為進入被動模式或已卸載。 設定取決於伺服器版本。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體相容性](microsoft-defender-antivirus-compatibility.md)。
 
 > [!NOTE]
 > 您的一般群組原則不會套用到防篡改保護，當防篡改保護開啟時，將會忽略對 Microsoft Defender 防毒軟體設定所做的變更。

@@ -19,12 +19,12 @@ description: 在 Microsoft 365 的安全性中心使用 Explorer 和即時偵測
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029582"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083221"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -186,7 +186,7 @@ ms.locfileid: "53029582"
 
 ### <a name="system-overrides"></a>系統覆寫
 
-*系統覆寫* 可讓您對郵件的預定送達位置產生例外狀況。 您可以根據威脅及篩選堆疊所識別的其他偵測，覆寫系統所提供的傳遞位置。 系統覆寫可透過租使用者或使用者原則加以設定，以依照原則所建議的方式傳遞郵件。 覆寫可識別因設定缺口而無意間傳遞的惡意郵件，例如使用者設定的過於廣泛的 Safe 寄件者原則。 這些覆寫值可以是：
+*系統覆寫* 可讓您對郵件的預定送達位置產生例外狀況。 您可以根據威脅及篩選堆疊所識別的其他偵測，覆寫系統所提供的傳遞位置。 系統覆寫可透過租使用者或使用者原則加以設定，以依照原則所建議的方式傳遞郵件。 覆寫可識別因設定缺口而無意間傳遞的惡意郵件，例如使用者設定的過於廣泛的保管庫寄件者原則。 這些覆寫值可以是：
 
 - 使用者原則允許：使用者在信箱層級建立原則，以允許網域或寄件者。
 
@@ -448,7 +448,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>查看網路釣魚 URL，然後按一下 [已判定資料]
 
-假設您想要查看透過電子郵件中的 URL 進行的網路釣魚攻擊，包括允許、封鎖及覆寫的 URL 清單。 若要識別所按一下的 URLs，必須設定[Safe 連結](safe-links.md)。 請務必設定[Safe 連結原則](set-up-safe-links-policies.md)，以在按 Safe 連結的情況時，按一下 [保護] 和 [記錄]。
+假設您想要查看透過電子郵件中的 URL 進行的網路釣魚攻擊，包括允許、封鎖及覆寫的 URL 清單。 若要識別所按一下的 URLs，必須設定[保管庫連結](safe-links.md)。 請務必設定[保管庫連結原則](set-up-safe-links-policies.md)，以在按保管庫連結的情況時，按一下 [保護] 和 [記錄]。
 
 若要查看郵件中的網路釣魚 URLs，並按一下網路釣魚郵件中 URLs，請使用瀏覽器或即時偵測的 [**電子郵件**  >  **網路釣魚**](threat-explorer-views.md#email--phish)視圖。
 
@@ -470,7 +470,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
    - **Top URLs** 是您篩選的郵件中 URLs，以及每個 URL 的電子郵件傳遞動作計數。 在網路釣魚電子郵件視圖中，此清單通常包含合法的 URLs。 攻擊者會在其郵件中混合使用良好和不良的 URLs，以嘗試傳遞，但它們會使惡意連結看起來更有趣。 URLs 的表格依總的電子郵件總數排序，但是此欄位是隱藏的，以簡化視圖。
 
-   - **上** 指按一下的 Safe 連結包裝 URLs，依總按一下計數排序。 此欄位也不會顯示，以簡化視圖。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些通常是可疑或惡意的 URLs。 不過，此視圖可以包含不是威脅的 URLs，但位於網路釣魚郵件中。 在這裡未顯示 URL 按一下已開啟的連結。
+   - **上** 指按一下的保管庫連結包裝 URLs，依總按一下計數排序。 此欄位也不會顯示，以簡化視圖。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些通常是可疑或惡意的 URLs。 不過，此視圖可以包含不是威脅的 URLs，但位於網路釣魚郵件中。 在這裡未顯示 URL 按一下已開啟的連結。
 
    這兩個 URL 表格會依照傳送動作和位置，顯示網路釣魚電子郵件中的最上層 URLs。 [！注意] 表格會顯示因警告而封鎖或訪問的 URL 按一下，因此您可以看到使用者的潛在不良連結，以及使用者已按一下的連結。 您可以從這裡進行進一步分析。 例如，在圖表下方，您可以在組織環境中所封鎖的電子郵件訊息中看到最上層 URLs。
 
@@ -534,11 +534,11 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
-您必須擁有 [Microsoft Defender For Office 365](defender-for-office-365.md) ，才能使用 Explorer 或即時偵測。
+您必須具有[Microsoft Defender Office 365](defender-for-office-365.md) ，才能使用 Explorer 或即時偵測。
 
-- Explorer 會包含在 Office 365 的 Defender for Office 中方案2。
-- Office 365 方案1中包含即時偵測報告。
-- 規劃為所有應受 Defender for Office 365 保護的使用者指派授權。 瀏覽器和即時偵測顯示已授權使用者的偵測資料。
+- Explorer 會包含在 Office 365 方案2的 Defender 中。
+- 在 Office 365 方案1的 Defender 中包含即時偵測報告。
+- 規劃為所有應受 Office 365 Defender 保護的使用者指派授權。 瀏覽器和即時偵測顯示已授權使用者的偵測資料。
 
 若要查看和使用 Explorer 或即時偵測，您必須具有適當的許可權，例如授與安全性管理員或安全性讀者的許可權。
 
@@ -548,7 +548,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
   - 安全性管理員 (可以在 Azure Active Directory 系統管理中心 (中指派 <https://aad.portal.azure.com>) 
   - 安全性讀取者
 
-- 若為 Exchange Online，您必須在 Exchange 系統管理中心中指派下列其中一個角色 (<https://admin.protection.outlook.com/ecp/>) 或 [exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)：
+- 針對 Exchange Online，您必須在 Exchange 系統管理中心中指派下列角色之一 (<https://admin.protection.outlook.com/ecp/>) 或[Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)：
 
   - 組織管理
   - 僅限檢視組織管理
@@ -557,15 +557,15 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 若要深入了解角色和權限，請參閱下列資源：
 
-- [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
+- [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)
 - [Exchange Online 中的功能權限](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的差異
 
-- 您可以在 Office 365 的 Defender for Office 方案1中取得 *即時* 偵測報告。 *威脅瀏覽器* 適用于 Office 365 方案2的 Defender。
+- 您可以在 Office 365 方案1的 Defender 中取得 *即時* 偵測報告。 您可以在 Office 365 方案2的 Defender 中取得 *威脅瀏覽器*。
 - 即時偵測報告可讓您即時查看偵測。 威脅瀏覽器也會這麼做，但也會提供特定攻擊的其他詳細資料。
 - *所有的電子郵件* view 都可用於威脅瀏覽器，但不會出現在即時偵測報告中。
-- 威脅瀏覽器中包含更多篩選功能和可用的動作。 如需詳細資訊，請參閱 [Microsoft defender For office 365 服務說明：每個 Defender For office 365 方案中可用的功能](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 威脅瀏覽器中包含更多篩選功能和可用的動作。 如需詳細資訊，請參閱[Microsoft defender for Office 365 Service Description：每個 defender 的功能可用性以取得 Office 365 計畫](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>其他文章
 

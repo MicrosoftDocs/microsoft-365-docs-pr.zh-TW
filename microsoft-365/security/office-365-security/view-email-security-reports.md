@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何尋找及使用 Microsoft 365 Defender 入口網站中提供的電子郵件安全性報告。
+description: 系統管理員可以瞭解如何尋找和使用 Microsoft 365 Defender 入口網站中提供的電子郵件安全性報告。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029547"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083521"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告
 
@@ -35,20 +35,20 @@ ms.locfileid: "53029547"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsoft.com> ，可協助您觀察電子郵件安全性功能（例如 Microsoft 365 中的反垃圾郵件、反惡意程式碼和加密功能）如何保護您的組織。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以在 Microsoft 365 Defender 入口網站中查看這些報告，方式是要 **報告** \> **電子郵件 &** 共同作業 & 共同作業 \> **報告**。 若要直接移至 [ **電子郵件 &** 共同作業報告] 頁面上，開啟 <https://security.microsoft.com/emailandcollabreport> 。
+Microsoft 365 Defender 入口網站中提供各種報告， <https://security.microsoft.com> 可協助您在保護組織時，看到 Microsoft 365 中的電子郵件安全性功能，例如反垃圾郵件、反惡意程式碼和加密功能。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以在 Microsoft 365 Defender 入口網站中透過 **報告** \> **&** 共同作業 \> **電子郵件 &** 共同作業報告來查看這些報告。 若要直接移至 [ **電子郵件 &** 共同作業報告] 頁面上，開啟 <https://security.microsoft.com/emailandcollabreport> 。
 
 ![Microsoft 365 Defender 入口網站中的電子郵件 & 共同作業報告] 頁面](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
-> [ **電子郵件 & 協同報告** ] 頁面上的某些報告需要 Microsoft Defender for Office 365。 如需這些報告的詳細資訊，請參閱 [在 Microsoft 365 Defender 入口網站中查看 Office 365 報告的 Defender](view-reports-for-mdo.md)。
+> 「**電子郵件 &** 共同作業報告」頁面上的某些報告需要 Microsoft Defender 才能 Office 365。 如需這些報告的詳細資訊，請參閱[在 Microsoft 365 Defender 入口網站中查看 Office 365 報表的 Defender](view-reports-for-mdo.md)。
 >
-> 與郵件流程相關的報告現在位於 Exchange 系統管理中心 (EAC) 。 如需這些報告的詳細資訊，請參閱 [新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+> 與郵件流程相關的報告現在位於 Exchange 系統管理中心 (EAC) 。 如需這些報告的詳細資訊，請參閱[新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
 ## <a name="compromised-users-report"></a>已遭破壞的使用者報告
 
 > [!NOTE]
-> 這份報告可在 Microsoft 365 組織中使用 Exchange Online 信箱。 在獨立 Exchange Online Protection (EOP) 組織中無法使用此功能。
+> 使用 Exchange Online 信箱的 Microsoft 365 組織可取得此報告。 無法在獨立 Exchange Online Protection (EOP) 組織中使用。
 
 「已 **遭破壞的使用者** 報告」顯示顯示過去7天內已標示為 **可疑** 或 **限制** 的使用者帳戶數目。 在上述任一狀態的帳戶都有問題或甚至遭到破壞。 在經常使用的情況下，您可以使用報表來找出峰值，甚至是趨勢，也就是可疑或受限制的帳戶。 如需遭到破壞之使用者的詳細資訊，請參閱 [回應遭到破壞的電子郵件帳戶](responding-to-a-compromised-email-account.md)。
 
@@ -75,29 +75,29 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 - **User ID**
 - **Action**
 
-## <a name="exchange-transport-rule-report"></a>Exchange transport rule 報告
+## <a name="exchange-transport-rule-report"></a>Exchange 傳輸規則報告
 
-**Exchange transport rule** report 會顯示郵件流程規則 (也稱為傳輸規則) 組織中內送和外寄郵件的效果。
+**Exchange transport rule** report 會顯示郵件流程規則 (也稱為傳輸規則) 在組織內的內送和外寄郵件上的效果。
 
-若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，尋找 [ **Exchange transport rule** ]，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/ETRRuleReport> 。
+若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [**電子郵件 &** 共同作業報告] 頁面上，找出 **Exchange 傳輸規則**，然後按一下 [**查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/ETRRuleReport> 。
 
-![「電子郵件 & 共同作業報告」頁面上的 Exchange 傳輸規則小工具](../../media/transport-rule-report-widget.png)
+![在電子郵件 & 共同作業報告] 頁面上 Exchange 傳輸規則小工具](../../media/transport-rule-report-widget.png)
 
-在 [ **Exchange transport rule 報告** ] 頁面上，下列各節將說明可用的圖表和資料。
+在 [ **Exchange 傳輸規則報告**] 頁面上，下列各節將說明可用的圖表和資料。
 
 ### <a name="chart-breakdown-by-direction"></a>依方向的圖表分解
 
-![Exchange transport rule 報告中 Exchange Transport rules 的方向視圖](../../media/transport-rule-report-etr-direction-view.png)
+![Exchange 傳輸規則報告中 Exchange 傳輸規則的方向視圖](../../media/transport-rule-report-etr-direction-view.png)
 
 如果您 **依方向選取 [圖表分解**]，可使用下列圖表：
 
-- 透過 **Exchange 傳輸規則來查看資料**：受郵件流程規則影響的 **輸入** 和 **輸出** 郵件數目。
-- **以 DLP Exchange 傳輸規則來查看資料**：受資料遺失防護 (DLP) 郵件流程規則所影響的 **輸入** 和 **輸出** 郵件數目。
+- **Exchange 傳輸規則來查看資料**：受郵件流程規則影響的 **輸入** 和 **輸出** 郵件數目。
+- **以 dlp Exchange 傳輸規則來查看資料**：受資料遺失防護 (DLP) 郵件流程規則所影響的 **輸入** 和 **輸出** 郵件數目。
 
 下列資訊會顯示在圖形下方的詳細資料表格中：
 
 - **Date**
-- **Dlp 原則** (只 **依 dlp Exchange Transport rules 來查看資料**) 
+- **dlp 原則** (只 **依 DLP Exchange 傳輸規則來查看資料**) 
 - **傳輸規則**
 - **主旨**
 - **寄件者位址**
@@ -115,18 +115,18 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 ### <a name="chart-breakdown-by-severity"></a>依嚴重性的圖表細目
 
-![Exchange transport rule 報告中 Exchange Transport rules 的嚴重性視圖](../../media/transport-rule-report-etr-severity-view.png)
+![Exchange 傳輸規則報告中 Exchange 傳輸規則的嚴重性視圖](../../media/transport-rule-report-etr-severity-view.png)
 
 如果您 **依嚴重性選取 [圖表分解**]，可使用下列圖表：
 
-- 透過 **Exchange 傳輸規則來查看資料**：**高嚴重性**、**中嚴重性** 和 **低嚴重性** 郵件的數目。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+- **Exchange 傳輸規則來查看資料**：**高嚴重性**、**中嚴重性** 和 **低嚴重性** 郵件的數目。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **按 Dlp Exchange transport rules 來查看資料**：受 dlp 郵件流程規則影響的 **高嚴重性**、 **中嚴重性** 和 **低嚴重性** 郵件數目。
+- **以 dlp Exchange 傳輸規則來查看資料**：受 dlp 郵件流程規則影響的 **高嚴重性**、**中嚴重性** 和 **低嚴重性** 郵件數目。
 
 下列資訊會顯示在圖形下方的詳細資料表格中：
 
 - **Date**
-- **Dlp 原則** (只 **依 dlp Exchange Transport rules 來查看資料**) 
+- **dlp 原則** (只 **依 DLP Exchange 傳輸規則來查看資料**) 
 - **傳輸規則**
 - **主旨**
 - **寄件者位址**
@@ -149,7 +149,7 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 
 ## <a name="mailflow-status-report"></a>郵件流程狀態報表
 
-**郵件流程狀態報表** 是一個智慧報告，顯示傳入和傳出電子郵件、垃圾郵件偵測、惡意程式碼、識別為「良好」之電子郵件的相關資訊，以及有關允許或封鎖在 edge 上之電子郵件的資訊。 這是唯一包含 edge protection 資訊的報告，它會顯示在 Exchange Online Protection (EOP) 中，允許在評估之前封鎖多少封電子郵件。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
+**郵件流程狀態報表** 是一個智慧報告，顯示傳入和傳出電子郵件、垃圾郵件偵測、惡意程式碼、識別為「良好」之電子郵件的相關資訊，以及有關允許或封鎖在 edge 上之電子郵件的資訊。 這是唯一包含 edge protection 資訊的報表，可 Exchange Online Protection (EOP) 中，顯示封鎖多少封電子郵件，才能允許評估服務。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 
 若要在 Microsoft 365 Defender 入口網站中查看報告，請移至 **Reports** \> **email & 協同** \> **電子郵件 &** 共同作業報告。 在 [ **電子郵件 &** 共同作業報告] 頁面上，尋找 **郵件流程狀態摘要** ，然後按一下 [ **查看詳細資料**]。 若要直接前往報表，請開啟 <https://security.microsoft.com/reports/mailflowStatusReport> 。
 
@@ -275,8 +275,8 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
   - **使用者** 模擬：郵件因嘗試模擬使用者 (郵件寄件者) （已在反網路釣魚原則的類比保護設定中所定義）而篩選。
   - **網域** 模擬：郵件因嘗試模擬防網路釣魚原則之類比保護設定中所定義的網域而篩選出來。
 - 檔案 **及 URL 引爆 (Defender for Office 365)**：
-  - 檔案 **引爆**：以 Safe 附件原則篩選的郵件。
-  - **URL 引爆**：透過 Safe 連結原則篩選的郵件。
+  - 檔案 **引爆**：以保管庫附件原則篩選的郵件。
+  - **URL 引爆**：透過保管庫連結原則篩選的郵件。
 - **投遞後保護和 zap (ATP) 或 zap (EOP)**：零小時自動清除 (針對惡意程式碼、垃圾郵件和網路釣魚的 ZAP) 。
 
 如果您選取 [詳細資料] 表格中的列，則會在飛入的電子郵件計數中顯示進一步細分。
@@ -314,11 +314,11 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 - **電子郵件總數**
 - **Edge 允許** 和 **edge 篩選**
 - 已篩選的 **傳輸規則允許** 和 **傳輸規則** (郵件流程規則) 
-- **非惡意** 代碼、 **Safe 附件偵測** <sup>\*</sup> 和 **反惡意程式碼引擎偵測**
+- **非惡意** 代碼、**保管庫附件偵測** <sup>\*</sup> 和 **反惡意程式碼引擎偵測**
 - **不是網路釣魚詐騙**、 **DMARC 失敗**、**模仿偵測** <sup>\*</sup> 、**欺騙偵測** 和 **網路釣魚偵測**
 - **沒有偵測 URL 引爆** 及 **url 引爆偵測**<sup>\*</sup>
 - **非垃圾郵件** 和  **垃圾郵件**
-- **非惡意的電子郵件**、 **Safe 連結偵測** <sup>\*</sup> 和 **ZAP**
+- **非惡意的電子郵件**、**保管庫連結偵測** <sup>\*</sup> 和 **ZAP**
 
 <sup>\*</sup>Office 365 的 Defender
 
@@ -330,13 +330,13 @@ Microsoft 365 Defender 入口網站提供各種報告 <https://security.microsof
 - **電子郵件總數**
 - **已篩選 Edge**
 - **規則郵件**：由於郵件流程規則而篩選的郵件 (也稱為傳輸規則) 。
-- **反惡意程式碼引擎**， **Safe 附件** <sup>\*</sup> ：
+- **反惡意程式碼引擎**，**保管庫附件** <sup>\*</sup> ：
 - **DMARC，類比** <sup>\*</sup> ，**欺騙**，**網路釣魚篩選**：
   - **DMARC**：由於郵件失敗的 DMARC 驗證檢查而篩選的郵件。
 - **URL 引爆偵測**<sup>\*</sup>
 - **已篩選的反垃圾郵件**
 - **移除的 ZAP**
-- **Safe 連結偵測**<sup>\*</sup>
+- **保管庫連結偵測**<sup>\*</sup>
 
 <sup>\*</sup>Office 365 的 Defender
 
@@ -484,9 +484,9 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 ## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
-「**威脅防護狀態**」報告適用于 EOP 和 Defender Office 365;不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不會[Safe SharePoint、OneDrive 及 Microsoft Teams 的附件](mdo-for-spo-odb-and-teams.md)所偵測到之惡意檔案的相關資訊。
+「**威脅防護狀態**」報告適用于 EOP 和 Defender Office 365;不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不會[保管庫 SharePoint、OneDrive 及 Microsoft Teams 的附件](mdo-for-spo-odb-and-teams.md)所偵測到之惡意檔案的相關資訊。
 
-該報告提供包含惡意內容的電子郵件統計，例如檔案或網站位址 (URLs 反惡意程式碼引擎封鎖的) 、[零小時的自動清除 (ZAP) ](zero-hour-auto-purge.md)，以及[在反網路釣魚原則中](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)Office 365[連結](safe-links.md)、 [Safe 附件](safe-attachments.md)和模擬保護功能等 Safe 功能。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。
+該報告提供包含惡意內容的電子郵件統計，例如檔案或網站位址 (URLs 反惡意程式碼引擎封鎖的) 、[零小時的自動清除 (ZAP) ](zero-hour-auto-purge.md)，以及[在反網路釣魚原則中](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)Office 365[連結](safe-links.md)、[保管庫附件](safe-attachments.md)和模擬保護功能等保管庫功能。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。
 
 **附注：請** 務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 
@@ -580,7 +580,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 
 在 [透過 **電子郵件 \> 惡意** 代碼和 **依偵測方式顯示圖表的** 資料] 技術視圖中，下列資訊會顯示在圖表中：
 
-- 檔案 **引爆** <sup>\*</sup> ： Safe 附件的偵測。
+- 檔案 **引爆** <sup>\*</sup> ：保管庫附件的偵測。
 - 檔案 **引爆信譽** <sup>\*</sup> ：所有由 Defender 為 Office 365 detonations 所產生的惡意檔信譽。
 - **檔信譽**
 - **反惡意程式碼引擎** <sup>\*</sup> ：從反惡意程式碼引擎偵測。
@@ -622,7 +622,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 在 [ **依原則類型的圖表分解** ] 和 [透過電子郵件惡意程式碼 **查看資料 \>** ] 或 [透過 **電子郵件 \> 惡意程式碼查看資料** ] 視圖中，圖表會顯示下列資訊：
 
 - **反惡意程式碼**
-- **Safe附件**<sup>\*</sup>
+- **保管庫附件**<sup>\*</sup>
 - **反網路釣魚**
 - **反垃圾郵件**
 - **郵件流程規則** (也稱為傳輸規則) 
@@ -701,7 +701,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 在 [**依內容 \> 惡意** 代碼查看資料] 視圖中，下列資訊會顯示在適用于 Office 365 組織的 Microsoft Defender 圖表中：
 
 - **反惡意程式碼引擎**： [Microsoft 365 中內建的病毒偵測](virus-detection-in-spo.md)，在 Sharepoint、OneDrive 及 Microsoft Teams 中偵測到惡意檔案。
-- 檔案 **引爆**： [Safe SharePoint、OneDrive 及 Microsoft Teams 的附件](mdo-for-spo-odb-and-teams.md)所偵測到的惡意檔案。
+- 檔案 **引爆**：[保管庫 SharePoint、OneDrive 及 Microsoft Teams 的附件](mdo-for-spo-odb-and-teams.md)所偵測到的惡意檔案。
 
 在圖表下方的 [詳細資料] 表格中，可使用下列資訊：
 
@@ -730,8 +730,8 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 - **組織允許的網域**
 - **未啟用的 ZAP**
 - **未啟用垃圾郵件資料夾**
-- **使用者 Safe 寄件者**
-- **使用者 Safe 網域**
+- **使用者保管庫寄件者**
+- **使用者保管庫網域**
 
 在圖表下方的 [詳細資料] 表格中，可使用下列資訊：
 
@@ -848,7 +848,7 @@ Office 365 的「中的 **郵件延遲報告**] 包含組織內的郵件傳遞�
 - **安全性讀取者**
 - **全域讀取器**
 
-如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-in-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。
 
 **附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 Defender 入口網站中的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 

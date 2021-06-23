@@ -20,12 +20,12 @@ description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029788"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083353"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>調查 Microsoft 365 中傳遞的惡意電子郵件
 
@@ -51,7 +51,7 @@ ms.locfileid: "53029788"
 
 - 您的組織有為反垃圾郵件、反惡意程式碼、反網路釣魚等定義的原則。 請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。
 
-- 您是全域系統管理員，或您已在 Microsoft 365 Defender 入口網站中指派安全性管理員或搜尋和清除角色。 如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。 在某些動作中，您也必須指派「預覽」角色。
+- 您是全域系統管理員，或您已在 Microsoft 365 Defender 入口網站中指派安全性管理員或搜尋和清除角色。 如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。 在某些動作中，您也必須指派「預覽」角色。
 
 ### <a name="preview-role-permissions"></a>預覽角色許可權
 
@@ -73,7 +73,7 @@ ms.locfileid: "53029788"
 >
 > 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性管理員和安全性讀取者角色會指派 Microsoft 365 Defender (<https://security.microsoft.com>) 。 若要深入瞭解角色和許可權，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。
 
-我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 一旦系統管理員在電子郵件上執行這些動作，就會產生相同的審計記錄，並在 Office 365 安全性 & 規範中心 () 中看到 <https://protection.office.com> 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
+我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 當系統管理員在電子郵件上執行這些動作後，就會產生相同的審計記錄，並可在 Microsoft 365 Defender 入口網站 () 中查看 <https://security.microsoft.com> 。 移至 [ **審核** \> **搜尋] 索引** 標籤，然後在 [ **使用者** ] 方塊中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>尋找已傳遞的可疑電子郵件
 
