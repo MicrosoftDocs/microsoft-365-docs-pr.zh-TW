@@ -22,77 +22,141 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從社交媒體平臺、立即訊息平臺及檔共同作業平臺匯入協力廠商資料，以 Microsoft 365 信箱。
-ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061727"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096165"
 ---
-# <a name="archive-third-party-data"></a>封存第三方資料
+# <a name="archive-third-party-data-in-microsoft-365"></a>在 Microsoft 365 中封存協力廠商資料
 
 Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料從社交媒體平臺、立即訊息平臺及檔共同作業平臺，匯入到您 Microsoft 365 組織中的信箱。 在 Microsoft 365 中，使用資料連線器匯入及封存協力廠商資料的主要好處是，您可以在匯入後，對其套用各種 Microsoft 365 規範解決方案。 這可協助您確保組織的非 Microsoft 資料符合影響組織的規章和標準。
 
 ## <a name="third-party-data-connectors"></a>協力廠商資料連接器
 
-下表列出 Microsoft 365 合規性中心中可用的協力廠商資料連線器。 該表也會摘要說明您在 Microsoft 365 匯入及封存後，您可以套用至協力廠商資料的相容性解決方案。 請參閱 [下一節](#overview-of-compliance-solutions-that-support-third-party-data) ，以取得每個規範解決方案的詳細說明，以及它如何受益協力廠商資料。
+Microsoft 365 合規性中心提供來自 Microsoft 的原生協力廠商資料連線器，以從各種資料來源（如 LinkedIn、立即 Bloomberg 及 Twitter 及支援有問必答風險管理解決方案的資料連線器）匯入資料。 除了這些資料連線器之外，Microsoft 也可與下列協力廠商合作，以在 Microsoft 365 合規性中心中提供更多第三部分的資料連線器。 您的組織可以與這些夥伴合作，在 Microsoft 365 合規性中心中建立對應的資料連線器之前，先設定其封存服務。
 
-> [!TIP]
-> 按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
+- [Software](#veritas-data-connectors)
+
+- [TeleMessage](#telemessage-data-connectors)
+
+- [17a-4 LLC](#17a-4-data-connectors)
+
+- [CellTrust](#celltrust-data-connectors)
+
+在下一節中所列的協力廠商資料 (，除了用於 Microsoft 365 內部使用者風險管理解決方案) 的 HR 資料和實際聲譽徽章授予資料，也會匯入至使用者信箱。 支援協力廠商資料的 Microsoft 365 規範解決方案會套用至儲存資料的使用者信箱。
+
+### <a name="microsoft-data-connectors"></a>Microsoft 資料連接器
+
+下表列出 Microsoft 365 合規性中心中可用的原生協力廠商資料連線器。 在 Microsoft 365 中匯入及封存協力廠商資料後，表格也會摘要您可以套用的相容性解決方案。 請參閱 [支援協力廠商資料的相容性解決方案](#overview-of-compliance-solutions-that-support-third-party-data) 一節，以取得每個規範解決方案的詳細說明，以及它如何支援協力廠商資料。
+
+按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
 
 |協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Android <sup>1</sup>](archive-android-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[在&T 網路 <sup>1</sup>](archive-att-network-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[電鈴網路 <sup>1</sup>](archive-bell-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[MS SQL <sup>2</sup>上的 Cisco jabber) ](archive-ciscojabberonmssql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Oracle <sup>2</sup>上的 Cisco jabber) ](archive-ciscojabberonoracle-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[PostgreSQL <sup>2</sup>上的 Cisco jabber) ](archive-ciscojabberonpostgresql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[.EML <sup>2</sup>](archive-eml-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[Enterprise數位<sup>1</sup>](archive-enterprise-number-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[FX 連線<sup>2</sup>](archive-fxconnect-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[人力資源 (人力資源) ](import-hr-data.md) ||||||![核取記號](../media/checkmark.png)
 |[ICE Chat](archive-icechat-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Jive <sup>2</sup>](archive-jive-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[MS SQL Database <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[O2 網路 <sup>1</sup>](archive-o2-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[實體聲譽徽章授予](import-physical-badging-data.md) ||||||![核取記號](../media/checkmark.png)|
-|[樞紐分析表 <sup>2</sup>](archive-pivot-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Redtail 講話 <sup>2</sup>](archive-redtailspeak-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[處理<sup>兩</sup>個 Reuters](archive-reutersdealing-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Salesforce 交談 <sup>2</sup>](archive-salesforcechatter-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[信號 <sup>1</sup>](archive-signal-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[商務用 Skype <sup>2</sup>](archive-skypeforbusiness-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[寬延時間 eDiscovery <sup>2</sup>](archive-slack-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Symphony <sup>2</sup>](archive-symphony-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Telegram <sup>1</sup>](archive-telegram-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[TELUS 網路 <sup>1</sup>](archive-telus-network-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[文字分隔 <sup>2</sup>](archive-text-delimited-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[Verizon 網路 <sup>1</sup>](archive-verizon-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[網頁 <sup>2</sup>](archive-webpagecapture-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[WeChat <sup>1</sup>](archive-wechat-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Facebook <sup>2</sup>的工作場所](archive-workplacefromfacebook-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[XIP <sup>2</sup>](archive-xip-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[縮放會議 <sup>2</sup>](archive-zoommeetings-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 ||||||||
 
-> [!NOTE]
-> TeleMessage 提供的<sup>1</sup>個資料連線器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。 TeleMessage 資料連線器也可在 Microsoft 365 美國政府雲端的 GCC 環境中取得。 如需詳細資訊，請參閱本文的 [美國政府雲端區段中的資料連線器](#data-connectors-in-the-us-government-cloud) 。 <br/><br/><sup>2</sup> 由 Veritas 提供的資料連線器。 在 Microsoft 365 中封存資料之前，您必須與 Veritas 合作，為您的組織設定其封存服務。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
+### <a name="veritas-data-connectors"></a>Veritas 資料連線器
 
-上表所列的協力廠商資料 (，但 HR 資料和實體聲譽徽章授予資料) 會匯入使用者信箱中。 支援協力廠商資料的對應相容性解決方案會套用至儲存資料的使用者信箱。
+本節中的表格列出與 Veritas 合作關係中可用的協力廠商資料連線器。 在 Microsoft 365 中匯入及封存後，該表也會摘要說明您可以套用至協力廠商資料的相容性解決方案。 請參閱 [支援協力廠商資料的相容性解決方案](#overview-of-compliance-solutions-that-support-third-party-data) 一節，以取得每個規範解決方案的詳細說明，以及它如何支援協力廠商資料。
+
+在 Microsoft 365 中封存協力廠商資料之前，您必須與 Veritas 合作，為組織設定稱為 *Merge1*) 的封存服務 (。 如需詳細資訊，請按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
+
+|協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust](archive-celltrust-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[MS SQL 上的 Cisco Jabber](archive-ciscojabberonmssql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Oracle 上的 Cisco Jabber) ](archive-ciscojabberonoracle-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[PostgreSQL 上的 Cisco Jabber) ](archive-ciscojabberonpostgresql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[EML](archive-eml-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[FX Connect](archive-fxconnect-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Jive](archive-jive-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[MS SQL 資料庫](archive-mssqldatabaseimporter-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[樞紐](archive-pivot-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Redtail Speak](archive-redtailspeak-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Reuters Dealing](archive-reutersdealing-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Reuters Eikon](archive-reuterseikon-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Reuters FX](archive-reutersfx-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Salesforce Chatter](archive-salesforcechatter-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[ServiceNow](archive-servicenow-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[Slack eDiscovery](archive-slack-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Symphony](archive-symphony-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[文字分隔](archive-text-delimited-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[Webex Teams](archive-webexteams-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[網頁](archive-webpagecapture-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[Facebook Workplace](archive-workplacefromfacebook-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[XIP](archive-xip-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[XSLT/XML](archive-xslt-xml-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
+|[Yieldbroker](archive-yieldbroker-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Zoom Meetings](archive-zoommeetings-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+||||||||
+
+### <a name="telemessage-data-connectors"></a>TeleMessage 資料連接器
+
+本節中的表格列出與 TeleMessage 合作的協力廠商資料連線器。 在 Microsoft 365 中匯入及封存後，該表也會摘要說明您可以套用至協力廠商資料的相容性解決方案。 請參閱 [支援協力廠商資料的相容性解決方案](#overview-of-compliance-solutions-that-support-third-party-data) 一節，以取得每個規範解決方案的詳細說明，以及它如何支援協力廠商資料。
+
+在 Microsoft 365 中封存協力廠商資料之前，您必須使用 TeleMessage 來為您的組織設定其封存服務。 如需詳細資訊，請按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
+
+TeleMessage 資料連線器也可在 Microsoft 365 美國政府雲端的 GCC 環境中取得。 如需詳細資訊，請參閱本文的美國政府雲端區段中的資料連線器。
+
+|協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android ](archive-android-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[&T 網路 ](archive-att-network-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[鈴聲網路 ](archive-bell-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Enterprise數量](archive-enterprise-number-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[O2 網路 ](archive-o2-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[TELUS 網路 ](archive-telus-network-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Verizon 網路 ](archive-verizon-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[WeChat ](archive-wechat-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[WhatsApp ](archive-whatsapp-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+||||||||
+
+### <a name="17a-4-data-connectors"></a>17a-4 資料連線器
+
+本節中的表格列出與 17a-4 LLC 合作的協力廠商資料連線器。 在 Microsoft 365 中匯入及封存後，該表也會摘要說明您可以套用至協力廠商資料的相容性解決方案。 請參閱 [支援協力廠商資料的相容性解決方案](#overview-of-compliance-solutions-that-support-third-party-data) 一節，以取得每個規範解決方案的詳細說明，以及它如何支援協力廠商資料。
+
+在 Microsoft 365 中封存協力廠商資料之前，您必須與 Veritas 合作，為組織設定稱為 *DataParser*) 的封存服務 (。 如需詳細資訊，請按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
+
+|協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[BlackBerry](archive-17a-4-blackberry-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[彭博 ](archive-17a-4-bloomberg-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Cisco Jabber) ](archive-17a-4-cisco-jabber-data.md)   |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Cisco Webex ](archive-17a-4-webex-teams-data.md)   |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[FactSet ](archive-17a-4-factset-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[引 信 ](archive-17a-4-fuze-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[FX 連線](archive-17a-4-fxconnect-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[ICE Chat](archive-17a-4-ice-im-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[InvestEdge ](archive-17a-4-investedge-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[LivePerson 會話雲端 ](archive-17a-4-liveperson-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[妙語 ](archive-17a-4-quip-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[ServiceNow ](archive-17a-4-servicenow-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[鬆弛 ](archive-17a-4-slack-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[交響樂 ](archive-17a-4-symphony-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[縮放 ](archive-17a-4-zoom-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+||||||||
+
+### <a name="celltrust-data-connectors"></a>CellTrust 資料連線器
+
+本節中的表格列出與 CellTrust 合作關係中的協力廠商資料連線器。 在 Microsoft 365 中匯入及封存後，該表也會摘要說明您可以套用至協力廠商資料的相容性解決方案。 請參閱 [支援協力廠商資料的相容性解決方案](#overview-of-compliance-solutions-that-support-third-party-data) 一節，以取得每個規範解決方案的詳細說明，以及它如何支援協力廠商資料。
+
+在 Microsoft 365 中封存協力廠商資料之前，您必須使用 CellTrust，為您的組織設定稱為 *CellTrust SL2*) 的封存服務 (。 如需詳細資訊，請按一下 **協力廠商資料** 欄中的連結，以移至建立 CellTrust SL2 connector 的逐步指示。
+
+|協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+||||||||
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支援協力廠商資料的相容性解決方案
 

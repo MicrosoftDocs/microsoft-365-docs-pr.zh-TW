@@ -2,7 +2,7 @@
 title: 使用威脅分析追蹤並回應新興威脅
 ms.reviewer: ''
 description: 深入瞭解新興的威脅和攻擊技巧，以及如何加以阻止。 評估其對您組織的影響，並評估您的組織恢復能力。
-keywords: 威脅分析、風險評估、Microsoft 365 Defender、M365D、緩解狀態、安全設定、microsoft defender for Office 365、microsoft defender Office 365 威脅分析、MDO 威脅分析、整合的 MDE 和 MDO 威脅分析資料、威脅分析資料整合、Microsoft 365 整合的 Defender 威脅分析
+keywords: 威脅分析、風險評估、Microsoft 365 Defender、M365D、緩解狀態、安全設定、microsoft defender Office 365、microsoft defender Office 365 威脅分析、MDO 威脅分析、整合的 MDE 和 MDO 威脅分析資料、威脅分析資料整合、整合式 Microsoft 365 Defender 威脅分析
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b87d1963b8ffa3751c13cea532c8d6436f69fbb9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501220"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096827"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威脅分析追蹤並回應新興威脅 
 
@@ -116,6 +116,24 @@ _威脅分析報告的一覽區段_
 - **安全設定狀態**-顯示設定不當的安全性設定裝置數目。 套用建議的安全性設定，以協助緩解威脅。 如果裝置已套用 _所有_ 追蹤的設定，則會被視為 **安全** 裝置。
 - **弱點修補狀態**-顯示有缺陷裝置的數目。 套用安全性更新或修補程式，以解決威脅所利用的漏洞。
 
+#### <a name="view-reports-per-threat-tags"></a>依威脅標記查看報告
+您可以篩選威脅報告清單，並根據特定威脅標記 (類別) 或報表類型，查看最相關的報表。 
+- **威脅標記**—協助您根據特定威脅類別來查看最相關的報表。 例如，與勒索軟體相關的所有報告。
+- **報告類型**-根據特定的報表類型，協助您查看最相關的報表。 例如，所有涵蓋工具和技術的報表。 
+- **篩選器**—協助您有效檢查威脅報告清單，並根據特定威脅標記或報告類型篩選視圖。 例如，檢查與勒索軟體類別相關的所有威脅報告，或涵蓋弱點的威脅報告。
+
+##### <a name="how-does-it-work"></a>它的運作方式為何？
+Microsoft 威脅情報小組已新增威脅標記給每個威脅報告：
+- 現在有四個威脅標記可供使用：
+  - 軟體
+  - 網路釣魚
+  - 弱點
+  - 活動群組
+- 威脅標記會出現在 [威脅分析] 頁面的頂端，包含每個標記下可用報告數目的計數器。
+    ![威脅標記](../../media/threat-analytics/ta-threattags-mtp.png)
+- 您也可以依威脅標記來排序清單：   ![ 清單](../../media/threat-analytics//ta-taglist-mtp.png)
+- 篩選器可供每個威脅標記和報表類型使用：   ![ 篩選](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析報告：從 Microsoft security 研究員取得專家洞察力
 在 [ **分析報告** ] 區段中，閱讀詳細的專家撰寫。 大多數報告提供攻擊鏈的詳細描述，包含對應至 MITRE ATT 的戰術和技術&CK 架構、詳盡的建議清單，以及強大的 [威脅搜尋](advanced-hunting-overview.md) 指導方針。
 
@@ -167,7 +185,7 @@ _威脅分析報告的緩解區段_
 >在統一的安全性體驗中，威脅分析現在不僅適用于 microsoft defender for Endpoint，也適用于 microsoft defender 的 Office E5 授權擁有者。
 >如果您未使用 Microsoft 365 安全性入口網站 (Microsoft 365 Defender) ，您也可以在 (入口網站 Office microsoft defender for Endpoint) 中，查看不含 Microsoft defender Microsoft Defender 資訊安全中心資料 (的報告詳細資料。 
 
-若要存取威脅分析報告，您需要特定的角色和許可權。 如需詳細資訊，請參閱[Microsoft 365 Defender 的角色型存取控制中的自訂角色](custom-roles.md)。
+若要存取威脅分析報告，您需要特定的角色和許可權。 如需詳細資訊，請參閱[Microsoft 365 Defender 角色型存取控制中的自訂角色](custom-roles.md)。
   - 若要查看警示、事件或受影響的資產資料，您必須具有 microsoft defender for Office 或 microsoft defender for Endpoint 警示資料，或兩者的許可權。
   - 若要查看已禁止的電子郵件嘗試，您必須具有 Microsoft Defender 的許可權，才能 Office 搜尋資料。 
   - 若要查看緩解，您必須具有在 Microsoft Defender for Endpoint 中威脅與弱點管理資料的許可權。

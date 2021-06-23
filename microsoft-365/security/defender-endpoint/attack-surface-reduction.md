@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028784"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096729"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -296,9 +296,11 @@ GUID:： `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>封鎖可執行檔，除非符合流行、age 或受信任的清單準則
 
-此規則會封鎖下列檔案類型的啟動，除非它們符合流行或年齡準則，或是位於信任清單或排除清單中：
+此規則會封鎖可執行檔，例如 .exe、.dll 或 .scr，除非符合下列任一條件，否則不會啟動：
 
-- 可執行檔 (例如 .exe、.dll 或 .scr) 
+- 傳播：可執行檔位於1000以上的端點上
+- Age：已于24小時前發行可執行檔
+- 位置：可執行檔會包含在信任的清單或排除清單中
 
 啟動不受信任或未知的可執行檔可能會是危險的，因為如果這些檔案是惡意的，就可能不會做為清除。
 
@@ -404,17 +406,17 @@ GUID:： `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>封鎖 Office 通訊應用程式建立子流程
 
-此規則可防止 Outlook 建立子流程，但仍然允許合法的 Outlook 功能。
+此規則可防止 Outlook 建立子流程，但仍然允許合法 Outlook 函式。
 
-此規則可防止社交工程攻擊，並防止在 Outlook 中利用 abusing 弱點的程式碼。 它也會針對使用者的認證遭到攻破時，防止攻擊者可使用的 [Outlook 規則和表單攻擊](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) 。
+此規則可防止「社交工程」攻擊，並防止在 Outlook 中利用 abusing 弱點的程式碼。 它也會防止攻擊者在使用者的認證遭到破壞時可使用的[Outlook 規則和表單攻擊](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)。
 
 > [!NOTE]
-> 此規則會在 Outlook 中封鎖 DLP 原則提示和工具提示。 此規則只適用于 Outlook 和 Outlook.com。
+> 此規則會在 Outlook 中封鎖 DLP 原則提示和工具提示。 此規則只適用于 Outlook 和 Outlook .com。
 
 此規則的引入時間：
 
-- [Windows 10，版本1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名稱： `Process creation from Office communication products (beta)`
@@ -435,7 +437,7 @@ Fileless 威脅使用各種不同的戰術來保持隱藏狀態，以避免在�
 此規則的引入時間：
 
 - [Windows 10，版本1903](/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows伺服器1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Intune 名稱：無法使用
 
@@ -448,12 +450,12 @@ GUID:： `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此規則會封鎖透過 [PsExec](/sysinternals/downloads/psexec) 和 [WMI](/windows/win32/wmisdk/about-wmi) 所建立的處理常式執行。 PsExec 和 WMI 都可以遠端執行程式碼，因此惡意程式碼會 abusing 此功能以進行命令和控制，或將感染傳播到整個組織的網路。
 
 > [!WARNING]
-> 只有在您使用 [Intune](/intune) 或另一個 MDM 解決方案管理裝置時，才使用此規則。 這種規則與透過 [Microsoft 端點 Configuration Manager](/configmgr) 的管理不相容，因為此規則會封鎖 Configuration manager 用戶端用來正確運作的 WMI 命令。
+> 只有在您使用 [Intune](/intune) 或另一個 MDM 解決方案管理裝置時，才使用此規則。 因為此規則會封鎖 Configuration Manager 用戶端用來正確運作的 WMI 命令，所以此規則與管理的[Microsoft Endpoint Configuration Manager](/configmgr)不相容。
 
 此規則的引入時間：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名稱： `Process creation from PSExec and WMI commands`
@@ -469,7 +471,7 @@ GUID:： `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 此規則的引入時間：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -479,16 +481,16 @@ Configuration Manager 名稱： `Block untrusted and unsigned processes that run
 
 GUID:： `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>封鎖 Office 宏的 WIN32 API 呼叫
+### <a name="block-win32-api-calls-from-office-macros"></a>從 Office 宏封鎖 WIN32 API 通話
 
 此規則可防止 VBA 宏呼叫 WIN32 APIs。
 
-Office VBA 會啟用 WIN32 API 呼叫。 惡意程式碼可能會濫用這項功能，例如 [呼叫 WIN32 APIs 以發動惡意外殼代碼](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) ，而不需直接寫入任何內容。 大多數的組織不依賴在日常運作中呼叫 WIN32 APIs 的功能，即使它們是以其他方式使用宏。
+OfficeVBA 啟用 WIN32 API 呼叫。 惡意程式碼可能會濫用這項功能，例如 [呼叫 WIN32 APIs 以發動惡意外殼代碼](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) ，而不需直接寫入任何內容。 大多數的組織不依賴在日常運作中呼叫 WIN32 APIs 的功能，即使它們是以其他方式使用宏。
 
 此規則的引入時間：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -514,7 +516,7 @@ GUID:： `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 此規則的引入時間：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 

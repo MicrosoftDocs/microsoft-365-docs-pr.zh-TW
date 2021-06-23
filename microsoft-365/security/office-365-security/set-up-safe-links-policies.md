@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改和刪除保管庫連結原則及全域保管庫連結設定。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082753"
+ms.locfileid: "53096765"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中設定 Office 365 的保管庫連結原則
 
@@ -110,7 +110,7 @@ ms.locfileid: "53082753"
 
    相同條件中的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
 
-   - **排除這些使用者、群組和網域**：若要為原則適用的內部收件者新增例外 (收件者例外)，請選取此選項並設定例外。 設定和行為就像是條件。
+   - **排除這些使用者、群組和網域**：若要新增原則套用至 (收件者例外狀況) 的內部收件者例外狀況，請選取此選項並設定例外狀況。 設定和行為就像是條件。
 
    完成後，按 [下一步 **]**。
 
@@ -138,7 +138,7 @@ ms.locfileid: "53082753"
 
 6. 在出現的 [ **通知** ] 頁面上，選取下列其中一個值，以瞭解 **您要如何通知使用者？**：
    - **使用預設通知文字**
-   - **使用自訂通知文字**：如果選取此值，則會出現下列設定：
+   - **使用自訂通知文字**：如果您選取這個值 (長度不能超過200個字元) 時，會出現下列設定：
      - **使用 Microsoft 翻譯工具進行自動當地語系化**
      - **自訂通知文字**：在此方塊中輸入自訂通知文字。
 

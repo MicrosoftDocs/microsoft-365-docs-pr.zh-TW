@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083533"
+ms.locfileid: "53096153"
 ---
 # <a name="user-reported-message-settings"></a>使用者報告的郵件設定
 
@@ -134,24 +134,19 @@ ms.locfileid: "53083533"
 
 若要正確識別原始附加郵件，傳送至自訂信箱的郵件需要特定格式。 如果郵件未使用此格式，則原始附加郵件會永遠識別為網路釣魚提交。
 
-為了正確識別原始附加郵件，傳送至自訂信箱的郵件必須針對主旨 (信封標題) 使用下列語法：
+如果您想要指定原始附加郵件的已報告原因，傳送至自訂信箱的郵件 (不會修改附件) 必須以主旨 (信封標題中的下列其中一個首碼開始，) ：
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1 |或垃圾郵件：
+- 2 |或非垃圾郵件
+- 3 |或網路釣魚
 
-其中，SafetyAPIAction 是下列其中一個整數值：
+例如：
 
-- 1：垃圾郵件
-- 2：非垃圾郵件
-- 3：網路釣魚
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-本範例會使用下列值：
+- 這兩封郵件都不會以主旨的身分報告為垃圾郵件。
+- 會忽略余料。
 
-- 將郵件報告為網路釣魚。
-- 網路消息識別碼是49871234-6dc6-43e8-abcd-08d797f20abe。
-- 寄件者 IP 為167.220.232.101。
-- [寄件者] 位址為 test@contoso.com。
-- 郵件的主旨行是「測試網路釣魚提交」
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 未遵循此格式的郵件將無法在提交入口網站中正確顯示。

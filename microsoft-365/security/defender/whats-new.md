@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 582116047900fc5f28d5580398cf5c065e6a3e23
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053020"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096813"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
@@ -38,6 +38,8 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="june-2021"></a>2021 年 6 月
+- [Microsoft 365 Defender 威脅分析報告](threat-analytics.md)中的威脅標記 <br> 威脅標記可協助您將重點放在特定威脅類別上，並複查最相關的報告。 
 
 ## <a name="april-2021"></a>2021 年 4 月
 - Microsoft 365 Defender<br> 改進的[Microsoft 365 Defender](https://security.microsoft.com)入口網站現已提供。 這種新的經驗會彙集一或多個端點、Office 365 的 defender、身分識別的 defender，以及更多的單一入口網站。 這是管理安全性控制的新家用。 [了解新功能](./overview-security-center.md)。

@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e5cd60915699cd2adb42e575c25912f5f164a5b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055133"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096780"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -141,9 +141,11 @@ Office 365 組織的 Microsoft Defender 範例包括：
 在 Office 365 組織的 EOP 和 Defender 中，可以使用 [**顯示第一個連絡人安全提示** 設定]，但對哄騙智慧或模擬保護設定沒有任何相依的依賴性。 在下列情況下，收件者會顯示安全提示：
 
 - 他們第一次從寄件者收到郵件時
-- 如果不經常從寄件者取得郵件。
+- 他們通常不會收到來自寄件者的郵件。
 
-![具有多個收件者之類比保護的安全提示文字。](../../media/safety-tip-first-contact-multiple-recipients.png)
+![與一位收件者的郵件第一次連絡人安全提示。](../../media/safety-tip-first-contact-one-recipient.png)
+
+![與多個收件者的郵件第一個連絡人安全提示。](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 這項功能新增額外的安全性保護層，以防範潛在的模仿攻擊，因此我們建議您將其開啟。
 
