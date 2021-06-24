@@ -1,5 +1,5 @@
 ---
-title: 為 Office 365 中的 Defender 設定安全連結設定的全域設定
+title: 設定保管庫的 Defender 中的連結設定全域設定 Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何查看和設定全域設定 (「封鎖下列 URLs」清單和保護 Office 365 應用程式) 以取得 Office 365 的 Microsoft Defender 中的安全連結。
+description: 系統管理員可以瞭解如何查看和設定全域設定 (「封鎖下列 URLs」清單和保護 Office 365 應用程式) ，以保管庫的 Microsoft Defender 連結。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b1bcdaf92412b17b231e3f4849bae8aab72f292
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 46bafd89400dfa551641c055f6f0e208c0ecd49f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878529"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108040"
 ---
-# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>設定 Office 365 的 Microsoft Defender 中安全連結的全域設定
+# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>針對 Office 365 設定 Microsoft Defender 中保管庫連結的全域設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,28 +36,28 @@ ms.locfileid: "52878529"
 > [!IMPORTANT]
 > 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](defender-for-office-365.md) 的商務客戶。 如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱[Advanced Outlook .com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-安全連結是[Microsoft Defender](defender-for-office-365.md)中的功能 Office 365，可在郵件流程中提供輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 與連結的時間。 如需詳細資訊，請參閱[Microsoft Defender 中 Office 365 的安全連結](safe-links.md)。
+保管庫連結是[Microsoft Defender](defender-for-office-365.md)中的功能 Office 365，可在郵件流程中提供輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 和連結的時間。 如需詳細資訊，請參閱[保管庫 Office 365 的 Microsoft Defender 連結](safe-links.md)。
 
-您可以在安全連結原則中設定大多數的安全連結設定。 如需相關指示，請參閱[為 Office 365 設定 Microsoft Defender 中的安全連結原則](set-up-safe-links-policies.md)。
+您可以設定保管庫連結原則中的大部分保管庫連結設定。 如需相關指示，請參閱[在 Microsoft Defender for Office 365 中設定保管庫連結原則](set-up-safe-links-policies.md)。
 
-不過，安全連結也會使用您在安全連結原則之外設定的下列全域設定：
+不過，保管庫連結也會使用您在保管庫連結原則本身之外設定的下列全域設定：
 
-- **封鎖下列 URLs** 清單。 此設定會套用至所有作用中安全連結原則中包含的所有使用者。 如需詳細資訊，請參閱 [安全連結的「封鎖下列 URLs」清單。](safe-links.md#block-the-following-urls-list-for-safe-links)
-- Office 365 應用程式的安全連結保護。 不管使用者是否包含在使用中的安全連結原則中，這些設定適用于已授權 Office 365 Defender 的組織中的所有使用者。 如需詳細資訊，請參閱[Office 365 應用程式的安全連結設定](safe-links.md#safe-links-settings-for-office-365-apps)。
+- **封鎖下列 URLs** 清單。 此設定會套用至所有作用中保管庫連結原則中包含的所有使用者。 如需詳細資訊，請參閱[保管庫連結的「封鎖下列 URLs」清單。](safe-links.md#block-the-following-urls-list-for-safe-links)
+- 保管庫Office 365 應用程式的連結保護。 這些設定會套用至組織中所有授權使用 Office 365 的使用者，不論使用者是否包含在 active 保管庫連結原則中。 如需詳細資訊，請參閱[保管庫連結設定 Office 365 應用程式](safe-links.md#safe-links-settings-for-office-365-apps)。
 
-您可以在 Microsoft 365 Defender 入口網站或 PowerShell (Exchange Online PowerShell 中設定全域安全性連結設定，以在 Microsoft 365 中使用信箱的合格 Exchange Online 組織。組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
+您可以設定 Microsoft 365 Defender 入口網站中的全域保管庫連結設定或 PowerShell (Exchange Online PowerShell，以供具有 Microsoft 365 信箱的合格 Exchange Online 組織使用。組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 沒有內建或預設的安全連結原則，因此您必須建立至少一個安全連結原則，讓 **封鎖下列 URLs** 清單成為作用中的專案。 如需相關指示，請參閱[為 Office 365 設定 Microsoft Defender 中的安全連結原則](set-up-safe-links-policies.md)。
+- 沒有內建或預設的保管庫連結原則，因此您必須至少建立一個保管庫連結原則，才能讓 **封鎖下列 URLs** 清單成為作用中。 如需相關指示，請參閱[在 Microsoft Defender for Office 365 中設定保管庫連結原則](set-up-safe-links-policies.md)。
 
-- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com> 。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
+- 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [**保管庫連結**] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
-  - 若要設定安全連結的全域設定，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
-  - 若要對安全連結的全域設定進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
+  - 若要設定保管庫連結的全域設定，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。
+  - 若要針對保管庫連結的全域設定進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
   如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
@@ -66,19 +66,19 @@ ms.locfileid: "52878529"
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
-- 如需安全連結之全域設定的建議值，請參閱 [安全連結設定](recommended-settings-for-eop-and-office365.md#safe-links-settings)。
+- 如需保管庫連結之全域設定的建議值，請參閱[保管庫連結設定](recommended-settings-for-eop-and-office365.md#safe-links-settings)。
 
 - 最多允許30分鐘，以套用新的或更新的原則。
 
-- [新功能會連續新增至 Microsoft Defender 以供 Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的安全連結原則。
+- [新功能會連續新增至 Microsoft Defender 以供 Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的保管庫連結原則。
 
-## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>設定 Microsoft 365 Defender 入口網站中的「阻止下列 URLs」清單
+## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>設定 Microsoft 365 Defender 入口網站中的「封鎖下列 URLs」清單
 
-**Block 下列 URLs** 清單會識別在支援的應用程式中，安全連結掃描時，應攔截的連結。 如需詳細資訊，請參閱 [安全連結的「封鎖下列 URLs」清單](safe-links.md#block-the-following-urls-list-for-safe-links)。
+**Block 下列 URLs** 清單會識別在支援的應用程式中保管庫連結掃描時，應攔截的連結。 如需詳細資訊，請參閱[保管庫連結的「封鎖下列 URLs」清單](safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 \> **原則**] \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，按一下 [ **通用設定**]。 在 **您的組織的安全連結原則** 中，會出現 [飛出]，請移至 [ **封鎖下列 URLs] 方塊** 。
+2. 在 [**保管庫連結**] 頁面上，按一下 [**通用設定**]。 在組織的 [**保管庫連結] 原則** 中，請移出顯示的 [**封鎖下列 URLs] 方塊**。
 
 3. 設定一或多個專案，如 ["封鎖下列 URLs 的專案語法](safe-links.md#entry-syntax-for-the-block-the-following-urls-list)中所述] 清單。
 
@@ -117,15 +117,15 @@ ms.locfileid: "52878529"
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>設定 Microsoft 365 Defender 入口網站中 Office 365 應用程式的安全連結保護
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中設定 Office 365 應用程式的保管庫連結保護
 
-Office 365 應用程式的安全連結保護功能適用于支援的 Office 桌面、行動裝置及 web 應用程式中的檔。 如需詳細資訊，請參閱[Office 365 應用程式的安全連結設定](safe-links.md#safe-links-settings-for-office-365-apps)。
+保管庫Office 365 應用程式的連結保護適用于支援的 Office 桌面、行動裝置及 web 應用程式中的檔。 如需詳細資訊，請參閱[保管庫連結設定 Office 365 應用程式](safe-links.md#safe-links-settings-for-office-365-apps)。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **安全連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 \> **原則**] \> **保管庫連結**。
 
-2. 在 [ **安全連結** ] 頁面上，按一下 [ **通用設定**]。 在已出現之 **組織的安全連結原則** 中，在 [**支援的 Office 365 應用程式**] 區段中，設定套用至內容的設定中的下列設定：
+2. 在 [**保管庫連結**] 頁面上，按一下 [**通用設定**]。 在所出現的 **組織保管庫連結原則** 中，設定設定中的下列設定，這些設定 **適用于 [支援的 Office 365 應用程式**] 區段中的內容：
 
-   - **在 Office 365 應用程式中使用安全連結**：確認已啟用支援 Office 365 應用程式的安全連結的切換功能： ![ 開啟開啟] ](../../media/scc-toggle-on.png) 。
+   - **使用 Office 365 應用程式中的保管庫連結**：確認是否要啟用支援 Office 365 應用程式的保管庫連結： ![ 開啟切換 ](../../media/scc-toggle-on.png) 。
 
    - **當使用者在 Office 365 應用程式中按下受保護的連結時，請勿追蹤**：將切換移至左側以追蹤與受支援 Office 365 應用程式中封鎖 URLs 相關的使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
 
@@ -133,17 +133,17 @@ Office 365 應用程式的安全連結保護功能適用于支援的 Office 桌�
 
    完成後，按一下 [儲存]。
 
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>針對 PowerShell 中的 Office 365 應用程式設定安全連結保護
+### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>在 PowerShell 中設定 Office 365 應用程式的保管庫連結保護
 
-如果您不想使用 PowerShell 來設定 Office 365 應用程式的安全連結保護，請在 Exchange Online PowerShell 或 Exchange Online Protection 中使用下列語法 PowerShell:
+如果您不想使用 PowerShell 來設定 Office 365 應用程式保管庫連結保護，請在 Exchange Online PowerShell 或 Exchange Online Protection 中使用下列語法 PowerShell:
 
 ```powershell
 Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
 ```
 
-此範例會在 Office 365 應用程式中，為安全連結保護設定下列設定：
+此範例會針對 Office 365 應用程式中的保管庫連結保護設定下列設定：
 
-- Office 365 應用程式的安全連結已開啟 (我們不使用 _EnableSafeLinksForO365Clients_ 參數，預設值為 $true) 。
+- 保管庫Office 365 應用程式的連結已開啟 (不是使用 _EnableSafeLinksForO365Clients_ 參數，而預設值為 $true) 。
 - 會追蹤支援的 Office 365 應用程式中，與封鎖 URLs 相關的使用者按一下。
 - 在支援的 Office 365 應用程式中，不允許使用者點擊至原始的封鎖 URL (我們不會使用 _AllowClickThrough_ 參數，預設值會 $false) 。
 
@@ -155,9 +155,9 @@ Set-AtpPolicyForO365 -TrackClicks $true
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
-若要確認您是否已成功設定安全連結的全域設定 (**封鎖下列 URLs** 清單和 Office 365 應用程式保護設定) ，請執行下列任一步驟：
+若要確認您已成功設定保管庫連結的全域設定 (**區塊下列 URLs** 清單和 Office 365 應用程式保護設定) ，請執行下列任一步驟：
 
-- 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **安全連結** \> 按一下 [**通用設定**]，然後確認 [飛出] 中顯示的設定。
+- 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則**] 頁面 \> **原則**] 區段 \> **保管庫連結** \> 按一下 [**通用設定**]，然後確認 [飛出] 中顯示的設定。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，執行下列命令並確認設定：
 

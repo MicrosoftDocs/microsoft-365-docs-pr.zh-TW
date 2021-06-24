@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: 瞭解如何在 Microsoft Office 365 方案2中，加快偵測和解決已遭破壞之使用者帳戶的程式，以進行 Microsoft Defender 中的自動調查和回應功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: fd1ad6f52114340153f3958441bfb9500db67215
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904137"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108570"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>利用自動調查和回應來處理已遭破壞的使用者帳戶
 
@@ -37,9 +37,7 @@ ms.locfileid: "52904137"
 「已遭破壞的使用者安全性行動手冊」可讓貴組織的安全性小組進行下列作業：
 
 - 加速偵測到的使用者帳戶的偵測;
-
 - 在帳戶被攻破時限制遭到破壞的範圍;和
-
 - 更有效率地回應遭到破壞的使用者。
 
 ## <a name="compromised-user-alerts"></a>遭到破壞的使用者警示
@@ -67,21 +65,17 @@ ms.locfileid: "52904137"
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和調查限制的使用者
 
-您有幾個選項可供您流覽至限制的使用者清單。 例如，在安全性 & 規範中心，您可以前往「 **威脅管理**」 \> **查看** \> **限制的使用者**。 下列程式說明如何使用「 **警示** 」儀表板進行流覽，這是查看可能已觸發的各種警示的好方法。
+您有幾個選項可供您流覽至限制的使用者清單。 例如，在 Microsoft 365 Defender 入口網站中，您可以移至 **電子郵件 &** 共同作業 \> **複查** \> **限制的使用者**。 下列程式說明如何使用「 **警示** 」儀表板進行流覽，這是查看可能已觸發的各種警示的好方法。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。
+1. 開啟 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) ，然後移至 [**事件] & 警示** \> **警示**。 或者，若要直接移至 [ **提醒** ] 頁面，請使用 <https://security.microsoft.com/alerts> 。
 
-2. 在功能窗格中，選擇 [ **警示** \> **儀表板**]。
+2. 在 [ **提醒** ] 頁面上，依時段篩選結果，而名為 User 的原則卻 **受到限制，無法傳送電子郵件**。
 
-3. 在 [ **其他警示** ] 小工具中，選擇 [ **受限制的使用者**]。
+   ![篩選 Microsoft 365 Defender 入口網站中的 [提醒] 頁面，為受限使用者篩選](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-   ![其他提醒小工具](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+3. 如果您按一下 [名稱]，然後按一下 [ **使用者限制傳送電子郵件** ] 頁面來選取專案，則會開啟其他詳細資料供您複查。 在 [ **管理提醒** ] 按鈕旁邊，按一下 [ ![ 更多選項圖示] [ ](../../media/m365-cc-sc-more-actions-icon.png) **更多選項** ]，然後選取 [ **查看限制的使用者詳細資料** ] 以移至 [ **受** 限制的使用者] 頁面，您可以在其中 [釋放限制的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
 
-   這會開啟受限制的使用者清單。
-
-   ![Office 365 中的受限使用者](/microsoft-365/media/office365atp-restrictedusers.jpg)
-
-4. 選取清單中的使用者帳戶，以查看詳細資料並採取動作，例如 [發行受限制的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
+   ![使用者限制從警示中心傳送電子郵件頁面](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>查看有關自動化調查的詳細資料
 

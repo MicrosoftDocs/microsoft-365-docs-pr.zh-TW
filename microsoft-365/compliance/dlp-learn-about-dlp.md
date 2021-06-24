@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 365 資料遺失防護原則及工具來保護您的機密資訊，並透過 DLP 生命週期進行導覽。
-ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244609"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108256"
 ---
 # <a name="learn-about-data-loss-prevention"></a>深入了解資料外洩防護
 
@@ -121,7 +121,9 @@ DLP 原則可以封鎖禁止的活動，例如透過電子郵件不適當的敏�
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>啟用控制項並調整原則
 
-一旦原則符合您的所有目標，請將其開啟。 繼續監視原則應用程式的結果，並視需要調整。 一般來說，原則會在開啟後的一小時內生效。 <!--請參閱，連結至位置特定詳細資料的 Sla 相關主題-->
+一旦原則符合您的所有目標，請將其開啟。 繼續監視原則應用程式的結果，並視需要調整。 一般來說，原則會在開啟後的一小時內生效。 
+
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## <a name="dlp-policy-configuration-overview"></a>DLP 原則設定概述
 

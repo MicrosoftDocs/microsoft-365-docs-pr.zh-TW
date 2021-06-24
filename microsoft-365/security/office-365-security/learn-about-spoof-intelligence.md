@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中的欺騙智慧洞察力。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08b9586edf565c4f69c51f732511d3a0956ae500
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: a0131266d5830988ed23fc11e01323025aa6d50a
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029246"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108520"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺騙智慧洞察力
 
@@ -92,7 +92,7 @@ ms.locfileid: "53029246"
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中開啟欺騙智慧洞察力
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則**] 頁面 \> **原則**] 區域 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** ] 頁面上，欺騙性的智慧洞察力看起來像這樣：
 

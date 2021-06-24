@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083665"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108328"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender 的 Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "53083665"
 如果您尚無支援 Microsoft Defender for Office 365 的授權，您可以開始[30 天的試用評估](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)，並在 Microsoft 365 Defender 入口網站中測試功能 <https://security.microsoft.com> 。 您將會喜歡快速設定，必要時您可以輕鬆關閉此功能。
 
 > [!NOTE]
-> 如果您處在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，您可以在這裡為 Office 365 評估啟動 Defender：**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** \> **其他** 區段 \> **評估模式**。
+> 如果您處在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，您可以在這裡為 Office 365 評估啟動 Defender：**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 [ \> **其他** 區段 \> **評估模式]**。
 
 ## <a name="how-the-evaluation-works"></a>評估的運作方式
 
@@ -61,7 +61,7 @@ ms.locfileid: "53083665"
 - 分析動作報告
 - 展示評估結果
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 ### <a name="licensing"></a>授權
 

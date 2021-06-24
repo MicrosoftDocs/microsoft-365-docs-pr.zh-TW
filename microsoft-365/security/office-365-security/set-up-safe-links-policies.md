@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改和刪除保管庫連結原則及全域保管庫連結設定。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 8d42051d2ca4f26758cbe7334d427f3f93178f97
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096765"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108208"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中設定 Office 365 的保管庫連結原則
 
@@ -173,7 +173,7 @@ ms.locfileid: "53096765"
 
 ### <a name="enable-or-disable-safe-links-policies"></a>啟用或停用保管庫連結原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **保管庫連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 \> **原則**] \> **保管庫連結**。
 
 2. 在 [**保管庫連結**] 頁面上，按一下 [名稱] 以選取清單中的原則。
 
@@ -198,7 +198,7 @@ ms.locfileid: "53096765"
 - 在 Microsoft 365 Defender 入口網站中，您只可以在建立保管庫連結原則之後，變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
 - 保管庫連結原則會依顯示的連續處理 (第一個原則的 **Priority** 值為 0) 。 如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **保管庫連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 \> **原則**] \> **保管庫連結**。
 
 2. 在 [**保管庫連結**] 頁面上，按一下 [名稱] 以選取清單中的原則。
 
@@ -213,7 +213,7 @@ ms.locfileid: "53096765"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>使用 Microsoft 365 Defender 入口網站移除保管庫連結原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **保管庫連結**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 \> **原則**] \> **保管庫連結**。
 
 2. 在 [**保管庫連結**] 頁面上，按一下 [名稱] 以選取清單中的原則。 在顯示的原則詳細資料飛出視窗頂端，按一下 ![更多動作圖示](../../media/m365-cc-sc-more-actions-icon.png) [其他動作 **]** \> ![刪除原則圖示](../../media/m365-cc-sc-delete-icon.png) [刪除原則 **]**。
 

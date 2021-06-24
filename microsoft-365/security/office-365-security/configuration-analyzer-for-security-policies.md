@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何使用設定分析器，找出並修正低於標準防護和嚴格保護預設安全性原則的安全性原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 01a9b3a2b01a3cfc95a3911f75907cbe0ef9d58f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878661"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108424"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的保護原則設定分析器
 
@@ -34,7 +34,7 @@ ms.locfileid: "52878661"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender 入口網站中的設定分析器提供一個集中位置，以找出並修正其設定低於標準[安全性原則](preset-security-policies.md)中的標準防護和嚴格保護設定檔設定的安全性原則。
+Microsoft 365 Defender 入口網站中的設定分析器提供一個集中位置，以找出並修正安全性原則，其中的設定低於標準防護和嚴格保護設定檔設定中的預設[安全性原則](preset-security-policies.md)。
 
 設定分析器會分析下列類型的原則：
 
@@ -50,22 +50,22 @@ Microsoft 365 Defender 入口網站中的設定分析器提供一個集中位置
     - EOP 反網路釣魚原則中提供的相同 [欺騙設定](set-up-anti-phishing-policies.md#spoof-settings) 。
     - [類比設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高級網路釣魚臨界值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [安全連結原則](set-up-safe-links-policies.md)。
-  - [安全附件原則](set-up-safe-attachments-policies.md)。
+  - [保管庫連結原則](set-up-safe-links-policies.md)。
+  - [保管庫附件原則](set-up-safe-attachments-policies.md)。
 
 [EOP 和 Microsoft Defender Office 365 security](recommended-settings-for-eop-and-office365.md)] 中的建議設定會說明用作基準的 **標準** 和 **嚴格** 原則設定值。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com> 。 若要直接移至 [設定 **分析器** ] 頁面，請使用 <https://security.microsoft.com/configurationAnalyzer> 。
+- 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [設定 **分析器** ] 頁面，請使用 <https://security.microsoft.com/configurationAnalyzer> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須先在 Microsoft 365 Defender 入口網站中指派許可權，才能執行本文中的程式：
+- 您必須在 Microsoft 365 Defender 入口網站中指派許可權，才能執行本文中的程式：
   - 若要使用設定分析器 **並** 更新安全性原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要唯讀存取設定分析器，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)。
+  如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。
 
   > [!NOTE]
   >  
@@ -75,7 +75,7 @@ Microsoft 365 Defender 入口網站中的設定分析器提供一個集中位置
 
 ## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中使用設定分析器
 
-在 Microsoft 365 Defender 入口網站中，移至 **電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** \> **範本化原則** 區段設定 \> **analyzer**。
+在 Microsoft 365 Defender 入口網站中，移至 **電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面上的 [ \> **範本化原則**] 區段 \> **Configuration analyzer**。
 
 [設定 **分析器** ] 頁面有兩個主要索引標籤：
 
@@ -93,8 +93,8 @@ Microsoft 365 Defender 入口網站中的設定分析器提供一個集中位置
 - **反垃圾郵件**
 - **防網路釣魚**
 - **反惡意程式碼**
-- 如果您的訂閱包含 Microsoft Defender for Office 365， (**安全附件**) 
-- 在您的訂閱中包含 Microsoft Defender for Office 365 時 (的 **安全連結**) 
+- 在您的訂閱中包含 Microsoft Defender for Office 365 時，**保管庫附件** () 
+- 如果您的訂閱包含 Microsoft Defender for Office 365，則 **保管庫連結** () 
 
 在預設的視圖中，會折疊所有專案。 每個原則旁都有一個原則的比較結果摘要，您可以在您的原則 (中修改) 和設定標準或嚴格保護設定檔對應之原則中的設定， (但不能修改) 。 您將會看到您要比較的保護設定檔的下列資訊：
 

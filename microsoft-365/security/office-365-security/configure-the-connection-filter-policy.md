@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 416fbd73d8412cf8697577df19f2fd2893b4ce96
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ce1eddbf1ac788ad57ffc57da2156aae1ae69f6a
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878817"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108388"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -42,16 +42,16 @@ ms.locfileid: "52878817"
 
 - **IP 封鎖清單**：從您透過 ip 位址或 ip 位址範圍所指定之來源電子郵件伺服器封鎖所有傳入的郵件。 內送郵件會遭到拒絕，不會標示為垃圾郵件，也不會發生其他篩選。 如需 IP 封鎖清單應如何符合整體封鎖的寄件者策略的詳細資訊，請參閱 [在 EOP 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
 
-- **安全清單**： *安全清單* 是 Microsoft datacenter 中的動態允許清單，不需要客戶設定。 Microsoft 會識別這些信任的電子郵件來源，以訂閱各種協力廠商清單。 啟用或停用 [安全清單] 的使用。您無法在 [安全清單] 上設定來源電子郵件伺服器。 在 [安全清單] 上的電子郵件伺服器上，會略過傳入郵件的垃圾郵件篩選。
+- **保管庫清單**：*安全清單* 是 Microsoft datacenter 中的動態允許清單，不需要客戶設定。 Microsoft 會識別這些信任的電子郵件來源，以訂閱各種協力廠商清單。 啟用或停用 [安全清單] 的使用。您無法在 [安全清單] 上設定來源電子郵件伺服器。 在 [安全清單] 上的電子郵件伺服器上，會略過傳入郵件的垃圾郵件篩選。
 
-本文說明如何在 Microsoft 365 Microsoft 365 Defender 入口網站] 或 PowerShell (Exchange Online PowerShell 中設定預設連線篩選原則，以 Microsoft 365 Exchange Online 組織使用中的信箱;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。 如需 EOP 如何使用連線篩選的詳細資訊，請參閱您組織的整體反垃圾郵件設定的一部分，請參閱 [反垃圾郵件保護](anti-spam-protection.md)。
+本文說明如何在 Microsoft 365 Microsoft 365 Defender 入口網站或 PowerShell (Exchange Online PowerShell 中設定預設連線篩選原則，以 Microsoft 365 Exchange Online 組織使用的信箱;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。 如需 EOP 如何使用連線篩選的詳細資訊，請參閱您組織的整體反垃圾郵件設定的一部分，請參閱 [反垃圾郵件保護](anti-spam-protection.md)。
 
 > [!NOTE]
 > IP 允許清單、安全清單和 IP 封鎖清單是整體策略的一部分，可允許或封鎖您組織中的電子郵件。 如需詳細資訊，請參閱 [建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md) 及 [建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com> 。 若要直接移至 [反垃圾郵件原則 **]** 頁面，請使用 <https://security.microsoft.com/antispam>。
+- 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [反垃圾郵件原則 **]** 頁面，請使用 <https://security.microsoft.com/antispam>。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52878817"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>使用 Microsoft 365 Defender 入口網站修改預設連線篩選原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則**] 頁面 \> **原則**] [ \> **反垃圾郵件**] 區段。
 
 2. 在 [ **反垃圾郵件原則** ] 頁面上，從清單中選取 [連線 **篩選原則 (預設)** ]，方法是按一下原則的名稱。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52878817"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>使用 Microsoft 365 Defender 入口網站來查看預設連線篩選原則
 
-1. 在 Microsoft 365 Defender 入口網站中，移至「**電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則**] 頁面 \> **原則**] [ \> **反垃圾郵件**] 區段。
 
 2. 在 [ **反垃圾郵件原則** ] 頁面上，下列屬性會顯示在原則清單中：
 
@@ -152,7 +152,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 若要確認您是否已成功修改預設連線篩選原則，請執行下列任一步驟：
 
-- 在 Microsoft 365 Defender 入口網站中，移至 **電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則** \> **原則** 區段 \> **反垃圾郵件** \> 從清單中按一下原則的名稱， **(預設)** ，然後驗證設定。
+- 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則**] 頁面原則] 頁面 \> **原則**]。 \> **反垃圾郵件** \> ：按一下原則的名稱， **(預設)** 從清單中選取 [連線篩選原則]，然後驗證設定。
 
 - 在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，執行下列命令並確認設定：
 
@@ -207,4 +207,4 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 ****
 
-![Microsoft 365 LinkedIn 學習 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增至** 的簡短圖示？ 探索 **Microsoft 365 系統管理員和 IT 專業人員** 的免費影片課程，您可以 LinkedIn 學習。
+![LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 的新功能** 的簡短圖示。 探索 **Microsoft 365 系統管理員和 IT 專業人員** 的免費影片課程，並以 LinkedIn Learning 為您提供給您。

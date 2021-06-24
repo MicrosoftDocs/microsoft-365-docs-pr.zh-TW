@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在 Microsoft 365 的安全性中心使用 Explorer 和即時偵測，以有效地調查和回應威脅。
+description: 在 Microsoft 365 Defender 入口網站中使用 Explorer 和即時偵測，以有效地調查威脅並作出回應。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d3dc8c205d5edfe455884d64030c7a6070762adb
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083221"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108544"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 

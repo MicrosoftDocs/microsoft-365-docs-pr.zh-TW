@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解類比真知灼見的運作方式。 他
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7254dce40f72ecc01dc532f1b6c51f252a2b3ac
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083401"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108628"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Office 365 的 Defender 中的模仿洞察力
 
@@ -66,7 +66,7 @@ ms.locfileid: "53083401"
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中開啟類比洞察力
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則**] 頁面 \> **原則**] 區域 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** ] 頁面上，類比洞察力看起來像這樣：
 

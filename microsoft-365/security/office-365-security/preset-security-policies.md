@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender Office 365 的保護功能上套用標準和嚴格的原則設定
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083485"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108292"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的預設安全性原則
 
@@ -119,7 +119,7 @@ ms.locfileid: "53083485"
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>使用 Microsoft 365 Defender 入口網站將預置的安全性原則指派給使用者
 
-1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **範本化原則**] 區段 \> 中的 **安全性原則**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **Email &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 \> **範本化原則**] 區段中的 \> **安全性原則**。
 
 2. 在 [ **標準防護** ] 或 [ **嚴格防護**] 底下，按一下 [ **編輯**]。
 

@@ -16,12 +16,12 @@ ms.collection:
 description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的保管庫檔。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054429"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108604"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文件
 
@@ -62,7 +62,7 @@ ms.locfileid: "53054429"
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>使用 Microsoft 365 Defender 設定保管庫檔
 
-1. 開啟 Microsoft 365 Defender 入口網站，然後移至 **Email & 協同** 原則 \> **& 規則** \> **威脅原則** 原則] \> 區段 \> **保管庫附件**。
+1. 開啟 Microsoft 365 Defender 入口網站，然後移至 **電子郵件 &** 共同作業 \> **原則 & 規則** \> **威脅原則**] 頁面 \> **策略** 區段 \> **保管庫附件**。
 
 2. 在 [**保管庫附件**] 頁面上，按一下 [**通用設定**]。
 
@@ -70,7 +70,7 @@ ms.locfileid: "53054429"
    - **開啟 Office 用戶端的保管庫檔**：將切換移至右邊開啟功能： ![ 開啟 ](../../media/scc-toggle-on.png) 。
    - **即使保管庫檔識別為惡意的檔案，也可讓使用者依序按一下 [受保護的檢視**]：我們建議您保留此選項關閉 (保持向左切換： ![ 關閉 ](../../media/scc-toggle-off.png)) 。
 
-   完成後，點擊 **[儲存]**。
+   完成後，按一下 [儲存]。
 
    ![保管庫在 [保管庫附件] 頁面上選取全域設定之後的檔設定。](../../media/safe-docs-global-settings.png)
 
@@ -103,7 +103,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 若要確認您已啟用並設定保管庫檔，請執行下列任一步驟：
 
-- 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** 的「 \> **威脅原則** 原則」 \> 區段 \> **保管庫附件** \> **全域設定**，並驗證是否 **開啟保管庫用戶端的 Office 檔**，以及是否 **允許使用者在保管庫的檔識別為惡意設定時，按一下透過受保護的檢視**。
+- 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則**] 頁面 \> **原則**] 區域 \> **保管庫附件** \> **全域設定**，並驗證是否 **開啟保管庫用戶端的 Office 檔**，以及是否 **允許使用者在保管庫的檔識別為惡意設定時按一下 [受保護的檢視**]。
 
 - 在 Exchange Online PowerShell 中執行下列命令，並確認屬性值：
 

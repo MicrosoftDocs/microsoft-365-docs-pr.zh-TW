@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c5dc14c71c344bf508cda8d39f892d740781ac87
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6dca58070d21271ffc832bcd628679303736f99e
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933118"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108136"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>針對靜態 proxy 探索，設定 Linux 上的 Microsoft Defender for Endpoint
 
@@ -73,6 +73,9 @@ Microsoft Defender for Endpoint 可以使用環境變數探索 proxy 伺服器 `
 ## <a name="post-installation-configuration"></a>安裝後的設定
   
 安裝後， `HTTPS_PROXY` 環境變數必須在 Endpoint service 檔案中定義。 若要這麼做，請 `/lib/systemd/system/mdatp.service` 在文字編輯器中開啟以根使用者的模式。 然後，您可以採用下列其中一種方式將變數傳播至服務：
+
+    > [!NOTE]
+    > On CentOS or RedHat Linux distributions the location of the Endpoint service file is `/usr/lib/systemd/system/mdatp.service`.
 
 - 取消注釋該行 `#Environment="HTTPS_PROXY=http://address:port"` ，並指定您的靜態 proxy 位址。
 
