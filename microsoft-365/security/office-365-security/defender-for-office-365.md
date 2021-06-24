@@ -21,12 +21,12 @@ ms.custom:
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 66afaa56efa93faef3fcc6ff8346df24681a0a50
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029870"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083017"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
@@ -81,7 +81,7 @@ ms.locfileid: "53029870"
 
 |適用於 Office 365 的 Microsoft Defender 方案 1|適用於 Office 365 的 Microsoft Defender 方案 2|
 |---|---|
-|設定、保護和偵測功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全連結](safe-links.md)</li><li>[適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[適用於 Office 365 的 Defender 中的反網路釣魚防護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|適用於 Office 365 的 Microsoft Defender 方案 1 的功能 <br>--- 以及 ---<br> 自動化、調查、補救和教育功能：<ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li><li>[行銷活動檢視](campaigns.md)</li></ul>|
+|設定、保護和偵測功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全連結](safe-links.md)</li><li>[適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[適用於 Office 365 的 Defender 中的反網路釣魚防護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|適用於 Office 365 的 Microsoft Defender 方案 1 的功能 <br>--- 以及 ---<br> 自動化、調查、補救和教育功能：<ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬訓練](attack-simulation-training.md)</li><li>[行銷活動檢視](campaigns.md)</li></ul>|
 |
 
 - 適用於 Office 365 的 Microsoft Defender 方案 2 隨附於 Office 365 E5、Office 365 A5、Microsoft 365 E5 安全性和 Microsoft 365 E5。
@@ -96,7 +96,7 @@ ms.locfileid: "53029870"
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>設定適用於 Office 365 的 Microsoft Defender 原則
 
-有了適用於 Office 365 的 Microsoft Defender，您組織的安全性團隊可以在 Microsoft 365 Defender 入口網站中定義原則來設定保護 (移至 <https://security.microsoft.com> \> [電子郵件與共同作業 **]** \> [原則和規則 **]**。)
+有了適用於 Office 365 的 Microsoft Defender，您組織的安全性團隊可以在 Microsoft 365 Defender 入口網站中定義原則來設定保護 (移至 <https://security.microsoft.com> \>**[電子郵件與共同作業]** \> **[原則和規則]** \> **[威脅原則]**。)
 
 觀看[此影片](https://www.youtube.com/watch?v=vivvTmWJ_3c)瞭解更多資訊。
 
@@ -133,7 +133,7 @@ ms.locfileid: "53029870"
 
 - **[威脅總管 (或即時偵測)](threat-explorer.md)** (也稱為檔案總管) 是即時的報告，可讓您識別並分析最近的威脅。 您可以設定檔案總管來顯示自訂期間的資料。
 
-- **[攻擊模擬器](attack-simulator.md)** 可讓您在組織中執行真實化攻擊案例以找出漏洞。 目前攻擊類型的模擬已可供使用，包括魚叉式網路釣魚憑證竊取和附件攻擊，以及密碼噴濺和暴力密碼破解攻擊等。
+- **[攻擊模擬器訓練](attack-simulation-training.md)** 可讓您在組織中執行真實攻擊案例以發現弱點。 目前攻擊類型的模擬已可供使用，包括魚叉式網路釣魚憑證竊取和附件攻擊，以及密碼噴濺和暴力密碼破解攻擊等。
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>利用自動調查及回應節省時間
 
@@ -178,5 +178,4 @@ ms.locfileid: "53029870"
 ## <a name="see-also"></a>另請參閱
 
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 - [Microsoft 365 Defender 中的自動化調查及回應 (AIR)](../defender/m365d-autoir.md)

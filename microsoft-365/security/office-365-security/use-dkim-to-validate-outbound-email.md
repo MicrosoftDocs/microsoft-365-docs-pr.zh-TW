@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e9aa3a72a36a146d121c9302a4b6cb126e765671
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929898"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082777"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -40,21 +40,14 @@ ms.locfileid: "52929898"
 
 本文內容：
 
-- [DKIM 防止惡意詐騙的效用為何優於單獨使用 SPF](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
-
-- [將 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰的步驟](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
-
-- [手動設定 DKIM 的步驟](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
-
-- [為多個自訂網域設定 DKIM 的步驟](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
-
-- [停用自訂網域 DKIM 簽署原則](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
-
-- [DKIM 和 Microsoft 365 的預設行為](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
-
-- [設定 DKIM，讓第三方服務可代表您的自訂網域傳送 (或偽造) 電子郵件](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
-
-- [後續步驟：為 Microsoft 365 設定 DKIM 之後](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
+- [DKIM 防止惡意詐騙的效用為何優於單獨使用 SPF](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
+- [將 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰的步驟](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
+- [手動設定 DKIM 的步驟](#steps-to-manually-set-up-dkim)
+- [為多個自訂網域設定 DKIM 的步驟](#to-configure-dkim-for-more-than-one-custom-domain)
+- [停用自訂網域 DKIM 簽署原則](#disabling-the-dkim-signing-policy-for-a-custom-domain)
+- [DKIM 和 Microsoft 365 的預設行為](#default-behavior-for-dkim-and-microsoft-365)
+- [設定 DKIM，讓第三方服務可代表您的自訂網域傳送 (或偽造) 電子郵件](#set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain)
+- [後續步驟：為 Microsoft 365 設定 DKIM 之後](#next-steps-after-you-set-up-dkim-for-microsoft-365)
 
 > [!NOTE]
 > Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表示您不需要執行任何操作，即可為任何初始網域名稱設定 DKIM (例如：litware.onmicrosoft.com)。 如需網域的詳細資訊，請參閱[網域常見問題集](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
@@ -71,15 +64,10 @@ DKIM 可讓您在郵件標頭中將數位簽章新增到外寄電子郵件訊息
  Microsoft 365 的內建 DKIM 設定對大部分的客戶而言已足夠使用，但在下列情況下，您仍應手動為自訂網域設定 DKIM：
 
 - 您在 Microsoft 365 中有多個自訂網域
-
 - 您也將設定 DMARC (**建議**)
-
 - 您想要控管私密金鑰
-
 - 您想要自訂 CNAME 記錄
-
 - 您想要為來自於第三方網域的電子郵件設定 DKIM，例如，當您使用第三方大量郵件寄件者時。
-
 
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>DKIM 防止惡意詐騙的效用為何優於單獨使用 SPF
 <a name="HowDKIMWorks"> </a>
@@ -135,7 +123,6 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 若要設定 DKIM，您應完成下列步驟：
 
 - [將兩個 CNAME 記錄發佈至您在 DNS 中的自訂網域](use-dkim-to-validate-outbound-email.md#Publish2CNAME)
-
 - [為自訂網域啟用 DKIM 簽署](use-dkim-to-validate-outbound-email.md#EnableDKIMinO365)
 
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>將兩個 CNAME 記錄發佈至您在 DNS 中的自訂網域
@@ -173,7 +160,6 @@ TTL:                3600
 其中：
 
 - Microsoft 365 的選取器將一律為 "selector1" 或 "selector2"。
-
 - _domainGUID_ 會與您自訂網域的自訂 MX 記錄中顯示於 mail.protection.outlook.com 前面的 _domainGUID_ 相同。 例如，在網域 contoso.com 的下列 MX 記錄中，_domainGUID_ 為 contoso-com：
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
@@ -203,39 +189,42 @@ TTL:                3600
 > [!NOTE]
 > 建立第二筆記錄很重要，但建立時只能使用其中一個選取器。 基本上，第二個選取器可能會指向尚未建立的位址。 我們還是建議您建立第二筆 CNAME 記錄，因為您的金鑰輪換會較流暢。
 
-
 ### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>為自訂網域啟用 DKIM 簽署的步驟
 <a name="EnableDKIMinO365"> </a>
 
 在 DNS 中發佈 CNAME 記錄後，您即可透過 Microsoft 365 啟用 DKIM 簽署。 您可以透過 Microsoft 365 系統管理中心或使用 PowerShell 來執行此作業。
 
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>透過系統管理中心為自訂網域啟用 DKIM 簽署
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>若要在 Microsoft 365 Defender 入口網站中啟用自訂網域的 DKIM 簽署
 
-1. 請使用工作或學校帳戶[登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. [使用公司或學校帳戶](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)開啟 Microsoft 365 Defender 入口網站。
 
-2. 請前往 [security.microsoft.com](https://security.microsoft.com) 並遵循下列路徑。
+2. 前往 **[電子郵件與共同作業]** \> **[原則與規則]** \> **[威脅原則]** \> **[規則]** 區段 \> **[DKIM]**。 或者，若要直接前往 DKIM 頁面，請使用 <https://security.microsoft.com/dkimv2>。
 
-3. 請前往 **[電子郵件與共同作業] > [原則與規則] > [威脅原則] > [DKIM]**。
+3. 在 **[DKIM]** 頁面上，按一下名稱以選取網域。
 
-4. 選取要啟用 DKIM 的網域，然後，針對 [使用 DKIM 簽章簽署此網域的郵件]，選擇 [啟用]。 對每個自訂網域重複此步驟。
+4. 在顯示的詳細資料飛出視窗中，將 **[使用 DKIM 簽章簽署此網域的郵件]** 設定為 **[啟用]** (![[切換開啟]](../../media/scc-toggle-on.png))
+
+   完成後，按一下 **[變換 DKIM 金鑰]**。
+
+5. 對每個自訂網域重複此步驟。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 為自訂網域啟用 DKIM 簽署
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/dkim.png" alt-text="「沒有儲存于這個網域的 DKIM 金鑰。」錯誤。":::
-> 如果您是第一次設定 DKIM，並看到螢幕顯示「沒有儲存于這個網域的 DKIM 金鑰。」錯誤 請完成下方的步驟 2 中的命令 (例如，將 *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) 以看到金鑰。
+> :::image type="content" source="../../media/dkim.png" alt-text="「沒有儲存于這個網域的 DKIM 金鑰。」錯誤。":::
+> 如果您是第一次設定 DKIM，並看到螢幕顯示 [沒有儲存此網域的 DKIM 金鑰] 錯誤，請完成下列步驟 2 的命令 (如範例 `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`)，以查看金鑰。
 
 1. [連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 執行下列命令：
+2. 使用下列語法：
 
    ```powershell
-   Set-DkimSigningConfig -Identity <domain> -Enabled $true
+   Set-DkimSigningConfig -Identity <Domain> -Enabled $true
    ```
 
-   其中，_domain_ 是要啟用 DKIM 簽署的自訂網域名稱。
+   \<Domain\> 是要啟用 DKIM 簽署的自訂網域名稱。
 
-   以網域 contoso.com 為例：
+   此範例會啟用 contoso.com 網域的 DKIM 簽署：
 
    ```powershell
    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
@@ -246,9 +235,7 @@ TTL:                3600
 請稍待幾分鐘，再依照下列步驟來確認您已正確設定 DKIM。 這可讓關於網域的 DKIM 資訊有時間散佈到整個網路。
 
 - 從已啟用 Microsoft 365 DKIM 的網域內包含的帳戶，傳送郵件到另一個電子郵件帳戶，例如 outlook.com 或 Hotmail.com。
-
 - 請勿使用 aol.com 帳戶進行測試。 在通過 SPF 檢查的情況下，AOL 可能會略過 DKIM 檢查。 這將使您的測試失去效用。
-
 - 開啟郵件並查看標頭。 檢視郵件標頭的指示會隨著您的郵件用戶端而不同。 如需在 Outlook 中檢視郵件標題的相關指示，請參閱[在 Outlook 中檢視網路訊息標題](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
   DKIM 簽署的郵件會包含您在發佈 CNAME 項目時所定義的主機名稱和網域。郵件會如下列範例所示：
@@ -281,7 +268,7 @@ TTL:                3600
 2. 為您要停用 DKIM 簽署的每個網域執行下列命令。
 
    ```powershell
-   $p = Get-DkimSigningConfig -Identity <domain>
+   $p = Get-DkimSigningConfig -Identity <Domain>
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 
