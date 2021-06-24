@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769413"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053068"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -116,7 +116,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留原則
 
 > [!NOTE]
-> Yammer 的保留原則已推出預覽版。 如果您還沒有看到 Yammer 的新位置，請於幾周後再試一次。
+> Yammer 的保留原則為預覽版。
 >
 > 若要使用此功能，您的 Yammer 網路必須處於[原生模式](/yammer/configure-your-yammer-network/overview-native-mode)，而非混合模式。
 
@@ -127,8 +127,6 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 3. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。 
     
     您可以建立只會保留內容但不刪除內容的保留原則，建立會保留並於一段指定的時間後刪除內容的原則，或直接在一段時間後刪除指定內容的原則。 如需詳細資訊，請參閱此頁面上的[保留和刪除內容的設定 ](#settings-for-retaining-and-deleting-content)。
-    
-    請勿選取 [使用進階保留設定 **]**，因為 Yammer 位置不支援此選項。 
 
 4. 在 [選擇位置 **]** 頁面上，選取 [讓我選擇特定位置 **]**。 然後將 Yammer 的一個或兩個位置切換為開啟：**Yammer 社群訊息** 和 **Yammer 使用者訊息**。
     

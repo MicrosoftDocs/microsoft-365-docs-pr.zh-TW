@@ -3,7 +3,6 @@ title: 使用 PowerShell 連線至 Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用適用於 Microsoft 365 的 PowerShell 連線至您的 Microsoft 365 租用戶，以從命令列執行系統管理中心工作。
-ms.openlocfilehash: 70d6aa1373daf2322319d21e385fc1498af3351e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b8f98441c7d727984bde8775dea496a9324d50c
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782798"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053056"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 連線至 Microsoft 365
 
@@ -36,6 +35,11 @@ ms.locfileid: "52782798"
 - 適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組，其 cmdlets 名稱中包含 *MSol*
 
 目前，適用於圖表的 Azure Active Directory PowerShell 模組無法完全取代適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組中針對使用者、群組和授權管理的功能。 在某些情況下，您需要同時使用這兩個版本。 您可以在同一部電腦上安全地安裝這兩個版本。
+
+>[!Note]
+>您也可以從 Microsoft 365 系統管理中心與 [Azure Cloud Shell](#connect-with-the-azure-cloud-shell) 連線。
+>
+
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -188,6 +192,14 @@ PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active
    ```powershell
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
    ```
+
+## <a name="connect-with-the-azure-cloud-shell"></a>與 Azure Cloud Shell 連線
+
+若要從 Microsoft 365 系統管理中心與 Azure Cloud Shell 連線並使用，請選取工作列右上角的PowerShell 視窗圖示。 在 **歡迎使用 Azure Cloud Shell** 窗格中，請選取 **PowerShell**。
+
+貴組織需要與 Microsoft 365 訂閱綁定的作用中 Azure 訂用帳戶。 如果您還沒有帳戶，您可以建立一個帳戶。 一旦擁有 Azure 訂用帳戶，從您執行 PowerShell 命令和指令時，PowerShell 視窗隨即開啟。
+
+如需詳細資訊，請參閱 [Azure Cloud Shell](/azure/cloud-shell/overview)。
 
 ## <a name="see-also"></a>另請參閱
 
