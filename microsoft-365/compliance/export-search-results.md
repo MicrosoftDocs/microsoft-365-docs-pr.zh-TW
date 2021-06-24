@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 將搜尋結果從 Microsoft 365 合規性中心的內容搜尋匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 SharePoint 和商務用 OneDrive 網站的內容會匯出為原生 Office 檔。
+description: 將搜尋結果從 Microsoft 365 合規性中心中的內容搜尋匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 SharePoint 和商務用 OneDrive 網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: d3ae14fc0ac31e50d579668c7fafba5390c5b8fc
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653532"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114761"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -90,7 +90,7 @@ ms.locfileid: "52653532"
 
 第一步是準備要匯出的搜尋結果。 當您準備結果時，會將其上傳至 microsoft 雲端中的 microsoft 提供 Azure 儲存體位置。 以每小時 2 GB 的最大速率上載信箱和網站的內容。
   
-1. 在 [Microsoft 365 規範中心] 中，選取您要從中匯出結果的內容搜尋。
+1. 在 Microsoft 365 合規性中心中，選取您要從中匯出結果的內容搜尋。
   
 2. 在飛入頁面底部的 [ **動作** ] 功能表上，按一下 [ **匯出結果**]。
 
@@ -133,6 +133,8 @@ ms.locfileid: "52653532"
    2. 選取 [**包含版本的 SharePoint** 檔案] 核取方塊，以匯出 SharePoint 檔的所有版本。 只有在搜尋的內容來源包含 SharePoint 或商務用 OneDrive 網站時，才會顯示此選項。
   
    3. 選取 [**壓縮 (zipped) 資料夾中的匯出檔案。只包含個別郵件和 SharePoint 檔**] 核取方塊，以將搜尋結果匯出至壓縮資料夾。 只有當您選擇將 Exchange 專案匯出為個別郵件，以及搜尋結果包括 SharePoint 或 OneDrive 檔時，才會出現此選項。 此選項主要是用來在匯出專案時，在 Windows 檔案路徑名稱中，避免260字元的限制。 請參閱 [More information](#more-information) 一節中的「匯出的專案的檔案名」。
+   > [!IMPORTANT]
+   > 在壓縮 (zipped) 資料夾中匯出檔案會增加匯出時間。
   
 6. 按一下 [ **匯出** ] 以啟動匯出程式。 搜尋結果已準備好下載，這表示它們是從原始內容位置收集，然後上傳至 Microsoft 雲端中的 Azure 儲存體位置。 可能會花幾分鐘的時間。
 
@@ -142,7 +144,7 @@ ms.locfileid: "52653532"
 
 下一步是從 Azure 儲存體位置將搜尋結果下載至您的本機電腦。
   
-1. 在 Microsoft 365 規範中心的 [**內容搜尋**] 頁面上，選取 [**匯出**] 索引標籤
+1. 在 [**內容搜尋**] 頁面的 Microsoft 365 合規性中心中，選取 [**匯出**] 索引標籤
   
    您可能 **需要按一下 [** 重新整理] 以更新匯出工作清單，使其顯示您建立的匯出工作。 匯出工作與對應的搜尋同名， **_Export** 附加至搜尋名稱。
   

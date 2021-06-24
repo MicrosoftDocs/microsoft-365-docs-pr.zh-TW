@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6dca58070d21271ffc832bcd628679303736f99e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 5a8e1cbda5f4361532c7fac0892be7ffe72f64ca
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108136"
+ms.locfileid: "53114725"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>針對靜態 proxy 探索，設定 Linux 上的 Microsoft Defender for Endpoint
 
@@ -36,35 +36,35 @@ ms.locfileid: "53108136"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender for Endpoint 可以使用環境變數探索 proxy 伺服器 ```HTTPS_PROXY``` 。 此設定 **必須在安裝** 時和產品安裝之後設定。
+Microsoft Defender for Endpoint 可以使用環境變數探索 proxy 伺服器 `HTTPS_PROXY` 。 此設定 **必須在安裝** 時和產品安裝之後設定。
 
 ## <a name="installation-time-configuration"></a>安裝時間設定
 
-在安裝期間， ```HTTPS_PROXY``` 環境變數必須傳遞給套件管理員。 套件管理員可以採用下列任何一種方式讀取此變數：
+在安裝期間， `HTTPS_PROXY` 環境變數必須傳遞給套件管理員。 套件管理員可以採用下列任何一種方式讀取此變數：
 
-- ```HTTPS_PROXY```變數是以 ```/etc/environment``` 下列行定義的：
+- `HTTPS_PROXY`變數是以 `/etc/environment` 下列行定義的：
 
-    ```bash
-    HTTPS_PROXY="http://proxy.server:port/"
-    ```
+  ```bash
+  HTTPS_PROXY="http://proxy.server:port/"
+  ```
 
 - `HTTPS_PROXY`變數是以 package 管理員全域設定定義。 例如，在 Ubuntu 18.04 中，您可以將下列行新增到 `/etc/apt/apt.conf.d/proxy.conf` ：
   
-    ```bash
-    Acquire::https::Proxy "http://proxy.server:port/";
-    ```
+  ```bash
+  Acquire::https::Proxy "http://proxy.server:port/";
+  ```
 
-    > [!CAUTION]
-    > 請注意，上述兩種方法可能會定義 proxy，以用於系統上的其他應用程式。 請謹慎使用此方法，或僅限這種方式是一般全域設定。
+  > [!CAUTION]
+  > 請注意，上述兩種方法可能會定義 proxy，以用於系統上的其他應用程式。 請謹慎使用此方法，或僅限這種方式是一般全域設定。
   
 - `HTTPS_PROXY`變數預先安裝或卸載命令。 例如，使用 APT 套件管理員時，會在安裝 Microsoft Defender for Endpoint 時，按下列方式前置變數： 
 
-    ```bash  
-    HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
-    ```
+  ```bash  
+  HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
+  ```
 
-    > [!NOTE]
-    > 請勿在環境變數定義和 apt 之間新增 sudo，否則將不會傳播此變數。
+  > [!NOTE]
+  > 請勿在環境變數定義和 apt 之間新增 sudo，否則將不會傳播此變數。
 
 `HTTPS_PROXY`環境變數可能會在卸載期間定義。
 
@@ -74,16 +74,16 @@ Microsoft Defender for Endpoint 可以使用環境變數探索 proxy 伺服器 `
   
 安裝後， `HTTPS_PROXY` 環境變數必須在 Endpoint service 檔案中定義。 若要這麼做，請 `/lib/systemd/system/mdatp.service` 在文字編輯器中開啟以根使用者的模式。 然後，您可以採用下列其中一種方式將變數傳播至服務：
 
-    > [!NOTE]
-    > On CentOS or RedHat Linux distributions the location of the Endpoint service file is `/usr/lib/systemd/system/mdatp.service`.
+> [!NOTE]
+> 在 CentOS 或 RedHat Linux 分配中，端點服務檔案的位置是 `/usr/lib/systemd/system/mdatp.service` 。
 
 - 取消注釋該行 `#Environment="HTTPS_PROXY=http://address:port"` ，並指定您的靜態 proxy 位址。
 
 - 新增一行 `EnvironmentFile=/path/to/env/file` 。 此路徑可以指向 `/etc/environment` 或自訂檔案，其中一個需要新增下列行：
   
-    ```bash
-    HTTPS_PROXY="http://proxy.server:port/"
-    ```
+  ```bash
+  HTTPS_PROXY="http://proxy.server:port/"
+  ```
 
 修改檔案之後 `mdatp.service` ，儲存並關閉該檔案。 重新開機服務，以便可以套用變更。 在 Ubuntu 中，這包括兩個命令：  
 

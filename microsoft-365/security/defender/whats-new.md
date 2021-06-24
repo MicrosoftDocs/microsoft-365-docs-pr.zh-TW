@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 78783ab98c50252115c28008680197256bfd7aa5
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105401"
+ms.locfileid: "53114728"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
@@ -38,6 +38,8 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="june-2021"></a>2021 年 6 月
+- [Microsoft 365 Defender 威脅分析報告](threat-analytics.md)中的威脅標記 <br> 威脅標記可協助您將重點放在特定威脅類別上，並複查最相關的報告。 
 
 ## <a name="may-2021"></a>2021 年 5 月
 

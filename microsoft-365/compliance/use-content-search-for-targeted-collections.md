@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: 在 Microsoft 365 規範中心使用內容搜尋，以執行目標集合，以搜尋特定信箱或網站資料夾中的專案。
-ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: 在 Microsoft 365 合規性中心中使用內容搜尋來執行目標集合，此集合會搜尋特定信箱或網站資料夾中的專案。
+ms.openlocfilehash: 925a6e5e0e56c63cde8bfa1b39cca6e64abcd016
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311892"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114749"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>對目標集合使用內容搜尋
 
-Microsoft 365 規範中心的內容搜尋工具不會在 UI 中提供直接的方式，以搜尋 Exchange 信箱或 SharePoint 和商務用 OneDrive 網站中的特定資料夾。 不過，您可以在實際搜尋查詢語法中指定網站的 [電子郵件] 或 [)  (路徑] 的資料夾識別碼內容， (稱為 *目標集合*) ，以搜尋特定資料夾。 當您確信回應案例或特權專案的專案位於特定信箱或網站資料夾時，使用內容搜尋來執行目標集合很有用。 您可以使用本文中的腳本，取得信箱資料夾的資料夾識別碼，或 SharePoint 和商務用 OneDrive 網站上資料夾的 (DocumentLink) 路徑。 然後您可以使用搜尋查詢中的資料夾識別碼或路徑，傳回位於資料夾中的專案。
+Microsoft 365 合規性中心中的內容搜尋工具不會在 UI 中提供直接的方式，以搜尋 Exchange 信箱或 SharePoint 和商務用 OneDrive 網站中的特定資料夾。 不過，您可以在實際搜尋查詢語法中指定網站的 [電子郵件] 或 [)  (路徑] 的資料夾識別碼內容， (稱為 *目標集合*) ，以搜尋特定資料夾。 當您確信回應案例或特權專案的專案位於特定信箱或網站資料夾時，使用內容搜尋來執行目標集合很有用。 您可以使用本文中的腳本，取得信箱資料夾的資料夾識別碼，或 SharePoint 和商務用 OneDrive 網站上資料夾的 (DocumentLink) 路徑。 然後您可以使用搜尋查詢中的資料夾識別碼或路徑，傳回位於資料夾中的專案。
 
 > [!NOTE]
 > 若要傳回位於 SharePoint 或商務用 OneDrive 網站的資料夾中的內容，本主題中的腳本會使用 DocumentLink managed 屬性，而不是 Path 屬性。 DocumentLink 屬性比 Path 屬性更強健，因為它會傳回資料夾中的所有內容，而 Path 屬性則不會傳回某些媒體檔案。
@@ -216,17 +216,19 @@ Microsoft 365 規範中心的內容搜尋工具不會在 UI 中提供直接的�
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步驟2：使用資料夾識別碼或 documentlink 來執行目標集合
 
-在您執行腳本來收集特定使用者的資料夾 IDs 或檔連結的清單後，下一步是移至「Microsoft 365 規範中心」，並建立新的內容搜尋來搜尋特定的資料夾。 `folderid:<folderid>` `documentlink:<path>` 如果您使用 **New-ComplianceSearch** Cmdlet) ，您會在 [內容搜尋關鍵字] 方塊中所設定的搜尋查詢中，使用 or property： value 組 (，也可以使用 *ContentMatchQuery* 參數的值。 您可以將  `folderid` or  `documentlink` 屬性與其他搜尋參數或搜尋條件結合使用。 如果您在查詢中只包含  `folderid` or  `documentlink` 屬性，則搜尋會傳回位於指定資料夾中的所有專案。
+在您執行腳本來收集特定使用者的資料夾 IDs 或檔連結的清單後，下一步是移至 Microsoft 365 合規性中心，並建立新的內容搜尋來搜尋特定的資料夾。 `folderid:<folderid>` `documentlink:<path>` 如果您使用 **New-ComplianceSearch** Cmdlet) ，您會在 [內容搜尋關鍵字] 方塊中所設定的搜尋查詢中，使用 or property： value 組 (，也可以使用 *ContentMatchQuery* 參數的值。 您可以將  `folderid` or  `documentlink` 屬性與其他搜尋參數或搜尋條件結合使用。 如果您在查詢中只包含  `folderid` or  `documentlink` 屬性，則搜尋會傳回位於指定資料夾中的所有專案。
 
 1. <https://compliance.microsoft.com>使用您在步驟1中用來執行腳本的帳戶和認證，移至並登入。
 
 2. 在 [規範中心] 的左窗格中，按一下 [**顯示所有**  >  **內容搜尋**]，然後按一下 [**新增搜尋**]。
 
-3. 在 [ **關鍵字** ] 方塊中， `folderid:<folderid>` 將  `documentlink:<path>` 步驟1中的腳本所傳回的 or 值貼上。
+3. 在 [ **關鍵字** ] 方塊中， `folderid:<folderid>` 將  `documentlink:<path>/*` 步驟1中的腳本所傳回的 or 值貼上。
 
     例如，下列螢幕擷取畫面中的查詢會搜尋使用者的 [可復原的專案] 資料夾中的 [清除] 子資料夾中的任何專案 ([清除] 子資料夾的 `folderid` 屬性值會顯示在步驟 1) 中的螢幕擷取畫面中：
 
     ![將 folderid 或 documentlink 貼到搜尋查詢的關鍵字方塊中](../media/FolderIDSearchQuery.png)
+    > [!IMPORTANT]
+    > documentlink 搜尋需要使用尾碼  `asterisk '/*'` 。  
 
 4. 在 [ **位置**] 下，選取 [ **特定位置** ]，然後按一下 [ **修改**]。
 
@@ -234,7 +236,7 @@ Microsoft 365 規範中心的內容搜尋工具不會在 UI 中提供直接的�
 
     - 在 [ **Exchange 電子郵件**] 旁，按一下 **[選擇使用者、群組或小組**]，然後新增您在步驟1中執行腳本時所指定的相同信箱。
 
-      或者
+      或
 
     - 在 [ **SharePoint 網站**] 旁，按一下 **[選擇網站**]，然後新增當您在步驟1中執行腳本時所指定的相同網站 URL。
 
@@ -259,13 +261,13 @@ Microsoft 365 規範中心的內容搜尋工具不會在 UI 中提供直接的�
 - 本範例會在標題中搜尋包含字母 "保密協定" 的檔的網站資料夾 (及任何子資料夾) 。
 
   ```powershell
-  documentlink:<path> AND filename:nda
+  documentlink:"<path>/*" AND filename:nda
   ```
 
 - 此範例會在某個日期範圍內，搜尋 (和所有子資料夾) 中已變更的子資料夾。
 
   ```powershell
-  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
 ## <a name="more-information"></a>其他資訊
