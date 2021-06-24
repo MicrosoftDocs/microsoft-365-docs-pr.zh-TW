@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/14/2021
-ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.date: 06/23/2021
+ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929440"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105329"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -76,7 +76,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 我們所有的更新均包含 
 - 效能改進;
 - 可維護性改進;和 
--  (Cloud [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 的整合增強功能。
+- 整合功能 (Cloud [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 。
 <br/><br/>
 <details>
 <summary> 2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </summary>
@@ -105,6 +105,8 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 ### <a name="whats-new"></a>新增功能
 - 其他行為監控邏輯
 - 改進的核心模式 keylogger 偵測
+- 新增控制項以管理[Microsoft Defender 更新](manage-gradual-rollout.md)的逐步式展示過程
+
 
 ### <a name="known-issues"></a>已知問題
 無已知問題  

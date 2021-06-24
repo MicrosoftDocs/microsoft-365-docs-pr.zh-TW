@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dcfc3bd0e06e0bdca6c834e947d7d136af47fde3
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fdfc065aea3549e99de72c968c0fa19412f9e246
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782822"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105353"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的事件
 
@@ -40,7 +40,7 @@ ms.locfileid: "52782822"
 
 - Microsoft 365 Defender
 
-Microsoft 365Defender 會將所有相關的警示、資產、調查和證據，集中于您的裝置、使用者和信箱，以讓您全面瞭解攻擊的整體廣度。
+Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，全部從您的裝置、使用者和信箱匯總到事件中，讓您全面瞭解攻擊的整體廣度。
 
 在事件內，您會分析影響網路的警示、瞭解其含義，以及對照證據來設計有效的修復計畫。
 
@@ -145,7 +145,15 @@ Microsoft 365Defender 會將所有相關的警示、資產、調查和證據，�
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件的調查頁面範例":::
 
-選取調查以瀏覽至 [調查詳細資料] 頁面，取得調查和修復狀態的完整資訊。 如果有任何動作出于調查的一部分而待核准，它們就會出現在 [擱置的動作] 索引標籤中。採取動作做為事件修復的一部分。
+選取調查以流覽至其詳細資料頁面，以取得調查和修正狀態的完整資訊。 如果有任何動作出于調查的一部分而待核准，它們就會出現在 [ **擱置的動作記錄** ] 索引標籤中。採取動作做為事件修復的一部分。
+
+此外，還會顯示一個 **調查圖表** 索引標籤：
+
+- 組織中受影響資產的警示連接。
+- 哪些實體與哪些警示相關，以及如何成為攻擊本文的一部分。
+- 事件的警示。
+
+調查圖表可協助您透過連線屬於攻擊一部分相關資產（如使用者、裝置和信箱）的不同可疑實體，快速瞭解攻擊的完整範圍。 
 
 如需詳細資訊，請參閱[Microsoft 365 Defender 中的自動化調查和回應](m365d-autoir.md)。
 
@@ -155,25 +163,9 @@ Microsoft 365Defender 會將所有相關的警示、資產、調查和證據，�
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="事件的證據與回應頁面範例":::
 
-Microsoft 365Defender 會自動調查警示中的所有事件支援事件和可疑實體，提供重要電子郵件、檔案、程式、服務、IP 位址等相關資訊。 這可協助您快速偵測並封鎖事件中的潛在威脅。
+Microsoft 365 Defender 會自動調查警示中的所有事件支援事件和可疑實體，以提供重要電子郵件、檔案、程式、服務、IP 位址等相關資訊。 這可協助您快速偵測並封鎖事件中的潛在威脅。
 
 每個分析的實體都會以判定為序 (惡意、可疑、清除) 和修正狀態。 這可協助您瞭解整個事件的修復狀態，以及可以採取的後續步驟。
-
-## <a name="graph-in-preview"></a>預覽中 Graph () 
-
-使用 [新增 **Graph** ] 索引標籤 (在預覽) 中，您可以看到：
-
-- 組織中受影響資產的警示連接。
-- 哪些實體與哪些警示相關，以及如何成為攻擊本文的一部分。
-- 事件的警示。
-
-以下為範例。
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="事件 Graph 頁面的範例":::
-
-事件圖形可協助您透過連線屬於攻擊一部分之相關資產（如使用者、裝置和信箱）的不同可疑實體，快速瞭解攻擊的完整範圍。 
-
-現在，您可以瞭解攻擊如何透過您的網路傳播，在何處開始，以及攻擊的進入程度。
 
 ## <a name="next-steps"></a>後續步驟
 

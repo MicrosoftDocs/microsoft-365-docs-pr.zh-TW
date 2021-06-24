@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083677"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105389"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -95,8 +95,8 @@ ms.locfileid: "53083677"
 
 3. 在開啟的 [原則詳細資料] 浮出視窗中，按一下 [ **編輯保護設定**]，然後設定下列設定：
    - **保護設定** 區段：
-     - 選取 **[啟用通用附件篩選** ] 以開啟通用附件篩選器。 按一下 [ **自訂檔案類型** ]，以新增更多檔案類型。
-     - **為惡意程式碼啟用零小時自動清除**：確認已選取此設定。 如需有關惡意程式碼之 ZAP 的詳細資訊，請參閱 [零小時自動清除 (zap) 惡意](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)代碼。
+     - **啟用常見附件篩選**：選取 [ (開啟) ]。 按一下 [ **自訂檔案類型** ]，以新增更多檔案類型。
+     - **啟用惡意程式碼的零小時自動清除**：確認已選取此設定。 如需有關惡意程式碼之 ZAP 的詳細資訊，請參閱 [零小時自動清除 (zap) 惡意](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)代碼。
    - **通知** 區段：確認未選取任何通知設定。
 
    完成後，按一下 [儲存]。
@@ -251,7 +251,7 @@ ms.locfileid: "53083677"
 2. 在 [**保管庫連結**] 頁面上，按一下 [**通用設定**]，然後在出現的快顯視窗上設定下列設定：
    - **適用于支援的 Office 365 應用程式區段中的內容的設定**：
      - **使用 Office 365 應用程式中的保管庫連結**：確認此設定已開啟 (![) 上的 [切換] ](../../media/scc-toggle-on.png) 。
-     - **當使用者在 Office 365 應用程式中按一下受保護連結時，請勿追蹤**：關閉此設定 (關閉 ![ ](../../media/scc-toggle-off.png)) 
+     - **當使用者在 Office 365 應用程式中按一下受保護連結時，請勿追蹤**：關閉此設定 (![) 關閉] ](../../media/scc-toggle-off.png) 。
      - **請勿讓使用者在 Office 365 應用程式中按原始 URL**：確認此設定已開啟 ![) 上 (開啟] ](../../media/scc-toggle-on.png) 。
 
    完成後，請按一下 [儲存]。

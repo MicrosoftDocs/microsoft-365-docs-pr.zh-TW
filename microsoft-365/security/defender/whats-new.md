@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096813"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105401"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
@@ -38,8 +38,12 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>2021 年 6 月
-- [Microsoft 365 Defender 威脅分析報告](threat-analytics.md)中的威脅標記 <br> 威脅標記可協助您將重點放在特定威脅類別上，並複查最相關的報告。 
+
+## <a name="may-2021"></a>2021 年 5 月
+
+- [Microsoft 365 Defender 入口網站中的 [新增提醒] 頁面](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> 將內容的增強資訊提供給攻擊。 您可以看到哪些其他觸發的警示導致目前的警示，以及攻擊中所涉及的所有受影響的實體和活動，包括檔案、使用者和信箱。 如需詳細資訊，請參閱 [調查提醒](/microsoft-365/security/defender/investigate-alerts) 。
+- [Microsoft 365 Defender 入口網站中的事件及警示的趨勢圖](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> 判斷單一事件是否有多個警示，或是組織受到數個不同的事件攻擊。 如需詳細資訊，請參閱 [優先順序事件](/microsoft-365/security/defender/incident-queue) 。
+
 
 ## <a name="april-2021"></a>2021 年 4 月
 - Microsoft 365 Defender<br> 改進的[Microsoft 365 Defender](https://security.microsoft.com)入口網站現已提供。 這種新的經驗會彙集一或多個端點、Office 365 的 defender、身分識別的 defender，以及更多的單一入口網站。 這是管理安全性控制的新家用。 [了解新功能](./overview-security-center.md)。

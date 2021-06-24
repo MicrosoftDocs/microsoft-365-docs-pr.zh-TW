@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028976"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096753"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -421,9 +421,7 @@ ms.locfileid: "53028976"
 
 若要搜尋此事件的稽核記錄，請尋找 **[檔案與頁面活動]** 類別中的 **[偵測到的文件敏感度不相符]**。
 
-自動產生電子郵件的 [主旨] 為 **偵測到不相容敏感度標籤**，而電子郵件訊息則會有上傳文件和網站連結的標記不相符說明。 它也包含說明使用者可如何變更敏感度標籤的文件連結。 目前無法停用或自訂這些自動電子郵件。
-
-若要避免自動產生電子郵件，請使用下列 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 的 PowerShell 命令：
+自動產生電子郵件的 [主旨] 為 **偵測到不相容敏感度標籤**，而電子郵件訊息則會有上傳文件和網站連結的標記不相符說明。 它也包含說明使用者可如何變更敏感度標籤的文件連結。 無法自訂這些自動化電子郵件，但當您從 [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) 使用下列 PowerShell 命令時，您可以避免傳送它們：
 
 ```PowerShell
 Set-SPOTenant -BlockSendLabelMismatchEmail $True

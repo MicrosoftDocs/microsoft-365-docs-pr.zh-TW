@@ -18,12 +18,12 @@ ms.custom:
 description: 深入瞭解安全性資訊和事件管理 (SIEM) 伺服器整合 Microsoft 365 雲端服務與應用程式
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929788"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105593"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>安全性資訊和事件管理 (SIEM) 伺服器整合 Microsoft 365 服務和應用程式
 
@@ -46,12 +46,13 @@ ms.locfileid: "52929788"
 您是否需要 SIEM server 取決於許多因素，例如組織的安全性需求和您的資料所在的位置。 Microsoft 365 包括各種安全性功能，可滿足許多組織的安全性需求，不需要其他伺服器，例如 SIEM server。 有些組織需要使用 SIEM server 的特殊情況。 範例如下：
 
 - *Fabrikam* 在內部部署一些內容和應用程式，而在雲端中有些則 (他們有混合式雲端部署) 。 若要在其所有內容和應用程式中取得安全性報告，Fabrikam 已執行 SIEM 伺服器。
-
 - *Contoso* 是一種金融服務組織，具有特別嚴格的安全性需求。 他們已將 SIEM 伺服器新增至其環境，以充分利用所需的額外安全性保護。
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM server 與 Microsoft 365 整合
 
 SIEM 伺服器可以接收來自多種 Microsoft 365 服務和應用程式的資料。 下表列出數個 Microsoft 365 服務和應用程式，以及 SIEM server 輸入和資源以深入瞭解。
+
+<br>
 
 ****
 
@@ -63,14 +64,13 @@ SIEM 伺服器可以接收來自多種 Microsoft 365 服務和應用程式的資
 |
 
 > [!TIP]
-> 請看一下 [Azure Sentinel](/azure/sentinel/overview)。 Azure Sentinel 隨附 Microsoft 解決方案的連接器。 這些連接器可用於「現成」，並提供即時整合。 您可以使用 Azure Sentinel 搭配 Microsoft 365 的 Defender 解決方案和 Microsoft 365 服務，包括 Office 365、Azure AD、Microsoft Defender 身分識別、Microsoft Cloud App Security 等等。
+> 請看一下 [Azure Sentinel](/azure/sentinel/overview)。 Azure Sentinel 隨附 Microsoft 解決方案的連接器。 這些連接器可用於「現成」，並提供即時整合。 您可以使用 Azure Sentinel 搭配您的 Microsoft 365 Defender 解決方案和 Microsoft 365 服務，包括 Office 365、Azure AD、Microsoft Defender 身分識別、Microsoft Cloud App Security 等等。
 
 ### <a name="audit-logging-must-be-turned-on"></a>必須開啟審核記錄
 
 設定 SIEM server 整合之前，請確定已開啟審核記錄。
 
-- 針對 SharePoint 線上、商務用 OneDrive 及 Azure Active Directory，[已在 Microsoft 365 Defender 入口網站中開啟審核記錄](../../compliance/turn-audit-log-search-on-or-off.md)。
-
+- 如需 SharePoint 線上、商務用 OneDrive 及 Azure Active Directory，請參閱[開啟或關閉審計](../../compliance/turn-audit-log-search-on-or-off.md)。
 - 如 Exchange Online，請參閱[管理信箱審核](../../compliance/enable-mailbox-auditing.md)。
 
 ## <a name="more-resources"></a>其他資源

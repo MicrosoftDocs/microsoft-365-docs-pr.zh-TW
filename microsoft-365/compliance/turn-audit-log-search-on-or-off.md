@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: 如何在「Microsoft 365 規範中心」中開啟或關閉「審核記錄搜尋」功能，以啟用或停用系統管理員搜尋審核記錄的能力。
-ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 如何在 Microsoft 365 合規性中心中開啟或關閉「審核記錄搜尋」功能，以啟用或停用系統管理員搜尋審核記錄的能力。
+ms.openlocfilehash: 7c55443eda9a99ff4ef153d8564fd9ac43fcc549
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706659"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105305"
 ---
 # <a name="turn-auditing-on-or-off"></a>開啟或關閉稽核
 
@@ -39,7 +39,7 @@ ms.locfileid: "52706659"
 - 您必須在 Exchange Online 中指派「審計記錄」角色，才能在 Microsoft 365 組織中開啟或關閉審計。 根據預設，此角色會指派給 Exchange 系統管理中心的 [**許可權**] 頁面上的 [規範管理] 和 [組織管理] 角色群組。 Microsoft 365 中的全域系統管理員是 Exchange Online 中的「組織管理」角色群組的成員。 
 
     > [!NOTE]
-    > 在 Exchange Online 開啟或關閉審核時，必須將許可權指派給使用者。 如果您在安全性 & 合規性中心的 [ **許可權** ] 頁面上指派「審核記錄」角色，則使用者將無法開啟或關閉審核功能。 這是因為基準 Cmdlet 是 Exchange Online PowerShell Cmdlet。 
+    > 在 Exchange Online 開啟或關閉審核時，必須將許可權指派給使用者。 如果您在安全性 & 合規性中心的 [ **許可權** ] 頁面上指派「審核記錄」角色，則使用者將無法開啟或關閉審核功能。 這是因為基準 Cmdlet 是 Exchange Online PowerShell Cmdlet。
 
 - 如需搜尋審核記錄的逐步指示，請參閱在 [安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 如需 Microsoft 365 管理活動 API 的詳細資訊，請參閱[開始使用 Microsoft 365 管理 APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "52706659"
 
 1. 移至 <https://compliance.microsoft.com> 並登入。
 
-2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [**審計**]。
+2. 在 Microsoft 365 合規性中心的左導覽窗格中，按一下 [**全部顯示**]，然後按一下 [**審計**]。
 
    如果您的組織未開啟審核，就會顯示橫幅，提示您開始錄製使用者和系統管理員活動。
 
@@ -103,6 +103,6 @@ ms.locfileid: "52706659"
 
       `False` _UnifiedAuditLogIngestionEnabled_ 屬性的值表示已關閉的審計功能。
 
-    - 移至 Microsoft 365 規範中心的「**審計**」頁面。
+    - 移至 Microsoft 365 合規性中心中的 [**審計**] 頁面。
 
       如果您的組織未開啟審核，就會顯示橫幅，提示您開始錄製使用者和系統管理員活動。

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841831"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105683"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
@@ -119,7 +119,7 @@ ms.locfileid: "52841831"
 
 所有原則都位於 `Computer Configuration\Policies\Administrative Templates` 。
 
-**原則位置：** \ Windows 元件 \ Windows Defender SmartScreen *
+**原則位置：** \ Windows Defender ATP Windows 元件 \ ATP
 
 原則 | 設定 
 :---|:---
@@ -155,7 +155,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 <br/>
 
-**原則位置：** \ Windows Components\Microsoft Defender AntivirusScan
+**原則位置：** \ Windows 元件 \ Microsoft Defender 防毒軟體 \Scan
 
 這些設定會設定定期掃描端點。 建議您執行每週的快速掃描（效能允許）。
 

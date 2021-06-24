@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841785"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105569"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -349,6 +349,21 @@ ms.locfileid: "52841785"
         ```bash
         mdatp threat list
         ```
+
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>體驗具有模擬攻擊的 Linux 端點偵測和回應 (EDR) 功能
+
+若要測試 linux EDR 的功能，請遵循下列步驟，在 linux 伺服器上模擬偵測，並調查案例。 
+
+1.  確認架 Linux 伺服器出現在 Microsoft Defender 資訊安全中心中。 如果這是電腦的第一個上架，可能需要長達20分鐘，直到出現為止。 
+
+2.  下載 [腳本](https://aka.ms/LinuxDIY) 檔案並將其解壓縮至架 Linux 伺服器，並執行下列命令： `./mde_linux_edr_diy.sh`
+
+3.  幾分鐘後，就會在 Microsoft Defender 資訊安全中心中引發偵測。
+
+4.  查看警示詳細資料、電腦時程表，並執行您的一般調查步驟。
+
+
+
 
 ## <a name="installer-script"></a>Installer 腳本
 

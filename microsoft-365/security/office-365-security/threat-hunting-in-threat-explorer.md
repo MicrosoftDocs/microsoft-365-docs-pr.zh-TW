@@ -16,12 +16,12 @@ description: 在 Microsoft 365 Defender 入口網站中使用威脅瀏覽器或�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0ad5d73abae71cc7cc00e12665d96b2020da0c41
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083557"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105426"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 威脅瀏覽器中的威脅搜尋
 
@@ -40,18 +40,9 @@ ms.locfileid: "53083557"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果您的組織有 [Office 365 的 Microsoft Defender](defender-for-office-365.md)，而且您具有 [許可權](#required-licenses-and-permissions)，您可以使用 **Explorer** 或 **即時** 偵測來偵測和修正威脅。 
+如果您的組織有 [Office 365 的 Microsoft Defender](defender-for-office-365.md)，而且您具有 [許可權](#required-licenses-and-permissions)，您可以使用 **Explorer** 或 **即時** 偵測來偵測和修正威脅。
 
-在 **Microsoft 365 Defender 入口網站** 中，移至 [**電子郵件 &** 共同作業]，然後選擇 [ **Explorer**]。
-
-<br>
-
-****
-
-|使用 Microsoft Defender Office 365 方案2，您會看到：|使用 Microsoft Defender Office 365 方案1，您會看到：|
-|---|---|
-|![威脅總管](../../media/path-to-explorer.png)|![即時偵測](../../media/threatmgmt-realtimedetections.png)|
-|
+在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 中，移至 [**電子郵件 &** 共同作業]，然後選擇 [ **Explorer** ] 或 [**即時** 偵測]。 若要直接執行頁面，請使用 <https://security.microsoft.com/threatexplorer> 或 <https://security.microsoft.com/realtimereports>
 
 使用這些工具，您可以：
 
@@ -60,7 +51,7 @@ ms.locfileid: "53083557"
 - 從瀏覽器中的視圖開始自動調查和回應程式
 - 調查惡意電子郵件及其他
 
-如需詳細資訊，請參閱 [使用威脅瀏覽器的電子郵件安全性](email-security-in-microsoft-defender.md)。 
+如需詳細資訊，請參閱 [使用威脅瀏覽器的電子郵件安全性](email-security-in-microsoft-defender.md)。
 
 ## <a name="threat-explorer-walk-through"></a>威脅瀏覽器逐步流覽
 
@@ -68,7 +59,7 @@ ms.locfileid: "53083557"
 
 Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽器* 的子集 (也稱為計畫2中的 *Explorer*) 搜尋工具。 在此系列文章中，大部分的範例是使用完整威脅瀏覽器建立的。 管理員應該在即時偵測中測試任何步驟，以查看其適用的位置。
 
-若要開啟 Explorer 工具，請移至 **Microsoft 365 Defender 入口網站**  >  **電子郵件 &** 共同  >  **瀏覽器**。 依預設，您會到達 **惡意軟體** 頁面，但使用 [View] （ **查看** ）下拉式功能表以熟悉您的選項。 如果您要搜尋網路釣魚網路，或鑽研至威脅活動，請選擇這些視圖。
+移至 **瀏覽器** 之後，預設會到達 **惡意軟體** 頁面，但使用 [View] （ **查看** ）下拉式功能表以熟悉您的選項。 如果您要搜尋網路釣魚網路，或鑽研至威脅活動，請選擇這些視圖。
 
 > [!div class="mx-imgBorder"]
 > ![威脅瀏覽器中的 View 下拉式清單](../../media/view-drop-down.png)
@@ -81,19 +72,19 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 若要在瀏覽器中精煉焦點或即時偵測，您可以在層中想到。 第一個是 **View**。 第二個可以視為 *篩選的焦點*。 例如，您可以透過記錄決策來回溯您在尋找威脅時所採取的步驟：若要在瀏覽器中找出問題， **我選擇具有收件者篩選器焦點的惡意程式碼視圖**。 這可讓您更輕鬆 retracing 步驟。
 
 > [!TIP]
-> 如果 Sec Ops 使用標籤來標示其考慮高值 **目標的帳戶** ，他們可以像網路釣魚視圖一樣，進行選擇 *篩選焦點 (包括使用) 的日期範圍*。 這會在時間範圍 (等時間範圍內，向使用者顯示其高價值的使用者目標，例如，當某些網路釣魚攻擊針對其行業) 所發生的情況。 
+> 如果 Sec Ops 使用標籤來標示其考慮高值 **目標的帳戶** ，他們可以像網路釣魚視圖一樣，進行選擇 *篩選焦點 (包括使用) 的日期範圍*。 這會在時間範圍 (等時間範圍內，向使用者顯示其高價值的使用者目標，例如，當某些網路釣魚攻擊針對其行業) 所發生的情況。
 
-您可以使用日期範圍控制項，對日期範圍進行改進。 在這裡，您可以在 **惡意** 代碼視圖中查看瀏覽器，並使用 **偵測技術** 篩選焦點。 但它是可讓 Sec Ops 小組深入瞭解的「 **高級篩選** 」按鈕。 
+您可以使用日期範圍控制項，對日期範圍進行改進。 在這裡，您可以在 **惡意** 代碼視圖中查看瀏覽器，並使用 **偵測技術** 篩選焦點。 但它是可讓 Sec Ops 小組深入瞭解的「 **高級篩選** 」按鈕。
 
 > [!div class="mx-imgBorder"]
 > ![威脅瀏覽器中的高級篩選](../../media/advanced-filter.png)
 
-按一下 [ **高級] 篩選器** 會彈出面板，讓每個 hunters 建立查詢本身，讓它們包含或排除所需查看的資訊。 瀏覽器頁面上的圖表和表格都會反映其結果。 
+按一下 [ **高級] 篩選器** 會彈出面板，讓每個 hunters 建立查詢本身，讓它們包含或排除所需查看的資訊。 瀏覽器頁面上的圖表和表格都會反映其結果。
 
 > [!div class="mx-imgBorder"]
 > ![查詢的結果](../../media/threat-explorer-chart-table.png)
 
-使用 [ **欄選項** ] 按鈕，以取得表格中最有説明的資訊類型： 
+使用 [ **欄選項** ] 按鈕，以取得表格中最有説明的資訊類型：
 
 > [!div class="mx-imgBorder"]
 > ![高亮顯示欄選項按鈕](../../media/threat-explorer-column-options.png)
@@ -101,7 +92,7 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 > [!div class="mx-imgBorder"]
 > ![欄中可用的選項](../../media/column-options.png)
 
-在同一個 mien 中，請務必測試顯示選項。 不同的物件會對相同資料的不同簡報有很好的反應。 針對有些檢視器， **電子郵件來源** 地圖可顯示威脅的普及或更快，比其旁邊的 [ **市場活動顯示** ] 選項更快。 每秒 Op 可以利用這些顯示效果，使底線成為安全性和保護的必要點，或用於進行後續比較，以示範其動作的效能。 
+在同一個 mien 中，請務必測試顯示選項。 不同的物件會對相同資料的不同簡報有很好的反應。 針對有些檢視器， **電子郵件來源** 地圖可顯示威脅的普及或更快，比其旁邊的 [ **市場活動顯示** ] 選項更快。 每秒 Op 可以利用這些顯示效果，使底線成為安全性和保護的必要點，或用於進行後續比較，以示範其動作的效能。
 
 > [!div class="mx-imgBorder"]
 > ![電子郵件來源地圖](../../media/threat-explorer-email-origin-map.png)
@@ -113,9 +104,9 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 
 當您看到可疑的電子郵件時，按一下名稱以展開右側的飛出視窗。 在這裡，允許 Sec Ops 的橫幅會看到 [ [電子郵件實體] 頁面](mdo-email-entity-page.md) 可供使用。
 
-[電子郵件實體] 頁面會將可在 [ **詳細** 資料]、[ **附件**]、[ **裝置**] 底下找到的內容，包含更多組織的資料。 這包括 DMARC 結果、純文字顯示（含副本選項的電子郵件標題）、判定已安全引爆之附件的資訊，以及 detonations 丟棄的檔案， (可以包含已連接的 IP 位址，以及) 的頁面或檔案的螢幕擷取畫面。 URLs 及其 verdicts 也會以報告的類似詳細資料列出。 
+[電子郵件實體] 頁面會將可在 [ **詳細** 資料]、[ **附件**]、[ **裝置**] 底下找到的內容，包含更多組織的資料。 這包括 DMARC 結果、純文字顯示（含副本選項的電子郵件標題）、判定已安全引爆之附件的資訊，以及 detonations 丟棄的檔案， (可以包含已連接的 IP 位址，以及) 的頁面或檔案的螢幕擷取畫面。 URLs 及其 verdicts 也會以報告的類似詳細資料列出。
 
-當您到達此階段時，[電子郵件實體] 頁面將對最後一個步驟（*修正*）很重要。 
+當您到達此階段時，[電子郵件實體] 頁面將對最後一個步驟（*修正*）很重要。
 
 > [!div class="mx-imgBorder"]
 > ![電子郵件實體頁面](../../media/threat-explorer-email-entity-page.png)
@@ -152,13 +143,13 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 > [!div class="mx-imgBorder"]
 > ![詳細資料快顯視窗中的警示識別碼](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>延伸 Explorer (和即時偵測) 資料保留與試用承租人的搜尋限制 
+### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>延伸 Explorer (和即時偵測) 資料保留與試用承租人的搜尋限制
 
 在此變更中，分析者將可以搜尋並篩選超過30天的電子郵件資料 (會在威脅瀏覽器中增加7天) ，在威脅瀏覽器中增加，針對 Office P1 和 P2 試用租使用者的 Defender 進行即時偵測。 這不會影響 P1 和 P2 E5 客戶的任何實際執行承租人，保留預設值為已30天。
 
-### <a name="updated-export-limit"></a>更新的匯出限制 
+### <a name="updated-export-limit"></a>更新的匯出限制
 
-可以從威脅瀏覽器匯出的電子郵件記錄數目現在是 200000 (為 9990) 。 可以匯出的一組資料行不會變更。 
+可以從威脅瀏覽器匯出的電子郵件記錄數目現在是 200000 (為 9990) 。 可以匯出的一組資料行不會變更。
 
 ### <a name="tags-in-threat-explorer"></a>威脅瀏覽器中的標記
 
@@ -178,7 +169,7 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 
 #### <a name="filtering"></a>篩選
 
-標記可用作篩選。 以這種方式，只在優先順序帳戶中加以搜尋，或使用特定的使用者標記案例。 您也可以排除包含某些標記的結果。 結合標記與其他篩選和日期範圍，以縮小您的調查範圍。 
+標記可用作篩選。 以這種方式，只在優先順序帳戶中加以搜尋，或使用特定的使用者標記案例。 您也可以排除包含某些標記的結果。 結合標記與其他篩選和日期範圍，以縮小您的調查範圍。
 
 [![篩選標記](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -187,7 +178,7 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 
 #### <a name="email-detail-flyout"></a>電子郵件詳細資料快顯視窗
 
-若要查看寄件者和收件者的個別標記，請選取電子郵件以開啟 [郵件詳細資料] 浮出。 在 [ **摘要** ] 索引標籤上，會分別顯示寄件者和收件者標記。 寄件者和收件者個別標記的相關資訊可匯出為 CSV 資料。 
+若要查看寄件者和收件者的個別標記，請選取電子郵件以開啟 [郵件詳細資料] 浮出。 在 [ **摘要** ] 索引標籤上，會分別顯示寄件者和收件者標記。 寄件者和收件者個別標記的相關資訊可匯出為 CSV 資料。
 
 > [!div class="mx-imgBorder"]
 > ![電子郵件詳細資料標記](../../media/tags-flyout.png)
@@ -205,18 +196,18 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 
 ### <a name="top-targeted-users"></a>主要目標使用者
 
-主要惡意程式碼系列會顯示惡意程式碼區段中 **主要的目標使用者** 。 主要的目標使用者將透過網路釣魚和所有電子郵件視圖延伸。 分析員將可以查看前5位目標使用者，以及每個視圖中每位使用者的嘗試次數。 
+主要惡意程式碼系列會顯示惡意程式碼區段中 **主要的目標使用者** 。 主要的目標使用者將透過網路釣魚和所有電子郵件視圖延伸。 分析員將可以查看前5位目標使用者，以及每個視圖中每位使用者的嘗試次數。
 
-安全性作業使用者可以匯出目標使用者的清單，最多可匯出3000的限制，以及嘗試的次數，以供每個電子郵件 view 之離線分析使用。 此外，選取 [嘗試次數] (例如，13在下列的圖像中嘗試) 會在威脅瀏覽器中開啟篩選的視圖，這樣您就能看到有關電子郵件的詳細資料，以及該使用者的威脅。  
+安全性作業使用者可以匯出目標使用者的清單，最多可匯出3000的限制，以及嘗試的次數，以供每個電子郵件 view 之離線分析使用。 此外，選取 [嘗試次數] (例如，13在下列的圖像中嘗試) 會在威脅瀏覽器中開啟篩選的視圖，這樣您就能看到有關電子郵件的詳細資料，以及該使用者的威脅。
 
 > [!div class="mx-imgBorder"]
 > ![主要目標使用者](../../media/Top_Targeted_Users.png)
 
 ### <a name="exchange-transport-rules"></a>傳輸規則 Exchange
 
-安全性作業小組能夠在電子郵件格線視圖中查看所有 Exchange 的傳輸規則 (或郵件流程規則) 套用至郵件。 選取格線中的 [**欄選項**]，然後從 [欄] 選項 **新增 Exchange 傳輸規則**。 在電子郵件中的 [**詳細資料**] 快顯視窗中也會顯示 Exchange 傳輸規則] 選項。 
+安全性作業小組能夠在電子郵件格線視圖中查看所有 Exchange 的傳輸規則 (或郵件流程規則) 套用至郵件。 選取格線中的 [**欄選項**]，然後從 [欄] 選項 **新增 Exchange 傳輸規則**。 在電子郵件中的 [**詳細資料**] 快顯視窗中也會顯示 Exchange 傳輸規則] 選項。
 
-會出現套用至郵件的傳輸規則名稱及 Guid。 分析員將可以使用傳輸規則的名稱來搜尋郵件。 這是包含搜尋，也就是您也可以進行部分搜尋。 
+會出現套用至郵件的傳輸規則名稱及 Guid。 分析員將可以使用傳輸規則的名稱來搜尋郵件。 這是包含搜尋，也就是您也可以進行部分搜尋。
 
 > [!IMPORTANT]
 > Exchange 傳輸規則搜尋與名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色或許可權，才能查看傳輸規則名稱和搜尋。 不過，即使沒有下列角色或許可權，分析員還是可以在電子郵件詳細資料中看到傳輸規則標籤及 GUID 資訊。 其他記錄流覽的電子郵件格線、電子郵件 flyouts、篩選和匯出不會受到影響。
@@ -235,9 +226,9 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 
 ### <a name="inbound-connectors"></a>輸入連接器
 
-連接器是一組指示，可自訂您的電子郵件進出 Microsoft 365 或 Office 365 組織的方式。 它們可讓您套用任何安全性限制或控制項。 在 [威脅瀏覽器] 中，您可以查看與電子郵件相關的連接器，並搜尋使用連接器名稱的電子郵件。 
+連接器是一組指示，可自訂您的電子郵件進出 Microsoft 365 或 Office 365 組織的方式。 它們可讓您套用任何安全性限制或控制項。 在 [威脅瀏覽器] 中，您可以查看與電子郵件相關的連接器，並搜尋使用連接器名稱的電子郵件。
 
-連接器的搜尋是包含查詢，這表示部分關鍵字搜尋可以運作： 
+連接器的搜尋是包含查詢，這表示部分關鍵字搜尋可以運作：
 
 > [!div class="mx-imgBorder"]
 > ![連接器詳細資料](../../media/Connector_Details.png)
@@ -250,16 +241,13 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 - 在 Office 365 方案1的 Defender 中包含即時偵測報告。
 - 規劃為所有應受 Office 365 Defender 保護的使用者指派授權。 瀏覽器和即時偵測顯示已授權使用者的偵測資料。
 
-若要查看和使用 Explorer 或即時偵測，您必須具備下列各項：
+若要查看和使用 Explorer 或即時偵測，您必須具備下列許可權：
 
 - Microsoft 365 Defender 入口網站：
-
   - 組織管理
   - 安全性管理員 (可以在 Azure Active Directory 系統管理中心 (中指派 <https://aad.portal.azure.com>) 
   - 安全性讀取者
-
 - Exchange Online：
-
   - 組織管理
   - 僅限檢視組織管理
   - 僅限檢視收件者
@@ -273,9 +261,9 @@ Office 365 方案1的 Defender 使用 *即時* 偵測，也就是 *威脅瀏覽�
 
 ## <a name="more-information"></a>其他相關資訊
 
-- [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md) 
-- [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](mdo-for-spo-odb-and-teams.md) 
-- [取得威脅瀏覽器中的視圖 (和即時偵測的概覽) ](threat-explorer-views.md) 
-- [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report) 
-- [Microsoft 威脅防護的自動化調查及回應](automated-investigation-response-office.md) 
+- [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
+- [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](mdo-for-spo-odb-and-teams.md)
+- [取得威脅瀏覽器中的視圖 (和即時偵測的概覽) ](threat-explorer-views.md)
+- [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
+- [Microsoft 威脅防護的自動化調查及回應](automated-investigation-response-office.md)
 - [使用電子郵件實體頁面調查電子郵件](mdo-email-entity-page.md)

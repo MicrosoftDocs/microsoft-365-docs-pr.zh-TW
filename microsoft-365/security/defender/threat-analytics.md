@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: a6de0cb646eb8c12e4863facdb42c1f9494120f9
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096827"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105653"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威脅分析追蹤並回應新興威脅 
 
@@ -115,24 +115,6 @@ _威脅分析報告的一覽區段_
 每個報告都包含的圖表，可提供您的組織對特定威脅的彈性程度。
 - **安全設定狀態**-顯示設定不當的安全性設定裝置數目。 套用建議的安全性設定，以協助緩解威脅。 如果裝置已套用 _所有_ 追蹤的設定，則會被視為 **安全** 裝置。
 - **弱點修補狀態**-顯示有缺陷裝置的數目。 套用安全性更新或修補程式，以解決威脅所利用的漏洞。
-
-#### <a name="view-reports-per-threat-tags"></a>依威脅標記查看報告
-您可以篩選威脅報告清單，並根據特定威脅標記 (類別) 或報表類型，查看最相關的報表。 
-- **威脅標記**—協助您根據特定威脅類別來查看最相關的報表。 例如，與勒索軟體相關的所有報告。
-- **報告類型**-根據特定的報表類型，協助您查看最相關的報表。 例如，所有涵蓋工具和技術的報表。 
-- **篩選器**—協助您有效檢查威脅報告清單，並根據特定威脅標記或報告類型篩選視圖。 例如，檢查與勒索軟體類別相關的所有威脅報告，或涵蓋弱點的威脅報告。
-
-##### <a name="how-does-it-work"></a>它的運作方式為何？
-Microsoft 威脅情報小組已新增威脅標記給每個威脅報告：
-- 現在有四個威脅標記可供使用：
-  - 軟體
-  - 網路釣魚
-  - 弱點
-  - 活動群組
-- 威脅標記會出現在 [威脅分析] 頁面的頂端，包含每個標記下可用報告數目的計數器。
-    ![威脅標記](../../media/threat-analytics/ta-threattags-mtp.png)
-- 您也可以依威脅標記來排序清單：   ![ 清單](../../media/threat-analytics//ta-taglist-mtp.png)
-- 篩選器可供每個威脅標記和報表類型使用：   ![ 篩選](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析報告：從 Microsoft security 研究員取得專家洞察力
 在 [ **分析報告** ] 區段中，閱讀詳細的專家撰寫。 大多數報告提供攻擊鏈的詳細描述，包含對應至 MITRE ATT 的戰術和技術&CK 架構、詳盡的建議清單，以及強大的 [威脅搜尋](advanced-hunting-overview.md) 指導方針。

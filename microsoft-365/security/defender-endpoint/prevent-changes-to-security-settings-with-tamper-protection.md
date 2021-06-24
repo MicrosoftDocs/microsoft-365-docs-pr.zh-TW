@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 06/17/2021
-ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.date: 06/23/2021
+ms.openlocfilehash: 2e0724900de30629292cdcdc055d3ad3a1867b20
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007414"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105413"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用竄改防護來保護安全性設定
 
@@ -52,11 +52,11 @@ ms.locfileid: "53007414"
 
 ### <a name="how-it-works"></a>運作方式
 
-防篡改保護實質上會鎖定 Microsoft Defender 防毒軟體，並防止您的安全性設定透過應用程式和方法加以變更，例如：
+防篡改保護基本上會鎖定 Microsoft Defender 防毒軟體至其安全、預設值，並防止您的安全性設定透過應用程式和方法進行變更，例如：
 
 - 在 Windows 裝置上設定登錄編輯程式中的設定
 - 透過 PowerShell Cmdlet 變更設定
-- 透過「群組原則」編輯或移除安全性設定
+- 透過群組原則編輯或移除安全性設定
 
 防篡改保護不會使您無法查看安全性設定。 而且，篡改保護不會影響協力廠商防病毒應用程式在 Windows 安全性應用程式中註冊的方式。 如果您的組織使用 Windows 10 企業版 E5，則個別使用者不能變更無法篡改的保護設定。在這種情況下，安全小組會管理防篡改保護。
 
@@ -72,11 +72,11 @@ ms.locfileid: "53007414"
 | 回顧安全性建議 | [檢查安全性建議](#review-your-security-recommendations) |
 | 複查 (FAQs 的常見問題解答清單)  | [流覽 FAQs](#view-information-about-tampering-attempts) |
 
-根據您用來啟用防篡改保護的方法或管理工具，可能會對對應 (雲端提供的保護) 相關。 
+根據您用來啟用防篡改保護的方法或管理工具，可能會對雲端提供的保護產生依賴性。 
 
 下表提供方法、工具和相依性的詳細資料。
 
-| 啟用防篡改保護的方式  | 對地圖的相依性 (雲端提供的保護)     |
+| 啟用防篡改保護的方式  | 對雲端傳送保護 (對應的依賴性)     |
 |:----|:----|
 | Microsoft Intune  | 否 |
 | Microsoft Endpoint Configuration Manager + 租使用者附加  |     否  |
@@ -168,7 +168,7 @@ ms.locfileid: "53007414"
 
 2. 使用 [MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell Cmdlet。
 
-3. 在結果清單中，尋找 `IsTamperProtected` 。  (*true* 值表示已啟用 [未篡改保護]。 ) 在結果清單中，尋找 `RealTimeProtectionEnabled` 。  (true 值表示已啟用 [未篡改保護]。 ) 
+3. 在結果清單中，尋找 `IsTamperProtected` 或 `RealTimeProtectionEnabled` 。  (*true* 值表示已啟用 [未篡改保護]。 ) 
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>使用 Configuration Manager 管理組織的篡改保護，版本2006
 
@@ -181,7 +181,8 @@ ms.locfileid: "53007414"
 
 1. 設定租使用者附加。 若要深入瞭解，請參閱[Microsoft 端點管理員租使用者附加裝置：裝置同步處理和裝置動作](/mem/configmgr/tenant-attach/device-sync-actions)。
 
-2. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，移至 **端點安全性**  >  **防病毒**，然後選擇 [ **+ 建立原則**]。<br/> 
+2. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，移至 **端點安全性**  >  **防病毒**，然後選擇 [ **+ 建立原則**]。 
+
    - 在 [**平臺**] 清單中，選取 [ **Windows 10 和 Windows Server (ConfigMgr])**。  
    - 在 [**設定檔**] 清單中，選取 [ **Windows 安全性經驗 (預覽)**]。 <br/>
 
@@ -223,7 +224,7 @@ ms.locfileid: "53007414"
 
 ![Microsoft Defender 資訊安全中心](images/tamperattemptalert.png)
 
-在 Microsoft Defender for endpoint 中使用[端點偵測及回應](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)和[高級搜尋](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)功能，您的安全性作業小組可以調查並處理此類嘗試。
+在 Microsoft Defender for Endpoint 中使用 [端點偵測和回應](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) 及 [高級搜尋](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) 功能，您的安全性作業小組可以調查並處理此類嘗試。
 
 ## <a name="review-your-security-recommendations"></a>回顧安全性建議
 
@@ -291,7 +292,7 @@ Windows 10作業系統[1709](/windows/release-health/status-windows-10-1709)、 
 
 ### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>Microsoft Defender 資訊安全中心中的篡改保護狀態變更是否會產生警示？
 
-是。 警示會顯示在 [ [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) **警示**] 底下。
+是的。 警示會顯示在 [ [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) **警示**] 底下。
 
 您的安全性運作小組也可以使用搜尋查詢，例如下列範例：
 
