@@ -273,6 +273,8 @@
 #### [取得您的防毒軟體和反惡意程式碼更新](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [管理 Microsoft Defender 防毒軟體保護更新的來源](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [管理何時應下載並套用保護更新的排程](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [管理 Microsoft Defender 更新的漸進式推出程序](manage-gradual-rollout.md)
+##### [設定 Microsoft Defender 更新的漸進式推出程序](configure-updates.md)
 ##### [管理 Microsoft Defender 防毒軟體更新和掃描已過時的端點](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [管理事件型強制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [管理行動裝置和虛擬機器 (VM) 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -309,7 +311,6 @@
 ##### [疑難排解效能問題](troubleshoot-performance-issues.md)
 ##### [檢查事件記錄和錯誤碼以疑難排解 Microsoft Defender 防毒軟體的問題](troubleshoot-microsoft-defender-antivirus.md)
 ##### [從協力廠商解決方案移轉時疑難排解 Microsoft Defender 防毒軟體](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
 
 #### [硬體隔離]()
 ##### [Windows 10 中的硬體隔離](overview-hardware-based-isolation.md)
