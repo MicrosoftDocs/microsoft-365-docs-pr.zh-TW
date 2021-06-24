@@ -160,10 +160,10 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: 針對敏感度標籤加密的文件啟用共同撰寫 (預覽)
+          href: sensitivity-labels-coauthoring.md
         - name: 在 Office 應用程式中管理敏感度標籤
           href: sensitivity-labels-office-apps.md
-        - name: 針對敏感度標籤加密的檔案啟用共同撰寫 (預覽)
-          href: sensitivity-labels-coauthoring.md
     - name: 加密
       items:
         - name: 瞭解加密
@@ -445,15 +445,15 @@
               href: archive-zoommeetings-data.md
         - name: TeleMessage 資料連接器
           items:
-            - name: Android
+            - name: Android 封存工具
               href: archive-android-archiver-data.md
-            - name: AT&T Network
+            - name: AT&T SMS/MMS 網路封存工具
               href: archive-att-network-archiver-data.md
-            - name: Bell Network
+            - name: Bell SMS/MMS 網路封存工具
               href: archive-bell-network-data.md
-            - name: 企業編號
+            - name: 企業編號封存工具
               href: archive-enterprise-number-data.md
-            - name: O2 Network
+            - name: O2 Telefonica SMS 和語音網路封存工具
               href: archive-o2-network-data.md
             - name: Signal (預覽)
               href: archive-signal-archiver-data.md
@@ -461,12 +461,50 @@
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
-            - name: Verizon Network
+            - name: Verizon SMS/MMS 網路封存工具
               href: archive-verizon-network-data.md
-            - name: WeChat
+            - name: WeChat 保存程式
               href: archive-wechat-data.md
-            - name: WhatsApp
+            - name: WhatsApp 保存程式
               href: archive-whatsapp-data.md
+        - name: 17a-4 資料連接器
+          items:
+            - name: BlackBerry DataParser (預覽)
+              href: archive-17a-4-blackberry-data.md
+            - name: Bloomberg DataParser (預覽)
+              href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Jabber DataParser (預覽)
+              href: archive-17a-4-cisco-jabber-data.md
+            - name: Cisco Webex DataParser (預覽)
+              href: archive-17a-4-webex-teams-data.md
+            - name: FactSet DataParser (預覽)
+              href: archive-17a-4-factset-data.md
+            - name: Fuze DataParser (預覽)
+              href: archive-17a-4-fuze-data.md
+            - name: FX Connect DataParser (預覽)
+              href: archive-17a-4-fxconnect-data.md
+            - name: ICE DataParser (預覽)
+              href: archive-17a-4-ice-im-data.md
+            - name: InvestEdge DataParser (預覽)
+              href: archive-17a-4-investedge-data.md
+            - name: LivePerson 交談雲端 DataParser (預覽)
+              href: archive-17a-4-liveperson-data.md
+            - name: Quip DataParser (預覽)
+              href: archive-17a-4-quip-data.md
+            - name: Refinitiv Eikon Messenger DataParser (預覽)
+              href: archive-17a-4-refinitiv-messenger-data.md
+            - name: ServiceNow DataParser (預覽)
+              href: archive-17a-4-servicenow-data.md
+            - name: Slack DataParser (預覽)
+              href: archive-17a-4-slack-data.md
+            - name: Symphony DataParser (預覽)
+              href: archive-17a-4-symphony-data.md
+            - name: Zoom DataParser (預覽)
+              href: archive-17a-4-zoom-data.md
+        - name: CellTrust 連接器
+          items:
+            - name: CellTrust SL2 (預覽)
+              href: archive-data-from-celltrustsl2.md
         - name: 與合作夥伴配合以封存第三方資料
           href: work-with-partner-to-archive-third-party-data.md
         - name: 搜尋第三方資料
