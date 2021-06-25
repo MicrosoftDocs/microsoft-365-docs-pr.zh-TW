@@ -11,14 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: noindex,nofollow
 description: 瞭解如何設定和使用 17a-4 SQL DataParser 連接器，以匯入及封存 Microsoft 365 中的 SQL 資料。
-ms.openlocfilehash: 17e7da9e064e6d149ebdca0436f9180c8d17ca41
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 51fd433ad072ba5afe0b314d7b61041728337240
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096984"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137664"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data-preview"></a>設定 SQL 資料 (預覽的連接器) 
 

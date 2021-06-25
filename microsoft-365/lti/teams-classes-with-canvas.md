@@ -13,19 +13,19 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 將 Microsoft Teams 類別與畫布整合
-ms.openlocfilehash: 1a16d6a4f5e0cfbb592c335163bb4e33fd3c1301
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8e28cc8401dbf37d6e780b8f56dc300982abd0cc
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821881"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137676"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>使用具有畫布的 Microsoft Teams 類別
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-Microsoft Teams 類別是 (LTI) 應用程式的學習工具互通性，可協助教育者和學生輕鬆流覽其教學管理系統 (LMS) 和 Teams。 使用者可以直接從 LMS 中存取與其課程相關聯的類別小組。
+Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協助教育者和學生輕鬆流覽其 Learning 管理系統 (LMS) 和 Teams。 使用者可以直接從 LMS 中存取與其課程相關聯的類別小組。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理
 
@@ -37,22 +37,22 @@ Microsoft Teams 類別是 (LTI) 應用程式的學習工具互通性，可協助
 
 3. 在 [系統 **管理] 導覽** 中，選取 [**設定**] 連結，然後選取 [整合] 索引標籤。 
 
-4. 輸入您的 Microsoft 租使用者名稱和登入屬性。 
-
-   login 屬性將用於將 Canvas 使用者與 Azure Active Directory 使用者關聯。 
-
-5. 選取 [**更新設定** 完畢之後。
-
-6. 若要核准對畫布的 **Microsoft Teams-Sync-canvas** Azure app 的存取權，請選取 [**授與承租人存取** 連結]。 您將會重新導向至 Microsoft Identity Platform 系統管理員同意端點。
-
-   ![許可權](media/permissions.png)
-
-7. 選取 [ **接受**]。
- 
-8. 開啟開啟開啟的開啟以啟用 Microsoft Teams 同步處理。
+4. 開啟開啟開啟的開啟以啟用 Microsoft Teams 同步處理。
 
    ![團隊-同步處理](media/teams-sync.png)
 
+5. 輸入您的 Microsoft 租使用者名稱和登入屬性。 
+
+   login 屬性將用於將 Canvas 使用者與 Azure Active Directory 使用者關聯。 
+
+6. 選取 [**更新設定** 完畢之後。
+
+7. 若要核准對畫布的 **Microsoft Teams-Sync-canvas** Azure app 的存取權，請選取 [**授與承租人存取** 連結]。 您將會重新導向至 Microsoft Identity Platform 系統管理員同意端點。
+
+   ![許可權](media/permissions.png)
+
+8. 選取 [ **接受**]。
+ 
 ## <a name="canvas-admin"></a>畫布管理員
 
 設定 Microsoft Teams LTI 1.3 整合。

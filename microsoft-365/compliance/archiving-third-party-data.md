@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從社交媒體平臺、立即訊息平臺及檔共同作業平臺匯入協力廠商資料，以 Microsoft 365 信箱。
-ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: c30be0888a2c92a23c4e5f323235eba671c5ab1d
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096165"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137715"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>在 Microsoft 365 中封存協力廠商資料
 
@@ -75,8 +75,8 @@ Microsoft 365 合規性中心提供來自 Microsoft 的原生協力廠商資料�
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[CellTrust](archive-celltrust-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[MS SQL 上的 Cisco Jabber](archive-ciscojabberonmssql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Oracle 上的 Cisco Jabber) ](archive-ciscojabberonoracle-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[PostgreSQL 上的 Cisco Jabber) ](archive-ciscojabberonpostgresql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Oracle 上的 Cisco Jabber](archive-ciscojabberonoracle-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[PostgreSQL 上的 Cisco Jabbe](archive-ciscojabberonpostgresql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[EML](archive-eml-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[FX Connect](archive-fxconnect-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Jive](archive-jive-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
@@ -121,7 +121,7 @@ TeleMessage 資料連線器也可在 Microsoft 365 美國政府雲端的 GCC 環
 |[WhatsApp ](archive-whatsapp-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 ||||||||
 
-### <a name="17a-4-data-connectors"></a>17a-4 資料連線器
+### <a name="17a-4-data-connectors"></a>17a-4 資料連接器
 
 本節中的表格列出與 17a-4 LLC 合作的協力廠商資料連線器。 在 Microsoft 365 中匯入及封存後，該表也會摘要說明您可以套用至協力廠商資料的相容性解決方案。 請參閱 [支援協力廠商資料的相容性解決方案](#overview-of-compliance-solutions-that-support-third-party-data) 一節，以取得每個規範解決方案的詳細說明，以及它如何支援協力廠商資料。
 
@@ -143,6 +143,7 @@ TeleMessage 資料連線器也可在 Microsoft 365 美國政府雲端的 GCC 環
 |[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[ServiceNow ](archive-17a-4-servicenow-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[鬆弛 ](archive-17a-4-slack-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[SQL](archive-17a-4-sql-database-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[交響樂 ](archive-17a-4-symphony-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[縮放 ](archive-17a-4-zoom-data.md)    |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 ||||||||
@@ -200,14 +201,14 @@ Microsoft 365 中的[記錄管理](records-management.md)功能可讓您將協�
 
 |TeleMessage 資料連線器  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android 歸檔器 | 是 | 否 | 否 |
-|在&的 SMS/MMS 網路存檔器 | 是 | 否 | 否 |
-|鈴聲 SMS/MMS 網路歸檔器 | 是 | 否 | 否 |
-|Enterprise數位歸檔器 | 是 | 否 | 否 |
+|Android 封存工具 | 是 | 否 | 否 |
+|AT&T SMS/MMS 網路封存工具 | 是 | 否 | 否 |
+|Bell SMS/MMS 網路封存工具 | 是 | 否 | 否 |
+|企業編號封存工具 | 是 | 否 | 否 |
 |O2 SMS 和語音網路歸檔器 | 是         | 否 | 否 |
 |TELUS SMS 網路存檔器 | 是 | 否 | 否 |
-|Verizon SMS/MMS 網路存檔器 | 是 | 否 | 否 |
-|WhatsApp 歸檔器 | 是 | 否 | 否 |
+|Verizon SMS/MMS 網路封存工具 | 是 | 否 | 否 |
+|WhatsApp 保存程式 | 是 | 否 | 否 |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>使用 Microsoft 合作夥伴封存協力廠商資料

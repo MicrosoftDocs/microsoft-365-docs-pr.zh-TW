@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061891"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137772"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -140,6 +140,9 @@ ms.locfileid: "53061891"
 
 同時類似於 DLP 原則設定，您可以選擇條件是必須偵測所有敏感性資訊類型，還是只偵測其中一種。 若要讓您的條件更靈活或更複雜，您可以新增 [群組，並使用群組間的邏輯運算子](data-loss-prevention-policies.md#grouping-and-logical-operators)。
 
+> [!NOTE]
+> 根據自訂敏感性資訊類型的自動標記原則僅適用於 OneDrive 和 SharePoint 中新建立或修改的內容。 
+
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>為標籤設定可訓練分類器
 
 此選項目前處於預覽。 如果您使用此選項，請確定您已在您的租用戶中發佈至少另一個其他敏感性標籤，其已設定為自動加標籤和[敏感性資訊類型選項](#configuring-sensitive-info-types-for-a-label)。
@@ -190,7 +193,7 @@ ms.locfileid: "53061891"
 
 - 若為電腦版 Word 中的建議標籤，系統會標示觸發了建議的敏感性內容，讓使用者可以檢閱和移除敏感性內容，而不是套用建議的敏感度標籤。
 
-- 如需這些標籤在 Office 應用程式中的套用方式、範例螢幕擷取畫面，以及系統如何偵測到敏感性資訊的詳細資訊，請參閱[在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 如需這些標籤在 Office 應用程式中的套用方式、範例螢幕擷取畫面，以及系統如何偵測到敏感性資訊的詳細資訊，請參閱[在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/zh-TW/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 專用於 Azure 資訊保護的整合標籤用戶端：
 
@@ -215,7 +218,7 @@ ms.locfileid: "53061891"
     - 當自動套用標籤原則執行時，檔案不能由其他程序或使用者開啟。 簽出以編輯的檔案屬於這個類別。
 
 - 如果您計劃使用[自訂敏感性資訊類型](sensitive-information-type-learn-about.md)，而不是內建的敏感性類型： 
-    - 針對在儲存自訂敏感度資訊類型之後新增至 SharePoint 或 OneDrive 的內容，會評估該內容的自訂敏感度資訊類型。 
+    - 自訂敏感度資訊類型僅適用於強制執行自訂敏感度資訊類型之後，在 SharePoint 或 OneDrive 中新增或修改的內容。 
     - 若要測試新的自訂敏感性資訊類型，請在建立您的自動套用標籤原則之前建立，然後建立含有範例資料的新文件以進行測試。
 
 - 一或多個敏感性標籤[已建立和已發佈](create-sensitivity-labels.md) (給至少一個使用者)，這些標籤可供您針對自動套用標籤原則選取。 針對這些標籤：

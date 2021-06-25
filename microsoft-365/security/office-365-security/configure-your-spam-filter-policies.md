@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108232"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137760"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -203,7 +203,7 @@ ms.locfileid: "53108232"
    >
    > 在將網域新增到允許的網域清單之前，請仔細考慮。 如需詳細資訊，請參閱[在 EOP 中建立安全寄件者清單](create-safe-sender-lists-in-office-365.md)。
    >
-   > 絕對不要將您自己的[公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)或一般網域 (例如 microsoft.com 或 office.com) 新增到允許的網域清單中。 如果允許這些網域略過垃圾郵件篩選，則會允許攻擊者輕鬆地將電子郵件傳送至您的組織。
+   > 絕對不要將您自己的[公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)或一般網域 (例如 microsoft.com 或 office.com) 新增到允許的網域清單中。 如果允許這些網域略過垃圾郵件篩選，攻擊者可以輕鬆地將詐騙這些受信任網域的郵件傳送至您的組織。
    >
    > 將網域新增到封鎖的網域清單以手動封鎖網域並不危險，但會增加您的管理工作量。 如需詳細資訊，請參閱[在 EOP 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
    >

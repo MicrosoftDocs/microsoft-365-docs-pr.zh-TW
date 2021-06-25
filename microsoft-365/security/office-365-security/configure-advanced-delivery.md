@@ -17,12 +17,12 @@ ms.custom: ''
 description: 系統管理員可以瞭解如何使用 Exchange Online Protection (EOP) 中的高級傳遞原則，以識別不應該在特定支援案例中篩選的郵件 (協力廠商網路釣魚模擬及傳送至安全性作業的郵件 (SecOps) 信箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 819f78883aa75fbbdded2e47c1bb85945f080233
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 01d35c1f0c7abc7b6ce34fc9c2ec4d5fd5b228ae
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108400"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137736"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>設定將協力廠商網路釣魚模擬的傳遞給使用者及未篩選的郵件以 SecOps 信箱
 
@@ -64,8 +64,10 @@ ms.locfileid: "53108400"
 
 - 您於 <https://security.microsoft.com> 開啟 Microsoft 365 Defender 入口網站。 若要直接移至 [ **高級傳遞** ] 頁面，請開啟] <https://security.microsoft.com/advanceddelivery> 。
 
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+
 - 您必須已獲指派許可權，才能執行本文中的程式：
-  - 若要建立、修改或移除 advanced 傳遞原則中已設定的設定，您必須是 **Microsoft 365 Defender 入口網站** 中 **安全性管理員** 角色群組的成員，以及 **Exchange Online** 中 **組織管理** 角色群組的成員。  
+  - 若要建立、修改或移除 advanced 傳遞原則中已設定的設定，您必須是 **Microsoft 365 Defender 入口網站** 中 **安全性管理員** 角色群組的成員，以及 **Exchange Online** 中 **組織管理** 角色群組的成員。
   - 若要以唯讀方式存取高級傳遞原則，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
   如需詳細資訊，請參閱[Microsoft 365 Defender 入口網站中的許可權](permissions-microsoft-365-security-center.md)及[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
@@ -122,8 +124,286 @@ ms.locfileid: "53108400"
 
 除了高級傳遞原則可以協助您使用的兩種情形之外，還有其他情況可能需要您略過篩選：
 
-- **協力廠商篩選**：如果您的網域的 MX 記錄 *沒有* 指向 Office 365 (郵件會先在其他地方傳送) ，否則 *無法使用* [secure](secure-by-default.md) 。
-
-  若要略過協力廠商篩選所評估之郵件的 Microsoft 篩選功能，請使用郵件流程規則 (也稱為 transport rules) 。 如需詳細資訊，請參閱 [使用郵件流程規則設定郵件中的 SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)。
+- **協力廠商篩選**：如果您的網域的 MX 記錄 *沒有* 指向 Office 365 (郵件會先在其他地方傳送) ，否則 *無法使用* [secure](secure-by-default.md) 。 如果您想要新增保護，必須啟用連接器的增強篩選 (也稱為 *skip 清單*) 。 如需詳細資訊，請參閱[使用具有 Exchange Online 的協力廠商雲端服務管理郵件流程](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)。 如果您不想要增強的連接器篩選功能，請使用郵件流程規則 (也稱為傳輸規則) ，以略過協力廠商篩選已評估之郵件的 Microsoft 篩選功能。 如需詳細資訊，請參閱 [使用郵件流程規則設定郵件中的 SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)。
 
 - **審核** 中的誤報：您可能想要暫時允許 Microsoft 透過系統 [管理員提交](admin-submission.md) 進行的某些郵件仍要進行分析，以報告未正確標記為壞于 microsoft (誤報) 的已知良好郵件。 就像所有覆寫一樣， **_強烈建議_** 這些余量是暫時的。
+
+## <a name="exchange-online-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Exchange OnlineSecOps 高級傳遞原則中的信箱的 PowerShell 程式
+
+在 Exchange Online PowerShell 中，高級傳遞原則中 SecOps 信箱的基本元素為：
+
+- **SecOps 覆寫原則**：由 **\* -SecOpsOverridePolicy** Cmdlet 控制。
+- **SecOps 覆寫規則**：由 **\* -SecOpsOverrideRule** Cmdlet 控制。
+
+這種行為具有下列結果：
+
+- 您必須先建立原則，然後建立規則來識別套用規則的原則。
+- 當您從 PowerShell 中移除原則時，也會移除對應的規則。
+- 當您從 PowerShell 中移除規則時，並不會移除對應的原則。 您必須手動移除對應的原則。
+
+### <a name="use-powershell-to-configure-secops-mailboxes"></a>使用 PowerShell 設定 SecOps 信箱
+
+在 PowerShell 的高級傳遞原則中設定 SecOps 信箱是兩個步驟的程式：
+
+1. 建立 SecOps 覆寫原則。
+2. 建立 SecOps 覆寫規則，以指定套用規則的原則。
+
+#### <a name="step-1-use-powershell-to-create-the-secops-override-policy"></a>步驟1：使用 PowerShell 來建立 SecOps 覆寫原則
+
+若要建立 SecOps 覆寫原則，請使用下列語法：
+
+```powershell
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
+```
+
+**附注**：不管您指定的名稱值為何，原則名稱都會是 SecOpsOverridePolicy，因此您也可以使用該值。
+
+此範例會建立 SecOps 信箱原則。
+
+```powershell
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+```
+
+如需詳細的語法及參數資訊，請參閱 [SecOpsOverridePolicy](/powershell/module/exchange/new-secopsoverridepolicy)。
+
+#### <a name="step-2-use-powershell-to-create-the-secops-override-rule"></a>步驟2：使用 PowerShell 建立 SecOps 覆寫規則
+
+本範例會建立具有指定設定的 SecOps 信箱規則。
+
+```powershell
+New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
+```
+
+**附注**： * * 不論您指定的名稱值為何，規則名稱都會是 SecOpsOverrideRule \<GUID\> ，其中 \<GUID\> 是唯一的 GUID 值 (例如，6fed4b63-3563-495d-a481-b24a311f8329) 。
+
+如需詳細的語法及參數資訊，請參閱 [SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule)。
+
+### <a name="use-powershell-to-view-the-secops-override-policy"></a>使用 PowerShell 來查看 SecOps 覆寫原則
+
+此範例會傳回單一 SecOps 信箱原則的詳細資訊。
+
+```powershell
+Get-SecOpsOverridePolicy
+```
+
+如需詳細的語法及參數資訊，請參閱 [SecOpsOverridePolicy](/powershell/module/exchange/get-secopsoverridepolicy)。
+
+### <a name="use-powershell-to-view-secops-override-rules"></a>使用 PowerShell 來查看 SecOps 覆寫規則
+
+本範例會傳回 SecOps 覆寫規則的詳細資訊。
+
+```powershell
+Get-SecOpsOverrideRule
+```
+
+雖然上一個命令只會傳回一個規則，但結果中也可能會包含任何擱置刪除的規則。
+
+這個範例會識別 (一) 和任何無效規則的有效規則。
+
+```powershell
+Get-SecOpsOverrideRule | Format-Table Name,Mode
+```
+
+在您識別不正確規則之後，您可以使用 **SecOpsOverrideRule** 指令程式（如 [本文稍後](#use-powershell-to-remove-secops-override-rules)所述）移除這些規則。
+
+如需詳細的語法及參數資訊，請參閱 [SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule)
+
+### <a name="use-powershell-to-modify-the-secops-override-policy"></a>使用 PowerShell 修改 SecOps 覆寫原則
+
+若要修改 SecOps 覆寫原則，請使用下列語法：
+
+```powershell
+Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
+```
+
+本範例會將 secops2@contoso.com 新增至 SecOps 覆寫原則。
+
+```powershell
+Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
+```
+
+**附注**：如果存在相關聯且有效的 SecOps 覆寫規則，則也會更新該規則中的電子郵件地址。
+
+如需詳細的語法及參數資訊，請參閱 [Set-SecOpsOverridePolicy](/powershell/module/exchange/set-secopsoverridepolicy)。
+
+### <a name="use-powershell-to-modify-a-secops-override-rule"></a>使用 PowerShell 修改 SecOps 覆寫規則
+
+**SecOpsOverrideRule** Cmdlet 不會修改 SecOps 覆寫規則中的電子郵件地址。 若要修改 SecOps 覆寫規則中的電子郵件地址，請使用 **SecOpsOverridePolicy** Cmdlet。
+
+如需詳細的語法及參數資訊，請參閱 [Set-SecOpsOverrideRule](/powershell/module/exchange/set-secopsoverriderule)。
+
+### <a name="use-powershell-to-remove-the-secops-override-policy"></a>使用 PowerShell 移除 SecOps 覆寫原則
+
+此範例會移除 SecOps 信箱原則和對應的規則。
+
+```powershell
+Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-SecOpsOverridePolicy](/powershell/module/exchange/remove-secopsoverridepolicy)。
+
+### <a name="use-powershell-to-remove-secops-override-rules"></a>使用 PowerShell 移除 SecOps 覆寫規則
+
+若要移除 SecOps 覆寫規則，請使用下列語法：
+
+```powershell
+Remove-SecOpsOverrideRule -Identity <RuleIdentity>
+```
+
+本範例會移除指定的 SecOps 覆寫規則。
+
+```powershell
+Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b24a311f8329
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule)。
+
+## <a name="exchange-online-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Exchange Online在高級傳遞原則中 PowerShell 協力廠商網路釣魚模擬的程式
+
+在 Exchange Online PowerShell 中，高級傳遞原則中的協力廠商網路釣魚模擬基本元素為：
+
+- **網路釣魚類比覆寫原則**：由 **\* -PhishSimOverridePolicy** Cmdlet 控制。
+- **網路釣魚類比覆寫規則**：由 **\* -PhishSimOverrideRule** Cmdlet 控制。
+
+這種行為具有下列結果：
+
+- 您必須先建立原則，然後建立規則來識別套用規則的原則。
+- 您可以修改原則和規則中的設定。
+- 當您從 PowerShell 中移除原則時，也會移除對應的規則。
+- 當您從 PowerShell 中移除規則時，並不會移除對應的原則。 您必須手動移除對應的原則。
+
+### <a name="use-powershell-to-configure-third-party-phishing-simulations"></a>使用 PowerShell 設定協力廠商網路釣魚模擬
+
+在 PowerShell 中的高級傳遞原則中設定協力廠商網路釣魚模擬的程式分為兩個步驟：
+
+1. 建立網路釣魚類比覆寫原則。
+2. 建立網路釣魚類比覆寫規則，以指定套用規則的原則。
+
+#### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>步驟1：使用 PowerShell 建立網路釣魚類比覆寫原則
+
+此範例會建立網路釣魚類比覆寫原則。
+
+```powershell
+New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
+```
+
+**附注**：不管您指定的名稱值為何，原則名稱都會是 PhishSimOverridePolicy，因此您也可以使用該值。
+
+如需詳細的語法及參數資訊，請參閱 [PhishSimOverridePolicy](/powershell/module/exchange/new-phishsimoverridepolicy)。
+
+#### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>步驟2：使用 PowerShell 建立網路釣魚類比覆寫規則
+
+使用下列語法：
+
+```powershell
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
+```
+
+不論您指定的名稱值為何，規則名稱都會是 PhishSimOverrideRule \<GUID\> ，其中 \<GUID\> 是唯一的 GUID 值 (例如，a0eae53e-d755-4a42-9320-b9c6b55c5011) 。
+
+有效的 IP 位址專案為下列其中一個值：
+
+- 單一 IP：例如，192.168.1.1。
+- IP 範圍：例如，192.168.0.1-192.168.0.254。
+- CIDR IP：例如 192.168.0.1/25。
+
+此範例會建立具有指定設定的網路釣魚類比覆寫規則。
+
+```powershell
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+```
+
+如需詳細的語法及參數資訊，請參閱 [PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule)。
+
+### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>使用 PowerShell 來查看網路釣魚類比覆寫原則
+
+此範例會傳回單一網路釣魚類比覆寫原則的詳細資訊。
+
+```powershell
+Get-PhishSimOverridePolicy
+```
+
+如需詳細的語法及參數資訊，請參閱 [PhishSimOverridePolicy](/powershell/module/exchange/get-phishsimoverridepolicy)。
+
+### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>使用 PowerShell 來查看網路釣魚類比覆寫規則
+
+此範例會傳回網路釣魚類比覆寫規則的詳細資訊。
+
+```powershell
+Get-PhishSimOverrideRule
+```
+
+雖然上一個命令只會傳回一個規則，但結果中也可能會包含任何擱置刪除的規則。
+
+這個範例會識別 (一) 和任何無效規則的有效規則。
+
+```powershell
+Get-PhishSimOverrideRule | Format-Table Name,Mode
+```
+
+在您識別不正確規則之後，您可以使用 **PhisSimOverrideRule** 指令程式（如 [本文稍後](#use-powershell-to-remove-phishing-simulation-override-rules)所述）移除這些規則。
+
+如需詳細的語法及參數資訊，請參閱 [PhishSimOverrideRule](/powershell/module/exchange/get-phishsimoverriderule)。
+
+### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>使用 PowerShell 修改網路釣魚類比覆寫原則
+
+若要修改網路釣魚類比覆寫原則，請使用下列語法：
+
+```powershell
+Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
+```
+
+此範例會停用網路釣魚類比覆寫原則。
+
+```powershell
+Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
+```
+
+如需詳細的語法及參數資訊，請參閱 [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy)。
+
+### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>使用 PowerShell 修改網路釣魚類比覆寫規則
+
+若要修改網路釣魚類比覆寫規則，請使用下列語法：
+
+```powershell
+Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
+```
+
+此範例會使用下列設定修改指定的網路釣魚類比覆寫規則：
+
+- 新增網域專案 blueyonderairlines.com。
+- 移除 IP 位址專案192.168.1.55。
+
+請注意，這些變更不會影響現有專案。
+
+```powershell
+Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 -AddSenderDomainIs blueyonderairlines.com -RemoveSenderIpRanges 192.168.1.55
+```
+
+如需詳細的語法及參數資訊，請參閱 [Set-PhishSimOverrideRule](/powershell/module/exchange/set-phishsimoverriderule)。
+
+### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>使用 PowerShell 移除網路釣魚類比覆寫原則
+
+此範例會移除網路釣魚類比覆寫原則和對應的規則。
+
+```powershell
+Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-PhishSimOverridePolicy](/powershell/module/exchange/remove-phishsimoverridepolicy)。
+
+### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>使用 PowerShell 移除網路釣魚類比覆寫規則
+
+若要移除網路釣魚類比覆寫規則，請使用下列語法：
+
+```powershell
+Remove-PhishSimOverrideRule -Identity <RuleIdentity>
+```
+
+此範例會移除指定的網路釣魚類比覆寫規則。
+
+```powershell
+Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-PhishSimOverrideRule](/powershell/module/exchange/remove-phishsimoverriderule)。
