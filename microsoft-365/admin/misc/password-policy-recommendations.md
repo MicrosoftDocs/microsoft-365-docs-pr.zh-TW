@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加強貴組織對密碼攻擊的防護，禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 6f79116b1188eaab1b843b2e3fa612c4ed01c488
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006922"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096621"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 
@@ -58,7 +58,7 @@ ms.locfileid: "53006922"
 
 加強密碼系統安全的主要目標是密碼多樣性。 您希望密碼原則包含許多不同且難以猜測的密碼。 以下是一些讓貴組織盡可能安全的建議。
   
-- 維持至少 8 個字元的長度要求 (更長不一定更好)
+- 維持至少 8 個字元的長度要求
 
 - 不設定字元構成要求。 例如，\*&amp;(^%$
 
@@ -131,6 +131,8 @@ ms.locfileid: "53006922"
 ## <a name="next-steps"></a>後續步驟
 
 想要了解有關管理密碼的更多資訊嗎？ 以下是一些建議閱讀：
+
+- [忘記密碼，進入無密碼](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Microsoft 密碼指引](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
