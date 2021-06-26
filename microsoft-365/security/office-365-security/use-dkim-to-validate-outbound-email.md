@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9aa3a72a36a146d121c9302a4b6cb126e765671
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 9aa67d7875bb7f81c6569b56704d221b57378962
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082777"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108496"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -196,9 +196,9 @@ TTL:                3600
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>若要在 Microsoft 365 Defender 入口網站中啟用自訂網域的 DKIM 簽署
 
-1. [使用公司或學校帳戶](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)開啟 Microsoft 365 Defender 入口網站。
+1. [使用您的公司或學校帳戶](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) 開啟 Microsoft 365 Defender 入口網站。
 
-2. 前往 **[電子郵件與共同作業]** \> **[原則與規則]** \> **[威脅原則]** \> **[規則]** 區段 \> **[DKIM]**。 或者，若要直接前往 DKIM 頁面，請使用 <https://security.microsoft.com/dkimv2>。
+2. 前往 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** 頁面 \>**規則** 區段 \> **DKIM**。 或者，若要直接前往 DKIM 頁面，請使用 <https://security.microsoft.com/dkimv2>。
 
 3. 在 **[DKIM]** 頁面上，按一下名稱以選取網域。
 
