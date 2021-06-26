@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 深入瞭解 Microsoft Teams 中的預設資料遺失防護原則
-ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114141"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149115"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)
 
-[資料遺失防護](dlp-learn-about-dlp.md)功能已擴充，可納入 Microsoft Teams 聊天及通道訊息，包括私人通道郵件。 在此版本中，我們會為第一次客戶建立「合規性中心」的預設 DLP 原則。
+[資料遺失防護](dlp-learn-about-dlp.md)功能已擴充，可納入 Microsoft Teams 聊天及通道訊息，包括私人通道郵件。 在此版本中，我們為第一次客戶相容性中心的 Microsoft Teams 建立預設 DLP 原則。
 
 ## <a name="applies-to"></a>適用於
 
@@ -41,7 +41,7 @@ ms.locfileid: "52114141"
 
 ## <a name="what-does-the-default-policy-do"></a>預設原則的功能為何？
 
-預設的 DLP 原則會追蹤組織內部及外部共用的所有信用卡號碼。 針對租使用者的所有使用者，預設為此原則。 它不會產生任何原則秘訣給使用者，但是會產生警示事件，也會觸發「低嚴重性」電子郵件至系統管理員 (新增于原則) 中。 管理員可以透過登入規範中心，查看活動並編輯原則詳細資料。
+Teams 的預設 DLP 原則會追蹤組織內部及外部共用的所有信用卡號碼。 針對租使用者的所有使用者，預設為此原則。 它不會產生任何原則秘訣給使用者，但是會產生警示事件，也會觸發「低嚴重性」電子郵件至系統管理員 (新增于原則) 中。 管理員可以透過登入規範中心，查看活動並編輯原則詳細資料。
 
 系統管理員可以在「 [規範中心](https://compliance.microsoft.com/compliancesettings) 」 > 資料遺失防護原則」頁面中查看此原則。
 

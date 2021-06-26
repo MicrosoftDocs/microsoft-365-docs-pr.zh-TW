@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 瞭解安全性 & 合規性中心中的 dlp 如何使用 dlp 和郵件流程規則 (Exchange 系統管理中心) 的傳輸規則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c5249279e1dd04447235aae813128cf458adde03
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: d71c45e5483bc73afbe2598415e30b84e97c2539
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114071"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149139"
 ---
-# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
+# <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>DLP 在 Microsoft 365 規範中心與 Exchange 系統管理中心之間的運作方式
 
-在 Office 365 中，您可以在兩個不同的系統管理中心建立「資料遺失防護」 (DLP) 原則：
+在 Microsoft 365 中，您可以在兩個不同的系統管理中心建立「資料遺失防護」 (DLP) 原則：
   
-- 在 [**安全性 & 規範中心**] 中，您可以建立單一 DLP 原則，以協助保護 SharePoint、OneDrive、Exchange 及現在 Microsoft Teams 中的內容。 建議您盡可能在這裡建立 DLP 原則。 如需詳細資訊，請參閱 [資料遺失防護參考](data-loss-prevention-policies.md)。
+- 在 **Microsoft 365 規範中心** 中，您可以建立單一 DLP 原則，協助保護 SharePoint、OneDrive、Exchange、Teams 和現在端點裝置中的內容。 建議您在這裡建立 DLP 原則。 如需詳細資訊，請參閱 [資料遺失防護參考](data-loss-prevention-policies.md)。
     
 - 在 **Exchange 系統管理中心**，您可以建立 DLP 原則，以協助只保護 Exchange 中的內容。 這項原則可以使用 Exchange 郵件流程規則 (也稱為傳輸規則) ，因此它具有處理電子郵件時特有的選項。 如需詳細資訊，請參閱[Exchange 系統管理中心的 [DLP](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)]。
     
@@ -55,6 +55,6 @@ ms.locfileid: "52114071"
 
 原則提示可使用 Exchange 系統管理中心中建立的 dlp 原則和郵件流程規則，或是在安全性 & 規範中心內建立的 dlp 原則使用，但不能同時使用這兩者。 這是因為這些原則儲存在不同的位置，但是原則秘訣只能從單一位置進行繪製。
   
-如果您已在 Exchange 系統管理中心中設定原則提示，則在安全性 & 合規性中心內設定的任何原則提示，都不會向使用者顯示 Outlook 網頁及 Outlook 2013 和更新版本，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保您目前的 Exchange 郵件流程規則將繼續運作，直到您選擇切換到安全性 & 規範中心為止。
+如果您已在 Exchange 系統管理中心中設定原則提示，則在安全性 & 規範中心內設定的任何原則提示，都不會向使用者顯示 Outlook 網頁版和 Outlook 2013 及更新版本，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保您目前的 Exchange 郵件流程規則將繼續運作，直到您選擇切換到安全性 & 規範中心為止。
   
 請注意，當原則提示只能從單一位置繪製時，系統會永遠傳送電子郵件通知，即使您同時在安全性 & 規範中心和 Exchange 系統管理中心中使用 DLP 原則也是一樣。

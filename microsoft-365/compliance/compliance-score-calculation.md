@@ -2,8 +2,8 @@
 title: 合規性分數計算
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 瞭解 Microsoft 合規性管理員如何根據採取的措施來計算個人化分數，以解決風險並改善您的相容性狀況。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052111"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149163"
 ---
 # <a name="compliance-score-calculation"></a>合規性分數計算
 
@@ -114,9 +114,9 @@ ms.locfileid: "51052111"
 |:-----|:-----|
 | 預防性強制 | 7 |
 | 預防選擇型 | 9  |
-| 偵探強制 | 個 |
-| 偵探自由 | 1 |
-| 強制矯正型 | 個 |
-| 隨機糾正 | 1 |
+| 偵探強制 | 3  |
+| 偵探自由 | 1  |
+| 強制矯正型 | 3  |
+| 隨機糾正 | 1  |
   
 ![合規性管理員動作點值](../media/compliance-score-action-scoring.png "合規性管理員動作點值")

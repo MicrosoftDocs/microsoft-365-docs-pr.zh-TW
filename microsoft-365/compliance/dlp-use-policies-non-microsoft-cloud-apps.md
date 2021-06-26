@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何對非 Microsoft cloud app 使用 dlp 原則。
-ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114131"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149151"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft cloud app 的資料遺失防護原則 (預覽) 
 
@@ -80,6 +80,8 @@ dlp 原則至非 Microsoft cloud app 使用雲端 App 安全性 DLP 功能。 �
 當您在 DLP 原則中建立規則時，您可以選取非 Microsoft cloud app 的動作。 若要限制協力廠商應用程式，請選取 [ **限制協力廠商應用程式**]。
 
 ![限制協力廠商應用程式](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+
+>記套用至非 Microsoft 應用程式的 DLP 原則使用 Microsoft Cloud App Security。 建立非 Microsoft 應用程式的 DLP 原則時，會自動在 Microsoft Cloud App Security 中建立相同的原則。
 
 如需建立及設定 DLP 原則的詳細資訊，請參閱 [Create test and 微調 dlp policy](./create-test-tune-dlp-policy.md?view=o365-worldwide)。
 

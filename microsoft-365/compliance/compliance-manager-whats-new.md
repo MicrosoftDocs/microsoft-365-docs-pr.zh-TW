@@ -2,8 +2,8 @@
 title: Microsoft 合規性管理員的新功能
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解相容性管理員的新功能和內容。 閱讀更新的評估、新的評估範本、新的動作等等。
-ms.openlocfilehash: fe5e8056bd771082436c3cd941cd6f4e602c11a9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52465457"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149019"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合規性管理員的新功能
 
@@ -48,4 +48,4 @@ ms.locfileid: "52465457"
 
 ### <a name="active-and-inactive-templates"></a>使用中和非使用中範本
 
-每個評估頁面和評估範本頁面都有一個已啟用的範本計數器。 此計數器會顯示您根據授權合約所使用的合格範本數目。 View [Template types：包括和特優，作用中和非使用中](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 以深入瞭解。
+每個評估頁面和評估範本頁面都有一個已啟用的範本計數器。 此計數器會顯示您根據授權合約所使用的合格範本數目。 View [Template availability and 授權](compliance-manager-templates.md#template-availability-and-licensing) 以深入瞭解。

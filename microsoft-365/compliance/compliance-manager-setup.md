@@ -2,8 +2,8 @@
 title: 開始使用 Microsoft 合規性管理員
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570555"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148899"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -32,13 +32,13 @@ ms.locfileid: "51570555"
 
 合規性管理員可供具有 Office 365 和 Microsoft 365 授權的組織使用，並可政府社群雲端 (GCC) 中等、GCC 高及國防 (DoD) 客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 組織的 Microsoft 365 全域管理員可能會是第一個存取合規性管理員的使用者。 我們建議全域管理員登入，並設定第一次造訪合規性管理員時所述的使用者權限。
 
 ## <a name="sign-in"></a>登入
 
-1. 請移至「 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)」，並以您的 Microsoft 365 全域管理員帳戶登 **入**。
+1. 移至 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，並使用您的 Microsoft 365 全域管理員帳戶登 **入**。
 2. 在左功能窗格上選取 [ **合規性管理員** ]。 您將會收到您的 [合規性管理員儀表板](#understand-the-compliance-manager-dashboard)。
 
 Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) 。
@@ -80,7 +80,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 
 若要在 Azure AD 中指派角色和設定許可權，請參閱[使用 Azure Active Directory 指派系統管理員和非系統管理員角色給使用者](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
 
-使用 Azure AD 身分識別但未 Office 365 或 Microsoft 365 訂閱的使用者，將無法存取 Microsoft 365 規範中心內的合規性管理員。 若要在存取合規性管理員中尋求協助，請與 [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com)聯繫。
+使用 Azure AD 身分識別但未 Office 365 或 Microsoft 365 訂閱的使用者，將無法存取 Microsoft 365 合規性中心中的合規性管理員。 若要在存取合規性管理員中尋求協助，請與 [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com)聯繫。
 
 ### <a name="role-types"></a>角色類型
 
@@ -97,7 +97,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>自動測試和使用者歷程記錄的設定
 
-Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自動執行改進動作的測試。 這些設定也可讓您管理與改進動作相關聯之使用者的資料，包括將「改進」動作重新指派給其他使用者的功能。  只有具有全域系統管理員或合規性管理員角色的人員才能存取合規性管理員設定。
+Microsoft 365 合規性中心中的合規性管理員設定可讓您啟用及停用自動執行改進動作的測試。 這些設定也可讓您管理與改進動作相關聯之使用者的資料，包括將「改進」動作重新指派給其他使用者的功能。  只有具有全域系統管理員或合規性管理員角色的人員才能存取合規性管理員設定。
 
 > [!NOTE]
 > GCC 高和 DoD 環境中的客戶無法使用自動測試功能，因為在這些環境中無法使用安全分數。 GCC高和 DoD 客戶必須手動實施及測試其改進動作。
@@ -112,7 +112,7 @@ Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自
 
 #### <a name="to-manage-your-automated-testing-settings"></a>若要管理您的自動測試設定：
 
-1. 從 [Microsoft 365 規範中心](https://compliance.microsoft.com/)內的任何地方，選取左側導覽 **設定**。
+1. 從 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)中的任何地方，選取左側導覽 **設定**。
 
 2. 在 [設定] 頁面上，選取 [ **合規性管理員**]。
 
@@ -134,7 +134,7 @@ Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自
 
 **若要尋找使用者記錄設定：**
 
-1. 從[Microsoft 365 規範中心](https://compliance.microsoft.com/)內的任何地方，選取左側導覽設定。
+1. 從[Microsoft 365 合規性中心](https://compliance.microsoft.com/)中的任何地方，選取左側導覽設定。
 
 2. 在 [設定] 頁面上，選取 [ **合規性管理員**]。
 
@@ -152,7 +152,7 @@ Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自
 
 **請遵循下列步驟，依使用者匯出報告：**
 
-1. 從 [Microsoft 365 規範中心](https://compliance.microsoft.com/)內的任何地方，選取左側導覽 **設定**。
+1. 從 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)中的任何地方，選取左側導覽 **設定**。
 
 2. 在 [設定] 頁面上，選取 [ **合規性管理員**]。
 
@@ -170,7 +170,7 @@ Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自
 
 **請遵循下列步驟，將改進動作重新指派給其他使用者：**
 
-1. 從 [Microsoft 365 規範中心](https://compliance.microsoft.com/)內的任何地方，選取左側導覽 **設定**。
+1. 從 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)中的任何地方，選取左側導覽 **設定**。
 
 2. 在 [設定] 頁面上，選取 [ **合規性管理員**]。
 
@@ -197,7 +197,7 @@ Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自
 
 若要刪除使用者的歷程記錄，請遵循下列步驟：
 
-1. 從 [Microsoft 365 規範中心](https://compliance.microsoft.com/)內的任何地方，選取左側導覽 **設定**。
+1. 從 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)中的任何地方，選取左側導覽 **設定**。
 
 2. 在 [設定] 頁面上，選取 [ **合規性管理員**]。
 
@@ -322,7 +322,7 @@ Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自
 
 「評估」頁面會列出您為組織設定的所有 [評估](compliance-manager-assessments.md) 。 您的相容性分數分母是由所有追蹤的評估所決定。 當您新增更多評估時，您將會看到 [改進動作] 頁面上列出的更多改進動作，以及您的相容性分數分母增加。
 
-靠近頁面頂端的 [已啟動 **範本** ] 計數器會顯示目前使用中的評估範本數目，以供您的組織使用的範本總數。 如需詳細資訊，請參閱 [範本類型](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 。
+靠近頁面頂端的 [已啟動 **範本** ] 計數器會顯示目前使用中的評估範本數目，以供您的組織使用的範本總數。 如需詳細資訊，請參閱 [範本可用性和授權](compliance-manager-templates.md#template-availability-and-licensing) 。
 
 評估頁面摘要列出每項評估的重要資訊：
 
@@ -357,7 +357,7 @@ Microsoft 365 規範中心的合規性管理員設定可讓您啟用及停用自
 
 範本是在合規性管理員中建立評定的架構。 評定範本頁面會顯示範本清單和重要詳細資料。 此清單包含合規性管理員所提供的範本，以及您的組織已修改或建立的任何範本。 您可以套用篩選器，以根據憑證、產品範圍、國家、行業及建立者，尋找範本。
 
-靠近頁面頂端的 [已啟動 **範本** ] 計數器會顯示目前使用中的評估範本數目，以供您的組織使用的範本總數。 如需詳細資訊，請參閱 [範本類型](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 。
+靠近頁面頂端的 [已啟動 **範本** ] 計數器會顯示目前使用中的評估範本數目，以供您的組織使用的範本總數。 如需詳細資訊，請參閱 [範本可用性和授權](compliance-manager-templates.md#template-availability-and-licensing) 。
 
 從其列中選取範本以顯示其 [詳細資料] 頁面，其中包含範本的描述，以及憑證、範圍和控制項詳細資料的詳細資訊。 您可以從這個頁面選取適當的按鈕來建立評估、將範本資料匯出至 Excel，或修改範本。
 

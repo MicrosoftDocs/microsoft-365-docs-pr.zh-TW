@@ -2,8 +2,8 @@
 title: 合規性管理員的 Microsoft 規範設定分析器
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用 Microsoft 規範設定分析器，透過 Microsoft 合規性管理員快速開始和執行。
-ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244633"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148959"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>合規性管理員的 Microsoft 規範設定分析器 (預覽) 
 
@@ -101,9 +101,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
     ```
   | Input |  國家/地區 | 
   | :------------- | :------------: |
-  | 1 | 亞太地區 |
-  | 第 | 澳洲 |
-  | 個 | 加拿大 |
+  | 1  | 亞太地區 |
+  | 2  | 澳洲 |
+  | 3  | 加拿大 |
   | 4  | 歐洲 (除外法國) /中東/非洲 |
   | 5  | 法國 |
   | 6  | 印度 |
@@ -111,9 +111,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 8  | 韓國 |
   | 9  | 北美 (（加拿大除外）)  |
   | 10  | 南美洲 |
-  | 第 | 南非 |
+  | 11  | 南非 |
   | 12  | 瑞士 |
-  | 13 | 阿拉伯聯合大公國 |
+  | 13  | 阿拉伯聯合大公國 |
   | 14  | 英國 |
 
 
@@ -153,7 +153,7 @@ MCCA 會根據合規性管理員中建議的改進動作評估您目前的設定
 
 **具有改進狀態的專案**
 
-選取 [改進動作] 右邊的 [ **改善** ] 標籤旁的下拉式清單。 您將會看到有關您目前設定的快速摘要和詳細資料，以及建議的改進動作。 摘要包括合規性管理員中的直接連結、Microsoft 365 規範中心內的適用方案，以及相關的檔。
+選取 [改進動作] 右邊的 [ **改善** ] 標籤旁的下拉式清單。 您將會看到有關您目前設定的快速摘要和詳細資料，以及建議的改進動作。 摘要包括合規性管理員中的直接連結、Microsoft 365 合規性中心中適用的解決方案，以及相關的檔。
 
 按一下 [合規性管理員] 連結，可將您帶到尚未執行之解決方案內所有改進動作的篩選視圖。 您可以從這裡看到您可以達到的點數，以提升您的 [合規性分數](compliance-score-calculation.md)和其適用的評估，以及適用的規章和認證。
 

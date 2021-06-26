@@ -2,8 +2,8 @@
 title: Microsoft 合規性管理員
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
-ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244392"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148947"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合規性管理員
 
@@ -30,7 +30,7 @@ ms.locfileid: "52244392"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新功能：相容性管理員的公開發行版
 
-合規性管理員現在已 (GA) 提供[Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員也可供美國政府 Community (GCC) 適中、GCC 高及國防部門 (DoD) 客戶。
+合規性管理員現在已 (GA) 提供[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員也可供美國政府 Community (GCC) 適中、GCC 高及國防部門 (DoD) 客戶。
 
 公開的合規性分數的公開預覽已演變成集中式工具，其具有增強的合規性管理功能和更輕鬆使用。  GA 發行版本提供了更大的預先構建評估集合，可協助您擴大合規性活動。
 
@@ -45,7 +45,7 @@ ms.locfileid: "52244392"
 
 ## <a name="what-is-compliance-manager"></a>何謂合規性管理員
 
-[Microsoft 合規性管理員](https://compliance.microsoft.com/compliancemanager)是[Microsoft 365 規範中心](microsoft-365-compliance-center.md)中的一項功能，可協助您管理組織的合規性需求，以獲得更輕鬆和便利。 合規性管理員可以協助您整個規範旅程，從清查您的資料保護風險到管理實施控制措施的複雜性、保持目前與法規和憑證的複雜性，以及向審計員報告。
+[Microsoft 合規性管理員](https://compliance.microsoft.com/compliancemanager)是[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中的功能，可協助您管理組織的合規性需求，以獲得更輕鬆和便利。 合規性管理員可以協助您整個規範旅程，從清查您的資料保護風險到管理實施控制措施的複雜性、保持目前與法規和憑證的複雜性，以及向審計員報告。
 
 合規性管理員提供下列功能，協助簡化法規遵從性並降低風險：
 

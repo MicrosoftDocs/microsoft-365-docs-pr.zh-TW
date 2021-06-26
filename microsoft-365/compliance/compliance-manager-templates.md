@@ -2,8 +2,8 @@
 title: 在 Microsoft 合規性管理員中使用評估範本
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,34 +14,34 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用和管理範本，以在 Microsoft 合規性管理員中建立評估。 使用已格式化的 Excel 檔案建立及修改範本。
-ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2d20fa69345f2ff2624252972cb0e017e401f0dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499025"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149127"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合規性管理員中使用評估範本
 
-**本文內容：** 瞭解 **範本的運作方式** ，以及如何從評估範本頁面進行 **管理** 。 取得如何 **建立** 新範本、**修改** 現有範本、**使用 Excel 格式化範本資料**，以及匯出範本 **報告** 的指示。
+**本文內容：** 瞭解 **範本的運作方式** ，以及如何從評估範本頁面進行 **管理** 。 取得如何 **建立** 新的範本、**擴充** 及 **修改** 現有範本、**使用 Excel 格式化範本資料** 及匯出範本 **報告** 的指示。
 
 > [!IMPORTANT]
-> 您的組織可使用的評估範本取決於您的授權協定。 [查看詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+> 您的組織可使用的評估範本取決於您的授權合約。 [查看詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="templates-overview"></a>範本概述
 
-範本是在合規性管理員中建立評估的控制項框架。 我們的綜合樣板集合可協助您的組織遵循管理資料集合及使用的本國、區域及特定行業的需求。 我們會將範本命名為與其基礎憑證或法規（如歐盟 GDPR 範本及 ISO 27001:2013 範本相同）的名稱。
+範本是在合規性管理員中建立評估的控制項框架。 我們的綜合樣板集合可協助您的組織遵循管理資料集合及使用的本國、區域及特定行業的需求。 我們會將範本命名為與其基礎憑證或法規（如歐盟 GDPR 範本和 ISO/IEC 27701:2019 範本）相同的名稱。
 
- 查看 [完整的範本清單](compliance-manager-templates-list.md)。
-
-## <a name="template-types-included-and-premium-active-and-inactive"></a>範本類型：包括和特優、作用中和非使用中
-
-#### <a name="included-and-premium-templates"></a>包含和精品範本
+## <a name="template-availability-and-licensing"></a>範本可用性和授權
 
 可供使用的範本是根據您組織的授權協定 ([查看授權詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)) 。 範本有兩種類別：包括和特優。
 
-1. **包含的範本** 可做為組織的授權合約的一部分使用。
-2. 您必須購買 **進階版範本**，才能建立評估。 購買後，您可以視需要建立來自範本的評估數目。 [瞭解您可以如何購買精品範本](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
+#### <a name="included-and-premium-templates"></a>包含和精品範本
+
+1. **包含的範本** 是由您的授權所授，並涵蓋重要的規章和需求。
+2. 您可以購買 **進階版範本**，以擴充您的文件庫，並涵蓋特定需求。 購買後，您可以視需要建立來自範本的評估數目。 [瞭解您可以如何購買精品範本](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
+
+查看 [完整的範本清單](compliance-manager-templates-list.md)。
 
 #### <a name="active-and-inactive-templates"></a>使用中和非使用中範本
 
@@ -50,64 +50,40 @@ ms.locfileid: "51499025"
 - **當您** 從該範本建立評估之後，就會將範本視為作用中。
 - 如果您的組織未將範本用於評估，便會將其視為 **非** 使用中。
 
-當您購買高階範本並從中建立評估時，該範本會在一年中使用。 除非您取消更新，否則您的購買將會自動更新。
+當您購買高階範本並從中建立評估時，該範本會在一年中使用。 除非您取消，否則您的購買將會自動更新。
 
-**啟用的範本計數器**
+您也可以嘗試使用高級範本，以試用為基礎。 試用版授權適用于30天的最多25個範本。 當您的試用版開始之後，您租使用者的範本應該會在48小時內變為可用。 您可以透過 Microsoft 365 系統管理中心啟用實驗。
 
-「評估」頁面和「評估範本」頁面的上方有一個已啟動的 **範本** 計數器。 此計數器會顯示已使用的範本數目，而這些數目已超出您的授權合約的資格使用。
+#### <a name="activated-templates-counter"></a>啟用的範本計數器
+
+「評估」頁面和「評估範本」頁面的上方有一個已啟動的 **範本** 計數器。 計數器顯示使用的範本數，取決於您的授權合約所能使用的數目。 範本使用會在認證層級計算。
 
 例如，如果計數器顯示2/5，這表示您的組織已啟動2個範本，可供使用。
 
 如果計數器顯示5/2，這表示您的組織超出其限制，需要購買使用中的高級範本3。
 
-如需詳細資訊，請參閱 [合規性管理員授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) 。
+如需詳細資訊，請參閱 [合規性管理員授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
-## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>從 [評估範本] 頁面查看及管理範本
+## <a name="view-and-manage-templates"></a>查看及管理範本
 
-合規性管理員中的 [評估範本] 頁面會顯示範本及主要詳細資料的清單。 此清單包含合規性管理員所提供的範本，以及您的組織已修改或建立的任何範本。 您可以套用篩選器，以根據憑證、產品範圍、國家、工業、建立者，以及範本是否啟用評估功能來尋找範本。
+合規性管理員中的 [評估範本] 頁面會顯示範本及其相關重要資訊的清單。 此清單包含合規性管理員所提供的範本，以及您的組織已修改或建立的任何範本。 您可以套用篩選器，以根據憑證、產品範圍、國家、工業、建立者，以及範本是否啟用評估功能來尋找範本。
 
 從其列中選取範本以顯示其詳細資料頁面。 此頁面包含範本的描述，以及憑證、範圍和控制項詳細資料的進一步資訊。 您可以從這個頁面選取適當的按鈕來建立評估、將範本資料匯出至 Excel，或修改範本。
 
-## <a name="creating-and-modifying-templates-overview"></a>建立及修改範本概述
+## <a name="format-template-data-with-excel"></a>使用 Excel 格式化範本資料
 
-若要修改現有範本或建立您自己的新範本，您可以使用專門格式化的 Excel 試算表 ([下載範例](https://go.microsoft.com/fwlink/?linkid=2124865)) 來組合必要的控制項資料。 在完成試算表後，您可以在建立或修改範本的過程中將其匯入合規性管理員。
-
-> [!NOTE]
-> 試算表具有必須使用的特定格式和架構，否則將無法正確地匯入合規性管理員。 [格式設定指令](#formatting-your-template-data-with-excel)如下。
-
-**所需角色**
-
-只有擁有全域管理員或合規性管理員管理角色的使用者，才可以建立及修改範本。 深入瞭解 [角色和許可權](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
-
-## <a name="create-a-new-template"></a>建立新的範本
-
-若要建立您自己的新範本 (用來建立自訂評估) ，請遵循下列步驟。
-
-1. 移至合規性管理員中的 [ **評估範本** ] 頁面。
-2. 選取 [ **建立新範本**]。 隨即會開啟範本建立嚮導。
-3. 選擇您要建立的範本類型。 在此情況下，請選取 [ **建立自訂範本**]，然後選取 **[下一步]**。
-4. 在 [ **Upload** 檔案] 畫面中，選取 **[流覽]** ，尋找並上傳已格式化的 Excel 檔案包含所有必要的範本資料 (請參閱 [指示，以適當地格式化您](#formatting-your-template-data-with-excel)的檔案) 。
-5. 如果您的檔案沒有任何問題，將會顯示上傳的檔案檔案名。 選取 **[下一步]** 繼續。  (如果您需要變更檔，請選取 [ **Upload 其他** 檔案) 。
-    - 如果檔案有錯誤，頂端的錯誤訊息就會說明錯誤。 您必須修正檔案，然後重新上傳。 如果您的試算表格式不正確，或是某些欄位中有不正確資訊 (請重新參考 [格式設定](#formatting-your-template-data-with-excel)) 中，就會產生錯誤。  
-    
-6. [ **審閱] 和 [完成]** 畫面會顯示提升動作和控制項的數目，以及範本的最大分數。 準備好核准時，請選取 [ **建立範本]。**  (如果您需要進行變更，請選取 [ **上一步**]。 ) 
-7. 最後一個畫面會確認已建立新的範本。 選取 [完成]， **結束** 嚮導。
-8. 您將會收到新範本的詳細資料頁面，您可以在其中 [建立評估](compliance-manager-assessments.md#create-your-own-custom-assessment)。
-
-## <a name="formatting-your-template-data-with-excel"></a>使用 Excel 格式化範本資料
-
-用來建立範本的 Excel 試算表包含四個索引標籤，其中三個是必要的：
+Excel 試算表 ([下載](https://go.microsoft.com/fwlink/?linkid=2124865)) 用來建立或修改範本的範例，其具有特定的格式和架構，必須使用才能正確地匯入合規性管理員。 包含四個索引標籤，其中三個是必要的：
 
 1. [範本](#template-tab) (必要) 
 2. [ControlFamily](#controlfamily-tab) (必要) 
 3.  (必要的[動作](#actions-tab)) 
 4. [維度](#dimensions-tab) (選用) 
 
-當您使用範本資料填滿試算表時，試算表  **必須依上述順序包含** 索引標籤，否則您的資料將無法成功匯入至範本。
+當您使用範本資料填滿試算表時，試算表 **必須依上述順序包含** 索引標籤，否則您的資料將無法成功匯入至範本。
 
 ##### <a name="template-tab"></a>範本] 索引標籤
 
-[ **範本** ] 索引標籤是必要的。 此索引標籤中的資訊提供範本的中繼資料。 有四個必要的欄。 欄必須在 Excel 工作表上保持順序如下所列。 您可以在四欄 **後** 新增您自己的欄，以提供您自己的維度。 如果您這麼做，請務必使用 [下列指示](#dimensions-tab)將其新增至 [**維度**] 索引標籤。
+[ **範本** ] 索引標籤是必要的。 此索引標籤中的資訊提供範本的中繼資料。 有四個必要的欄。 欄必須在 Excel 工作表上保持順序如下所列。 您可以在四欄 **後** 新增您自己的欄，以提供您自己的維度。 如果您這麼做，請務必將它們新增至 [ **維度** ] 索引標籤。
 
 - **職稱**：這是範本的標題，必須是唯一的。 您可以在合規性管理員中與其他範本共用名稱稱，包括您自己的範本或合規性管理員範本。
 
@@ -142,10 +118,10 @@ ms.locfileid: "51499025"
 
 - **implementationType**：在此必要欄位中，列出下列三種實施類型之一：
     - 由人員和程式所 **執行的動作**，以保護組織系統、資產、資料和人員的機密性、完整性和可用性 (範例：安全性意識和訓練) 
-    - **技術** -透過使用資訊系統的硬體、軟體或固件元件所包含的技術和機制完成的動作，以保護組織系統和資料的機密性、完整性和可用性 (範例：多重要素驗證) 
+    - **技術** -使用資訊系統的硬體、軟體或固件元件中所包含的技術和機制來完成的動作，以保護組織系統和資料的機密性、完整性和可用性 (範例：多重要素驗證) 
     - **檔** -透過記錄的原則及程式所執行的動作，建立及定義保護組織系統、資產、資料和人員的機密性、完整性和可用性所需的控制項 (範例：資訊安全性原則) 
 
-- **actionScore**：在這個必要的欄位中，為您的動作提供數值分數值。 它必須是介於1到99的整數。它不得為0、null 或空白。 數位越高，其價值越高，以改善您的相容性狀況。 下圖示范合規性管理員的分數控制項：
+- **actionScore**：在這個必要的欄位中，為您的動作提供數值分數值。 此值必須是介於1到99的整數。它不得為0、null 或空白。 數位越高，其價值越高，以改善您的相容性狀況。 下圖示范合規性管理員的分數控制項：
 
 ![合規性管理員控制點值](../media/compliance-score-action-scoring.png "合規性管理員控制點值")
 
@@ -162,38 +138,75 @@ ms.locfileid: "51499025"
 - **dimensionKey**：清單為 "product"，"認證，" 「動作目的」
 - **dimensionValue**：範例： Office 365、HIPPA、預防性、偵探
 
-您可以前往 **租使用者管理** ，然後選取 [ **維度** ] 索引標籤，以查看現有的維度。此外，當您匯出現有的範本時，匯出的試算表會有 [ **維度** ] 索引標籤，該索引標籤會列出範本中所用的所有維度。
+當您匯出現有的範本時，匯出的試算表會有 [ **維度** ] 索引標籤，該索引標籤會列出範本中所用的所有維度。
+
+## <a name="create-an-assessment-template"></a>建立評估範本
+
+若要建立您自己的新範本以進行自訂評估，您可以使用專門格式化的 Excel 試算表來組合必要的控制項資料。 完成試算表後，您會將其匯入合規性管理員。
+
+#### <a name="required-roles"></a>所需角色
+
+只有擁有全域管理員或合規性管理員管理角色的使用者，才可以建立及修改範本。 深入瞭解 [角色和許可權](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
+
+### <a name="create-new-template-in-compliance-manager"></a>在合規性管理員中建立新範本
+
+1. 移至合規性管理員中的 [ **評估範本** ] 頁面。
+2. 選取 [ **建立新範本**]。 隨即會開啟範本建立嚮導。
+3. 選擇您要建立的範本類型。 在此情況下，請選取 [ **建立自訂範本**]，然後選取 **[下一步]**。
+4. 在 [ **Upload** 檔案] 畫面中，選取 **[流覽]** ，尋找並上傳已格式化的 Excel 檔案，其中包含所有必要的範本資料。
+5. 如果您的檔案沒有任何問題，將會顯示上傳的檔案檔案名。 選取 **[下一步]** 繼續。  (如果您需要變更檔，請選取 [ **Upload 其他** 檔案) 。
+    - 如果檔案有錯誤，頂端的錯誤訊息就會說明錯誤。 您必須修正檔案，然後重新上傳。 如果您的試算表格式不正確，或某些欄位中有不正確資訊，就會產生錯誤。
+6. [ **審閱] 和 [完成]** 畫面會顯示提升動作和控制項的數目，以及範本的最大分數。 準備好核准時，請選取 [ **建立範本]。**  (如果您需要進行變更，請選取 [ **上一步**]。 ) 
+7. 最後一個畫面會確認已建立新的範本。 選取 [完成]， **結束** 嚮導。
+8. 您將會收到新範本的詳細資料頁面，您可以在其中 [建立評估](compliance-manager-assessments.md#create-assessments)。
+
+## <a name="extend-an-assessment-template"></a>擴充評估範本
+
+合規性管理員提供選項，可將您自己的控制項和提升動作新增至現有的 Microsoft 所提供範本。 此程式稱為「擴充 Microsoft 範本」。 當您擴充範本時，它仍可接收由 Microsoft 所發行的更新，當相關的規章或 (產品變更時，可能會發生此問題。請參閱 [接受對評估的更新](compliance-manager-assessments.md#accept-updates-to-assessments)) 。
+
+若要準備，您必須將特殊格式化的 Excel 試算表組合在一起，以匯入必要的範本資料。 Excel 檔遵循上述一般格式，但有一些副檔名的特殊需求。 請參閱下列其他分數，以協助防止錯誤：
+
+- 您的試算表應該只包含您想要新增至評估的動作和控制項。
+- 試算表無法包含您要修改之評估中已存在的任何控制項或動作。
+- 請考慮在範本的標題中包含 "extension"，例如 "GDPR – [您的公司名稱] 分機。 這可讓您在 [ **評估範本** ] 頁面上的清單中，與標準的 Microsoft 提供範本或具有類似名稱的自訂範本更容易識別。
+
+在您格式化試算表之後，請遵循下列步驟。
+
+1. 移至 [ **評估範本** ] 頁面，然後選取 [ **建立新範本**]。 隨即會開啟範本建立嚮導。
+
+2. 選擇您要建立的範本類型。 在此情況下，請選取 [ **擴充 microsoft 範本**]，然後 **選取 [microsoft 範本**]。
+
+3. 顯示在螢幕右側的 [範本選擇] 彈出窗格，顯示所有範本及其狀態為 [使用中] 或 [非使用中] 的清單。 您的 [已啟動 **範本** ] 計數器顯示目前使用中的範本數目已超出可用總數目。 如果您超過限制，消息列將會提供通知。
+
+4. 在螢幕右側會顯示一個範本選取範圍彈出窗格。 使用 [ **搜尋** ] 來套用篩選，以尋找您想要的範本
+
+5. 找到範本後，選取其名稱左側的選項按鈕，然後選取 [ **儲存**]。
+
+6. 下一個畫面會顯示您所選取的範本。 如果正確，請選取 **[下一步]**。  (如果不正確，請選擇 [ **選取其他範本** ] 以重新選擇。 ) 
+
+7. 在 [ **Upload** 檔案] 畫面中，選取 **[流覽]** ，尋找並上傳已格式化的 Excel 檔案，其中包含所有必要的範本資料。
+
+8. 如果您的檔案沒有任何問題，下一個畫面會顯示上傳的檔案名稱。 選取 **[下一步]** 繼續 (如果您需要變更檔案，請選取 [ **Upload 其他** 檔案) ]。
+
+    - 如果檔案有問題，頂端的錯誤訊息會說明錯誤。 您需要修正並重新上傳檔案。 如果您的試算表格式不正確，或某些欄位中有不正確資訊，就會產生錯誤。
+
+9. [ **審閱] 和 [完成]** 畫面會顯示提升動作和控制項的數目，以及範本的最大分數。 準備好核准時，請選取 **[下一步]**。  (如果您需要進行變更，請選取 [ **Upload 其他** 檔案]。 ) 
+
+10. 最後一個畫面會確認已建立新的範本。 選取 [完成]， **結束** 嚮導。
+
+11. 您將會收到新範本的詳細資料頁面。 從這裡，您可以選取 [ **建立評估**] 來建立評估。 如需相關指引，請參閱 [建立及管理評估](compliance-manager-assessments.md#create-assessments)。
 
 ## <a name="modify-a-template"></a>修改範本
 
 您可能想要修改已經建立的範本，例如新增控制項，或新增或移除改進動作。 此程式類似于範本建立程式，您會使用範本資料上傳已格式化的 Excel 檔案。
 
-不過，當您使用現有範本資料的變更來格式化檔案時，會有特定的詳細資料需要注意。 **建議您仔細閱讀這些指示，以確保您不會覆寫任何您想要保留的現有資料。**
+不過，當您使用現有範本資料的變更來格式化檔案時，會有相關的詳細資料。 **建議您仔細閱讀這些指示，以確保您不會覆寫任何您想要保留的現有資料。**
 
-### <a name="template-modification-process-steps"></a>範本修改流程步驟
+### <a name="format-your-excel-file-to-modify-an-existing-template"></a>格式化您的 Excel 檔案以修改現有範本
 
-若要修改範本，請遵循下列步驟：
+在 [ **評估範本**]   頁面上，選取您要修改的範本，它會顯示其詳細資料頁面。 然後，選取 [ **匯出至 Excel**]。 將下載所有範本資料的 Excel 檔案。 將檔案儲存到您的本機電腦。
 
-1. 在 [ **評估範本** ] 頁面上，選取您要修改的範本，它會顯示其詳細資料頁面。
-2. 選取 [**匯出至 Excel**]。 將下載所有範本資料的 Excel 檔案。 將檔案儲存到您的本機電腦。
-3. [使用下列指示，修改 Excel](#formatting-your-excel-file-to-modify-a-template)檔案，以進行您的範本變更。
-4. 當您變更 Excel 檔案之後，請儲存檔案。
-5. 在範本的 [詳細資料] 頁面上，選取 [ **修改範本** ] 以啟動修改嚮導。 
-6. 在 **Upload** 檔] 畫面上，選取 **[流覽]** ，尋找並上傳您的 Excel 檔案。
-7. 如果您的檔案沒有任何問題，下一個畫面會顯示上傳的檔案名稱。 選取 **[下一步]** 繼續 (如果您需要變更檔案，請選取 [ **Upload 其他** 檔案) ]。
-    - 如果檔案有問題，頂端的錯誤訊息會說明錯誤。 您必須修正檔案，然後重新上傳。 如果您的試算表格式不正確，或某些欄位中有不正確資訊，就會產生錯誤。
-
-8. [ **審閱] 和 [完成]** 畫面會顯示提升動作和控制項的數目，以及範本的最大分數。 準備好核准時，請選取 **[下一步]**。
-9. 最後一個畫面會確認已修改範本。 選取 [完成]， **結束** 嚮導。
-
-您的範本現在會包含您所做的變更。 使用此修改範本的任何評估現在會顯示暫止的更新，而且您必須接受評估的更新，以反映在範本中所做的變更。 深入瞭解 [評估的更新](compliance-manager-assessments.md#accepting-updates-to-assessments)。
-
-> [!NOTE]
-> 如果您以英文以外的語言使用合規性管理員，請注意，當您將範本匯出成 Excel 時，有些文字會以英文顯示。 您的 [改進動作] 和 [Microsoft 動作]) 的動作標題，都必須以英文的方式 (以供控制項識別。 如果您變更動作標題，請務必以英文撰寫，這樣檔案才能正確地匯入。
-
-### <a name="formatting-your-excel-file-to-modify-a-template"></a>格式化您的 Excel 檔案以修改範本
-
-請跳至下列章節，快速找出您需要的指示：
+若要使用此檔案，請跳至下列區段，以快速找出您所需的指示：
 
 - [編輯主要範本屬性](#edit-the-main-template-attributes)
 - [新增改進動作](#add-an-improvement-action)
@@ -220,7 +233,7 @@ ms.locfileid: "51499025"
 
 #### <a name="change-an-improvement-actions-name"></a>變更改進動作的名稱
 
-如果您想要變更改進動作的名稱，您必須在試算表中明確指定您要以新名稱取代現有名稱。 遵循下列步驟：
+如果您想要變更改進動作的名稱，您必須在試算表中明確指定您要以新名稱取代現有名稱。 依照下列步驟執行：
 
 1. 在試算表的 [ **動作** ] 索引標籤中，將新欄新增至 a 欄後的試算表中。
 2. 在這個新欄中（現在是 B 欄），置於第1列： **oldActionTitle** 中的標題。
@@ -254,9 +267,26 @@ ms.locfileid: "51499025"
 
 當您將試算表重新匯入範本時，您的控制項將會從範本中移除。
 
+### <a name="modify-template-info-in-compliance-manager"></a>在合規性管理員中修改範本資訊
+
+在完成並儲存 Excel 檔之後，請遵循下列步驟。
+
+1. 再次開啟 [評估範本] 頁面，然後選取您的範本。 在範本的 [詳細資料] 頁面上，選取 [ **修改範本** ] 以啟動修改嚮導。
+2. 在 **Upload** 檔] 畫面上，選取 **[流覽]** ，尋找並上傳您的 Excel 檔案。
+3. 如果您的檔案沒有任何問題，下一個畫面會顯示上傳的檔案名稱。 選取 **[下一步]** 繼續 (如果您需要變更檔案，請選取 [ **Upload 其他** 檔案) ]。
+    - 如果檔案有問題，頂端的錯誤訊息會說明錯誤。 您必須修正檔案，然後重新上傳。 如果您的試算表格式不正確，或某些欄位中有不正確資訊，就會產生錯誤。
+
+4. [ **審閱] 和 [完成]** 畫面會顯示提升動作和控制項的數目，以及範本的最大分數。 準備好核准時，請選取 **[下一步]**。
+5. 最後一個畫面會確認已修改範本。 選取 [完成]， **結束** 嚮導。
+
+您的範本現在會包含您所做的變更。 使用此修改範本的任何評估現在會顯示暫止的更新，而且您必須接受評估的更新，以反映在範本中所做的變更。 深入瞭解 [評估的更新](compliance-manager-assessments.md#accept-updates-to-assessments)。
+
+> [!NOTE]
+> 如果您以英文以外的語言使用合規性管理員，請注意，當您將範本匯出成 Excel 時，有些文字會以英文顯示。 您的 [改進動作] 和 [Microsoft 動作]) 的動作標題，都必須以英文的方式 (以供控制項識別。 如果您變更動作標題，請務必以英文撰寫，這樣檔案才能正確地匯入。
+
 ## <a name="export-a-template"></a>匯出範本
 
-您可以匯出包含所有範本資料的 Excel 檔案。 您必須匯出範本，才能修改範本，因為這會是您在[修改](#modify-a-template)程式中編輯和上傳的 Excel 檔案。
+您可以匯出包含所有範本資料的 Excel 檔案。 您必須匯出範本，才能加以修改，因為這會是您在[修改](#modify-a-template)程式中編輯和上傳的 Excel 檔案。
 
 若要匯出範本，請移至您的 [範本詳細資料] 頁面，然後選取 [**匯出至 Excel** ] 按鈕。
 

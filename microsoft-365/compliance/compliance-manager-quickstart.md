@@ -2,8 +2,8 @@
 title: Microsoft 合規性管理員快速入門手冊
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合規性管理員快速入門手冊可協助您深入瞭解、取得設定，以及使用合規性管理員。
-ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906025"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149043"
 ---
 # <a name="compliance-manager-quickstart"></a>合規性管理員快速入門
 
@@ -31,7 +31,7 @@ ms.locfileid: "50906025"
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>第一次就診：深入瞭解合規性管理員
 
-合規性管理員位於的 Microsoft 365 規範中心 https://compliance.microsoft.com 。 在您開始使用合規性管理員之前，貴組織的全域系統管理員必須先 [設定使用者權限並指派角色](compliance-manager-setup.md#set-user-permissions-and-assign-roles) 。
+合規性管理員位於的 Microsoft 365 合規性中心 https://compliance.microsoft.com 。 在您開始使用合規性管理員之前，貴組織的全域系統管理員必須先 [設定使用者權限並指派角色](compliance-manager-setup.md#set-user-permissions-and-assign-roles) 。
 
 您第一次流覽合規性管理員時，您會看到組織的合規性分數。 合規性管理員已評估您目前的 Microsoft 365 環境與資料保護基準。 開始熟悉合規性管理員的最佳方式，是瞭解它所顯示的功能、其主要元素，以及如何自訂儀表板。
 
@@ -63,8 +63,8 @@ ms.locfileid: "50906025"
 
 您也可以設定所有或改進動作子集的自動測試。 若要瞭解合規性管理員中更高級的功能，請流覽下列連結：
 
-- [新增您自己的控制項和改進動作，以擴充合規性管理員評估](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [建立您自己的自訂評估](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [新增您自己的控制項和改進動作來擴充合規性管理員範本](compliance-manager-templates.md#extend-an-assessment-template)
+- [建立您自己的自訂範本](compliance-manager-templates.md#create-an-assessment-template)
 - [修改現有範本以新增或移除控制項和動作](compliance-manager-templates.md#modify-a-template)
 - [設定改進動作的自動測試](compliance-manager-setup.md#set-up-automated-testing)
 - [將改進動作重新指派給另一位使用者](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
