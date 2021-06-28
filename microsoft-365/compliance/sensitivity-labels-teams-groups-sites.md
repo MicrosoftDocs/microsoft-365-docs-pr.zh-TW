@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096753"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149187"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -141,6 +141,8 @@ ms.locfileid: "53096753"
 並非所有應用程式都支援驗證內容。如果應用程式不受支援的使用者連線到針對驗證內容所設定的網站，他們會看到拒絕存取的訊息，或提示他們進行驗證但遭到拒絕。目前支援驗證內容的應用程式：
 
 - Office 網頁版，其中包含 Outlook 網頁版
+
+- 適用於 Windows 和 macOS 的 Microsoft Teams (Teams Web 應用程式除外)
 
 - Microsoft Planner
 
