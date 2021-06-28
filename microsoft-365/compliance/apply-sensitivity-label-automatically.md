@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137772"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169613"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -89,6 +89,7 @@ ms.locfileid: "53137772"
 |依位置限制|否 |是 |
 |條件：可訓練分類器|是 |否 |
 |條件：共用選項和電子郵件的其他選項|否 |是 |
+|條件: 例外狀況|否 |是 (僅限電子郵件) |
 |建議、原則工具提示及使用者覆寫|是 |否 |
 |模擬模式|否 |是 |
 |已針對條件檢查 Exchange 附件|否 | 是|
@@ -297,7 +298,17 @@ ms.locfileid: "53137772"
     - 附件受密碼保護
     - 無法掃描任何電子郵件附件的內容
     - 未完成掃描任何電子郵件附件的內容
-
+    - 標頭符合模式
+    - 主題符合模式
+    - 收件者地址包含文字
+    - 收件者地址符合模式
+    - 寄件者地址符合模式
+    - 寄件者網域為
+    - 收件者為以下的成員
+    - 寄件者為
+    
+    然後，您可以為每個條件指定例外狀況。
+    
 8. 根據您先前的選擇，您現在有機會使用條件和例外建立新的規則。
     
     敏感性資訊類型的設定選項，和您針對 Office 應用程式的自動套用標籤所選取的設定選項相同。 如需詳細資訊，請參閱[設定標籤的敏感性資訊類型](#configuring-sensitive-info-types-for-a-label)。

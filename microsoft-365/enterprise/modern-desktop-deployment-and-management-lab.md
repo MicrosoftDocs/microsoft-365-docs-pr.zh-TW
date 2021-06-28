@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770670"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169565"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 和 Office 365 部署的 Lab Kit
 
@@ -48,16 +48,18 @@ Windows 10 和 Office 365 部署實驗室套件的設計目的是協助您規劃
 
   - Microsoft 365 E5
   - Microsoft 365 Apps 企業版
-  - Office 365E5 隨 Enterprise Mobility + Security (EMS) 
+  - 具有 Enterprise Mobility + Security (EMS) 的 Office 365 E5
 
 ## <a name="step-by-step-labs"></a>逐步實驗室
 
 詳細的實驗室指南可透過多個部署和管理案例來引導您。 我們已為最新版本的 Intune 和 Configuration Manager 更新實驗室。 
 
 ### <a name="plan-and-prepare-infrastructure"></a>規劃及準備基礎結構 
+
 - 電腦分析 
 - 雲端管理閘道 & 雲端發佈點 
-- 租使用者附加、共同管理及切換工作負載 
+- 新增！ 租使用者附加及共同管理
+- 新增！ 端點分析 
 -  (VPN) 的遠端存取 
 
 ### <a name="prepare-configuration"></a>準備設定   
@@ -91,6 +93,7 @@ Windows 10 和 Office 365 部署實驗室套件的設計目的是協助您規劃
 - 使用 Microsoft Intune Enterprise 受管理的部署  
 - 使用 Microsoft Intune 的 LOB 部署和管理
 - 部署 Microsoft Teams
+- 新增！ 工作分派篩選  
 
 ### <a name="deploy-windows-virtual-desktop"></a>部署 Windows 虛擬機器  
 

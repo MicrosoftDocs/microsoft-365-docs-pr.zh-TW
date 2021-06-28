@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096729"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169577"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -51,6 +51,8 @@ ms.locfileid: "53096729"
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻擊面降低規則的安全性 reco":::
 
 在 [建議詳細資料] 窗格中，檢查 [使用者影響] 以判斷您的裝置可接受新原則的百分比，以封鎖模式啟用規則，而不會對生產力造成不良影響。
+
+如需支援的作業系統的相關資訊，請參閱「啟用攻擊面降低規則」一文中的 [需求](enable-attack-surface-reduction.md#requirements) 。
 
 ## <a name="audit-mode-for-evaluation"></a>評估的審計模式
 
@@ -145,7 +147,7 @@ DeviceEvents
 
 4. 從解壓縮的位置選取檔案 *cfa-events.xml* 。 或者， [直接複製 XML](event-views.md)。
 
-5. 選取 **[確定]**。
+5. 選取 [確定]。
 
 您可以建立篩選事件只顯示下列事件的自訂視圖，這些事件都與「受控資料夾存取」有關：
 

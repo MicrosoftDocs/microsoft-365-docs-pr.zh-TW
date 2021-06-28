@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053068"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169589"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -116,7 +116,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留原則
 
 > [!NOTE]
-> Yammer 的保留原則為預覽版。
+> Yammer 的保留原則處於預覽階段，目前不會在因保留原則而刪除郵件時通知使用者。
 >
 > 若要使用此功能，您的 Yammer 網路必須處於[原生模式](/yammer/configure-your-yammer-network/overview-native-mode)，而非混合模式。
 

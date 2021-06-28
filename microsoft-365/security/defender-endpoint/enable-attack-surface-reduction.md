@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984793"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169601"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
@@ -35,7 +35,9 @@ ms.locfileid: "52984793"
 
 [攻擊面減少規則](attack-surface-reduction.md) (ASR 規則) 協助防止惡意程式碼經常濫用裝置和網路遭到侵入的動作。
 
-**需求** 您可以針對執行下列任何版本與 Windows 的裝置，設定攻擊面減少規則：
+## <a name="requirements"></a>需求
+
+您可以針對執行下列任何版本與 Windows 的裝置，設定攻擊面減少規則：
 
 - Windows 10 專業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
 - Windows 10 企業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
@@ -121,7 +123,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    > [!div class="mx-imgBorder"]
    > ![MEM 基本屬性](images/mem03-1-basics.png)
 
-4. 按 [下一步 **]**。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [**新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
+4. 按一下 **[下一步]**。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [**新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
 
    > [!div class="mx-imgBorder"]
    > ![記憶體配置設定](images/mem04-2-configuration-settings.png)
@@ -162,7 +164,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    > [!div class="mx-imgBorder"]
    > ![MEM 適用性規則](images/mem07-5-applicability-rules.png)
 
-10. 按 [下一步 **]**。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
+10. 按一下 **[下一步]**。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
 
     > [!div class="mx-imgBorder"]
     > ![記憶審閱和建立](images/mem08-6-review-create.png)
