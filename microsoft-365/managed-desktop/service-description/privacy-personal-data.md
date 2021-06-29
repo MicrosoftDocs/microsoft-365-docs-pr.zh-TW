@@ -12,140 +12,75 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861680"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177474"
 ---
-# <a name="privacy-and-personal-data"></a>隱私權和個人資料
+# <a name="overview"></a>概觀
 
-使用者可以在 Microsoft 受管理的電腦所管理的裝置上接收、傳送和儲存資料。 他們相信資料的隱私權受到保護，且只能以符合其預期的方式來使用。 本文說明 Microsoft 受管理的電腦如何收集、儲存、保留、處理、保護、共用、審核和匯出個人資料。 您也將瞭解系統管理員如何查看、更正和刪除個人資料。
+Microsoft 受管理的電腦是一種服務 (ITaaS) 服務，適用于設計用來保持員工 Windows 裝置部署和更新的企業雲端客戶。 它還提供 IT 服務管理和作業、監控安全性和事件回應，以及提供使用者支援。 這份檔提供 Microsoft 受管理的電腦的資料平臺及隱私權相容性的其他詳細資料。
 
-Microsoft 受管理的電腦不會使用任何收集的個人資料，做為進行分析、廣告或行銷目的提供服務的一部分。
+## <a name="microsoft-managed-desktop-data-sources-and-purpose"></a>Microsoft 受管理的電腦資料來源和用途
 
-## <a name="data-collection-of-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的資料集合
+Microsoft 受管理的電腦為企業客戶提供其服務，並使用各種來源的資料，正確地管理客戶的註冊裝置。 這些來源（包括 Azure Active Directory、Microsoft Intune、microsoft Windows 10 和 Microsoft Defender for Endpoint）提供 Microsoft 受管理的電腦管理之裝置的完整視圖。 服務也會使用這些 Microsoft 服務，讓 Microsoft 受管理的電腦提供 ITaaS 功能：
 
-當使用者在 Microsoft 受管理的電腦中登記公司裝置時，會使用 Windows 和 Microsoft Intune 處理資料收集–在技術層級。 這些來源會收集使用者裝置的個人資料，例如 Microsoft 受管理的電腦的裝置名稱，以找出要管理及隨 Microsoft 受管理的電腦體驗提供的裝置。
+- [Microsoft Windows 10 企業版](/windows/windows-10/)-用於管理裝置設定體驗、管理其他服務的連線，以及 IT 專業人員的操作支援。
+- [Windows 商務更新](/windows/deployment/update/waas-manage-updates-wufb)-使用 Windows 10 企業版診斷資料，以提供 Windows 10 更新的詳細資訊。 
+- [Microsoft 端點管理員](/mem/endpoint-manager-overview)–用於裝置管理並保證您的資料安全。
+  - [Microsoft Azure Active Directory](/azure/active-directory/) -用於驗證及識別所有使用者帳戶。 
+  - [Microsoft Intune](/mem/intune/) –用於散佈裝置設定、裝置管理及應用程式管理。
+  - [端點分析](/mem/analytics/overview) -用於有關裝置和應用程式使用狀況的分析洞察力。
+  - [Windows Autopilot](/microsoft-365/windows/windows-autopilot) –用於裝置布建及部署。
+  - [Microsoft Defender For Endpoint](/microsoft-365/security/defender-endpoint/) –提供諸如裝置安全性監控和安全性情報資料等安全性服務。
+- [Microsoft 受管理的電腦](https://endpoint.microsoft.com/#home)–在服務執行期間由客戶提供或由服務所產生的資料。
+- [Microsoft 365 企業應用程式](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1)–用於 Microsoft 365 Apps 管理。
 
-Microsoft 受管理的電腦除了[IT 系統管理員連絡人資訊](#it-admin-contact-information)之外，不會自行收集資料，以提供其服務 (。 相反地，Microsoft 受管理的電腦重複使用已收集其他來源（例如 Windows 和 Microsoft Intune）的資料。 Microsoft 受管理的電腦會使用這些服務從已註冊的裝置收集的資料：
+## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Microsoft 受管理的電腦資料處理程式和儲存區
 
-- 從 Microsoft 受管理的電腦所管理的裝置 Windows 診斷資料會傳送至 Microsoft 的 Windows 診斷資料儲存區。
-- Microsoft 受管理的電腦會使用[現代管理](/learn/modules/introduction-to-modern-management-in-microsoft-365/)來管理已註冊的裝置。 在「新式管理」的一部分中，裝置必須在租使用者的 Azure Active Directory 中登記。
-- 若要將其高度優化和安全的設定散佈至已註冊的裝置，Microsoft 受管理的電腦會使用 Microsoft Intune。
-- Microsoft 受管理的電腦會使用 Microsoft Defender Advanced Thread Protection 的安全性智慧資料，以供使用該服務的客戶使用。
-
-## <a name="data-storage-and-sources-in-microsoft-managed-desktop"></a>資料儲存區和 Microsoft 受管理的電腦中的資料來源
-
-Microsoft 受管理的電腦取得資料後，必須提供其服務、儲存及處理該資料的處理過程如下：
-
-### <a name="storing-data-storage-location-and-data-retention"></a>儲存資料、儲存位置及資料保留
-
-Microsoft 受管理的電腦將其資料儲存在下列一或多個 Microsoft storage services 中：
-
-- Azure SQL
-- Azure 儲存體
-- Dynamics 365
-
-Microsoft 受管理的電腦會將其資料儲存在美國。 個人資料 Microsoft 受管理的電腦會保留最長30天，但不包括 Microsoft Defender for Endpoint 收集的 Microsoft 受管理的電腦裝置的警示資料。 實際的警示資料 (可以包含個人資料) 儲存180天。 已移除個人資料的警示資料會儲存多達兩年。 在遵守一般資料保護法規 (GDPR) 和加州消費者隱私權法案 (CCPA) ，Microsoft 受管理的電腦會為儲存在警示資料中的任何個人資料提供資料主體許可權。
-
-### <a name="staff-location"></a>員工位置
-
-Microsoft 受管理的電腦作業和安全性作業小組位於美國和印度。
-
-## <a name="data-usage-of-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的資料使用量
-
-Microsoft 受管理的電腦使用此資料：
+Microsoft 受管理的電腦依賴多個 Microsoft 產品和服務中的資料，為企業客戶提供其服務。 為了達到保護及維護已註冊裝置的目的，我們會從這些服務處理及複製資料，以 Microsoft 受管理的電腦。 當我們處理資料時，我們會依照線上服務條款和 Microsoft 隱私權聲明中所述，遵循您提供的記錄方向。 當我們處理資料時，我們會依照 [線上服務條款](https://www.microsoft.com/licensing/product-licensing/products) 和 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)中所述，遵循您提供的記錄方向。 Microsoft 受管理的電腦的處理器職責包括確保適當的機密性、安全性和恢復能力。 Microsoft 受管理的電腦採用額外的隱私權和安全性措施，以確保正確處理個人身分識別的資料。 
 
 
-| 資料來源 |搭配 Microsoft 受管理的電腦使用  |
-|---------|---------|
-|Azure Active Directory 資料     | 用於租使用者系統管理員所建立的報表，可在 Microsoft 受管理的電腦管理入口網站中使用。        |
-|Intune 資料     | 用於租使用者系統管理員所建立的報表，可在 Microsoft 受管理的電腦管理入口網站中使用。        |
-|適用於端點的 Microsoft Defender     |  用於使用 Microsoft 受管理的電腦的安全性作業中心 (SOC) 中偵測到已註冊裝置上的安全性威脅。  |
-|Windows 診斷資料     |用來判斷受管理裝置的更新狀態，以及提供並改善 Microsoft 受管理的電腦的 IT 即服務 (ITaaS) 服務。         |
-|系統管理員連絡人資料     | 由 Microsoft 受管理的電腦用於與租使用者系統管理員通訊。        |
+## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Microsoft 受管理的電腦資料儲存區和人員位置
 
+Microsoft 受管理的電腦會將其資料儲存在美國的 Azure 資料中心。 您必須使用 Microsoft 受管理的電腦及其他服務所取得的個人資料，才能讓服務保持運作。 如果從 Microsoft 受管理的電腦中移除裝置，我們會將個人資料保留最多30天，除了 Microsoft Defender for Endpoint 所收集的警示資料之外，出於安全性目的，它會儲存為180天。 如需資料保留的詳細資訊，請參閱[資料保留、刪除及銷毀 Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)。
 
-### <a name="entities-processed-by-microsoft-managed-desktop"></a>Microsoft 受管理的電腦所處理的實體
+Microsoft 受管理的電腦工程運作及安全性作業小組位於美國和印度。 
 
-Microsoft 受管理的電腦處理這些實體以提供服務：
+## <a name="microsoft-windows-10-diagnostic-data"></a>Microsoft Windows 10 診斷資料
 
-- 裝置資料
-- 裝置安全性設定
-- 裝置作業系統和硬體
-- 裝置健康情況的匯總資訊
-- 裝置診斷資訊
-- 租使用者資料
-- Azure Active Directory 資源
-- 原則和設定資料
-- Microsoft Defender 用於端點中繼資料和警示資料
-- Windows 診斷資料
-- 產品和服務使用方式資料
+Microsoft 受管理的電腦會使用[Windows 10 增強型診斷資料](/windows/privacy/windows-diagnostic-data)，以保持 Windows 安全、更新、疑難排解問題，以及改善產品的功能。 [增強型診斷資料] 設定包括有關登錄 Microsoft 受管理的電腦裝置的詳細資訊，以及其設定、功能和裝置健康情況。 選取增強的診斷資料時，會收集資料（包括所需的診斷資料）。 如需有關 Windows 10 診斷資料設定與資料收集的詳細資訊，請參閱[Windows 診斷資料收集的變更](/windows/privacy/changes-to-windows-diagnostic-data-collection)。
 
-### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+在未來版本的 Windows 中，診斷資料術語會變更。 Microsoft 受管理的電腦承諾只處理服務所需的資料。 雖然這會使診斷層級變更為 **選用**，但 Microsoft 受管理的電腦會執行有限的診斷原則，以微調服務所需的診斷資料收集。 如需詳細資訊，請參閱[變更至 Windows 診斷資料收集](/windows/privacy/changes-to-windows-diagnostic-data-collection)。
 
-Microsoft 受管理的電腦所用的身分識別資料會根據組織在訂閱 Microsoft online 服務（如 Office 365 或 Azure）的位址，在地理位置 Azure Active Directory 儲存。 請參閱[Microsoft Azure —我的客戶資料在哪裡？](http://azuredatacentermap.azurewebsites.net/)用於顯示 Azure Active Directory 資料中心的地圖。
+Microsoft 受管理的電腦只處理來自已註冊裝置（如應用程式和裝置可靠性及效能資訊） Windows 10 選用診斷資料，並儲存系統層級的資料。 Microsoft 受管理的電腦不會處理及儲存客戶的個人資料，例如聊天與瀏覽器的記錄、語音、文字或語音資料。 
 
-如需 Azure 用於資料存放區之地區的詳細資訊，請參閱[Azure Active Directory –您的資料所在位置](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)。
+如需 microsoft Windows 10 之診斷資料集合的詳細資訊，請參閱 microsoft 隱私權聲明的 [[我們儲存及處理個人資料的位置](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule)] 區段。
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-windows-update-for-business"></a>Microsoft Windows 商務更新
+Microsoft Windows 商務更新使用來自 Windows diagnostics 的資料來分析更新狀態和失敗。 Microsoft 受管理的電腦會利用此資料，並使用它來緩解及解決問題，以確保所有已註冊的裝置都會根據預先定義的更新節奏保持最新狀態。
 
-Intune 資料可以儲存在一些不同的地區，例如歐洲北美 (愛爾蘭) 和歐洲西部 (荷蘭) 。 您的 IT 系統管理員會建立租使用者帳戶，並選擇當其初次登錄 Intune 服務時，將儲存資料的國家。 如需 Intune 使用的資料中心位置清單，請參閱[Microsoft Intune-我的客戶資料在哪裡？](http://intunedatacentermap.azurewebsites.net/)。 如需有關 Intune 之資料儲存區和使用的詳細資訊，請參閱 [Intune 中的資料收集](/intune/privacy-data-collect)。
+## <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+Microsoft 受管理的電腦所用的識別資料是由在組織中 Azure Active Directory (Azure AD) 時所儲存，該位置是根據組織在訂閱 Microsoft online services 時所提供的位置，例如 enterprise 和 Azure 的 Microsoft Apps。 Microsoft 受管理的電腦所用的識別資料會根據組織在訂閱 Microsoft online 服務（如 enterprise 和 Azure Microsoft Apps 等）的地點，在地理位置儲存。 如需 Azure AD 資料所在位置的詳細資訊，請參閱[Azure Active Directory-您的資料位於何處？](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
-### <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
+## <a name="microsoft-intune"></a>Microsoft Intune
+Microsoft Intune 收集、處理及共用資料，以 Microsoft 受管理的電腦支援商務作業和服務。 如需 Intune 中所收集資料的詳細資訊，請參閱 [Intune 中的資料收集](/mem/intune/protect/privacy-data-collect) 。 
 
-Microsoft Defender for Endpoint data 可以儲存在幾個不同的地區。 基於此原因，當[Microsoft defender for endpoint （資料儲存位置）](http://intunedatacentermap.azurewebsites.net/)時，會在歐洲同盟的 Microsoft Azure 資料中心中運作端點。 如需資料儲存區與 Defender for Endpoint 使用的詳細資訊，請參閱 [Microsoft Defender For endpoint 收集的資料為何？](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+如需 Microsoft Intune 資料位置的詳細資訊，請參閱[儲存 Microsoft 365 客戶資料的位置](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)。 Intune 會尊重管理員為客戶資料所做的儲存位置選擇。
 
-### <a name="windows-10"></a>Windows 10
+## <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
+Microsoft Defender for Endpoint 會收集和儲存在 Microsoft 受管理的電腦中登記的裝置資訊，以進行管理、追蹤及報告目的。 收集的資訊包括檔案資料 (例如：檔案名、大小和雜湊) 、處理資料 (執行中的程式、雜湊) 、登錄資料、網路連線資料和裝置詳細資料 (例如裝置識別碼、裝置名稱和作業系統版本) 。 如需 Microsoft Defender for Endpoint 資料收集和儲存位置的詳細資訊，請參閱 [Microsoft defender For endpoint data storage and 隱私權](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) 。 
 
-如 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)中所述，「microsoft 收集的個人資料可能會在您的地區、美國，以及 microsoft 或其子公司、子公司或服務提供者運作設施的任何其他國家/地區儲存及處理。 [...]通常，主要儲存位置是在客戶的地區或美國，通常是另一個地區的資料中心備份。 會選擇儲存位置 (s) ，以高效運作，以提升效能，並建立冗余，以在發生中斷或其他問題時，保護資料。 我們採取下列步驟，以確保根據此陳述的條款和資料所在位置的法律需求，處理我們在此隱私權聲明下收集的資料。
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版 
+Microsoft 365 Apps 企業版會使用 Microsoft 受管理的電腦收集及共用資料，以確保根據 Microsoft 受管理的電腦所管理的預先定義的更新通道，使用最新版本的應用程式。 如需 Microsoft 365 Apps 的資料收集和儲存位置的詳細資訊，請參閱[Microsoft Defender for Endpoint data storage and 隱私權](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect)。
 
-如需 Windows 10 之診斷資料集合的詳細資訊，請參閱 Microsoft 隱私權聲明中的「[我們儲存及處理個人資料的地方](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule)」一節。
+## <a name="major-data-change-notification"></a>主要資料變更通知
+Microsoft 受管理的電腦遵循我們服務通訊架構中所述的變更控制處理常式。 我們會透過 Microsoft 365 訊息中心通知客戶，並 Microsoft 受管理的電腦管理入口網站的安全性事件及主要變更服務。 對收集到的資料類型所做的變更，以及儲存位置的變更，都會視為一項材料變更。 我們會提供至少30天的此變更的高級通知，因為這是 Microsoft 365 產品和服務的標準作法。 如需詳細資訊，請參閱 [服務變更和通訊](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)。
 
-## <a name="data-access-protection"></a>資料存取保護
+## <a name="compliance"></a>合規性
+Microsoft 受管理的電腦已完成外部審核，並取得一組完整的規範服務。 您可以在 Microsoft 受管理的電腦[法規遵從性](/microsoft-365/managed-desktop/intro/compliance)中找到詳細資訊。 您可以在 microsoft[服務信任入口網站](https://aka.ms/stp)上下載審計報告，其充當 microsoft Enterprise 線上服務的中央存放庫。  (Microsoft 受管理的電腦會列在這些檔中的「監控與管理」類別之下。)  
 
-直接存取 Microsoft 受管理的電腦的內部資料儲存區的方式有幾種限制：
-
-- 它需要工程組長層級核准。
-- 它會進行時間限制和審核。
-- 儲存時，會加密所有資料。
-- 存取 Microsoft 受管理的電腦的內部管理入口網站需要高安全性和限制的工作站。
-
-## <a name="processing-personal-data-in-a-compliant-manner"></a>以相容的方式處理個人資料
-Microsoft 受管理的電腦使用 ISO 驗證系統處理個人資料。 如需詳細資訊，請參閱 [規範](../intro/compliance.md)。
-
-## <a name="profiling-and-marketing"></a>分析與行銷
-
-Microsoft 受管理的電腦不會使用任何收集的個人資料，做為進行分析、廣告或行銷目的提供服務的一部分。
-
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的資料主體要求
-
-[GDPR) 的歐盟一般資料保護法規 (](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) ，可將法規中 (已知之人員的權力視為資料主旨) ，以管理由雇主或其他類型的代理商或組織所收集的個人資料 (稱為資料控制者或僅限審計員) 。 依據 GDPR，個人資料的定義非常廣泛，舉凡與已識別或可識別自然人相關的任何資料皆屬之。 GDPR 為資料主體提供其個人資料的特定權限；這些權限包括取得個人資料副本、要求對該資料進行更正、限制對該資料的處理、刪除該資料，或是以電子格式接收該資料以移至另一個控制者。 由資料主體向控制者提出以對其個人資料採取行動的正式要求，稱為資料主體要求或 DSR。
-
-同樣地，CCPA 為加州消費者提供隱私權權利和義務，包含與 GDPR 的資料主體許可權類似的許可權，例如刪除、存取和接收 (可攜性) 其個人資訊的許可權。 CCPA 也會提供某些披露的披露，針對其他分類為 "sales" 的資料傳輸，防範歧視時防範歧視和「自願退出/自願」的需求。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](/compliance/regulatory/offering-ccpa?view=o365-worldwide)和[常見問題集](/compliance/regulatory/ccpa-faq?view=o365-worldwide)。
-
-下一節將討論 Microsoft 受管理的電腦如何協助控制器尋找、存取及處理 Microsoft 受管理的電腦所使用的個人資料或個人資訊。
-
-> [!NOTE]
-> 如果您正在尋找 GDPR 的一般資訊，請參閱服務信任入口網站的 [GDPR 區段](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) 。
-
-### <a name="it-admin-contact-information"></a>IT 系統管理員連絡人資訊
-
-租使用者管理員可以查看、更正和刪除自己的個人資料 (例如自己的連絡人資訊) 直接在 Microsoft 受管理的電腦入口網站的 [系統管理連絡人] 區段中。
-
-## <a name="microsoft-defender-for-endpoint-alert-data"></a>Microsoft Defender for Endpoint 警示資料
-
-安全性管理員可以要求在其環境中的 Microsoft 受管理的電腦受管理裝置上，針對與 Microsoft Defender for Endpoint 警示相關的個人資料要求解壓縮或刪除。 安全性管理員應該登入 Microsoft 受管理的電腦[管理入口網站](https://aka.ms/memadmin)，並提交支援要求。 選取 [支援 **變更要求****類型**]、 **[** **安全性**] 及 [**其他**]**子** 類別，然後在描述中提供相關的裝置名稱，以及提取或刪除資料的要求。
-
-### <a name="user-related-personal-data"></a>使用者相關個人資料
-
-除此之外，Microsoft 受管理的電腦不會自行收集個人資料。 相反地，它會依賴和使用其他 Microsoft Enterprise 線上服務收集的個人資料。 IT 系統管理員希望回應他們的使用者要求以查看、更正和刪除其個人資料，可使用 Microsoft 受管理的電腦所依據之基礎服務的個別功能。 如果您有興趣查看或刪除這些服務所使用的個人資料，請先參閱 GDPR 文章的 [Azure 資料主體要求](/compliance/regulatory/gdpr-dsr-Azure) 。
-
-此外，您可以使用下列指導方針來 dsr 服務 Microsoft 受管理的電腦取決於個人資料的集合：
-
-- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
-- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
-- [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)
+## <a name="legal"></a>法律資訊
+**Microsoft 對於組織客戶提供之產品的使用者隱私權通知** - [microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement) 會通知使用者，當使用者使用工作帳戶登入 Microsoft 產品時，就會通知使用者。 a) 其組織可以控制和管理其帳戶 (包括控制隱私權相關設定) 和存取及處理其資料，而 b) Microsoft 可能會收集並處理資料，以提供服務給組織和使用者。

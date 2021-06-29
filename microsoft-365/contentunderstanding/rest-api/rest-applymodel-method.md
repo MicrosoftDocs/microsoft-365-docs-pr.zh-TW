@@ -1,5 +1,5 @@
 ---
-title: 套用模型
+title: 批次套用模型
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: 使用 REST API 將文件了解模型套用至一或多個文件庫。
-ms.openlocfilehash: d4cadad3c45dd7af0cdaeb4e1b367426289db870
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+description: 使用 REST API 將文件瞭解模型套用至一或多個程式庫。
+ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904205"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177258"
 ---
-# <a name="apply-model"></a>套用模型
+# <a name="batch-apply-model"></a>批次套用模型
 
 將訓練過的文件瞭解模型套用 (或同步處理) 至一或多個文件庫 (查看[範例](rest-applymodel-method.md#examples))。
 
@@ -34,28 +34,55 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 ## <a name="request-headers"></a>要求標頭
 
-| 頁首 | 值 |
+| 標頭 | 值 |
 |--------|-------|
-|接受|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|目前網站的適當摘要。|
 
 ## <a name="request-body"></a>要求內文
 
+| 名稱 | 必要項目 | 類型 | 說明 |
+|--------|-------|--------|------------|
+|__中繼資料|是|string|在 SPO 上設定物件 Meta。 一律使用值: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}。|
+|出版物|是|MachineLearningPublicationEntityData[]|MachineLearningPublicationEntityData 的集合，每個集合會指定模型和目的文件庫。|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
 | 名稱 | 必要項目 | 類型 | 描述 |
 |--------|-------|--------|------------|
 |ModelUniqueId|是|string|模型檔案的唯一識別碼。|
-TargetSiteUrl|是|string|目的文件庫網站的完整 URL。|
-TargetWebServerRelativeUrl|是|string|目的文件庫之網頁的伺服器相對 URL。|
-TargetLibraryServerRelativeUrl|是|string|目的文件庫的伺服器相對 URL。|
-ViewOption|否|string|指定是否要將新模型檢視設定為文件庫預設值。|
+|TargetSiteUrl|是|string|目標程式庫網站的完整 URL。|
+|TargetWebServerRelativeUrl|是|string|目標程式庫網頁的伺服器相對 URL。|
+|TargetLibraryServerRelativeUrl|是|string|目標程式庫的伺服器相對 URL。|
+|ViewOption|否|string|指定是否要將新模型檢視設定為程式庫預設值。|
 
 ## <a name="response"></a>回應
 
 | 名稱   | 類型  | 描述|
 |--------|-------|------------|
-|200 OK| |成功|
-|201 已建立| |請注意，由於此 API 支援將模型套用至多個程式庫，因此即使將模型套用至其中一個程式庫失敗，也可讓 201 返回。 <br>檢查回應本文，了解模型是否成功套用至所有指定的程式庫。 請參閱[要求本文](rest-applymodel-method.md#request-body)取得詳細資訊。|
+|201 已建立||這是個自訂 API 用以支援將模型套用至多個文件庫。 在部分成功的情況下，仍然可以返回已建立 201，而且呼叫者必須檢查回應主體，以了解模型是否成功套用至文件庫。|
+
+## <a name="response-body"></a>回應本文
+| 名稱   | 類型  | 說明|
+|--------|-------|------------|
+|TotalSuccesses|int|成功套用至文件庫的模型總數。|
+|TotalFailures|int|無法套用至文件庫的模型總數。|
+|詳細資料|MachineLearningPublicationResult[]|MachineLearningPublicationResult 的集合，每個集合會指定將模型套用至文件庫的詳細結果。|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| 名稱   | 類型  | 說明|
+|--------|-------|------------|
+|StatusCode|int|HTTP 狀態碼。|
+|ErrorMessage|字串|錯誤訊息，說明將模型套用至文件庫時發生的錯誤。|
+|出版物|MachineLearningPublicationEntityData|它會指定模型資訊和目的文件庫。| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| 名稱 | 類型 | 描述 |
+|--------|--------|------------|
+|ModelUniqueId|string|模型檔案的唯一識別碼。|
+|TargetSiteUrl|string|目標程式庫網站的完整 URL。|
+|TargetWebServerRelativeUrl|string|目標程式庫網頁的伺服器相對 URL。|
+|TargetLibraryServerRelativeUrl|string|目標程式庫的伺服器相對 URL。|
 
 ## <a name="examples"></a>範例
 
@@ -89,7 +116,7 @@ ViewOption|否|string|指定是否要將新模型檢視設定為文件庫預設�
 
 在回應中，TotalFailures 和 TotalSuccesses 是指要套用至指定程式庫之模型的失敗和成功次數。
 
-**狀態碼:** 200
+**狀態碼:** 201
 
 ```JSON
 {
@@ -103,7 +130,7 @@ ViewOption|否|string|指定是否要將新模型檢視設定為文件庫預設�
                 "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
                 "ViewOption": "NewViewAsDefault"
             },
-            "StatusCode": 200
+            "StatusCode": 201
         }
     ],
     "TotalFailures": 0,
@@ -113,4 +140,4 @@ ViewOption|否|string|指定是否要將新模型檢視設定為文件庫預設�
 
 ## <a name="see-also"></a>另請參閱
 
-[Syntex 文件了解模型 REST API](syntex-model-rest-api.md)
+[Syntex 文件瞭解模型 REST API](syntex-model-rest-api.md)

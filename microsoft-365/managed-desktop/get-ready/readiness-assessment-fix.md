@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579407"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177570"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
@@ -66,6 +66,14 @@ ms.locfileid: "51579407"
 
 您至少有一個憑證連接器，而且不會報告錯誤。 不過，在準備部署時，您可能需要建立設定檔，以重複使用 Microsoft 受管理的電腦裝置的連接器。 如需詳細資訊，請參閱[為 Microsoft 受管理的電腦準備憑證和網路設定檔](certs-wifi-lan.md)。
 
+### <a name="company-portal"></a>公司入口網站
+
+Microsoft 受管理的電腦需要 IT 管理員為其具有 Microsoft 受管理的電腦裝置的使用者安裝 Intune 公司入口網站。 
+
+**未就緒**
+
+您沒有為使用者安裝公司入口網站。 購買公司入口網站，並強制在 Intune 與商務用 Microsoft Store 之間進行同步處理。 如需詳細資訊，請參閱[在裝置上安裝 Intune 公司入口網站](../get-started/company-portal.md)。
+
 
 ### <a name="conditional-access-policies"></a>條件式存取原則
 
@@ -79,7 +87,7 @@ ms.locfileid: "51579407"
 
 您有條件式存取原則可以避免 Microsoft 受管理的電腦管理 Microsoft 受管理的電腦服務。 在註冊期間，我們會從相關的條件式存取原則中排除 Microsoft 受管理的電腦服務帳戶，並套用新的條件式存取原則，以限制對這些帳戶的存取。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
-**錯誤**
+**Error**
 
 Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
 
@@ -160,7 +168,7 @@ Microsoft 受管理的電腦裝置必須允許在 Intune 中註冊。
 
 您在有條件存取原則上必須進行多重驗證，以防止 Microsoft 受管理的電腦管理 Microsoft 受管理的電腦服務。 在註冊期間，我們會從相關的條件式存取原則中排除 Microsoft 受管理的電腦服務帳戶，並套用新的條件式存取原則，以限制對這些帳戶的存取。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
-**錯誤**
+**Error**
 
 Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
 
@@ -218,15 +226,15 @@ Microsoft 受管理的電腦不支援 Azure AD 組織所在的一或多個國家
 
 ### <a name="windows-hello-for-business"></a>Windows Hello 企業版
 
-Microsoft 受管理的電腦需要啟用 Windows Hello 企業版。
+Microsoft 受管理的電腦需要啟用商務 Windows Hello。
 
 **未就緒**
 
-Windows已停用 Hello 企業版。 遵循[建立 Windows Hello 企業版原則](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)中的步驟來啟用它
+已停用商務用 Windows Hello。 遵循[建立商務用 Windows Hello 原則](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)中的步驟來啟用
 
 **公告**
 
-Windows未設定 Hello 企業版。 遵循[建立 Windows Hello 企業版原則](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)中的步驟來啟用它。
+未設定商務用 Windows Hello。 遵循 [[建立商務用 Windows Hello] 原則](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)中的步驟來啟用。
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 更新振鈴

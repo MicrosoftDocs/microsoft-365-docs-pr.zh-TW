@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169601"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177618"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
@@ -37,6 +37,8 @@ ms.locfileid: "53169601"
 
 ## <a name="requirements"></a>需求
 
+跨 Windows 版本的攻擊面減少功能
+
 您可以針對執行下列任何版本與 Windows 的裝置，設定攻擊面減少規則：
 
 - Windows 10 專業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
@@ -44,7 +46,13 @@ ms.locfileid: "53169601"
 - Windows伺服器，[版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-雖然攻擊面降減規則不需要[Windows E5 授權](/windows/deployment/deploy-enterprise-licenses)，但如果您有 Windows E5，就會取得高級管理功能。 這些功能只能在 Windows E5 中包含用於[端點的](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)監控、分析和工作流程，以及[Microsoft 365 安全性中心](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)的報表和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用「事件檢視器」和 Microsoft Defender 防毒軟體記錄檔，以查看攻擊面減少規則事件。
+若要使用整個功能組的攻擊面降低規則，您需要：
+
+- Windows Defender 防毒軟體成為主要 AV () 上的即時保護
+- [雲端傳遞保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 在 (某些規則需要) 
+- Windows 10 企業版E5 或 E3 授權或 Microsoft 365 商務版授權
+
+雖然攻擊面降減規則不需要[Windows e5 授權](/windows/deployment/deploy-enterprise-licenses)，但具有 Windows e5 授權，但您會取得高級管理功能，包括在 Defender for Endpoint 中可用的監控、分析和工作流程，以及 Microsoft 365 安全性中心的報表和設定功能。 E3 授權無法使用這些高級功能，但您仍然可以使用事件檢視器來複查攻擊面降低規則事件。
 
 每個 ASR 規則都包含四個設定的其中一項：
 

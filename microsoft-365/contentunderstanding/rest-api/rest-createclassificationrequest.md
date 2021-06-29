@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 建立要求，以使用訓練過的文件了解模型來分類一或多個文件。
-ms.openlocfilehash: 6a218db181368c2837d570062b6101bc3bacfb05
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 3a796bcdb38a9a6930b51f7d585febb69082732e
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904180"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177078"
 ---
 # <a name="create-classification-request"></a>建立分類要求
 
@@ -35,9 +35,9 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 ## <a name="request-headers"></a>要求標頭
 
-| 頁首 | 值 |
+| 標頭 | 值 |
 |--------|-------|
-|接受|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|目前網站的適當摘要|
 
@@ -45,7 +45,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 |名稱    |類型   |描述 |
 |--------|-------|------------|
-|中繼資料(_M)|string |在 SPO 上設定物件 Meta。 一律使用值: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}。 |
+|中繼資料(_M)|string |在 SPO 上設定物件 Meta。 一律使用值: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}。 |
 |TargetSiteId|GUID|要分類之檔案所在的網站識別碼。|
 |TargetWebId|GUID|要分類之檔案所在的網頁識別碼。|
 |TargetUniqueId|GUID|要分類之檔案的識別碼。|
@@ -65,7 +65,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 ```
 {
     "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
+        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"
     },
     "TargetSiteId": "f686e63b-aba7-48e5-97c7-68c4c1df292f",
     "TargetWebId": "66d6b64d-6f88-4dd9-b3db-47e6f00c53e8",
@@ -79,4 +79,4 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 ## <a name="see-also"></a>另請參閱
 
-[Syntex 文件了解模型 REST API](syntex-model-rest-api.md)
+[Syntex 文件瞭解模型 REST API](syntex-model-rest-api.md)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: ''
+ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 description: '深入瞭解 Exchange Online Protection (EOP 中的 [安全的預設值] 設定) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861524"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177642"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 預設安全性
 
@@ -52,7 +52,7 @@ ms.locfileid: "52861524"
 因為 Microsoft 想要讓客戶保持安全，但在預設情況下，有些承租人覆寫不會套用到惡意程式碼或高可信度網路釣魚。 這些覆寫包括：
 
 -  (反垃圾郵件原則所允許的寄件者清單或允許的網域清單) 
-- Outlook安全寄件者
+- Outlook 保管庫寄件者
 - IP 允許清單 (連線篩選) 
 
 您可以在 [ [建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)] 中找到這些優先選項的詳細資訊。
@@ -68,14 +68,14 @@ ms.locfileid: "52861524"
 
 我們的資料會指出使用者的30倍于垃圾郵件資料夾和隔離區中的郵件中，按一下惡意連結的可能性也會比較高。 我們的資料也會指出為高信賴網路釣魚郵件標示為錯誤) 的誤報比率 (很低，且系統管理員可以使用系統管理員提交來解析任何誤報。
 
-我們也會判斷反垃圾郵件原則中的允許寄件者與允許的網域清單和 Outlook 中的安全寄件者過於廣泛，造成的損害超過良好的損害。
+我們也會判斷反垃圾郵件原則中允許的寄件者與允許的網域清單，以及保管庫 Outlook 中的寄件者過於廣泛，且造成的損害超過良好的損害。
 
 若要將它放在另一種方式中：作為一種安全性服務，我們將替您代表，以避免使用者遭到破壞。
 
 ## <a name="exceptions"></a>例外狀況
 
 > [!NOTE]
-> 在2021年7月，安全性預設會擴充為 Exchange 郵件流程規則 (也稱為傳輸規則) 。 如果您使用郵件流程規則來允許協力廠商網路釣魚模擬或未篩選的傳遞至安全作業信箱，您最後必須消除這些規則，並在 _有可用的功能時_，切換至使用 [高級傳遞原則](configure-advanced-delivery.md)。
+> 在2021年8月，安全性預設會擴充為 Exchange 郵件流程規則 (也稱為傳輸規則) 。 如果您使用郵件流程規則來允許協力廠商網路釣魚模擬或未篩選的傳遞至安全作業信箱，您最後必須消除這些規則，並在 _有可用的功能時_，切換至使用 [高級傳遞原則](configure-advanced-delivery.md)。
 
 唯一允許高信賴網路釣魚郵件旁路篩選的覆寫是郵件流程規則。 若要使用郵件流程規則來略過篩選，請參閱 [使用郵件流程規則設定郵件中的 SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 

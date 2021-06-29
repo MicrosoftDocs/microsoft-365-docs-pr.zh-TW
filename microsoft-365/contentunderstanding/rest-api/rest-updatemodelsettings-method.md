@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 來更新 SharePoint Syntex 文件了解模型的可用模型設定。
-ms.openlocfilehash: f24fc8428adbf22ded2ca6d7a49cabc84b385770
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: cd288812044f3b02839c3c11c321947bd02cccaa
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904189"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177162"
 ---
 # <a name="updatemodelsettings"></a>UpdateModelSettings
 
@@ -25,18 +25,20 @@ ms.locfileid: "52904189"
 ## <a name="http-request"></a>HTTP 要求
 
 ```HTTP
-POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
+POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsettings HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI 參數
 
-無
+|名稱 |於 |必要項目|類型|描述|
+|-----|---|--------|----|-----------|
+|modelFileName|查詢|對|string|Syntex 模型檔案的名稱。|
 
 ## <a name="request-headers"></a>要求標頭
 
-| 頁首 | 值 |
+| 標頭 | 值 |
 |--------|-------|
-|接受|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|目前網站的適當摘要。|
 
@@ -71,8 +73,8 @@ POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
 
 #### <a name="sample-response"></a>範例回應
 
-**狀態碼:** 200
+**狀態碼：** 200
 
 ## <a name="see-also"></a>另請參閱
 
-[Syntex 文件了解模型 REST API](syntex-model-rest-api.md)
+[Syntex 文件瞭解模型 REST API](syntex-model-rest-api.md)

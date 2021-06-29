@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何儲存離職員工信箱的內容。
-ms.openlocfilehash: d73d7005d2ccea429f66c5b2564220424665439f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244188"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177486"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>步驟 2-儲存離職員工信箱的內容
 
@@ -45,4 +45,4 @@ ms.locfileid: "52244188"
 
     **OR**
 
-2. 將離職員工的電子郵件地址新增至您 Outlook web app 的版本，然後將資料匯出到 .pst 檔案。 您可以視需要將資料匯入到其他電子郵件帳戶。 請參閱[步驟 6-向其他員工提供 OneDrive 和 Outlook 資料的存取權](remove-former-employee-step-6.md)。
+2. 將離職員工的電子郵件地址新增至桌面上的 Outlook 版本，然後將該資料匯出到 .pst 檔案。 您可以視需要將資料匯入到其他電子郵件帳戶。 請參閱[步驟 6-向其他員工提供 OneDrive 和 Outlook 資料的存取權](remove-former-employee-step-6.md)。

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 封鎖離職員工的登入，並封鎖 Microsoft 365 服務的存取權。
-ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061828"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177114"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步驟 1-防止離職員工登入並封鎖 Microsoft 365 服務的存取權
 
@@ -65,7 +65,7 @@ ms.locfileid: "53061828"
 
 如果您的 Microsoft 365 訂閱中包含電子郵件，請登入 Exchange 系統管理中心，然後遵循下列步驟，封鎖您的離職員工存取其電子郵件。
   
-1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
+1. 移至 <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 系統管理中心</a>。
 2. 在 Exchange 系統管理中心中，**流覽至 [** 收件者] [ \> **信箱**]。
-3. 按兩下使用者並移至 [ **信箱功能** ] 頁面。 在 [行動 **裝置**] 下，選取 [**停用 Exchange ActiveSync** ] 和 [**停用裝置的 OWA]，** 然後在出現提示時回答 **[是]**
-4. 在 [ **電子郵件** 連線] 下，選取 [ **停** 用並在提示時回答 **Yes]** 。
+3. 按兩下使用者並前往 [**電子郵件應用程式**] 下的 [**管理電子郵件應用程式設定**]。 **關閉** 所有選項的滑塊;行動裝置 **(Exchange ActiveSync)**、 **Outlook 網頁版**、 **Outlook 桌面 (MAPI)**、 **Exchange web 服務**、 **POP3** 和 **IMAP**。
+4. 選取 [儲存]。

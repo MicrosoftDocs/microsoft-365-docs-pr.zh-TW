@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 建立模型及其相關聯的內容類型。
-ms.openlocfilehash: 4af980d0733fce63767c6570003342eadb079f26
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 0a1b6ef9b7e38f2c4f52082103530da432e3e855
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904185"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177150"
 ---
 # <a name="create-model"></a>建立模型
 
@@ -33,9 +33,9 @@ POST /_api/machinelearning/models HTTP/1.1
 
 ## <a name="request-headers"></a>要求標頭
 
-| 頁首 | 值 |
+| 標頭 | 值 |
 |--------|-------|
-|接受|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|目前網站的適當摘要|
 
@@ -65,7 +65,7 @@ POST /_api/machinelearning/models HTTP/1.1
         "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
     },
     "ContentTypeGroup": "Intelligent Document Content Types",
-    "ContentTypeName": "Contoso Contract",
+    "ContentTypeName": "Contoso Contract"
 }
 ```
 
@@ -75,4 +75,4 @@ POST /_api/machinelearning/models HTTP/1.1
 
 ## <a name="see-also"></a>另請參閱
 
-[Syntex 文件了解模型 REST API](syntex-model-rest-api.md)
+[Syntex 文件瞭解模型 REST API](syntex-model-rest-api.md)

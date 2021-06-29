@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 從一或多個程式庫移除已套用的文件瞭解模型。
-ms.openlocfilehash: 8c7aeb449da161fe49050631643c63c93268a13f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904177"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177234"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -42,20 +42,45 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 ## <a name="request-body"></a>要求內文
 
+| 名稱 | 必要項目 | 類型 | 說明 |
+|--------|-------|--------|------------|
+|出版物|是|MachineLearningPublicationEntityData[]|MachineLearningPublicationEntityData 的集合，每個集合會指定模型和目的文件庫。|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
 | 名稱 | 必要項目 | 類型 | 描述 |
 |--------|-------|--------|------------|
 |ModelUniqueId|是|string|模型檔案的唯一識別碼。|
-TargetSiteUrl|是|string|目標程式庫網站的完整 URL。|
-TargetWebServerRelativeUrl|是|string|目標程式庫網頁的伺服器相對 URL。|
-TargetLibraryServerRelativeUrl|是|string|目標程式庫的伺服器相對 URL。|
-ViewOption|否|string|指定是否要將新模型檢視設定為程式庫預設值。|
+|TargetSiteUrl|是|string|目標程式庫網站的完整 URL。|
+|TargetWebServerRelativeUrl|是|string|目標程式庫網頁的伺服器相對 URL。|
+|TargetLibraryServerRelativeUrl|是|string|目標程式庫的伺服器相對 URL。|
 
 ## <a name="response"></a>回應
 
 | 名稱   | 類型  | 描述|
 |--------|-------|------------|
-|200 OK| |成功|
+|200 OK||這是個自訂 API 用以將模型從多個文件庫中移除。 在部分成功的情況下，仍然可以返回 200 OK，而且呼叫者必須檢查回應本文，以了解模型是否成功從文件庫移除。|
 
+## <a name="response-body"></a>回應本文
+| 名稱   | 類型  | 說明|
+|--------|-------|------------|
+|TotalSuccesses|int|成功從文件庫移除的模型總數。|
+|TotalFailures|int|無法從文件庫中移除的模型總數。|
+|詳細資料|MachineLearningPublicationResult[]|MachineLearningPublicationResult 的集合，每個集合會指定將模型從文件庫中移除的詳細結果。|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| 名稱   | 類型  | 說明|
+|--------|-------|------------|
+|StatusCode|int|HTTP 狀態碼。|
+|ErrorMessage|字串|錯誤訊息，說明將模型套用至文件庫時發生的錯誤。|
+|出版物|MachineLearningPublicationEntityData|它會指定模型資訊和目的文件庫。| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| 名稱 | 類型 | 描述 |
+|--------|--------|------------|
+|ModelUniqueId|string|模型檔案的唯一識別碼。|
+|TargetSiteUrl|string|目標程式庫網站的完整 URL。|
+|TargetWebServerRelativeUrl|string|目標程式庫網頁的伺服器相對 URL。|
+|TargetLibraryServerRelativeUrl|string|目標程式庫的伺服器相對 URL。|
 
 ## <a name="examples"></a>範例
 
@@ -66,28 +91,22 @@ ViewOption|否|string|指定是否要將新模型檢視設定為程式庫預設�
 #### <a name="sample-request"></a>範例要求
 
 ```HTTP
-{
-    "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"
-    },
-    "Publications": {
-        "results": [
-            {
-                "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-                "TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-                "TargetWebServerRelativeUrl": "/sites/repository",
-                "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-                "ViewOption": "NewViewAsDefault"
-            }
-        ]
-    }
-}
+{ 
+    "publications": [ 
+        { 
+            "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+            "TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+            "TargetWebServerRelativeUrl": "/sites/docsite ", 
+            "TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+        } 
+    ] 
+} 
 ```
 
 
 #### <a name="sample-response"></a>範例回應
 
-在回應中，TotalFailures 和 TotalSuccesses 是指要套用至指定程式庫之模型的失敗和成功次數。
+在回應中，TotalFailures 和 TotalSuccesses 是指從指定程式庫中移除之模型的失敗和成功次數。
 
 **狀態碼：** 200
 

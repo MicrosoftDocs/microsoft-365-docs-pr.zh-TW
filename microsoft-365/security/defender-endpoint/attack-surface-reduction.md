@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169577"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177630"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -52,7 +52,7 @@ ms.locfileid: "53169577"
 
 在 [建議詳細資料] 窗格中，檢查 [使用者影響] 以判斷您的裝置可接受新原則的百分比，以封鎖模式啟用規則，而不會對生產力造成不良影響。
 
-如需支援的作業系統的相關資訊，請參閱「啟用攻擊面降低規則」一文中的 [需求](enable-attack-surface-reduction.md#requirements) 。
+如需支援的作業系統及其他需求資訊的相關資訊，請參閱「啟用攻擊面降低規則」一文中的 [需求](enable-attack-surface-reduction.md#requirements) 。
 
 ## <a name="audit-mode-for-evaluation"></a>評估的審計模式
 

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 使用模型標題取得或更新 SharePoint Syntex 文件了解模型的資訊。
-ms.openlocfilehash: a6fbe9ba9d3f5240c7b775613f97b83bfa2caa50
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b50849d0dc1c9deefa55a5c92303d18f251e2f8b
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904196"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177126"
 ---
 # <a name="getbytitle"></a>GetByTitle
 
@@ -25,26 +25,26 @@ ms.locfileid: "52904196"
 ## <a name="http-request"></a>HTTP 要求
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 這個相同的方法也可以用來刪除模型。
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI 參數
 
-|名稱 |在 |必要項目|類型|描述|
+|名稱 |於 |必要項目|類型|描述|
 |-----|---|--------|----|-----------|
 |modelFileName|查詢|對|string|Syntex 模型檔案的名稱。|
 
 ## <a name="request-headers"></a>要求標頭
 
-| 頁首 | 值 |
+| 標頭 | 值 |
 |--------|-------|
-|接受|application/json;odata=verbose|
+|Accept|application/json;odata=verbose|
 
 ## <a name="request-body"></a>要求內文
 
@@ -65,12 +65,12 @@ DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
 #### <a name="sample-request"></a>範例要求
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>範例回應
 
-**狀態碼:** 204
+**狀態碼：** 200
 
 ```HTTP
 {
@@ -109,9 +109,9 @@ GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
 ##### <a name="sample-request"></a>範例要求
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>另請參閱
 
-[Syntex 文件了解模型 REST API](syntex-model-rest-api.md)
+[Syntex 文件瞭解模型 REST API](syntex-model-rest-api.md)

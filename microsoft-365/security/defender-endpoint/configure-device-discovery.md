@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0d722b4f4bef5b4d178edc5f2142c887690d4c63
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e1efeff77657e04223b21d639a0a09287f3707cc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765248"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177582"
 ---
 # <a name="configure-device-discovery"></a>設定裝置探索
 
@@ -101,7 +101,24 @@ ms.locfileid: "51765248"
 6. 確認您要進行變更。 
 
 
+## <a name="explore-devices-in-the-network"></a>在網路中探索裝置
 
+您可以使用下列高級搜尋查詢，取得 [網路] 清單中所述之每個網路名稱的詳細內容。 此查詢會列出過去7天內連線至特定網路的所有架裝置。
+
+
+
+```kusto
+DeviceNetworkInfo
+| where Timestamp > ago(7d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| where ConnectedNetworks  != ""
+| extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
+| mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
+| extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
+| where NetworkName == "<your network name here>"
+
+
+```
 
 ## <a name="see-also"></a>另請參閱
 - [裝置探索概觀](device-discovery.md)

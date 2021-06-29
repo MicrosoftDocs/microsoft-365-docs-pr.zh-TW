@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色 (如服務系統管理員) 會與商務功能對應，並提供在系統管理中心執行特定工作的權限。
-ms.openlocfilehash: 801a5a85479e431b46883c69e75b1ea909892ca1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 073e82971906ea817da9971ba737874711dc43d3
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964569"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177450"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -76,8 +76,8 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 |授權系統管理員    |   將授權系統管理員角色指派給需要指派和移除使用者授權，以及編輯其使用位置的使用者。 <br/><br/> 授權系統管理員也可以： <br> - 重新處理群組型授權的授權指派 <br> - 將產品授權指派群組以進行群組型授權  |
 |Office應用程式系統管理員    |   將 Office 應用程式系統管理員角色指派給需要執行下列動作的使用者： <br> - 使用 Office 雲端原則服務來建立及管理 Office 的雲端式原則 <br> - 建立和管理服務要求 <br> - 管理使用者在 Office 應用程式中看到的新功能內容   <br> - 監視服務健康情況  |
 |密碼系統管理員  |   將密碼系統管理員角色指派給需要重設非系統管理員和密碼系統管理員密碼的使用者。   |
-|訊息中心讀取者 |   將報告讀取者角色指派給需要執行下列動作的使用者： <br> - 監視訊息中心通知 <br> - 取得訊息中心文章和更新的每週電子郵件摘要 <br> - 共用訊息中心文章 <br> - 具有 Azure AD 服務 (例如使用者和群組) 的唯讀存取權|
-|Power 平台系統管理員 |   將報告讀取者角色指派給需要執行下列動作的使用者： <br> - 管理 Power 應用程式、Power Automate 和資料外洩防護的所有系統管理功能  <br> - 建立和管理服務要求 <br> - 監視服務健康情況  |
+|訊息中心讀取者 |   將訊息中心讀取者角色指派給需要執行下列動作的使用者： <br> - 監視訊息中心通知 <br> - 取得訊息中心文章和更新的每週電子郵件摘要 <br> - 共用訊息中心文章 <br> - 具有 Azure AD 服務 (例如使用者和群組) 的唯讀存取權|
+|Power 平台系統管理員 |   將　Power 平台系統管理員角色指派給需要執行下列動作的使用者： <br> - 管理 Power 應用程式、Power Automate 和資料外洩防護的所有系統管理功能  <br> - 建立和管理服務要求 <br> - 監視服務健康情況  |
 |報告讀取者 |   將報告讀取者角色指派給需要執行下列動作的使用者： <br> - 在 Microsoft 365 系統管理中心檢視使用資料和活動報告 <br> - 取得 Power BI 採用內容套件的存取權 <br> - 取得 Azure AD 中的登入報告和活動的存取權 <br> - 檢視 Microsoft Graph 報告 API 所傳回的資料|
 |服務支援系統管理員   |   將服務支援系統管理員角色以額外角色的形式，指派給在其日常系統管理員角色之外需要執行下列動作的管理員或使用者： <br> - 開啟和管理服務要求 <br> - 檢視和共用訊息中心文章 <br> - 監視服務健康情況   |
 |SharePoint 系統管理員    |   將 SharePoint 系統管理員角色指派給需要存取和管理 SharePoint Online 系統管理中心的使用者。 <br><br>SharePoint 系統管理員也可以： <br> - 建立和刪除網站 <br> - 管理網站集合和全域 SharePoint 設定   |

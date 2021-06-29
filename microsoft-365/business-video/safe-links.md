@@ -1,5 +1,5 @@
 ---
-title: 管理安全連結
+title: 管理保管庫連結
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,15 +20,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何管理安全連結，以保護您的公司免受惡意網站的攻擊。
-ms.openlocfilehash: ce0c1ba6e4099b6eaf4ec974938170020b8a5892
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解如何管理保管庫連結，以保護您的公司免受惡意網站的攻擊。
+ms.openlocfilehash: 7e6b4507cd363a448812b48e3eafc7f4c077be3c
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580627"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177510"
 ---
-# <a name="manage-safe-links"></a>管理安全連結
+# <a name="manage-safe-links"></a>管理保管庫連結
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
@@ -37,14 +37,10 @@ Microsoft Defender for Office 365，以前稱為 Microsoft 365 ATP 或「高級�
 ## <a name="try-it"></a>試試看吧！
 
 1. 移至 [系統 [管理中心](https://admin.microsoft.com)]，然後選取 [ **安裝**]。
-1. 向右下展開以 **提升高級威脅的防護**。 選取 [ **View**， **Manage**，然後 **ATP 安全連結**]。
-1. 在 [ **適用于整個組織的原則**] 底下，選擇 [ **預設** 原則]，然後選取 [ **編輯** ] 圖示。
-1. 輸入您要封鎖的 URL。
-1. **在 Office 應用程式中，選取 [使用安全連結]，Office iOS 和 Android**;選取 [**當使用者按一下安全連結時請勿追蹤**]，並選取 [**不要讓使用者按一下 [安全連結至原始 URL**]。 如果您設定預設原則，這些可能已經被選取。 選取 ****[儲存]。
-1. 在 [套用至特定收件者 **的原則**] 底下，選擇 [ **建議的安全連結規則**]，然後選取 [ **編輯** ] 圖示。
-1. 選取 [ **設定**]，向下移動，輸入您不想要檢查的 URL，然後選取 [ **新增** ] 圖示。
-1. 選取 [套用 **于**]，然後選取您的功能變數名稱。 選取您要套用規則的任何其他網域。 選取[新增 **]、[確定]**，然後按一下 [**儲存**]。
+2. 向右下展開以 **提升高級威脅的防護**。 選取 [**管理**]，然後 **保管庫連結**。
+3. 選取 [**全域設定**]，然後在 **[封鎖下列 URLs**] 中，輸入您要封鎖的 URL。
+4. 選取 [**使用 Office 365 應用程式中保管庫連結**]，選取 [**當使用者按一下 Office 365 應用程式中的受保護連結時**，請勿追蹤]，然後選取 [不 **讓使用者按一下流覽至 Office 365 應用程式中的原始 URL**]。 如果您設定預設原則，這些可能已經被選取。 選取 ****[儲存]。
 
-現在已設定 ATP 安全連結。 允許最多30分鐘的變更才會生效。
+保管庫現在已設定連結。 允許最多30分鐘的變更才會生效。
 
 當使用者收到具有連結的電子郵件時，將會掃描連結。 如果連結是安全的，它們會是可按一下的。 不過，如果連結位於封鎖的清單中，使用者就會看到已封鎖的郵件。
