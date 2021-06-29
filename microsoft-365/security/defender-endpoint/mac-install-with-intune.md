@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054323"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194958"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
 
@@ -101,18 +101,18 @@ ms.locfileid: "53054323"
     > [!div class="mx-imgBorder"]
     > ![自訂設定檔建立](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. 選擇設定檔的名稱，例如，「macOS 的 MDE 上架」。 按 ****[下一步]。
+1. 選擇設定檔的名稱，例如「用於 macOS 的 Defender 或端點上架」。 按一下 **[下一步]**。
 
     > [!div class="mx-imgBorder"]
     > ![自訂設定設定檔名稱](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. 選擇設定設定檔名稱的名稱，例如「macOS 的 MDE 上架」。
+1. 為設定設定檔名稱選擇名稱，例如，「macOS 的 Defender for Endpoint 上架」。
 1. 選取您從上述上架套件解壓縮為設定設定檔檔案的 intune/WindowsDefenderATPOnboarding.xml。
 
     > [!div class="mx-imgBorder"]
     > ![從自訂設定設定檔的檔案中匯入設定](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. 按 ****[下一步]。
+1. 按一下 **[下一步]**。
 1. 在 [**指派**] 索引標籤上指定裝置。按 **[下一步]**
 
     > [!div class="mx-imgBorder"]
@@ -172,7 +172,7 @@ MacOS 10.15 (Catalina) 或更舊版本都需要此設定檔。 它會在較新�
 
 從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**fulldisk mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) 。
 
-依照上述上 [架 blob](#onboarding-blob) 的指示，使用「MDE 完整磁片存取」做為設定檔名稱，並下載 **fulldisk mobileconfig** 作為設定設定檔名稱。
+依照上述上 [架 blob](#onboarding-blob) 的指示，使用 "Defender For Endpoint Full Disk Access" 作為設定檔名稱，並下載 **fulldisk mobileconfig** 作為設定設定檔名稱。
 
 ### <a name="network-filter"></a>網路篩選
 
@@ -180,7 +180,7 @@ MacOS 10.15 (Catalina) 或更舊版本都需要此設定檔。 它會在較新�
 
 從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**netfilter mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) 。
 
-依照上述上 [架 blob](#onboarding-blob) 的指示，使用 "MDE Network Filter" 作為設定檔名稱，並下載 **netfilter mobileconfig** 作為設定設定檔名稱。
+依照上述上 [架 blob](#onboarding-blob) 的指示，使用「用於端點網路篩選」做為設定檔名稱，並將 **netfilter** 下載的 mobileconfig 當做設定檔名稱。
 
 ### <a name="notifications"></a>通知
 
@@ -188,7 +188,7 @@ MacOS 10.15 (Catalina) 或更舊版本都需要此設定檔。 它會在較新�
 
 從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**notif mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) 。
 
-依照上述上 [架 blob](#onboarding-blob) 的指示，使用「MDE 通知」作為設定檔名稱，並將 **notif** 下載的 mobileconfig 當做設定設定檔名稱。
+依照上述上 [架 blob](#onboarding-blob) 的指示，使用 "Defender for Endpoint the the The for Endpoint the the the the profile name， **notif the mobileconfig** 為設定設定檔名稱。
 
 ### <a name="view-status"></a>查看狀態
 

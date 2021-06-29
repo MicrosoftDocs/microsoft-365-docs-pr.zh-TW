@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 系統管理員可以深入瞭解 Microsoft Defender Office 365 的試用模式
-ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768743"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195006"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>關於 Office 365 試用版的 Microsoft Defender
 
@@ -45,11 +45,11 @@ Office 365 試用版的 Defender 可用於90天，且可為所有使用者啟動
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>設定 Office 365 試用版的 Defender
 
-試用版可讓組織輕鬆安裝和設定 Office 365 功能的 Defender。 在安裝期間，[在反垃圾郵件原則中](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)專用於 Office 365 的 Defender 的原則 (特別，[安全附件](safe-attachments.md)、[安全連結](safe-links.md)和模擬保護，) 是使用標準範本來套用，以供預設的[安全性原則](preset-security-policies.md)使用。
+試用版可讓組織輕鬆安裝和設定 Office 365 功能的 Defender。 在設定期間，[在反垃圾郵件原則中](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)專用於 Office 365 的 Defender 的原則 (，[保管庫附件](safe-attachments.md)、[保管庫連結](safe-links.md)和模擬防護，) 會使用標準範本來套用預設的[安全性原則](preset-security-policies.md)。
 
 根據預設，這些原則的適用範圍是組織中的所有使用者，但是系統管理員可以在安裝程式期間或之後自訂原則，讓它們只適用于特定使用者。
 
-在設定期間，也會為整個組織設定 MDO P2 或對等) 中 (所找到的 MDO 回應功能。 不需要任何原則範圍。
+在設定期間，也會為整個組織設定 Office 365 的 defender for Office 365 P2 或對等)  (在 defender 中找到的回應功能。 不需要任何原則範圍。
 
 ## <a name="licensing"></a>授權
 

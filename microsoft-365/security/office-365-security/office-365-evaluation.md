@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108328"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194778"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender 的 Office 365
 
@@ -50,7 +50,7 @@ ms.locfileid: "53108328"
 
 在設定過程中，評估模式也會為 [連接器設定增強型篩選](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它會透過保留 IP 位址和寄件者資訊來提升篩選精確度，當郵件透過電子郵件安全性閘道 (ESG) 在 Office 365 之前，就會遺失。 針對連接器的增強篩選也會提升現有 Exchange Online Protection (EOP) 反垃圾郵件和反網路釣魚原則的篩選精確性。
 
-增強型連接器篩選功能可提升篩選的精確度，但如果您在 Office 365 的上有 ESG，而且目前不會略過 EOP 篩選，則可能會變更特定郵件的 deliverability。 影響限制為 EOP 原則;在評估過程中所設定的 MDO 原則會在非強制模式中建立。 若要將潛在的實際影響降至最低，您可以建立郵件流程規則 (（也稱為傳輸規則) ）來略過所有的 EOP 篩選，以將郵件的垃圾郵件信賴等級設定 (SCL) 設定為-1。 如需詳細資訊，請參閱[使用郵件流程規則設定 Exchange Online 中郵件中的垃圾郵件信賴等級 (SCL) ](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)   。
+增強型連接器篩選功能可提升篩選的精確度，但如果您在 Office 365 的上有 ESG，而且目前不會略過 EOP 篩選，則可能會變更特定郵件的 deliverability。 影響限制為 EOP 原則;在非強制模式中建立評估的 Office 365 原則。 若要將潛在的實際影響降至最低，您可以建立郵件流程規則 (（也稱為傳輸規則) ）來略過所有的 EOP 篩選，以將郵件的垃圾郵件信賴等級設定 (SCL) 設定為-1。 如需詳細資訊，請參閱[使用郵件流程規則設定 Exchange Online 中郵件中的垃圾郵件信賴等級 (SCL) ](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)   。
 
 當評估模式已設定時，每日會更新一份報告，其中包含超過90天的資料，量化當原則實施 (例如「刪除」、「傳送至垃圾、隔離」) 時，可能會封鎖的郵件。 針對 Office 365 和 EOP 偵測的所有 Defender 產生報告。 它們會根據偵測技術匯總 (例如，模擬) ，並且可依時間範圍篩選。 此外，您也可以根據需要建立郵件報告，以建立自訂樞軸或使用瀏覽器深入深入資訊。
 
@@ -61,7 +61,7 @@ ms.locfileid: "53108328"
 - 分析動作報告
 - 展示評估結果
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 ### <a name="licensing"></a>授權
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 在本文中，瞭解 Azure ExpressRoute 路由需求、電路和路由網域搭配 Office 365 使用。
-ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687166"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194790"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>使用 Office 365 的 ExpressRoute 進行路由傳送
 
@@ -67,7 +67,7 @@ ms.locfileid: "51687166"
 
 - [SharePoint 同盟混合式搜尋](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online)。
 
-- [SharePoint 混合 BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution)。
+- [SharePoint 混合式 BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution)。
 
 - [商務用 Skype 混合](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)式和/或[商務用 Skype 同盟](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)。
 
@@ -85,14 +85,6 @@ ms.locfileid: "51687166"
 
 當您使用 Microsoft 對等路由網域設定對等關係，並經核准以進行適當存取時，您就可以透過 ExpressRoute 查看所有可用 PaaS 和 SaaS 服務。 針對 ExpressRoute 所設計的 Office 365 服務，可使用[BGP 社區](./bgp-communities-in-expressroute.md)或[路由篩選器](/azure/expressroute/how-to-routefilter-portal)進行管理。
   
-其他應用程式（例如 Office 365 影片）是 Office 365 應用程式;不過，Office 365 影片是由三個不同的元件、入口網站、流式服務和內容傳遞網路組成。 入口網站位於 SharePoint Online 內，資料流程服務存在於 Azure 媒體服務內，而內容傳遞網路位於 Azure CDN 內。 下表概述這些元件。
-
-|**元件**|**基礎應用程式**|**包含在 SharePoint 線上 BGP Community 中？**|**使用**|
-|:-----|:-----|:-----|:-----|
-|Office 365影片入口網站  <br/> |SharePoint Online  <br/> |是  <br/> |設定、上傳  <br/> |
-|Office 365影片傳送服務  <br/> |Azure 媒體服務  <br/> |否  <br/> |流式處理服務，可供 CDN 中無法使用影片  <br/> |
-|Office 365影片內容傳遞網路  <br/> |Azure CDN  <br/> |否  <br/> |影片的主要來源下載/流式處理。 [深入瞭解 Office 365 的視頻網路](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e)。  <br/> |
-
 使用 Microsoft 對等每個可用的 Office 365 功能，都依應用程式類型和 FQDN 列在[Office 365 端點文章](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中。 使用資料表中 FQDN 的原因是讓客戶能夠使用 pac 檔案或其他 proxy 設定來管理流量，請參閱我們的指南，以管理範例 PAC 檔案的[Office 365 端點](./managing-office-365-endpoints.md)。
   
 在某些情況下，我們使用的萬用字元網域中的一個或多個子 Fqdn 宣告的方式不同于高層級的萬用字元網域。 當萬用字元代表一份很長的伺服器清單，而這些伺服器已宣告至 ExpressRoute 和網際網路，而小型的目的地子集只會通告給網際網路，或反過來，則通常會發生這種情況。 請參閱下表以瞭解差異的位置。
@@ -259,6 +251,6 @@ Microsoft 的資料中心、網路及應用程式架構是專門用來進行全�
   
 [Office 365 的效能疑難排解規劃](performance-troubleshooting-plan.md)
   
-[Office 365 URL 與 IP 位址範圍](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URL 和 IP 位址範圍](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 網路與效能調整](network-planning-and-performance.md)

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c043e97d6c02e4f41d000e9ce8cfea4a0950252a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 65e3e8d1baef7ca4440824c9a262f0b5f696b657
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246060"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194742"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>報告及疑難排解 Microsoft Defender 以取得 ATP ASR 規則
 
@@ -42,7 +42,7 @@ Microsoft 365 的安全性中心是一個新的介面，可監控和管理跨您
 
 Microsoft Defender 端點最強大的功能之一是「高級搜尋」。 如果您不熟悉高級搜尋，請參閱 [使用高級搜尋主動搜尋威脅](advanced-hunting-overview.md)。
 
-「高級搜尋」是以查詢為基礎的 (Kusto 查詢語言) 威脅搜尋工具，可讓您探索最多30天的已捕獲 (raw) 資料，該 MDE 端點偵測和回應 (EDR) 從您的所有機器收集。 透過「高級搜尋」，您可以主動檢查事件，以找出感興趣的指示器和實體。 對資料的靈活存取可協助對已知和潛在威脅進行無限制的搜尋。
+「高級搜尋」是以查詢為基礎的 (Kusto 查詢語言) 威脅搜尋工具，可讓您探索最多30天的已捕獲 (raw) 資料，該 Defender 的端點會從您的裝置收集。 透過「高級搜尋」，您可以主動檢查事件，以找出感興趣的指示器和實體。 對資料的靈活存取可協助對已知和潛在威脅進行無限制的搜尋。
 
 透過「高級搜尋」，可以解壓縮 ASR 規則資訊、建立報告，以及取得指定之 ASR 規則 audit 或封鎖事件內容的詳細資訊。
 

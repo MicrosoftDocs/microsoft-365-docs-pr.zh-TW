@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8297fac0f733b93b1d8e3eabb25eeee7b1e07acb
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5eca3b7e712b1fc5bdb876630c47bd24e73c7c76
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821970"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194682"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支援的作業系統、平臺及功能-適用于威脅與弱點管理
 
@@ -53,14 +53,14 @@ Windows 8.1 | 是 | 是 | 是 | 是| 是
 Windows 10，版本1607-1703 | 是  | 不支援 | 不支援 | 不支援 | 不支援
 Windows 10 版本 1709 或更新版本。 | 是 | 是 | 是 | 是 | 是
 Windows Server 2008 R2 | 是 | 是 | 是 | 是 | 是
-Windows Server 2012 R2 | 是 | 是 | 是 | 是 | 是
+Windows Server 2012 R2 | 是 | 是 | 是 | 是 | 是
 Windows Server 2016 | 是 | 是 | 是 | 是 | 是
 Windows Server 2019 | 是 | 是 | 是 | 是 | 是
-macOS 10.14 "Mojave" 以上 | 是 | 是 | 是 (預覽)  | 是 (預覽)  | 是 (預覽) 
-Red Hat Enterprise Linux 7.2 或更高版本 **(預覽)** (\* 請參閱以下的「重要」注意)  | 是 | 是 | 是 | 是 | 是
-CentOS 7.2 或更高版本 **(預覽)** | 是 | 是 | 是 | 是 | 是
-Ubuntu 16.04 LTS 或更高版本的 LTS **(預覽)** | 是 | 是 | 是 | 是 | 是
-Oracle Linux 7.2 或更高版本 **(預覽)** | 是 | 是 | 是 | 是 | 是
+macOS 10.14 "Mojave" 以上 | 是 | 是 | 是 | 是 | 是 
+Red Hat Enterprise Linux 7.2 或更高版本 (\* 請參閱以下的「重要」注意)  | 是 | 是 | 是 | 是 | 是
+CentOS 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
+Ubuntu 16.04 LTS 或更高版本 LTS | 是 | 是 | 是 | 是 | 是
+Oracle Linux 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
 
 >[!IMPORTANT]
 > \*Red hat Enterprise Linux： "在您的 Microsoft Defender for Endpoint services 中提供及顯示的弱點資料，可供您在其原始格式（從 Red Hat，inc. 開始，來自 Red Hat，inc.，而且可能不是最新）的情況下取得。 「Red Hat 安全性資料 API 存取的資料是以創造性 Commons 歸屬4.0 國際授權授權。 您會在使用此資料時承擔風險。 Microsoft 及其協力廠商供應商對後果性和其他間接損壞和默示擔保的任何責任概不承擔任何責任，包括對非侵權性、適售性和特殊用途適用性的默示擔保。 © 2020 Red Hat。 著作權所有，並保留一切權利。 © 2020 Microsoft。 保留擁有權限。

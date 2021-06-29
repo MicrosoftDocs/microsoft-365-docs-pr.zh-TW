@@ -13,12 +13,12 @@ localization_priority: Normal
 description: 在 Microsoft Defender 的威脅篩選堆疊中，追蹤傳入郵件的路徑，以取得 Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683292"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194802"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender 中的逐步威脅防護
 
@@ -51,7 +51,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 寄件者智慧中的功能對於捕捉垃圾郵件、大量、模仿和未經授權的欺騙性郵件很重要，也會考慮網路釣魚偵測。 大多數的功能都是可個別設定的。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="MDO 中篩選的階段2是寄件者智慧。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Office 365 的 Defender 篩選階段2是寄件者智慧。":::
 
 1. 當帳戶具有反常行為時，會產生「**帳戶洩漏偵測**」和「警示」。 在某些情況下，使用者帳戶會遭到封鎖，並避免傳送任何後續的電子郵件訊息，直到組織的安全性運作小組解決問題為止。
 
@@ -99,7 +99,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 8. **內容試探法** 可使用機器學習模型，根據郵件本文內的結構和字頻率，偵測可疑的郵件。
 
-9. **安全附件** 會沙箱 Office 365 客戶的所有適用于 Defender 的附件，使用動態分析來偵測出永不出現威脅。
+9. **保管庫附件** 會沙箱 Office 365 客戶的所有適用于 Defender 的附件，使用動態分析來偵測出永不出現威脅。
 
 10. **連結的內容引爆** 會將電子郵件中的每個 URL 連結到一個附件，並在傳遞時以非同步方式沙箱處理該檔案。
 
@@ -111,7 +111,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Office 365 中，篩選的階段4是傳遞後的保護。":::
 
-1. **安全連結** 是 Office 365 的時按一下保護的 Defender。 每封郵件中的每個 URL 都會換行，指向 Microsoft 安全連結伺服器。 當按一下 URL 時，會將使用者重新導向至目標網站之前，檢查其最新的信譽。 URL 會以非同步方式沙箱化，以更新其信譽。
+1. **保管庫連結** 是 Office 365 的時間保護的 Defender。 每封郵件中的每個 URL 都會換行，以指向 Microsoft 保管庫連結伺服器。 當按一下 URL 時，會將使用者重新導向至目標網站之前，檢查其最新的信譽。 URL 會以非同步方式沙箱化，以更新其信譽。
 
 2. **以零小時自動清除 (ZAP) 網路釣魚** retroactively 會偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意網路釣魚郵件。
 
@@ -123,9 +123,9 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 6. **報告郵件增益集** 可讓使用者輕鬆報告誤報 (良好的電子郵件、誤標示為 *壞*) 或 false 不利 (錯誤電子郵件標示為 *良好* 的 Microsoft 進行進一步分析) 。
 
-7. **Office 用戶端的安全連結**，可在 Office 用戶端（如 Word、PowerPoint 及 Excel）中提供相同的安全連結時間和即時防護。
+7. **Office 用戶端的保管庫連結** 提供相同的保管庫連結時間內保護，本機，在 Office 用戶端（如 Word、PowerPoint 和 Excel）內。
 
-8. 對 **OneDrive、SharePoint 和 Teams 的保護，** 可為 OneDrive、SharePoint 和 Microsoft Teams 等惡意檔案提供相同的安全附件防護。
+8. **OneDrive、SharePoint 及 Teams 的保護功能** 可為您提供相同保管庫的附件防護，以防範惡意檔、本機、OneDrive、SharePoint 和 Microsoft Teams。
 
 9. 當選取指向檔案的 URL 後，傳遞傳遞時， **連結的內容引爆** 會顯示警告頁面，直到檔案的沙箱處理完成，並且找到安全的 url 為止。
 
@@ -133,7 +133,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 最後的圖表 (，與組成它之圖表的所有部分) *在產品成長及開發時可能會有所變更*。 在此頁面上加上書簽，如果您需要在更新後要求，請使用您在底部所看到的 **意見** 反應選項。 針對您的記錄，這是以順序顯示所有階段的堆疊：
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="MDO 中篩選的所有階段，順序為1到4。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Office 365 依順序從1到4的所有篩選階段。":::
 
 ## <a name="more-information"></a>其他資訊
 

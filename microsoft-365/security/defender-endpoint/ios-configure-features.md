@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842251"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194946"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上設定 Microsoft Defender for Endpoint
 
@@ -65,6 +65,26 @@ Microsoft Defender for Endpoint 具備偵測已越獄之受管理和受管理裝
 
 Apple iOS 不支援多個全裝置的 Vpn 同時作用中。 雖然裝置上可以有多個 VPN 設定檔，但一次只能有一個 VPN 可用。
 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>在應用程式防護原則 (MAM) 中設定 Microsoft Defender 的 Endpoint 危險信號
+
+Microsoft Defender for Endpoint 可以設定成傳送威脅信號，以用於應用程式保護原則 (APP，也稱為 iOS/iPadOS 上的 MAM) 。 使用此功能，您可以使用 Microsoft Defender for Endpoint 來保護對 unenrolled 裝置中公司資料的存取。
+
+使用 Microsoft Defender for Endpoint 安裝應用程式保護原則的步驟如下：
+
+1. 設定從 Microsoft 端點管理員租使用者至 Microsoft Defender for Endpoint 的連線。 在 [Microsoft 端點](https://go.microsoft.com/fwlink/?linkid=2109431)管理員系統管理中心中，移 **至 [** 跨平臺) ] 底下的 [  >    >  **microsoft defender for endpoint] 的 [microsoft defender for** endpoint (] 或 [安裝) 下的 endpoint **Security**  >  **microsoft defender** ] (]，然後開啟 **設定的應用程式保護原則 iOS** 下的切換。
+1. 選取 [儲存]。 您應該會看到 [ **線上狀態** ] 現在已設定為 [ **啟用**]。
+1. 建立應用程式保護原則：在您的 Microsoft Defender Endpoint connector 安裝程式完成後，請流覽至 [原則]) 底下 (的 [**應用**  >  **程式 app protection 原則**]，以建立新的原則或更新現有的原則。
+1. 針對您的原則，選取您的組織所需的平臺、 **應用程式、資料保護和存取需求** 設定。
+1. 在 [**條件式啟動**  >  **裝置條件**] 底下，您會發現設定 **允許的裝置威脅層級上限**。 這將需要設定為 [低]、[中]、[高] 或 [安全]。 您可以使用的動作會 **封鎖存取權** 或 **清除資料**。 您可能會看到 [資訊] 對話方塊，確定在此設定之前設定好您的連接器會生效。 如果您的連接器已設定好，您可以忽略此對話方塊。
+1. 完成工作分派並儲存原則。
+
+如需 MAM 或 app protection 原則的詳細資訊，請參閱 [iOS app protection 原則設定](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)。
+
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>為 MAM 或 unenrolled 裝置部署 Microsoft Defender for Endpoint
+
+IOS 上的 Microsoft Defender for Endpoint 會啟用應用程式保護原則案例，並可在 Apple 應用程式存放區中取得。
+
+使用者應直接從 Apple app store 安裝最新版的應用程式。
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>設定已越獄裝置的相容性原則
 
@@ -86,12 +106,12 @@ Apple iOS 不支援多個全裝置的 Vpn 同時作用中。 雖然裝置上可�
     > [!div class="mx-imgBorder"]
     > ![原則設定](images/ios-jb-settings.png)
 
-4. 在 [不 *符合之動作* ] 區段中，根據您的需求選取動作，然後選取 **[下一步]**。
+4. 在 [不 **符合之動作** ] 區段中，根據您的需求選取動作，然後選取 **[下一步]**。
 
     > [!div class="mx-imgBorder"]
     > ![原則動作](images/ios-jb-actions.png)
 
-5. 在 [ *工作分派* ] 區段中，選取您要包含此原則的使用者群組，然後選取 **[下一步]**。
+5. 在 [ **工作分派** ] 區段中，選取您要包含此原則的使用者群組，然後選取 **[下一步]**。
 6. 在 [ **複查 + 建立** ] 區段中，確認輸入的所有資訊正確無誤，然後選取 [ **建立**]。
 
 ## <a name="configure-custom-indicators"></a>設定自訂指示器

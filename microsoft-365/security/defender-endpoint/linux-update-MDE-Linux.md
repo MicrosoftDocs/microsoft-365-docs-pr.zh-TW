@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7ebb37e80cae0e9dd70d01600c47bd1459c122c3
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730867"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194898"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>為於端點的 Microsoft Defender 排程更新 (Linux)
 
@@ -98,7 +98,7 @@ CRON_TZ = 美洲/Los_Angeles
 
 若要查看您的 cron 工作，請輸入 `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="更新 MDE linux":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="在 Linux 上更新 Defender for Endpoint":::
 
 若要檢查 cron 工作執行： `sudo grep mdatp /var/log/cron`
 

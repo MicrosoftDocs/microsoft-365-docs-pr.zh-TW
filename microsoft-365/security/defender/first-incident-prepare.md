@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840931"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194934"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>為第一個事件準備安全性狀況
 
@@ -38,22 +38,22 @@ ms.locfileid: "52840931"
 
 為事件處理做好準備時，應從不同類型的安全性事件中，設定組織網路的足夠保護。 若要降低安全性事件的風險，國家標準和技術協會 (NIST) 建議多種安全性作法，包括風險評估、強化主機安全性、安全地設定網路，以及防止惡意程式碼。 
 
-Microsoft 365Defender 可協助您解決事件防護的幾個層面： 
+Microsoft 365 Defender 可協助解決事件防護的幾個層面： 
 
 - 實施 [零信任](/security/zero-trust/) 架構
 - 使用[Microsoft 安全分數](microsoft-secure-score.md)指派分數來判斷您的安全性狀況
 - 透過[威脅和弱點管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)中的漏洞評估來防止威脅
 - 瞭解最新的安全性威脅，以做好準備
 
-## <a name="step-1-implement-zero-trust"></a>步驟 1. 實現零信任
+## <a name="step-1-implement-zero-trust"></a>步驟 1。 實現零信任
 
-「[零信任](/security/zero-trust/)」是整合的安全性理念和端對端策略，可考慮任何現代環境的複雜性質，包括行動工作力和使用者、裝置、應用程式及資料（可能位於何處）。 透過提供單一的玻璃窗格，以一致的方式管理所有的偵測，Microsoft 365 Defender 可讓安全性作業小組輕鬆地執行零信任的[指導原則](/security/zero-trust/#guiding-principles-of-zero-trust)。 
+「[零信任](/security/zero-trust/)」是整合的安全性理念和端對端策略，可考慮任何現代環境的複雜性質，包括行動工作力和使用者、裝置、應用程式及資料（可能位於何處）。 透過提供單一的玻璃窗格，以一致的方式管理所有偵測，Microsoft 365 Defender 可讓安全性作業小組輕鬆地執行零信任的[指導原則](/security/zero-trust/#guiding-principles-of-zero-trust)。 
 
-Microsoft 365 的元件會顯示已執行之規則的破壞，該規則會將 Microsoft Defender for Endpoint (MDE) 或其他行動安全性廠商整合為資訊來源，以針對裝置合規性原則和裝置型條件式存取原則的資訊來源，以建立零信任的條件存取原則。 
+Microsoft 365 Defender 的元件會顯示已實現的規則違反原則，此規則是透過整合 Microsoft Defender for Endpoint 或其他行動安全性廠商的資料，以針對裝置合規性原則和裝置型條件式存取原則的資訊來源，將 Microsoft Defender for Endpoint or 其他行動安全性廠商的資料，設定為零信任。 
 
-裝置風險會直接影響該裝置的使用者可存取的資源。 根據特定準則，「拒絕存取資源」是零信任和 Microsoft 365 Defender 的主要主題，提供判斷信任層級準則所需的資訊。 例如，Microsoft 365 Defender 可透過威脅和弱點管理頁面提供裝置的軟體版本層級，而條件式存取原則會限制具有過時或易受攻擊版本的裝置。
+裝置風險會直接影響該裝置的使用者可存取的資源。 根據特定準則，「拒絕存取資源」是零信任和 Microsoft 365 Defender 的主要主題，提供判斷信任層級準則所需的資訊。 例如，Microsoft 365 Defender 可以透過威脅和弱點管理頁面提供裝置的軟體版本層級，而條件式存取原則會限制具有過時或易受攻擊版本的裝置。
 
-「自動化」是實施及維護零信任環境的重要部分，同時也減少了可能會造成事件回應 (紅外) 事件的警示數目。 Microsoft 365 Defender 的元件可以是自動化的，例如，[修正動作](m365d-autoir.md) (稱為 Microsoft 365 安全性中心) 的事件調查、通知動作，甚至是在[ServiceNow](https://microsoft.service-now.com/sp/)中建立支援票證。
+「自動化」是實施及維護零信任環境的重要部分，同時也減少了可能會造成事件回應 (紅外) 事件的警示數目。 Microsoft 365 Defender 的元件可以是自動化的，例如[修復動作](m365d-autoir.md) (稱為 Microsoft 365 安全性中心) 中的事件調查、通知動作，甚至是在[ServiceNow](https://microsoft.service-now.com/sp/)中建立支援票證。
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>步驟 2. 決定組織的安全性狀況
 
@@ -65,7 +65,7 @@ Microsoft 365 的元件會顯示已執行之規則的破壞，該規則會將 Mi
 
 防止事件可以協助簡化安全性作業，以著重于不斷進行重要及重要的安全性事件。 軟體弱點通常是攻擊的 preventable 進入點，可導致資料竊取、資料遺失或商務運作中斷。 如果不進行任何攻擊，安全性作業必須盡力達成並維護組織中可接受的 [漏洞公開](../defender-endpoint/tvm-exposure-score.md) 等級。
 
-若要檢查您的軟體修補進度，請造訪您可以從 Microsoft 365 defender 透過 [**其他資源**] 索引標籤存取的 Endpoint for Endpoint 中的 [威脅和弱點管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)頁面。
+若要檢查您的軟體修補進度，請造訪您可以透過 [**其他資源**] 索引標籤從 Microsoft 365 Defender 存取的 Endpoint to Endpoint 中的 [威脅和弱點管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)頁面。
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft security center 中威脅和弱點頁面的範例"::: 
  

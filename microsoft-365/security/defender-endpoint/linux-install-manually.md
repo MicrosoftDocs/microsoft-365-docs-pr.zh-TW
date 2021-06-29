@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105569"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195018"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -92,7 +92,7 @@ ms.locfileid: "53105569"
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    或者，如果您想要在選取的裝置上探索新的功能，您可能想要將 MDE Linux 部署至 *內部使用者-fast* 通道：
+    或者，如果您想要在選取的裝置上探索新功能，您可能想要在 Linux 上將 Microsoft Defender for Endpoint 部署為 *內部版-快速* 通道：
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -120,7 +120,7 @@ ms.locfileid: "53105569"
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    例如，如果您正在執行 SLES 12，且想要從 *生產* 通道部署 MDE for Linux：
+    例如，如果您正在執行 SLES 12，且想要從 *生產* 通道在 Linux 上部署 Microsoft Defender for Endpoint：
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -400,13 +400,13 @@ Options:
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何從 Insiders-Fast 遷移至實際執行通道
 
-1. 為 Linux 卸載「預覽人員-Fast 通道」版本的 MDE。
+1. 在 Linux 上卸載「預覽人員-Fast 通道」版本的 Defender for Endpoint。
 
     ``
     sudo yum remove mdatp
     ``
 
-1. 停用 Linux Insiders-Fast 的 MDE  ``
+1. 停用 Linux Insiders-Fast 儲存機制的 Defender for Endpoint  ``
     sudo yum repolist
     ``
 

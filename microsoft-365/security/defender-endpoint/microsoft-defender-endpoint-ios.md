@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2d586cd23a346db1bcebf891689ff648b639b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cbe2fb39221bd9907a3d690503a392edb019d61b
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844703"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194850"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上適用於端點的 Microsoft Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "52844703"
 
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**IOS 上的 Microsoft Defender For Endpoint** 會提供保護，以防範來自網站、電子郵件和應用程式的網路釣魚和不安全網路連線。 所有警示都會透過 Microsoft Defender 資訊安全中心中的單一玻璃窗格獲得。 入口網站讓安全性小組能夠集中查看 iOS 裝置上的威脅及其他平臺。
+**IOS 上的 Microsoft Defender For Endpoint** 會針對網站、電子郵件和應用程式中的網路釣魚和不安全網路連線提供保護。 所有警示都會透過 Microsoft Defender 資訊安全中心中的單一玻璃窗格獲得。 入口網站讓安全性小組能夠集中查看 iOS 裝置上的威脅及其他平臺。
 
 > [!CAUTION]
 > 對 iOS 上的 Endpoint for Endpoint 執行其他協力廠商端點保護產品時，可能會造成效能問題和不可預期的系統錯誤。
@@ -47,9 +47,11 @@ ms.locfileid: "52844703"
 
 - 指派給使用者 (s) 的 Microsoft Defender Endpoint 授權。 請參閱 [Microsoft Defender Endpoint 授權需求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
 
-- 裝置 (s) 會透過 Intune 公司入口網站應用程式進行[註冊](/mem/intune/user-help/enroll-your-device-in-intune-ios)，以強制執行 Intune 裝置相容性原則。 這需要 Microsoft Intune 授權指派給使用者。
+- 若 **為已註冊的裝置**：裝置 (s) 會透過 Intune 公司入口網站應用程式進行 [註冊](/mem/intune/user-help/enroll-your-device-in-intune-ios)，以強制執行 Intune 裝置相容性原則。 這需要 Microsoft Intune 授權指派給使用者。
     - Intune 公司入口網站應用程式可從[Apple 應用程式存放區](https://apps.apple.com/us/app/intune-company-portal/id719171358)下載。
     - 請注意，Apple 不允許重新導向使用者從應用程式存放區下載其他應用程式，因此必須在使用者執行此步驟後，才能上架至 Microsoft Defender for Endpoint 應用程式。
+
+- 若 **為 unenrolled 裝置**：裝置 (s) 會向 Azure Active Directory 註冊。 這需要使用者[Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458)登入。
 
 - 如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
@@ -57,20 +59,20 @@ ms.locfileid: "52844703"
 
 - 存取 Microsoft Defender 資訊安全中心入口網站。
 
+- 存取[Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，將應用程式部署至組織中已註冊的使用者群組。
+
     > [!NOTE]
     > Microsoft Intune 是唯一支援的整合端點管理 (UEM) 方案，可在 Intune 中部署 Microsoft Defender for endpoint，並強制執行與 Endpoint 相關之裝置相容性原則的 Defender。
 
-- 存取[Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，將應用程式部署至組織中已註冊的使用者群組。
-
 **系統需求**
 
-- 執行 iOS 11.0 和更新版本的裝置 iOS。 iPad 的裝置從版本1.1.15010101 向前正式支援。
+- 執行 iOS 11.0 和更新版本的 iOS 裝置。 iPad 的裝置從版本1.1.15010101 向前正式支援。
 
-- 已使用[Intune 公司入口網站 app](https://apps.apple.com/us/app/intune-company-portal/id719171358)註冊裝置。
+- 已使用[Intune 公司入口網站 app](https://apps.apple.com/us/app/intune-company-portal/id719171358)註冊裝置，或透過[Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458)登錄 Azure Active Directory。
 
 ## <a name="installation-instructions"></a>安裝指示
 
-在 iOS 上部署 Microsoft Defender for Endpoint 是透過 Microsoft Intune (MDM) ，且支援受監視和 unsupervised 裝置。 使用者也可以直接從 [Apple app store](https://aka.ms/mdatpiosappstore)安裝應用程式。
+您可以透過 Microsoft 端點管理員 (MEM) ，以及支援受監視和 unsupervised 裝置，來在 iOS 上部署 Microsoft Defender for Endpoint。 使用者也可以直接從 [Apple app store](https://aka.ms/mdatpiosappstore)安裝應用程式。
 如需詳細資訊，請參閱 [在 iOS 上部署 Microsoft Defender For Endpoint](ios-install.md)。
 
 ## <a name="resources"></a>資源

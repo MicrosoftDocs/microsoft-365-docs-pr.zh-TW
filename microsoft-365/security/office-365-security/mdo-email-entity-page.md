@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 (MDO) 電子郵件實體頁面
+title: Microsoft Defender for Office 365 電子郵件實體頁面
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 適用于 Office 365 E5 及 P1 和 P2 客戶的 Microsoft Defender 現在，您可以透過電子郵件實體頁面看到每個電子郵件的360度。
-ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083264"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194988"
 ---
 # <a name="the-email-entity-page"></a>電子郵件實體頁面
 
@@ -30,11 +30,11 @@ ms.locfileid: "53083264"
 - [使用電子郵件實體頁面索引標籤](#use-email-entity-page-tabs)
 - [電子郵件實體頁面的新增](#new-to-the-email-entity-page)
 
-Office 365 (或 MDO) E5 的 Microsoft Defender 管理員，以及 MDO P1 和 P2 對使用 **電子郵件實體頁面** 的電子郵件有360度的觀點。 已建立此「送出電子郵件」頁面，以加強 [威脅瀏覽器「電子郵件詳細資料」飛出](threat-explorer-views.md)所提供的資訊。
+Office 365 E5 的 Microsoft Defender 管理員和使用「**電子郵件實體」頁面** 的 Office P1 和 P2 的 Defender 都有360度的電子郵件觀點。 已建立此「送出電子郵件」頁面，以加強 [威脅瀏覽器「電子郵件詳細資料」飛出](threat-explorer-views.md)所提供的資訊。
 
 ## <a name="reach-the-email-entity-page"></a>到達電子郵件實體頁面
 
-您可以在 <https://security.microsoft.com> **電子郵件 &** 共同作業 \> **瀏覽器** 的 Microsoft 365 defender 入口網站 () 中取得 [電子郵件實體] 頁面。 或者，若要直接移至 **瀏覽器** 頁面，請使用 <https://security.microsoft.com/threatexplorer> 。
+電子郵件實體頁面可在 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 的 **電子郵件 &** 共同作業 \> **瀏覽器** 中取得。 或者，若要直接移至 **瀏覽器** 頁面，請使用 <https://security.microsoft.com/threatexplorer> 。
 
 在 [ **Explorer**] 中，選取您要調查之電子郵件的主旨。 黃金線會顯示在該郵件的電子郵件飛出的頂端。 這個新的頁面邀請會閱讀「嘗試使用豐富資料的新電子郵件實體頁面 ...」。 選取以查看新的頁面。
 

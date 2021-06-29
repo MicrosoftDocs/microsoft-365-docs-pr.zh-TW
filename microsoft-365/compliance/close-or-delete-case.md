@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解 Advanced eDiscovery 案例所支援的調查或法律案例關閉或刪除時會發生什麼情況。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657636"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194623"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>關閉或刪除 Advanced eDiscovery 案例
 
@@ -36,7 +36,7 @@ ms.locfileid: "52657636"
 
 - 將案例結案只會關閉與該案例相關聯的保留。 如果內容位置上有其他保留， (例如訴訟暫止、核心 eDiscovery 保留或不同 Advanced eDiscovery 案例的保留，) 仍會保留這些保留。
 
-- 此案例仍會列在 Microsoft 365 規範中心的 eDiscovery 頁面上。 已關閉案例的詳細資料、保留、搜尋和成員都會保留。
+- 此案例仍會列在 Microsoft 365 合規性中心中的 [eDiscovery] 頁面上。 已關閉案例的詳細資料、保留、搜尋和成員都會保留。
 
 - 您可以在關閉案例後進行編輯。 例如，您可以在 Advanced eDiscovery 中新增或移除成員、建立搜尋、匯出搜尋結果，以及準備用於分析的搜尋結果。 作用中案例與已關閉案例的主要差異在於，案例關閉時會關閉保留。
 
@@ -46,9 +46,9 @@ ms.locfileid: "52657636"
 
 2. 在 [設定]**** 索引標籤上，按一下 [案例資訊]**** 底下的 ****[選取]。
 
-3. 在 [ **案例資訊** 浮出] 頁面的底部，按一下 [ (**...**) **更多選項**]，然後按一下 [ **關閉案例**]。
+   ![在 Advanced eDiscovery 案例中存取案例資訊飛出頁面](..\media\AeDSelectCaseInformation.png) 
 
-   ![以關閉 Advanced eDiscovery 案例的 [其他選項] 功能表中的選項](..\Media\CloseAdvancedeDiscoveryCase.png)
+3. 在 [ **案例資訊** 飛出] 頁面的底部，按一下 [ **動作**]，然後按一下 [ **關閉案例**]。
 
    關閉程序最多可能需要 60 分鐘才會完成。
 
@@ -62,15 +62,13 @@ ms.locfileid: "52657636"
 
 2. 在 [設定]**** 索引標籤上，按一下 [案例資訊]**** 底下的 ****[選取]。
 
-3. 在 [ **案例資訊** 浮出] 頁面的底部，按一下 [ (**...**) **更多選項**]，然後按一下 [ **重新開啟案例**]。
-
-   ![可重新開啟 Advanced eDiscovery 案例的 [其他選項] 功能表中的選項](..\Media\ReopenAdvancedeDiscoveryCase.png)
+3. 在 [ **案例資訊** 飛出] 頁面的底部，按一下 [ **動作**]，然後按一下 [ **重新開啟案例**]。
 
    最多可能需要60分鐘的時間，重新開啟程式才會完成。
 
 ## <a name="delete-a-case"></a>刪除案例
 
-您可以刪除作用中和關閉的 Advanced eDiscovery 案例。 當您刪除案例時，也會刪除與該案例相關聯的所有元件，例如監管人清單、通訊、搜尋、檢閱集和匯出作業。 案例會從 Microsoft 365 規範中心的 **Advanced eDiscovery** 頁面上的案例清單中移除。 您無法復原或重新開啟已刪除的案例。
+您可以刪除作用中和關閉的 Advanced eDiscovery 案例。 當您刪除案例時，也會刪除與該案例相關聯的所有元件，例如監管人清單、通訊、搜尋、檢閱集和匯出作業。 案例會從 Microsoft 365 合規性中心中 **Advanced eDiscovery** 頁面上的案例清單中移除。 您無法復原或重新開啟已刪除的案例。
 
 > [!NOTE]
 > 在資料外泄案例中，移除考核集內專案的唯一方法是刪除 Advanced eDiscovery 案例。 其他的「搜尋及清除」方法不會從審閱集中移除專案。
@@ -91,6 +89,5 @@ ms.locfileid: "52657636"
 
 2. 在 [設定]**** 索引標籤上，按一下 [案例資訊]**** 底下的 ****[選取]。
 
-3. 在 [ **案例資訊** 浮出] 頁面的底部，按一下 [ (**...**) **更多選項**]，然後按一下 [ **刪除案例**]。
+3. 在 [ **案例資訊** 飛出] 頁面的底部，按一下 [ **動作**]，然後按一下 [ **刪除案例**]。
 
-   ![可刪除 Advanced eDiscovery 案例的 [其他選項] 功能表中的選項](..\Media\DeleteAdvancedeDiscoveryCase.png)
