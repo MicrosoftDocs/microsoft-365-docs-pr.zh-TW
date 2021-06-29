@@ -25,20 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 適用於小型企業的 Microsoft 365 商務進階版安全性和共同作業建議，包括小型公司、事務所和政治活動。
-ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 34f36a86167ebba2ad80cc0046184b3c1997f845
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245025"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177462"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>適用於小型企業和活動的 Microsoft 365
-===========================
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>適用於小型企業和活動的 Microsoft 365
 
 如果您有 Microsoft 365 商務進階版，此文件庫中的指引是設定安全性並安全地開始共同作業的最快速方法。 在我們現今的世界中，保持資料和通訊的安全是優先要務，醫療和法律實務、政治活動，以及許多其他小型企業尤其如此。 此解決方案提供一組建議，其設計可協助保護您和您的資料。 此文件庫包含設定及使用此建議環境的相關說明，而無論您的企業類型為何。
 
 
-![Microsoft 365 商務進階版可保護您的生產力工具、共同作業工具、檔案儲存空間、電子郵件、裝置和身分識別](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 商務進階版可保護您的生產力工具、共同作業工具、檔案儲存空間、電子郵件、裝置和身分識別](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 此設定包括下列用於生產力、共同作業、檔案儲存空間、電子郵件、裝置和身分識別的指導方針，以保護您的企業：
 
@@ -50,8 +49,7 @@ ms.locfileid: "52245025"
 |安全地儲存及共用檔案 | 從 Microsoft Teams、OneDrive、SharePoint 和 Microsoft Stream 共用檔案和影片，並保護敏感性資料。| [共用檔案和影片](share-files-and-videos.md) |
 |受管理的 Windows 10 裝置 |讓重要員工使用受管理的裝置，並保護這些裝置。 | [設定受管理的裝置](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 商務版進階版的建議安全性設定
-------------------------------------
+## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 商務版進階版的建議安全性設定
 
 此 Microsoft 365 商務進階版的建議安全設定可讓您：
 
@@ -71,8 +69,7 @@ ms.locfileid: "52245025"
 
 如需有關內含內容的詳細資訊，請參閱 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)。
 
-<a name="get-started"></a>入門
---------------------------
+## <a name="get-started"></a>入門
 
 請按照下列步驟開始使用：
 
@@ -80,8 +77,7 @@ ms.locfileid: "52245025"
 - 針對任何企業：[了解您的使用者將如何使用 Microsoft 365](m365-campaigns-users.md)
 - 針對任何企業：[設定 Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-<a name="solutions-for-your-business"></a>企業的解決方案
---------------------------
+## <a name="solutions-for-your-business"></a>企業的解決方案
 
 設定安全 Microsoft 365 環境之後，您可以使用下列解決方案進行工作：
 

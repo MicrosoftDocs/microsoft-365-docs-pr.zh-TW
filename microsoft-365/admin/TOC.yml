@@ -393,7 +393,7 @@
             - name: 隱私權和安全性
               href: basic-mobility-security/privacy-and-security.md
             - name: 常見問題集
-              href: basic-mobility-security/frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.yml
             - name: 抹除行動裝置資料
               href: basic-mobility-security/wipe-mobile-device.md
             - name: 關閉基本行動與安全性
