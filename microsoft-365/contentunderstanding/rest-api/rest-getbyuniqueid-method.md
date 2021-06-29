@@ -11,65 +11,65 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 取得或更新 SharePoint Syntex 文件了解模型的資訊。
-ms.openlocfilehash: aa97e0fde57c6d5200b437a8f9c7187c0980cc5b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 306bcd894b6339575f8c91ac3c4fb89f2033f3bc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904192"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177102"
 ---
-# <a name="getbyuniqueid"></a><span data-ttu-id="d529e-103">GetByUniqueId</span><span class="sxs-lookup"><span data-stu-id="d529e-103">GetByUniqueId</span></span>
+# <a name="getbyuniqueid"></a><span data-ttu-id="2cd5e-103">GetByUniqueId</span><span class="sxs-lookup"><span data-stu-id="2cd5e-103">GetByUniqueId</span></span>
 
-<span data-ttu-id="d529e-104">取得或更新 SharePoint Syntex 文件了解模型的資訊 (查看[範例](rest-getbyuniqueid-method.md#examples))。</span><span class="sxs-lookup"><span data-stu-id="d529e-104">Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getbyuniqueid-method.md#examples)).</span></span>
+<span data-ttu-id="2cd5e-104">取得或更新 SharePoint Syntex 文件了解模型的資訊 (查看[範例](rest-getbyuniqueid-method.md#examples))。</span><span class="sxs-lookup"><span data-stu-id="2cd5e-104">Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getbyuniqueid-method.md#examples)).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d529e-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d529e-105">HTTP request</span></span>
-
-```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
-```
-
-<span data-ttu-id="d529e-106">這個相同的方法也可以用來刪除模型。</span><span class="sxs-lookup"><span data-stu-id="d529e-106">This same method can be used for deleting a model, too.</span></span> 
+## <a name="http-request"></a><span data-ttu-id="2cd5e-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2cd5e-105">HTTP request</span></span>
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
-## <a name="uri-parameters"></a><span data-ttu-id="d529e-107">URI 參數</span><span class="sxs-lookup"><span data-stu-id="d529e-107">URI parameters</span></span>
 
-|<span data-ttu-id="d529e-108">名稱</span><span class="sxs-lookup"><span data-stu-id="d529e-108">Name</span></span> |<span data-ttu-id="d529e-109">在</span><span class="sxs-lookup"><span data-stu-id="d529e-109">In</span></span> |<span data-ttu-id="d529e-110">必要項目</span><span class="sxs-lookup"><span data-stu-id="d529e-110">Required</span></span>|<span data-ttu-id="d529e-111">類型</span><span class="sxs-lookup"><span data-stu-id="d529e-111">Type</span></span>|<span data-ttu-id="d529e-112">描述</span><span class="sxs-lookup"><span data-stu-id="d529e-112">Description</span></span>|
+<span data-ttu-id="2cd5e-106">這個相同的方法也可以用來刪除模型。</span><span class="sxs-lookup"><span data-stu-id="2cd5e-106">This same method can be used for deleting a model, too.</span></span> 
+
+```HTTP
+DELETE /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
+```
+## <a name="uri-parameters"></a><span data-ttu-id="2cd5e-107">URI 參數</span><span class="sxs-lookup"><span data-stu-id="2cd5e-107">URI parameters</span></span>
+
+|<span data-ttu-id="2cd5e-108">名稱</span><span class="sxs-lookup"><span data-stu-id="2cd5e-108">Name</span></span> |<span data-ttu-id="2cd5e-109">於</span><span class="sxs-lookup"><span data-stu-id="2cd5e-109">In</span></span> |<span data-ttu-id="2cd5e-110">必要項目</span><span class="sxs-lookup"><span data-stu-id="2cd5e-110">Required</span></span>|<span data-ttu-id="2cd5e-111">類型</span><span class="sxs-lookup"><span data-stu-id="2cd5e-111">Type</span></span>|<span data-ttu-id="2cd5e-112">描述</span><span class="sxs-lookup"><span data-stu-id="2cd5e-112">Description</span></span>|
 |-----|---|--------|----|-----------|
-|<span data-ttu-id="d529e-113">modelUniqueId</span><span class="sxs-lookup"><span data-stu-id="d529e-113">modelUniqueId</span></span>|<span data-ttu-id="d529e-114">查詢</span><span class="sxs-lookup"><span data-stu-id="d529e-114">query</span></span>|<span data-ttu-id="d529e-115">對</span><span class="sxs-lookup"><span data-stu-id="d529e-115">True</span></span>|<span data-ttu-id="d529e-116">string</span><span class="sxs-lookup"><span data-stu-id="d529e-116">string</span></span>|<span data-ttu-id="d529e-117">Syntex 模型檔案的識別碼。</span><span class="sxs-lookup"><span data-stu-id="d529e-117">ID of the Syntex model file.</span></span>|
+|<span data-ttu-id="2cd5e-113">modelUniqueId</span><span class="sxs-lookup"><span data-stu-id="2cd5e-113">modelUniqueId</span></span>|<span data-ttu-id="2cd5e-114">查詢</span><span class="sxs-lookup"><span data-stu-id="2cd5e-114">query</span></span>|<span data-ttu-id="2cd5e-115">對</span><span class="sxs-lookup"><span data-stu-id="2cd5e-115">True</span></span>|<span data-ttu-id="2cd5e-116">string</span><span class="sxs-lookup"><span data-stu-id="2cd5e-116">string</span></span>|<span data-ttu-id="2cd5e-117">Syntex 模型檔案的識別碼。</span><span class="sxs-lookup"><span data-stu-id="2cd5e-117">ID of the Syntex model file.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="d529e-118">要求標頭</span><span class="sxs-lookup"><span data-stu-id="d529e-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2cd5e-118">要求標頭</span><span class="sxs-lookup"><span data-stu-id="2cd5e-118">Request headers</span></span>
 
-| <span data-ttu-id="d529e-119">頁首</span><span class="sxs-lookup"><span data-stu-id="d529e-119">Header</span></span> | <span data-ttu-id="d529e-120">值</span><span class="sxs-lookup"><span data-stu-id="d529e-120">Value</span></span> |
+| <span data-ttu-id="2cd5e-119">標頭</span><span class="sxs-lookup"><span data-stu-id="2cd5e-119">Header</span></span> | <span data-ttu-id="2cd5e-120">值</span><span class="sxs-lookup"><span data-stu-id="2cd5e-120">Value</span></span> |
 |--------|-------|
-|<span data-ttu-id="d529e-121">接受</span><span class="sxs-lookup"><span data-stu-id="d529e-121">Accept</span></span>|<span data-ttu-id="d529e-122">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="d529e-122">application/json;odata=verbose</span></span>|
+|<span data-ttu-id="2cd5e-121">Accept</span><span class="sxs-lookup"><span data-stu-id="2cd5e-121">Accept</span></span>|<span data-ttu-id="2cd5e-122">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="2cd5e-122">application/json;odata=verbose</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d529e-123">要求內文</span><span class="sxs-lookup"><span data-stu-id="d529e-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2cd5e-123">要求內文</span><span class="sxs-lookup"><span data-stu-id="2cd5e-123">Request body</span></span>
 
-<span data-ttu-id="d529e-124">對於 GET，不需要要求主體。</span><span class="sxs-lookup"><span data-stu-id="d529e-124">For GET, no request body is needed.</span></span>
+<span data-ttu-id="2cd5e-124">對於 GET，不需要要求主體。</span><span class="sxs-lookup"><span data-stu-id="2cd5e-124">For GET, no request body is needed.</span></span>
 
-## <a name="responses"></a><span data-ttu-id="d529e-125">回應</span><span class="sxs-lookup"><span data-stu-id="d529e-125">Responses</span></span>
+## <a name="responses"></a><span data-ttu-id="2cd5e-125">回應</span><span class="sxs-lookup"><span data-stu-id="2cd5e-125">Responses</span></span>
 
-| <span data-ttu-id="d529e-126">名稱</span><span class="sxs-lookup"><span data-stu-id="d529e-126">Name</span></span>   | <span data-ttu-id="d529e-127">類型</span><span class="sxs-lookup"><span data-stu-id="d529e-127">Type</span></span>  | <span data-ttu-id="d529e-128">描述</span><span class="sxs-lookup"><span data-stu-id="d529e-128">Description</span></span>|
+| <span data-ttu-id="2cd5e-126">名稱</span><span class="sxs-lookup"><span data-stu-id="2cd5e-126">Name</span></span>   | <span data-ttu-id="2cd5e-127">類型</span><span class="sxs-lookup"><span data-stu-id="2cd5e-127">Type</span></span>  | <span data-ttu-id="2cd5e-128">描述</span><span class="sxs-lookup"><span data-stu-id="2cd5e-128">Description</span></span>|
 |--------|-------|------------|
-|<span data-ttu-id="d529e-129">200 OK</span><span class="sxs-lookup"><span data-stu-id="d529e-129">200 OK</span></span>| |<span data-ttu-id="d529e-130">成功</span><span class="sxs-lookup"><span data-stu-id="d529e-130">Success</span></span>|
+|<span data-ttu-id="2cd5e-129">200 OK</span><span class="sxs-lookup"><span data-stu-id="2cd5e-129">200 OK</span></span>| |<span data-ttu-id="2cd5e-130">成功</span><span class="sxs-lookup"><span data-stu-id="2cd5e-130">Success</span></span>|
 
-## <a name="examples"></a><span data-ttu-id="d529e-131">範例</span><span class="sxs-lookup"><span data-stu-id="d529e-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2cd5e-131">範例</span><span class="sxs-lookup"><span data-stu-id="2cd5e-131">Examples</span></span>
 
-### <a name="get-the-contoso-contract-model-by-id"></a><span data-ttu-id="d529e-132">根據識別碼取得 Contoso 合約模型</span><span class="sxs-lookup"><span data-stu-id="d529e-132">Get the Contoso Contract model by ID</span></span>
+### <a name="get-the-contoso-contract-model-by-id"></a><span data-ttu-id="2cd5e-132">根據識別碼取得 Contoso 合約模型</span><span class="sxs-lookup"><span data-stu-id="2cd5e-132">Get the Contoso Contract model by ID</span></span>
 
-<span data-ttu-id="d529e-133">在此範例中，Contoso 合約文件了解模型的識別碼為 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="d529e-133">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
+<span data-ttu-id="2cd5e-133">在此範例中，Contoso 合約文件了解模型的識別碼為 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="2cd5e-133">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
 
-#### <a name="sample-request"></a><span data-ttu-id="d529e-134">範例要求</span><span class="sxs-lookup"><span data-stu-id="d529e-134">Sample request</span></span>
+#### <a name="sample-request"></a><span data-ttu-id="2cd5e-134">範例要求</span><span class="sxs-lookup"><span data-stu-id="2cd5e-134">Sample request</span></span>
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
-#### <a name="sample-response"></a><span data-ttu-id="d529e-135">範例回應</span><span class="sxs-lookup"><span data-stu-id="d529e-135">Sample response</span></span>
+#### <a name="sample-response"></a><span data-ttu-id="2cd5e-135">範例回應</span><span class="sxs-lookup"><span data-stu-id="2cd5e-135">Sample response</span></span>
 
-<span data-ttu-id="d529e-136">**狀態碼:** 204</span><span class="sxs-lookup"><span data-stu-id="d529e-136">**Status code:** 204</span></span>
+<span data-ttu-id="2cd5e-136">**狀態碼：** 200</span><span class="sxs-lookup"><span data-stu-id="2cd5e-136">**Status code:** 200</span></span>
 
 ```HTTP
 {
@@ -100,16 +100,16 @@ GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa
     "UniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc"
 }
 ```
-### <a name="get-and-delete-the-contoso-contract-model-by-id"></a><span data-ttu-id="d529e-137">根據識別碼取得及刪除 Contoso 合約模型</span><span class="sxs-lookup"><span data-stu-id="d529e-137">Get and delete the Contoso Contract model by ID</span></span>
+### <a name="get-and-delete-the-contoso-contract-model-by-id"></a><span data-ttu-id="2cd5e-137">根據識別碼取得及刪除 Contoso 合約模型</span><span class="sxs-lookup"><span data-stu-id="2cd5e-137">Get and delete the Contoso Contract model by ID</span></span>
 
-<span data-ttu-id="d529e-138">在此範例中，Contoso 合約文件了解模型的識別碼為 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="d529e-138">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
+<span data-ttu-id="2cd5e-138">在此範例中，Contoso 合約文件了解模型的識別碼為 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="2cd5e-138">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
 
-#### <a name="sample-request"></a><span data-ttu-id="d529e-139">範例要求</span><span class="sxs-lookup"><span data-stu-id="d529e-139">Sample request</span></span>
+#### <a name="sample-request"></a><span data-ttu-id="2cd5e-139">範例要求</span><span class="sxs-lookup"><span data-stu-id="2cd5e-139">Sample request</span></span>
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d529e-140">另請參閱</span><span class="sxs-lookup"><span data-stu-id="d529e-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2cd5e-140">另請參閱</span><span class="sxs-lookup"><span data-stu-id="2cd5e-140">See also</span></span>
 
-[<span data-ttu-id="d529e-141">Syntex 文件了解模型 REST API</span><span class="sxs-lookup"><span data-stu-id="d529e-141">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
+[<span data-ttu-id="2cd5e-141">Syntex 文件瞭解模型 REST API</span><span class="sxs-lookup"><span data-stu-id="2cd5e-141">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)

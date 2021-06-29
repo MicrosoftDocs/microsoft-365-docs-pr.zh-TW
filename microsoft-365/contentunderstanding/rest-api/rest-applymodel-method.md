@@ -1,5 +1,5 @@
 ---
-title: 套用模型
+title: 批次套用模型
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -10,60 +10,87 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: 使用 REST API 將文件了解模型套用至一或多個文件庫。
-ms.openlocfilehash: d4cadad3c45dd7af0cdaeb4e1b367426289db870
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+description: 使用 REST API 將文件瞭解模型套用至一或多個程式庫。
+ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904205"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177258"
 ---
-# <a name="apply-model"></a><span data-ttu-id="1fe57-103">套用模型</span><span class="sxs-lookup"><span data-stu-id="1fe57-103">Apply model</span></span>
+# <a name="batch-apply-model"></a><span data-ttu-id="340cd-103">批次套用模型</span><span class="sxs-lookup"><span data-stu-id="340cd-103">Batch Apply model</span></span>
 
-<span data-ttu-id="1fe57-104">將訓練過的文件瞭解模型套用 (或同步處理) 至一或多個文件庫 (查看[範例](rest-applymodel-method.md#examples))。</span><span class="sxs-lookup"><span data-stu-id="1fe57-104">Applies (or syncs) a trained document understanding model to one or more libraries (see [example](rest-applymodel-method.md#examples)).</span></span>
+<span data-ttu-id="340cd-104">將訓練過的文件瞭解模型套用 (或同步處理) 至一或多個文件庫 (查看[範例](rest-applymodel-method.md#examples))。</span><span class="sxs-lookup"><span data-stu-id="340cd-104">Applies (or syncs) a trained document understanding model to one or more libraries (see [example](rest-applymodel-method.md#examples)).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="1fe57-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1fe57-105">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="340cd-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="340cd-105">HTTP request</span></span>
 
 ```HTTP
 POST /_api/machinelearning/publications HTTP/1.1
 ```
 
-## <a name="uri-parameters"></a><span data-ttu-id="1fe57-106">URI 參數</span><span class="sxs-lookup"><span data-stu-id="1fe57-106">URI parameters</span></span>
+## <a name="uri-parameters"></a><span data-ttu-id="340cd-106">URI 參數</span><span class="sxs-lookup"><span data-stu-id="340cd-106">URI parameters</span></span>
 
-<span data-ttu-id="1fe57-107">無</span><span class="sxs-lookup"><span data-stu-id="1fe57-107">None</span></span>
+<span data-ttu-id="340cd-107">無</span><span class="sxs-lookup"><span data-stu-id="340cd-107">None</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1fe57-108">要求標頭</span><span class="sxs-lookup"><span data-stu-id="1fe57-108">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="340cd-108">要求標頭</span><span class="sxs-lookup"><span data-stu-id="340cd-108">Request headers</span></span>
 
-| <span data-ttu-id="1fe57-109">頁首</span><span class="sxs-lookup"><span data-stu-id="1fe57-109">Header</span></span> | <span data-ttu-id="1fe57-110">值</span><span class="sxs-lookup"><span data-stu-id="1fe57-110">Value</span></span> |
+| <span data-ttu-id="340cd-109">標頭</span><span class="sxs-lookup"><span data-stu-id="340cd-109">Header</span></span> | <span data-ttu-id="340cd-110">值</span><span class="sxs-lookup"><span data-stu-id="340cd-110">Value</span></span> |
 |--------|-------|
-|<span data-ttu-id="1fe57-111">接受</span><span class="sxs-lookup"><span data-stu-id="1fe57-111">Accept</span></span>|<span data-ttu-id="1fe57-112">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="1fe57-112">application/json;odata=verbose</span></span>|
-|<span data-ttu-id="1fe57-113">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1fe57-113">Content-Type</span></span>|<span data-ttu-id="1fe57-114">application/json;odata=verbose;charset=utf-8</span><span class="sxs-lookup"><span data-stu-id="1fe57-114">application/json;odata=verbose;charset=utf-8</span></span>|
-|<span data-ttu-id="1fe57-115">x-requestdigest</span><span class="sxs-lookup"><span data-stu-id="1fe57-115">x-requestdigest</span></span>|<span data-ttu-id="1fe57-116">目前網站的適當摘要。</span><span class="sxs-lookup"><span data-stu-id="1fe57-116">The appropriate digest for current site.</span></span>|
+|<span data-ttu-id="340cd-111">Accept</span><span class="sxs-lookup"><span data-stu-id="340cd-111">Accept</span></span>|<span data-ttu-id="340cd-112">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="340cd-112">application/json;odata=verbose</span></span>|
+|<span data-ttu-id="340cd-113">Content-Type</span><span class="sxs-lookup"><span data-stu-id="340cd-113">Content-Type</span></span>|<span data-ttu-id="340cd-114">application/json;odata=verbose;charset=utf-8</span><span class="sxs-lookup"><span data-stu-id="340cd-114">application/json;odata=verbose;charset=utf-8</span></span>|
+|<span data-ttu-id="340cd-115">x-requestdigest</span><span class="sxs-lookup"><span data-stu-id="340cd-115">x-requestdigest</span></span>|<span data-ttu-id="340cd-116">目前網站的適當摘要。</span><span class="sxs-lookup"><span data-stu-id="340cd-116">The appropriate digest for current site.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1fe57-117">要求內文</span><span class="sxs-lookup"><span data-stu-id="1fe57-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="340cd-117">要求內文</span><span class="sxs-lookup"><span data-stu-id="340cd-117">Request body</span></span>
 
-| <span data-ttu-id="1fe57-118">名稱</span><span class="sxs-lookup"><span data-stu-id="1fe57-118">Name</span></span> | <span data-ttu-id="1fe57-119">必要項目</span><span class="sxs-lookup"><span data-stu-id="1fe57-119">Required</span></span> | <span data-ttu-id="1fe57-120">類型</span><span class="sxs-lookup"><span data-stu-id="1fe57-120">Type</span></span> | <span data-ttu-id="1fe57-121">描述</span><span class="sxs-lookup"><span data-stu-id="1fe57-121">Description</span></span> |
+| <span data-ttu-id="340cd-118">名稱</span><span class="sxs-lookup"><span data-stu-id="340cd-118">Name</span></span> | <span data-ttu-id="340cd-119">必要項目</span><span class="sxs-lookup"><span data-stu-id="340cd-119">Required</span></span> | <span data-ttu-id="340cd-120">類型</span><span class="sxs-lookup"><span data-stu-id="340cd-120">Type</span></span> | <span data-ttu-id="340cd-121">說明</span><span class="sxs-lookup"><span data-stu-id="340cd-121">Description</span></span> |
 |--------|-------|--------|------------|
-|<span data-ttu-id="1fe57-122">ModelUniqueId</span><span class="sxs-lookup"><span data-stu-id="1fe57-122">ModelUniqueId</span></span>|<span data-ttu-id="1fe57-123">是</span><span class="sxs-lookup"><span data-stu-id="1fe57-123">yes</span></span>|<span data-ttu-id="1fe57-124">string</span><span class="sxs-lookup"><span data-stu-id="1fe57-124">string</span></span>|<span data-ttu-id="1fe57-125">模型檔案的唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="1fe57-125">The unique ID of the model file.</span></span>|
-<span data-ttu-id="1fe57-126">TargetSiteUrl</span><span class="sxs-lookup"><span data-stu-id="1fe57-126">TargetSiteUrl</span></span>|<span data-ttu-id="1fe57-127">是</span><span class="sxs-lookup"><span data-stu-id="1fe57-127">yes</span></span>|<span data-ttu-id="1fe57-128">string</span><span class="sxs-lookup"><span data-stu-id="1fe57-128">string</span></span>|<span data-ttu-id="1fe57-129">目的文件庫網站的完整 URL。</span><span class="sxs-lookup"><span data-stu-id="1fe57-129">The full URL of the target library site.</span></span>|
-<span data-ttu-id="1fe57-130">TargetWebServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="1fe57-130">TargetWebServerRelativeUrl</span></span>|<span data-ttu-id="1fe57-131">是</span><span class="sxs-lookup"><span data-stu-id="1fe57-131">yes</span></span>|<span data-ttu-id="1fe57-132">string</span><span class="sxs-lookup"><span data-stu-id="1fe57-132">string</span></span>|<span data-ttu-id="1fe57-133">目的文件庫之網頁的伺服器相對 URL。</span><span class="sxs-lookup"><span data-stu-id="1fe57-133">The server relative URL of the web for the target library.</span></span>|
-<span data-ttu-id="1fe57-134">TargetLibraryServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="1fe57-134">TargetLibraryServerRelativeUrl</span></span>|<span data-ttu-id="1fe57-135">是</span><span class="sxs-lookup"><span data-stu-id="1fe57-135">yes</span></span>|<span data-ttu-id="1fe57-136">string</span><span class="sxs-lookup"><span data-stu-id="1fe57-136">string</span></span>|<span data-ttu-id="1fe57-137">目的文件庫的伺服器相對 URL。</span><span class="sxs-lookup"><span data-stu-id="1fe57-137">The server relative URL of the target library.</span></span>|
-<span data-ttu-id="1fe57-138">ViewOption</span><span class="sxs-lookup"><span data-stu-id="1fe57-138">ViewOption</span></span>|<span data-ttu-id="1fe57-139">否</span><span class="sxs-lookup"><span data-stu-id="1fe57-139">no</span></span>|<span data-ttu-id="1fe57-140">string</span><span class="sxs-lookup"><span data-stu-id="1fe57-140">string</span></span>|<span data-ttu-id="1fe57-141">指定是否要將新模型檢視設定為文件庫預設值。</span><span class="sxs-lookup"><span data-stu-id="1fe57-141">Specifies whether to set new model view as the library default.</span></span>|
+|<span data-ttu-id="340cd-122">__中繼資料</span><span class="sxs-lookup"><span data-stu-id="340cd-122">__metadata</span></span>|<span data-ttu-id="340cd-123">是</span><span class="sxs-lookup"><span data-stu-id="340cd-123">yes</span></span>|<span data-ttu-id="340cd-124">string</span><span class="sxs-lookup"><span data-stu-id="340cd-124">string</span></span>|<span data-ttu-id="340cd-125">在 SPO 上設定物件 Meta。</span><span class="sxs-lookup"><span data-stu-id="340cd-125">Set the object meta on the SPO.</span></span> <span data-ttu-id="340cd-126">一律使用值: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}。</span><span class="sxs-lookup"><span data-stu-id="340cd-126">Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}.</span></span>|
+|<span data-ttu-id="340cd-127">出版物</span><span class="sxs-lookup"><span data-stu-id="340cd-127">Publications</span></span>|<span data-ttu-id="340cd-128">是</span><span class="sxs-lookup"><span data-stu-id="340cd-128">yes</span></span>|<span data-ttu-id="340cd-129">MachineLearningPublicationEntityData[]</span><span class="sxs-lookup"><span data-stu-id="340cd-129">MachineLearningPublicationEntityData[]</span></span>|<span data-ttu-id="340cd-130">MachineLearningPublicationEntityData 的集合，每個集合會指定模型和目的文件庫。</span><span class="sxs-lookup"><span data-stu-id="340cd-130">The collection of MachineLearningPublicationEntityData each of which specifies the model and target document library.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1fe57-142">回應</span><span class="sxs-lookup"><span data-stu-id="1fe57-142">Response</span></span>
+### <a name="machinelearningpublicationentitydata"></a><span data-ttu-id="340cd-131">MachineLearningPublicationEntityData</span><span class="sxs-lookup"><span data-stu-id="340cd-131">MachineLearningPublicationEntityData</span></span>
+| <span data-ttu-id="340cd-132">名稱</span><span class="sxs-lookup"><span data-stu-id="340cd-132">Name</span></span> | <span data-ttu-id="340cd-133">必要項目</span><span class="sxs-lookup"><span data-stu-id="340cd-133">Required</span></span> | <span data-ttu-id="340cd-134">類型</span><span class="sxs-lookup"><span data-stu-id="340cd-134">Type</span></span> | <span data-ttu-id="340cd-135">描述</span><span class="sxs-lookup"><span data-stu-id="340cd-135">Description</span></span> |
+|--------|-------|--------|------------|
+|<span data-ttu-id="340cd-136">ModelUniqueId</span><span class="sxs-lookup"><span data-stu-id="340cd-136">ModelUniqueId</span></span>|<span data-ttu-id="340cd-137">是</span><span class="sxs-lookup"><span data-stu-id="340cd-137">yes</span></span>|<span data-ttu-id="340cd-138">string</span><span class="sxs-lookup"><span data-stu-id="340cd-138">string</span></span>|<span data-ttu-id="340cd-139">模型檔案的唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="340cd-139">The unique ID of the model file.</span></span>|
+|<span data-ttu-id="340cd-140">TargetSiteUrl</span><span class="sxs-lookup"><span data-stu-id="340cd-140">TargetSiteUrl</span></span>|<span data-ttu-id="340cd-141">是</span><span class="sxs-lookup"><span data-stu-id="340cd-141">yes</span></span>|<span data-ttu-id="340cd-142">string</span><span class="sxs-lookup"><span data-stu-id="340cd-142">string</span></span>|<span data-ttu-id="340cd-143">目標程式庫網站的完整 URL。</span><span class="sxs-lookup"><span data-stu-id="340cd-143">The full URL of the target library site.</span></span>|
+|<span data-ttu-id="340cd-144">TargetWebServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="340cd-144">TargetWebServerRelativeUrl</span></span>|<span data-ttu-id="340cd-145">是</span><span class="sxs-lookup"><span data-stu-id="340cd-145">yes</span></span>|<span data-ttu-id="340cd-146">string</span><span class="sxs-lookup"><span data-stu-id="340cd-146">string</span></span>|<span data-ttu-id="340cd-147">目標程式庫網頁的伺服器相對 URL。</span><span class="sxs-lookup"><span data-stu-id="340cd-147">The server relative URL of the web for the target library.</span></span>|
+|<span data-ttu-id="340cd-148">TargetLibraryServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="340cd-148">TargetLibraryServerRelativeUrl</span></span>|<span data-ttu-id="340cd-149">是</span><span class="sxs-lookup"><span data-stu-id="340cd-149">yes</span></span>|<span data-ttu-id="340cd-150">string</span><span class="sxs-lookup"><span data-stu-id="340cd-150">string</span></span>|<span data-ttu-id="340cd-151">目標程式庫的伺服器相對 URL。</span><span class="sxs-lookup"><span data-stu-id="340cd-151">The server relative URL of the target library.</span></span>|
+|<span data-ttu-id="340cd-152">ViewOption</span><span class="sxs-lookup"><span data-stu-id="340cd-152">ViewOption</span></span>|<span data-ttu-id="340cd-153">否</span><span class="sxs-lookup"><span data-stu-id="340cd-153">no</span></span>|<span data-ttu-id="340cd-154">string</span><span class="sxs-lookup"><span data-stu-id="340cd-154">string</span></span>|<span data-ttu-id="340cd-155">指定是否要將新模型檢視設定為程式庫預設值。</span><span class="sxs-lookup"><span data-stu-id="340cd-155">Specifies whether to set new model view as the library default.</span></span>|
 
-| <span data-ttu-id="1fe57-143">名稱</span><span class="sxs-lookup"><span data-stu-id="1fe57-143">Name</span></span>   | <span data-ttu-id="1fe57-144">類型</span><span class="sxs-lookup"><span data-stu-id="1fe57-144">Type</span></span>  | <span data-ttu-id="1fe57-145">描述</span><span class="sxs-lookup"><span data-stu-id="1fe57-145">Description</span></span>|
+## <a name="response"></a><span data-ttu-id="340cd-156">回應</span><span class="sxs-lookup"><span data-stu-id="340cd-156">Response</span></span>
+
+| <span data-ttu-id="340cd-157">名稱</span><span class="sxs-lookup"><span data-stu-id="340cd-157">Name</span></span>   | <span data-ttu-id="340cd-158">類型</span><span class="sxs-lookup"><span data-stu-id="340cd-158">Type</span></span>  | <span data-ttu-id="340cd-159">描述</span><span class="sxs-lookup"><span data-stu-id="340cd-159">Description</span></span>|
 |--------|-------|------------|
-|<span data-ttu-id="1fe57-146">200 OK</span><span class="sxs-lookup"><span data-stu-id="1fe57-146">200 OK</span></span>| |<span data-ttu-id="1fe57-147">成功</span><span class="sxs-lookup"><span data-stu-id="1fe57-147">Success</span></span>|
-|<span data-ttu-id="1fe57-148">201 已建立</span><span class="sxs-lookup"><span data-stu-id="1fe57-148">201 Created</span></span>| |<span data-ttu-id="1fe57-149">請注意，由於此 API 支援將模型套用至多個程式庫，因此即使將模型套用至其中一個程式庫失敗，也可讓 201 返回。</span><span class="sxs-lookup"><span data-stu-id="1fe57-149">Note that because this API supports applying model to multiple libraries, a 201 could be returned even if there's a failure applying the model to one of the libraries.</span></span> <br><span data-ttu-id="1fe57-150">檢查回應本文，了解模型是否成功套用至所有指定的程式庫。</span><span class="sxs-lookup"><span data-stu-id="1fe57-150">Check the response body to understand if the model has been successfully applied to all the specified libraries.</span></span> <span data-ttu-id="1fe57-151">請參閱[要求本文](rest-applymodel-method.md#request-body)取得詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="1fe57-151">See [Request body](rest-applymodel-method.md#request-body) for details.</span></span>|
+|<span data-ttu-id="340cd-160">201 已建立</span><span class="sxs-lookup"><span data-stu-id="340cd-160">201 Created</span></span>||<span data-ttu-id="340cd-161">這是個自訂 API 用以支援將模型套用至多個文件庫。</span><span class="sxs-lookup"><span data-stu-id="340cd-161">This is a customized API to support applying a model to multi document libraries.</span></span> <span data-ttu-id="340cd-162">在部分成功的情況下，仍然可以返回已建立 201，而且呼叫者必須檢查回應主體，以了解模型是否成功套用至文件庫。</span><span class="sxs-lookup"><span data-stu-id="340cd-162">In the case of partial success, 201 created could still be returned and the caller needs to inspect the response body to understand if the model has been successfully applied to a document library.</span></span>|
 
-## <a name="examples"></a><span data-ttu-id="1fe57-152">範例</span><span class="sxs-lookup"><span data-stu-id="1fe57-152">Examples</span></span>
+## <a name="response-body"></a><span data-ttu-id="340cd-163">回應本文</span><span class="sxs-lookup"><span data-stu-id="340cd-163">Response Body</span></span>
+| <span data-ttu-id="340cd-164">名稱</span><span class="sxs-lookup"><span data-stu-id="340cd-164">Name</span></span>   | <span data-ttu-id="340cd-165">類型</span><span class="sxs-lookup"><span data-stu-id="340cd-165">Type</span></span>  | <span data-ttu-id="340cd-166">說明</span><span class="sxs-lookup"><span data-stu-id="340cd-166">Description</span></span>|
+|--------|-------|------------|
+|<span data-ttu-id="340cd-167">TotalSuccesses</span><span class="sxs-lookup"><span data-stu-id="340cd-167">TotalSuccesses</span></span>|<span data-ttu-id="340cd-168">int</span><span class="sxs-lookup"><span data-stu-id="340cd-168">int</span></span>|<span data-ttu-id="340cd-169">成功套用至文件庫的模型總數。</span><span class="sxs-lookup"><span data-stu-id="340cd-169">The total number of a model being successfully applied to a document library.</span></span>|
+|<span data-ttu-id="340cd-170">TotalFailures</span><span class="sxs-lookup"><span data-stu-id="340cd-170">TotalFailures</span></span>|<span data-ttu-id="340cd-171">int</span><span class="sxs-lookup"><span data-stu-id="340cd-171">int</span></span>|<span data-ttu-id="340cd-172">無法套用至文件庫的模型總數。</span><span class="sxs-lookup"><span data-stu-id="340cd-172">The total number of a model failing to be applied to a document library.</span></span>|
+|<span data-ttu-id="340cd-173">詳細資料</span><span class="sxs-lookup"><span data-stu-id="340cd-173">Details</span></span>|<span data-ttu-id="340cd-174">MachineLearningPublicationResult[]</span><span class="sxs-lookup"><span data-stu-id="340cd-174">MachineLearningPublicationResult[]</span></span>|<span data-ttu-id="340cd-175">MachineLearningPublicationResult 的集合，每個集合會指定將模型套用至文件庫的詳細結果。</span><span class="sxs-lookup"><span data-stu-id="340cd-175">The collection of MachineLearningPublicationResult each of which specifies the detailed result of applying the model to the document library.</span></span>|
 
-### <a name="apply-a-model-to-the-contracts-document-library-in-the-repository-site"></a><span data-ttu-id="1fe57-153">將模型套用至存放庫網站中的合約文件庫</span><span class="sxs-lookup"><span data-stu-id="1fe57-153">Apply a model to the contracts document library in the repository site</span></span>
+### <a name="machinelearningpublicationresult"></a><span data-ttu-id="340cd-176">MachineLearningPublicationResult</span><span class="sxs-lookup"><span data-stu-id="340cd-176">MachineLearningPublicationResult</span></span>
+| <span data-ttu-id="340cd-177">名稱</span><span class="sxs-lookup"><span data-stu-id="340cd-177">Name</span></span>   | <span data-ttu-id="340cd-178">類型</span><span class="sxs-lookup"><span data-stu-id="340cd-178">Type</span></span>  | <span data-ttu-id="340cd-179">說明</span><span class="sxs-lookup"><span data-stu-id="340cd-179">Description</span></span>|
+|--------|-------|------------|
+|<span data-ttu-id="340cd-180">StatusCode</span><span class="sxs-lookup"><span data-stu-id="340cd-180">StatusCode</span></span>|<span data-ttu-id="340cd-181">int</span><span class="sxs-lookup"><span data-stu-id="340cd-181">int</span></span>|<span data-ttu-id="340cd-182">HTTP 狀態碼。</span><span class="sxs-lookup"><span data-stu-id="340cd-182">The HTTP status code.</span></span>|
+|<span data-ttu-id="340cd-183">ErrorMessage</span><span class="sxs-lookup"><span data-stu-id="340cd-183">ErrorMessage</span></span>|<span data-ttu-id="340cd-184">字串</span><span class="sxs-lookup"><span data-stu-id="340cd-184">string</span></span>|<span data-ttu-id="340cd-185">錯誤訊息，說明將模型套用至文件庫時發生的錯誤。</span><span class="sxs-lookup"><span data-stu-id="340cd-185">The error message which tells what's wrong when apply the model to the document library.</span></span>|
+|<span data-ttu-id="340cd-186">出版物</span><span class="sxs-lookup"><span data-stu-id="340cd-186">Publication</span></span>|<span data-ttu-id="340cd-187">MachineLearningPublicationEntityData</span><span class="sxs-lookup"><span data-stu-id="340cd-187">MachineLearningPublicationEntityData</span></span>|<span data-ttu-id="340cd-188">它會指定模型資訊和目的文件庫。</span><span class="sxs-lookup"><span data-stu-id="340cd-188">It specifies the model info and the target document library.</span></span>| 
 
-<span data-ttu-id="1fe57-154">在此範例中，Contoso 合約文件了解模型的識別碼為 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="1fe57-154">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
+### <a name="machinelearningpublicationentitydata"></a><span data-ttu-id="340cd-189">MachineLearningPublicationEntityData</span><span class="sxs-lookup"><span data-stu-id="340cd-189">MachineLearningPublicationEntityData</span></span>
+| <span data-ttu-id="340cd-190">名稱</span><span class="sxs-lookup"><span data-stu-id="340cd-190">Name</span></span> | <span data-ttu-id="340cd-191">類型</span><span class="sxs-lookup"><span data-stu-id="340cd-191">Type</span></span> | <span data-ttu-id="340cd-192">描述</span><span class="sxs-lookup"><span data-stu-id="340cd-192">Description</span></span> |
+|--------|--------|------------|
+|<span data-ttu-id="340cd-193">ModelUniqueId</span><span class="sxs-lookup"><span data-stu-id="340cd-193">ModelUniqueId</span></span>|<span data-ttu-id="340cd-194">string</span><span class="sxs-lookup"><span data-stu-id="340cd-194">string</span></span>|<span data-ttu-id="340cd-195">模型檔案的唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="340cd-195">The unique ID of the model file.</span></span>|
+|<span data-ttu-id="340cd-196">TargetSiteUrl</span><span class="sxs-lookup"><span data-stu-id="340cd-196">TargetSiteUrl</span></span>|<span data-ttu-id="340cd-197">string</span><span class="sxs-lookup"><span data-stu-id="340cd-197">string</span></span>|<span data-ttu-id="340cd-198">目標程式庫網站的完整 URL。</span><span class="sxs-lookup"><span data-stu-id="340cd-198">The full URL of the target library site.</span></span>|
+|<span data-ttu-id="340cd-199">TargetWebServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="340cd-199">TargetWebServerRelativeUrl</span></span>|<span data-ttu-id="340cd-200">string</span><span class="sxs-lookup"><span data-stu-id="340cd-200">string</span></span>|<span data-ttu-id="340cd-201">目標程式庫網頁的伺服器相對 URL。</span><span class="sxs-lookup"><span data-stu-id="340cd-201">The server relative URL of the web for the target library.</span></span>|
+|<span data-ttu-id="340cd-202">TargetLibraryServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="340cd-202">TargetLibraryServerRelativeUrl</span></span>|<span data-ttu-id="340cd-203">string</span><span class="sxs-lookup"><span data-stu-id="340cd-203">string</span></span>|<span data-ttu-id="340cd-204">目標程式庫的伺服器相對 URL。</span><span class="sxs-lookup"><span data-stu-id="340cd-204">The server relative URL of the target library.</span></span>|
 
-#### <a name="sample-request"></a><span data-ttu-id="1fe57-155">範例要求</span><span class="sxs-lookup"><span data-stu-id="1fe57-155">Sample request</span></span>
+## <a name="examples"></a><span data-ttu-id="340cd-205">範例</span><span class="sxs-lookup"><span data-stu-id="340cd-205">Examples</span></span>
+
+### <a name="apply-a-model-to-the-contracts-document-library-in-the-repository-site"></a><span data-ttu-id="340cd-206">將模型套用至存放庫網站中的合約文件庫</span><span class="sxs-lookup"><span data-stu-id="340cd-206">Apply a model to the contracts document library in the repository site</span></span>
+
+<span data-ttu-id="340cd-207">在此範例中，Contoso 合約文件了解模型的識別碼為 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="340cd-207">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
+
+#### <a name="sample-request"></a><span data-ttu-id="340cd-208">範例要求</span><span class="sxs-lookup"><span data-stu-id="340cd-208">Sample request</span></span>
 
 ```HTTP
 {
@@ -85,11 +112,11 @@ POST /_api/machinelearning/publications HTTP/1.1
 ```
 
 
-#### <a name="sample-response"></a><span data-ttu-id="1fe57-156">範例回應</span><span class="sxs-lookup"><span data-stu-id="1fe57-156">Sample response</span></span>
+#### <a name="sample-response"></a><span data-ttu-id="340cd-209">範例回應</span><span class="sxs-lookup"><span data-stu-id="340cd-209">Sample response</span></span>
 
-<span data-ttu-id="1fe57-157">在回應中，TotalFailures 和 TotalSuccesses 是指要套用至指定程式庫之模型的失敗和成功次數。</span><span class="sxs-lookup"><span data-stu-id="1fe57-157">In the response, TotalFailures and TotalSuccesses refers to the number of failures and successes of the model being applies to the specified libraries.</span></span>
+<span data-ttu-id="340cd-210">在回應中，TotalFailures 和 TotalSuccesses 是指要套用至指定程式庫之模型的失敗和成功次數。</span><span class="sxs-lookup"><span data-stu-id="340cd-210">In the response, TotalFailures and TotalSuccesses refers to the number of failures and successes of the model being applies to the specified libraries.</span></span>
 
-<span data-ttu-id="1fe57-158">**狀態碼:** 200</span><span class="sxs-lookup"><span data-stu-id="1fe57-158">**Status code:** 200</span></span>
+<span data-ttu-id="340cd-211">**狀態碼:** 201</span><span class="sxs-lookup"><span data-stu-id="340cd-211">**Status code:** 201</span></span>
 
 ```JSON
 {
@@ -103,7 +130,7 @@ POST /_api/machinelearning/publications HTTP/1.1
                 "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
                 "ViewOption": "NewViewAsDefault"
             },
-            "StatusCode": 200
+            "StatusCode": 201
         }
     ],
     "TotalFailures": 0,
@@ -111,6 +138,6 @@ POST /_api/machinelearning/publications HTTP/1.1
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1fe57-159">另請參閱</span><span class="sxs-lookup"><span data-stu-id="1fe57-159">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="340cd-212">另請參閱</span><span class="sxs-lookup"><span data-stu-id="340cd-212">See also</span></span>
 
-[<span data-ttu-id="1fe57-160">Syntex 文件了解模型 REST API</span><span class="sxs-lookup"><span data-stu-id="1fe57-160">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
+[<span data-ttu-id="340cd-213">Syntex 文件瞭解模型 REST API</span><span class="sxs-lookup"><span data-stu-id="340cd-213">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
