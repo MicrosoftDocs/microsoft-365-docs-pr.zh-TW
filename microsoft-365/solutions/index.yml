@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: c71ba6628ed858311db3d58c144295ff617679dc
-  ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+  ms.openlocfilehash: 053a20e65859fedbd91c9357ccdbd98bdb5109b3
+  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/06/2021
-  ms.locfileid: "52789204"
+  ms.lasthandoff: 06/29/2021
+  ms.locfileid: "53177390"
 landingContent:
 - title: 基礎解決方案指南
   linkLists:
@@ -33,6 +33,8 @@ landingContent:
       url: deploy-threat-protection.md
     - text: 為資料隱私權規定部署資訊保護
       url: information-protection-deploy.md
+    - text: 適用於小型企業和活動的 Microsoft 365
+      url: ../campaigns/index.md
 - title: 架構圖例與設計原則
   linkLists:
   - linkListType: architecture
@@ -41,46 +43,50 @@ landingContent:
       url: cloud-architecture-models.md
     - text: Microsoft 365 生產力圖例
       url: productivity-illustrations.md
-    - text: Teams 架構海報
-      url: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: 設計原則
       url: design-principles.md
-- title: 工作負載資源
+    - text: 使用者的資訊圖表
+      url: infographics-for-users.md
+    - text: 架構圖示和範本
+      url: architecture-icons-templates.md
+- title: 系統管理和移轉解決方案指南
   linkLists:
-  - linkListType: reference
+  - linkListType: how-to-guide
     links:
-    - text: Contoso 案例研究
-      url: contoso-case-study-solutions.md
-  - linkListType: tutorial
-    links:
-    - text: 測試實驗室指南
-      url: test-lab-guides-overview-solutions.md
+    - text: 租用戶管理
+      url: tenant-management-overview.md
+    - text: 移除離職員工
+      url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 將檔案共用移轉至 Microsoft 365
+      url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 - title: 團隊工作和共同作業解決方案指南
   linkLists:
   - linkListType: deploy
     links:
     - text: 規劃及部署 Teams 語音解決方案
       url: deploy-voice.md
+    - text: 管理公司的合約
+      url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
   - linkListType: overview
     links:
+    - text: 智慧型內部網路
+      url: /sharepoint/intelligent-internet-overview.md
     - text: 共同作業控管
       url: collaboration-governance-overview.md
     - text: 檔案共同作業
       url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: 智慧型內部網路
-      url: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: 適用於企業的 OneDrive 指南
       url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-- title: 安全性與合規性解決方案指南
+- title: 合規性解決方案指南
   linkLists:
   - linkListType: deploy
     links:
-    - text: 安全性團隊支援在家工作的最常見工作
-      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: 適用於商務的 Microsoft 365 安全性 (BDM)
-      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: 部署適用於端點的 Microsoft Defender
-      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 內部風險解決方案
+      url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 稽核解決方案
+      url: ../compliance/auditing-solutions-overview.md
+    - text: Microsoft 365 進階電子文件探索
+      url: ../compliance/overview-ediscovery-20.md
   - linkListType: reference
     links:
     - text: ISO - 建議使用的行動計劃
@@ -91,6 +97,44 @@ landingContent:
       url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: GDPR - 建議的行動計劃
       url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: 安全性解決方案指南
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 安全性團隊支援在家工作的最常見工作
+      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 適用於商務的 Microsoft 365 安全性 (BDM)
+      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 身分識別與裝置存取設定
+      url: ../security/office-365-security/microsoft-365-policies-configurations.md
+    - text: 部署適用於端點的 Microsoft Defender
+      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+    - text: 評估 Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: 優先帳戶的安全性建議
+      url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+    - text: 評估 Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: 適用於端點的 Microsoft Defender 中的位址誤判/誤否定
+      url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
+  - linkListType: how-to-guide
+    links:
+    - text: 從 Symantec 移轉至適用於端點的 Microsoft Defender
+      url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
+    - text: 從 McAfee 移轉至適用於端點的 Microsoft Defender
+      url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
+    - text: 從非 Microsoft 端點保護切換至適用於端點的 Microsoft Defender
+      url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+- title: 工作負載資源
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Contoso 案例研究
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: 測試實驗室指南
+      url: test-lab-guides-overview-solutions.md
 - title: 產業專屬的指引
   linkLists:
   - linkListType: overview
