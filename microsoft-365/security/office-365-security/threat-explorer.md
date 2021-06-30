@@ -19,12 +19,12 @@ description: 在 Microsoft 365 Defender 入口網站中使用 Explorer 和即時
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195030"
+ms.locfileid: "53203253"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -56,7 +56,8 @@ ms.locfileid: "53195030"
 
 ## <a name="improvements-to-threat-hunting-experience"></a>威脅搜尋體驗的增強功能
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>在 Explorer/即時偵測中 Office 365 警示的警報識別碼簡介 (Preview) 
+
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>在 Explorer/即時偵測內，Office 365 警示的 Defender 警報識別碼簡介
 
 現在，如果您從警示流覽至威脅瀏覽器，它就會在瀏覽器中開啟篩選的視圖，並以警示原則識別碼篩選 (原則識別碼為警示原則) 的唯一識別碼。
 在威脅瀏覽器和即時偵測中引入警示識別碼，使這項整合更為相關 (在威脅瀏覽器和即時偵測中看到警示) 識別碼的範例，這樣您就能看到與特定警示相關的訊息，以及電子郵件的計數。 您也可以查看郵件是否為警示的一部分，以及從該郵件流覽至特定警示。
@@ -69,12 +70,12 @@ ms.locfileid: "53195030"
 > [!div class="mx-imgBorder"]
 > ![詳細資料快顯視窗中的警示識別碼](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>將瀏覽器的 (和即時的偵測功能延伸) 從7天到30天 (預覽的試用承租人的資料保留和搜尋限制) 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>延伸瀏覽器的 (和即時偵測) 從7天到30天的試用承租人的資料保留和搜尋限制
 
 在這項變更中，您將可以搜尋和篩選超過30天的電子郵件資料 (在威脅瀏覽器/即時偵測中，針對 Office P1 和 P2 試用租使用者的 Defender，進行過去7天) 中的增加。
 這不會影響 P1 和 P2/E5 客戶的任何實際執行承租人，其已有30天的資料保留和搜尋功能。
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>更新威脅瀏覽器的記錄匯出 (預覽的限制) 
+### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>更新威脅瀏覽器之記錄的匯出限制
 
 做為此更新的一部分，可從威脅瀏覽器匯出的電子郵件記錄的列數會從9990增加為200000記錄。 目前可匯出的一組資料行將保持不變，但是列數會從目前的限制增加。
 

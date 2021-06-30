@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137760"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203289"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -149,7 +149,7 @@ ms.locfileid: "53137760"
 
      |動作|垃圾郵件|高<br>信賴度<br>垃圾郵件|網路釣魚|高<br>信賴度<br>網路釣魚|大量|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/checkmark.png)<sup>\*</sup>|![核取記號](../../media/checkmark.png)<sup>\*</sup>|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)<sup>\*</sup>|
+     |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/checkmark.png)<sup>\*</sup>|![核取記號](../../media/checkmark.png)<sup>\*</sup>|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)<sup>\*</sup>|
      |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <p> 您稍後可以在 [新增此 X 標頭文字] 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <p> 裁決為 **垃圾郵件** 和 **高信賴度垃圾郵件** 的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)<sup>\*</sup>|
      |**在主旨列前加上文字**：新增文字至郵件主旨列的開頭。 郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1,2</sup> <p> 您稍後可以在 [在主旨列前加上此文字] 方塊中輸入文字。|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)|
      |**將郵件重新導向至電子郵件地址**：將郵件傳送給其他收件者，而不是預定收件者。 <p> 您稍後可以在 [重新導向到這個電子郵件地址] 方塊中指定收件者。|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
@@ -182,7 +182,7 @@ ms.locfileid: "53137760"
 
    - **重新導向到這個電子郵件地址**：只有當您選取 [將郵件重新導向至電子郵件地址] 做為垃圾郵件篩選裁決的動作時，才會有此方塊，且是必要的設定。 輸入您要遞送郵件的電子郵件地址。 您可以輸入多個值並以分號 (;) 分隔。
 
-   - **啟用安全提示**：預設會啟用安全提示，但您可以清除核取方塊加以停用。 如需有關安全性提示的詳細資訊，請參閱[電子郵件的安全提示](safety-tips-in-office-365.md)。
+   - **啟用安全提示**：預設會啟用安全提示，但您可以清除核取方塊加以停用。
 
    - **啟用零時差自動清除 (ZAP)**：ZAP 會偵測傳送到 Exchange Online 信箱的郵件，並採取行動。 如需詳細資訊，請參閱[零時差自動清除 - 防範垃圾郵件和惡意程式碼](zero-hour-auto-purge.md)。
 

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e4469d8abcfa8308c64e2efa7f7dc4f0156e5718
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 31077b3ffbddb78ecac8841c22c77fa75f6e2c32
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957524"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203085"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的先決條件
 
@@ -29,7 +29,7 @@ ms.locfileid: "51957524"
 --- | ---
 授權 |Microsoft 受管理的電腦需要 Microsoft 365 E3 授權才能將 Microsoft Defender 用於端點 (或對等) 指派給您的使用者。<br>如需特定服務方案的詳細資訊，請參閱本主題中 [有關授權的詳細](#more-about-licenses) 資訊。<br>如需可用授權的詳細資訊，請參閱[Microsoft 365 授權](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)。
 連線能力 |  所有 Microsoft 受管理的電腦裝置都需要從公司網路連接許多 Microsoft 服務端點。<br><br>如需必要 IPs 和 URLs 的完整清單，請參閱 [Network configuration](../get-ready/network.md)。 
-Azure Active Directory |    Azure Active Directory (azure ad) 必須是所有使用者帳戶的授權來源，或使用者帳戶必須從內部部署 Active Directory 同步處理，但必須使用最新的 Azure AD 連線版本。<br><br>Microsoft 受管理的電腦使用者必須啟用[Enterprise 狀態漫遊](/azure/active-directory/devices/enterprise-state-roaming-overview)。<br><br>如需詳細資訊，請參閱[AZURE AD 連線](/azure/active-directory/hybrid/whatis-azure-ad-connect)。<br><br>如需支援的 Azure AD 連線版本的詳細資訊，請參閱[AZURE AD 連線：版本發行歷程記錄](/azure/active-directory/hybrid/reference-connect-version-history)。
+Azure Active Directory |    Azure Active Directory (azure ad) 必須是所有使用者帳戶的授權來源，或使用者帳戶必須從內部部署 Active Directory 同步處理，但必須使用最新的 Azure AD 連線版本。<br><br>如需詳細資訊，請參閱[AZURE AD 連線](/azure/active-directory/hybrid/whatis-azure-ad-connect)。<br><br>如需支援的 Azure AD 連線版本的詳細資訊，請參閱[AZURE AD 連線：版本發行歷程記錄](/azure/active-directory/hybrid/reference-connect-version-history)。
 驗證 |    如果 Azure AD 不是使用者帳戶的主要驗證來源，您必須在 Azure AD 連線中設定下列其中一項：<br>-密碼雜湊同步處理<br>傳遞驗證<br>-外部身分識別提供者 (包括 Windows 伺服器 ADFS 和非 Microsoft IDPs) 設定為符合 Azure AD 整合需求。 如需詳細資訊，請參閱 [指導方針](https://www.microsoft.com/download/details.aspx?id=56843) 。 <br><br>使用 Azure AD 連線設定驗證選項時，也建議使用密碼回寫。 如需詳細資訊，請參閱 [密碼回寫](/azure/active-directory/authentication/howto-sspr-writeback)。 <br><br>如果已執行外部身分識別提供者，則必須驗證解決方案：<br>-符合 Azure AD 整合需求<br>-支援 Azure AD 條件式存取，允許設定 Microsoft 受管理的電腦裝置合規性原則<br>-啟用裝置註冊，並使用 Microsoft 受管理的電腦部分所需的 Microsoft 365 服務或功能 <br><br>如需 Azure AD 驗證選項的詳細資訊，請參閱[AZURE ad 連線使用者登入選項](/azure/active-directory/connect/active-directory-aadconnect-user-signin)。
 Microsoft 365 | Microsoft 受管理的電腦使用者必須啟用商務用 OneDrive。<br><br>雖然不需要使用 Microsoft 受管理的電腦註冊，我們強烈建議您將下列服務遷移至雲端：<br>-電子郵件：以 Exchange 2013 或更高的內部部署方式，遷移至雲端架構信箱、Exchange 線上或使用 Exchange Online 混合式進行設定。<br>-檔案和資料夾：遷移至商務用 OneDrive 或 SharePoint 線上。<br>-線上共同作業工具：遷移至 Teams。
 裝置管理 | Microsoft 受管理的電腦裝置需要使用 Microsoft Intune 管理。 必須將 Intune 設定為行動裝置管理授權。<br><br>如需詳細資訊，請參閱[Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)。 
@@ -44,7 +44,7 @@ Microsoft 受管理的電腦需要某些授權選項才能正常運作。 如需
 > [!TIP]
 > 若要將這些授權選項指派給特定使用者，建議您利用 Azure Active Directory 的[群組型授權功能](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
-- Azure Active Directory 進階版 P1
+- Azure Active Directory Premium P1
 - Microsoft Intune 
 - Windows 10 企業版  
 - 適用於端點的 Microsoft Defender

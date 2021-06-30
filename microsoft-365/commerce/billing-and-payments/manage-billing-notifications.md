@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 瞭解如何管理接收帳單通知電子郵件和發票附件的人員。
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054581"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203241"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帳單通知和發票附件
 
@@ -55,7 +55,7 @@ ms.locfileid: "53054581"
 3. 在右窗格的 [指派的系統 **管理員** ] 索引標籤上，選取 [ **新增**]。
 4. 在 [ **新增系統管理員** ] 窗格中，輸入使用者的顯示名稱或使用者名稱，然後從建議清單中選取使用者。
 5. 在您完成之前，新增多個使用者。
-6. 選取 **[儲存]**。 使用者已新增至指派的系統管理員清單。
+6. 選取 ****[儲存]。 使用者已新增至指派的系統管理員清單。
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>使用 [帳單通知] 頁面移除系統管理員角色
 
@@ -127,6 +127,6 @@ ms.locfileid: "53054581"
 ## <a name="related-content"></a>相關內容
 
 [檢視帳單](view-your-bill-or-invoice.md) (文章)\
-[墨西哥企業的 Microsoft 365 帳單資訊](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (文章)
+[墨西哥企業的 Microsoft 365 帳單資訊](mexico-billing-info.md) (文章)
 [瞭解商務用 Microsoft 365 帳單或發票](understand-your-invoice2.md) (文章) \
 [同時新增使用者並指派授權](../../admin/add-users/add-users.md) (文章) 
