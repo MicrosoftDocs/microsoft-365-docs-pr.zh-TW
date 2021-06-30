@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用攻擊模擬訓練，在其 Microsoft 365 E5 或 Microsoft Defender 中對 Office 365 計畫2組織執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 1fa10d0d29b76d1631dd349d255b6c386557b5b8
+ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082897"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53222667"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>開始使用攻擊模擬訓練
 
@@ -52,7 +52,7 @@ ms.locfileid: "53082897"
 
 - 攻擊模擬訓練沒有對應的 PowerShell Cmdlet。
 
-- 攻擊類比和訓練相關資料會與其他客戶資料一起儲存，以供 Microsoft 365 服務使用。 如需詳細資訊，請參閱[Microsoft 365 資料位置](../../enterprise/o365-data-locations.md)。 可在下列地區取得攻擊模擬： <、APC、EUR、IND、CAN、澳大利亞、FRA、GBR、JPN 和 KOR。
+- 攻擊類比和訓練相關資料會與其他客戶資料一起儲存，以供 Microsoft 365 服務使用。 如需詳細資訊，請參閱[Microsoft 365 資料位置](../../enterprise/o365-data-locations.md)。 可在下列地區取得攻擊模擬： <、APC、EUR、IND、CAN、澳大利亞、FRA、GBR、JPN、KOR、BRA、LAM 及 CHE。
 
 - 在 15 2021 年6月為止，GCC 中提供攻擊模擬訓練。 如果您的組織已 Office 365 G5 GCC 或 Microsoft Defender for Office 365 (Plan 2) ，您可以使用 Microsoft 365 Defender 入口網站中的攻擊模擬訓練訓練，在組織中執行實際的攻擊案例，如本文所述。 GCC 高或 DoD 環境中尚未提供攻擊模擬訓練。
 
