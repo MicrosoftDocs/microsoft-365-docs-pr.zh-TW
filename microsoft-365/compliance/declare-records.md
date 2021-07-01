@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 [保留標籤] 宣告記錄。
-ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903897"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226992"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用 [保留標籤] 宣告記錄
 
@@ -36,7 +36,7 @@ ms.locfileid: "52903897"
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>如何顯示將內容標示為監管記錄的選項
 
->[!NOTE] 
+> [!NOTE]
 > 下列程序是可審核的動作，在審核記錄的 [[保留原則和保留標籤活動]](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) 章節中記錄 **[為保留標籤啟動的監管記錄選項]**。
 
 根據預設，用以將內容標示為監管記錄的保留標籤選項，不會在保留標籤精靈中顯示。 若要顯示此選項，您必須先執行 PowerShell 命令：
@@ -44,13 +44,14 @@ ms.locfileid: "52903897"
 1. [連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 執行下列 Cmdlet：
-    
+
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
+
     系統不會提示您確認，且設定會立即生效。
 
-如果您改變主意，想在保留標籤精靈中變更這個選項，要將它再次隱藏您可以執行相同的 Cmdlet 並使用 **[false]** 值：`Set-RegulatoryComplianceUI -Enabled $false` 
+如果您改變主意，想在保留標籤精靈中變更這個選項，要將它再次隱藏您可以執行相同的 Cmdlet 並使用 **[false]** 值：`Set-RegulatoryComplianceUI -Enabled $false`
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>設定 [保留標籤] 以宣告記錄
 
@@ -60,7 +61,7 @@ ms.locfileid: "52903897"
 
 ![設定保留標籤，將內容標示為記錄或監管](../media/recordversioning6.png)
 
-您可視需要將保留標籤套用至 SharePoint 或 OneDrive 文件和 Exchange 電子郵件。 
+您可視需要將保留標籤套用至 SharePoint 或 OneDrive 文件和 Exchange 電子郵件。
 
 如需完整指示：
 
@@ -73,7 +74,7 @@ ms.locfileid: "52903897"
 
 將內容標示為記錄或監管記錄的保留標籤，可供使用者在應用程式中套用：
 
-- 針對 Exchange，任何信箱存取權的使用者都可以套用這些標籤。 
+- 針對 Exchange，任何信箱存取權的使用者都可以套用這些標籤。
 - 對於 SharePoint 和 OneDrive，預設 [成員] 群組 ([參與] 權限等級) 中的任何使用者都能套用這些標籤。
 
 使用保留標籤將文件標示為記錄的範例：
@@ -84,7 +85,7 @@ ms.locfileid: "52903897"
 
 將項目標示為記錄的動作會記錄在稽核記錄中。
 
-對於 SharePoint 項目： 
+對於 SharePoint 項目：
 - 於 **[檔案和頁面活動]**，選取 **[已變更檔案的保留標籤]**。 此稽核事件適用於將項目標記為記錄、法規記錄或標準保留標記的保留標記。
 
 對於 Exchange 項目：

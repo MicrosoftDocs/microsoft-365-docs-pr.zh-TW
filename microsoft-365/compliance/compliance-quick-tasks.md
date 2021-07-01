@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: 深入瞭解可協助您快速開始使用 Microsoft 365 中的合規性的任務。
-ms.openlocfilehash: 3f93eb31800d158a33b1f3c0acdd48d650b2153e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113389"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227256"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>開始使用 Microsoft 365 合規性的快速工作
 
@@ -30,7 +30,7 @@ ms.locfileid: "52113389"
 
 ## <a name="task-1-configure-compliance-permissions"></a>任務1：設定合規性許可權
 
-請務必管理組織中的哪些人員可以存取 Microsoft 365 合規性中心，以查看內容和執行管理工作。 Microsoft 365 提供與相容性和使用 Microsoft 365 規範中心所包含之工具相關的管理角色。
+請務必管理組織中的哪些人員可以存取 Microsoft 365 合規性中心，以查看內容和執行管理工作。 Microsoft 365 提供與相容性和使用 Microsoft 365 合規性中心中所含工具相關的管理角色。
 
 從為組織中的人員指派合規性許可權開始，讓他們能夠執行這些工作，並防止未經授權的人員存取其責任以外的區域。 在您開始設定及實施 Microsoft 365 隨附的規範解決方案之前，您會想要確定已將適當的人員指派給 **合規性資料管理員** 和 **合規性管理員** 管理員角色。 您也必須將使用者指派給 Azure Active Directory 全域讀取者角色，才能在合規性管理員中查看資料。
 
@@ -44,10 +44,10 @@ ms.locfileid: "52113389"
 
 如需開始使用合規性管理員的逐步指引，請參閱 [合規性管理員](compliance-manager-setup.md)入門。
 
->[!IMPORTANT]
->對大多數的組織而言，安全性和合規性已緊密整合。 您的組織必須處理基本的安全性、威脅防護和身分識別與存取管理區域，以協助為安全性和合規性提供深層防禦方法。
+> [!IMPORTANT]
+> 對大多數的組織而言，安全性和合規性已緊密整合。 您的組織必須處理基本的安全性、威脅防護和身分識別與存取管理區域，以協助為安全性和合規性提供深層防禦方法。
 >
->請檢查 Microsoft 365 安全中心的[Microsoft 365 安全評分](../security/defender/microsoft-secure-score.md)，並完成下列文章中所述的工作：
+> 請檢查 Microsoft 365 安全中心的[Microsoft 365 安全評分](../security/defender/microsoft-secure-score.md)，並完成下列文章中所述的工作：
 >
 > - [安全性藍圖-前30天、90天和之後的頭等大事](../security/office-365-security/security-roadmap.md)
 > - [最常見的12個任務，可供安全性小組用來支援在家運作](../security/top-security-tasks-for-remote-work.md)
@@ -56,7 +56,7 @@ ms.locfileid: "52113389"
 
 現在，您已經決定組織目前的狀態，以及誰可以管理規範功能，下一步是確認您已具備執行規范調查的資料，並為組織中的網路和使用者活動產生報告。 啟用審核也是本文稍後所述之規範解決方案的重要必要條件。
 
-「審核」記錄提供的資訊是協助您管理法規遵從性需求的有用工具，可協助您管理及監視需要改進的合規性區域。 在記錄活動之前，必須先啟用審核記錄，然後才能搜尋審核記錄。 啟用時，您組織中的使用者和系統管理員活動會記錄在審核記錄中，並在90天內保留，而且會根據指派給使用者的授權，最多一年。
+由「審核」記錄提供的 Insights，是協助符合您的相容性需求的重要工具，可協助您管理及監視需要改進的合規性區域。 在記錄活動之前，必須先啟用審核記錄，然後才能搜尋審核記錄。 啟用時，您組織中的使用者和系統管理員活動會記錄在審核記錄中，並在90天內保留，而且會根據指派給使用者的授權，最多一年。
 
 如需開啟審計的逐步指示，請參閱 [開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
@@ -146,7 +146,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需定義自訂敏感資訊類型的逐步指引，請參閱在 [安全性 & 規範中心建立自訂機密資訊類型](./create-a-custom-sensitive-information-type.md)。
 
-### <a name="prevent-data-loss"></a>防止資料外洩
+### <a name="prevent-data-loss"></a>防止資料遺失
 
 [資料遺失防護 (DLP) 原則](dlp-learn-about-dlp.md)可讓您識別、監視和自動保護整個 Microsoft 365 組織中的機密資訊。 使用 DLP 原則在 Microsoft 服務中識別敏感專案，避免意外共用機密專案，以及協助使用者瞭解如何保持相容性，而不中斷其工作流程。
 

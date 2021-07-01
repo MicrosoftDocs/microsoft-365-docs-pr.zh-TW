@@ -21,12 +21,12 @@ search.appverid:
 description: 瞭解如何使用 AllowSelfServicePurchase PowerShell Cmdlet 來開啟或關閉自助購買服務。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536127"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227472"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase
 
@@ -150,7 +150,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ### <a name="solution"></a>解決方案
 
-升級到 TLS 1.2： [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+升級到 TLS 1.2： (/mem/configmgr/core/plan-design/security/enable-tls-1-2) 
 
 <!--
 ## Uninstall the MSCommerce module

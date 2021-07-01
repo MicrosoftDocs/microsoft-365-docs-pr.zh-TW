@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: 針對使用 Microsoft 365 的企業，尋找最新的操作方法、提示、資源及指導方針。
-ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: fb261fbb5b52e81861fde16f6effc12b0a232e80
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023734"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227916"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>使用遠端工作為小型企業提供協助
 
 隨著企業可讓使用者在遠端與客戶進行遠端工作並與其客戶進行互動，此網站會使用 Microsoft 365 的企業遠端作業的最新資訊、提示、資源及指引，加以更新。
 
->[!TIP]
->沒有 Microsoft_Teams？ 在您註冊1年) 時，在 Office 中取得6個月的 Microsoft Teams，以供免費 (。 請先取得本文所述的技術，做為這項服務的一部分。 如需詳細資訊，請參閱 [試用1個月免費](https://aka.ms/SMBTeamsOffer)。
+> [!TIP]
+> 沒有 Microsoft_Teams？ 在您註冊1年) 時，在 Office 中取得6個月的 Microsoft Teams，以供免費 (。 請先取得本文所述的技術，做為這項服務的一部分。 如需詳細資訊，請參閱 [試用1個月免費](https://aka.ms/SMBTeamsOffer)。
 
 ## <a name="remote-work-for-your-small-business-video"></a>適用于小型企業的遠端工作 (影片) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "52023734"
 
 ## <a name="connect-with-employees-and-customers"></a>與員工及客戶連線
 
-您仍然可以與員工、客戶、用戶端和合作夥伴進行連線，即使您無法滿足面對面的臉。 使用 Microsoft Teams 以繼續進行商務用，並與客戶連接。 
+您仍然可以與員工、客戶、用戶端和合作夥伴進行連線，即使您無法滿足面對面的臉。 使用 Microsoft Teams 以繼續進行商務用，並與客戶連接。
 
 ### <a name="meet-up-in-teams"></a>在 Teams 中開會
 
@@ -83,11 +83,11 @@ ms.locfileid: "52023734"
 
 Microsoft 365 商務版的技術檔中樞會以新的安全遠端工作指導方針更新。
 
-如需詳細資訊，請參閱[Microsoft 365 商務版資源](https://docs.microsoft.com/microsoft-365/business)。
+如需詳細資訊，請參閱[Microsoft 365 商務資源](/microsoft-365/business)。
 
-## <a name="need-to-ask-a-question"></a>需要提出問題嗎？ 
+## <a name="need-to-ask-a-question"></a>需要提出問題嗎？
 
 在[Teams 論壇](https://answers.microsoft.com/msteams/forum)或[Office 系統管理員論壇](https://answers.microsoft.com)中要求。
 
 > [!NOTE]
-> 您可以使用 Microsoft 365 商務基本版 (之前 Office 365 商務基本版) 的訂閱來完成本文和影片中的大部分工作，但有些則需要特優訂閱。 
+> 您可以使用 Microsoft 365 商務基本版 (之前 Office 365 商務基本版) 的訂閱來完成本文和影片中的大部分工作，但有些則需要特優訂閱。

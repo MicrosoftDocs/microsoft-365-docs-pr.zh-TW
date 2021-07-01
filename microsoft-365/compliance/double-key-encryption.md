@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408174"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226908"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Microsoft 365 的雙金鑰加密
 
@@ -35,7 +35,7 @@ ms.locfileid: "51408174"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>您的組織應採用 DKE
 
-雙金鑰加密是針對最嚴格的保護需求所需的最敏感性資料。 DKE 並非適用于所有的資料。 一般來講，您會使用雙金鑰加密來保護您整體資料的少數部分。 您應在部署之前，依照此解決方案識別要涵蓋的適當資料，以進行一定的努力。 在某些情況下，您可能需要縮小您的範圍，並對大部分的資料使用其他解決方案，例如 Microsoft 使用 Microsoft 管理的金鑰或 BYOK 的資訊保護。 這些解決方案已足以滿足不受增強保護和法規需求的檔。 此外，這些解決方案可讓您使用最強大的 Office 365 服務;您無法與 DKE 加密內容搭配使用的服務。 例如：
+雙金鑰加密是針對最嚴格的保護需求所需的最敏感性資料。 DKE 並非適用于所有的資料。 一般來講，您會使用雙金鑰加密來保護您整體資料的少數部分。 您應在部署之前，依照此解決方案識別要涵蓋的適當資料，以進行一定的努力。 在某些情況下，您可能需要縮小您的範圍，並對大部分的資料使用其他解決方案，例如使用 Microsoft 管理的金鑰或 BYOK 的 Microsoft 資訊保護。 這些解決方案已足以滿足不受增強保護和法規需求的檔。 此外，這些解決方案可讓您使用最強大的 Office 365 服務;您無法與 DKE 加密內容搭配使用的服務。 例如：
 
 - 傳輸規則包括需要附件查看的反惡意程式碼和垃圾郵件
 - Microsoft Delve
@@ -79,7 +79,7 @@ DKE 敏感度標籤是透過 Office 桌面應用程式中的靈敏度功能區�
 
 1. 如本文所述，部署 DKE 服務。
 
-2. 建立具有雙按鍵加密的標籤。 流覽至[Microsoft 365 規範中心](https://compliance.microsoft.com)底下的資訊保護，並使用雙金鑰加密建立新標籤。 請參閱 [使用敏感度標籤限制存取內容以套用加密](./encryption-sensitivity-labels.md)。
+2. 建立具有雙按鍵加密的標籤。 流覽至[Microsoft 365 合規性中心](https://compliance.microsoft.com)底下的資訊保護，並建立具有雙金鑰加密的新標籤。 請參閱 [使用敏感度標籤限制存取內容以套用加密](./encryption-sensitivity-labels.md)。
 
 3. 使用雙金鑰加密標籤。 從 Microsoft Office 中的 [敏感度] 功能區中，選取雙機碼加密標籤，以保護資料。
 
@@ -183,7 +183,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 - **角色授權**。 可讓您的組織授權以 Active Directory 群組為基礎的金鑰存取權，且要求 web 服務可以查詢 LDAP。
 
-**使用電子郵件授權設定 DKE 的主要存取設定**
+##### <a name="to-set-key-access-settings-for-dke-using-email-authorization"></a>使用電子郵件授權設定 DKE 的主要存取設定
 
 1. 開啟檔案 **上的appsettings.js** ，並找到 `AuthorizedEmailAddress` 設定。
 
@@ -205,7 +205,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
    ![檔上顯示電子郵件授權方法的 appsettings.js](../media/dke-email-accesssetting.png)
 
-**使用角色授權設定 DKE 的主要存取設定**
+##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>使用角色授權設定 DKE 的主要存取設定
 
 1. 開啟檔案 **上的appsettings.js** ，並找到 `AuthorizedRoles` 設定。
 
@@ -231,7 +231,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
-**設定 DKE 的承租人和主要設定**
+##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>設定 DKE 的承租人和主要設定
 
 1. 開啟檔 **上的appsettings.js** 。
 
@@ -242,6 +242,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+
 > [!NOTE]
 > 如果您想要啟用對金鑰存放區的外部 B2B 存取，您也必須將這些外部承租人包含在有效的 issuer ' 清單中。
 
@@ -263,7 +264,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 若要產生機碼：
 
-1. 從 Windows 的 [開始] 功能表中，執行 OpenSSL 命令提示字元。
+1. 從 Windows [開始] 功能表中，執行 OpenSSL 命令提示字元。
 
 2. 變更至您要儲存測試機碼的資料夾。 您完成此工作中的步驟所建立的檔案會儲存在相同的資料夾中。
 
@@ -370,7 +371,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 在試驗部署中，您可以在 Azure 中部署，並立即開始快速入門。
 
-**建立 Azure Web 應用程式實例以主控您的 DKE 部署**
+#### <a name="to-create-an-azure-web-app-instance-to-host-your-dke-deployment"></a>建立 Azure Web 應用程式實例以主控您的 DKE 部署
 
 若要發佈機碼存放區，您將會建立 Azure 應用程式服務實例，以裝載您的 DKE 部署。 接下來，您會將所產生的金鑰發佈到 Azure。
 
@@ -530,18 +531,18 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
     4. 選取頂端的 [ **儲存** ] 以儲存變更。
 
-    5. 重複這些步驟，但這次將用戶端識別碼定義為 `c00e9d32-3c8d-4a7d-832b-029040e7db99` 。 此值是 Azure 資訊保護統一標籤用戶端識別碼。 
+    5. 重複這些步驟，但這次將用戶端識別碼定義為 `c00e9d32-3c8d-4a7d-832b-029040e7db99` 。 此值是 Azure 資訊保護統一標籤用戶端識別碼。
 
 您的 DKE 服務現在已註冊。 [使用 DKE 建立標籤](#create-sensitivity-labels-using-dke)以繼續。
 
 ## <a name="create-sensitivity-labels-using-dke"></a>使用 DKE 建立敏感度標籤
 
-在 Microsoft 365 規範中心] 中，建立新的靈敏度標籤，並依照您的需要套用加密。 選取 [ **使用雙重金鑰加密** ]，然後輸入機碼的端點 URL。
+在 Microsoft 365 合規性中心中，建立新的靈敏度標籤，並像您所做的方式套用加密。 選取 [ **使用雙重金鑰加密** ]，然後輸入機碼的端點 URL。
 
 例如：
 
 > [!div class="mx-imgBorder"]
-> ![選取 [Microsoft 365 規範中心] 中的 [使用雙重金鑰加密]](../media/dke-use-dke.png)
+> ![在 Microsoft 365 合規性中心中選取 [使用雙機碼加密]](../media/dke-use-dke.png)
 
 在最新版本的 Microsoft 365 Apps 企業版中，使用者會開始顯示您新增的任何 DKE 標籤。
 

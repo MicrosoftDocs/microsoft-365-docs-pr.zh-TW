@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1b9bef180fed9c3afa3b3d8d2319a1fa0260ed14
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126592"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227396"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究-Contoso 會快速設定冒犯性語言原則，以進行 Microsoft Teams、Exchange 和 Yammer 通訊
 
@@ -55,9 +55,9 @@ Contoso IT 系統管理員和合規性專家會參加線上網路研討會，以
 - Microsoft 365 E5 訂閱 (付費或試用版) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365A5 訂閱 (付費或試用版本) 
-- Microsoft 365A3 訂閱 + Microsoft 365 A5 符合性附加元件
-- Microsoft 365A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365 A5 訂閱 (付費或試用版) 
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 規範附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 「內幕人員風險管理附加元件」
 - Microsoft 365G5 訂閱 (付費或試用版) 
 - Microsoft 365G5 訂閱 + Microsoft 365 G5 合規性附加元件
 - Microsoft 365G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
@@ -66,12 +66,12 @@ Contoso IT 系統管理員和合規性專家會參加線上網路研討會，以
 
 他們也必須確認已包含在通訊合規性原則中的使用者，必須已獲指派上述其中一個授權。
 
->[!IMPORTANT]
->Office 365 進階合規性不再以獨立訂閱銷售。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
+> [!IMPORTANT]
+> Office 365 進階合規性不再以獨立訂閱銷售。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
 Contoso IT 管理員請採取下列步驟，確認 Contoso 的授權支援：
 
-1. IT 系統管理員會登入 **Microsoft 365 系統管理中心** [ (https://admin.microsoft.com)](https://admin.microsoft.com)並流覽至 **Microsoft 365 系統管理中心**  >  **計費**  >  **授權**。
+1. IT 管理員登入 **Microsoft 365 系統管理中心** <https://admin.microsoft.com> ，並流覽至 **Microsoft 365 系統管理中心**  >  **計費**  >  **授權**。
 
 2. 在這裡，他們會確認他們有其中一個 [授權選項](communication-compliance-configure.md#subscriptions-and-licensing) ，其中包含對通訊相容性的支援。
 
@@ -79,7 +79,7 @@ Contoso IT 管理員請採取下列步驟，確認 Contoso 的授權支援：
 
 ### <a name="permissions-for-communication-compliance"></a>通訊相容性的許可權
 
-有五個角色群組可用來設定管理通訊符合性功能的許可權。 若要在 Microsoft 365 規範中心以功能表選項的方式使用 **通訊相容性**，並繼續進行這些設定步驟，Contoso 系統管理員會被指派 *通訊合規性* 系統管理員角色。
+有五個角色群組可用來設定管理通訊符合性功能的許可權。 若要在 Microsoft 365 合規性中心中以功能表選項來進行 **通訊相容性**，並繼續進行這些設定步驟，Contoso 系統管理員會被指派 *通訊合規性* 系統管理員角色。
 
 Contoso 決定使用 *通訊合規性* 角色群組將所有通訊合規性管理員、分析員、調查人員和檢視器指派給群組。 這可讓 Contoso 快速快速開始，並最適合其相容性管理需求。
 
@@ -104,7 +104,7 @@ Contoso 決定使用 *通訊合規性* 角色群組將所有通訊合規性管�
 設定通訊相容性的許可權之後，指派給通訊合規性角色群組的 Contoso IT 系統管理員和合規性專家便可在 Microsoft 365 中存取通訊規範解決方案。 Contoso IT 系統管理員和合規性專家有數種方式可以存取通訊相容性，並開始建立新的原則：
 
 - 直接從通訊相容性解決方案開始
-- 從 Microsoft 365 規範中心開始
+- 從 Microsoft 365 合規性中心開始
 - 從 Microsoft 365 方案目錄開始
 - 從 Microsoft 365 系統管理中心開始
 
@@ -114,29 +114,29 @@ Contoso 決定使用 *通訊合規性* 角色群組將所有通訊合規性管�
 
 ![通訊合規性概觀](../media/communication-compliance-case-overview.png)
 
-### <a name="starting-from-the-microsoft-365-compliance-center"></a>從 Microsoft 365 規範中心開始
+### <a name="starting-from-the-microsoft-365-compliance-center"></a>從 Microsoft 365 合規性中心開始
 
-Contoso IT 系統管理員和合規性專家存取通訊合規性解決方案的另一種簡單方法，就是直接以「 **Microsoft 365 規範中心**」 [ https://compliance.microsoft.com) (](https://compliance.microsoft.com)登入。 在登入之後，使用者只需要選取 ****[全部顯示] 控制項以顯示所有合規性解決方案，再選取 [通訊合規性]**** 解決方案，即可開始使用。
+Contoso IT 系統管理員和合規性專家存取通訊合規性解決方案的另一種簡單方法，就是直接登入 **Microsoft 365 合規性中心** [ (https://compliance.microsoft.com)](https://compliance.microsoft.com)。 在登入之後，使用者只需要選取 ****[全部顯示] 控制項以顯示所有合規性解決方案，再選取 [通訊合規性]**** 解決方案，即可開始使用。
 
 ![合規性中心](../media/communication-compliance-case-center.png)
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>從 Microsoft 365 方案目錄開始
 
-Contoso IT 系統管理員和合規性專家也可以選擇 Microsoft 365 方案目錄，以存取通訊相容性解決方案。 在 [ **Microsoft 365 規範中心**] 的左側導覽中，選取 [**方案**] 區段中的 [**目錄**]，即可開啟列出所有 Microsoft 365 規範解決方案的方案目錄。 向下滾動至「 **內幕人員風險管理** 」區段，Contoso IT 系統管理員可以選取要開始的通訊相容性。 Contoso IT 管理員也會決定使用「顯示在導覽」控制項中，將通訊相容性解決方案固定至左功能窗格，以在使用者登入時更快速地進行存取。
+Contoso IT 系統管理員和合規性專家也可以選擇 Microsoft 365 方案目錄，以存取通訊相容性解決方案。 在 **Microsoft 365 合規性中心** 的左側導覽中，選取 [**方案**] 區段中的 [**目錄**]，即可開啟列出所有 Microsoft 365 規範解決方案的方案目錄。 向下滾動至「 **內幕人員風險管理** 」區段，Contoso IT 系統管理員可以選取要開始的通訊相容性。 Contoso IT 管理員也會決定使用「顯示在導覽」控制項中，將通訊相容性解決方案固定至左功能窗格，以在使用者登入時更快速地進行存取。
 
 ![方案目錄](../media/communication-compliance-case-solution.png)
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>從 Microsoft 365 系統管理中心開始
 
-若要從 Microsoft 365 系統管理中心開始存取通訊相容性，Contoso IT 系統管理員和合規性專家會登入 Microsoft 365 系統 [管理中心 https://admin.microsoft.com) (](https://admin.microsoft.com) ，並流覽至 **Microsoft 365 系統管理中心**  >  **符合性**。
+若要在從 Microsoft 365 系統管理中心開始時存取通訊相容性，Contoso IT 系統管理員和合規性專家會登入 Microsoft 365 系統管理中心 [ (https://admin.microsoft.com)](https://admin.microsoft.com)並流覽 **Microsoft 365 系統管理中心**  >  **規範**。
 
 ![通訊符合性連結](../media/communication-compliance-case-compliance-link.png)
 
-此巨集指令會開啟 **Office 365 安全性與合規性中心**，而且必須選取頁面頂端的橫幅中所提供的「 **Microsoft 365 規範中心**」連結。
+此巨集指令會開啟 **Office 365 安全性與合規性中心**，而且必須選取頁面上方橫幅中所提供之 **Microsoft 365 合規性中心** 的連結。
 
 ![Office 365 安全性與合規性中心](../media/communication-compliance-case-scc.png)
 
-在 **Microsoft 365 規範中心** 內，Contoso IT 系統管理員會選取 [**全部顯示**]，以顯示完整的規範解決方案清單。
+在 **Microsoft 365 合規性中心** 中，Contoso IT 系統管理員會選取 [**全部顯示**]，以顯示完整的規範方案清單。
 
 ![通訊符合性功能表](../media/communication-compliance-case-show-all.png)
 
@@ -166,7 +166,7 @@ Contoso 合規性專家想要將所有使用者新增至會監控冒犯性語言
 
 他們必須建立新的群組，以包含所有 Contoso 使用者，讓他們採取下列步驟：
 
-1. Contoso it 管理員會登入 Microsoft 365 系統 **管理中心** [ https://admin.microsoft.com) (](https://admin.microsoft.com)並流覽至 Microsoft 365 系統 **管理中心**  >  **群組**  >  **群組**。
+1. Contoso it 管理員會登入 **Microsoft 365 系統管理中心** [ https://admin.microsoft.com) (](https://admin.microsoft.com)並流覽至 **Microsoft 365 系統管理中心**  >  **群組**  >  **群組**。
 2. 他們會選取 [**新增群組**]，並完成嚮導，以建立新的 *Microsoft 365 群組* 或 *通訊群組*。
 
     ![群組](../media/communication-compliance-case-all-employees.png)

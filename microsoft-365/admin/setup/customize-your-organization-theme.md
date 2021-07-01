@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 瞭解如何在 Microsoft 365 中變更導覽列頂端的預設主題，並加以自訂，使其符合您公司的徽標或色彩。
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006910"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227780"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
@@ -41,12 +41,12 @@ ms.locfileid: "53006910"
 
 2. 選取 [ **組織設定檔** ] 索引標籤上的 [ **自訂主題**]。
 
-您可以使用下列索引標籤自訂所有主題。
+您可以使用下列索引標籤自訂所有組織主題。
 
 |**Tab**|**您可以做什麼？**|
 |:-----|:-----|
 |[一般](#general-modify-a-theme) <br/> |修改主題名稱，並最多指派至五個群組 (（如果適用）) 。  <br/> |
-|[標誌](#logos-specify-your-theme-logos) <br/> |新增您的主題徽標，包括 Office 深色主題和行動裝置選項。  <br/> |
+|[標誌](#logos-specify-your-theme-logos) <br/> |新增您的組織徽標，包含深色主題的替代標誌。  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |指定導覽列、強調文字和圖示色彩，以自訂色彩配置。 <br/> |
 
 ## <a name="general-modify-a-theme"></a>一般：修改主題
@@ -64,7 +64,7 @@ ms.locfileid: "53006910"
 > [!IMPORTANT]
 > 預設主題是唯一的，它不能重新命名並套用到組織內的每個人。 若要刪除預設主題，您必須先刪除所有其他主題。
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織的預設主題":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織的預設主題":::
 
 ### <a name="create-a-group-theme"></a>建立群組主題
 
@@ -74,9 +74,9 @@ ms.locfileid: "53006910"
 
 2. 在 [**群組**] 底下，您最多可以選擇5個 Microsoft 365 群組可以查看您的群組主題，而不是使用預設主題。 您也可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
 
-3. 選取 [儲存 **]**。
+3. 選取 ****[儲存]。
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織中使用者群組的預設主題":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織中使用者群組的預設主題":::
 
 ## <a name="logos-specify-your-theme-logos"></a>標誌：指定您的主題標誌
 
@@ -84,9 +84,11 @@ ms.locfileid: "53006910"
 
 - **預設徽標**：新增指向您的徽標的 URL 位置。 請確定 URL 使用 HTTPS。 新增 HTTPS 影像 url 允許匿名存取，而且不需要驗證。 針對預設主題，您也可以選擇上載小於10kb 的標誌影像。 您的預設標誌可以是 JPG、PNG、GIF 或 SVG 格式。 若為 SVG 影像，將會調整大小以垂直容納24圖元。 JPG、PNG、GIF 圖像會調整為符合 200 x 48 圖元。 標誌的方位比例會永遠保留。
 - **替代標誌**：新增指向您的徽標的 URL 位置。 您的替代標誌應經過優化，以用於 Office 深色主題。 與預設標誌相同的需求。
-- **按一下連結**：新增指向您的標誌的 URL 位置。 您可以使用您的徽標作為任何公司資源的連結，例如公司的網站。
+- **按一下連結**：新增指向您的標誌的 URL 位置。 您可以使用您的徽標作為任何公司資源的連結，例如公司的網站。 如果您沒有為您的徽標選取 URL 位置，它會預設為 Office 首頁。
 
 選取 **[儲存]** 以儲存變更。
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="螢幕擷取畫面：顯示徽標選項的 [徽標] 索引標籤":::
 
 您可以隨時移除您的徽標。 只需回到 [ **徽標** ] 頁面，然後選取 [ **移除**]。
   
@@ -98,9 +100,8 @@ ms.locfileid: "53006910"
 - **文字和圖示色彩**：選取用於上方導覽列上之文字和圖示的色彩。
 - **強調色彩**：選擇在白色或淺色背景上顯示效果很好的色彩。 口音色彩是用來色彩顯示在白色或淺色背景上的某些連結和按鈕。 例如，口音色彩是用來在使用者的收件匣和其 Office .com 入口網站頁面上色彩元素。
 - **重設色彩**：選取此連結可將色彩重設為預設色彩。
-- **應該使用哪一個徽標？**：選取預設的徽標或您自行建立的任何其他標誌。
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="螢幕擷取畫面： [色彩] 索引標籤顯示組織的預設主題色彩":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="螢幕擷取畫面： [色彩] 索引標籤顯示組織的預設主題色彩":::
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

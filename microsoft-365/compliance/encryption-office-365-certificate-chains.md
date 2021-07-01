@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 在 Microsoft 365 中，查看完整的根憑證和憑證授權 (CAs) 清單。
-ms.openlocfilehash: c5b00a3a663c2ae4862cfa3d11f92015c0331e59
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bb48bf82f3f00223d3a913280e34fe4f0686426
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907717"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226752"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 加密鏈
 
@@ -30,8 +30,8 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 上次更新： **10/16/2020**
 
->[!NOTE]
->如需適用于 **DOD 和 GCC 高** 客戶的憑證資訊，請參閱 [Microsoft 365 加密鏈-DOD 和 GCC 高](encryption-office-365-certificate-chains-itar.md)。
+> [!NOTE]
+> 如需適用于 **DOD 和 GCC 高** 客戶的憑證資訊，請參閱 [Microsoft 365 加密鏈-DOD 和 GCC 高](encryption-office-365-certificate-chains-itar.md)。
 
 | **憑證類型** | **P7b 下載** | **CRL 端點** | **OCSP 端點** | **AIA 端點** |
 | --- | --- | --- | --- | --- |
@@ -44,7 +44,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **主旨** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
+| **Subject** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | --- | --- |
 | **序號** | 02：00：00： B9 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -58,7 +58,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="cnnic-root"></a>**CNNIC 根**
 
-| **主旨** | CN = CNNIC ROOT<br>O = CNNIC<br>C = CN |
+| **Subject** | CN = CNNIC ROOT<br>O = CNNIC<br>C = CN |
 | --- | --- |
 | **序號** | 49:33:00:01 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -73,7 +73,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert 通用根 CA**
 
-| **主旨** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **序號** | 08：3B： E0：56：90：42：46： B1： A1：75：6A： C9：59：91： C7：4A |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -88,7 +88,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-global-root-g2"></a>**DigiCert 全域根 G2**
 
-| **主旨** | CN = DigiCert 全域根 G2<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 全域根 G2<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 03：3A： F1： E6： A7：11： A9： A0： BB：28：64： B1：1D：09： FA： E5 |
@@ -103,7 +103,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert 高確定性 EV 根 CA**
 
-| **主旨** | CN = DigiCert 高確定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 高確定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **序號** | 02： AC：5C：26：6A：0B：40：9B：8F：0B：79： F2： AE：46：25：77 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -118,7 +118,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-信任的根類別 3 CA 2 2009**
 
-| **主旨** | CN = D-根信任類別 3 CA 2 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D-根信任類別 3 CA 2 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **序號** | 09：83： F3 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -133,7 +133,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-信任的根類別 3 CA 2 EV 2009**
 
-| **主旨** | CN = D 根信任類別 3 CA 2 EV 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D 根信任類別 3 CA 2 EV 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **序號** | 09：83： F4 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -148,7 +148,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="dst-root-ca-x3"></a>**DST 根 CA X3**
 
-| **主旨** | CN = DST 根 CA X3<br>O = 數位簽章信任 Co。 |
+| **Subject** | CN = DST 根 CA X3<br>O = 數位簽章信任 Co。 |
 | --- | --- |
 | **序號** | 44： AF： B0：80： D6： A3：27： BA：89：30：39：86：2E： F8：40：6B |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -162,7 +162,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust 根憑證授權單位單位-G2**
 
-| **主旨** | CN = Entrust 根憑證授權單位單位-G2<br>OU = &quot; (c) 2009 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
+| **Subject** | CN = Entrust 根憑證授權單位單位-G2<br>OU = &quot; (c) 2009 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | --- | --- |
 | **序號** | 4A：53：8C：28 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -176,7 +176,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **主旨** | CN = Entrust) 網路憑證授權單位 (2048<br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust net/CPS \_ 2048 包含。  (限制 s liab。 ) <br>O = Entrust |
+| **Subject** | CN = Entrust) 網路憑證授權單位 (2048<br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust net/CPS \_ 2048 包含。  (限制 s liab。 ) <br>O = Entrust |
 | --- | --- |
 | **序號** | 38：63： DE： F8 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -190,7 +190,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-root-ca---r1"></a>**GlobalSign 根 CA-R1**
 
-| **主旨** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **序號** | 04：00：00：00：00：01：15：4B：5A： C3：94 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -204,7 +204,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-root-ca---r3"></a>**GlobalSign 根 CA-R3**
 
-| **主旨** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
+| **Subject** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
 | --- | --- |
 | **發行者** | CN = GlobalSign，O = GlobalSign，OU = GlobalSign 根 CA-R3 |
 | **序號** | 04：00：00：00：00：01：21：58：53：08： A2 |
@@ -219,7 +219,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="thawte-primary-root-ca---g3"></a>**thawte Primary Root CA-G3**
 
-| **主旨** | CN = thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 thawte，Inc. 供授權使用&quot;<br>OU = 認證服務部門<br>O = &quot; thawte，inc.。&quot;<br>C=US |
+| **Subject** | CN = thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 thawte，Inc. 供授權使用&quot;<br>OU = 認證服務部門<br>O = &quot; thawte，inc.。&quot;<br>C=US |
 | --- | --- |
 | **序號** | 60：01：97： B7：46： A7： EA： B4： B4：9A： D6：4B：2F： F7：90： FB |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -233,7 +233,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign 類別3公用主要憑證授權單位-G5**
 
-| **主旨** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
+| **Subject** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
 | --- | --- |
 | **序號** | 18： DA： D1：9E：26：7D： E8： BB：4A：21：58： CD： CC：6B：3B：4A |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -249,7 +249,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="cnnic-sha256-ssl"></a>**CNNIC SHA256 SSL**
 
-| **主旨** | CN = CNNIC SHA256 SSL <br>O = CNNIC SHA256 SSL <br>C = CN |
+| **Subject** | CN = CNNIC SHA256 SSL <br>O = CNNIC SHA256 SSL <br>C = CN |
 | --- | --- |
 | **發行者** | CN = CNNIC ROOT <br>O = CNNIC <br>C = CN |
 | **序號** | 49：33：00：7C |
@@ -268,7 +268,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-信任 SSL 類別 3 CA 1 2009**
 
-| **主旨** | CN = D-信任 SSL 類別 3 CA 1 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D-信任 SSL 類別 3 CA 1 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **發行者** | CN = D-根信任類別 3 CA 2 2009<br>O = D 信任 GmbH<br>C = DE |
 | **主體替代名稱** | /RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -287,7 +287,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-信任 SSL 類別 3 CA 1 EV 2009**
 
-| **主旨** | CN = D-信任 SSL 類別 3 CA 1 EV 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D-信任 SSL 類別 3 CA 1 EV 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **發行者** | CN = D 根信任類別 3 CA 2 EV 2009<br>O = D 信任 GmbH<br>C = DE |
 | **主體替代名稱** | /RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -306,7 +306,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-basic-rsa-cn-ca-g2"></a>**DigiCert 基本 RSA CN CA G2**
 
-| **主旨** | CN = DigiCert 基本的 RSA CN CA G2<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 基本的 RSA CN CA G2<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 02： F7： E1： F9：82： BA： D0：09： AF： F4：7D： C9：57：41： B2： F6 |
@@ -323,7 +323,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 雲端服務 CA-1**
 
-| **主旨** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | **序號** | 01：9E： C1： C6： BD：3F：59：7B： B2：0C：33：38： E5：51： D8：77 |
@@ -341,7 +341,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 雲端服務 CA-1**
 
-| **主旨** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | **序號** | 0F：17：1A：48： C6： F2：23：80：92：18： CD：2E： D6： DD： C0： E8 |
@@ -359,7 +359,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 擴充驗證服務器 CA**
 
-| **主旨** | CN = DigiCert SHA2 擴充驗證服務器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert SHA2 擴充驗證服務器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 高確定性 EV 根 CA，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0C：79： A9：44： B0：8C：11：95：20：92：61：5F： E2：6B：1D：83 |
@@ -376,7 +376,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-sha2-high-assurance-server-ca"></a>**DigiCert SHA2 高確定性伺服器 CA**
 
-| **主旨** | CN = DigiCert SHA2 高確定性伺服器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert SHA2 高確定性伺服器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 高確定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | **序號** | 04： E1： E7： A4： DC：5C： F2： F3：6D： C0：2B：42： B8：5D：15：9F |
@@ -394,7 +394,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **主旨** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | **序號** | 01： FD： A3：：6E： CA：75： C8：88：43：8B：72：4B： CF： BC：91 |
@@ -412,7 +412,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **主旨** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 02：74：2E： AA：17： CA：8E：21： C7：17： BB：1F： FC： FD：0C： A0 |
@@ -429,7 +429,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
 
-| **主旨** | CN = DigiCert TLS RSA SHA256 2020 CA1<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert TLS RSA SHA256 2020 CA1<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0A：35：08： D5：5C：29：2B：01：7D： F8： AD：65： C0：0F： F7： E4 |
@@ -446,7 +446,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="entrust-certification-authority---l1c"></a>**Entrust 憑證授權單位單位-L1C**
 
-| **主旨** | CN = Entrust 憑證授權單位單位-L1C<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是以參考合併<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
+| **Subject** | CN = Entrust 憑證授權單位單位-L1C<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是以參考合併<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | --- | --- |
 | **發行者** | CN = Entrust) 網路憑證授權單位 (2048<br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust net/CPS \_ 2048 包含。  (限制 liab。 ) <br>O = Entrust |
 | **序號** | 4C：0E：8C：39 |
@@ -464,7 +464,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust 憑證授權單位單位-L1K**
 
-| **主旨** | CN = Entrust 憑證授權單位單位-L1K<br>OU = &quot; (c) 2012 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
+| **Subject** | CN = Entrust 憑證授權單位單位-L1K<br>OU = &quot; (c) 2012 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | --- | --- |
 | **發行者** | CN = Entrust 根憑證授權單位單位-G2<br>OU = &quot; (c) 2009 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | **序號** | 0E： E9：4C： C3：00：00：00：00：51： D3：77：85 |
@@ -482,7 +482,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign 擴充驗證 CA-SHA256-G2**
 
-| **主旨** | CN = GlobalSign 擴充驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 擴充驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R2 |
 | **序號** | 04：00：00：00：00：01：44：4E： F0：4A：55 |
@@ -500,7 +500,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign 擴充驗證 CA-SHA256-G3**
 
-| **主旨** | CN = GlobalSign 擴充驗證 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 擴充驗證 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
 | **序號** | 48： A4：02： DD：27：92：0D： A2：08：34：9D： D1：99：7B |
@@ -518,7 +518,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織驗證 CA-SHA256-G2**
 
-| **主旨** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
 | **序號** | 04：00：00：00：00：01：31：89： C6：44： C9 |
@@ -536,7 +536,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織驗證 CA-SHA256-G2**
 
-| **主旨** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
 | **序號** | 04：00：00：00：00：01：44：4E： F0：42：47 |
@@ -554,7 +554,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-organization-validation-ca---sha256---g3"></a>**GlobalSign 組織驗證 CA-SHA256-G3**
 
-| **主旨** | CN = GlobalSign 組織驗證 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 組織驗證 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign Root CA，OU = Root CA，O = GlobalSign nv-sa，C = 是 |
 | **序號** | 47：07： B1：01：9A：0C：57： AD：39： B3： E1：7D： A9： F9 |
@@ -571,7 +571,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="globalsign-rsa-ov-ssl-ca-2018"></a>**GlobalSign RSA OV SSL CA 2018**
 
-| **主旨** | CN = GlobalSign RSA OV SSL CA 2018<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign RSA OV SSL CA 2018<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign，O = GlobalSign，OU = GlobalSign 根 CA-R3 |
 | **序號** | 01： EE：5F：22：1d： FC：62：3b： D4：33：3a：85：57 |
@@ -588,7 +588,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="lets-encrypt-authority-x3"></a>**讓我們加密授權 X3**
 
-| **主旨** | CN = 讓我們加密授權 X3<br>O = 讓我們加密<br>C=US |
+| **Subject** | CN = 讓我們加密授權 X3<br>O = 讓我們加密<br>C=US |
 | --- | --- |
 | **發行者** | CN = DST 根 CA X3<br>O = 數位簽章信任 Co。 |
 | **序號** | 0A：01：41：42：00：00：01：53：85：73：6A：0B：85： EC：的 A7：08 |
@@ -607,7 +607,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft AzureTLS 簽發 CA 01**
 
-| **主旨** | CN = Microsoft Azure TLS 發證 CA 01<br>O=Microsoft 公司<br>C=US |
+| **Subject** | CN = Microsoft Azure TLS 發證 CA 01<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0A： AF： A6： C5：下列 CA：63： C4：51：41： EA：3B： E1： F7： C7：53：17 |
@@ -624,7 +624,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 簽發 CA 02**
 
-| **主旨** | CN = Microsoft Azure TLS 發證 CA 02<br>O=Microsoft 公司<br>C=US |
+| **Subject** | CN = Microsoft Azure TLS 發證 CA 02<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0C：6A： E9：7C： CE： D5：99：83：86：90： A0：0A：9E： A5：32：14 |
@@ -641,7 +641,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 發證 CA 05**
 
-| **主旨** | CN = Microsoft Azure TLS 發證 CA 05<br>O=Microsoft 公司<br>C=US |
+| **Subject** | CN = Microsoft Azure TLS 發證 CA 05<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0D：7B： ED： E9：7D：82：09：96：7A：52：63：1B：8B： DD：18： BD |
@@ -658,7 +658,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft AzureTLS 發證 CA 06**
 
-| **主旨** | CN = Microsoft Azure TLS 發證 CA 06<br>O=Microsoft 公司<br>C=US |
+| **Subject** | CN = Microsoft Azure TLS 發證 CA 06<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 02： E7：91：71： FB：80：21： E9：3F： E2： D9：83：83：4C：50： C0 |
@@ -675,7 +675,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **主旨** | CN=Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 08： B8：7A：50：1B：是：9C： DA：2D：16：4D：3E：39：51： BF：55 |
@@ -693,7 +693,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **主旨** | CN=Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 0F：2C：10： C9：5B：06： C0：93：7F： B8： D4：49： F8：3E：85：69 |
@@ -711,7 +711,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **主旨** | CN=Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 0B：6A： B3： B0：3E： B1： A9： F6： C4：60：92：6A： A8： CD： FE： B3 |
@@ -729,7 +729,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **主旨** | CN=Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 08：88： CD：52：5F：19：24：44：4D：14： A5：82：91： DE： B9：52 |
@@ -747,7 +747,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
 
-| **主旨** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft 公司<br>C=US |
+| **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root，OU = CyberTrust，O = 巴爾的摩，C = IE |
 | **序號** | 0F：14：96：5F：二十：20：69：99：4F： D5： C7： AC：78：89：41： E2 |
@@ -764,7 +764,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
 
-| **主旨** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft 公司<br>C=US |
+| **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root，OU = CyberTrust，O = 巴爾的摩，C = IE |
 | **序號** | 0F： A7：47：22： C5：3D：88： C8：0F：58：9E： FB：1F：9D：4A：3A |
@@ -781,7 +781,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="symantec-class-3-ev-ssl-ca---g3"></a>**Symantec 類別 3 EV SSL CA-G3**
 
-| **主旨** | CN = Symantec 類別 3 EV SSL CA-G3<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
+| **Subject** | CN = Symantec 類別 3 EV SSL CA-G3<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
 | **主體替代名稱** | 目錄位址： CN = SymantecPKI-1-533 |
@@ -800,7 +800,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec 類別 3 Secure Server CA-G4**
 
-| **主旨** | CN = Symantec Class 3 Secure Server CA-G4<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
+| **Subject** | CN = Symantec Class 3 Secure Server CA-G4<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
 | **主體替代名稱** | 目錄位址： CN = SymantecPKI-1-534 |
@@ -819,7 +819,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="thawte-sha256-ssl-ca"></a>**thawte SHA256 SSL CA**
 
-| **主旨** | CN = thawte SHA256 SSL CA<br>O = &quot; thawte，inc.。&quot;<br>C=US |
+| **Subject** | CN = thawte SHA256 SSL CA<br>O = &quot; thawte，inc.。&quot;<br>C=US |
 | --- | --- |
 | **發行者** | CN = thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 thawte，Inc. 供授權使用&quot;<br>OU = 認證服務部門<br>O = &quot; thawte，inc.。&quot;<br>C=US |
 | **主體替代名稱** | 目錄位址： CN = VeriSignMPKI-2-415 |
@@ -838,7 +838,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 
 ### <a name="verizon-akamai-sureserver-ca-g14-sha2"></a>**Verizon Akamai SureServer CA G14-SHA2**
 
-| **主旨** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = Verizon Enterprise 解決方案<br>L = 阿姆斯特丹<br>C = NL-NL |
+| **Subject** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = Verizon Enterprise 解決方案<br>L = 阿姆斯特丹<br>C = NL-NL |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 07：27： A4：6B |

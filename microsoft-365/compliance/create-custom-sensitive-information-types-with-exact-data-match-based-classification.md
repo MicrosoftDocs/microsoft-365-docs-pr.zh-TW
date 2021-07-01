@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964653"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227124"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -385,15 +385,15 @@ ms.locfileid: "52964653"
 - Microsoft 365的工作或學校帳戶, 該帳戶將新增至 **EDM\_DataUploaders** 的安全性群組
 - Windows 10 或 Windows Server 2016 電腦，其中包含執行 EDMUploadAgent 的 .NET 版本4.6.2
 - 在你所上傳電腦上的目錄有：
-    -  EDMUploadAgent
-    - 您的敏感專案檔案，格式為 .csv 或 tsv 格式，在我們的範例中 **PatientRecords.csv**
-    -  以及輸出雜湊和鹽數值檔案
-    - 從 **edm.xml** 檔案的資料存儲名稱，在這個範例中的如其 `PatientRecords`
+  - EDMUploadAgent
+  - 您的敏感專案檔案，格式為 .csv 或 tsv 格式，在我們的範例中 **PatientRecords.csv**
+  - 輸出雜湊和 salt 檔案
+  - 從 **edm.xml** 檔案的資料存儲名稱，在這個範例中的如其 `PatientRecords`
 - 如果您使用 [完全符合結構描述和敏感性資訊類型的資料類型精靈](sit-edm-wizard.md)，您 ***必須*** 下載它
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
-1. 以全域系統管理員身分，使用 [適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的 [安全性群組](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 以全域系統管理員身分，使用 [適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的 [安全性群組](/office365/admin/email/create-edit-or-delete-a-security-group)。
 
 2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組。 (這些使用者將管理敏感性資訊的資料庫)。
 
@@ -401,18 +401,17 @@ ms.locfileid: "52964653"
 
 此電腦必須能夠直接存取您的 Microsoft 365 租用者。
 
->[!NOTE]
+> [!NOTE]
+>
 > 開始此程序之前，請確認您是 **EDM\_DataUploaders** 安全性群組的成員。
-
-> [!TIP]
+>
 > （選用）您可以在上傳之前，先執行 .csv 或 tsv 檔案的驗證：
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->所有 EdmUploadAgent.exe 的相關資訊 > 已支援的參數執行
+> 所有 EdmUploadAgent.exe 的相關資訊 > 已支援的參數執行
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>依訂閱類型的 EDM 上傳代理程式連結
 

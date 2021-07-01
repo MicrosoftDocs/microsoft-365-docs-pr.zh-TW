@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: 在您的 dns 主機上新增 dns 記錄，使用設定向導將您的網域新增至 Microsoft 365 系統管理中心的 Microsoft 365。
-ms.openlocfilehash: 152144737b0ff8cb8b0c27db2a4fc1051fb2a8a7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 在您的 dns 主機上新增 dns 記錄，使用設定向導將您的網域新增至 Microsoft 365 系統管理中心中 Microsoft 365。
+ms.openlocfilehash: 547a3bf242130993522b00f53819908b10c9e4d1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635675"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227832"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>將網域新增至 Microsoft 365
 
@@ -80,8 +80,6 @@ ms.locfileid: "52635675"
 7. 如果您選擇 *自行新增 DNS 記錄*  ，請選取 **[下一步]** ，您將會看到一個頁面，其中包含您需要新增至註冊機構網站以設定網域的所有記錄。 
 
     如果入口網站無法辨認您的註冊機構，您可以[遵循這些一般指示](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (機器翻譯)。
-    
-    查看我們的[特定主機指示](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) 來尋找您的主機，並遵循步驟來新增您需要的所有記錄。 
     
     如果您不知道您網域的 DNS 主機提供者或網域註冊機構，請參閱[尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。
     
@@ -139,4 +137,3 @@ ms.locfileid: "52635675"
 [網域常見問題集](domains-faq.yml) (文章)
 [什麼是網域？](../get-help-with-domains/what-is-a-domain.md) (文章)\
 [在 Microsoft 365 (文章中購買功能變數名稱](../get-help-with-domains/buy-a-domain-name.md)) \
-[設定您的網域](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (文章) 

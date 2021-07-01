@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何使用錯誤修正功能，修正可能會妨礙內容處理的 Advanced eDiscovery 中的資料問題。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2067831a85e3b3a506917fac5b93acfa0b174db
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 891e8292fca629669a48684e95f522c08838d3aa
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906981"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226656"
 ---
 # <a name="error-remediation-when-processing-data"></a>處理資料時的錯誤補救
 
@@ -32,8 +32,8 @@ ms.locfileid: "50906981"
 
 ## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>建立錯誤修正會話，以修正具有處理錯誤的檔案
 
->[!NOTE]
->如果在下列程式中隨時關閉錯誤修正嚮導，您可以從 [處理] 索引標籤中選取 [ **Remediations** **]，以** 回到 [**處理**] 索引標籤中的 [錯誤修正] 會話。
+> [!NOTE]
+> 如果在下列程式中隨時關閉錯誤修正嚮導，您可以從 [處理] 索引標籤中選取 [ **Remediations** **]，以** 回到 [**處理**] 索引標籤中的 [錯誤修正] 會話。
 
 1. 在 Advanced eDiscovery 案例中的 [**處理**] 索引標籤上，選取 [**視圖**] 下拉式功能表中的 [**錯誤**]，然後選取 [**範圍**] 下拉式功能表中的審閱集或整個案例。 此區段會顯示案例的所有錯誤或特定檢閱集的錯誤。
 
@@ -51,13 +51,13 @@ ms.locfileid: "50906981"
 
     ![下載檔案](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. 若要下載檔案，請指定 **[下載的目的地路徑]**。 此路徑是本機電腦上即將下載檔案的父資料夾。  預設路徑%USERPROFILE%\Downloads\errors，指向登入使用者的 [下載] 資料夾。 您可以視需要變更此路徑。 如果您進行變更，建議您使用本機檔路徑，以取得最佳效能。 請勿使用遠端網路路徑。 例如，您可以使用路徑 **C:\Remediation**。 
+5. 若要下載檔案，請指定 **[下載的目的地路徑]**。 此路徑是本機電腦上即將下載檔案的父資料夾。  預設路徑%USERPROFILE%\Downloads\errors，指向登入使用者的 [下載] 資料夾。 您可以視需要變更此路徑。 如果您進行變更，建議您使用本機檔路徑，以取得最佳效能。 請勿使用遠端網路路徑。 例如，您可以使用路徑 **C:\Remediation**。
 
    父資料夾的路徑會自動新增至 AzCopy 命令 (以) 的 **/Dest** 參數的值。
 
-6. 按一下 **[複製到剪貼簿]**，複製已預先定義的命令。 開啟 Windows 命令提示字元，貼上 AzCopy 命令，然後按 **enter** 鍵。  
+6. 按一下 **[複製到剪貼簿]**，複製已預先定義的命令。 開啟 Windows 命令提示字元，貼上 AzCopy 命令，然後按 **enter** 鍵。
 
-    ![準備進行錯誤修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![準備進行錯誤修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > 您必須使用 AzCopy app-v 8.1 才能成功使用 **下載** 檔案頁面上提供的命令。 您也必須使用 AzCopy app-v 8.1 上傳步驟10中的檔案。 若要安裝此 AzCopy 版本，請參閱[Windows 上的轉接 AzCopy 中的資料](/previous-versions/azure/storage/storage-use-azcopy)。 如果提供的 AzCopy 命令失敗，請參閱[Advanced eDiscovery 中 AzCopy 疑難排解](troubleshooting-azcopy.md)。
@@ -97,7 +97,7 @@ ms.locfileid: "50906981"
 
 11. 在您執行 AzCopy 命令之後，請按 **[下一步：處理檔案]**。
 
-    處理完成時，您可以移至 [複查] 設定並查看修正的檔案。 
+    處理完成時，您可以移至 [複查] 設定並查看修正的檔案。
 
 ## <a name="remediating-errors-in-container-files"></a>在容器檔案中修正錯誤
 
@@ -109,7 +109,7 @@ ms.locfileid: "50906981"
 
 ## <a name="what-happens-when-files-are-remediated"></a>修正檔案時會發生什麼情況
 
-在上傳補救的檔案時，除了下欄欄位之外，仍會保留原始的中繼資料： 
+在上傳補救的檔案時，除了下欄欄位之外，仍會保留原始的中繼資料：
 
 - ExtractedTextSize
 - HasText

@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: 60d7a91da738803976b6823009450124d7b57814
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 從 Microsoft 365 系統管理中心中查看有關集中式部署的常見問題解答。
+ms.openlocfilehash: 0da9ec9595fd433abe1e2e2ae3f2e3a0c6b3b9b5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579299"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228001"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 
@@ -44,7 +44,7 @@ ms.locfileid: "51579299"
 
 最好是使用群組指派，而不是個別的使用者指派，以簡化管理。
  
-如需詳細資訊，請參閱 [使用者和群組指派](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)。  
+如需詳細資訊，請參閱 [使用者和群組指派](./centralized-deployment-of-add-ins.md#user-and-group-assignments)。  
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>增益集需要多長時間才能顯示給所有使用者？  
 
@@ -94,8 +94,8 @@ ms.locfileid: "51579299"
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>我需要哪些系統管理員角色來管理組織的增益集？  
 
-全域管理員是推薦的角色，具有增益集管理生命週期的完整存取權。 其他系統管理員角色對增益集部署生命週期具有有限的存取權。 如果您是購買 Microsoft 365 商務版訂閱的人員，您就是全域系統管理員。 
+全域管理員是推薦的角色，具有增益集管理生命週期的完整存取權。 如果您是購買 Microsoft 365 商務版訂閱的人員，您就是全域系統管理員。 
  
-您的訂閱隨附一組系統管理員角色，您可以將其指派給組織中的其他使用者。 每個系統管理員角色會對應至常見商務功能，並讓組織中的人員能夠在 Microsoft 365 系統管理中心中執行特定工作。  
+您的訂閱隨附一組系統管理員角色，您可以將其指派給組織中的其他使用者。 每個系統管理員角色會對應至常見商務職能，並提供組織中的人員執行 Microsoft 365 系統管理中心中的特定工作。  
  
-如需詳細資訊，請參閱 [指派系統管理員角色](../add-users/assign-admin-roles.md?view=o365-worldwide)。 
+如需詳細資訊，請參閱 [指派系統管理員角色](../add-users/assign-admin-roles.md)。 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何對非 Microsoft cloud app 使用 dlp 原則。
-ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149151"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226836"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft cloud app 的資料遺失防護原則 (預覽) 
 
@@ -59,8 +59,8 @@ dlp 原則至非 Microsoft cloud app 使用雲端 App 安全性 DLP 功能。 �
 
 將雲端應用程式連線至雲端 App 安全性後，您可以為其建立 Microsoft 365 的 DLP 原則。
 
->[!NOTE]
->您也可以使用 Microsoft Cloud App Security 來建立 DLP 原則至 Microsoft 雲端應用程式。 不過，建議使用 Microsoft 365 來建立及管理 DLP 原則至 Microsoft 雲端應用程式。
+> [!NOTE]
+> 您也可以使用 Microsoft Cloud App Security 來建立 DLP 原則至 Microsoft 雲端應用程式。 不過，建議使用 Microsoft 365 來建立及管理 DLP 原則至 Microsoft 雲端應用程式。
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>建立非 Microsoft cloud app 的 DLP 原則
 
@@ -81,12 +81,12 @@ dlp 原則至非 Microsoft cloud app 使用雲端 App 安全性 DLP 功能。 �
 
 ![限制協力廠商應用程式](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
->記套用至非 Microsoft 應用程式的 DLP 原則使用 Microsoft Cloud App Security。 建立非 Microsoft 應用程式的 DLP 原則時，會自動在 Microsoft Cloud App Security 中建立相同的原則。
+> 記套用至非 Microsoft 應用程式的 DLP 原則使用 Microsoft Cloud App Security。 建立非 Microsoft 應用程式的 DLP 原則時，會自動在 Microsoft Cloud App Security 中建立相同的原則。
 
-如需建立及設定 DLP 原則的詳細資訊，請參閱 [Create test and 微調 dlp policy](./create-test-tune-dlp-policy.md?view=o365-worldwide)。
+如需建立及設定 DLP 原則的詳細資訊，請參閱 [Create test and 微調 dlp policy](./create-test-tune-dlp-policy.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立測試並調整 DLP 原則](./create-test-tune-dlp-policy.md?view=o365-worldwide)
-- [預設的 DLP 原則快速入門](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)
-- [從範本建立 DLP 原則](./create-a-dlp-policy-from-a-template.md?view=o365-worldwide)
+- [建立測試並調整 DLP 原則](./create-test-tune-dlp-policy.md)
+- [預設的 DLP 原則快速入門](./get-started-with-the-default-dlp-policy.md)
+- [從範本建立 DLP 原則](./create-a-dlp-policy-from-a-template.md)

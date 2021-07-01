@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919809"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226344"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的內幕人士風險管理
 
@@ -127,8 +127,8 @@ ms.locfileid: "50919809"
 - **Advanced eDiscovery**：升級案例以供調查，可讓您將案例的資料和管理轉移至 Microsoft 365 中 Advanced eDiscovery。 進階電子文件探索提供端對端工作流程，可讓您保留、收集、檢閱、分析及匯出您組織內部及外部調查所需的內容。 這可讓法務小組管理整個法務保存措施通知工作流程。 若要深入了解進階電子文件探索案例，請參閱[ Mcrosoft 365 中的進階電子文件探索概觀](overview-ediscovery-20.md)。
 - **Office 365 管理 APIs 整合 (預覽)**：「有問必答風險管理」支援透過 (管理) 將警示資訊匯出至安全性資訊和事件管理 Office 365 SIEM APIs 服務。 在平臺中存取警示資訊最適合組織的風險流程，可讓您更靈活地處理風險活動。 若要深入瞭解使用 Office 365 管理 APIs 匯出提醒資訊，請參閱[匯出警示](insider-risk-management-settings.md#export-alerts-preview)。
 
->[!NOTE]
->感謝您在 ServiceNow 連接器預覽期間進行意見反應和支援。 我們決定在2020年11月30日的「內幕人員風險管理」中結束支援 ServiceNow 連接器的預覽。 我們正在積極評估替代方法，讓客戶在內幕風險管理中 ServiceNow 整合。
+> [!NOTE]
+> 感謝您在 ServiceNow 連接器預覽期間進行意見反應和支援。 我們決定在2020年11月30日的「內幕人員風險管理」中結束支援 ServiceNow 連接器的預覽。 我們正在積極評估替代方法，讓客戶在內幕風險管理中 ServiceNow 整合。
 
 ## <a name="scenarios"></a>案例
 

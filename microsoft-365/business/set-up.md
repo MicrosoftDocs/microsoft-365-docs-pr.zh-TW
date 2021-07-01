@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務進階版的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624382"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227632"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝程式嚮導中設定 Microsoft 365 商務進階版
 
@@ -69,7 +69,7 @@ ms.locfileid: "52624382"
     ![個人化登入頁面的螢幕擷取畫面。](../media/adddomain.png)
 
     
-4. 依照嚮導中的步驟，[在任何 dns 主機服務提供者上建立 dns 記錄](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)，以驗證您擁有該網域的 Microsoft 365。 如果您知道您的網域主機，請參閱 [[主機特定指示]](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
+4. 依照嚮導中的步驟，[在任何 dns 主機服務提供者上建立 dns 記錄](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)，以驗證您擁有該網域的 Microsoft 365。 如果您知道網域主機，請參閱[Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain)。
 
     如果您的主機服務供應商是 GoDaddy 或透過 [[網域連結]](/office365/admin/get-help-with-domains/domain-connect) 所啟用的另一個主機，這個過程便會很簡單，您自動便會被要求登入，並讓 Microsoft 替您進行驗證。
 
@@ -135,4 +135,4 @@ ms.locfileid: "52624382"
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 商務訓練](../business-video/index.yml)影片 (連結] 頁面) 
+[商務用 Microsoft 365 訓練影片](../business-video/index.yml) (連結頁面)

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 來保護非受管理或附帶的裝置 (BYOD) 。
-ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398250"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227496"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保護未受管理的 Windows 10 PC 和 Mac
 
@@ -54,7 +54,7 @@ ms.locfileid: "51398250"
 
 您可以在大量的 Windows 裝置上使用裝置加密，並以加密的方式協助保護您的資料。 如果您開啟裝置加密，只有經過授權的人員才能存取您的裝置和資料。 如需指示，請參閱 [開啟裝置加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 。
 
- 如果裝置無法使用裝置加密，您可以改為開啟標準[BitLocker 加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)。 Windows 10 家用版版上無法使用 (BitLocker。 )  
+ 如果裝置無法使用裝置加密，您可以改為開啟標準 [BitLocker 加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 。 Windows 10 家用版版上無法使用 (BitLocker。 )  
 
 **使用 Windows 安全性保護您的裝置**<p>
 如果您有 Windows 10，您會使用 Windows 安全性獲得最新的病毒防護。 當您第一次開始 Windows 10 時，Windows 安全性會開啟並積極協助您掃描惡意程式碼 (惡意軟體) 、病毒及安全性威脅，以保護您的電腦。 Windows 安全性會使用即時保護來掃描您在電腦上下載或執行的所有專案。
@@ -72,7 +72,7 @@ Windows Update 會自動下載 Windows 安全性更新，以協助您保持電�
 磁片加密可在裝置遺失或遭竊時保護資料。 FileVault 完整磁片加密可協助防止未經授權的存取您的開機磁片上的資訊。 如需相關指示，請參閱 [Use FileVault to a On Mac on startup disk](https://support.apple.com/HT204837) 。
 
 **保護您的 mac 免受惡意程式碼攻擊**<p>
-Microsoft 建議您在 Mac 上安裝及使用可靠的防毒軟體。 如需挑選清單，請參閱下列文章： [最佳 Mac 防病毒 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
+Microsoft 建議您在 Mac 上安裝及使用可靠的防毒軟體。 如需挑選清單，請參閱下列文章： [最佳 Mac 防病毒 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
 
 您也可以只從可靠來源使用軟體，以降低惡意程式碼的風險。 安全性 & 隱私權喜好設定可讓您指定 Mac 上所安裝之軟體的來源。 如需詳細資訊，請參閱 [保護您的 Mac 免受惡意](https://support.apple.com/kb/PH25087)代碼。
 

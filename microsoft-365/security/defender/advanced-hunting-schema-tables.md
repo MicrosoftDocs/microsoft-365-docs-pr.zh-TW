@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470577"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225986"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -48,9 +48,9 @@ ms.locfileid: "52470577"
 - **範例查詢**--可用於功能如何使用表格的範例查詢。
 
 ### <a name="access-the-schema-reference"></a>存取架構參考
-若要快速存取架構參照，請選取架構表示中的資料表名稱旁邊的 **View reference** 動作。 您也可以選取 [ **架構參考** ]，以搜尋表格。   
+若要快速存取架構參照，請選取架構表示中的資料表名稱旁邊的 **View reference** 動作。 您也可以選取 [ **架構參考** ]，以搜尋表格。
 
-![顯示如何存取入口網站架構參考的影像 ](../../media/mtp-ah/ah-reference.png) 
+![顯示如何存取入口網站架構參考的影像](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>瞭解架構表格
 以下參考列出結構描述中的所有表格。 每個表格名稱都會連結到描述該表格之欄名稱的頁面。 表格和欄名稱也會列在 [安全性中心] 中，做為 [高級搜尋] 畫面上架構表示的一部分。

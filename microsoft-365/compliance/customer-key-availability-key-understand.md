@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 瞭解用於復原遺失之客戶機碼的可用性金鑰。
-ms.openlocfilehash: 4f4dfdff0aa1c7ebe6dd1266c82c6fd290913a3e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345091"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227076"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>了解客戶金鑰的可用性金鑰
 
@@ -155,8 +155,8 @@ Microsoft 365 會在特定情況下觸發可用性機碼。 這些情況會因�
 
        - 在此情況下，可用性金鑰只會用於系統動作，而不適用於使用者動作，使用者要求會失敗，且使用者會收到錯誤訊息。
 
->[!IMPORTANT]
->Microsoft 365 服務程式代碼永遠都具有有效的登入權杖，以用於透過客戶資料提供增值雲端服務。 因此，在刪除可用性機碼之前，可將其當作 Exchange Online 和商務用 Skype （如搜尋索引建立或移動信箱）所啟動的動作，用作後備。 這同時適用于暫時性錯誤和存取 Azure Key Vault 的拒絕要求。
+> [!IMPORTANT]
+> Microsoft 365 服務程式代碼永遠都具有有效的登入權杖，以用於透過客戶資料提供增值雲端服務。 因此，在刪除可用性機碼之前，可將其當作 Exchange Online 和商務用 Skype （如搜尋索引建立或移動信箱）所啟動的動作，用作後備。 這同時適用于暫時性錯誤和存取 Azure Key Vault 的拒絕要求。
 
 ### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint 線上、商務用 OneDrive 及 Teams 檔的觸發器
 

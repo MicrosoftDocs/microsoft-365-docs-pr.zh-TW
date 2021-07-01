@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821376"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227340"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -38,9 +38,9 @@ ms.locfileid: "52821376"
 - Microsoft 365 E5 訂閱 (付費或試用版) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365A5 訂閱 (付費或試用版本) 
-- Microsoft 365A3 訂閱 + Microsoft 365 A5 符合性附加元件
-- Microsoft 365A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365 A5 訂閱 (付費或試用版) 
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 規範附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 「內幕人員風險管理附加元件」
 - Microsoft 365G5 訂閱 (付費或試用版) 
 - Microsoft 365G5 訂閱 + Microsoft 365 G5 合規性附加元件
 - Microsoft 365G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
@@ -50,17 +50,17 @@ ms.locfileid: "52821376"
 
 必須將上述其中一個授權指派給通訊符合性原則中所含的使用者。
 
->[!IMPORTANT]
->Office 365 進階合規性不再以獨立訂閱銷售。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
+> [!IMPORTANT]
+> Office 365 進階合規性不再以獨立訂閱銷售。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
 如果您沒有現有的 Office 365 企業版 E5 計畫，且想要嘗試通訊相容性，您可以[將 Microsoft 365 新增](/office365/admin/try-or-buy-microsoft-365)至現有的訂閱，或註冊 Office 365 企業版 E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟 1 (必要) ：啟用通訊相容性的許可權
 
->[!Important]
->根據預設，全域管理員無法存取通訊規範功能。 在此步驟中所指派的角色是必要的通訊相容性功能才能存取。 設定角色群組之後，最多可能需要30分鐘的時間，才能將角色群組許可權套用至組織中指派給指派的使用者。
+> [!IMPORTANT]
+> 根據預設，全域管理員無法存取通訊規範功能。 在此步驟中所指派的角色是必要的通訊相容性功能才能存取。 設定角色群組之後，最多可能需要30分鐘的時間，才能將角色群組許可權套用至組織中指派給指派的使用者。
 
-有五個角色群組可用來設定管理通訊符合性功能的許可權。 若要在 Microsoft 365 規範中心中以功能表選項的方式使用 **通訊相容性**，並繼續進行這些設定步驟，您必須指派給 *通訊合規性* 或 *通訊合規性系統管理員* 角色群組。 若要在初始設定之後存取及管理通訊相容性功能，使用者必須是至少一個通訊合規性角色群組的成員。
+有五個角色群組可用來設定管理通訊符合性功能的許可權。 若要在 Microsoft 365 合規性中心中以功能表選項來進行 **通訊相容性**，並繼續進行這些設定步驟，您必須指派給 *通訊合規性* 或 *通訊合規性系統管理員* 角色群組。 若要在初始設定之後存取及管理通訊相容性功能，使用者必須是至少一個通訊合規性角色群組的成員。
 
 視您想要管理通訊原則及警示的方式而定，您必須將使用者指派給特定角色群組。 您可以選擇將具有不同規範責任的使用者指派給特定角色群組，以管理不同的通訊相容性功能範圍。 或者，您也可以決定將指定系統管理員、分析員、調查人員和檢視器的所有使用者帳戶指派給 *通訊合規性* 角色群組。 請使用單一角色群組或多個角色群組，盡可能符合您的規範管理需求。
 
@@ -130,7 +130,7 @@ ms.locfileid: "52821376"
 |:-----|:-----|:-----|
 |監督的使用者 <br> 排除的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 <br> 嵌套通訊群組 <br> 擁有郵件功能的安全性群組 <br> 使用動態成員資格 Microsoft 365 群組 |
 | 檢閱者 | 無 | 通訊群組 <br> 動態通訊群組 <br> 嵌套通訊群組 <br> 擁有郵件功能的安全性群組 |
-  
+
 當您指派原則中的通訊群組時，該原則會監控所有的電子郵件，並從通訊群組中的每個使用者 Teams 聊天。 當您在原則中指派 Microsoft 365 群組時，該原則會監控傳送至該群組的所有電子郵件和 Teams 聊天，而不是每個群組成員所收到的個別電子郵件和聊天。
 
 如果您是具有 Exchange 內部部署或外部電子郵件提供者的組織，且想要監視使用者的 Microsoft Teams 聊天，您必須為使用內部部署或外部信箱進行監視的使用者建立通訊群組。 在上述步驟中，您會將此通訊群組指派為 [原則嚮導] 中的 [授與 **群組** ] 選擇。 如需對內部部署使用者啟用雲端式儲存和 Teams 支援之需求和限制的相關資訊，請參閱[搜尋內部部署使用者 Teams 聊天室資料](search-cloud-based-mailboxes-for-on-premises-users.md)。
@@ -154,11 +154,11 @@ ms.locfileid: "52821376"
     ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
-    ForEach ($M in $Mbx) 
+    ForEach ($M in $Mbx)
     {
       Write-Host "Adding" $M.DisplayName
       Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
-      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded
       $i++
     }
     Write-Host $i "Mailboxes added to supervisory review distribution group."
@@ -179,14 +179,14 @@ ms.locfileid: "52821376"
 - [針對 Microsoft 365 設定您的 Yammer 網路使用原生模式](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>步驟 5 (必要) ：建立通訊相容性原則
-  
->[!Important]
->不支援使用 PowerShell 建立和管理通訊合規性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
 
-1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。
+> [!IMPORTANT]
+> 不支援使用 PowerShell 建立和管理通訊合規性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
 
-2. 在 [Microsoft 365 規範中心] 中，選取 [**通訊符合性**]。
-  
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入<https://compliance.microsoft.com>。
+
+2. 在 Microsoft 365 合規性中心中，選取 [**通訊符合性**]。
+
 3. 選取 [原則]**** 索引標籤。
 
 4. 選取 [ **建立原則** ]，以從範本建立及設定新原則，或建立及設定自訂原則。
@@ -201,8 +201,8 @@ ms.locfileid: "52821376"
 
     - 選擇 [有限條件] 欄位，通常是要套用至原則的敏感資訊類型或關鍵字字典。
 
-    >[!NOTE]
-    >如果您想要啟用 [光學字元辨識 (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)若要列印或手寫文字元合原則條件的郵件，請選取 [**自訂原則**  >  **條件與百分比**]，並啟用 **從影像進行的輸出或手寫文字的計算**。
+    > [!NOTE]
+    > 如果您想要啟用 [光學字元辨識 (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)若要列印或手寫文字元合原則條件的郵件，請選取 [**自訂原則**  >  **條件與百分比**]，並啟用 **從影像進行的輸出或手寫文字的計算**。
 
     如果您選擇使用原則嚮導建立自訂原則，您可以：
 
@@ -240,7 +240,7 @@ ms.locfileid: "52821376"
 
 1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
-2. 在 Microsoft 365 規範中心內，移至 [**通訊符合性**]。
+2. 在 Microsoft 365 合規性中心中，移至 [**通訊符合性**]。
 
 3. 若要設定匿名的使用者名，請選取 [ **隱私權** ] 索引標籤。
 

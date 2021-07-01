@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ef6d1cf23d6cca58f4226696bc63c1dea5816cc1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822506"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226212"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>訓練 (預覽的預測編碼模型) 
 
@@ -29,11 +29,11 @@ ms.locfileid: "52822506"
 
 ## <a name="before-you-train-a-model"></a>訓練模型之前
 
-- 在訓練過程中，會根據檔內容的關聯性，將專案標籤設為 **相關** 或 **不相關** 。 請勿根據元資料欄位中的值進行決策。 例如，電子郵件訊息或 Teams 交談，請勿將您的標記決定于郵件參與者。 
+- 在訓練過程中，會根據檔內容的關聯性，將專案標籤設為 **相關** 或 **不相關** 。 請勿根據元資料欄位中的值進行決策。 例如，電子郵件訊息或 Teams 交談，請勿將您的標記決定于郵件參與者。
 
 ## <a name="train-a-model-for-the-first-time"></a>第一次訓練模型
 
-1. 在 Microsoft 365 規範中心] 中，開啟 Advanced eDiscovery 案例，然後選取 [**複查集**] 索引標籤。
+1. 在 Microsoft 365 合規性中心中，開啟 Advanced eDiscovery 案例，然後選取 [**複查集**] 索引標籤。
 
 2. 開啟一個複查集，然後按一下 [**分析**  >  **管理預測編碼 (預覽])**。
 
@@ -63,10 +63,10 @@ ms.locfileid: "52822506"
 
 - 根據您標示訓練集中的40專案的方式，模型會從您的標記開始，並自行更新，以變得更準確。
 
-- 然後，模型會處理整個審閱集中的每個專案，並指定介於 **0** (不相關的預測分數) 與 **1** (相關) 。  
+- 然後，模型會處理整個審閱集中的每個專案，並指定介於 **0** (不相關的預測分數) 與 **1** (相關) 。
 
 - 模型將預測分數指派給您在訓練迴圈期間標示的控制項集中的10個專案。 模型會將這10個專案的預測分數與您在訓練迴圈期間指派給專案的實際標籤進行比較。 根據此比較，模型會識別下列分類 (稱為「 *控制項集混淆」清單*) 以評估模型的預測效能：
-  
+
   |          |模型預測專案是相關的 |模型預測專案與專案不相關 |
   |:---------|:---------|:---------|
   |**檢閱者標籤專案為相關**| True 正值| 誤判 |

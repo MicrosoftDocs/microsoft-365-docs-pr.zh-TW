@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: 瞭解如何將流量路由傳送至 Microsoft 所主控的現有公用網站（如果您已將 Microsoft 設定為管理自訂網域的 DNS 記錄）。
-ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: d54aa4583862ce19907a3b8494a333bbb925e436
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572135"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228120"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 記錄以便向目前的主機服務提供者保留網站
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572135"
   
  **如果 microsoft 管理您的 DNS 記錄**，若要將流量路由傳送至 microsoft 所主控的現有公用網站，將您的網域新增至 microsoft 之後，請執行下列操作： 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新 Microsoft 365 系統管理中心的 DNS 記錄
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新 Microsoft 365 系統管理中心中的 DNS 記錄
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
 1. 在 [ **網域** ] 頁面上，選取網域，然後選擇 [ **DNS 記錄**]。
@@ -65,6 +65,6 @@ ms.locfileid: "52572135"
     
 最後，請執行下列動作：
   
-[更新您網域的 NS 記錄](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ，以指向 Microsoft。 
+[更新您網域的 NS 記錄](../setup/add-domain.md) ，以指向 Microsoft。 
   
 當 NS 記錄更新為指向 Microsoft 時，您的網域就會全部設定。 電子郵件會路由傳送至 Microsoft，而您的網站位址的流量將繼續前往您目前的網站主機。

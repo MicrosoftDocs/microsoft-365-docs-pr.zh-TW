@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在安全性 & 合規性中心建立、修改、移除及測試 DLP 的自訂機密資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683834"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227148"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自訂敏感性資訊類型入門
 
@@ -45,7 +45,7 @@ ms.locfileid: "52683834"
     - [函數](what-the-dlp-functions-look-for.md)
     - [信賴等級](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- 您必須具備全域管理員或合規性系統管理員的權限，才能透過 UI 建立、測試及部署自訂的敏感性資訊類型。 請參閱 Office 365 中的[關於系統管理員角色](/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。
+- 您必須具備全域管理員或合規性系統管理員的權限，才能透過 UI 建立、測試及部署自訂的敏感性資訊類型。 請參閱 Office 365 中的[關於系統管理員角色](/office365/admin/add-users/about-admin-roles)。
 
 - 您的組織必須擁有包括資料外洩防護 (DLP) 的訂用帳戶，例如 Office 365 企業版。 請參閱[郵件原則及符合性](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)。 
 

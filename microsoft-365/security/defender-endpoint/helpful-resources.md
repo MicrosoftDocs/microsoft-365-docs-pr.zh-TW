@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5e92cd8b15a744301755dcd17633616e3061292c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843060"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225972"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>有用的 Microsoft Defender for Endpoint resources
 
@@ -32,7 +32,7 @@ ms.locfileid: "52843060"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 存取有用的資源，例如與 Microsoft Defender for Endpoint 相關的博客與其他資源的連結。
 
@@ -57,7 +57,7 @@ ms.locfileid: "52843060"
 
 - [黃金小時 remake-定義成功安全性作業的計量](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/The-Golden-Hour-remake-Defining-metrics-for-a-successful/ba-p/782014)
 
-- [已在公開預覽中使用用於端點評估實驗室的 Defender   ](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Microsoft-Defender-ATP-Evaluation-lab-is-now-available-in-public/ba-p/770271)
+- [已在公開預覽中使用用於端點評估實驗室的 Defender](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Microsoft-Defender-ATP-Evaluation-lab-is-now-available-in-public/ba-p/770271)
 
 - [自動化對您的安全小組帶來價值的方式](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 

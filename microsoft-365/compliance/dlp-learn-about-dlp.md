@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 365 資料遺失防護原則及工具來保護您的機密資訊，並透過 DLP 生命週期進行導覽。
-ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 291a9ab09d14e24d58604644d77381d7f41214d6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108256"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226848"
 ---
 # <a name="learn-about-data-loss-prevention"></a>深入了解資料外洩防護
 
@@ -35,7 +35,7 @@ ms.locfileid: "53108256"
 - 內部部署檔案共用和內部部署 SharePoint。
 
 Microsoft 365 使用深入的內容分析來偵測敏感專案，而不只是簡單的文字掃描。 會透過評估正則運算式、內建函式驗證，以及與主要資料比對接近的次要資料比對，來分析主要資料符合關鍵字的內容。 除了該 DLP 之外，還會使用電腦學習演算法和其他方法，偵測符合您 DLP 原則的內容。
-  
+
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP 是較大 Microsoft 365 規範服務的一部分
 
 Microsoft 365DLP 只是其中一個 Microsoft 365 規範工具，可讓您在任何居住或旅行時，協助保護您的敏感專案。 您應該瞭解 Microsoft 365 規範工具集合中的其他工具，如何 interrelate，以及如何搭配一起運作。  請參閱， [Microsoft 365 規範工具](protect-information.md)以深入瞭解資訊保護程式。
@@ -69,7 +69,7 @@ Microsoft 365DLP 監控和保護是使用者每天使用之應用程式的原生
 
 **DLP 的技術規劃**
 
-請記住，DLP 為技術可以監視和保護靜態資料、使用中的資料，以及在 Microsoft 365 服務、Windows 10 裝置、內部部署檔案共用和內部部署 SharePoint 中的動作中的資料。 針對不同的位置、您想要監視和保護的資料類型，以及當原則相符時所採取的動作，都有一定的計畫含義。  
+請記住，DLP 為技術可以監視和保護靜態資料、使用中的資料，以及在 Microsoft 365 服務、Windows 10 裝置、內部部署檔案共用和內部部署 SharePoint 中的動作中的資料。 針對不同的位置、您想要監視和保護的資料類型，以及當原則相符時所採取的動作，都有一定的計畫含義。
 
 **規劃 DLP 的商務程式**
 
@@ -121,7 +121,7 @@ DLP 原則可以封鎖禁止的活動，例如透過電子郵件不適當的敏�
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>啟用控制項並調整原則
 
-一旦原則符合您的所有目標，請將其開啟。 繼續監視原則應用程式的結果，並視需要調整。 一般來說，原則會在開啟後的一小時內生效。 
+一旦原則符合您的所有目標，請將其開啟。 繼續監視原則應用程式的結果，並視需要調整。 一般來說，原則會在開啟後的一小時內生效。
 
 <!--See, LINK TO topic for SLAs for location specific  details-->
 
@@ -133,7 +133,7 @@ DLP 原則可以封鎖禁止的活動，例如透過電子郵件不適當的敏�
     - 預先定義的原則範本：金融資料、醫療和健康情況資料、各種國家和地區的隱私權資料。
     - 使用可用的敏感資訊類型、保留標籤和敏感度標籤的自訂原則。
 2. **選擇您要監視的位置** -您可以選擇一個或多個您想要 DLP 監控機密資訊的位置。 您可以監視：
-    
+
 位置 | 包含/排除依據|
 |---------|---------|
 |Exchange 電子郵件| 通訊群組|
@@ -154,7 +154,7 @@ DLP 原則可以封鎖禁止的活動，例如透過電子郵件不適當的敏�
 
 - SharePoint/Exchange/OneDrive：封鎖位於組織表單以外存取內容的人員。 向使用者顯示提示，並傳送電子郵件通知，告知他們採取的是 DLP 原則所禁止的動作。
 - Teams聊天室及通道：封鎖在聊天或頻道中共用的敏感資訊
-- Windows 10裝置：審核或限制將敏感專案複製到可拆卸的 USB 裝置 
+- Windows 10裝置：審核或限制將敏感專案複製到可拆卸的 USB 裝置
 - Office應用程式：顯示快顯視窗，通知使用者他們正在進入危險的行為和封鎖或封鎖，但允許覆寫。
 - 內部部署檔案共用：將檔案從儲存位置移至隔離資料夾
 
@@ -166,18 +166,18 @@ DLP 原則可以封鎖禁止的活動，例如透過電子郵件不適當的敏�
 All DLP policies are created and maintained in the Microsoft 365 Compliance center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
 
 在規範中心建立 DLP 原則之後，它會儲存在中央原則存放區中，然後再同步處理至各種內容來源，包括：
-  
+
 - Exchange Online，再從這裡到 Outlook 網頁版和 Outlook。
 - 商務用 OneDrive 網站。
 - SharePoint Online 網站。
 - Office 桌上型電腦程式 (Excel、PowerPoint 及 Word)。
 - Microsoft Teams 頻道和聊天訊息。
-    
+
 原則同步處理至正確的位置之後，會開始評估內容並強制執行動作。
 
 ## <a name="viewing-policy-application-results"></a>查看原則應用程式結果
 
-DLP 會將大量資訊從監控、原則比對和動作和使用者活動報告 Microsoft 365。 您必須使用該資訊並採取行動，以調整對機密專案所採取的原則及會審動作。 遙測會先處理[Microsoft 365 規範中心審核記錄](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center)檔，並將其方式用於不同的報表工具。 每個報告工具都有不同的用途。  
+DLP 會將大量資訊從監控、原則比對和動作和使用者活動報告 Microsoft 365。 您必須使用該資訊並採取行動，以調整對機密專案所採取的原則及會審動作。 遙測會先處理[Microsoft 365 規範中心審核記錄](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center)檔，並將其方式用於不同的報表工具。 每個報告工具都有不同的用途。
 
 ### <a name="dlp-alerts-dashboard"></a>DLP 警示儀表板
 
@@ -191,7 +191,7 @@ DLP 會將大量資訊從監控、原則比對和動作和使用者活動報告 
 > [!div class="mx-imgBorder"]
 > ![事件資訊](../media/Event-info-1.png)
 
-### <a name="reports"></a>報告
+### <a name="reports"></a>報表
 
 [DLP 報告](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention)會顯示隨時間的廣泛趨勢，並提供下列專案的特定見解：
 
@@ -203,7 +203,7 @@ DLP 會將大量資訊從監控、原則比對和動作和使用者活動報告 
 
 DLP 頁面上的 [活動流覽] 索引標籤會將 *活動* 篩選器預先設定為 *DLPRuleMatch*。 使用此工具可查看與包含機密資訊或已套用標籤之內容相關的活動，例如變更的標籤、檔已修改，以及符合規則。
 
-![DLPRuleMatch 範圍的活動瀏覽器的螢幕擷取畫面 ](../media/dlp-activity-explorer.png)
+![DLPRuleMatch 範圍的活動瀏覽器的螢幕擷取畫面](../media/dlp-activity-explorer.png)
 
 如需詳細資訊，請參閱 [活動瀏覽器快速入門](data-classification-activity-explorer.md)
 

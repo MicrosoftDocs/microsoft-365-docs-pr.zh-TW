@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bda9633ab37fd21fd66b3a8a53d4dd522e48ced1
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820271"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226500"
 ---
 # <a name="insider-risk-management-audit-log"></a>內幕風險管理審核記錄
 
@@ -38,8 +38,8 @@ ms.locfileid: "50820271"
 
 若要從審核記錄檔中查看和匯出資料，使用者必須被指派給「 *內部使用者風險管理* 」或「 *有問必答風險管理審計員* 」角色群組。 若要深入瞭解「內幕風險管理」角色群組，請參閱「 [會員風險管理的快速入門」步驟1：啟用許可權](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)。
 
->[!NOTE]
->「內部使用者風險管理」審核記錄並未與 Microsoft 365 的審計記錄產生關聯，它們是獨立的審計系統，並在不同的活動上捕獲資訊。 停用 Microsoft 365 審核不會影響內幕風險管理內的活動稽核。
+> [!NOTE]
+> 「內部使用者風險管理」審核記錄並未與 Microsoft 365 的審計記錄產生關聯，它們是獨立的審計系統，並在不同的活動上捕獲資訊。 停用 Microsoft 365 審核不會影響內幕風險管理內的活動稽核。
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>在「內幕風險審核」記錄中查看活動
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用內建基本行動性和安全性，以移除已註冊裝置中的資訊。
-ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706139"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228144"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本行動及安全性中清除行動裝置
 
@@ -86,5 +86,6 @@ ms.locfileid: "52706139"
 |如果裝置受到 Intune 應用程式保護原則保護，就會清除 Microsoft 365 應用程式資料。 未移除應用程式。 對於不是由行動應用程式管理 (MAM) 原則保護的裝置，Outlook 和 OneDrive 不會移除快取的資料。<br/>**記事** 若要套用 Intune 應用程式保護原則，您必須要有 Intune 授權。|是|是|
 |已不再執行基本行動性和裝置安全性所套用的原則設定;使用者可以變更設定。|是|是|
 |已移除基本行動性和安全性所建立的電子郵件設定檔，並刪除裝置上的快取電子郵件。|是|不適用|
->[!NOTE]
->公司入口網站應用程式可在應用程式存放區取得，以供 iOS 和 Android 裝置的播放存放區使用。
+
+> [!NOTE]
+> 公司入口網站應用程式可在應用程式存放區取得，以供 iOS 和 Android 裝置的播放存放區使用。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要適用於 Microsoft 365 的記錄管理解決方案，以管理法律、商務或法規責任的高價值內容，但不確定要從何處著手？請參閱一些實用的指導方針來開始使用。
-ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244341"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226572"
 ---
 # <a name="get-started-with-records-management"></a>開始使用記錄管理
 
@@ -30,14 +30,14 @@ ms.locfileid: "52244341"
 
 準備好開始使用 Microsoft 365 中的記錄管理解決方案，著手管理貴組織的法律、商務或法規責任的高價值內容嗎？請使用以下指導方針來開始使用：
 
-1. **瞭解記錄管理解決方案** ，以及當文件和電子郵件聲明為記錄時允許或封鎖的動作： [瞭解記錄管理](records-management.md)。 
+1. **瞭解記錄管理解決方案** ，以及當文件和電子郵件聲明為記錄時允許或封鎖的動作： [瞭解記錄管理](records-management.md)。
 
 2. **瞭解保留標籤以及如何在 SharePoint 和 Exchange 中使用保留功能** ，因為保留標籤是用來聲明記錄： [瞭解保留原則和保留標籤](retention.md)
 
-3. 透過 [匯出現有方案](file-plan-manager.md#import-retention-labels-into-your-file-plan )(如果有的話)，以 **針對保留設定和動作建立您的檔案方案**，或建立 [ 聲明記錄的新保留標籤](declare-records.md)。
+3. 透過 [匯出現有方案](file-plan-manager.md#import-retention-labels-into-your-file-plan)(如果有的話)，以 **針對保留設定和動作建立您的檔案方案**，或建立 [ 聲明記錄的新保留標籤](declare-records.md)。
 
-4. **發佈並套用您的保留標籤**。 保留標籤是可在多個原則中使用的可重複使用構造塊，且可納入使用者工作流程: 
-    
+4. **發佈並套用您的保留標籤**。 保留標籤是可在多個原則中使用的可重複使用構造塊，且可納入使用者工作流程:
+
     - [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
     - [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)
 
@@ -49,9 +49,9 @@ ms.locfileid: "52244341"
 
 ## <a name="permissions-required-for-records-management"></a>記錄管理所需的存取權限。
 
-您的合規性團隊中負責記錄管理的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶管理員 (全域系統管理員) 可以存取此位置，並且可以授與法務人員和其他人員存取權限，而無需向他們授與租用戶管理員的所有權限。若要授與此有限管理的權限，建議您將使用者新增到 **[記錄管理]** 管理員角色群組，該角色群組將授與與記錄管理相關的所有功能 (包括 [處置檢閲和驗證](disposition.md)) 的權限。 
+您的合規性團隊中負責記錄管理的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶管理員 (全域系統管理員) 可以存取此位置，並且可以授與法務人員和其他人員存取權限，而無需向他們授與租用戶管理員的所有權限。若要授與此有限管理的權限，建議您將使用者新增到 **[記錄管理]** 管理員角色群組，該角色群組將授與與記錄管理相關的所有功能 (包括 [處置檢閲和驗證](disposition.md)) 的權限。
 
-對於唯讀角色，可以建立新的角色群組，並將 **[僅檢視記錄管理]** 角色添加到此群組。 
+對於唯讀角色，可以建立新的角色群組，並將 **[僅檢視記錄管理]** 角色添加到此群組。
 
 如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 

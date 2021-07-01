@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1af3ff5fac9a95afb15f680f8f46e8d0de0b4567
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245429"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226044"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的記錄管理
 
@@ -70,11 +70,11 @@ ms.locfileid: "52245429"
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>比較允許或封鎖動作的限制
 
-使用下表格來找出由於套用標準保留標籤，而對內容施加的限制，以及將內容標示為記錄或監管記錄的保留標籤。 
+使用下表格來找出由於套用標準保留標籤，而對內容施加的限制，以及將內容標示為記錄或監管記錄的保留標籤。
 
 標準的保留標籤具有保留設定和動作，但不能將內容標示為記錄或監管記錄。
 
->[!NOTE] 
+> [!NOTE]
 > 為了完整起見，表格包含鎖定和解除鎖定記錄的欄，這適用於 SharePoint 和 OneDrive，但不適用 Exchange。 鎖定和解除鎖定記錄的功能會使用[記錄版本設定](record-versioning.md)，其不支援 Exchange 項目。 因此，針對標示為記錄的所有 Exchange 項目，行為會對應到 **記錄 - 鎖定** 欄，而 **記錄 - 解除鎖定** 則不相關。
 
 
@@ -94,19 +94,20 @@ ms.locfileid: "52245429"
 
 <sup>1</sup> OneDrive 和 Exchange 透過將複本保留在安全的位置但由 SharePoint 鎖定而支援。
 
-當您將保留標籤套用至具有文件附件的清單項目時，該文件不會繼承保留設定，而且可以從清單項目刪除。 相較之下，如果清單項目宣告為具有保留標籤的記錄，則文件附件會繼承保留設定，且無法刪除。 
+當您將保留標籤套用至具有文件附件的清單項目時，該文件不會繼承保留設定，而且可以從清單項目刪除。 相較之下，如果清單項目宣告為具有保留標籤的記錄，則文件附件會繼承保留設定，且無法刪除。
 
 <sup>2</sup> 容器包括 SharePoint 文件庫、OneDrive 帳戶和 Exchange 信箱。
 
->[!IMPORTANT] 
-> 監管記錄最重要的差異是，當它套用到內容之後，沒有人 (甚至全域系統管理員)，可以移除標籤。 
+> [!IMPORTANT]
+> 監管記錄最重要的差異是，當它套用到內容之後，沒有人 (甚至全域系統管理員)，可以移除標籤。
 >
 > 針對法規記錄設定的保留標籤也具有下列系統管理員限制：
+>
 > - 儲存標籤後，保留期間就無法縮短，僅可以延長。
-> - 自動標籤原則不支援這些標籤，而且必須使用[保留標籤原則](create-apply-retention-labels.md)來套用。 
+> - 自動標籤原則不支援這些標籤，而且必須使用[保留標籤原則](create-apply-retention-labels.md)來套用。
 >
 > 此外，法規標籤不能套用至在 SharePoint 中簽出的檔案。
-> 
+>
 > 由於存在限制以及這些動作無法逆轉，請先確認您有必要使用法規記錄，再針對保留標籤選取此選項。 為了防止意外的設定，預設不提供此選項，必須先用 PowerShell 啟動。 [使用保留標籤宣告記錄](declare-records.md)中包含所有説明。
 
 ## <a name="configuration-guidance"></a>配置指導方針

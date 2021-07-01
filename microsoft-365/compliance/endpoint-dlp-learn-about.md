@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114101"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226680"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
@@ -34,7 +34,7 @@ ms.locfileid: "52114101"
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>您可以監視和採取動作的端點活動
 
-Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。 
+Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。
 
 |活動 |描述  | 可稽核/可限制|
 |---------|---------|---------|
@@ -48,7 +48,7 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 |建立項目|當使用者建立項時偵測| 可稽核的|
 |重新命名項目|當使用者重新命名項時偵測| 可稽核的|
 
- ## <a name="monitored-files"></a>受監視的檔案
+## <a name="monitored-files"></a>受監視的檔案
 
 端點 DLP 支援監視下列檔案類型：
 
@@ -66,10 +66,10 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 - .cs 檔案
 - .h 檔案
 - .java 檔案
- 
+
 根據預設，端點 DLP 會稽核這些檔案類型的活動（即使沒有相符原則）。 如果您只想要從相符原則監控資料，您可以關閉端點 DLP 全域設定中的 **[一律稽核裝置的檔案活動]**。 如果已開啟此設定，則會持續稽核任何 Word、PowerPoint、Excel、PDF 和 .csv 檔案上的活動，即使裝置未由任何原則為鎖定亦然。
 
-[端點 DLP] 可監視基於 MIME 類型的活動，因此即使副檔名變更，也能截取活動。 
+[端點 DLP] 可監視基於 MIME 類型的活動，因此即使副檔名變更，也能截取活動。
 
 ## <a name="whats-different-in-endpoint-dlp"></a>端點 DLP 有何不同
 
@@ -153,8 +153,8 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 
 現在您已經瞭解了端點 DLP，接下來的步驟如下：
 
-1) [Microsoft 端點資料外洩防護快速入門](endpoint-dlp-getting-started.md)
-2) [使用 Microsoft 端點資料外洩防護](endpoint-dlp-using.md)
+1. [Microsoft 端點資料外洩防護快速入門](endpoint-dlp-getting-started.md)
+2. [使用 Microsoft 端點資料外洩防護](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登陸頁面提供 Office 365 的安全性和合規性的連結及規劃資訊。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198056"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226248"
 ---
 # <a name="plan-for-security-amp-compliance"></a>規劃安全性 &amp; 合規性
 
@@ -32,7 +32,7 @@ ms.locfileid: "51198056"
 
 在 Office 365 海報的資訊保護中，為您提供資訊保護功能的方向。 
   
-[使用 Microsoft 365 部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[使用 Microsoft 365 部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md)
   
 ## <a name="step-2-check-your-secure-score"></a>步驟2：檢查您的安全分數
 

@@ -22,16 +22,16 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以使用 Microsoft 365 中的 eDiscovery 搜尋工具進行搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: 390477012c6a2a57c5e305641ba5b79ff10f4ea7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bb87125b8cb4091121c6a389bcba8d69be7cc71e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538432"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226356"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>EDiscovery 的關鍵字查詢和搜尋條件
 
-本主題說明您可以在電子郵件專案中搜尋的電子郵件和檔案屬性，以及 Microsoft Teams Exchange Online 中的交談交談，以及使用 Microsoft 365 規範中心內的 eDiscovery 搜尋工具儲存于 SharePoint 和商務用 OneDrive 網站上的檔。 這包括內容搜尋、核心 eDiscovery 和 Advanced eDiscovery (Advanced eDiscovery 中的 eDiscovery 搜尋) 稱為 *集合*。 您也可以在安全性 & 規範中心 PowerShell 中使用 **\* -new-compliancesearch** Cmdlet 來搜尋這些屬性。 本主題也會說明下列事項：
+本主題說明您可以在電子郵件專案中搜尋的電子郵件和檔案屬性，以及在 Exchange Online 中 Microsoft Teams 聊天交談，以及使用 Microsoft 365 合規性中心中的 eDiscovery 搜尋工具儲存于 SharePoint 和商務用 OneDrive 網站上的檔。 這包括內容搜尋、核心 eDiscovery 和 Advanced eDiscovery (Advanced eDiscovery 中的 eDiscovery 搜尋) 稱為 *集合*。 您也可以在安全性 & 規範中心 PowerShell 中使用 **\* -new-compliancesearch** Cmdlet 來搜尋這些屬性。 本主題也會說明下列事項：
   
 - 使用布林值搜尋運算子、搜尋條件及其他搜尋查詢技術來精煉搜尋結果。
 
@@ -48,20 +48,20 @@ ms.locfileid: "52538432"
 - [在 Advanced eDiscovery 中建立草稿集合](create-draft-collection.md)
 
 > [!NOTE]
-> 在安全性 & 規範中心 PowerShell 使用關鍵字查詢語言 (KQL) 的 Microsoft 365 規範中心和對應 **\* new-compliancesearch** Cmdlet 中的 eDiscovery 搜尋。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
+> Microsoft 365 合規性中心中的 eDiscovery 搜尋和安全性 & 規範中心的對應 **\* new-compliancesearch** Cmdlet PowerShell 使用關鍵字查詢語言 (KQL) 。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
   
 ## <a name="searchable-email-properties"></a>可搜尋的電子郵件屬性
 
-下表列出使用 Microsoft 365 規範中心的 eDiscovery 搜尋工具，或使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** 指令程式，可搜尋的電子郵件屬性。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 您可以  `property:value` 在 eDiscovery 搜尋的 [關鍵字] 方塊中輸入這些配對。 
+下表列出使用 Microsoft 365 合規性中心中的 eDiscovery 搜尋工具，或使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** 指令程式可搜尋的電子郵件屬性。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 您可以  `property:value` 在 eDiscovery 搜尋的 [關鍵字] 方塊中輸入這些配對。 
 
 > [!NOTE]
 > 在搜尋電子郵件屬性時，不可能搜尋指定屬性為空白或空白的專案。 例如，使用 [ *屬性：值* 一對主旨 **： "]** 搜尋具有空白主旨行的電子郵件會傳回零結果。 這也適用于搜尋網站和連絡人屬性。
   
-| 屬性 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
+| 屬性	 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |具有名為 annualreport.ppt 的附加檔案的郵件。 在第二個範例中，使用萬用字元 ( * ) 會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
 |密件副本|電子郵件訊息的 [密件副本] 欄位。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有範例都傳回具有 Pilar Pinilla 的郵件，包含在 [密件副本] 欄位中。|
-|Category| 要搜尋的類別。 使用者可以使用 (網頁上的 Outlook 或 Outlook （以前稱為 Outlook Web App) ）來定義類別。 可能的值為：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
+|類別| 要搜尋的類別。 使用者可以使用 Outlook 或 Outlook 網頁版 (先前稱為 Outlook Web App) 來定義類別。 可能的值為：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
 |副本|電子郵件訊息的 [副本] 欄位。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在這兩個範例中，在 [副本] 欄位中指定 Pilar Pinilla 的郵件。|
 |Folderid|特定信箱資料夾 (GUID) 的資料夾識別碼。 如果您使用此屬性，請務必搜尋指定資料夾所在的信箱。 只會搜尋指定的資料夾。 不會搜尋資料夾中的任何子資料夾。 若要搜尋子資料夾，您必須使用 Folderid 屬性做為您想要搜尋的子資料夾。  <br/> 如需搜尋 Folderid 屬性和使用腳本來取得特定信箱之資料夾 IDs 的詳細資訊，請參閱 [使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一個範例會傳回指定之信箱資料夾中的所有專案。 第二個範例會傳回 garthf@contoso.com 所傳送或接收的指定信箱資料夾中的所有專案。|
 |寄件者|電子郵件的寄件者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定的使用者所傳送或從指定的網域傳送的郵件。|
@@ -99,7 +99,7 @@ ms.locfileid: "52538432"
   
 如需可搜尋的 SharePoint 屬性完整清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 您可以在可 **查詢** 的資料行中，以 [**是]** 標示的屬性進行搜尋。
   
-| 屬性 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
+| 屬性	 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
 |:-----|:-----|:-----|:-----|
 |作者|Office 檔中的 author 欄位，會在檔案複製時保留。 例如，如果使用者建立檔，並將它的電子郵件給其他人，然後再將其上傳至 SharePoint，該檔仍會保留原來的作者。 請務必使用此屬性的使用者顯示名稱。|`author:"Garth Fort"`|所有由 Garth Fort 撰寫的檔。|
 |ContentType|專案的 SharePoint 內容類型，例如專案、檔或影片。|`contenttype:document`|會傳回所有檔。|
@@ -125,7 +125,7 @@ ms.locfileid: "52538432"
 > [!TIP]
 > 若要搜尋包含空格或特殊字元的值，請使用雙引號 ( "" ) 以包含片語; 否則請使用雙引號。例如， `businessaddress:"123 Main Street"` 。
   
-|屬性 |屬性描述 |
+|屬性	 |屬性描述 |
 |:-----|:-----|
 |BusinessAddress|[ **商務位址** ] 屬性中的位址。 在連絡人的 [內容] 頁面上，此屬性也稱為「 **工作** 位址」。|
 |BusinessPhone|任何 **Business 電話** 號碼內容中的電話號碼。|
@@ -149,9 +149,9 @@ ms.locfileid: "52538432"
 
 ## <a name="searchable-sensitive-data-types"></a>可搜尋的敏感資料類型
 
-您可以使用 Microsoft 365 規範中心的 eDiscovery 搜尋工具，搜尋 SharePoint 和商務用 OneDrive 網站上的檔中所儲存的機密資料，例如信用卡號碼或社會保險號碼。 若要這麼做，您可以使用 `SensitiveType` 關鍵字查詢中敏感資訊類型的屬性和名稱 (或 ID) 。 例如，查詢會傳回 `SensitiveType:"Credit Card Number"` 包含信用卡號碼的檔。 查詢  `SensitiveType:"U.S. Social Security Number (SSN)"` 會傳回包含 U.S. 社會保險號碼的檔。
+您可以使用 Microsoft 365 合規性中心中的 eDiscovery 搜尋工具，搜尋 SharePoint 和商務用 OneDrive 網站上的檔中儲存的機密資料，例如信用卡號碼或社會保險號碼。 若要這麼做，您可以使用 `SensitiveType` 關鍵字查詢中敏感資訊類型的屬性和名稱 (或 ID) 。 例如，查詢會傳回 `SensitiveType:"Credit Card Number"` 包含信用卡號碼的檔。 查詢  `SensitiveType:"U.S. Social Security Number (SSN)"` 會傳回包含 U.S. 社會保險號碼的檔。
 
-若要查看您可以搜尋的機密資訊類型清單，請移至 Microsoft 365 規範中心的「**資料分類**」 \> 的 **敏感資訊類型**。 您也可以在安全性 & 相容性中心 PowerShell 中使用 **DlpSensitiveInformationType** Cmdlet，以顯示敏感資訊類型的清單。
+若要查看您可以搜尋的機密資訊類型清單，請移至 Microsoft 365 合規性中心中的「**資料分類** 的 \> **敏感資訊類型**」。 您也可以在安全性 & 相容性中心 PowerShell 中使用 **DlpSensitiveInformationType** Cmdlet，以顯示敏感資訊類型的清單。
   
 如需使用屬性建立查詢的詳細資訊 `SensitiveType` ，請參閱 [表單 a 查詢以尋找儲存在網站上的敏感性資料](form-a-query-to-find-sensitive-data-stored-on-sites.md)。
 
@@ -189,7 +189,7 @@ ms.locfileid: "52538432"
 |\>=|property \> = 值|表示所搜尋的屬性大於或等於特定值。<sup>1</sup>|
 |..|屬性： value1。value2|表示所搜尋的屬性大於或等於 value1 且小於或等於 value2。<sup>1</sup>|
 |"  "|"公平值"  <br/> subject:"Quarterly Financials"|使用雙引號 ( "" ) 來搜尋關鍵字和搜尋查詢中的確切片語或字詞  `property:value` 。|
-|\*|貓\*  <br/> subject： set\*|首碼搜尋 (也稱為 *前置* 詞比對) ，而萬用字元 ( * ) 置於關鍵字的關鍵字或查詢中的結尾 `property:value` 。 在 [首碼搜尋] 中，搜尋會傳回包含字詞後接零個或多個字元的字詞結果。 例如， `title:set*` 會傳回檔，其中包含 "set"、"setup" 及 "設定" (，以及以 "set" 開頭 ) 檔標題中的其他文字。  <br/><br/> **附注：** 您只能使用首碼搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat** ) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。<br/><br/>此外，新增句點 ( \。 ) 首碼搜尋會變更傳回的結果。 這是因為句點會被視為停用字詞。 例如，搜尋 **cat \* *_ 和搜尋 _* cat。 \*** 會傳回不同的結果。 建議您不要在首碼搜尋中使用句點。 |
+|\*|貓\*  <br/> subject： set\*|首碼搜尋 (也稱為 *前置* 詞比對) ，而萬用字元 ( * ) 置於關鍵字的關鍵字或查詢中的結尾 `property:value` 。 在 [首碼搜尋] 中，搜尋會傳回包含字詞後接零個或多個字元的字詞結果。 例如， `title:set*` 會傳回檔，其中包含 "set"、"setup" 及 "設定" (，以及以 "set" 開頭 ) 檔標題中的其他文字。  <br/><br/> **附注：** 您只能使用首碼搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat**) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。<br/><br/>此外，新增句點 ( \。 ) 首碼搜尋會變更傳回的結果。 這是因為句點會被視為停用字詞。 例如，搜尋 **cat \* *_ 和搜尋 _* cat。 \*** 會傳回不同的結果。 建議您不要在首碼搜尋中使用句點。 |
 |(  )|從:contoso)  (公平或自由) 及 (  <br/>  (IPO 或初始) 及 (股票或共用)   <br/>  (季度財務) |括弧群組組成 Boolean 片語、  `property:value` items 和關鍵字。 例如，傳回  `(quarterly financials)` 包含文字季度和財務的專案。|
 |||||
    
@@ -252,7 +252,7 @@ ms.locfileid: "52538432"
 |職稱|檔的標題。 Title 屬性是 Office 檔中指定的中繼資料。 它與檔的檔案名不同。|
 |建立時間|建立檔的日期。|
 |上次修改日期|上次變更檔的日期。|
-|檔案類型|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。 此屬性與 FileExtension 網站屬性相同。|
+|檔案類型|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。 此屬性與 FileExtension 網站屬性相同。 <br/><br/> **附注：** [！注意] 如果您在搜尋查詢中使用 **等於** 或 **等於任一** 運算子來包含檔案類型條件，您就不能使用首碼搜尋 (，方法是在檔案類型) 的結尾包含萬用字元 ( * ) ，以傳回檔案類型的所有版本。 如果您這麼做，將會忽略萬用字元。 例如，如果您包含條件 `Equals any of doc*` ，則只會傳回副檔名為的檔案 `.doc` 。 副檔名為的檔案 `.docx` 不會傳回。 若要傳回檔案類型的所有版本，請在關鍵字查詢中使用 *property： value* 對;例如， `filetype:doc*` 。|
 |||
   
 ### <a name="operators-used-with-conditions"></a>與條件搭配使用的運算子
@@ -283,21 +283,21 @@ ms.locfileid: "52538432"
 
 使用搜尋條件時，請牢記下列幾點。
   
-- 條件會以 **AND** 運算子的邏輯方式連接至關鍵字查詢 (在關鍵字方塊中指定)。 這表示結果中包含的項目必須同時滿足關鍵字查詢與條件。 這就是條件如何協助您縮小搜尋結果。 
-    
-- 如果您將兩個或多個唯一條件新增至搜尋查詢 (條件指定不同的屬性) ，這些條件會由 **AND** 運算子邏輯連接。 這表示只有滿足所有條件的專案 (會傳回所有關鍵詞查詢) 。 
-    
+- 條件會以 **AND** 運算子的邏輯方式連接至關鍵字查詢 (在關鍵字方塊中指定)。 這表示結果中包含的項目必須同時滿足關鍵字查詢與條件。 這就是條件如何協助您縮小搜尋結果。
+  
+- 如果您將兩個或多個的獨特條件新增至搜尋查詢 (指定不同屬性的條件)，則會使用 **AND** 運算子，以邏輯方式連接這些條件。 這表示只有滿足所有條件的專案 (會傳回所有關鍵詞查詢) 。
+  
 - 如果您為同一個屬性新增多個條件，這些條件會由 **OR** 運算子邏輯連接。 這表示滿足關鍵字查詢的專案，以及任何一個條件會傳回。 因此，依 **OR** 運算子將相同條件的群組連線到對方，然後由 **and** 運算子所連接的唯一條件集。 
-    
-- 如果您新增多個值 (以逗號或分號隔開) 單一條件，則這些值是由 **or** 運算子所連接。 這表示如果專案包含條件中屬性的任何指定值，則會傳回專案。 
-    
-- 使用 [關鍵字] 方塊和 [條件] 所建立的搜尋查詢會顯示在 [ **搜尋** ] 頁面上選取之搜尋的 [詳細資料] 窗格中。 在查詢中，標記法右邊的各項都會  `(c:c)` 指出新增至查詢的條件。 
-    
-- 條件只會將屬性新增至搜尋查詢;不要新增運算子。 這就是在詳細資料窗格中顯示的查詢不會顯示在標記法右邊的運算子  `(c:c)` 。 KQL 會根據先前所述的規則，在執行查詢時) ，新增邏輯運算子 (。 
-    
+  
+- 如果您將多個值 (以逗號或分號分隔) 加入至單一條件，這些值會以 **OR** 運算子連接。 這表示如果項目在條件中包含任何指定的屬性值，則會傳回項目。 
+  
+- 使用 [關鍵字] 方塊和 [條件] 所建立的搜尋查詢會顯示在 [ **搜尋** ] 頁面上選取之搜尋的 [詳細資料] 窗格中。 在查詢中，標記法右邊的各項都會  `(c:c)` 指出新增至查詢的條件。
+  
+- 條件只會將屬性新增至搜尋查詢;不要新增運算子。 這就是在詳細資料窗格中顯示的查詢不會顯示在標記法右邊的運算子  `(c:c)` 。 KQL 會根據先前所述的規則，在執行查詢時) ，新增邏輯運算子 (。
+  
 - 您可以使用拖放控制項來 resequence 條件的順序。 按一下控制項上的條件，然後上下移動。
-    
-- 如先前所述，有些 condition 屬性可讓您輸入多個值 (以分號) 分隔。 每個值都是由 **OR** 運算子以邏輯方式連接，並產生查詢 `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` 。 下圖顯示具有多個值的條件範例。
+  
+- 如先前所述，有些 condition 屬性可讓您輸入多個值 (以分號) 分隔。 每個值都是由 **OR** 運算子以邏輯方式連接，並產生查詢 `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)` 。 下圖顯示具有多個值的條件範例。
 
     ![具有多個值的一個條件](../media/SearchConditions1.png)
   

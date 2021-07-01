@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Microsoft 365 (也稱為預設信箱審計或信箱審核，預設會在) 上啟用信箱審計記錄。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: 0fd15ffd26ad28b9e8b4f2b627ff26206983f21e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108088"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226776"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -92,7 +92,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 下表說明信箱審核記錄中的使用者信箱和共用信箱可用的信箱動作。
 
-- 核取記號 ( ![核取記號](../media/checkmark.png)) 表示可以記錄登入類型的信箱動作 (並非所有動作都可用於所有的登入類型) 。
+- 核取記號 (![核取記號](../media/checkmark.png)) 表示可以記錄登入類型的信箱動作 (並非所有動作都可用於所有的登入類型) 。
 - <sup>\*</sup>核取記號之後的星號 ( ) 表示登入類型的預設記錄為 [信箱] 動作。
 - 請記住，對信箱具有「完整存取」許可權的系統管理員會被視為代理人。
 
@@ -100,7 +100,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|信箱動作|說明|系統管理員|委託|擁有者|
+|信箱動作|描述|系統管理員|委託|擁有者|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|雖然此值接受為信箱動作，但它已包含在 **UpdateFolderPermissions** 動作中，而且不會另行進行審核。 換句話說，請勿使用此值。||||
 |**ApplyRecord**|專案標示為記錄。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
@@ -121,7 +121,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendAs**|已使用 [傳送為] 權限傳送郵件。 這表示另一位使用者已傳送郵件，就好像它來自信箱擁有者。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。 這表示另一位使用者代表信箱擁有者傳送郵件。 此郵件會向收件者指出誰代理傳送郵件，以及實際上是誰傳送郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的專案會移至 [可復原的專案] 資料夾。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
+|**Update**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|已將行事曆委派指派給信箱。 行事曆代理可讓其他有相同組織權限的人來管理信箱擁有者的行事曆。|![核取記號](../media/checkmark.png)<sup>\*</sup>||![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|其他保留標籤會套用至訊息項目 (專案只能將一個保留標籤指派給它) 。|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
 |**UpdateFolderPermissions**|資料夾權限已變更。 資料夾權限可控制組織中的哪些使用者可以存取信箱中的資料夾，以及這些資料夾中的郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
@@ -143,7 +143,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|信箱動作|說明|系統管理員|委託|擁有者|
+|信箱動作|描述|系統管理員|委託|擁有者|
 |---|---|:---:|:---:|:---:|
 |**Create**|建立行事曆專案。 建立、傳送或接收郵件的動作並不會受到稽核。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|已從 [可復原的專案] 資料夾中清除郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
@@ -151,7 +151,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendAs**|已使用 [傳送為] 權限傳送郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的專案會移至 [可復原的專案] 資料夾。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
+|**Update**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>確認每個登入類型的預設信箱動作都會進行記錄

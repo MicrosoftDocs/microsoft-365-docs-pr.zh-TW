@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Configuration Manager 在裝置上部署設定套件，使其可架至服務。
-ms.openlocfilehash: ac05581ce33e94859dbd67848197878595d5ed0f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: d2db35e50d31a0a19076965da6dcecf9cfeef826
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893294"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226894"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 上線 Windows 10 裝置
 
@@ -35,7 +35,7 @@ ms.locfileid: "51893294"
 2. 在功能窗格中，選取 [**設定** 裝置上架] 上  >    >  **架**。
 
 3. 在 [**部署方法**] 欄位中，選取 [ **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**]。
- 
+
 4. 選取 [ **下載套件**]，然後儲存 .zip 檔。
 
 5. 將 .zip 檔案的內容解壓至共用的唯讀位置，該位置可供將要部署此套件的網路系統管理員存取。 您應該會有一個名為 *DeviceComplianceOnboardingScript* 的檔案。
@@ -47,12 +47,12 @@ ms.locfileid: "51893294"
 > [!NOTE]
 > Microsoft 365在[ (OOBE) ](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)階段時，端點資料遺失防護不支援上架。 請確定使用者在執行 Windows 安裝或升級後，已完成 OOBE。
 
->[!TIP]
+> [!TIP]
 > 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新架的 Microsoft Defender For Endpoint 裝置上執行偵測測試](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)。
 >
 > 請注意，您可以在 Configuration Manager 應用程式上建立偵測規則，以持續檢查裝置是否已架。 應用程式是不同于套件和程式的物件類型。
 > 如果裝置尚未架 (由於是未決的 OOBE 完成或任何其他原因) ，Configuration Manager 會重試裝置上架裝置，直到規則偵測到狀態變更為止。
-> 
+>
 > 如果 "OnboardingState" 登錄值 (類型 REG_DWORD) = 1，則可以建立偵測規則檢查，以完成此行為。
 > 此登錄值位於 "HKLM\SOFTWARE\Microsoft\ Windows Advanced 威脅 Protection\Status" 底下。
 如需詳細資訊，請參閱[Configure in System Center 2012 R2 Configuration Manager 中的偵測方法](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
@@ -61,8 +61,8 @@ ms.locfileid: "51893294"
 
 針對每個裝置，您可以設定設定值，以指出是否可以在要求透過 Microsoft Defender 資訊安全中心提交檔案進行深層分析時，從裝置收集範例。
 
->[!NOTE]
->這些設定設定通常是透過 Configuration Manager 進行。 
+> [!NOTE]
+> 這些設定設定通常是透過 Configuration Manager 進行。
 
 您可以為 Configuration Manager 中的設定專案設定符合性規則，以變更裝置上的範例共用設定。
 
@@ -112,7 +112,7 @@ Value: 0 or 1
 
 **攻擊面減少** 設定所有可用的規則以進行審核。
 
->[!NOTE]
+> [!NOTE]
 > 封鎖這些活動可能會中斷合法的商務程式。 最佳方法是設定要審核的內容，識別哪些專案可以安全地開啟，然後在沒有誤報的端點上啟用這些設定。
 
 **網路保護**
@@ -147,7 +147,7 @@ Value: 0 or 1
 3. 選取 [Windows 10] 做為作業系統。
 
 4. 在 [**部署方法**] 欄位中，選取 [ **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**]。
-    
+
 5. 選取 [ **下載套件**]，然後儲存 .zip 檔。
 
 6. 將 .zip 檔案的內容解壓至共用的唯讀位置，該位置可供將要部署此套件的網路系統管理員存取。 您應該有一個名為 *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
@@ -162,7 +162,7 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>監視裝置設定
 
-如果您正在使用 Microsoft Endpoint Configuration Manager 目前的分支，請在 Configuration Manager 主控台中使用內建的 Microsoft Defender for Endpoint 儀表板。 如需詳細資訊，請參閱[Microsoft Defender 進階威脅防護-Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+如果您正在使用 Microsoft Endpoint Configuration Manager 目前的分支，請在 Configuration Manager 主控台中使用內建的 Microsoft Defender for Endpoint 儀表板。 如需詳細資訊，請參閱 [Microsoft Defender 高級威脅防護-監視](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
 如果您正在使用 System Center 2012 R2 Configuration Manager，監控會包含兩個部分：
 
@@ -180,7 +180,7 @@ Value: 0 or 1
 
 4. 檢查 [ **完成統計資料]** 和 [ **內容狀態**] 底下的狀態指示器。
 
-    如果部署失敗 (裝置 **發生錯誤**、 **未滿足需求**，或「 **失敗的狀態** 」) ，您可能需要對裝置進行疑難排解。 如需詳細資訊，請參閱[疑難排解 Microsoft Defender 進階威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
+    如果部署失敗 (裝置 **發生錯誤**、 **未滿足需求**，或「 **失敗的狀態** 」) ，您可能需要對裝置進行疑難排解。 如需詳細資訊，請參閱 [疑難排解 Microsoft Defender Advanced 威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
     ![顯示沒有錯誤之成功部署的 Configuration Manager](../media/sccm-deployment.png)
 
@@ -207,4 +207,4 @@ Value: “1”
 - [使用本機指令碼上線 Windows 10 裝置](dlp-configure-endpoints-script.md)
 - [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](dlp-configure-endpoints-vdi.md)
 - [在新架的 Microsoft Defender for Endpoint 裝置上執行偵測測試](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [疑難排解 Microsoft Defender 進階威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [疑難排解 Microsoft Defender 高級威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

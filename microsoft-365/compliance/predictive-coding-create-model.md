@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 瞭解如何在 Advanced eDiscovery 中建立預測編碼模型。 這是在 Advanced eDiscovery 中使用電腦學習功能的第一步，可協助您識別出評審集中的相關和非相關內容。
-ms.openlocfilehash: 7724062848d8d757fbfd3a7870853d6f2c409d84
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822515"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226224"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>建立預測編碼模型 (預覽) 
 
@@ -37,7 +37,7 @@ ms.locfileid: "52822515"
 
 ## <a name="create-a-model"></a>建立模型
 
-1. 在 Microsoft 365 規範中心] 中，開啟 Advanced eDiscovery 案例，然後選取 [**複查集**] 索引標籤。
+1. 在 Microsoft 365 合規性中心中，開啟 Advanced eDiscovery 案例，然後選取 [**複查集**] 索引標籤。
 
 2. 開啟一個複查集，然後按一下 [**分析**  >  **管理預測編碼 (預覽])**。
 

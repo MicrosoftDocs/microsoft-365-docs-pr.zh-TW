@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b59fb57ebd17050624ce36805558dcd1eef0503
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939251"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226524"
 ---
 # <a name="insider-risk-management-cases"></a>內部人員風險管理案例
 
@@ -142,8 +142,8 @@ ms.locfileid: "51939251"
 
 ### <a name="activity-explorer-preview"></a>活動瀏覽器 (預覽) 
 
->[!IMPORTANT]
->在您的組織中有此功能的使用者的「案例管理」區域中，可以使用 [活動流覽] 索引標籤。
+> [!IMPORTANT]
+> 在您的組織中有此功能的使用者的「案例管理」區域中，可以使用 [活動流覽] 索引標籤。
 
 [ **活動流覽** ] 索引標籤可讓風險分析人員和調查人員查看與風險警示相關的活動詳細資料。 例如，在案例管理動作中，調查人員和分析員可能需要查看與案例相關聯的所有風險活動，以取得詳細資訊。 透過 **活動瀏覽器**，檢閱者可以快速查看偵測到風險的啟用時間表，並識別及篩選與提醒相關聯的所有風險活動。
 
@@ -165,7 +165,7 @@ ms.locfileid: "51939251"
 
 若要將附注新增至案例：
 
-1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
 2. 選取案例，然後選取 [ **案例備** 忘] 索引標籤。
 3. 選取 [ **新增案例附注**]。
 4. 在 [ **新增案例附注** ] 對話方塊中，輸入案例的附注。 選取 [ **儲存** ]，將附注新增至案例，或選取 [ **取消** 關閉] 而不將附注儲存至案例。
@@ -182,7 +182,7 @@ ms.locfileid: "51939251"
 
 若要將參與者新增至案例：
 
-1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
 2. 選取案例，然後選取 [ **Contributors** ] 索引標籤。
 3. 選取 [ **新增投稿** 人]。
 4. 在 [ **新增參與者** ] 對話方塊中，開始輸入您想要新增的使用者名稱，然後從 [建議的使用者] 清單中選取使用者。 此清單是由您租使用者訂閱的 Azure Active Directory 產生。
@@ -200,7 +200,7 @@ ms.locfileid: "51939251"
 
 若要將通知傳送給指派案例的使用者：
 
-1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
 2. 選取案例，然後選取 [案例動作] 工具列上的 [ **傳送電子郵件通知** ] 按鈕。
 3. 在 [ **傳送電子郵件通知** ] 對話方塊中，選取 [ **選擇公告範本** ] 下拉式清單，以選取公告的公告範本。 這種選取範圍預先填滿通知中的其他欄位。
 4. 視需要複查 [注意事項] 欄位及更新。 這裡輸入的值會覆寫範本上的值。
@@ -212,13 +212,13 @@ ms.locfileid: "51939251"
 
 若要將案例升級為使用者調查：
 
-1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
 2. 選取案例，然後選取 [案例動作] 工具列上的 [ **呈報以進行調查** ] 按鈕。
 3. 在 [ **升級以進行調查** ] 對話方塊中，輸入新使用者調查的名稱。 如有需要，請輸入有關案例的備註，然後選取 [ **呈報**]。
 4. 視需要複查 [注意事項] 欄位及更新。 這裡輸入的值會覆寫範本上的值。
 5. 選取 [ **確認** ] 以建立使用者調查案例，或選取 [ **取消** ] 關閉對話方塊，而不建立新的使用者調查案例。
 
-當內幕風險管理案例已升級至新的使用者調查案例之後，您可以在 Microsoft 365 規範中心的 **eDiscovery**  >  **Advanced** 區域中查看新案例。
+當內幕風險管理案例已升級至新的使用者調查案例之後，您可以在 Microsoft 365 合規性中心的 **eDiscovery**  >  **Advanced** 區域中查看新案例。
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>在案例的 Power Automate 流程中執行自動化任務
 
@@ -256,7 +256,7 @@ ms.locfileid: "51939251"
 
 解決案例：
 
-1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)中，移至 [**內部人員風險管理**]，然後選取 [**案例**] 索引標籤。
 2. 選取案例，然後選取 [案例動作] 工具列上的 [ **解決案例** ] 按鈕。
 3. 在 [ **解析案例** ] 對話方塊中，選取 [ **解析為** 下拉式清單] 控制項，以選取案例的解決方法分類。 選項是 **良性** 或已 **確認的原則違規**。
 4. 在 [ **解析案例** ] 對話方塊的 [ **採取動作** ] 文字欄位中，輸入解決方法分類的原因。

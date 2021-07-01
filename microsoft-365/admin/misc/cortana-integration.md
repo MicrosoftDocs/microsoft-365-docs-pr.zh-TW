@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或學校帳戶的使用者可以在 Microsoft 365 體驗中取得 Cortana，以符合 Office 365 企業級的安全性承諾。
-ms.openlocfilehash: 45e6f46fa753096c535add9daf486ef6a9f1bff0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054593"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227892"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -39,7 +39,7 @@ Cortana，您的個人生產力小幫手可提供 AI 的體驗，以節省時間
 
 - 與其他 Office 365 服務一致，Cortana 企業服務會符合相同的企業級隱私權、安全性和合規性承諾，以反映[線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products)。
 
-- 新的 Microsoft 365 體驗（如簡報電子郵件和播放我的電子郵件）將使用 Cortana 企業版服務來啟用，並完全符合這些承諾。 這些功能目前可供全球通用 (標準多租使用者) 使用。 如需尋找使用位置的詳細資訊，請造訪 [View 的其他屬性值](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)。
+- 新的 Microsoft 365 體驗（如簡報電子郵件和播放我的電子郵件）將使用 Cortana 企業版服務來啟用，並完全符合這些承諾。 這些功能目前可供全球通用 (標準多租使用者) 使用。 如需尋找使用位置的詳細資訊，請造訪 [View 的其他屬性值](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts)。
 
 - 現有的消費者經驗（Cortana 包括 Windows 10 (版本1909和更早版本的) ）是由[Microsoft 服務合約](https://www.microsoft.com/licensing/product-licensing/products)和[Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)所管理， (請參閱下列的「現有的消費者服務」一節。 在使用使用者認證登入時，這些條款也會控制為使用者提供的 Cortana 企業服務。
 
@@ -179,7 +179,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含以適當方式將其
 
 2. **在 Windows 10 (版本1909和更早版本) 中，取消選取 [允許 Cortana] 核取方塊，並在 Cortana 和 Android 上使用 iOS 應用程式，以在組織中的人員那裡存取 Microsoft 主控的資料**，以停用 Cortana 連線體驗。
 
-3. 選取 **[儲存變更]**。
+3. 選取 [儲存變更 **]**。
 
 針對 [Microsoft 服務合約](https://go.microsoft.com/fwlink/p/?LinkId=2109174) 和 [microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)所控制的服務，microsoft 是資料控制器。 就像資料控制者一樣，Microsoft 會使用資料，依照 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改進產品和服務。
 

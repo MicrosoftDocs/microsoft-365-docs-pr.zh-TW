@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 在您可以將 Microsoft 365 服務用於裝置之前，您可能需要先在 Microsoft 365 的基本行動性和安全性中進行註冊。
-ms.openlocfilehash: 2ad0aac331969696bbf53d0b06c18ee5c0ee90f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 9da3424409a950670e3be45354a5c399fec52372
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706163"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228180"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>使用基本行動性和安全性註冊行動裝置
 
@@ -31,8 +31,8 @@ ms.locfileid: "52706163"
 
 組織選擇基本行動性和安全性，讓員工可以使用其行動裝置，在企業安全地存取工作電子郵件、行事曆及檔時，保證重要資料的安全性，並符合法規遵從性需求。若要深入瞭解，請參閱[基本行動性及安全性的 Microsoft 365](overview.md)。 如需詳細資訊，請參閱我的 [組織可以在註冊裝置時看到哪些資訊？](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)。
 
->[!IMPORTANT] 
->當您在基本行動性和安全性的 Microsoft 365 中註冊裝置時，您可能需要設定密碼，並允許您的工作組織的選項清除裝置。 裝置擦除可以從 Microsoft 365 系統管理中心執行，例如，如果密碼輸入錯誤的次數過多或中斷使用期限，則移除裝置中的所有資料。
+> [!IMPORTANT]
+> 當您在基本行動性和安全性的 Microsoft 365 中註冊裝置時，您可能需要設定密碼，並允許您的工作組織的選項清除裝置。 您可以從 Microsoft 365 系統管理中心執行裝置擦除，例如，如果密碼輸入錯誤的次數過多或違反使用期限，則移除裝置中的所有資料。
 
 ## <a name="supported-devices"></a>支援的裝置
 
@@ -46,8 +46,8 @@ Intune 服務所主控的 Microsoft 365 的基本行動性和安全性，適用�
 
 如果您的裝置並未列出，而且您需要使用基本行動性和安全性，請與您的公司或學校系統管理員聯繫。
 
->[!TIP]
->如果您在註冊裝置時發生問題，請參閱 [疑難排解基本行動性和安全性](troubleshoot.md)。
+> [!TIP]
+> 如果您在註冊裝置時發生問題，請參閱 [疑難排解基本行動性和安全性](troubleshoot.md)。
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>設定具有 Intune 和基本行動性及安全性的行動裝置
 
@@ -55,8 +55,8 @@ Intune 公司入口網站可讓裝置以 Microsoft 365 和基本行動性和安�
 
 ### <a name="iphone-or-ipad"></a>iPhone 或 iPad
 
->[!TIP]
->在您完成此步驟之前，您將無法傳送及接收電子郵件。
+> [!TIP]
+> 在您完成此步驟之前，您將無法傳送及接收電子郵件。
 
 移至 Apple 應用程式存放區，然後下載並安裝 Intune 公司入口網站。
 
@@ -64,8 +64,8 @@ Intune 公司入口網站可讓裝置以 Microsoft 365 和基本行動性和安�
 
 ### <a name="android-phone-or-tablet"></a>Android 手機或平板電腦
 
->[!TIP]
->在您完成此步驟之前，您將無法傳送及接收電子郵件。
+> [!TIP]
+> 在您完成此步驟之前，您將無法傳送及接收電子郵件。
 
 移至 Google Play 商店，然後下載並安裝 Intune 公司入口網站。
 

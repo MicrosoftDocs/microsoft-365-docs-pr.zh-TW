@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9d9c439704b6837cec086b390cde9c480d2d69ba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860394"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227280"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的通訊符合性
 
@@ -103,7 +103,7 @@ Microsoft 365 中的通訊相容性提供數項重要功能，以協助解決郵
 
 - **主動式智慧型警示**：需要立即注意的原則相符項目警示包括新的儀表板，用於將擱置專案按嚴重性排序，以及將新的自動電子郵件通知傳送給指定的檢閱者。
 - **互動式儀表板**：新的儀表板會顯示原則相符項目、擱置和已解決的動作，以及按使用者和原則的趨勢。
-- **審核支援**：從 Microsoft 365 規範中心輕鬆匯出原則和檢閱活動的完整記錄，以協助支援審核審閱要求。
+- **審核支援**：從 Microsoft 365 合規性中心中輕鬆匯出原則和檢閱活動的完整記錄，以協助支援審核審閱要求。
 
 ## <a name="integration-with-microsoft-365-services"></a>與 Microsoft 365 服務整合
 
@@ -129,8 +129,8 @@ Microsoft 365 中的通訊相容性提供數項重要功能，以協助解決郵
 
 在此工作流程步驟中，您可以識別您的相容性需求，並設定適用的通訊相容性原則。 原則範本是一種極好的方式，不僅可以快速設定新的符合性原則，也可以在需求變更時快速修改和更新原則。 例如，您可能想要在為組織中所有使用者群組設定原則之前，快速針對少數使用者測試通訊內容是否具有冒犯性語言和反騷擾語言的原則。
 
->[!Important]
->根據預設，全域管理員無法存取通訊規範功能。 若要啟用通訊相容性功能的許可權，請參閱 [建立組織中的通訊相容性](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
+> [!IMPORTANT]
+> 根據預設，全域管理員無法存取通訊規範功能。 若要啟用通訊相容性功能的許可權，請參閱 [建立組織中的通訊相容性](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
 
 您可以在 Microsoft 365 合規性中心選擇下列原則範本：
 
@@ -142,7 +142,7 @@ Microsoft 365 中的通訊相容性提供數項重要功能，以協助解決郵
 
 ### <a name="investigate"></a>調查
 
-在此步驟中，您將身入調查偵測到符合通訊合規性原則的問題。 此步驟包含下列 Microsoft 365 規範中心的動作：
+在此步驟中，您將身入調查偵測到符合通訊合規性原則的問題。 此步驟包含下列 Microsoft 365 合規性中心中可用的動作：
 
 - **警示**：當郵件符合原則條件時，系統會自動產生警示。 針對每個警示，您可以查看狀態、嚴重性、偵測到的時間，以及是否 Advanced eDiscovery 案例已指派，以及其狀態。 新的提醒會顯示在通訊合規性首頁及 **警示** 頁面上，並依嚴重性順序列出。
 - **問題管理**：您可以針對每個警示採取調查動作，協助修復在訊息中偵測到的問題。
