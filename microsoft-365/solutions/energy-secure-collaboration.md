@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 能協助將能源組織移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efc9476d2c766aab325977dfe717290ff6c8fb8d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916115"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229320"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>能源產業的重要合規性與安全性考量
 ![使用雲端的各種產業全球檢視的示意圖](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ ms.locfileid: "50916115"
 - Azure 和 Azure Government 都獲得授與 FedRAMP High P-ATO (佈建授權可執行)，這是最高的 FedRAMP 授權層級。 
 
 如需 Microsoft 雲端服務與 FedRAMP 的相關資訊，請參閱下列資源：
-- [Microsoft FedRAMP 概觀](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
+- [Microsoft FedRAMP 概觀](/compliance/regulatory/offering-FedRAMP)
 - [Office 365 FedRAMP 報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 
@@ -90,7 +90,7 @@ Microsoft 365 透過將 Office 365 群組作為基礎成員資格提供者，為
 - 不需要或不使用的 Microsoft Teams 數量劇增。
 - 過度保留組織不再需要的資料
 
-系統管理員可指定 Office 365 群組的到期時間 (以天數為單位)，例如 90、180 或 365 天。 如果 Office 365 群組支援的服務在到期期間處於非作用中狀態，系統就會通知群組擁有者，如果不採取任何動作，將會刪除 Office 365 群組及其所有相關服務，包括 Microsoft Teams。 
+系統管理員可指定 Office 365 群組的到期時間 (以天數為單位)，例如 90、180 或 365 天。如果 Office 365 群組支援的服務在到期期間處於非作用中狀態，系統就會通知群組擁有者，如果不採取任何動作，將會刪除 Office 365 群組及其所有相關服務，包括 Microsoft Teams。 
 
 過度保留 Microsoft Teams 中的資料可能會讓組織面臨訴訟風險，使用到期原則是保護組織的建議方法。 結合內建的保留標籤和原則，Microsoft 365 可協助確保組織只保留符合合規性義務所需的資料。
 
@@ -161,7 +161,7 @@ Microsoft 365 讓組織內的敏感性資料都能透過強大的功能組合來
 ## <a name="govern-data-by-effectively-managing-records"></a>藉由有效管理記錄來管理資料
 法規要求許多組織依照受管理的公司保留排程表來管理關鍵組織文件的保留。 如果資料未妥善保留 (太早刪除)，組織會面臨法規合規性風險，如果資料過度保留 (保留的時間過長)，組織則會面臨法規風險。 有效的記錄管理策略可協助確保按照預先決定的保留期間 (設計目的是將組織風險降至最低) 來保留組織文件。 保留期間是在集中管理的組織記錄保留排程中規定的，其根據每種文件類型的性質、保留特定資料類型的法規合規性需求，以及組織定義的原則。 
 
-若要在整個組織文件中準確指派記錄保留期間，您可能需要精細的程序，為個別文件指派獨特的保留期間。 能源產業組織內大量的文件，加上在許多情況下，保留期間可以由組織事件 (例如合約到期或員工離開組織) 觸發，讓套用記錄保留原則對於許多組織而言是大規模的挑戰。
+若要在整個組織文件中準確指派記錄保留期間，您可能需要精細的程序，為個別文件指派獨特的保留期間。能源產業組織內大量的文件，加上在許多情況下，保留期間可以由組織事件 (例如合約到期或員工離開組織) 觸發，讓套用記錄保留原則對於許多組織而言是大規模的挑戰。
 
 Microsoft 365 提供功能來定義保留標籤和原則，以輕易地實作記錄管理需求。 記錄管理員定義保留標籤，該標籤代表傳統保留排程中的「記錄類型」。 保留標籤包含的設定會定義：
 - 記錄保留的時間長度
@@ -192,7 +192,7 @@ Microsoft 365 監督原則可讓組織監視通訊是否符合公司原則，例
 ### <a name="communication-compliance"></a>通訊合規性
 因為員工有許多通訊通道可用，所以組織更加需要有效的解決方案，以監視及監督管制產業 (例如能源交易市場) 中的通訊。 最近啟動的「通訊合規性」解決方案 (內建至 Microsoft 365) 可協助組織克服常見挑戰，例如通訊通道和訊息量增加，以及潛在的原則違規罰款風險。
 
-「通信合規性」可監視多個通訊通道，並使用機器學習模型來識別潛在的原則違規，包括 Office 365 電子郵件、Microsoft Teams、商務用 Skype Online、Facebook、Twitter 及 Bloomberg 立即訊息。 「通訊合規性」可協助合規性小組有效且有效率地檢閱郵件的潛在違規：
+「通信合規性」可監視多個通訊通道，並使用機器學習模型來識別潛在的原則違規，包括 Office 365 電子郵件、Microsoft Teams、商務用 Skype Online、Facebook、Twitter 及 Bloomberg 立即訊息。「通訊合規性」可協助合規性小組有效且有效率地檢閱郵件的潛在違規：
 - 公司原則，例如可接受的使用、道德標準，和公司特定原則 
 - 敏感性或敏感性商業披露，例如未經授權的敏感性專案通訊，如近期收購、合併、收益披露、改組或領導團隊變更
 - 法規合規性需求，例如組織參與的業務或交易類型需遵循 FERC 對於能源市場的法規，其中的相關員工通訊。

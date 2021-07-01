@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 準備並部署 Microsoft 合規性延伸模組。
-ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843827"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226956"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>開始使用 Microsoft 合規性延伸模組
 
@@ -84,11 +84,11 @@ ms.locfileid: "52843827"
 4. [使用群組原則進行部署](#deploy-using-group-policy)
 5. [測試擴充功能](#test-the-extension)
 6. [使用警示管理儀表板檢視 Chrome DLP 警示](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [檢視活動總管中的 Chrome DLP 資料](#viewing-chrome-dlp-data-in-activity-explorer) 
+7. [檢視活動總管中的 Chrome DLP 資料](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### <a name="prepare-infrastructure"></a>準備基礎結構
 
-如果您要在所有受監視的 Windows 10 裝置上推出 Microsoft 合規性延伸模組，您應該將 Google Chrome 從不受允許的應用程式和瀏覽器清單中移除。 有關詳細資訊，請參閱 [不受允許的瀏覽器](endpoint-dlp-using.md#unallowed-browsers)。 如果您只將 Chrome 推出至少數裝置，您可以將 Chrome 留在不受允許的瀏覽器和應用程式清單上。 Microsoft 合規性延伸模組會在已安裝模組的電腦上略過兩種清單的限制。  
+如果您要在所有受監視的 Windows 10 裝置上推出 Microsoft 合規性延伸模組，您應該將 Google Chrome 從不受允許的應用程式和瀏覽器清單中移除。 有關詳細資訊，請參閱 [不受允許的瀏覽器](endpoint-dlp-using.md#unallowed-browsers)。 如果您只將 Chrome 推出至少數裝置，您可以將 Chrome 留在不受允許的瀏覽器和應用程式清單上。 Microsoft 合規性延伸模組會在已安裝模組的電腦上略過兩種清單的限制。
 
 ### <a name="prepare-your-devices"></a>準備您的裝置
 
@@ -99,13 +99,13 @@ ms.locfileid: "52843827"
 
 ### <a name="basic-setup-single-machine-selfhost"></a>基本設定單一裝置自我主控
 
-這是建議的方法。 
+這是建議的方法。
 
-1. 請登入您要在其上安裝 Microsoft 合規性延伸模組的 Windows 10 電腦，然後以系統管理員的身分執行此 PowerShell 指令碼。 
+1. 請登入您要在其上安裝 Microsoft 合規性延伸模組的 Windows 10 電腦，然後以系統管理員的身分執行此 PowerShell 指令碼。
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
 2.  瀏覽至 [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
 
@@ -158,7 +158,7 @@ ms.locfileid: "52843827"
 7.  選取 **新增**。
 
 8.  輸入下列原則資訊。
-    
+
     OMA-URI：`./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     資料類型：`String`<br/>
     值：`<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
@@ -221,34 +221,32 @@ ms.locfileid: "52843827"
 
 ### <a name="test-the-extension"></a>測試擴充功能
 
-#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>上傳到雲端服務，或透過不受允許的 Cloud Egress 存取  
+#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>上傳到雲端服務，或透過不受允許的 Cloud Egress 存取
 
 1. 建立或取得敏感性項目，並嘗試將檔案上傳到貴組織的限制服務網域之一。 敏感性資料必須與我們其中一個內建的 [敏感性資訊類型](sensitive-information-type-entity-definitions.md)或貴組織的其中一個敏感性資訊類型相符。 您應該會在您正在測試的裝置上收到來自該裝置的 DLP 快顯通知，其中顯示檔案開啟時不允許此動作。
 
-#### <a name="testing-other-dlp-scenarios-in-chrome"></a>在 Chrome 中測試其他 DLP 案例 
+#### <a name="testing-other-dlp-scenarios-in-chrome"></a>在 Chrome 中測試其他 DLP 案例
 
 現在，您已將 Chrome 從不受允許的瀏覽器/應用程式清單中移除，您可以測試下列案例以確認此行為符合貴組織的需求：
 
 - 使用 [剪貼簿] 將資料從敏感性項目複製到另一份文件
-    - 若要測試，請開啟受到保護且防止在 Chrome 瀏覽器中複製到剪貼簿動作的檔案，並嘗試從檔案複製資料。
-    - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
+  - 若要測試，請開啟受到保護且防止在 Chrome 瀏覽器中複製到剪貼簿動作的檔案，並嘗試從檔案複製資料。
+  - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
 - 列印文件
-    - 若要測試，請開啟受到保護且防止在 Chrome 瀏覽器中列印的檔案，並嘗試從檔案列印資料。
-    - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
+  - 若要測試，請開啟受到保護且防止在 Chrome 瀏覽器中列印的檔案，並嘗試從檔案列印資料。
+  - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
 - 複製到 USB 卸除式媒體
-    - 若要測試，請嘗試將檔案儲存到可移除的媒體儲存空間。
-    - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
+  - 若要測試，請嘗試將檔案儲存到可移除的媒體儲存空間。
+  - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
 - 複製到網路共用
-    - 若要測試，請嘗試將檔案儲存到網路共用。
-    - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
-
+  - 若要測試，請嘗試將檔案儲存到網路共用。
+  - 預期的結果：DLP 快顯通知顯示出當檔案開啟時此動作是不受允許的。
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>使用警示管理儀表板檢視 Chrome DLP 警示
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com) 開啟 **資料外洩防護** 頁面，然後選取 **警示**。
 
 2. 請參閱[如何設定和檢視 DLP 原則的警示](dlp-configure-view-alerts-policies.md)中的程序，以檢視您端點 DLP 原則的警示。
-
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>檢視 [活動總管] 中的端點 DLP 資料
 
@@ -265,6 +263,7 @@ ms.locfileid: "52843827"
 2. 不支援無痕模式且必須停用。
 
 ## <a name="next-steps"></a>後續步驟
+
 現在您擁有已上線的裝置，且可以在 [活動總管] 中檢視活動資料，您已準備好開始建立可保護您敏感性項目之 DLP 原則的下一個步驟。
 
 - [使用端點資料外洩防護](endpoint-dlp-using.md)

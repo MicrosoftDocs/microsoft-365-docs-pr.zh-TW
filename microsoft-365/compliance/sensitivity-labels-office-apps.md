@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2510e840cfdd23969549cb3dbb83ec0c649741f5
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062178"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228588"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -66,7 +66,7 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[讓使用者指派權限：<br /> - 提示使用者](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 審查中   | 審查中         | 審查中                                                        |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 逐步推出：16.0.13628+ | 是 <sup>\*</sup>                                                        |
 |[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 16.45+         | 2.47+ | 16.0.13628+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 逐步推出：16.44+ | 審查中 | 審查中 | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 16.44+ | 審查中 | 審查中 | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |針對已標籤和已加密的文件[支援共同撰寫和自動儲存](sensitivity-labels-coauthoring.md) | 2105: 6 月 18+ |  16.50+ | 審查中 | 審查中 | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 

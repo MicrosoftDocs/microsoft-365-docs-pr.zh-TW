@@ -1,5 +1,5 @@
 ---
-title: 步驟 2： 可遠端存取內部部署應用程式和服務
+title: 步驟 2：可遠端存取內部部署應用程式和服務
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 請確保您的遠端工作者能夠存取內部部署資源，同時將 Microsoft 365 雲端服務的存取最佳化。
-ms.openlocfilehash: 9fea86bb9c564a37a519d2c7e0ef2e2fd0a59470
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029131"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229428"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步驟 2： 可遠端存取內部部署應用程式和服務
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步驟 2：可遠端存取內部部署應用程式和服務
 
-如果貴組織使用遠端存取 VPN 解決方案 (通常 VPN 伺服器安裝在網路的邊緣，而 VPN 用戶端則安裝在使用者的裝置上)，您的使用者就可以使用遠端存取 VPN 連線存取內部部署應用程式和伺服器。 但您可能需要將 Microsoft 365 雲端服務的流量最佳化。
+如果貴組織使用遠端存取 VPN 解決方案 (通常 VPN 伺服器安裝在網路的邊緣，而 VPN 用戶端則安裝在使用者的裝置上)，您的使用者就可以使用遠端存取 VPN 連線存取內部部署應用程式和伺服器。但您可能需要將 Microsoft 365 雲端服務的流量最佳化。
 
 如果您的使用者沒有使用 VPN 解決方案，您可以使用 Azure Active Directory (Azure AD) 應用程式 Proxy 和 Azure 點對站台 (P2S) VPN 提供存取權，端視您所有的應用程式是否為 Web 架構而定。
 
@@ -51,7 +51,7 @@ ms.locfileid: "52029131"
 
 ![來自 VPN 用戶端的網路流量 (不含通道)](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距離 VPN 用戶端實體位置很遠的位置轉送到 Microsoft 網路進入點。 這種間接路徑可增加網路流量的延遲，並降低整體效能。 
+Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距離 VPN 用戶端實體位置很遠的位置轉送到 Microsoft 網路進入點。這種間接路徑可增加網路流量的延遲，並降低整體效能。
 
 您可以利用分割通道設定 VPN 用戶端，以排除透過 VPN 連線傳送到組織網路的特定類型流量。
 
@@ -67,7 +67,7 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>當您的所有應用程式都為 Web 應用程式且您擁有混合式身分識別時，部署遠端存取
 
-如果您的遠端工作者並未使用傳統的 VPN 用戶端，且您的內部部署使用者帳戶和群組已與 Azure AD 同步處理，則您可以使用 Azure AD 應用程式 Proxy，為託管於內部部署伺服器的 Web 架構應用程式提供安全的遠端存取。 Web 架構應用程式包括 SharePoint 伺服器網站、Outlook Web Access 伺服器或其他任何 Web 架構企業營運應用程式。 
+如果您的遠端工作者並未使用傳統的 VPN 用戶端，且您的內部部署使用者帳戶和群組已與 Azure AD 同步處理，則您可以使用 Azure AD 應用程式 Proxy，為託管於內部部署伺服器的 Web 架構應用程式提供安全的遠端存取。 Web 架構應用程式包括 SharePoint 伺服器網站、Outlook Web Access 伺服器或其他任何 Web 架構企業營運應用程式。
 
 以下是 Azure AD 應用程式 Proxy 的元件。
 
@@ -75,35 +75,32 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 如需詳細資訊，請參閱這個 [Azure AD 應用程式 Proxy 概觀](/azure/active-directory/manage-apps/application-proxy) (部分機器翻譯)。
 
->[!Note]
->Azure AD 應用程式 Proxy 未包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
->
+> [!NOTE]
+> Azure AD 應用程式 Proxy 未包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>並非所有應用程式都是 Web 應用程式時，部署遠端存取
 
 如果您的遠端工作者並未使用傳統的 VPN 用戶端，且您有非 Web 架構的應用程式，則可以使用 Azure 點對站台 (P2S) VPN。
 
-P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴組織網路的安全連線。 
+P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴組織網路的安全連線。
 
 ![Azure P2S VPN 的元件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 如需詳細資訊，請參閱這個 [P2S VPN 概觀](/azure/vpn-gateway/point-to-site-about) (部分機器翻譯)。
 
->[!Note]
->Azure P2S VPN 不包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
->
+> [!NOTE]
+> Azure P2S VPN 不包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Windows 虛擬桌面，以便為使用個人裝置的遠端工作者提供遠端存取 
+## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Windows 虛擬桌面，以便為使用個人裝置的遠端工作者提供遠端存取
 
-為支援只能使用其個人和非受管理裝置的遠端工作者，請使用 Azure 中的 Windows 虛擬桌面建立並配置虛擬桌面，讓您的使用者可以在家使用。 虛擬化的電腦可以充當連線至貴組織網路的電腦使用。
+為支援只能使用其個人和非受管理裝置的遠端工作者，請使用 Azure 中的 Windows 虛擬桌面建立並配置虛擬桌面，讓您的使用者可以在家使用。虛擬化的電腦可以充當連線至貴組織網路的電腦使用。
 
 ![Azure Windows 虛擬桌面元件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-如需詳細資訊，請參閱此 [Windows 虛擬桌面的概觀](/azure/virtual-desktop/overview)。 
+如需詳細資訊，請參閱此 [Windows 虛擬桌面的概觀](/azure/virtual-desktop/overview)。
 
->[!Note]
+> [!NOTE]
 >Windows 虛擬桌面不包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
->
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>使用遠端桌面服務閘道保護您的遠端桌面服務連線
 
@@ -115,7 +112,7 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 
 ## <a name="admin-technical-resources-for-remote-access"></a>適用於遠端存取的系統管理技術資源
 
-- [如何快速優化遠端員工的 Office 365 流量，並降低基礎結構負載](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571) (英文)
+- [如何快速優化遠端員工的 Office 365 流量，並降低基礎結構負載](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
 - [使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](../enterprise/microsoft-365-vpn-split-tunnel.md)
 
 ## <a name="results-of-step-2"></a>步驟 2 的結果

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何為端點 DLP 設定裝置 Proxy 和網際網路連線設定。
-ms.openlocfilehash: f2a62b5c7913b6f41c414310a97ab5f072f59642
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 801f3cf4f2215002fb80f7c4d68c2f5b83f5d04d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538612"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226704"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>為端點 DLP 設定裝置 Proxy 和網際網路連線設定
 
@@ -42,8 +42,8 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 > 如果在網路拓撲中使用透明 proxy 或 WPAD，則不需要特殊的組態設定。 有關 Proxy 中適用於端點的 Defender URL 排除的更多資訊，請參閱[在 Proxy 伺服器中啟用對適用於端點的 Defender 雲端服務 URL 的存取](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server)。
 
 - 手動靜態 Proxy 組態：
-    - 基於登錄的設定
-    - 使用 netsh 命令設定的 WinHTTP – 僅適用於穩定拓撲中的桌面 (例如：同一 Proxy 後公司網路中的桌面)
+  - 基於登錄的設定
+  - 使用 netsh 命令設定的 WinHTTP – 僅適用於穩定拓撲中的桌面 (例如：同一 Proxy 後公司網路中的桌面)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基於登錄的靜態 Proxy 手動設定 Proxy 伺服器
 
@@ -53,21 +53,21 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 
 1. 開啟 **[系統管理範本] > [Windows 元件] > [資料收集和預覽組建] > [為連線的使用者體驗與遙測服務設定已驗證 Proxy]**
 
-2. 將其設定為 **[啟用]**，然後選取 **[停用已驗證的 Proxy]**： 
+2. 將其設定為 **[啟用]**，然後選取 **[停用已驗證的 Proxy]**：
 
-![群組原則設定 1 的圖片](../media/atp-gpo-proxy1.png)
- 
+   ![群組原則設定 1 的圖片](../media/atp-gpo-proxy1.png)
+
 3. 開啟 **[系統管理範本] > [Windows 元件] > [資料收集和預覽組建] > [設定連線的使用者體驗與遙測]**：
 
- 設定 Proxy
+   設定 Proxy
 
-![群組原則設置 2 的圖片](../media/atp-gpo-proxy2.png)
+   ![群組原則設置 2 的圖片](../media/atp-gpo-proxy2.png)
 
-原則將登錄機碼 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 下的兩個登錄值 `TelemetryProxyServer` 設定為 REG\u SZ，`DisableEnterpriseAuthProxy` 設定為 REG\u DWORD。
+   原則將登錄機碼 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 下的兩個登錄值 `TelemetryProxyServer` 設定為 REG\u SZ，`DisableEnterpriseAuthProxy` 設定為 REG\u DWORD。
 
-登錄值 TelemetryProxyServer 的格式為：\<server name or ip\>\<port\>。 例如：**10.0.0.6:8080**
+   登錄值 TelemetryProxyServer 的格式為：\<server name or ip\>\<port\>。 例如：**10.0.0.6:8080**
 
-此登錄值 `DisableEnterpriseAuthProxy` 應當設定為 1。
+   此登錄值 `DisableEnterpriseAuthProxy` 應當設定為 1。
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>使用「netsh」命令手動設定 Proxy 伺服器
 
@@ -78,19 +78,19 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 
 1. 開啟提高權限的命令列：
     1. 轉至 **[開始]** 並輸入 **「cmd」**
-    1. 以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
-2.  輸入以下命令，再按 **Enter**：
+    2. 以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
 
-    `netsh winhttp set proxy <proxy>:<port>`
+2. 輸入以下命令，再按 **Enter**：
 
-    例如：**netsh winhttp set proxy 10.0.0.6:8080**
+   `netsh winhttp set proxy <proxy>:<port>`
+
+   例如：**netsh winhttp set proxy 10.0.0.6:8080**
 
 3. 要重設 winhttpProxy，請輸入以下命令並按 **Enter** 鍵：
 
-     `netsh winhttp reset proxy`
+   `netsh winhttp reset proxy`
 
 若要瞭解詳細資訊。，請參見 [Netsh 命令語法、上下文和格式](/windows-server/networking/technologies/netsh/netsh-contexts)。
-
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>在 Proxy 伺服器中啟用對端點 DLP 雲端服務 URL 的存取
 
@@ -110,33 +110,39 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 3. 開啟提高權限的命令列：
     1. 轉至 **[開始]** 並鍵入 **「cmd」**。
     1. 以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
-4.  輸入以下命令，再按 **Enter**：
-    
-`HardDrivePath\MDATPClientAnalyzer.cmd`
+4. 輸入以下命令，再按 **Enter**：
 
-例如，用下載 MDATPClientAnalyzer 工具的路徑取代 *HardDrivePath*
-    
-**C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd**
+   `HardDrivePath\MDATPClientAnalyzer.cmd`
 
+   例如，用下載 MDATPClientAnalyzer 工具的路徑取代 *HardDrivePath*
 
-5.  在 _HardDrivePath* 中使用的資料夾中擷取由工具建立的 **MDATPClientAnalyzerResult.zip** _ 文件。
+   **C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd**
 
-6.  開啟 **MDATPClientAnalyzerResult.txt** 並驗證是否已執行 Proxy 設定步驟以啟用伺服器發現和對服務 URL 的存取。  該工具檢查適用於端點的 Defender 用戶端設定為與之互動的適用於端點的 Defender 服務 URL 的連線性。 然後，它將結果列印到每個可能用於與適用於端點的 Defender 服務進行通訊之 URL 的 **MDATPClientAnalyzerResult.txt** 文件中。 例如：
+5. 在 _HardDrivePath* 中使用的資料夾中擷取由工具建立的 **MDATPClientAnalyzerResult.zip** _ 文件。
 
-    **測試 URL：https://xxx.microsoft.com/xxx</br>1 - 預設 Proxy：成功 (200) </br>2 - Proxy 自動探索 (WPAD)：成功 (200) </br> 3 - 停用 Proxy：成功 (200) </br> 4 - 指定的 Proxy：不存在 </br> 5 - 命令列 Proxy：不存在**</br>
+6. 開啟 **MDATPClientAnalyzerResult.txt** 並驗證是否已執行 Proxy 設定步驟以啟用伺服器發現和對服務 URL 的存取。  該工具檢查適用於端點的 Defender 用戶端設定為與之互動的適用於端點的 Defender 服務 URL 的連線性。 然後，它將結果列印到每個可能用於與適用於端點的 Defender 服務進行通訊之 URL 的 **MDATPClientAnalyzerResult.txt** 文件中。 例如：
 
+   ```DOS
+   Testing URL: https://xxx.microsoft.com/xxx
+   1 - Default proxy: Succeeded (200)
+   2 - Proxy auto discovery (WPAD): Succeeded (200)
+   3 - Proxy disabled: Succeeded (200)
+   4 - Named proxy: Doesn't exist
+   5 - Command-line proxy: Doesn't exist
+   ```
 
-如果至少有一個連線選項退回 (200) 適用於端點的 Defender 用戶端可以使用此連線方法與測試的 URL 正確通訊。 
+如果至少有一個連線選項退回 (200) 適用於端點的 Defender 用戶端可以使用此連線方法與測試的 URL 正確通訊。
 
 但是，如果連線檢查結果顯示失敗，則會顯示 HTTP 錯誤 (請參閱 HTTP 狀態碼)。 然後可以使用[啟用對端點 DLP 雲端服務 URL 的存取](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server)中所示的表中的 URL。 您將使用的 URL 將取決於上線過程中選取的區域。
-[!NOTE]連線分析程式工具與 ASR 規則不相容[封鎖源自 PSExec 和 WMI 命令的流程建立](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暫時停用此規則才能執行連線工具。
 
-[!NOTE] 在登錄中或透過群組原則設定 TelemetryProxyServer 時，如果適用於端點的 Defender 無法存取定義的 Proxy，它將回復至 direct。
-相關主題 • 上線 Windows 10 裝置 • Microsoft 端點 DLP 上線問題疑難排解
-
-
-
-
+> [!NOTE]
+>
+> 連線分析程式工具與 ASR 規則不相容[封鎖源自 PSExec 和 WMI 命令的流程建立](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暫時停用此規則才能執行連線工具。
+>
+> 在登錄中或透過群組原則設定 TelemetryProxyServer 時，如果適用於端點的 Defender 無法存取定義的 Proxy，將後援至直接。相關主題：
+>
+> - 將 Windows 10 裝置上線
+> - 疑難排解 Microsoft 端點 DLP 上線問題
 
 ## <a name="see-also"></a>另請參閱
 

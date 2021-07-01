@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何使用中繼資料分類內容、自動套用標籤，以及使用事件式保留來啟動保留期間，以便在 SharePoint 中使用保留標籤來管理文件生命週期。
-ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3bc2d6f5baa2f11e7905ccf98e16145fef24d64d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034212"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227600"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留標籤來管理儲存在 SharePoint 中的文件生命週期
 
@@ -58,7 +58,7 @@ ms.locfileid: "51034212"
 
 您可以使用 [內容類型中樞](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b)建立及發佈 *內容類型*。 您也可以使用網站佈建工具 (例如 [PnP 佈建架構](/sharepoint/dev/solution-guidance/pnp-provisioning-framework)或[網站設計 JSON 架構](/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type)) 建立及發佈內容類型。
 
-每個產品皆有一個專用的 SharePoint 網站，其中包含一個已啟用正確內容類型的文件庫。 所有文件皆儲存在此文件庫中。
+每個產品皆有一個專用的 SharePoint 網站，其中包含一個已啟用正確內容類型的文件庫。所有文件皆儲存在此文件庫中。
 
 [![產品文件的文件庫](../media/SPRetention3.png)](../media/SPRetention3.png#lightbox)
 
@@ -121,19 +121,19 @@ ms.locfileid: "51034212"
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>建立保留標籤時建立事件類型
 
 1. 在 **[建立保留標籤]** 的 [ 定義保留 設定] 頁面上，在 **[開始保留期依據]** 後，選擇 **[建立新事件類型]**：
-    
+
     ![為產品規格標籤對話方塊建立一個新的事件類型](../media/SPRetention6.png)
 
 3. 在 **[命名您的事件類型]** 頁面，輸入 **[產品停產]** 和選用描述。 然後選取 **[下一個]**、 **[提交]** 和 **[完成]**。
 
 4. 回到 **[定義保留設定]** 頁面，使用下拉式方塊選取您建立的 **[產品停產]** 事件類型作為 **[開始保留期依據]**。
-    
-    產品規格保留標籤的設定看起來會像這樣： 
-    
+
+    產品規格保留標籤的設定看起來會像這樣：
+
    ![新產品規格標籤的設定](../media/SPRetention7.png)
 
-6. 選取 **[建立標籤]** 並在下一頁看到發佈標籤、自動套用標籤或僅保存標籤的選項：選擇 **[立即儲存標籤]**，然後選擇 **[完成]**。 
-    
+6. 選取 **[建立標籤]** 並在下一頁看到發佈標籤、自動套用標籤或僅保存標籤的選項：選擇 **[立即儲存標籤]**，然後選擇 **[完成]**。
+
     > [!TIP]
     > 如需更多詳細步驟，請參閱[建立其保留期間是根據事件的標籤](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event)。
 
@@ -188,9 +188,9 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 1. 在 [Managed 屬性 **]** 篩選方塊中，輸入 **_RefinableString00_**，然後選取綠色箭號。
 
-2. 在結果清單中，選取 **RefinableString00** 連結，然後向下捲動至 [對應至編目屬性 **]** 區段。  
+2. 在結果清單中，選取 **RefinableString00** 連結，然後向下捲動至 [對應至編目屬性 **]** 區段。
 
-3. 選取 [新增對應 **]**，然後輸入 **_ows\_Doc\_x0020\_Type_*_ (在 [編目屬性選項 **]** 視窗的_* 搜尋編目屬性名稱** 方塊中)。 選取 [尋找]。  
+3. 選取 [新增對應 **]**，然後輸入 **_ows\_Doc\_x0020\_Type_*_ (在 [編目屬性選項 **]** 視窗的_* 搜尋編目屬性名稱** 方塊中)。 選取 [尋找]。
 
 4. 在結果清單中，選取 **ows\_Doc\_x0020\_Type**，然後選取 [確定]。
 
@@ -222,19 +222,19 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 2. 在 [建立自動標籤原則] 精靈中，請在 **[命名您的自動標籤原則]** 頁面輸入如 **[自動套用產品規格] 標籤** 等名稱以及選用描述。 然後選取 **[下一步]**。
 
 3. 在 **[ 選擇您要套用此標籤的內容類型]** 頁，選取 **[將標籤套用至包含特定字詞或屬性的內容]**，然後選取 **[下一步]**。
-    
+
    [![選取 [將標籤套用到包含特定字詞、片語或屬性的內容]](../media/SPRetention17.png)](../media/SPRetention17.png#lightbox)
-    
+
    此選項讓我們提供上一節中測試的相同 KQL 搜尋查詢。 這些查詢會傳回狀態為 *[完稿]* 的所有產品規格文件。 在自動套用標籤原則中使用這個相同的查詢時，產品規格保留標籤將會自動套用至符合的所有文件。
 
 4. 在 **[套用此標籤至符合此查詢的內容]** 頁面，輸入 **RefinableString00:"Product Specification" AND RefinableString01:Final**，然後選取 **[下一步]**。
 
    ![在 [關鍵字查詢編輯器] 方塊中指定查詢](../media/SPRetention19.png)
 
-5. 在 **[選擇套用此原則的位置]** 精靈頁面上，選取您要套用原則的內容位置。 針對此案例，我們僅將原則套用至 SharePoint 位置，因為所有生產文件都儲存在 SharePoint 文件庫中。 將 [Exchange 電子郵件 **]**、[OneDrive 帳戶 **]** 以及 [Microsoft 365 群組 **]** 的狀態切換至 [關閉 **]**。 在選取 **[下一步]** 之前，請確認 SharePoint 網站的狀態已切換為 **[開啟]**： 
-    
+5. 在 **[選擇套用此原則的位置]** 精靈頁面上，選取您要套用原則的內容位置。 針對此案例，我們僅將原則套用至 SharePoint 位置，因為所有生產文件都儲存在 SharePoint 文件庫中。 將 [Exchange 電子郵件 **]**、[OneDrive 帳戶 **]** 以及 [Microsoft 365 群組 **]** 的狀態切換至 [關閉 **]**。 在選取 **[下一步]** 之前，請確認 SharePoint 網站的狀態已切換為 **[開啟]**：
+
     ![選擇要自動套用標籤的特定網站](../media/SPRetentionSPlocations.png)
-    
+
    > [!TIP]
    > 您可以選取 **[選擇網站]** 並新增特定 SharePoint 網站的 URL，而不是將原則套用到所有 SharePoint 網站。
 
@@ -247,9 +247,9 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
     ![自動套用標籤的設定](../media/SPRetention18.png)
 
 9. 選取 **[提交]** 以建立自動套用標籤原則。
-    
-   >[!NOTE]
-   >系統會花費最多 7 天，自動將產品規格標籤套用至符合 KQL 搜尋查詢的所有文件。
+
+   > [!NOTE]
+   > 系統會花費最多 7 天，自動將產品規格標籤套用至符合 KQL 搜尋查詢的所有文件。
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>驗證已自動套用保留標籤
 
@@ -287,7 +287,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 - **URI**：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **標頭**：Key = Content-Type, Value = application/atom+xml
 - **本文**：
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
@@ -324,10 +324,10 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 ![事件詳細資料](../media/SPRetention29.png)
 
-但在一段延遲後，事件狀態會顯示已處理 SharePoint 網站和 SharePoint 文件。  
+但在一段延遲後，事件狀態會顯示已處理 SharePoint 網站和 SharePoint 文件。
 
 ![事件詳細資料會顯示已處理文件。](../media/SPRetention31.png)
- 
+
 這表示套用到「旋轉小工具」產品文件的標籤的保留期間已根據 *旋轉小工具產品停產* 事件的日期起始。 假設您透過設定一天保留期間在測試環境中實作此案例，則可以在建立事件後的幾天內移至產品文件的文件庫，並確認該文件是否已遭到刪除 (在執行 SharePoint 中的刪除工作後)。
 
 ### <a name="more-about-asset-ids"></a>有關資產識別碼的詳細資訊

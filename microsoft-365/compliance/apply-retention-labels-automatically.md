@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 0324f988402d407e30d10a725aa5acebb0a69964
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: fa1d88271593f0278266004d4a170a807e1cbc32
+ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788391"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53222679"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -164,7 +164,7 @@ ms.locfileid: "52788391"
 
 - SharePoint、OneDrive 和 Exchange 的新增、已修改及既有項目將會自動標示。
 
-- 針對 SharePoint，這些 KQL 查詢不支援編目屬性和自訂屬性，因此您必須僅使用預先定義的受管理屬性。 不過，您可以在租用戶等級使用對應，並使用預設啟用為精簡器的預先定義 Managed 屬性  (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09)。 如需詳細資訊，請參閱[SharePoint 伺服器中的編目及受管理屬性概觀](/SharePoint/technical-reference/crawled-and-managed-properties-overview)，及如需相關指示，請參閱 [建立新的受管理屬性](/sharepoint/manage-search-schema#create-a-new-managed-property)。
+- 針對 SharePoint，這些 KQL 查詢不支援編目屬性和自訂屬性，因此您必須僅對文件使用預先定義的受管理屬性。 不過，您可以在租用戶等級使用對應，並使用預設啟用為精簡器的預先定義 Managed 屬性  (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09)。 如需詳細資訊，請參閱[SharePoint 伺服器中的編目及受管理屬性概觀](/SharePoint/technical-reference/crawled-and-managed-properties-overview)，及如需相關指示，請參閱 [建立新的受管理屬性](/sharepoint/manage-search-schema#create-a-new-managed-property)。
 
 - 如果您將自訂屬性對應到其中一個精簡器屬性，使用前請等候 24 小時，再在 KQL 查詢中使用該屬性來保留標籤。
 
