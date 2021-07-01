@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從社交媒體平臺、立即訊息平臺及檔共同作業平臺匯入協力廠商資料，以 Microsoft 365 信箱。
-ms.openlocfilehash: 6c15da7c21382f6ef286ec493ea3d696c02761f4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: acd7f9ee838308b277f725e5b7d80c69c6407b59
+ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227460"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53243956"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>在 Microsoft 365 中封存協力廠商資料
 
@@ -86,6 +86,7 @@ Microsoft 365 合規性中心提供來自 Microsoft 的原生協力廠商資料�
 |[Reuters Dealing](archive-reutersdealing-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Reuters Eikon](archive-reuterseikon-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Reuters FX](archive-reutersfx-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[RingCentral](archive-ringcentral-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[Slack eDiscovery](archive-slack-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||

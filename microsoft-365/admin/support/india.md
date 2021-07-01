@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f9f5665345733abafc6e4f2e777958feb4e11b6
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8240b9f4c4402e0e372a5e242d8b200f26f28717
+ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298632"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53243968"
 ---
 # <a name="contact-support-for-india"></a>印度的連絡人支援
 
@@ -36,7 +36,3 @@ ms.locfileid: "52298632"
 ### <a name="technical-support"></a>技術支援：
 
 英文：全年無休
-
-替代電話號碼： 1800 200 2052
-
-本機免費
