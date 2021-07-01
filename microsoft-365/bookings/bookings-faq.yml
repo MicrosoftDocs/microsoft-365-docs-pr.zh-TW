@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Microsoft 預定常見問題。
-  ms.openlocfilehash: e9617710b70c0b79f855284e789c58b3f1124515
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 956d423ef89454fa87524ce15165ffd3c8b59507
+  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333905"
+  ms.lasthandoff: 06/30/2021
+  ms.locfileid: "53227700"
 title: Microsoft 預定常見問題
 summary: ''
 sections:
@@ -55,7 +55,7 @@ sections:
   - question: >
       我們的 IT 部門是否可以控制使用者是否可以存取預定？
     answer: >
-      根據預設，可在 Microsoft 365 商務進階版、Microsoft 365 商務標準版、M365 A3/A5 和 E3/E5 租使用者中取得預約，但系統管理員可以選擇在 Microsoft 365 系統管理中心關閉它。 若要這麼做，請 [遵循下列指示](turn-bookings-on-or-off.md)。
+      預設會提供預約 Microsoft 365 商務進階版、Microsoft 365 商務標準版、M365 A3/A5 和 E3/E5 租使用者，但是管理員可以選擇在 Microsoft 365 系統管理中心中關閉它。 若要這麼做，請 [遵循下列指示](turn-bookings-on-or-off.md)。
 
 
       若客戶想要對其承租人中的某些合格授權停用預約存取權，他們可以使用群組原則來限制授權或實施 OWA 信箱原則，以限制能夠建立新預約行事曆的人員。
@@ -78,7 +78,7 @@ sections:
   - question: >
       如何取得 Microsoft 預定？
     answer: >
-      可供使用 Office 365 A3、A5、E3 及 e5 的客戶使用，以及 Microsoft 365 商務標準版、Microsoft 365 商務進階版、A3、A5、E3 及 E5。 您可以使用預約搭配 iOS 和 Android 配套應用程式。 不能以獨立的應用程式形式進行預定。 必須啟用 Web 上的 Outlook Web App 或 Outlook，才能使用預定，因為它會在 Outlook 中儲存資料。
+      可供使用 Office 365 A3、A5、E3 及 e5 的客戶使用，以及 Microsoft 365 商務標準版、Microsoft 365 商務進階版、A3、A5、E3 及 E5。 您可以使用預約搭配 iOS 和 Android 配套應用程式。 不能以獨立的應用程式形式進行預定。 Outlook Web App 或 Outlook 網頁版必須啟用才能使用預約，因為它會在 Outlook 中儲存資料。
 
 
       預約授權為產品提供完整功能，包括建立及管理行事曆。 當使用者新增為系統管理員或查看者角色中的人員時，也可讓使用者查看及編輯現有的行事曆。
@@ -156,9 +156,9 @@ sections:
     answer: >
       電子郵件地址是在 [Microsoft 365 設定] 層級加以控制和管理，取決於 [網域設定] 設定。 您可以在 [這裡](/powershell/module/exchange/get-accepteddomain)找到詳細資訊。
   - question: >
-      是否能夠傳送與不同服務或特定設定相關的簡訊郵件？
+      是否能夠根據不同的服務或特定設定傳送短信訊息？
     answer: >
-      目前在北美使用簡訊郵件，而 Skype 或 Twilio 帳戶將用於簡訊傳遞。
+      目前可在北美使用 SMS 訊息，而且會使用 Skype 或 Twilio 帳戶進行短信傳送。
   - question: >
       預約約會會如何顯示在人員的行事曆上？
     answer: >
@@ -260,9 +260,9 @@ sections:
     answer: >
       在這些案例中，員工會以隨機方式指派，而不是在預約約會時可用的所有人員成員。 目前沒有任何方法可以確保在員工的所有成員中對隨機指派的約會進行均等的散佈，或將指派的約會數目上限到每個教職員工成員。 如果您需要在大量隨機指派之後在員工之間進行負載平衡，可在 [預定] 頁面的 [行事曆] 索引標籤中手動執行。
   - question: >
-      如果使用者以前已加入宣告，如何才能讓他們選擇不接收簡訊郵件？
+      使用者如何選擇在先前已加入宣告短信後，是否可接收短信？
     answer: >
-      當您預約啟用簡訊短消息的約會時，系統會在每次預訂時，提示客戶選取 [自願加入] 方塊。 客戶也可以直接回復簡訊郵件 (簡訊提供者) 指出他們想要停止郵件，然後再將任何文字傳送至該電話號碼。 如果客戶無法接收來自提供者的文字訊息，而不是從預約自行接收，則即使從 [預約] 頁面中退出時，他們仍不再收到簡訊訊息。
+      當您預約啟用 SMS 文字訊息的約會時，系統會在每次預訂時，提示客戶選取 [自願加入] 方塊。 客戶也可以直接回復 SMS message (SMS 提供者) 指出他們想要停止郵件，然後再將任何文字傳送至該電話號碼。 如果客戶無法接收來自提供者的文字訊息，而不是從預約自行接收，則即使從 [預約] 頁面中退出時，他們仍將不再接收短信訊息。
 - name: 疑難排解
   questions:
   - question: >
@@ -335,4 +335,4 @@ sections:
 
 
       如果您在長一段時間之後仍會看到此錯誤，或您經常看到此錯誤，請與支援人員聯繫。
-additionalContent: "\n## <a name=\"additional-resources\"></a>其他資源\n\n- [Microsoft 預約會擴充企業博客中的可用性](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Microsoft 預約如何運作影片](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [開始使用 Microsoft 預定](get-access.md)\n\n- [開啟或關閉 Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [個別或大量新增使用者](../admin/add-users/add-users.md?view=o365-worldwide.)\n\n- [向 Bookings 新增員工](add-staff.md)\n\n- [定義範本後要自動化的 API 元件](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [顯示之預定行事曆的 URL](https://outlook.office.com/bookings/calendar)\n\n- [預定符合性原則](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)\n\n- [定制並發佈您的預約頁面](customize-booking-page.md)\n\n- [租使用者信箱設定](/powershell/module/exchange/get-accepteddomain)\n\n- [群組預訂](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [預定計量和活動追蹤](metrics-and-activity-tracking.md)\n\n- [M365 公用藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- 透過[UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)提交意見反應"
+additionalContent: "\n## <a name=\"additional-resources\"></a>其他資源\n\n- [Microsoft 預約會擴充企業博客中的可用性](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Microsoft 預約如何運作影片](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [開始使用 Microsoft 預定](get-access.md)\n\n- [開啟或關閉 Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [個別或大量新增使用者](../admin/add-users/add-users.md)\n\n- [向 Bookings 新增員工](add-staff.md)\n\n- [定義範本後要自動化的 API 元件](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [顯示之預定行事曆的 URL](https://outlook.office.com/bookings/calendar)\n\n- [預定符合性原則](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [定制並發佈您的預約頁面](customize-booking-page.md)\n\n- [租使用者信箱設定](/powershell/module/exchange/get-accepteddomain)\n\n- [群組預訂](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [預定計量和活動追蹤](metrics-and-activity-tracking.md)\n\n- [M365 公用藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- 透過[UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)提交意見反應"

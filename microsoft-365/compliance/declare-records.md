@@ -17,81 +17,82 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 [保留標籤] 宣告記錄。
-ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903897"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226992"
 ---
-# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="332b5-103">使用 [保留標籤] 宣告記錄</span><span class="sxs-lookup"><span data-stu-id="332b5-103">Declare records by using retention labels</span></span>
+# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="d1563-103">使用 [保留標籤] 宣告記錄</span><span class="sxs-lookup"><span data-stu-id="d1563-103">Declare records by using retention labels</span></span>
 
-><span data-ttu-id="332b5-104">*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="332b5-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
+><span data-ttu-id="d1563-104">*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="d1563-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
 
-<span data-ttu-id="332b5-105">若要將文件和電子郵件宣告為 [[紀錄]](records-management.md#records)，您可使用 [[保留標籤]](retention.md#retention-labels) 將内容標記為 **[紀錄]** 或 **[監管記錄]**。</span><span class="sxs-lookup"><span data-stu-id="332b5-105">To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.</span></span>
+<span data-ttu-id="d1563-105">若要將文件和電子郵件宣告為 [[紀錄]](records-management.md#records)，您可使用 [[保留標籤]](retention.md#retention-labels) 將内容標記為 **[紀錄]** 或 **[監管記錄]**。</span><span class="sxs-lookup"><span data-stu-id="d1563-105">To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.</span></span>
 
-<span data-ttu-id="332b5-106">如果您不確定要使用記錄還是監管記錄，請參閱 [比較允許或封鎖哪些動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。</span><span class="sxs-lookup"><span data-stu-id="332b5-106">If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span></span> <span data-ttu-id="332b5-107">如果您需要使用監管記錄，您必須先執行 PowerShell 命令（如下個章節所述）。</span><span class="sxs-lookup"><span data-stu-id="332b5-107">If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.</span></span>
+<span data-ttu-id="d1563-106">如果您不確定要使用記錄還是監管記錄，請參閱 [比較允許或封鎖哪些動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。</span><span class="sxs-lookup"><span data-stu-id="d1563-106">If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span></span> <span data-ttu-id="d1563-107">如果您需要使用監管記錄，您必須先執行 PowerShell 命令（如下個章節所述）。</span><span class="sxs-lookup"><span data-stu-id="d1563-107">If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.</span></span>
 
-<span data-ttu-id="332b5-108">您可以在保留標籤原則中發佈這些標籤，讓使用者和系統管理員將這些標籤套用至內容，或針對可將項目標示為記錄 (而非監管記錄) 的標籤，您還可以自動將這些標籤套用到您想要宣告為記錄的內容。</span><span class="sxs-lookup"><span data-stu-id="332b5-108">You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.</span></span>
+<span data-ttu-id="d1563-108">您可以在保留標籤原則中發佈這些標籤，讓使用者和系統管理員將這些標籤套用至內容，或針對可將項目標示為記錄 (而非監管記錄) 的標籤，您還可以自動將這些標籤套用到您想要宣告為記錄的內容。</span><span class="sxs-lookup"><span data-stu-id="d1563-108">You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.</span></span>
 
-## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a><span data-ttu-id="332b5-109">如何顯示將內容標示為監管記錄的選項</span><span class="sxs-lookup"><span data-stu-id="332b5-109">How to display the option to mark content as a regulatory record</span></span>
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a><span data-ttu-id="d1563-109">如何顯示將內容標示為監管記錄的選項</span><span class="sxs-lookup"><span data-stu-id="d1563-109">How to display the option to mark content as a regulatory record</span></span>
 
->[!NOTE] 
-> <span data-ttu-id="332b5-110">下列程序是可審核的動作，在審核記錄的 [[保留原則和保留標籤活動]](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) 章節中記錄 **[為保留標籤啟動的監管記錄選項]**。</span><span class="sxs-lookup"><span data-stu-id="332b5-110">The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.</span></span>
+> [!NOTE]
+> <span data-ttu-id="d1563-110">下列程序是可審核的動作，在審核記錄的 [[保留原則和保留標籤活動]](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) 章節中記錄 **[為保留標籤啟動的監管記錄選項]**。</span><span class="sxs-lookup"><span data-stu-id="d1563-110">The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.</span></span>
 
-<span data-ttu-id="332b5-111">根據預設，用以將內容標示為監管記錄的保留標籤選項，不會在保留標籤精靈中顯示。</span><span class="sxs-lookup"><span data-stu-id="332b5-111">By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard.</span></span> <span data-ttu-id="332b5-112">若要顯示此選項，您必須先執行 PowerShell 命令：</span><span class="sxs-lookup"><span data-stu-id="332b5-112">To display this option, you must first run a PowerShell command:</span></span>
+<span data-ttu-id="d1563-111">根據預設，用以將內容標示為監管記錄的保留標籤選項，不會在保留標籤精靈中顯示。</span><span class="sxs-lookup"><span data-stu-id="d1563-111">By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard.</span></span> <span data-ttu-id="d1563-112">若要顯示此選項，您必須先執行 PowerShell 命令：</span><span class="sxs-lookup"><span data-stu-id="d1563-112">To display this option, you must first run a PowerShell command:</span></span>
 
-1. <span data-ttu-id="332b5-113">[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="332b5-113">[Connect to the Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
+1. <span data-ttu-id="d1563-113">[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="d1563-113">[Connect to the Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
 
-2. <span data-ttu-id="332b5-114">執行下列 Cmdlet：</span><span class="sxs-lookup"><span data-stu-id="332b5-114">Run the following cmdlet:</span></span>
-    
+2. <span data-ttu-id="d1563-114">執行下列 Cmdlet：</span><span class="sxs-lookup"><span data-stu-id="d1563-114">Run the following cmdlet:</span></span>
+
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
-    <span data-ttu-id="332b5-115">系統不會提示您確認，且設定會立即生效。</span><span class="sxs-lookup"><span data-stu-id="332b5-115">There is no prompt to confirm and the setting takes effect immediately.</span></span>
 
-<span data-ttu-id="332b5-116">如果您改變主意，想在保留標籤精靈中變更這個選項，要將它再次隱藏您可以執行相同的 Cmdlet 並使用 **[false]** 值：`Set-RegulatoryComplianceUI -Enabled $false`</span><span class="sxs-lookup"><span data-stu-id="332b5-116">If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false`</span></span> 
+    <span data-ttu-id="d1563-115">系統不會提示您確認，且設定會立即生效。</span><span class="sxs-lookup"><span data-stu-id="d1563-115">There is no prompt to confirm and the setting takes effect immediately.</span></span>
 
-## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="332b5-117">設定 [保留標籤] 以宣告記錄</span><span class="sxs-lookup"><span data-stu-id="332b5-117">Configuring retention labels to declare records</span></span>
+<span data-ttu-id="d1563-116">如果您改變主意，想在保留標籤精靈中變更這個選項，要將它再次隱藏您可以執行相同的 Cmdlet 並使用 **[false]** 值：`Set-RegulatoryComplianceUI -Enabled $false`</span><span class="sxs-lookup"><span data-stu-id="d1563-116">If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false`</span></span>
 
-<span data-ttu-id="332b5-118">當您在 Microsoft 365 合規性中心的 **[記錄管理]** 解決方案中建立保留標籤時，您可以選擇將項目標示為記錄。</span><span class="sxs-lookup"><span data-stu-id="332b5-118">When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record.</span></span> <span data-ttu-id="332b5-119">如果您執行上一章節的 PowerShell 命令，則可將項目標示為監管記錄。</span><span class="sxs-lookup"><span data-stu-id="332b5-119">If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.</span></span>
+## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="d1563-117">設定 [保留標籤] 以宣告記錄</span><span class="sxs-lookup"><span data-stu-id="d1563-117">Configuring retention labels to declare records</span></span>
 
-<span data-ttu-id="332b5-120">例如：</span><span class="sxs-lookup"><span data-stu-id="332b5-120">For example:</span></span>
+<span data-ttu-id="d1563-118">當您在 Microsoft 365 合規性中心的 **[記錄管理]** 解決方案中建立保留標籤時，您可以選擇將項目標示為記錄。</span><span class="sxs-lookup"><span data-stu-id="d1563-118">When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record.</span></span> <span data-ttu-id="d1563-119">如果您執行上一章節的 PowerShell 命令，則可將項目標示為監管記錄。</span><span class="sxs-lookup"><span data-stu-id="d1563-119">If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.</span></span>
+
+<span data-ttu-id="d1563-120">例如：</span><span class="sxs-lookup"><span data-stu-id="d1563-120">For example:</span></span>
 
 ![設定保留標籤，將內容標示為記錄或監管](../media/recordversioning6.png)
 
-<span data-ttu-id="332b5-122">您可視需要將保留標籤套用至 SharePoint 或 OneDrive 文件和 Exchange 電子郵件。</span><span class="sxs-lookup"><span data-stu-id="332b5-122">Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span> 
+<span data-ttu-id="d1563-122">您可視需要將保留標籤套用至 SharePoint 或 OneDrive 文件和 Exchange 電子郵件。</span><span class="sxs-lookup"><span data-stu-id="d1563-122">Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span>
 
-<span data-ttu-id="332b5-123">如需完整指示：</span><span class="sxs-lookup"><span data-stu-id="332b5-123">For full instructions:</span></span>
+<span data-ttu-id="d1563-123">如需完整指示：</span><span class="sxs-lookup"><span data-stu-id="d1563-123">For full instructions:</span></span>
 
-- [<span data-ttu-id="332b5-124">建立保留標籤，並在應用程式中套用這些標籤</span><span class="sxs-lookup"><span data-stu-id="332b5-124">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
+- [<span data-ttu-id="d1563-124">建立保留標籤，並在應用程式中套用這些標籤</span><span class="sxs-lookup"><span data-stu-id="d1563-124">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
 
-- <span data-ttu-id="332b5-125">[自動將保留標籤套用至內容](apply-retention-labels-automatically.md) (不支援監管記錄)</span><span class="sxs-lookup"><span data-stu-id="332b5-125">[Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)</span></span>
+- <span data-ttu-id="d1563-125">[自動將保留標籤套用至內容](apply-retention-labels-automatically.md) (不支援監管記錄)</span><span class="sxs-lookup"><span data-stu-id="d1563-125">[Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)</span></span>
 
 
-## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="332b5-126">將已設定的保留標籤套用至內容</span><span class="sxs-lookup"><span data-stu-id="332b5-126">Applying the configured retention label to content</span></span>
+## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="d1563-126">將已設定的保留標籤套用至內容</span><span class="sxs-lookup"><span data-stu-id="d1563-126">Applying the configured retention label to content</span></span>
 
-<span data-ttu-id="332b5-127">將內容標示為記錄或監管記錄的保留標籤，可供使用者在應用程式中套用：</span><span class="sxs-lookup"><span data-stu-id="332b5-127">When retention labels that mark items as a record or regulatory record are made available for users to apply them in apps:</span></span>
+<span data-ttu-id="d1563-127">將內容標示為記錄或監管記錄的保留標籤，可供使用者在應用程式中套用：</span><span class="sxs-lookup"><span data-stu-id="d1563-127">When retention labels that mark items as a record or regulatory record are made available for users to apply them in apps:</span></span>
 
-- <span data-ttu-id="332b5-128">針對 Exchange，任何信箱存取權的使用者都可以套用這些標籤。</span><span class="sxs-lookup"><span data-stu-id="332b5-128">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span> 
-- <span data-ttu-id="332b5-129">對於 SharePoint 和 OneDrive，預設 [成員] 群組 ([參與] 權限等級) 中的任何使用者都能套用這些標籤。</span><span class="sxs-lookup"><span data-stu-id="332b5-129">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
+- <span data-ttu-id="d1563-128">針對 Exchange，任何信箱存取權的使用者都可以套用這些標籤。</span><span class="sxs-lookup"><span data-stu-id="d1563-128">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span>
+- <span data-ttu-id="d1563-129">對於 SharePoint 和 OneDrive，預設 [成員] 群組 ([參與] 權限等級) 中的任何使用者都能套用這些標籤。</span><span class="sxs-lookup"><span data-stu-id="d1563-129">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
 
-<span data-ttu-id="332b5-130">使用保留標籤將文件標示為記錄的範例：</span><span class="sxs-lookup"><span data-stu-id="332b5-130">Example of a document marked as record by using a retention label:</span></span>
+<span data-ttu-id="d1563-130">使用保留標籤將文件標示為記錄的範例：</span><span class="sxs-lookup"><span data-stu-id="d1563-130">Example of a document marked as record by using a retention label:</span></span>
 
 ![標記為記錄之文件的詳細資料窗格](../media/recordversioning7.png)
 
-## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a><span data-ttu-id="332b5-132">搜尋已宣告記錄的具標籤項目的稽核記錄</span><span class="sxs-lookup"><span data-stu-id="332b5-132">Searching the audit log for labeled items that were declared records</span></span>
+## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a><span data-ttu-id="d1563-132">搜尋已宣告記錄的具標籤項目的稽核記錄</span><span class="sxs-lookup"><span data-stu-id="d1563-132">Searching the audit log for labeled items that were declared records</span></span>
 
-<span data-ttu-id="332b5-133">將項目標示為記錄的動作會記錄在稽核記錄中。</span><span class="sxs-lookup"><span data-stu-id="332b5-133">The actions of labeling to declare items as records are logged in the audit log.</span></span>
+<span data-ttu-id="d1563-133">將項目標示為記錄的動作會記錄在稽核記錄中。</span><span class="sxs-lookup"><span data-stu-id="d1563-133">The actions of labeling to declare items as records are logged in the audit log.</span></span>
 
-<span data-ttu-id="332b5-134">對於 SharePoint 項目：</span><span class="sxs-lookup"><span data-stu-id="332b5-134">For SharePoint items:</span></span> 
-- <span data-ttu-id="332b5-135">於 **[檔案和頁面活動]**，選取 **[已變更檔案的保留標籤]**。</span><span class="sxs-lookup"><span data-stu-id="332b5-135">From **File and page activities**, select **Changed retention label for a file**.</span></span> <span data-ttu-id="332b5-136">此稽核事件適用於將項目標記為記錄、法規記錄或標準保留標記的保留標記。</span><span class="sxs-lookup"><span data-stu-id="332b5-136">This audit event is for retention labels that mark items as records, regulatory records, or that are standard retention labels.</span></span>
+<span data-ttu-id="d1563-134">對於 SharePoint 項目：</span><span class="sxs-lookup"><span data-stu-id="d1563-134">For SharePoint items:</span></span>
+- <span data-ttu-id="d1563-135">於 **[檔案和頁面活動]**，選取 **[已變更檔案的保留標籤]**。</span><span class="sxs-lookup"><span data-stu-id="d1563-135">From **File and page activities**, select **Changed retention label for a file**.</span></span> <span data-ttu-id="d1563-136">此稽核事件適用於將項目標記為記錄、法規記錄或標準保留標記的保留標記。</span><span class="sxs-lookup"><span data-stu-id="d1563-136">This audit event is for retention labels that mark items as records, regulatory records, or that are standard retention labels.</span></span>
 
-<span data-ttu-id="332b5-137">對於 Exchange 項目：</span><span class="sxs-lookup"><span data-stu-id="332b5-137">For Exchange items:</span></span>
-- <span data-ttu-id="332b5-138">於 **[Exchange 信箱活動]**，選取 **[已將訊息標記成一筆記錄]**。</span><span class="sxs-lookup"><span data-stu-id="332b5-138">From **Exchange mailbox activities**, select **Labeled message as a record**.</span></span> <span data-ttu-id="332b5-139">此稽核事件適用於將項目標記為記錄或法規記錄的保留標記。</span><span class="sxs-lookup"><span data-stu-id="332b5-139">This audit event is for retention labels that mark items as records or regulatory records.</span></span>
+<span data-ttu-id="d1563-137">對於 Exchange 項目：</span><span class="sxs-lookup"><span data-stu-id="d1563-137">For Exchange items:</span></span>
+- <span data-ttu-id="d1563-138">於 **[Exchange 信箱活動]**，選取 **[已將訊息標記成一筆記錄]**。</span><span class="sxs-lookup"><span data-stu-id="d1563-138">From **Exchange mailbox activities**, select **Labeled message as a record**.</span></span> <span data-ttu-id="d1563-139">此稽核事件適用於將項目標記為記錄或法規記錄的保留標記。</span><span class="sxs-lookup"><span data-stu-id="d1563-139">This audit event is for retention labels that mark items as records or regulatory records.</span></span>
 
-<span data-ttu-id="332b5-140">如需搜尋這些事件的詳細資訊，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。</span><span class="sxs-lookup"><span data-stu-id="332b5-140">For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).</span></span>
+<span data-ttu-id="d1563-140">如需搜尋這些事件的詳細資訊，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。</span><span class="sxs-lookup"><span data-stu-id="d1563-140">For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="332b5-141">後續步驟</span><span class="sxs-lookup"><span data-stu-id="332b5-141">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="d1563-141">後續步驟</span><span class="sxs-lookup"><span data-stu-id="d1563-141">Next steps</span></span>
 
-<span data-ttu-id="332b5-142">若需記錄管理支援的案例清單，請參閱 [[記錄管理的常見案例]](get-started-with-records-management.md#common-scenarios-for-records-management)。</span><span class="sxs-lookup"><span data-stu-id="332b5-142">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>
+<span data-ttu-id="d1563-142">若需記錄管理支援的案例清單，請參閱 [[記錄管理的常見案例]](get-started-with-records-management.md#common-scenarios-for-records-management)。</span><span class="sxs-lookup"><span data-stu-id="d1563-142">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>

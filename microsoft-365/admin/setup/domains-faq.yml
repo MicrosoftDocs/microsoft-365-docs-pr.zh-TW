@@ -26,16 +26,16 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: 若要深入瞭解網域 (name.onmicrosoft.com17 網域和傳輸網域) ，請在 FAQ 中尋找您問題的答案。
-  ms.openlocfilehash: 4c0e97ef3e6cf573bcdae32675bc71284a250a9b
-  ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+  ms.openlocfilehash: 44558ac6bf40491c0a5fa187ab366b1b3590ae07
+  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/05/2021
-  ms.locfileid: "52779623"
+  ms.lasthandoff: 06/30/2021
+  ms.locfileid: "53227748"
 title: 網域常見問題集
 summary: "\n\n本文包含有關 Microsoft 365 中網域的常見問題解答。\n\n如果您找不到問題的答案，請留言讓我們知道，我們會將它新增至清單。\n"
 sections:
-- name: 忽略
+- name: 已略過
   questions:
   - question: 什麼是 MX 優先順序？
     answer: "郵件會以最低喜好設定值傳送到郵件 exchange 伺服器， (最高優先順序) ，所以您用來進行郵件路由的 MX 記錄應該會有最低的喜好設定值，通常是0或  *高*  優先順序。 \n  \n- 當您建立 MX 記錄時，大部分的 DNS 主機服務提供者要求您設定偏好設定號碼。\n    \n- 某些標籤的方塊  *偏好*  ，有些標籤  *優先順序*  。 \n    \n- 有些需要數位，有些會要求您選取 [  *低*  ]、[  *中*  ] 或 [  *高*  ]。 \n    \n- 如果您只有一個 MX 記錄，則優先順序或喜好設定的任何值都很好。\n    \n- 如果您有一個以上的，請確定郵件路由的 MX 記錄的優先順序高於用於驗證您擁有該網域的 MX 記錄。\n    \n"
@@ -48,7 +48,7 @@ sections:
   - question: 如何在 Microsoft 365 中設定或變更預設網域？
     answer: "您必須至少要有一個自訂網域才能 Microsoft 365，您才能選擇預設網域。\n\n::: moniker range=\"o365-worldwide\"\n\n1. 在系統管理中心中，移至 **[設定]** \\> <a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">[網域]</a> 頁面。\n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n1. 在系統管理中心中，移至 **[設定]** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=854615\" target=\"_blank\">[網域]</a> 頁面。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. 在系統管理中心中，移至 **[設定]** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">[網域]</a> 頁面。\n\n::: moniker-end\n    \n2. 在 [ **網域** ] 頁面上，選取您要設定為新電子郵件地址的預設網域。 \n    \n3. 選取 [設定成預設值]。\n    \n::: moniker range=\"o365-worldwide\"\n\n您無法變更  *onmicrosoft.com*  網域的名稱。 \n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n您無法變更  *onmicrosoft.de*  網域的名稱。 \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n您無法變更  *partner.onmschina.cn*  網域的名稱。 \n\n::: moniker-end\n"
   - question: 我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？
-    answer: "::: moniker range=\"o365-worldwide\"\n\n是。 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n可以！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n可以！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您是讓世紀以 NS 記錄來管理您的 DNS 設定，就無法新增子域。\n\n::: moniker-end\n\n一般來說，您最多可以將900個網域新增至您的 Microsoft 365 訂閱。\n  \n例如，您可以新增網域 contoso.com 及 contosomarketing.com，然後新增子域 `www.contoso.com` ， `www.partners.contoso.com` ，等等 `www.marketing.partners.contoso.com` 。\n  \n當您新增子域時，會根據所驗證的父系網域，自動驗證。\n  \n當您將多個網域新增至 Microsoft 365 時，您可以主控任何服務 (如您已新增之任何網域上的電子郵件) 。  *當您將電子郵件變更為 Microsoft 365 時，會透過更新網域的 MX 記錄，傳送至該網域的所有電子郵件都會開始進入 Microsoft 365。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> 如果您已將 contoso.com 網域新增至 Microsoft 365 訂閱，您也可以將子域 xyz.contoso.com 新增至另一個 Microsoft 365 組織。 新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。\n::: moniker-end\n"
+    answer: "::: moniker range=\"o365-worldwide\"\n\n是。 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n是！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n是！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您是讓世紀以 NS 記錄來管理您的 DNS 設定，就無法新增子域。\n\n::: moniker-end\n\n一般來說，您最多可以將900個網域新增至您的 Microsoft 365 訂閱。\n  \n例如，您可以新增網域 contoso.com 及 contosomarketing.com，然後新增子域 `www.contoso.com` ， `www.partners.contoso.com` ，等等 `www.marketing.partners.contoso.com` 。\n  \n當您新增子域時，會根據所驗證的父系網域，自動驗證。\n  \n當您將多個網域新增至 Microsoft 365 時，您可以主控任何服務 (如您已新增之任何網域上的電子郵件) 。  *當您將電子郵件變更為 Microsoft 365 時，會透過更新網域的 MX 記錄，傳送至該網域的所有電子郵件都會開始進入 Microsoft 365。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> 如果您已將 contoso.com 網域新增至 Microsoft 365 訂閱，您也可以將子域 xyz.contoso.com 新增至另一個 Microsoft 365 組織。 新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。\n::: moniker-end\n"
   - question: 如何將網域從 Microsoft 365 傳輸到另一部主機？
     answer: >
       如需傳輸網域的程式，請參閱將 [網域從 Microsoft 轉接至其他主機](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md)。
@@ -60,4 +60,4 @@ sections:
   - question: 為什麼我有「onmicrosoft.de」網域？
     answer: "當您註冊服務時，Microsoft 365 會為您建立網域，例如 *contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，如 *alan@contoso.onmicrosoft.de*。 \n  \n **如果您想要讓您的電子郵件看起來像是 *alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或執行 [[將您的使用者與網域新增至 Microsoft 365](add-domain.md) ] 中所述的步驟。 \n  \n- **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。 若要使用不同的 onmicrosoft.de 網域，您必須使用 Microsoft 365 來開始新的訂閱。 \n    \n- **您無法重新命名您的小組網站 URL。** 您的小組網站 URL 是以您的 onmicrosoft.de 功能變數名稱為基礎。不幸的是，由於 SharePoint 線上架構的運作方式，您無法重新命名小組網站。 \n    \n- **您無法移除您的 name.onmicrosoft.com17 網域。** Microsoft 365 需要將其保留，因為它是用於您訂閱的幕後。 不過，您不需要在新增自訂網域之後，自行使用網域。 \n    \n您可以繼續使用初始 onmicrosoft.de 網域，即使是在您新增網域之後。 它仍適用于電子郵件和其他服務，所以是您的選擇。\n  \n"
   - question: 如何驗證我的非盈利性或教育狀態？
-    answer: "1. 在系統 [管理中心](./index.yml)選取 [**安裝**] 以啟動嚮導。  (請務必先 Microsoft 365 登入。 )  \n    \n2. 若要成為 school 的系統管理員，請選取 [在 Microsoft 365 **成為系統管理員**] 選項。 \n    \n3. 系統會提示您在網域的 DNS 主機網站上新增 TXT DNS 記錄。 為什麼？ 因為在 DNS 主機登入並為您的網域新增記錄，所以您可以 Microsoft 365 擁有功能變數名稱。\n    \n4. 在您新增記錄之後，您會回到 Microsoft 365 入口網站，並確認您已新增該記錄，所以 Microsoft 365 可以進行檢查。\n    \n是否有非贏利且想要取得 Microsoft 365？ [請確定您的組織符合資格](https://www.microsoft.com/en-us/nonprofits/eligibility) ，然後註冊服務。 \n  \n想要深入瞭解如何成為您的學校管理員？ [深入瞭解](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education\n)。"
+    answer: "1. 在系統 [管理中心](./index.yml)選取 [**安裝**] 以啟動嚮導。  (請務必先 Microsoft 365 登入。 )  \n    \n2. 若要成為 school 的系統管理員，請選取 [在 Microsoft 365 **成為系統管理員**] 選項。 \n    \n3. 系統會提示您在網域的 DNS 主機網站上新增 TXT DNS 記錄。 為什麼？ 因為在 DNS 主機登入並為您的網域新增記錄，所以您可以 Microsoft 365 擁有功能變數名稱。\n    \n4. 在您新增記錄之後，您會回到 Microsoft 365 入口網站，並確認您已新增該記錄，所以 Microsoft 365 可以進行檢查。\n    \n是否有非贏利且想要取得 Microsoft 365？ [請確定您的組織符合資格](https://www.microsoft.com/nonprofits/eligibility) ，然後註冊服務。 \n  \n想要深入瞭解如何成為您的學校管理員？ [深入瞭解](/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education\n)。"
