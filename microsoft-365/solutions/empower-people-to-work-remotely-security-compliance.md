@@ -17,22 +17,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全性與合規性服務，以保護混合式工作者的應用程式、資料和裝置。
-ms.openlocfilehash: fc5a83bfc6c8ec2dcb801e6063514c0a90c83de8
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 3de458f99ce1c83132d193cae523a49353b6956c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788921"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229392"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>步驟 3：為混合式工作者部署安全性與合規性
 
-對於從未，或很少進辦公室的某些混合式工作者來說，安全性和合規性是整體解決方案的重要組成部分。 他們所有的通訊都會透過網際網路進行，而不是局限於組織內部網路。 
+對於從未，或很少進辦公室的某些混合式工作者來說，安全性和合規性是整體解決方案的重要組成部分。 他們所有的通訊都會透過網際網路進行，而不是局限於組織內部網路。
 
 您和您的工作者可以做一些事情來保持生產力，同時降低網路安全風險並持續遵守內部原則和資料法規。
 
 遠端工作需要下列安全性與合規性元素：
 
-- 對混合式工作者使用的生產力應用程式 (例如 Microsoft Teams) 進行存取管制 
+- 對混合式工作者使用的生產力應用程式 (例如 Microsoft Teams) 進行存取管制
 - 管制存取和保護混合式工作者建立和使用的資料，例如聊天交談或共用的檔案
 - 保護 Windows 10 裝置不受惡意程式碼及其他類型的網路攻擊
 - 保護電子郵件、檔案和網站，並以一致的方式標記敏感度和保護層級
@@ -49,14 +49,14 @@ ms.locfileid: "52788921"
 
 | 功能 | 為什麼我需要它 | 授權 |
 |:-------|:-----|:-------|
-| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 <br><br> 適用於 Office 365 的 Microsoft Defender 會收集並分析來自應用程式的訊號，以進行偵測、調查，並修正安全風險，並抵禦電子郵件訊息、連結 (URL) 和共同作業工具所帶來的惡意威脅，以保護組織。它也能提供自動化租用戶設定評估以及設定工具以達成標準和嚴格的安全狀態。 | Microsoft 365 E3 或 E5 | 
+| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 <br><br> 適用於 Office 365 的 Microsoft Defender 會收集並分析來自應用程式的訊號，以進行偵測、調查，並修正安全風險，並抵禦電子郵件訊息、連結 (URL) 和共同作業工具所帶來的惡意威脅，以保護組織。它也能提供自動化租用戶設定評估以及設定工具以達成標準和嚴格的安全狀態。 | Microsoft 365 E3 或 E5 |
 | 惡意程式碼防護 | Microsoft Defender 防毒軟體和 Device Guard 提供裝置型惡意程式碼保護功能。 <br><br> SharePoint‎ Online 會自動掃描檔案上傳是否有已知的惡意軟體。<br><br> Exchange Online Protection‎ (‎EOP‎) 可保護雲端信箱。 | Microsoft 365 E3 或 E5 |
 | 適用於端點的 Microsoft Defender | 保護組織的裝置不受網路威脅和資料外洩，並偵測、調查及因應進階威脅。 | Microsoft 365 E5 |
 | Cloud App Security | 保護您的雲端服務不受攻擊，包括 Microsoft 365 和其他 SaaS 應用程式。 | Microsoft 365 E5 或個別的 Cloud App Security 授權 |
 | Azure AD Identity Protection  | 自動化身分識別風險的偵測和修正。 <br><br>建立以風險為基礎的條件式存取原則，對於有風險的登入要求多重要素驗證 (MFA)。 | Microsoft 365 E5 或 E3 (含 Azure AD Premium P2 授權) |
 ||||
 
-您第一個步驟應該是瞭解並使用 [Microsoft 安全分數](/microsoft-365/security/defender/microsoft-secure-score)。
+您第一個步驟應該是了解並使用 [Microsoft 安全分數](/microsoft-365/security/defender/microsoft-secure-score)。
 
 如需詳細資訊，請參閱[安全性團隊支援在家工作的 12 個首要工作](../security/top-security-tasks-for-remote-work.md)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "52788921"
 | 功能 | 為什麼我需要它 | 授權 |
 |:-------|:-----|:-------|
 | 敏感度標籤 | 在電子郵件、文件或網站上套用具有不同保護層級的標籤，可以在不影響使用者工作效率和共同作業能力的情況下對組織的資料進行分類和保護。 | Microsoft 365 E3 或 E5 |
-| 資料外洩防護 (DLP) | 偵測、警告，並封鎖風險、不慎或不當的共用，例如共用包含個人資訊的資料 (內部和外部)。 | Microsoft 365 E3 或 E5 | 
+| 資料外洩防護 (DLP) | 偵測、警告，並封鎖風險、不慎或不當的共用，例如共用包含個人資訊的資料 (內部和外部)。 | Microsoft 365 E3 或 E5 |
 | 條件式存取應用程式控制 | 防止敏感性資料遭下載至使用者的個人裝置。 | Microsoft 365 E3 或 E5 |
 | 資料保留標籤和原則 | 實施資訊控管控制，例如資料的保留時間以及對客戶個人資料儲存的要求，以符合組織的原則或資料法規。 | Microsoft 365 E3 或 E5 |
 | Office 郵件加密 (OME) | 在組織內外的人員之間傳送和接收加密的電子郵件訊息，包含管制資料，例如客戶的個人資料。 | Microsoft 365 E3 或 E5 |
@@ -87,7 +87,7 @@ ms.locfileid: "52788921"
 
 - 安全性
   - 對混合式工作者用來進行通訊和共同作業的應用程式和資料進行存取管制
-  - 針對雲端服務資料、電子郵件和 Windows 10 裝置進行惡意程式碼保護 
+  - 針對雲端服務資料、電子郵件和 Windows 10 裝置進行惡意程式碼保護
 - 合規性
   - 以一致的方式標記敏感度和保護層級
   - 防止資訊洩漏的原則

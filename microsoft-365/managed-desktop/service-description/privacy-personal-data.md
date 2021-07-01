@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177474"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229596"
 ---
 # <a name="overview"></a>概觀
 
@@ -68,16 +68,16 @@ Microsoft 受管理的電腦所用的識別資料是由在組織中 Azure Active
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Microsoft Intune 收集、處理及共用資料，以 Microsoft 受管理的電腦支援商務作業和服務。 如需 Intune 中所收集資料的詳細資訊，請參閱 [Intune 中的資料收集](/mem/intune/protect/privacy-data-collect) 。 
 
-如需 Microsoft Intune 資料位置的詳細資訊，請參閱[儲存 Microsoft 365 客戶資料的位置](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)。 Intune 會尊重管理員為客戶資料所做的儲存位置選擇。
+如需 Microsoft Intune 資料位置的詳細資訊，請參閱[儲存 Microsoft 365 客戶資料的位置](/microsoft-365/enterprise/o365-data-locations)。 Intune 會尊重管理員為客戶資料所做的儲存位置選擇。
 
 ## <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
-Microsoft Defender for Endpoint 會收集和儲存在 Microsoft 受管理的電腦中登記的裝置資訊，以進行管理、追蹤及報告目的。 收集的資訊包括檔案資料 (例如：檔案名、大小和雜湊) 、處理資料 (執行中的程式、雜湊) 、登錄資料、網路連線資料和裝置詳細資料 (例如裝置識別碼、裝置名稱和作業系統版本) 。 如需 Microsoft Defender for Endpoint 資料收集和儲存位置的詳細資訊，請參閱 [Microsoft defender For endpoint data storage and 隱私權](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) 。 
+Microsoft Defender for Endpoint 會收集和儲存在 Microsoft 受管理的電腦中登記的裝置資訊，以進行管理、追蹤及報告目的。 收集的資訊包括檔案資料 (例如：檔案名、大小和雜湊) 、處理資料 (執行中的程式、雜湊) 、登錄資料、網路連線資料和裝置詳細資料 (例如裝置識別碼、裝置名稱和作業系統版本) 。 如需 Microsoft Defender for Endpoint 資料收集和儲存位置的詳細資訊，請參閱 [Microsoft defender For endpoint data storage and 隱私權](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) 。 
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版 
-Microsoft 365 Apps 企業版會使用 Microsoft 受管理的電腦收集及共用資料，以確保根據 Microsoft 受管理的電腦所管理的預先定義的更新通道，使用最新版本的應用程式。 如需 Microsoft 365 Apps 的資料收集和儲存位置的詳細資訊，請參閱[Microsoft Defender for Endpoint data storage and 隱私權](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect)。
+Microsoft 365 Apps 企業版會使用 Microsoft 受管理的電腦收集及共用資料，以確保根據 Microsoft 受管理的電腦所管理的預先定義的更新通道，使用最新版本的應用程式。 如需 Microsoft 365 Apps 的資料收集和儲存位置的詳細資訊，請參閱[Microsoft Defender for Endpoint data storage and 隱私權](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)。
 
 ## <a name="major-data-change-notification"></a>主要資料變更通知
-Microsoft 受管理的電腦遵循我們服務通訊架構中所述的變更控制處理常式。 我們會透過 Microsoft 365 訊息中心通知客戶，並 Microsoft 受管理的電腦管理入口網站的安全性事件及主要變更服務。 對收集到的資料類型所做的變更，以及儲存位置的變更，都會視為一項材料變更。 我們會提供至少30天的此變更的高級通知，因為這是 Microsoft 365 產品和服務的標準作法。 如需詳細資訊，請參閱 [服務變更和通訊](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)。
+Microsoft 受管理的電腦遵循我們服務通訊架構中所述的變更控制處理常式。 我們會透過 Microsoft 365 訊息中心通知客戶，並 Microsoft 受管理的電腦管理入口網站的安全性事件及主要變更服務。 對收集到的資料類型所做的變更，以及儲存位置的變更，都會視為一項材料變更。 我們會提供至少30天的此變更的高級通知，因為這是 Microsoft 365 產品和服務的標準作法。 如需詳細資訊，請參閱 [服務變更和通訊](/microsoft-365/managed-desktop/service-description/servicechanges)。
 
 ## <a name="compliance"></a>合規性
 Microsoft 受管理的電腦已完成外部審核，並取得一組完整的規範服務。 您可以在 Microsoft 受管理的電腦[法規遵從性](/microsoft-365/managed-desktop/intro/compliance)中找到詳細資訊。 您可以在 microsoft[服務信任入口網站](https://aka.ms/stp)上下載審計報告，其充當 microsoft Enterprise 線上服務的中央存放庫。  (Microsoft 受管理的電腦會列在這些檔中的「監控與管理」類別之下。)  

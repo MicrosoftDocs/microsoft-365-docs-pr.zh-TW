@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0ebf0571da101884728400be15cd2ddfcfac8e8e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6dec1f5c2827018f920a71f8b4e7c8cb111c87cd
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274853"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230076"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的網路設定
 
@@ -56,7 +56,7 @@ Microsoft 支援及修復小幫手 | \*。 apibasic.diagnostics.office.com  <br>
 
 Microsoft 服務 | 文件
 --- | ---
-Windows 10 企業版包括商務 Windows 更新 | [管理 Windows 10 的連接端點，版本1803](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 的連接端點，版本1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 的連接端點，版本1903](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 的連接端點，版本2004](/windows/privacy/manage-windows-2004-endpoints)
+Windows 10 企業版包括商務 Windows 更新 | [管理 Windows 10 的連接端點，版本1803](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的連接端點](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 的連接端點，版本1903](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 的連接端點，版本2004](/windows/privacy/manage-windows-2004-endpoints)
 傳遞最佳化 | [設定 Windows 10 更新的傳遞優化](/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365URL 與 IP 位址範圍](../../enterprise/urls-and-ip-address-ranges.md)
 Azure Active Directory | [混合式識別所需的埠和通訊協定](/azure/active-directory/hybrid/reference-connect-ports) 和 Active Directory [網域服務埠需求](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) 
@@ -76,11 +76,11 @@ Microsoft Intune | login.microsoftonline.com<br>portal.manage.microsoft.com<br>m
 Microsoft Defender 進階威脅防護 (ATP) | \ * oms.opinsights.azure.com <br>\*。 blob.core.windows.net <br>\*。 azure-automation.net <br>\*。 ods.opinsights.azure.com <br>winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com <br>winatp-gw-aus.microsoft.com <br>winatp-gw-aue.microsoft.com | [Windows DefenderATP 端點](/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
 取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com <br>rave.office.net | 
 快速助手 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com | 
-SharePoint Online  | \*.sharepoint.com <br>\ * svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*。 sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [Office 365 URL 與 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-商務用 OneDrive | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*。 log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [Office 365 URL 與 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-Microsoft Teams | \*。 teams.skype.com  <br>\*。 teams.microsoft.com  <br>teams.microsoft.com <br>\*。 asm.skype.com <br>\ * cc.skype.com  <br>\*。 conv.skype.com  <br>\*。 dc.trouter.io  <br>\*。 msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*。 broker.skype.com <br>\*.config。 skype.com  <br>\*。 pipe.skype.com  <br>\*。 pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*。 msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*。 secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*。 mstea.ms | [Office 365 URL 與 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+SharePoint Online  | \*.sharepoint.com <br>\ * svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*。 sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [Office 365 URL 和 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+商務用 OneDrive | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*。 log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [Office 365 URL 和 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+Microsoft Teams | \*。 teams.skype.com  <br>\*。 teams.microsoft.com  <br>teams.microsoft.com <br>\*。 asm.skype.com <br>\ * cc.skype.com  <br>\*。 conv.skype.com  <br>\*。 dc.trouter.io  <br>\*。 msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*。 broker.skype.com <br>\*.config。 skype.com  <br>\*。 pipe.skype.com  <br>\*。 pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*。 msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*。 secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*。 mstea.ms | [Office 365 URL 和 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*。 mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*。 msecnd.com <br>\*。 localytics.com <br>ajax.aspnetcdn.com <br>\*。 localytics.com <br>\*。 virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*。 powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*。 azureedge.net |[Power BI & Express Route](/power-bi/service-admin-power-bi-expressroute) 
-OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*。 onenote.com <br>\*。 msecnd.net <br>\*。 microsoft.com <br>\*。 office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*。 microsoft.com | [Office 365 URL 與 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*。 onenote.com <br>\*。 msecnd.net <br>\*。 microsoft.com <br>\*。 office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*。 microsoft.com | [Office 365 URL 和 IP 位址範圍](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
 ## <a name="steps-to-get-ready"></a>準備就緒的步驟
 

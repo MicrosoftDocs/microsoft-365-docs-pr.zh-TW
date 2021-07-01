@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 到新德文 datacenter 區域中 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: abf58930e2f937922733fedec2f13bfc2949fcb8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930448"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229824"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -134,7 +134,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 - 如果您的組織仍然使用 SharePoint 2010 工作流程，他們將無法再在 2021 12 月31日之後運作。 SharePoint 2013 工作流程仍然受到支援，不過預設為從 2020 1 月1日開始的新承租人關閉。 在完成 SharePoint 線上服務的遷移之後，建議您移至 Power Automate 或其他支援的解決方案。
  - 尚未遷移其 SharePoint 線上實例的 Microsoft 雲端 Deutschland 客戶必須保持 SharePoint 線上 PowerShell module SharePointOnline/16.0.20616.12000 版本或下列的版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
-- 在此階段中，SharePoint URLs 背後的 IP 位址會變更。 轉換為 Office 365 泛型服務之後，保留之租使用者的位址 URLs (例如， `contoso.sharepoint.de` `contoso-my.sharepoint.de`) 將變更為[全球 Microsoft 365 URLs 和 IP 位址範圍 (SharePoint 線上及商務用 OneDrive) ](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)。
+- 在此階段中，SharePoint URLs 背後的 IP 位址會變更。 轉換為 Office 365 泛型服務之後，保留之租使用者的位址 URLs (例如， `contoso.sharepoint.de` `contoso-my.sharepoint.de`) 將變更為[全球 Microsoft 365 URLs 和 IP 位址範圍 (SharePoint 線上及商務用 OneDrive) ](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)。
 - 在轉換 SharePoint 和 OneDrive 服務時，Office 線上可能無法如預期般運作。 
 
 > [!NOTE]
@@ -231,7 +231,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 - 使用者將無法在時間服務轉換至 Office 365 服務之間登入商務用 Skype，直到客戶 DNS 專案完成為止。
 - 連絡人與現有的會議將繼續充當商務用 Skype 會議。
 
-為商務用 Skype 設定虛名網域後，必須更新 DNS 專案。 請參閱[Microsoft 365 系統管理中心的網域](https://admin.microsoft.com/Adminportal/Home#/Domains)，並在您的 DNS 設定中套用變更。 
+為商務用 Skype 設定虛名網域後，必須更新 DNS 專案。 請參閱[Microsoft 365 系統管理中心中的網域](https://admin.microsoft.com/Adminportal/Home#/Domains)，然後在您的 DNS 設定中套用變更。 
 
 如果您必須在遷移階段9完成之後，使用 PowerShell 連線至商務用 Skype，請使用下列 PowerShell 程式碼來連接：
 

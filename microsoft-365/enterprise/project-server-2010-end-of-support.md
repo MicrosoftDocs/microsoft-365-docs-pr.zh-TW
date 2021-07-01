@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支援結束于2021年4月13日結束。 請使用本文做為升級至 Project Online 或 Project 伺服器內部部署的更新版本指南。
-ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 0ca37d00ee670a8a3f7c83d75864b5af19587951
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842227"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229752"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 終止支援藍圖
 
@@ -157,11 +157,11 @@ Project Server 2010 和 Project Server 2019 之間的架構差異，會防止直
 
 - [Project Server 2013 升級的新功能](/project/what-s-new-in-project-server-2013-upgrade)涵蓋此版本的重要變更，包括：
 
-   - 沒有 Project Server 2013 的就地升級。 資料庫附加方法是唯一支援的方法，可以從 Project Server 2010 升級為 Project Server 2013。
+  - 沒有 Project Server 2013 的就地升級。 資料庫附加方法是唯一支援的方法，可以從 Project Server 2010 升級為 Project Server 2013。
 
-   - 升級程式不會只會將 Project server 2010 資料轉換成 Project 伺服器2013格式，但也會將四個 Project Server 2010 資料庫合併成單一 Project Web App 資料庫。
+  - 升級程式不會只會將 Project server 2010 資料轉換成 Project 伺服器2013格式，但也會將四個 Project Server 2010 資料庫合併成單一 Project Web App 資料庫。
 
-   - SharePoint server 2013 和 Project Server 2013 都變更為先前版本的宣告式驗證。 如果您使用的是傳統驗證，當您升級時，必須考慮這一點。 如需詳細資訊，請參閱＜[在 SharePoint 2013 中從傳統模式移轉至宣告式驗證]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)＞。
+  - SharePoint server 2013 和 Project Server 2013 都變更為先前版本的宣告式驗證。 如果您使用的是傳統驗證，當您升級時，必須考慮這一點。 如需詳細資訊，請參閱＜[在 SharePoint 2013 中從傳統模式移轉至宣告式驗證](/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)＞。
 
 主要資源：
 
@@ -213,9 +213,9 @@ Project Server 2010 和 Project Server 2019 之間的架構差異，會防止直
 
 - [Project Server 2019 升級所需注意的事項](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>深入瞭解升級至此版本的重要變更，包括：
 
-   - 升級程式會將您的資料從 Project Server 2016 資料庫移轉至 SharePoint Server 2019 內容資料庫。  Project伺服器2019將不再在 SharePoint 伺服器陣列中建立自己的 Project 伺服器資料庫。
+  - 升級程式會將您的資料從 Project Server 2016 資料庫移轉至 SharePoint Server 2019 內容資料庫。  Project伺服器2019將不再在 SharePoint 伺服器陣列中建立自己的 Project 伺服器資料庫。
 
-   - 升級之後，請留意 Project Web App 中的數項變更。  如需詳細資訊，請參閱[Project Server 2019 的新功能](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
+  - 升級之後，請留意 Project Web App 中的數項變更。  如需詳細資訊，請參閱[Project Server 2019 的新功能](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
 
 **其他資源**：
 

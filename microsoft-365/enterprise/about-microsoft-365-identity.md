@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 瞭解如何使用僅限雲端或混合式身分識別模型，在 Microsoft 365 中管理 Azure AD 使用者身分識別服務。
-ms.openlocfilehash: b54ccce6ea2a468e02d9db95e7932d847df4e64b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93a37f39a4d96d7c2e434ed6edf4df588e672a0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905701"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228492"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 身分識別模型和 Azure Active Directory
 
@@ -46,7 +46,7 @@ Microsoft 365 會使用 Azure Active Directory (Azure AD) ，這是一種包含�
 
 ## <a name="microsoft-365-identity-models"></a>Microsoft 365 身分識別模型
 
-若要規劃使用者帳戶，您必須先瞭解 Microsoft 365 中的兩個身分識別模型。 您只能在雲端維護組織的身分識別，也可以維護內部部署 Active Directory 網域服務 (AD DS) 身分識別，並在使用者存取 Microsoft 365 雲端服務時，使用這些服務進行驗證。  
+若要規劃使用者帳戶，您必須先瞭解 Microsoft 365 中的兩個身分識別模型。 您只能在雲端維護組織的身分識別，也可以維護內部部署 Active Directory 網域服務 (AD DS) 身分識別，並在使用者存取 Microsoft 365 雲端服務時，使用這些服務進行驗證。
 
 以下是兩種身分識別類型及其最大和優點。
 
@@ -60,16 +60,16 @@ Microsoft 365 會使用 Azure Active Directory (Azure AD) ，這是一種包含�
 
 ## <a name="cloud-only-identity"></a>僅雲端身分識別
 
-僅雲端身分識別會使用僅存在於 Azure AD 中的使用者帳戶。 僅限雲端的身分識別通常是由沒有內部部署伺服器的小型組織使用，或是不使用 AD DS 來管理本機身分識別。 
+僅雲端身分識別會使用僅存在於 Azure AD 中的使用者帳戶。 僅限雲端的身分識別通常是由沒有內部部署伺服器的小型組織使用，或是不使用 AD DS 來管理本機身分識別。
 
 以下是僅限雲端身分識別的基本元件。
- 
+
 ![僅限雲端身分識別的基本元件](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 內部部署和遠端 (線上) 使用者可以使用其 Azure AD 使用者帳戶和密碼來存取 Microsoft 365 雲端服務。 Azure AD 會根據其儲存的使用者帳戶和密碼來驗證使用者認證。
 
 ### <a name="administration"></a>系統管理
-因為使用者帳戶只會儲存在 Azure AD 中，您可以使用[Microsoft 365 系統管理中心](../admin/add-users/index.yml)和[Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)等工具來管理雲端身分識別。 
+因為使用者帳戶只會儲存在 Azure AD 中，所以您可以使用[Microsoft 365 系統管理中心](../admin/add-users/index.yml)和[Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)等工具來管理雲端身分識別。
 
 ## <a name="hybrid-identity"></a>混合式身分識別
 
@@ -77,7 +77,7 @@ Microsoft 365 會使用 Azure Active Directory (Azure AD) ，這是一種包含�
 
 Azure AD 連線提供進行中的帳戶同步處理。 它會在內部部署伺服器上執行，檢查 AD DS 中的變更，並將這些變更轉送到 Azure AD。 Azure AD 連線可讓您篩選要同步處理的帳戶，以及是否同步處理已雜湊的版本的使用者密碼，稱為密碼雜湊同步處理 (PHS) 。
 
-當您實作混合式身分識別時，您的內部部署 AD DS 是帳戶資訊的授權來源。 這表示您執行大部分內部部署的管理工作，然後同步處理到 Azure AD。 
+當您實作混合式身分識別時，您的內部部署 AD DS 是帳戶資訊的授權來源。 這表示您執行大部分內部部署的管理工作，然後同步處理到 Azure AD。
 
 以下是混合式身分識別的元件。
 
@@ -85,22 +85,20 @@ Azure AD 連線提供進行中的帳戶同步處理。 它會在內部部署伺�
 
 Azure AD 租使用者具有 AD DS 帳戶的副本。 在此設定中，內部部署和遠端使用者皆存取 Azure AD 的 Microsoft 365 雲端服務驗證。
 
->[!Note]
->您永遠需要使用 Azure AD 連線來同步處理混合身分識別的使用者帳戶。 您需要 Azure AD 中已同步處理的使用者帳戶，以執行授權指派和群組管理、設定許可權，以及其他涉及使用者帳戶的系統管理工作。
->
+> [!NOTE]
+> 您永遠需要使用 Azure AD 連線來同步處理混合身分識別的使用者帳戶。 您需要 Azure AD 中已同步處理的使用者帳戶，以執行授權指派和群組管理、設定許可權，以及其他涉及使用者帳戶的系統管理工作。
 
 ### <a name="administration"></a>系統管理
 
-由於原始和權威性的使用者帳戶是儲存在內部部署 AD DS 中，因此您可以在管理 AD DS 時使用相同的工具來管理您的身分識別。 
+由於原始和權威性的使用者帳戶是儲存在內部部署 AD DS 中，因此您可以在管理 AD DS 時使用相同的工具來管理您的身分識別。
 
-您不會使用 Microsoft 365 系統管理中心或 PowerShell，Microsoft 365 管理 Azure AD 中的同步處理使用者帳戶。
+您不會使用 Microsoft 365 系統管理中心或 PowerShell Microsoft 365 管理 Azure AD 中已同步的使用者帳戶。
 
 ## <a name="next-step"></a>下一步
 
 如果您需要僅限雲端的身分識別模型，請參閱 [僅限雲端身分識別](cloud-only-identities.md)。
 
 如果您需要混合式身分識別模型，請參閱 [混合身分識別](plan-for-directory-synchronization.md)。
-
 
 ## <a name="see-also"></a>另請參閱
 

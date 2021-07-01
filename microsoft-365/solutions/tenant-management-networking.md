@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 優化 Microsoft 365 承租人的網路存取。
-ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407189"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229176"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 2. 適用于企業承租人 Microsoft 365 的最佳網路
 
@@ -31,7 +31,7 @@ ms.locfileid: "50407189"
 
 - 將您的內部部署使用者與最接近的位置之間的路徑優化至 Microsoft 全球網路。
 - 針對使用遠端存取 VPN 解決方案的遠端使用者，優化對 Microsoft Global 網路的存取。
-- 使用網路洞察力為您的辦公室地點設計周邊網路。
+- 使用 [網路 Insights 設計您的辦公室位置的網路周邊。
 - 使用 Office 365 CDN，優化 SharePoint 網站上主控的特定資產的存取權。
 - 設定 proxy 和網路 edge 裝置，以略過使用端點清單的 Microsoft 365 信任流量的處理，並在進行變更時自動更新清單。
 
@@ -94,7 +94,7 @@ ms.locfileid: "50407189"
 
 如需詳細資訊和指導方針，請參閱[使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](../enterprise/microsoft-365-vpn-split-tunnel.md)。
 
-## <a name="using-network-insights-preview"></a>使用網路洞察力 (預覽) 
+## <a name="using-network-insights-preview"></a>使用網路 Insights (預覽) 
 
 網路洞察力是從 Microsoft 365 租使用者收集的效能度量，可協助您為辦公室位置設計網路周邊。 每個真知灼見都會針對內部部署使用者存取您租使用者的位置，針對每個地理位置，提供有關特定問題之效能特性的實際詳細資料。
 
@@ -112,10 +112,10 @@ ms.locfileid: "50407189"
 - [從 SharePoint 前門開始的低下載速度](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [中國使用者最佳網路出口](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
->[!IMPORTANT]
->Microsoft 365 系統管理中心的網路洞察力、效能建議和評估目前處於預覽狀態。 它只適用于已在功能預覽方案中登記 Microsoft 365 承租人。
+> [!IMPORTANT]
+> Microsoft 365 系統管理 Center 中的網路洞察力、效能建議和評估目前處於預覽狀態。 它只適用于已在功能預覽方案中登記 Microsoft 365 承租人。
 
-如需詳細資訊，請參閱[Microsoft 365 網路洞察力](../enterprise/office-365-network-mac-perf-insights.md)。
+如需詳細資訊，請參閱[Microsoft 365 網路 Insights](../enterprise/office-365-network-mac-perf-insights.md)。
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>使用 Office 365 SharePoint 效能 CDN
 
@@ -152,7 +152,7 @@ Office 365 CDN 是由可讓您在多個位置或 _來源_ 主控靜態資產的�
 - 如何透過將網際網路連線新增至所有分支辦公室並消除網路 hairpin，以最優化內部部署使用者的網路效能。
 - 如何針對用戶端的 PAC 檔案和網路裝置及服務執行自動信任端點清單，包括 (最適合商業網路) 的持續更新。
 - 如何支援對內部部署資源的遠端工作者存取。
-- 如何使用網路洞察力
+- 如何使用網路 Insights
 - 如何部署 Office 365 CDN。
 
 以下是企業組織及其租使用者的最佳網路的範例。

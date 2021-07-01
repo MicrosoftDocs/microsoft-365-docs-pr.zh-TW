@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服務機構如何使用 Microsoft 365 與 Teams 維護金融安全合規性並有效地共同作業。
 f1.keywords: NOCSH
-ms.openlocfilehash: 1e6aa7f25e536c1a66bd7713efa167691b81785e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 64f0968dac4dd33b7333455a48d491f89b555524
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114037"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229380"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -196,7 +196,7 @@ Microsoft 最近推出 Microsoft 365 Defender 解決方案，旨在保護現代�
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為了應對網路威脅，Intelligent Security Graph 使用進階分析來連結來自 Microsoft 及其合作夥伴的威脅情報和安全性信號。 Microsoft 大規模營運全球服務，並收集數以萬億計的安全性信號，以支援堆疊式防護層。 機器學習模型會評估此情報，並在我們的產品和服務中廣泛共用信號和威脅見解。 這可讓我們迅速偵測並回應威脅，並將可採取動作的警報和資訊提供給客戶，以進行修正。 我們的機器學習模型會不斷接受訓練並以新的見解進行更新，協助我們打造更安全的產品，並提供更主動的安全性。
 
-[適用於 Office 365 的 Microsoft Defender](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 適用於 Office 365 的 Defender 會在按一下文件和連結時加以評估，以尋找潛在的惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 適用於 Office 365 的 Defender 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，適用於 Office 365 的 Defender 會自動鎖定該檔案，以降低潛在的損壞。
+[適用於 Office 365 的 Microsoft Defender](../security/office-365-security/defender-for-office-365.md) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 適用於 Office 365 的 Defender 會在按一下文件和連結時加以評估，以尋找潛在的惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 適用於 Office 365 的 Defender 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，適用於 Office 365 的 Defender 會自動鎖定該檔案，以降低潛在的損壞。
 
 [適用於端點的 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是預防性保護、入侵後偵測、自動調查及回應的整合式端點安全性平台。 適用於端點的 Defender 提供內建功能，以在企業端點上探索及保護敏感性資料。
 
@@ -224,7 +224,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
 - 保留期間到期時，會發生什麼情況 (刪除文件、開始處置檢閱或不採取任何動作)。
 -  觸發保留期間的起始點 (建立日期、上次修改日期、標籤日期或事件) 並將文件或電子郵件標示為記錄 (表示無法編輯或刪除)。
 
-保留標籤便會發佈到 SharePoint 或 OneDrive 網站、Exchange 信箱和 Microsoft 365 群組。 使用者可以手動將保留標籤套用到文件和電子郵件。 記錄管理員可以使用情報來自動套用標籤。 情報功能可根據[九十多種內建敏感性資訊類型](../compliance/content-search.md?view=o365-worldwide) (例如 ABA 匯款路徑編號、美國銀行帳號或美國社會安全號碼)。 也可以根據關鍵字或電子郵件中的敏感性資料 (例如信用卡號碼或其他個人辨識資訊) 或根據 SharePoint 中繼資料來自訂。 針對不容易透過手動或自動模式比對來識別的資料，可訓練的分類器可用於根據機器學習技術聰明分類文件。
+保留標籤便會發佈到 SharePoint 或 OneDrive 網站、Exchange 信箱和 Microsoft 365 群組。 使用者可以手動將保留標籤套用到文件和電子郵件。 記錄管理員可以使用情報來自動套用標籤。 情報功能可根據[九十多種內建敏感性資訊類型](../compliance/content-search.md) (例如 ABA 匯款路徑編號、美國銀行帳號或美國社會安全號碼)。 也可以根據關鍵字或電子郵件中的敏感性資料 (例如信用卡號碼或其他個人辨識資訊) 或根據 SharePoint 中繼資料來自訂。 針對不容易透過手動或自動模式比對來識別的資料，可訓練的分類器可用於根據機器學習技術聰明分類文件。
  
 **美國證券交易委員會 (SEC)** 要求經紀商/自營商和其他受監管金融機構保留所有業務相關通訊。 這些要求適用於許多類型的通訊和資料，包括電子郵件、文件、立即訊息、傳真等。 **SEC 細則 17a-4** 定義這些組織在電子資料儲存系統中儲存記錄時必須符合的準則。 SEC 在 2003 年發行了闡明這些要求的版本。 其中包括下列準則：
 
@@ -268,7 +268,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
 
 最終，這些細則要求組織在涉及銀行服務、銷售或交易的角色之間建立原則並實施資訊屏障，以防止與分析師交換資訊和通訊。
 
-[資訊屏障](../compliance/information-barriers.md?view=o365-worldwide)能讓您在 Office 365 環境中建立道德管束，讓規範管理員或其他獲授權的管理員定義原則，以允許或防止團隊內使用者群組之間的通訊。 資訊屏障會對特定動作執行檢查，以防止未經授權的通訊。 在內部團隊正在進行合併/收購或敏感性交易，或使用必須嚴格限制的敏感性內部資訊的情況下，資訊屏障也可以限制通訊。
+[資訊屏障](../compliance/information-barriers.md)能讓您在 Office 365 環境中建立道德管束，讓規範管理員或其他獲授權的管理員定義原則，以允許或防止團隊內使用者群組之間的通訊。 資訊屏障會對特定動作執行檢查，以防止未經授權的通訊。 在內部團隊正在進行合併/收購或敏感性交易，或使用必須嚴格限制的敏感性內部資訊的情況下，資訊屏障也可以限制通訊。
 
 Microsoft 365 中的資訊屏障支援 Teams 中的交談和檔案。 資訊屏障可以防止以下與通訊相關的動作，以協助遵守 FINRA 法規：
 
@@ -319,7 +319,7 @@ Microsoft 365 最近推出了測試人員風險管理解決方案，可將整個
 
 例如，Microsoft 365 中的測試人員風險管理可以將來自使用者 Windows 10 Desktop 的信號 (例如，將檔案複製到 USB 硬碟，或透過電子郵件傳送個人電子郵件帳戶) 和線上服務 (例如 Office 365 電子郵件、SharePoint Online、Microsoft Teams 或 OneDrive) 中的活動相關聯，以識別資料外流模式。 還可以將這些活動與離開組織的員工相關聯，這是一種常見的資料外流模式。 可監視多個活動和一段時間的行為。 常見模式出現時，便可發出警報，並協助調查人員專注於關鍵活動，以高信賴度驗證原則違規。 測試人員風險管理可以對調查人員的資料進行匿名處理，以協助符合資料隱私權法規，同時還可以進行一些關鍵活動，以協助有效有效執行調查。 這可讓研究人員按照一般向上呈報工作流程安全地將關鍵活動資料封裝並傳送到人力資源和法務部門，以執行修正動作。
 
-Microsoft 365 中的測試人員風險管理大幅提升組織監視及調查測試人員風險的能力，同時讓組織仍符合資料隱私權法規，並在案件需要更高級別的動作時遵循已建立的向上呈報途徑。 如需 Microsoft 365 中的內部風險管理的詳細資訊，請參閱 [Microsoft 365 的內部風險管理中的新式風險痛點和工作流程](../compliance/insider-risk-management.md?view=o365-worldwide)。
+Microsoft 365 中的測試人員風險管理大幅提升組織監視及調查測試人員風險的能力，同時讓組織仍符合資料隱私權法規，並在案件需要更高級別的動作時遵循已建立的向上呈報途徑。 如需 Microsoft 365 中的內部風險管理的詳細資訊，請參閱 [Microsoft 365 的內部風險管理中的新式風險痛點和工作流程](../compliance/insider-risk-management.md)。
 
 ![隔間中的客服中心工作者一邊打字一邊看著螢幕。](../media/clo17-call-center-006.jpg)
  

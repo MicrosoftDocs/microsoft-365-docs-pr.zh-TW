@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245333"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228996"
 ---
 # <a name="device-inventory-report"></a>裝置庫存報告
 
@@ -43,6 +43,6 @@ ms.locfileid: "52245333"
 - TPM 版本
 - 已啟用安全啟動
 - 主要磁片類型
-- 實體記憶體總數 
+- 實體記憶體總數
 
-![裝置視圖顯示裝置和相關詳細資料的清單。 在上方選取 [活動，註冊狀態的篩選] 旁邊的核取方塊。 以上是搜尋方塊。 用於註冊新裝置、重新整理視圖、匯出錯誤，以及匯出資料的上方索引標籤。 ](../../media/mmd-devices-view.png)
+![裝置視圖顯示裝置和相關詳細資料的清單。 在上方選取 [活動，註冊狀態的篩選] 旁邊的核取方塊。 以上是搜尋方塊。 用於註冊新裝置、重新整理視圖、匯出錯誤，以及匯出資料的上方索引標籤。](../../media/mmd-devices-view.png)

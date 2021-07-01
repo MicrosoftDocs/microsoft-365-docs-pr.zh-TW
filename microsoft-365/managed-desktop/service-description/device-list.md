@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245933"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230052"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置
 
@@ -22,13 +22,13 @@ ms.locfileid: "52245933"
 
 Microsoft 受管理的電腦會定期評估要包含在服務中的裝置。 本文列出目前支援的特定裝置。 如需更一般的裝置需求語句，請參閱 [裝置需求](device-requirements.md)。
 
-如需 Microsoft 受管理的電腦的詳細資訊，請參閱[Microsoft 受管理的電腦檔及資源](../index.yml)。 
+如需 Microsoft 受管理的電腦的詳細資訊，請參閱[Microsoft 受管理的電腦檔及資源](../index.yml)。
 
 [選取及驗證新裝置](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft 受管理的電腦中註冊，裝置必須是下列其中一種型號，且符合或超過所列的 RAM、處理器系列和磁碟空間規格。 
+若要在 Microsoft 受管理的電腦中註冊，裝置必須是下列其中一種型號，且符合或超過所列的 RAM、處理器系列和磁碟空間規格。
 
 此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存 *日期*」是這些模型會變得更短 Microsoft 受管理的電腦服務生命的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦獲得全三年的支援期限。 封存裝置也會列在[Microsoft 受管理的電腦](archived-device-list.md)已封存裝置中。 「*退休日期*」是指 Microsoft 受管理的電腦此模型將不再受到支援的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的電腦中移除，而不論他們是否已註冊。
 
@@ -79,9 +79,9 @@ Microsoft 受管理的電腦會定期評估要包含在服務中的裝置。 本
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 | **\*[Surface Pro 7 +](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB/Intel i5/8 GB RAM | 無 | 2022年1月15日 | 2025年1月15日 |
 
-此外，裝置也必須符合下列準則：     
+此外，裝置也必須符合下列準則：
 
-- 如果裝置需求中列出特定的 SKU，請務必在訂購時使用該 SKU。 這樣做可確保裝置遵循 Microsoft 受管理的電腦軟體需求。 
+- 如果裝置需求中列出特定的 SKU，請務必在訂購時使用該 SKU。 這樣做可確保裝置遵循 Microsoft 受管理的電腦軟體需求。
 - 尚未完成 Windows 初次執行體驗。
 - 使用[Device Registration](../get-started/register-devices-self.md)功能在 Microsoft 受管理的電腦中註冊
 

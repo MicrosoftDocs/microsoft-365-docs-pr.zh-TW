@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096780"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229104"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -85,7 +85,7 @@ Office 365 組織的 Microsoft Defender 範例包括：
   - **網域**： Microsoft 365 中的一或多個已設定 [公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
   - **排除這些使用者、群組和網域**：原則例外。 設定和行為完全像是條件：
-    - **使用者**
+    - **Users**
     - **群組**
     - **網域**
 
@@ -175,7 +175,7 @@ Office 365 組織的 Microsoft Defender 範例包括：
 
   > [!NOTE]
   >
-  > - 在每個反網路釣魚原則中，您可以指定最多60個受保護的使用者 (寄件者的電子郵件地址) 。 您無法在多個原則中指定同一個受保護的使用者。 因此，不論對收件者套用多少個原則，各位收件者的受保護的使用者數目 () 每個個別的收件者的郵寄地址上限為60。 如需原則優先順序的詳細資訊，以及在套用第一個原則之後，如何處理原則，請參閱 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
+  > - 在每個反網路釣魚原則中，您可以指定最多350個受保護的使用者 (寄件者的電子郵件地址) 。 您無法在多個原則中指定同一個受保護的使用者。 因此，不論對收件者套用多少個原則，各位收件者的受保護的使用者數目 () 每個個別的收件者的郵寄地址上限為350。 如需原則優先順序的詳細資訊，以及在套用第一個原則之後，如何處理原則，請參閱 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
   > - 如果寄件者和收件者先前透過電子郵件進行通訊，使用者模擬保護便無法運作。 如果寄件者和收件者永不透過電子郵件進行通訊，郵件會被識別為類比嘗試。
 
   根據預設，不會將寄件者電子郵件地址設定為 **要保護的使用者** 類比保護。 因此，根據預設，在 [預設原則] 或 [自訂原則] 中，模擬保護不會涵蓋任何寄件者電子郵件地址。

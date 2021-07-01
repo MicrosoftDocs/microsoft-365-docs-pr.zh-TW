@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 3f0f7a2b6a10c3469f0689419934fd8d19070999
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984997"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228624"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>受支援的適用於端點的 Microsoft Defender API
 
@@ -48,7 +48,7 @@ ms.locfileid: "52984997"
 >
 > 若要使用特定版本，請使用此格式： `https://api.securitycenter.microsoft.com/api/{Version}` 。 例如：`https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> 如果您未指定任何版本 (例如 `https://api.securitycenter.microsoft.com/api/alerts` ) 您將會到達最新的版本。
+> 如果您未指定任何版本 (例如 `https://api.securitycenter.microsoft.com/api/alerts`) 您將會到達最新的版本。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

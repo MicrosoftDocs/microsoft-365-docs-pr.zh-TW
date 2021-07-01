@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Microsoft Defender Office 365 的組織中可用的高級防網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a948604f11064f2c1fefcc441adc4a9792ac918
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 71baf947c5834e2eb4b8ef62af69da77ea5bd090
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108436"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230040"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則
 
@@ -125,8 +125,7 @@ ms.locfileid: "53108436"
 
      > [!NOTE]
      >
-     > - 在每個反網路釣魚原則中，您可以指定最多60個受保護的使用者 (寄件者的電子郵件地址) 。 您無法在多個原則中指定同一個受保護的使用者。
-     >
+     > - 在每個反網路釣魚原則中，您可以指定最多350個受保護的使用者 (寄件者的電子郵件地址) 。 您無法在多個原則中指定同一個受保護的使用者。
      > - 如果寄件者和收件者先前透過電子郵件進行通訊，使用者模擬保護便無法運作。 如果寄件者和收件者永不透過電子郵件進行通訊，郵件會被識別為類比嘗試。
 
      - **讓使用者能夠加以保護**：預設值為 off (未選取) 。 若要將其開啟，請選取核取方塊，然後按一下 [ **管理 (nn) sender (s)** 連結。
@@ -246,7 +245,7 @@ ms.locfileid: "53108436"
 
 7. 在顯示的 [檢閱 **]** 頁面上，檢閱您的設定。 您可以在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 或者，您可以按一下 [上一步] 或在精靈中選取特定頁面。
 
-   當您完成時，按一下 [ **提交**]。
+   完成後，按一下 [提交 **]**。
 
 8. 在顯示的確認頁面上，按一下 [完成 **]**。
 

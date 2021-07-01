@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 634a381ca862dc7580d82168a4b9540acc0cd394
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770046"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229020"
 ---
 # <a name="get-machine-logon-users-api"></a>取得電腦登入使用者 API
 
@@ -30,7 +30,7 @@ ms.locfileid: "52770046"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,26 +40,26 @@ ms.locfileid: "52770046"
 ## <a name="api-description"></a>API 描述
 在特定裝置上檢索登入使用者的集合。
 
-
 ## <a name="limitations"></a>限制
 1. 您可以根據您設定的保留期間，查詢上次更新的警示。
 2. 此 API 的速率限制為每分鐘100個通話，每小時1500個通話。
 
-
 ## <a name="permissions"></a>權限
 需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md)
 
-許可權類型 |   權限  |   許可權顯示名稱
+許可權類型 |權限|許可權顯示名稱
 :---|:---|:---
-應用程式 |   User.Read.All | 「讀取使用者設定檔」
+應用程式 |User.Read.All |「讀取使用者設定檔」
 委派 (工作或學校帳戶)  | User.Read.All | 「讀取使用者設定檔」
 
->[!Note]
+> [!NOTE]
 > 使用使用者認證取得權杖時：
->- 使用者至少必須具備下列角色許可權：「View Data」。 如需詳細資訊，請參閱 [Create and manage roles](user-roles.md) ) 
->- 只有當使用者可以看見裝置時，回應才會包含使用者，視裝置群組設定而定。 如需詳細資訊，請參閱 [Create and manage device groups](machine-groups.md)。
+>
+> - 使用者至少必須具備下列角色許可權：「View Data」。 如需詳細資訊，請參閱 [Create and manage roles](user-roles.md)) 。
+> - 只有當使用者可以看見裝置時，回應才會包含使用者，視裝置群組設定而定。 如需詳細資訊，請參閱 [Create and manage device groups](machine-groups.md)。
 
 ## <a name="http-request"></a>HTTP 要求
+
 ```http
 GET /api/machines/{id}/logonusers
 ```
@@ -68,19 +68,19 @@ GET /api/machines/{id}/logonusers
 
 名稱 | 類型 | 描述
 :---|:---|:---
-授權 | 字串 | 載荷 {token}。 **必要欄位**。
+授權 | 字串 | 載荷 {token}。 **必要**。
 
+## <a name="request-body"></a>要求內文
 
-## <a name="request-body"></a>要求正文
 空白
 
 ## <a name="response"></a>回應
-如果成功和裝置都存在-200 OK （含）主體中的 [使用者](user.md) 實體清單。 如果找不到裝置-找不到404。
 
+如果成功和裝置都存在-200 OK （含）主體中的 [使用者](user.md) 實體清單。 如果找不到裝置-找不到404。
 
 ## <a name="example"></a>範例
 
-**請求**
+### <a name="request"></a>請求
 
 以下是要求的範例。
 
@@ -88,10 +88,9 @@ GET /api/machines/{id}/logonusers
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
-**回應**
+### <a name="response"></a>回應
 
 以下是回應的範例。
-
 
 ```http
 HTTP/1.1 200 OK

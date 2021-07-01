@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028400"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229572"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制
 
@@ -32,7 +32,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 |特權 |權限  |
 |---------|---------|
-|Access    |  讀取、寫入、執行       |
+|存取    |  讀取、寫入、執行       |
 |動作模式    |    Audit、Allow、防止     |
 |CSP 支援   |   是      |
 |GPO 支援    |   是      |
@@ -254,7 +254,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 - 原則與設定檔管理員角色
 - 已開啟裝置設定檔的「建立/編輯/更新/讀取/刪除/查看報告」許可權的自訂角色
-- 全域系統管理員
+- 全域管理員
 
 ### <a name="deploying-policy-via-oma-uri"></a>透過 OMA-URI 部署原則
 
@@ -328,7 +328,7 @@ DeviceEvents
 
 **為何原則無法運作？**
 
-最常見的原因是沒有必要的 [反惡意程式碼用戶端版本](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)。
+最常見的原因是沒有必要的 [反惡意程式碼用戶端版本](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)。
 
 另一個原因可能是 XML 檔的格式不正確，例如，未使用 XML 檔案中 "&" 字元的正確 markdown 格式，或文字編輯器可能會在導致 XML 分析無法運作的檔案開頭，新增一個位元組順序標記 (BOM) 0xEF 0xBB 0xBF。 一個簡單的解決方案是下載 [範例](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 檔案 (選取 [ **Raw** ]，然後按一下 [ **另存** 新檔]) 然後更新。
 

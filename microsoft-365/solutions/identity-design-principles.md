@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222522"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229356"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -50,7 +50,7 @@ ms.locfileid: "51222522"
 唉，語言不是精確的工具。 我們經常會使用相同的單字表示不同概念或不同的文字，表示相同的概念。 我經常使用下列圖表來建立某些基準術語和「階層模型」。
 <br><br>
 
-![承租人、訂閱、服務和資料的圖例](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)  
+![承租人、訂閱、服務和資料的圖例](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
 
 <br>
 
@@ -98,7 +98,7 @@ XYZ SaaS 支援即時 (JIT) 布建，為何您需要同步處理？ 請參閱上
 
 [密碼雜湊同步](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization) 處理 (PHS) 與 [透過驗證](/azure/active-directory/hybrid/how-to-connect-pta-how-it-works) (PTA) 與 [同盟](/azure/active-directory/hybrid/how-to-connect-fed-compatibility)。
 
-通常會在同盟周圍 passionate [辯論](/azure/active-directory/hybrid/choose-ad-authn) 。 更簡單通常會更好，因此請使用 PHS，除非您有很好的理由不這麼做。 您也可以為相同承租人中的不同 DNS 網域設定不同的驗證方法。 
+通常會在同盟周圍 passionate [辯論](/azure/active-directory/hybrid/choose-ad-authn) 。 更簡單通常會更好，因此請使用 PHS，除非您有很好的理由不這麼做。 您也可以為相同承租人中的不同 DNS 網域設定不同的驗證方法。
 
 有些客戶可以啟用同盟 + PHS，主要用於：
 
@@ -132,14 +132,14 @@ Azure AD 的原則引擎是使用條件式 [存取原則](/azure/active-director
 
 如果您同意此授權的已展開定義，則需要執行其他解決方案。 您所要執行的解決方案取決於您想要原則的動態程度，以及您想要設定優先順序的威脅。 這類系統的部分範例如下：
 
-- [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
+- [Azure AD Identity Protection](/azure/active-directory/identity-protection/)
 - [適用於身分識別的 Microsoft Defender](/azure-advanced-threat-protection/)
 - [適用於端點的 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [適用於 Office 365 的 Microsoft Defender](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [適用於 Office 365 的 Microsoft Defender](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS) 
-- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
-- [Microsoft 資訊保護](../compliance/information-protection.md?view=o365-worldwide) (MIP) 
+- [Microsoft 資訊保護](../compliance/information-protection.md) (MIP) 
 - [Azure Sentinel](/azure/sentinel/)
 
 當然，除了 Azure AD 之外，各種服務和應用程式都有自己的特定授權模型。 這些將在稍後的「委派」區段中討論。
@@ -154,11 +154,11 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 ![將檔案附加至電子郵件](../media/solutions-architecture-center/modern-attachments.png)
 
-看一下 Outlook 用戶端，您可以在此體驗中看到許多「連線」的服務，而不只是 Exchange。 這包括 Azure AD、Microsoft 搜尋、應用程式、設定檔、合規性和 Office 365 群組。 
+看一下 Outlook 用戶端，您可以在此體驗中看到許多「連線」的服務，而不只是 Exchange。 這包括 Azure AD、Microsoft 搜尋、app、Profile、合規性和 Office 365 群組。
 
 ![具有注解的 Outlook 介面](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
-閱讀相關[Microsoft 流體架構](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268)，以預覽即將推出的功能。 在 [預覽] 中，我可以直接在 Outlook 中讀取及回復 Teams 交談。 事實上， [Teams 用戶端](https://products.office.com/microsoft-teams/download-app)是此策略的更明顯範例之一。 
+閱讀相關[Microsoft 流體架構](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268)，以預覽即將推出的功能。 在 [預覽] 中，我可以直接在 Outlook 中讀取及回復 Teams 交談。 事實上， [Teams 用戶端](https://products.office.com/microsoft-teams/download-app)是此策略的更明顯範例之一。
 
 總而言之，在 Microsoft 雲端的 Office 365 和其他服務之間繪製清楚的線條變得越來越困難。 我將其視為對客戶而言非常重要，因為他們可以從總體創新受益于所有的創新，甚至是在使用一個元件時。 非常酷，對許多客戶的意義非常深遠。
 
@@ -182,10 +182,10 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 - 一種控股類型的公司結構，不需要在不同實體間輕鬆合作，也有強大的管理和其他隔離需求。
 - 購買後，會進行商務決策，讓兩個實體彼此分開。
-- 類比客戶的環境，而不會變更客戶的實際執行環境。 
+- 類比客戶的環境，而不會變更客戶的實際執行環境。
 - 開發客戶的軟體。
 
-在這些多承租人案例中，客戶常常想要讓某些承租人的設定保持不變，或報告設定變更和 drifts。 這通常表示從手動變更變更為程式碼。 Microsoft Premiere 支援為以此公用 IP 為基礎的這些需求類型提供研討會： [https://Microsoft365dsc.com](https://Microsoft365dsc.com) 。
+在這些多承租人案例中，客戶常常想要讓某些承租人的設定保持不變，或報告設定變更和 drifts。 這通常表示從手動變更變更為程式碼。 Microsoft Premiere 支援為以此公用 IP 為基礎的這些需求類型提供研討會： <https://Microsoft365dsc.com> 。
 
 ### <a name="multi-geo"></a>多地理位置
 
@@ -195,7 +195,7 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 - 這不是 [GDPR 規範](https://www.microsoft.com/trust-center/privacy/gdpr-overview)的解決方案。 GDPR 不會專注于資料主權或儲存位置。 另外還有其他的規範框架。
 - 它不會解決管理委派 (請參閱下列) 或 [資訊障礙](../compliance/information-barriers.md)。
 - 它與多租使用者不同，需要額外的 [使用者](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) 布建工作流程。
-- 它不會 [將您的租使用者](../enterprise/moving-data-to-new-datacenter-geos.md) (Azure AD) 移至其他地理位置。 
+- 它不會 [將您的租使用者](../enterprise/moving-data-to-new-datacenter-geos.md) (Azure AD) 移至其他地理位置。
 
 ## <a name="delegation-of-administration"></a>委派管理
 
@@ -203,15 +203,15 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 ### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Azure AD 和 Microsoft 365 系統管理中心
 
-[內建角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)的清單很長及不斷增加。 每個角色都是由群組在一起的角色許可權清單所組成，以允許執行特定動作。 您可以在每個角色內的「描述」索引標籤中查看這些許可權。 此外，您也可以在 Microsoft 365 系統管理中心中看到其他人可讀取的版本。 無法修改內建角色的定義。 一般會將這些分為三個類別：
+[內建角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)的清單很長及不斷增加。 每個角色都是由群組在一起的角色許可權清單所組成，以允許執行特定動作。 您可以在每個角色內的「描述」索引標籤中查看這些許可權。 此外，您也可以在 [Microsoft 365 系統管理] 中心看到更多的人工可讀取版本。 無法修改內建角色的定義。 一般會將這些分為三個類別：
 
-- **全域管理員**：「所有功能強大」角色應 [嚴格受到高度保護](../enterprise/protect-your-global-administrator-accounts.md) ，就像在其他系統中那樣。 一般建議包括：「沒有永久指派」和使用 Azure AD Privileged Identity Management (PIM) ;強驗證;等等。 有趣的是，此角色不會讓您預設可以存取所有專案。 一般來說，我會發現對相容性存取和 Azure 存取的混淆，稍後會加以討論。 不過，此角色可永遠指派對租使用者中其他服務的存取權。 
+- **全域管理員**：「所有功能強大」角色應 [嚴格受到高度保護](../enterprise/protect-your-global-administrator-accounts.md) ，就像在其他系統中那樣。 一般建議包括：「沒有永久指派」和使用 Azure AD Privileged Identity Management (PIM) ;強驗證;等等。 有趣的是，此角色不會讓您預設可以存取所有專案。 一般來說，我會發現對相容性存取和 Azure 存取的混淆，稍後會加以討論。 不過，此角色可永遠指派對租使用者中其他服務的存取權。
 - **特定服務管理員**：部分服務 (Exchange、SharePoint、Power BI 等等，) 會從 Azure AD 中消耗高層次的管理角色。 這在所有服務上都不一致，以後還會討論更多服務特有的角色。
 - **運作**：有一個長 (和不斷增加的角色) 清單，側重于特定作業 (來賓 inviter，等等) 。 根據客戶的需求，會定期新增更多內容。
 
 您無法委派所有的專案 (雖然差距逐漸降低) ，也就是需要使用全域系統管理員角色的可能性。 應該考慮改為程式碼和自動化，而不是此角色的人員成員資格。
 
-**附注**： Microsoft 365 系統管理中心具有方便使用的介面，但與 Azure AD 系統管理員的經驗相比，具有一些功能的子集。 這兩個入口網站都使用相同的 Azure AD 角色，因此變更也會在相同的位置發生。 提示：如果您想要讓身分識別管理具有焦點的系統管理員 UI 沒有所有 Azure 雜亂，請使用 [https://aad.portal.azure.com](https://aad.portal.azure.com) 。 
+**附注**：此 Microsoft 365 系統管理中心具有更友好的方便使用介面，但與 Azure AD 系統管理員的經驗相比，具有一些功能的子集。 這兩個入口網站都使用相同的 Azure AD 角色，因此變更也會在相同的位置發生。 提示：如果您想要讓身分識別管理具有焦點的系統管理員 UI 沒有所有 Azure 雜亂，請使用 <https://aad.portal.azure.com> 。
 
 名稱中的內容為何？ 請勿從角色名稱進行假設。 語言不是非常精確的工具。 目標應該是定義在查看所需的角色之前必須委派的作業。 將其他人新增至「Security Reader」角色並不會讓他們看到各項安全性設定。
 
@@ -221,7 +221,7 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 如今，如果您使用 [AZURE AD PIM](/azure/active-directory/privileged-identity-management/)) ，所有這些角色都需要直接成員資格 (或動態指派。 這表示客戶必須直接在 Azure AD 中管理這些，而且無法以安全性群組成員資格為基礎。 我不是建立腳本來管理這些腳本，因為它需要提升許可權才能執行。 我一般會建議 API 與 Saviynt ServiceNow 等處理常式系統整合，或使用像是的夥伴管理工具。 這一段時間的工程設計工作會繼續處理。
 
-我已提及 [AZURE AD PIM](/azure/active-directory/privileged-identity-management/) 一些時間。 有對應的 Microsoft Identity Manager (MIM) 的特殊[許可權存取管理](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) (對內部部署控制項的 PAM) 解決方案。 您也可能想要查看特殊的 [Access 工作站](/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) 和 [Azure AD 身分識別管理](/azure/active-directory/governance/identity-governance-overview)。 此外，還有許多協力廠商工具，可讓您隨時即時、順利和動態角色提升。 這通常是較大討論區的保護環境的一部分。 
+我已提及 [AZURE AD PIM](/azure/active-directory/privileged-identity-management/) 一些時間。 有對應的 Microsoft Identity Manager (MIM) 的特殊[許可權存取管理](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) (對內部部署控制項的 PAM) 解決方案。 您也可能想要查看特殊的 [Access 工作站](/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) 和 [Azure AD 身分識別管理](/azure/active-directory/governance/identity-governance-overview)。 此外，還有許多協力廠商工具，可讓您隨時即時、順利和動態角色提升。 這通常是較大討論區的保護環境的一部分。
 
 [有時候案例] 若要將外部使用者新增至角色 (請參閱) 上的 [多承租人] 區段。 這只是正常運作。 [AZURE AD B2B](/azure/active-directory/b2b/) 是另一個很有趣的主題，也就是在另一篇文章中向客戶尋求指導。
 
@@ -231,7 +231,7 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 在某種意義上，這是 Exchange 角色群組模型的發展歷程。 不過，Exchange Online 有其自己的[角色群組管理](/exchange/permissions-exo)介面。 Exchange Online 中的某些角色群組會從 Azure AD 或安全性 & 規範中心進行鎖定和管理，但其他人可能會有相同或類似的名稱，並在 Exchange Online 中管理， (新增至混淆的) 。 建議您避免使用 Exchange Online 使用者介面，除非您需要 Exchange 管理範圍。
 
-您無法建立自訂角色。 角色是由 Microsoft 所建立的服務所定義，而且會隨著新服務引進而成長。 這在概念上與 Azure AD 中 [的應用程式所定義的角色](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) 類似。 啟用新的服務時，通常需要建立新的角色群組，以授與或委派對這些 (的存取權，例如，「 [內幕人員風險管理](../compliance/insider-risk-management-configure.md?view=o365-worldwide) 」) 。
+您無法建立自訂角色。 角色是由 Microsoft 所建立的服務所定義，而且會隨著新服務引進而成長。 這在概念上與 Azure AD 中 [的應用程式所定義的角色](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) 類似。 啟用新的服務時，通常需要建立新的角色群組，以授與或委派對這些 (的存取權，例如，「 [內幕人員風險管理](../compliance/insider-risk-management-configure.md) 」) 。
 
 這些角色群組也需要直接成員資格，而且不能包含 Azure AD 群組。 不幸的是，目前 Azure AD PIM 不支援這些角色群組。 就像 Azure AD 角色一樣，我一般是透過 APIs 或像 Saviynt 或其他合作夥伴的控管產品來推薦這些內容。
 
@@ -243,31 +243,37 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 如先前所述，許多客戶都想要取得更細微的委派模型。 常見範例：「管理僅限除法 X 使用者和位置的 XYZ 服務」 (或其他維度) 。 執行這項作業的能力取決於每個服務，且不會在服務和功能上保持一致。 此外，每個服務都可以有個別且唯一的 RBAC 模型。 除了討論上述所有 (都會完全) ，我會為每個服務新增相關的連結。 這不是完整清單，但會立即開始。
 
-- **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](/exchange/permissions-exo/permissions-exo) 
-- **SharePoint線上** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](/sharepoint/manage-site-collection-administrators) 
-- **Microsoft Teams**  - [https://docs.microsoft.com/microsoftteams/itadmin-readiness](/microsoftteams/itadmin-readiness)
-- **eDiscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](../compliance/index.yml) 
-  + **許可權篩選**  - [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](../compliance/index.yml)
-  + **規範界限**  - [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](../compliance/set-up-compliance-boundaries.md)
-  + **Advanced eDiscovery**  - [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](../compliance/overview-ediscovery-20.md)
-- **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](/yammer/manage-yammer-users/manage-yammer-admins) 
-- **多地理位置** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](../enterprise/add-a-sharepoint-geo-admin.md) 
-- **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](/dynamics365/) <br>
-  附注：此連結是檔的根。 有多種服務類型與系統管理/委派模式中的變化。
-- **電源平臺**  - [https://docs.microsoft.com/power-platform/admin/admin-documentation](/power-platform/admin/admin-documentation)
-  + **Power Apps**  - [https://docs.microsoft.com/power-platform/admin/wp-security](/power-platform/admin/wp-security) <br>
-    附注：系統管理員/委派模式中有多種類型具有變化。
-  + **Power Automate**  - [https://docs.microsoft.com/power-automate/environments-overview-admin](/power-automate/environments-overview-admin)
-  + **Power BI**  - [https://docs.microsoft.com/power-bi/service-admin-governance](/power-bi/service-admin-governance) <br>
-附注：資料平臺安全性及委派 (Power BI 元件) 是一個複雜區域。
-- **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
-- **Microsoft Defender For Endpoint**  - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365後衛** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
-- **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
-- **資料流程**  - [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
-- **資訊障礙**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
+- **Exchange Online** (/exchange/permissions-exo/permissions-exo) 
+- **SharePoint 線上**- (/sharepoint/manage-site-collection-administrators) 
+- **Microsoft Teams** (/microsoftteams/itadmin-readiness) 
+- **eDiscovery** - (。/compliance/index.yml) 
+  - **許可權篩選** - (。/compliance/index.yml) 
+  - **規範界限** - (。/compliance/set-up-compliance-boundaries.md) 
+  - **Advanced eDiscovery** (。/compliance/overview-ediscovery-20.md) 
+- **Yammer** (/yammer/manage-yammer-users/manage-yammer-admins) 
+- **多地理** 位置 (。/enterprise/add-a-sharepoint-geo-admin.md) 
+- **Dynamics 365** – (/dynamics365/) 
 
-針對 rest，在檔中搜尋是最近的工作 [https://docs.microsoft.com/](../compliance/information-barriers.md) 。 
+  附注：此連結是檔的根。 有多種服務類型與系統管理/委派模式中的變化。
+
+- **電源平臺** - (/power-platform/admin/admin-documentation) 
+  - **Power Apps** (/power-platform/admin/wp-security) 
+
+    附注：系統管理員/委派模式中有多種類型具有變化。
+
+  - **Power Automate** (/power-automate/environments-overview-admin) 
+  - **Power BI** (/power-bi/service-admin-governance) 
+
+    附注：資料平臺安全性及委派 (Power BI 元件) 是一個複雜區域。
+
+- **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control) 
+- **Microsoft Defender For Endpoint** (/windows/security/threat-protection/microsoft-defender-atp/user-roles) 
+- **Microsoft 365 Defender** (。/security/defender/m365d-permissions.md) 
+- **Microsoft Cloud App Security** (/cloud-app-security/manage-admins) 
+- **Stream** - (/stream/assign-administrator-user-role) 
+- **資訊壁壘** - (。/compliance/information-barriers.md) 
+
+針對 rest，在檔中搜尋是最近的工作 <https://docs.microsoft.com/> 。
 
 ### <a name="activity-logs"></a>活動記錄
 
@@ -278,37 +284,37 @@ Office 365 具有[統一的審計記錄](../compliance/search-the-audit-log-in-s
 - 與 Office 365 不相關的[Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (活動) 
 - [Exchange郵件追蹤](/powershell/module/exchange/get-messagetrace)
 - 以上所討論的威脅/UEBA 系統 (例如，Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender for Endpoint 等) 
-- [Microsoft 資訊保護](../compliance/data-classification-activity-explorer.md?view=o365-worldwide)
+- [Microsoft 資訊保護](../compliance/data-classification-activity-explorer.md)
 - [適用於端點的 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
-請務必先識別安全性與合規性計畫所需的所有記錄來源。 另外請注意，不同的記錄會有不同的線上保留限制。 
+請務必先識別安全性與合規性計畫所需的所有記錄來源。 另外請注意，不同的記錄會有不同的線上保留限制。
 
-從系統管理委派的角度來看，大部分 Microsoft 365 活動記錄都沒有內建的 RBAC 模型。 如果您有查看記錄的許可權，則可以查看其中的所有內容。 客戶需求的常見範例是：「我想要只查詢歐盟使用者的活動」 (或其他維度) 。 若要達到此需求，我們需要將記錄傳送至另一個服務。 在 Microsoft 雲端中，我們建議您將其轉移到 [Azure Sentinel](/azure/sentinel/overview) 或 [記錄分析](/azure/azure-monitor/learn/quick-create-workspace)。 
+從系統管理委派的角度來看，大部分 Microsoft 365 活動記錄都沒有內建的 RBAC 模型。 如果您有查看記錄的許可權，則可以查看其中的所有內容。 客戶需求的常見範例是：「我想要只查詢歐盟使用者的活動」 (或其他維度) 。 若要達到此需求，我們需要將記錄傳送至另一個服務。 在 Microsoft 雲端中，我們建議您將其轉移到 [Azure Sentinel](/azure/sentinel/overview) 或 [記錄分析](/azure/azure-monitor/learn/quick-create-workspace)。
 
 高層級圖表：
 
-![安全性與合規性計畫的記錄來源圖表](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![安全性與合規性計畫的記錄來源圖表](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
 上圖代表將記錄傳送至事件 Hub 和/或 Azure 儲存體和/或 Azure 記錄分析的內建功能。 並非所有系統都包含此現成功能。 但是還有其他方法可將這些記錄傳送至相同的存放庫。 例如，請參閱[使用 Azure Sentinel 保護您的 Teams](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)。
 
 將所有記錄整合到一個儲存位置，包含額外的優點，例如跨相互關聯、自訂保留時間、擴充支援 RBAC 模型所需的資料等等。 一旦資料在此儲存系統中，您可以使用適當的 RBAC 模型，建立 Power BI 的儀表板 (或其他類型的視覺化效果) 。
 
-記錄檔不必僅導向一個位置。 將[Office 365 記錄](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)整合至[Power BI](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide)中的 Microsoft Cloud App Security 或自訂 RBAC 模型可能也是有益的。 不同的存放庫具有不同的優點和受眾。
+記錄檔不必僅導向一個位置。 將[Office 365 記錄](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)整合至[Power BI](../admin/usage-analytics/usage-analytics.md)中的 Microsoft Cloud App Security 或自訂 RBAC 模型可能也是有益的。 不同的存放庫具有不同的優點和受眾。
 
-值得一提的是，在名為[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)的服務中，有非常豐富的內建分析系統，安全性、威脅、弱點等等。
+值得一提的是，在名為[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)的服務中，有非常豐富的內建分析系統可提供安全性、威脅、弱點等等。
 
 許多大型客戶想要將此記錄資料傳送至協力廠商系統 (例如，SIEM) 。 這種方式有不同的方法，但一般[Azure 事件 Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)和[Graph](/graph/security-integration)都是良好的起點。
 
 ### <a name="azure"></a>Azure
 
-我經常會詢問您是否有方式分隔 Azure AD、azure 和 SaaS 之間的高許可權角色 (ex。： Office 365 但不是 Azure) 的全域系統管理員。  沒有。  如果需要完成管理分隔，則需要多承租人架構，但會增加大量的 [複雜性](https://aka.ms/multi-tenant-user) (請參閱上述) 。 所有這些服務都屬於相同的安全性/身分識別界限 (請參閱上述階層模型) 。  
+我經常會詢問您是否有方式分隔 Azure AD、azure 和 SaaS 之間的高許可權角色 (ex。： Office 365 但不是 Azure) 的全域系統管理員。  沒有。  如果需要完成管理分隔，則需要多承租人架構，但會增加大量的 [複雜性](https://aka.ms/multi-tenant-user) (請參閱上述) 。 所有這些服務都屬於相同的安全性/身分識別界限 (請參閱上述階層模型) 。
 
 務必要瞭解相同承租人中各項服務之間的關係。 我正在與許多客戶合作，以建立跨 Azure、Office 365 及電源平臺 (的商務解決方案，而且通常也是內部部署和協力廠商的雲端服務) 。 一個常見的範例：
 
 1. 我想要在一組檔/影像/etc (Office 365 上進行共同作業) 
 2. 透過「 (電源平臺」的核准程式傳送每一個檔案) 
-3.  在核准所有元件後，請將這些元件組合到統一的可傳送作業 (s 中)  (Azure) [Microsoft Graph API](/azure/active-directory/develop/microsoft-graph-intro)是您的最佳朋友。  不可能，但是設計跨越 [多個承租人](/azure/active-directory/develop/single-and-multi-tenant-apps)的解決方案會變得很複雜。
+3. 在核准所有元件後，請將這些元件組合到統一的可傳送作業 (s 中)  (Azure) [Microsoft Graph API](/azure/active-directory/develop/microsoft-graph-intro)是您的最佳朋友。  不可能，但是設計跨越 [多個承租人](/azure/active-directory/develop/single-and-multi-tenant-apps)的解決方案會變得很複雜。
 
 Azure Role-Based 存取控制 (RBAC) 啟用 Azure 的微調存取管理。 使用 RBAC，您可以為使用者授予執行其工作所需的最少許可權，以管理對資源的存取。 此檔的詳細資訊超出範圍，但如需 RBAC 的詳細資訊，請參閱在 [Azure 中什麼是角色型存取控制 (RBAC) ？](/azure/role-based-access-control/overview) RBAC 很重要，但只是 Azure 的控管考慮部分。 [雲端採用架構](/azure/cloud-adoption-framework/govern/) 是一個極好的起點，可深入瞭解。 我喜歡我的朋友，Andres Ravinet 會逐步指導客戶逐步決定方法的各種元件。 各種元素的高層級視圖 (，不像是取得實際客戶模型的程式) 類似如下：
 

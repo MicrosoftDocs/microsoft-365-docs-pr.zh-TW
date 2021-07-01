@@ -17,19 +17,19 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930256"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229548"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 入口網站啟動計畫程式啟動入口網站
 
 入口網站是內部網路上的 SharePoint 通訊網站，它是高流量–一部星期內從10000到100000查看者的網站。 使用入口網站啟動排程器啟動您的入口網站，以確保使用者在存取新的 SharePoint 入口網站時有光滑的觀賞體驗。
 <br>
 <br>
-入口網站啟動排程器的設計目的是為了協助您遵循分階段的處理常式，並以波形方式批次處理檢視器並管理新入口網站的 URL 重新導向。 在啟動每個 wave 時，您可以收集使用者意見反應、監控入口效能，並暫停啟動以解決問題，再繼續進行下一個波形。 深入瞭解如何[在 SharePoint 中規劃入口網站啟動](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)。
+入口網站啟動排程器的設計目的是為了協助您遵循分階段的處理常式，並以波形方式批次處理檢視器並管理新入口網站的 URL 重新導向。 在啟動每個 wave 時，您可以收集使用者意見反應、監控入口效能，並暫停啟動以解決問題，再繼續進行下一個波形。 深入瞭解如何[在 SharePoint 中規劃入口網站啟動](/microsoft-365/Enterprise/Planportallaunchroll-out)。
 
 **有兩種類型的重定向：**
 
@@ -127,7 +127,7 @@ ms.locfileid: "52930256"
 
 如果您打算使用超過100000的使用者啟動入口網站，請遵循下列所列的步驟提交支援要求。 請務必包含所有要求的資訊。
 
-**遵循下列步驟：**
+**依照下列步驟執行：**
 
 1. 移至<https://admin.microsoft.com>。
 2. 確定您使用的是新的系統管理中心預覽

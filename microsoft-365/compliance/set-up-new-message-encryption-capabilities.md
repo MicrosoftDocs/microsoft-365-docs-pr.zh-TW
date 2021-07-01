@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解可與組織內外的人員進行受保護的電子郵件通訊的全新 Office 365 訊息加密功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876302"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228576"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>設定全新的郵件加密功能
 
@@ -39,13 +39,13 @@ ms.locfileid: "51876302"
 
 Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此採取任何動作。 如需詳細資訊，請參閱[啟用 Azure 版權管理](/azure/information-protection/activate-service)。
 
->[!IMPORTANT]
->如果您使用 Active Directory 版權管理服務 (AD RMS) 搭配 Exchange Online，您需要先[移轉至 Azure 資訊保護](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，之後才能使用新的 OME 功能。 OME 與 AD RMS 不相容。  
+> [!IMPORTANT]
+> 如果您使用 Active Directory 版權管理服務 (AD RMS) 搭配 Exchange Online，您需要先[移轉至 Azure 資訊保護](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，之後才能使用新的 OME 功能。 OME 與 AD RMS 不相容。
 
 如需詳細資訊，請參閱：
 
 - [要使用全新的 OME 功能，我需要什麼訂閱？](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-)可檢查您的訂閱方案是否包含 Azure 資訊保護 (其中包含 Azure RMS 功能)。
-- [Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)可取得購買合格訂閱的相關資訊。  
+- [Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)可取得購買合格訂閱的相關資訊。
 
 ### <a name="manually-activating-azure-rights-management"></a>手動啟用 Azure 版權管理
 
@@ -63,7 +63,7 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>在 Exchange Online PowerShell 中驗證 新的 OME 設定
 
 您可以驗證您的 Microsoft 365 租用戶已正確設定以使用 [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) 中的新 OME 功能。
-  
+
 1. 使用具有 Microsoft 365 租用戶中全域系統管理員權限的帳戶[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行 Get-IRMConfiguration Cmdlet。
@@ -74,7 +74,7 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
-     ```  
+     ```
 
    **範例**：
 
@@ -114,11 +114,11 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 
 如果有先前設定的郵件流程規則可加密您的組織中的電子郵件，則必須更新現有規則，才能使用新的 OME 功能。針對新的部署，您必須建立新的電子郵件流程規則。
 
->[!IMPORTANT]
->如果您不更新現有的郵件流程規則，您的使用者會繼續收到使用先前的 HTML 附件格式的加密電子郵件，而非新的無縫 OME 體驗。
+> [!IMPORTANT]
+> 如果您不更新現有的郵件流程規則，您的使用者會繼續收到使用先前的 HTML 附件格式的加密電子郵件，而非新的無縫 OME 體驗。
 
 郵件流程規則決定在何情況下應該加密電子郵件訊息，以及移除該加密的情況。 當您設定規則的動作時，符合規則條件的任何郵件在傳送時都會經過加密。
-  
+
 如需為 OME 建立郵件流程規則的步驟，請參閱[定義郵件流規則以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
 
 若要更新現有規則，以使用新 OME 功能：

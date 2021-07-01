@@ -1,20 +1,20 @@
 ---
-title: Microsoft defender 在 Microsoft 365 Defender 中的身分識別安全性警示
-description: 瞭解如何在 Microsoft 365 defender 中管理及審閱 Microsoft defender 的身分識別所發出的安全性警示
+title: Microsoft Defender 在 Microsoft 365 Defender 中的身分識別安全性警示
+description: 瞭解如何在 Microsoft 365 Defender 中管理及審閱 Microsoft Defender 身分識別所發出的安全性警示
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0c48c9076d05cd352229477acc28b32185eef54f
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: c81f14b92b285359bda7e291bd8d3a8b636ae54d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657773"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228960"
 ---
-# <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Microsoft 365 defender 中身分識別安全性警示的 defender
+# <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的身分識別安全性警報的 Defender
 
 **適用於：**
 
@@ -27,16 +27,16 @@ ms.locfileid: "52657773"
 
 新的身分識別提醒頁面可讓 Microsoft Defender 身分識別客戶獲得更佳的跨網域信號豐富和新的自動身分識別回應功能。 它可確保您保持安全，並協助改善安全性作業的效率。
 
-透過[Microsoft 365 defender](/microsoft-365/security/defender/microsoft-365-defender)調查警示的其中一個好處，就是 Microsoft defender 的身分識別警示會進一步與從套件中的每個其他產品取得的資訊相關聯。 這些增強型警示會與來自[microsoft defender for Office 365](/microsoft-365/security/office-365-security)和[microsoft defender for Endpoint](/microsoft-365/security/defender-endpoint)的其他 Microsoft 365 defender 警示格式一致。 新的頁面可有效地避免流覽至另一個產品入口網站，以調查與 identity 相關聯的警示。
+透過[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)調查警示的其中一個好處是，Microsoft Defender for Identity 警示會進一步與從套件中的其他每個產品取得的資訊相關聯。 這些增強型提醒會與來自[microsoft defender for Office 365](/microsoft-365/security/office-365-security)和[microsoft defender for Endpoint](/microsoft-365/security/defender-endpoint)的其他 Microsoft 365 Defender 警示格式一致。 新的頁面可有效地避免流覽至另一個產品入口網站，以調查與 identity 相關聯的警示。
 
-來自于某項身分識別的警示現在可以觸發[Microsoft 365 的 defender 自動化調查和回應 (AIR) ](/microsoft-365/security/defender/m365d-autoir)功能，包括自動修正警示，以及可對可疑活動產生影響的工具和程式的緩解。
+來自于某項身分識別的警示現在可以觸發[Microsoft 365 Defender 的自動調查和回應 (AIR) ](/microsoft-365/security/defender/m365d-autoir)功能，包括自動修正警示，以及可對可疑活動產生影響的工具和程式的緩解。
 
->[!IMPORTANT]
->在與 Microsoft 365 defender 的收斂中，部分選項及詳細資料已從其在「身分識別入口網站」中的位置變更。 請閱讀下列詳細資料，以找出熟悉和新功能的位置。
+> [!IMPORTANT]
+> 在與 Microsoft 365 Defender 收斂的過程中，有些選項和詳細資料已從其在「身分識別入口網站」中的位置變更。 請閱讀下列詳細資料，以找出熟悉和新功能的位置。
 
 ## <a name="review-security-alerts"></a>檢查安全性警示
 
-警示可從多個位置存取，包括「 **提醒** 」頁面、「 **事件** 」頁面、個別 **裝置** 的頁面，以及「 **高級搜尋** 」頁面。 在此範例中，我們會檢查 **提醒頁面**。  
+警示可從多個位置存取，包括「 **提醒** 」頁面、「 **事件** 」頁面、個別 **裝置** 的頁面，以及「 **高級搜尋** 」頁面。 在此範例中，我們會檢查 **提醒頁面**。
 
 在 [Microsoft 365 的安全性中心](https://security.microsoft.com/)，移至 [**事件 & 警示**]，然後移至 [**警示**]。
 
@@ -85,8 +85,8 @@ ms.locfileid: "52657773"
 
     ![管理警示](../../media/defender-identity/manage-alert.png)
 
-    >[!NOTE]
-    >在 Excel 檔案中，您現在有兩個連結可供使用：**在 Microsoft Defender for Identity** 和 **view in Microsoft 365 Defender** 中查看。 每個連結將會帶您前往相關入口網站，並提供該警示的相關資訊。
+    > [!NOTE]
+    > 在 Excel 檔案中，您現在有兩個連結可供使用：**在 Microsoft Defender for Identity** 和 **view in Microsoft 365 Defender** 中查看。 每個連結將會帶您前往相關入口網站，並提供該警示的相關資訊。
 
 ## <a name="see-also"></a>另請參閱
 

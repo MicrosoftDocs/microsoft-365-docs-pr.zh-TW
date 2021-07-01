@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 瞭解如何使用合規性分數和合規性管理員，以提升個人資料的保護層級。
-ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918567"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229296"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>使用合規性管理員管理改進動作
 
@@ -30,19 +30,18 @@ Microsoft 合規性管理員可以協助您管理資料隱私權法規（如歐�
 
 本文提供有關資料隱私權用途的使用此工具的指導方針。
 
->[!Note]
->您不應將 [合規性管理員] 提供的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱[Microsoft 365 授權指南以取得安全性和合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
->
+> [!NOTE]
+> 您不應將 [合規性管理員] 提供的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱[Microsoft 365 授權指南以取得安全性和合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>合規性管理員快速入門
 
 #### <a name="what-is-compliance-manager"></a>何謂合規性管理員
 
-[合規性管理員](../compliance/compliance-manager.md)是「Microsoft 365 規範中心」中的工作流程型風險評估工具，以管理與 Microsoft cloud services 相關的規章遵循活動。 在您的 Microsoft 365 或 Azure Active Directory (Azure AD) 訂閱中，合規性管理員可協助您管理 Microsoft 雲端服務共用責任模型內的法規遵從性。
+[合規性管理員](../compliance/compliance-manager.md)是在 Microsoft 365 合規性中心中的工作流程型風險評估工具，以管理與 Microsoft 雲端服務相關的規章遵循活動。 在您的 Microsoft 365 或 Azure Active Directory (Azure AD) 訂閱中，合規性管理員可協助您管理 Microsoft 雲端服務共用責任模型內的法規遵從性。
 
 **準備好使用評估**
 
-合規性管理員提供預先構建的範本，以建立與資料隱私權相關的法規（如 GDPR 和 HIPAA/高科技）對齊的 [評估](../compliance/compliance-manager-assessments.md) 。 範本具有內建的控制項對應，可協助您採取改進的動作來滿足規定的需求。 每項評估都提供有關特定于目標服務之每項法規要求的資訊，並由您管理和控制 Microsoft 管理的控制項所中斷。 
+合規性管理員提供預先構建的範本，以建立與資料隱私權相關的法規（如 GDPR 和 HIPAA/高科技）對齊的 [評估](../compliance/compliance-manager-assessments.md) 。 範本具有內建的控制項對應，可協助您採取改進的動作來滿足規定的需求。 每項評估都提供有關特定于目標服務之每項法規要求的資訊，並由您管理和控制 Microsoft 管理的控制項所中斷。
 
 使用預先建立的範本可協助您快速開始使用風險評估。 隨著您在使用合規性管理員的熟練程度，您可以透過新增您自己的控制項和改進動作來自訂預先建立的範本，也可以建立您自己的自訂評估，以符合組織的需求。
 
@@ -59,7 +58,7 @@ Microsoft 合規性管理員可以協助您管理資料隱私權法規（如歐�
 - [第一次就診：深入瞭解合規性管理員](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - 與您的合規性管理員儀表板搭配使用
     - 瞭解您的合規性分數
-    - 瞭解改進動作
+    - 有關改進動作的 Learning
     - 瞭解評估與範本
 - [斜向向上：設定合規性管理員以管理您的相容性活動](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - 建立及管理您的第一筆評估

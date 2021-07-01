@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177618"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229140"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
@@ -49,7 +49,7 @@ ms.locfileid: "53177618"
 若要使用整個功能組的攻擊面降低規則，您需要：
 
 - Windows Defender 防毒軟體成為主要 AV () 上的即時保護
-- [雲端傳遞保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 在 (某些規則需要) 
+- [雲端傳遞保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 在 (某些規則需要) 
 - Windows 10 企業版E5 或 E3 授權或 Microsoft 365 商務版授權
 
 雖然攻擊面降減規則不需要[Windows e5 授權](/windows/deployment/deploy-enterprise-licenses)，但具有 Windows e5 授權，但您會取得高級管理功能，包括在 Defender for Endpoint 中可用的監控、分析和工作流程，以及 Microsoft 365 安全性中心的報表和設定功能。 E3 授權無法使用這些高級功能，但您仍然可以使用事件檢視器來複查攻擊面降低規則事件。

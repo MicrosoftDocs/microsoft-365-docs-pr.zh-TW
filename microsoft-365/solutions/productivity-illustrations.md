@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0123fc5cb22e249475f7e95426ee74f6e0939aaa
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: e052f3c287a6523174259a0a58017421bc989071
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788426"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229608"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -41,17 +41,17 @@ Microsoft 365 企業解決方案系列提供執行 Microsoft 365 功能的指導
 
 ## <a name="migrate-to-microsoft-365"></a>移轉至 Microsoft 365
 
-Microsoft 提供的工具可以將您的內部部署網路檔案共用和 SharePoint 伺服器網站，Microsoft 365 以強調如何在遷移期間保護和確保內容的安全性。 這組圖例示範可將內容移至 SharePoint、Teams 及 OneDrive 的各種方法，以及您的資料在程式中的流動方式。 
+Microsoft 提供的工具可以將您的內部部署網路檔案共用和 SharePoint 伺服器網站，Microsoft 365 以強調如何在遷移期間保護和確保內容的安全性。 這組圖例示範可將內容移至 SharePoint、Teams 及 OneDrive 的各種方法，以及您的資料在程式中的流動方式。
 
 | 項目 | 描述 |
 |:-----|:-----|
-|[![模型海報：遷移至 Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/>[PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <br/> 2021年3月更新 |包含： <ul><li>  檔案共用移轉</li><li>SharePoint 伺服器移轉 </li> </ul><br> 如需詳細資訊，請參閱將[您的內容遷移至 Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online)。|
+|[![模型海報：遷移至 Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> 2021年3月更新 |包含： <ul><li> 檔案共用移轉</li><li>SharePoint 伺服器移轉</li></ul> <p> 如需詳細資訊，請參閱將[您的內容遷移至 Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online)。|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 資訊保護和合規性功能
 
-Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功能搭配 Microsoft 的生產力工具，可協助組織即時協同合作，同時遵循嚴格的法規遵從性框架。 
+Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功能搭配 Microsoft 的生產力工具，可協助組織即時協同合作，同時遵循嚴格的法規遵從性框架。
 
-這組插圖使用最受管制的行業（財務服務）之一，示範如何套用這些功能以滿足一般法規需求。 您可以隨意使用這些圖例。 
+這組插圖使用最受管制的行業（財務服務）之一，示範如何套用這些功能以滿足一般法規需求。 您可以隨意使用這些圖例。
 
 
 | 項目 | 描述 |
@@ -84,16 +84,16 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 | 項目 | 描述 |
 |:-----|:-----|
 |[![模型海報： Microsoft 365 的身分識別與裝置保護](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020年9月更新|請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 此模型顯示哪些功能可比對身分識別和裝置的功能的相關資訊。  <br/> |
- 
+
 <a name="BKMK_ediscovery"></a>
 ## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 中的 Advanced eDiscovery 架構
 
-Advanced eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 365 多地理位置環境中。 
+Advanced eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 365 多地理位置環境中。
 
 | 項目 | 描述 |
 |:-----|:-----|
 |[![模型海報： Microsoft 365 中的 Advanced eDiscovery 架構](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以影像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[以 PDF 格式下載](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下載成 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 2020 年 10 月更新|包含： <ul><li>  單一環境中的端對端工作流程</li><li>Microsoft 365 多地理位置環境中的端對端工作流程 </li><li>支援 EDRM 工作流程的端對端資料流程程</li> |
-  
+
 
 
 ## <a name="microsoft-telephony-solutions"></a>Microsoft 電話語音解決方案
@@ -107,7 +107,7 @@ Advanced eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 3
 
 ## <a name="set-up-your-infrastructure-for-hybrid-work"></a>設定混合式工作基礎結構
 
-透過 Microsoft 365 和其他 Microsoft 雲端技術，您可以為員工提供來自其住宅中組織內部部署和雲端架構資訊、工具及資源的安全存取權。 
+透過 Microsoft 365 和其他 Microsoft 雲端技術，您可以為員工提供來自其住宅中組織內部部署和雲端架構資訊、工具及資源的安全存取權。
 
 [![設定混合式工作海報的基礎結構](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
 [PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  | [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
@@ -120,13 +120,14 @@ Advanced eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 3
 透過 Microsoft 365，您可以在 Microsoft Teams 中設定私人團隊，並使用 SharePoint 網站安全性設定和唯一的靈敏度標籤，以加密檔案，只有小組成員才能解密。
 
 [![具有安全性隔離的 Microsoft Teams 海報](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> 2020年8月更新
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
+2020年8月更新
 
 如需詳細資訊，請參閱此標牌的文章： [設定具有安全性隔離的團隊](secure-teams-security-isolation.md)。
 
-  
+
 ## <a name="see-also"></a>另請參閱
 
 [適用於 SharePoint、Exchange、商務用 Skype 和 Lync 的架構模型](../enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
-  
+
 [雲端採用測試實驗室指南 (TLG)](../enterprise/cloud-adoption-test-lab-guides-tlgs.md)

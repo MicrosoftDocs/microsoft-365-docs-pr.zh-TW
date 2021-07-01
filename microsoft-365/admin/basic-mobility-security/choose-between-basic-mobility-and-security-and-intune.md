@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性是 Microsoft 365 方案的一部分。
-ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904261"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228264"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>選擇基本行動性和安全性或 Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "50904261"
 
 基本行動性和安全性及 Intune 都包含在各種方案中，如下表所述。
 
-| 方案 | 設定基本行動與安全性 | Microsoft Intune |
+| 規劃 | 設定基本行動與安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|是|否|
 |Microsoft 365 商務基本版|是|否|
@@ -52,17 +52,17 @@ ms.locfileid: "50904261"
 |Enterprise行動 & 安全性 E3 |否|是|
 |Enterprise Mobility & Security E5 |否|是|
 
->[!NOTE]
->如果您已經在使用 Microsoft Intune，便無法開始使用基本行動性和安全性。
+> [!NOTE]
+> 如果您已經在使用 Microsoft Intune，便無法開始使用基本行動性和安全性。
 
- 如需詳細資訊，請參閱[Microsoft 365 和 Office 365 平臺服務說明](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 
+ 如需詳細資訊，請參閱[Microsoft 365 和 Office 365 平臺服務說明](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。
 
 ## <a name="differences-in-capabilities"></a>功能上的差異
 
 Microsoft Intune 和內建的基本行動性及安全性兩者都能讓您在組織中管理行動裝置，但功能方面有一些重要差異，如下表所述。
 
->[!NOTE]
->您可以 *先設定基本行動性和安全性，然後再新增 Microsoft Intune，* 以在相同的 Microsoft 365 商務標準版組織中使用 Intune 和基本行動性和安全性，管理使用者和其行動裝置。 這可讓您選擇基本行動性和安全性，或功能更豐富的 Intune 解決方案。 指派 Intune 授權以啟用 Intune 功能。
+> [!NOTE]
+> 您可以 *先設定基本行動性和安全性，然後再新增 Microsoft Intune，* 以在相同的 Microsoft 365 商務標準版組織中使用 Intune 和基本行動性和安全性，管理使用者和其行動裝置。 這可讓您選擇基本行動性和安全性，或功能更豐富的 Intune 解決方案。 指派 Intune 授權以啟用 Intune 功能。
 
 | 功能範圍 | 功能重點 | 設定基本行動與安全性 | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Microsoft Intune 和內建的基本行動性及安全性兩者都能讓您在組
 |零觸控註冊方案 (AutoPilot)  |註冊大量公司所擁有的裝置，同時簡化使用者設定。 |否|是|
 |||
 
-除了上述表格中所列的功能之外，基本行動性和安全性及 Intune 皆包含一組遠端動作，可透過網際網路將命令傳送至裝置。 例如，您可以移除來自員工裝置的 Office 資料，同時保留個人資料 (停用) 、移除員工裝置中 Office 應用程式 (擦除) 或將裝置重設為其出廠設定 (完全擦除) 。 
+除了上述表格中所列的功能之外，基本行動性和安全性及 Intune 皆包含一組遠端動作，可透過網際網路將命令傳送至裝置。 例如，您可以移除來自員工裝置的 Office 資料，同時保留個人資料 (停用) 、移除員工裝置中 Office 應用程式 (擦除) 或將裝置重設為其出廠設定 (完全擦除) 。
 
 基本行動性和安全性遠端動作包括淘汰、擦除和完全清除。 如需基本行動性及安全性動作的詳細資訊，請參閱 [基本行動性和安全性的功能](capabilities.md)。
 

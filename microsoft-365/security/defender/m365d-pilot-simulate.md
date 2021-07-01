@@ -1,7 +1,7 @@
 ---
-title: 執行 Microsoft 365 的 Defender 攻擊模擬
+title: 執行 Microsoft 365 Defender 的攻擊模擬
 description: 針對您的 Microsoft 365 Defender 試驗專案執行攻擊模擬，以查看其展開及快速修正的方式。
-keywords: Microsoft 365Defender 試驗攻擊模擬，執行 Microsoft 365 Defender 試驗攻擊模擬，模擬 Microsoft 365 defender 的攻擊，Microsoft 365 defender 試驗專案，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
+keywords: Microsoft 365 Defender 試驗攻擊模擬，請執行 Microsoft 365 Defender 試驗攻擊模擬，模擬 Microsoft 365 Defender 中的攻擊，Microsoft 365 Defender 試驗專案、網路安全性、高級持續威脅、企業安全性、裝置、裝置、身分識別、使用者、資料、應用程式、事件、自動化調查和修正，以及高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18dc8158ef3c806e5dac5a01778adebc6eecc1ce
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934474"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230016"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>執行 Microsoft 365 的 Defender 攻擊模擬
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>執行 Microsoft 365 Defender 的攻擊模擬
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934474"
 
 您目前是在攻擊模擬階段。
 
-準備好試驗環境之後，請嘗試測試 Microsoft 365 的 Defender 事件管理和自動調查和修正功能。 我們將協助您模擬複雜的攻擊，利用高級技術從偵測中隱藏。 攻擊會在網域控制站上列舉已開啟的伺服器消息區塊 (SMB) 會話，並檢索使用者裝置的最近 IP 位址。 這種攻擊類別通常不會包含放在受害者裝置上的檔案，而只是在記憶體中。 他們會使用現有的系統和系統管理工具，並將其程式碼插入系統進程，以隱藏其執行，這類行為可讓他們避開偵測，並在裝置上持續運作。
+準備好試驗環境之後，就可以測試 Microsoft 365 Defender 事件管理和自動化調查和修正功能。 我們將協助您模擬複雜的攻擊，利用高級技術從偵測中隱藏。 攻擊會在網域控制站上列舉已開啟的伺服器消息區塊 (SMB) 會話，並檢索使用者裝置的最近 IP 位址。 這種攻擊類別通常不會包含放在受害者裝置上的檔案，而只是在記憶體中。 他們會使用現有的系統和系統管理工具，並將其程式碼插入系統進程，以隱藏其執行，這類行為可讓他們避開偵測，並在裝置上持續運作。
 
 在此模擬中，我們的範例案例會從 PowerShell 腳本開始。 使用者可能會欺騙執行腳本。 或者，腳本可能從先前感染的裝置遠端連線至另一部電腦，企圖在網路中移動橫向。 偵測到這些腳本可能很困難，因為系統管理員也經常會以遠端方式執行腳本，以執行各種管理活動。
 
@@ -54,7 +54,7 @@ ms.locfileid: "51934474"
 
 由於您已在準備階段中設定試驗環境，因此請確定此案例有兩個裝置：測試裝置和網域控制站。
 
-1. 確認您的承租人已[啟用 Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on)。
+1. 請確認您的承租人已[啟用 Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on)。
 
 2. 驗證測試網域控制站設定：
 
@@ -134,7 +134,7 @@ ran NetSessionEnum against [DC Name] with return code result 0
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>以單一事件調查攻擊
 
-Microsoft 365Defender 相互關聯分析，以及將不同產品的所有相關警示和調查彙集至一個事件實體。 如此一來，Microsoft 365 Defender 會顯示更廣泛的攻擊案例，讓 SOC 分析員能夠瞭解並回應複雜的威脅。
+Microsoft 365 Defender 相互關聯分析，以及將不同產品的所有相關警示和調查彙集至一個事件實體。 如此一來，Microsoft 365 Defender 會顯示更廣泛的攻擊案例，讓 SOC 分析員能夠瞭解並回應複雜的威脅。
 
 此模擬期間產生的警示會與相同的威脅產生關聯，因此會自動匯總為單一事件。
 
@@ -148,7 +148,7 @@ Microsoft 365Defender 相互關聯分析，以及將不同產品的所有相關�
 
    ![類比期間匯總產生之警示的事件頁面的螢幕擷取畫面](../../media/mtp/fig4.png)
 
-   儀表板中顯示的警示可根據服務資源進行篩選： microsoft defender for Identity、Microsoft Cloud App Security、microsoft defender for Endpoint、Microsoft 365 Defender 和 microsoft defender for Office 365。
+   儀表板中顯示的警示可根據服務資源進行篩選：「microsoft defender for Identity」、「Microsoft Cloud App Security」、「用於端點的 microsoft defender」、「Microsoft 365 Defender」和「microsoft defender for Office 365」。
 
 3. 選取 [ **開啟事件] 頁面** ，以取得有關事件的詳細資訊。
 
@@ -158,14 +158,14 @@ Microsoft 365Defender 相互關聯分析，以及將不同產品的所有相關�
 
    ![按一下管理事件之位置的螢幕擷取畫面](../../media/mtp/fig5a.png)
 
-   ![「管理事件」面板上的欄位的螢幕擷取畫面，您可以在其中標記事件、將其指派給您並新增批註 ](../../media/mtp/fig5b.png)
+   ![「管理事件」面板上的欄位的螢幕擷取畫面，您可以在其中標記事件、將其指派給您並新增批註](../../media/mtp/fig5b.png)
 
 ### <a name="review-generated-alerts"></a>審閱產生的提醒
 
 讓我們看一下模擬攻擊期間產生的一些警示。
 
 > [!NOTE]
-> 我們只會逐步完成模擬攻擊期間產生的一些警示。 根據您測試裝置上所執行 Windows 和 Microsoft 365 Defender 產品的版本，您可能會看到更多以稍有不同順序顯示的警示。
+> 我們只會逐步完成模擬攻擊期間產生的一些警示。 根據測試裝置上所執行 Windows 和 Microsoft 365 Defender 產品的版本，您可能會看到更多以稍有不同順序顯示的警示。
 
 ![產生之提醒的螢幕擷取畫面](../../media/mtp/fig6.png)
 
@@ -420,7 +420,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
    在此試驗中，您可能會想要將此規則限制在實際執行環境中的測試裝置子集。
 
-6. 選取 [建立 **]**。 然後，選取導覽窗格中的 **自訂偵測規則** 。
+6. 選取 [建立]。 然後，選取導覽窗格中的 **自訂偵測規則** 。
 
    ![功能表中自訂偵測規則選項的螢幕擷取畫面](../../media/mtp/fig27a.png)
 
@@ -432,7 +432,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他的高級搜尋指導-透過練習
 
-若要深入瞭解「高級搜尋」，下列網路廣播將會逐步引導您使用 Microsoft 365 Defender 中的高級搜尋功能，以建立跨 pillar 查詢、pivot 至實體，以及建立自訂偵測和修正動作。
+若要深入瞭解「高級搜尋」，下列網路廣播會逐步引導您完成 Microsoft 365 Defender 中的高級搜尋功能，以建立跨 pillar 查詢、pivot 至實體，以及建立自訂偵測和修正動作。
 
 > [!NOTE]
 > 請使用您自己的 GitHub 帳戶進行準備，以在試驗測試實驗室環境中執行搜尋查詢。
@@ -442,10 +442,10 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 |第1集： KQL 基礎|我們將涵蓋 Microsoft 365 Defender 中的高級搜尋功能的基礎知識。 深入瞭解可用的高級搜尋資料和基本 KQL 語法及運算子。|[時](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[第1集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |劇集2：聯接|我們將繼續深入瞭解高級搜尋中的資料，以及如何將資料表結合在一起。 瞭解內部、外部、unique 和半圓的連接，以及預設 Kusto innerunique join 的細微差別。|[時](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[劇集2： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |第3集：匯總、切換和視覺化資料|現在，我們可以篩選、處理及加入資料，這是時間開始摘要、量化、旋轉及形象。 在此過程中，我們將涵蓋匯總運算子和您可以執行的一些計算，同時深入探討高級搜尋架構中的其他表格。 我們會將資料集變成圖表，以協助改善分析。|[時](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[第3集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|第4集：讓我們尋找！ 將 KQL 套用至事件追蹤|追蹤某些攻擊者活動的時間！ 在此期間，我們將使用 Microsoft 365 Defender 中的增強深入瞭解 KQL 和高級搜尋，以追蹤攻擊。 深入瞭解此欄位中所用的部分秘訣，以追蹤攻擊者的活動，包括 cybersecurity 的 ABCs，以及如何將其套用至事件回應。|[時](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[第4集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|第4集：讓我們尋找！ 將 KQL 套用至事件追蹤|追蹤某些攻擊者活動的時間！ 在此期間，我們將使用 Microsoft 365 Defender 中深入瞭解的 KQL 和高級搜尋，以追蹤攻擊。 深入瞭解此欄位中所用的部分秘訣，以追蹤攻擊者的活動，包括 cybersecurity 的 ABCs，以及如何將其套用至事件回應。|[時](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[第4集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>下一步
 
-|![關閉及摘要階段](../../media/mtp/close.png) <br>[關閉及摘要階段](m365d-pilot-close.md)|分析您的 Microsoft 365 Defender 試驗結果，將其呈現給您的專案關係人，然後採取下一個步驟。
+|![關閉及摘要階段](../../media/mtp/close.png) <br>[關閉及摘要階段](m365d-pilot-close.md)|分析您的 Microsoft 365 Defender 試驗結果，將其呈現給您的利益關係人，然後採取下一個步驟。
 |:-----|:-----|

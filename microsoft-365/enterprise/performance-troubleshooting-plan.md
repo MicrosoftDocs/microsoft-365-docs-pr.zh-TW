@@ -22,12 +22,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: 本文可協助您疑難排解 Office 365 效能問題，甚至修正一些最常見的問題。
-ms.openlocfilehash: 588a19e86d903a7ab709a7f0d0131da6e2a77f47
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6ef459d6469881c71ea7d1da3a32eb42eb3ead6b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928233"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229932"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 的效能疑難排解規劃
 
@@ -328,7 +328,7 @@ Proxy 驗證是您的出口 proxy 伺服器上的設定。 如果是造成 Offic
 2. 按一下 **[選擇欄**]。
 3. 在清單中找出 _NTLMSSP 摘要_ 和 _時間 Delta_ ，然後按一下 [ **新增**]。
 4. 將新的欄移至 [ _描述_ ] 欄之前或之後的位置，以便您可以並列閱讀。
-5. 按一下 ****[確定]。
+5. 按一下 [確定]。
 
 即使您沒有新增欄，Netmon 篩選也會運作。 不過，如果您可以看到您在哪個驗證階段，您的疑難排解會變得更容易。
 
@@ -369,7 +369,7 @@ DNS 流量是以 TCP 及 UDP 要求和回應明確標示，其識別碼會協助
 2. 按一下 **[選擇欄**]。
 3. 找到清單中的 _時間差_ ，然後按一下 [ **新增**]。
 4. 將新欄移至 [ _描述_ ] 欄前面或後面的位置，以便您可以並列閱讀。
-5. 按一下 ****[確定]。
+5. 按一下 [確定]。
 
 如果您找到感興趣的查詢，請考慮在 [框架詳細資料] 面板中以滑鼠右鍵按一下該查詢以隔離它，然後選擇 [ **尋找交談** \> **DNS**]。 請注意，網路交談面板會直接跳至其 UDP 流量記錄中的特定交談。
 

@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203289"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228660"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -140,7 +140,7 @@ ms.locfileid: "53203289"
 
      下表說明垃圾郵件篩選裁決可採取的動作。
 
-     - 核取記號 ( ![核取記號](../../media/checkmark.png)) 表示可採取的動作 (並非所有的決策皆可採取所有動作)。
+     - 核取記號 ( ![核取記號](../../media/checkmark.png) ) 表示可採取的動作 (並非所有的決策皆可採取所有動作)。
      - 核取記號之後有星號 (<sup>\*</sup>) 表示垃圾郵件篩選裁決的預設動作。
 
      <br>

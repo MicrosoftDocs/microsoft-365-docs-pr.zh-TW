@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本行動性和安全性來建立保護組織資訊的裝置原則。
-ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 62dc2eef87d413a9cb62a01541126860620eec3f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706319"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228252"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本行動性和安全性中建立裝置安全性原則
 
@@ -39,14 +39,14 @@ ms.locfileid: "52706319"
 - 若要在 Microsoft 365 中建立及部署基本行動性和安全性原則，您必須是 Microsoft 365 全域管理員。如需詳細資訊，請參閱[安全性 & 合規性中心的許可權](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 - 在您部署原則之前，請讓您的組織知道以基本行動性和安全性登錄裝置的潛在影響。 根據您設定原則的方式，可以封鎖不相容的裝置來存取 Microsoft 365 和資料，包括已登錄裝置上已安裝的應用程式、相片和個人資訊，以及可刪除的資料。
 
->[!NOTE]
->在基本行動性和安全性中為 Microsoft 365 商務標準版覆寫建立的原則和存取規則 Exchange ActiveSync Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則。 在 Microsoft 365 商務標準版中對裝置註冊基本行動性和安全性後，就會忽略套用至裝置的任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則。 若要深入瞭解 Exchange ActiveSync，請參閱[Exchange Online 中的 Exchange ActiveSync](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)。
+> [!NOTE]
+> 在基本行動性和安全性中為 Microsoft 365 商務標準版覆寫建立的原則和存取規則 Exchange ActiveSync Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則。 在 Microsoft 365 商務標準版中對裝置註冊基本行動性和安全性後，就會忽略套用至裝置的任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則。 若要深入瞭解 Exchange ActiveSync，請參閱[Exchange Online 中的 Exchange ActiveSync](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)。
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>步驟1：建立裝置原則並部署至測試群組
 
 開始之前，請先確定您已啟動並設定基本行動性和安全性。 如需相關指示，請參閱 [基本行動性和安全性概述](overview.md)。
 
-1. 在您的瀏覽器中輸入 [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
+1. 在您的瀏覽器中輸入 <https://protection.office.com/devicev2> 。
 
 2. 選取 **[建立原則]**。
 

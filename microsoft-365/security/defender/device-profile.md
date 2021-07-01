@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 47b25ba541264d79216748753e9f41fb7435fc10
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935662"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229476"
 ---
 # <a name="device-profile-page"></a>裝置設定檔頁面面
 
@@ -81,7 +81,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，所以
 * **執行防病毒掃描**-更新 Windows Defender 防毒軟體定義，並立即執行防病毒掃描。 選擇 [快速掃描] 或 [完全掃描]。
 * 收集有關裝置的 **調查套件** 收集資訊。 完成調查後，您可以下載。
 * **Initiate Live Response Session** -在裝置上載入遠端命令介面，以進行 [深入的安全性調查](/microsoft-365/security/defender-endpoint/live-response)。
-* **啟動自動化調查** -自動 [調查和 remediates 威脅](../office-365-security/office-365-air.md)。 雖然您可以手動觸發從這個頁面執行的自動調查，但 [某些警示原則](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) 會自行觸發自動調查。
+* **啟動自動化調查** -自動 [調查和 remediates 威脅](../office-365-security/office-365-air.md)。 雖然您可以手動觸發從這個頁面執行的自動調查，但 [某些警示原則](../../compliance/alert-policies.md#default-alert-policies) 會自行觸發自動調查。
 * **動作中心** -顯示目前正在執行之回應動作的相關資訊。
 
 ## <a name="tabs-section"></a>Tabs 區段
@@ -180,7 +180,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，所以
 
 ## <a name="related-topics"></a>相關主題
 
-* [Microsoft 365Defender 概述](microsoft-365-defender.md)
+* [Microsoft 365 Defender 概述](microsoft-365-defender.md)
 * [開啟 Microsoft 365 Defender](m365d-enable.md)
 * [使用即時回應調查裝置上的實體](../defender-endpoint/live-response.md)
 * [ (空中) Office 365 中的自動化調查和回應](../office-365-security/office-365-air.md)

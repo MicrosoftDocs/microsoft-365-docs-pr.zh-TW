@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 決定 Microsoft 365 環境中的資料隱私權法規、相關案例、準備工作和機密資訊類型。
-ms.openlocfilehash: 6801f0af70e08d2b4efdc9e27f1cb1f1d636b821
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e41dccea3569573d45b2e07e8ab7f122c44b311
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929165"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229308"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>評估資料隱私權風險，並使用 Microsoft 365 識別敏感專案
 
-在實施任何相關的改進動作（包括可使用 Microsoft 365 功能和服務時）之前，評估貴組織所遵循的資料隱私權規定和風險是一個重要的步驟。 
+在實施任何相關的改進動作（包括可使用 Microsoft 365 功能和服務時）之前，評估貴組織所遵循的資料隱私權規定和風險是一個重要的步驟。
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>可能適用的資料隱私權法規
 
@@ -34,9 +34,9 @@ ms.locfileid: "50929165"
 
 ### <a name="gdpr"></a>GDPR
 
-GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、儲存、處理及共用任何個人資料的相關資訊，這些資料與是歐盟 (歐盟) 居民的識別或可辨識的自然人員有關。 
+GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、儲存、處理及共用任何個人資料的相關資訊，這些資料與是歐盟 (歐盟) 居民的識別或可辨識的自然人員有關。
 
-根據 GDPR 文章4： 
+根據 GDPR 文章4：
 
 - 「個人資料」是指與識別或辨識的自然人員 ( ' 資料主體 ' ) 相關的任何資訊。可辨識的自然人員是指以直接或間接的方式，識別識別碼（例如名稱、識別號碼、位置資料、線上識別碼，或該自然人員之實體、physiological、遺傳、精神、經濟效益或社交身分識別特有的一或多個因素）。
 
@@ -48,15 +48,15 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 其他明顯的資料隱私權規定也會指定處理個人資料的需求。
 
-在美國，這些包括加州消費者防護法案 ([CCPA](/compliance/regulatory/ccpa-faq)) 、HIPAA-高科技 (美國衛生保健隱私權法案) 和 Graham Gramm-leach-bliley 現代化 ACT (GLBA) 。 其他狀態特有的法規也是就地或開發中的。 
+在美國，這些包括加州消費者防護法案 ([CCPA](/compliance/regulatory/ccpa-faq)) 、HIPAA-高科技 (美國衛生保健隱私權法案) 和 Graham Gramm-leach-bliley 現代化 ACT (GLBA) 。 其他狀態特有的法規也是就地或開發中的。
 
 在世界各地，其他範例包含德國國家標準 GDPR 實施法案 (BDSG) ，巴西資料保護法案 (LGPD) 及許多其他。
 
 ## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>規章對應至 Microsoft 365 的技術控制項類別
 
-許多資料隱私權相關的規章都有重疊的需求，因此在開發任何技術控制架構之前，您應該瞭解他們所遵循的規章。 
+許多資料隱私權相關的規章都有重疊的需求，因此在開發任何技術控制架構之前，您應該瞭解他們所遵循的規章。
 
-為了供日後參考此整體解決方案中的文章，此表格提供資料隱私權規定的抽樣的摘錄。 
+為了供日後參考此整體解決方案中的文章，此表格提供資料隱私權規定的抽樣的摘錄。
 
 | 調節 | 文章/區段 | 節錄 | 適用的技術控制項類別 |
 |:-------|:-----|:-------|:-------|
@@ -78,37 +78,35 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 |  | 1798.105 (d)  | 1798.105 (c) 的 (例外狀況 <br> 若業務或服務提供者必須維護使用者的個人資訊，而不需要使用公司或服務提供者的要求來刪除使用者的個人資訊，則不需要使用該公司或服務提供者，以： (參照目前的規章以取得其他資訊) 。 | 探索和回應 |
 |||||
 
->[!Important]
->這不是一個詳盡的清單。 如需詳細資訊，請參閱 [合規性管理員](../compliance/compliance-manager.md) 或您的法律或規範顧問，以取得所列的技術控制項類別之適用性的部分。
->
+> [!IMPORTANT]
+> 這不是一個詳盡的清單。 如需詳細資訊，請參閱 [合規性管理員](../compliance/compliance-manager.md) 或您的法律或規範顧問，以取得所列的技術控制項類別之適用性的部分。
 
 ## <a name="knowing-your-data"></a>知道您的資料
 
 不論您受制的規章為何，在組織內部和外部的不同使用者資料類型與您的系統進行互動的所有重要因素，都可能會影響整體個人資料保護原則，其受限於適用于您組織的行業和政府法規。 這包括儲存個人資料的位置、類型是什麼，以及有多少情況，以及其收集的情況下。
- 
+
 ![知道您的資料：類型為何，及其收集的情況下有多少？](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
-### <a name="data-portability"></a>資料可攜性 
+### <a name="data-portability"></a>資料可攜性
 
 在處理、精緻及其他版本的情況下，資料也會隨著時間來回移動。 初始快照絕對不會足夠。 需要有一個持續的處理常式來瞭解您的資料。 這代表大型組織處理大量個人資料的最大難題之一。 未解決「知道資料」問題的組織，可能會有極高的風險，而且可能會從法規代理商取得罰款。
 
 ![資料生命週期](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
- 
+
 ### <a name="where-the-personal-data-is"></a>個人資料的位置
 
 若要解決資料隱私權法規，您無法依賴您認為個人資料可能存在的一般概念，不論是現在或以後的地方。 資料隱私權法規要求組織必須證明他們知道個人資料的持續性。 這使您很重要的方式是取得所有資料來源的初始快照，以儲存個人資訊（包括 Microsoft 365 環境），並建立持續監控和偵測的機制。
 
-若尚未評估與資料隱私權規定相關的整體準備工作和風險，請使用下列3步驟架構開始著手。 
+若尚未評估與資料隱私權規定相關的整體準備工作和風險，請使用下列3步驟架構開始著手。
 
 ![評估與資料隱私權法規相關的整體準備工作和風險的步驟](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
->[!Note]
->本文及其內容並不是為了取代法律顧問服務。 它只提供一些基本指導方針，以及一些工具的連結，在評估的早期階段可能會有協助。
->
- 
-## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>步驟1：培養組織個人資料案例的基礎知識 
+> [!NOTE]
+> 本文及其內容並不是為了取代法律顧問服務。 它只提供一些基本指導方針，以及一些工具的連結，在評估的早期階段可能會有協助。
 
-您必須根據目前所管理的個人資料類型、其儲存位置、哪些保護性控制措施、生命週期的管理方式，以及哪些人員可以存取，來評估資料隱私權風險的危險性。 
+## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>步驟1：培養組織個人資料案例的基礎知識
+
+您必須根據目前所管理的個人資料類型、其儲存位置、哪些保護性控制措施、生命週期的管理方式，以及哪些人員可以存取，來評估資料隱私權風險的危險性。
 
 作為起點，請務必清查您的 Microsoft 365 環境中存在哪些類型的個人資料。 使用下列類別：
 
@@ -120,7 +118,7 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 ![個人資料類型](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-許多受資料隱私權法規制約的個人資料通常會收集並儲存在 Microsoft 365 之外。 任何來自使用者對向的 web 或行動應用程式的個人資料，都必須從這類應用程式匯出至 Microsoft 365，才會受到 Microsoft 365 中的資料隱私權審查。 
+許多受資料隱私權法規制約的個人資料通常會收集並儲存在 Microsoft 365 之外。 任何來自使用者對向的 web 或行動應用程式的個人資料，都必須從這類應用程式匯出至 Microsoft 365，才會受到 Microsoft 365 中的資料隱私權審查。
 
 您在 Microsoft 365 中的資料隱私權洩密，對您的 web 應用程式和 CRM 系統的限制，可能會比這種解決方案不具位址。
 
@@ -136,21 +134,20 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>執行日常商務功能所需的員工資料
 
-依性質，組織必須針對電子身分識別及 HR 目的，收集員工的資料，視其在員工合約中的同意而定。 只要人員可用於公司，這通常不會有問題。 組織可能會想要將機制放在適當的地方，以防止惡意參與者 exfiltration 或洩漏員工個人資料。 
+依性質，組織必須針對電子身分識別及 HR 目的，收集員工的資料，視其在員工合約中的同意而定。 只要人員可用於公司，這通常不會有問題。 組織可能會想要將機制放在適當的地方，以防止惡意參與者 exfiltration 或洩漏員工個人資料。
 
-若某人離職，組織通常會有移除使用者帳戶、解除委任信箱和個人磁片磁碟機，以及變更員工在諸如人力資源系統等方面的狀態的程式、程式及保留與刪除排程。 在涉及訴訟的情況下，法律調查的員工或其他團體可能會有合理的理由，以取得組織系統中儲存的個人資料資訊。 在某些情況下，該團體可能要求移除或匿名這類資料。 
+若某人離職，組織通常會有移除使用者帳戶、解除委任信箱和個人磁片磁碟機，以及變更員工在諸如人力資源系統等方面的狀態的程式、程式及保留與刪除排程。 在涉及訴訟的情況下，法律調查的員工或其他團體可能會有合理的理由，以取得組織系統中儲存的個人資料資訊。 在某些情況下，該團體可能要求移除或匿名這類資料。
 
-為了滿足這類需求，組織應具備處理預防性、偵探和補救措施的程式與程式，以協助這類要求，請注意，有關員工的部分資訊可能會被視為商務持續性的重要因素。 例如，個人撰寫的檔案或執行函數的資訊。 
+為了滿足這類需求，組織應具備處理預防性、偵探和補救措施的程式與程式，以協助這類要求，請注意，有關員工的部分資訊可能會被視為商務持續性的重要因素。 例如，個人撰寫的檔案或執行函數的資訊。
 
->[!Note]
->如需 Microsoft 365 中個人資料的調查和修正技巧，請參閱[監視和回應文章](information-protection-deploy-monitor-respond.md)。 您也可能會想要使用自動化的分類及保護架構，以確保個人資料在組織內部加以控制，以及避免該組織在惡意的主角情況下遭到離開。 如需詳細資訊，請參閱 [保護資訊文章](information-protection-deploy-protect-information.md) 。
->
- 
+> [!NOTE]
+> 如需 Microsoft 365 中個人資料的調查和修正技巧，請參閱[監視和回應文章](information-protection-deploy-monitor-respond.md)。 您也可能會想要使用自動化的分類及保護架構，以確保個人資料在組織內部加以控制，以及避免該組織在惡意的主角情況下遭到離開。 如需詳細資訊，請參閱 [保護資訊文章](information-protection-deploy-protect-information.md) 。
+
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>組織對 B2B 案例中公司客戶的相關資料
 
-B2B 資訊集合也是一項挑戰，因為您的組織可能需要將客戶名稱和交易記錄存放在其各種系統中，以進行商務持續性目的，但保護該資訊不會遭到無意或惡意的 exfiltration。 與員工資料類似的是，組織必須有適當的原則、程式和技術控制措施來保護這類資料，並根據定義的保留和刪除排程，將其老化。 
+B2B 資訊集合也是一項挑戰，因為您的組織可能需要將客戶名稱和交易記錄存放在其各種系統中，以進行商務持續性目的，但保護該資訊不會遭到無意或惡意的 exfiltration。 與員工資料類似的是，組織必須有適當的原則、程式和技術控制措施來保護這類資料，並根據定義的保留和刪除排程，將其老化。
 
-一般來說，與外部客戶、合作夥伴和組織經營的其他實體的合約，將會有語言來處理這類資料的處理，包括在該實體與組織的關係期間和之後，都有保護、保留和刪除。 
+一般來說，與外部客戶、合作夥伴和組織經營的其他實體的合約，將會有語言來處理這類資料的處理，包括在該實體與組織的關係期間和之後，都有保護、保留和刪除。
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>組織有關為組織在 B2C 案例中管理之線上服務提供資訊的消費者所擁有的資料
 
@@ -175,7 +172,7 @@ B2B 資訊集合也是一項挑戰，因為您的組織可能需要將客戶名�
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>步驟2：評估您是否已遵循資料隱私權法規的準備工作
 
-雖然 GDPR 的特別問題，但在免費的 [MICROSOFT GDPR 評估工具](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) 中所提出的問題，可讓您瞭解整體的資料隱私權準備。 
+雖然 GDPR 的特別問題，但在免費的 [MICROSOFT GDPR 評估工具](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) 中所提出的問題，可讓您瞭解整體的資料隱私權準備。
 
 受限於其他資料隱私權法規（如美國或巴西的 LGPD 中的 CCPA）的組織可能也會受益于此工具因 GDPR 的重迭條款而產生的準備就緒清單。
 
@@ -183,25 +180,25 @@ GDPR 評估包含下列各節：
 
 | 區段 | 描述 |
 |:-------|:-----|
-| 治理 | <ol><li>您的隱私權原則會明確指出正在處理的資料資訊為何？ </li><li>您是否要定期 (PIAs) 執行隱私權影響評估？ </li><li> 您是否使用工具來管理個人資訊 (PI) ？ </li><li> 您是否有合法的授權，可在任何指定的個人上使用 PI 資料進行商務用？ 您是否追蹤資料的同意？ </li><li> 您是否需要追蹤、實施及管理審計控制措施？ 您是否監視資料洩漏？ </li></ol>|
+| 控管 | <ol><li>您的隱私權原則會明確指出正在處理的資料資訊為何？ </li><li>您是否要定期 (PIAs) 執行隱私權影響評估？ </li><li> 您是否使用工具來管理個人資訊 (PI) ？ </li><li> 您是否有合法的授權，可在任何指定的個人上使用 PI 資料進行商務用？ 您是否追蹤資料的同意？ </li><li> 您是否需要追蹤、實施及管理審計控制措施？ 您是否監視資料洩漏？ </li></ol>|
 | 刪除和通知 | <ol><li>您會提供如何存取使用者資料的明確指示。 </li><li> 您是否已記錄處理自願同意的處理常式？ </li><li> 您是否有資料的自動刪除處理常式？ </li><li>   在與客戶接洽時，是否有驗證身分識別的處理常式？ </li></ol>|
 | 風險降低和資訊安全性 | <ol><li>您使用工具來掃描非結構化資料嗎？ </li><li>所有伺服器都是最新的，您是否要利用防火牆加以保護？ </li><li>您是否執行伺服器的定期備份？ </li><li>您是否積極監控資料洩漏？ </li><li>您是否要加密靜態和傳輸中的資料？ </li></ol>|
 | 原則管理 | <ol><li>如何管理系結公司規則 (BCRs) ？ </li><li>您是否追蹤資料的同意？ </li><li> 您的合約是否涵蓋資料分類和處理需求，以1到5的比例從1到5、5。 </li><li>您是否有並定期測試事件回應計畫？ </li><li>您用來管理存取的原則為何？ </li></ol>|
 |||
- 
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>步驟3：識別在 Microsoft 365 環境中發生的敏感資訊類型。 
 
-此步驟包括識別特定的敏感資訊類型，這些類型受制于特定的規章控制，以及它們在 Microsoft 365 環境中的出現。 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>步驟3：識別在 Microsoft 365 環境中發生的敏感資訊類型。
 
-在您的環境中尋找包含個人的內容可能是一項艱巨的工作，先前會結合使用符合性搜尋、eDiscovery、Advanced eDiscovery、DLP 及審計。 
+此步驟包括識別特定的敏感資訊類型，這些類型受制于特定的規章控制，以及它們在 Microsoft 365 環境中的出現。
+
+在您的環境中尋找包含個人的內容可能是一項艱巨的工作，先前會結合使用符合性搜尋、eDiscovery、Advanced eDiscovery、DLP 及審計。
 
 透過 Microsoft 合規性系統管理中心的新 **資料分類** 方案，使用 [內容瀏覽器](../compliance/data-classification-content-explorer.md) 功能，可搭配內建或自訂的機密資訊類型（包括與個人資料相關的資訊類型）使用。
- 
+
 ### <a name="sensitive-information-types"></a>敏感性資訊類型
 
 Microsoft 規範系統管理中心預先載入了100以上的敏感資訊類型，這些類型大多都與識別及尋找個人資料有關。 這些內建的敏感資訊類型可根據正則運算式所定義的模式，協助識別及保護信用卡號碼、銀行帳戶號碼、護照號碼等等，其方式 (RegEx) 或函數。 若要深入了解，請參閱[機密資訊類型尋找的目標為何](../compliance/sensitive-information-type-entity-definitions.md)。
 
-如果您需要識別及保護組織特有或區欄位型別的敏感專案（例如員工 IDs 的自訂格式）或內建機密資訊類型所涵蓋的其他個人資訊，您可以使用下列方法來建立自訂的敏感資訊類型： 
+如果您需要識別及保護組織特有或區欄位型別的敏感專案（例如員工 IDs 的自訂格式）或內建機密資訊類型所涵蓋的其他個人資訊，您可以使用下列方法來建立自訂的敏感資訊類型：
 
 - PowerShell
 - 具有精確資料符合的自訂規則 (EDM) 
@@ -220,10 +217,10 @@ Microsoft 規範系統管理中心預先載入了100以上的敏感資訊類型�
 ### <a name="content-explorer"></a>內容瀏覽器
 
 在您的環境中，判斷敏感專案發生的重要工具，是 Microsoft 365 合規性系統管理中心內的新[內容瀏覽器](../compliance/data-classification-content-explorer.md)。 這是一種自動化的工具，可讓您整個 Microsoft 365 訂閱進行，針對敏感資訊類型和顯示結果的顯示，進行完整及日常掃描。
- 
+
 新的內容瀏覽器工具可讓您使用內建的敏感資訊類型或自訂的資訊類型，快速識別環境中敏感專案的位置。 這可能會讓您建立程式並指派責任定期調查敏感專案的目前狀態和位置。
 
-在本文中所述的其他步驟中，這會提供一個起點，用以識別敏感專案的整體風險、準備工作和位置，以透過規劃的 Microsoft 365 設定和監控加以保護。 
+在本文中所述的其他步驟中，這會提供一個起點，用以識別敏感專案的整體風險、準備工作和位置，以透過規劃的 Microsoft 365 設定和監控加以保護。
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>在您的環境中識別個人資料的其他方法
 

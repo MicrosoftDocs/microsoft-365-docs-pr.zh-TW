@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706175"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228276"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本行動與安全性的功能
 
@@ -47,12 +47,12 @@ ms.locfileid: "52706175"
 
 <sup>1</sup>Windows 8.1 RT 裝置的存取控制限制為 Exchange ActiveSync。
 
-<sup>2</sup>Windows 10 的存取控制需要包含 Azure AD 進階版且裝置必須加入 Azure Active Directory 的訂閱。
+<sup>2</sup>Windows 10 的存取控制需要包含 Azure AD Premium 且裝置必須加入 Azure Active Directory 的訂閱。
 
 <sup>3</sup>2020年6月之後，低於9的 Android 版本無法管理密碼設定，但在 Samsung Knox 裝置上除外。
 
->[!NOTE]
->已註冊舊版作業系統的裝置仍可運作，但功能可能會變更，恕不另行通知。
+> [!NOTE]
+> 已註冊舊版作業系統的裝置仍可運作，但功能可能會變更，恕不另行通知。
 
 如果您組織中的人員使用基本行動性和安全性不支援的行動裝置，您可能想要封鎖 Microsoft 365 電子郵件的 Exchange ActiveSync 應用程式存取權，讓組織的資料更加安全。 如需封鎖 Exchange ActiveSync 的步驟，請參閱[管理基本行動性和安全性中的裝置存取設定](manage-device-access-settings.md)。
 
@@ -65,10 +65,11 @@ ms.locfileid: "52706175"
 |**Exchange** Exchange ActiveSync 包含內建的電子郵件和協力廠商的應用程式，例如 TouchDown，使用 Exchange ActiveSync 版本14.1 或更新版本。 |郵件 |電子郵件 |
 |**Office**  和  **商務用 OneDrive** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**在手機和平板電腦上**：<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **僅限電話：** <br/> Office Mobile |
 
->[!NOTE]
-- >支援 iOS 10.0 和更新版本包括 iPhone 和 iPad 裝置。
-- >基本的安全性和行動性不支援 BlackBerry OS 裝置的管理。 使用 BlackBerry Business 雲端服務 (BBCS) 從 BlackBerry 管理 BlackBerry 作業系統裝置。 支援執行 Android 作業系統的 Blackberry 裝置作為標準 Android 裝置
-- >如果使用者使用行動瀏覽器來存取 Microsoft 365 SharePoint 網站、檔 Office 線上或 Outlook Web App 中的電子郵件，則不會提示使用者進行註冊，也不會對原則加以舉報。
+> [!NOTE]
+>
+> - 支援 iOS 10.0 和更新版本包括 iPhone 和 iPad 裝置。
+> - 基本的安全性和行動性不支援 BlackBerry OS 裝置的管理。 使用 BlackBerry Business 雲端服務 (BBCS) 從 BlackBerry 管理 BlackBerry 作業系統裝置。 支援執行 Android 作業系統的 Blackberry 裝置作為標準 Android 裝置
+> - 如果使用者使用行動瀏覽器來存取 Microsoft 365 SharePoint 網站、檔 Office 線上或 Outlook Web App 中的電子郵件，則不會提示使用者進行註冊，也不會對原則加以舉報。
 
 下圖顯示當具有新裝置的使用者利用基本行動性和安全性，登入支援存取控制的應用程式時會發生什麼情況。 使用者在註冊其裝置之前，系統會封鎖使用者存取應用程式中的 Microsoft 365 資源。
 
@@ -79,7 +80,7 @@ ms.locfileid: "52706175"
 
 ## <a name="policy-settings-for-mobile-devices"></a>行動裝置的原則設定
 
-如果您建立一個原則，以在開啟特定設定時封鎖存取，當您使用[Microsoft 365 電子郵件和檔的存取控制](capabilities.md)中所列的支援應用程式時，系統會封鎖使用者存取 Microsoft 365 資源。 
+如果您建立一個原則，以在開啟特定設定時封鎖存取，當您使用[Microsoft 365 電子郵件和檔的存取控制](capabilities.md)中所列的支援應用程式時，系統會封鎖使用者存取 Microsoft 365 資源。
 
 可以封鎖使用者存取 Microsoft 365 資源的設定包括下列各節：
 
@@ -89,7 +90,7 @@ ms.locfileid: "52706175"
 
 - 越獄中斷
 
-- 受管理的電子郵件設定檔  
+- 受管理的電子郵件設定檔
 
 例如，下圖顯示使用已註冊裝置的使用者不符合套用至其裝置之行動裝置管理原則中的安全性設定時，會發生什麼情況。 使用者可使用基本行動性和安全性登入支援存取控制的應用程式。 在裝置符合安全性設定之前，系統會封鎖他們存取應用程式中的 Microsoft 365 資源。
 
@@ -116,15 +117,15 @@ ms.locfileid: "52706175"
 |:-----|:-----|:-----|:-----|
 |裝置<sup>1</sup>上需要資料加密 |否|是|是|
 
-<sup>1</sup>使用 Samsung Knox，您也可以要求在儲存卡上加密。 
+<sup>1</sup>使用 Samsung Knox，您也可以要求在儲存卡上加密。
 
-## <a name="jail-broken-setting"></a>越獄中斷設定 
+## <a name="jail-broken-setting"></a>越獄中斷設定
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |無法越獄中斷或根裝置 |是|是|是|
 
-## <a name="managed-email-profile-option"></a>受管理的電子郵件設定檔選項 
+## <a name="managed-email-profile-option"></a>受管理的電子郵件設定檔選項
 
 下列選項可以封鎖使用者在使用手動建立的電子郵件設定檔時存取其 Microsoft 365 電子郵件。 IOS 裝置上的使用者必須先刪除其手動建立的電子郵件設定檔，才能存取其電子郵件。 在刪除設定檔之後，系統會自動在裝置上建立新的設定檔。 如需使用者如何相容的相關指示，請參閱 [找到現有的電子郵件帳戶](/intune-user-help/existing-company-email-account-found)。
 
@@ -205,8 +206,8 @@ ms.locfileid: "52706175"
 
 - 記住密碼歷程記錄，並防止重複使用
 
->[!NOTE]
->下列設定控制密碼只會控制本機 Windows 帳戶。 透過「加入網域」或「Azure Active Directory」所提供的 Windows 帳戶，這些設定不會受到影響。
+> [!NOTE]
+> 下列設定控制密碼只會控制本機 Windows 帳戶。 透過「加入網域」或「Azure Active Directory」所提供的 Windows 帳戶，這些設定不會受到影響。
 
 ### <a name="system-settings"></a>系統設定
 

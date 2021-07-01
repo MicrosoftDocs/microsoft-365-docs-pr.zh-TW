@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 在 Microsoft 365 中為數據隱私權法規（如 GDPR 和加州消費者隱私權法案 (CCPA) （包括 Microsoft Teams、SharePoint 和電子郵件）設定資訊保護。
-ms.openlocfilehash: cae3a559c2bce39ecb02afa9be0878ff5e19ba48
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100768"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229200"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>使用 Microsoft 365 部署資料隱私權法規的資訊保護
 
@@ -32,16 +32,16 @@ Microsoft 365 中的資料類型範例包括 Microsoft Teams 中的交談會話�
 
 ![何謂資料隱私權法規的資訊保護](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-其他資訊也是針對您的資料隱私權需求，使用 Microsoft 365 身分識別、裝置和威脅防護控制時所提供。 
+其他資訊也是針對您的資料隱私權需求，使用 Microsoft 365 身分識別、裝置和威脅防護控制時所提供。
 
 這些 Microsoft 365 的功能和功能可協助您符合保護資訊的準則。
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|
-| 合規性管理員 | 管理法規遵從性活動、取得您目前的規範設定的整體分數，並尋找改進的建議。 這是 Microsoft 365 規範中心內的工作流程型風險評估工具。 | Microsoft 365 E3 和 E5 |
-| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 | Microsoft 365 E3 和 E5 | 
+| 合規性管理員 | 管理法規遵從性活動、取得您目前的規範設定的整體分數，並尋找改進的建議。 這是 Microsoft 365 合規性中心中以工作流程為基礎的風險評估工具。 | Microsoft 365 E3 和 E5 |
+| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 | Microsoft 365 E3 和 E5 |
 | 敏感度標籤 | 分類及保護貴組織的資料，而不會阻礙使用者的生產力和其共同作業的能力。 在電子郵件、檔案或網站上放置具有不同保護層級的標籤。 | Microsoft 365 E3 和 E5 |
-| 資料外洩防護 (DLP) | 偵測、警告和封鎖包含個人資訊（內部及外部）的危險、無意或不適當共用資料。 | Microsoft 365 E3 和 E5 | 
+| 資料外洩防護 (DLP) | 偵測、警告和封鎖包含個人資訊（內部及外部）的危險、無意或不適當共用資料。 | Microsoft 365 E3 和 E5 |
 | 資料保留標籤和原則 | 實施資訊管理控制措施。 這包括決定要保留資料的時間長度 (例如與客戶相關的個人資料) ，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
 | 電子郵件加密 | 在組織內部和外部的人員之間傳送及接收加密的電子郵件，以保護個人資料。 | Microsoft 365 E3 和 E5 |
 ||||
@@ -49,17 +49,16 @@ Microsoft 365 中的資料類型範例包括 Microsoft Teams 中的交談會話�
 ## <a name="organization-of-the-guidance-in-this-solution"></a>此解決方案中指導方針的組織
 
 為了協助您瞭解可用來協助您達成一或多項隱私權相關規章的 Microsoft 365 工具，本指南已分為各節。
- 
+
 ![針對資料隱私權規定實施資訊保護的步驟](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 這兩個區段分別對應于此方案中的個別文章。
 
->[!Note]
->如果您已熟悉資料隱私權的義務，並正針對現有的計畫執行，您可能想要將重點放在預防、保護、保留及調查指導方針上。
+> [!NOTE]
+> 如果您已熟悉資料隱私權的義務，並正針對現有的計畫執行，您可能想要將重點放在預防、保護、保留及調查指導方針上。
 
->[!Important]
->遵循此指導方針不一定會使您符合任何資料隱私權規定，尤其是考慮功能環境以外的必要步驟數目。 您負責確定法規遵從性，並向您的法律和合規性小組請教，或從協力廠商尋求規範的指導方針和建議。
->
+> [!IMPORTANT]
+> 遵循此指導方針不一定會使您符合任何資料隱私權規定，尤其是考慮功能環境以外的必要步驟數目。 您負責確定法規遵從性，並向您的法律和合規性小組請教，或從協力廠商尋求規範的指導方針和建議。
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>規劃：評估資料隱私權風險及識別敏感專案
 
@@ -69,7 +68,7 @@ Microsoft 365 中的資料類型範例包括 Microsoft Teams 中的交談會話�
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>追蹤：執行風險評估，並檢查您的合規性分數
 
-合規性管理員可在 Microsoft 365 規範中心提供，其可讓您在整體上追蹤及管理改善動作，以及與套用至您的多個資料隱私權法規相關的功能。
+合規性管理員可在 Microsoft 365 合規性中心中提供，讓您能夠追蹤和管理整體的整體功能，以及與套用至您的多個資料隱私權法規相關的綜合動作。
 
 您可以使用每個法規特有的內建評估範本，您可以在其中追蹤選取的每個評估範本的動作專案，以及查看特定的規章控制項，並將其與特定動作相關聯。
 
@@ -77,11 +76,11 @@ Microsoft 365 中的資料類型範例包括 Microsoft Teams 中的交談會話�
 
 ## <a name="prevent-protect-personal-data"></a>防止：保護個人資料
 
-Microsoft 365 提供身分識別、裝置和威脅防護功能，可讓您用來協助遵守資料隱私權法規合規性。 
+Microsoft 365 提供身分識別、裝置和威脅防護功能，可讓您用來協助遵守資料隱私權法規合規性。
 
 如需詳細資訊，請參閱 [使用身分識別、裝置和威脅防護以取得資料隱私權規定](information-protection-deploy-identity-device-threat.md)。
 
-本文將簡短說明這些方面的資料隱私權法規一般會通話的內容，並提供相關的 Microsoft 365 解決方案清單，並提供詳細資訊的連結，可協助您處理任何的執行需求。 
+本文將簡短說明這些方面的資料隱私權法規一般會通話的內容，並提供相關的 Microsoft 365 解決方案清單，並提供詳細資訊的連結，可協助您處理任何的執行需求。
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -101,7 +100,7 @@ Microsoft 365 提供身分識別、裝置和威脅防護功能，可讓您用來
 
 ## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>調查：監控、調查資料隱私權事件，並作出回應
 
-在您 operationalize 相關功能時，有一些 Microsoft 365 功能可協助您監視、調查組織中的資料隱私權事件，並加以回應。 
+在您 operationalize 相關功能時，有一些 Microsoft 365 功能可協助您監視、調查組織中的資料隱私權事件，並加以回應。
 
 使用這些功能的程式、程式及其他檔，都很重要，就是示範規章主體的合規性。
 

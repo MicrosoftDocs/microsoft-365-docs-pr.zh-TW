@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 深入瞭解 Exchange Online 中的多地理位置功能，例如功能限制和信箱位置。
-ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694302"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229800"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -59,4 +59,4 @@ Exchange Online 會從 Azure AD 將 **PreferredDataLocation** 屬性同步處理
 
 - 多地理位置組織中支援公用資料夾。 不過，公用資料夾必須保持在中央地理位置。 您無法將公用資料夾移動至衛星地理位置。
 
-- 在地理位置環境中，不支援跨地理位置信箱稽核。 例如，如果指派給使用者的權限可以存取不同地理位置的共用信箱，則該使用者執行的信箱動作不會記錄在共用信箱的信箱稽核記錄中。 如需詳細資訊，請參閱[管理信箱稽核](../compliance/enable-mailbox-auditing.md?view=o365-worldwide)。
+- 在地理位置環境中，不支援跨地理位置信箱稽核。 例如，如果指派給使用者的權限可以存取不同地理位置的共用信箱，則該使用者執行的信箱動作不會記錄在共用信箱的信箱稽核記錄中。 如需詳細資訊，請參閱[管理信箱稽核](../compliance/enable-mailbox-auditing.md)。

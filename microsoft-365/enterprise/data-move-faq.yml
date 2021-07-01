@@ -15,46 +15,62 @@ metadata:
   - NOCSH
   description: 尋找常見問題解答 (FAQs) 將核心資料移至新的 Office 365 資料中心地理位置。
   ms.custom: seo-marvel-mar2020
-  ms.openlocfilehash: 05ffdc8ea774bab1aee3aaad79df2f2532132aa3
-  ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+  ms.openlocfilehash: 14641933176b564b8550f3a8627f4f9149f1d7ee
+  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/11/2021
-  ms.locfileid: "52908397"
+  ms.lasthandoff: 06/30/2021
+  ms.locfileid: "53229992"
 title: 資料移動一般常見問題集
 summary: 以下是有關如何將核心客戶資料移至新的資料中心地理位置的一般問題的解答。
 sections:
-- name: 忽略
+- name: 已略過
   questions:
   - question: >
       哪些客戶適合要求移動？
-    answer: "已選取符合新資料中心地理位置之國家/地區的現有 Microsoft 365 商務客戶都可以要求移動。 此程式僅適用于指派合格國家/地區代碼的承租人指派給 Microsoft 365 租使用者，以便將適用工作負載的核心客戶資料移轉至對應的 Microsoft 365 資料中心地理位置。 請參閱 how [to 要求資料移動](request-your-data-move.md) 頁面以確認國家資格。   \n"
+    answer: >
+      已選取符合新資料中心地理位置之國家/地區的現有 Microsoft 365 商務客戶都可以要求移動。 此程式僅適用于指派合格國家/地區代碼的承租人指派給 Microsoft 365 租使用者，以便將適用工作負載的核心客戶資料移轉至對應的 Microsoft 365 資料中心地理位置。 請參閱 how [to 要求資料移動](request-your-data-move.md) 頁面以確認國家資格。 
   - question: >
       如何定義核心客戶資料？
-    answer: "核心客戶資料是指在 [Microsoft Online Services 條款](https://aka.ms/ost)中所定義之客戶資料的子集的字詞： \n- Exchange Online 信箱內容 (電子郵件內文、行事曆專案和電子郵件附件的內容) \n- SharePoint線上網站內容和儲存在該網站中的檔案\n- 上傳至商務用 OneDrive 的檔案 \n"
+    answer: "核心客戶資料是指在 [Microsoft Online Services 條款](https://aka.ms/ost)中所定義之客戶資料的子集的字詞：\n- Exchange Online 信箱內容 (電子郵件內文、行事曆專案和電子郵件附件的內容) \n- SharePoint線上網站內容和儲存在該網站中的檔案\n- 上傳至商務用 OneDrive 的檔案\n"
   - question: >
       Teams 遷移的範圍為何？
-    answer: "除了 Exchange Online、SharePoint 線上及商務用 OneDrive;Microsoft 會將 Teams 資料移轉至本機資料中心。 \n- Teams 聊天訊息，包括私人郵件和通道郵件。 \n- 用於聊天的 Teams 影像。 \n\nTeams 檔案會儲存在 SharePoint 線上，且 Teams 的聊天室檔案會儲存商務用 OneDrive。 語音信箱、行事曆和連絡人會儲存在 Exchange Online 中。 在許多情況下，Exchange Online、SharePoint 線上及商務用 OneDrive 已由本地資料中心地理位置的客戶使用，而且也是適用于合格客戶國家/地區 Microsoft 365 遷移計畫的一部分。\n"
+    answer: >
+      除了 Exchange Online、SharePoint 線上及商務用 OneDrive;Microsoft 會將 Teams 資料移轉至本機資料中心。
+
+      - Teams 聊天訊息，包括私人郵件和通道郵件。
+
+      - 用於聊天的 Teams 影像。
+
+
+      Teams 檔案會儲存在 SharePoint 線上，且 Teams 的聊天室檔案會儲存商務用 OneDrive。 語音信箱、行事曆和連絡人會儲存在 Exchange Online 中。 在許多情況下，Exchange Online、SharePoint 線上及商務用 OneDrive 已由本地資料中心地理位置的客戶使用，而且也是適用于合格客戶國家/地區 Microsoft 365 遷移計畫的一部分。
   - question: >
       在我的遷移完成時，我的租使用者核心客戶資料已存放在我的新地理位置中？
     answer: >
       由於 Exchange Online 和 SharePoint Online/商務用 OneDrive 之間的共用相依性，所以在遷移這兩項服務之前，無法將任何遷移視為已完成。 Exchange Online 和 SharePoint 線上/商務用 OneDrive 常常會以不同的時間進行遷移，並彼此獨立地進行遷移。 客戶租使用者系統管理員會在每次服務遷移完成時于訊息中心接收確認，而且可以隨時查看系統管理中心的資料位置卡，以確認每個服務的 rest 位置的核心客戶資料。
   - question: >
       如何在移動期間保證客戶資料是安全的，而且不會發生停機時間？
-    answer: "資料移動是後端服務作業，對使用者的影響最小。 在 [資料移動期間和之後，](during-and-after-your-data-move.md)會列出受影響的功能。 我們遵循 [Microsoft Online Services 服務等級協定 (SLA) ](https://go.microsoft.com/fwlink/p/?LinkId=523897) 以取得可用性，讓客戶無需準備或在移動期間進行監視。 \n  \n所有的 Microsoft 365 服務都會在資料中心執行相同的版本，因此您可以保證一致的功能。 整個程式都完全支援您的服務。\n  \n"
+    answer: >
+      資料移動是後端服務作業，對使用者的影響最小。 在 [資料移動期間和之後，](during-and-after-your-data-move.md)會列出受影響的功能。 我們遵循 [Microsoft Online Services 服務等級協定 (SLA) ](https://go.microsoft.com/fwlink/p/?LinkId=523897) 以取得可用性，讓客戶無需準備或在移動期間進行監視。
+
+
+      所有的 Microsoft 365 服務都會在資料中心執行相同的版本，因此您可以保證一致的功能。 整個程式都完全支援您的服務。
   - question: >
       不同的服務位於不同的 geos 會有什麼影響？
     answer: >
       有些 Microsoft 365 服務可能位於不同 geos 中的某些現有客戶及移動程式中間的客戶。 我們的服務彼此獨立執行，且在這種情況下不會影響使用者的體驗。不過，針對資料常駐的目的，在 Exchange Online 和 SharePoint 線上/商務用 OneDrive 遷移至相同的資料中心地理位置之前，無法將租使用者遷移視為完整。
   - question: >
       我的核心客戶資料位於何處？
-    answer: "客戶租使用者系統管理員可以隨時查看系統管理中心的資料位置卡，以確認每個服務（特別是針對其租使用者）的核心客戶資料。我們也會發佈資料中心 geos、資料中心的位置，以及 [Microsoft 365 互動式資料中心](https://office.com/datamaps)的 Office 365 客戶資料的位置，作為新承租人的目前預設核心客戶資料的參照。 您可以透過 [Microsoft 365 系統管理中心] 中組織設定檔底下的 [資料位置] 區段，確認 rest 上的客戶資料的位置。  \n \n"
+    answer: >
+      客戶租使用者系統管理員可以隨時查看系統管理中心的資料位置卡，以確認每個服務（特別是針對其租使用者）的核心客戶資料。我們也會發佈資料中心 geos、資料中心的位置，以及 [Microsoft 365 互動式資料中心](https://office.com/datamaps)的 Office 365 客戶資料的位置，作為新承租人的目前預設核心客戶資料的參照。 您可以透過 Microsoft 365 系統管理中心中組織設定檔底下的 [資料位置] 區段，在 rest 上驗證客戶資料的位置。  
   - question: >
       何時可以要求移動？
-    answer: "請參閱 [如何要求資料移動](request-your-data-move.md) 頁面以取得資料中心地理位置支援的時段。\n  \n"
+    answer: >
+      請參閱 [如何要求資料移動](request-your-data-move.md) 頁面以取得資料中心地理位置支援的時段。
   - question: >
       我可以要求移動的要求為何？
-    answer: "合格的客戶會在其 Microsoft 365 系統[管理中心](https://admin.microsoft.com/)中看到頁面。 請參閱 how [to 要求資料移動](request-your-data-move.md) 以取得如何要求移動的指示。 \n  \n"
+    answer: >
+      合格的客戶會在其[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中看到頁面。 請參閱 how [to 要求資料移動](request-your-data-move.md) 以取得如何要求移動的指示。
   - question: >
       在要求移動之後，是否可以變更我的選取專案？
     answer: >
@@ -65,7 +81,8 @@ sections:
       在開啟的登記週期過後，我們無法接受進行遷移的要求。
   - question: >
       如果我想要移動資料以取得更好的網路效能，該怎麼辦？
-    answer: "實體接近 Microsoft 365 資料中心，不是保證網路的更佳效能。 有許多因素和元件會影響使用者與 Microsoft 365 服務之間的網路效能。 如需此和效能調整的詳細資訊，請參閱[Microsoft 365 的網路規劃和效能調整](network-planning-and-performance.md)。\n  \n"
+    answer: >
+      實體接近 Microsoft 365 資料中心，不是保證網路的更佳效能。 有許多因素和元件會影響使用者與 Microsoft 365 服務之間的網路效能。 如需此和效能調整的詳細資訊，請參閱[Microsoft 365 的網路規劃和效能調整](network-planning-and-performance.md)。
   - question: >
       所有服務是否會將其資料在同一天內移動？
     answer: >
@@ -76,13 +93,16 @@ sections:
       客戶無法選取特定日期、不能延遲其移動，而且無法共用移動的特定日期或時間範圍。
   - question: >
       您可以在移動資料的時候進行共用嗎？
-    answer: "資料移動是後端作業，對使用者的影響最小。 複雜性、精確度及規模，我們需要在全域運作及自動環境中執行資料移動，禁止當您的租使用者或任何其他單一租使用者完成資料移動時，無法進行共用。 當客戶的資料移動完成時，客戶會在訊息中心接收一次確認。 \n"
+    answer: >
+      資料移動是後端作業，對使用者的影響最小。 複雜性、精確度及規模，我們需要在全域運作及自動環境中執行資料移動，禁止當您的租使用者或任何其他單一租使用者完成資料移動時，無法進行共用。 當客戶的資料移動完成時，客戶會在訊息中心接收一次確認。
   - question: >
       如果使用者在資料移動時存取服務，會發生什麼事？
-    answer: "在 [資料移動期間和之後](during-and-after-your-data-move.md) ，請參閱資料移動的完整清單可能會限制，以供每個服務的資料移動部分使用。 \n  \n"
+    answer: >
+      在 [資料移動期間和之後](during-and-after-your-data-move.md) ，請參閱資料移動的完整清單可能會限制，以供每個服務的資料移動部分使用。
   - question: >
       如何知道移動已完成？
-    answer: "觀賞 Microsoft 365 訊息中心，以確認每個服務資料的移動是否已完成。 移動每個服務的資料時，我們會發佈完成通知，讓您每個完成通知都有三個：每個針對 Exchange Online、SharePoint 線上及商務用 Skype 線上。 您也可以在 Microsoft 365 系統管理中心的組織設定檔底下的 [資料位置] 區段中，確認 rest 上的客戶資料的位置。  \n  \n"
+    answer: >
+      觀賞 Microsoft 365 訊息中心，以確認每個服務資料的移動是否已完成。 移動每個服務的資料時，我們會發佈完成通知，讓您每個完成通知都有三個：每個針對 Exchange Online、SharePoint 線上及商務用 Skype 線上。 您也可以透過 Microsoft 365 系統管理中心中組織設定檔底下的 [資料位置] 區段，確認其餘客戶資料的位置。  
   - question: >
       我是在其中一個新的資料中心 geos 中 Microsoft 365 客戶，但是當我註冊時，我選取不同的國家/地區。 我可以如何移至新的資料中心地理位置？
     answer: >
@@ -97,15 +117,27 @@ sections:
       您可以建立個別的試用租使用者來測試連線能力，但試用租使用者無法以任何方式結合現有的租使用者。
   - question: >
       我不想要等候 Microsoft 移動我的資料。 我是否可以只建立新租使用者並自行移動？
-    answer: "是的，不過處理常式不會像 Microsoft 執行資料移動一樣順利。\n  \n如果您在新的資料中心地理位置之後建立新租使用者，則新的租使用者將會主控于新的 geo 中。 這個新租使用者完全不同于您先前的承租人，您會負責移動所有使用者信箱、網站內容、功能變數名稱及其他任何資料。 請注意，您無法將租使用者名稱從一個承租人移至另一個承租人。 建議您等候 Microsoft 所提供的移動程式，因為我們會為您移動使用者的所有設定、資料和訂閱。\n  \n"
+    answer: >
+      是的，不過處理常式不會像 Microsoft 執行資料移動一樣順利。
+
+
+      如果您在新的資料中心地理位置之後建立新租使用者，則新的租使用者將會主控于新的 geo 中。 這個新租使用者完全不同于您先前的承租人，您會負責移動所有使用者信箱、網站內容、功能變數名稱及其他任何資料。 請注意，您無法將租使用者名稱從一個承租人移至另一個承租人。 建議您等候 Microsoft 所提供的移動程式，因為我們會為您移動使用者的所有設定、資料和訂閱。
   - question: >
       我的客戶資料已經移至新的資料中心地理位置。 我可以再移回來嗎？
-    answer: "否，這是不可能的。 移至新 geo 資料中心的客戶無法移回。 身為任何地理位置的客戶，您會體驗到相同品質的服務、效能及安全性控制。 [Microsoft 365 多地理](https://aka.ms/multi-geo)位置可供部分客戶作為附加元件，並可讓單一租使用者建立多個衛星 geos，並將使用者資料移至具有資料派駐承諾的 geos。\n  \n"
+    answer: >
+      否，這是不可能的。 移至新 geo 資料中心的客戶無法移回。 身為任何地理位置的客戶，您會體驗到相同品質的服務、效能及安全性控制。 [Microsoft 365 多地理](https://aka.ms/multi-geo)位置可供部分客戶作為附加元件，並可讓單一租使用者建立多個衛星 geos，並將使用者資料移至具有資料派駐承諾的 geos。
   - question: >
       在新資料中心內所主控的承租人是否 Microsoft 365 會提供給全國以外的使用者？
     answer: >
       是。 Microsoft 會在世界各地的35國家/地區內，以超過130個位置的 Internet 服務提供者（ (Isp) 中的對2700等合約來維護具有相關合約的大型全域網路。 使用者將能夠從網際網路上的任何地方存取資料中心。
   - question: >
       我的承租人已設定多地理位置附加元件。 我是否仍可在 Microsoft 365 移動程式中註冊我的租使用者，以變更我的預設地理位置，並將不在附屬區域中的任何使用者移至新的預設地理位置？
-    answer: "是的，您的承租人可供註冊，但由於已設定 [多地理](https://aka.ms/multi-geo)位置之客戶的承租人層級移動不完全支援，因此會有重要考慮。\n\nSharePoint線上和商務用 OneDrive 無法透過此程式在租使用者層級遷移至新的資料中心地理位置。 客戶管理員可以設定商務用 OneDrive 共用，以移至任何使用多地理位置的可用區域，但在已針對租使用者設定多地理位置之後，便無法變更租使用者的預設位置。\n\n針對加入宣告遷移的客戶，我們會將您目前的預設地理位置的所有 Exchange Online 信箱移至新的本機資料中心地理位置，並更新預設的 Exchange Online 地區。 我們不會移動在多地理位置衛星區域中設定的任何 EXO 信箱，繼續依照預定的方式，繼續遵循衛星區域資料派駐服務。 \n"
-additionalContent: "\n## <a name=\"related-topics\"></a>相關主題\n  [將核心資料移至新的 Microsoft 365 資料中心 geos](moving-data-to-new-datacenter-geos.md)\n        \n  [如何要求資料移動](request-your-data-move.md)\n        \n  [Microsoft 365多地理位置](https://aka.ms/multi-geo)\n        \n  [互動式資料中心對應 Microsoft 365](https://office.com/datamaps)\n        \n  [Microsoft 365支援](../business-video/get-help-support.md)\n        \n  [Microsoft Dynamics CRM Online 的新資料中心 geos](/power-platform/admin/new-datacenter-regions)\n          \n  [依地區的 Azure 服務](https://azure.microsoft.com/regions/)"
+    answer: >
+      是的，您的承租人可供註冊，但由於已設定 [多地理](https://aka.ms/multi-geo)位置之客戶的承租人層級移動不完全支援，因此會有重要考慮。
+
+
+      SharePoint線上和商務用 OneDrive 無法透過此程式在租使用者層級遷移至新的資料中心地理位置。 客戶管理員可以設定商務用 OneDrive 共用，以移至任何使用多地理位置的可用區域，但在已針對租使用者設定多地理位置之後，便無法變更租使用者的預設位置。
+
+
+      針對加入宣告遷移的客戶，我們會將您目前的預設地理位置的所有 Exchange Online 信箱移至新的本機資料中心地理位置，並更新預設的 Exchange Online 地區。 我們不會移動在多地理位置衛星區域中設定的任何 EXO 信箱，繼續依照預定的方式，繼續遵循衛星區域資料派駐服務。
+additionalContent: "\n## <a name=\"related-topics\"></a>相關主題\n  [將核心資料移至新的 Microsoft 365 資料中心 geos](moving-data-to-new-datacenter-geos.md)\n\n  [如何要求資料移動](request-your-data-move.md)\n\n  [Microsoft 365多地理位置](https://aka.ms/multi-geo)\n\n  [互動式資料中心對應 Microsoft 365](https://office.com/datamaps)\n\n  [Microsoft 365支援](../business-video/get-help-support.md)\n\n  [Microsoft Dynamics CRM Online 的新資料中心 geos](/power-platform/admin/new-datacenter-regions)\n\n  [依地區的 Azure 服務](https://azure.microsoft.com/regions/)"

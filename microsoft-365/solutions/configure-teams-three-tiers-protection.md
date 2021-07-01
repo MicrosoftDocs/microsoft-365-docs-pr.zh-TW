@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: 瞭解如何使用三層保護來設定 Teams 以取得更佳的檔案共用安全性，並以輕鬆的共同作業方式來平衡安全性。
-ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683400"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228816"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>為小組設定三層保護
 
@@ -52,7 +52,7 @@ ms.locfileid: "52683400"
 
 |-|基準線 (公開)|基準線 (私人)|敏感性|高敏感度|
 |:-----|:-----|:-----|:-----|:-----|
-|私人或公用的小組|公開|Private|Private|Private|
+|私人或公用的小組|公開|私人|私人|Private|
 |誰可以存取？|組織中所有人，包括 B2B 使用者。|僅限小組的成員。 其他人可以要求存取相關聯的網站。|僅限小組的成員。|僅限小組的成員。|
 |私人頻道|擁有者和成員可以建立私人頻道|擁有者和成員可以建立私人頻道|只有擁有者可以建立私人頻道|只有擁有者可以建立私人頻道|
 |網站層級的來賓存取|**新的及現有的來賓** (預設值)。|**新的及現有的來賓** (預設值)。|**新的及現有的來賓** 或 **只有貴組織中的人員** (視小組需求而定)。|**新的及現有的來賓** 或 **只有貴組織中的人員** (視小組需求而定)。|
@@ -122,9 +122,9 @@ ms.locfileid: "52683400"
 
 敏感度標籤中的未管理裝置設定只會影響 SharePoint 存取。 如果您想要將未管理裝置控制範圍擴大至 SharePoint 以外，您可以改為[為組織的所有應用程式和服務建立 Azure Active Directory 條件式存取](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) (部分機器翻譯)。 若要特別針對 [Microsoft 365 服務](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365)設定此原則，請在 **[雲端應用程式或動作]** 下選取 **[Office 365]** 雲端應用程式。
 
-![Azure Active Directory 條件式存取原則中，Office 365 雲端應用程式的螢幕擷取畫面](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Azure Active Directory 條件式存取原則中，Office 365 雲端應用程式的螢幕擷取畫面](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-使用會影響所有 Microsoft 365 服務的原則，可為使用者提供更好的安全性和更好的體驗。 例如，當您封鎖僅 SharePoint 中未受管理裝置的存取權時，使用者仍可以使用未受管理裝置存取團隊中的聊天，但當他們嘗試存取 **[檔案]** 索引標籤時，將會失去存取權。使用 Office 365 雲端應用程式可協助避免[服務相依性](/azure/active-directory/conditional-access/service-dependencies)。
+使用會影響所有 Microsoft 365 服務的原則，可為使用者提供更好的安全性和更好的體驗。 例如，當您封鎖僅 SharePoint 中未受管理裝置的存取權時，使用者仍可以使用未受管理裝置存取團隊中的聊天，但當他們嘗試存取 **[檔案]** 索引標籤時，將會失去存取權。使用 Office 365 雲端應用程式可協助避免 [服務相依性](/azure/active-directory/conditional-access/service-dependencies)。
 
 ## <a name="next-step"></a>後續步驟
 

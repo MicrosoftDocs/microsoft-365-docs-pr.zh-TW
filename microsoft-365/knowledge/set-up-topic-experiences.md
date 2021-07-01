@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何設定 Microsoft Viva 主題
-ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893761"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229584"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定 Microsoft Viva 主題
 
@@ -39,7 +39,7 @@ ms.locfileid: "52893761"
 
 ## <a name="assign-licenses"></a>指派授權
 
-您必須指派授權給將要使用主題的使用者。 只有具有授權的使用者可以查看主題的相關資訊，包括要聞、主題卡片、主題頁面和主題中心。 
+您必須指派授權給將要使用主題的使用者。 只有擁有授權的使用者可以看到主題的資訊，包括重點、主題卡片、主題頁面和主題中心。 
 
 若要指派授權：
 
@@ -61,7 +61,7 @@ ms.locfileid: "52893761"
 ## <a name="set-up-topics"></a>設定 [主題]
 
 > [!Note]
-> 第一次啟用主題探索時，可能需要長達兩周的時間，所有建議的主題都會出現在 [管理主題] 視圖中。 主題探索會隨著新內容或內容更新而繼續進行。 當組織中建議的主題數目隨著 Viva 主題評估新資訊的情況，正常情況會發生波動。
+> 第一次啟用主題探索時，可能需要長達兩周的時間，所有建議的主題都會出現在 [管理主題] 視圖中。 主題探索會隨著新內容或內容更新而繼續進行。 當 Viva Topics 評估新資訊時，貴組織中的建議主題數目通常會變動。
 
 設定主題
 1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，選取 [**安裝**]，然後查看 [檔案 **與內容**] 區段。
@@ -71,7 +71,7 @@ ms.locfileid: "52893761"
 
 3. 在 [**連線人員知識**] 頁面上，按一下 [**開始**]，逐步引導您完成安裝程式。
 
-    ![開始使用](../media/k-get-started.png) 
+    ![入門](../media/k-get-started.png) 
 
 4. 在 [ **選擇 Viva 主題如何尋找主題** ] 頁面上，您會設定主題探索。 在 [**選取 SharePoint 主題來源**] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 請選擇：
     - **所有網站**：貴組織的所有 SharePoint 網站。 這包括目前和未來的網站。
@@ -105,7 +105,7 @@ ms.locfileid: "52893761"
 
     完成並儲存 .csv 檔之後，請選取 **[流覽]** 以找出並選取。
     
-    選取 [下一步]。
+    選取 **[下一步]**。
 
 6. 在 [**神秘可以查看主題及其可以在何處查看** 頁面，您將會設定主題可見度。 在 [**神秘可以查看主題** 設定] 中，選擇誰可以存取主題詳細資料，例如高亮主題、主題卡片、搜尋中的主題答案和主題頁面。 您可以選取：
     - **組織中的所有人**
@@ -130,11 +130,14 @@ ms.locfileid: "52893761"
 
     ![主題管理的許可權](../media/km-setup-create-edit-topics.png) 
 
-    選取 [下一步]。
+    選取 **[下一步]**。
 
-9. 在 [ **建立主題中心** ] 頁面上，您可以建立可以查看主題頁面和管理主題的主題中心網站。 在 [ **網站名稱** ] 方塊中，輸入主題中心的名稱。 您可以選擇性地在 [ **描述** ] 方塊中輸入簡短的描述。 
+9. 在 [ **建立主題中心** ] 頁面上，您可以建立可以查看主題頁面和管理主題的主題中心網站。 在 [ **網站名稱** ] 方塊中，輸入主題中心的名稱。 若要變更 URL，您可以按一下鉛筆圖示。 （選用）在 [ **描述** ] 方塊中輸入簡短的描述。 
 
-   選取 [下一步]。
+   > [!Important]
+   > 您可以稍後變更網站名稱，但是在完成該嚮導後，就無法變更 URL。
+
+   選取 **[下一步]**。
 
    ![建立知識中心](../media/ksetup4.png)  
 
@@ -148,7 +151,7 @@ ms.locfileid: "52893761"
 
 ## <a name="manage-topic-experiences"></a>管理主題經驗
 
-設定好主題之後，您可以在[Microsoft 365 系統管理中心](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)變更您在安裝期間所選擇的設定。 請參閱下列參照：
+在您設定好主題之後，您可以在[Microsoft 365 系統管理中心](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)中變更您在安裝期間所選擇的設定。 請參閱下列參照：
 
 - [在 Microsoft Viva 主題中管理主題探索](topic-experiences-discovery.md)
 - [在 Microsoft Viva 主題中管理主題可見度](topic-experiences-knowledge-rules.md)

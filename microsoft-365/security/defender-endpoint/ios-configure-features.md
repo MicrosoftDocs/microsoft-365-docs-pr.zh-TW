@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 749e03cb9d14476245baea82c21d322d4d726aad
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194946"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230004"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上設定 Microsoft Defender for Endpoint
 
@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint 可以設定成傳送威脅信號，以用於應
 1. 在 [**條件式啟動**  >  **裝置條件**] 底下，您會發現設定 **允許的裝置威脅層級上限**。 這將需要設定為 [低]、[中]、[高] 或 [安全]。 您可以使用的動作會 **封鎖存取權** 或 **清除資料**。 您可能會看到 [資訊] 對話方塊，確定在此設定之前設定好您的連接器會生效。 如果您的連接器已設定好，您可以忽略此對話方塊。
 1. 完成工作分派並儲存原則。
 
-如需 MAM 或 app protection 原則的詳細資訊，請參閱 [iOS app protection 原則設定](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)。
+如需 MAM 或 app protection 原則的詳細資訊，請參閱 [iOS app protection 原則設定](/mem/intune/apps/app-protection-policy-settings-ios)。
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>為 MAM 或 unenrolled 裝置部署 Microsoft Defender for Endpoint
 

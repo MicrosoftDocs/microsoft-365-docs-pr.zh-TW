@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 以基本行動性和安全性管理 iOS 裝置。
-ms.openlocfilehash: 85baef2defa79255d560f848e57120353fd4fa2e
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 84f3589593ef26325397f5b6e90d5b21662d2352
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877077"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228240"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>建立 iOS 裝置的 APNs 憑證
 
@@ -27,7 +27,7 @@ ms.locfileid: "49877077"
 
 1. 使用您的全域系統管理員帳戶登入 Microsoft 365。
 
-2. 在您的瀏覽器中輸入  [https://protection.office.com](https://protection.office.com/) 。
+2. 在您的瀏覽器中輸入  <https://protection.office.com/> 。
 
 3. 選取 [ **資料遺失防護**   >  **裝置管理**]，然後 **為 iOS 裝置選擇 APNs 憑證**。
 
@@ -35,23 +35,23 @@ ms.locfileid: "49877077"
 
 5. 選取 [下載您的 CSR 檔案]，然後將憑證簽署要求儲存至電腦上您所記得的地方。 選取  **[下一步]**。
 
-6. 在 [建立 APNs 憑證] 頁面上：  
+6. 在 [建立 APNs 憑證] 頁面上：
 
     1. 選取 Apple APNS 入口網站以開啟 Apple Push 憑證入口網站。
 
     2. Sign in with an Apple ID.
 
-    >[!IMPORTANT]
-    >Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+       > [!IMPORTANT]
+       > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
     3. 選取 [  **建立憑證**]   並接受 [使用條款]。
 
     4. 流覽至您從 Microsoft 365 下載到電腦的憑證簽署要求，然後選取 [ **Upload**]。
 
-        將 Apple Push Certificate 入口網站建立的 APNs 憑證下載至您的電腦。
+       將 Apple Push Certificate 入口網站建立的 APNs 憑證下載至您的電腦。
 
-       >[!TIP]
-       >If you're having trouble downloading the certificate, refresh your browser.
+       > [!TIP]
+       > If you're having trouble downloading the certificate, refresh your browser.
 
 7. 回到 Microsoft 365，然後選取 [**下一步]**   以取得「  **Upload APNS 憑證**」   頁面。
 

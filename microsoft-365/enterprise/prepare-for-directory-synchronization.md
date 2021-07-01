@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何準備使用目錄同步處理以及使用此方法的長期優點來布建使用者 Microsoft 365。
-ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259556"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229764"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>準備將目錄同步處理至 Microsoft 365
 
@@ -89,7 +89,7 @@ ms.locfileid: "52259556"
 
 您需要準備的屬性如下所列：
 
-- **displayName**
+- **#a1**
 
   - 如果屬性存在於使用者物件中，它會與 Microsoft 365 同步處理。
   - 如果此屬性存在於使用者物件中，則必須有一個值。 也就是說，屬性必須不是空白的。
@@ -180,7 +180,7 @@ Active Directory 的設計目的是讓您組織中的使用者可以使用 **sAM
 
 您可能需要新增其他 UPN 尾碼，以將使用者的公司認證與 Microsoft 365 環境產生關聯。 UPN 尾碼是 @ 字元右側的 UPN 部分。 用於單一登入的 UPN 可包含字母、數字、句號、虛線和底線，但不得包含其他字元類型。
 
-如需如何將其他 UPN 尾碼新增至 Active Directory 的詳細資訊，請參閱 [Prepare for 目錄同步]( https://go.microsoft.com/fwlink/p/?LinkId=525430)處理。
+如需如何將其他 UPN 尾碼新增至 Active Directory 的詳細資訊，請參閱 [Prepare for 目錄同步](https://go.microsoft.com/fwlink/p/?LinkId=525430)處理。
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. 與 Microsoft 365 UPN 搭配使用的 AD DS UPN
 

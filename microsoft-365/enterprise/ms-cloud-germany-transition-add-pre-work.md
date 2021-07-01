@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 以 Office 365 新德文 datacenter 區域中的服務的準備工作。
-ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b7a43789aaa61c03e254275fbf7cc945670ccc2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844283"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229812"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 
@@ -122,8 +122,8 @@ OCCT 可在任何時間，在階段9之前部署在 Windows 用戶端上。 [！
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 通知外部夥伴即將進行的轉換至 Office 365 服務。 |  客戶必須告知其合作夥伴已啟用共用行事曆和可用性位址空間設定 (允許 Office 365) 共用空閒/忙碌資訊。 當 Exchange Online 遷移完成時，可用性設定必須進行轉換，以使用[Office 365 世界端點](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
-| 通知使用者必要的 IMAP4/POP3/SMTP 用戶端變更。 | 具有裝置連線至 Microsoft 雲端 Deutschland 端點的使用者通訊協定 IMAP4 POP3，SMTP 是必要手動更新其用戶端裝置以切換至[Exchange Online 伺服器名稱](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)的使用者。 | 將這種相依性傳遞給這些通訊協定的使用者，並確保使用者可以在遷移期間，切換至使用 Outlook 的行動或 Outlook 網頁。 若失敗更新用戶端端點，將會在遷移使用者信箱時，對 Microsoft Cloud Deutschland 造成用戶端連線失敗。 |
+| 通知外部夥伴即將進行的轉換至 Office 365 服務。 |  客戶必須告知其合作夥伴已啟用共用行事曆和可用性位址空間設定 (允許 Office 365) 共用空閒/忙碌資訊。 當 Exchange Online 遷移完成時，可用性設定必須進行轉換，以使用[Office 365 世界端點](/microsoft-365/enterprise/urls-and-ip-address-ranges)。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
+| 通知使用者必要的 IMAP4/POP3/SMTP 用戶端變更。 | 具有裝置連線至 Microsoft 雲端 Deutschland 端點的使用者通訊協定 IMAP4 POP3，SMTP 是必要手動更新其用戶端裝置以切換至[Exchange Online 伺服器名稱](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)的使用者。 | 將這種相依性傳遞給這些通訊協定的使用者，並確保在遷移期間，他們可以切換為使用 Outlook 行動或 Outlook 網頁版。 若失敗更新用戶端端點，將會在遷移使用者信箱時，對 Microsoft Cloud Deutschland 造成用戶端連線失敗。 |
 ||||
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Online混合客戶
@@ -139,7 +139,7 @@ Exchange Online混合管理員 **必須執行混合式設定向導 (HCW)** 做�
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 使用 Office 365 德國設定重新執行 HCW <br><br> <i>您可以在接收到 Office 365 租使用者遷移 (階段 1) 開始的訊息中心通知之後，立即啟動此活動。</i>| 卸載及重新執行 HCW (17.0.5378.0 或以上) 從 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 第5階段開始，可確保您的內部部署設定準備好使用 Microsoft Cloud Deutschland 使用者和遷移至 Office 365 德國地區的使用者來傳送和接收郵件。 <p><li> 在 HCW 的 [**我的 Office 365 組織** 底下的清單方塊] 中，選取 [ **Office 365 德國]。** | 在階段 5 [Exchange 遷移] 開始之前，無法完成這項工作，可能會導致 NDRs 內部部署 Exchange 部署及 Office 365 之間的郵件路由。
-| 保留共用信箱設定 | 有些混合式客戶已使用 Exchange Online 命令將雲端使用者信箱轉換成「共用」信箱。 此雲端信箱設定會寫入至信箱和本機 Exchange Online 目錄，但是它並未透過 AAD 連線同步處理回客戶的 Active directory。 結果是信箱 RemoteRecipientType 及 RemoteDisplayType 值之 Active Directory 表示的差異，以及 Exchange Online 定義為共用信箱。 <br><br> 客戶負責確定已使用、或將所有共用信箱正確布建 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` `Set-RemoteMailbox -Shared` 。  請參閱此參考以瞭解如何 [在混合式環境中轉換使用者的信箱](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| 無法在階段 5 [Exchange Online 遷移] 之前完成此工作，可能會導致 NDRs 共用信箱，將其轉換回未授權的信箱，並失去受影響信箱的共用存取權。 [在 Exchange 混合式部署中執行目錄同步處理之後，共用信箱會意外轉換為使用者信箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)。 Exchange Online 遷移完成之前，不會解決此影響的影響。
+| 保留共用信箱設定 | 有些混合式客戶已使用 Exchange Online 命令將雲端使用者信箱轉換成「共用」信箱。 此雲端信箱設定會寫入至信箱和本機 Exchange Online 目錄，但是它並未透過 AAD 連線同步處理回客戶的 Active directory。 結果是信箱 RemoteRecipientType 及 RemoteDisplayType 值之 Active Directory 表示的差異，以及 Exchange Online 定義為共用信箱。 <br><br> 客戶負責確定已使用、或將所有共用信箱正確布建 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` `Set-RemoteMailbox -Shared` 。  請參閱此參考以瞭解如何 [在混合式環境中轉換使用者的信箱](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox)。| 無法在階段 5 [Exchange Online 遷移] 之前完成此工作，可能會導致 NDRs 共用信箱，將其轉換回未授權的信箱，並失去受影響信箱的共用存取權。 [在 Exchange 混合式部署中執行目錄同步處理之後，共用信箱會意外轉換為使用者信箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)。 Exchange Online 遷移完成之前，不會解決此影響的影響。
 ||||
 
 ## <a name="skype-for-business-online"></a>商務用 Skype Online
@@ -232,7 +232,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

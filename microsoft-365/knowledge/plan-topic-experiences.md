@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題的計畫
-ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583109"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229536"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva 主題的計畫
 
@@ -42,7 +42,9 @@ ms.locfileid: "52583109"
 
 ## <a name="topic-discovery"></a>主題探索
 
-主題探索設定會指定使用哪些 SharePoint 網站作為主題的來源。 您可以選擇包含所有 SharePoint 網站、特定網站清單或沒有網站。 建議您選擇 [所有網站]，讓主題體驗能夠為您的使用者探索大量的良好主題。
+主題探索設定會指定使用哪些 SharePoint 網站作為主題的來源。 這包括傳統和現代的網站，以及與 Microsoft Teams 和 Microsoft 365 群組相關聯的網站。 不包含 OneDrive 網站。
+
+您可以選擇包含所有 SharePoint 網站、特定網站清單或沒有網站。 建議您選擇 [所有網站]，讓主題體驗能夠為您的使用者探索大量的良好主題。
 
 當您設定 Viva Topics 時，可以選擇下列選項：
 
@@ -128,7 +130,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>系統管理
 
-當您設定主題時，會自動建立主題中心。 請考慮您想要為主題中心命名的專案，以及您想要的 URL 的名稱。 您可以設定名稱和 URL 做為安裝程式的一部分，您可以變更 Microsoft 365 系統管理中心的名稱 (，但不能變更 URL) 。 您可以只有一個主題中心。
+當您設定主題時，會自動建立主題中心。 請考慮您想要為主題中心命名的專案，以及您想要的 URL 的名稱。 您可以設定名稱及 URL 做為安裝程式的一部分，您可以變更 Microsoft 365 系統管理中心稍後的名稱 (但不能變更 URL) 。 您可以只有一個主題中心。
 
 ## <a name="setup-checklist"></a>安裝檢查清單
 
