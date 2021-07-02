@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: 本文包含一些常見問題的解答，系統管理員會使用 Office 365 匯入服務，將 PST 檔案匯入至 Microsoft 365。
-  ms.openlocfilehash: 27fa3b93b53a497fcff63524b04f427049bac412
-  ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+  ms.openlocfilehash: 4340285e6c7cff857e3f3de771ec6e67d4ce010c
+  ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/28/2021
-  ms.locfileid: "52090626"
+  ms.lasthandoff: 07/02/2021
+  ms.locfileid: "53276938"
 title: 匯入 PST 檔案的常見問題集
 summary: "**本文適用于系統管理員。您是否要將 PST 檔案匯入您自己的信箱？請參閱 [從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)**\n\n以下是一些有關使用 Office 365 匯入服務大量匯入 PST 檔案以 Microsoft 365 信箱的常見問題。 如需如何匯入 PST 檔案的詳細資訊，請參閱[將 pst 檔案匯入至 Office 365](./importing-pst-files-to-office-365.md)。\n  \n## <a name=\"using-network-upload-to-import-pst-files\"></a>使用網路上傳來匯入 PST 檔案\n\n如需逐步指示，請參閱[使用網路上傳將 PST 檔案匯入至 Office 365](use-network-upload-to-import-pst-files.md)。\n"
 sections:
@@ -74,12 +74,9 @@ sections:
       我是否可以使用網路上傳方式將 PST 檔匯入 Exchange Online 的公用資料夾？
     answer: >
       否，您無法將 PST 檔案匯入公用資料夾。
-
-
-      ## <a name="using-drive-shipping-to-import-pst-files"></a>使用磁碟機寄送來匯入 PST 檔案
-
-
-      如需逐步指示，請參閱[使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)。
+  - question: >
+      建立網路上傳匯入工作時，是否有任何螢幕解析度需求？
+    answer: "如果本機電腦上的畫面解析度設定為 1366 x 768，您可能會在建立匯入工作時發生問題。 如果是這種情況，建議您將螢幕解析度變更為不同的設定，然後建立新的匯入工作。 我們正在努力修正此問題。     \n\n\n\n## <a name=\"using-drive-shipping-to-import-pst-files\"></a>使用磁碟機寄送來匯入 PST 檔案\n\n如需逐步指示，請參閱[使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)。\n"
   - question: >
       必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？
     answer: "您必須獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。\n  \n此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：\n  \n- 您必須在 Exchange Online 中受指派為 [郵件收件者] 角色。根據預設，此角色會指派給 [組織管理] 與 [收件者管理] 角色群組。\n    \n    或者\n    \n- 您必須是組織中的全域系統管理員。\n    \n> [!TIP]\n> 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 \n  \n"
@@ -166,4 +163,8 @@ sections:
       是。
   - question: >
       If I have to ship my hard drive to another country, is there anything I need to do?
-    answer: The hard drive that you ship to Microsoft might have to cross international borders. 在這種情況下，您必須負責確保硬碟機和它所包含的資料，會根據適用的法律匯入和/或匯出。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+    answer: >
+      The hard drive that you ship to Microsoft might have to cross international borders. 在這種情況下，您必須負責確保硬碟機和它所包含的資料，會根據適用的法律匯入和/或匯出。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+  - question: >
+      建立磁片磁碟機運送的匯入工作時，是否有任何螢幕解析度需求？
+    answer: 如果本機電腦上的畫面解析度設定為 1366 x 768，您可能會在建立匯入工作時發生問題。 如果是這種情況，建議您將螢幕解析度變更為不同的設定，然後建立新的匯入工作。 我們正在努力修正此問題。

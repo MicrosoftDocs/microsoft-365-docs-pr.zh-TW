@@ -1,0 +1,8 @@
+- name: 'M365 Office LTI (預覽) '
+  href: index.md
+- name: '使用 Microsoft OneDrive LTI 與畫布 (預覽) '
+  href: onedrive-lti.md
+- name: '使用具有畫布 (預覽的 Microsoft Teams 類別) '
+  href: teams-classes-with-canvas.md
+- name: '使用畫布 (預覽的 Microsoft Teams 會議) '
+  href: teams-meetings-with-canvas.md
