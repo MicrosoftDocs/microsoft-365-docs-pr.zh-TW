@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: 1e1aa45c3bf4d31e4c969b0bc0949109fa716467
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 661ca9e227e8583bb6b601792e178c1c366132cb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841159"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256708"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -174,10 +174,16 @@ Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
 > [!NOTE]
-> Microsoft 365 資訊保護在預覽版中支援下列雙位元組字元集語言：
+> Microsoft 365 資訊保護支援下列雙位元組字元集語言：
 > - 中文 (簡體)
 > - 中文 (繁體)
 > - 韓文
 > - 日文
 >
 >這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+
+> [!TIP]
+> 若要偵測包含中文/日文字元和單一位元組字元的模式，或偵測包含中文/日文和英文的模式，請定義關鍵字或 RegEx 的兩個變體。 例如，若要偵測關鍵字 ，例如「机密的document」，請使用關鍵字的兩個變體；一個在日文和英文文字之間具有空格，另一個在日文和英文文字之間沒有空格。 因此，要新增到 SIT 中的關鍵字應該是「机密的 document」和「机密的document」。 同樣地，若要偵測片語「東京オリンピック2020」，應該使用兩個變體；「東京オリンピック 2020」和「東京オリンピック2020」。
+> 使用雙位元組連字號或雙位元組字元來建立 RegEx 時，請務必逸出這兩個字元，就像一個字元會逸出 RegEx 中的連字號或空格一樣。 以下是範例 RegEx 供參考：
+    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+> 我們建議您在關鍵字清單中使用字串比對，而不是文字比對。

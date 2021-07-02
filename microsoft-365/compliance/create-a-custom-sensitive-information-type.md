@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在安全性 & 合規性中心建立、修改、移除及測試 DLP 的自訂機密資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227148"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256720"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自訂敏感性資訊類型入門
 
@@ -182,10 +182,16 @@ Sum = 數位 1 * 加權 1 + number 2 * 加權 2 + 數位 3 * 加權 3 + 數位 4
 
 
 > [!NOTE]
-> Microsoft 365 資訊保護在預覽版中支援下列雙位元組字元集語言：
+> Microsoft 365資訊保護支援雙位元組字元組語言：
 > - 中文 (簡體)
 > - 中文 (繁體)
 > - 韓文
 > - 日文
 >
 >這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+
+> [!TIP]
+> 若要偵測包含中文/日文字元和單一位元組字元的模式，或是偵測包含中文/日語和英文的模式，請定義關鍵字或 RegEx 的兩個變體。 例如，若要偵測關鍵字（如 "機密的document"），請使用關鍵字的兩個變體;一個具有介於日文和英文文字之間的空格，另一個在日文和英文文字之間沒有空格的空格。 因此，在 SIT 中新增的關鍵字應該是 "機密的 document" 和 "機密的document"。 同樣地，若要偵測片語 "東京オリンピック 2020"，應使用兩個變體;"東京オリンピック 2020" 和 "東京オリンピック 2020"。
+> 使用雙位元組連字號或雙位元組句點建立 RegEx 時，請務必要對像是一個字元的轉義符，以在 RegEx 中轉義連字號或句點。 以下是範例參考的範例：
+    -  (？ <！ \d)  ( [4] [0-9] {3} [ \- ？ \-\t] * [0-9]{4}
+> 我們建議您在關鍵字清單中使用字串比對，而不是字相符。

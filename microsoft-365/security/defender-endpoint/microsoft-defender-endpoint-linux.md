@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893737"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256888"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
@@ -43,7 +43,7 @@ ms.locfileid: "52893737"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安裝 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 - 存取 Microsoft Defender 資訊安全中心入口網站
 - 使用 [systemd](https://systemd.io/) 系統管理員的 Linux 發行
@@ -70,7 +70,8 @@ ms.locfileid: "52893737"
   - 協力廠商管理工具：
     - [使用 Puppet 建構管理工具進行部署](linux-install-with-puppet.md)
     - [使用 Ansible 建構管理工具進行部署](linux-install-with-ansible.md)
-
+    - [使用 Chef 建構管理工具進行部署](linux-deploy-defender-for-endpoint-with-chef.md)
+    
 如果您遇到任何安裝失敗問題，請參閱在 [Linux 上的 Microsoft Defender For Endpoint 中的安裝失敗疑難排解](linux-support-install.md)。
 
 
@@ -137,7 +138,7 @@ ms.locfileid: "52893737"
 
 下列可供下載的試算表會列出您網路必須能夠連線的服務及其相關 URLs。 您應確定沒有防火牆或網路篩選規則可拒絕這些 URLs 的存取權。 如果有，您可能需要專門為其建立一個 *allow* 規則。
 
-| 網域清單的試算表 | 描述 |
+| 網域清單的試算表 | 說明 |
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | 服務位置、地理位置和作業系統的特定 DNS 記錄試算表。 <br><br>[在這裡下載試算表。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

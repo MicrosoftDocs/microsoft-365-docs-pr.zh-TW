@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何稽核 Microsoft 365 組織中使用者和管理員的活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d4a753a640b98125bc6ad02bd6043f28336e29b7
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538498"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256756"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的稽核解決方案
 
@@ -165,4 +165,4 @@ Microsoft 365 提供兩種稽核解決方案：基本稽核和進階稽核。
 
 ## <a name="training"></a>訓練
 
-訓練安全性作業小組、IT 管理員和合規性調查人員小組基礎稽核和進階稽核内容，可協助貴組織更快開始使用稽核來進行調查。 Microsoft 365 提供以下資源以協助組織中的這些使用者開始使用稽核：[描述 Microsoft 365 中的稽核功能](/learn/modules/describe-audit-capabilities-microsoft-365)。
+訓練安全性作業小組、IT 管理員和合規性調查人員小組基礎稽核和進階稽核的基礎内容，可協助貴組織更快開始使用稽核來進行調查。 Microsoft 365 提供以下資源以協助組織中的這些使用者開始使用稽核：[描述 Microsoft 365 中的電子文件探索及稽核功能](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)。

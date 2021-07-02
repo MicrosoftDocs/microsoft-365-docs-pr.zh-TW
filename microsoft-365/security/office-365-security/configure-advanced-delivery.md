@@ -17,12 +17,12 @@ ms.custom: ''
 description: 系統管理員可以瞭解如何使用 Exchange Online Protection (EOP) 中的高級傳遞原則，以識別不應該在特定支援案例中篩選的郵件 (協力廠商網路釣魚模擬及傳送至安全性作業的郵件 (SecOps) 信箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d35c1f0c7abc7b6ce34fc9c2ec4d5fd5b228ae
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 053f88da96983b03ad03e75c11a4fa692ac6a850
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137736"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256864"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>設定將協力廠商網路釣魚模擬的傳遞給使用者及未篩選的郵件以 SecOps 信箱
 
@@ -91,7 +91,7 @@ ms.locfileid: "53137736"
 
      若要移除現有的值，請按一下 ![[移除] 圖示](../../media/m365-cc-sc-remove-selection-icon.png) 值旁邊的 [移除]。
 
-4. 完成後，按一下 [儲存]。
+4. 完成後，按一下 **[儲存]**。
 
 您設定的 SecOps 信箱專案會顯示在 [ **SecOps 信箱** ] 索引標籤上。若要進行變更，請按一下索引標籤 ![ ](../../media/m365-cc-sc-edit-icon.png) 上的 [編輯圖示 **編輯** ]。
 
@@ -161,7 +161,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<Ema
 此範例會建立 SecOps 信箱原則。
 
 ```powershell
-New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 ```
 
 如需詳細的語法及參數資訊，請參閱 [SecOpsOverridePolicy](/powershell/module/exchange/new-secopsoverridepolicy)。

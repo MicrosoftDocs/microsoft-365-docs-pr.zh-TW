@@ -3,7 +3,7 @@ title: 使用具有畫布的 Microsoft Teams 類別
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer: amitman
+ms.reviewer: sovaish
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 將 Microsoft Teams 類別與畫布整合
-ms.openlocfilehash: 8e28cc8401dbf37d6e780b8f56dc300982abd0cc
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 50e4e8ef912a8f19f379bba29b328a5a27358b5c
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137676"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256900"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>使用具有畫布的 Microsoft Teams 類別
 
@@ -32,18 +32,18 @@ Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協�
 在管理 Instructure 畫布內的 Microsoft Teams 整合之前，請務必在完成 canvas 管理員設定之前，讓您的組織中組織 Microsoft Office 365 系統管理員核准的畫布 Azure 應用程式的 **Microsoft Teams 同步處理畫布** Microsoft Azure。
 
 1. 登入畫布。
- 
+
 2. 選取全域導覽中的 [ **管理** ] 連結，然後選取您的帳戶。
 
-3. 在 [系統 **管理] 導覽** 中，選取 [**設定**] 連結，然後選取 [整合] 索引標籤。 
+3. 在 [系統 **管理] 導覽** 中，選取 [**設定**] 連結，然後選取 [整合] 索引標籤。
 
 4. 開啟開啟開啟的開啟以啟用 Microsoft Teams 同步處理。
 
    ![團隊-同步處理](media/teams-sync.png)
 
-5. 輸入您的 Microsoft 租使用者名稱和登入屬性。 
+5. 輸入您的 Microsoft 租使用者名稱和登入屬性。
 
-   login 屬性將用於將 Canvas 使用者與 Azure Active Directory 使用者關聯。 
+   login 屬性將用於將 Canvas 使用者與 Azure Active Directory 使用者關聯。
 
 6. 選取 [**更新設定** 完畢之後。
 
@@ -52,7 +52,7 @@ Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協�
    ![許可權](media/permissions.png)
 
 8. 選取 [ **接受**]。
- 
+
 ## <a name="canvas-admin"></a>畫布管理員
 
 設定 Microsoft Teams LTI 1.3 整合。
@@ -63,8 +63,8 @@ Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協�
 
 1. 存取 **管理員設定**  >  **應用程式**。
 
-2. 選取 [ **+ App** ]，以新增 Teams LTI 應用程式。 
- 
+2. 選取 [ **+ App** ]，以新增 Teams LTI 應用程式。
+
    ![外部應用程式](media/external-apps.png)
 
 3. 選取 [ **依用戶端識別碼** ] 設定類型。
@@ -72,8 +72,8 @@ Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協�
    ![新增應用程式](media/add-app.png)
 
 4. 輸入提供的用戶端識別碼，然後選取 [ **提交**]。
-   
-   您會注意到用戶端識別碼的 Microsoft Teams 類別 LTI 應用程式名稱，以確認。 
+
+   您會注意到用戶端識別碼的 Microsoft Teams 類別 LTI 應用程式名稱，以確認。
 
 5. 選取 [安裝]。
 

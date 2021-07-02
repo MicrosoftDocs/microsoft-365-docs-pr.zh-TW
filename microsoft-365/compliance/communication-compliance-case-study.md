@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b44977252b18c29a5f05a67f4ffbdb7dc85a8188
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227396"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256780"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究-Contoso 會快速設定冒犯性語言原則，以進行 Microsoft Teams、Exchange 和 Yammer 通訊
 
@@ -91,7 +91,7 @@ Contoso 決定使用 *通訊合規性* 角色群組將所有通訊合規性管�
 | **通訊合規性調查員** | 使用此群組可將許可權指派給將充當通訊合規性調查人員的使用者。 指派給此角色群組的使用者可以查看郵件中繼資料和內容、升級至其他檢閱者、升級至 Advanced eDiscovery 案例、將通知傳送給使用者，以及解決警示。 |
 | **通訊合規性檢視者** | 使用此群組可將管理通訊報告的許可權指派給使用者。 指派給此角色群組的使用者，可以存取通訊合規性首頁上的所有報告元件，並可以查看所有的通訊符合性報告。 |
 
-1. Contoso IT 系統管理員可以使用全域管理員帳戶的認證來登入 **Office 365 安全性 & 規範中心** 許可權] [ (https://protection.office.com/permissions)](https://protection.office.com/permissions)頁面，並選取在 Microsoft 365 中查看及管理角色的連結。
+1. Contoso IT 系統管理員可以使用全域管理員帳戶的認證來登入 **Office 365 安全性 & 規範中心** 許可權] [ (https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions)頁面，並選取在 Microsoft 365 中查看及管理角色的連結。
 2. 在 **安全性 & 規範中心** 內，他們會移至 [**許可權**]，然後選取在 Office 365 中查看及管理角色的連結。
 3. 管理員選取 *通訊合規性* 角色群組，然後選取 [ **編輯角色群組**]。
 4. 管理員從左功能窗格中，選取 **[選擇成員** ]，然後選取 [ **編輯**]。

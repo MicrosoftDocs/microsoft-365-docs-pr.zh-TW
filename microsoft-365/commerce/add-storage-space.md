@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 在您的 Microsoft 365 訂閱中新增檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
 ms.date: 04/02/2021
-ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635855"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256816"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
@@ -87,6 +87,8 @@ Office 365 額外檔案儲存空間適用於下列訂閱︰
 - Office 365 Enterprise E3
 - Office 365 Enterprise E4
 - Office 365 企業版 E5
+- Office 365 A3 (教職員) 
+- Office 365 A5 (教職員) 
 - 具有 SharePoint 方案1的 Office 網頁版
 - 使用 SharePoint 方案2的 Office 網頁版
 - SharePoint Online 方案 1

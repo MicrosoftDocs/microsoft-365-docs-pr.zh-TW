@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 50273fabc85ecedc92b9c3ec379d3b82a63dd6e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226440"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256324"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -74,7 +74,7 @@ ms.locfileid: "53226440"
 
 完成下列步驟，以將使用者新增至「內部使用者風險管理」角色群組：
 
-1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions)。
 
 2. 在安全性與 &amp; 合規性中心，移至 [ **許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
 

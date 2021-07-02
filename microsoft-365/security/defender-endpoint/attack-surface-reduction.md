@@ -1,5 +1,5 @@
 ---
-title: 使用攻擊面減少規則，以防止惡意程式碼感染
+title: 使用受攻擊面縮小規則防止惡意程式碼感染
 description: 攻擊面減少規則可協助防止利用應用程式和腳本感染具有惡意程式碼的裝置。
 keywords: 攻擊面減少規則，asr，hips，主機入侵防護系統，保護規則，反侵入，antiexploit，exploit，感染防護，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: ed6dc9956c3e78f8ed39dca9cd6bf0421dd28456
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177630"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276986"
 ---
-# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
+# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用受攻擊面縮小規則防止惡意程式碼感染
 
 **適用於：**
 
@@ -90,7 +90,7 @@ ms.locfileid: "53177630"
 
 此外，執行舊版本 Windows 的裝置不支援警告模式。 在這種情況下，已設定為在警告模式中執行的攻擊面降規則會以封鎖模式執行。
 
-## <a name="notifications-and-alerts"></a>通知與提醒
+## <a name="notifications-and-alerts"></a>通知與警示
 
 每當觸發攻擊面降低規則時，就會在裝置上顯示通知。 您可以使用公司詳細資料和連絡資訊[自訂通知](customize-attack-surface-reduction.md#customize-the-notification)。
 
@@ -183,7 +183,6 @@ DeviceEvents
 |[封鎖從 USB 執行的不受信任和未簽署程式](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[從 Office 宏封鎖 WIN32 API 通話](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[使用勒索軟體的高級防護](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>封鎖濫用的漏洞簽章驅動程式
 
@@ -199,7 +198,7 @@ DeviceEvents
 >
 > 若要檢查驅動程式，請使用此網站 [提交分析的驅動程式](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
-所有支援 ASR 的版本都支援此規則;如下：
+支援的作業系統：
 
 - [Windows 10 專業版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
 - [Windows 10 企業版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
@@ -216,7 +215,7 @@ GUID:：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 透過社交工程或利用方式，惡意程式碼可以下載和啟動有效載荷，並中斷 Adobe Reader。 透過封鎖子流程以供 Adobe Reader 的產生，惡意程式碼嘗試使用它做為向量，便無法散佈。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -234,7 +233,7 @@ GUID:： `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 建立惡意的子流程是常見的惡意程式碼策略。 濫用 Office 為向量的惡意程式碼通常會執行 VBA 宏，並利用程式碼下載並嘗試執行更多負載。 不過，某些合法的企業營運應用程式也可能會產生子進程，以用於良性目的;例如，產生命令提示字元或使用 PowerShell 來設定登錄設定。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -256,7 +255,7 @@ LSASS 驗證在 Windows 電腦上登入的使用者。 Microsoft Defender Creden
 > [!NOTE]
 > 在某些應用程式中，此程式碼會列舉所有執行中的程式，並嘗試以詳盡的許可權來開啟這些進程。 此規則會拒絕應用程式的「開啟」動作，並將詳細資料記錄到安全性事件記錄檔。 此規則會產生大量的噪音。 如果您有一個應用程式，只列舉 LSASS，但沒有任何實際的功能影響，便不需要將其新增至排除清單。 這個事件記錄專案本身不一定表示惡意威脅。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -276,7 +275,7 @@ GUID:： `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 - 可執行檔 (例如 .exe、.dll 或 .scr) 
 - 腳本檔案 (例如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js 檔) 
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -313,7 +312,7 @@ GUID:： `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 >
 > 您可以使用資料夾路徑或完全限定的資源名稱來指定個別檔案或資料夾 () 但是您無法指定適用的規則或排除專案。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -332,7 +331,7 @@ GUID:： `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 腳本模糊處理是一種常見的技術，惡意程式碼作者和合法的應用程式都使用它來隱藏知識屬性或減少腳本載入時間。 惡意程式碼作者也會使用模糊處理，使惡意程式碼難以閱讀，這可防止人員和安全性軟體的接近審查。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -351,7 +350,7 @@ GUID:： `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 雖然不是常見的企業營運應用程式，但有時會使用腳本下載及啟動安裝程式。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -370,7 +369,7 @@ GUID:： `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 以向量進行濫用 Office 的惡意程式碼可能會嘗試中斷 Office，並將惡意元件儲存至磁片。 這些惡意元件會在電腦重新開機後，在系統上持續保存下來。 因此，此規則會防禦一般的持久性技術。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -393,7 +392,7 @@ GUID:： `3B576869-A4EC-4529-8536-B80A7769E899`
 
 此規則會套用至 Word、Excel 及 PowerPoint。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -415,7 +414,7 @@ GUID:： `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 > [!NOTE]
 > 此規則會在 Outlook 中封鎖 DLP 原則提示和工具提示。 此規則只適用于 Outlook 和 Outlook .com。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -436,7 +435,7 @@ GUID:： `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 Fileless 威脅使用各種不同的戰術來保持隱藏狀態，以避免在檔案系統中看到，以及取得定期執行控制。 有些威脅可以濫用 WMI 存放庫和事件模型，以保持隱藏狀態。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows伺服器1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
@@ -454,7 +453,7 @@ GUID:： `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 > [!WARNING]
 > 只有在您使用 [Intune](/intune) 或另一個 MDM 解決方案管理裝置時，才使用此規則。 因為此規則會封鎖 Configuration Manager 用戶端用來正確運作的 WMI 命令，所以此規則與管理的[Microsoft Endpoint Configuration Manager](/configmgr)不相容。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -470,7 +469,7 @@ GUID:： `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 使用此規則時，系統管理員可以防止未簽署或不受信任的可執行檔，從 USB 抽取式磁碟磁碟機（包括 SD 卡）執行。 封鎖的檔案類型包括可執行檔 (例如 .exe、.dll 或 .scr) 
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -489,7 +488,7 @@ GUID:： `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 OfficeVBA 啟用 WIN32 API 呼叫。 惡意程式碼可能會濫用這項功能，例如 [呼叫 WIN32 APIs 以發動惡意外殼代碼](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) ，而不需直接寫入任何內容。 大多數的組織不依賴在日常運作中呼叫 WIN32 APIs 的功能，即使它們是以其他方式使用宏。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -515,7 +514,7 @@ GUID:： `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 > [!NOTE]
 > 您必須 [啟用雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md) 才能使用此規則。
 
-此規則的引入時間：
+支援的作業系統：
 
 - [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)

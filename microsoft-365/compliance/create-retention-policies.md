@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169589"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256528"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -70,13 +70,14 @@ ms.locfileid: "53169589"
 
 2. 選取 **[新保留原則]** 以啟動 [建立保留原則] 精靈，並命名新的保留原則。
 
-3. 對於 **[選擇要套用原則的位置]** 頁面，請為 Teams 選取一個或兩個位置：**Teams 頻道訊息** 和 **Teams 聊天**。
-
-   針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含 [私人頻道](/microsoftteams/private-channels)。 目前，保留原則尚未支援 [私人頻道]。
-
+3. 針對 **[選擇要套用原則的位置]** 頁面，請選取 Teams 的任何或所有位置：
+    - **Teams 頻道訊息**：來自標準頻道聊天和標準頻道會議的訊息，但非來自有自身原則位置的[私人頻道](/microsoftteams/private-channels)。
+    - **Teams 聊天**：來自私人一對一聊天、群組聊天和會議聊天的訊息。
+    - **Teams 私人頻道訊息**：來自私人頻道聊天和私人頻道會議的訊息。 此選項目前正在預覽中推出，如果沒有顯示，請過幾天再試一次。
+    
    根據預設，[所有小組和所有使用者都處於選中狀態](#a-policy-that-applies-to-entire-locations)，但您可以透過選取 [**[選擇]** 和 **[排除]** 選項](#a-policy-with-specific-inclusions-or-exclusions)對其進行優化。 不過，在變更預設值之前，請注意保留原則的下列結果，該保留原則在已針對包含或排除項進行設定時，會刪除郵件：
     
-    - 對於群組聊天，因為訊息複本會儲存於聊天中包含的每位使用者的信箱中，所以系統會繼續從未指派此原則的使用者於「電子文件探索」結果中退回郵件複本。
+    - 對於群組聊天訊息和私人頻道訊息，因為訊息複本會儲存於聊天中包含的每位使用者的信箱中，所以系統會繼續從未指派此原則的使用者於「電子文件探索」結果中退回郵件複本。
     - 對於未指派此原則的使用者，已刪除的郵件將會回到其 Teams 搜尋結果中，但因為從指派給使用者之原則中已永久刪除，所以不會顯示郵件內容。
 
 4. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。
@@ -182,11 +183,15 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 電子郵件和 Exchange 公用資料夾的設定資訊
 
-**Exchange 電子郵件** 位置支援使用者的電子郵件、行事曆和其他信箱專案的保留，方法是套用信箱層級的保留設定。
+**Exchange 電子郵件** 位置支援使用者的電子郵件、行事曆和其他信箱專案的保留，方法是套用信箱層級的保留設定。 同時支援共用信箱。
 
-如需有關在設定 Exchange 保留設定時包含和排除哪些項目的詳細資訊，請參閱 [保留與刪除所包含的內容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+當您將保留設定套用至 **所有收件者** 時，任何[非使用中的信箱](create-and-manage-inactive-mailboxes.md) 皆會納入。 不過，如果您變更此預設值並設定[特定包含或排除範圍](#a-policy-with-specific-inclusions-or-exclusions)，則不支援非使用中的信箱，也不會針對這些信箱套用或排除保留設定。
 
-請注意，即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 若要保留這些信箱中的內容，請選取 [Microsoft 365 群組 **]** 位置。
+此外，資源信箱和 Microsoft 365 群組信箱不支援 **所有收件者** 預設，或特定包含或排除範圍。 對於 Microsoft 365 群組信箱，請改為選取 **[Microsoft 365 群組]** 位置。
+
+如果您選擇要包含或排除的收件者，您可以選取通訊群組和啟用電子郵件功能的安全性群組。 在幕後，這些群組會在設定時自動展開，以選取群組中使用者的信箱。 如果這些群組的成員資格於稍後變更，則現有的保留原則不會自動更新。
+
+如需有關在設定 Exchange 保留設定時包含和排除哪些信箱項目的詳細資訊，請參閱[保留與刪除包含的內容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
 **Exchange 公用資料夾** 位置會將保留設定套用至所有的公用資料夾，且無法在資料夾或信箱層級套用。
 

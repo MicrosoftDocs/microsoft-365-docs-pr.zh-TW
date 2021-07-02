@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227340"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256732"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -76,7 +76,7 @@ ms.locfileid: "53227340"
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>選項1：將所有規範使用者指派給通訊合規性角色群組
 
-1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions)。
 
 2. 在安全性與 &amp; 合規性中心，移至 [ **許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
 
@@ -94,7 +94,7 @@ ms.locfileid: "53227340"
 
 使用此選項可將使用者指派給特定角色群組，以分割組織中不同使用者之間的通訊一致性存取和責任。
 
-1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions)。
 
 2. 在安全性與 &amp; 合規性中心，移至 [ **許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
 

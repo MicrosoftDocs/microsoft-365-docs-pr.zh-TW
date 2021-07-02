@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 中的 Advanced eDiscovery 解決方案。 本文概要說明 Microsoft 365 中的 Advanced eDiscovery，它是協助您管理內部及外部調查的工具。 它也可讓您使用 Advanced eDiscovery 來管理您的法律調查的商業原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4fe94aed10a7b9e981e2a9d46e992d5557e35dcb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840835"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256456"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Microsoft 365 Advanced eDiscovery 概述
 
@@ -95,7 +95,7 @@ Microsoft 365 中內建 Advanced eDiscovery 的內建工作流程會與「電子
 
 Advanced eDiscovery 授權要求適當的組織訂閱和每一使用者授權。
 
-- **組織訂閱：** 若要存取 Microsoft 365 規範中心的 Advanced eDiscovery，您的組織必須具備下列其中一項：
+- **組織訂閱：** 若要存取 Microsoft 365 合規性中心中的 Advanced eDiscovery，您的組織必須具備下列其中一項：
 
   - Microsoft 365 E5 或 Office 365 E5 訂閱
   
@@ -111,7 +111,7 @@ Advanced eDiscovery 授權要求適當的組織訂閱和每一使用者授權。
 
   - Microsoft 365：必須對使用者指派 Microsoft 365 E5 授權、e5 符合性附加元件授權或 e5 eDiscovery 和審核附加元件授權。 Microsoft 365 教育版使用者必須被指派為 A5 授權。
 
-  - Office 365：使用者必須被指派 Office 365 E5 或 Office 365 教育版 A5 授權。
+  - Office 365：必須對使用者指派 Office 365 E5 或 Office 365 教育版 A5 授權。
 
    如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
@@ -124,7 +124,7 @@ Advanced eDiscovery 授權要求適當的組織訂閱和每一使用者授權。
 
 ![工作流程快速入門 Advanced eDiscovery](../media/get-started-AeD.png)
 
-|步驟  |描述  |
+|步驟  |說明  |
 |:---------|:---------|
 |[設定進階電子文件探索](get-started-with-advanced-ediscovery.md)| 驗證訂閱和授權需求之後，您可以指派許可權，並設定組織範圍的設定，以開始使用 Advanced eDiscovery。|
 |[建立及管理案例](create-and-manage-advanced-ediscoveryv2-case.md) | 建立案例以管理組織中所有法律和其他調查類型的 Advanced eDiscovery 工作流程。|
@@ -141,3 +141,7 @@ Advanced eDiscovery 授權要求適當的組織訂閱和每一使用者授權。
 [下載為 PDF 檔案](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
 [下載成 Visio 檔](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+
+## <a name="training"></a>訓練
+
+訓練您的 IT 系統管理員、eDiscovery 管理員和符合性調查小組中的 Advanced eDiscovery，可協助您的組織使用 Microsoft 365 eDiscovery 工具快速入門。 Microsoft 365 提供下列資源，協助貴組織中的使用者開始使用 eDiscovery：[說明 Microsoft 365 的 ediscovery 和審核功能](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)。

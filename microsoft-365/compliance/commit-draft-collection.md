@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立並重複使用草擬集合之後，您可以將其認可為審閱集。 當您認可草稿集合時，所收集的專案會新增至此案例中的「審閱」集。 收集的專案在考核集中後，您就可以進行分析、檢查及匯出。
-ms.openlocfilehash: e28592e7aac289bfc0cc29d312963fa21d9f8fd4
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: dceb661d9586e324482dc4f56bce12fafaf9b251
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838855"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276974"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>將草稿集合認可為 Advanced eDiscovery 中的審閱集
 
@@ -29,7 +29,7 @@ ms.locfileid: "50838855"
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>草稿集合提交至檢閱集
 
-1. 在 Microsoft 365 規範中心] 中，開啟 Advanced eDiscovery 案例，然後選取 [**集合**] 索引標籤，以顯示案例的集合清單。
+1. 在 Microsoft 365 合規性中心中，開啟 Advanced eDiscovery 案例，然後選取 [**集合**] 索引標籤，以顯示案例的集合清單。
 
    ![案例中的集合清單](../media/CommitDraftCollections1.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "50838855"
 
    1. 選取 [ **收集項目並新增至審閱集**]。
 
-   2. 決定是否要將集合新增至新的審閱集 (此集合會在您提交集合) 或現有的審閱集之後建立。 請根據您的決定完成本節。
+   2. 決定是否要將集合新增至新的審閱集 (該集合在您提交集合) 之後建立，或將其新增至現有的審閱集。 請根據您的決定完成本節。
 
    3. 設定其他集合設定：
 
@@ -73,6 +73,8 @@ ms.locfileid: "50838855"
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>在您認可草稿集合後會發生什麼事
 
 當您將草稿集合認可至審閱集時，會發生下列情況：
+
+- 如果您建立了新的審閱集以認可集合，則在案例中的「 **複查集** 」索引標籤上會建立並顯示「審閱」集。 新審閱集的狀態為 [ **就緒**]。 此狀態值表示已建立審閱集;這並不表示集合已新增至審閱集。 將集合中的專案新增至審閱集的狀態會顯示在 [ **集合** ] 索引標籤上。
 
 - 會再次執行收藏搜尋查詢。 這表示複製到審閱集的實際搜尋結果可能會不同于上次執行集合搜尋時所傳回的估計結果。
 

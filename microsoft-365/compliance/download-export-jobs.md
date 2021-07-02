@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: 將審閱集中的檔匯出為 Azure 儲存體帳戶，然後使用 Azure 儲存體總管將其下載到本機電腦。
-ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574707"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256504"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>將審閱集中的檔匯出為 Azure 儲存體帳戶
 
@@ -41,7 +41,7 @@ ms.locfileid: "51574707"
 
 第一步是建立匯出工作，將檔匯出為審閱集。 如需所有匯出選項的詳細指示，請參閱 [從審閱集匯出檔](export-documents-from-review-set.md)。 下列程式會強調將檔匯出至組織 Azure 儲存體帳戶的設定。
 
-1. 在 Microsoft 365 規範中心] 中，開啟 Advanced eDiscovery 案例，選取 [**複查集**] 索引標籤，然後選取您要匯出的複查集。
+1. 在 Microsoft 365 合規性中心中，開啟 Advanced eDiscovery 案例，選取 [**複查集**] 索引標籤，然後選取您要匯出的複查集。
 
 2. 在 [檢查] 集中，按一下 [**動作**  >  **匯出**]。
 
@@ -115,7 +115,7 @@ ms.locfileid: "51574707"
 > [!NOTE]
 > 您可以選取要下載及查看的特定專案，而不是在 Azure 儲存體總管中下載整個匯出工作。
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 - 「匯出工作」資料夾包含下列專案。 匯出資料夾中的實際專案是由建立匯出工作時設定的匯出選項所決定。 如需這些選項的詳細資訊，請參閱 [從審閱集匯出檔](export-documents-from-review-set.md)。
 

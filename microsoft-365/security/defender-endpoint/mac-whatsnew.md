@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a6415ec7d39bceeb4b68de164bbdcf6ef34755ff
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984769"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276902"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
@@ -37,6 +37,11 @@ ms.locfileid: "52984769"
 
 > [!IMPORTANT]
 > 在 macOS 11 (Big Sur) 上，Microsoft Defender for Endpoint 需要其他設定設定檔。 如果您是現有的客戶從舊版的 macOS 升級，請務必部署 [此頁面](mac-sysext-policies.md)所列的其他設定檔。
+
+## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
+
+- 解決了無法從 macOS 11 (Big Sur 上的 [狀態] 功能表啟動快速掃描的問題) 
+- 其他錯誤修正
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
 

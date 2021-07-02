@@ -15,21 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 系統管理中心的網路連線能力
-ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470619"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276998"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的網路連線能力
 
-Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者收集到的匯總網路連線度量，而且只能在租使用者中查看其管理使用者。
+Microsoft 365 系統管理中心現在包括從 Microsoft 365 租使用者收集到的匯總網路連線量，而且只能在租使用者中查看其管理使用者。
 
 > [!div class="mx-imgBorder"]
 > ![Network connectivity test 工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**網路評估** 和 **網路洞察力** 會顯示在 [健康情況] 底下的 Microsoft 365 系統管理中心 **|網路連線能力**。
+**網路評估** 和 **網路洞察力** 會顯示在 [狀況] 底下的 [Microsoft 365 系統管理] 中央 **|網路連線能力**。
 
 > [!div class="mx-imgBorder"]
 > ![網路效能頁面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
@@ -37,7 +37,7 @@ Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者
 >[!NOTE]
 >Admin Center 中的網路連線支援 WW 商業銀行或德國的承租人，但不會 GCC 適中、GCC 高、DoD 或中國。
 
-當您第一次流覽至 [網路性能] 頁面時，您必須設定位置，以查看全域網路效能對應、整個租使用者的網路評等範圍、遠端工作的使用者百分比與現場工作，以及要採取行動以進行進一步調查的目前問題清單。 您可以從 [一覽表] 窗格中，向下流覽以查看依位置的特定網路效能度量及問題。 如需詳細資訊，請參閱[Microsoft 365 系統管理中心的網路效能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
+當您第一次流覽至 [網路性能] 頁面時，您必須設定位置，以查看全域網路效能對應、整個租使用者的網路評等範圍、遠端工作的使用者百分比與現場工作，以及要採取行動以進行進一步調查的目前問題清單。 您可以從 [一覽表] 窗格中，向下流覽以查看依位置的特定網路效能度量及問題。 如需詳細資訊，請參閱[Microsoft 365 系統管理 Center 中的網路效能一覽](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
 您可能需要代表您的組織加入此功能的公開預覽。 驗收通常會立即發生，之後您會看到 [網路連接] 頁面。
 
@@ -75,7 +75,10 @@ Windows位置服務必須同意電腦。 您可以執行 **地圖** 應用程式
 
 測試報告如果是以 LAN 子網資訊新增，則會連結至該位置，否則只會顯示在城市位置。
 
-測試報告完成後，測量範例和辦公室位置應會在2-3 分鐘內開始顯示。 如需詳細資訊，請參閱[Microsoft 365 network connectivity test (preview) ](office-365-network-mac-perf-onboarding-tool.md)。
+測試報告完成後，測量範例和辦公室位置應會在2-3 分鐘內開始顯示。 如需詳細資訊，請參閱[Microsoft 365 network connectivity test](office-365-network-mac-perf-onboarding-tool.md)。
+
+> [!NOTE]
+> 將您的 office 位置新增至 Microsoft 365 Microsoft 365 系統管理中心中的網路連線時，您可以為您的局域網子網提供 IPv4 或 IPv6 位址。 EgressIP 位址必須使用 IPv4。
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此資訊？
 
@@ -86,7 +89,7 @@ Windows位置服務必須同意電腦。 您可以執行 **地圖** 應用程式
 具有多個辦公室位置和非一般網路周邊架構的複雜企業，可在初始上架到 Microsoft 365 時受益，或修復使用狀況成長所發現的網路效能問題。 使用 Microsoft 365 或任何已具備簡易及直接網路連線能力的企業，這通常不需要使用。 使用超過500個使用者和多個辦公室位置的企業，可獲得最大效益。
 
 >[!IMPORTANT]
->Microsoft 365 系統管理中心的網路洞察力、效能建議和評估目前處於預覽狀態，只適用于已登記功能預覽方案 Microsoft 365 承租人。
+>[！注意] Microsoft 365 系統管理 Center 中的網路洞察力、效能建議和評估目前處於預覽狀態，只適用于已登記功能預覽方案 Microsoft 365 承租人。
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise 網路連線挑戰
 
@@ -97,15 +100,15 @@ Windows位置服務必須同意電腦。 您可以執行 **地圖** 應用程式
 
 ## <a name="how-we-can-solve-these-challenges"></a>我們可如何解決這些難題
 
-企業可以遵循[Office 365 連線原則](./microsoft-365-network-connectivity-principles.md)，以及使用 Microsoft 365 系統管理中心的網路連線功能，來改善一般使用者經驗並保護其環境。 在大多數情況下，遵循這些一般原則會對使用者延隔時間產生重大的積極影響、服務可靠性和 Microsoft 365 的整體效能。
+企業可以遵循[Office 365 連線原則](./microsoft-365-network-connectivity-principles.md)，以及使用 Microsoft 365 系統管理中心網路連線功能，來改善一般使用者經驗並保護其環境。 在大多數情況下，遵循這些一般原則會對使用者延隔時間產生重大的積極影響、服務可靠性和 Microsoft 365 的整體效能。
 
 Microsoft 有時候會要求您調查大型企業客戶 Microsoft 365 的網路效能問題，這些問題通常會與客戶的網路周邊基礎結構相關的根本原因。 當找到客戶網路周邊問題的常見根本原因時，我們會搜尋識別它所識別的簡單測試度量。 使用識別特定問題的測量臨界值進行測試是非常有價值的，因為我們可以在任何位置測試相同的度量，判斷是否存在此根本原因，並加以共用，以與系統管理員的網路洞察力共用。
 
 有些網路洞察力只會指出需要進一步調查的問題。 網路洞察力：我們有足夠的測試顯示特定的修正動作，以修正根本原因，會列為建議的 **動作**。 這些建議會根據即時度量，顯示在預先確定的臨界值以外的值，比一般的最佳作法建議更為重要，因為它們是特定于您的環境，而且會在進行建議的變更之後顯示實際的改進。
 
-## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的網路連線能力一覽表
+## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的網路連線能力一覽
 
-Microsoft 已有數個 Office 桌面和網頁用戶端的現有網路度量，可支援 Microsoft 365 的運作。 這些測量現在是用來提供網路架構設計真知灼見和網路評估，其顯示在 Microsoft 365 系統管理中心的 [**網路連接**] 頁面中。
+Microsoft 已有數個 Office 桌面和網頁用戶端的現有網路度量，可支援 Microsoft 365 的運作。 這些測量現在是用來提供網路架構設計真知灼見和網路評估，顯示在 Microsoft 365 系統管理 Center 的 [**網路連接**] 頁面中。
 
 根據預設，與網路度量相關聯的大致位置資訊，識別用戶端裝置所在的城市。 每個位置的網路評估會顯示色彩，每個位置的使用者相對數量是以圓形大小來表示。
 

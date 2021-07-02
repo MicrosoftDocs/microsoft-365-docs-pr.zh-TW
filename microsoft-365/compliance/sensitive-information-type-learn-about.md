@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7e99198e0713a1940f094c3875293b2590f31e3f
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245645"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256852"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
@@ -104,7 +104,7 @@ ms.locfileid: "52245645"
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - 阿根廷國內身分識別號碼 
-- 身分識別 
+- Identity 
 - 身分識別的國內身分識別卡片 
 - DNI 
 - 個人的 NIC 註冊人員 
@@ -144,15 +144,22 @@ ms.locfileid: "52245645"
 
 
 > [!NOTE]
-> 在 Microsoft 365 服務的資料遺失防護中，可立即使用的增強信賴等級可供立即使用，針對 Microsoft 365 服務、通訊法規遵從性、資訊管理及記錄管理的 Microsoft 資訊保護。
-
-> Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
+> 在 Microsoft 365 服務的資料遺失防護功能、Microsoft 資訊保護 Microsoft 365 服務、通訊法規遵從性、資訊管理及記錄管理等情況下，可以立即使用的增強信賴等級。
+> Microsoft 365資訊保護現在支援雙位元組字元集語言：
 > - 中文 (簡體)
 > - 中文 (繁體)
 > - 韓文
 > - 日文
+> 
+> 這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
->這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+> [!TIP]
+> 若要偵測包含中文/日文字元和單一位元組字元的模式，或是偵測包含中文/日語和英文的模式，請定義關鍵字或 RegEx 的兩個變體。 例如，若要偵測關鍵字（如 "機密的document"），請使用關鍵字的兩個變體;一個具有介於日文和英文文字之間的空格，另一個在日文和英文文字之間沒有空格的空格。 因此，在 SIT 中新增的關鍵字應該是 "機密的 document" 和 "機密的document"。 同樣地，若要偵測片語 "東京オリンピック 2020"，應使用兩個變體;"東京オリンピック 2020" 和 "東京オリンピック 2020"。
+> 
+> 使用雙位元組連字號或雙位元組句點建立 RegEx 時，請務必要對像是一個字元的轉義符，以在 RegEx 中轉義連字號或句點。 以下是範例參考的範例：
+>    -  (？ <！ \d)  ( [4] [0-9] {3} [ \- ？ \-\t] * [0-9]{4}
+>
+> 我們建議您在關鍵字清單中使用 string match，而不是字比對。
 
 ## <a name="for-further-information"></a>如需詳細資訊
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)

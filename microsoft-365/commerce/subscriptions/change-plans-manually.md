@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536103"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256768"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -79,6 +79,8 @@ ms.locfileid: "52536103"
 將稍後移除目前訂閱的授權;您只需要支付新的使用者授權。
 
 ## <a name="step-4-reassign-licenses"></a>步驟4：重新指派授權
+
+當您從 Office 365 計畫升級為 Microsoft 365 計畫時，您必須變更所有使用者的授權指派。 手動變更計畫時，不會自動指派授權。
 
 ### <a name="reassign-a-license-for-one-user"></a>為一位使用者重新指派授權
 

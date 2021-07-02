@@ -1,5 +1,5 @@
 ---
-title: 設定在 Microsoft 365 中封存 ServiceNow 資料的連接器
+title: 設定在 Microsoft 365 中封存 ServiceNow 17a-4 DataParser 資料的連接器
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用 17a-4 ServiceNow DataParser 連接器，以匯入及封存 Microsoft 365 中的 ServiceNow 資料。
-ms.openlocfilehash: 9faa5fb1bf03bb7ab1e97b0bbd24aad4c38e91ae
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 992f34864f0de7ddff1f8159e9970157bcffb964
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096968"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276962"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>設定 ServiceNow 資料 (預覽的連接器) 
 

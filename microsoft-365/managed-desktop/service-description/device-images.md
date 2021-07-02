@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841279"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276926"
 ---
 # <a name="device-images"></a>裝置影像
 
@@ -25,7 +25,7 @@ ms.locfileid: "52841279"
 不論是定購 [新裝置](#new-devices) 還是重複使用 [現有](#existing-devices) 的裝置，您有數個選項可確保裝置上的影像符合我們的 [裝置需求](device-requirements.md#check-hardware-requirements)。
 
 ## <a name="new-devices"></a>新裝置
-當您從[認可的製造商](device-requirements.md#minimum-requirements)定購新的裝置時，請遵循下列步驟，以確定他們使用適當的 Microsoft 受管理的電腦影像和軟體設定來運送裝置。
+當您從[認可的製造商](device-requirements.md#minimum-requirements)定購新的裝置時，請遵循下列步驟，以確定他們使用適當的 Microsoft 受管理的電腦影像和軟體設定來運送裝置。 每當您計畫在第一次登錄服務中的特定裝置模型時，應測試範例，以確保其可滿足您預期的使用者體驗。 如需詳細資訊，請參閱 [驗證新裝置](/microsoft-365/managed-desktop/get-started/validate-device)。
 
 ### <a name="dell"></a>戴爾
 直接與戴爾銷售代表合作，以確保將 Microsoft 受管理的電腦核准的影像套用至您的訂單裝置。 如需 Dell 裝置、影像及訂購程式的相關問題，請與 MMD_at_dell@dell.com 聯繫。
