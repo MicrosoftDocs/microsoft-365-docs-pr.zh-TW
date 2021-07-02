@@ -66,7 +66,7 @@
 #### [macOS 上適用於端點的 Microsoft Defender]()
 ##### [macOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-mac.md)
 ##### [新增功能](mac-whatsnew.md)
- 
+
 ##### [部署]()
 ###### [Microsoft Intune 型部署](mac-install-with-intune.md)
 ###### [JAMF Pro 型部署]()
@@ -75,11 +75,11 @@
 ####### [設定裝置群組](mac-jamfpro-device-groups.md)
 ####### [設定原則](mac-jamfpro-policies.md)
 ####### [註冊裝置](mac-jamfpro-enroll-devices.md)
- 
+
 ###### [使用不同的行動裝置管理 (MDM) 系統部署](mac-install-with-other-mdm.md)
 ###### [手動部署](mac-install-manually.md)
 ##### [更新](mac-updates.md)
- 
+
 ##### [設定]()
 ###### [設定及驗證排除範圍](mac-exclusions.md)
 ###### [設定喜好設定](mac-preferences.md)
@@ -89,14 +89,14 @@
 ####### [JAMF 範例](mac-device-control-jamf.md)
 ####### [Intune 範例](mac-device-control-intune.md)
 ###### [排程掃描](mac-schedule-scan.md)
- 
+
 ##### [疑難排解]()
 ###### [安裝問題的疑難排解](mac-support-install.md)
 ###### [為績效問題疑難排解](mac-support-perf.md)
 ###### [為雲端連線能力疑難排解](troubleshoot-cloud-connect-mdemac.md)
 ###### [為核心擴充功能問題疑難排解](mac-support-kext.md)
 ###### [為授權問題疑難排解](mac-support-license.md)
- 
+
 ##### [隱私權](mac-privacy.md)
 ##### [資源](mac-resources.md)
 
@@ -104,10 +104,10 @@
 #### [iOS 上適用於端點的 Microsoft Defender]()
 ##### [iOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-ios.md)
 ##### [新功能](ios-whatsnew.md)
- 
+
 ##### [部署]()
 ###### [在 iOS 上透過 Intune 部署適用於端點的 Microsoft Defender](ios-install.md)
- 
+
 ##### [設定]()
 ###### [設定 iOS 功能](ios-configure-features.md)
 
@@ -115,8 +115,8 @@
 ###### [常見問題集與疑難排解問題](ios-troubleshoot.md)
 
 ##### [隱私權](ios-privacy.md)
- 
- 
+
+
 #### [Linux 上適用於端點的 Microsoft Defender]()
 ##### [Linux 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-linux.md)
 ##### [新功能](linux-whatsnew.md)
@@ -127,7 +127,7 @@
 ###### [使用 Chef 在 Linux 上部署適用於端點的 Microsoft Defender](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [更新](linux-updates.md)
- 
+
 ##### [設定]()
 ###### [設定及驗證排除範圍](linux-exclusions.md)
 ###### [靜態 Proxy 組態](linux-static-proxy-configuration.md)
@@ -136,29 +136,29 @@
 ###### [在 Linux 上使用適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
 ###### [為於端點的 Microsoft Defender 排程更新 (Linux)](linux-update-MDE-Linux.md)
 
- 
+
 ##### [疑難排解]()
 ###### [安裝問題的疑難排解](linux-support-install.md)
 ###### [調查代理程式健康狀況問題](health-status.md)
 ###### [為雲端連線能力問題疑難排解](linux-support-connectivity.md)
 ###### [為效能問題疑難排解](linux-support-perf.md)
 ###### [為遺失的事件問題疑難排解](linux-support-events.md)
- 
+
 ##### [隱私權](linux-privacy.md)
 ##### [資源](linux-resources.md)
- 
+
 #### [Android 上適用於端點的 Microsoft Defender]()
 ##### [Android 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
- 
+
 ##### [部署]()
 ###### [在 Android 上使用 Microsoft Intune 部署適用於端點的 Microsoft Defender](android-intune.md)
- 
+
 ##### [設定]()
 ###### [在 Android 上設定適用於端點的 Microsoft Defender 功能](android-configure.md)
- 
+
 ##### [隱私權]()
 ###### [Android 上適用於端點的 Microsoft Defender - 隱私權資訊](android-privacy.md)
- 
+
 ##### [疑難排解]()
 ###### [針對問題進行疑難排解](android-support-signin.md)
 
@@ -321,13 +321,13 @@
 ##### [啟用入侵防護](enable-exploit-protection.md)
 ##### [自訂利用保護](customize-exploit-protection.md)
 ##### [匯入、匯出及部署利用保護群組原則](import-export-exploit-protection-emet-xml.md)
-##### [探索保護參考](exploit-protection-reference.md )
+##### [探索保護參考](exploit-protection-reference.md)
 
 #### [網路保護]()
 ##### [保護您的網路](network-protection.md)
 ##### [評估網路保護](evaluate-network-protection.md)
 ##### [開啟網路保護](enable-network-protection.md)
- 
+
 #### [Web 保護]()
 ##### [Web 保護概觀](web-protection-overview.md)
 ##### [網頁威脅防護]()
@@ -335,7 +335,7 @@
 ###### [監視 Web 安全性](web-protection-monitoring.md)
 ###### [回應 Web 威脅](web-protection-response.md)
 ##### [Web 內容篩選](web-content-filtering.md)
- 
+
 #### [受控資料夾存取權]()
 ##### [保護資料夾](controlled-folders.md)
 ##### [評估受控資料夾存取權](evaluate-controlled-folder-access.md)
@@ -371,7 +371,7 @@
 ##### [查看及組織事件佇列](view-incidents-queue.md)
 ##### [管理事件](manage-incidents.md)
 ##### [調查事件](investigate-incidents.md)
- 
+
 #### [警示佇列]()
 ##### [查看及組織警示佇列](alerts-queue.md)
 ##### [檢閱警示](review-alerts.md)
@@ -383,12 +383,12 @@
 ##### [調查網域](investigate-domain.md)
 ###### [調查正向 Proxy 背後發生的連線事件](investigate-behind-proxy.md)
 ##### [調查使用者帳戶](investigate-user.md)
- 
+
 #### [裝置清單]()
 ##### [查看及組織裝置清單](machines-view-overview.md)
 ##### [裝置時間軸事件旗標](device-timeline-event-flag.md)
 ##### [管理裝置群組和標記](machine-tags.md)
- 
+
 #### [採取回應動作]()
 ##### [在裝置上採取回應動作]()
 ###### [裝置上的回應動作](respond-machine-alerts.md)
@@ -547,7 +547,7 @@
 ####### [限制應用程式執行](restrict-code-execution.md)
 ####### [移除應用程式限制](unrestrict-code-execution.md)
 ####### [執行防毒掃描](run-av-scan.md)
-####### [執行即時回應](run-live-response.md) 
+####### [執行即時回應](run-live-response.md)
 ####### [下機](offboard-machine-api.md)
 ####### [停止並隔離檔案](stop-and-quarantine-file.md)
 ####### [取消電腦動作](cancel-machine-action.md)
@@ -661,7 +661,7 @@
 ##### [非使用中的裝置](fix-unhealthy-sensors.md#inactive-devices)
 ##### [錯誤的裝置](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [使用事件檢視器檢視機器上的感應器事件和錯誤](event-error-codes.md)
-  
+
 #### [為適用於端點的 Microsoft Defender 服務問題疑難排解]()
 ##### [為服務問題疑難排解](troubleshoot-mdatp.md)
 ##### [檢查服務健康狀態](service-status.md)
@@ -669,8 +669,8 @@
 
 #### [為即時回應問題疑難排解](troubleshoot-live-response.md)
 
-#### [使用 LiveAnalyzer 收集支援記錄 ](troubleshoot-collect-support-log.md)
- 
+#### [使用 LiveAnalyzer 收集支援記錄](troubleshoot-collect-support-log.md)
+
 #### [為攻擊面縮小問題疑難排解]()
 ##### [網路保護](troubleshoot-np.md)
 ##### [受攻擊面縮小規則](troubleshoot-asr.md)
@@ -678,4 +678,4 @@
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [適用於 Office 365 的 Defender](../office-365-security/index.yml)
-# [適用於身分識別的 Defender](https://docs.microsoft.com/defender-for-identity/)
+# [適用於身分識別的 Defender](/defender-for-identity/)
