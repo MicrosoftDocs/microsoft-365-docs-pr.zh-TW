@@ -19,49 +19,33 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合規性中心來搜尋整合的稽核記錄，以檢視組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809140"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287500"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
 需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用 Microsoft 365 合規性中心來搜尋整合的稽核記錄，以檢視組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Microsoft 365 中搜尋下列類型的[使用者和系統管理員活動](#audited-activities)：
 
 - SharePoint Online 和商務用 OneDrive 中的使用者活動
-
 - Exchange Online 中的使用者活動 (Exchange 信箱稽核記錄)
-
 - SharePoint Online 中的系統管理員活動
-
 - Azure Active Directory 中的系統管理員活動 (適用於 Microsoft 365 的目錄服務) 
-
 - Exchange Online 中的系統管理員活動 (Exchange 系統管理員稽核記錄)
-
 - 安全性與合規性中心中的電子文件探索活動
-
 - Power BI 中的使用者和系統管理員活動
-
 - Microsoft Teams 中的使用者和系統管理員活動
-
 - Dynamics 365 中的使用者和系統管理員活動
-
 - Yammer 中的使用者和系統管理員活動
-
 - Microsoft Power Automate 中的使用者和系統管理員活動
-
 - Microsoft Stream 中的使用者和系統管理員活動
-
 - Microsoft 工作場所分析中的分析師和系統管理員活動
-
 - Microsoft Power Apps 中的使用者和系統管理員活動
-
 - Microsoft Flow 中的使用者和系統管理員活動
-
 - 使用 SharePoint Online 或 Microsoft Teams 網站之敏感度標籤的使用者和系統管理員活動
-
 - 簡報電子郵件和 MyAnalytics 中的系統管理員活動
 
 ## <a name="requirements-to-search-the-audit-log"></a>搜尋稽核記錄的要求
@@ -73,6 +57,7 @@ ms.locfileid: "52809140"
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   *UnifiedAuditLogIngestionEnabled* 屬性為 `True` 值表示已開啟 [稽核記錄搜尋]。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
 - 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 **[權限]** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 請注意，Office 365 和 Microsoft 365 中的全域系統管理員會自動成為 Exchange Online 中的 [組織管理] 角色群組成員。 若要提供讓使用者能夠搜尋稽核記錄的最低權限等級，您可以在 Exchange Online 中建立自訂角色群組、新增 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，然後將使用者加入這個新的角色群組成為其中的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](/Exchange/permissions-exo/role-groups)。
@@ -114,8 +99,12 @@ ms.locfileid: "52809140"
 
 - 發生事件後，對應的稽核記錄最多可能需要 30 分鐘或 24 小時的時間，才會在稽核記錄搜尋的結果中傳回。 下列表格顯示不同 Office 365 服務的所需時間。
 
+  <br>
+
+  ****
+
   |Microsoft 365 服務或功能|30 分鐘|24 小時|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Office 365 防護和威脅情報|![核取記號](../media/checkmark.png)||
   |Azure Active Directory (使用者登入活動)||![核取記號](../media/checkmark.png)|
   |Azure Active Directory (系統管理員活動)||![核取記號](../media/checkmark.png)|
@@ -133,9 +122,9 @@ ms.locfileid: "52809140"
   |敏感度標籤||![核取記號](../media/checkmark.png)|
   |SharePoint Online 和商務用 OneDrive|![核取記號](../media/checkmark.png)||
   |工作場所分析|![核取記號](../media/checkmark.png)||
-  |Yammer||![核取記號](../media/checkmark.png)||
-  |Microsoft Forms|![核取記號](../media/checkmark.png)|
-  ||||
+  |Yammer||![核取記號](../media/checkmark.png)|
+  |Microsoft Forms|![核取記號](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) 是適用於 Office 365 的目錄服務。 整合的稽核記錄包含 Microsoft 365 系統管理員中心或 Azure 管理入口網站中執行的使用者、群組、應用程式、網域及目錄活動。 如需 Azure AD 事件的完整清單，請參閱 [Azure Active Directory 稽核報告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
@@ -222,7 +211,7 @@ ms.locfileid: "52809140"
 
 - **日期**：事件發生時的日期和時間 (以當地時間顯示)。
 
-- **IP 位址**：記錄活動時所使用的裝置之 IP 位址。 IP 位址會以 IPv4 或 IPv6 位址格式顯示。
+- **IP 位址：** 記錄活動時所使用的裝置之 IP 位址。 IP 位址會以 IPv4 或 IPv6 位址格式顯示。
 
    > [!NOTE]
   > 針對某些服務，此欄位中顯示的值可能是代表使用者呼叫服務的受信任應用程式 (例如 Office 網頁版應用程式) 的 IP 位址，而不是執行活動的人員使用之裝置的 IP 位址。 此外，針對 Azure Active Directory 相關事件的系統管理員活動 (或由系統帳戶執行的活動)，不會記錄 IP 位址，且此欄位中顯示的值為 `null`。

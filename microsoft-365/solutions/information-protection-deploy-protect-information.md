@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合規性功能，並保護您的個人資訊。
-ms.openlocfilehash: 479774069844964e2e603dee5efbc7b8ef867918
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7325aad0392d559703199c81f2544a582d7eadcb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229260"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287744"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -66,7 +66,6 @@ ms.locfileid: "53229260"
 
 microsoft[資訊保護解決方案](../compliance/information-protection.md)包含許多 Microsoft 365、Microsoft Azure 和 Microsoft Windows 的整合式功能。 在 Microsoft 365 中，資訊保護解決方案包括：
 
-- [客戶金鑰服務加密](../compliance/customer-key-overview.md)
 - [敏感資訊類型](../compliance/sensitive-information-type-entity-definitions.md) (會在 [評估資料隱私權風險及識別敏感專案文章](information-protection-deploy-assess.md) 中所述) 
 - [敏感度標籤](../compliance/sensitivity-labels.md)
   - 服務/容器層級

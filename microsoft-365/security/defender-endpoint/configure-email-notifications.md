@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933946"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286930"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定警示通知
 
@@ -31,7 +31,7 @@ ms.locfileid: "51933946"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 您可以將 Defender for Endpoint 設定為將電子郵件通知傳送給指定的收件者，以取得新的提醒。 這項功能可讓您找出會立即獲得通知的個人群組，並根據其嚴重性採取行動。
 
@@ -46,7 +46,6 @@ ms.locfileid: "51933946"
 
 電子郵件通知包含有關警示的基本資訊，以及可以進行進一步調查之入口網站的連結。
 
-
 ## <a name="create-rules-for-alert-notifications"></a>建立警示通知的規則
 您可以建立規則來決定裝置及警示嚴重性，以傳送電子郵件通知及通知收件者。
 
@@ -60,15 +59,15 @@ ms.locfileid: "51933946"
     - **包含組織名稱** -指定電子郵件通知上顯示的客戶名稱。
     - **包含租使用者專用的入口網站連結** -新增具有租使用者識別碼的連結，以允許存取特定租使用者。
     - **包含裝置資訊** -包括電子郵件警示內文中的裝置名稱。
-    
-        >[!NOTE]
+
+        > [!NOTE]
         > 此資訊可能會由收件者郵件伺服器處理，而不是在您為您的 Defender for Endpoint data 選取的地理位置中進行 ar。
 
     - **裝置** -選擇是否要將收件者的警示通知給收件者 (全域系統管理員角色只) 或選取的裝置群組。 如需詳細資訊，請參閱 [Create and manage device groups](machine-groups.md)。
     - **警示嚴重性** -選擇警示嚴重性層級。
 
-4. 按 [下一步 **]**。
-    
+4. 按一下 [**下一步**]。
+
 5. 輸入收件者的電子郵件地址，然後按一下 [ **新增收件** 者]。 您可以新增多個電子郵件地址。
 
 6. 選取 [ **傳送測試電子郵件**]，檢查電子郵件收件者是否可接收電子郵件通知。
@@ -76,12 +75,12 @@ ms.locfileid: "51933946"
 7. 按一下 [ **儲存通知規則**]。
 
 ## <a name="edit-a-notification-rule"></a>編輯通知規則
+
 1. 選取您想要編輯的通知規則。
 
 2. 更新 [一般] 和 [收件者] 索引標籤資訊。
 
 3. 按一下 [ **儲存通知規則**]。
-
 
 ## <a name="delete-notification-rule"></a>刪除通知規則
 
@@ -89,8 +88,8 @@ ms.locfileid: "51933946"
 
 2. 按一下 [刪除]。
 
-
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>疑難排解提醒電子郵件通知
+
 本節列出使用提醒電子郵件通知時可能會遇到的各種問題。
 
 **問題：** 「預定收件者」報告他們不會收到通知。
@@ -102,5 +101,6 @@ ms.locfileid: "51933946"
 3. 請檢查您的電子郵件應用程式規則，可能會為您的 Defender 寄出或移動您的 Defender 電子郵件通知。
 
 ## <a name="related-topics"></a>相關主題
+
 - [更新資料保留設定](data-retention-settings.md)
 - [設定進階功能](advanced-features.md)

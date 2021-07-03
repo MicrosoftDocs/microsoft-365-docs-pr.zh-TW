@@ -19,31 +19,36 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 f1.keywords:
 - NOCSH
-description: Office 365 需要連接至網際網路。 下列端點應可供使用 Office 365 美國政府 DoD 方案的客戶使用。
+description: Office 365 需要連線到網際網路。 下列端點應可供使用 Office 365 美國政府 DoD 方案的客戶使用。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2fcfad7e0ad3ddafeffc79490ff99d949a8bfa7b
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 32a760843453a4d243ee65802325852323402140
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730747"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286426"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365美國政府 DoD 端點
 
 *適用于： Office 365 系統管理員*
 
- Office 365 需要連接至網際網路。 下列端點應可供使用 Office 365 美國政府 DoD 方案的客戶使用。
+Office 365 需要連線到網際網路。 下列端點應可供使用 Office 365 美國政府 DoD 方案的客戶使用。
   
- **Office 365 端點：** [全球 (包括 GCC)](urls-and-ip-address-ranges.md) | [21 Vianet 提供的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 德國](microsoft-365-germany-endpoints.md) |  *Office 365 美國政府 DoD* | [Office 365 美國政府 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
-  
-|||
-|:-----|:-----|
-|**上次更新日期：** 2021 年 5 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下載：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整清單 <br/> |
+**Office 365 端點：** 「[全球 (包含 GCC)](urls-and-ip-address-ranges.md) \| [Office 365，由 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 德國](microsoft-365-germany-endpoints.md) \| *Office 365 美國政府 DoD* \| [Office 365 美國政府 GCC 高](microsoft-365-u-s-government-gcc-high-endpoints.md)
 
- 從[管理 Office 365 端點](managing-office-365-endpoints.md)開始，以了解我們針對在使用此資料管理網路連線能力方面的建議。 端點資料會在每個月初根據需要進行更新，並在上線前 30 天發布新的 IP 位址和 URL。  這樣一來，客戶就可以在需要新的連線之前，尚未有自動更新，就能完成他們的處理常式。 如果需要解決支援升級、安全性事件或其他即時操作需求，則還可以在該月內更新端點。  本頁下方顯示的資料全部來自基於 REST 的 Web 服務。 如果您正使用指令碼或網路裝置來存取本資料，您應直接前往 [Web 服務](microsoft-365-ip-web-service.md)。
+<br>
 
-以下的端點資料會列出從使用者電腦連線至 Office 365 的需求。 不包括從 Microsoft 到客戶網路的網路連線，有時也稱為混合式或輸入的網路連線。 如需詳細資訊，請參閱 [未包含在 web 服務中的其他端點](additional-office365-ip-addresses-and-urls.md)。 
+****
+
+|附註|下載|
+|---|---|
+|**上次更新日期：** 2021 年 5 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下載：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整清單|
+|
+
+從[管理 Office 365 端點](managing-office-365-endpoints.md)開始，以了解我們針對在使用此資料管理網路連線能力方面的建議。 端點資料會在每個月初根據需要進行更新，並在上線前 30 天發布新的 IP 位址和 URL。  這樣一來，客戶就可以在需要新的連線之前，尚未有自動更新，就能完成他們的處理常式。 如果需要解決支援升級、安全性事件或其他即時操作需求，則還可以在該月內更新端點。  本頁下方顯示的資料全部來自基於 REST 的 Web 服務。 如果您正使用指令碼或網路裝置來存取本資料，您應直接前往 [Web 服務](microsoft-365-ip-web-service.md)。
+
+以下的端點資料會列出從使用者電腦連線至 Office 365 的需求。 不包括從 Microsoft 到客戶網路的網路連線，有時也稱為混合式或輸入的網路連線。 如需詳細資訊，請參閱 [未包含在 web 服務中的其他端點](additional-office365-ip-addresses-and-urls.md)。
 
 端點則被歸類成四個服務區域。前三個服務區域可以個別選取進行連線。第四個服務區域 (稱為 Microsoft 365 Common 與 Office) 的常見相依性，且必須一律具有網路連線能力。
 
@@ -56,9 +61,9 @@ ms.locfileid: "52730747"
 - **ER**：如果端點集是透過 Azure ExpressRoute （具有 Office 365 路由首碼）支援，則為 **[是]** 。 包含路由首碼的 BGP 群組，會與所列的服務區域對齊。 當 ER 為 **No** 時，這表示此端點組不支援 ExpressRoute。 不過，不應假設在 ER 為 **no** 的端點集未宣告任何路由。 如果您打算使用 Azure AD 連線，請閱讀[特殊考慮區段](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)，以確保您具有適當的 Azure ad 連線設定。
 
 - **地址**：列出端點設定的 FQDN 或萬用字元網域名稱及 IP 位址範圍。請注意，IP 位址範圍為 CIDR 格式，且在指定的網路中可能包含讓多個個別的 IP 位址。
- 
+
 - **連接埠**：列出與地址結合以形成網路端點的 TCP 或 UDP 連接埠。您可能會注意到列出不同連接埠的某些 IP 位址範圍中有重複項目。
- 
+
 [!INCLUDE [Office 365 U.S. Government DoD endpoints](../includes/office-365-u.s.-government-dod-endpoints.md)]
   
 本表附註：

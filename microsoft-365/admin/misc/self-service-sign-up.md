@@ -20,31 +20,31 @@ ms.custom:
 search.appverid: MET150
 description: 深入瞭解 Microsoft 365 的自助註冊和可用自助服務程式，例如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365 （適用于財務）。
 ms.date: 03/17/2021
-ms.openlocfilehash: f3427294a94875e21a5e6b99a09056617a7dea99
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7aec03abce468342cfeb23da490b1f950ecd7050
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332375"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286582"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在您的組織中使用自助註冊
 
 自助註冊可讓貴組織中的使用者更輕鬆地註冊 Microsoft 的線上服務。 我們呼叫這種註冊程式「自助註冊」，因為您的使用者可以註冊使用您訂閱所支付的服務，或是使用免費服務，而不需要代您採取動作。
-  
+
 ## <a name="how-self-service-sign-up-works"></a>自助註冊的運作方式
 
 下列範例說明如何自行註冊學校運作。 在其承租人中已啟用自助程式的任何組織，都能使用相同的處理常式。
-  
+
 1. 學生和教員成員具有學校電子郵件地址，表示與您的機構相關聯。 例如，電子郵件地址 jakob@uw.edu 可能會指出華盛頓大學的學生。
 2. 學生和教員前往[我們的網站](https://go.microsoft.com/fwlink/p/?LinkId=536628)，並使用他們的電子郵件地址來註冊您的組織所提供的服務，例如 Microsoft 365 Apps 企業版。 他們也可以註冊其他我們提供的免費服務。
 3. 我們會驗證他們的電子郵件地址，然後可以立即開始使用 Microsoft 365、Power BI 或其他服務。
-4. 作為商務系統管理員，您可以在 Microsoft 365 系統管理中心的 [**授權**] 頁面上選取訂閱，以查看誰已註冊訂閱。 如此一來，您就可以看到您租使用者中的服務是否有新增或無法辨識的授權。 若要控制使用者是否可以註冊自助訂閱，請使用 [MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true) PowerShell Cmdlet 搭配 **AllowAdHocSubscriptions** 參數。 如需詳細資訊，請參閱 [如何控制自助設定？](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+4. 作為商務系統管理員，您可以在 Microsoft 365 系統管理中心中的 **授權** 頁面上選取訂閱，以查看誰已註冊訂閱。 如此一來，您就可以看到您租使用者中的服務是否有新增或無法辨識的授權。 若要控制使用者是否可以註冊自助訂閱，請使用 [MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings) PowerShell Cmdlet 搭配 **AllowAdHocSubscriptions** 參數。 如需詳細資訊，請參閱 [如何控制自助設定？](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="available-self-service-programs"></a>可用的自助服務程式
 
 以下是目前可用的自助服務程式。 新增新程式時，此清單會隨之更新。
-  
-| 程式 <br/> | 描述 <br/> | 其他資訊 <br/> | 自助註冊的網站 <br/> |
+
+| 程式 <br/> | 說明 <br/> | 其他資訊 <br/> | 自助註冊的網站 <br/> |
 |:-----|:-----|:-----|:-----|
 |Office 365 A1 * * * * <br/> |任何學生或教師都可以使用學校電子郵件地址來註冊免費的 Office 365，並取得 web 的 Office 應用程式、1 TB 的 OneDrive 雲端儲存區，以及 SharePoint 線上的類別、小組和專案網站。  <br/> |[Office 365 教育版技術常見問題](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1加** <br/> |合格的學生和教師可以註冊 Office 365 A1 加上，其中包括上述所有專案以及 Microsoft 365 Apps 企業版所述的專案。 Microsoft 365 Apps 企業版是生產力軟體，包括在您的桌上型電腦或筆記本電腦上安裝的 Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access 和商務用 Skype。  <br/> |[Office 365 教育版技術常見問題](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |

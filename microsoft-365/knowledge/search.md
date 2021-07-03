@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
-ms.author: chuckedmonson
-author: chucked
+title: 使用 Microsoft 搜尋在 Microsoft Viva 主題中尋找主題
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 瞭解您可以在 Microsoft Viva 中搜尋主題的方式。
-ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908062"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287254"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜尋在 Microsoft Viva 主題中尋找主題
 
-雖然 Viva 主題，使用者可以在其 SharePoint 網站中找到主題強調主題，也可以透過 Microsoft 搜尋找到這些主題。 
+雖然 Viva 主題，使用者可以在其 SharePoint 網站中找到主題強調主題，但也可以透過 Microsoft 搜尋找到。 
 
 ## <a name="topic-answer"></a>主題答案
 
@@ -41,13 +41,13 @@ Word、PowerPoint、Outlook 和 Excel 中的搜尋結果也會在找到一個主
 
 ## <a name="acronyms"></a>縮略字
 
-在 Viva 主題中，您可以手動編輯主題，以包含其為 *替代名稱* 的縮寫。 這可讓僅以該主題的首字母縮寫的使用者進行搜尋，以找出透過 Microsoft 搜尋的主題答案。
+在 Viva 主題中，您可以手動編輯主題，以包含其為 *替代名稱* 的縮寫。 這可讓僅以該主題的首字母縮寫的使用者進行搜尋，以找出 Microsoft 搜尋的主題答案。
 
-[縮寫的答案](/microsoftsearch/manage-acronyms) 是 Microsoft Search 所提供的功能，且與 Viva 主題分開管理。
+[縮寫的答案](/microsoftsearch/manage-acronyms)是指 Microsoft 搜尋所提供的功能，且會與 Viva 主題分開管理。
 
 ## <a name="bookmarks-and-topics"></a>書簽和主題
 
-[書簽](/microsoftsearch/manage-bookmarks)是 Microsoft 搜尋功能，可協助使用者快速尋找重要的網站及工具，只附帶搜尋 (例如，外部網站上的旅行預約工具會在其 Microsoft 365 承租人) 以外。 它們是由「Microsoft 365 系統管理中心」的搜尋管理員所建立。 
+[書簽](/microsoftsearch/manage-bookmarks)是一項 Microsoft 搜尋功能，可協助使用者快速尋找重要的網站及工具，只需要搜尋 (例如，外部網站上的旅行預約工具，其 Microsoft 365 承租人) 以外。 它們是由 Microsoft 365 系統管理中心中的「搜尋管理員」所建立。 
 
 若要尋找可預約工作旅行之相關資訊的使用者：
 

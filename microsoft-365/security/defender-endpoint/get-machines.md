@@ -12,15 +12,16 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
+ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f06973bc45ecac05c15d48afe5f0e2e9e7788f78
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d52e1b69311c26144684b90545e17934d1223332
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770742"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287852"
 ---
 # <a name="list-machines-api"></a>列出電腦 API
 
@@ -69,12 +70,12 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 描述
+名稱 | 類型 | 說明
 :---|:---|:---
-授權 | 字串 | 載荷 {token}。 **必要欄位**。
+授權 | 字串 | 載荷 {token}。 **必要**。
 
 
-## <a name="request-body"></a>要求正文
+## <a name="request-body"></a>要求內文
 空白
 
 ## <a name="response"></a>回應

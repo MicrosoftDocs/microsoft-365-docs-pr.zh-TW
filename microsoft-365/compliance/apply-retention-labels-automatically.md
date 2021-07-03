@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: fa1d88271593f0278266004d4a170a807e1cbc32
-ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
+ms.openlocfilehash: be5df165ee64a890fbf762e81668420d5d3c88de
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53222679"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287146"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -230,7 +230,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 
 若要識別儲存在使用者 OneDrive 帳戶或 SharePoint 中的 Microsoft Teams 會議錄製，請為 **關鍵字查詢編輯器** 指定下列項目：
 
-``` 
+```
 ProgID:Media AND ProgID:Meeting
 ```
 

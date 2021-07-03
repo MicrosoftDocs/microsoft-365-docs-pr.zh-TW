@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed254234109bc5ff9865ff49ed3fa0fff8770ab0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893272"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286906"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -75,13 +75,13 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 - 請確定您擁有的網域認證參數具有在裝置上遠端執行的許可權。
 - 請確定 Windows 防火牆允許存取 WMI。 若要這麼做，請遵循下列步驟：
 
-    1. 開啟 [ **Windows Defender 防火牆** 控制台]，然後選取 [**允許應用程式或功能透過 Windows Defender 防火牆**]。
-    
+    1. 開啟 **Windows Defender 防火牆**[控制台]，然後選取 [**允許應用程式或功能透過 Windows Defender 防火牆**]。
+
     2. 在清單中找出 **Windows 的管理工具 (WMI)** 中，啟用 [**私人] 和 [公用**]，然後選取 **[確定]**。
 
-1.  以系統管理權限開啟 PowerShell 提示字元。
+1. 以系統管理權限開啟 PowerShell 提示字元。
 
-2.  請執行下列其中 *一個* 腳本：
+2. 請執行下列其中 *一個* 腳本：
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -94,7 +94,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. 存取任何可能具有裝置專案的目錄。 從 *所有* 目錄中移除每個裝置的專案，包括 Windows Server Active Directory 網域服務和 Azure Active Directory。 請注意，移除動作可能需要數小時才能完成處理。
+3. 存取任何可能具有裝置專案的目錄。 從 *所有* 目錄移除每個裝置的專案，包括 Windows Server Active Directory 網域服務和 Azure Active Directory。 請注意，移除動作可能需要數小時才能完成處理。
 
 4. 存取管理服務，其中可能有裝置的專案。 從 *所有* 管理服務中移除每個裝置的專案，包括 Microsoft Endpoint Configuration Manager、Microsoft Intune 及 Windows Autopilot。 請注意，移除動作可能需要數小時才能完成處理。
 
@@ -102,9 +102,9 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 #### <a name="manual-powershell-script-method"></a>手動 PowerShell script 方法
 
-1.  以系統管理權限開啟 PowerShell 提示字元。
-2.  執行 `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  執行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+1. 以系統管理權限開啟 PowerShell 提示字元。
+2. 執行 `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. 執行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. [合併雜湊資料。](#merge-hash-data)
 
 #### <a name="flash-drive-method"></a>快閃磁碟機方法
@@ -120,10 +120,8 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 9. 移除 USB 磁碟機，然後執行 `shutdown -s -t 0` 以關閉裝置
 10. [合併雜湊資料。](#merge-hash-data)
 
->[!IMPORTANT]
->在您完成註冊前，請勿開啟您所註冊的裝置。 
-
-
+> [!IMPORTANT]
+> 在您完成註冊前，請勿開啟您所註冊的裝置。 
 
 ### <a name="merge-hash-data"></a>合併雜湊資料
 
@@ -135,16 +133,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 將雜湊資料合併到一個 CSV 檔案中，您現在可以繼續 [註冊裝置](#register-devices-by-using-the-admin-portal)。
 
-
 ## <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
 在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)中，選取左導覽窗格中的 [**裝置**]。 尋找功能表的 [Microsoft 受管理的電腦] 區段，然後選取 [**裝置**]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置**]，該裝置會開啟飛入以註冊新裝置。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 請遵循下列步驟：
 
@@ -187,12 +182,3 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 > 將裝置交給使用者之前，請確認您已取得並套用[適合該使用者的授權](../get-ready/prerequisites.md)。
 
 如果已套用所有授權，您可以[讓使用者準備好使用裝置](get-started-devices.md)，然後使用者即可啟動裝置並繼續進行 Windows 設定體驗。
-
-
-
-
-
-
-
-
-

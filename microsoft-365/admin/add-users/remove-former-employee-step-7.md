@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 請遵循下列步驟來刪除離職員工的使用者帳戶。
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e2e1b234eaee3818321761af8f737bad8d131b62
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782378"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286318"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步驟 7-刪除離職員工的使用者帳戶
 
@@ -61,28 +61,36 @@ ms.locfileid: "52782378"
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>終止員工的電子郵件工作階段所需注意的事項
 
 以下是如何讓員工退出電子郵件 (Exchange) 的詳細資訊。
-  
-|||
+
+<br>
+
+****
+
+|您可以執行的作業|做法|
 |:-----|:-----|
-|**您可以執行的作業** <br/> |**做法** <br/> |
-|終止工作階段 (例如 Outlook 網頁版、Outlook、Exchange Active Sync 等等)，並強制開啟新工作階段  <br/> |重設密碼  <br/> |
-|終止工作階段並封鎖對日後工作階段的存取 (針對所有通訊協定)  <br/> |停用帳戶。 例如，在 Exchange 系統管理中心或使用 PowerShell) 中 (：  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|終止特定通訊協定的工作階段 (例如 ActiveSync)  <br/> |停用通訊協定。 例如，在 Exchange 系統管理中心或使用 PowerShell) 中 (：  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|終止工作階段 (例如 Outlook 網頁版、Outlook、Exchange Active Sync 等等)，並強制開啟新工作階段|重設密碼|
+|終止工作階段並封鎖對日後工作階段的存取 (針對所有通訊協定)|停用帳戶。 例如，在 Exchange 系統管理中心或使用 PowerShell) 中 (： <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|終止特定通訊協定的工作階段 (例如 ActiveSync)|停用通訊協定。 例如，在 Exchange 系統管理中心或使用 PowerShell) 中 (： <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|
 
 您可以在三個位置完成上述作業：
   
-|||
-|:-----|:-----|
-|**如果您在此處終止工作階段** <br/> |**需要多久時間** <br/> |
-|在 Exchange 系統管理中心或使用 PowerShell  <br/> |預期的延遲是 30 分鐘內  <br/> |
-|在 Azure Active Directory 系統管理中心  <br/> |預期的延遲是 60 分鐘  <br/> |
-|在內部部署環境  <br/> |預期的延遲是 3 小時或更多  <br/> |
+<br>
+
+****
+
+|如果您在此處終止工作階段|需要多久時間|
+|---|---|
+|在 Exchange 系統管理中心或使用 PowerShell|預期的延遲是 30 分鐘內|
+|在 Azure Active Directory 系統管理中心|預期的延遲是 60 分鐘|
+|在內部部署環境|預期的延遲是 3 小時或更多|
+|
 
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>如何以最快速度取得帳戶終止的回應
 
- **最快**：使用 Exchange 系統管理中心 (使用 PowerShell) 或 Azure Active Directory 系統管理中心。 在內部部署環境中，透過 DirSync 同步處理變更可能會花費數小時。
+**最快**：使用 Exchange 系統管理中心 (使用 PowerShell) 或 Azure Active Directory 系統管理中心。 在內部部署環境中，透過 DirSync 同步處理變更可能會花費數小時。
   
- 使用 **內部部署和 Exchange Datacenter 中目前狀態的使用者最快**：使用 Azure Active Directory 系統管理中心或 Exchange 的系統管理中心終止會話，並在內部部署環境中也進行變更。 若不採取此做法，在 Azure Active Directory 系統管理中心或 Exchange 系統管理中心進行的變更將被 DirSync 覆寫。
+使用 **內部部署和 Exchange Datacenter 中目前狀態的使用者最快**：使用 Azure Active Directory 系統管理中心或 Exchange 的系統管理中心終止會話，並在內部部署環境中也進行變更。 若不採取此做法，在 Azure Active Directory 系統管理中心或 Exchange 系統管理中心進行的變更將被 DirSync 覆寫。
   
 ## <a name="related-content"></a>相關內容
 

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 建立要求，以使用訓練過的文件了解模型來分類一或多個文件。
-ms.openlocfilehash: 3a796bcdb38a9a6930b51f7d585febb69082732e
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: b1022787d6e11ebe36c88ecd29936a777289dd74
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177078"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287230"
 ---
 # <a name="create-classification-request"></a>建立分類要求
 
@@ -26,7 +26,7 @@ SharePoint Online (以及 SharePoint 2016 及更高版本內部部署) REST 服�
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 POST /_api/machinelearning/workItems HTTP/1.1
 ```
 ## <a name="uri-parameters"></a>URI 參數
@@ -35,7 +35,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 ## <a name="request-headers"></a>要求標頭
 
-| 標頭 | 值 |
+| 頁首 | 值 |
 |--------|-------|
 |Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
@@ -62,7 +62,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 #### <a name="sample-request"></a>範例要求
 
-```
+```JSON
 {
     "__metadata": {
         "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"

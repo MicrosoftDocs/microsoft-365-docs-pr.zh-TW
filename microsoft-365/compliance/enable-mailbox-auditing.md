@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Microsoft 365 (也稱為預設信箱審計或信箱審核，預設會在) 上啟用信箱審計記錄。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f74cb23a029d4710a19aeb18999169f6adc636a4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226776"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287026"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -100,7 +100,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|信箱動作|描述|系統管理員|委託|擁有者|
+|信箱動作|說明|系統管理員|委託|擁有者|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|雖然此值接受為信箱動作，但它已包含在 **UpdateFolderPermissions** 動作中，而且不會另行進行審核。 換句話說，請勿使用此值。||||
 |**ApplyRecord**|專案標示為記錄。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
@@ -111,7 +111,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**MailboxLogin**|使用者已登入其信箱。|||![核取記號](../media/checkmark.png)|
 |**MailItemsAccessed**|**附注**：此值僅適用于 E5 或 E5 相容性附加元件訂閱使用者。 如需詳細資訊，請參閱[Microsoft 365 中的設定高級審計](set-up-advanced-audit.md)。 <p> 郵件資料是由郵件通訊協定和用戶端存取。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**注意**：只有在沒有 E5 或 E5 合規性附加元件訂閱) 的情況下，此值才能用於 E3 使用者 (使用者。 <p> 在 [預覽] 窗格中查看或由系統管理員開啟的郵件。|![核取記號](../media/checkmark.png)|||
-|**ModifyFolderPermissions**|雖然此值接受為信箱動作，但它已包含在 **UpdateFolderPermissions** 動作中，而且不會另行進行審核。 換句話說，請勿使用此值。|||||
+|**ModifyFolderPermissions**|雖然此值接受為信箱動作，但它已包含在 **UpdateFolderPermissions** 動作中，而且不會另行進行審核。 換句話說，請勿使用此值。||||
 |**Move**|郵件已移到另一個資料夾。|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
 |**MoveToDeletedItems**|郵件已遭刪除並移至 [刪除的郵件] 資料夾。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|已虛刪除標示為記錄的專案 (移至 [可復原的專案] 資料夾) 。 無法從 [可復原的專案] 資料夾中永久刪除標示為記錄的專案 () 。|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
@@ -121,7 +121,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendAs**|已使用 [傳送為] 權限傳送郵件。 這表示另一位使用者已傳送郵件，就好像它來自信箱擁有者。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。 這表示另一位使用者代表信箱擁有者傳送郵件。 此郵件會向收件者指出誰代理傳送郵件，以及實際上是誰傳送郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的專案會移至 [可復原的專案] 資料夾。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
-|**Update**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
+|**更新**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|已將行事曆委派指派給信箱。 行事曆代理可讓其他有相同組織權限的人來管理信箱擁有者的行事曆。|![核取記號](../media/checkmark.png)<sup>\*</sup>||![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|其他保留標籤會套用至訊息項目 (專案只能將一個保留標籤指派給它) 。|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
 |**UpdateFolderPermissions**|資料夾權限已變更。 資料夾權限可控制組織中的哪些使用者可以存取信箱中的資料夾，以及這些資料夾中的郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
@@ -143,7 +143,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|信箱動作|描述|系統管理員|委託|擁有者|
+|信箱動作|說明|系統管理員|委託|擁有者|
 |---|---|:---:|:---:|:---:|
 |**Create**|建立行事曆專案。 建立、傳送或接收郵件的動作並不會受到稽核。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|已從 [可復原的專案] 資料夾中清除郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
@@ -151,7 +151,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendAs**|已使用 [傳送為] 權限傳送郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的專案會移至 [可復原的專案] 資料夾。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
-|**Update**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
+|**更新**|已變更郵件或其任何屬性。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>確認每個登入類型的預設信箱動作都會進行記錄
@@ -338,10 +338,10 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
   若要取得沒有 E5 授權之使用者的信箱審計記錄專案，您可以：
 
   - 手動啟用個別信箱上的信箱審計 (執行命令，請 `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`) 。 完成之後，您可以在安全性 & 規範中心或透過 Office 365 管理活動 API 中使用審核記錄搜尋。
-  
+
     > [!NOTE]
     > 如果信箱審核似乎已在信箱上啟用，但是您的搜尋未傳回任何結果，請將 _AuditEnabled_ 參數的值變更為 `$false` 後再移回來 `$true` 。
-  
+
   - 在 Exchange Online 中使用下列 Cmdlet PowerShell:
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) 搜尋特定使用者的信箱審核記錄。
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) 搜尋特定使用者的信箱審核記錄，並將結果透過電子郵件傳送給指定的收件者。

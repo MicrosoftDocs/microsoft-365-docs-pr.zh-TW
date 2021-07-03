@@ -12,20 +12,22 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 SharePoint Syntex 來識別協定檔案，並使用 Microsoft 365 解決方案提取資料。
-ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: b73f7b96a1f1a9159770fb1bfb20bf2718f08c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054494"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287350"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步驟 1。 使用 SharePoint Syntex 來識別合約檔案及提取資料
+# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步驟 1. 使用 SharePoint Syntex 來識別合約檔案及提取資料
 
 您的組織需要從您接收的許多檔案中識別和分類所有合約檔的方法。 您也想能夠在每個識別 (的合約檔案中快速查看數個重要元素，例如， *客戶*、 *合同工* 和 *費用金額*) 。 若要這麼做，您可以使用[SharePoint Syntex](index.md)建立檔理解模型，並將其套用至文件庫。
 
 ## <a name="overview-of-the-process"></a>處理常式概述
 
-檔[瞭解](document-understanding-overview.md)使用智慧 (AI) 模型，以自動化檔案的分類和資訊提取。 檔理解模型在從非結構化檔或半結構化檔中解壓縮資訊時也是最佳的方式，而您所需的資訊不會包含在表格或表單中（如合約）。
+檔[瞭解](document-understanding-overview.md)使用智慧 (AI) 模型，以自動化檔案的分類和資訊提取。 檔理解模型在從非結構化檔或半結構化檔中解壓縮資訊時也是最佳的方式，而您所需的資訊不會包含在表格或表單中（如合約）。 
+
+文件瞭解模型：使用光學字元辨識 (OCR) 技術，在您使用範例檔案訓練模型時以及當您針對文件庫中的檔案執行模型時，掃描 PDF、影像和 TIFF 檔案。
 
 1. 首先，您必須尋找至少五個範例檔案，您可以用來 "訓練" 模型，以搜尋您嘗試識別 (合約) 之內容類型的特定特性。 
 
@@ -184,7 +186,7 @@ ms.locfileid: "53054494"
 
    ![顯示 [將模型套用至程式庫] 選項的 [協定] 頁面的螢幕擷取畫面。](../media/content-understanding/key-actions-apply-model.png)
 
-2. 在 [**新增合約**] 面板上，選取包含您要套用模型之文件庫的 SharePoint 網站。 如果網站沒有顯示在清單中，請使用搜尋方塊尋找。 選取 ****[新增]。
+2. 在 [**新增合約**] 面板上，選取包含您要套用模型之文件庫的 SharePoint 網站。 如果網站沒有顯示在清單中，請使用搜尋方塊尋找。 選取 **[新增]**。
 
     > [!NOTE]
     > 您必須要有您將套用模型的文件庫的 *管理清單* 權限或 *編輯* 權限。

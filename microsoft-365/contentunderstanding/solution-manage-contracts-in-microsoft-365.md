@@ -13,16 +13,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 SharePoint Syntex、SharePoint 清單、Microsoft Teams 及 Power Automate 的 Microsoft 365 解決方案管理合約。
-ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bc2570b08add2fa93637b9f64931c5903795a079
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054756"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287314"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 解決方案管理合約
 
-本文說明如何使用 Microsoft 365 SharePoint Syntex 和元件建立組織的合約管理解決方案。 它為您提供了一個架構，可協助您規劃及建立符合您獨特業務需求的解決方案。 即使此解決方案不能完全符合您的業務需求，您在規劃中也可以採用它的部分，以建立自訂的合約管理解決方案。
+本文說明如何使用 Microsoft 365 SharePoint Syntex 和元件建立組織的合約管理解決方案。 它為您提供了一個架構，可協助您規劃及建立符合您獨特業務需求的解決方案。 雖然此解決方案會討論合約管理，但您可以將其修改為建立其他檔管理解決方案，例如用於工作或發票的報表。
 
 *此內容集檔使用 Microsoft Thomas Molbach 與現代的工作解決方案策略小組一起開發的 Microsoft 365 解決方案。*
 
@@ -65,10 +65,10 @@ ms.locfileid: "53054756"
       ![合約的範例。](../media/content-understanding/contract.png)
 
 3. 在 Microsoft Teams 中，所有的專案關係人皆為安全 Teams 通道的成員，在此通道中，文件庫中的所有合約均可供核准或拒絕使用。 透過使用 Teams 功能，當需要檢查新的合約時，所有的專案關係人都會收到通知。
- 
-4. 透過使用 Power Automate，會透過 Teams 通道中的核准程式移動合約。 當成員核准合約時，合同狀態會變更為 [核准]，所有成員都會透過 Teams 文章通知，並會建立行專案，以顯示合約已準備好進行中的付出。 您可以擴充此程式，以直接寫入協力廠商財務應用程式進行付款。
 
-5.  當成員拒絕合約時，狀態會變更為 [已拒絕]，而且會透過 Teams 文章通知所有成員。
+4. 透過使用 Power Automate，會透過 Teams 通道中的核准程式移動合約。 當成員核准合約時，合同狀態會變更為 [已核准]，所有成員都會透過 Teams 文章通知，並會建立行專案，以顯示合約已準備好進行中的付出。 您可以擴充此程式，以直接寫入協力廠商財務應用程式進行付款。
+
+5. 當成員拒絕合約時，狀態會變更為 [已拒絕]，而且會透過 Teams 文章通知所有成員。
 
 6. 此解決方案的最終結果是您組織的自動化業務程式。 員工可輕鬆使用 Teams 中的自訂磚模式，以啟動及監視檔的核准工作流程。 
 
@@ -78,9 +78,9 @@ ms.locfileid: "53054756"
 
 此方案依賴下列功能（Microsoft 365 企業版 (E1、E3、E5、F3) 或商務 (Basic、Standard 或進階版) 授權）：
 
--   Microsoft SharePoint Syntex
--   Microsoft Teams
--   Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
 
 ## <a name="create-the-solution"></a>建立方案
 

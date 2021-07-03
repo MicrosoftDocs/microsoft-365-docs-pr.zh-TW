@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984697"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286918"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
@@ -26,12 +26,13 @@ Microsoft 受管理的電腦服務有多種方式可與客戶溝通。 為了簡
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory 存取 Microsoft 受管理電腦的系統管理入口網站
 
 Microsoft 受管理電腦的系統管理入口網站要求存取入口網站的人員需要擁有以下其中一個 Azure Active Directory (AD) 角色：
+
 - 全域系統管理員
 - Intune 服務系統管理員
 - 全域讀取者
 - 服務支援系統管理員
 
-全域系統管理員必須是在 Microsoft 受管理的電腦中註冊貴組織的人員。 所有五個角色在系統管理入口網站都擁有相同存取權，以初始化和檢視工作。 如需有關在 Azure AD 中指派這些角色的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
+全域系統管理員必須是在 Microsoft 受管理的電腦中註冊貴組織的人員。 所有五個角色在系統管理入口網站都擁有相同存取權，以初始化和檢視工作。 如需有關在 Azure AD 中指派這些角色的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 ## <a name="admin-contact-areas-of-focus"></a>系統管理連絡人重點領域
 
@@ -47,21 +48,21 @@ IT 技術支援 | 當我們的技術支援人員在 Microsoft 受管理的電腦
 
 **無論您選擇誰做為這些連絡人，都必須擁有知識和授權，以便為您的 Microsoft 受管理的電腦環境做出決策。** 當您上線 Microsoft 受管理的電腦環境時，系統會提示您為本地技術支援和安全性新增連絡人。 
 
-需要系統管理連絡人才能[提交支援要求](../service-description/support.md)。 您必須擁有針對支援要求之重點領域的系統管理連絡人。 
+需要系統管理連絡人才能[提交支援要求](../service-description/support.md)。 您必須擁有針對支援要求之重點領域的系統管理連絡人。
 
 **若要新增系統管理連絡人**
 
-1.  登入[Microsoft 端點管理員](https://endpoint.microsoft.com)。 
+1. 登入[Microsoft 端點管理員](https://endpoint.microsoft.com)。
 
-2.  在 [**租使用者管理**] 下，尋找 [ **Microsoft 受管理的電腦**] 區段，然後選取 [**管理連絡人**]。 
+2. 在 [**租使用者管理**] 下，尋找 [ **Microsoft 受管理的電腦**] 區段，然後選取 [**管理連絡人**]。
 
-3. 選取 ****[新增]。
+3. 選取 **[新增]**。
 
-4.  選取 [重點領域] 並輸入連絡人資訊。 
+4. 選取 [重點領域] 並輸入連絡人資訊。 
 
     ![重點領域清單，例如 [其他]、[應用程式] 和 [安全性]](../../media/areaoffocus.png)
 
-5. 每個重點領域的重複。 
+5. 每個重點領域的重複。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理電腦的步驟
 

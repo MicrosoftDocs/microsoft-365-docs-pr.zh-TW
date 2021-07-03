@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解系統管理員如何在 Microsoft 365 系統管理中心設定為學校 公司或非利益組織設定密碼到期原則。
-ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: fdd219e4fc99e2388acb5b19eacb2fc470041f79
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635819"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286726"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定貴組織的密碼到期原則
 
@@ -85,9 +85,10 @@ ms.locfileid: "52635819"
 
 Set-MsolPasswordPolicy 指令會更新指定網域或租用戶的密碼原則。需要進行兩個設；一是在必須變更之前，指出密碼保持有效的時間長度，而二是指出在使用者收到密碼即將到期的第一次通知時所觸發的密碼到期日前的天數。
 
-若要瞭解如何更新特定網域或租使用者的密碼原則，請參閱 [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)。
+若要瞭解如何更新特定網域或租使用者的密碼原則，請參閱 [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy)。
 
 ## <a name="related-content"></a>相關內容
 
 [讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
+
 [重設密碼](../add-users/reset-passwords.md) (文章)

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，瞭解哪些平臺、用戶端和 PowerShell 模組支援條件式 Microsoft 365 Access。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 763380429b8643c5dd01971117fccb040a9a0210
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904959"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286558"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365用戶端應用程式支援：條件式存取
 
@@ -41,6 +41,6 @@ ms.locfileid: "50904959"
 
 ## <a name="supported-powershell-modules"></a>支援的 PowerShell 模組
 
-- [Azure Active DirectoryPowerShell:](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active DirectoryPowerShell:](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

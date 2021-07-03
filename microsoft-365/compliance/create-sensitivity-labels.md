@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的資料。
-ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ac87608a2a7c4913811c090ae3c2befadaf2327e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878181"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286618"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -41,36 +41,36 @@ ms.locfileid: "52878181"
 ## <a name="create-and-configure-sensitivity-labels"></a>建立及設定敏感度標籤
 
 1. 在標籤系統管理中心中，導覽至敏感度標籤：
-    
+
     - Microsoft 365 合規性中心： 
         - **解決方案** > **資訊保護**
-        
+
         如果您沒有立即看到這個選項，請先選取 [全部顯示]。 
-    
+
     - 安全性與合規性中心：
         - **分類** > **敏感度標籤**
 
 2. 在 **[標籤]** 頁面上，選取 **[+ 建立標籤]**，以啟動 [新增敏感度標籤] 精靈。 
-    
+
     例如，從 Microsoft 365 合規性中心:
-    
+
     ![建立敏感度標籤](../media/create-sensitivity-label-full.png)
-    
+
     > [!NOTE]
     > 根據預設，租使用者沒有任何標籤，您必須建立它們。 範例圖片中的標籤會顯示 [從 Azure 資訊保護中遷移的](/azure/information-protection/configure-policy-migrate-labels) 預設標籤。
 
 3. 在 [定義此標籤的範圍 **]** 頁面上，選取的選項會決定您可以進行設定的標籤範圍，以及它們在發佈時顯示的位置：
-    
+
     ![敏感度標籤的範圍](../media/sensitivity-labels-scopes.png)
-    
+
     - 如果已選取 [檔案和電子郵件 **]**，則可以在此精靈中進行設定，以套用至支援敏感度標籤的應用程式，例如 Office Word 和 Outlook。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法在這些應用程式中選取標籤。
-    
+
     - 如果已選取 [群組和網站 **]**，則可以在此精靈中進行設定，以套用至 Microsoft 365 群組，以及 Teams 和 SharePoint 網站。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法為群組和網站選取標籤。
-    
+
     如需 **Azure Purview 資產 (預覽)** 範圍的相關資訊，請參閱 [在 Azure Purview 中自動為您的內容加上標籤](/azure/purview/create-sensitivity-label)。
 
 4. 按照標籤設定精靈的提示進行。
-    
+
     如需有關標籤設定的詳細資訊，請參閱概觀資訊中的[敏感度標籤功能](sensitivity-labels.md#what-sensitivity-labels-can-do) 並為個別設定套用精靈中的幫助。
 
 5. 重複這些步驟以建立更多標籤。 不過，如果您想要建立子標籤，請先選取父標籤，並選取 **[...]** 以取得 **[其他動作]**，然後選取 **[新增子標籤]**。
@@ -113,7 +113,6 @@ ms.locfileid: "52878181"
 
 在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
@@ -135,42 +134,42 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>建立標籤原則來發佈敏感度標籤
 
 1. 在標籤系統管理中心中，導覽至敏感度標籤：
-    
+
     - Microsoft 365 合規性中心： 
         - **解決方案** > **資訊保護**
-        
+
         如果您沒有立即看到這個選項，請先選取 [全部顯示]。 
-    
+
     - 安全性與合規性中心：
         - **分類** > **敏感度標籤**
 
 2. 選取 **[標籤原則]** 索引標籤，然後 **[發佈標籤]** 以開始 [建立原則] 精靈：
-    
+
     例如，從 Microsoft 365 合規性中心:
-        
+
     ![發佈標籤](../media/publish-sensitivity-labels-full.png)
-    
+
     > [!NOTE]
     > 根據預設，租使用者沒有任何標籤原則，您必須建立它們。 
 
 3. 在精靈中，請選取 **[選擇要發佈的敏感度標籤]**。 選取您要在應用程式和服務中提供使用的標籤，然後選取 **[新增]**。
-    
+
     > [!IMPORTANT]
     > 如果您選取子標籤，請確定您也選取其上層標籤。
-    
+
 4. 檢閱選取的標籤，若要進行任何變更，請選取 **[編輯]**。 否則請選取 **[下一步]**。
 
 5. 遵循提示來設定原則設定。
-    
+
     您看到的原則設定會符您選取的標籤範圍。 例如，如果您選取的標籤只含有 [檔案和電子郵件 **]** 範圍，您就不會看到 [預設將此標籤套用到群組與網站 **]** 和 [要求使用者將標籤套用到群組與網站 **]**。
-    
+
     如需有關這些設定的詳細資訊，請參閱概觀資訊中的[標籤原則的功能](sensitivity-labels.md#what-label-policies-can-do)，並使用個別設定的精靈中的說明。
-    
+
     針對為 **Azure Purview 資產 (預覽)** 設定的標籤：這些標籤沒有任何相關聯的原則設定。
 
-7. 如果不同的使用者或範圍需要不同的原則設定，請重複這些步驟。 例如，您需要一組使用者有額外的標籤，或使用者的子集有不同的預設標籤。 或者，如果您已將標籤設定為具有不同範圍。
+6. 如果不同的使用者或範圍需要不同的原則設定，請重複這些步驟。 例如，您需要一組使用者有額外的標籤，或使用者的子集有不同的預設標籤。 或者，如果您已將標籤設定為具有不同範圍。
 
-8. 如果您建立可能會導致使用者發生衝突的多個標籤原則，請檢閱原則順序，並視需要將它們上下移動。 若要變更標籤原則的順序，請選取 **...** 以取得 **[其他動作]**，然後選取 **[上移]** 或 **[下移]**。 如需詳細資訊，請參閱概觀資訊中的 [標籤原則優先順序 (順序很重要)](sensitivity-labels.md#label-policy-priority-order-matters)。
+7. 如果您建立可能會導致使用者發生衝突的多個標籤原則，請檢閱原則順序，並視需要將它們上下移動。 若要變更標籤原則的順序，請選取 **...** 以取得 **[其他動作]**，然後選取 **[上移]** 或 **[下移]**。 如需詳細資訊，請參閱概觀資訊中的 [標籤原則優先順序 (順序很重要)](sensitivity-labels.md#label-policy-priority-order-matters)。
 
 完成精靈即會自動發佈標籤原則。 若要對已發佈的原則進行變更，只要編輯即可。 沒有特定的發佈或重新發佈動作可供您選取。
 

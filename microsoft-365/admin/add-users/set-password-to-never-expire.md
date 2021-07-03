@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 登入您的 Microsoft 365 系統管理員帳戶，將某些個別使用者密碼設定為永不到期，使用 Windows PowerShell。
-ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635555"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286259"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -35,11 +35,11 @@ ms.locfileid: "52635555"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../../business-video/admin-center-overview.md) 
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../../business-video/admin-center-overview.md)
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 
-Microsoft cloud service 的全域系統管理員可以使用 Graph 的[Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) ，設定特定使用者不會到期的密碼。 您也可以使用 [AzureAD](/powershell/module/Azuread) Cmdlet 來移除永不過期的設定，或查看哪些使用者密碼設定為永不過期。
+Microsoft cloud service 的全域系統管理員可以使用 Graph 的[Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) ，設定特定使用者不會到期的密碼。 您也可以使用 [AzureAD](/powershell/module/Azuread) Cmdlet 來移除永不過期的設定，或查看哪些使用者密碼設定為永不過期。
 
 本指南適用于其他提供者，例如 Intune 和 Microsoft 365，也取決於 Azure AD 的身分識別和目錄服務。 [密碼到期] 是原則中唯一可以變更的部分。
 
@@ -48,7 +48,7 @@ Microsoft cloud service 的全域系統管理員可以使用 Graph 的[Azure Act
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何檢查密碼的到期原則
 
-如需 AzureAD 模組中 Get-AzureADUser 命令的詳細資訊，請參閱參考文章 [AzureADUser](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
+如需 AzureAD 模組中 Get-AzureADUser 命令的詳細資訊，請參閱參考文章 [AzureADUser](/powershell/module/Azuread/Get-AzureADUser)。
 
 執行下列其中一個命令：
 
@@ -66,7 +66,7 @@ Microsoft cloud service 的全域系統管理員可以使用 Graph 的[Azure Act
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     }
-    ```  
+    ```
 
 - 若要查看所有使用者的 [ **密碼永不到期** ] 設定，請執行下列 Cmdlet：
 
@@ -82,7 +82,7 @@ Microsoft cloud service 的全域系統管理員可以使用 Graph 的[Azure Act
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
-    ```  
+    ```
 
 - 若要在目前使用者名稱為 **ReportPasswordNeverExpires.csv** 的電腦上，取得 CSV 中具有 PasswordNeverExpires 的所有使用者報告
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 在 Microsoft 365 中為數據隱私權法規（如 GDPR 和加州消費者隱私權法案 (CCPA) （包括 Microsoft Teams、SharePoint 和電子郵件）設定資訊保護。
-ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c0ffe7cf850ec6e7ae8c974f983ce43668bf6f30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229200"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287708"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>使用 Microsoft 365 部署資料隱私權法規的資訊保護
 
@@ -33,6 +33,11 @@ Microsoft 365 中的資料類型範例包括 Microsoft Teams 中的交談會話�
 ![何謂資料隱私權法規的資訊保護](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
 其他資訊也是針對您的資料隱私權需求，使用 Microsoft 365 身分識別、裝置和威脅防護控制時所提供。
+
+觀看此影片以取得部署程序的概觀。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]
 
 這些 Microsoft 365 的功能和功能可協助您符合保護資訊的準則。
 
@@ -105,3 +110,26 @@ Microsoft 365 提供身分識別、裝置和威脅防護功能，可讓您用來
 使用這些功能的程式、程式及其他檔，都很重要，就是示範規章主體的合規性。
 
 如需詳細資訊，請參閱 [監視並回應組織中的資料隱私權事件](information-protection-deploy-monitor-respond.md)。
+
+## <a name="training-for-administrators"></a>系統管理員訓練
+
+Microsoft 相關訓練模組可協助您深入瞭解資訊保護的重要功能。
+
+
+#### <a name="information-protection"></a>資訊保護
+
+|培訓：|使用 Microsoft 365 保護企業資訊|
+|:---|:---|
+|![Teams info protection 訓練圖示](../media/protect-enterprise-information-microsoft-365.svg)|保護您組織資訊的方式比以往更具挑戰性。 使用 Microsoft 365 保護企業資訊學習路徑將討論如何防止您的敏感資訊意外地過度分享或誤用、如何探索和分類資料、如何使用敏感度標籤保護資料，以及如何監視和分析您的敏感資訊以避免資料遺失。 這種教學途徑可協助您準備 Microsoft 365 認證：安全性系統管理員關聯並 Microsoft 365 認證： Enterprise 管理專家認證。<br><br>1小時 Learning 路徑-5 模組|
+
+> [!div class="nextstepaction"]
+> [開始 >](/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>身分識別和存取
+
+|培訓：|使用 Azure Active Directory 保護身分識別和存取|
+|:---|:---|
+|![身分識別和存取訓練圖示](../media/protect-identity-and-access-with-microsoft-365.svg)|身分識別和存取學習路徑涵蓋最新的身分識別和存取技術、強化驗證所需的工具，以及組織內部身分識別保護的指導方針。 Microsoft 存取和身分識別技術可讓您保護組織的身分識別 (無論是內部部署或雲端)，還能讓您的使用者從任何位置安全地工作。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員助理和 Microsoft 365 認證：企業管理員專家認證。<br><br>2小時 52 min-Learning Path-6 模組|
+
+> [!div class="nextstepaction"]
+> [開始 >](/learn/modules/m365-identity-overview/introduction/)

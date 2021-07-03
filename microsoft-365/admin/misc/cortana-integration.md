@@ -19,19 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或學校帳戶的使用者可以在 Microsoft 365 體驗中取得 Cortana，以符合 Office 365 企業級的安全性承諾。
-ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6887032e62d397659dc73475418f52b0c1246a2f
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227892"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286690"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
 Cortana，您的個人生產力小幫手可提供 AI 的體驗，以節省時間，並重點關注最重要的問題。 Cortana 的設計是為了提供安全且安全地處理的功能，以及透過像電子郵件、檔案、聊天等 Office 365 資料的方式，來節省時間、提高效率，並增強使用者的生產力。
 
-當您使用有效的工作或學校帳戶登入時，使用者可以在 Microsoft 365 體驗中取得 Cortana 雲端式協助服務，以符合 Office 365 企業級隱私權、安全性和合規性承諾 ( 「**Cortana enterprise services**」 ) 。 
-
+當您使用有效的工作或學校帳戶登入時，使用者可以在 Microsoft 365 體驗中取得 Cortana 雲端式協助服務，以符合 Office 365 企業級隱私權、安全性和合規性承諾 ( 「**Cortana enterprise services**」 ) 。
 
 - **Cortana 企業服務包含** Cortana Windows 10 (版本2004和更新版本) ，Outlook iOS 和 android，Microsoft Teams 行動應用程式 iOS 和 android 和 [Microsoft Teams 顯示](/microsoftteams/devices/teams-displays)。
 
@@ -88,19 +87,18 @@ Windows 中的 Cortana 可協助使用者更好地管理其排程和工作。 �
 
 Cortana Teams 行動應用程式和 Microsoft Teams 顯示裝置上的語音協助，可讓 Microsoft 365 企業版使用者利用口述自然語言來簡化通訊、共同作業和會議相關的工作。 使用者可以透過選取 Teams 行動應用程式右上方的麥克風按鈕，或是在&#8221; 顯示中 &#8220;Cortana Microsoft Teams 來 Cortana 講話。 若要快速地與其小組直接連線，使用者可以說 &#8220;呼叫 Megan&#8221; 或 &#8220;將郵件傳送至下一個會議&#8221;。 使用者也可以說 &#8220;加入我的下一個會議&#8221; 並使用語音協助來共用檔案、檢查其行事曆等等，以加入會議。 這些語音協助體驗可使用 Cortana 企業級服務來提供，這些服務完全符合 Office 365 隱私權、安全性和合規性承諾，其反映在[線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products)中。
 
-**系統管理控制**
+#### <a name="admin-control"></a>系統管理控制
 
 預設會為承租人啟用語音協助 Cortana。 系統管理員可以透過 (TeamsCortanaPolicy) 的原則來控制在 Teams 中的使用者可以使用 Cortana 語音協助。 這個原則可以設定為使用者帳戶層級或租使用者層級。 系統管理員也可以使用此原則控制中的 CortanaVoiceInvocationMode 欄位，判斷 Cortana 是否已停用、只使用推入按鈕 (叫用，或透過喚醒字詞呼叫啟用（如 Microsoft Teams 顯示) 的裝置）。 
 
-**使用者控制項**
+#### <a name="user-control"></a>使用者控制項
 
 個別使用者可以在 Teams 行動應用程式中，按一下 [麥克風] 按鈕，以嘗試 Cortana 語音協助。 他們只需說 &#8220;Cortana，即可嘗試 Cortana Microsoft Teams 顯示裝置上的語音協助。 &#8221; 使用者也可以控制 Cortana 是否回應喚醒字詞呼叫。 
 
-1.  開啟 Teams mobile
-2.  移至設定
-3.  選取 Cortana
-4.  切換語音啟用切換
-
+1. 開啟 Teams mobile
+2. 移至設定
+3. 選取 Cortana
+4. 切換語音啟用切換
 
 [深入瞭解 Cortana 的語音協助 Teams](/microsoftteams/cortana-in-teams)
 
@@ -123,7 +121,6 @@ Cortana Teams 行動應用程式和 Microsoft Teams 顯示裝置上的語音協�
 透過) Outlook 行動裝置 (來播放我的電子郵件以語音導向的免提體驗，讓使用者透過其手機、耳機或連接的音訊裝置上的揚聲器收聽新郵件。 使用者可以要求 Cortana 高聲閱讀他們最近的電子郵件，並要求 Cortana 採取動作，例如旗標、封存、刪除和略過的郵件。 這項功能特別有助於在 commuting、多工工作或前往時追趕您的電子郵件。 當使用者在 [播放我的電子郵件] 中 Cortana 時，語音音訊要求會直接前往 Cortana 企業服務。 使用者電子郵件的語音讀出文字會在 Office 365 雲端內處理。 在此程式中，不會在使用者的行動裝置上處理任何 Office 365 資料，也不會儲存電子郵件資料。 口述命令的成績單 (例如「標為已讀取」、「下一步」、「旗標」等等。 ) 可能會依照 Microsoft [Online Services 條款](https://www.microsoft.com/licensing/product-licensing/products)中的資料保護條款保留。
 
 Cortana 會在電子郵件受到保護時進行呼叫，並在閱讀郵件之前暫時暫停，讓使用者有足夠的時間來暫停播放或略過下一封郵件。 類似于私人電話，當使用者可能會 overheard 機密資訊的位置時，使用者應小心謹慎。 在這些情況下，當您在 Outlook 行動裝置中使用「播放我的電子郵件」時，建議您在適當的環境中，將組織的員工磨損。
-
 
 ### <a name="how-to-opt-out-of-play-my-emails"></a>如何選擇不播放我的電子郵件
 
@@ -179,14 +176,12 @@ Cortana 會傳送個人化簡報電子郵件，其中包含以適當方式將其
 
 2. **在 Windows 10 (版本1909和更早版本) 中，取消選取 [允許 Cortana] 核取方塊，並在 Cortana 和 Android 上使用 iOS 應用程式，以在組織中的人員那裡存取 Microsoft 主控的資料**，以停用 Cortana 連線體驗。
 
-3. 選取 [儲存變更 **]**。
+3. 選取 **[儲存變更]**。
 
 針對 [Microsoft 服務合約](https://go.microsoft.com/fwlink/p/?LinkId=2109174) 和 [microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)所控制的服務，microsoft 是資料控制器。 就像資料控制者一樣，Microsoft 會使用資料，依照 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改進產品和服務。
-
 
 ## <a name="related-content"></a>相關內容
 
 [Teams (文章中 Cortana 語音協助](/microsoftteams/cortana-in-teams)) \
 [設定 Windows 10 (文章中的 Cortana](/windows/configuration/cortana-at-work/cortana-at-work-overview)) \
 [您可以從 Cortana 播放我的電子郵件嗎？](https://support.microsoft.com/help/4558256)
-

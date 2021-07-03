@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861500"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287816"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -69,16 +69,16 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 描述
+名稱 | 類型 | 說明
 -|-|-
-授權 | 字串 | 載荷 {token}。 **必要欄位**。
-Content-Type | 字串 | application/json。 **必要欄位**。
+授權 | 字串 | 載荷 {token}。 **必要**。
+Content-Type | 字串 | application/json。 **必要**。
 
-## <a name="request-body"></a>要求正文
+## <a name="request-body"></a>要求內文
 
 在要求內文中，提供應該更新之欄位的值。 在要求內文中未包含的現有屬性會維持其值，除非因相關值的變更而必須重新計算這些屬性。 為了達到最佳效能，您應該省略尚未變更的現有值。
 
-屬性	 | 類型 | 描述
+屬性	 | 類型 | 說明
 -|-|-
 地位 | Enum | 指定事件目前的狀態。 可能的值為： ```Active``` 、 ```Resolved``` 、和 ```Redirected``` 。
 分配 | string | 事件的擁有者。

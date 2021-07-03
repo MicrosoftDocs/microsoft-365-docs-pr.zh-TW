@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc1d3f08ab55f496ae7c6a12f35b71fa5b384688
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 17b9d9b1f551c62e42b2f5291f4d1fba8622f1ae
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256696"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287038"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
-
-
 
 [自訂敏感性資訊類型](sensitive-information-type-learn-about.md)用於協助識別敏感性項目，使得您可以防止不小心或不適當地將其與他人共用。 您可以根據下列專案 (SIT) 定義自訂敏感資訊類型：
 
@@ -51,14 +49,14 @@ ms.locfileid: "53256696"
 以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日重新整理，而且可以包含最多 1 億資料列。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以和原則一起使用以 EDM 為基礎的分類，例如[資料外洩防護原則](dlp-learn-about-dlp.md) 或 [Microsoft Cloud App Security 檔案原則](/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
-> Microsoft 365資訊保護支援雙位元組字元組語言：
+> Microsoft 365 資訊保護支援下列雙位元組字元集語言：
+>
 > - 中文 (簡體)
 > - 中文 (繁體)
 > - 韓文
 > - 日文
-> 
+>
 > 這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
-
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
@@ -73,21 +71,19 @@ ms.locfileid: "53256696"
 
 ## <a name="portal-links-for-your-subscription"></a>訂閱的入口網站連結
 
-
-|入口網站  |全球/GCC  |GCC-High  |DOD  |
-|---------|---------|---------|---------|
-|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
-|Microsoft 365 安全性中心     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
-|Microsoft 365 合規性中心     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
-
+|入口網站|全球/GCC|GCC-High|DOD|
+|---|---|---|---|
+|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Microsoft 365 安全性中心|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Microsoft 365 合規性中心|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
 
-|階段  |需要的項目  |
-|---------|---------|
-|[第 1 部分：設定以 EDM 為基礎的分類](#part-1-set-up-edm-based-classification)<br/><br/>(視需要)<br/>- [編輯資料庫結構描述](#editing-the-schema-for-edm-based-classification) <br/>- [移除結構描述](#removing-the-schema-for-edm-based-classification) |- 敏感性資料的讀取存取權<br/>- XML 格式的資料庫結構描述 (提供範例)<br/>- XML 格式的規則套件 (提供範例)<br/>- 安全性與合規性中心的系統管理員權限 (使用 PowerShell) |
-|[第 2 部分：雜湊和上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(視需要)<br/>[重新整理資料](#refreshing-your-sensitive-information-database) |- 自訂安全性群組和使用者帳戶<br/>- 具有 EDM 上傳代理程式電腦的本機系統管理員存取權<br/>- 敏感性資料的讀取存取權<br/>- 重新整理資料的程序和排程|
-|[第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Microsoft 365 訂閱與 DLP<br/>- 已啟用以 EDM 為基礎的分類功能 |
+|階段|需要的項目|
+|---|---|
+|[第 1 部分：設定以 EDM 為基礎的分類](#part-1-set-up-edm-based-classification)<br/><br/>(視需要)<br/>- [編輯資料庫結構描述](#editing-the-schema-for-edm-based-classification) <br/>- [移除結構描述](#removing-the-schema-for-edm-based-classification)|- 敏感性資料的讀取存取權<br/>- XML 格式的資料庫結構描述 (提供範例)<br/>- XML 格式的規則套件 (提供範例)<br/>- 安全性與合規性中心的系統管理員權限 (使用 PowerShell)|
+|[第 2 部分：雜湊和上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(視需要)<br/>[重新整理資料](#refreshing-your-sensitive-information-database)|- 自訂安全性群組和使用者帳戶<br/>- 具有 EDM 上傳代理程式電腦的本機系統管理員存取權<br/>- 敏感性資料的讀取存取權<br/>- 重新整理資料的程序和排程|
+|[第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services)|- Microsoft 365 訂閱與 DLP<br/>- 已啟用以 EDM 為基礎的分類功能|
 
 ### <a name="part-1-set-up-edm-based-classification"></a>第 1 部分：設定以 EDM 為基礎的分類
 
@@ -97,14 +93,13 @@ ms.locfileid: "53256696"
 2. [定義您的機密資訊資料庫架構](#define-the-schema-for-your-database-of-sensitive-information)
 3. [建立規則套件](#set-up-a-rule-package)
 
-
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .csv 或 tsv 格式儲存敏感性資料
 
 1. 找出您要使用的敏感性資訊。 將資料匯出至應用程式，例如 Microsoft Excel，並將檔案儲存在文字檔中。 檔案可以儲存在 .csv (逗號分隔值) 、tsv (tab 分隔值) 或管道分隔 (|) 格式。 在您的資料值可能包含逗號（例如街道位址）的情況下，建議使用 tsv 格式。
 資料檔案可能包含：
-      - 最多 1 億列敏感性資料
-      - 每個資料來源最多 32 個資料行 (欄位)
-      - 最多 5 個資料行 (欄位) 標示為可搜尋
+   - 最多 1 億列敏感性資料
+   - 每個資料來源最多 32 個資料行 (欄位)
+   - 最多 5 個資料行 (欄位) 標示為可搜尋
 
 2. 在 .csv 或 tsv 檔案中構造敏感性資料，如此一來，第一列會包含用於 EDM 型分類的欄位名稱。 在您的檔案中，您可能會有諸如 "ssn"、"出生"、"firstname"、"lastname" 等欄位的名稱。 欄標題名稱不能包含空格或底線。 例如，在本文我們所使用的 .csv 檔案範例稱為 *PatientRecords.csv*，而其資料行包含 *PatientID*、*MRN*、*LastName*、*FirstName*、*SSN* 等等。
 
@@ -117,7 +112,7 @@ ms.locfileid: "53256696"
 > [!NOTE]
 > 「完全符合結構描述和敏感性資訊類型」精靈只適用于 World Wide 和 GCC 雲端。
 
-1. 以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為 **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
+1. 以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為 **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行：
 
       `\<Field name="" searchable=""/\>`.
 
@@ -146,11 +141,12 @@ ms.locfileid: "53256696"
 
 ##### <a name="configurable-match-using-the-caseinsensitive-and-ignoreddelimiters-fields"></a>使用 caseInsensitive 和 ignoredDelimiters 欄位的可設定比對
 
-上列 XML 範例利用 `caseInsensitive` 和 `ignoredDelimiters` 欄位。 
+上列 XML 範例利用 `caseInsensitive` 和 `ignoredDelimiters` 欄位。
 
 當您將設定為 `true` 值的 ***caseInsensitive** _欄位包括在您的結構描述定義中，EDM 將會因 `PatientID` 欄位大小寫的不同而排除項目。 因此， EDM 將會認爲 `PatientID` _ *FOO-1234** 和 **fOo-1234** 是一樣的。
 
 當您在 **ignoredDelimiters** _ 欄位中包括受支援的字元時，EDM 將會略過 `PatientID` 中的字元。 因此，EDM 會將 `PatientID` _ *FOO-1234** 和 `PatientID` **FOO#1234** 視為一樣的。 `ignoredDelimiters` 旗標支援任何非英數字元的字元，這裡有些範例：
+
 - \.
 - \-
 - \/
@@ -166,20 +162,21 @@ ms.locfileid: "53256696"
 - \}
 - \\
 - \~
-- \; 
+- \;
 
 `ignoredDelimiters` 旗標不支援：
+
 - 0-9 字元
 - A-Z
 - a-z
 - \"
 - \,
 
-在這個範例中，當 `caseInsensitive` 和 `ignoredDelimiters` 均被使用時，EDM 會認爲 **FOO-1234** 和 **fOo#1234** 是一樣的，並且以病歷敏感性資訊類型來分類項目。 
+在這個範例中，當 `caseInsensitive` 和 `ignoredDelimiters` 均被使用時，EDM 會認爲 **FOO-1234** 和 **fOo#1234** 是一樣的，並且以病歷敏感性資訊類型來分類項目。
 
-4. 使用[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
+1. 使用[連線的安全性 & 相容性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)，將連線到安全性 & 規範中心 PowerShell。
 
-5. 若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：
+2. 若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
       ```powershell
       $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
@@ -208,13 +205,13 @@ ms.locfileid: "53256696"
 
       當您設定規則套件時，請務必正確參考您的 .csv 或 tsv 檔案，並 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
 
-      - **RulePack id 與 ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
+      - **RulePack id 與 ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) 產生 GUID。
 
       - **資料存放區**：此欄位會指定要使用的 EDM 查閱資料存放區。 您要提供已設定之 EDM 結構描述的資料來源名稱。
 
       - **idMatch**：此欄位會指向 EDM 的主要元素。
         - 相符項目：指定要在完全查閱中使用的欄位。 您要在資料存放區的 EDM 結構描述中，提供可搜尋的欄位名稱。
-        - 分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。 您可以提供現有內建或自訂敏感性資訊類型的名稱或 GUID。 請注意，任何符合所提供之敏感性資訊類型的字串都會經過雜湊，並與敏感性資訊表中的每個項目進行比較。 為了避免造成效能問題，如果您使用自訂敏感性資訊類型做為 EDM 中的分類元素，請避免使用將符合大量內容 (例如「任意數字」或「任意五個字母」的字」) 的字串，方法是在自訂分類敏感性資訊類型的定義中新增支援關鍵字或格式設定。 
+        - 分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。 您可以提供現有內建或自訂敏感性資訊類型的名稱或 GUID。 請注意，任何符合所提供之敏感性資訊類型的字串都會經過雜湊，並與敏感性資訊表中的每個項目進行比較。 為了避免造成效能問題，如果您使用自訂敏感性資訊類型做為 EDM 中的分類元素，請避免使用將符合大量內容 (例如「任意數字」或「任意五個字母」的字」) 的字串，方法是在自訂分類敏感性資訊類型的定義中新增支援關鍵字或格式設定。
 
       - **相符項目：** 此欄位會指向 idMatch 鄰近位置的其他辨識項。
         - 相符項目：您要在資料存放區的 EDM 結構描述中，提供任何欄位名稱。
@@ -302,7 +299,7 @@ ms.locfileid: "53256696"
 
 > [!NOTE]
 > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
- 
+
 使用 EDM 敏感性資訊類型來匯入規則套件並匯入敏感性運算列表之後，您可以使用在合規性中心之 EDM 精靈中的 **[測試]** 函數來測試新建立的類型。 請參閱 [使用精確資料比對結構描述和敏感性資訊類型精靈](sit-edm-wizard.md) 有關使用此功能的指示。
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>編輯以 EDM 為基礎的分類的結構描述
@@ -431,28 +428,34 @@ ms.locfileid: "53256696"
    > [!TIP]
    > 若要取得所支援命令參數的清單，請執行代理程式無引數。例如，'EdmUploadAgentexe'。
 
-2. 授權 EDM 上傳代理、開啟命令提示字元視窗（以系統管理員身分），切換至 **C:\EDM\Data** 目錄，然後執行下列命令：
+3. 授權 EDM 上傳代理、開啟命令提示字元視窗（以系統管理員身分），切換至 **C:\EDM\Data** 目錄，然後執行下列命令：
 
    `EdmUploadAgent.exe /Authorize`
 
-3. 用您已加入EDM_DataUploaders 安全性群組的Microsoft 365的工作或學校帳戶來登入. 您的租戶信息將從用戶帳戶中提取出來以建立連接。
+4. 用您已加入EDM_DataUploaders 安全性群組的Microsoft 365的工作或學校帳戶來登入. 您的租戶信息將從用戶帳戶中提取出來以建立連接。
 
    選用：如果您使用完全符合結構描述和敏感性資料類型精靈建立結構描述和模式檔案，請在命令提示字元視窗中執行下列命令：
 
-   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   ```dos
+   EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+   ```
 
-4. 若要為敏感性資料雜湊並上傳，請在Command Prompt 命令提示字元視窗中執行下列命令：
+5. 若要為敏感性資料雜湊並上傳，請在Command Prompt 命令提示字元視窗中執行下列命令：
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
+   ```dos
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]
+   ```
 
    範例： **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   機密資料檔案的預設格式為以逗號分隔的值。 您可以指定索引標籤分隔的檔案，方法是使用/ColumnSeparator 參數指出 [{Tab}}] 選項，或者，您也可以指定 "|" 選項來指定管道分隔的檔案。  
+   機密資料檔案的預設格式為以逗號分隔的值。 您可以指定索引標籤分隔的檔案，方法是使用/ColumnSeparator 參數指出 [{Tab}}] 選項，或者，您也可以指定 "|" 選項來指定管道分隔的檔案。
    這個命令會自動將隨機產生的加密鹽值新增至雜湊，以提高安全性。 或者，如果您想要使用自己的加密鹽值，請在命令列中新增 **/Salt <saltvalue>**。 此值必須是64個字元，且只能包含 a-z 和0-9 個字元。
 
-5. 執行此命令以查看上傳狀態：
+6. 執行此命令以查看上傳狀態：
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
+   ```
 
    範例： **EdmUploadAgent/GetSession/DataStoreName PatientRecords**
 
@@ -464,17 +467,24 @@ ms.locfileid: "53256696"
 
 選用：如果您使用完全符合結構描述和敏感性資料類型精靈建立結構描述和模式檔案，請在命令提示字元視窗中執行下列命令：
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+```dos
+EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+````
 
 1. 在Command Prompt 命令提示視窗中，執行下列命令：
 
-   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]
+   ```
 
    例如：
 
-   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml
+   ```
 
    如果您沒有指定 [**/Salt <saltvalue>**] 選項，則會輸出雜湊檔和含這些副檔名的鹽值檔案：
+
    - .EdmHash
    - .EdmSalt
 
@@ -482,22 +492,29 @@ ms.locfileid: "53256696"
 
    若要上傳已雜湊的資料，請在 Windows 命令提示字元中執行下列命令：
 
-   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
+   ```
 
    例如：
 
-   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+   ```
 
    若要確認您的敏感性資料已上傳，請在命令提示字元中執行下列命令：
 
-   `EdmUploadAgent.exe /GetDataStore`
+   ```dos
+   EdmUploadAgent.exe /GetDataStore
+   ```
 
    您會看到資料存放區的清單，以及其上次更新時間。
 
    如果您想要查看上傳到特定儲存區的所有資料，請在 Windows 命令提示字元中執行下列命令：
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
+   ```
 
    針對[重新整理您的敏感性資訊資料庫](#refreshing-your-sensitive-information-database)，繼續設定程序和排程。
 
@@ -516,11 +533,11 @@ ms.locfileid: "53256696"
 
 3. 使用[工作排程器](/windows/desktop/TaskSchd/task-scheduler-start-page)來將[雜湊及上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
 
-      | 方法             | 處理方式 |
-      | ---------------------- | ---------------- |
-      | Windows PowerShell     | 請參閱 [ScheduledTasks](/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的[範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler) |
-      | 工作排程器 API     | 請參閱[工作排程器](/windows/desktop/TaskSchd/using-the-task-scheduler)文件                                                                                                                                                                                                                                                                                |
-      | Windows 使用者介面 | 在 Windows 中，按一下 [開始 **]**，然後輸入「工作排程器」。 然後在結果清單中，以滑鼠右鍵按一下 [工作排程器 **]**，然後選擇 [以系統管理員身分執行 **]**。                                                                                                                                                                                                                                                                           |
+   |方法|處理方式|
+   |---|---|
+   |Windows PowerShell|請參閱 [ScheduledTasks](/powershell/module/scheduledtasks/) 文件，以及本文中的[範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler)|
+   |工作排程器 API|請參閱[工作排程器](/windows/desktop/TaskSchd/using-the-task-scheduler)文件|
+   |Windows 使用者介面|在 Windows 中，按一下 [開始 **]**，然後輸入「工作排程器」。 然後在結果清單中，以滑鼠右鍵按一下 [工作排程器 **]**，然後選擇 [以系統管理員身分執行 **]**。|
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>工作排程器的範例 PowerShell 指令碼
 
@@ -599,7 +616,6 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 \# Register the scheduled task
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
-
 ```
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務
@@ -637,7 +653,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
       ![內容包含敏感性資訊類型](../media/edm-dlp-newrule-conditions.png)
 
-11. 搜尋您設定規則套件時建立的敏感性資訊類型，然後選擇 [+ 新增 **]**。  
+11. 搜尋您設定規則套件時建立的敏感性資訊類型，然後選擇 [+ 新增 **]**。
     然後選擇 [完成 **]**。
 
 12. 完成選取規則的選項，例如 **使用者通知**、**使用者覆寫**、**事件報告**，依此類推，然後選擇 [儲存]。

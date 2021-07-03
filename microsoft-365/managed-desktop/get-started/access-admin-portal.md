@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2facd506497cbdab42f2d8b051fbd50f82432927
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 345ae56a1c328dad7b777468dd03bcab40f9b4e1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770598"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286870"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
@@ -61,12 +61,12 @@ ms.locfileid: "52770598"
 ### <a name="assigning-built-in-roles-to-user"></a>將內建角色指派給使用者
 
 為了便於管理內建角色，每個自訂角色的安全性群組都有名稱為「新式工作區角色- _角色名稱_」 (例如，「新式工作區角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
-1.  移 Microsoft 端點管理員入口網站。
-2.  選取左側的 [ **群組** ]。
-3.  搜尋 **新式的工作區角色**，然後選取與您要指派之角色相關聯的群組。 
-4.  選取左側的 [ **成員** ]，然後選取 [+ 在命令列 **新增成員** ]。
-5.  輸入要新增之人員的電子郵件。 若為來賓，您必須先將其邀請，才能指派群組。
-6.  選取底部的 [ **選取** ]。
+1. 移 Microsoft 端點管理員入口網站。
+2. 選取左側的 [ **群組** ]。
+3. 搜尋 **新式的工作區角色**，然後選取與您要指派之角色相關聯的群組。 
+4. 選取左側的 [ **成員** ]，然後選取 [+ 在命令列 **新增成員** ]。
+5. 輸入要新增之人員的電子郵件。 若為來賓，您必須先將其邀請，才能指派群組。
+6. 選取底部的 [ **選取** ]。
 
 > [!NOTE]
 > 目前不支援角色指派的嵌套安全性群組。 
@@ -74,6 +74,7 @@ ms.locfileid: "52770598"
 ### <a name="assigning-built-in-roles-to-groups"></a>將內建角色指派給群組
 
 如果您需要將一個或多個內建角色指派給現有的群組，請遵循下列步驟：
+
 1. 移至 [portal.azure.com](https://portal.azure.com/)。
 2. 搜尋並開啟 **Enterprise 的應用程式**。
 3. 將 **應用程式類型** 篩選變更為 _Microsoft 應用程式_ ，然後 **選取 [** 套用]。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 中的列出事件 API
+title: 在 Microsoft 365 Defender 中列出事件 API
 description: 瞭解如何在 Microsoft 365 Defender 中列出事件 API
 keywords: 清單、事件、事件、api
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730879"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287828"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的列出事件 API
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中列出事件 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,6 @@ ms.locfileid: "52730879"
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
-
 
 ## <a name="api-description"></a>API 描述
 
@@ -80,12 +79,12 @@ GET /api/incidents
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 描述
+名稱 | 類型 | 說明
 -|-|-
 授權 | 字串 | 載荷 {token}。 **Required**
 
 
-## <a name="request-body"></a>要求正文
+## <a name="request-body"></a>要求內文
 
 無。
 
@@ -97,7 +96,7 @@ GET /api/incidents
 
 ### <a name="incident-metadata"></a>事件中繼資料
 
-欄位名稱 | 描述 | 範例值
+欄位名稱 | 說明 | 範例值
 -|-|-
 incidentId | 代表事件的唯一識別碼 | 924565
 redirectIncidentId | 只會填入事件處理邏輯的一部分，以案例事件與另一個事件群組在一起。 | 924569
@@ -115,7 +114,7 @@ lastUpdateTime | 最後在後端更新事件的時間。<br /><br /> 當您為�
 
 ### <a name="alerts-metadata"></a>警示中繼資料
 
-欄位名稱 | 描述 | 範例值
+欄位名稱 | 說明 | 範例值
 -|-|-
 為 alertid | 代表警示的唯一識別碼 | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId | 代表此警示相關聯之事件的唯一識別碼 | 924565
@@ -141,7 +140,7 @@ mitreTechniques | 攻擊技巧，與 [MITRE ATT&](https://attack.mitre.org/)™ 
 
 ### <a name="device-format"></a>裝置格式
 
-欄位名稱 | 描述 | 範例值
+欄位名稱 | 說明 | 範例值
 -|-|-
 DeviceId | 在 Microsoft Defender for Endpoint 中指定的裝置識別碼。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)中指定的裝置識別碼。 僅適用于已加入網域的裝置。 | Null
@@ -156,7 +155,7 @@ riskScore | 裝置的風險分數。 | 高
 
 ### <a name="entity-format"></a>實體格式
 
-欄位名稱 | 描述 | 範例值
+欄位名稱 | 說明 | 範例值
 -|-|-
 entityType | 識別為屬於指定警示或與其相關的實體。<br>屬性值包括： *User*， *Ip*， *Url*， *File*， *Process*， *MailBox*， *MailMessage*， *MailCluster*， *Registry* | 使用者
 sha1 | 當 entityType 為 *File* 時可用。<br>與檔案或處理常式相關聯之警示的檔案雜湊。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
@@ -192,13 +191,13 @@ deviceId | 與實體相關之裝置的識別碼（如果有的話）。 | 986e5d
 
 ## <a name="example"></a>範例
 
-**請求**
+### <a name="request"></a>請求
 
 ```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
-**回應**
+### <a name="response"></a>回應
 
 ```json
 {

@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842719"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286030"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -38,8 +38,8 @@ ms.locfileid: "52842719"
 - 使用者帳戶屬性會在 Azure Active Directory (或 Exchange Online) 中定義。 這些屬性可能包括部門、職稱、地區、小組名稱及其他工作設定檔詳細資料。 
 - 區段是在安全性 & 合規性中心使用選取的 **使用者帳戶屬性** 定義的使用者集合。 (請參閱 [支援屬性的清單](information-barriers-attributes.md)。)
 - 資訊屏障原則會決定通訊限制。 定義資訊屏障原則時，您可以選擇兩種原則：
-    - 「封鎖」原則防止一個區段與另一個區段通訊。
-    - 「允許」原則允許一個區段只與特定其他的區段進行通訊。
+  - 「封鎖」原則防止一個區段與另一個區段通訊。
+  - 「允許」原則允許一個區段只與特定其他的區段進行通訊。
 - 原則應用程式會在定義所有資訊屏障原則之後完成，而且您已準備好在組織中套用這些原則。
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
@@ -71,8 +71,8 @@ ms.locfileid: "52842719"
 - 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 的通訊錄原則存在到位。 資訊屏障是以通訊錄原則為基礎，但兩種原則不相容。 如果您有這類原則，請務必先 [移除您的通訊錄原則](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有 ***未包含*** 在資訊屏障區段中的使用者，都會在線上 Exchange 中看到 [階層式通訊錄](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
 - PowerShell 目前，使用 PowerShell Cmdlet 在 Office 365 安全性 & 規範中心內定義及管理資訊屏障原則。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 Azure PowerShell 模組。
-    - [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
-    - [安裝 Azure PowerShell 模組](/powershell/azure/install-az-ps?view=azps-2.3.2)
+  - [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [安裝 Azure PowerShell 模組](/powershell/azure/install-az-ps)
 
 - 系統管理員同意 Microsoft Teams 的資訊障礙-當您的 IB 原則已到位時，可以從群組 (（Teams 通道，其為以) 群組為基礎）中移除非 IB 相容性使用者。 這種設定可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft Teams 中如期運作。
 
@@ -91,10 +91,9 @@ ms.locfileid: "52842719"
    1. 出現提示時，使用您的工作或學校帳戶登入 Office 365。
 
    1. 在 [ **要求的許可權** ] 對話方塊中，複查資訊，然後選擇 [ **接受**]。 下列提供應用程式要求的許可權。
-      
+
       > [!div class="mx-imgBorder"]
       > ![圖像](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 當滿足所有必要條件時，請繼續進行下一節。
 
@@ -285,7 +284,7 @@ Contoso 有五個部門：人力資源、銷售、行銷、研發及製造。 �
 | 區隔 | 可以相互通訊 | 不可以相互通訊 |
 |:----------|:--------------|:-----------------|
 | 人力資源 | 所有人 | (沒有限制) |
-| 銷售 | HR、行銷、製造業 | 研發 |
+| 銷售 | HR、行銷、製造業 | 參考資料 |
 | 行銷 | 所有人 | (沒有限制) |
 | 研發 | HR、行銷、製造業 | 銷售 |
 | 製造 | 人力資源、行銷 | HR 或 Marketing 以外的任何人員 |

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177570"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286882"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
@@ -262,14 +262,13 @@ Intune 中的「Windows 10 更新環路」原則不得以任何 Microsoft 受管
 
 確定 **MDM 使用者範圍** 已設定為 **部分** 或 **全部**（非 **無**）。 如果您選擇 [**部分**]，請在註冊後再進行註冊，然後選取 [**新式的工作場所]-** **群組** 的所有 Azure AD 群組，或針對所有 Microsoft 受管理的電腦使用者的同等群組。  請參閱[使用 Microsoft Intune 設定 Windows 裝置的註冊](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)。
 
-
 ### <a name="ad-hoc-subscriptions"></a>專用訂閱
 
 建議您如何檢查 (如果設定為 "false" 的設定 ) 可能會導致 Enterprise 狀態漫遊無法正常運作。
 
 **公告**
 
-確定 **AllowAdHocSubscriptions** 設定為 **True**。 否則，Enterprise 狀態漫遊可能無法運作。 如需詳細資訊，請參閱 [MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+確定 **AllowAdHocSubscriptions** 設定為 **True**。 否則，Enterprise 狀態漫遊可能無法運作。 如需詳細資訊，請參閱 [MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings)。
 
 
 ### <a name="enterprise-state-roaming"></a>企業狀態漫遊

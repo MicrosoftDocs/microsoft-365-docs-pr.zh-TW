@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 在 Microsoft 365 中使用 Exchange Online 監視以取得電子郵件事件或建議的相關資訊。
-ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: 3d88378449879d451b21ba8bf2a7b5c3032a2c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707293"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286438"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>適用於 Microsoft 365 的 Exchange Online 監視
 
@@ -133,4 +133,3 @@ Microsoft 已在 Microsoft 365 系統管理中心的 **[服務健康情況]** �
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. 顯示活動趨勢的案例資料在哪裡檢測？
 
 會在 Exchange Online 服務中檢測資料。如果在要求到達 Exchange Online 前發生錯誤，或 Exchange Online 發生錯誤，則活動訊號將會下降。
-

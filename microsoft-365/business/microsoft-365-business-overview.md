@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解 Microsoft 365 商務進階版，包括 Office 應用程式，以及抵禦網路威脅的高級防護。
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705515"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287620"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商務進階版的概觀
 
@@ -44,14 +44,14 @@ Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項�
 
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>觀看：什麼是 Microsoft 365 商務進階版？
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../business-video/index.yml)。 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../business-video/index.yml)。
 
 Microsoft 365 商務進階版可提供最多 300 個授權。 如果您需要更多授權，請參閱 [Microsoft 365 企業版](../enterprise/index.yml)文件，以取得詳細資訊。
 
 如需完整的功能清單，請參閱 [Microsoft 365 商務進階版服務描述](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
-  
+
 ## <a name="small-business-security-needs"></a>小型企業安全性需求
 
 您的企業資料可能因許多方式遭到入侵。 當您使用遭入侵的認證登入，或在不同的裝置和應用程式上檢視組織資料時，您和您的使用者可能會使得組織的安全性遭受危害。 具體說來，組織會面臨來自以下的風險：
@@ -71,19 +71,19 @@ Microsoft 365 商務進階版可協助保護您在每個執行個體中的資料
 
 Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦**：
 
-- 即時掃描電子郵件和檔中的連結，以封鎖不安全的網站 (安全連結) 。
+- 即時掃描電子郵件和檔中的連結，以封鎖不安全的網站 (保管庫連結) 。
 
-- 在沙箱環境中執行電子郵件附件的高級分析，以偵測新開發的惡意程式碼 (安全附件) 。 
+- 在沙箱環境中執行電子郵件附件的高級分析，以偵測新開發的惡意程式碼 (保管庫附件) 。
 
-- 啟用利用機器學習模型和模擬偵測的反網路釣魚原則，針對 Office 365 智慧) 中的 (防網路釣魚，提供保護，以防禦高級攻擊。 
+- 啟用利用機器學習模型和模擬偵測的反網路釣魚原則，針對 Office 365 智慧) 中的 (防網路釣魚，提供保護，以防禦高級攻擊。
 
-- 設定進階原則，停用從未受信任位置存取，或略過來自受信任位置 (如辦公室網路) 的多重要素驗證 (Azure MFA 包括受信任 IP 以及條件式存取)。 
+- 設定進階原則，停用從未受信任位置存取，或略過來自受信任位置 (如辦公室網路) 的多重要素驗證 (Azure MFA 包括受信任 IP 以及條件式存取)。
 
 - 針對組織的所有 Windows 10 裝置強制執行惡意程式碼保護，並保護重要系統資料夾中的檔案不遭到勒索軟體變更 (Windows Defender)
 
 您的 **商務資料會受到以下方式保護**：
 
-- 使用自動偵測來協助防止敏感性資訊 (例如身分證字號或信用卡) 在公司外部洩露 (資料外洩防護)。 
+- 使用自動偵測來協助防止敏感性資訊 (例如身分證字號或信用卡) 在公司外部洩露 (資料外洩防護)。
 
 - 加密敏感性電子郵件，讓您能與組織外部的客戶或其他人員安全地通訊。 這可確保只有預期的收件者可以讀取郵件 (Office 365 訊息加密)。
 

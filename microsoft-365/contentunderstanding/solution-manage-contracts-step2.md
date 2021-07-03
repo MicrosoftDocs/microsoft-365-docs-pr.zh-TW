@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 Microsoft Teams，透過使用 Microsoft 365 解決方案來建立您的合約管理通道。
-ms.openlocfilehash: 7c7d3ef30d376e14e033243413637cdb51ba548a
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 79298cc570f59bbd4fa48a6ba9e68e8562a519a2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148971"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287302"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步驟 2. 使用 Microsoft Teams 建立您的合約管理通道
 
@@ -140,22 +140,22 @@ ms.locfileid: "53148971"
 
 ```JSON
                         {
-                            "elmType": "div",
-                            "txtContent": "Contractor",
-                            "style": {
-                              "color": "#767676",
-                              "font-size": "12px",
-                              "margin-bottom": "2px"
-                            }
+                          "elmType": "div",
+                          "txtContent": "Contractor",
+                          "style": {
+                            "color": "#767676",
+                            "font-size": "12px",
+                            "margin-bottom": "2px"
+                          }
+                        },
+                        {
+                          "elmType": "div",
+                          "style": {
+                            "margin-bottom": "12px",
+                            "font-size": "14px"
                           },
-                          {
-                            "elmType": "div",
-                            "style": {
-                              "margin-bottom": "12px",
-                              "font-size": "14px"
-                            },
-                            "txtContent": "[$Contractor]"
-                          },
+                          "txtContent": "[$Contractor]"
+                        },
 ```
 
 ### <a name="fee-amount"></a>費用金額

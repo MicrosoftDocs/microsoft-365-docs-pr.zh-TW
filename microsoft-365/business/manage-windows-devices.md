@@ -24,16 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何啟用 Microsoft 365，以在少數幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636079"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287688"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>啟用已加入網域的 Windows 10 裝置以供 Microsoft 365 商務進階版管理
 
-如果您的組織使用 Windows 的伺服器 Active Directory 內部部署，您可以設定 Microsoft 365 商務進階版來保護 Windows 10 裝置，同時仍維持對需要本機驗證之內部部署資源的存取。
+如果您的組織使用 Windows Server Active Directory 內部部署，您可以設定 Microsoft 365 商務進階版來保護 Windows 10 裝置，同時仍維持對需要本機驗證的內部部署資源的存取。
 若要設定此保護，您可以執行 **混合式 AZURE AD 聯結裝置**。 這些裝置會同時加入您的內部部署 Active Directory 和您的 Azure Active Directory。
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>觀賞：設定混合式 Azure Active Directory 聯結
@@ -42,7 +42,7 @@ ms.locfileid: "52636079"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 使用 Azure AD 連線將使用者同步處理至 Azure AD。
 -  (OU) 同步處理完成 Azure AD 連線組織單位。
@@ -109,13 +109,13 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 如果您看不到原則 **使用預設 Azure AD 認證來啟用自動 MDM 註冊**，可能是因為您沒有為 Windows 10、版本1803或更新版本安裝 ADMX。 若要修正此問題，請遵循下列步驟 (附注：最新的 MDM 會向後相容) ：
 
-1.  下載： [Windows 10 10 月2020更新 (20H2) 的系統管理範本 ( admx) ](https://www.microsoft.com/download/102157)。
-2.  在網域控制站上安裝套件。
-3.  根據系統管理範本的版本，流覽至資料夾： **C:\Program 檔案 (x86) \microsoft 群組原則 \ Windows 10 10 月2020更新 (20H2)**。
-4.  將上述路徑中的 **原則定義** 資料夾重新命名為 **PolicyDefinitions**。
-5.  將 **PolicyDefinitions** 資料夾複製到 SYSVOL 共用，預設位置為 **C：\ Windows \SYSVOL\domain\Policies**。 
-    -   如果您打算使用整個網域的中央原則存放區，請在那裡新增 PolicyDefinitions 的內容。
-6.  如果您有多個網域控制站，請等候 SYSVOL 進行複製，以供使用原則。 此程式適用于任何未來版本的系統管理範本。
+1. 下載： [Windows 10 10 月2020更新 (20H2) 的系統管理範本 ( admx) ](https://www.microsoft.com/download/102157)。
+2. 在網域控制站上安裝套件。
+3. 根據系統管理範本的版本，流覽至資料夾： **C:\Program 檔案 (x86) \microsoft 群組原則 \ Windows 10 10 月2020更新 (20H2)**。
+4. 將上述路徑中的 **原則定義** 資料夾重新命名為 **PolicyDefinitions**。
+5. 將 **PolicyDefinitions** 資料夾複製到 SYSVOL 共用，預設位置為 **C：\ Windows \SYSVOL\domain\Policies**。
+   - 如果您打算使用整個網域的中央原則存放區，請在那裡新增 PolicyDefinitions 的內容。
+6. 如果您有多個網域控制站，請等候 SYSVOL 進行複製，以供使用原則。 此程式適用于任何未來版本的系統管理範本。
 
 此時，您應該可以查看原則 **使用預設 AZURE AD 認證啟用自動 MDM 註冊** 。
 

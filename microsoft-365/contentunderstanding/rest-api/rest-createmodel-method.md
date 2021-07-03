@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 建立模型及其相關聯的內容類型。
-ms.openlocfilehash: 0a1b6ef9b7e38f2c4f52082103530da432e3e855
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 1c5bd84c777774edc1aa0c2419181f7b84aa4707
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177150"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287242"
 ---
 # <a name="create-model"></a>建立模型
 
@@ -24,7 +24,7 @@ ms.locfileid: "53177150"
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 POST /_api/machinelearning/models HTTP/1.1
 ```
 ## <a name="uri-parameters"></a>URI 參數
@@ -33,7 +33,7 @@ POST /_api/machinelearning/models HTTP/1.1
 
 ## <a name="request-headers"></a>要求標頭
 
-| 標頭 | 值 |
+| 頁首 | 值 |
 |--------|-------|
 |Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
@@ -59,7 +59,7 @@ POST /_api/machinelearning/models HTTP/1.1
 
 #### <a name="sample-request"></a>範例要求
 
-```
+```json
 {
     "__metadata": {
         "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
