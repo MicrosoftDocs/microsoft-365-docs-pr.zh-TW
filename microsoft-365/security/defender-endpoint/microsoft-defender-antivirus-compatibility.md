@@ -16,12 +16,12 @@ ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: f03fab3f296f98b448693c6a5d0886f409201703
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926016"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288476"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防毒軟體相容性
 
@@ -74,12 +74,12 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 
 如果您使用 Windows Server、版本1803或更新版本，或是 Windows Server 2019，您可以設定下列登錄機碼，將 Microsoft Defender 防毒軟體設定為被動式模式：
 - 路徑： `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名稱: `ForceDefenderPassiveMode`
+- 名稱：`ForceDefenderPassiveMode`
 - 類型： `REG_DWORD`
 - 值：`1`
 
 > [!NOTE]
-> Windows Server 2016 不支援被動模式。 `ForcePassiveMode`登錄機碼可用於 Windows Server、版本1803或更新版本，或 Windows 伺服器2019，但不能 Windows Server 2016。 
+> Windows Server 2016 不支援被動模式。 `ForceDefenderPassiveMode`登錄機碼可用於 Windows Server、版本1803或更新版本，或 Windows 伺服器2019，但不能 Windows Server 2016。 
 
  (<a id="fn2">2</a>) 在 Windows Server 2016 上，如果您使用非 Microsoft 防病毒產品，您就無法在被動模式或主動模式中執行 Microsoft Defender 防毒軟體。 在這種情況下，請[手動停用/卸載 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016)，以防止在伺服器上安裝多個防病毒產品所造成的問題。
 

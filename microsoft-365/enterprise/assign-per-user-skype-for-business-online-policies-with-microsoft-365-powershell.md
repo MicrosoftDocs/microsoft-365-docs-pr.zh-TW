@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 PowerShell Microsoft 365 將每一使用者的通訊設定指派給商務用 Skype 線上原則。
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905401"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288080"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>使用 Microsoft 365 的 PowerShell 指派每位使用者商務用 Skype 線上原則
 
@@ -102,11 +102,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 這個命令會將指派給 Alex 的外部存取原則的名稱，設定為 null 值 ($Null) 。 Null 表示 "nothing"。 換句話說，也就是沒有任何外部存取原則指派給 Alex。 當沒有任何外部存取原則指派給使用者時，該使用者就會受到全域原則的管理。
-  
 
 ## <a name="managing-large-numbers-of-users"></a>管理大量使用者
 
-若要管理大量使用者 (1000 或以上) ，您必須使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) Cmdlet 透過腳本區塊批命令。  在先前的範例中，每次執行 Cmdlet 時，必須先設定此呼叫，然後等候結果，再將其傳送回來。  使用腳本區塊時，這可讓 Cmdlet 以遠端方式執行，並在完成之後傳送資料回來。 
+若要管理大量使用者 (1000 或以上) ，您必須使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) Cmdlet 透過腳本區塊批命令。  在先前的範例中，每次執行 Cmdlet 時，必須先設定此呼叫，然後等候結果，再將其傳送回來。  使用腳本區塊時，這可讓 Cmdlet 以遠端方式執行，並在完成之後傳送資料回來。
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500

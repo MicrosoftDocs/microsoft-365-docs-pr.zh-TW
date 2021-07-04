@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 深入瞭解 SharePoint Online 中新式網站的效能建議，例如限制對 SharePoint 和外部端點的呼叫。
-ms.openlocfilehash: 28c32be276f6c27194d164708e268a5cd36ac957
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2429869c5397e0260876ee5a765ea18ae3fc42a1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925317"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288872"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint線上新式入口網站限制
 
@@ -58,7 +58,7 @@ ms.locfileid: "50925317"
 |圖像大小上限  <br/> |每個映射 300 Kb  <br/> |建議您將影像大小限制為300kb 或更小，並使用 CDN 來主控影像、樣式單及腳本。 <br/>如需詳細資訊，請參閱[在 SharePoint 線上新式網站頁面上優化影像](modern-image-optimization.md)，並[使用 Office 365 內容傳遞網路 (CDN) 線上](use-microsoft-365-cdn-with-spo.md)SharePoint。  <br/> |
 |具有編輯許可權的使用者  <br/> |每個網站200個使用者  <br/> |SharePoint 入口網站已針對查看和使用內容進行優化。 對入口網站的編輯許可權應該限制為一組限制的使用者，因為編輯許可權會下載其他控制項，因此這些使用者的執行速度會變慢。 大量具有編輯許可權的使用者會影響整體體驗。 <br/> |
 |協力廠商 Iframe  <br/> |每頁2個  <br/> |Iframe 會因載入個別的外部頁面（包括所有相關聯的內容，例如 javascript、CSS 及 framework 元素）而無法預知。 如果您必須使用 Iframe，請將其數目限制為2個或更少的頁面。<br/> 如需詳細資訊，請參閱[在 SharePoint 線上新式和傳統發佈網站頁面上優化 iframe](modern-iframe-optimization.md)。 <br/> |
-|呼叫 UPA 服務  <br/> |每位使用者每小時1個  <br/> |建議您不要對 UPA (User Profile 應用程式) 服務上的 _每個要求_ 進行呼叫。 [Microsoft Graph API](/graph/call-api)和[PageCoNtext](/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)可用於查詢使用者資訊。  <br/> 如果需要 UPA 服務呼叫，請在必要時進行單一通話，然後快取此資訊，以便在相同的會話中重複使用。 |
+|呼叫 UPA 服務  <br/> |每位使用者每小時1個  <br/> |建議您不要對 UPA (User Profile 應用程式) 服務上的 _每個要求_ 進行呼叫。 [Microsoft Graph API](/graph/call-api)和[PageCoNtext](/javascript/api/sp-page-context/pagecontext)可用於查詢使用者資訊。  <br/> 如果需要 UPA 服務呼叫，請在必要時進行單一通話，然後快取此資訊，以便在相同的會話中重複使用。 |
 |呼叫分類服務  <br/> |每位使用者每小時5個  <br/> |建議您不要針對分類服務撥打任何 _要求_ 。 如果需要分類服務通話，請快取資訊，以便在相同的會話中重複使用。 <br/> 如需詳細資訊，請參閱[在 SharePoint 線上新式和傳統發佈網站頁面上優化頁面通話](modern-page-call-optimization.md)。 <br/> |
 
 ## <a name="related-topics"></a>相關主題

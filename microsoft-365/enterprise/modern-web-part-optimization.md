@@ -21,26 +21,26 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 瞭解如何使用頁面診斷，在 SharePoint 線上新式網站頁面中優化網頁元件的效能。
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929057"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288896"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式網站頁面中最佳化網頁組件效能
 
 SharePoint Online 新式網站頁面包含網頁組件，對整體頁面載入時間有影響。 本文可協助您了解如何判斷頁面中的網頁組件如何影響使用者察覺延遲，以及如何修復常見問題。
 
->[!NOTE]
->如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)。
+> [!NOTE]
+> 如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>使用「適用於 SharePoint 的頁面診斷」工具來分析網頁組件
 
 適用於 SharePoint 的頁面診斷工具是全新 Microsoft Edge (https://www.microsoft.com/edge) 和 Chrome 瀏覽器的擴充功能，可以用來分析 SharePoint Online 新式入口網站與傳統發佈網站頁面。 該工具會針對每個分析頁面提供一份報告，顯示頁面如何針對定義的效能準則組執行。 若要安裝及了解「適用於 SharePoint 的頁面診斷」工具，請造訪[使用適用於 SharePoint Online 的頁面診斷工具](page-diagnostics-for-spo.md)。
 
->[!NOTE]
->網頁診斷工具只能用於 SharePoint Online，且無法在 SharePoint 系統頁面使用。
+> [!NOTE]
+> 網頁診斷工具只能用於 SharePoint Online，且無法在 SharePoint 系統頁面使用。
 
 當您使用「適用於 SharePoint 的頁面診斷」工具分析 SharePoint 網站頁面時，您可以在 [診斷測試] 窗格的 [網頁組件影響頁面載入時間] 結果中，看到超過基準計量的網頁組件相關資訊。
 
@@ -62,10 +62,13 @@ SharePoint Online 新式網站頁面包含網頁組件，對整體頁面載入�
 - **模組載入** 顯示下載、評估和載入副檔名 JAVASCRIPT 和 CSS 檔案所需的時間。 接著，它會啟動 Init 處理常式。
 - **Lazy Load** 顯示在頁面主要區段中，未看到的延遲載入網頁元件的時間。 在某些情況下，您可能會呈現太多網頁元件，而且會進行佇列以進行轉譯，以盡可能縮短頁面載入時間。
 - **Init** 顯示網頁元件初始化資料所花費的時間。
-    這是一項非同步呼叫和 init 時間是指當傳回的承諾得以解決時，onInit 函式的時間計算。
+
+  這是一項非同步呼叫和 init 時間是指當傳回的承諾得以解決時，onInit 函式的時間計算。
+
 - **Render** 顯示在模組載入和 Init 完成之後，呈現 UI (使用者介面) 所花費的時間。
-    在 [檔 (] 頁面) 中裝入 DOM 的 JavaScript 執行時間。
-    非同步資源的呈現（例如影像）可能需要額外的時間才能完成。
+
+  在 [檔 (] 頁面) 中裝入 DOM 的 JavaScript 執行時間。
+  非同步資源的呈現（例如影像）可能需要額外的時間才能完成。
 
 系統會提供此資訊，協助設計人員和開發人員對問題進行疑難排解。 此資訊應提供給您的設計和開發小組。
 

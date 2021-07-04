@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 瞭解如何使用 Office 365 內容傳遞網路 (CDN) ，以加速 SharePoint 的線上資產的傳遞。
-ms.openlocfilehash: e6cce93be0e8d893d68ae8bcdb15fde325a2cb59
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 5e9ed00462b7073c7e03f62a5de6bf26f1e586af
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169553"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289448"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>使用 Office 365 內容傳遞網路 (CDN) 搭配 SharePoint Online
 
@@ -68,7 +68,7 @@ Office 365 CDN 是由可讓您在多個位置或 _來源_ 主控靜態資產的�
   + 新增您的來源，將每個原產地識別為 public 或 private。
 
 當您完成設定之後，您可以依下列方式[管理 Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNManage) ：
-  
+
 + 新增、更新及移除資產
 + 新增及移除來源
 + 設定 CDN 原則
@@ -109,9 +109,9 @@ CDN 會從稱為 _來源_ 的位置提取資產。 來源可以是可透過 URL 
 您也可以將現有的網站集合、網站、文件庫或資料夾設定為來源，使該容器中的所有合格資產都可以從 CDN 中取得。 在您將現有的容器新增為來源之前，請務必確定您已知道其內容和許可權，這樣就不會無意公開資產給匿名存取或未經授權的使用者。
 
 您可以定義 _CDN 原則_，以從 CDN 中排除來源的內容。 CDN 原則會透過諸如 _檔案類型_ 和 _網站分類_ 等屬性，將資產公開或私人來源，套用至您在原則中指定 (私人或公開) 的 CdnType 的所有來源。 例如，如果您新增包含多個子網站之網站的私人來源，您可以定義一個原則，以排除標示為 **機密** 的網站，這樣就不會從 CDN 提供該分類所套用之網站的內容。 原則會套用至您已新增至 CDN 之 _所有_ 私人來源的內容。
-  
+
 請記住，來源數量越高，CDN 服務處理要求所需時間的影響就會越大。 建議您盡可能限制來源數量。
-  
+
 <a name="CDNOriginChoosePublicPrivate"> </a>
 ### <a name="choose-whether-each-origin-should-be-public-or-private"></a>選擇每個原產地應該是公用還是私人
 
@@ -126,7 +126,7 @@ Office 365 內的 **私人** 來源 CDN 提供使用者內容的私人存取，�
 您可以深入瞭解如何[使用私人](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)來源中的資產，對私人來源中的資產 CDN 存取權如何運作。
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-public-origins"></a>在公用來源中主控資產的屬性與優點
-  
+
 + 公用來源中公開的資產可供任何人匿名存取。
     > [!IMPORTANT]
     > 您絕對不應該放置包含使用者資訊或被視為對您的組織敏感的公用來源中的資源。
@@ -160,14 +160,14 @@ Office 365 內的 **私人** 來源 CDN 提供使用者內容的私人存取，�
 ### <a name="default-cdn-origins"></a>預設 CDN 來源
 
 除非另有指定，否則 Office 365 會在您啟用 Office 365 CDN 時，為您設定某些預設來源。 如果您最初選擇不進行布建，您可以在完成安裝後新增這些來源。 除非您瞭解忽略預設來源設定的結果，並有特定原因要執行此操作，否則您應允許在啟用 CDN 時建立這些結果。
-  
+
 預設私人 CDN 來源：
-  
+
 + \*/userphoto.aspx
 + \*/siteassets
 
 預設公用 CDN 來源：
-  
+
 + \*/masterpage
 + \*/style 程式庫
 + \*/clientsideassets
@@ -178,7 +178,7 @@ Office 365 內的 **私人** 來源 CDN 提供使用者內容的私人存取，�
 <a name="CDNSetupinPShell"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>使用 SharePoint 線上管理命令介面來設定及設定 Office 365 CDN
 
-本節中的程式需要您使用 SharePoint 線上管理命令介面，連線至 SharePoint 線上。 如需相關指示，請參閱[連線以 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
+本節中的程式需要您使用 SharePoint 線上管理命令介面，連線至 SharePoint 線上。 如需相關指示，請參閱[連線以 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
 完成下列步驟，以使用 SharePoint 線上管理命令介面，來設定和設定 CDN，以在 SharePoint 線上中主控您的資產。
 
@@ -202,7 +202,7 @@ Get-SPOTenantCdnEnabled -CdnType <Public | Private>
 指定 CdnType 的 CDN 狀態會輸出至螢幕。
 
 使用 **SPOTenantCdnEnabled 指令程式** 可讓您的組織使用 Office 365 CDN。 您可以讓組織同時使用公用來源、私人來源或同時使用這兩者。 您也可以設定 CDN 在啟用時略過預設來源的設定。 您可以隨時依照本主題所述新增這些來源。
-  
+
 在 Windows PowerShell 中 SharePoint Online：
 
 ```powershell
@@ -242,7 +242,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 
 > [!TIP]
 > 當您使用 **SPOTenantCdnPolicy** 指令程式來定義檔案類型時，會覆寫目前定義的清單。 如果您想要將其他檔案類型新增至清單，請先使用 Cmdlet 來找出已允許的檔案類型，並將其包含在清單中，以及新的檔案類型。
-  
+
 使用 **SPOTenantCdnPolicy 指令程式**，定義可由 CDN 中的公開和私人來源主控的靜態檔案類型。 根據預設，允許一般資產類型，例如 .css、.gif、.jpg 及 .js。
 
 在 Windows PowerShell 中 SharePoint Online：
@@ -302,7 +302,7 @@ _ExcludeIfNoScriptDisabled_ 屬性會根據網站層級 _NoScript_ 屬性設定�
 ### <a name="add-an-origin-for-your-assets"></a>新增資產來源
 
 使用 **SPOTenantCdnOrigin 指令程式** 來定義原點。 您可以定義多個來源。 來源是指向包含您要由 CDN 主控的資產的 SharePoint 文件庫或資料夾的 URL。
-  
+
 > [!IMPORTANT]
 > 您絕對不應該放置包含使用者資訊或被視為對您的組織敏感的公用來源中的資源。
 
@@ -347,14 +347,14 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 
 > [!NOTE]
 > 在 [私人來源] 中，從來源共用的資產必須先發行主要版本，才能從 CDN 中存取。
-  
+
 當您執行此命令之後，系統會同步處理整個資料中心的設定。 這最多可能需要15分鐘。
 
 <a name="ExamplePublicOrigin"> </a>
 ### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>範例：針對線上 SharePoint 設定主版頁面和樣式庫的公開來源
 
 一般來說，當您啟用 Office 365 CDN 時，會預設為您設定這些來源。 不過，如果您想要手動啟用它們，請遵循下列步驟。
-  
+
 + 使用 **SPOTenantCdnOrigin 指令程式** ，將樣式庫定義為公用來源。
 
   ```powershell
@@ -406,19 +406,19 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
 如需此命令及其語法的詳細資訊，請參閱 [Add-SPOTenantCdnOrigin](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin)。
-  
+
 當您執行此命令之後，系統會同步處理整個資料中心的設定。 您可能會看到如 SharePoint 線上租使用者連接至 CDN 服務時，應為 _待處理_ 郵件。 這最多可能需要15分鐘。
 
 <a name="CDNManage"> </a>
 ### <a name="manage-the-office-365-cdn"></a>管理 Office 365 CDN
 
 設定 CDN 後，您可以在更新內容或需要變更時變更設定，如本節所述。
-  
+
 <a name="Office365CDNforSPOaddremoveasset"> </a>
 #### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>新增、更新或移除 Office 365 中的資產 CDN
 
 完成設定步驟之後，您就可以新增資產，並隨時更新或移除現有的資產。 您只需對您識別為原產地的資料夾或 SharePoint 文件庫中的資產進行變更。 如果您新增資產，可立即透過 CDN 取得。 不過，如果您更新資產，最多需要15分鐘的時間，新的副本才能傳播並變得可用於 CDN。
-  
+
 如果您需要取得原始位置，您可以使用 **SPOTenantCdnOrigins** Cmdlet。 如需如何使用此 Cmdlet 的詳細資訊，請參閱 [SPOTenantCdnOrigins](/powershell/module/sharepoint-online/Get-SPOTenantCdnOrigins)。
 
 <a name="Office365CDNforSPORemoveOriginPosh"> </a>
@@ -441,7 +441,7 @@ Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 #### <a name="disable-the-office-365-cdn"></a>停用 Office 365 CDN
 
 使用 **SPOTenantCdnEnabled 指令程式** 來停用您組織的 CDN。 如果您已啟用 CDN 的公開和私人來源，則需要執行 Cmdlet 兩次，如下列範例所示。
-  
+
 若要停用 CDN 中的公開來源，請輸入下列命令：
 
 ```powershell
@@ -485,7 +485,7 @@ Get-PnPTenantCdnEnabled -CdnType <Public | Private>
 指定 CdnType 的 CDN 狀態會輸出至螢幕。
 
 使用 **PnPTenantCdnEnabled 指令程式** 可讓您的組織使用 Office 365 CDN。 您可以讓組織同時使用公用來源、私人來源或兩者同時使用。 您也可以設定 CDN 在啟用時略過預設來源的設定。 您可以隨時依照本主題所述新增這些來源。
-  
+
 PnP PowerShell:
 
 ```powershell
@@ -525,7 +525,7 @@ Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
 
 > [!TIP]
 > 當您使用 **PnPTenantCdnPolicy** 指令程式來定義檔案類型時，會覆寫目前定義的清單。 如果您想要將其他檔案類型新增至清單，請先使用 Cmdlet 來找出已允許的檔案類型，並將其包含在清單中，以及新的檔案類型。
-  
+
 使用 **PnPTenantCdnPolicy 指令程式**，定義可由 CDN 中的公開和私人來源主控的靜態檔案類型。 根據預設，允許一般資產類型，例如 .css、.gif、.jpg 及 .js。
 
 PnP PowerShell:
@@ -585,7 +585,7 @@ _ExcludeIfNoScriptDisabled_ 屬性會根據網站層級 _NoScript_ 屬性設定�
 ### <a name="add-an-origin-for-your-assets"></a>新增資產來源
 
 使用 **PnPTenantCdnOrigin 指令程式** 來定義原點。 您可以定義多個來源。 來源是指向包含您要由 CDN 主控的資產的 SharePoint 文件庫或資料夾的 URL。
-  
+
 > [!IMPORTANT]
 > 您絕對不應該放置包含使用者資訊或被視為對您的組織敏感的公用來源中的資源。
 
@@ -630,14 +630,14 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 
 > [!NOTE]
 > 在 [私人來源] 中，從來源共用的資產必須先發行主要版本，才能從 CDN 中存取。
-  
+
 當您執行此命令之後，系統會同步處理整個資料中心的設定。 這最多可能需要15分鐘。
 
 <a name="ExamplePublicOriginPnPPosh"> </a>
 ### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>範例：針對線上 SharePoint 設定主版頁面和樣式庫的公開來源
 
 一般來說，當您啟用 Office 365 CDN 時，會預設為您設定這些來源。 不過，如果您想要手動啟用它們，請遵循下列步驟。
-  
+
 + 使用 **PnPTenantCdnOrigin 指令程式** ，將樣式庫定義為公用來源。
 
   ```powershell
@@ -689,19 +689,19 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
 如需此命令及其語法的詳細資訊，請參閱 [Add-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)。
-  
+
 當您執行此命令之後，系統會同步處理整個資料中心的設定。 您可能會看到如 SharePoint 線上租使用者連接至 CDN 服務時，應為 _待處理_ 郵件。 這最多可能需要15分鐘。
 
 <a name="CDNManagePnPPosh"> </a>
 ### <a name="manage-the-office-365-cdn"></a>管理 Office 365 CDN
 
 設定 CDN 後，您可以在更新內容或需要變更時變更設定，如本節所述。
-  
+
 <a name="Office365CDNforSPOaddremoveassetPnPPosh"> </a>
 #### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>新增、更新或移除 Office 365 中的資產 CDN
 
 完成設定步驟之後，您就可以新增資產，並隨時更新或移除現有的資產。 您只需對您識別為原產地的資料夾或 SharePoint 文件庫中的資產進行變更。 如果您新增資產，可立即透過 CDN 取得。 不過，如果您更新資產，最多需要15分鐘的時間，新的副本才能傳播並變得可用於 CDN。
-  
+
 如果您需要取得原始位置，您可以使用 **PnPTenantCdnOrigin** Cmdlet。 如需如何使用此 Cmdlet 的詳細資訊，請參閱 [PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin)。
 
 <a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
@@ -724,7 +724,7 @@ Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 #### <a name="disable-the-office-365-cdn"></a>停用 Office 365 CDN
 
 使用 **PnPTenantCdnEnabled 指令程式** 來停用您組織的 CDN。 如果您已啟用 CDN 的公開和私人來源，則需要執行 Cmdlet 兩次，如下列範例所示。
-  
+
 若要停用 CDN 中的公開來源，請輸入下列命令：
 
 ```powershell
@@ -881,7 +881,7 @@ spo cdn set --type Public --enabled false
 如需如何使用 CDN 主控用戶端網頁元件的詳細資訊，請參閱[從 Office 365 CDN (Hello World part 4) 的用戶端網頁元件](/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)。
 
 > [!NOTE]
-> 如果您將 _ClientSideAssets_ 資料夾新增到 **私人** CDN 來源清單中，則 CDN 主控的自訂網頁元件將無法轉譯。 SPFX 網頁元件使用的檔案只能利用 public CDN，而 ClientSideAssets 資料夾是公用 CDN 的預設來源。 
+> 如果您將 _ClientSideAssets_ 資料夾新增到 **私人** CDN 來源清單中，則 CDN 主控的自訂網頁元件將無法轉譯。 SPFX 網頁元件使用的檔案只能利用 public CDN，而 ClientSideAssets 資料夾是公用 CDN 的預設來源。
 
 ### <a name="updating-links-to-cdn-assets"></a>更新 CDN 資產的連結
 
@@ -1042,7 +1042,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 
 您可以選擇使用 **SharePoint 線上管理命令** 介面 PowerShell 模組或 **Office 365 CLI** 的 Office 365 CDN。
 
-+ [開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
++ [開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [安裝 Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
 ## <a name="see-also"></a>另請參閱

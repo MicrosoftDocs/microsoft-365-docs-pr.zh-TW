@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 資料外洩防護內部部署掃描器
-ms.openlocfilehash: b21474f3a9e045bf353d62ef6c7c8d4174801a1b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623830"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289196"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>開始使用資料外洩防護內部部署掃描器 (預覽)
 
@@ -115,7 +115,7 @@ ms.locfileid: "52623830"
 
 2. 請參閱 [開始使用活動總管](data-classification-activity-explorer.md) 中的程序，以存取及篩選您內部部署掃描器位置的所有資料。
 
-3. 開啟 [合規性中心裡的稽核記錄](https://security.microsoft.com/auditlogsearch)。 在公開預覽期間，DLP 規則相符項目可在稽核記錄 UI 中取得，或可透過 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 存取。 
+3. 開啟 [合規性中心裡的稽核記錄](https://security.microsoft.com/auditlogsearch)。 在公開預覽期間，DLP 規則相符項目可在稽核記錄 UI 中取得，或可透過 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 存取。 
 
 
 ## <a name="next-steps"></a>後續步驟

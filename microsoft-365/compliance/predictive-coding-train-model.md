@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226212"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288188"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>訓練 (預覽的預測編碼模型) 
 
@@ -67,11 +67,15 @@ ms.locfileid: "53226212"
 
 - 模型將預測分數指派給您在訓練迴圈期間標示的控制項集中的10個專案。 模型會將這10個專案的預測分數與您在訓練迴圈期間指派給專案的實際標籤進行比較。 根據此比較，模型會識別下列分類 (稱為「 *控制項集混淆」清單*) 以評估模型的預測效能：
 
-  |          |模型預測專案是相關的 |模型預測專案與專案不相關 |
-  |:---------|:---------|:---------|
-  |**檢閱者標籤專案為相關**| True 正值| 誤判 |
-  |**[校對] 標籤專案不相關**| False 負數 |True 負值 |
-  ||||
+  <br>
+
+  ****
+
+  |標籤|模型預測專案是相關的|模型預測專案與專案不相關|
+  |---|---|---|
+  |**檢閱者標籤專案為相關**|True 正值|誤判|
+  |**[校對] 標籤專案不相關**|False 負數|True 負值|
+  |
 
   根據這些比較，模型會針對每個值的 F 分數、精確度及召回度量值和誤差邊界衍生值。 這些模型效能值的分數會顯示在訓練圓形的飛入頁面上。 如需這些計量的描述，請參閱 [預測編碼參考](predictive-coding-reference.md)。
 

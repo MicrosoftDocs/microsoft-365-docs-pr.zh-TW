@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928245"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288512"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>使用 SKOS 格式匯入字詞組
 
@@ -29,16 +29,16 @@ ms.locfileid: "50928245"
 2. 選取您要匯入字詞組的字詞群組。
 
 3. 在命令列中，按一下 **[ 匯入字詞組]**。
- 
-4.  如果您想要下載用作範本的範例檔案，請按一下 **[sample-metadata. ttl]** ，取得使用 SKOS 格式的範例檔案。
- 
-5.  建立重要檔案以涵蓋您要匯入的字詞組和字詞。
 
-6.  在 **[檔案格式]** 底下，選取 **[SKOS (*.ttl)]**。
+4. 如果您想要下載用作範本的範例檔案，請按一下 **[sample-metadata. ttl]** ，取得使用 SKOS 格式的範例檔案。
 
-7.  按一下 **[瀏覽]** 並瀏覽至新增匯入檔案。
+5. 建立重要檔案以涵蓋您要匯入的字詞組和字詞。
 
-8.  按一下 **[匯入]**。 直到匯入完成之後，才能關閉面板。
+6. 在 **[檔案格式]** 底下，選取 **[SKOS (*.ttl)]**。
+
+7. 按一下 **[瀏覽]** 並瀏覽至新增匯入檔案。
+
+8. 按一下 **[匯入]**。 直到匯入完成之後，才能關閉面板。
 
 成功匯入檔案時，系統會顯示一則成功訊息，而字詞儲存區將會重新整理，您可以瀏覽至新建立的字詞組。
 

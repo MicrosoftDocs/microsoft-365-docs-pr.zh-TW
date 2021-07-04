@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 在 Microsoft 365 中，查看完整的根憑證和憑證授權 (CAs) 清單。
-ms.openlocfilehash: 3bb48bf82f3f00223d3a913280e34fe4f0686426
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ab4ca6f92407659b96e177161e0fd0c2847a890c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226752"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288800"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 加密鏈
 
@@ -321,7 +321,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 | **CRL URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.cn |
 
-### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 雲端服務 CA-1**
+### <a name="digicert-cloud-services-ca-1-older"></a>**DigiCert 雲端服務 CA-1** (舊版) 
 
 | **Subject** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
@@ -352,7 +352,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 | **主體金鑰識別碼** | dd：51： d0： a2：31：73： a9：73： ae：8f： b4：01：7e：5d：8c：57： cb：9f： f0： f7 |
 | **授權機碼識別碼** | 03：取消：50：35：56： d1：4c： bb：66： f0： a3： e2：1b：1b： c3：97： b2：3d： d1：55 |
 | **指紋 (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
-| **指紋 (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
+| **指紋 (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE = |
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.com
@@ -516,7 +516,7 @@ Microsoft 365 會利用許多不同的憑證提供者。 下列說明當存取 M
 | **CRL URLs** | http://crl.globalsign.com/root-r3.crl |
 | **OCSP URLs** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織驗證 CA-SHA256-G2**
+### <a name="globalsign-organization-validation-ca---sha256---g2-older"></a>**GlobalSign 組織驗證 CA-SHA256-G2** (舊版) 
 
 | **Subject** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |

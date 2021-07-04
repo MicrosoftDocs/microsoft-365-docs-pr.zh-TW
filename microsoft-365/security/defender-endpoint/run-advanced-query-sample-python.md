@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7ee431c88430916fcba60266a3a3a5180d830c0d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771438"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289256"
 ---
 # <a name="advanced-hunting-using-python"></a>使用 Python 進階搜尋
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771438"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,14 +40,13 @@ ms.locfileid: "52771438"
 
 在本節中，我們會共用 Python 範例以取得權杖，並使用它來執行查詢。
 
->必要條件 **：您** 必須先 [建立應用程式](apis-intro.md)。
+> 必要條件 **：您** 必須先 [建立應用程式](apis-intro.md)。
 
 ## <a name="get-token"></a>取得 token
 
 - 執行下列命令：
 
-```
-
+```python
 import json
 import urllib.request
 import urllib.parse
@@ -73,10 +72,10 @@ req = urllib.request.Request(url, data)
 response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
-
 ```
 
 那裡
+
 - tenantId：代表您要執行查詢 (的承租人識別碼，也就是在此租使用者的資料上執行查詢) 
 - appId： Azure AD 應用程式的識別碼 (應用程式必須具有 Microsoft Defender for Endpoint) 的「執行高級查詢」許可權。
 - appSecret：您的 Azure AD 應用程式的機密
@@ -85,7 +84,7 @@ aadToken = jsonResponse["access_token"]
 
  執行下列查詢：
 
-```
+```python
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -102,7 +101,6 @@ response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
-
 ```
 
 - 架構包含查詢結果的架構
@@ -110,9 +108,9 @@ results = jsonResponse["Results"]
 
 ### <a name="complex-queries"></a>複雜的查詢
 
-如果您想要執行複雜查詢 (或 multilines 查詢) ，請將查詢儲存在檔案中，而不是上述範例中的第一行，請執行下列命令：
+如果您想要執行複雜的查詢 (或多行查詢) ，請將查詢儲存在檔案中，而不是上述範例中的第一行，請執行下列命令：
 
-```
+```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
 query = queryFile.read()
 queryFile.close()
@@ -124,18 +122,15 @@ queryFile.close()
 
 若要迴圈查看結果，請執行下列動作：
 
-```
+```python
 for result in results:
     print(result) # Prints the whole result
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
-
-
 ```
-
 
 若要在 file 中以 CSV 格式輸出查詢結果 file1.csv 執行下列作業：
 
-```
+```python
 import csv
 
 outputFile = open("D:\\Temp\\file1.csv", 'w')
@@ -149,14 +144,14 @@ outputFile.close()
 
 若要在 file file1.js中輸出 JSON 格式的查詢結果，請執行下列操作：
 
-```
+```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
 json.dump(results, outputFile)
 outputFile.close()
 ```
 
-
 ## <a name="related-topic"></a>相關主題
+
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [進階搜捕 API](run-advanced-query-api.md)
 - [使用 PowerShell 進階搜尋](run-advanced-query-sample-powershell.md)

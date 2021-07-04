@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229356"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289736"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -164,7 +164,7 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 今天，我發現許多客戶 IT 群組都是以「產品」為結構。 這是內部部署世界的邏輯，因為您需要每個特定產品的專家。 不過，當這些服務移至雲端時，我完全不需要自行調試 Active Directory 或 Exchange 資料庫。  () 雲端類型的自動化會移除某些重複的手動作業 (查看工廠) 所發生的情況。 不過，這些都是以更複雜的需求取代，以瞭解跨服務互動、影響、業務需求等等。 如果您願意 [學習](/learn/)，雲端轉換會有很大的機遇會啟用。 在您將技術轉入技術之前，我經常與客戶討論如何管理 IT 技能和小組結構的變更。
 
-若要讓所有的 SharePoint 風扇-人員和開發人員，請停止詢問「如何在線上 SharePoint 中執行 XYZ？」。 使用[Power Automate](/power-automate/) (或 Flow) 的工作流程，它是功能更強大的平臺。 使用 [Azure Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0) 為您的 500-K 專案清單建立較佳的 UX。 開始使用[Microsoft Graph](https://developer.microsoft.com/graph/) ，而不是 CSOM。 [Microsoft Teams](/MicrosoftTeams/Teams-overview)包括 SharePoint，但也是世界上的更多。 我可以列出許多其他的範例。 這裡有一個極具魅力的宇宙。 開啟門後 [開始探索]()。
+若要讓所有的 SharePoint 風扇-人員和開發人員，請停止詢問「如何在線上 SharePoint 中執行 XYZ？」。 使用[Power Automate](/power-automate/) (或 Flow) 的工作流程，它是功能更強大的平臺。 使用 [Azure Bot Framework](/azure/bot-service/) 為您的 500-K 專案清單建立較佳的 UX。 開始使用[Microsoft Graph](https://developer.microsoft.com/graph/) ，而不是 CSOM。 [Microsoft Teams](/MicrosoftTeams/Teams-overview)包括 SharePoint，但也是世界上的更多。 我可以列出許多其他的範例。 這裡有一個極具魅力的宇宙。 開啟門後 [開始探索]()。
 
 其他常見影響是在 [規範] 區域中。 這種跨服務方式似乎完全混淆許多法規遵從性原則。 我持續看到組織，「我需要將所有電子郵件通訊記錄到 eDiscovery 系統。」 當電子郵件不再只是電子郵件，而是另一個服務的視窗時，這會是什麼意思？ Office 365 都具有綜合的[相容性](../compliance/index.yml)方法，但變更人員與處理常式通常會比技術困難許多。
 

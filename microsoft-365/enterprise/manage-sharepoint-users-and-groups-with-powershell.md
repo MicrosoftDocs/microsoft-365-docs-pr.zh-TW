@@ -20,20 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 在本文中，您將瞭解如何使用 PowerShell 進行 Microsoft 365，以管理 SharePoint 線上使用者、群組及網站。
-ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 823c5fdc9af178a2e8ea8f0ca4c63fbfa4673dd8
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916723"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289052"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 使用者和群組
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-如果您是使用大型使用者帳戶或群組清單的 SharePoint Online 系統管理員，而且想要更容易管理，則可以使用 PowerShell Microsoft 365。 
+如果您是使用大型使用者帳戶或群組清單的 SharePoint Online 系統管理員，而且想要更容易管理，則可以使用 PowerShell Microsoft 365。
 
-在您開始之前，本主題中的程式需要您連線至 SharePoint 線上。 如需相關指示，請參閱[連線以 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+在您開始之前，本主題中的程式需要您連線至 SharePoint 線上。 如需相關指示，請參閱[連線以 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>取得網站、群組及使用者的清單
 
@@ -115,6 +115,7 @@ $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
+
 您可以稍後使用 Cmdlet 來更新群組內容，例如許可權層級 `Set-SPOSiteGroup` 。
 
 例如，讓我們將 contoso 租使用者的「只查看」許可權新增至「contosotest 網站集合」的審計員群組：
@@ -131,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 有時候，您必須從網站或所有網站中移除使用者。 員工可能會從一個部門移至另一個部門或離開公司。 您可以在 UI 中輕鬆執行這項作業，但是當您必須將一個網站的完整分割移至另一個網站時，就不會這麼輕鬆。
 
-不過，使用 SharePoint 線上管理命令介面和 CSV 檔案，這是一種快速快捷的方式。 在此工作中，您將使用 Windows PowerShell 從網站集合安全性群組中移除使用者。 然後，您會使用 CSV 檔案，並從不同的網站中移除許多使用者。 
+不過，使用 SharePoint 線上管理命令介面和 CSV 檔案，這是一種快速快捷的方式。 在此工作中，您將使用 Windows PowerShell 從網站集合安全性群組中移除使用者。 然後，您會使用 CSV 檔案，並從不同的網站中移除許多使用者。
 
 我們將使用「Remove-SPOUser ' 指令指令，只從網站集合群組中移除單一 Microsoft 365 使用者，這樣就能看到命令語法。 語法的外觀如下：
 
@@ -142,6 +143,7 @@ $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
+
 例如，讓我們從 contoso 租使用者的 contosotest 網站集合的網站集合審計員群組中移除胡繼 Overby：
 
 ```powershell
@@ -165,9 +167,9 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>自動管理大型使用者和群組清單
 
-若要將大量帳戶新增至 SharePoint 網站並授與許可權，您可以使用 Microsoft 365 系統管理中心、個別的 PowerShell 命令，或是 PowerShell CSV 檔案。 在這些選項中，CSV 檔案是自動化此工作的最快方法。
+若要將大量帳戶新增至 SharePoint 網站並授與許可權，您可以使用 Microsoft 365 系統管理中心、個別的 PowerShell 命令，或 PowerShell CSV 檔案。 在這些選項中，CSV 檔案是自動化此工作的最快方法。
 
-基本程式是建立 CSV 檔案，該檔案具有對應至 Windows PowerShell 腳本所需參數的標題 (欄) 。 您可以在 Excel 中輕鬆建立這類清單，然後將它匯出為 CSV 檔案。 然後，您可以使用 Windows PowerShell 腳本，逐一查看 CSV 檔案中) 的記錄 (資料列，將使用者新增至群組，並將群組新增至網站。 
+基本程式是建立 CSV 檔案，該檔案具有對應至 Windows PowerShell 腳本所需參數的標題 (欄) 。 您可以在 Excel 中輕鬆建立這類清單，然後將它匯出為 CSV 檔案。 然後，您可以使用 Windows PowerShell 腳本，逐一查看 CSV 檔案中) 的記錄 (資料列，將使用者新增至群組，並將群組新增至網站。
 
 例如，讓我們建立 CSV 檔案，以定義網站集合、群組和許可權的群組。 接下來，我們會建立 CSV 檔案，以將使用者填入群組。 最後，我們將建立並執行簡單的 Windows PowerShell 腳本，以建立及填入群組。
 
@@ -275,13 +277,13 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 ```
 
 這個報告非常簡單，您可以新增更多的程式碼，以建立包含更多詳細資訊的特定報告或報告。 不過，這會讓您瞭解如何使用 SharePoint online 管理命令介面來管理 SharePoint 線上環境中的使用者。
-   
+
 ## <a name="see-also"></a>另請參閱
 
-[連線 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[連線 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 [使用 PowerShell 管理 SharePoint Online](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)

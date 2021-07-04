@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007066"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289328"
 ---
 # <a name="live-response-command-examples"></a>即時回應命令範例
 
@@ -38,8 +38,7 @@ ms.locfileid: "53007066"
 
 您可以執行基本或高級 live 回應命令，視授與您的角色而定。 如需基本及高級命令的詳細資訊，請參閱 [使用即時回應調查裝置上的實體](live-response.md)。
 
-
-## <a name="analyze"></a>分析 
+## <a name="analyze"></a>分析
 
 ```console
 # Analyze the file malware.txt
@@ -110,12 +109,12 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > 下列檔案類型 **無法** 從 Live Response 中使用此命令下載：
 >
-> * [重新分析點檔案](/windows/desktop/fileio/reparse-points/)
-> * [疏鬆檔案](/windows/desktop/fileio/sparse-files/)
-> * 空白檔
-> * 虛擬檔案或尚未在本機完全呈現的檔案
+> - [重新分析點檔案](/windows/desktop/fileio/reparse-points/)
+> - [疏鬆檔案](/windows/desktop/fileio/sparse-files/)
+> - 空白檔
+> - 虛擬檔案或尚未在本機完全呈現的檔案
 >
-> [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)**支援這些** 檔案類型。
+> [PowerShell](/powershell/scripting/overview)**支援這些** 檔案類型。
 >
 > 如果您在 Live Response 中使用此命令有問題，請使用 PowerShell 做為替代方式。
 
@@ -132,6 +131,7 @@ library delete script.ps1
 ```
 
 ## <a name="processes"></a>過程
+
 ```console
 # Show all processes
 processes
@@ -210,11 +210,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > 針對長時間執行命令，例如 "**run**" 或 "**getfile**"，您可能想要在命令的結尾使用 ' **&** ' 符號，以在背景中執行該動作。
 > 這可讓您繼續調查機器，並在使用 '**fg**' [basic 命令](live-response.md#basic-commands)完成時，回到背景命令。
->
+
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```console
@@ -232,7 +233,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## <a name="undo"></a>撤銷
 
 ```console
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

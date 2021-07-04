@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 - BCS160
 description: 了解如何使用 Office 365 IP 位址和 URL Web 服務來協助您更能識別並區分 Office 365 網路流量。
-ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0469070ed6d46b7695526697c255e23c0dc009ec
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918951"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286414"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務
 
-Office 365 IP 位址和 URL Web 服務可協助您更能識別並區分 Office 365 網路流量，讓您更容易評估、設定及掌握變更。 此 REST 型 Web 服務會取代之前已於 2018 年 10 月 2 日淘汰的 XML 可下載檔案。
+Office 365 IP 位址和 URL Web 服務可協助您更能識別並區分 Office 365 網路流量，讓您更容易評估、設定及掌握變更。此 REST 型 Web 服務會取代之前已於 2018 年 10 月 2 日淘汰的 XML 可下載檔案。
 
-身為客戶或網路周邊裝置廠商，您可以根據 Web 服務，針對 Office 365 IP 位址和 FQDN 項目進行建置。 您可以使用這些 URL 直接在網頁瀏覽器中存取資料：
+身為客戶或網路周邊裝置廠商，您可以根據 Web 服務，針對 Office 365 IP 位址和 FQDN 項目進行建置。您可以直接在網頁瀏覽器中使用這些 URL 來存取資料：
 
 - 如需最新版本的 Office 365 URL 與 IP 位址範圍，請使用 [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
 - 如需在 Office 365 URL 與防火牆和 Proxy 伺服器的 IP 位址範圍頁面上的資料，請使用 [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
@@ -66,13 +66,13 @@ Office 365 IP 位址和 URL Web 服務可協助您更能識別並區分 Office 3
 - **format=<JSON | CSV>** - 依預設，傳回的資料格式為 JSON。 使用此選擇性參數可以逗點分隔值 (CSV) 格式傳回資料。
 - **ClientRequestId=\<guid>** - 您為用戶端關聯所產生的必要 GUID。 針對每個呼叫 Web 服務的電腦產生唯一 GUID (此頁面上包含的指令碼會為您產生 GUID)。 請勿使用下列範例所示的 GUID，因為未來 Web 服務可能會加以封鎖。 GUID 格式為 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 代表十六進位數字。
 
-  若要產生 GUID，您可以使用 PowerShell 命令 [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)，或使用線上服務，例如[線上 GUID 產生器](https://www.guidgenerator.com/)。
+  若要產生 GUID，您可以使用 PowerShell 命令 [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid)，或使用線上服務，例如[線上 GUID 產生器](https://www.guidgenerator.com/)。
 
 ## <a name="version-web-method"></a>版本 Web 方法
 
 Microsoft 在每個月底更新 Office 365 IP 位址和 FQDN 項目。 有時也會因為支援事件、安全性更新或其他作業需求而發佈額外的更新。
 
-每個已發佈執行個體的資料都會被指派一個版本號碼，版本 Web 方法可讓您檢查每個 Office 365 服務執行個體的最新版本。 我們建議您檢查版本的頻率是一個小時不超過一次。
+每個已發佈執行個體的資料都會被指派一個版本號碼，版本 Web 方法可讓您檢查每個 Office 365 服務執行個體的最新版本。我們建議您檢查版本的頻率是一個小時不超過一次。
 
 版本 Web 方法的參數為：
 
@@ -80,13 +80,13 @@ Microsoft 在每個月底更新 Office 365 IP 位址和 FQDN 項目。 有時也
 - **Format=<JSON | CSV | RSS>** - 除了 JSON 和 CSV 格式，版本 Web 方法也支援 RSS。 您可以使用此選擇性參數搭配 _AllVersions=true_ 參數，要求可以與 Outlook 或其他 RSS 讀取程式搭配使用的 RSS 摘要。
 - **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - 此選擇性參數可指定要傳回版本的執行個體。 如果省略，則會傳回所有執行個體。 有效的執行個體為：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
-版本 Web 方法沒有速率限制，也不會傳回 429 HTTP 回應碼。 版本 Web 方法的回應會包含建議快取資料達 1 小時的快取控制 (cache-control) 標頭。 版本 Web 方法的結果可能是單一記錄或記錄陣列。 每個記錄的元素是：
+版本 Web 方法沒有速率限制，也不會傳回 429 HTTP 回應碼。版本 Web 方法的回應會包含建議快取資料達 1 小時的快取控制 (cache-control) 標頭。版本 Web 方法的結果可能是單一記錄或記錄的陣列。每個記錄的元素是：
 
 - instance - Office 365 服務執行個體的簡短名稱。
 - latest - 指定執行個體端點的最新版本。
-- versions - 指定執行個體所有舊版的清單。 此元素只有在 _AllVersions_ 參數為 true 時才會納入。
+- versions - 指定執行個體所有舊版的清單。這個元素只有在 _AllVersions_ 參數為 true 時才會納入。
 
-### <a name="examples"></a>範例:
+### <a name="examples"></a>範例：
 
 範例 1 要求 URI：[https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
@@ -187,24 +187,24 @@ Worldwide,2018063000
 
 如果您從相同用戶端 IP 位址呼叫端點 Web 方法非常多次，您可能會收到 HTTP 回應碼 _429 (太多要求)_。 如果您收到此回應碼，請先等候 1 小時，再重複您的要求，或是針對要求產生新的 GUID。 一般的最佳作法是，只在版本 Web 方法指出有新版本可用時，再呼叫端點 Web 方法。
 
-端點 Web 方法的結果是記錄的陣列，其中的每個記錄都代表一個特定的端點集。 每個記錄的元素為：
+端點 Web 方法的結果是記錄的陣列，每個記錄代表特定端點集。每個記錄的元素為：
 
 - id - 端點集的固定識別碼。
 - serviceArea - 屬於以下項目的服務區域：_Common_、_Exchange_、_SharePoint_ 或 _Skype_。
-- urls - 端點集的 URL。 DNS 記錄的 JSON 陣列。 如果空白則省略。
-- tcpPorts - 端點集的 TCP 連接埠。 所有連接埠元素會格式化為以逗點分隔的連接埠清單，或以破折號字元 (-) 分隔的連接埠範圍。 連接埠會套用至指定類別的端點集中所有的 IP 位址和所有的 URL。 如果空白則省略。
-- udpPorts - 此端點集中 IP 位址範圍的 UDP 連接埠。 如果空白則省略。
-- ips - 與此端點集相關聯的 IP 位址範圍會設定為與列出的 TCP 或 UDP 連接埠相關聯。 IP 位址範圍的 JSON 陣列。 如果空白則省略。
+- urls - 端點集的 URL。DNS 記錄的 JSON 陣列。如果空白則省略。
+- tcpPorts - 端點集的 TCP 連接埠。所有連接埠元素會格式化為以逗點分隔的連接埠清單，或以破折號字元 (-) 分隔的連接埠範圍。該端點中套用至所有 IP 位址和所有 URL 的連接部會針對指定分類進行設定。如果空白則省略。
+- udpPorts - 此端點集中 IP 位址範圍的 UDP 連接埠。如果空白則省略。
+- ips - 與此端點集相關聯的 IP 位址範圍會設定為與列出的 TCP 或 UDP 連接埠相關聯。IP 位址範圍的 JSON 陣列。如果空白則省略。
 - category - 端點集的連線能力類別。 有效值為 _Optimize_、_Allow_ 和 _Default_。 如果您在端點 Web 方法的輸出中搜尋特定 IP 位址或 URL 的類別，您的查詢很有可能會傳回多個類別。 在這種情況下，請遵循最高優先順序類別的建議。 例如，如果端點同時出現在 _Optimize_ 和 _Allow_，您應該遵循 _Optimize_ 的要求。 此為必要動作。
 - expressRoute - 如果此端點集是透過 ExpressRoute 路由傳送，則為 _True_；如果不是，則為 _False_。
-- required - 如果此端點集必須要有連線能力才能支援 Office 365，則為 _True_。 如果此端點集為選擇性，則為 _False_。
-- notes - 針對選擇性的端點，這些文字說明無法在網路層存取此端點集中的 IP 位址或 URL 時，無法使用的 Office 365 功能。 如果空白則省略。
+- required - 如果需要此端點集才能支援 Office 365 連線，則為 _True_。如果此端點集為選擇性的，則為 _False_。
+- notes - 針對選擇性的端點，這些文字說明無法在網路層存取此端點集中的 IP 位址或 URL 時，無法使用的 Office 365 功能。如果空白則省略。
 
-### <a name="examples"></a>範例:
+### <a name="examples"></a>範例：
 
 範例 1 要求 URI：[https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
-此 URI 會取得所有工作負載之 Office 365 全球執行個體的所有端點。 範例結果顯示輸出的摘要：
+此 URI 會取得所有工作負載之 Office 365 全球執行個體的所有端點。顯示輸出摘要的範例結果：
 
 ```json
 [
@@ -254,7 +254,7 @@ Worldwide,2018063000
 
 變更 Web 方法的速率限制方式與端點 Web 方法相同。 如果您收到 429 HTTP 回應碼，請先等候 1 小時，再重複您的要求，或是針對要求產生新的 GUID。
 
-變更 Web 方法的結果是記錄的陣列，其中的每個記錄都代表特定端點版本中的一個變更。 每個記錄的元素為：
+變更 Web 方法的結果是記錄的陣列，其中的每個記錄都代表特定端點版本中的一個變更。每個記錄的元素為：
 
 - id - 變更記錄的固定 ID。
 - endpointSetId - 已變更的端點集記錄識別碼。
@@ -267,7 +267,7 @@ Worldwide,2018063000
   - MovedIpOrUrl - 我們已在此端點集和另一個端點集之間移動 IP 位址或 URL。 通常您不需要採取任何動作。
   - RemovedDuplicateIpOrUrl - 我們已移除重複的 IP 位址或 URL，但仍會在 Office 365 上發佈。 通常您不需要採取任何動作。
   - OtherNonPriorityChanges – 我們已變更重要性比其他所有選項低的一些項目，例如附註欄位的內容。
-- version - 在其中引入變更的已發佈端點集版本。 版本號碼的格式為 _YYYYMMDDNN_，其中 _NN_ 是單一天中有多個版本需要發佈時，遞增的自然數。
+- version - 在其中引入變更的已發佈端點集版本。版本號碼的格式為 _YYYYMMDDNN_，其中 _NN_ 是當一天中有多個版本需要發佈時，遞增的自然數。
 - previous - 子結構，詳細說明端點集上已變更元素的舊值。 不會對最近新增的端點集包含此設定。 包含 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
 - current - 子結構，詳細說明端點集上已變更元素的更新值。 包含 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
 - add - 子結構，詳細說明要新增至端點集集合的項目。 如果沒有新增項目則省略。
@@ -595,7 +595,7 @@ else:
 
 ## <a name="web-service-interface-versioning"></a>Web 服務介面版本設定
 
-未來有可能會需要更新這些 Web 服務方法的參數或結果。 發佈這些 Web 服務的正式運作版本之後，Microsoft 會致力於提供 Web 服務材料更新的事先通知。 當 Microsoft 認為需要對使用 Web 服務的用戶端進行更新時，Microsoft 會讓舊版 (上一個版本) Web 服務在新版本發行之後，仍然保持至少 12 個月可用。 在這段期間未升級的客戶可能無法存取 Web 服務及其方法。 如果對 Web 服務介面簽章進行下列變更，客戶必須確保 Web 服務的用戶端持續運作且沒有錯誤：
+未來可能需要對於這些 Web 服務方法的參數或結果更新。在這些 Web 服務的正式運作版本發行之後，Microsoft 會致力於提供 Web 服務材料更新的事先通知。當 Microsoft 認為需要對使用 Web 服務的用戶端進行更新時，Microsoft 會讓舊版 (上一個版本) Web 服務在新版本發行之後，仍然保持至少 12 個月可用。在這段期間未升級的客戶可能無法存取 Web 服務及其方法。如果對 Web 服務介面簽章進行下列變更，客戶必須確保 Web 服務的用戶端持續運作且沒有錯誤：
 
 - 將新的選擇性參數新增至現有 Web 方法，該方法不一定要由舊的用戶端提供，且不會影響舊用戶端接收的結果。
 - 將其中一個回應 REST 項目中的具名屬性或額外資料行新增至回應 CSV。

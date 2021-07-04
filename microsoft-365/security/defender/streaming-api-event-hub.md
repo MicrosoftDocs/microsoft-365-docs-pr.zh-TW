@@ -1,6 +1,6 @@
 ---
 title: Azure 事件中樞的資料流程 Microsoft 365 Defender 事件
-description: 瞭解如何設定 Microsoft 365 Defender，以將高級搜尋事件傳輸至您的事件中樞。
+description: 瞭解如何設定 Microsoft 365 Defender 以將高級搜尋事件傳輸至您的事件中樞。
 keywords: 原始資料匯出，流式 API，API，Azure 事件中樞，Azure 儲存體，儲存體帳戶，高級搜尋，原始資料共用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2e43b75e49d01a05fdacae0adf63ea3337631dfd
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903813"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289233"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>設定 Microsoft 365 Defender 以將高級搜尋事件傳輸至您的 Azure 事件中樞
 
@@ -33,17 +33,19 @@ ms.locfileid: "52903813"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 1. 在您的租使用者中建立 [事件中樞](/azure/event-hubs/) 。
 
-2. 登入您的 [Azure 租](https://ms.portal.azure.com/)使用者，移至訂閱 **> 訂閱 > 資源提供者 > 登錄至 Microsoft。**
+2. 登入您的 [Azure 租](https://ms.portal.azure.com/)使用者，移至訂閱 **> 訂閱 > 資源提供者 > 註冊至 Microsoft。 Insights**。
 
 3. 建立事件 Hub 命名空間，移至 **事件中樞 > 新增** 並選取適用于預期負載的定價層、輸送量單位和自動陀螺接。 如需詳細資訊，請參閱[定價-事件中心 |Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)。  
 
-### <a name="add-contributor-permissions"></a>新增投稿者許可權 
+### <a name="add-contributor-permissions"></a>新增投稿者許可權
+
 建立事件中心命名空間之後，您將需要：
-1. 定義將登入 Microsoft 365 Defender 的使用者。
+
+1. 定義將以投稿者登入 Microsoft 365 Defender 的使用者。
 
 2. 如果您要連線至應用程式，請將應用程式註冊服務主體新增為 Reader，Azure Event Hub Data 接收器 (也可以在資源群組或訂閱層級) 進行此操作。 
 
@@ -51,7 +53,7 @@ ms.locfileid: "52903813"
 
 ## <a name="enable-raw-data-streaming"></a>啟用原始資料資料流程
 
-1. 以 ***全域管理員** _ 或 _ *_安全性管理員_* * 的身分登入 [Microsoft 365 的 Defender 安全中心](https://security.microsoft.com)。
+1. 以 ***全域管理員** _ 或 _ *_安全性管理員_* * 的身分登入 [Microsoft 365 Defender 的安全性中心](https://security.microsoft.com)。
 
 2. 移至 [ [流式處理 API 設定] 頁面](https://security.microsoft.com/settings/mtp_settings/raw_data_export)。
 
@@ -75,28 +77,25 @@ ms.locfileid: "52903813"
 
 ```JSON
 {
-    "records": [
-                    {
-                        "time": "<The time Microsoft 365 Defender received the event>"
-                        "tenantId": "<The Id of the tenant that the event belongs to>"
-                        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
-                    }
-                    ...
-                ]
+   "records": [
+               {
+                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "tenantId": "<The Id of the tenant that the event belongs to>"
+                  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+               }
+               ...
+            ]
 }
 ```
 
 - Azure 事件 Hub 中的每個事件 Hub 郵件都包含記錄清單。
 
-- 每筆記錄都包含事件名稱、Microsoft 365 Defender 接收事件的時間、租使用者所屬的租使用者 (您只會從承租人) 中取得事件，而在名為 "**properties**" 的屬性中則會以 JSON 格式取得事件。
+- 每一筆記錄都包含事件名稱、接收事件的時間 Microsoft 365 Defender，而租使用者屬於 (您只會從承租人) 取得事件，而在名為 "**properties**" 的屬性中則會取得事件（JSON 格式）。
 
-- 如需 Microsoft 365 的 Defender 事件架構的詳細資訊，請參閱[高級搜尋一覽](advanced-hunting-overview.md)。
+- 如需 Microsoft 365 Defender 事件之架構的詳細資訊，請參閱[高級搜尋一覽](advanced-hunting-overview.md)。
 
 - 在 [高級搜尋] 中， **DeviceInfo** 表格具有一個名為 **MachineGroup** 的欄，其中含有裝置的群組。 在這裡，每個事件會同時使用此資料行來修飾。 
-
-
-
 
 ## <a name="data-types-mapping"></a>資料類型對應
 
@@ -105,7 +104,7 @@ ms.locfileid: "52903813"
 1. 登入[Microsoft 365 的安全性中心](https://security.microsoft.com)，然後移至 [[高級搜尋] 頁面](https://security.microsoft.com/hunting-package)。
 
 2. 執行下列查詢以取得每個事件的資料類型對應：
- 
+
    ```kusto
    {EventType}
    | getschema
@@ -117,8 +116,9 @@ ms.locfileid: "52903813"
   ![事件 Hub resource Id2 的影像](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>相關主題
+
 - [高級搜尋一覽](advanced-hunting-overview.md)
-- [Microsoft 365Defender 資料流程 API](streaming-api.md)
-- [將 Microsoft 365 的 Defender 事件資料流程至您的 Azure 儲存體帳戶](streaming-api-storage.md)
+- [資料流程 API Microsoft 365 Defender](streaming-api.md)
+- [將 Microsoft 365 Defender 事件資料流程至您的 Azure 儲存體帳戶](streaming-api-storage.md)
 - [Azure 事件中樞檔](/azure/event-hubs/)
 - [疑難排解連線問題-Azure 事件中樞](/azure/event-hubs/troubleshooting-guide)

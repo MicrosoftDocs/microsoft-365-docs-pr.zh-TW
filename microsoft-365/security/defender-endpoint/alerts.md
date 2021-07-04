@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769806"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289676"
 ---
 # <a name="alert-resource-type"></a>警示資源類型
 
@@ -52,10 +52,9 @@ ms.locfileid: "52769806"
 [取得相關的電腦](get-alert-related-machine-info.md) | [機器](machine.md) | 與[警示](alerts.md)相關聯的[電腦](machine.md)。
 [取得相關的使用者](get-alert-related-user-info.md) | [使用者](user.md) | 與[警示](alerts.md)相關聯的[使用者](user.md)。
 
-
 ## <a name="properties"></a>屬性
 
-屬性	 |    類型    |    描述
+屬性	 |    類型    |    說明
 :---|:---|:---
 id | 字串 | 警示識別碼。
 標題 | String | 警示標題。

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 將文件瞭解模型套用至一或多個程式庫。
-ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177258"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286534"
 ---
 # <a name="batch-apply-model"></a>批次套用模型
 
@@ -34,7 +34,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 ## <a name="request-headers"></a>要求標頭
 
-| 標頭 | 值 |
+| 頁首 | 值 |
 |--------|-------|
 |Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
@@ -48,6 +48,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 |出版物|是|MachineLearningPublicationEntityData[]|MachineLearningPublicationEntityData 的集合，每個集合會指定模型和目的文件庫。|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名稱 | 必要項目 | 類型 | 描述 |
 |--------|-------|--------|------------|
 |ModelUniqueId|是|string|模型檔案的唯一識別碼。|
@@ -60,9 +61,10 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 | 名稱   | 類型  | 描述|
 |--------|-------|------------|
-|201 已建立||這是個自訂 API 用以支援將模型套用至多個文件庫。 在部分成功的情況下，仍然可以返回已建立 201，而且呼叫者必須檢查回應主體，以了解模型是否成功套用至文件庫。|
+|201 已建立||這是自訂的 API，用來支援套用模型至多個文件庫。在部分成功的情況下，仍可以傳回 201 已建立，而且呼叫者必須檢查回應內文，以了解是否已成功將模型套用至文件庫。|
 
 ## <a name="response-body"></a>回應本文
+
 | 名稱   | 類型  | 說明|
 |--------|-------|------------|
 |TotalSuccesses|int|成功套用至文件庫的模型總數。|
@@ -70,6 +72,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 |詳細資料|MachineLearningPublicationResult[]|MachineLearningPublicationResult 的集合，每個集合會指定將模型套用至文件庫的詳細結果。|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | 名稱   | 類型  | 說明|
 |--------|-------|------------|
 |StatusCode|int|HTTP 狀態碼。|
@@ -77,6 +80,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 |出版物|MachineLearningPublicationEntityData|它會指定模型資訊和目的文件庫。| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名稱 | 類型 | 描述 |
 |--------|--------|------------|
 |ModelUniqueId|string|模型檔案的唯一識別碼。|

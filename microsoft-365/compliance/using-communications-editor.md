@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 當您設定內容格式時，請使用通訊編輯器變更文字和合併欄位變數。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769158"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288116"
 ---
 # <a name="use-the-communications-editor"></a>使用通訊編輯器
 
@@ -40,11 +40,15 @@ ms.locfileid: "49769158"
 
 ### <a name="list-of-merge-field-variables"></a>合併欄位變數清單
 
-| 欄位名稱                  | 欄位詳細資料 |
-| :------------------- | :------------------- |
-| 顯示名稱  | 管理員的名字和姓氏。 | 
-| 確認連結 | 自訂的連結，可記錄每個保管人的認可。|                 |
-| 入口網站連結     | 管理員的規範入口網站的自訂連結。|                |
-| 簽發官                   | 指定之簽發專員的電子郵件地址。|                   |
-| 簽發日期                   | 發出通知的日期 (UTC) 。              |
-|||
+<br>
+
+****
+
+|欄位名稱|欄位詳細資料|
+|---|---|
+|顯示名稱|管理員的名字和姓氏。|
+|確認連結|自訂的連結，可記錄每個保管人的認可。|
+|入口網站連結|管理員的規範入口網站的自訂連結。|
+|簽發官|指定之簽發專員的電子郵件地址。|
+|簽發日期|發出通知的日期 (UTC) 。|
+|

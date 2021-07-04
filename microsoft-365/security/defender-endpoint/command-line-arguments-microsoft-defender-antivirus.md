@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 25f038846f9dd9855823382d4e1babcf0547fed6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: efeb49b2741bdc45f7924032c2deb8a27458ca29
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636167"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289412"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>使用 mpcmdrun.exe 命令列工具來設定及管理 Microsoft Defender 防毒軟體
 
@@ -31,7 +31,7 @@ ms.locfileid: "52636167"
 您可以使用專用命令列工具 **mpcmdrun.exe**，在 Microsoft Defender 防毒軟體中執行各種功能。 當您想要自動化 Microsoft Defender 防毒軟體工作時，此公用程式非常有用。 您可以在中找到該公用程式 `%ProgramFiles%\Windows Defender\MpCmdRun.exe` 。 從命令提示字元執行。
 
 > [!TIP]
-> 您可能需要開啟命令提示字元的系統管理員層級版本。 當您在 [開始] 功能表上搜尋 **命令提示** 字元時，選擇 [以 **系統管理員身分執行**]。 如果您正在執行更新的 Microsoft Defender 平臺版本，請 `MpCmdRun` 從下列位置執行： `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。 如需有關反惡意程式碼平臺的詳細資訊，請參閱[Microsoft Defender 防毒軟體更新和基準](manage-updates-baselines-microsoft-defender-antivirus.md)。
+> 您可能需要開啟命令提示字元的系統管理員層級版本。 當您在 [開始] 功能表上搜尋 **命令提示** 字元時，請選擇 [**以系統管理員身分執行**]。 如果您正在執行更新的 Microsoft Defender 平臺版本，請 `MpCmdRun` 從下列位置執行： `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。 如需有關反惡意程式碼平臺的詳細資訊，請參閱[Microsoft Defender 防毒軟體更新和基準](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 MpCmdRun 實用程式使用下列語法：
 
@@ -73,7 +73,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |錯誤訊息 | 可能的原因 |
 |:----|:----|
-| **ValidateMapsConnection 失敗 (800106BA)** 或 **0x800106BA** | 已停用 Microsoft Defender 防毒軟體服務。 請啟用服務，然後再試一次。 如果您需要協助重新啟用 Microsoft Defender 防毒軟體，請參閱[在端點上重新安裝/啟用 Microsoft Defender 防毒軟體](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p>   **秘訣** 在 Windows 10 1909 或更舊版本，以及 Windows Server 2019 或更舊版本中，此服務先前稱為 *Windows Defender 防毒軟體*。 |
+| **ValidateMapsConnection 失敗 (800106BA)** 或 **0x800106BA** | 已停用 Microsoft Defender 防毒軟體服務。 請啟用服務，然後再試一次。 如果您需要協助重新啟用 Microsoft Defender 防毒軟體，請參閱[在端點上重新安裝/啟用 Microsoft Defender 防毒軟體](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **提示**：在 Windows 10 1909 或更舊版本，以及 Windows Server 2019 或更舊版本中，服務先前稱為 *Windows Defender 防毒軟體*。 |
 | **0x80070667** | 您正在 `-ValidateMapsConnection` 從 Windows 10 版本1607或更舊版本的電腦，或 Windows Server 2016 或更舊版本執行命令。 從 Windows 10 版本1703或更新版本的機器執行命令，或 Windows 伺服器2019或更新版本。|
 | **MpCmdRun 未被辨識為內部或外部命令、可的程式或批次檔。** | 您必須從或 (執行該工具， `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0` 因為平臺更新是每月以外的月，而不是三月份) |
 | **ValidateMapsConnection 無法建立與對應 (hr = 80070005 HTTPcode = 450) 的連接** | 命令嘗試使用的許可權不足。 以系統管理員身分 (cmd.exe) 使用命令提示字元。|

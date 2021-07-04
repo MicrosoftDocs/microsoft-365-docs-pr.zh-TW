@@ -11,8 +11,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246391"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288452"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數評估安全性狀況
 
@@ -36,9 +35,9 @@ Microsoft 安全分數是組織安全性狀況的度量單位，數字越高，�
 
 為了協助您更快速地找到所需資訊，Microsoft 改進動作會組織成群組：
 
-* Identity (Azure Active Directory 帳戶 & 角色) 
-* 裝置 (Microsoft Defender for Endpoint，稱為 [裝置的 Microsoft 安全評分](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
-*  (電子郵件和雲端應用程式的應用程式，包括 Office 365 和 Microsoft Cloud App Security) 
+- Identity (Azure Active Directory 帳戶 & 角色) 
+- 裝置 (Microsoft Defender for Endpoint，稱為 [裝置的 Microsoft 安全評分](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
+-  (電子郵件和雲端應用程式的應用程式，包括 Office 365 和 Microsoft Cloud App Security) 
 
 >[!NOTE]
 >在最近發行的 Microsoft Secure 得分中，已發行的計分模型已發佈，使 Microsoft 安全分數暫時不相容身分識別安全分數和 Graph API。 [檢視詳細資料](microsoft-secure-score-whats-new.md)
@@ -106,7 +105,7 @@ Microsoft 安全分數是組織安全性狀況的度量單位，數字越高，�
 
 一 **眼** 就會告訴您，您的類別、可以防禦的攻擊，以及產品。
 
-**使用者影響** 是指在已頒佈改進動作時，使用者會遇到的影響，而 **受影響的使用者** 則是受影響的人員。
+**使用者影響** 是指在已頒佈改進動作時，使用者會遇到的情況，而且 **受影響的使用者** 是將會受到影響的人員。
 
 ### <a name="implement-the-improvement-action"></a>實施改進動作
 

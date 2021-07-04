@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230052"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287888"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置
 
@@ -32,9 +32,8 @@ Microsoft 受管理的電腦會定期評估要包含在服務中的裝置。 本
 
 此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存 *日期*」是這些模型會變得更短 Microsoft 受管理的電腦服務生命的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦獲得全三年的支援期限。 封存裝置也會列在[Microsoft 受管理的電腦](archived-device-list.md)已封存裝置中。 「*退休日期*」是指 Microsoft 受管理的電腦此模型將不再受到支援的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的電腦中移除，而不論他們是否已註冊。
 
->[!NOTE]
->您可以隨時將裝置加入至此表格，但是我們會針對影響封存或退休日期的變更，提供90天的通知。 最近新增的裝置會以標記 **\*** 。
-
+> [!NOTE]
+> 您可以隨時將裝置加入至此表格，但是我們會針對影響封存或退休日期的變更，提供90天的通知。 最近新增的裝置會以標記 **\*** 。
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦設備
 
@@ -85,13 +84,14 @@ Microsoft 受管理的電腦會定期評估要包含在服務中的裝置。 本
 - 尚未完成 Windows 初次執行體驗。
 - 使用[Device Registration](../get-started/register-devices-self.md)功能在 Microsoft 受管理的電腦中註冊
 
->[!NOTE]
->裝置使用2.0GHz 或更快的處理器，可為參與這些活動的使用者提供更佳的體驗：
->- 搭配 Teams 使用影片會議。 如需詳細資訊，請參閱[Microsoft Teams 的硬體需求](/microsoftteams/hardware-requirements-for-the-teams-app)。
->-  針對多個不同的工作負載使用一個裝置。
->- 使用多個監視器。
+> [!NOTE]
+> 裝置使用2.0GHz 或更快的處理器，可為參與這些活動的使用者提供更佳的體驗：
+>
+> - 搭配 Teams 使用影片會議。 如需詳細資訊，請參閱[Microsoft Teams 的硬體需求](/microsoftteams/hardware-requirements-for-the-teams-app)。
+> - 針對多個不同的工作負載使用一個裝置。
+> - 使用多個監視器。
 
-**更多説明**
+## <a name="more-help"></a>更多説明
 
 這些資源可協助您回答可能有關特定裝置的問題：
 

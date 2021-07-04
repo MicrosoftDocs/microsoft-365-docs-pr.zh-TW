@@ -14,26 +14,26 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 62e65f9be25e2c482cca78577048d504ee93097a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698973"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288152"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 採用：快速入門
 
-請將 SharePoint Syntex 中可用的智慧內容服務看作有三個部分：
+請將 SharePoint Syntex 中提供的智慧內容服務想像為三個部分：
 
 - **內容瞭解：** 建立無程式碼的 AI 模型，以分類及提取內容中的資訊，以自動套用中繼資料以進行知識探索和重複使用。 深入瞭解 [內容瞭解](document-understanding-overview.md)。
 - **內容處理：** 自動化內容的捕獲、攝取和分類，並使用 Power Automate 簡化以內容為中心的流程。 深入瞭解 [內容處理](form-processing-overview.md)。
 - **內容規範：** 控制和管理內容，以改進安全性和管理與 Microsoft 資訊保護的整合。
 
-透過全新的 AI 服務和功能，您可以使用 SharePoint Syntex，將內容瞭解和分類應用程式直接組建至內容管理流程。 有兩種不同的方式可以瞭解您的內容。 您使用的模型類型是以檔案格式和使用案例為基礎：
+透過全新的 AI 服務和功能，您可以使用 SharePoint Syntex 將內容瞭解和分類應用程式直接組建至內容管理流程。 有兩種不同的方式可以瞭解您的內容。 您使用的模型類型是以檔案格式和使用案例為基礎：
 
 | 表單處理 | 文件瞭解 |
 |:-------|:-------|
-| 從文件庫建立。 | 在內容中心建立，SharePoint Syntex 的一部分。 |
+| 從文件庫建立。 | 在內容中心建立 SharePoint Syntex 的一部分。 |
 | 在 [AI 產生器] 中建立的模型。 | 在原生介面中建立的模型。 |
 | 用於半結構化檔案格式。 | 用於非結構化檔案格式。 |
 | 可設定的分類器。 | Trainable 具有選用擷取器的分類器。 |
@@ -49,11 +49,11 @@ ms.locfileid: "52698973"
 - **內容處理：** 處理合約、工作說明及其他類似表單的檔。 使用表單，訓練模型以瞭解和對應欄位，然後執行表單以自動收集資料。 如需詳細資訊，請參閱 [表單處理一覽](form-processing-overview.md)。
 - **發票分析：** 從發票拔出相關的詳細資料，確定他們遵循原則或進行適當處理。
 
-請思考 SharePoint Syntex 可如何協助您的組織的方式：
+請思考 SharePoint Syntex 可協助貴組織的方式：
 
-- 自動化商務程式
+- 自動化商務程序
 - 提高搜尋精確度
-- 管理規範風險
+- 管理合規性風險
 
 當您考慮要考慮的商務案例時，請詢問您下列問題：
 
@@ -116,7 +116,7 @@ ms.locfileid: "52698973"
 
 ## <a name="readiness-checklist"></a>準備工作表
 
-若要準備好執行 SharePoint Syntex，您必須執行下列作業：
+若要準備好執行 SharePoint Syntex，您必須：
 
 ![內容瞭解的準備工作](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "52698973"
     - 是否有任何現有的內容類型適合模型？
     - 中繼資料會改善哪些現有的處理常式？
 3. 設計
-    - 設計您的資訊架構、受管理的中繼資料和內容類型的方法
+    - 設計您的資訊架構、受管理的中繼資料和內容類型的方法。
     - 設計定義、建立、管理的程式。
 
 ## <a name="engage-your-organization"></a>與您的組織合作
@@ -146,4 +146,4 @@ ms.locfileid: "52698973"
 
 ## <a name="see-also"></a>另請參閱
 
-[SharePoint Syntex 的案例和使用案例](adoption-scenarios.md)
+[SharePoint Syntex 案例和使用案例](adoption-scenarios.md)

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何建立精確資料比對活動的通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: da00c43ae9ba5b129129027df16f49ef80b8757d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007558"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288164"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>建立精確資料比對活動的通知
 
-在[使用資料完全相符 (EDM) 建立自訂敏感性資訊類型時](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)，在[稽核記錄](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中會建立許多活動。 您可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell Cmdlet建立通知，讓您知道這些活動何時發生：
+在[使用資料完全相符 (EDM) 建立自訂敏感性資訊類型時](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)，在[稽核記錄](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中會建立許多活動。 您可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell Cmdlet建立通知，讓您知道這些活動何時發生：
 
 - CreateSchema
 - EditSchema
@@ -55,7 +55,7 @@ ms.locfileid: "53007558"
 
 ## <a name="configure-notifications-for-edm-activities"></a>設定 EDM 活動的通知
 
-1. 連線到[安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps) 
+1. 連線到[安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 
 
 2. 使用您想建立通知的活動執行 `New-ProtectionAlert` Cmdlet。  例如，如果您想要在 **UploadDataCompleted** 動作發生時收到通知，執行
 
@@ -72,4 +72,4 @@ New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUse
 ## <a name="related-articles"></a>相關文章
 
 - [使用資料完全相符 (EDM) 建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps)
+- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861548"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289484"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -36,8 +36,8 @@ ms.locfileid: "52861548"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
->[!IMPORTANT]
->本主題包含如何在企業環境中設定適用于 Linux 之 Defender 的 Defender 偏好設定的指示。 如果您想要從命令列在裝置上設定產品，請參閱 [Resources](linux-resources.md#configure-from-the-command-line)。
+> [!IMPORTANT]
+> 本主題包含如何在企業環境中設定適用于 Linux 之 Defender 的 Defender 偏好設定的指示。 如果您想要從命令列在裝置上設定產品，請參閱 [Resources](linux-resources.md#configure-from-the-command-line)。
 
 在企業環境中，可以透過設定設定檔來管理 Linux 上的 Defender。 此設定檔是從您選擇的管理工具部署。 由企業管理的喜好設定會優先于裝置上的本機設定。 換句話說，您企業中的使用者無法變更透過此設定檔設定的喜好設定。
 
@@ -55,169 +55,226 @@ ms.locfileid: "52861548"
 
 設定設定檔的 [ *antivirusEngine* ] 區段是用來管理產品之防病毒元件的喜好設定。
 
-|||
-|:---|:---|
-| **機碼** | antivirusEngine |
-| **資料類型** | 字典 (嵌套偏好)  |
-| **Comments** | 請參閱下列各節以取得字典內容的描述。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|antivirusEngine|
+|**資料類型**|字典 (嵌套偏好) |
+|**Comments**|請參閱下列各節以取得字典內容的描述。|
+|
 
 #### <a name="enable--disable-real-time-protection"></a>啟用/停用即時保護
 
 會決定在啟用或未啟用) 時，是否即時保護 (掃描檔案。
 
-|||
-|:---|:---|
-| **機碼** | enableRealTimeProtection |
-| **資料類型** | 布林值 |
-| **可能值** | true (預設)  <br/> 假 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|enableRealTimeProtection|
+|**資料類型**|布林值|
+|**可能值**|true (預設)  <p> 假|
+|
 
 #### <a name="enable--disable-passive-mode"></a>啟用/停用被動模式
 
 決定防病毒引擎是否以被動模式執行。 在被動模式：
+
 - 已關閉即時保護功能。
 - 已開啟隨選掃描。
 - 關閉自動威脅修復功能。
 - 已開啟安全性智慧更新。
 - [狀態] 功能表圖示已隱藏。
 
-|||
-|:---|:---|
-| **機碼** | passiveMode |
-| **資料類型** | 布林值 |
-| **可能值** | false (預設)  <br/> 真 |
-| **Comments** | 在100.67.60 或更高版本的 Defender 中提供。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|passiveMode|
+|**資料類型**|布林值|
+|**可能值**|false (預設)  <p> 真|
+|**Comments**|在100.67.60 或更高版本的 Defender 中提供。|
+|
 
 #### <a name="exclusion-merge-policy"></a>排除合併原則
 
 指定排除專案的合併原則。 它可以是管理員定義和使用者定義排除的組合 (`merge`) 或只) 系統管理員定義的排除 (`admin_only` 。 您可以使用此設定來限制本機使用者定義自己的排除專案。
 
-|||
-|:---|:---|
-| **機碼** | exclusionsMergePolicy |
-| **資料類型** | 字串 |
-| **可能值** | merge (預設值)  <br/> admin_only |
-| **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|exclusionsMergePolicy|
+|**資料類型**|字串|
+|**可能值**|merge (預設值)  <p> admin_only|
+|**Comments**|在100.83.73 或更高版本的 Defender 中提供。|
+|
 
 #### <a name="scan-exclusions"></a>掃描排除
 
 已從掃描中排除的實體。 您可以使用完整路徑、副檔名或檔案名來指定排除。
  (排除專案是以專案陣列的形式指定，管理員可以根據需要依任何順序指定任意數目的元素。 ) 
 
-|||
-|:---|:---|
-| **機碼** | 排除 |
-| **資料類型** | 字典 (嵌套偏好)  |
-| **Comments** | 請參閱下列各節以取得字典內容的描述。 |
-|||
+<br>
 
-**排除的類型**
+****
+
+|說明|值|
+|---|---|
+|**Key**|排除|
+|**資料類型**|字典 (嵌套偏好) |
+|**Comments**|請參閱下列各節以取得字典內容的描述。|
+|
+
+##### <a name="type-of-exclusion"></a>排除的類型
 
 指定排除在掃描之外的內容類型。
 
-|||
-|:---|:---|
-| **機碼** | $type |
-| **資料類型** | 字串 |
-| **可能值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
-|||
+<br>
 
-**排除內容的路徑**
+****
+
+|說明|值|
+|---|---|
+|**Key**|$type|
+|**資料類型**|字串|
+|**可能值**|excludedPath <p> excludedFileExtension <p> excludedFileName|
+|
+
+##### <a name="path-to-excluded-content"></a>排除內容的路徑
 
 用於從掃描的完整檔案路徑中排除內容。
 
-|||
-|:---|:---|
-| **機碼** | 路徑 |
-| **資料類型** | 字串 |
-| **可能值** | 有效路徑 |
-| **Comments** | 僅適用于 *excludedPath* *$type* |
-|||
+<br>
 
-**(檔/目錄的路徑類型)**
+****
+
+|說明|值|
+|---|---|
+|**Key**|路徑|
+|**資料類型**|字串|
+|**可能值**|有效路徑|
+|**Comments**|僅適用于 *excludedPath* *$type*|
+|
+
+##### <a name="path-type-file--directory"></a> (檔/目錄的路徑類型) 
 
 會指出 *path* 屬性參照的是檔案或目錄。
 
-|||
-|:---|:---|
-| **機碼** | isDirectory |
-| **資料類型** | 布林值 |
-| **可能值** | false (預設)  <br/> 真 |
-| **Comments** | 僅適用于 *excludedPath* *$type* |
-|||
+<br>
 
-**從掃描排除的副檔名**
+****
+
+|說明|值|
+|---|---|
+|**Key**|isDirectory|
+|**資料類型**|布林值|
+|**可能值**|false (預設)  <p> 真|
+|**Comments**|僅適用于 *excludedPath* *$type*|
+|
+
+##### <a name="file-extension-excluded-from-the-scan"></a>從掃描排除的副檔名
 
 用於從 [掃描者] 副檔名排除內容。
 
-|||
-|:---|:---|
-| **機碼** | 擴展 |
-| **資料類型** | 字串 |
-| **可能值** | 有效的副檔名 |
-| **Comments** | 僅適用于 *excludedFileExtension* *$type* |
-|||
+<br>
 
-**從掃描排除的處理常式**
+****
+
+|說明|值|
+|---|---|
+|**Key**|擴展|
+|**資料類型**|字串|
+|**可能值**|有效的副檔名|
+|**Comments**|僅適用于 *excludedFileExtension* *$type*|
+|
+
+##### <a name="process-excluded-from-the-scan"></a>從掃描排除的處理常式
 
 指定從掃描排除所有檔案活動的處理常式。 您可以透過名稱來指定程式 (例如， `cat`) 或完整路徑 (例如 `/bin/cat`) 。
 
-|||
-|:---|:---|
-| **機碼** | name |
-| **資料類型** | 字串 |
-| **可能值** | 任何字串 |
-| **Comments** | 僅適用于 *excludedFileName* *$type* |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|name|
+|**資料類型**|字串|
+|**可能值**|任何字串|
+|**Comments**|僅適用于 *excludedFileName* *$type*|
+|
 
 #### <a name="allowed-threats"></a>允許的威脅
 
 根據其名稱) 所識別的威脅清單，其 (未被產品封鎖，但改為允許執行。
 
-|||
-|:---|:---|
-| **機碼** | allowedThreats |
-| **資料類型** | 字串陣列 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|allowedThreats|
+|**資料類型**|字串陣列|
+|
 
 #### <a name="disallowed-threat-actions"></a>不允許的威脅動作
 
 限制偵測到威脅時，裝置的本機使用者可以採取的動作。 在此清單中包含的動作不會顯示在使用者介面中。
 
-|||
-|:---|:---|
-| **機碼** | disallowedThreatActions |
-| **資料類型** | 字串陣列 |
-| **可能值** | 允許 (限制使用者允許威脅)  <br/> restore (會限制使用者從隔離區還原威脅)  |
-| **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|disallowedThreatActions|
+|**資料類型**|字串陣列|
+|**可能值**|允許 (限制使用者允許威脅)  <p> restore (會限制使用者從隔離區還原威脅) |
+|**Comments**|在100.83.73 或更高版本的 Defender 中提供。|
+|
 
 #### <a name="threat-type-settings"></a>威脅類型設定
 
 防病毒引擎中的 *threatTypeSettings* 首選項是用來控制產品如何處理特定威脅類型。
 
-|||
-|:---|:---|
-| **機碼** | threatTypeSettings |
-| **資料類型** | 字典 (嵌套偏好)  |
-| **Comments** | 請參閱下列各節以取得字典內容的描述。 |
-|||
+<br>
 
-**威脅類型**
+****
+
+|說明|值|
+|---|---|
+|**Key**|threatTypeSettings|
+|**資料類型**|字典 (嵌套偏好) |
+|**Comments**|請參閱下列各節以取得字典內容的描述。|
+|
+
+##### <a name="threat-type"></a>威脅類型
 
 設定行為的威脅類型。
 
-|||
-|:---|:---|
-| **機碼** | 機碼 |
-| **資料類型** | 字串 |
-| **可能值** | potentially_unwanted_application <br/> archive_bomb |
-|||
+<br>
 
-**要採取的動作**
+****
+
+|說明|值|
+|---|---|
+|**Key**|機碼|
+|**資料類型**|字串|
+|**可能值**|potentially_unwanted_application <p> archive_bomb|
+|
+
+##### <a name="action-to-take"></a>要採取的動作
 
 當您在上述區段中所指定類型的威脅到來時採取的動作。 可以是：
 
@@ -225,107 +282,143 @@ ms.locfileid: "52861548"
 - **封鎖**：針對這類威脅保護裝置，並在安全性主控台中通知您。
 - **Off**：裝置不會受到這種威脅類型的保護，而且不會記錄任何內容。
 
-|||
-|:---|:---|
-| **機碼** | 數值 |
-| **資料類型** | 字串 |
-| **可能值** | 審核 (預設)  <br/> 塊 <br/> 遠離 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|數值|
+|**資料類型**|字串|
+|**可能值**|審核 (預設)  <p> 塊 <p> 遠離|
+|
 
 #### <a name="threat-type-settings-merge-policy"></a>威脅類型設定合併原則
 
 指定威脅類型設定的合併原則。 這可以是管理員定義和使用者定義設定的組合， (`merge`) 或只 () 的系統管理員定義的設定 `admin_only` 。 此設定可用來限制本機使用者針對不同威脅類型定義自己的設定。
 
-|||
-|:---|:---|
-| **機碼** | threatTypeSettingsMergePolicy |
-| **資料類型** | 字串 |
-| **可能值** | merge (預設值)  <br/> admin_only |
-| **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|threatTypeSettingsMergePolicy|
+|**資料類型**|字串|
+|**可能值**|merge (預設值)  <p> admin_only|
+|**Comments**|在100.83.73 或更高版本的 Defender 中提供。|
+|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>防病毒掃描記錄保留 (天數) 
 
 指定在裝置上的掃描歷程記錄中保留結果的天數。 舊的掃描結果會從歷史記錄中移除。 也會從磁片中移除的舊隔離檔案。
 
-|||
-|:---|:---|
-| **機碼** | scanResultsRetentionDays |
-| **資料類型** | 字串 |
-| **可能值** | 90 (預設) 。 允許的值介於1天到180天。 |
-| **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|scanResultsRetentionDays|
+|**資料類型**|字串|
+|**可能值**|90 (預設) 。 允許的值介於1天到180天。|
+|**Comments**|在101.04.76 或更高版本的 Defender 中提供。|
+|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>防病毒掃描歷程記錄中的專案數上限
 
 指定要保留在掃描記錄中的專案數上限。 專案包括過去執行的所有按需掃描及所有防病毒偵測。
 
-|||
-|:---|:---|
-| **機碼** | scanHistoryMaximumItems |
-| **資料類型** | 字串 |
-| **可能值** | 10000 (預設) 。 允許的值是從5000專案到15000專案。 |
-| **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|scanHistoryMaximumItems|
+|**資料類型**|字串|
+|**可能值**|10000 (預設) 。 允許的值是從5000專案到15000專案。|
+|**Comments**|在101.04.76 或更高版本的 Defender 中提供。|
+|
 
 ### <a name="cloud-delivered-protection-preferences"></a>雲端提供的保護偏好設定
 
 設定設定檔中的 *cloudService* 專案是用來設定產品的雲端驅動保護功能。
 
-|||
-|:---|:---|
-| **機碼** | cloudService |
-| **資料類型** | 字典 (嵌套偏好)  |
-| **Comments** | 請參閱下列各節以取得字典內容的描述。 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|cloudService|
+|**資料類型**|字典 (嵌套偏好) |
+|**Comments**|請參閱下列各節以取得字典內容的描述。|
+|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>啟用/停用雲端已傳送保護
 
 決定是否已在裝置上啟用雲端傳送保護。 若要改善服務的安全性，建議您保持此功能開啟。
 
-|||
-|:---|:---|
-| **機碼** | 啟用 |
-| **資料類型** | 布林值 |
-| **可能值** | true (預設)  <br/> 假 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|啟用|
+|**資料類型**|布林值|
+|**可能值**|true (預設)  <p> 假|
+|
 
 #### <a name="diagnostic-collection-level"></a>診斷集合層級
 
 診斷資料是用來將 Defender 設定為安全和更新、偵測、診斷和修正問題，也可讓產品改進。 此設定會決定由產品所傳送給 Microsoft 的診斷層級。
 
-|||
-|:---|:---|
-| **機碼** | diagnosticLevel |
-| **資料類型** | 字串 |
-| **可能值** | 選用 (預設)  <br/> 必要 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|diagnosticLevel|
+|**資料類型**|字串|
+|**可能值**|選用 (預設)  <p> 必要|
+|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>啟用/停用自動範例報送
 
 會決定是否有可疑的範例 (可能包含) 傳送給 Microsoft 的威脅。 有三個層級可用於控制範例提交：
 
 - **None**：沒有可疑的範例提交給 Microsoft。
-- **安全**：只有不含個人身分識別資訊 (PII) 的可疑範例會自動提交。 此為此設定的預設值。
+- **保管庫**：系統會自動提交不含個人身分識別資訊 (PII) 的可疑範例。 此為此設定的預設值。
 - **All**：將所有可疑的範例提交給 Microsoft。
 
-|||
-|:---|:---|
-| **機碼** | automaticSampleSubmissionConsent |
-| **資料類型** | 字串 |
-| **可能值** | 無 <br/> 安全 (預設)  <br/> 所有 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|automaticSampleSubmissionConsent|
+|**資料類型**|字串|
+|**可能值**|無 <p> 安全 (預設)  <p> 所有|
+|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>啟用/停用自動安全性智慧更新
 
 決定是否自動安裝安全性智慧更新：
 
-|||
-|:---|:---|
-| **機碼** | automaticDefinitionUpdateEnabled |
-| **資料類型** | 布林值 |
-| **可能值** | true (預設)  <br/> 假 |
-|||
+<br>
+
+****
+
+|說明|值|
+|---|---|
+|**Key**|automaticDefinitionUpdateEnabled|
+|**資料類型**|布林值|
+|**可能值**|true (預設)  <p> 假|
+|
 
 ## <a name="recommended-configuration-profile"></a>建議的設定設定檔
 
@@ -444,10 +537,12 @@ python -m json.tool mdatp_managed.json
 如果 JSON 格式正確，上述命令會將其輸出到終端，並傳回的退出程式碼 `0` 。 否則，會顯示描述問題的錯誤，且命令會傳回的退出程式碼 `1` 。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>驗證檔案上的 mdatp_managed.js是否如預期般運作
+
 若要確認您的/etc/opt/microsoft/mdatp/managed/mdatp_managed.js開啟中是否正常運作，您應該會在下列設定旁看到「[managed]」：
+
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
-- passice_mode_enabled
+- passive_mode_enabled
 - real_time_protection_enabled
 - automatic_definition_update_enabled
 

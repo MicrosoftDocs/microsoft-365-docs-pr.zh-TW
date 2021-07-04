@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470493"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289490"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高級搜尋架構命名變更
 
@@ -55,22 +55,22 @@ ms.locfileid: "52470493"
 
 | 資料行名稱 | 原始值名稱 | 新值名稱 | 變更的原因
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | ..Org |
-| `DetectionSource` | WindowsDefenderAtp|   EDR| ..Org |
+| `DetectionSource` | MCAS | Microsoft 雲端 App 安全性 | ..Org |
+| `DetectionSource` | WindowsDefenderAtp| EDR| ..Org |
 | `DetectionSource` | WindowsDefenderAv | 防毒 | ..Org |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | ..Org |
-| `DetectionSource` | CustomerTI |  自訂 TI | ..Org |
+| `DetectionSource` | CustomerTI | 自訂 TI | ..Org |
 | `DetectionSource` | OfficeATP | 適用於 Office 365 的 Microsoft Defender | ..Org |
-| `DetectionSource` | 具有 MTP 之   | Microsoft 365 Defender | ..Org |
-| `DetectionSource` | AzureATP |    適用於身分識別的 Microsoft Defender | ..Org |
-| `DetectionSource` | CustomDetection   | 自訂偵測 | ..Org |
+| `DetectionSource` | 具有 MTP 之 | Microsoft 365 Defender | ..Org |
+| `DetectionSource` | AzureATP | 適用於身分識別的 Microsoft Defender | ..Org |
+| `DetectionSource` | CustomDetection | 自訂偵測 | ..Org |
 | `DetectionSource` | AutomatedInvestigation |自動調查 | ..Org |
 | `DetectionSource` | ThreatExperts | Microsoft 威脅專家 | ..Org |
 | `DetectionSource` | 協力廠商的 TI | 協力廠商感應器 | ..Org |
 | `ServiceSource` | Microsoft Defender ATP| 適用於端點的 Microsoft Defender | ..Org |
-|`ServiceSource` |Microsoft 威脅防護   | Microsoft 365 Defender | ..Org |
-| `ServiceSource` | Office 365 ATP  |適用於 Office 365 的 Microsoft Defender | ..Org |
-| `ServiceSource` |Azure ATP    |適用於身分識別的 Microsoft Defender | ..Org |
+|`ServiceSource` |Microsoft 威脅防護 | Microsoft 365 Defender | ..Org |
+| `ServiceSource` | Office 365 ATP |適用於 Office 365 的 Microsoft Defender | ..Org |
+| `ServiceSource` |Azure ATP |適用於身分識別的 Microsoft Defender | ..Org |
 
 `DetectionSource` 可用於 [AlertInfo](advanced-hunting-alertinfo-table.md) 表格。 `ServiceSource` 可用於 [AlertEvidence](advanced-hunting-alertevidence-table.md) 和 [AlertInfo](advanced-hunting-alertinfo-table.md) 資料表。 
 

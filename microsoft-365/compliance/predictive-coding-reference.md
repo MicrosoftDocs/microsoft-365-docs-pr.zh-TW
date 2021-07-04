@@ -1,5 +1,5 @@
 ---
-title: 預測編碼參考
+title: 預測性編碼參照
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 90c76fade54c109fc02e145a49bbe93d11ad8b79
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822491"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288272"
 ---
 # <a name="predictive-coding-reference-preview"></a>預測編碼參考 (預覽) 
 
@@ -36,14 +36,18 @@ ms.locfileid: "52822491"
 ## <a name="control-set-confusion-matrix"></a>控制項設定困惑的清單
 
 在您完成訓練整後，模型會將一個預測分數指派給您在訓練期間標示的控制項集中的10個專案。 模型會將這10個專案的預測分數與您在訓練迴圈期間指派給專案的實際標籤進行比較。 根據此比較，模型會識別下列分類，以評估模型的預測效能：
-  
-  |          |模型預測專案是相關的 |模型預測專案與專案不相關 |
-  |:---------|:---------|:---------|
-  |**檢閱者標籤專案為相關**| True 正值| 誤判 |
-  |**[校對] 標籤專案不相關**| False 負數 |True 負值 |
-  ||||
 
-  根據這些比較，模型會針對每個值的 F 分數、精確度及召回度量值和誤差邊界衍生值。 矩陣中每一個混淆類型的數目都會顯示在訓練系的飛入頁面上。
+<br>
+
+****
+
+|標籤|模型預測專案是相關的|模型預測專案與專案不相關|
+|---|---|---|
+|**檢閱者標籤專案為相關**|True 正值|誤判|
+|**[校對] 標籤專案不相關**|False 負數|True 負值|
+|
+
+根據這些比較，模型會針對每個值的 F 分數、精確度及召回度量值和誤差邊界衍生值。 矩陣中每一個混淆類型的數目都會顯示在訓練系的飛入頁面上。
 
 ## <a name="f-score"></a>F-分數
 

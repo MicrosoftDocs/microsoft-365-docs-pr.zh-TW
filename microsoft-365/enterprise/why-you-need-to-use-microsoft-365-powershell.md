@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 摘要：瞭解為何您必須使用 PowerShell 來管理 Microsoft 365，在某些情況下更有效率，在另一些情況則是必要。
-ms.openlocfilehash: baae3f5682edb65f1bc8114fcc96021b144b93ab
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cbbceddc98bebaed030f4cff2f183d473d716df6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228420"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288464"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>為什麼您需要使用適用於 Microsoft 365 的 PowerShell
 
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> 這個命令需要您安裝[SharePoint 線上 PowerShell 模組](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
+> 這個命令需要您安裝[SharePoint 線上 PowerShell 模組](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
 此 PowerShell 命令的轉譯如下：取得目前 Microsoft 365 訂閱中的所有 SharePoint 網站 (**Get-SPOSite**) ，並針對每個網站，從可以存取它的使用者清單中移除 Ken Meyer (**ForEach {Remove-SPOUser-site $ \_ 。Url-LoginName "kenmyer \@ litwareinc.com"}**) 。
 

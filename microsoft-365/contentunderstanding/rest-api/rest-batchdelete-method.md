@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 從一或多個程式庫移除已套用的文件瞭解模型。
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177234"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287450"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -34,7 +34,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 ## <a name="request-headers"></a>要求標頭
 
-| 標頭 | 值 |
+| 頁首 | 值 |
 |--------|-------|
 |Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
@@ -47,6 +47,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |出版物|是|MachineLearningPublicationEntityData[]|MachineLearningPublicationEntityData 的集合，每個集合會指定模型和目的文件庫。|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名稱 | 必要項目 | 類型 | 描述 |
 |--------|-------|--------|------------|
 |ModelUniqueId|是|string|模型檔案的唯一識別碼。|
@@ -58,9 +59,10 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 | 名稱   | 類型  | 描述|
 |--------|-------|------------|
-|200 OK||這是個自訂 API 用以將模型從多個文件庫中移除。 在部分成功的情況下，仍然可以返回 200 OK，而且呼叫者必須檢查回應本文，以了解模型是否成功從文件庫移除。|
+|200 OK||這是自訂的 API，用來支援從多個文件庫移除模型。在部分成功的情況下，仍可以傳回 200 OK，而且呼叫者必須檢查回應內文，以了解是否已成功從文件庫移除模型。|
 
 ## <a name="response-body"></a>回應本文
+
 | 名稱   | 類型  | 說明|
 |--------|-------|------------|
 |TotalSuccesses|int|成功從文件庫移除的模型總數。|
@@ -68,6 +70,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |詳細資料|MachineLearningPublicationResult[]|MachineLearningPublicationResult 的集合，每個集合會指定將模型從文件庫中移除的詳細結果。|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | 名稱   | 類型  | 說明|
 |--------|-------|------------|
 |StatusCode|int|HTTP 狀態碼。|
@@ -75,6 +78,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |出版物|MachineLearningPublicationEntityData|它會指定模型資訊和目的文件庫。| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名稱 | 類型 | 描述 |
 |--------|--------|------------|
 |ModelUniqueId|string|模型檔案的唯一識別碼。|
@@ -102,7 +106,6 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>範例回應
 

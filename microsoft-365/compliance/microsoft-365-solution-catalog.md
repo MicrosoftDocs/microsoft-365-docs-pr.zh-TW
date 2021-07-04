@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 深入瞭解 Microsoft 365 方案目錄，包括其包含內容、如何取得及後續步驟。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 22110290f3d025a3e4c30b460a2381757fd481ca
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114421"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288296"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解決方案目錄
 
@@ -24,7 +24,7 @@ ms.locfileid: "52114421"
 
 Microsoft 365 的相容性解決方案是整合功能的集合，您可以用來協助您管理端對端的符合性案例。 解決方案的功能和工具可能包含原則、警示、報告與其他項目的組合。
 
-請閱讀本文，以瞭解 Microsoft 365 規範中心中的新方案目錄、[如何取得這](#how-do-i-get-this)項[常見問題，以及](#frequently-asked-questions)[接下來的步驟](#next-steps)。
+請閱讀本文以瞭解 Microsoft 365 合規性中心中的新方案目錄、[如何取得](#how-do-i-get-this)[問題、常見問題](#frequently-asked-questions)，以及[接下來的步驟](#next-steps)。
 
 ## <a name="catalog-organization"></a>目錄組織
 
@@ -84,11 +84,11 @@ Microsoft 365 的相容性解決方案是整合功能的集合，您可以用來
 
 首先，請確定您有適當的授權和許可權。 然後， [https://compliance.microsoft.com](https://compliance.microsoft.com) 以全域系統管理員、合規性管理員或合規性資料管理員的身分登入。
 
-**[方案目錄] 頁面上所列的某些符合性功能無法在 Microsoft 365 規範中心中使用。我該怎麼辦？**
+**[方案目錄] 頁面上所列的某些符合性功能無法在 Microsoft 365 合規性中心中使用。我該怎麼辦？**
 
-我們永遠致力於將新功能新增至 Microsoft 365 規範中心和方案目錄。 如果您找不到流覽區域中的特定解決方案，當您的訂閱可使用此方案時，便可供存取。
+我們永遠致力於將新功能新增至 Microsoft 365 合規性中心和方案目錄。 如果您找不到流覽區域中的特定解決方案，當您的訂閱可使用此方案時，便可供存取。
 
-如果您正在尋找現有的規範解決方案，但在 Microsoft 365 合規性中心內仍無法使用，您可以前往使用現有安全性與 &amp; 合規性中心的解決方案 [https://protection.office.com](https://protection.office.com) 。 或者，您可以按一下 [Microsoft 365 規範中心] 左側導覽窗格中的 [**更多資源**] 索引標籤，然後選取 Office 365 安全性與合規性中心卡。  
+如果您正在尋找現有的規範解決方案，但在 Microsoft 365 合規性中心中無法使用它，您可以前往使用現有安全性與 &amp; 合規性中心的解決方案 [https://protection.office.com](https://protection.office.com) 。 或者，您可以按一下 Microsoft 365 合規性中心左導覽中的 [**更多資源**] 索引標籤，然後選取 Office 365 安全性與合規性中心卡。  
 
 ## <a name="next-steps"></a>後續步驟
 

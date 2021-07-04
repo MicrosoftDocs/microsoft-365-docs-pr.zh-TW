@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 850d7e6692d3ccbfda6e15c8d5ca95301bd4d094
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245609"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289532"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
@@ -50,11 +50,10 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 您可以使用 PowerShell 圖庫網站上的 [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 腳本。 如需裝置識別及硬體雜湊的詳細資訊，請參閱[新增裝置至 Windows Autopilot](/mem/autopilot/add-devices#device-identification)。
 
-1.  以系統管理權限開啟 PowerShell 提示字元。
-2.  執行 `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  執行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-4.  執行 `powershell -ExecutionPolicy restricted` 以防止後續的不受限制的腳本執行。
-
+1. 以系統管理權限開啟 PowerShell 提示字元。
+2. 執行 `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. 執行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4. 執行 `powershell -ExecutionPolicy restricted` 以防止後續的不受限制的腳本執行。
 
 #### <a name="flash-drive-method"></a>快閃磁碟機方法
 
@@ -68,9 +67,8 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 8. 執行 `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. 移除 USB 磁碟機，然後執行 `shutdown -s -t 0` 以關閉裝置
 
->[!IMPORTANT]
->在您完成註冊前，請勿開啟您所註冊的裝置。 
-
+> [!IMPORTANT]
+> 在您完成註冊前，請勿開啟您所註冊的裝置。 
 
 ### <a name="merge-hash-data"></a>合併雜湊資料
 
@@ -78,16 +76,13 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
-
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
 在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)中，選取左導覽窗格中的 [**裝置**]。 尋找功能表的 [Microsoft 受管理的電腦] 區段，然後選取 [**裝置**]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置**]，該裝置會開啟飛入以註冊新裝置。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 請遵循下列步驟：
 

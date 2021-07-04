@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f0eb20d59f1708bc1e3bd56e56ada40cd7058dca
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6a4321f48ba5b8e012d1a3a4fd67dd4f05566048
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924844"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287900"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 受管理的電腦裝置服務
 
@@ -28,12 +28,13 @@ Microsoft 將為 Microsoft 受管理的電腦裝置提供這些服務。 如需�
 支援 |支援代理程式會直接解答與裝置功能相關的問題，並診斷設備問題。
 庫存 |所有裝置都會在 Microsoft 受管理的電腦管理員入口網站中追蹤，以進行庫存和狀態追蹤。
 固件/驅動程式更新 |根據預設，Microsoft 受管理的電腦裝置會從 Windows 更新接收固件及驅動程式更新。 並非所有硬體夥伴都會透過 Windows 更新來部署更新。 未發佈為自動的更新需要例外狀況，且必須由客戶部署。
-配件 |隨附于裝置的附件，與裝置本身所涵蓋的服務相同，但保修條款可能不同。 請參閱選擇您的裝置時所選擇的保修條款。 裝置安裝 |裝置會以目前的 Windows 版本預先進行設定，並透過雲端接收其應用程式和設定。 
+配件 |隨附于裝置的附件，與裝置本身所涵蓋的服務相同，但保修條款可能不同。 請參閱選擇您的裝置時所選擇的保修條款。 裝置安裝 |裝置會以目前的 Windows 版本預先進行設定，並透過雲端接收其應用程式和設定。
 
 如需裝置取代、升級和支援條款的詳細資訊，請參閱與您的裝置供應商和您的保修條款關聯的合約。
 
 如需有關 Surface 質保和修理的資訊：
-- [Business 説明中心的 Surface](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+
+- [Surface 商務版説明中心](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [您的裝置的保修、擴充服務方案及條款與條件](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 

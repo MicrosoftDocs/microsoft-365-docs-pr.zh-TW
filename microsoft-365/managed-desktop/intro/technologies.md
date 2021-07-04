@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8a2a3f83995bf4248b2cb72a848a1def83ae9c50
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: d70bb133904a7bcc9c30721d3f723b0fd8b88512
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203265"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287960"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的電腦技術
 
@@ -28,17 +28,17 @@ ms.locfileid: "53203265"
 本文摘要說明所需 Enterprise 授權中包含的元件，以及服務如何搭配每個元件使用 Microsoft 受管理的電腦裝置。 每個區域的特定角色和責任在整個 Microsoft 受管理的電腦檔中都是詳細的。 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 或 E5
+
 | 產品 |資訊 |
 --- |--- 
 Microsoft 365 Apps 企業版 (64 位)  | 這些 Office 的應用程式會隨裝置運送： Word、Excel、PowerPoint、Outlook、Publisher、Access、商務用 Skype、OneNote。<br><br>不包含64位的 Microsoft Project 和 Microsoft Visio 的完整版本。 不過，因為安裝這些應用程式取決於 Microsoft 365 Apps 企業版安裝，所以 Microsoft 受管理的電腦已建立預設的 Microsoft Intune 部署和安全性群組，您可以使用這些部署和安全性群組將這些應用程式部署至授權的使用者。 如需詳細資訊，請參閱[Microsoft 受管理的電腦裝置上安裝 Microsoft Project 或 Microsoft Visio](../get-started/project-visio.md)。
 OneDrive |Azure Active Directory當使用者第一次登入 OneDrive 時，會為使用者啟用單一登入。<br><br>包含「桌面」、「檔」及「圖片」資料夾的已知資料夾重新導向;由 Microsoft 受管理的電腦啟用和設定。
-儲存應用程式 |    Microsoft Sway 和 Power BI 未附帶裝置。 這些應用程式可從 Microsoft Store 下載。
-Win32 應用程式 |    Teams 不會隨裝置附帶，但會打包並由 Microsoft 提供給 Microsoft 受管理的電腦裝置。 Azure 資訊保護用戶端未附帶裝置，但是您可以將它打包以進行部署。
-Web 應用程式 |  Yammer，在瀏覽器中 Office、Delve、Flow、StaffHub、PowerApps 和 Planner 不隨裝置附帶。 使用者可以使用瀏覽器存取這些應用程式的 web 版本。
-
-
+儲存應用程式 | Microsoft Sway 和 Power BI 未附帶裝置。 這些應用程式可從 Microsoft Store 下載。
+Win32 應用程式 | Teams 不會隨裝置附帶，但會打包並由 Microsoft 提供給 Microsoft 受管理的電腦裝置。 Azure 資訊保護用戶端未附帶裝置，但是您可以將它打包以進行部署。
+Web 應用程式 | Yammer，在瀏覽器中 Office、Delve、Flow、StaffHub、PowerApps 和 Planner 不隨裝置附帶。 使用者可以使用瀏覽器存取這些應用程式的 web 版本。
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 企業版使用 Microsoft Defender for Endpoint 的 E5 或 E3
+
 建議您的 IT 系統管理員設定下列設定值。 在 Microsoft 受管理的電腦中不會包含或管理這些設定。
 
 產品  |資訊
@@ -47,11 +47,10 @@ Windows Hello 企業版 | 您應為商務用 Windows Hello，以 Microsoft 受�
 應用程式虛擬化 | 您可以使用 Intune Win32 App management 用戶端 App-V) 套件部署 Application Virtualization (。 如需詳細資訊，請參閱 [Application Virtualization](/windows/application-management/app-v/appv-technical-reference)。
 資料遺失防護 Microsoft 365 | 您應執行 Microsoft 365 資料遺失防護，以監視針對已確定為敏感之專案所採取的動作，以協助避免無意間共用這些專案。 如需詳細資訊，請參閱[Microsoft 365 資料遺失防護](../../compliance/endpoint-dlp-learn-about.md)。
 
-
 在 Microsoft 受管理的電腦中包含並管理的功能：
 
 產品 |資訊
---- |--- 
+--- |---
 BitLocker 磁片磁碟機加密 | BitLocker 磁片磁碟機加密是用來加密所有系統磁片磁碟機。 如需詳細資訊，請參閱 [BitLocker 磁片磁碟機加密](/windows/security/information-protection/bitlocker/bitlocker-overview)。
 Windows Defender系統防護 | 在啟動時保護系統的完整性，並驗證系統完整性是否已真正維護。 如需詳細資訊，請參閱[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
 Windows Defender Credential Guard | Windows DefenderCredential Guard 使用虛擬化的安全性來隔離機密，這樣只有有許可權的系統軟體可以存取這些機密。 如需詳細資訊，請參閱[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
@@ -72,8 +71,8 @@ Windows Defender具有高級安全性的防火牆 | 以主機為基礎的雙向�
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + SecurityE5
 
-產品 |資訊 
+產品 |資訊
  --- | ---
-企業行動力 + 安全性 E3<br>Azure Active Directory Premium P2 |    您可以使用企業行動力 + 安全性 E3 的所有功能來管理 MDM 裝置。 您可以使用 Azure Active Directory Premium P2 做為 Microsoft 受管理的電腦選用的功能。
-Microsoft Cloud App Security |  您可以搭配 Microsoft 受管理的電腦使用此選用功能。
+企業行動力 + 安全性 E3<br>Azure Active Directory Premium P2 | 您可以使用企業行動力 + 安全性 E3 的所有功能來管理 MDM 裝置。 您可以使用 Azure Active Directory Premium P2 做為 Microsoft 受管理的電腦選用的功能。
+Microsoft 雲端 App 安全性 | 您可以搭配 Microsoft 受管理的電腦使用此選用功能。
 Azure 資訊保護 P2  | 您可以搭配 Microsoft 受管理的電腦使用此選用功能。

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 是否要將新的解決方案新增至規範中心、根據您的意見，更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您在不斷變更的相容性環境上保持最高的狀態。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228456"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288128"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性的新功能
 
@@ -146,7 +146,7 @@ Outlook 版本和更新：
 - [測試人員風險管理計畫](/microsoft-365/compliance/insider-risk-management-plan)
 - [開始使用「內幕風險管理」設定](/microsoft-365/compliance/insider-risk-management-settings)
 - [開始使用測試人員風險管理](/microsoft-365/compliance/insider-risk-management-configure)
-- [建立及管理內部風險原則](/microsoft-365/compliance/insider-risk-management-policies)
+- [建立及管理測試人員風險原則](/microsoft-365/compliance/insider-risk-management-policies)
 - [調查測試人員風險警示](/microsoft-365/compliance/insider-risk-management-alerts)
 - [對測試人員風險案例採取動作](/microsoft-365/compliance/insider-risk-management-cases)
 - [使用內部風險稽核記錄來審查活動](/microsoft-365/compliance/insider-risk-management-audit-log)

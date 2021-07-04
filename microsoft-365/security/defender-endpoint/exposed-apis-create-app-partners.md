@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5546b69fa924025491e1762d199678fa549a9c7c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 695dfbec007b259b7daec2346201737d57c4ad30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842143"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289772"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>透過 Microsoft Defender for Endpoint APIs 取得夥伴存取權
 
@@ -60,13 +60,13 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
 
 3. 在 [註冊] 表單中：
 
-    - 選擇應用程式的名稱。
+   - 選擇應用程式的名稱。
 
-    - 支援的帳戶類型-任何組織目錄中的帳戶。
+   - 支援的帳戶類型-任何組織目錄中的帳戶。
 
-    - 重新導向 URI-類型： Web，URI： https://portal.azure.com
+   - 重新導向 URI-類型： Web，URI： https://portal.azure.com
 
-    ![Microsoft Azure 夥伴應用程式註冊的影像](images/atp-api-new-app-partner.png)
+   ![Microsoft Azure 夥伴應用程式註冊的影像](images/atp-api-new-app-partner.png)
 
 
 4. 讓您的應用程式能夠存取 Microsoft Defender for Endpoint，並將其指派為完成整合所需的最少一組許可權。
@@ -94,13 +94,13 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
 
 5. 選取 **[授與同意**]
 
-    - **附注**：每次您新增許可權時，您必須選取 **[授與同意** 才能讓新許可權同意]。
+   - **附注**：每次您新增許可權時，您必須選取 **[授與同意** 才能讓新許可權同意]。
 
-    ![授與許可權的影像](images/grant-consent.png)
+   ![授與許可權的影像](images/grant-consent.png)
 
 6. 將密碼新增至應用程式。
 
-    - 選取 [ **& 密碼的憑證**]，將 description 新增至 [密碼]，然後選取 [ **新增**]。
+   - 選取 [ **& 密碼的憑證**]，將 description 新增至 [密碼]，然後選取 [ **新增**]。
 
     **重要** 事項：按一下 [新增] 後，請 **複製產生的機密值**。 離開後，您將無法進行找回！
 
@@ -114,36 +114,36 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
 
 8. 將應用程式新增至客戶的承租人。
 
-    您必須在您要使用的每個客戶承租人中核准您的應用程式。 這是因為您的應用程式代表客戶與 Microsoft Defender for Endpoint application 互動。
+   您必須在您要使用的每個客戶承租人中核准您的應用程式。 這是因為您的應用程式代表客戶與 Microsoft Defender for Endpoint application 互動。
 
-    具有客戶租使用者之 **全域管理員** 的使用者，必須選取同意連結並核准您的應用程式。
+   具有客戶租使用者之 **全域管理員** 的使用者，必須選取同意連結並核准您的應用程式。
 
-    「同意」連結的格式如下：
+   「同意」連結的格式如下：
 
-    ```
-    https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
-    ```
+   ```http
+   https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
+   ```
 
-    其中00000000-0000-0000-0000-000000000000 應該會取代為您的應用程式識別碼
+   其中00000000-0000-0000-0000-000000000000 應該會取代為您的應用程式識別碼
 
-    按一下 [同意] 連結後，請使用客戶租使用者的全域管理員登入，並同意該應用程式。
+   按一下 [同意] 連結後，請使用客戶租使用者的全域管理員登入，並同意該應用程式。
 
-    ![同意影像](images/app-consent-partner.png)
+   ![同意影像](images/app-consent-partner.png)
 
-    此外，您需要向客戶尋求其租使用者識別碼，並將其儲存以供日後用於取得權杖。
+   此外，您需要向客戶尋求其租使用者識別碼，並將其儲存以供日後用於取得權杖。
 
-- **做！** 您已成功註冊應用程式！ 
+- **做！** 您已成功註冊應用程式！
 - 請參閱下列範例以取得及驗證權杖。
 
-## <a name="get-an-access-token-example"></a>取得存取 token 範例：
+## <a name="get-an-access-token-example"></a>取得存取 token 範例
 
 **附注：** 若要代表客戶取得存取權杖，請在下列標記上使用客戶的租使用者識別碼。
 
-<br>如需 AAD 權杖的詳細資訊，請參閱[aad 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程
+如需 AAD 權杖的詳細資訊，請參閱[aad 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
-```
+```powershell
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
 # Paste below your Tenant ID, App ID and App Secret (App key).
 
@@ -165,21 +165,21 @@ Out-File -FilePath "./Latest-token.txt" -InputObject $token
 return $token
 ```
 
-### <a name="using-c"></a>使用 c #：
+### <a name="using-c"></a>使用 C#
 
->下列程式碼已使用 Nuget Windows.identitymodel.extensions.dll 進行測試。 ActiveDirectory
+> 下列程式碼已使用 Nuget Windows.identitymodel.extensions.dll 進行測試。 ActiveDirectory
 
 - 建立新的主控台應用程式
 - 安裝 NuGet [windows.identitymodel.extensions.dll。 ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - 使用下列新增
 
-    ```
+    ```console
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- 在應用程式中複製/貼上下列程式碼 (請勿忘記更新下列三個變數： ```tenantId, appId, appSecret```) 
+- 在應用程式中複製/貼上下列程式碼 (請勿忘記更新下列三個變數： `tenantId` 、 `appId` 和 `appSecret`) 
 
-    ```
+    ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
@@ -192,7 +192,6 @@ return $token
     AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
-
 
 ### <a name="using-python"></a>使用 Python
 
@@ -209,19 +208,20 @@ return $token
 - 將 TENANT_ID 設定為想要使用應用程式來存取 Microsoft Defender for Endpoint 應用程式之客戶的 Azure 租使用者識別碼
 - 執行下列命令：
 
-```
+```curl
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 您會收到下列表單的答案：
 
-```
+```console
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
 ```
 
 ## <a name="validate-the-token"></a>驗證 token
 
 健全檢查以確認您獲得正確的權杖：
+
 - 複製/貼上您在上一個步驟中 [取得的標記](https://jwt.ms) ，以便進行解碼
 - 驗證您取得所需許可權的「role」宣告
 - 在下列螢幕擷取畫面中，您可以看到從應用程式取得的解碼標記，具有對 Microsoft Defender for Endpoint 的多個許可權：
@@ -235,8 +235,9 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 - 在您傳送至 "載荷 {token}" 的 Http 要求中設定授權標頭 (載荷是授權配置) 
 - 權杖的到期時間是1小時 (您可以使用相同的權杖傳送一個以上的要求) 
 
-- **使用 c #** 傳送要求以取得警示清單的範例 
-    ```
+- **使用 c #** 傳送要求以取得警示清單的範例
+
+    ```csharp
     var httpClient = new HttpClient();
 
     var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
@@ -249,5 +250,6 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
     ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [受支援的適用於端點的 Microsoft Defender API](exposed-apis-list.md)
 - [代表使用者存取 Microsoft Defender for Endpoint](exposed-apis-create-app-nativeapp.md)

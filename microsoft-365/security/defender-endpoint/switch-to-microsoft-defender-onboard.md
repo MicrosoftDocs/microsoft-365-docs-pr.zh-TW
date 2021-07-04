@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 832414e9b2a88114cafafbba78e22ea656cc7949
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930460"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289508"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>切換至 Microsoft Defender 的端點-階段3：板載
 
@@ -36,7 +36,7 @@ ms.locfileid: "52930460"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![階段1： Prepare3](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[階段 1：準備](switch-to-microsoft-defender-prepare.md) | [![階段 2：設定](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[階段 2：設定](switch-to-microsoft-defender-setup.md) | ![第 3 階段：導入](images/phase-diagrams/onboard.png)<br/>第 3 階段：導入 |
+| [![階段1： Prepare3](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[階段 1：準備](switch-to-microsoft-defender-prepare.md) | [![階段 2：設定](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[階段 2：設定](switch-to-microsoft-defender-setup.md) | ![階段 3：上線](images/phase-diagrams/onboard.png)<br/>階段 3：上線 |
 |--|--|--|
 || |*您在這裡！* |
 
@@ -103,7 +103,7 @@ ms.locfileid: "52930460"
 1. 開啟登錄編輯程式，然後流覽至 <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. 編輯 (或建立) DWORD 專案（稱為 **ForcePassiveMode**），並指定下列設定：
+2. 編輯 (或建立) DWORD 專案（稱為 **ForceDefenderPassiveMode**），並指定下列設定：
    - 將 DWORD 的值設為 **1**。
    - 在 [ **基本**] 底下，選取 [ **十六進位**]。
 

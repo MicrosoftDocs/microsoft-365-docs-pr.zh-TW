@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 準備並部署 Microsoft 合規性延伸模組。
-ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a76a4b1ab5b92a1e237663f65002b99d792b13bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226956"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288368"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>開始使用 Microsoft 合規性延伸模組
 
@@ -107,35 +107,34 @@ ms.locfileid: "53226956"
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ```
 
-2.  瀏覽至 [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
+2. 瀏覽至 [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
 
-3.  使用 Chrome Web Store 頁面上的指示安裝延伸模組。
+3. 使用 Chrome Web Store 頁面上的指示安裝延伸模組。
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>使用 Microsoft 端點管理員進行部署
 
 使用此設定方法以進行全組織部署。
 
-
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>透過 Microsoft 端點管理員啟用必要的註冊金鑰
 
-1.  使用下列內容建立 PowerShell 指令碼：
+1. 使用下列內容建立 PowerShell 指令碼：
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.  登入 [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com)。
+2. 登入 [Microsoft 端點管理員系統管理中心](https://endpoint.microsoft.com)。
 
-3.  瀏覽至 **裝置** > **指令碼** 並選取 **新增**。
+3. 瀏覽至 **裝置** > **指令碼** 並選取 **新增**。
 
-4.  在收到系統提示時，瀏覽至已建立的指令碼位置。
+4. 在收到系統提示時，瀏覽至已建立的指令碼位置。
 
-5.  選取下列設定：
+5. 選取下列設定：
     1. 使用登入認證執行此指令碼：是
     1. 強制執行指令碼簽章檢查： 否
     1. 在 64 位元 PowerShell 主機中執行指令碼：是
 
-6.  選取適當的裝置群組並應用原則。
+6. 選取適當的裝置群組並應用原則。
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft 端點管理員強制安裝步驟
 
@@ -143,27 +142,27 @@ ms.locfileid: "53226956"
 
  在擷取 ADMX 之後，可以依照下列步驟依序建立此延伸模組的組態設定檔。
 
-1.  登入 Microsoft 端點管理員系統管理中心 (https://endpoint.microsoft.com)。
+1. 登入 Microsoft 端點管理員系統管理中心 (https://endpoint.microsoft.com)。
 
-2.  瀏覽至組態設定檔。
+2. 瀏覽至組態設定檔。
 
-3.  選取 **建立設定檔**。
+3. 選取 **建立設定檔**。
 
-4.  選取 **Windows 10** 做為平台。
+4. 選取 **Windows 10** 做為平台。
 
-5.  選取 **自訂** 作為設定檔類型。
+5. 選取 **自訂** 作為設定檔類型。
 
-6.  選取 **設定** 索引標籤。
+6. 選取 **設定** 索引標籤。
 
-7.  選取 **新增**。
+7. 選取 **新增**。
 
-8.  輸入下列原則資訊。
+8. 輸入下列原則資訊。
 
     OMA-URI：`./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     資料類型：`String`<br/>
     值：`<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.  按一下 [建立]。
+9. 按一下 [建立]。
 
 ### <a name="deploy-using-group-policy"></a>使用群組原則部署
 
@@ -171,25 +170,25 @@ ms.locfileid: "53226956"
 
 1. 您的裝置必須可透過群組原則管理，而且您必須將所有的 Chrome ADMX 都匯入群組原則集中存放區。 如需詳細資訊，請參閱 [如何在 Windows 中建立和管理群組原則系統管理範本的集中存放區](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
 
-2.  使用此 PowerShell 命令以建立 PowerShell 指令碼：
+2. 使用此 PowerShell 命令以建立 PowerShell 指令碼：
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.  開啟 **群組原則管理主控台** 並瀏覽至您的組織單位 (OU)。
+3. 開啟 **群組原則管理主控台** 並瀏覽至您的組織單位 (OU)。
 
-4.  按右鍵並選取 **在此網域中建立 GPO 並於此處建立連結**。 當收到系統提示時，請指派一個描述性名稱至此群組原則物件 (GPO) 然後完成建立。
+4. 按右鍵並選取 **在此網域中建立 GPO 並於此處建立連結**。 當收到系統提示時，請指派一個描述性名稱至此群組原則物件 (GPO) 然後完成建立。
 
-5.  以滑鼠右鍵按一下 GPO，然後 **編輯**。
+5. 以滑鼠右鍵按一下 GPO，然後 **編輯**。
 
-6.  請前往 **電腦組態** > **喜好設定** > **控制台設定** > **排程工作**。
+6. 請前往 **電腦組態** > **喜好設定** > **控制台設定** > **排程工作**。
 
-7.  選取按右鍵並選擇 **新增** > **立即性工作 (至少 Windows 7)** 以建立新的即時性工作。
+7. 選取按右鍵並選擇 **新增** > **立即性工作 (至少 Windows 7)** 以建立新的即時性工作。
 
-8.  為工作命名與描述。
+8. 為工作命名與描述。
 
-9.  選擇對應的帳戶以執行立即工作，例如 NT 授權
+9. 選擇對應的帳戶以執行立即工作，例如 NT 授權
 
 10. 選取 **以最高權限執行**。
 
@@ -203,21 +202,21 @@ ms.locfileid: "53226956"
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>將 Chrome 擴充功能新增到 ForceInstall 清單
 
-1.  在群組原則管理編輯器中，瀏覽至您的 OU。
+1. 在群組原則管理編輯器中，瀏覽至您的 OU。
 
-2.  展開下列路徑 **電腦/使用者設定** > **原則** > **系統管理範本** > **傳統系統管理範本** > **Google** > **Google Chrome** > **擴充功能**。 此路徑可能會根據您的設定而不同。
+2. 展開下列路徑 **電腦/使用者設定** > **原則** > **系統管理範本** > **傳統系統管理範本** > **Google** > **Google Chrome** > **擴充功能**。 此路徑可能會根據您的設定而不同。
 
-3.  選取 **設定強制安裝擴充功能清單**。
+3. 選取 **設定強制安裝擴充功能清單**。
 
-4.  以滑鼠右鍵按一下以滑鼠右鍵按一下，選取 **編輯**。
+4. 以滑鼠右鍵按一下以滑鼠右鍵按一下，選取 **編輯**。
 
-5.  選取 **已啟用**。
+5. 選取 **已啟用**。
 
-6.  選取 **顯示**。 
+6. 選取 **顯示**。 
 
-7.  在 **值** 下方，新增下列項目：`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. 在 **值** 下方，新增下列項目：`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.  選取 **OK** 然後選取 **套用**。
+8. 選取 **OK** 然後選取 **套用**。
 
 ### <a name="test-the-extension"></a>測試擴充功能
 
