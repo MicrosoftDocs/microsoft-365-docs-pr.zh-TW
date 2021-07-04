@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0de55eefe2f7dd8c9f891fbe126a68a49699ecd3
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594094"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290084"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 Proxy 和網際網路連線能力設定
 
@@ -38,8 +38,8 @@ Defender for endpoint 感應器需要 Microsoft Windows HTTP (WinHTTP) 才能報
 
 內嵌的 Defender for Endpoint 感應器會在使用 LocalSystem 帳戶的系統內容中執行。 感應器會使用 Microsoft Windows HTTP 服務 (WinHTTP) 來啟用與 Defender for Endpoint cloud service 的通訊。
 
->[!TIP]
->對於使用 正向 Proxy 作為網際網路閘道的組織，可以使用網路保護來調查 Proxy 背後的情況。 有關詳細資訊，請參閱[調查正向 Proxy 背後發生的連線事件](investigate-behind-proxy.md)。
+> [!TIP]
+> 對於使用 正向 Proxy 作為網際網路閘道的組織，可以使用網路保護來調查 Proxy 背後的情況。 有關詳細資訊，請參閱[調查正向 Proxy 背後發生的連線事件](investigate-behind-proxy.md)。
 
 WinHTTP 設定設定與 Windows internet (WinINet) Internet 流覽 proxy 設定無關，而且只能使用下列探索方法來探索 proxy 伺服器：
 
@@ -65,7 +65,7 @@ WinHTTP 設定設定與 Windows internet (WinINet) Internet 流覽 proxy 設定�
 > [!NOTE]
 > 在 Windows 10 或 Windows Server 2019 上使用此選項時，建議使用下列 (或更新版本) 產生及累計更新彙總套件：
 >
-> - Windows 10，版本1809或 Windows Server 2019-https://support.microsoft.com/kb/5001384
+> - Windows 10 版本1809或 Windows 伺服器 2019-https://support.microsoft.com/kb/5001384
 > - Windows 10，版本 1909-https://support.microsoft.com/kb/4601380
 > - Windows 10，版本 2004-https://support.microsoft.com/kb/4601382
 > - Windows 10，版本 20H2-https://support.microsoft.com/kb/4601382
@@ -103,6 +103,7 @@ WinHTTP 設定設定與 Windows internet (WinINet) Internet 流覽 proxy 設定�
 使用 netsh 設定全系統的靜態 Proxy。
 
 > [!NOTE]
+>
 > - 這將影響所有應用程式，包括使用帶預設 Proxy 之 WinHTTP 的 Windows 服務。</br>
 > - 變更拓撲的膝上型電腦 (例如：從 office 到 home) ，將無法使用 netsh。 使用基於登錄的靜態 Proxy 設定。
 
@@ -134,23 +135,17 @@ netsh winhttp reset proxy
 
 下列可供下載的試算表會列出您網路必須能夠連線的服務及其相關 URLs。 您應確定沒有防火牆或網路篩選規則可拒絕這些 URLs 的存取，否則您可能需要為他們建立一個 *允許* 規則。
 
-
-| 網域清單的試算表 | 描述 |
+| 網域清單的試算表 | 說明 |
 |:-----|:-----|
-|![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | 服務位置、地理位置和作業系統的特定 DNS 記錄試算表。 <br><br>[在這裡下載試算表。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
-
+|![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | 服務位置、地理位置和作業系統的特定 DNS 記錄試算表。 <br><br>[在這裡下載試算表。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 如果 Proxy 或防火牆啟用了 HTTPS 掃描 (SSL 檢查)，則從 HTTPS 掃描中排除上表中列出的網域。
 
 > [!NOTE]
 > settings-win.data.microsoft.com 只有 Windows 10 在執行版本1803或更早版本的裝置時才需要。<br>
-
-
-> [!NOTE]
+>
 > 只有當您具有執行版本1803或更新版本的 Windows 10 裝置時，才需要在其中包含 v20 的 URLs。 例如， `us-v20.events.data.microsoft.com` 在執行版本1803或更新版本的 Windows 10 裝置，以及架至 US 資料儲存體地區時，是必要的。
-
-
-> [!NOTE]
+>
 > 如果您在環境中使用 Microsoft Defender 防毒軟體，請參閱[設定 Microsoft Defender 防毒軟體雲端服務的網路](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)連線。
 
 如果 proxy 或防火牆封鎖匿名流量，則在端點感應器的 Defender 是從系統內容連線時，請確定先前所列的 URLs 允許匿名流量。
@@ -159,13 +154,12 @@ netsh winhttp reset proxy
 
 下表列出與 Log Analytics 代理程式通訊所需的 proxy 及防火牆設定資訊 (通常稱為 Microsoft Monitoring Agent) 舊版 Windows，例如 Windows 7 SP1、Windows 8.1 Windows Server 2008 R2、Windows Server 2012 R2 及 Windows Server 2016。
 
-|代理人資源|連接埠 |方向 |略過 HTTPS 檢查|
-|------|---------|--------|--------|   
-|ods.opinsights.azure.com |埠443 |出境|是 |  
-|oms.opinsights.azure.com |埠443 |出境|是 |  
-|blob.core.windows.net |埠443 |出境|是 |
-|azure-automation.net |埠443 |出境|是 |  
-
+|代理程式資源|連接埠 |方向 |略過 HTTPS 檢查|
+|------|---------|--------|--------|
+|*.ods.opinsights.azure.com |連接埠 443 |出埠|是 |  
+|*.oms.opinsights.azure.com |連接埠 443 |出埠|是 |  
+|*.blob.core.windows.net |連接埠 443 |出埠|是 |
+|*.azure-automation.net |連接埠 443 |出埠|是 |  
 
 > [!NOTE]
 > 作為雲端式解決方案，IP 範圍可能會變更。 建議您移至 DNS 解析設定。
@@ -174,19 +168,19 @@ netsh winhttp reset proxy
 
 使用舊版) 的 Microsoft Monitoring Agent (MMA Windows 時，請參閱下列指導，以消除特定環境的萬用字元 ( * ) 需求。
 
-1.  使用 Microsoft Monitoring Agent (MMA) 的舊版作業系統 (如需詳細資訊，請參閱[在 defender 上的上架先前版本 Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)和[板載 Windows server](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
+1. 使用 Microsoft Monitoring Agent (MMA) 的舊版作業系統 (如需詳細資訊，請參閱[在 defender 上的上架先前版本 Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)和[板載 Windows server](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
 
-2.  確定機器已成功地報告 Microsoft Defender 資訊安全中心入口網站。
+2. 確定機器已成功地報告 Microsoft Defender 資訊安全中心入口網站。
 
-3.  從 "C:\Program Files \ Microsoft Monitoring Agent \Agent] 執行 TestCloudConnection.exe 工具，以驗證連線，並查看特定工作區所需的 URLs。
+3. 從 "C:\Program Files \ Microsoft Monitoring Agent \Agent] 執行 TestCloudConnection.exe 工具，以驗證連線，並查看特定工作區所需的 URLs。
 
-4.  在 [Microsoft Defender for Endpoint URLs] 清單中檢查您地區的完整需求清單 (請參閱服務 URLs [試算表](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) 。
+4. 在 [Microsoft Defender for Endpoint URLs] 清單中檢查您地區的完整需求清單 (請參閱服務 URLs [試算表](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) 。
 
     ![Windows PowerShell 中的系統管理員影像](images/admin-powershell.png)
 
-Ods.opinsights.azure.com、oms.opinsights.azure.com 和 *. agentsvc.azure-automation.net URL 端點中所用的萬用字元 ( * ) 可以取代為您的特定 Workspace 識別碼。 工作區識別碼是針對您的環境和工作區所特有，可在 Microsoft Defender 資訊安全中心入口網站的承租人內架區段中找到。
+\* \* Ods.opinsights.azure.com、oms.opinsights.azure.com 及 agentsvc.azure-automation.net URL 端點中所用的)  (萬用字元， \* \* 都可以取代為您特定的工作區識別碼。 工作區識別碼是針對您的環境和工作區所特有，可在 Microsoft Defender 資訊安全中心入口網站的承租人內架區段中找到。
 
-您可以使用測試結果的「防火牆 Rule： blob.core.windows.net」區段中所示的 URLs，取代 blob.core.windows.net URL 端點。 
+\*BLOB.CORE.WINDOWS.NET URL 端點可以取代為測試結果的「防火牆規則： \* blob.core.windows.net」一節中所示的 URLs。
 
 > [!NOTE]
 > 在使用 Azure Defender 進行上架時，可能會使用多個工作區。 您必須在每個工作區的架電腦上執行上述 TestCloudConnection.exe 程式 (，以判斷是否) 工作區之間的 blob.core.windows.net URLs 的任何變更。
@@ -195,7 +189,7 @@ Ods.opinsights.azure.com、oms.opinsights.azure.com 和 *. agentsvc.azure-automa
 
 驗證 Proxy 設定是否成功完成，WinHTTP 是否可以在您的環境中發現 Proxy 伺服器並透過 Proxy 伺服器進行通訊，以及 Proxy 伺服器是否允許到適用於端點的 Defender 服務 URL 的通訊息。
 
-1. 將[MDATP Client Analyzer 工具](https://aka.ms/mdatpanalyzer)下載至執行 Endpoint for Endpoint 感應器的電腦。
+1. 將 [MDATP 用戶端 Analyzer 工具](https://aka.ms/mdatpanalyzer) 下載至執行 Endpoint 感應器所在的電腦。
 
 2. 擷取裝置上 MDATPClientAnalyzer.zip 的內容。
 
@@ -203,7 +197,7 @@ Ods.opinsights.azure.com、oms.opinsights.azure.com 和 *. agentsvc.azure-automa
 
    1. 轉至 **[開始]** 並鍵入 **「cmd」**。
 
-   1.  以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
+   1. 以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
 
 4. 輸入以下命令，再按 **Enter**：
 
@@ -238,9 +232,7 @@ Ods.opinsights.azure.com、oms.opinsights.azure.com 和 *. agentsvc.azure-automa
 
 > [!NOTE]
 > 連線分析程式工具與 ASR 規則不相容[封鎖源自 PSExec 和 WMI 命令的流程建立](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暫時停用此規則才能執行連線工具。
-
-
-> [!NOTE]
+>
 > 設定 TelemetryProxyServer 時，在 [登錄] 或 [透過群組原則] 中，當其無法存取定義的 proxy 時，它會回復為 [直屬]。
 
 ## <a name="related-topics"></a>相關主題

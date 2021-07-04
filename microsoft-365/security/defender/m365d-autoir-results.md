@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 2cc83e24d4dd81c9d2e972fa274b48fc3946532a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022548"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289724"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調查的詳細資料和結果
 
@@ -104,14 +104,14 @@ ms.locfileid: "53022548"
 
 | 索引標籤 | 描述 |
 |:--------|:--------|
-| **調查圖表**   | 提供調查的視覺呈現。 描述實體並列出發現的威脅和警示，以及是否有任何待核准的動作。<br/>您可以在圖形上選取一個專案，以查看詳細資料。 例如，選取 **證據** 圖示會帶您前往 [ **證據** ] 索引標籤，您可以在其中看到偵測到的實體及其 verdicts。 |
-| **提醒**    | 列出與調查相關聯的警示。 警示可能來自使用者裝置上的威脅防護功能、Office 應用程式、Microsoft Cloud App Security 及其他 Microsoft 365 Defender 功能。|
+| **調查圖表** | 提供調查的視覺呈現。 描述實體並列出發現的威脅和警示，以及是否有任何待核准的動作。<br/>您可以在圖形上選取一個專案，以查看詳細資料。 例如，選取 **證據** 圖示會帶您前往 [ **證據** ] 索引標籤，您可以在其中看到偵測到的實體及其 verdicts。 |
+| **提醒** | 列出與調查相關聯的警示。 警示可能來自使用者裝置上的威脅防護功能、Office 應用程式、Microsoft Cloud App Security 及其他 Microsoft 365 Defender 功能。|
 | **裝置** | 列出調查中包含的裝置及其修正層級。  (修正層級會對應至 [裝置群組的自動化層級](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。 )  |
 | **信箱** |列出受偵測到之威脅影響的信箱。  |
 | **使用者**  | 列出受偵測到之威脅影響的使用者帳戶。 |
 | **證據** | 列出由警示或調查引發的證據片段。 包括 verdicts (*惡意*、 *可疑*、 *未知* 或 *未發現威脅*) 和修正狀態。 |
-| **Entities**  | 提供每個已分析之實體的詳細資料，包括每個實體類型的判定 (*惡意*、 *可疑* 或沒有) 中 *找到的威脅* 。|
-|**Log**    | 提供觸發警示之後所採取之所有調查動作的按時間排序的詳細視圖。|
+| **Entities** | 提供每個已分析之實體的詳細資料，包括每個實體類型的判定 (*惡意*、 *可疑* 或沒有) 中 *找到的威脅* 。|
+|**Log** | 提供觸發警示之後所採取之所有調查動作的按時間排序的詳細視圖。|
 | **擱置的動作歷程記錄** | 列出需要核准才能繼續的項目。 請移至「行動中心」 ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 核准擱置的動作。 |
 
 ## <a name="next-steps"></a>後續步驟

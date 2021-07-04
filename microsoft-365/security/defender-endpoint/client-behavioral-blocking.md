@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 83f269a13a54ee38b7e7a464d794d87ddbd7b520
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908074"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289928"
 ---
 # <a name="client-behavioral-blocking"></a>用戶端行為封鎖
 
@@ -46,7 +46,7 @@ ms.locfileid: "52908074"
 
 [Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)可以偵測可疑行為、惡意程式碼、fileless 及記憶體中的攻擊，以及裝置上的其他功能。 偵測到可疑行為時，Microsoft Defender 防毒軟體會監視並將這些可疑行為及其程式樹傳送至雲端保護服務。 機器學習會區別惡意應用程式與在毫秒內的良好行為，以及分類每個專案。 在幾乎即時的情況下，只要有惡意的偽像，該專案就會在裝置上遭到封鎖。 
 
-每當偵測到可疑行為時，就會產生[警示](alerts-queue.md)，而且會在[Microsoft 365 Defender 入口網站](microsoft-defender-security-center.md)中看到 (以前是 Microsoft Defender 資訊安全中心) 。
+每當偵測到可疑行為時，就會產生[警示](alerts-queue.md)，而且在[Microsoft 365 Defender 入口網站](microsoft-defender-security-center.md) (之前會顯示 Microsoft Defender 資訊安全中心) 。
 
 用戶端行為封鎖是有效的，因為它不只是協助防止攻擊的啟動，它可協助停止已開始執行的攻擊。 而且，以反應反應 [封鎖](feedback-loop-blocking.md) (另一個功能封鎖和包含) 的功能，您的組織中的其他裝置都可以攻擊。
 
@@ -54,26 +54,24 @@ ms.locfileid: "52908074"
 
 行為架構的偵測是根據[Enterprise 的 MITRE ATT&CK 矩陣](https://attack.mitre.org/matrices/enterprise)命名。 命名慣例有助於識別遭受惡意行為的攻擊階段：
 
-
-|策略 |   偵測威脅名稱 |
+|策略 | 偵測威脅名稱 |
 |----|----|
 |初始存取 | `Behavior:Win32/InitialAccess.*!ml` |
-|執行  | `Behavior:Win32/Execution.*!ml` |
-|堅持    | `Behavior:Win32/Persistence.*!ml` |
-|許可權提升   | `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|國防規避    | `Behavior:Win32/DefenseEvasion.*!ml` |
-|認證存取  | `Behavior:Win32/CredentialAccess.*!ml` |
-|發現  | `Behavior:Win32/Discovery.*!ml` |
+|執行 | `Behavior:Win32/Execution.*!ml` |
+|堅持 | `Behavior:Win32/Persistence.*!ml` |
+|許可權提升 | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|國防規避 | `Behavior:Win32/DefenseEvasion.*!ml` |
+|認證存取 | `Behavior:Win32/CredentialAccess.*!ml` |
+|發現 | `Behavior:Win32/Discovery.*!ml` |
 |橫向移動 | `Behavior:Win32/LateralMovement.*!ml` |
-|集合 |   `Behavior:Win32/Collection.*!ml` |
+|集合 | `Behavior:Win32/Collection.*!ml` |
 |命令和控制項 | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration   | `Behavior:Win32/Exfiltration.*!ml` |
+|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
 |影響 | `Behavior:Win32/Impact.*!ml` |
-|未分類  | `Behavior:Win32/Generic.*!ml` |
+|未分類 | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > 若要深入瞭解特定威脅，請參閱 **[最近的全域威脅活動](https://www.microsoft.com/wdsi/threats)**。
-
 
 ## <a name="configuring-client-behavioral-blocking"></a>設定用戶端行為封鎖
 
@@ -88,4 +86,3 @@ ms.locfileid: "52908074"
 - [攻擊面縮減](attack-surface-reduction.md)
 
 - [下一代保護](configure-microsoft-defender-antivirus-features.md) (防病毒、反惡意程式碼和其他威脅防護功能) 
-

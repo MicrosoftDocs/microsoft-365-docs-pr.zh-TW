@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769238"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289844"
 ---
 # <a name="list-alerts-api"></a>清單提醒 API
 
@@ -59,40 +59,42 @@ ms.locfileid: "52769238"
 ## <a name="permissions"></a>權限
 需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md)
 
-許可權類型 |   權限  |   許可權顯示名稱
+許可權類型 | 權限 | 許可權顯示名稱
 :---|:---|:---
-應用程式 |   警示。已讀取。所有 |    「讀取所有警示」
-應用程式 |   警示。 ReadWrite。 |   「讀取及寫入所有警示」
+應用程式 | 警示。已讀取。所有 | 「讀取所有警示」
+應用程式 | 警示。 ReadWrite。 | 「讀取及寫入所有警示」
 委派 (工作或學校帳戶)  | 警示。讀取 | 「讀取警示」
 委派 (工作或學校帳戶)  | 警示。 ReadWrite | 「讀取及寫入警示」
 
->[!Note]
+> [!NOTE]
 > 使用使用者認證取得權杖時：
->- 使用者至少必須具備下列角色許可權：「View Data ' (請參閱 [建立及管理角色](user-roles.md) 以取得詳細資訊) 
->- 回應只會包含與使用者可以存取之裝置相關聯的警示，取決於裝置群組設定 (請參閱 [建立及管理裝置群組](machine-groups.md) 以取得詳細資訊) 
+>
+> - 使用者至少必須具備下列角色許可權：「View Data ' (請參閱 [建立及管理角色](user-roles.md) 以取得詳細資訊) 
+> - 回應只會包含與使用者可以存取之裝置相關聯的警示，取決於裝置群組設定 (請參閱 [建立及管理裝置群組](machine-groups.md) 以取得詳細資訊) 
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /api/alerts
 ```
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 描述
+名稱 | 類型 | 說明
 :---|:---|:---
-授權 | 字串 | 載荷 {token}。 **必要欄位**。
+授權 | 字串 | 載荷 {token}。 **必要**。
 
+## <a name="request-body"></a>要求內文
 
-## <a name="request-body"></a>要求正文
 空白
 
 ## <a name="response"></a>回應
-如果成功，這個方法會傳回 200 OK，以及回應內文中的 [警示](alerts.md) 物件清單。
 
+如果成功，這個方法會傳回 200 OK，以及回應內文中的 [警示](alerts.md) 物件清單。
 
 ## <a name="example-1---default"></a>範例 1-預設值
 
-**請求**
+### <a name="request"></a>請求
 
 以下是要求的範例。
 
@@ -100,13 +102,12 @@ GET /api/alerts
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**回應**
+### <a name="response"></a>回應
 
 以下是回應的範例。
 
->[!NOTE]
->在這裡顯示的回應清單可能會因簡潔而截斷。 所有警示都會透過實際通話傳回。
-
+> [!NOTE]
+> 在這裡顯示的回應清單可能會因簡潔而截斷。 所有警示都會透過實際通話傳回。
 
 ```json
 {
@@ -162,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 
 ## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>範例 2-取得相關證據的10個最新警示
 
-**請求**
+### <a name="request"></a>請求
 
 以下是要求的範例。
 
@@ -170,14 +171,12 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**回應**
+### <a name="response"></a>回應
 
 以下是回應的範例。
 
->[!NOTE]
->在這裡顯示的回應清單可能會因簡潔而截斷。 所有警示都會透過實際通話傳回。
-
+> [!NOTE]
+> 在這裡顯示的回應清單可能會因簡潔而截斷。 所有警示都會透過實際通話傳回。
 
 ```json
 {
@@ -314,6 +313,6 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 }
 ```
 
-
 ## <a name="see-also"></a>另請參閱
-- [使用 Microsoft Defender for Endpoint OData 查詢](exposed-apis-odata-samples.md)
+
+[使用 Microsoft Defender for Endpoint OData 查詢](exposed-apis-odata-samples.md)

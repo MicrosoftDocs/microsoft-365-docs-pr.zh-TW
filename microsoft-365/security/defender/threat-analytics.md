@@ -1,5 +1,5 @@
 ---
-title: 使用威脅分析追蹤並回應新興威脅
+title: 使用威脅分析來追蹤和回應新興威脅
 ms.reviewer: ''
 description: 深入瞭解新興的威脅和攻擊技巧，以及如何加以阻止。 評估其對您組織的影響，並評估您的組織恢復能力。
 keywords: 威脅分析、風險評估、Microsoft 365 Defender、M365D、緩解狀態、安全設定、microsoft defender Office 365、microsoft defender Office 365 威脅分析、MDO 威脅分析、整合的 MDE 和 MDO 威脅分析資料、威脅分析資料整合、整合式 Microsoft 365 Defender 威脅分析
@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6de0cb646eb8c12e4863facdb42c1f9494120f9
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: c03dfef28744e2ee565c25d921902b8d11ecb7a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105653"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290240"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威脅分析追蹤並回應新興威脅 
+# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威脅分析來追蹤和回應新興威脅 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,14 +40,13 @@ ms.locfileid: "53105653"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-
 威脅分析是來自專家 Microsoft 安全性調查的產品威脅情報解決方案，其設計目的是為了協助安全性小組盡可能有效地應對新興威脅，包括：
 
 - 作用中的威脅演員及其活動
 - 常見和新的攻擊技術
 - 嚴重弱點
 - 常見的攻擊面
-- 流行惡意程式碼
+- 常見的惡意程式碼
 
 請觀看這段簡短的影片，深入瞭解威脅分析如何協助您追蹤最新的威脅並加以停止。
 
@@ -61,7 +60,7 @@ _在何處存取威脅分析_
 
 透過經常和 prevalently 的複雜敵人和新威脅，您可以快速：
 
-- 識別並應對新興威脅 
+- 識別並應對新興威脅
 - 瞭解您目前是否受到攻擊
 - 評估對資產的威脅影響
 - 檢查威脅的復原能力或洩密
@@ -85,14 +84,14 @@ _威脅分析儀表板。您也可以在與您想要讀取之威脅分析報告�
 
 ## <a name="view-a-threat-analytics-report"></a>查看威脅分析報告
 
-每個威脅分析報告都提供若干區段中的資訊： 
+每個威脅分析報告都提供若干區段中的資訊：
 
-- [**概觀**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses) 
-- [**分析報告**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
+- [**概觀**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
+- [**分析人員報告**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**相關的事件**](#related-incidents-view-and-manage-related-incidents)
 - [**受影響資產**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
 - [**禁止電子郵件嘗試**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
-- [**減輕方式**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
+- [**風險降低**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
 ### <a name="overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses"></a>概覽：快速瞭解威脅、評估其影響，以及複查防護
 
@@ -103,7 +102,9 @@ _威脅分析儀表板。您也可以在與您想要讀取之威脅分析報告�
 _威脅分析報告的一覽區段_
 
 #### <a name="assess-impact-on-your-organization"></a>評估組織的影響
+
 每個報告都包含設計用來提供威脅之組織影響的資訊的圖表：
+
 - **相關事件**--透過下列資料，提供對組織之追蹤威脅影響的概覽：
   - 作用中警示的數目，以及與其相關聯的主動事件數目
   - 主動事件的嚴重性
@@ -112,24 +113,60 @@ _威脅分析報告的一覽區段_
 - **禁止電子郵件嘗試**—顯示過去七天內已封鎖或傳送至 [垃圾郵件] 資料夾之前封鎖的電子郵件數目。
 
 #### <a name="review-security-resilience-and-posture"></a>檢查安全性恢復能力與狀況
+
 每個報告都包含的圖表，可提供您的組織對特定威脅的彈性程度。
+
 - **安全設定狀態**-顯示設定不當的安全性設定裝置數目。 套用建議的安全性設定，以協助緩解威脅。 如果裝置已套用 _所有_ 追蹤的設定，則會被視為 **安全** 裝置。
 - **弱點修補狀態**-顯示有缺陷裝置的數目。 套用安全性更新或修補程式，以解決威脅所利用的漏洞。
 
+#### <a name="view-reports-per-threat-tags"></a>依威脅標記查看報告
+
+您可以篩選威脅報告清單，並根據特定威脅標記 (類別) 或報表類型，查看最相關的報表。
+
+- **威脅標記**—協助您根據特定威脅類別來查看最相關的報表。 例如，與勒索軟體相關的所有報告。
+- **報告類型**-根據特定的報表類型，協助您查看最相關的報表。 例如，所有涵蓋工具和技術的報表。 
+- **篩選器**—協助您有效檢查威脅報告清單，並根據特定威脅標記或報告類型篩選視圖。 例如，檢查與勒索軟體類別相關的所有威脅報告，或涵蓋弱點的威脅報告。
+
+##### <a name="how-does-it-work"></a>它的運作方式為何？
+
+Microsoft 威脅情報小組已新增威脅標記給每個威脅報告：
+
+- 現在有四個威脅標記可供使用：
+  - 軟體
+  - 網路釣魚
+  - 弱點
+  - 活動群組
+- 威脅標記會出現在 [威脅分析] 頁面的頂端，包含每個標記下可用報告數目的計數器。
+
+  ![威脅標記](../../media/threat-analytics/ta-threattags-mtp.png)
+
+- 您也可以依威脅標記來排序清單：
+
+  ![清單](../../media/threat-analytics//ta-taglist-mtp.png)
+
+- 篩選器可供每個威脅標記和報表類型使用：
+
+  ![過濾 器](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析報告：從 Microsoft security 研究員取得專家洞察力
+
 在 [ **分析報告** ] 區段中，閱讀詳細的專家撰寫。 大多數報告提供攻擊鏈的詳細描述，包含對應至 MITRE ATT 的戰術和技術&CK 架構、詳盡的建議清單，以及強大的 [威脅搜尋](advanced-hunting-overview.md) 指導方針。
 
 [深入瞭解分析報告](threat-analytics-analyst-reports.md)
 
 ### <a name="related-incidents-view-and-manage-related-incidents"></a>相關的事件：查看及管理相關的事件
+
 [ **相關事件** ] 索引標籤會提供與追蹤威脅相關的所有事件清單。 您可以指派事件或管理連結至每個事件的警示。 
+
 
 ![威脅分析報告之相關事件區段的影像](../../media/threat-analytics/ta_related_incidents_mtp.png)
 
 _威脅分析報告的相關事件區段_
 
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>受影響的資產：取得受影響的裝置和信箱清單
+
 如果資產受到作用中未解析的警示影響，便會視為受影響的資產。 [ **受影響的資產** ] 索引標籤會列出下列受影響的資產類型：
+
 - **受影響的裝置**—具有未解析之 Microsoft Defender for Endpoint 警示的端點。 這些警示通常會引發 sightings 已知威脅指示器和活動。
 - **受影響的信箱**：已接收的電子郵件已觸發 Microsoft Defender 以 Office 365 警示的信箱。 雖然通常會封鎖觸發提醒的郵件，但使用者或組織層級原則也可以覆寫篩選器。
 
@@ -138,6 +175,7 @@ _威脅分析報告的相關事件區段_
 _威脅分析報告的「受影響的資產」區段_
 
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>禁止電子郵件企圖：查看封鎖或 junked 威脅電子郵件
+
 Microsoft Defender for Office 365 通常會封鎖具有已知威脅指示器的電子郵件，包括惡意連結或附件。 在某些情況下，檢查可疑內容的前瞻性篩選機制，會改為將威脅電子郵件傳送至 [垃圾郵件] 資料夾。 在任何情況下，在裝置上發動惡意程式碼碼威脅的機率都會降低。
 
 「**防止的電子郵件嘗試**」索引標籤會列出所有已封鎖的電子郵件，再傳送或傳送至 Microsoft Defender for Office 365 的垃圾郵件資料夾。 
@@ -147,6 +185,7 @@ Microsoft Defender for Office 365 通常會封鎖具有已知威脅指示器的�
 _威脅分析報告的 [防止電子郵件嘗試] 區段_
 
 ### <a name="mitigations-review-list-of-mitigations-and-the-status-of-your-devices"></a>緩解：查看緩解清單和裝置狀態
+
 在 [ **緩解** ] 區段中，複查可協助您增加組織對威脅抵禦能力的特定可行動建議清單。 追蹤的緩解措施清單包括：
 
 - **安全性更新**-針對架裝置上的漏洞，部署支援的軟體安全性更新
@@ -154,31 +193,37 @@ _威脅分析報告的 [防止電子郵件嘗試] 區段_
   - 雲端提供的保護  
   - 可能有害的應用程式 (PUA) 保護
   - 即時保護
- 
+
 本節中的緩解資訊包含來自[威脅與弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的資料，也就是從報告中各種連結提供的詳細深入資訊。
 
-![顯示 ](../../media/threat-analytics/ta_mitigations_mtp.png)
- ![ 弱點詳細資料之威脅分析報告之「緩解」區段之 [安全設定詳細資料] 的 [威脅分析] 區段的 [緩解] 區段的影像](../../media/threat-analytics/ta_mitigations_mtp2.png)
+![顯示安全設定詳細資料之威脅分析報告的「緩解」區段的影像](../../media/threat-analytics/ta_mitigations_mtp.png)
+
+![顯示弱點詳細資料之威脅分析報告的「緩解」區段的影像](../../media/threat-analytics/ta_mitigations_mtp2.png)
 
 _威脅分析報告的緩解區段_
 
 ## <a name="additional-report-details-and-limitations"></a>其他報告詳細資料與限制
->[!NOTE]
->在統一的安全性體驗中，威脅分析現在不僅適用于 microsoft defender for Endpoint，也適用于 microsoft defender 的 Office E5 授權擁有者。
->如果您未使用 Microsoft 365 安全性入口網站 (Microsoft 365 Defender) ，您也可以在 (入口網站 Office microsoft defender for Endpoint) 中，查看不含 Microsoft defender Microsoft Defender 資訊安全中心資料 (的報告詳細資料。 
+
+> [!NOTE]
+> 在統一的安全性體驗中，威脅分析現在不僅適用于 microsoft defender for Endpoint，也適用于 microsoft defender 的 Office E5 授權擁有者。
+>
+> 如果您未使用 Microsoft 365 安全性入口網站 (Microsoft 365 Defender) ，您也可以在 (入口網站 Office microsoft defender for Endpoint) 中，查看不含 Microsoft defender Microsoft Defender 資訊安全中心資料 (的報告詳細資料。
 
 若要存取威脅分析報告，您需要特定的角色和許可權。 如需詳細資訊，請參閱[Microsoft 365 Defender 角色型存取控制中的自訂角色](custom-roles.md)。
-  - 若要查看警示、事件或受影響的資產資料，您必須具有 microsoft defender for Office 或 microsoft defender for Endpoint 警示資料，或兩者的許可權。
-  - 若要查看已禁止的電子郵件嘗試，您必須具有 Microsoft Defender 的許可權，才能 Office 搜尋資料。 
-  - 若要查看緩解，您必須具有在 Microsoft Defender for Endpoint 中威脅與弱點管理資料的許可權。
+
+- 若要查看警示、事件或受影響的資產資料，您必須具有 microsoft defender for Office 或 microsoft defender for Endpoint 警示資料，或兩者的許可權。
+- 若要查看已禁止的電子郵件嘗試，您必須具有 Microsoft Defender 的許可權，才能 Office 搜尋資料。 
+- 若要查看緩解，您必須具有在 Microsoft Defender for Endpoint 中威脅與弱點管理資料的許可權。
 
 在查看威脅分析資料時，請記住下列因素：
+
 - 圖表只會反映所追蹤的緩解。 請查看報告中未顯示圖表的其他緩解。
 - 緩解不會保證完全恢復。 提供的緩解反映改進恢復所需的最佳動作。
 - 如果裝置未將資料傳輸至服務，則會將裝置計為「無法使用」。
 - 防病毒相關的統計資料是以 Microsoft Defender 防毒軟體設定為基礎。 使用協力廠商防病毒解決方案的裝置可能會顯示為「已公開」。
 
 ## <a name="related-topics"></a>相關主題
+
 - [使用高級搜尋主動尋找威脅](advanced-hunting-overview.md) 
 - [瞭解分析報告區段](threat-analytics-analyst-reports.md)
 - [評估並解決安全弱點與洩密問題](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

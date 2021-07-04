@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 瞭解如何使用 PowerShell 以不同方式來查看、列出或顯示 Microsoft 365 使用者帳戶。
-ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 77219fb89430ed257ef2a68a7b24bf9ebac715b2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924645"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290168"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell View Microsoft 365 使用者帳戶
 
@@ -104,7 +104,7 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 使用者帳戶有兩個來源： 
 
-- Windows伺服器 Active Directory (AD) ，也就是從內部部署 AD 同步處理至雲端的帳戶。
+- Windows Server Active Directory (AD) ，也就是從內部部署 AD 同步處理至雲端的帳戶。
 
 - Azure Active Directory (Azure ad) 在雲端中直接建立的 ad 帳戶。
 
@@ -148,8 +148,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**。 > [comparison 運算子] 是 **-eq** for equals，- **ne** 代表不等於，- **lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
-  
+> 在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**。 > [comparison 運算子] 是 **-eq** for equals，- **ne** 代表不等於，- **lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](/powershell/module/microsoft.powershell.core/where-object)。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
@@ -241,7 +240,7 @@ Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**.  [比較運算子] 的 **-eq** 代表 equals，- **ne** 代表不等於， **-lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
+> 在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**.  [比較運算子] 的 **-eq** 代表 equals，- **ne** 代表不等於， **-lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](/powershell/module/microsoft.powershell.core/where-object)。
   
 若要檢查使用者帳戶的封鎖狀態，請使用下列命令：
   
@@ -254,11 +253,11 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 根據預設， **Get-MsolUser** Cmdlet 會顯示使用者帳戶的三個屬性：
   
 - UserPrincipalName
-    
+
 - DisplayName
-    
+
 - Islicensed 內容
-    
+
 如果您需要其他屬性（例如，使用者在其中運作的部門，以及他們使用 Microsoft 365 服務的國家/地區），您可以搭配 **Select** 資訊清單執行 **Get-MsolUser** ，以指定使用者帳戶屬性的清單。 以下為範例：
   
 ```powershell

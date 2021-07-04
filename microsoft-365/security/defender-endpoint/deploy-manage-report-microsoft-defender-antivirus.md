@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4be9116b83c2ee4eec410f3d8d68c289f3c8b9a5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 15fd70a2a60da7b0541446a98f0094c73c831d51
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925824"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289820"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>部署、管理及報告 Microsoft Defender 防毒軟體
 
@@ -57,7 +57,7 @@ Microsoft Azure|[使用 Visual Studio 虛擬機器設定或使用 Azure PowerShe
 
 1. <span id="fn1" />在 Microsoft 端點管理員 (目前的分支) 和 System Center 2012 Configuration Manager 之間，某些功能和功能（特別是雲端提供的保護）的可用性有所不同。 在此文件庫中，我們已著重于 Windows 10、Windows Server 2016 及 Microsoft 端點管理員 (目前的分支) 。 請參閱[在 Microsoft Defender 防毒軟體中使用 Microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)，以描述主要差異。 [ (回到 table) ](#ref2)
   
-2.  <span id="fn2" />在 Windows 10 中，Microsoft Defender 防毒軟體是可用的元件，但沒有安裝或部署其他用戶端或服務。 當協力廠商防病毒產品已卸載或過期 ([但 Windows Server 2016) 除外](microsoft-defender-antivirus-on-windows-server.md)時，會自動啟用。 因此不需要傳統部署。 此處的部署是指確定在端點或伺服器上有可用及啟用 Microsoft Defender 防毒軟體元件。 [ (回到 table) ](#ref2)
+2. <span id="fn2" />在 Windows 10 中，Microsoft Defender 防毒軟體是可用的元件，但沒有安裝或部署其他用戶端或服務。 當協力廠商防病毒產品已卸載或過期 ([但 Windows Server 2016) 除外](microsoft-defender-antivirus-on-windows-server.md)時，會自動啟用。 因此不需要傳統部署。 此處的部署是指確定在端點或伺服器上有可用及啟用 Microsoft Defender 防毒軟體元件。 [ (回到 table) ](#ref2)
 
 3. <span id="fn3" />功能和保護的設定，包括設定產品及保護更新，會在此程式庫的「[設定 Microsoft Defender 防毒軟體功能](configure-notifications-microsoft-defender-antivirus.md)」區段中進一步說明。 [ (回到 table) ](#ref2)
 
@@ -87,7 +87,7 @@ Microsoft Azure|[使用 Visual Studio 虛擬機器設定或使用 Azure PowerShe
 
 ## <a name="in-this-section"></a>本節內容
 
-主題 | 描述
+主題 | 說明
 ---|---
 [部署及啟用 Microsoft Defender 防毒軟體保護](deploy-microsoft-defender-antivirus.md) | 當用戶端安裝為 Windows 10 的核心元件，而傳統部署不適用時，您仍然需要使用 Microsoft Endpoint Configuration Manager、Microsoft Intune 或群組原則物件，在端點上啟用用戶端。 
 [管理 Microsoft Defender 防毒軟體更新及套用基準](manage-updates-baselines-microsoft-defender-antivirus.md) | 有兩個部分可用於更新 Microsoft Defender 防毒軟體：在端點上更新用戶端 (產品更新) ，以及更新安全性智慧 (保護更新) 。 您可以使用 Microsoft Endpoint Configuration Manager、群組原則、PowerShell 和 WMI，以許多方式更新安全性情報。

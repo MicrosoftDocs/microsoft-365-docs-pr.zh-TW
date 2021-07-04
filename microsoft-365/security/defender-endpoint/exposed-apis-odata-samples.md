@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ff13a382f7c59083c217f937b996e63abc2ff52a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771042"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290000"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>使用 Microsoft Defender for Endpoint OData 查詢
 
@@ -41,13 +41,13 @@ ms.locfileid: "52771042"
 
 並非所有的屬性都是可篩選的。
 
-## <a name="properties-that-support-filter"></a>支援 $filter 的屬性：
-```
-- [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
-- [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
-- [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
-- [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
-```
+## <a name="properties-that-support-filter"></a>支援 $filter 的屬性
+
+- [警示](alerts.md)：、、、、 `alertCreationTime` `lastUpdateTime` `incidentId` `InvestigationId` `status` 、 `severity` 和 `category` 。
+- [電腦](machine.md)： `ComputerDnsName` 、、、 `LastSeen` `HealthStatus` `OsPlatform` 、 `RiskScore` 和 `RbacGroupId` 。
+- [MachineAction](machineaction.md)： `Status` 、 `MachineId` 、 `Type` 、 `Requestor` 和 `CreationDateTimeUtc` 。
+- [標記](ti-indicator.md)： `indicatorValue` 、、、 `indicatorType` `creationTimeDateTimeUtc` `createdBy` 、 `severity` 和 `action` 。
+
 ### <a name="example-1"></a>範例 1
 
 使用相關的證據取得10個最新警示：
@@ -56,7 +56,7 @@ ms.locfileid: "52771042"
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 {
@@ -201,7 +201,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 {
@@ -263,7 +263,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 {
@@ -316,7 +316,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 {
@@ -369,7 +369,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 {
@@ -422,7 +422,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 json{
@@ -454,7 +454,7 @@ json{
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 4
@@ -468,7 +468,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa4
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-**回應：**
+#### <a name="response"></a>回應
 
 ```json
 json{
@@ -514,4 +514,5 @@ json{
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Microsoft Defender for Endpoint APIs](apis-intro.md)
+
+[Microsoft Defender for Endpoint APIs](apis-intro.md)

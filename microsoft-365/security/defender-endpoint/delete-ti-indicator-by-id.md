@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eaef6b25e2db72149a1a1128899d8a79a38a4c60
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1541e1d6e177416d77d768cef04d2524e6907ab5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771018"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289916"
 ---
 # <a name="delete-indicator-api"></a>刪除指示器 API
 
@@ -39,24 +39,25 @@ ms.locfileid: "52771018"
 
 
 ## <a name="api-description"></a>API 描述
+
 依識別碼刪除 [指示器](ti-indicator.md) 實體。
 
-
 ## <a name="limitations"></a>限制
-1. 此 API 的速率限制為每分鐘100個通話，每小時1500個通話。
 
+此 API 的速率限制為每分鐘100個通話，每小時1500個通話。
 
 ## <a name="permissions"></a>權限
+
 需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [入門](apis-intro.md)
 
-許可權類型 |   權限  |   許可權顯示名稱
+許可權類型 | 權限 | 許可權顯示名稱
 :---|:---|:---
-應用程式 |   Ti ReadWrite |  「讀取及寫入 TI 指標 '
-應用程式 |   Ti ReadWrite 所有 |  「讀取和寫入指示器」
-
+應用程式 | Ti ReadWrite | 「讀取及寫入 TI 指標 '
+應用程式 | Ti ReadWrite 所有 | 「讀取和寫入指示器」
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
@@ -64,21 +65,23 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 描述
+名稱 | 類型 | 說明
 :---|:---|:---
-授權 | 字串 | 載荷 {token}。 **必要欄位**。
+授權 | 字串 | 載荷 {token}。 **必要**。
 
+## <a name="request-body"></a>要求內文
 
-## <a name="request-body"></a>要求正文
 空白
 
 ## <a name="response"></a>回應
+
 如果指示器存在並成功刪除-204 OK （沒有內容）。
+
 如果找不到具有指定識別碼的指示器-找不到404。
 
 ## <a name="example"></a>範例
 
-**請求**
+### <a name="request"></a>請求
 
 以下是要求的範例。
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771186"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290012"
 ---
 # <a name="file-resource-type"></a>檔資源類型
 
@@ -36,10 +36,10 @@ ms.locfileid: "52771186"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 代表在 Defender for Endpoint 中的檔實體。
 
 ## <a name="methods"></a>方法
+
 方法	|傳回類型 |描述
 :---|:---|:---
 [取得檔](get-file-information.md) | [檔](files.md) | 取得單一檔 
@@ -49,7 +49,8 @@ ms.locfileid: "52771186"
 
 
 ## <a name="properties"></a>屬性
-|屬性	 | 類型    |   描述 |
+
+|屬性	 | 類型 | 說明 |
 |:---|:---|:---|
 |sha1 | 字串 | 檔內容的 Sha1 雜湊 |
 |sha256 | 字串 | 檔內容的 Sha256 雜湊 |
@@ -67,7 +68,6 @@ ms.locfileid: "52771186"
 |isValidCertificate | 布林值 | 是由 Microsoft Defender for Endpoint agent 成功驗證的簽署憑證 |
 |determinationType | 字串 | 檔的決定類型 |
 |determinationValue | 字串 | 判斷值 |
-
 
 ## <a name="json-representation"></a>Json 標記法
 

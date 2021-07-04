@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844655"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290192"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>使用基本權限存取入口網站
 
@@ -47,14 +47,14 @@ ms.locfileid: "52844655"
 -  (讀寫) 的完整存取權
 - 唯讀存取權
 
-### <a name="before-you-begin"></a>開始之前
+### <a name="before-you-begin"></a>在您開始之前
 
 - 安裝 Azure PowerShell。 如需詳細資訊，請參閱[如何安裝和設定 Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)。<br>
 
     > [!NOTE]
     > 您必須在已提升許可權的命令列中執行 PowerShell Cmdlet。
 
-- 連線 Azure Active Directory。 如需詳細資訊，請參閱[Connect-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
+- 連線 Azure Active Directory。 如需詳細資訊，請參閱[Connect-MsolService](/powershell/module/msonline/connect-msolservice)。
 
 **完全存取** <br>
 具有完整存取權的使用者可以登入、查看所有系統資訊及解決提醒、提交檔案進行深層分析，以及下載上架套件。

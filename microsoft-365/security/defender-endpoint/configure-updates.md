@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a506f4913369e53fd2ed4943bb2557935f1d62e5
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a7a560cb33190105f8df5922e04aeada4d75f398
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105557"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290036"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>建立 Microsoft Defender 更新的自訂逐步展示過程
 
@@ -43,7 +43,7 @@ ms.locfileid: "53105557"
 下表列出可用來設定更新通道的群組原則設定：
 
 | 設定標題  | 說明  | 位置  |
-|-|-|-|
+|:---|:---|:---|
 | 選取逐步 Microsoft Defender 每月平臺更新部署通道  | 啟用此原則，以指定裝置每月逐步部署期間何時接收 Microsoft Defender 平臺更新。 Beta 通道：設定成此通道的裝置會是第一個接收新更新的裝置。 選取 [Beta 通道]，以參與識別及報告 Microsoft 的問題。 預設會為此通道訂閱 Windows 有問必答方案中的裝置。 僅供 (手動) 測試環境和有限數目的裝置使用。  <br><br>  目前通道 (預覽) ：設定成此通道的裝置會在每月逐步發佈週期中，儘早提供更新。 建議用於預先生產/驗證環境。  <br><br>  目前通道 (分段) ：在每月逐步發行週期後，將會提供裝置更新。 建議套用至實際生產環境中的小型、代表性部分 (~ 10% ) 。  <br><br>  目前通道 (多種) ：只有逐步發行週期完成之後，才會提供裝置更新。 建議套用至實際執行填充 (~ 10-100% ) 中的一組廣泛裝置。  <br><br>   如果您停用或未設定此原則，裝置會在逐步發行週期中自動維持最新狀態。 適用于大部分裝置。  | Windows元件 \ Microsoft Defender 防毒軟體  |
 | 選取逐步 Microsoft Defender 每月引擎更新部署通道  | 啟用此原則，以指定裝置每月逐步部署期間何時接收 Microsoft Defender 引擎更新。  <br><br>  Beta 通道：設定成此通道的裝置會是第一個接收新更新的裝置。 選取 [Beta 通道]，以參與識別及報告 Microsoft 的問題。 預設會為此通道訂閱 Windows 有問必答方案中的裝置。 僅供 (手動) 測試環境和有限數目的裝置使用。  <br><br>  目前通道 (預覽) ：設定成此通道的裝置會在每月逐步發佈週期中，儘早提供更新。 建議用於預先生產/驗證環境。  <br><br>  目前通道 (分段) ：在每月逐步發行週期後，將會提供裝置更新。 建議套用至實際生產環境中的小型、代表性部分 (~ 10% ) 。  <br><br>  目前通道 (多種) ：只有逐步發行週期完成之後，才會提供裝置更新。 建議套用至實際執行填充 (~ 10-100% ) 中的一組廣泛裝置。  <br><br>  如果您停用或未設定此原則，裝置會在逐步發行週期中自動維持最新狀態。 適用于大部分裝置。  | Windows元件 \ Microsoft Defender 防毒軟體  |
 | 選取逐步式 Microsoft Defender 每日定義更新試部署通道  | 啟用此原則，以指定裝置每日逐步部署期間何時接收 Microsoft Defender 定義更新。 <br><br> 目前通道 (分段) ：裝置會在發行週期後提供更新。 建議套用至實際生產環境 (~ 10% ) 中的小型代表性部分。 <br><br>   目前通道 (多種) ：只有逐步發行週期完成之後，才會提供裝置更新。 建議套用至實際執行填充 (~ 10-100% ) 中的一組廣泛裝置。 <br><br>   如果您停用或未設定此原則，裝置會在每日發行週期期間自動維持最新狀態。 適用于大部分裝置。  | Windows元件 \ Microsoft Defender 防毒軟體  |
@@ -76,6 +76,8 @@ ms.locfileid: "53105557"
 
 [Microsoft Intune Azure Microsoft 檔中的 Windows 10 裝置新增自訂設定 \|](/mem/intune/configuration/custom-settings-windows-10)
 
+如需有關用於逐步推廣程式之 Defender Csp 的詳細資訊，請參閱 [DEFENDER csp](/windows/client-management/mdm/defender-csp)。
+
 ## <a name="powershell"></a>PowerShell
 
 使用 `Set-MpPreference` Cmdlet 來設定逐步更新的推出。
@@ -94,4 +96,4 @@ Set-MpPreference
 
 用於 `Set-MpPreference -PlatformUpdatesChannel Beta` 設定平臺更新，以從 Beta 通道抵達。
 
-如需參數及其設定方式的詳細資訊，請參閱 [MpPreference (Defender) |Microsoft](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps&preserve-view=true)檔。
+如需參數及其設定方式的詳細資訊，請參閱 [MpPreference (Defender) |Microsoft](/powershell/module/defender/set-mppreference)檔。

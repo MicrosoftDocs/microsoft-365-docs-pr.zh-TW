@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 4b34d3ea20716fb2424d9317b8a51c088a5714a6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ddc28149ca2ab43b7c14d3bdbaeeecdad1b18387
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935350"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289760"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>提供受管理的安全性服務提供者 (MSSP) 存取權 
 
@@ -50,10 +50,9 @@ ms.locfileid: "51935350"
 
     這些群組會連結至您在 Microsoft 365 安全性中心的 Defender for Endpoint 中建立的角色。 若要這麼做，請在客戶 AD 承租人中建立三個群組。 在我們的範例方法中，我們建立下列群組：
 
-    - 第1層分析員 
-    - 第2層分析員 
+    - 第1層分析員
+    - 第2層分析員
     - MSSP 分析員核准者  
-
 
 2. 在 Microsoft 365 的安全性中心角色和群組中，為端點的客戶 Defender 中的適當訪問層級建立適用于端點角色的 Defender 角色。
 
@@ -73,12 +72,10 @@ ms.locfileid: "51935350"
 
     如需詳細資訊，請參閱 [使用以角色為基礎的存取控制](/windows/security/threat-protection/microsoft-defender-atp/rbac)。
 
-
-
 ## <a name="configure-governance-access-packages"></a>設定調控訪問套件
 
-1.  **在客戶 AAD 中以連線的組織形式新增 MSSP：身分識別管理**
-    
+1. **在客戶 AAD 中以連線的組織形式新增 MSSP：身分識別管理**
+
     將 MSSP 新增為連線的組織，可讓 MSSP 要求並已布建存取權。 
 
     若要這麼做，請在客戶 AD 承租人中存取身分識別管理：連線的組織。 透過租使用者識別碼或網域，新增組織並搜尋 MSSP 分析租使用者。 建議您為 MSSP 分析員建立個別的 AD 租使用者。
@@ -87,12 +84,11 @@ ms.locfileid: "51935350"
 
     資原始目錄是 access 套件的邏輯集合，在客戶 AD 租使用者中建立。
 
-    若要這麼做，請在客戶 AD 承租人中存取身分識別管理：編目，並 **新增目錄**。 在我們的範例中，我們會致電 **MSSP 存取**。 
+    若要這麼做，請在客戶 AD 承租人中存取身分識別管理：編目，並 **新增目錄**。 在我們的範例中，我們會致電 **MSSP 存取**。
 
     ![新目錄的影像](../../media/goverance-catalog.png)
 
     進一步資訊，請參閱 [建立資源的目錄](/azure/active-directory/governance/entitlement-management-catalog-create)。
-
 
 3. **建立 MSSP 資源的存取套件客戶 AAD：身分識別控管**
 
@@ -109,28 +105,27 @@ ms.locfileid: "51935350"
 
     如需詳細資訊，請參閱 [建立新的 access 套件](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-
 4. **提供存取權要求從客戶 AAD：身分識別控管 MSSP 資源的連結**
 
     MSSP SOC 分析員使用「我的 Access 入口網站」連結，透過建立的訪問套件要求存取權。 連結是持久的，這表示新分析員的時間可能會使用相同的連結。 分析員要求會進入佇列供 **MSSP 分析員核准者** 核准。
-
 
     ![Access 屬性的影像](../../media/access-properties.png)
 
     此連結位於每個 access 套件的 [概述] 頁面上。
 
-## <a name="manage-access"></a>管理存取權 
+## <a name="manage-access"></a>管理存取權
 
 1. 在客戶和/或 MSSP myaccess 中複查和授權存取要求。
 
     存取要求是由 MSSP 分析員核准者群組的成員在客戶存取。
 
-    若要這麼做，請使用：來存取客戶的 myaccess  `https://myaccess.microsoft.com/@<Customer Domain >` 。 
+    若要這麼做，請使用：來存取客戶的 myaccess `https://myaccess.microsoft.com/@<Customer Domain>` 。
 
-    範例： `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
+    範例：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. 在 UI 的 [ **核准** ] 區段中核准或拒絕要求。
 
-     此時，已布建分析者存取權，且每個分析員都應該可以存取客戶的 Microsoft 365 安全中心： 
+     此時，已布建分析者存取權，且每個分析員都應該可以存取客戶的 Microsoft 365 安全中心：
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有所指派的許可權和角色。
 
