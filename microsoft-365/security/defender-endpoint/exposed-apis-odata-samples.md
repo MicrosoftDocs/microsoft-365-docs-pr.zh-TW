@@ -17,46 +17,46 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ff13a382f7c59083c217f937b996e63abc2ff52a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771042"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290000"
 ---
-# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="ae3a7-104">使用 Microsoft Defender for Endpoint OData 查詢</span><span class="sxs-lookup"><span data-stu-id="ae3a7-104">OData queries with Microsoft Defender for Endpoint</span></span>
+# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="e8d7b-104">使用 Microsoft Defender for Endpoint OData 查詢</span><span class="sxs-lookup"><span data-stu-id="e8d7b-104">OData queries with Microsoft Defender for Endpoint</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="ae3a7-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-105">**Applies to:**</span></span>
-- [<span data-ttu-id="ae3a7-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="ae3a7-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+<span data-ttu-id="e8d7b-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="e8d7b-105">**Applies to:**</span></span>
+- [<span data-ttu-id="e8d7b-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="e8d7b-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- <span data-ttu-id="ae3a7-107">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="ae3a7-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="ae3a7-108">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="ae3a7-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="e8d7b-107">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="e8d7b-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="e8d7b-108">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="e8d7b-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="ae3a7-109">如果您不熟悉 OData 查詢，請參閱： [OData V4 查詢](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="ae3a7-109">If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)</span></span>
+<span data-ttu-id="e8d7b-109">如果您不熟悉 OData 查詢，請參閱： [OData V4 查詢](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="e8d7b-109">If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)</span></span>
 
-<span data-ttu-id="ae3a7-110">並非所有的屬性都是可篩選的。</span><span class="sxs-lookup"><span data-stu-id="ae3a7-110">Not all properties are filterable.</span></span>
+<span data-ttu-id="e8d7b-110">並非所有的屬性都是可篩選的。</span><span class="sxs-lookup"><span data-stu-id="e8d7b-110">Not all properties are filterable.</span></span>
 
-## <a name="properties-that-support-filter"></a><span data-ttu-id="ae3a7-111">支援 $filter 的屬性：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-111">Properties that support $filter:</span></span>
-```
-- [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
-- [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
-- [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
-- [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
-```
-### <a name="example-1"></a><span data-ttu-id="ae3a7-112">範例 1</span><span class="sxs-lookup"><span data-stu-id="ae3a7-112">Example 1</span></span>
+## <a name="properties-that-support-filter"></a><span data-ttu-id="e8d7b-111">支援 $filter 的屬性</span><span class="sxs-lookup"><span data-stu-id="e8d7b-111">Properties that support $filter</span></span>
 
-<span data-ttu-id="ae3a7-113">使用相關的證據取得10個最新警示：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-113">Get 10 latest Alerts with related Evidence:</span></span>
+- <span data-ttu-id="e8d7b-112">[警示](alerts.md)：、、、、 `alertCreationTime` `lastUpdateTime` `incidentId` `InvestigationId` `status` 、 `severity` 和 `category` 。</span><span class="sxs-lookup"><span data-stu-id="e8d7b-112">[Alert](alerts.md): `alertCreationTime`, `lastUpdateTime`, `incidentId`,`InvestigationId`, `status`, `severity` and `category`.</span></span>
+- <span data-ttu-id="e8d7b-113">[電腦](machine.md)： `ComputerDnsName` 、、、 `LastSeen` `HealthStatus` `OsPlatform` 、 `RiskScore` 和 `RbacGroupId` 。</span><span class="sxs-lookup"><span data-stu-id="e8d7b-113">[Machine](machine.md): `ComputerDnsName`, `LastSeen`, `HealthStatus`, `OsPlatform`, `RiskScore` and `RbacGroupId`.</span></span>
+- <span data-ttu-id="e8d7b-114">[MachineAction](machineaction.md)： `Status` 、 `MachineId` 、 `Type` 、 `Requestor` 和 `CreationDateTimeUtc` 。</span><span class="sxs-lookup"><span data-stu-id="e8d7b-114">[MachineAction](machineaction.md): `Status`, `MachineId`, `Type`, `Requestor` and `CreationDateTimeUtc`.</span></span>
+- <span data-ttu-id="e8d7b-115">[標記](ti-indicator.md)： `indicatorValue` 、、、 `indicatorType` `creationTimeDateTimeUtc` `createdBy` 、 `severity` 和 `action` 。</span><span class="sxs-lookup"><span data-stu-id="e8d7b-115">[Indicator](ti-indicator.md): `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy`, `severity` and `action`.</span></span>
+
+### <a name="example-1"></a><span data-ttu-id="e8d7b-116">範例 1</span><span class="sxs-lookup"><span data-stu-id="e8d7b-116">Example 1</span></span>
+
+<span data-ttu-id="e8d7b-117">使用相關的證據取得10個最新警示：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-117">Get 10 latest Alerts with related Evidence:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-<span data-ttu-id="ae3a7-114">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-114">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-118">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-118">Response</span></span>
 
 ```json
 {
@@ -193,15 +193,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="ae3a7-115">範例 2</span><span class="sxs-lookup"><span data-stu-id="ae3a7-115">Example 2</span></span>
+### <a name="example-2"></a><span data-ttu-id="e8d7b-119">範例 2</span><span class="sxs-lookup"><span data-stu-id="e8d7b-119">Example 2</span></span>
 
-<span data-ttu-id="ae3a7-116">取得 2019-11-22 00:00:00 之後最後更新的所有警示：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-116">Get all the alerts last updated after 2019-11-22 00:00:00:</span></span>
+<span data-ttu-id="e8d7b-120">取得 2019-11-22 00:00:00 之後最後更新的所有警示：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-120">Get all the alerts last updated after 2019-11-22 00:00:00:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-<span data-ttu-id="ae3a7-117">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-117">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-121">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-121">Response</span></span>
 
 ```json
 {
@@ -255,15 +255,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 }
 ```
 
-### <a name="example-3"></a><span data-ttu-id="ae3a7-118">範例 3</span><span class="sxs-lookup"><span data-stu-id="ae3a7-118">Example 3</span></span>
+### <a name="example-3"></a><span data-ttu-id="e8d7b-122">範例 3</span><span class="sxs-lookup"><span data-stu-id="e8d7b-122">Example 3</span></span>
 
-<span data-ttu-id="ae3a7-119">取得所有「高 ' ' RiskScore ' 的裝置：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-119">Get all the devices with 'High' 'RiskScore':</span></span>
+<span data-ttu-id="e8d7b-123">取得所有「高 ' ' RiskScore ' 的裝置：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-123">Get all the devices with 'High' 'RiskScore':</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-<span data-ttu-id="ae3a7-120">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-120">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-124">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-124">Response</span></span>
 
 ```json
 {
@@ -308,15 +308,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 }
 ```
 
-### <a name="example-4"></a><span data-ttu-id="ae3a7-121">範例 4</span><span class="sxs-lookup"><span data-stu-id="ae3a7-121">Example 4</span></span>
+### <a name="example-4"></a><span data-ttu-id="e8d7b-125">範例 4</span><span class="sxs-lookup"><span data-stu-id="e8d7b-125">Example 4</span></span>
 
-<span data-ttu-id="ae3a7-122">取得「HealthStatus ' 不等於 ' Active ' 的前100裝置：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-122">Get top 100 devices with 'HealthStatus' not equals to 'Active':</span></span>
+<span data-ttu-id="e8d7b-126">取得「HealthStatus ' 不等於 ' Active ' 的前100裝置：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-126">Get top 100 devices with 'HealthStatus' not equals to 'Active':</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-<span data-ttu-id="ae3a7-123">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-123">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-127">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-127">Response</span></span>
 
 ```json
 {
@@ -361,15 +361,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 }
 ```
 
-### <a name="example-5"></a><span data-ttu-id="ae3a7-124">範例 5</span><span class="sxs-lookup"><span data-stu-id="ae3a7-124">Example 5</span></span>
+### <a name="example-5"></a><span data-ttu-id="e8d7b-128">範例 5</span><span class="sxs-lookup"><span data-stu-id="e8d7b-128">Example 5</span></span>
 
-<span data-ttu-id="ae3a7-125">取得2018-10-20 之後最後看到的所有裝置：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-125">Get all the devices that last seen after 2018-10-20:</span></span>
+<span data-ttu-id="e8d7b-129">取得2018-10-20 之後最後看到的所有裝置：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-129">Get all the devices that last seen after 2018-10-20:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-<span data-ttu-id="ae3a7-126">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-126">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-130">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-130">Response</span></span>
 
 ```json
 {
@@ -414,15 +414,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 }
 ```
 
-### <a name="example-6"></a><span data-ttu-id="ae3a7-127">範例 6</span><span class="sxs-lookup"><span data-stu-id="ae3a7-127">Example 6</span></span>
+### <a name="example-6"></a><span data-ttu-id="e8d7b-131">範例 6</span><span class="sxs-lookup"><span data-stu-id="e8d7b-131">Example 6</span></span>
 
-<span data-ttu-id="ae3a7-128">使用 Microsoft Defender for Endpoint 取得使用者 Analyst@examples.onmicrosoft.com 建立的所有防病毒掃描：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-128">Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint:</span></span>
+<span data-ttu-id="e8d7b-132">使用 Microsoft Defender for Endpoint 取得使用者 Analyst@examples.onmicrosoft.com 建立的所有防病毒掃描：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-132">Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-<span data-ttu-id="ae3a7-129">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-129">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-133">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-133">Response</span></span>
 
 ```json
 json{
@@ -446,29 +446,29 @@ json{
 }
 ```
 
-### <a name="example-7"></a><span data-ttu-id="ae3a7-130">範例 7</span><span class="sxs-lookup"><span data-stu-id="ae3a7-130">Example 7</span></span>
+### <a name="example-7"></a><span data-ttu-id="e8d7b-134">範例 7</span><span class="sxs-lookup"><span data-stu-id="e8d7b-134">Example 7</span></span>
 
-<span data-ttu-id="ae3a7-131">取得特定裝置的開啟警示計數：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-131">Get the count of open alerts for a specific device:</span></span>
+<span data-ttu-id="e8d7b-135">取得特定裝置的開啟警示計數：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-135">Get the count of open alerts for a specific device:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-<span data-ttu-id="ae3a7-132">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-132">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-136">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-136">Response</span></span>
 
 ```json
 4
 ```
 
-### <a name="example-8"></a><span data-ttu-id="ae3a7-133">範例 8</span><span class="sxs-lookup"><span data-stu-id="ae3a7-133">Example 8</span></span>
+### <a name="example-8"></a><span data-ttu-id="e8d7b-137">範例 8</span><span class="sxs-lookup"><span data-stu-id="e8d7b-137">Example 8</span></span>
 
-<span data-ttu-id="ae3a7-134">取得以 ' mymachine ' 開頭的「computerDnsName」的所有裝置：</span><span class="sxs-lookup"><span data-stu-id="ae3a7-134">Get all the devices with 'computerDnsName' starting with 'mymachine':</span></span>
+<span data-ttu-id="e8d7b-138">取得以 ' mymachine ' 開頭的「computerDnsName」的所有裝置：</span><span class="sxs-lookup"><span data-stu-id="e8d7b-138">Get all the devices with 'computerDnsName' starting with 'mymachine':</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-<span data-ttu-id="ae3a7-135">**回應：**</span><span class="sxs-lookup"><span data-stu-id="ae3a7-135">**Response:**</span></span>
+#### <a name="response"></a><span data-ttu-id="e8d7b-139">回應</span><span class="sxs-lookup"><span data-stu-id="e8d7b-139">Response</span></span>
 
 ```json
 json{
@@ -513,5 +513,6 @@ json{
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ae3a7-136">另請參閱</span><span class="sxs-lookup"><span data-stu-id="ae3a7-136">See also</span></span>
-- [<span data-ttu-id="ae3a7-137">Microsoft Defender for Endpoint APIs</span><span class="sxs-lookup"><span data-stu-id="ae3a7-137">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
+## <a name="see-also"></a><span data-ttu-id="e8d7b-140">另請參閱</span><span class="sxs-lookup"><span data-stu-id="e8d7b-140">See also</span></span>
+
+[<span data-ttu-id="e8d7b-141">Microsoft Defender for Endpoint APIs</span><span class="sxs-lookup"><span data-stu-id="e8d7b-141">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)

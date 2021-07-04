@@ -20,130 +20,123 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 9a21c5d067a0ec27b00ff4b4c9aae90bbb65a062
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062210"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289868"
 ---
-# <a name="device-discovery-overview"></a><span data-ttu-id="fe287-104">裝置探索概觀</span><span class="sxs-lookup"><span data-stu-id="fe287-104">Device discovery overview</span></span>
+# <a name="device-discovery-overview"></a><span data-ttu-id="894f3-104">裝置探索概觀</span><span class="sxs-lookup"><span data-stu-id="894f3-104">Device discovery overview</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="fe287-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="fe287-105">**Applies to:**</span></span>
-- [<span data-ttu-id="fe287-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="fe287-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [<span data-ttu-id="fe287-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="fe287-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="894f3-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="894f3-105">**Applies to:**</span></span>
+- [<span data-ttu-id="894f3-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="894f3-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [<span data-ttu-id="894f3-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="894f3-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-<span data-ttu-id="fe287-108">保護您的環境需要清查您網路中的裝置。</span><span class="sxs-lookup"><span data-stu-id="fe287-108">Protecting your environment requires taking inventory of the devices that are in your network.</span></span> <span data-ttu-id="fe287-109">不過，網路中的對應裝置通常會成本高、富有挑戰性且耗時。</span><span class="sxs-lookup"><span data-stu-id="fe287-109">However, mapping devices in a network can often be expensive, challenging, and time-consuming.</span></span> 
+<span data-ttu-id="894f3-108">保護您的環境需要清查您網路中的裝置。</span><span class="sxs-lookup"><span data-stu-id="894f3-108">Protecting your environment requires taking inventory of the devices that are in your network.</span></span> <span data-ttu-id="894f3-109">不過，網路中的對應裝置通常會成本高、富有挑戰性且耗時。</span><span class="sxs-lookup"><span data-stu-id="894f3-109">However, mapping devices in a network can often be expensive, challenging, and time-consuming.</span></span>
 
-<span data-ttu-id="fe287-110">Microsoft Defender for Endpoint 提供裝置探索功能，可協助您尋找連接至公司網路的未受管理裝置，而不需要額外裝置或繁瑣的處理常式變更。</span><span class="sxs-lookup"><span data-stu-id="fe287-110">Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.</span></span>
+<span data-ttu-id="894f3-110">Microsoft Defender for Endpoint 提供裝置探索功能，可協助您尋找連接至公司網路的未受管理裝置，而不需要額外裝置或繁瑣的處理常式變更。</span><span class="sxs-lookup"><span data-stu-id="894f3-110">Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.</span></span>
 
+<span data-ttu-id="894f3-111">裝置探索功能可讓您：</span><span class="sxs-lookup"><span data-stu-id="894f3-111">The device discovery capability allows you to:</span></span>
 
-<span data-ttu-id="fe287-111">裝置探索功能可讓您：</span><span class="sxs-lookup"><span data-stu-id="fe287-111">The device discovery capability allows you to:</span></span>
+- <span data-ttu-id="894f3-112">**探索連線到公司網路的企業端點**</span><span class="sxs-lookup"><span data-stu-id="894f3-112">**Discover enterprise endpoints connected to your corporate network**</span></span>
 
-- <span data-ttu-id="fe287-112">**探索連線到公司網路的企業端點**</span><span class="sxs-lookup"><span data-stu-id="fe287-112">**Discover enterprise endpoints connected to your corporate network**</span></span> <br>
-<span data-ttu-id="fe287-113">您可以使用初級或 standard 探索選項，探索尚未架至 Microsoft Defender for Endpoint 的工作站、伺服器及行動端點。</span><span class="sxs-lookup"><span data-stu-id="fe287-113">Using either basic or standard discovery options, you can discover workstations, servers, and mobile endpoints that are not yet onboarded to Microsoft Defender for Endpoint.</span></span>  
+  <span data-ttu-id="894f3-113">您可以使用初級或 standard 探索選項，探索尚未架至 Microsoft Defender for Endpoint 的工作站、伺服器及行動端點。</span><span class="sxs-lookup"><span data-stu-id="894f3-113">Using either basic or standard discovery options, you can discover workstations, servers, and mobile endpoints that are not yet onboarded to Microsoft Defender for Endpoint.</span></span>
 
-- <span data-ttu-id="fe287-114">**上架探索到的端點**</span><span class="sxs-lookup"><span data-stu-id="fe287-114">**Onboard discovered endpoints**</span></span><br>
-<span data-ttu-id="fe287-115">網路中未受管理的端點會向您的網路引進弱點和風險。</span><span class="sxs-lookup"><span data-stu-id="fe287-115">Unmanaged endpoints in your network introduce vulnerabilities and risks to your network.</span></span> <span data-ttu-id="fe287-116">將其上架至服務可提高安全性。</span><span class="sxs-lookup"><span data-stu-id="fe287-116">Onboarding them to the service can increase the security visibility on them.</span></span> 
+- <span data-ttu-id="894f3-114">**上架探索到的端點**</span><span class="sxs-lookup"><span data-stu-id="894f3-114">**Onboard discovered endpoints**</span></span>
 
-<span data-ttu-id="fe287-117">結合這項功能，在現有威脅和弱點管理經驗中，將會提供對 Microsoft Defender for Endpoint 之板載裝置的新安全性建議。</span><span class="sxs-lookup"><span data-stu-id="fe287-117">In conjunction with this capability, a new security recommendation to onboard devices to Microsoft Defender for Endpoint will be available as part of the existing Threat and Vulnerability Management experience.</span></span>
+  <span data-ttu-id="894f3-115">網路中未受管理的端點會向您的網路引進弱點和風險。</span><span class="sxs-lookup"><span data-stu-id="894f3-115">Unmanaged endpoints in your network introduce vulnerabilities and risks to your network.</span></span> <span data-ttu-id="894f3-116">將其上架至服務可提高安全性。</span><span class="sxs-lookup"><span data-stu-id="894f3-116">Onboarding them to the service can increase the security visibility on them.</span></span>
 
+<span data-ttu-id="894f3-117">結合這項功能，在現有威脅和弱點管理經驗中，將會提供對 Microsoft Defender for Endpoint 之板載裝置的新安全性建議。</span><span class="sxs-lookup"><span data-stu-id="894f3-117">In conjunction with this capability, a new security recommendation to onboard devices to Microsoft Defender for Endpoint will be available as part of the existing Threat and Vulnerability Management experience.</span></span>
 
+## <a name="discovery-methods"></a><span data-ttu-id="894f3-118">探索方法</span><span class="sxs-lookup"><span data-stu-id="894f3-118">Discovery methods</span></span>
 
-## <a name="discovery-methods"></a><span data-ttu-id="fe287-118">探索方法</span><span class="sxs-lookup"><span data-stu-id="fe287-118">Discovery methods</span></span>
-<span data-ttu-id="fe287-119">探索分為兩個模式：</span><span class="sxs-lookup"><span data-stu-id="fe287-119">There are two modes of discovery:</span></span> 
+<span data-ttu-id="894f3-119">探索分為兩個模式：</span><span class="sxs-lookup"><span data-stu-id="894f3-119">There are two modes of discovery:</span></span>
 
--   <span data-ttu-id="fe287-120">基本探索</span><span class="sxs-lookup"><span data-stu-id="fe287-120">Basic discovery</span></span> 
--   <span data-ttu-id="fe287-121">建議的標準探索 () </span><span class="sxs-lookup"><span data-stu-id="fe287-121">Standard discovery (recommended)</span></span> 
-
+- <span data-ttu-id="894f3-120">基本探索</span><span class="sxs-lookup"><span data-stu-id="894f3-120">Basic discovery</span></span>
+- <span data-ttu-id="894f3-121">建議的標準探索 () </span><span class="sxs-lookup"><span data-stu-id="894f3-121">Standard discovery (recommended)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="fe287-122">探索已設定為基本模式。</span><span class="sxs-lookup"><span data-stu-id="fe287-122">Discovery is set to basic mode.</span></span> <span data-ttu-id="fe287-123">您可以選擇透過 [設定] 頁面保留此設定。</span><span class="sxs-lookup"><span data-stu-id="fe287-123">You can choose to retain this configuration through the settings page.</span></span> <span data-ttu-id="fe287-124">Standard discovery 會成為從2021年7月19日開始之所有客戶的預設模式，除非透過 [設定] 頁面在此日期之前修改。</span><span class="sxs-lookup"><span data-stu-id="fe287-124">Standard discovery will be the default mode for all customers starting July 19, 2021 - unless modified through the settings page before this date.</span></span>
+> <span data-ttu-id="894f3-122">探索已設定為基本模式。</span><span class="sxs-lookup"><span data-stu-id="894f3-122">Discovery is set to basic mode.</span></span> <span data-ttu-id="894f3-123">您可以選擇透過 [設定] 頁面保留此設定。</span><span class="sxs-lookup"><span data-stu-id="894f3-123">You can choose to retain this configuration through the settings page.</span></span> <span data-ttu-id="894f3-124">Standard discovery 會成為從2021年7月19日開始之所有客戶的預設模式，除非透過 [設定] 頁面在此日期之前修改。</span><span class="sxs-lookup"><span data-stu-id="894f3-124">Standard discovery will be the default mode for all customers starting July 19, 2021 - unless modified through the settings page before this date.</span></span>
 
-### <a name="basic-discovery"></a><span data-ttu-id="fe287-125">基本探索</span><span class="sxs-lookup"><span data-stu-id="fe287-125">Basic discovery</span></span> 
+### <a name="basic-discovery"></a><span data-ttu-id="894f3-125">基本探索</span><span class="sxs-lookup"><span data-stu-id="894f3-125">Basic discovery</span></span>
 
-<span data-ttu-id="fe287-126">在此模式中，端點會被動收集您網路中的事件，並從這些事件析取裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="fe287-126">In this mode, endpoints will passively collect events in your network and extract device information from them.</span></span> <span data-ttu-id="fe287-127">基本探索使用 SenseNDR.exe 用於被動式網路資料收集的二進位，而且不會啟動任何網路流量。</span><span class="sxs-lookup"><span data-stu-id="fe287-127">Basic discovery uses the SenseNDR.exe binary for passive network data collection and no network traffic will be initiated.</span></span> <span data-ttu-id="fe287-128">端點只會從架裝置所看到的每個網路流量提取資料。</span><span class="sxs-lookup"><span data-stu-id="fe287-128">Endpoints will simply extract data from every network traffic that is seen by an onboarded device.</span></span> 
+<span data-ttu-id="894f3-126">在此模式中，端點會被動收集您網路中的事件，並從這些事件析取裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="894f3-126">In this mode, endpoints will passively collect events in your network and extract device information from them.</span></span> <span data-ttu-id="894f3-127">基本探索使用 SenseNDR.exe 用於被動式網路資料收集的二進位，而且不會啟動任何網路流量。</span><span class="sxs-lookup"><span data-stu-id="894f3-127">Basic discovery uses the SenseNDR.exe binary for passive network data collection and no network traffic will be initiated.</span></span> <span data-ttu-id="894f3-128">端點只會從架裝置所看到的每個網路流量提取資料。</span><span class="sxs-lookup"><span data-stu-id="894f3-128">Endpoints will simply extract data from every network traffic that is seen by an onboarded device.</span></span>
 
-### <a name="standard-discovery"></a><span data-ttu-id="fe287-129">標準探索</span><span class="sxs-lookup"><span data-stu-id="fe287-129">Standard discovery</span></span> 
+### <a name="standard-discovery"></a><span data-ttu-id="894f3-129">標準探索</span><span class="sxs-lookup"><span data-stu-id="894f3-129">Standard discovery</span></span>
 
-<span data-ttu-id="fe287-130">此模式可讓端點主動探查網路中的觀測裝置，以濃縮收集的資料，以協助您建立可靠且連貫的設備清查。</span><span class="sxs-lookup"><span data-stu-id="fe287-130">This mode allows endpoints to actively probe observed devices in the network to enrich collected data - helping you build a reliable and coherent device inventory.</span></span> <span data-ttu-id="fe287-131">標準模式使用智慧主動探測，探索有關所觀察裝置的詳細資訊，以濃縮現有的裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="fe287-131">Standard mode uses smart, active probing to discover even more information about observed devices to enrich existing device information.</span></span>  
+<span data-ttu-id="894f3-130">此模式可讓端點主動探查網路中的觀測裝置，以濃縮收集的資料，以協助您建立可靠且連貫的設備清查。</span><span class="sxs-lookup"><span data-stu-id="894f3-130">This mode allows endpoints to actively probe observed devices in the network to enrich collected data - helping you build a reliable and coherent device inventory.</span></span> <span data-ttu-id="894f3-131">標準模式使用智慧主動探測，探索有關所觀察裝置的詳細資訊，以濃縮現有的裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="894f3-131">Standard mode uses smart, active probing to discover even more information about observed devices to enrich existing device information.</span></span>
 
-<span data-ttu-id="fe287-132">啟用標準模式時，由組織中的網路監視工具可能會觀測出探索感應器所產生的最小和不計的網路活動。</span><span class="sxs-lookup"><span data-stu-id="fe287-132">When Standard mode is enabled, minimal and negligible network activity generated by the discovery sensor might be observed by network monitoring tools in your organization.</span></span>  
+<span data-ttu-id="894f3-132">啟用標準模式時，由組織中的網路監視工具可能會觀測出探索感應器所產生的最小和不計的網路活動。</span><span class="sxs-lookup"><span data-stu-id="894f3-132">When Standard mode is enabled, minimal and negligible network activity generated by the discovery sensor might be observed by network monitoring tools in your organization.</span></span>
 
- <span data-ttu-id="fe287-133">如果您選擇不啟用此模式，您的網路中只會獲得有限的非受管理端點的可見度。</span><span class="sxs-lookup"><span data-stu-id="fe287-133">If you choose not to enable this mode, you will only gain limited visibility of unmanaged endpoints in your network.</span></span>
+ <span data-ttu-id="894f3-133">如果您選擇不啟用此模式，您的網路中只會獲得有限的非受管理端點的可見度。</span><span class="sxs-lookup"><span data-stu-id="894f3-133">If you choose not to enable this mode, you will only gain limited visibility of unmanaged endpoints in your network.</span></span>
 
-<span data-ttu-id="fe287-134">Standard discovery 使用各種 PowerShell 腳本，在網路上主動探查裝置。</span><span class="sxs-lookup"><span data-stu-id="fe287-134">Standard discovery uses various PowerShell scripts to actively probe devices in the network.</span></span> <span data-ttu-id="fe287-135">這些 PowerShell 腳本是由 Microsoft 簽署，並從下列位置執行： `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。</span><span class="sxs-lookup"><span data-stu-id="fe287-135">Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`.</span></span> <span data-ttu-id="fe287-136">例如，`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`。</span><span class="sxs-lookup"><span data-stu-id="fe287-136">For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.</span></span>
+<span data-ttu-id="894f3-134">Standard discovery 使用各種 PowerShell 腳本，在網路上主動探查裝置。</span><span class="sxs-lookup"><span data-stu-id="894f3-134">Standard discovery uses various PowerShell scripts to actively probe devices in the network.</span></span> <span data-ttu-id="894f3-135">這些 PowerShell 腳本是由 Microsoft 簽署，並從下列位置執行： `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。</span><span class="sxs-lookup"><span data-stu-id="894f3-135">Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`.</span></span> <span data-ttu-id="894f3-136">例如，`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`。</span><span class="sxs-lookup"><span data-stu-id="894f3-136">For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.</span></span>
 
-<span data-ttu-id="fe287-137">您可以變更及自訂探索設定，如需詳細資訊，請參閱 [Configure device discovery](configure-device-discovery.md)。</span><span class="sxs-lookup"><span data-stu-id="fe287-137">You can change and customize your discovery settings, for more information see [Configure device discovery](configure-device-discovery.md).</span></span>
+<span data-ttu-id="894f3-137">您可以變更及自訂探索設定，如需詳細資訊，請參閱 [Configure device discovery](configure-device-discovery.md)。</span><span class="sxs-lookup"><span data-stu-id="894f3-137">You can change and customize your discovery settings, for more information see [Configure device discovery](configure-device-discovery.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="fe287-138">探索引擎會區別公司網路中所接收的網路事件與公司網路以外的網路事件。</span><span class="sxs-lookup"><span data-stu-id="fe287-138">The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network.</span></span> <span data-ttu-id="fe287-139">未連接到公司網路的裝置將不會被探索或列在設備清查中。</span><span class="sxs-lookup"><span data-stu-id="fe287-139">Devices that are not connected to corporate networks will not be discovered or listed in the device inventory.</span></span> 
+> <span data-ttu-id="894f3-138">探索引擎會區別公司網路中所接收的網路事件與公司網路以外的網路事件。</span><span class="sxs-lookup"><span data-stu-id="894f3-138">The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network.</span></span> <span data-ttu-id="894f3-139">未連接到公司網路的裝置將不會被探索或列在設備清查中。</span><span class="sxs-lookup"><span data-stu-id="894f3-139">Devices that are not connected to corporate networks will not be discovered or listed in the device inventory.</span></span>
 
+## <a name="device-inventory"></a><span data-ttu-id="894f3-140">裝置清單</span><span class="sxs-lookup"><span data-stu-id="894f3-140">Device Inventory</span></span>
 
+<span data-ttu-id="894f3-141">已發現但尚未由 Microsoft Defender for Endpoint 架及保護的裝置，將會列在 [端點] 索引標籤的 [裝置庫存] 中。您現在可以在名為「上架狀態」的裝置庫存清單清單中使用新的篩選器，其可具有下列任何值：</span><span class="sxs-lookup"><span data-stu-id="894f3-141">Devices that have been discovered but have not yet been onboarded and secured by Microsoft Defender for Endpoint will be listed in Device Inventory within the Endpoints tab. You can now use a new filter in the device inventory list called Onboarding status which can have any of the following values:</span></span>
 
-## <a name="device-inventory"></a><span data-ttu-id="fe287-140">裝置清單</span><span class="sxs-lookup"><span data-stu-id="fe287-140">Device Inventory</span></span> 
-<span data-ttu-id="fe287-141">已發現但尚未由 Microsoft Defender for Endpoint 架及保護的裝置，將會列在 [端點] 索引標籤的 [裝置庫存] 中。您現在可以在名為「上架狀態」的裝置庫存清單清單中使用新的篩選器，其可具有下列任何值：</span><span class="sxs-lookup"><span data-stu-id="fe287-141">Devices that have been discovered but have not yet been onboarded and secured by Microsoft Defender for Endpoint will be listed in Device Inventory within the Endpoints tab. You can now use a new filter in the device inventory list called Onboarding status which can have any of the following values:</span></span>
-
-- <span data-ttu-id="fe287-142">架–端點是架至 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="fe287-142">Onboarded – The endpoint is onboarded to Microsoft Defender for Endpoint.</span></span>
-- <span data-ttu-id="fe287-143">可以是架–端點已在網路中探索，且已將作業系統識別為 Microsoft Defender for Endpoint 所支援，但目前並未架。</span><span class="sxs-lookup"><span data-stu-id="fe287-143">Can be onboarded – The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it is not currently onboarded.</span></span> <span data-ttu-id="fe287-144">我們強烈建議您將這些裝置上架。</span><span class="sxs-lookup"><span data-stu-id="fe287-144">We highly recommend onboarding these devices.</span></span>
-- <span data-ttu-id="fe287-145">不受支援–端點已在網路中探索，但無法由 Microsoft Defender for Endpoint 所支援。</span><span class="sxs-lookup"><span data-stu-id="fe287-145">Unsupported – The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.</span></span>
-- <span data-ttu-id="fe287-146">資訊不足–系統無法決定裝置的支援。</span><span class="sxs-lookup"><span data-stu-id="fe287-146">Insufficient info – The system could not determine the supportability of the device.</span></span> <span data-ttu-id="fe287-147">在網路上的更多裝置上啟用標準探索，可以豐富探索的屬性。</span><span class="sxs-lookup"><span data-stu-id="fe287-147">Enabling standard discovery on more devices in the network can enrich the discovered attributes.</span></span> 
- 
+- <span data-ttu-id="894f3-142">架–端點是架至 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="894f3-142">Onboarded – The endpoint is onboarded to Microsoft Defender for Endpoint.</span></span>
+- <span data-ttu-id="894f3-143">可以是架–端點已在網路中探索，且已將作業系統識別為 Microsoft Defender for Endpoint 所支援，但目前並未架。</span><span class="sxs-lookup"><span data-stu-id="894f3-143">Can be onboarded – The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it is not currently onboarded.</span></span> <span data-ttu-id="894f3-144">我們強烈建議您將這些裝置上架。</span><span class="sxs-lookup"><span data-stu-id="894f3-144">We highly recommend onboarding these devices.</span></span>
+- <span data-ttu-id="894f3-145">不受支援–端點已在網路中探索，但無法由 Microsoft Defender for Endpoint 所支援。</span><span class="sxs-lookup"><span data-stu-id="894f3-145">Unsupported – The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.</span></span>
+- <span data-ttu-id="894f3-146">資訊不足–系統無法決定裝置的支援。</span><span class="sxs-lookup"><span data-stu-id="894f3-146">Insufficient info – The system could not determine the supportability of the device.</span></span> <span data-ttu-id="894f3-147">在網路上的更多裝置上啟用標準探索，可以豐富探索的屬性。</span><span class="sxs-lookup"><span data-stu-id="894f3-147">Enabling standard discovery on more devices in the network can enrich the discovered attributes.</span></span>
 
 ![裝置庫存儀表板的影像](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 > [!TIP]
-> <span data-ttu-id="fe287-149">您永遠可以套用篩選器，以從裝置庫存清單中排除未受管理的裝置。</span><span class="sxs-lookup"><span data-stu-id="fe287-149">You can always apply filters to exclude unmanaged devices from the device inventory list.</span></span> <span data-ttu-id="fe287-150">您也可以在 API 查詢上使用 [上架狀態] 欄，以篩選出未受管理的裝置。</span><span class="sxs-lookup"><span data-stu-id="fe287-150">You can also use the onboarding status column on API queries to filter out unmanaged devices.</span></span> 
+> <span data-ttu-id="894f3-149">您永遠可以套用篩選器，以從裝置庫存清單中排除未受管理的裝置。</span><span class="sxs-lookup"><span data-stu-id="894f3-149">You can always apply filters to exclude unmanaged devices from the device inventory list.</span></span> <span data-ttu-id="894f3-150">您也可以在 API 查詢上使用 [上架狀態] 欄，以篩選出未受管理的裝置。</span><span class="sxs-lookup"><span data-stu-id="894f3-150">You can also use the onboarding status column on API queries to filter out unmanaged devices.</span></span>
 
-## <a name="vulnerability-assessment-on-discovered-devices"></a><span data-ttu-id="fe287-151">已探索裝置上的漏洞評估</span><span class="sxs-lookup"><span data-stu-id="fe287-151">Vulnerability assessment on discovered devices</span></span>
-<span data-ttu-id="fe287-152">裝置上的漏洞和風險，以及網路中已發現的其他受管理裝置，都屬於「Security 建議」底下的目前 TVM 流程，而且會在整個入口網站中以實體頁面表示。</span><span class="sxs-lookup"><span data-stu-id="fe287-152">Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under "Security Recommendations" and represented in entity pages across the portal.</span></span> <span data-ttu-id="fe287-153">搜尋「SSH」相關的安全性建議，以尋找與非管理裝置相關的 SSH 安全性漏洞。</span><span class="sxs-lookup"><span data-stu-id="fe287-153">Search for "SSH" related security recommendations to find SSH vulnerabilities that are related for unmanaged and managed devices.</span></span> 
+## <a name="vulnerability-assessment-on-discovered-devices"></a><span data-ttu-id="894f3-151">已探索裝置上的漏洞評估</span><span class="sxs-lookup"><span data-stu-id="894f3-151">Vulnerability assessment on discovered devices</span></span>
 
-![安全性建議儀表板的影像](images/1156c82ffadd356ce329d1cf551e806c.png)  
+<span data-ttu-id="894f3-152">裝置上的漏洞和風險，以及網路中已發現的其他受管理裝置，都屬於「Security 建議」底下的目前 TVM 流程，而且會在整個入口網站中以實體頁面表示。</span><span class="sxs-lookup"><span data-stu-id="894f3-152">Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under "Security Recommendations" and represented in entity pages across the portal.</span></span>
+<span data-ttu-id="894f3-153">搜尋「SSH」相關的安全性建議，以尋找與非管理裝置相關的 SSH 安全性漏洞。</span><span class="sxs-lookup"><span data-stu-id="894f3-153">Search for "SSH" related security recommendations to find SSH vulnerabilities that are related for unmanaged and managed devices.</span></span>
 
-## <a name="use-advanced-hunting-on-discovered-devices"></a><span data-ttu-id="fe287-155">在探索的裝置上使用高級搜尋</span><span class="sxs-lookup"><span data-stu-id="fe287-155">Use Advanced Hunting on discovered devices</span></span>
-<span data-ttu-id="fe287-156">您可以使用高級搜尋查詢，以取得已探索裝置的知名度。</span><span class="sxs-lookup"><span data-stu-id="fe287-156">You can use Advanced Hunting queries to gain visibility on discovered devices.</span></span>
-<span data-ttu-id="fe287-157">尋找 DeviceInfo 表格中已探索端點的詳細資料，或 DeviceNetworkInfo 表格中這些裝置的網路相關資訊。</span><span class="sxs-lookup"><span data-stu-id="fe287-157">Find details about discovered Endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.</span></span>
-  
+![安全性建議儀表板的影像](images/1156c82ffadd356ce329d1cf551e806c.png)
+
+## <a name="use-advanced-hunting-on-discovered-devices"></a><span data-ttu-id="894f3-155">在探索的裝置上使用高級搜尋</span><span class="sxs-lookup"><span data-stu-id="894f3-155">Use Advanced Hunting on discovered devices</span></span>
+
+<span data-ttu-id="894f3-156">您可以使用高級搜尋查詢，以取得已探索裝置的知名度。</span><span class="sxs-lookup"><span data-stu-id="894f3-156">You can use Advanced Hunting queries to gain visibility on discovered devices.</span></span>
+<span data-ttu-id="894f3-157">尋找 DeviceInfo 表格中已探索端點的詳細資料，或 DeviceNetworkInfo 表格中這些裝置的網路相關資訊。</span><span class="sxs-lookup"><span data-stu-id="894f3-157">Find details about discovered Endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.</span></span>
 
 ![高級搜尋使用的影像](images/f48ba1779eddee9872f167453c24e5c9.png)
 
+<span data-ttu-id="894f3-159">裝置探索利用 Microsoft Defender for Endpoint 架裝置作為網路資料來源，以進行非架裝置的屬性活動。</span><span class="sxs-lookup"><span data-stu-id="894f3-159">Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices.</span></span> <span data-ttu-id="894f3-160">這表示，如果 Microsoft Defender for Endpoint 架裝置與非架裝置通訊，則在時程表上或透過 [高級搜尋 DeviceNetworkEvents] 表格可看到非架裝置上的活動。</span><span class="sxs-lookup"><span data-stu-id="894f3-160">This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.</span></span>
 
-<span data-ttu-id="fe287-159">裝置探索利用 Microsoft Defender for Endpoint 架裝置作為網路資料來源，以進行非架裝置的屬性活動。</span><span class="sxs-lookup"><span data-stu-id="fe287-159">Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices.</span></span> <span data-ttu-id="fe287-160">這表示，如果 Microsoft Defender for Endpoint 架裝置與非架裝置通訊，則在時程表上或透過 [高級搜尋 DeviceNetworkEvents] 表格可看到非架裝置上的活動。</span><span class="sxs-lookup"><span data-stu-id="fe287-160">This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.</span></span> 
+<span data-ttu-id="894f3-161">新的事件是傳輸控制通訊協定 (TCP) 連線，而且會符合目前的 DeviceNetworkEvents 配置。</span><span class="sxs-lookup"><span data-stu-id="894f3-161">New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme.</span></span> <span data-ttu-id="894f3-162">在啟用的非 Microsoft Defender 端點中，TCP 入口至 Microsoft Defender for Endpoint 的裝置。</span><span class="sxs-lookup"><span data-stu-id="894f3-162">TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.</span></span> 
 
+<span data-ttu-id="894f3-163">也新增了下列動作類型：</span><span class="sxs-lookup"><span data-stu-id="894f3-163">The following action types have also been added:</span></span>
 
+- <span data-ttu-id="894f3-164">ConnectionAttempt-嘗試 (syn) 建立 TCP 連接</span><span class="sxs-lookup"><span data-stu-id="894f3-164">ConnectionAttempt - An attempt to establish a TCP connection (syn)</span></span> 
+- <span data-ttu-id="894f3-165">ConnectionAcknowledged-已接受 TCP 連線的認可 (syn\ack) </span><span class="sxs-lookup"><span data-stu-id="894f3-165">ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)</span></span> 
 
-<span data-ttu-id="fe287-161">新的事件是傳輸控制通訊協定 (TCP) 連線，而且會符合目前的 DeviceNetworkEvents 配置。</span><span class="sxs-lookup"><span data-stu-id="fe287-161">New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme.</span></span> <span data-ttu-id="fe287-162">在啟用的非 Microsoft Defender 端點中，TCP 入口至 Microsoft Defender for Endpoint 的裝置。</span><span class="sxs-lookup"><span data-stu-id="fe287-162">TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.</span></span>  
-
-<span data-ttu-id="fe287-163">也新增了下列動作類型：</span><span class="sxs-lookup"><span data-stu-id="fe287-163">The following action types have also been added:</span></span>  
-
-- <span data-ttu-id="fe287-164">ConnectionAttempt-嘗試 (syn) 建立 TCP 連接</span><span class="sxs-lookup"><span data-stu-id="fe287-164">ConnectionAttempt - An attempt to establish a TCP connection (syn)</span></span>  
-- <span data-ttu-id="fe287-165">ConnectionAcknowledged-已接受 TCP 連線的認可 (syn\ack) </span><span class="sxs-lookup"><span data-stu-id="fe287-165">ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)</span></span>  
-
-<span data-ttu-id="fe287-166">您可以嘗試此範例查詢：</span><span class="sxs-lookup"><span data-stu-id="fe287-166">You can try this example query:</span></span>  
+<span data-ttu-id="894f3-166">您可以嘗試此範例查詢：</span><span class="sxs-lookup"><span data-stu-id="894f3-166">You can try this example query:</span></span>
 
 ```
-DeviceNetworkEvents  
-| where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"  
-| take 10  
+DeviceNetworkEvents
+| where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
+| take 10
 ```
 
+## <a name="changed-behavior"></a><span data-ttu-id="894f3-167">已變更行為</span><span class="sxs-lookup"><span data-stu-id="894f3-167">Changed behavior</span></span>
 
-## <a name="changed-behavior"></a><span data-ttu-id="fe287-167">已變更行為</span><span class="sxs-lookup"><span data-stu-id="fe287-167">Changed behavior</span></span>
-<span data-ttu-id="fe287-168">下列章節列出當啟用此功能時，您會在 Microsoft Defender for Endpoint 和/或 Microsoft 365 Security Center 中看到的變更。</span><span class="sxs-lookup"><span data-stu-id="fe287-168">The following section lists the changes you'll observe in Microsoft Defender for Endpoint and/or Microsoft 365 Security Center when this capability is enabled.</span></span> 
- 
-1.  <span data-ttu-id="fe287-169">未架至 Microsoft Defender to Endpoint 的裝置應該會出現在設備清查、高級搜尋和 API 查詢中。</span><span class="sxs-lookup"><span data-stu-id="fe287-169">Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries.</span></span> <span data-ttu-id="fe287-170">這可能會大幅增加查詢結果的大小。</span><span class="sxs-lookup"><span data-stu-id="fe287-170">This may significantly increase the size of query results.</span></span> 
-    1. <span data-ttu-id="fe287-171">Advanced 搜尋中的 "DeviceInfo" 和 "DeviceNetworkInfo" 資料表現在會保留探索的裝置。</span><span class="sxs-lookup"><span data-stu-id="fe287-171">"DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device.</span></span> <span data-ttu-id="fe287-172">您可以使用 "OnboardingStatus" 屬性來篩選出那些裝置。</span><span class="sxs-lookup"><span data-stu-id="fe287-172">You can filter out those devices by using “OnboardingStatus” attribute.</span></span>
+<span data-ttu-id="894f3-168">下列章節列出當啟用此功能時，您會在 Microsoft Defender for Endpoint 和/或 Microsoft 365 Security Center 中看到的變更。</span><span class="sxs-lookup"><span data-stu-id="894f3-168">The following section lists the changes you'll observe in Microsoft Defender for Endpoint and/or Microsoft 365 Security Center when this capability is enabled.</span></span>
 
-    2. <span data-ttu-id="fe287-173">探索的裝置應該會出現在流式 API 查詢結果中。</span><span class="sxs-lookup"><span data-stu-id="fe287-173">Discovered devices are expected to appear in Streaming API query results.</span></span> <span data-ttu-id="fe287-174">您可以在查詢中使用篩選來篩選出那些裝置 `OnboardingStatus` 。</span><span class="sxs-lookup"><span data-stu-id="fe287-174">You can filter out those devices by using the `OnboardingStatus` filter in your query.</span></span> 
+1. <span data-ttu-id="894f3-169">未架至 Microsoft Defender to Endpoint 的裝置應該會出現在設備清查、高級搜尋和 API 查詢中。</span><span class="sxs-lookup"><span data-stu-id="894f3-169">Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries.</span></span> <span data-ttu-id="894f3-170">這可能會大幅增加查詢結果的大小。</span><span class="sxs-lookup"><span data-stu-id="894f3-170">This may significantly increase the size of query results.</span></span>
+    1. <span data-ttu-id="894f3-171">Advanced 搜尋中的 "DeviceInfo" 和 "DeviceNetworkInfo" 資料表現在會保留探索的裝置。</span><span class="sxs-lookup"><span data-stu-id="894f3-171">"DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device.</span></span> <span data-ttu-id="894f3-172">您可以使用 "OnboardingStatus" 屬性來篩選出那些裝置。</span><span class="sxs-lookup"><span data-stu-id="894f3-172">You can filter out those devices by using “OnboardingStatus” attribute.</span></span>
+    2. <span data-ttu-id="894f3-173">探索的裝置應該會出現在流式 API 查詢結果中。</span><span class="sxs-lookup"><span data-stu-id="894f3-173">Discovered devices are expected to appear in Streaming API query results.</span></span> <span data-ttu-id="894f3-174">您可以在查詢中使用篩選來篩選出那些裝置 `OnboardingStatus` 。</span><span class="sxs-lookup"><span data-stu-id="894f3-174">You can filter out those devices by using the `OnboardingStatus` filter in your query.</span></span>
+2. <span data-ttu-id="894f3-175">根據定義的準則，未受管理的裝置會指派給現有的裝置群組。</span><span class="sxs-lookup"><span data-stu-id="894f3-175">Unmanaged devices will be assigned to existing device groups based on the defined criteria.</span></span>
+3. <span data-ttu-id="894f3-176">在極少的情況下，Standard discovery 可能會在網路監視器或安全性工具上觸發警示。</span><span class="sxs-lookup"><span data-stu-id="894f3-176">In rare cases, Standard discovery might trigger alerts on network monitors or security tools.</span></span> <span data-ttu-id="894f3-177">如果您經歷這類事件，請提供意見反應，以協助避免這些問題重複發生。</span><span class="sxs-lookup"><span data-stu-id="894f3-177">Please provide feedback, if you experience such events, to help prevent these issues from recurring.</span></span> <span data-ttu-id="894f3-178">您可以明確地排除特定目標或整個子網，使其積極地透過 Standard discovery 進行探測。</span><span class="sxs-lookup"><span data-stu-id="894f3-178">You can explicitly exclude specific targets or entire subnets from being actively probed by Standard discovery.</span></span>
 
-2.  <span data-ttu-id="fe287-175">根據定義的準則，未受管理的裝置會指派給現有的裝置群組。</span><span class="sxs-lookup"><span data-stu-id="fe287-175">Unmanaged devices will be assigned to existing device groups based on the defined criteria.</span></span> 
-3.  <span data-ttu-id="fe287-176">在極少的情況下，Standard discovery 可能會在網路監視器或安全性工具上觸發警示。</span><span class="sxs-lookup"><span data-stu-id="fe287-176">In rare cases, Standard discovery might trigger alerts on network monitors or security tools.</span></span> <span data-ttu-id="fe287-177">如果您經歷這類事件，請提供意見反應，以協助避免這些問題重複發生。</span><span class="sxs-lookup"><span data-stu-id="fe287-177">Please provide feedback, if you experience such events, to help prevent these issues from recurring.</span></span> <span data-ttu-id="fe287-178">您可以明確地排除特定目標或整個子網，使其積極地透過 Standard discovery 進行探測。</span><span class="sxs-lookup"><span data-stu-id="fe287-178">You can explicitly exclude specific targets or entire subnets from being actively probed by Standard discovery.</span></span> 
+## <a name="next-steps"></a><span data-ttu-id="894f3-179">後續步驟</span><span class="sxs-lookup"><span data-stu-id="894f3-179">Next steps</span></span>
 
-
-
-## <a name="next-steps"></a><span data-ttu-id="fe287-179">後續步驟</span><span class="sxs-lookup"><span data-stu-id="fe287-179">Next steps</span></span>
-- [<span data-ttu-id="fe287-180">設定裝置探索</span><span class="sxs-lookup"><span data-stu-id="fe287-180">Configure device discovery</span></span>](configure-device-discovery.md)
-- [<span data-ttu-id="fe287-181">裝置探索 FAQs</span><span class="sxs-lookup"><span data-stu-id="fe287-181">Device discovery FAQs</span></span>](device-discovery-faq.md)
+- [<span data-ttu-id="894f3-180">設定裝置探索</span><span class="sxs-lookup"><span data-stu-id="894f3-180">Configure device discovery</span></span>](configure-device-discovery.md)
+- [<span data-ttu-id="894f3-181">裝置探索 FAQs</span><span class="sxs-lookup"><span data-stu-id="894f3-181">Device discovery FAQs</span></span>](device-discovery-faq.md)
