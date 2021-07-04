@@ -17,34 +17,38 @@ search.appverid:
 ms.assetid: ''
 description: 當您設定內容格式時，請使用通訊編輯器變更文字和合併欄位變數。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769158"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288116"
 ---
-# <a name="use-the-communications-editor"></a><span data-ttu-id="5d0eb-103">使用通訊編輯器</span><span class="sxs-lookup"><span data-stu-id="5d0eb-103">Use the communications editor</span></span>
+# <a name="use-the-communications-editor"></a><span data-ttu-id="6c565-103">使用通訊編輯器</span><span class="sxs-lookup"><span data-stu-id="6c565-103">Use the communications editor</span></span>
 
-<span data-ttu-id="5d0eb-104">當您定義入口網站內容、法律封存通知和相關的提醒/上報內容時，您可以使用通訊編輯器來格式化並動態自訂您的內容。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-104">As you define the content of your portal content, legal hold notifications, and related reminders/escalations, you can use the Communications Editor to format and dynamically customize your content.</span></span>
+<span data-ttu-id="6c565-104">當您定義入口網站內容、法律封存通知和相關的提醒/上報內容時，您可以使用通訊編輯器來格式化並動態自訂您的內容。</span><span class="sxs-lookup"><span data-stu-id="6c565-104">As you define the content of your portal content, legal hold notifications, and related reminders/escalations, you can use the Communications Editor to format and dynamically customize your content.</span></span>
 
-## <a name="rich-text-editor"></a><span data-ttu-id="5d0eb-105">富文字編輯器</span><span class="sxs-lookup"><span data-stu-id="5d0eb-105">Rich text editor</span></span>
+## <a name="rich-text-editor"></a><span data-ttu-id="6c565-105">富文字編輯器</span><span class="sxs-lookup"><span data-stu-id="6c565-105">Rich text editor</span></span>
 
-<span data-ttu-id="5d0eb-106">通訊編輯器可讓使用者使用編輯器選項自訂文字。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-106">The Communications Editor allows user to customize the text using the editor options.</span></span> <span data-ttu-id="5d0eb-107">例如，使用者可以變更字型類型、建立專案符號清單、反白顯示內容等等。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-107">For example, users can change font types, create bulleted lists, highlight content, and more.</span></span>
+<span data-ttu-id="6c565-106">通訊編輯器可讓使用者使用編輯器選項自訂文字。</span><span class="sxs-lookup"><span data-stu-id="6c565-106">The Communications Editor allows user to customize the text using the editor options.</span></span> <span data-ttu-id="6c565-107">例如，使用者可以變更字型類型、建立專案符號清單、反白顯示內容等等。</span><span class="sxs-lookup"><span data-stu-id="6c565-107">For example, users can change font types, create bulleted lists, highlight content, and more.</span></span>
 
-## <a name="merge-field-variables"></a><span data-ttu-id="5d0eb-108">合併欄位變數</span><span class="sxs-lookup"><span data-stu-id="5d0eb-108">Merge field variables</span></span>
+## <a name="merge-field-variables"></a><span data-ttu-id="6c565-108">合併欄位變數</span><span class="sxs-lookup"><span data-stu-id="6c565-108">Merge field variables</span></span>
 
-<span data-ttu-id="5d0eb-109">您可以使用通訊編輯器中的電子郵件合併變數，將自訂的系統管理員屬性嵌入通訊的本文文字。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-109">You can use email merge variables from the Communications Editor to embed customized custodian attributes into a communication's body text.</span></span> <span data-ttu-id="5d0eb-110">傳送給管理員時，會以對應的欄位填入合併欄位。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-110">When sent to the custodian, the merge field will be populated with the corresponding field.</span></span> <span data-ttu-id="5d0eb-111">例如，當傳送給「保管人 John Smith」時，合併欄位 [保管人 Name] 會以對應的名稱加以轉譯。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-111">For example, when sent to custodian John Smith, the merge field [Custodian Name] would be translated with the corresponding name.</span></span>
+<span data-ttu-id="6c565-109">您可以使用通訊編輯器中的電子郵件合併變數，將自訂的系統管理員屬性嵌入通訊的本文文字。</span><span class="sxs-lookup"><span data-stu-id="6c565-109">You can use email merge variables from the Communications Editor to embed customized custodian attributes into a communication's body text.</span></span> <span data-ttu-id="6c565-110">傳送給管理員時，會以對應的欄位填入合併欄位。</span><span class="sxs-lookup"><span data-stu-id="6c565-110">When sent to the custodian, the merge field will be populated with the corresponding field.</span></span> <span data-ttu-id="6c565-111">例如，當傳送給「保管人 John Smith」時，合併欄位 [保管人 Name] 會以對應的名稱加以轉譯。</span><span class="sxs-lookup"><span data-stu-id="6c565-111">For example, when sent to custodian John Smith, the merge field [Custodian Name] would be translated with the corresponding name.</span></span>
 
-<span data-ttu-id="5d0eb-112">您可以透過選取 rtf 文字編輯器控制項頂端的 **合併欄位** 圖示，使用電子郵件合併欄位。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-112">You can use email merge fields by selecting the **Merge field** icons on the top of the rich-text editor control.</span></span> <span data-ttu-id="5d0eb-113">會根據使用者游標的位置來新增預留位置。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-113">The placeholder will be added based off the location of the users' cursor.</span></span>
+<span data-ttu-id="6c565-112">您可以透過選取 rtf 文字編輯器控制項頂端的 **合併欄位** 圖示，使用電子郵件合併欄位。</span><span class="sxs-lookup"><span data-stu-id="6c565-112">You can use email merge fields by selecting the **Merge field** icons on the top of the rich-text editor control.</span></span> <span data-ttu-id="6c565-113">會根據使用者游標的位置來新增預留位置。</span><span class="sxs-lookup"><span data-stu-id="6c565-113">The placeholder will be added based off the location of the users' cursor.</span></span>
 
-### <a name="list-of-merge-field-variables"></a><span data-ttu-id="5d0eb-114">合併欄位變數清單</span><span class="sxs-lookup"><span data-stu-id="5d0eb-114">List of merge field variables</span></span>
+### <a name="list-of-merge-field-variables"></a><span data-ttu-id="6c565-114">合併欄位變數清單</span><span class="sxs-lookup"><span data-stu-id="6c565-114">List of merge field variables</span></span>
 
-| <span data-ttu-id="5d0eb-115">欄位名稱</span><span class="sxs-lookup"><span data-stu-id="5d0eb-115">Field name</span></span>                  | <span data-ttu-id="5d0eb-116">欄位詳細資料</span><span class="sxs-lookup"><span data-stu-id="5d0eb-116">Field details</span></span> |
-| :------------------- | :------------------- |
-| <span data-ttu-id="5d0eb-117">顯示名稱</span><span class="sxs-lookup"><span data-stu-id="5d0eb-117">Display Name</span></span>  | <span data-ttu-id="5d0eb-118">管理員的名字和姓氏。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-118">The custodian's first and last name.</span></span> | 
-| <span data-ttu-id="5d0eb-119">確認連結</span><span class="sxs-lookup"><span data-stu-id="5d0eb-119">Acknowledgment Link</span></span> | <span data-ttu-id="5d0eb-120">自訂的連結，可記錄每個保管人的認可。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-120">A customized link to record each custodian's acknowledgment.</span></span>|                 |
-| <span data-ttu-id="5d0eb-121">入口網站連結</span><span class="sxs-lookup"><span data-stu-id="5d0eb-121">Portal Link</span></span>     | <span data-ttu-id="5d0eb-122">管理員的規範入口網站的自訂連結。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-122">A customized link for the custodian's Compliance Portal.</span></span>|                |
-| <span data-ttu-id="5d0eb-123">簽發官</span><span class="sxs-lookup"><span data-stu-id="5d0eb-123">Issuing Officer</span></span>                   | <span data-ttu-id="5d0eb-124">指定之簽發專員的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-124">The email address of the specified issuing officer.</span></span>|                   |
-| <span data-ttu-id="5d0eb-125">簽發日期</span><span class="sxs-lookup"><span data-stu-id="5d0eb-125">Issuing Date</span></span>                   | <span data-ttu-id="5d0eb-126">發出通知的日期 (UTC) 。</span><span class="sxs-lookup"><span data-stu-id="5d0eb-126">The date that the notice was issued (UTC).</span></span>              |
-|||
+<br>
+
+****
+
+|<span data-ttu-id="6c565-115">欄位名稱</span><span class="sxs-lookup"><span data-stu-id="6c565-115">Field name</span></span>|<span data-ttu-id="6c565-116">欄位詳細資料</span><span class="sxs-lookup"><span data-stu-id="6c565-116">Field details</span></span>|
+|---|---|
+|<span data-ttu-id="6c565-117">顯示名稱</span><span class="sxs-lookup"><span data-stu-id="6c565-117">Display Name</span></span>|<span data-ttu-id="6c565-118">管理員的名字和姓氏。</span><span class="sxs-lookup"><span data-stu-id="6c565-118">The custodian's first and last name.</span></span>|
+|<span data-ttu-id="6c565-119">確認連結</span><span class="sxs-lookup"><span data-stu-id="6c565-119">Acknowledgment Link</span></span>|<span data-ttu-id="6c565-120">自訂的連結，可記錄每個保管人的認可。</span><span class="sxs-lookup"><span data-stu-id="6c565-120">A customized link to record each custodian's acknowledgment.</span></span>|
+|<span data-ttu-id="6c565-121">入口網站連結</span><span class="sxs-lookup"><span data-stu-id="6c565-121">Portal Link</span></span>|<span data-ttu-id="6c565-122">管理員的規範入口網站的自訂連結。</span><span class="sxs-lookup"><span data-stu-id="6c565-122">A customized link for the custodian's Compliance Portal.</span></span>|
+|<span data-ttu-id="6c565-123">簽發官</span><span class="sxs-lookup"><span data-stu-id="6c565-123">Issuing Officer</span></span>|<span data-ttu-id="6c565-124">指定之簽發專員的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="6c565-124">The email address of the specified issuing officer.</span></span>|
+|<span data-ttu-id="6c565-125">簽發日期</span><span class="sxs-lookup"><span data-stu-id="6c565-125">Issuing Date</span></span>|<span data-ttu-id="6c565-126">發出通知的日期 (UTC) 。</span><span class="sxs-lookup"><span data-stu-id="6c565-126">The date that the notice was issued (UTC).</span></span>|
+|
