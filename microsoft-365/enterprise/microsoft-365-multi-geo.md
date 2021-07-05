@@ -15,14 +15,14 @@ f1.keywords:
 description: 我們將在本文中深入解釋如何使用 Microsoft 365 多地理位置，將 Microsoft 365 的目前狀態拓展至多個地理區域。
 ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50909547"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
-使用 Microsoft 365 多地理位置，您的組織可以將 Microsoft 365 存在狀態擴展到現有租用戶中的多個地理區域和/或國家/地區。 聯繫您的 Microsoft 客戶小組，以註冊跨國公司的 Microsoft 365 多地理位置。
+使用 Microsoft 365 多地理位置，貴組織可以將 Microsoft 365 目前狀態拓展至您現有租用戶中的多個地理區域及/或國家。請連絡 Microsoft 帳戶小組以註冊 Microsoft 365 多地理位置的多國公司。
   
 您可以使用 Microsoft 365 多地理位置，在您所選擇的地理位置佈建和儲存待用資料以符合資料落地要求，同時將現代化生產力體驗逐步拓展至您的員工。
 
@@ -30,7 +30,7 @@ ms.locfileid: "50909547"
 
 ## <a name="multi-geo-architecture"></a>多地理位置架構
 
-在多地理位置環境中，Microsoft 365 租用戶包含一個中央位置(最初佈建 Microsoft 365 訂閱的位置) 和一個或多個衛星位置。 在多地理位置租用戶中，地理位置、群組和使用者資訊的相關資訊掌握在 Azure Active Directory (Azure AD) 中。 由於您的租用戶資訊會集中管理並同步到每個地理位置，若要共用及體驗，公司的每一位員工都必須擁有全域概念。
+在多地理位置環境中，Microsoft 365 租用戶包含中央位置 (即原始佈建 Microsoft 365 訂閱之處) 以及一或多個衛星位置。在多地理位置租用戶中，系統會在 Azure Active Directory (Azure AD) 中主控地理位置、群組和使用者資訊的相關資訊。因為您的租用戶資訊是集中管理且同步處理到每個地理位置，包含公司任何人的共用與體驗都會包含全域意識。
 
 ![SharePoint 系統管理中心內多地理位置地圖的螢幕擷取畫面](../media/multi-geo-world-map.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "50909547"
 
 ## <a name="licensing"></a>授權
 
-Microsoft 365多地理位置可作為下列 Microsoft 365 訂閱計畫中的附加元件，供 Enterprise 合約客戶在其承租人中至少有 250 Microsoft 365 座位，至少有5% 的使用多地理位置的席位。 使用者訂閱授權必須與多地理位置服務授權位於相同的 Enterprise 合約。 如需詳細資訊，請連絡您的 Microsoft 帳戶小組。
+Microsoft 365 多地理位置可作為以下 Microsoft 365 訂閱方案的附加元件，這些 Enterprise 合約客戶的租用戶中至少有 250 個 Microsoft 365 基座，其中至少有 5% 使用多地理位置。 使用者訂閱授權必須位於與多地理位置服務授權相同的 Enterprise 合約上。 如需詳細資訊，請連絡您的 Microsoft 帳戶小組。
 
 - Microsoft 365 F1、F3、E3 或 E5
 - Office 365 F3、E1、E3 或 E5
@@ -70,7 +70,7 @@ Microsoft 365多地理位置可作為下列 Microsoft 365 訂閱計畫中的附�
 
 1. 與您的帳戶團隊合作來新增「Microsoft 365 多地理位置功能」服務方案。 他們會引導您新增所需數量的授權。 多地理位置功能可供具有至少 250 個 Microsoft 365 訂閱的 EA 客戶使用。
 
-   開始使用 Microsoft 365 多地理位置之前，Microsoft 必須先設定您的 Exchange Online 租用戶，以支援多地理位置。 當您訂購「Microsoft 365 中的多地理位置功能」服務方案，並於租用戶中顯示授權之後，將觸發此一次性設定程序。 當租使用者完成每個工作負載的設定程式後，您就會在[Microsoft 365 郵件中心](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)收到工作負載特定的通知，然後您就可以開始設定及使用您 Microsoft 365 多地理位置功能。 將租使用者設定為多地域位置支援所需的時間，會因租使用者而異，但大部分租使用者會在收到功能授權後的一個月內完成設定。 較大或較複雜的租使用者可能需要更多時間才能完成設定程式。 如需有關特定租使用者的詳細資料，請與您的帳戶小組聯繫。
+   開始使用 Microsoft 365 多地理位置之前，Microsoft 必須先設定您的 Exchange Online 租用戶，以支援多地理位置。 當您訂購「Microsoft 365 中的多地理位置功能」服務方案，並於租用戶中顯示授權之後，將觸發此一次性設定程序。 當您的租用戶完成每個工作負載的設定程式後，您就會在 [Microsoft 365 訊息中心](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)中收到工作負載指定通知，然後您就可以開始設定並使用您的 Microsoft 365 多地理位置功能。 將租使用者設定為多地域位置支援所需的時間，會因租使用者而異，但大部分租使用者會在收到功能授權後的一個月內完成設定。 較大或較複雜的租使用者可能需要更多時間才能完成設定程式。 如需有關特定租使用者的詳細資料，請與您的帳戶小組聯繫。
 
 2. 閱讀[規劃多地理位置環境](plan-for-multi-geo.md)。
 
