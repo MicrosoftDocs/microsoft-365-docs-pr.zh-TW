@@ -28,7 +28,7 @@ ms.locfileid: "50909547"
 
 如需 Microsoft 365 多地理位置的影片簡介，請參閱 [SharePoint Online 和 OneDrive 多地理位置，以控制資料存放處](https://www.youtube.com/watch?v=Do9U3JuROhk)。
 
-## <a name="multi-geo-architecture"></a>多地理位置架構
+## <a name="multi-geo-architecture"></a>多個地理位置架構
 
 在多地理位置環境中，Microsoft 365 租用戶包含中央位置 (即原始佈建 Microsoft 365 訂閱之處) 以及一或多個衛星位置。在多地理位置租用戶中，系統會在 Azure Active Directory (Azure AD) 中主控地理位置、群組和使用者資訊的相關資訊。因為您的租用戶資訊是集中管理且同步處理到每個地理位置，包含公司任何人的共用與體驗都會包含全域意識。
 
