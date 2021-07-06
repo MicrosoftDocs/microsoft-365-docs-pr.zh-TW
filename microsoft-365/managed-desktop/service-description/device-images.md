@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300099"
 ---
 # <a name="device-images"></a>裝置影像
 
@@ -31,7 +31,7 @@ ms.locfileid: "53276926"
 直接與戴爾銷售代表合作，以確保將 Microsoft 受管理的電腦核准的影像套用至您的訂單裝置。 如需 Dell 裝置、影像及訂購程式的相關問題，請與 MMD_at_dell@dell.com 聯繫。
 
 ### <a name="hp"></a>惠普 
-當您從 HP 定購新的裝置時，請務必在 [[車間 Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices)] 網站中找到的每個模型，針對 [其他需求] 區段所列的特定 SKU， (篩選該視圖，以顯示 Microsoft 受管理的電腦裝置) 。
+當您從 HP 定購新的裝置時，請務必在 [[車間 Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter)] 網站中找到的每個模型，針對 [其他需求] 區段所列的特定 SKU， (篩選該視圖，以顯示 Microsoft 受管理的電腦裝置) 。
 
 如果您是從 HP 已核准為 [例外](customizing.md) 狀況，但目前並未列在裝置清單頁面上，請務必要求您的模型使用 SKU。 我們會使用 HP，透過您的例外要求取得此資訊。 您也可以使用下列位址，直接與 HP 聯繫以取得有關裝置和裝置順序指示的任何問題：
  

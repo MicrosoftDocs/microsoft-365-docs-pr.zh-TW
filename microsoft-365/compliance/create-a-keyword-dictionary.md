@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: 661ca9e227e8583bb6b601792e178c1c366132cb
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 8d313650f298f2ab26989bec9df1260918f7dd5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256708"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300100"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -183,7 +183,12 @@ Get-DlpKeywordDictionary -Name "Diseases"
 >這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
 > [!TIP]
-> 若要偵測包含中文/日文字元和單一位元組字元的模式，或偵測包含中文/日文和英文的模式，請定義關鍵字或 RegEx 的兩個變體。 例如，若要偵測關鍵字 ，例如「机密的document」，請使用關鍵字的兩個變體；一個在日文和英文文字之間具有空格，另一個在日文和英文文字之間沒有空格。 因此，要新增到 SIT 中的關鍵字應該是「机密的 document」和「机密的document」。 同樣地，若要偵測片語「東京オリンピック2020」，應該使用兩個變體；「東京オリンピック 2020」和「東京オリンピック2020」。
-> 使用雙位元組連字號或雙位元組字元來建立 RegEx 時，請務必逸出這兩個字元，就像一個字元會逸出 RegEx 中的連字號或空格一樣。 以下是範例 RegEx 供參考：
-    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+> 若要偵測包含中文/日文字元和單一位元組字元的模式，或偵測包含中文/日文和英文的模式，請定義關鍵字或 RegEx 的兩個變體。 
+>
+> 例如，若要偵測關鍵字 ，例如「机密的document」，請使用關鍵字的兩個變體；一個在日文和英文文字之間具有空格，另一個在日文和英文文字之間沒有空格。 因此，要新增到 SIT 中的關鍵字應該是「机密的 document」和「机密的document」。 同樣地，若要偵測片語「東京オリンピック2020」，應該使用兩個變體；「東京オリンピック 2020」和「東京オリンピック2020」。
+>
+> 使用雙位元組連字號或雙位元組句號來建立 RegEx 時，請務必逸出這兩個字元，就像一個字元會逸出 RegEx 中的連字號或句號一樣。以下是供參考的範例 RegEx:
+>
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
 > 我們建議您在關鍵字清單中使用字串比對，而不是文字比對。

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 內容共同作業的詳細資訊-人員體驗生產力分數。
-ms.openlocfilehash: cca218d15af98925bf61bbb314cfd4d35aa0711a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779731"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300076"
 ---
 # <a name="content-collaboration--people-experiences"></a>內容共同作業–人員經驗
 
@@ -112,7 +112,7 @@ Microsoft OneDrive 商務及 SharePoint 協助使用者輕鬆地從裝置和應�
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="顯示在 OneDrive 或 SharePoint 中建立檔案的人員人數的圖表":::
 
-1. **標頭：** 好友動向在 OneDrive 或 SharePoint 上建立檔案 Microsoft 365 Office 應用程式上的活動人員百分比。
+1. **標頭：** 會強調 OneDrive 或 SharePoint 上建立檔案 Microsoft 365 Office 應用程式上的使用中的人員所占的百分比。
 2. **Body：** 提供 OneDrive 和 SharePoint 中的內容建立值的相關資訊。
 3. **視覺效果：** 視覺化效果中的分解是指使用 Microsoft Office 應用程式在 OneDrive 和 SharePoint 中建立檔案的人員，如下所示：
       - **OneDrive：** 列的藍色 (色彩) 部分，列上的分數代表在 OneDrive 上建立內容的 Office 應用程式上的使用中的人員所占的百分比，如下所示：
@@ -126,9 +126,11 @@ Microsoft OneDrive 商務及 SharePoint 協助使用者輕鬆地從裝置和應�
 
 ### <a name="use-of-attachments-in-email"></a>在電子郵件中使用附件
 
+**在電子郵件中使用附件** 瞭解有多少使用者在電子郵件中附加實體檔案，而不是雲端中內容的連結，並監視此數目隨時間的減少。
+
 :::image type="content" source="../../media/emailattachments.png" alt-text="電子郵件附件的使用。":::
 
-1. **頁首：** 好友動向在電子郵件中使用附件但未儲存至 OneDrive 或 SharePoint 的使用者百分比。
+1. **標頭：** 會強調在電子郵件中使用附件但未儲存至 OneDrive 或 SharePoint 之人員所占的百分比。
 2. **Body：** 提供從共同作業和安全性觀點共用線上檔案的連結值的相關資訊。
 3. **視覺效果：** 視覺化效果中的分解是表示在電子郵件中附加內容的人員在 OneDrive 或 SharePoint 上使用不同模式 (檔案的程度。線上檔的連結;和嵌入在電子郵件) 中的連結：
       - **附加檔案：** 列的藍色 (彩色) 部分和列的分數 (分子/分母) 表示在電子郵件中使用附件的人員百分比。
@@ -137,16 +139,13 @@ Microsoft OneDrive 商務及 SharePoint 協助使用者輕鬆地從裝置和應�
       - **線上檔的連結：** 列的藍色 (彩色) 部分，而分數線上的分數 (分子/分母) 代表使用附件的人員百分比，以及在電子郵件中附加檔案連結。
         - 分子：附加線上檔案連結的人員人數 (儲存至 OneDrive 或 SharePoint) 于過去28天內的電子郵件。
         - 分母：可以存取 Exchange 和 OneDrive、SharePoint 或兩者在過去28天內的人員人數。
-      - **在電子郵件中嵌入連結：** 列的藍色 (彩色) 部分，列上的分數表示在電子郵件內嵌入連結的人員百分比。
-        - 分子：將電子郵件中的連結嵌入至線上檔案的人員人數 (儲存至 OneDrive 或 SharePoint 在過去28天內) 。
-        - 分母：可以存取 Exchange 和 OneDrive、SharePoint 或兩者在過去28天內的人員人數。
 4. **資源連結：** 選取此連結可查看 [說明] 內容。
 
 ### <a name="sharing-of-online-files"></a>線上檔共用
 
 :::image type="content" source="../../media/sharingonlinefiles.png" alt-text="顯示線上共用檔人數的圖表。":::
 
-1. **標頭：** 好友動向對外部共用檔案 OneDrive 或 SharePoint 具有存取權的人員百分比。
+1. **標頭：** 會強調對從外部共用檔案 OneDrive 或 SharePoint 具有存取權的人員百分比。
 2. **Body：** 提供系統管理員&#39; 能夠變更組織中的檔案共用設定，以啟用最適合組織之共同作業層級的相關資訊。
 3. **視覺效果：** 代表有權存取 OneDrive 或 SharePoint 之人員在內部或外部共用檔案的程度：
       - **外部：** 列的藍色 (彩色) 部分和分數線上的分數 (分子/分母) 代表具有 OneDrive 或 SharePoint 的存取權，以及從外部共用檔案的人員百分比。
@@ -161,7 +160,7 @@ Microsoft OneDrive 商務及 SharePoint 協助使用者輕鬆地從裝置和應�
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="圖表顯示最具共同合作的檔案數目。":::
 
-1. **標頭：** 好友動向能夠存取 OneDrive 或 SharePoint 以進行4個或更多檔案之合作之人員的百分比。
+1. **標頭：** 會強調有權存取 OneDrive 或 SharePoint 誰在4個以上的檔案上進行共同作業的人員所占的百分比。
 2. **Body：** 提供人員如何利用線上檔案以改善共同作業的相關資訊。
 3. **視覺效果：** 根據共同作業的檔案數目，顯示有權存取 OneDrive 或 SharePoint 的人員的散佈。 這會透過下列4個類別進行顯示 (每個欄的藍色部分，分數代表可存取 OneDrive 或 SharePoint 屬於該類別的人員的百分比) ：
       - **無共同作業：**
@@ -183,7 +182,7 @@ Microsoft OneDrive 商務及 SharePoint 協助使用者輕鬆地從裝置和應�
 
 :::image type="content" source="../../media/networkperfstrength.png" alt-text="顯示 OneDrive 和 SharePoint 之網路效能的圖表。":::
 
-1. **標頭：** 好友動向裝置所占之 OneDrive 和 SharePoint 網路連接不佳的所有測試裝置所占的百分比。 
+1. **標頭：** 會強調所有測試的裝置所占的百分比，而這些裝置的網路連線速度 OneDrive 和 SharePoint 都不佳。 
 2. **Body：** 提供有關共同作業效能為何重要的資訊。 
 3. **視覺效果：** 顯示與 OneDrive 和 SharePoint 相關之不同網路連線效能層級的裝置百分比：
       - **81-100 (最佳)**：橫條的深綠色 (彩色) 部分代表具有最佳效能的裝置百分比。

@@ -1,5 +1,5 @@
 ---
-title: '使用非 Microsoft cloud app 的資料遺失防護原則 (預覽) '
+title: 使用非 Microsoft cloud app 的資料遺失防護原則
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何對非 Microsoft cloud app 使用 dlp 原則。
-ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226836"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300121"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft cloud app 的資料遺失防護原則 (預覽) 
 
@@ -42,6 +42,12 @@ ms.locfileid: "53226836"
 - Microsoft 365 E5
 - Microsoft 365 E5 合規性
 - Microsoft 365 E5 安全性
+
+### <a name="permissions"></a>權限
+建立 DLP 原則的使用者應該是：
+- 全域系統管理員
+- 合規性管理員
+- 合規性資料管理員
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>準備您的雲端 App 安全性環境
 
@@ -81,7 +87,8 @@ dlp 原則至非 Microsoft cloud app 使用雲端 App 安全性 DLP 功能。 �
 
 ![限制協力廠商應用程式](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> 記套用至非 Microsoft 應用程式的 DLP 原則使用 Microsoft Cloud App Security。 建立非 Microsoft 應用程式的 DLP 原則時，會自動在 Microsoft Cloud App Security 中建立相同的原則。
+> [!NOTE]
+> 套用至非 Microsoft 應用程式的 DLP 原則使用 Microsoft Cloud App Security。 建立非 Microsoft 應用程式的 DLP 原則時，會自動在 Microsoft Cloud App Security 中建立相同的原則。
 
 如需建立及設定 DLP 原則的詳細資訊，請參閱 [Create test and 微調 dlp policy](./create-test-tune-dlp-policy.md)。
 

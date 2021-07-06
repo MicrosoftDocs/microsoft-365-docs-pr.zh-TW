@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 瞭解安全性 & 合規性中心中的 dlp 如何使用 dlp 和郵件流程規則 (Exchange 系統管理中心) 的傳輸規則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34ddee1c1f0997852b6e59295ab9b630acc3ba3c
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: a7cd4eaafbd334c8886e0e6aa72d8c0e4c53a81e
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177174"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300049"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>DLP 在 Microsoft 365 規範中心與 Exchange 系統管理中心之間的運作方式
 
@@ -47,7 +47,7 @@ ms.locfileid: "53177174"
   
 - Exchange 郵件流程規則封鎖的郵件不會透過安全性 & 規範中心內建立的 DLP 規則進行掃描。
 
-- dlp 未掃描的 Exchange 郵件流程規則或任何其他篩選器所隔離的郵件將不會被 dlp 掃描
+- dlp 不會掃描 Exchange 郵件流程規則或任何其他篩選器所執行的郵件。
     
 - 如果 Exchange 郵件流程規則會以一種方式修改郵件，使其符合 Security & 合規性中心的 DLP 原則（例如新增外部使用者），則 DLP 規則會偵測到這種情況，並視需要強制執行原則。
     
