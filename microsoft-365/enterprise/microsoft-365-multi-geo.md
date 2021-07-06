@@ -28,7 +28,7 @@ ms.locfileid: "50909547"
 
 <span data-ttu-id="39297-107">如需 Microsoft 365 多地理位置的影片簡介，請參閱 [SharePoint Online 和 OneDrive 多地理位置，以控制資料存放處](https://www.youtube.com/watch?v=Do9U3JuROhk)。</span><span class="sxs-lookup"><span data-stu-id="39297-107">For a video introduction to Microsoft 365 Multi-Geo, see [SharePoint Online and OneDrive Multi-Geo to control where your data resides](https://www.youtube.com/watch?v=Do9U3JuROhk).</span></span>
 
-## <a name="multi-geo-architecture"></a><span data-ttu-id="39297-108">多地理位置架構</span><span class="sxs-lookup"><span data-stu-id="39297-108">Multi-Geo architecture</span></span>
+## <a name="multi-geo-architecture"></a><span data-ttu-id="39297-108">多個地理位置架構</span><span class="sxs-lookup"><span data-stu-id="39297-108">Multi-Geo architecture</span></span>
 
 <span data-ttu-id="39297-p102">在多地理位置環境中，Microsoft 365 租用戶包含中央位置 (即原始佈建 Microsoft 365 訂閱之處) 以及一或多個衛星位置。在多地理位置租用戶中，系統會在 Azure Active Directory (Azure AD) 中主控地理位置、群組和使用者資訊的相關資訊。因為您的租用戶資訊是集中管理且同步處理到每個地理位置，包含公司任何人的共用與體驗都會包含全域意識。</span><span class="sxs-lookup"><span data-stu-id="39297-p102">In a Multi-Geo environment, your Microsoft 365 tenant consists of a central location (where your Microsoft 365 subscription was originally provisioned) and one or more satellite locations. In a multi-geo tenant, the information about geo locations, groups, and user information, is mastered in Azure Active Directory (Azure AD). Because your tenant information is mastered centrally and synchronized into each geo location, sharing and experiences involving anyone from your company contain global awareness.</span></span>
 
