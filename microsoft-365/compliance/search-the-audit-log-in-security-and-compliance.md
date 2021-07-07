@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合規性中心來搜尋整合的稽核記錄，以檢視組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287500"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300133"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -601,18 +601,18 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |已將使用者或群組新增至 SharePoint 群組|AddedToGroup|使用者已新增成員或來賓至 SharePoint 群組。 這可能是刻意的動作，或另一個活動的結果 (例如共用事件)。|
 |已中斷權限等級繼承|PermissionLevelsInheritanceBroken|項目已變更，因此無法從其上層項目繼承權限等級。|
 |已中斷共用繼承|SharingInheritanceBroken|項目已變更，因此無法從其上層項目繼承共用權限。|
-|已建立群組|GroupAdded|網站管理員或擁有者為網站建立群組，或執行導致建立群組的工作。 例如，使用者第一次建立連結以共用檔案時，系統群組會新增至使用者的商務用 OneDrive 網站。 此事件也可以是使用者透過編輯權限建立共用檔案的連結之結果。|
+|已建立群組|GroupAdded|網站系統管理員或擁有者為網站建立群組，或執行導致建立群組的工作。例如，使用者第一次建立連結以共用檔案時，系統群組會新增至使用者的商務用 OneDrive 網站。此事件也可以是使用者透過編輯權限建立共用檔案的連結之結果。|
 |已刪除群組|GroupRemoved|使用者刪除網站中的群組。|
 |已修改存取要求設定|WebRequestAccessModified|已在網站上修改存取要求設定。|
 |已修改「成員可共用」設定|WebMembersCanShareModified|網站上的「成員可共用」設定已修改。|
 |已修改網站集合上的權限等級|PermissionLevelModified|已變更網站集合上的權限等級。|
-|已修改網站權限|SitePermissionsModified|網站系統管理員或擁有者 (或系統帳戶) 變更已指派給網站上群組的權限等級。 如果已移除群組中的所有權限，也會記錄此活動。 <br/><br/> **請注意**：此作業在 SharePoint Online 中已遭取代。 若要尋找相關事件，您可以搜尋其他權限相關活動，例如 [已新增網站集合管理員]、[已新增使用者或群組到 SharePoint 群組]、[已允許使用者建立群組]、[已建立群組] 及 [已刪除群組]。|
+|已修改網站權限|SitePermissionsModified|網站系統管理員或擁有者 (或系統帳戶) 變更已指派給網站上的群組之權限等級。如果已移除群組中的所有權限，也會記錄此活動。<br/><br/> **請注意**：此作業在 SharePoint Online 中已遭取代。 若要尋找相關事件，您可以搜尋其他權限相關活動，例如 [已新增網站集合管理員]、[已新增使用者或群組到 SharePoint 群組]、[已允許使用者建立群組]、[已建立群組] 及 [已刪除群組]。|
 |已移除網站集合上的權限等級|PermissionLevelRemoved|權限等級已從網站集合移除。|
 |已移除網站集合系統管理員|SiteCollectionAdminRemoved|網站集合系統管理員或擁有者移除了網站的一位網站集合管理員。 當系統管理員將自己從使用者 OneDrive 帳戶的網站集合系統管理員清單中移除時 (藉由在 SharePoint 系統管理員中心編輯使用者設定檔)，也會記錄此活動。  若要在稽核記錄搜尋結果中傳回此活動，您必須搜尋所有活動。|
 |已從 SharePoint 群組中移除使用者或群組|RemovedFromGroup|使用者已移除 SharePoint 群組中的成員或來賓。 這可能是刻意的動作，或另一個活動的結果 (例如取消共用事件)。|
-|要求的網站系統管理員權限|SiteAdminChangeRequest|使用者要求新增成為網站集合的網站集合管理員。 網站集合系統管理員擁有網站集合及所有子網站的完全控制權限。|
+|要求的網站系統管理員權限|SiteAdminChangeRequest|使用者要求新增成為網站集合的網站集合系統管理員。網站集合系統管理員擁有網站集合及所有子網站的完全控制權限。|
 |已還原共用繼承|SharingInheritanceReset|項目已變更，因此可從其上層項目繼承共用權限。|
-|已更新群組|GroupUpdated|網站系統管理員或擁有者變更了網站的群組設定。 這可以包括變更群組的名稱、誰能夠檢視或編輯群組成員資格，以及如何處理成員資格要求。|
+|已更新群組|GroupUpdated|網站系統管理員或擁有者變更網站的群組之設定。這可以包括變更群組的名稱、誰能夠檢視或編輯群組成員資格，以及如何處理成員資格要求。|
 ||||
 
 ### <a name="site-administration-activities"></a>網站管理活動
@@ -628,19 +628,19 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |已取消網站的地理位置移動|SiteGeoMoveCancelled|SharePoint 或全域系統管理員已成功取消 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [OneDrive 和 SharePoint Online 的多地理位置功能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。|
 |已變更共用原則|SharingPolicyChanged|SharePoint 或全域系統管理員已使用 Microsoft 365 系統管理員入口網站、SharePoint 系統管理員入口網站或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
 |已變更裝置存取原則|DeviceAccessPolicyChanged|SharePoint 或全域系統管理員已變更您組織中未受控裝置的原則。 此原則可針對未加入您組織的裝置控制 SharePoint、OneDrive 及 Microsoft 365 的存取權。 設定此原則需要 Enterprise Mobility + Security 訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](/sharepoint/control-access-from-unmanaged-devices)。|
-|已變更免除使用者代理程式|CustomizeExemptUsers|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心自訂免除使用者代理程式清單。 您可以指定要免除哪些使用者代理程式，以免於接收整個網頁進行索引。 這表示當您指定為免除的使用者代理程式遇到 InfoPath 表單時，會以 XML 檔案傳回該表單，而不是整個網頁。 這樣在進行 InfoPath 表單索引時會更迅速。|
+|已變更免除使用者代理程式|CustomizeExemptUsers|SharePoint 或全域系統管理員已自訂 SharePoint 系統管理中心的免除使用者代理程式清單。您可以指定要免除哪些使用者代理程式，以免於接收整個網頁進行索引。這表示當您已指定為免除的使用者代理程式遇到 InfoPath 表單，該表單將會以 XML 檔案的形式傳回，而不是整個網頁。這樣在進行 InfoPath 表單索引時會更迅速。|
 |已變更網路存取原則|NetworkAccessPolicyChanged|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心中 (或是使用 SharePoint Online PowerShell) 變更位置存取原則 (又稱為受信任的網路邊界)。 此類原則可根據您指定的授權 IP 位址範圍，控制能存取您組織 SharePoint 和 OneDrive 資源的使用者。 如需詳細資訊，請參閱[根據網路位置控制 SharePoint Online 與 OneDrive 資料的存取權](/sharepoint/control-access-based-on-network-location)。|
 |已完成網站的地理位置移動|SiteGeoMoveCompleted|已成功完成您組織全域系統管理員所排程的網站地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。|
-|已建立 [傳送至] 連線|SendToConnectionAdded|SharePoint 或全域系統管理員在 SharePoint 系統管理員中心的 [記錄] 管理頁面上建立新的「傳送至」連線。 [傳送至] 連線會指定文件存放庫或記錄中心的設定。 當您建立 [傳送至] 連線時，[內容組合管理] 可提交文件至指定的位置。|
+|已建立 [傳送至] 連線|SendToConnectionAdded|SharePoint 或全域系統管理員在 SharePoint 系統管理中心的 [記錄] 管理頁面上建立新的 [傳送至] 連線。[傳送至] 連線會指定文件存放庫或記錄中心的設定。當您建立 [傳送至] 連線時，[內容組合管理] 可提交文件至指定的位置。|
 |已建立網站集合|SiteCollectionCreated|SharePoint 或全域系統管理員在您的 SharePoint Online 組織中建立了網站集合，或是使用者佈建了商務用 OneDrive 網站。|
 |刪除孤立的中樞網站|HubSiteOrphanHubDeleted|SharePoint 或全域系統管理員已刪除孤立中樞網站，也就是未與任何站台建立關聯的中樞網站。 孤立中樞可能是因為刪除原始中樞網站所造成。|
 |已刪除 [傳送至] 連線|SendToConnectionRemoved|SharePoint 或全域系統管理員在 SharePoint 系統管理員中心的 [記錄] 管理頁面上刪除「傳送至」連線。|
 |已刪除網站|SiteDeleted|網站系統管理員刪除網站。|
 |已啟用文件預覽|PreviewModeEnabledSet|網站系統管理員啟用網站的文件預覽。|
 |已啟用舊版工作流程|LegacyWorkflowEnabledSet|網站管理員或擁有者將 SharePoint 2013 工作流程工作內容類型新增至網站。全域管理員也可以在 SharePoint 系統管理中心啟用整個組織的工作流程。|
-|已啟用 Office on Demand|OfficeOnDemandSet|網站管理員啟用 Office on Demand，這可讓使用者存取最新版的 Office 傳統型應用程式。 Office on Demand 會在 SharePoint 系統管理員中心啟用，並且需要 Microsoft 365 訂閱，該訂閱包含完整、已安裝的 Office 應用程式。|
+|已啟用 Office on Demand|OfficeOnDemandSet|網站管理員啟用 Office on Demand，讓使用者存取最新版本的 Office 桌面應用程式。Office on Demand 是在 SharePoint 系統管理中心啟用，並且需要 Microsoft 365 訂閱，該訂閱包含完整、已安裝的 Office 應用程式。|
 |已啟用 [人員搜尋] 的結果來源|PeopleResultsScopeSet|網站系統管理員建立網站的 [人員搜尋] 結果來源。|
-|已啟用 RSS 摘要|NewsFeedEnabledSet|網站系統管理員或擁有者啟用網站的 RSS 摘要。 全域管理員可以在 SharePoint 系統管理員中心為整個組織啟用 RSS 摘要。|
+|已啟用 RSS 摘要|NewsFeedEnabledSet|網站系統管理員或擁有者啟用網站的 RSS 摘要。全域系統管理員可以在 SharePoint 系統管理中心為整個組織啟用 RSS 摘要。|
 |已聯結網站與中樞網站|HubSiteJoined|網站擁有者讓他們的網站與中樞網站互相關聯。|
 |已註冊中樞網站|HubSiteRegistered|SharePoint 或全域系統管理員建立了一個中樞網站。 結果是網站會註冊為中樞網站。|
 |已移除允許的資料位置|AllowedDataLocationDeleted|SharePoint 或全域系統管理員已在多個地理環境中移除允許的資料位置。|
@@ -912,11 +912,11 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 |易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已建立註解|CreateComment|表單擁有者為測驗新增註解或分數。|
-|已建立表單|CreateForm|表單擁有者建立新表單。|
+|已建立表單|CreateForm|表單擁有者建立新表單。 <br><br>Property DataMode:string 指示若屬性值等於 DataSync，則目前的表單設定為與新的或現有的 Excel 活頁簿同步。 屬性 ExcelWorkbookLink:string 指示目前表單的關聯 Excel 活頁簿識別碼。|
 |已編輯表單|EditForm|表單擁有者編輯表單，例如建立、移除或編輯問題。 屬性 *EditOperation:string* 指出編輯作業名稱。 可能的作業如下：<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage 包含在表單中使用者可上傳影像的任何位置，例如在查詢中或做為背景佈景主題。|
-|已移動表單|MoveForm|表單擁有者移動表單。 <br><br>屬性 DestinationUserId：字串表示移動表單人員的使用者識別碼。 屬性 NewFormId：字串是新複製表單的全新識別碼。|
+|已移動表單|MoveForm|表單擁有者移動表單。 <br><br>屬性 DestinationUserId：字串表示移動表單人員的使用者識別碼。 屬性 NewFormId：字串是新複製表單的全新識別碼。 屬性 IsDelegateAccess:boolean 指示目前表單移動動作是透過系統管理員委派頁面執行。|
 |已刪除表單|DeleteForm|表單擁有者刪除表單。 這包含 SoftDelete (刪除使用的選項和移至資源回收筒的表單) 與 HardDelete (清空資源回收筒)。|
-|已檢視表單 (設計階段)|ViewForm|表單擁有者開啟現有表單以進行編輯。|
+|已檢視表單 (設計階段)|ViewForm|表單擁有者開啟現有表單以進行編輯。 <br><br>屬性 AccessDenied:boolean 指示目前表單的存取因權限檢查而遭拒絕。 屬性 FromSummaryLink:boolean 指示目前的要求來自摘要連結頁面。|
 |已預覽表單|PreviewForm|表單擁有者使用 [預覽] 功能預覽表單。|
 |已匯出表單|ExportForm|表單擁有者將結果匯出到 Excel。 <br><br>屬性 ExportFormat：字串表示 Excel 檔案為下載或線上。|
 |允許複製共用表單|AllowShareFormForCopy|表單擁有者建立範本連結，以與其他使用者共用表單。 當表單擁有者按一下以產生範本 URL 時，系統會記錄此事件。|
@@ -935,10 +935,21 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 |已更新表單網路釣魚狀態|UpdatePhishingStatus|每當內部安全性狀態的詳細資料值變更時，系統就會記錄此事件，無論這是否會變更最後的安全性狀態 (例如，現在已關閉或開啟表單)。 這表示您可能會看到不具有最終安全性狀態變更的重複事件。 此事件的可能狀態值如下：<br/>- 記下 <br/>- 由系統管理員記下 <br/>- 系統管理員解除封鎖 <br/>- 自動封鎖 <br/>- 自動解除封鎖 <br/>- 客戶報告 <br/>- 重設客戶報告|
 |更新的使用者網路釣魚狀態|UpdateUserPhishingStatus|每當使用者安全性狀態的值變更時，就會記錄此事件。 當使用者建立的網路釣魚表單已由 Microsoft Online 安全小組記下，即會將稽核記錄中使用者狀態的值 **確認為網路釣魚者**。 如果系統管理員解除封鎖該使用者，該使用者的狀態值會設定為 [重設為一般使用者 **]**。|
 |已傳送 Forms Pro 邀請|ProInvitation|使用者按一下以啟用 Pro 試用版。|
-|已更新表單設定|UpdateFormSetting|表單擁有者更新表單設定。 <br><br>屬性 FormSettingName：字串表示設定的名稱和新值。|
+|已更新表單設定|UpdateFormSetting|表單擁有者更新一或多個表單設定。 <br><br>屬性 FormSettingName:string 指示更新的敏感性設定名稱。 屬性 NewFormSettings:string 指示更新的設定名稱和新值。 屬性 thankYouMessageContainsLink:boolean 指示更新的 thankyou 訊息包含 URL 連結。|
 |已編輯使用者設定|UpdateUserSetting|表單擁有者更新使用者設定。 <br><br>屬性 UserSettingName：字串表示設定的名稱和新值。|
 |已列出表單|ListForms|表單擁有者正檢視表單清單。 <br><br>屬性 ViewType：字串表示表單擁有者正查看何種檢視：[所有表單]、[與我共用] 或 [群組表單]|
 |已提交回應|SubmitResponse|使用者提交表單的回應。 <br><br>屬性 IsInternalForm：如果回應者與表單擁有者位於同一組織中，則會顯示布林值。|
+|已啟用任何人都可以回應設定|AllowAnonymousResponse|表單擁有者開啟允許任何人回應表單的設定。|
+|已停用任何人都可以回應設定|DisallowAnonymousResponse|表單擁有者關閉允許任何人回應表單的設定。|
+|已啟用特定人員可以回應設定|EnableSpecificResponse|表單擁有者開啟只允許目前組織中特定人員或特定群組回應表單的設定。|
+|已停用特定人員可以回應設定|DisableSpecificResponse|表單擁有者關閉只允許目前組織中特定人員或特定群組回應表單的設定。|
+|已新增特定回應者|AddSpecificResponder|表單擁有者將新使用者或群組新增到特定回應者清單。|
+|已移除特定回應者|RemoveSpecificResponder|表單擁有者將使用者或群組從特定回應者清單移除。|
+|已停用共同作業|DisableCollaboration|表單擁有者關閉表單上的共同作業設定。|
+|已啟用 Office 365 公司或學校帳戶共同作業|EnableWorkOrSchoolCollaboration|表單擁有者開啟設定，允許具有 Office 365 公司或學校帳戶的使用者檢視及編輯表單。|
+|已啟用我組織中的人員共同作業|EnableSameOrgCollaboration|表單擁有者開啟設定，允許目前組織的使用者檢視及編輯表單。|
+|已啟用特定人員共同作業|EnableSpecificCollaboaration|表單擁有者開啟只允許目前組織中特定人員或特定群組檢視及編輯表單的設定。|
+|已連線至 Excel 活頁簿|ConnectToExcelWorkbook|已將表單連線至 Excel 活頁簿。 <br><br>屬性 ExcelWorkbookLink:string 指示目前表單的關聯 Excel 活頁簿識別碼。|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>由共同作者和匿名回應者執行的 Forms 活動
