@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933862"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314425"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
@@ -35,7 +35,13 @@ ms.locfileid: "51933862"
 若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
 
 您可以 https://security.microsoft.com/securescore 在「 [Microsoft 365 安全性中心](overview-security-center.md)」找到 Microsoft Secure 得分。
-    
+
+## <a name="june-2021"></a>2021 年 6 月
+
+### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>移除與 Microsoft Cloud App Security 相關的改進動作
+
+- 使用雲端 App 安全性偵測反常行為。
+
 ## <a name="february-2021"></a>2021 年 2 月
 
 ### <a name="compatibility-with-graph-api"></a>與 Graph API 的相容性
@@ -77,7 +83,7 @@ Microsoft Teams 客戶將會看到「限制匿名使用者加入會議」為安�
 
 - 設定 Microsoft Defender SmartScreen Windows 儲存應用程式 web 內容檢查以警告
 
-## <a name="august-2020"></a>2020年 8月
+## <a name="august-2020"></a>2020 年 8 月
 
 ### <a name="updated-improvement-action-for-azure-active-directory"></a>Azure Active Directory 的更新改進動作
 

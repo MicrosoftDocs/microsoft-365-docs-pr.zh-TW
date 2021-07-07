@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 03d05966401c8f3a8bdcec413e85c9a6d2a3ec5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 98e4c80c2e0262712885f1e7a2da82886b2ebe80
+ms.sourcegitcommit: b6e63febe24ef1f1793dfb3ecc5ed41a4e730578
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926568"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53309358"
 ---
 # <a name="evaluate-network-protection"></a>評估網路保護
 
@@ -40,7 +40,7 @@ ms.locfileid: "52926568"
 
 在稽核模式中啟用網路保護，以查看已封鎖的 IP 位址和網域。 您可以確定不會影響企業營運的應用程式，或瞭解封鎖發生的頻率。
 
-1. 在 [開始] 功能表中輸入 **powershell** ，以滑鼠右鍵按一下 **Windows PowerShell** 並選取 [以 **系統管理員身分執行**]
+1. 在 [開始] 功能表中輸入 **powershell** ，在 **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [以 **系統管理員身分執行**]
 2. 輸入下列 Cmdlet：
 
     ```PowerShell
@@ -55,7 +55,7 @@ ms.locfileid: "52926568"
 
 將會允許網路連線，並且會顯示測試郵件。
 
-![通知連線已封鎖的範例通知：您的 IT 系統管理員造成 Windows 安全性封鎖此網路連接。 請與您的 IT 問訊台聯繫。](/microsoft-365/security/defender-endpoint/images/np-notif)
+![通知連線已封鎖的範例通知：您的 IT 系統管理員造成 Windows 安全性封鎖此網路連接。 請與您的 IT 問訊台聯繫。](images/np-notif.png)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>在 Windows 事件檢視器中查看網路保護事件
 
@@ -67,7 +67,7 @@ ms.locfileid: "52926568"
 |1125 | Windows Defender (操作)  | 審核網路連接時的事件 |
 |1126 | Windows Defender (操作)  | 封鎖網路連接時的事件 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [網路保護](network-protection.md)
 * [啟用網路保護](enable-network-protection.md)

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286954"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314401"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
@@ -211,7 +211,7 @@ Enable\Disable 範例集合| Enabled-「在機器上啟用範例集合」已檢�
 
 7. 選取 [ **執行使用者登入與否** ]，然後選取 [ **以最高特權執行** ] 核取方塊。
 
-8. 移至 [**動作**] 索引標籤，然後按一下 [**新增 ...**]。確定 [**動作**] 欄位中已選取 [**啟動程式**]。 輸入共用  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd* 檔案的檔案名和位置。
+8. 移至 [**動作**] 索引標籤，然後按一下 [**新增 ...**]。確定 [**動作**] 欄位中已選取 [**啟動程式**]。 輸入共用的 *-mm-dd WindowsDefenderATPOffboardingScript_valid_until_YYYY .cmd* 檔案的 NetBIOS 路徑。
 
 9. 按一下 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
 

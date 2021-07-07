@@ -13,16 +13,16 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 06/23/2021
-ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.date: 07/06/2021
+ms.openlocfilehash: f64c71501a550aabdf16b9de2d7a5db93e48caef
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105329"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314461"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -56,7 +56,7 @@ Microsoft Defender 防毒軟體使用[雲端提供的保護](cloud-protection-mi
 
 ## <a name="product-updates"></a>產品更新
 
-Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (稱為 *平臺更新*) ，而且會在 Windows 10 版本的情況下收到重要的功能更新。
+Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)稱為 *平臺更新*。
 
 您可以透過下列其中一種方法來管理更新的發佈： 
 
@@ -67,7 +67,10 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 如需詳細資訊，請參閱[管理來源以取得 Microsoft Defender 防毒軟體保護更新](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 > [!NOTE]
-> 每月更新都會以階段發行，導致您的 [視窗伺服器更新服務](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)中顯示多個套件。
+> - 每月更新都會以階段發行，導致您的 [視窗伺服器更新服務](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)中顯示多個套件。
+> - 本文列出廣泛發行通道中包含的變更。 [請參閱以下的最新廣義通道發行](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)。 
+> - 若要深入瞭解逐步展示過程，以及若要查看下一個版本的詳細資訊，請參閱 [Manage the 逐步展入處理 Microsoft Defender 更新](manage-gradual-rollout.md)。
+> - 若要深入瞭解安全性情報更新，請參閱[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/wdsi/defenderupdates)。 
 
 ## <a name="monthly-platform-and-engine-versions"></a>每月平臺及引擎版本
 
@@ -77,8 +80,26 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 - 效能改進;
 - 可維護性改進;和 
 - 整合功能 (Cloud [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 。
-<br/><br/>
+<br/>
 <details>
+<summary> 六月-2021 (平臺： 4.18.2106.5 |Engine： 1.1.18300.4) </summary>
+
+&ensp;安全性智慧更新版本： **1.343.17.0**  
+&ensp;發行日期： **2021 年6月28日**  
+&ensp;Platform： **4.18.2106.5**  
+&ensp;Engine： **1.1.18300.4**  
+&ensp;支援階段： **安全性和重要更新**
+    
+### <a name="whats-new"></a>新增功能
+- 用來管理 Microsoft Defender 更新逐步展示過程的新控制項。 請參閱 [管理 Microsoft Defender 更新的逐步展處理常式](manage-gradual-rollout.md)。
+- 改進行為監控引擎
+- 反惡意程式碼定義的展示功能增強功能
+- 延伸 Edge 網路事件檢查
+
+### <a name="known-issues"></a>已知問題
+無已知問題  
+<br/>
+</details><details>
 <summary> 2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </summary>
 
 &ensp;安全性智慧更新版本： **1.341.8.0**  
@@ -104,21 +125,26 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
     
 ### <a name="whats-new"></a>新增功能
 - 其他行為監控邏輯
-- 改進的核心模式 keylogger 偵測
+- 改進的核心模式金鑰記錄器偵測
 - 新增控制項以管理[Microsoft Defender 更新](manage-gradual-rollout.md)的逐步式展示過程
 
 
 ### <a name="known-issues"></a>已知問題
 無已知問題  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>舊版本更新：僅限技術升級支援
+
+發行新的套件版本之後，支援舊版的兩個版本只會縮小為技術支援。 這一節所列出的版本舊，僅提供支援技術升級。 
+<details>
 <summary> 三月份-2021 (平臺： 4.18.2103.7 |Engine： 1.1.18000.5) </summary>
 
 &ensp;安全性智慧更新版本： **1.335.36.0**  
 &ensp;發行日期： **2021 年4月2日**  
 &ensp;Platform： **4.18.2103.7**  
 &ensp;Engine： **1.1.18000.5**  
-&ensp;支援階段： **安全性和重要更新**
+&ensp;支援階段： **僅限技術升級支援 ()**
     
 ### <a name="whats-new"></a>新增功能
 
@@ -129,13 +155,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 ### <a name="known-issues"></a>已知問題
 無已知問題  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>舊版本更新：僅限技術升級支援
-
-發行新的套件版本之後，支援舊版的兩個版本只會縮小為技術支援。 這一節所列出的版本舊，僅提供支援技術升級。 
-<br/><br/>
-<details>
+</details><details>
 <summary> 二月份-2021 (平臺： 4.18.2102.3 |Engine： 1.1.17900.7) </summary>
 
 &ensp;安全性智慧更新版本： **1.333.7.0**  

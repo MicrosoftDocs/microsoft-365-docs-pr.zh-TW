@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '瞭解您可以如何具有一個以上的電子郵件地址，稱為與您的商務用 Microsoft 365 相關的電子郵件別名。 '
-ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e6eac45c3ade3fd737f93c88c29b56ccd497212e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572102"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314353"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
   
@@ -70,7 +70,7 @@ ms.locfileid: "52572102"
     使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
     
   
-7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。網頁上的 Outlook 會使用接收電子郵件的別名 (我們會將其稱為「乒乓球) 」。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
+7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。Outlook 網頁版會使用接收電子郵件的別名 (我們會將其叫用乒乓球原則) 。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>您取得的是「找不到符合參數名稱 EmailAddresses 的參數嗎」？
 
@@ -83,7 +83,7 @@ ms.locfileid: "52572102"
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>輕鬆從 proxy 位址傳送電子郵件
 
-新功能在2021年4月推出，可讓使用者在網頁上使用 Outlook 時，輕鬆地從別名傳送。 當該功能推出租使用者系統管理員使用 Cmdlet 的租用時 `Set-OrganizationConfig -SendFromAliasEnabled $true` ，租用中的使用者就可以存取核取方塊清單，其中每個專案都會對應至其 Outlook 設定中的別名。 選取別名會將其顯示在撰寫表單的 [寄件者] 下拉式清單中。
+在2021年7月推出新的功能，可讓使用者在使用 Outlook 網頁版時，輕鬆地從別名傳送。 當該功能推出租使用者系統管理員使用 Cmdlet 的租用時 `Set-OrganizationConfig -SendFromAliasEnabled $true` ，租用中的使用者就可以存取核取方塊清單，其中每個專案都會對應至其 Outlook 設定中的別名。 選取別名會將其顯示在撰寫表單的 [寄件者] 下拉式清單中。
   
 ## <a name="related-content"></a>相關內容
 

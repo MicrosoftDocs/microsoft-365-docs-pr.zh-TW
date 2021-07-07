@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 8babc8c5e7464637e29ddacef50c92f252033d26
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657714"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314365"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -35,11 +35,16 @@ ms.locfileid: "52657714"
 
 我們在近期進行一些變更，讓 [Microsoft 安全評分](microsoft-secure-score.md) 成為安全狀況的更好代表，並提高可用性。 您的分數和可能的最大分數可能會有所變更。
 
-### <a name="june-2021"></a>2021年6月
+### <a name="july-2021"></a>2021年7月
 
-#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>移除與 Microsoft Cloud App Security 相關的改進動作
+#### <a name="add-improvement-action-related-to-microsoft-teams"></a>新增與 Microsoft Teams 相關的改進動作
 
-- 使用雲端 App 安全性偵測反常行為
+- 限制撥入使用者繞過會議會議廳。
+- 限制外部參與者在 Teams 會議中擁有控制權。
+- 限制匿名使用者開始 Teams 會議。
+- 需要 Teams 會議中設定大廳。
+- 設定允許在 Teams 會議中出現的使用者。
+
 
 ## <a name="related-resources"></a>相關資源
 

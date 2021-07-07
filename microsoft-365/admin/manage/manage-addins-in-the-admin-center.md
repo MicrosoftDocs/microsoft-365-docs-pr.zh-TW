@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用集中式增益集，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ed9086c77cdf10435bae09f76493af6058d2d758
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636055"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314384"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在系統管理中心管理增益集
 
@@ -121,6 +121,9 @@ Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方�
 - 目前可用的 web。
     
 這不會讓系統管理員使用集中式部署從 Office 儲存區指派增益集。
+
+> [!NOTE] 
+> 例如，即使系統管理員已停用存放區，增益集（例如 Visio 資料視覺化檢視、Bing 地圖服務和 Graph 人員）仍會顯示在功能區中。 若要移除這些連結，管理員必須透過「群組原則」物件停用存放區 (GPO) 。
   
 若要防止使用者使用 Microsoft 帳戶登入，您可以限制登入只使用組織帳戶。 如需詳細資訊，請參閱[Office 2016 的身分識別、驗證及授權](/DeployOffice/security/identity-authentication-and-authorization-in-office)。  
 
