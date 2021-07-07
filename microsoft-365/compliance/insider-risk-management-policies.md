@@ -380,7 +380,7 @@ ms.locfileid: "53226428"
 7. <span data-ttu-id="015f0-599">若要匯入要新增至該原則的使用者清單，請選取 **[匯入]** 至匯入 .csv (逗號分隔值) 檔案。</span><span class="sxs-lookup"><span data-stu-id="015f0-599">To import a list of users to add to the policies, select **Import** to import a .csv (comma-separated values) file.</span></span> <span data-ttu-id="015f0-600">檔案必須採用下列格式，而且您必須列出檔案中的使用者主體名稱：</span><span class="sxs-lookup"><span data-stu-id="015f0-600">The file must be in the following format and you must list the user principal names in the file:</span></span>
 
     ```csv
-    user principal name
+    使用者主體名稱
     user1@domain.com
     user2@domain.com
     ```
