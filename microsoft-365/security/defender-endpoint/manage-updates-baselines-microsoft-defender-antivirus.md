@@ -13,617 +13,637 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 06/23/2021
-ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.date: 07/06/2021
+ms.openlocfilehash: f64c71501a550aabdf16b9de2d7a5db93e48caef
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105329"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314461"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a><span data-ttu-id="9ef32-104">管理 Microsoft Defender 防毒軟體更新及套用基準</span><span class="sxs-lookup"><span data-stu-id="9ef32-104">Manage Microsoft Defender Antivirus updates and apply baselines</span></span>
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a><span data-ttu-id="09675-104">管理 Microsoft Defender 防毒軟體更新及套用基準</span><span class="sxs-lookup"><span data-stu-id="09675-104">Manage Microsoft Defender Antivirus updates and apply baselines</span></span>
 
-<span data-ttu-id="9ef32-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="9ef32-105">**Applies to:**</span></span>
+<span data-ttu-id="09675-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="09675-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="9ef32-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="9ef32-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
-- <span data-ttu-id="9ef32-107">Microsoft Defender 防毒軟體</span><span class="sxs-lookup"><span data-stu-id="9ef32-107">Microsoft Defender Antivirus</span></span>
+- [<span data-ttu-id="09675-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="09675-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- <span data-ttu-id="09675-107">Microsoft Defender 防毒軟體</span><span class="sxs-lookup"><span data-stu-id="09675-107">Microsoft Defender Antivirus</span></span>
 
-<span data-ttu-id="9ef32-108">將 Microsoft Defender 防毒軟體保持在最新狀態，是確保您的裝置具備防範新惡意程式碼和攻擊技巧所需的最新技術和功能。</span><span class="sxs-lookup"><span data-stu-id="9ef32-108">Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.</span></span> <span data-ttu-id="9ef32-109">請務必更新防防毒保護，即使 Microsoft Defender 防毒軟體是以[被動模式](microsoft-defender-antivirus-compatibility.md)執行。</span><span class="sxs-lookup"><span data-stu-id="9ef32-109">Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md).</span></span> <span data-ttu-id="9ef32-110">有兩種與 Microsoft Defender 防毒軟體保持最新狀態相關的更新：</span><span class="sxs-lookup"><span data-stu-id="9ef32-110">There are two types of updates related to keeping Microsoft Defender Antivirus up to date:</span></span>
+<span data-ttu-id="09675-108">將 Microsoft Defender 防毒軟體保持在最新狀態，是確保您的裝置具備防範新惡意程式碼和攻擊技巧所需的最新技術和功能。</span><span class="sxs-lookup"><span data-stu-id="09675-108">Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.</span></span> <span data-ttu-id="09675-109">請務必更新防防毒保護，即使 Microsoft Defender 防毒軟體是以[被動模式](microsoft-defender-antivirus-compatibility.md)執行。</span><span class="sxs-lookup"><span data-stu-id="09675-109">Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md).</span></span> <span data-ttu-id="09675-110">有兩種與 Microsoft Defender 防毒軟體保持最新狀態相關的更新：</span><span class="sxs-lookup"><span data-stu-id="09675-110">There are two types of updates related to keeping Microsoft Defender Antivirus up to date:</span></span>
 
-- <span data-ttu-id="9ef32-111">安全性智慧更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-111">Security intelligence updates</span></span>
-- <span data-ttu-id="9ef32-112">產品更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-112">Product updates</span></span>
+- <span data-ttu-id="09675-111">安全性智慧更新</span><span class="sxs-lookup"><span data-stu-id="09675-111">Security intelligence updates</span></span>
+- <span data-ttu-id="09675-112">產品更新</span><span class="sxs-lookup"><span data-stu-id="09675-112">Product updates</span></span>
 
 > [!TIP]
-> <span data-ttu-id="9ef32-113">若要查看最新的引擎、平臺及簽字日期，請造訪[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span><span class="sxs-lookup"><span data-stu-id="9ef32-113">To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span></span>
+> <span data-ttu-id="09675-113">若要查看最新的引擎、平臺及簽字日期，請造訪[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span><span class="sxs-lookup"><span data-stu-id="09675-113">To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span></span>
 
-## <a name="security-intelligence-updates"></a><span data-ttu-id="9ef32-114">安全性智慧更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-114">Security intelligence updates</span></span>
+## <a name="security-intelligence-updates"></a><span data-ttu-id="09675-114">安全性智慧更新</span><span class="sxs-lookup"><span data-stu-id="09675-114">Security intelligence updates</span></span>
 
-<span data-ttu-id="9ef32-115">Microsoft Defender 防毒軟體使用[雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md) (也稱為 Microsoft Advanced protection 服務或對應) ，定期下載安全性情報更新，以提供保護。</span><span class="sxs-lookup"><span data-stu-id="9ef32-115">Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="9ef32-116">更新會在下列 KB 編號之下發行：</span><span class="sxs-lookup"><span data-stu-id="9ef32-116">Updates are released under the below KB numbers:</span></span>  
-> - <span data-ttu-id="9ef32-117">Microsoft Defender 防毒軟體： KB2267602</span><span class="sxs-lookup"><span data-stu-id="9ef32-117">Microsoft Defender Antivirus: KB2267602</span></span>  
-> - <span data-ttu-id="9ef32-118">System Center Endpoint Protection： KB2461484</span><span class="sxs-lookup"><span data-stu-id="9ef32-118">System Center Endpoint Protection: KB2461484</span></span>
-
-<span data-ttu-id="9ef32-119">雲端傳送保護功能永遠都是開啟的，且需要網際網路連線才能運作。</span><span class="sxs-lookup"><span data-stu-id="9ef32-119">Cloud-delivered protection is always on and requires an active connection to the Internet to function.</span></span> <span data-ttu-id="9ef32-120">安全智慧更新會在排程的節奏上進行， (可透過原則) 設定。</span><span class="sxs-lookup"><span data-stu-id="9ef32-120">Security intelligence updates occur on a scheduled cadence (configurable via policy).</span></span> <span data-ttu-id="9ef32-121">如需詳細資訊，請參閱[在 Microsoft Defender 防毒軟體中使用 Microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="9ef32-121">For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).</span></span> 
-
-<span data-ttu-id="9ef32-122">如需最近的安全性情報更新清單，請參閱[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。</span><span class="sxs-lookup"><span data-stu-id="9ef32-122">For a list of recent security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span></span>
-
-<span data-ttu-id="9ef32-123">引擎更新包含在安全性智慧更新中，並以每月的節奏發行。</span><span class="sxs-lookup"><span data-stu-id="9ef32-123">Engine updates are included with security intelligence updates and are released on a monthly cadence.</span></span>
-
-## <a name="product-updates"></a><span data-ttu-id="9ef32-124">產品更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-124">Product updates</span></span>
-
-<span data-ttu-id="9ef32-125">Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (稱為 *平臺更新*) ，而且會在 Windows 10 版本的情況下收到重要的功能更新。</span><span class="sxs-lookup"><span data-stu-id="9ef32-125">Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as *platform updates*), and will receive major feature updates alongside Windows 10 releases.</span></span>
-
-<span data-ttu-id="9ef32-126">您可以透過下列其中一種方法來管理更新的發佈：</span><span class="sxs-lookup"><span data-stu-id="9ef32-126">You can manage the distribution of updates through one of the following methods:</span></span> 
-
-- [<span data-ttu-id="9ef32-127">Windows伺服器更新服務 (WSUS) </span><span class="sxs-lookup"><span data-stu-id="9ef32-127">Windows Server Update Service (WSUS)</span></span>](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
-- [<span data-ttu-id="9ef32-128">Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="9ef32-128">Microsoft Endpoint Configuration Manager</span></span>](/configmgr/sum/understand/software-updates-introduction)
-- <span data-ttu-id="9ef32-129">您用來部署 Microsoft 和 Windows 網路中端點更新的常用方法。</span><span class="sxs-lookup"><span data-stu-id="9ef32-129">The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.</span></span>
-
-<span data-ttu-id="9ef32-130">如需詳細資訊，請參閱[管理來源以取得 Microsoft Defender 防毒軟體保護更新](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。</span><span class="sxs-lookup"><span data-stu-id="9ef32-130">For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).</span></span>
+<span data-ttu-id="09675-115">Microsoft Defender 防毒軟體使用[雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md) (也稱為 Microsoft Advanced protection 服務或對應) ，定期下載安全性情報更新，以提供保護。</span><span class="sxs-lookup"><span data-stu-id="09675-115">Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9ef32-131">每月更新都會以階段發行，導致您的 [視窗伺服器更新服務](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)中顯示多個套件。</span><span class="sxs-lookup"><span data-stu-id="9ef32-131">Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).</span></span>
+> <span data-ttu-id="09675-116">更新會在下列 KB 編號之下發行：</span><span class="sxs-lookup"><span data-stu-id="09675-116">Updates are released under the below KB numbers:</span></span>  
+> - <span data-ttu-id="09675-117">Microsoft Defender 防毒軟體： KB2267602</span><span class="sxs-lookup"><span data-stu-id="09675-117">Microsoft Defender Antivirus: KB2267602</span></span>  
+> - <span data-ttu-id="09675-118">System Center Endpoint Protection： KB2461484</span><span class="sxs-lookup"><span data-stu-id="09675-118">System Center Endpoint Protection: KB2461484</span></span>
 
-## <a name="monthly-platform-and-engine-versions"></a><span data-ttu-id="9ef32-132">每月平臺及引擎版本</span><span class="sxs-lookup"><span data-stu-id="9ef32-132">Monthly platform and engine versions</span></span>
+<span data-ttu-id="09675-119">雲端傳送保護功能永遠都是開啟的，且需要網際網路連線才能運作。</span><span class="sxs-lookup"><span data-stu-id="09675-119">Cloud-delivered protection is always on and requires an active connection to the Internet to function.</span></span> <span data-ttu-id="09675-120">安全智慧更新會在排程的節奏上進行， (可透過原則) 設定。</span><span class="sxs-lookup"><span data-stu-id="09675-120">Security intelligence updates occur on a scheduled cadence (configurable via policy).</span></span> <span data-ttu-id="09675-121">如需詳細資訊，請參閱[在 Microsoft Defender 防毒軟體中使用 Microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="09675-121">For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).</span></span> 
 
-<span data-ttu-id="9ef32-133">如需如何更新或安裝平臺更新的資訊，請參閱[Windows Defender 的反惡意程式碼平臺更新](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)。</span><span class="sxs-lookup"><span data-stu-id="9ef32-133">For information how to update or install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).</span></span>
+<span data-ttu-id="09675-122">如需最近的安全性情報更新清單，請參閱[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。</span><span class="sxs-lookup"><span data-stu-id="09675-122">For a list of recent security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).</span></span>
 
-<span data-ttu-id="9ef32-134">我們所有的更新均包含</span><span class="sxs-lookup"><span data-stu-id="9ef32-134">All our updates contain</span></span> 
-- <span data-ttu-id="9ef32-135">效能改進;</span><span class="sxs-lookup"><span data-stu-id="9ef32-135">performance improvements;</span></span>
-- <span data-ttu-id="9ef32-136">可維護性改進;和</span><span class="sxs-lookup"><span data-stu-id="9ef32-136">serviceability improvements; and</span></span> 
-- <span data-ttu-id="9ef32-137">整合功能 (Cloud [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 。</span><span class="sxs-lookup"><span data-stu-id="9ef32-137">integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).</span></span>
-<br/><br/>
+<span data-ttu-id="09675-123">引擎更新包含在安全性智慧更新中，並以每月的節奏發行。</span><span class="sxs-lookup"><span data-stu-id="09675-123">Engine updates are included with security intelligence updates and are released on a monthly cadence.</span></span>
+
+## <a name="product-updates"></a><span data-ttu-id="09675-124">產品更新</span><span class="sxs-lookup"><span data-stu-id="09675-124">Product updates</span></span>
+
+<span data-ttu-id="09675-125">Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)稱為 *平臺更新*。</span><span class="sxs-lookup"><span data-stu-id="09675-125">Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) known as *platform updates*.</span></span>
+
+<span data-ttu-id="09675-126">您可以透過下列其中一種方法來管理更新的發佈：</span><span class="sxs-lookup"><span data-stu-id="09675-126">You can manage the distribution of updates through one of the following methods:</span></span> 
+
+- [<span data-ttu-id="09675-127">Windows伺服器更新服務 (WSUS) </span><span class="sxs-lookup"><span data-stu-id="09675-127">Windows Server Update Service (WSUS)</span></span>](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [<span data-ttu-id="09675-128">Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="09675-128">Microsoft Endpoint Configuration Manager</span></span>](/configmgr/sum/understand/software-updates-introduction)
+- <span data-ttu-id="09675-129">您用來部署 Microsoft 和 Windows 網路中端點更新的常用方法。</span><span class="sxs-lookup"><span data-stu-id="09675-129">The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.</span></span>
+
+<span data-ttu-id="09675-130">如需詳細資訊，請參閱[管理來源以取得 Microsoft Defender 防毒軟體保護更新](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。</span><span class="sxs-lookup"><span data-stu-id="09675-130">For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).</span></span>
+
+> [!NOTE]
+> - <span data-ttu-id="09675-131">每月更新都會以階段發行，導致您的 [視窗伺服器更新服務](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)中顯示多個套件。</span><span class="sxs-lookup"><span data-stu-id="09675-131">Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).</span></span>
+> - <span data-ttu-id="09675-132">本文列出廣泛發行通道中包含的變更。</span><span class="sxs-lookup"><span data-stu-id="09675-132">This article lists changes that are included in the broad release channel.</span></span> <span data-ttu-id="09675-133">[請參閱以下的最新廣義通道發行](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)。</span><span class="sxs-lookup"><span data-stu-id="09675-133">[See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).</span></span> 
+> - <span data-ttu-id="09675-134">若要深入瞭解逐步展示過程，以及若要查看下一個版本的詳細資訊，請參閱 [Manage the 逐步展入處理 Microsoft Defender 更新](manage-gradual-rollout.md)。</span><span class="sxs-lookup"><span data-stu-id="09675-134">To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).</span></span>
+> - <span data-ttu-id="09675-135">若要深入瞭解安全性情報更新，請參閱[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/wdsi/defenderupdates)。</span><span class="sxs-lookup"><span data-stu-id="09675-135">To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates).</span></span> 
+
+## <a name="monthly-platform-and-engine-versions"></a><span data-ttu-id="09675-136">每月平臺及引擎版本</span><span class="sxs-lookup"><span data-stu-id="09675-136">Monthly platform and engine versions</span></span>
+
+<span data-ttu-id="09675-137">如需如何更新或安裝平臺更新的資訊，請參閱[Windows Defender 的反惡意程式碼平臺更新](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)。</span><span class="sxs-lookup"><span data-stu-id="09675-137">For information how to update or install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).</span></span>
+
+<span data-ttu-id="09675-138">我們所有的更新均包含</span><span class="sxs-lookup"><span data-stu-id="09675-138">All our updates contain</span></span> 
+- <span data-ttu-id="09675-139">效能改進;</span><span class="sxs-lookup"><span data-stu-id="09675-139">performance improvements;</span></span>
+- <span data-ttu-id="09675-140">可維護性改進;和</span><span class="sxs-lookup"><span data-stu-id="09675-140">serviceability improvements; and</span></span> 
+- <span data-ttu-id="09675-141">整合功能 (Cloud [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 。</span><span class="sxs-lookup"><span data-stu-id="09675-141">integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).</span></span>
+<br/>
 <details>
-<summary> <span data-ttu-id="9ef32-138">2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </span><span class="sxs-lookup"><span data-stu-id="9ef32-138">May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</span></span></summary>
+<summary> <span data-ttu-id="09675-142">六月-2021 (平臺： 4.18.2106.5 |Engine： 1.1.18300.4) </span><span class="sxs-lookup"><span data-stu-id="09675-142">June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</span></span></summary>
 
-<span data-ttu-id="9ef32-139">&ensp;安全性智慧更新版本： **1.341.8.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-139">&ensp;Security intelligence update version: **1.341.8.0**</span></span>  
-<span data-ttu-id="9ef32-140">&ensp;發行日期： **2021 年6月3日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-140">&ensp;Released: **June 3, 2021**</span></span>  
-<span data-ttu-id="9ef32-141">&ensp;Platform： **4.18.2105.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-141">&ensp;Platform: **4.18.2105.4**</span></span>  
-<span data-ttu-id="9ef32-142">&ensp;Engine： **1.1.18200.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-142">&ensp;Engine: **1.1.18200.4**</span></span>  
-<span data-ttu-id="9ef32-143">&ensp;支援階段： **安全性和重要更新**</span><span class="sxs-lookup"><span data-stu-id="9ef32-143">&ensp;Support phase: **Security and Critical Updates**</span></span>
+<span data-ttu-id="09675-143">&ensp;安全性智慧更新版本： **1.343.17.0**</span><span class="sxs-lookup"><span data-stu-id="09675-143">&ensp;Security intelligence update version: **1.343.17.0**</span></span>  
+<span data-ttu-id="09675-144">&ensp;發行日期： **2021 年6月28日**</span><span class="sxs-lookup"><span data-stu-id="09675-144">&ensp;Released: **June 28, 2021**</span></span>  
+<span data-ttu-id="09675-145">&ensp;Platform： **4.18.2106.5**</span><span class="sxs-lookup"><span data-stu-id="09675-145">&ensp;Platform: **4.18.2106.5**</span></span>  
+<span data-ttu-id="09675-146">&ensp;Engine： **1.1.18300.4**</span><span class="sxs-lookup"><span data-stu-id="09675-146">&ensp;Engine: **1.1.18300.4**</span></span>  
+<span data-ttu-id="09675-147">&ensp;支援階段： **安全性和重要更新**</span><span class="sxs-lookup"><span data-stu-id="09675-147">&ensp;Support phase: **Security and Critical Updates**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-144">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-144">What's new</span></span>
-- <span data-ttu-id="9ef32-145">[行為監控](client-behavioral-blocking.md)的增強功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-145">Improvements to [behavior monitoring](client-behavioral-blocking.md)</span></span> 
-- <span data-ttu-id="9ef32-146">固定 [網路保護](network-protection.md) 通知篩選功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-146">Fixed [network protection](network-protection.md) notification filtering feature</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-148">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-148">What's new</span></span>
+- <span data-ttu-id="09675-149">用來管理 Microsoft Defender 更新逐步展示過程的新控制項。</span><span class="sxs-lookup"><span data-stu-id="09675-149">New controls for managing the gradual rollout process of Microsoft Defender updates.</span></span> <span data-ttu-id="09675-150">請參閱 [管理 Microsoft Defender 更新的逐步展處理常式](manage-gradual-rollout.md)。</span><span class="sxs-lookup"><span data-stu-id="09675-150">See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).</span></span>
+- <span data-ttu-id="09675-151">改進行為監控引擎</span><span class="sxs-lookup"><span data-stu-id="09675-151">Improvement to the behavior monitoring engine</span></span>
+- <span data-ttu-id="09675-152">反惡意程式碼定義的展示功能增強功能</span><span class="sxs-lookup"><span data-stu-id="09675-152">Improvements to the rollout of antimalware definitions</span></span>
+- <span data-ttu-id="09675-153">延伸 Edge 網路事件檢查</span><span class="sxs-lookup"><span data-stu-id="09675-153">Extended Edge network event inspections</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-147">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-147">Known Issues</span></span>
-<span data-ttu-id="9ef32-148">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-148">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-154">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-154">Known Issues</span></span>
+<span data-ttu-id="09675-155">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-155">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="9ef32-149">四月-2021 (平臺： 4.18.2104.14 |Engine： 1.1.18100.5) </span><span class="sxs-lookup"><span data-stu-id="9ef32-149">April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</span></span></summary>
+<summary> <span data-ttu-id="09675-156">2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </span><span class="sxs-lookup"><span data-stu-id="09675-156">May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</span></span></summary>
 
-<span data-ttu-id="9ef32-150">&ensp;安全性智慧更新版本： **1.337.2.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-150">&ensp;Security intelligence update version: **1.337.2.0**</span></span>  
-<span data-ttu-id="9ef32-151">&ensp;發行日期： **2021 年4月26日**  (Engine：發行1.1.18100.6 可能是5、2021) &ensp; Platform： **4.18.2104.14**</span><span class="sxs-lookup"><span data-stu-id="9ef32-151">&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021) &ensp;Platform: **4.18.2104.14**</span></span>  
-<span data-ttu-id="9ef32-152">&ensp;Engine： **1.1.18100.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-152">&ensp;Engine: **1.1.18100.5**</span></span>  
-<span data-ttu-id="9ef32-153">&ensp;支援階段： **安全性和重要更新**</span><span class="sxs-lookup"><span data-stu-id="9ef32-153">&ensp;Support phase: **Security and Critical Updates**</span></span>
+<span data-ttu-id="09675-157">&ensp;安全性智慧更新版本： **1.341.8.0**</span><span class="sxs-lookup"><span data-stu-id="09675-157">&ensp;Security intelligence update version: **1.341.8.0**</span></span>  
+<span data-ttu-id="09675-158">&ensp;發行日期： **2021 年6月3日**</span><span class="sxs-lookup"><span data-stu-id="09675-158">&ensp;Released: **June 3, 2021**</span></span>  
+<span data-ttu-id="09675-159">&ensp;Platform： **4.18.2105.4**</span><span class="sxs-lookup"><span data-stu-id="09675-159">&ensp;Platform: **4.18.2105.4**</span></span>  
+<span data-ttu-id="09675-160">&ensp;Engine： **1.1.18200.4**</span><span class="sxs-lookup"><span data-stu-id="09675-160">&ensp;Engine: **1.1.18200.4**</span></span>  
+<span data-ttu-id="09675-161">&ensp;支援階段： **安全性和重要更新**</span><span class="sxs-lookup"><span data-stu-id="09675-161">&ensp;Support phase: **Security and Critical Updates**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-154">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-154">What's new</span></span>
-- <span data-ttu-id="9ef32-155">其他行為監控邏輯</span><span class="sxs-lookup"><span data-stu-id="9ef32-155">Additional behavior monitoring logic</span></span>
-- <span data-ttu-id="9ef32-156">改進的核心模式 keylogger 偵測</span><span class="sxs-lookup"><span data-stu-id="9ef32-156">Improved kernel mode keylogger detection</span></span>
-- <span data-ttu-id="9ef32-157">新增控制項以管理[Microsoft Defender 更新](manage-gradual-rollout.md)的逐步式展示過程</span><span class="sxs-lookup"><span data-stu-id="9ef32-157">Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-162">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-162">What's new</span></span>
+- <span data-ttu-id="09675-163">[行為監控](client-behavioral-blocking.md)的增強功能</span><span class="sxs-lookup"><span data-stu-id="09675-163">Improvements to [behavior monitoring](client-behavioral-blocking.md)</span></span> 
+- <span data-ttu-id="09675-164">固定 [網路保護](network-protection.md) 通知篩選功能</span><span class="sxs-lookup"><span data-stu-id="09675-164">Fixed [network protection](network-protection.md) notification filtering feature</span></span>
 
-
-### <a name="known-issues"></a><span data-ttu-id="9ef32-158">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-158">Known Issues</span></span>
-<span data-ttu-id="9ef32-159">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-159">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-165">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-165">Known Issues</span></span>
+<span data-ttu-id="09675-166">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-166">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="9ef32-160">三月份-2021 (平臺： 4.18.2103.7 |Engine： 1.1.18000.5) </span><span class="sxs-lookup"><span data-stu-id="9ef32-160">March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</span></span></summary>
+<summary> <span data-ttu-id="09675-167">四月-2021 (平臺： 4.18.2104.14 |Engine： 1.1.18100.5) </span><span class="sxs-lookup"><span data-stu-id="09675-167">April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</span></span></summary>
 
-<span data-ttu-id="9ef32-161">&ensp;安全性智慧更新版本： **1.335.36.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-161">&ensp;Security intelligence update version: **1.335.36.0**</span></span>  
-<span data-ttu-id="9ef32-162">&ensp;發行日期： **2021 年4月2日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-162">&ensp;Released: **April 2, 2021**</span></span>  
-<span data-ttu-id="9ef32-163">&ensp;Platform： **4.18.2103.7**</span><span class="sxs-lookup"><span data-stu-id="9ef32-163">&ensp;Platform: **4.18.2103.7**</span></span>  
-<span data-ttu-id="9ef32-164">&ensp;Engine： **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-164">&ensp;Engine: **1.1.18000.5**</span></span>  
-<span data-ttu-id="9ef32-165">&ensp;支援階段： **安全性和重要更新**</span><span class="sxs-lookup"><span data-stu-id="9ef32-165">&ensp;Support phase: **Security and Critical Updates**</span></span>
+<span data-ttu-id="09675-168">&ensp;安全性智慧更新版本： **1.337.2.0**</span><span class="sxs-lookup"><span data-stu-id="09675-168">&ensp;Security intelligence update version: **1.337.2.0**</span></span>  
+<span data-ttu-id="09675-169">&ensp;發行日期： **2021 年4月26日**  (Engine：發行1.1.18100.6 可能是5、2021) &ensp; Platform： **4.18.2104.14**</span><span class="sxs-lookup"><span data-stu-id="09675-169">&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021) &ensp;Platform: **4.18.2104.14**</span></span>  
+<span data-ttu-id="09675-170">&ensp;Engine： **1.1.18100.5**</span><span class="sxs-lookup"><span data-stu-id="09675-170">&ensp;Engine: **1.1.18100.5**</span></span>  
+<span data-ttu-id="09675-171">&ensp;支援階段： **安全性和重要更新**</span><span class="sxs-lookup"><span data-stu-id="09675-171">&ensp;Support phase: **Security and Critical Updates**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-166">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-166">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-172">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-172">What's new</span></span>
+- <span data-ttu-id="09675-173">其他行為監控邏輯</span><span class="sxs-lookup"><span data-stu-id="09675-173">Additional behavior monitoring logic</span></span>
+- <span data-ttu-id="09675-174">改進的核心模式金鑰記錄器偵測</span><span class="sxs-lookup"><span data-stu-id="09675-174">Improved kernel mode key logger detection</span></span>
+- <span data-ttu-id="09675-175">新增控制項以管理[Microsoft Defender 更新](manage-gradual-rollout.md)的逐步式展示過程</span><span class="sxs-lookup"><span data-stu-id="09675-175">Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)</span></span>
 
-- <span data-ttu-id="9ef32-167">改進行為監控引擎</span><span class="sxs-lookup"><span data-stu-id="9ef32-167">Improvement to the Behavior Monitoring engine</span></span> 
-- <span data-ttu-id="9ef32-168">擴充網路暴力攻擊緩解</span><span class="sxs-lookup"><span data-stu-id="9ef32-168">Expanded network brute-force-attack mitigations</span></span> 
-- <span data-ttu-id="9ef32-169">啟用 [防篡改保護](prevent-changes-to-security-settings-with-tamper-protection.md) 時，其他失敗的篡改嘗試事件產生</span><span class="sxs-lookup"><span data-stu-id="9ef32-169">Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-170">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-170">Known Issues</span></span>
-<span data-ttu-id="9ef32-171">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-171">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-176">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-176">Known Issues</span></span>
+<span data-ttu-id="09675-177">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-177">No known issues</span></span>  
 <br/>
 </details>
 
-### <a name="previous-version-updates-technical-upgrade-support-only"></a><span data-ttu-id="9ef32-172">舊版本更新：僅限技術升級支援</span><span class="sxs-lookup"><span data-stu-id="9ef32-172">Previous version updates: Technical upgrade support only</span></span>
+### <a name="previous-version-updates-technical-upgrade-support-only"></a><span data-ttu-id="09675-178">舊版本更新：僅限技術升級支援</span><span class="sxs-lookup"><span data-stu-id="09675-178">Previous version updates: Technical upgrade support only</span></span>
 
-<span data-ttu-id="9ef32-173">發行新的套件版本之後，支援舊版的兩個版本只會縮小為技術支援。</span><span class="sxs-lookup"><span data-stu-id="9ef32-173">After a new package version is released, support for the previous two versions is reduced to technical support only.</span></span> <span data-ttu-id="9ef32-174">這一節所列出的版本舊，僅提供支援技術升級。</span><span class="sxs-lookup"><span data-stu-id="9ef32-174">Versions older than that are listed in this section, and are provided for technical upgrade support only.</span></span> 
-<br/><br/>
+<span data-ttu-id="09675-179">發行新的套件版本之後，支援舊版的兩個版本只會縮小為技術支援。</span><span class="sxs-lookup"><span data-stu-id="09675-179">After a new package version is released, support for the previous two versions is reduced to technical support only.</span></span> <span data-ttu-id="09675-180">這一節所列出的版本舊，僅提供支援技術升級。</span><span class="sxs-lookup"><span data-stu-id="09675-180">Versions older than that are listed in this section, and are provided for technical upgrade support only.</span></span> 
 <details>
-<summary> <span data-ttu-id="9ef32-175">二月份-2021 (平臺： 4.18.2102.3 |Engine： 1.1.17900.7) </span><span class="sxs-lookup"><span data-stu-id="9ef32-175">February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</span></span></summary>
+<summary> <span data-ttu-id="09675-181">三月份-2021 (平臺： 4.18.2103.7 |Engine： 1.1.18000.5) </span><span class="sxs-lookup"><span data-stu-id="09675-181">March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</span></span></summary>
 
-<span data-ttu-id="9ef32-176">&ensp;安全性智慧更新版本： **1.333.7.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-176">&ensp;Security intelligence update version: **1.333.7.0**</span></span>  
-<span data-ttu-id="9ef32-177">&ensp;發行日期： **2021 年3月9日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-177">&ensp;Released: **March 9, 2021**</span></span>  
-<span data-ttu-id="9ef32-178">&ensp;Platform： **4.18.2102.3**</span><span class="sxs-lookup"><span data-stu-id="9ef32-178">&ensp;Platform: **4.18.2102.3**</span></span>  
-<span data-ttu-id="9ef32-179">&ensp;Engine： **1.1.17900.7**</span><span class="sxs-lookup"><span data-stu-id="9ef32-179">&ensp;Engine: **1.1.17900.7**</span></span>  
-<span data-ttu-id="9ef32-180">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-180">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-182">&ensp;安全性智慧更新版本： **1.335.36.0**</span><span class="sxs-lookup"><span data-stu-id="09675-182">&ensp;Security intelligence update version: **1.335.36.0**</span></span>  
+<span data-ttu-id="09675-183">&ensp;發行日期： **2021 年4月2日**</span><span class="sxs-lookup"><span data-stu-id="09675-183">&ensp;Released: **April 2, 2021**</span></span>  
+<span data-ttu-id="09675-184">&ensp;Platform： **4.18.2103.7**</span><span class="sxs-lookup"><span data-stu-id="09675-184">&ensp;Platform: **4.18.2103.7**</span></span>  
+<span data-ttu-id="09675-185">&ensp;Engine： **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="09675-185">&ensp;Engine: **1.1.18000.5**</span></span>  
+<span data-ttu-id="09675-186">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-186">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-181">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-181">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-187">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-187">What's new</span></span>
 
-- <span data-ttu-id="9ef32-182">透過[防篡改保護](prevent-changes-to-security-settings-with-tamper-protection.md)改進服務復原</span><span class="sxs-lookup"><span data-stu-id="9ef32-182">Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)</span></span>
-- <span data-ttu-id="9ef32-183">擴充不可篡改的保護範圍</span><span class="sxs-lookup"><span data-stu-id="9ef32-183">Extend tamper protection scope</span></span>
+- <span data-ttu-id="09675-188">改進行為監控引擎</span><span class="sxs-lookup"><span data-stu-id="09675-188">Improvement to the Behavior Monitoring engine</span></span> 
+- <span data-ttu-id="09675-189">擴充網路暴力攻擊緩解</span><span class="sxs-lookup"><span data-stu-id="09675-189">Expanded network brute-force-attack mitigations</span></span> 
+- <span data-ttu-id="09675-190">啟用 [防篡改保護](prevent-changes-to-security-settings-with-tamper-protection.md) 時，其他失敗的篡改嘗試事件產生</span><span class="sxs-lookup"><span data-stu-id="09675-190">Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-184">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-184">Known Issues</span></span>
-<span data-ttu-id="9ef32-185">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-185">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-191">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-191">Known Issues</span></span>
+<span data-ttu-id="09675-192">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-192">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="9ef32-186">2021年1月 (平臺： 4.18.2101.9 |Engine： 1.1.17800.5) </span><span class="sxs-lookup"><span data-stu-id="9ef32-186">January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</span></span></summary>
+<summary> <span data-ttu-id="09675-193">二月份-2021 (平臺： 4.18.2102.3 |Engine： 1.1.17900.7) </span><span class="sxs-lookup"><span data-stu-id="09675-193">February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</span></span></summary>
 
-<span data-ttu-id="9ef32-187">&ensp;安全性智慧更新版本： **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-187">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
-<span data-ttu-id="9ef32-188">&ensp;發行日期： **2021 年2月2日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-188">&ensp;Released: **February 2, 2021**</span></span>  
-<span data-ttu-id="9ef32-189">&ensp;Platform： **4.18.2101.9**</span><span class="sxs-lookup"><span data-stu-id="9ef32-189">&ensp;Platform: **4.18.2101.9**</span></span>  
-<span data-ttu-id="9ef32-190">&ensp;Engine： **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-190">&ensp;Engine: **1.1.17800.5**</span></span>  
-<span data-ttu-id="9ef32-191">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-191">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-194">&ensp;安全性智慧更新版本： **1.333.7.0**</span><span class="sxs-lookup"><span data-stu-id="09675-194">&ensp;Security intelligence update version: **1.333.7.0**</span></span>  
+<span data-ttu-id="09675-195">&ensp;發行日期： **2021 年3月9日**</span><span class="sxs-lookup"><span data-stu-id="09675-195">&ensp;Released: **March 9, 2021**</span></span>  
+<span data-ttu-id="09675-196">&ensp;Platform： **4.18.2102.3**</span><span class="sxs-lookup"><span data-stu-id="09675-196">&ensp;Platform: **4.18.2102.3**</span></span>  
+<span data-ttu-id="09675-197">&ensp;Engine： **1.1.17900.7**</span><span class="sxs-lookup"><span data-stu-id="09675-197">&ensp;Engine: **1.1.17900.7**</span></span>  
+<span data-ttu-id="09675-198">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-198">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-192">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-192">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-199">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-199">What's new</span></span>
 
-- <span data-ttu-id="9ef32-193">外殼代碼利用偵測增強功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-193">Shellcode exploit detection improvements</span></span>
-- <span data-ttu-id="9ef32-194">增強認證竊取嘗試的知名度</span><span class="sxs-lookup"><span data-stu-id="9ef32-194">Increased visibility for credential stealing attempts</span></span>
-- <span data-ttu-id="9ef32-195">Microsoft Defender 防毒軟體服務中的 antitampering 功能的增強功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-195">Improvements in antitampering features in Microsoft Defender Antivirus services</span></span>
-- <span data-ttu-id="9ef32-196">改進支援 ARM x64 模擬</span><span class="sxs-lookup"><span data-stu-id="9ef32-196">Improved support for ARM x64 emulation</span></span>
-- <span data-ttu-id="9ef32-197">修正：在即時保護執行初始偵測後，威脅史中仍會保留 EDR 封鎖通知</span><span class="sxs-lookup"><span data-stu-id="9ef32-197">Fix: EDR Block notification remains in threat history after real-time protection performed initial detection</span></span>
+- <span data-ttu-id="09675-200">透過[防篡改保護](prevent-changes-to-security-settings-with-tamper-protection.md)改進服務復原</span><span class="sxs-lookup"><span data-stu-id="09675-200">Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)</span></span>
+- <span data-ttu-id="09675-201">擴充不可篡改的保護範圍</span><span class="sxs-lookup"><span data-stu-id="09675-201">Extend tamper protection scope</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-198">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-198">Known Issues</span></span>
-<span data-ttu-id="9ef32-199">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-199">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-202">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-202">Known Issues</span></span>
+<span data-ttu-id="09675-203">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-203">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="9ef32-200">11月-2020 (平臺： 4.18.2011.6 |Engine： 1.1.17700.4) </span><span class="sxs-lookup"><span data-stu-id="9ef32-200">November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</span></span></summary>
+<summary> <span data-ttu-id="09675-204">2021年1月 (平臺： 4.18.2101.9 |Engine： 1.1.17800.5) </span><span class="sxs-lookup"><span data-stu-id="09675-204">January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</span></span></summary>
 
-<span data-ttu-id="9ef32-201">&ensp;安全性智慧更新版本： **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-201">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
-<span data-ttu-id="9ef32-202">&ensp;發行日期： **2020 年12月**</span><span class="sxs-lookup"><span data-stu-id="9ef32-202">&ensp;Released: **December 03, 2020**</span></span>  
-<span data-ttu-id="9ef32-203">&ensp;Platform： **4.18.2011.6**</span><span class="sxs-lookup"><span data-stu-id="9ef32-203">&ensp;Platform: **4.18.2011.6**</span></span>  
-<span data-ttu-id="9ef32-204">&ensp;Engine： **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-204">&ensp;Engine: **1.1.17700.4**</span></span>  
-<span data-ttu-id="9ef32-205">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-205">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-205">&ensp;安全性智慧更新版本： **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="09675-205">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
+<span data-ttu-id="09675-206">&ensp;發行日期： **2021 年2月2日**</span><span class="sxs-lookup"><span data-stu-id="09675-206">&ensp;Released: **February 2, 2021**</span></span>  
+<span data-ttu-id="09675-207">&ensp;Platform： **4.18.2101.9**</span><span class="sxs-lookup"><span data-stu-id="09675-207">&ensp;Platform: **4.18.2101.9**</span></span>  
+<span data-ttu-id="09675-208">&ensp;Engine： **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="09675-208">&ensp;Engine: **1.1.17800.5**</span></span>  
+<span data-ttu-id="09675-209">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-209">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-206">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-206">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-210">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-210">What's new</span></span>
 
-- <span data-ttu-id="9ef32-207">改進的 [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 狀態支援記錄</span><span class="sxs-lookup"><span data-stu-id="9ef32-207">Improved [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) status support logging</span></span>
+- <span data-ttu-id="09675-211">外殼代碼利用偵測增強功能</span><span class="sxs-lookup"><span data-stu-id="09675-211">Shellcode exploit detection improvements</span></span>
+- <span data-ttu-id="09675-212">增強認證竊取嘗試的知名度</span><span class="sxs-lookup"><span data-stu-id="09675-212">Increased visibility for credential stealing attempts</span></span>
+- <span data-ttu-id="09675-213">Microsoft Defender 防毒軟體服務中的 antitampering 功能的增強功能</span><span class="sxs-lookup"><span data-stu-id="09675-213">Improvements in antitampering features in Microsoft Defender Antivirus services</span></span>
+- <span data-ttu-id="09675-214">改進支援 ARM x64 模擬</span><span class="sxs-lookup"><span data-stu-id="09675-214">Improved support for ARM x64 emulation</span></span>
+- <span data-ttu-id="09675-215">修正：在即時保護執行初始偵測後，威脅史中仍會保留 EDR 封鎖通知</span><span class="sxs-lookup"><span data-stu-id="09675-215">Fix: EDR Block notification remains in threat history after real-time protection performed initial detection</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-208">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-208">Known Issues</span></span>
-<span data-ttu-id="9ef32-209">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-209">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-216">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-216">Known Issues</span></span>
+<span data-ttu-id="09675-217">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-217">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="9ef32-210">十月-2020 (平臺： 4.18.2010.7 |Engine： 1.1.17600.5) </span><span class="sxs-lookup"><span data-stu-id="9ef32-210">October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</span></span></summary>
+<summary> <span data-ttu-id="09675-218">11月-2020 (平臺： 4.18.2011.6 |Engine： 1.1.17700.4) </span><span class="sxs-lookup"><span data-stu-id="09675-218">November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</span></span></summary>
 
-<span data-ttu-id="9ef32-211">&ensp;安全性智慧更新版本： **1.327.7.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-211">&ensp;Security intelligence update version: **1.327.7.0**</span></span>  
-<span data-ttu-id="9ef32-212">&ensp;發行日期： **2020 年10月29日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-212">&ensp;Released: **October 29, 2020**</span></span>  
-<span data-ttu-id="9ef32-213">&ensp;Platform： **4.18.2010.7**</span><span class="sxs-lookup"><span data-stu-id="9ef32-213">&ensp;Platform: **4.18.2010.7**</span></span>  
-<span data-ttu-id="9ef32-214">&ensp;Engine： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-214">&ensp;Engine: **1.1.17600.5**</span></span>  
-<span data-ttu-id="9ef32-215">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-215">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-219">&ensp;安全性智慧更新版本： **1.327.1854.0**</span><span class="sxs-lookup"><span data-stu-id="09675-219">&ensp;Security intelligence update version: **1.327.1854.0**</span></span>  
+<span data-ttu-id="09675-220">&ensp;發行日期： **2020 年12月**</span><span class="sxs-lookup"><span data-stu-id="09675-220">&ensp;Released: **December 03, 2020**</span></span>  
+<span data-ttu-id="09675-221">&ensp;Platform： **4.18.2011.6**</span><span class="sxs-lookup"><span data-stu-id="09675-221">&ensp;Platform: **4.18.2011.6**</span></span>  
+<span data-ttu-id="09675-222">&ensp;Engine： **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="09675-222">&ensp;Engine: **1.1.17700.4**</span></span>  
+<span data-ttu-id="09675-223">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-223">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-216">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-216">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-224">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-224">What's new</span></span>
 
-- <span data-ttu-id="9ef32-217">特殊威脅類別的新描述</span><span class="sxs-lookup"><span data-stu-id="9ef32-217">New descriptions for special threat categories</span></span>
-- <span data-ttu-id="9ef32-218">改進模擬功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-218">Improved emulation capabilities</span></span>
-- <span data-ttu-id="9ef32-219">改進的主機位址允許/封鎖功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-219">Improved host address allow/block capabilities</span></span>
-- <span data-ttu-id="9ef32-220">在 Defender CSP 中新增選項，以忽略本機使用者排除的合併</span><span class="sxs-lookup"><span data-stu-id="9ef32-220">New option in Defender CSP to Ignore merging of local user exclusions</span></span>
+- <span data-ttu-id="09675-225">改進的 [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 狀態支援記錄</span><span class="sxs-lookup"><span data-stu-id="09675-225">Improved [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) status support logging</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-221">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-221">Known Issues</span></span>
-
-<span data-ttu-id="9ef32-222">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-222">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-226">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-226">Known Issues</span></span>
+<span data-ttu-id="09675-227">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-227">No known issues</span></span>  
 <br/>
 </details><details>
-<summary> <span data-ttu-id="9ef32-223">九月份-2020 (平臺： 4.18.2009.7 |Engine： 1.1.17500.4) </span><span class="sxs-lookup"><span data-stu-id="9ef32-223">September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</span></span></summary>
+<summary> <span data-ttu-id="09675-228">十月-2020 (平臺： 4.18.2010.7 |Engine： 1.1.17600.5) </span><span class="sxs-lookup"><span data-stu-id="09675-228">October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</span></span></summary>
 
-<span data-ttu-id="9ef32-224">&ensp;安全性智慧更新版本： **1.325.10.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-224">&ensp;Security intelligence update version: **1.325.10.0**</span></span>  
-<span data-ttu-id="9ef32-225">&ensp;發行日期： **2020 年10月1日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-225">&ensp;Released: **October 01, 2020**</span></span>  
-<span data-ttu-id="9ef32-226">&ensp;Platform： **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="9ef32-226">&ensp;Platform: **4.18.2009.7**</span></span>  
-<span data-ttu-id="9ef32-227">&ensp;Engine： **1.1.17500.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-227">&ensp;Engine: **1.1.17500.4**</span></span>  
-<span data-ttu-id="9ef32-228">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-228">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-229">&ensp;安全性智慧更新版本： **1.327.7.0**</span><span class="sxs-lookup"><span data-stu-id="09675-229">&ensp;Security intelligence update version: **1.327.7.0**</span></span>  
+<span data-ttu-id="09675-230">&ensp;發行日期： **2020 年10月29日**</span><span class="sxs-lookup"><span data-stu-id="09675-230">&ensp;Released: **October 29, 2020**</span></span>  
+<span data-ttu-id="09675-231">&ensp;Platform： **4.18.2010.7**</span><span class="sxs-lookup"><span data-stu-id="09675-231">&ensp;Platform: **4.18.2010.7**</span></span>  
+<span data-ttu-id="09675-232">&ensp;Engine： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="09675-232">&ensp;Engine: **1.1.17600.5**</span></span>  
+<span data-ttu-id="09675-233">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-233">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-229">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-229">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-234">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-234">What's new</span></span>
 
-- <span data-ttu-id="9ef32-230">需要有系統管理員許可權，才能還原隔離中的檔案</span><span class="sxs-lookup"><span data-stu-id="9ef32-230">Admin permissions are required to restore files in quarantine</span></span>
-- <span data-ttu-id="9ef32-231">現在支援 XML 格式化的事件</span><span class="sxs-lookup"><span data-stu-id="9ef32-231">XML formatted events are now supported</span></span>
-- <span data-ttu-id="9ef32-232">用於忽略排除合併的 CSP 支援</span><span class="sxs-lookup"><span data-stu-id="9ef32-232">CSP support for ignoring exclusion merges</span></span>
-- <span data-ttu-id="9ef32-233">下列專案的新管理介面：</span><span class="sxs-lookup"><span data-stu-id="9ef32-233">New management interfaces for:</span></span>
-   - <span data-ttu-id="9ef32-234">UDP 檢查</span><span class="sxs-lookup"><span data-stu-id="9ef32-234">UDP Inspection</span></span>
-   - <span data-ttu-id="9ef32-235">伺服器2019上的網路保護</span><span class="sxs-lookup"><span data-stu-id="9ef32-235">Network Protection on Server 2019</span></span>
-   - <span data-ttu-id="9ef32-236">網路保護的 IP 位址排除</span><span class="sxs-lookup"><span data-stu-id="9ef32-236">IP Address exclusions for Network Protection</span></span>
-- <span data-ttu-id="9ef32-237">改善 TPM 測量的可見度</span><span class="sxs-lookup"><span data-stu-id="9ef32-237">Improved visibility into TPM measurements</span></span>
-- <span data-ttu-id="9ef32-238">改進的 Office VBA 模組掃描</span><span class="sxs-lookup"><span data-stu-id="9ef32-238">Improved Office VBA module scanning</span></span>
+- <span data-ttu-id="09675-235">特殊威脅類別的新描述</span><span class="sxs-lookup"><span data-stu-id="09675-235">New descriptions for special threat categories</span></span>
+- <span data-ttu-id="09675-236">改進模擬功能</span><span class="sxs-lookup"><span data-stu-id="09675-236">Improved emulation capabilities</span></span>
+- <span data-ttu-id="09675-237">改進的主機位址允許/封鎖功能</span><span class="sxs-lookup"><span data-stu-id="09675-237">Improved host address allow/block capabilities</span></span>
+- <span data-ttu-id="09675-238">在 Defender CSP 中新增選項，以忽略本機使用者排除的合併</span><span class="sxs-lookup"><span data-stu-id="09675-238">New option in Defender CSP to Ignore merging of local user exclusions</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-239">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-239">Known Issues</span></span>
+### <a name="known-issues"></a><span data-ttu-id="09675-239">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-239">Known Issues</span></span>
 
-<span data-ttu-id="9ef32-240">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-240">No known issues</span></span>  
+<span data-ttu-id="09675-240">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-240">No known issues</span></span>  
+<br/>
+</details><details>
+<summary> <span data-ttu-id="09675-241">九月份-2020 (平臺： 4.18.2009.7 |Engine： 1.1.17500.4) </span><span class="sxs-lookup"><span data-stu-id="09675-241">September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</span></span></summary>
+
+<span data-ttu-id="09675-242">&ensp;安全性智慧更新版本： **1.325.10.0**</span><span class="sxs-lookup"><span data-stu-id="09675-242">&ensp;Security intelligence update version: **1.325.10.0**</span></span>  
+<span data-ttu-id="09675-243">&ensp;發行日期： **2020 年10月1日**</span><span class="sxs-lookup"><span data-stu-id="09675-243">&ensp;Released: **October 01, 2020**</span></span>  
+<span data-ttu-id="09675-244">&ensp;Platform： **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="09675-244">&ensp;Platform: **4.18.2009.7**</span></span>  
+<span data-ttu-id="09675-245">&ensp;Engine： **1.1.17500.4**</span><span class="sxs-lookup"><span data-stu-id="09675-245">&ensp;Engine: **1.1.17500.4**</span></span>  
+<span data-ttu-id="09675-246">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-246">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+    
+### <a name="whats-new"></a><span data-ttu-id="09675-247">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-247">What's new</span></span>
+
+- <span data-ttu-id="09675-248">需要有系統管理員許可權，才能還原隔離中的檔案</span><span class="sxs-lookup"><span data-stu-id="09675-248">Admin permissions are required to restore files in quarantine</span></span>
+- <span data-ttu-id="09675-249">現在支援 XML 格式化的事件</span><span class="sxs-lookup"><span data-stu-id="09675-249">XML formatted events are now supported</span></span>
+- <span data-ttu-id="09675-250">用於忽略排除合併的 CSP 支援</span><span class="sxs-lookup"><span data-stu-id="09675-250">CSP support for ignoring exclusion merges</span></span>
+- <span data-ttu-id="09675-251">下列專案的新管理介面：</span><span class="sxs-lookup"><span data-stu-id="09675-251">New management interfaces for:</span></span>
+   - <span data-ttu-id="09675-252">UDP 檢查</span><span class="sxs-lookup"><span data-stu-id="09675-252">UDP Inspection</span></span>
+   - <span data-ttu-id="09675-253">伺服器2019上的網路保護</span><span class="sxs-lookup"><span data-stu-id="09675-253">Network Protection on Server 2019</span></span>
+   - <span data-ttu-id="09675-254">網路保護的 IP 位址排除</span><span class="sxs-lookup"><span data-stu-id="09675-254">IP Address exclusions for Network Protection</span></span>
+- <span data-ttu-id="09675-255">改善 TPM 測量的可見度</span><span class="sxs-lookup"><span data-stu-id="09675-255">Improved visibility into TPM measurements</span></span>
+- <span data-ttu-id="09675-256">改進的 Office VBA 模組掃描</span><span class="sxs-lookup"><span data-stu-id="09675-256">Improved Office VBA module scanning</span></span>
+
+### <a name="known-issues"></a><span data-ttu-id="09675-257">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-257">Known Issues</span></span>
+
+<span data-ttu-id="09675-258">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-258">No known issues</span></span>  
 <br/>
 </details>
 <details>
-<summary> <span data-ttu-id="9ef32-241">八月-2020 (平臺： 4.18.2008.9 |Engine： 1.1.17400.5) </span><span class="sxs-lookup"><span data-stu-id="9ef32-241">August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</span></span></summary>
+<summary> <span data-ttu-id="09675-259">八月-2020 (平臺： 4.18.2008.9 |Engine： 1.1.17400.5) </span><span class="sxs-lookup"><span data-stu-id="09675-259">August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</span></span></summary>
 
-<span data-ttu-id="9ef32-242">&ensp;安全性智慧更新版本： **1.323.9.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-242">&ensp;Security intelligence update version: **1.323.9.0**</span></span>  
-<span data-ttu-id="9ef32-243">&ensp;發行日期： **2020 年8月27日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-243">&ensp;Released: **August 27, 2020**</span></span>  
-<span data-ttu-id="9ef32-244">&ensp;Platform： **4.18.2008.9**</span><span class="sxs-lookup"><span data-stu-id="9ef32-244">&ensp;Platform: **4.18.2008.9**</span></span>  
-<span data-ttu-id="9ef32-245">&ensp;Engine： **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-245">&ensp;Engine: **1.1.17400.5**</span></span>  
-<span data-ttu-id="9ef32-246">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-246">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-260">&ensp;安全性智慧更新版本： **1.323.9.0**</span><span class="sxs-lookup"><span data-stu-id="09675-260">&ensp;Security intelligence update version: **1.323.9.0**</span></span>  
+<span data-ttu-id="09675-261">&ensp;發行日期： **2020 年8月27日**</span><span class="sxs-lookup"><span data-stu-id="09675-261">&ensp;Released: **August 27, 2020**</span></span>  
+<span data-ttu-id="09675-262">&ensp;Platform： **4.18.2008.9**</span><span class="sxs-lookup"><span data-stu-id="09675-262">&ensp;Platform: **4.18.2008.9**</span></span>  
+<span data-ttu-id="09675-263">&ensp;Engine： **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="09675-263">&ensp;Engine: **1.1.17400.5**</span></span>  
+<span data-ttu-id="09675-264">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-264">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
 
-### <a name="whats-new"></a><span data-ttu-id="9ef32-247">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-247">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-265">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-265">What's new</span></span>
 
-- <span data-ttu-id="9ef32-248">新增更多遙測事件</span><span class="sxs-lookup"><span data-stu-id="9ef32-248">Add more telemetry events</span></span>
-- <span data-ttu-id="9ef32-249">改進的掃描事件遙測</span><span class="sxs-lookup"><span data-stu-id="9ef32-249">Improved scan event telemetry</span></span>
-- <span data-ttu-id="9ef32-250">改進的記憶體掃描行為監控</span><span class="sxs-lookup"><span data-stu-id="9ef32-250">Improved behavior monitoring for memory scans</span></span>
-- <span data-ttu-id="9ef32-251">改進的宏資料流程掃描</span><span class="sxs-lookup"><span data-stu-id="9ef32-251">Improved macro streams scanning</span></span>
-- <span data-ttu-id="9ef32-252">新增 `AMRunningMode` 至 Get-MpComputerStatus PowerShell Cmdlet</span><span class="sxs-lookup"><span data-stu-id="9ef32-252">Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet</span></span>
-- <span data-ttu-id="9ef32-253">會忽略[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 。</span><span class="sxs-lookup"><span data-stu-id="9ef32-253">[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored.</span></span> <span data-ttu-id="9ef32-254">Microsoft Defender 防毒軟體會在偵測其他防毒程式時自動開啟自身。</span><span class="sxs-lookup"><span data-stu-id="9ef32-254">Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.</span></span>
+- <span data-ttu-id="09675-266">新增更多遙測事件</span><span class="sxs-lookup"><span data-stu-id="09675-266">Add more telemetry events</span></span>
+- <span data-ttu-id="09675-267">改進的掃描事件遙測</span><span class="sxs-lookup"><span data-stu-id="09675-267">Improved scan event telemetry</span></span>
+- <span data-ttu-id="09675-268">改進的記憶體掃描行為監控</span><span class="sxs-lookup"><span data-stu-id="09675-268">Improved behavior monitoring for memory scans</span></span>
+- <span data-ttu-id="09675-269">改進的宏資料流程掃描</span><span class="sxs-lookup"><span data-stu-id="09675-269">Improved macro streams scanning</span></span>
+- <span data-ttu-id="09675-270">新增 `AMRunningMode` 至 Get-MpComputerStatus PowerShell Cmdlet</span><span class="sxs-lookup"><span data-stu-id="09675-270">Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet</span></span>
+- <span data-ttu-id="09675-271">會忽略[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 。</span><span class="sxs-lookup"><span data-stu-id="09675-271">[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored.</span></span> <span data-ttu-id="09675-272">Microsoft Defender 防毒軟體會在偵測其他防毒程式時自動開啟自身。</span><span class="sxs-lookup"><span data-stu-id="09675-272">Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.</span></span>
 
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-255">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-255">Known Issues</span></span>
-<span data-ttu-id="9ef32-256">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-256">No known issues</span></span>  
-<br/>
-</details>
-
-<details>
-<summary> <span data-ttu-id="9ef32-257">2020年7月- (平臺： 4.18.2007.8 |Engine： 1.1.17300.4) </span><span class="sxs-lookup"><span data-stu-id="9ef32-257">July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</span></span></summary>
-
-<span data-ttu-id="9ef32-258">&ensp;安全性智慧更新版本： **1.321.30.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-258">&ensp;Security intelligence update version: **1.321.30.0**</span></span>  
-<span data-ttu-id="9ef32-259">&ensp;發行日期： **2020 年7月28日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-259">&ensp;Released: **July 28, 2020**</span></span>  
-<span data-ttu-id="9ef32-260">&ensp;Platform： **4.18.2007.8**</span><span class="sxs-lookup"><span data-stu-id="9ef32-260">&ensp;Platform: **4.18.2007.8**</span></span>  
-<span data-ttu-id="9ef32-261">&ensp;Engine： **1.1.17300.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-261">&ensp;Engine: **1.1.17300.4**</span></span>  
-<span data-ttu-id="9ef32-262">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-262">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
-    
-### <a name="whats-new"></a><span data-ttu-id="9ef32-263">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-263">What's new</span></span>
-
-- <span data-ttu-id="9ef32-264">改進的遙測的 BITS</span><span class="sxs-lookup"><span data-stu-id="9ef32-264">Improved telemetry for BITS</span></span>
-- <span data-ttu-id="9ef32-265">改進的驗證碼簽名憑證驗證</span><span class="sxs-lookup"><span data-stu-id="9ef32-265">Improved Authenticode code signing certificate validation</span></span>
-
-### <a name="known-issues"></a><span data-ttu-id="9ef32-266">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-266">Known Issues</span></span>
-<span data-ttu-id="9ef32-267">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-267">No known issues</span></span>  
-<br/>
-</details>
-
-<details>
-<summary> <span data-ttu-id="9ef32-268">六月-2020 (平臺： 4.18.2006.10 |Engine： 1.1.17200.2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-268">June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</span></span></summary>
-
-<span data-ttu-id="9ef32-269">&ensp;安全性智慧更新版本： **1.319.20.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-269">&ensp;Security intelligence update version: **1.319.20.0**</span></span>  
-<span data-ttu-id="9ef32-270">&ensp;發行日期： **2020 年6月22日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-270">&ensp;Released: **June 22, 2020**</span></span>  
-<span data-ttu-id="9ef32-271">&ensp;Platform： **4.18.2006.10**</span><span class="sxs-lookup"><span data-stu-id="9ef32-271">&ensp;Platform: **4.18.2006.10**</span></span>  
-<span data-ttu-id="9ef32-272">&ensp;Engine： **1.1.17200.2**</span><span class="sxs-lookup"><span data-stu-id="9ef32-272">&ensp;Engine: **1.1.17200.2**</span></span>  
-<span data-ttu-id="9ef32-273">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-273">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
-    
-### <a name="whats-new"></a><span data-ttu-id="9ef32-274">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-274">What's new</span></span>
-
-- <span data-ttu-id="9ef32-275">可能指定[支援記錄](./collect-diagnostic-data.md)檔的位置</span><span class="sxs-lookup"><span data-stu-id="9ef32-275">Possibility to specify the [location of the support logs](./collect-diagnostic-data.md)</span></span>
-- <span data-ttu-id="9ef32-276">在被動模式中略過積極 catchup 掃描。</span><span class="sxs-lookup"><span data-stu-id="9ef32-276">Skipping aggressive catchup scan in Passive mode.</span></span>
-- <span data-ttu-id="9ef32-277">允許 Defender 在流量計費的連線上更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-277">Allow Defender to update on metered connections</span></span>
-- <span data-ttu-id="9ef32-278">停用快取時的固定效能調整</span><span class="sxs-lookup"><span data-stu-id="9ef32-278">Fixed performance tuning when caching is disabled</span></span> 
-- <span data-ttu-id="9ef32-279">固定登錄查詢</span><span class="sxs-lookup"><span data-stu-id="9ef32-279">Fixed registry query</span></span> 
-- <span data-ttu-id="9ef32-280">ADMX 中的固定 scantime 隨機化</span><span class="sxs-lookup"><span data-stu-id="9ef32-280">Fixed scantime randomization in ADMX</span></span>
-
-### <a name="known-issues"></a><span data-ttu-id="9ef32-281">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-281">Known Issues</span></span>
-<span data-ttu-id="9ef32-282">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-282">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-273">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-273">Known Issues</span></span>
+<span data-ttu-id="09675-274">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-274">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="9ef32-283">2020年5月 (平臺： 4.18.2005.4 |Engine： 1.1.17100.2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-283">May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</span></span></summary>
+<summary> <span data-ttu-id="09675-275">2020年7月- (平臺： 4.18.2007.8 |Engine： 1.1.17300.4) </span><span class="sxs-lookup"><span data-stu-id="09675-275">July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</span></span></summary>
 
-<span data-ttu-id="9ef32-284">&ensp;安全性智慧更新版本： **1.317.20.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-284">&ensp;Security intelligence update version: **1.317.20.0**</span></span>  
-<span data-ttu-id="9ef32-285">&ensp;發行日期： **2020 年5月26日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-285">&ensp;Released: **May 26, 2020**</span></span>  
-<span data-ttu-id="9ef32-286">&ensp;Platform： **4.18.2005.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-286">&ensp;Platform: **4.18.2005.4**</span></span>  
-<span data-ttu-id="9ef32-287">&ensp;Engine： **1.1.17100.2**</span><span class="sxs-lookup"><span data-stu-id="9ef32-287">&ensp;Engine: **1.1.17100.2**</span></span>  
-<span data-ttu-id="9ef32-288">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-288">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-276">&ensp;安全性智慧更新版本： **1.321.30.0**</span><span class="sxs-lookup"><span data-stu-id="09675-276">&ensp;Security intelligence update version: **1.321.30.0**</span></span>  
+<span data-ttu-id="09675-277">&ensp;發行日期： **2020 年7月28日**</span><span class="sxs-lookup"><span data-stu-id="09675-277">&ensp;Released: **July 28, 2020**</span></span>  
+<span data-ttu-id="09675-278">&ensp;Platform： **4.18.2007.8**</span><span class="sxs-lookup"><span data-stu-id="09675-278">&ensp;Platform: **4.18.2007.8**</span></span>  
+<span data-ttu-id="09675-279">&ensp;Engine： **1.1.17300.4**</span><span class="sxs-lookup"><span data-stu-id="09675-279">&ensp;Engine: **1.1.17300.4**</span></span>  
+<span data-ttu-id="09675-280">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-280">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-289">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-289">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-281">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-281">What's new</span></span>
 
-- <span data-ttu-id="9ef32-290">改進的掃描事件記錄</span><span class="sxs-lookup"><span data-stu-id="9ef32-290">Improved logging for scan events</span></span>
-- <span data-ttu-id="9ef32-291">改進的使用者模式損毀處理。</span><span class="sxs-lookup"><span data-stu-id="9ef32-291">Improved user mode crash handling.</span></span>
-- <span data-ttu-id="9ef32-292">新增防篡改保護的事件追蹤</span><span class="sxs-lookup"><span data-stu-id="9ef32-292">Added event tracing for Tamper protection</span></span>
-- <span data-ttu-id="9ef32-293">修正 AMSI 範例提交</span><span class="sxs-lookup"><span data-stu-id="9ef32-293">Fixed AMSI Sample submission</span></span>
-- <span data-ttu-id="9ef32-294">固定 AMSI Cloud 封鎖</span><span class="sxs-lookup"><span data-stu-id="9ef32-294">Fixed AMSI Cloud blocking</span></span>
-- <span data-ttu-id="9ef32-295">修正的安全性更新安裝記錄檔</span><span class="sxs-lookup"><span data-stu-id="9ef32-295">Fixed Security update install log</span></span>
+- <span data-ttu-id="09675-282">改進的遙測的 BITS</span><span class="sxs-lookup"><span data-stu-id="09675-282">Improved telemetry for BITS</span></span>
+- <span data-ttu-id="09675-283">改進的驗證碼簽名憑證驗證</span><span class="sxs-lookup"><span data-stu-id="09675-283">Improved Authenticode code signing certificate validation</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-296">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-296">Known Issues</span></span>
-<span data-ttu-id="9ef32-297">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-297">No known issues</span></span>  
+### <a name="known-issues"></a><span data-ttu-id="09675-284">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-284">Known Issues</span></span>
+<span data-ttu-id="09675-285">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-285">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="9ef32-298">四月-2020 (平臺： 4.18.2004.6 |Engine： 1.1.17000.2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-298">April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</span></span></summary>
+<summary> <span data-ttu-id="09675-286">六月-2020 (平臺： 4.18.2006.10 |Engine： 1.1.17200.2) </span><span class="sxs-lookup"><span data-stu-id="09675-286">June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</span></span></summary>
 
-<span data-ttu-id="9ef32-299">&ensp;安全性智慧更新版本： **1.315.12.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-299">&ensp;Security intelligence update version: **1.315.12.0**</span></span>  
-<span data-ttu-id="9ef32-300">&ensp;發行日期： **2020 年4月30日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-300">&ensp;Released: **April 30, 2020**</span></span>  
-<span data-ttu-id="9ef32-301">&ensp;Platform： **4.18.2004.6**</span><span class="sxs-lookup"><span data-stu-id="9ef32-301">&ensp;Platform: **4.18.2004.6**</span></span>  
-<span data-ttu-id="9ef32-302">&ensp;Engine： **1.1.17000.2**</span><span class="sxs-lookup"><span data-stu-id="9ef32-302">&ensp;Engine: **1.1.17000.2**</span></span>  
-<span data-ttu-id="9ef32-303">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-303">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-287">&ensp;安全性智慧更新版本： **1.319.20.0**</span><span class="sxs-lookup"><span data-stu-id="09675-287">&ensp;Security intelligence update version: **1.319.20.0**</span></span>  
+<span data-ttu-id="09675-288">&ensp;發行日期： **2020 年6月22日**</span><span class="sxs-lookup"><span data-stu-id="09675-288">&ensp;Released: **June 22, 2020**</span></span>  
+<span data-ttu-id="09675-289">&ensp;Platform： **4.18.2006.10**</span><span class="sxs-lookup"><span data-stu-id="09675-289">&ensp;Platform: **4.18.2006.10**</span></span>  
+<span data-ttu-id="09675-290">&ensp;Engine： **1.1.17200.2**</span><span class="sxs-lookup"><span data-stu-id="09675-290">&ensp;Engine: **1.1.17200.2**</span></span>  
+<span data-ttu-id="09675-291">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-291">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-304">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-304">What's new</span></span>
-- <span data-ttu-id="9ef32-305">WDfilter 改進功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-305">WDfilter improvements</span></span>
-- <span data-ttu-id="9ef32-306">新增更具可操作性的事件資料至攻擊面減少偵測事件</span><span class="sxs-lookup"><span data-stu-id="9ef32-306">Add more actionable event data to attack surface reduction detection events</span></span>
-- <span data-ttu-id="9ef32-307">診斷資料和 WMI 中的固定版本資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-307">Fixed version information in diagnostic data and WMI</span></span>
-- <span data-ttu-id="9ef32-308">在平臺更新後在 UI 中修復不正確的平臺版本</span><span class="sxs-lookup"><span data-stu-id="9ef32-308">Fixed incorrect platform version in UI after platform update</span></span>
-- <span data-ttu-id="9ef32-309">動態 URL intel for Fileless 威脅防護</span><span class="sxs-lookup"><span data-stu-id="9ef32-309">Dynamic URL intel for Fileless threat protection</span></span>
-- <span data-ttu-id="9ef32-310">UEFI 掃描功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-310">UEFI scan capability</span></span>
-- <span data-ttu-id="9ef32-311">擴充更新記錄</span><span class="sxs-lookup"><span data-stu-id="9ef32-311">Extend logging for updates</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-292">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-292">What's new</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="9ef32-312">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-312">Known Issues</span></span>
-<span data-ttu-id="9ef32-313">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-313">No known issues</span></span>  
+- <span data-ttu-id="09675-293">可能指定[支援記錄](./collect-diagnostic-data.md)檔的位置</span><span class="sxs-lookup"><span data-stu-id="09675-293">Possibility to specify the [location of the support logs](./collect-diagnostic-data.md)</span></span>
+- <span data-ttu-id="09675-294">在被動模式中略過積極 catchup 掃描。</span><span class="sxs-lookup"><span data-stu-id="09675-294">Skipping aggressive catchup scan in Passive mode.</span></span>
+- <span data-ttu-id="09675-295">允許 Defender 在流量計費的連線上更新</span><span class="sxs-lookup"><span data-stu-id="09675-295">Allow Defender to update on metered connections</span></span>
+- <span data-ttu-id="09675-296">停用快取時的固定效能調整</span><span class="sxs-lookup"><span data-stu-id="09675-296">Fixed performance tuning when caching is disabled</span></span> 
+- <span data-ttu-id="09675-297">固定登錄查詢</span><span class="sxs-lookup"><span data-stu-id="09675-297">Fixed registry query</span></span> 
+- <span data-ttu-id="09675-298">ADMX 中的固定 scantime 隨機化</span><span class="sxs-lookup"><span data-stu-id="09675-298">Fixed scantime randomization in ADMX</span></span>
+
+### <a name="known-issues"></a><span data-ttu-id="09675-299">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-299">Known Issues</span></span>
+<span data-ttu-id="09675-300">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-300">No known issues</span></span>  
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="9ef32-314">三月份-2020 (平臺： 4.18.2003.8 |Engine： 1.1.16900.2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-314">March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</span></span></summary>
+<summary> <span data-ttu-id="09675-301">2020年5月 (平臺： 4.18.2005.4 |Engine： 1.1.17100.2) </span><span class="sxs-lookup"><span data-stu-id="09675-301">May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</span></span></summary>
 
-<span data-ttu-id="9ef32-315">&ensp;安全性智慧更新版本： **1.313.8.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-315">&ensp;Security intelligence update version: **1.313.8.0**</span></span>  
-<span data-ttu-id="9ef32-316">&ensp;發行日期： **2020 年3月24日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-316">&ensp;Released: **March 24, 2020**</span></span>  
-<span data-ttu-id="9ef32-317">&ensp;Platform： **4.18.2003.8**</span><span class="sxs-lookup"><span data-stu-id="9ef32-317">&ensp;Platform: **4.18.2003.8**</span></span>  
-<span data-ttu-id="9ef32-318">&ensp;Engine： **1.1.16900.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-318">&ensp;Engine: **1.1.16900.4**</span></span>  
-<span data-ttu-id="9ef32-319">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-319">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-302">&ensp;安全性智慧更新版本： **1.317.20.0**</span><span class="sxs-lookup"><span data-stu-id="09675-302">&ensp;Security intelligence update version: **1.317.20.0**</span></span>  
+<span data-ttu-id="09675-303">&ensp;發行日期： **2020 年5月26日**</span><span class="sxs-lookup"><span data-stu-id="09675-303">&ensp;Released: **May 26, 2020**</span></span>  
+<span data-ttu-id="09675-304">&ensp;Platform： **4.18.2005.4**</span><span class="sxs-lookup"><span data-stu-id="09675-304">&ensp;Platform: **4.18.2005.4**</span></span>  
+<span data-ttu-id="09675-305">&ensp;Engine： **1.1.17100.2**</span><span class="sxs-lookup"><span data-stu-id="09675-305">&ensp;Engine: **1.1.17100.2**</span></span>  
+<span data-ttu-id="09675-306">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-306">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
     
-### <a name="whats-new"></a><span data-ttu-id="9ef32-320">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-320">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-307">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-307">What's new</span></span>
 
-- <span data-ttu-id="9ef32-321">新增至[MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)的 CPU 節流選項</span><span class="sxs-lookup"><span data-stu-id="9ef32-321">CPU Throttling option added to [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)</span></span>
-- <span data-ttu-id="9ef32-322">改善診斷功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-322">Improve diagnostic capability</span></span>
-- <span data-ttu-id="9ef32-323">降低安全性情報超時 (5 分鐘) </span><span class="sxs-lookup"><span data-stu-id="9ef32-323">reduce Security intelligence timeout (5 min)</span></span>
-- <span data-ttu-id="9ef32-324">擴充 AMSI 引擎內部記錄功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-324">Extend AMSI engine internal log capability</span></span>
-- <span data-ttu-id="9ef32-325">改進處理常式封鎖的通知</span><span class="sxs-lookup"><span data-stu-id="9ef32-325">Improve notification for process blocking</span></span>
+- <span data-ttu-id="09675-308">改進的掃描事件記錄</span><span class="sxs-lookup"><span data-stu-id="09675-308">Improved logging for scan events</span></span>
+- <span data-ttu-id="09675-309">改進的使用者模式損毀處理。</span><span class="sxs-lookup"><span data-stu-id="09675-309">Improved user mode crash handling.</span></span>
+- <span data-ttu-id="09675-310">新增防篡改保護的事件追蹤</span><span class="sxs-lookup"><span data-stu-id="09675-310">Added event tracing for Tamper protection</span></span>
+- <span data-ttu-id="09675-311">修正 AMSI 範例提交</span><span class="sxs-lookup"><span data-stu-id="09675-311">Fixed AMSI Sample submission</span></span>
+- <span data-ttu-id="09675-312">固定 AMSI Cloud 封鎖</span><span class="sxs-lookup"><span data-stu-id="09675-312">Fixed AMSI Cloud blocking</span></span>
+- <span data-ttu-id="09675-313">修正的安全性更新安裝記錄檔</span><span class="sxs-lookup"><span data-stu-id="09675-313">Fixed Security update install log</span></span>
+
+### <a name="known-issues"></a><span data-ttu-id="09675-314">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-314">Known Issues</span></span>
+<span data-ttu-id="09675-315">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-315">No known issues</span></span>  
+<br/>
+</details>
+
+<details>
+<summary> <span data-ttu-id="09675-316">四月-2020 (平臺： 4.18.2004.6 |Engine： 1.1.17000.2) </span><span class="sxs-lookup"><span data-stu-id="09675-316">April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</span></span></summary>
+
+<span data-ttu-id="09675-317">&ensp;安全性智慧更新版本： **1.315.12.0**</span><span class="sxs-lookup"><span data-stu-id="09675-317">&ensp;Security intelligence update version: **1.315.12.0**</span></span>  
+<span data-ttu-id="09675-318">&ensp;發行日期： **2020 年4月30日**</span><span class="sxs-lookup"><span data-stu-id="09675-318">&ensp;Released: **April 30, 2020**</span></span>  
+<span data-ttu-id="09675-319">&ensp;Platform： **4.18.2004.6**</span><span class="sxs-lookup"><span data-stu-id="09675-319">&ensp;Platform: **4.18.2004.6**</span></span>  
+<span data-ttu-id="09675-320">&ensp;Engine： **1.1.17000.2**</span><span class="sxs-lookup"><span data-stu-id="09675-320">&ensp;Engine: **1.1.17000.2**</span></span>  
+<span data-ttu-id="09675-321">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-321">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+    
+### <a name="whats-new"></a><span data-ttu-id="09675-322">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-322">What's new</span></span>
+- <span data-ttu-id="09675-323">WDfilter 改進功能</span><span class="sxs-lookup"><span data-stu-id="09675-323">WDfilter improvements</span></span>
+- <span data-ttu-id="09675-324">新增更具可操作性的事件資料至攻擊面減少偵測事件</span><span class="sxs-lookup"><span data-stu-id="09675-324">Add more actionable event data to attack surface reduction detection events</span></span>
+- <span data-ttu-id="09675-325">診斷資料和 WMI 中的固定版本資訊</span><span class="sxs-lookup"><span data-stu-id="09675-325">Fixed version information in diagnostic data and WMI</span></span>
+- <span data-ttu-id="09675-326">在平臺更新後在 UI 中修復不正確的平臺版本</span><span class="sxs-lookup"><span data-stu-id="09675-326">Fixed incorrect platform version in UI after platform update</span></span>
+- <span data-ttu-id="09675-327">動態 URL intel for Fileless 威脅防護</span><span class="sxs-lookup"><span data-stu-id="09675-327">Dynamic URL intel for Fileless threat protection</span></span>
+- <span data-ttu-id="09675-328">UEFI 掃描功能</span><span class="sxs-lookup"><span data-stu-id="09675-328">UEFI scan capability</span></span>
+- <span data-ttu-id="09675-329">擴充更新記錄</span><span class="sxs-lookup"><span data-stu-id="09675-329">Extend logging for updates</span></span>
+
+### <a name="known-issues"></a><span data-ttu-id="09675-330">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-330">Known Issues</span></span>
+<span data-ttu-id="09675-331">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-331">No known issues</span></span>  
+<br/>
+</details>
+
+<details>
+<summary> <span data-ttu-id="09675-332">三月份-2020 (平臺： 4.18.2003.8 |Engine： 1.1.16900.2) </span><span class="sxs-lookup"><span data-stu-id="09675-332">March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</span></span></summary>
+
+<span data-ttu-id="09675-333">&ensp;安全性智慧更新版本： **1.313.8.0**</span><span class="sxs-lookup"><span data-stu-id="09675-333">&ensp;Security intelligence update version: **1.313.8.0**</span></span>  
+<span data-ttu-id="09675-334">&ensp;發行日期： **2020 年3月24日**</span><span class="sxs-lookup"><span data-stu-id="09675-334">&ensp;Released: **March 24, 2020**</span></span>  
+<span data-ttu-id="09675-335">&ensp;Platform： **4.18.2003.8**</span><span class="sxs-lookup"><span data-stu-id="09675-335">&ensp;Platform: **4.18.2003.8**</span></span>  
+<span data-ttu-id="09675-336">&ensp;Engine： **1.1.16900.4**</span><span class="sxs-lookup"><span data-stu-id="09675-336">&ensp;Engine: **1.1.16900.4**</span></span>  
+<span data-ttu-id="09675-337">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-337">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+    
+### <a name="whats-new"></a><span data-ttu-id="09675-338">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-338">What's new</span></span>
+
+- <span data-ttu-id="09675-339">新增至[MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)的 CPU 節流選項</span><span class="sxs-lookup"><span data-stu-id="09675-339">CPU Throttling option added to [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)</span></span>
+- <span data-ttu-id="09675-340">改善診斷功能</span><span class="sxs-lookup"><span data-stu-id="09675-340">Improve diagnostic capability</span></span>
+- <span data-ttu-id="09675-341">降低安全性情報超時 (5 分鐘) </span><span class="sxs-lookup"><span data-stu-id="09675-341">reduce Security intelligence timeout (5 min)</span></span>
+- <span data-ttu-id="09675-342">擴充 AMSI 引擎內部記錄功能</span><span class="sxs-lookup"><span data-stu-id="09675-342">Extend AMSI engine internal log capability</span></span>
+- <span data-ttu-id="09675-343">改進處理常式封鎖的通知</span><span class="sxs-lookup"><span data-stu-id="09675-343">Improve notification for process blocking</span></span>
    
-### <a name="known-issues"></a><span data-ttu-id="9ef32-326">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-326">Known Issues</span></span>
-<span data-ttu-id="9ef32-327">[**Fixed**]Microsoft Defender 防毒軟體會在執行掃描時略過檔案。</span><span class="sxs-lookup"><span data-stu-id="9ef32-327">[**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.</span></span>
+### <a name="known-issues"></a><span data-ttu-id="09675-344">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-344">Known Issues</span></span>
+<span data-ttu-id="09675-345">[**Fixed**]Microsoft Defender 防毒軟體會在執行掃描時略過檔案。</span><span class="sxs-lookup"><span data-stu-id="09675-345">[**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.</span></span>
 
 <br/>
 </details>
 
 <details>
 
-<summary> <span data-ttu-id="9ef32-328">二月份-2020 (平臺： |Engine： 1.1.16800.2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-328">February-2020 (Platform: - | Engine: 1.1.16800.2)</span></span></summary>
+<summary> <span data-ttu-id="09675-346">二月份-2020 (平臺： |Engine： 1.1.16800.2) </span><span class="sxs-lookup"><span data-stu-id="09675-346">February-2020 (Platform: - | Engine: 1.1.16800.2)</span></span></summary>
   
 
-<span data-ttu-id="9ef32-329">&ensp;安全性智慧更新版本： **1.311.4.0** </span><span class="sxs-lookup"><span data-stu-id="9ef32-329">&ensp;Security intelligence update version: **1.311.4.0** </span></span>  
-<span data-ttu-id="9ef32-330">&ensp;發行日期： **2020 年2月25日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-330">&ensp;Released: **February 25, 2020**</span></span>  
-<span data-ttu-id="9ef32-331">&ensp;平臺/用戶端： **-**</span><span class="sxs-lookup"><span data-stu-id="9ef32-331">&ensp;Platform/Client: **-**</span></span>  
-<span data-ttu-id="9ef32-332">&ensp;Engine： **1.1.16800.2**</span><span class="sxs-lookup"><span data-stu-id="9ef32-332">&ensp;Engine: **1.1.16800.2**</span></span>  
-<span data-ttu-id="9ef32-333">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-333">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-347">&ensp;安全性智慧更新版本： **1.311.4.0** </span><span class="sxs-lookup"><span data-stu-id="09675-347">&ensp;Security intelligence update version: **1.311.4.0** </span></span>  
+<span data-ttu-id="09675-348">&ensp;發行日期： **2020 年2月25日**</span><span class="sxs-lookup"><span data-stu-id="09675-348">&ensp;Released: **February 25, 2020**</span></span>  
+<span data-ttu-id="09675-349">&ensp;平臺/用戶端： **-**</span><span class="sxs-lookup"><span data-stu-id="09675-349">&ensp;Platform/Client: **-**</span></span>  
+<span data-ttu-id="09675-350">&ensp;Engine： **1.1.16800.2**</span><span class="sxs-lookup"><span data-stu-id="09675-350">&ensp;Engine: **1.1.16800.2**</span></span>  
+<span data-ttu-id="09675-351">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-351">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
      
-### <a name="whats-new"></a><span data-ttu-id="9ef32-334">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-334">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-352">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-352">What's new</span></span>
 
   
-### <a name="known-issues"></a><span data-ttu-id="9ef32-335">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-335">Known Issues</span></span>
-<span data-ttu-id="9ef32-336">無已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-336">No known issues</span></span>
+### <a name="known-issues"></a><span data-ttu-id="09675-353">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-353">Known Issues</span></span>
+<span data-ttu-id="09675-354">無已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-354">No known issues</span></span>
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="9ef32-337">2020年1月 (平臺： 4.18.2001.10 |Engine： 1.1.16700.2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-337">January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</span></span></summary>
+<summary> <span data-ttu-id="09675-355">2020年1月 (平臺： 4.18.2001.10 |Engine： 1.1.16700.2) </span><span class="sxs-lookup"><span data-stu-id="09675-355">January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</span></span></summary>
   
 
-<span data-ttu-id="9ef32-338">安全性智慧更新版本： **1.309.32.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-338">Security intelligence update version: **1.309.32.0**</span></span>  
-<span data-ttu-id="9ef32-339">發行日期： **2020 年1月30日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-339">Released: **January 30, 2020**</span></span>  
-<span data-ttu-id="9ef32-340">Platform/Client： **4.18.2001.10**</span><span class="sxs-lookup"><span data-stu-id="9ef32-340">Platform/Client: **4.18.2001.10**</span></span>  
-<span data-ttu-id="9ef32-341">Engine： **1.1.16700.2**</span><span class="sxs-lookup"><span data-stu-id="9ef32-341">Engine: **1.1.16700.2**</span></span>  
-<span data-ttu-id="9ef32-342">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="9ef32-342">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
+<span data-ttu-id="09675-356">安全性智慧更新版本： **1.309.32.0**</span><span class="sxs-lookup"><span data-stu-id="09675-356">Security intelligence update version: **1.309.32.0**</span></span>  
+<span data-ttu-id="09675-357">發行日期： **2020 年1月30日**</span><span class="sxs-lookup"><span data-stu-id="09675-357">Released: **January 30, 2020**</span></span>  
+<span data-ttu-id="09675-358">Platform/Client： **4.18.2001.10**</span><span class="sxs-lookup"><span data-stu-id="09675-358">Platform/Client: **4.18.2001.10**</span></span>  
+<span data-ttu-id="09675-359">Engine： **1.1.16700.2**</span><span class="sxs-lookup"><span data-stu-id="09675-359">Engine: **1.1.16700.2**</span></span>  
+<span data-ttu-id="09675-360">&ensp;支援階段： **僅限技術升級支援 ()**</span><span class="sxs-lookup"><span data-stu-id="09675-360">&ensp;Support phase: **Technical upgrade support (only)**</span></span>
      
-### <a name="whats-new"></a><span data-ttu-id="9ef32-343">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-343">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-361">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-361">What's new</span></span>
 
-- <span data-ttu-id="9ef32-344">具有 Exchange 的 WS2016 上的固定 BSOD</span><span class="sxs-lookup"><span data-stu-id="9ef32-344">Fixed BSOD on WS2016 with Exchange</span></span>
-- <span data-ttu-id="9ef32-345">當 TMP 重新導向至網路路徑時支援平臺更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-345">Support platform updates when TMP is redirected to network path</span></span>
-- <span data-ttu-id="9ef32-346">平臺和引擎版本已新增至 [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span><span class="sxs-lookup"><span data-stu-id="9ef32-346">Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span></span> <!-- The preceding URL must include "/en-us" -->
-- <span data-ttu-id="9ef32-347">將緊急特徵碼更新擴充為 [被動模式](./microsoft-defender-antivirus-compatibility.md)</span><span class="sxs-lookup"><span data-stu-id="9ef32-347">extend Emergency signature update to [passive mode](./microsoft-defender-antivirus-compatibility.md)</span></span>
-- <span data-ttu-id="9ef32-348">修正4.18.1911.3 懸掛</span><span class="sxs-lookup"><span data-stu-id="9ef32-348">Fix 4.18.1911.3 hang</span></span>
+- <span data-ttu-id="09675-362">具有 Exchange 的 WS2016 上的固定 BSOD</span><span class="sxs-lookup"><span data-stu-id="09675-362">Fixed BSOD on WS2016 with Exchange</span></span>
+- <span data-ttu-id="09675-363">當 TMP 重新導向至網路路徑時支援平臺更新</span><span class="sxs-lookup"><span data-stu-id="09675-363">Support platform updates when TMP is redirected to network path</span></span>
+- <span data-ttu-id="09675-364">平臺和引擎版本已新增至 [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span><span class="sxs-lookup"><span data-stu-id="09675-364">Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates)</span></span> <!-- The preceding URL must include "/en-us" -->
+- <span data-ttu-id="09675-365">將緊急特徵碼更新擴充為 [被動模式](./microsoft-defender-antivirus-compatibility.md)</span><span class="sxs-lookup"><span data-stu-id="09675-365">extend Emergency signature update to [passive mode](./microsoft-defender-antivirus-compatibility.md)</span></span>
+- <span data-ttu-id="09675-366">修正4.18.1911.3 懸掛</span><span class="sxs-lookup"><span data-stu-id="09675-366">Fix 4.18.1911.3 hang</span></span>
    
-### <a name="known-issues"></a><span data-ttu-id="9ef32-349">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-349">Known Issues</span></span>
+### <a name="known-issues"></a><span data-ttu-id="09675-367">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-367">Known Issues</span></span>
 
-<span data-ttu-id="9ef32-350">[**Fixed**] 採用 [新式待機模式](/windows-hardware/design/device-experiences/modern-standby)的裝置可能會在 Windows Defender 篩選器驅動程式遇到中斷，從而導致保護的缺口。</span><span class="sxs-lookup"><span data-stu-id="9ef32-350">[**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.</span></span>  <span data-ttu-id="9ef32-351">受影響的機器會因尚未更新為最新的反惡意程式碼平臺而向客戶呈現。</span><span class="sxs-lookup"><span data-stu-id="9ef32-351">Affected machines appear to the customer as having not updated to the latest antimalware platform.</span></span>  
+<span data-ttu-id="09675-368">[**Fixed**] 採用 [新式待機模式](/windows-hardware/design/device-experiences/modern-standby)的裝置可能會在 Windows Defender 篩選器驅動程式遇到中斷，從而導致保護的缺口。</span><span class="sxs-lookup"><span data-stu-id="09675-368">[**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.</span></span>  <span data-ttu-id="09675-369">受影響的機器會因尚未更新為最新的反惡意程式碼平臺而向客戶呈現。</span><span class="sxs-lookup"><span data-stu-id="09675-369">Affected machines appear to the customer as having not updated to the latest antimalware platform.</span></span>  
 <br/>
 > [!IMPORTANT]
-> <span data-ttu-id="9ef32-352">此更新如下：</span><span class="sxs-lookup"><span data-stu-id="9ef32-352">This update is:</span></span>
-> - <span data-ttu-id="9ef32-353">由執行低版本平臺的 RS1 裝置所需，以支援 SHA2;</span><span class="sxs-lookup"><span data-stu-id="9ef32-353">needed by RS1 devices running lower version of the platform to support SHA2;</span></span>
-> - <span data-ttu-id="9ef32-354">具有懸掛問題的系統重新開機標誌;</span><span class="sxs-lookup"><span data-stu-id="9ef32-354">has a reboot flag for systems that have hanging issues;</span></span>
-> - <span data-ttu-id="9ef32-355">會在4月2020內重新發佈，而且不會被更新的更新取代以保留未來的可用性;</span><span class="sxs-lookup"><span data-stu-id="9ef32-355">is re-released in April 2020 and will not be superseded by newer updates to keep future availability;</span></span>  
-> - <span data-ttu-id="9ef32-356">因重新開機要求而分類為更新和</span><span class="sxs-lookup"><span data-stu-id="9ef32-356">is categorized as an update due to the reboot requirement; and</span></span>
-> - <span data-ttu-id="9ef32-357">只會以[Windows 更新](https://support.microsoft.com/help/4027667/windows-10-update)提供。</span><span class="sxs-lookup"><span data-stu-id="9ef32-357">is only be offered with [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).</span></span>
+> <span data-ttu-id="09675-370">此更新如下：</span><span class="sxs-lookup"><span data-stu-id="09675-370">This update is:</span></span>
+> - <span data-ttu-id="09675-371">由執行低版本平臺的 RS1 裝置所需，以支援 SHA2;</span><span class="sxs-lookup"><span data-stu-id="09675-371">needed by RS1 devices running lower version of the platform to support SHA2;</span></span>
+> - <span data-ttu-id="09675-372">具有懸掛問題的系統重新開機標誌;</span><span class="sxs-lookup"><span data-stu-id="09675-372">has a reboot flag for systems that have hanging issues;</span></span>
+> - <span data-ttu-id="09675-373">會在4月2020內重新發佈，而且不會被更新的更新取代以保留未來的可用性;</span><span class="sxs-lookup"><span data-stu-id="09675-373">is re-released in April 2020 and will not be superseded by newer updates to keep future availability;</span></span>  
+> - <span data-ttu-id="09675-374">因重新開機要求而分類為更新和</span><span class="sxs-lookup"><span data-stu-id="09675-374">is categorized as an update due to the reboot requirement; and</span></span>
+> - <span data-ttu-id="09675-375">只會以[Windows 更新](https://support.microsoft.com/help/4027667/windows-10-update)提供。</span><span class="sxs-lookup"><span data-stu-id="09675-375">is only be offered with [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).</span></span>
 <br/>
 </details>
 
 <details>
-<summary> <span data-ttu-id="9ef32-358">11月-2019 (平臺： 4.18.1911.3 |Engine： 1.1.16600.7) </span><span class="sxs-lookup"><span data-stu-id="9ef32-358">November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</span></span></summary>
+<summary> <span data-ttu-id="09675-376">11月-2019 (平臺： 4.18.1911.3 |Engine： 1.1.16600.7) </span><span class="sxs-lookup"><span data-stu-id="09675-376">November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</span></span></summary>
 
-<span data-ttu-id="9ef32-359">安全性智慧更新版本： **1.307.13.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-359">Security intelligence update version: **1.307.13.0**</span></span>  
-<span data-ttu-id="9ef32-360">發行日期： **2019 月7日**</span><span class="sxs-lookup"><span data-stu-id="9ef32-360">Released: **December 7, 2019**</span></span>  
-<span data-ttu-id="9ef32-361">Platform： **4.18.1911.3**</span><span class="sxs-lookup"><span data-stu-id="9ef32-361">Platform: **4.18.1911.3**</span></span>  
-<span data-ttu-id="9ef32-362">Engine： **1.1.17000.7**</span><span class="sxs-lookup"><span data-stu-id="9ef32-362">Engine: **1.1.17000.7**</span></span>  
-<span data-ttu-id="9ef32-363">支援階段： **不支援**</span><span class="sxs-lookup"><span data-stu-id="9ef32-363">Support phase: **No support**</span></span>  
+<span data-ttu-id="09675-377">安全性智慧更新版本： **1.307.13.0**</span><span class="sxs-lookup"><span data-stu-id="09675-377">Security intelligence update version: **1.307.13.0**</span></span>  
+<span data-ttu-id="09675-378">發行日期： **2019 月7日**</span><span class="sxs-lookup"><span data-stu-id="09675-378">Released: **December 7, 2019**</span></span>  
+<span data-ttu-id="09675-379">Platform： **4.18.1911.3**</span><span class="sxs-lookup"><span data-stu-id="09675-379">Platform: **4.18.1911.3**</span></span>  
+<span data-ttu-id="09675-380">Engine： **1.1.17000.7**</span><span class="sxs-lookup"><span data-stu-id="09675-380">Engine: **1.1.17000.7**</span></span>  
+<span data-ttu-id="09675-381">支援階段： **不支援**</span><span class="sxs-lookup"><span data-stu-id="09675-381">Support phase: **No support**</span></span>  
      
-### <a name="whats-new"></a><span data-ttu-id="9ef32-364">新增功能</span><span class="sxs-lookup"><span data-stu-id="9ef32-364">What's new</span></span>
+### <a name="whats-new"></a><span data-ttu-id="09675-382">新增功能</span><span class="sxs-lookup"><span data-stu-id="09675-382">What's new</span></span>
 
-- <span data-ttu-id="9ef32-365">固定 MpCmdRun 追蹤層級</span><span class="sxs-lookup"><span data-stu-id="9ef32-365">Fixed MpCmdRun tracing level</span></span>
-- <span data-ttu-id="9ef32-366">固定 WDFilter 版本資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-366">Fixed WDFilter version info</span></span>
-- <span data-ttu-id="9ef32-367"> (PUA) 提升通知</span><span class="sxs-lookup"><span data-stu-id="9ef32-367">Improve notifications (PUA)</span></span>
-- <span data-ttu-id="9ef32-368">新增 MRT.LOG 記錄以支援檔案</span><span class="sxs-lookup"><span data-stu-id="9ef32-368">add MRT logs to support files</span></span>
+- <span data-ttu-id="09675-383">固定 MpCmdRun 追蹤層級</span><span class="sxs-lookup"><span data-stu-id="09675-383">Fixed MpCmdRun tracing level</span></span>
+- <span data-ttu-id="09675-384">固定 WDFilter 版本資訊</span><span class="sxs-lookup"><span data-stu-id="09675-384">Fixed WDFilter version info</span></span>
+- <span data-ttu-id="09675-385"> (PUA) 提升通知</span><span class="sxs-lookup"><span data-stu-id="09675-385">Improve notifications (PUA)</span></span>
+- <span data-ttu-id="09675-386">新增 MRT.LOG 記錄以支援檔案</span><span class="sxs-lookup"><span data-stu-id="09675-386">add MRT logs to support files</span></span>
    
-### <a name="known-issues"></a><span data-ttu-id="9ef32-369">已知問題</span><span class="sxs-lookup"><span data-stu-id="9ef32-369">Known Issues</span></span>
-<span data-ttu-id="9ef32-370">安裝此更新時，裝置需要「跳過套件4.18.2001.10」才能更新為最新的平臺版本。</span><span class="sxs-lookup"><span data-stu-id="9ef32-370">When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.</span></span>
+### <a name="known-issues"></a><span data-ttu-id="09675-387">已知問題</span><span class="sxs-lookup"><span data-stu-id="09675-387">Known Issues</span></span>
+<span data-ttu-id="09675-388">安裝此更新時，裝置需要「跳過套件4.18.2001.10」才能更新為最新的平臺版本。</span><span class="sxs-lookup"><span data-stu-id="09675-388">When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.</span></span>
 <br/>
 </details>
 
 
-## <a name="microsoft-defender-antivirus-platform-support"></a><span data-ttu-id="9ef32-371">Microsoft Defender 防毒軟體平臺支援</span><span class="sxs-lookup"><span data-stu-id="9ef32-371">Microsoft Defender Antivirus platform support</span></span>
-<span data-ttu-id="9ef32-372">平臺和引擎更新是以每月節奏提供。</span><span class="sxs-lookup"><span data-stu-id="9ef32-372">Platform and engine updates are provided on a monthly cadence.</span></span> <span data-ttu-id="9ef32-373">若要完全支援，請使用最新的平臺更新來保持最新狀態。</span><span class="sxs-lookup"><span data-stu-id="9ef32-373">To be fully supported, keep current with the latest platform updates.</span></span> <span data-ttu-id="9ef32-374">我們的支援結構是動態的，而且會根據最新平臺版本的可用性而演變成兩個階段：</span><span class="sxs-lookup"><span data-stu-id="9ef32-374">Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:</span></span>
+## <a name="microsoft-defender-antivirus-platform-support"></a><span data-ttu-id="09675-389">Microsoft Defender 防毒軟體平臺支援</span><span class="sxs-lookup"><span data-stu-id="09675-389">Microsoft Defender Antivirus platform support</span></span>
+<span data-ttu-id="09675-390">平臺和引擎更新是以每月節奏提供。</span><span class="sxs-lookup"><span data-stu-id="09675-390">Platform and engine updates are provided on a monthly cadence.</span></span> <span data-ttu-id="09675-391">若要完全支援，請使用最新的平臺更新來保持最新狀態。</span><span class="sxs-lookup"><span data-stu-id="09675-391">To be fully supported, keep current with the latest platform updates.</span></span> <span data-ttu-id="09675-392">我們的支援結構是動態的，而且會根據最新平臺版本的可用性而演變成兩個階段：</span><span class="sxs-lookup"><span data-stu-id="09675-392">Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:</span></span>
 
-- <span data-ttu-id="9ef32-375">**安全性和重要更新服務階段** -執行最新的平臺版本時，您將有資格收到反惡意程式碼平臺的安全性和重要更新。</span><span class="sxs-lookup"><span data-stu-id="9ef32-375">**Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.</span></span>
+- <span data-ttu-id="09675-393">**安全性和重要更新服務階段** -執行最新的平臺版本時，您將有資格收到反惡意程式碼平臺的安全性和重要更新。</span><span class="sxs-lookup"><span data-stu-id="09675-393">**Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.</span></span>
  
-- <span data-ttu-id="9ef32-376">**僅限) 階段的技術支援 (** 。發行新的平臺版本之後，支援較舊版本 (n-1) 只會降低技術支援。</span><span class="sxs-lookup"><span data-stu-id="9ef32-376">**Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only.</span></span> <span data-ttu-id="9ef32-377">不再支援非 N-2 版本的平臺。</span><span class="sxs-lookup"><span data-stu-id="9ef32-377">Platform versions older than N-2 will no longer be supported.\*</span></span>
+- <span data-ttu-id="09675-394">**僅限) 階段的技術支援 (** 。發行新的平臺版本之後，支援較舊版本 (n-1) 只會降低技術支援。</span><span class="sxs-lookup"><span data-stu-id="09675-394">**Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only.</span></span> <span data-ttu-id="09675-395">不再支援非 N-2 版本的平臺。</span><span class="sxs-lookup"><span data-stu-id="09675-395">Platform versions older than N-2 will no longer be supported.\*</span></span>
 
-<span data-ttu-id="9ef32-378">\*將繼續提供技術支援，以供從 Windows 10 發行版本本升級 (請參閱[Windows 10 版本隨附的平臺版本](#platform-version-included-with-windows-10-releases)) 至最新的平臺版本。</span><span class="sxs-lookup"><span data-stu-id="9ef32-378">\* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.</span></span>
+<span data-ttu-id="09675-396">\*將繼續提供技術支援，以供從 Windows 10 發行版本本升級 (請參閱[Windows 10 版本隨附的平臺版本](#platform-version-included-with-windows-10-releases)) 至最新的平臺版本。</span><span class="sxs-lookup"><span data-stu-id="09675-396">\* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.</span></span>
 
-<span data-ttu-id="9ef32-379">在技術支援 (只有) 階段，將會透過 Microsoft 客戶服務 & 支援和 Microsoft 受管理的支援服務， (例如 Premier Support) ，供應商業上合理的支援事件。</span><span class="sxs-lookup"><span data-stu-id="9ef32-379">During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support).</span></span> <span data-ttu-id="9ef32-380">如果支援事件需要升級開發以取得進一步的指導方針、需要非安全性更新，或需要安全性更新，則系統會要求客戶升級至最新的平臺版本或中級更新 ( \* ) 。</span><span class="sxs-lookup"><span data-stu-id="9ef32-380">If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (\*).</span></span>
+<span data-ttu-id="09675-397">在技術支援 (只有) 階段，將會透過 Microsoft 客戶服務 & 支援和 Microsoft 受管理的支援服務， (例如 Premier Support) ，供應商業上合理的支援事件。</span><span class="sxs-lookup"><span data-stu-id="09675-397">During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support).</span></span> <span data-ttu-id="09675-398">如果支援事件需要升級開發以取得進一步的指導方針、需要非安全性更新，或需要安全性更新，則系統會要求客戶升級至最新的平臺版本或中級更新 ( \* ) 。</span><span class="sxs-lookup"><span data-stu-id="09675-398">If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (\*).</span></span>
 
-### <a name="platform-version-included-with-windows-10-releases"></a><span data-ttu-id="9ef32-381">Windows 10 版本隨附的平臺版本</span><span class="sxs-lookup"><span data-stu-id="9ef32-381">Platform version included with Windows 10 releases</span></span>
-<span data-ttu-id="9ef32-382">下表提供隨附于最新 Windows 10 版本的 Microsoft Defender 防毒軟體平臺和引擎版本：</span><span class="sxs-lookup"><span data-stu-id="9ef32-382">The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:</span></span>    
+### <a name="platform-version-included-with-windows-10-releases"></a><span data-ttu-id="09675-399">Windows 10 版本隨附的平臺版本</span><span class="sxs-lookup"><span data-stu-id="09675-399">Platform version included with Windows 10 releases</span></span>
+<span data-ttu-id="09675-400">下表提供隨附于最新 Windows 10 版本的 Microsoft Defender 防毒軟體平臺和引擎版本：</span><span class="sxs-lookup"><span data-stu-id="09675-400">The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:</span></span>    
 
-|<span data-ttu-id="9ef32-383">Windows 10 版本</span><span class="sxs-lookup"><span data-stu-id="9ef32-383">Windows 10 release</span></span>  |<span data-ttu-id="9ef32-384">平臺版本</span><span class="sxs-lookup"><span data-stu-id="9ef32-384">Platform version</span></span>  |<span data-ttu-id="9ef32-385">引擎版本</span><span class="sxs-lookup"><span data-stu-id="9ef32-385">Engine version</span></span> |<span data-ttu-id="9ef32-386">支援階段</span><span class="sxs-lookup"><span data-stu-id="9ef32-386">Support phase</span></span> |
+|<span data-ttu-id="09675-401">Windows 10 版本</span><span class="sxs-lookup"><span data-stu-id="09675-401">Windows 10 release</span></span>  |<span data-ttu-id="09675-402">平臺版本</span><span class="sxs-lookup"><span data-stu-id="09675-402">Platform version</span></span>  |<span data-ttu-id="09675-403">引擎版本</span><span class="sxs-lookup"><span data-stu-id="09675-403">Engine version</span></span> |<span data-ttu-id="09675-404">支援階段</span><span class="sxs-lookup"><span data-stu-id="09675-404">Support phase</span></span> |
 |:---|:---|:---|:---|
-|<span data-ttu-id="9ef32-387">2004 (20H1/20H2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-387">2004  (20H1/20H2)</span></span> |<span data-ttu-id="9ef32-388">4.18.1909.6</span><span class="sxs-lookup"><span data-stu-id="9ef32-388">4.18.1909.6</span></span> |<span data-ttu-id="9ef32-389">1.1.17000.2</span><span class="sxs-lookup"><span data-stu-id="9ef32-389">1.1.17000.2</span></span> | <span data-ttu-id="9ef32-390">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-390">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="9ef32-391">1909 (19H2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-391">1909  (19H2)</span></span> |<span data-ttu-id="9ef32-392">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="9ef32-392">4.18.1902.5</span></span> |<span data-ttu-id="9ef32-393">1.1.16700.3</span><span class="sxs-lookup"><span data-stu-id="9ef32-393">1.1.16700.3</span></span> | <span data-ttu-id="9ef32-394">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-394">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="9ef32-395">1903 (19H1) </span><span class="sxs-lookup"><span data-stu-id="9ef32-395">1903  (19H1)</span></span> |<span data-ttu-id="9ef32-396">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="9ef32-396">4.18.1902.5</span></span> |<span data-ttu-id="9ef32-397">1.1.15600.4</span><span class="sxs-lookup"><span data-stu-id="9ef32-397">1.1.15600.4</span></span> | <span data-ttu-id="9ef32-398">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-398">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="9ef32-399">1809 (RS5) </span><span class="sxs-lookup"><span data-stu-id="9ef32-399">1809  (RS5)</span></span> |<span data-ttu-id="9ef32-400">4.18.1807.18075</span><span class="sxs-lookup"><span data-stu-id="9ef32-400">4.18.1807.18075</span></span> |<span data-ttu-id="9ef32-401">1.1.15000.2</span><span class="sxs-lookup"><span data-stu-id="9ef32-401">1.1.15000.2</span></span> | <span data-ttu-id="9ef32-402">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-402">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="9ef32-403">1803 (RS4) </span><span class="sxs-lookup"><span data-stu-id="9ef32-403">1803  (RS4)</span></span> |<span data-ttu-id="9ef32-404">4.13.17134.1</span><span class="sxs-lookup"><span data-stu-id="9ef32-404">4.13.17134.1</span></span> |<span data-ttu-id="9ef32-405">1.1.14600.4</span><span class="sxs-lookup"><span data-stu-id="9ef32-405">1.1.14600.4</span></span> | <span data-ttu-id="9ef32-406">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-406">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="9ef32-407">1709 (RS3) </span><span class="sxs-lookup"><span data-stu-id="9ef32-407">1709  (RS3)</span></span> |<span data-ttu-id="9ef32-408">4.12.16299.15</span><span class="sxs-lookup"><span data-stu-id="9ef32-408">4.12.16299.15</span></span> |<span data-ttu-id="9ef32-409">1.1.14104.0</span><span class="sxs-lookup"><span data-stu-id="9ef32-409">1.1.14104.0</span></span> | <span data-ttu-id="9ef32-410">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-410">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="9ef32-411">1703 (RS2) </span><span class="sxs-lookup"><span data-stu-id="9ef32-411">1703  (RS2)</span></span> |<span data-ttu-id="9ef32-412">4.11.15603.2</span><span class="sxs-lookup"><span data-stu-id="9ef32-412">4.11.15603.2</span></span> |<span data-ttu-id="9ef32-413">1.1.13504.0</span><span class="sxs-lookup"><span data-stu-id="9ef32-413">1.1.13504.0</span></span> | <span data-ttu-id="9ef32-414">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-414">Technical upgrade support (only)</span></span> |
-|<span data-ttu-id="9ef32-415">1607 (RS1) </span><span class="sxs-lookup"><span data-stu-id="9ef32-415">1607 (RS1)</span></span> |<span data-ttu-id="9ef32-416">4.10.14393.3683</span><span class="sxs-lookup"><span data-stu-id="9ef32-416">4.10.14393.3683</span></span> |<span data-ttu-id="9ef32-417">1.1.12805.0</span><span class="sxs-lookup"><span data-stu-id="9ef32-417">1.1.12805.0</span></span> | <span data-ttu-id="9ef32-418">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="9ef32-418">Technical upgrade support (only)</span></span> |  
+|<span data-ttu-id="09675-405">2004 (20H1/20H2) </span><span class="sxs-lookup"><span data-stu-id="09675-405">2004  (20H1/20H2)</span></span> |<span data-ttu-id="09675-406">4.18.1909.6</span><span class="sxs-lookup"><span data-stu-id="09675-406">4.18.1909.6</span></span> |<span data-ttu-id="09675-407">1.1.17000.2</span><span class="sxs-lookup"><span data-stu-id="09675-407">1.1.17000.2</span></span> | <span data-ttu-id="09675-408">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-408">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="09675-409">1909 (19H2) </span><span class="sxs-lookup"><span data-stu-id="09675-409">1909  (19H2)</span></span> |<span data-ttu-id="09675-410">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="09675-410">4.18.1902.5</span></span> |<span data-ttu-id="09675-411">1.1.16700.3</span><span class="sxs-lookup"><span data-stu-id="09675-411">1.1.16700.3</span></span> | <span data-ttu-id="09675-412">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-412">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="09675-413">1903 (19H1) </span><span class="sxs-lookup"><span data-stu-id="09675-413">1903  (19H1)</span></span> |<span data-ttu-id="09675-414">4.18.1902.5</span><span class="sxs-lookup"><span data-stu-id="09675-414">4.18.1902.5</span></span> |<span data-ttu-id="09675-415">1.1.15600.4</span><span class="sxs-lookup"><span data-stu-id="09675-415">1.1.15600.4</span></span> | <span data-ttu-id="09675-416">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-416">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="09675-417">1809 (RS5) </span><span class="sxs-lookup"><span data-stu-id="09675-417">1809  (RS5)</span></span> |<span data-ttu-id="09675-418">4.18.1807.18075</span><span class="sxs-lookup"><span data-stu-id="09675-418">4.18.1807.18075</span></span> |<span data-ttu-id="09675-419">1.1.15000.2</span><span class="sxs-lookup"><span data-stu-id="09675-419">1.1.15000.2</span></span> | <span data-ttu-id="09675-420">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-420">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="09675-421">1803 (RS4) </span><span class="sxs-lookup"><span data-stu-id="09675-421">1803  (RS4)</span></span> |<span data-ttu-id="09675-422">4.13.17134.1</span><span class="sxs-lookup"><span data-stu-id="09675-422">4.13.17134.1</span></span> |<span data-ttu-id="09675-423">1.1.14600.4</span><span class="sxs-lookup"><span data-stu-id="09675-423">1.1.14600.4</span></span> | <span data-ttu-id="09675-424">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-424">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="09675-425">1709 (RS3) </span><span class="sxs-lookup"><span data-stu-id="09675-425">1709  (RS3)</span></span> |<span data-ttu-id="09675-426">4.12.16299.15</span><span class="sxs-lookup"><span data-stu-id="09675-426">4.12.16299.15</span></span> |<span data-ttu-id="09675-427">1.1.14104.0</span><span class="sxs-lookup"><span data-stu-id="09675-427">1.1.14104.0</span></span> | <span data-ttu-id="09675-428">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-428">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="09675-429">1703 (RS2) </span><span class="sxs-lookup"><span data-stu-id="09675-429">1703  (RS2)</span></span> |<span data-ttu-id="09675-430">4.11.15603.2</span><span class="sxs-lookup"><span data-stu-id="09675-430">4.11.15603.2</span></span> |<span data-ttu-id="09675-431">1.1.13504.0</span><span class="sxs-lookup"><span data-stu-id="09675-431">1.1.13504.0</span></span> | <span data-ttu-id="09675-432">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-432">Technical upgrade support (only)</span></span> |
+|<span data-ttu-id="09675-433">1607 (RS1) </span><span class="sxs-lookup"><span data-stu-id="09675-433">1607 (RS1)</span></span> |<span data-ttu-id="09675-434">4.10.14393.3683</span><span class="sxs-lookup"><span data-stu-id="09675-434">4.10.14393.3683</span></span> |<span data-ttu-id="09675-435">1.1.12805.0</span><span class="sxs-lookup"><span data-stu-id="09675-435">1.1.12805.0</span></span> | <span data-ttu-id="09675-436">技術升級只支援 () </span><span class="sxs-lookup"><span data-stu-id="09675-436">Technical upgrade support (only)</span></span> |  
 
-<span data-ttu-id="9ef32-419">如需 Windows 10 版本資訊，請參閱[Windows 生命週期事實資料表](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。</span><span class="sxs-lookup"><span data-stu-id="9ef32-419">For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).</span></span>
+<span data-ttu-id="09675-437">如需 Windows 10 版本資訊，請參閱[Windows 生命週期事實資料表](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。</span><span class="sxs-lookup"><span data-stu-id="09675-437">For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).</span></span>
 
-## <a name="updates-for-deployment-image-servicing-and-management-dism"></a><span data-ttu-id="9ef32-420">更新部署映像服務與管理 (DISM) </span><span class="sxs-lookup"><span data-stu-id="9ef32-420">Updates for Deployment Image Servicing and Management (DISM)</span></span>
+## <a name="updates-for-deployment-image-servicing-and-management-dism"></a><span data-ttu-id="09675-438">更新部署映像服務與管理 (DISM) </span><span class="sxs-lookup"><span data-stu-id="09675-438">Updates for Deployment Image Servicing and Management (DISM)</span></span>
 
-<span data-ttu-id="9ef32-421">建議您更新 Windows 10 (Enterprise、Pro 及 Home edition) 、Windows Server 2019，以及 Windows Server 2016 OS 安裝影像與最新的防病毒和反惡意軟體更新。</span><span class="sxs-lookup"><span data-stu-id="9ef32-421">We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates.</span></span> <span data-ttu-id="9ef32-422">將您的作業系統安裝影像保持在最新狀態，可協助避免保護方面的缺口。</span><span class="sxs-lookup"><span data-stu-id="9ef32-422">Keeping your OS installation images up to date helps avoid a gap in protection.</span></span> 
+<span data-ttu-id="09675-439">建議您更新 Windows 10 (Enterprise、Pro 及 Home edition) 、Windows Server 2019，以及 Windows Server 2016 OS 安裝影像與最新的防病毒和反惡意軟體更新。</span><span class="sxs-lookup"><span data-stu-id="09675-439">We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates.</span></span> <span data-ttu-id="09675-440">將您的作業系統安裝影像保持在最新狀態，可協助避免保護方面的缺口。</span><span class="sxs-lookup"><span data-stu-id="09675-440">Keeping your OS installation images up to date helps avoid a gap in protection.</span></span> 
 
-<span data-ttu-id="9ef32-423">如需詳細資訊，請參閱[Microsoft Defender update for Windows 作業系統安裝影像](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。</span><span class="sxs-lookup"><span data-stu-id="9ef32-423">For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).</span></span>
+<span data-ttu-id="09675-441">如需詳細資訊，請參閱[Microsoft Defender update for Windows 作業系統安裝影像](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。</span><span class="sxs-lookup"><span data-stu-id="09675-441">For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).</span></span>
 
 <details>
-<summary><span data-ttu-id="9ef32-424">1.1.2106.01</span><span class="sxs-lookup"><span data-stu-id="9ef32-424">1.1.2106.01</span></span></summary>
+<summary><span data-ttu-id="09675-442">1.1.2106.01</span><span class="sxs-lookup"><span data-stu-id="09675-442">1.1.2106.01</span></span></summary>
 
-<span data-ttu-id="9ef32-425">&ensp;套件版本： **1.1.2106.01**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-425">&ensp;Package version: **1.1.2106.01**  </span></span>  
-<span data-ttu-id="9ef32-426">&ensp;平臺版本： **4.18.2104.14** </span><span class="sxs-lookup"><span data-stu-id="9ef32-426">&ensp;Platform version: **4.18.2104.14** </span></span>  
-<span data-ttu-id="9ef32-427">&ensp;引擎版本： **1.1.18100.6**</span><span class="sxs-lookup"><span data-stu-id="9ef32-427">&ensp;Engine version: **1.1.18100.6**</span></span>  
-<span data-ttu-id="9ef32-428">&ensp;簽章版本： **1.339.1923.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-428">&ensp;Signature version: **1.339.1923.0**</span></span>    
+<span data-ttu-id="09675-443">&ensp;套件版本： **1.1.2106.01**  </span><span class="sxs-lookup"><span data-stu-id="09675-443">&ensp;Package version: **1.1.2106.01**  </span></span>  
+<span data-ttu-id="09675-444">&ensp;平臺版本： **4.18.2104.14** </span><span class="sxs-lookup"><span data-stu-id="09675-444">&ensp;Platform version: **4.18.2104.14** </span></span>  
+<span data-ttu-id="09675-445">&ensp;引擎版本： **1.1.18100.6**</span><span class="sxs-lookup"><span data-stu-id="09675-445">&ensp;Engine version: **1.1.18100.6**</span></span>  
+<span data-ttu-id="09675-446">&ensp;簽章版本： **1.339.1923.0**</span><span class="sxs-lookup"><span data-stu-id="09675-446">&ensp;Signature version: **1.339.1923.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-429">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-429">Fixes</span></span>
-- <span data-ttu-id="9ef32-430">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-430">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-447">修復</span><span class="sxs-lookup"><span data-stu-id="09675-447">Fixes</span></span>
+- <span data-ttu-id="09675-448">無</span><span class="sxs-lookup"><span data-stu-id="09675-448">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-431">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-431">Additional information</span></span>
-- <span data-ttu-id="9ef32-432">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-432">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-449">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-449">Additional information</span></span>
+- <span data-ttu-id="09675-450">無</span><span class="sxs-lookup"><span data-stu-id="09675-450">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-433">1.1.2105.01</span><span class="sxs-lookup"><span data-stu-id="9ef32-433">1.1.2105.01</span></span></summary>
+<summary><span data-ttu-id="09675-451">1.1.2105.01</span><span class="sxs-lookup"><span data-stu-id="09675-451">1.1.2105.01</span></span></summary>
 
-<span data-ttu-id="9ef32-434">&ensp;套件版本： **1.1.2105.01**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-434">&ensp;Package version: **1.1.2105.01**  </span></span>  
-<span data-ttu-id="9ef32-435">&ensp;平臺版本： **4.18.2103.7** </span><span class="sxs-lookup"><span data-stu-id="9ef32-435">&ensp;Platform version: **4.18.2103.7** </span></span>  
-<span data-ttu-id="9ef32-436">&ensp;引擎版本： **1.1.18100.6**</span><span class="sxs-lookup"><span data-stu-id="9ef32-436">&ensp;Engine version: **1.1.18100.6**</span></span>  
-<span data-ttu-id="9ef32-437">&ensp;簽章版本： **1.339.42.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-437">&ensp;Signature version: **1.339.42.0**</span></span>    
+<span data-ttu-id="09675-452">&ensp;套件版本： **1.1.2105.01**  </span><span class="sxs-lookup"><span data-stu-id="09675-452">&ensp;Package version: **1.1.2105.01**  </span></span>  
+<span data-ttu-id="09675-453">&ensp;平臺版本： **4.18.2103.7** </span><span class="sxs-lookup"><span data-stu-id="09675-453">&ensp;Platform version: **4.18.2103.7** </span></span>  
+<span data-ttu-id="09675-454">&ensp;引擎版本： **1.1.18100.6**</span><span class="sxs-lookup"><span data-stu-id="09675-454">&ensp;Engine version: **1.1.18100.6**</span></span>  
+<span data-ttu-id="09675-455">&ensp;簽章版本： **1.339.42.0**</span><span class="sxs-lookup"><span data-stu-id="09675-455">&ensp;Signature version: **1.339.42.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-438">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-438">Fixes</span></span>
-- <span data-ttu-id="9ef32-439">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-439">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-456">修復</span><span class="sxs-lookup"><span data-stu-id="09675-456">Fixes</span></span>
+- <span data-ttu-id="09675-457">無</span><span class="sxs-lookup"><span data-stu-id="09675-457">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-440">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-440">Additional information</span></span>
-- <span data-ttu-id="9ef32-441">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-441">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-458">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-458">Additional information</span></span>
+- <span data-ttu-id="09675-459">無</span><span class="sxs-lookup"><span data-stu-id="09675-459">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-442">1.1.2104.01</span><span class="sxs-lookup"><span data-stu-id="9ef32-442">1.1.2104.01</span></span></summary>
+<summary><span data-ttu-id="09675-460">1.1.2104.01</span><span class="sxs-lookup"><span data-stu-id="09675-460">1.1.2104.01</span></span></summary>
 
-<span data-ttu-id="9ef32-443">&ensp;套件版本： **1.1.2104.01**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-443">&ensp;Package version: **1.1.2104.01**  </span></span>  
-<span data-ttu-id="9ef32-444">&ensp;平臺版本： **4.18.2102.4** </span><span class="sxs-lookup"><span data-stu-id="9ef32-444">&ensp;Platform version: **4.18.2102.4** </span></span>  
-<span data-ttu-id="9ef32-445">&ensp;引擎版本： **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-445">&ensp;Engine version: **1.1.18000.5**</span></span>  
-<span data-ttu-id="9ef32-446">&ensp;簽章版本： **1.335.232.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-446">&ensp;Signature version: **1.335.232.0**</span></span>    
+<span data-ttu-id="09675-461">&ensp;套件版本： **1.1.2104.01**  </span><span class="sxs-lookup"><span data-stu-id="09675-461">&ensp;Package version: **1.1.2104.01**  </span></span>  
+<span data-ttu-id="09675-462">&ensp;平臺版本： **4.18.2102.4** </span><span class="sxs-lookup"><span data-stu-id="09675-462">&ensp;Platform version: **4.18.2102.4** </span></span>  
+<span data-ttu-id="09675-463">&ensp;引擎版本： **1.1.18000.5**</span><span class="sxs-lookup"><span data-stu-id="09675-463">&ensp;Engine version: **1.1.18000.5**</span></span>  
+<span data-ttu-id="09675-464">&ensp;簽章版本： **1.335.232.0**</span><span class="sxs-lookup"><span data-stu-id="09675-464">&ensp;Signature version: **1.335.232.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-447">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-447">Fixes</span></span>
-- <span data-ttu-id="9ef32-448">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-448">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-465">修復</span><span class="sxs-lookup"><span data-stu-id="09675-465">Fixes</span></span>
+- <span data-ttu-id="09675-466">無</span><span class="sxs-lookup"><span data-stu-id="09675-466">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-449">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-449">Additional information</span></span>
-- <span data-ttu-id="9ef32-450">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-450">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-467">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-467">Additional information</span></span>
+- <span data-ttu-id="09675-468">無</span><span class="sxs-lookup"><span data-stu-id="09675-468">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-451">1.1.2103.01</span><span class="sxs-lookup"><span data-stu-id="9ef32-451">1.1.2103.01</span></span></summary>
+<summary><span data-ttu-id="09675-469">1.1.2103.01</span><span class="sxs-lookup"><span data-stu-id="09675-469">1.1.2103.01</span></span></summary>
 
-<span data-ttu-id="9ef32-452">&ensp;套件版本： **1.1.2103.01**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-452">&ensp;Package version: **1.1.2103.01**  </span></span>  
-<span data-ttu-id="9ef32-453">&ensp;平臺版本： **4.18.2101.9** </span><span class="sxs-lookup"><span data-stu-id="9ef32-453">&ensp;Platform version: **4.18.2101.9** </span></span>  
-<span data-ttu-id="9ef32-454">&ensp;引擎版本： **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-454">&ensp;Engine version: **1.1.17800.5**</span></span>  
-<span data-ttu-id="9ef32-455">&ensp;簽章版本： **1.331.2302.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-455">&ensp;Signature version: **1.331.2302.0**</span></span>    
+<span data-ttu-id="09675-470">&ensp;套件版本： **1.1.2103.01**  </span><span class="sxs-lookup"><span data-stu-id="09675-470">&ensp;Package version: **1.1.2103.01**  </span></span>  
+<span data-ttu-id="09675-471">&ensp;平臺版本： **4.18.2101.9** </span><span class="sxs-lookup"><span data-stu-id="09675-471">&ensp;Platform version: **4.18.2101.9** </span></span>  
+<span data-ttu-id="09675-472">&ensp;引擎版本： **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="09675-472">&ensp;Engine version: **1.1.17800.5**</span></span>  
+<span data-ttu-id="09675-473">&ensp;簽章版本： **1.331.2302.0**</span><span class="sxs-lookup"><span data-stu-id="09675-473">&ensp;Signature version: **1.331.2302.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-456">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-456">Fixes</span></span>
-- <span data-ttu-id="9ef32-457">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-457">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-474">修復</span><span class="sxs-lookup"><span data-stu-id="09675-474">Fixes</span></span>
+- <span data-ttu-id="09675-475">無</span><span class="sxs-lookup"><span data-stu-id="09675-475">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-458">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-458">Additional information</span></span>
-- <span data-ttu-id="9ef32-459">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-459">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-476">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-476">Additional information</span></span>
+- <span data-ttu-id="09675-477">無</span><span class="sxs-lookup"><span data-stu-id="09675-477">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-460">1.1.2102.03</span><span class="sxs-lookup"><span data-stu-id="9ef32-460">1.1.2102.03</span></span></summary>
+<summary><span data-ttu-id="09675-478">1.1.2102.03</span><span class="sxs-lookup"><span data-stu-id="09675-478">1.1.2102.03</span></span></summary>
 
-<span data-ttu-id="9ef32-461">&ensp;套件版本： **1.1.2102.03**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-461">&ensp;Package version: **1.1.2102.03**  </span></span>  
-<span data-ttu-id="9ef32-462">&ensp;平臺版本： **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="9ef32-462">&ensp;Platform version: **4.18.2011.6** </span></span>  
-<span data-ttu-id="9ef32-463">&ensp;引擎版本： **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-463">&ensp;Engine version: **1.1.17800.5**</span></span>  
-<span data-ttu-id="9ef32-464">&ensp;簽章版本： **1.331.174.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-464">&ensp;Signature version: **1.331.174.0**</span></span>    
+<span data-ttu-id="09675-479">&ensp;套件版本： **1.1.2102.03**  </span><span class="sxs-lookup"><span data-stu-id="09675-479">&ensp;Package version: **1.1.2102.03**  </span></span>  
+<span data-ttu-id="09675-480">&ensp;平臺版本： **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="09675-480">&ensp;Platform version: **4.18.2011.6** </span></span>  
+<span data-ttu-id="09675-481">&ensp;引擎版本： **1.1.17800.5**</span><span class="sxs-lookup"><span data-stu-id="09675-481">&ensp;Engine version: **1.1.17800.5**</span></span>  
+<span data-ttu-id="09675-482">&ensp;簽章版本： **1.331.174.0**</span><span class="sxs-lookup"><span data-stu-id="09675-482">&ensp;Signature version: **1.331.174.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-465">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-465">Fixes</span></span>
-- <span data-ttu-id="9ef32-466">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-466">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-483">修復</span><span class="sxs-lookup"><span data-stu-id="09675-483">Fixes</span></span>
+- <span data-ttu-id="09675-484">無</span><span class="sxs-lookup"><span data-stu-id="09675-484">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-467">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-467">Additional information</span></span>
-- <span data-ttu-id="9ef32-468">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-468">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-485">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-485">Additional information</span></span>
+- <span data-ttu-id="09675-486">無</span><span class="sxs-lookup"><span data-stu-id="09675-486">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-469">1.1.2101.02</span><span class="sxs-lookup"><span data-stu-id="9ef32-469">1.1.2101.02</span></span></summary>
+<summary><span data-ttu-id="09675-487">1.1.2101.02</span><span class="sxs-lookup"><span data-stu-id="09675-487">1.1.2101.02</span></span></summary>
 
-<span data-ttu-id="9ef32-470">&ensp;套件版本： **1.1.2101.02**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-470">&ensp;Package version: **1.1.2101.02**  </span></span>  
-<span data-ttu-id="9ef32-471">&ensp;平臺版本： **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="9ef32-471">&ensp;Platform version: **4.18.2011.6** </span></span>  
-<span data-ttu-id="9ef32-472">&ensp;引擎版本： **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="9ef32-472">&ensp;Engine version: **1.1.17700.4**</span></span>  
-<span data-ttu-id="9ef32-473">&ensp;簽章版本： **1.329.1796.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-473">&ensp;Signature version: **1.329.1796.0**</span></span>    
+<span data-ttu-id="09675-488">&ensp;套件版本： **1.1.2101.02**  </span><span class="sxs-lookup"><span data-stu-id="09675-488">&ensp;Package version: **1.1.2101.02**  </span></span>  
+<span data-ttu-id="09675-489">&ensp;平臺版本： **4.18.2011.6** </span><span class="sxs-lookup"><span data-stu-id="09675-489">&ensp;Platform version: **4.18.2011.6** </span></span>  
+<span data-ttu-id="09675-490">&ensp;引擎版本： **1.1.17700.4**</span><span class="sxs-lookup"><span data-stu-id="09675-490">&ensp;Engine version: **1.1.17700.4**</span></span>  
+<span data-ttu-id="09675-491">&ensp;簽章版本： **1.329.1796.0**</span><span class="sxs-lookup"><span data-stu-id="09675-491">&ensp;Signature version: **1.329.1796.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-474">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-474">Fixes</span></span>
-- <span data-ttu-id="9ef32-475">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-475">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-492">修復</span><span class="sxs-lookup"><span data-stu-id="09675-492">Fixes</span></span>
+- <span data-ttu-id="09675-493">無</span><span class="sxs-lookup"><span data-stu-id="09675-493">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-476">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-476">Additional information</span></span>
-- <span data-ttu-id="9ef32-477">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-477">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-494">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-494">Additional information</span></span>
+- <span data-ttu-id="09675-495">無</span><span class="sxs-lookup"><span data-stu-id="09675-495">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-478">1.1.2012.01</span><span class="sxs-lookup"><span data-stu-id="9ef32-478">1.1.2012.01</span></span></summary>
+<summary><span data-ttu-id="09675-496">1.1.2012.01</span><span class="sxs-lookup"><span data-stu-id="09675-496">1.1.2012.01</span></span></summary>
 
-<span data-ttu-id="9ef32-479">&ensp;套件版本： **1.1.2012.01**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-479">&ensp;Package version: **1.1.2012.01**  </span></span>  
-<span data-ttu-id="9ef32-480">&ensp;平臺版本： **4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="9ef32-480">&ensp;Platform version: **4.18.2010.7** </span></span>  
-<span data-ttu-id="9ef32-481">&ensp;引擎版本： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-481">&ensp;Engine version: **1.1.17600.5**</span></span>  
-<span data-ttu-id="9ef32-482">&ensp;簽章版本： **1.327.1991.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-482">&ensp;Signature version: **1.327.1991.0**</span></span>    
+<span data-ttu-id="09675-497">&ensp;套件版本： **1.1.2012.01**  </span><span class="sxs-lookup"><span data-stu-id="09675-497">&ensp;Package version: **1.1.2012.01**  </span></span>  
+<span data-ttu-id="09675-498">&ensp;平臺版本： **4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="09675-498">&ensp;Platform version: **4.18.2010.7** </span></span>  
+<span data-ttu-id="09675-499">&ensp;引擎版本： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="09675-499">&ensp;Engine version: **1.1.17600.5**</span></span>  
+<span data-ttu-id="09675-500">&ensp;簽章版本： **1.327.1991.0**</span><span class="sxs-lookup"><span data-stu-id="09675-500">&ensp;Signature version: **1.327.1991.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-483">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-483">Fixes</span></span>
-- <span data-ttu-id="9ef32-484">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-484">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-501">修復</span><span class="sxs-lookup"><span data-stu-id="09675-501">Fixes</span></span>
+- <span data-ttu-id="09675-502">無</span><span class="sxs-lookup"><span data-stu-id="09675-502">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-485">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-485">Additional information</span></span>
-- <span data-ttu-id="9ef32-486">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-486">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-503">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-503">Additional information</span></span>
+- <span data-ttu-id="09675-504">無</span><span class="sxs-lookup"><span data-stu-id="09675-504">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-487">1.1.2011.02</span><span class="sxs-lookup"><span data-stu-id="9ef32-487">1.1.2011.02</span></span></summary>
+<summary><span data-ttu-id="09675-505">1.1.2011.02</span><span class="sxs-lookup"><span data-stu-id="09675-505">1.1.2011.02</span></span></summary>
 
-<span data-ttu-id="9ef32-488">&ensp;套件版本： **1.1.2011.02**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-488">&ensp;Package version: **1.1.2011.02**  </span></span>  
-<span data-ttu-id="9ef32-489">&ensp;平臺版本： **4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="9ef32-489">&ensp;Platform version: **4.18.2010.7** </span></span>  
-<span data-ttu-id="9ef32-490">&ensp;引擎版本： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-490">&ensp;Engine version: **1.1.17600.5**</span></span>  
-<span data-ttu-id="9ef32-491">&ensp;簽章版本： **1.327.658.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-491">&ensp;Signature version: **1.327.658.0**</span></span>    
+<span data-ttu-id="09675-506">&ensp;套件版本： **1.1.2011.02**  </span><span class="sxs-lookup"><span data-stu-id="09675-506">&ensp;Package version: **1.1.2011.02**  </span></span>  
+<span data-ttu-id="09675-507">&ensp;平臺版本： **4.18.2010.7** </span><span class="sxs-lookup"><span data-stu-id="09675-507">&ensp;Platform version: **4.18.2010.7** </span></span>  
+<span data-ttu-id="09675-508">&ensp;引擎版本： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="09675-508">&ensp;Engine version: **1.1.17600.5**</span></span>  
+<span data-ttu-id="09675-509">&ensp;簽章版本： **1.327.658.0**</span><span class="sxs-lookup"><span data-stu-id="09675-509">&ensp;Signature version: **1.327.658.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-492">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-492">Fixes</span></span>
-- <span data-ttu-id="9ef32-493">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-493">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-510">修復</span><span class="sxs-lookup"><span data-stu-id="09675-510">Fixes</span></span>
+- <span data-ttu-id="09675-511">無</span><span class="sxs-lookup"><span data-stu-id="09675-511">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-494">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-494">Additional information</span></span>
-- <span data-ttu-id="9ef32-495">更新 Microsoft Defender 防毒軟體簽章</span><span class="sxs-lookup"><span data-stu-id="9ef32-495">Refreshed Microsoft Defender Antivirus signatures</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-512">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-512">Additional information</span></span>
+- <span data-ttu-id="09675-513">更新 Microsoft Defender 防毒軟體簽章</span><span class="sxs-lookup"><span data-stu-id="09675-513">Refreshed Microsoft Defender Antivirus signatures</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-496">1.1.2011.01</span><span class="sxs-lookup"><span data-stu-id="9ef32-496">1.1.2011.01</span></span></summary>
+<summary><span data-ttu-id="09675-514">1.1.2011.01</span><span class="sxs-lookup"><span data-stu-id="09675-514">1.1.2011.01</span></span></summary>
 
-<span data-ttu-id="9ef32-497">&ensp;套件版本： **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-497">&ensp;Package version: **1.1.2011.01**  </span></span>  
-<span data-ttu-id="9ef32-498">&ensp;平臺版本： **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="9ef32-498">&ensp;Platform version: **4.18.2009.7**</span></span>  
-<span data-ttu-id="9ef32-499">&ensp;引擎版本： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-499">&ensp;Engine version: **1.1.17600.5**</span></span>  
-<span data-ttu-id="9ef32-500">&ensp;簽章版本： **1.327.344.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-500">&ensp;Signature version: **1.327.344.0**</span></span>    
+<span data-ttu-id="09675-515">&ensp;套件版本： **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="09675-515">&ensp;Package version: **1.1.2011.01**  </span></span>  
+<span data-ttu-id="09675-516">&ensp;平臺版本： **4.18.2009.7**</span><span class="sxs-lookup"><span data-stu-id="09675-516">&ensp;Platform version: **4.18.2009.7**</span></span>  
+<span data-ttu-id="09675-517">&ensp;引擎版本： **1.1.17600.5**</span><span class="sxs-lookup"><span data-stu-id="09675-517">&ensp;Engine version: **1.1.17600.5**</span></span>  
+<span data-ttu-id="09675-518">&ensp;簽章版本： **1.327.344.0**</span><span class="sxs-lookup"><span data-stu-id="09675-518">&ensp;Signature version: **1.327.344.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-501">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-501">Fixes</span></span>
-- <span data-ttu-id="9ef32-502">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-502">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-519">修復</span><span class="sxs-lookup"><span data-stu-id="09675-519">Fixes</span></span>
+- <span data-ttu-id="09675-520">無</span><span class="sxs-lookup"><span data-stu-id="09675-520">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-503">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-503">Additional information</span></span>
-- <span data-ttu-id="9ef32-504">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-504">None</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-521">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-521">Additional information</span></span>
+- <span data-ttu-id="09675-522">無</span><span class="sxs-lookup"><span data-stu-id="09675-522">None</span></span>  
 <br/>
 </details><details>
-<summary><span data-ttu-id="9ef32-505">1.1.2009.10</span><span class="sxs-lookup"><span data-stu-id="9ef32-505">1.1.2009.10</span></span></summary>
+<summary><span data-ttu-id="09675-523">1.1.2009.10</span><span class="sxs-lookup"><span data-stu-id="09675-523">1.1.2009.10</span></span></summary>
 
-<span data-ttu-id="9ef32-506">&ensp;套件版本： **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="9ef32-506">&ensp;Package version: **1.1.2011.01**  </span></span>  
-<span data-ttu-id="9ef32-507">&ensp;平臺版本： **4.18.2008.9** </span><span class="sxs-lookup"><span data-stu-id="9ef32-507">&ensp;Platform version: **4.18.2008.9** </span></span>  
-<span data-ttu-id="9ef32-508">&ensp;引擎版本： **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="9ef32-508">&ensp;Engine version: **1.1.17400.5**</span></span>  
-<span data-ttu-id="9ef32-509">&ensp;簽章版本： **1.327.2216.0**</span><span class="sxs-lookup"><span data-stu-id="9ef32-509">&ensp;Signature version: **1.327.2216.0**</span></span>    
+<span data-ttu-id="09675-524">&ensp;套件版本： **1.1.2011.01**  </span><span class="sxs-lookup"><span data-stu-id="09675-524">&ensp;Package version: **1.1.2011.01**  </span></span>  
+<span data-ttu-id="09675-525">&ensp;平臺版本： **4.18.2008.9** </span><span class="sxs-lookup"><span data-stu-id="09675-525">&ensp;Platform version: **4.18.2008.9** </span></span>  
+<span data-ttu-id="09675-526">&ensp;引擎版本： **1.1.17400.5**</span><span class="sxs-lookup"><span data-stu-id="09675-526">&ensp;Engine version: **1.1.17400.5**</span></span>  
+<span data-ttu-id="09675-527">&ensp;簽章版本： **1.327.2216.0**</span><span class="sxs-lookup"><span data-stu-id="09675-527">&ensp;Signature version: **1.327.2216.0**</span></span>    
     
-### <a name="fixes"></a><span data-ttu-id="9ef32-510">修復</span><span class="sxs-lookup"><span data-stu-id="9ef32-510">Fixes</span></span>
-- <span data-ttu-id="9ef32-511">無</span><span class="sxs-lookup"><span data-stu-id="9ef32-511">None</span></span>
+### <a name="fixes"></a><span data-ttu-id="09675-528">修復</span><span class="sxs-lookup"><span data-stu-id="09675-528">Fixes</span></span>
+- <span data-ttu-id="09675-529">無</span><span class="sxs-lookup"><span data-stu-id="09675-529">None</span></span>
 
-### <a name="additional-information"></a><span data-ttu-id="9ef32-512">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9ef32-512">Additional information</span></span>
-- <span data-ttu-id="9ef32-513">新增對 Windows 10 RS1 或更新版本作業系統安裝影像的支援。</span><span class="sxs-lookup"><span data-stu-id="9ef32-513">Added support for Windows 10 RS1 or later OS install images.</span></span>  
+### <a name="additional-information"></a><span data-ttu-id="09675-530">其他資訊</span><span class="sxs-lookup"><span data-stu-id="09675-530">Additional information</span></span>
+- <span data-ttu-id="09675-531">新增對 Windows 10 RS1 或更新版本作業系統安裝影像的支援。</span><span class="sxs-lookup"><span data-stu-id="09675-531">Added support for Windows 10 RS1 or later OS install images.</span></span>  
 <br/>
 </details>
 
-## <a name="additional-resources"></a><span data-ttu-id="9ef32-514">其他資源</span><span class="sxs-lookup"><span data-stu-id="9ef32-514">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="09675-532">其他資源</span><span class="sxs-lookup"><span data-stu-id="09675-532">Additional resources</span></span>
 
-| <span data-ttu-id="9ef32-515">文章</span><span class="sxs-lookup"><span data-stu-id="9ef32-515">Article</span></span> | <span data-ttu-id="9ef32-516">描述</span><span class="sxs-lookup"><span data-stu-id="9ef32-516">Description</span></span>  |
+| <span data-ttu-id="09675-533">文章</span><span class="sxs-lookup"><span data-stu-id="09675-533">Article</span></span> | <span data-ttu-id="09675-534">描述</span><span class="sxs-lookup"><span data-stu-id="09675-534">Description</span></span>  |
 |:---|:---|
-|[<span data-ttu-id="9ef32-517">適用于 Windows 作業系統安裝映射的 Microsoft Defender 更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-517">Microsoft Defender update for Windows operating system installation images</span></span>](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | <span data-ttu-id="9ef32-518">查看您 OS 安裝映射的反惡意軟體更新軟體包 (WIM 和 VHD 檔案) 。</span><span class="sxs-lookup"><span data-stu-id="9ef32-518">Review antimalware update packages for your OS installation images (WIM and VHD files).</span></span> <span data-ttu-id="9ef32-519">取得 Windows 10 (Enterprise、Pro 和家用版的 Microsoft Defender 防毒軟體更新) 、Windows Server 2019 及 Windows Server 2016 安裝影像。</span><span class="sxs-lookup"><span data-stu-id="9ef32-519">Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 installation images.</span></span>  |
-|[<span data-ttu-id="9ef32-520">管理如何下載及套用保護更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-520">Manage how protection updates are downloaded and applied</span></span>](manage-protection-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="9ef32-521">保護更新可透過許多來源傳遞。</span><span class="sxs-lookup"><span data-stu-id="9ef32-521">Protection updates can be delivered through many sources.</span></span> |
-|[<span data-ttu-id="9ef32-522">管理應下載及套用防護更新的時間</span><span class="sxs-lookup"><span data-stu-id="9ef32-522">Manage when protection updates should be downloaded and applied</span></span>](manage-protection-update-schedule-microsoft-defender-antivirus.md) | <span data-ttu-id="9ef32-523">您可以排程應下載保護更新的時間。</span><span class="sxs-lookup"><span data-stu-id="9ef32-523">You can schedule when protection updates should be downloaded.</span></span> |
-|[<span data-ttu-id="9ef32-524">管理已過期端點的更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-524">Manage updates for endpoints that are out of date</span></span>](manage-outdated-endpoints-microsoft-defender-antivirus.md) | <span data-ttu-id="9ef32-525">如果端點未接更新或排程的掃描，您可以在下次使用者登入時強制更新或掃描。</span><span class="sxs-lookup"><span data-stu-id="9ef32-525">If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in.</span></span> |
-|[<span data-ttu-id="9ef32-526">管理事件型強制更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-526">Manage event-based forced updates</span></span>](manage-event-based-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="9ef32-527">您可以設定保護更新，以在啟動時或在某些雲端提供的保護事件之後下載。</span><span class="sxs-lookup"><span data-stu-id="9ef32-527">You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.</span></span> |
-|[<span data-ttu-id="9ef32-528">管理行動裝置和虛擬機器 (VM) 的更新</span><span class="sxs-lookup"><span data-stu-id="9ef32-528">Manage updates for mobile devices and virtual machines (VMs)</span></span>](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| <span data-ttu-id="9ef32-529">您可以指定設定，例如是否應該在電池電源上進行更新，對行動裝置和虛擬機器尤其有用。</span><span class="sxs-lookup"><span data-stu-id="9ef32-529">You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.</span></span> |
+|[<span data-ttu-id="09675-535">適用于 Windows 作業系統安裝映射的 Microsoft Defender 更新</span><span class="sxs-lookup"><span data-stu-id="09675-535">Microsoft Defender update for Windows operating system installation images</span></span>](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | <span data-ttu-id="09675-536">查看您 OS 安裝映射的反惡意軟體更新軟體包 (WIM 和 VHD 檔案) 。</span><span class="sxs-lookup"><span data-stu-id="09675-536">Review antimalware update packages for your OS installation images (WIM and VHD files).</span></span> <span data-ttu-id="09675-537">取得 Windows 10 (Enterprise、Pro 和家用版的 Microsoft Defender 防毒軟體更新) 、Windows Server 2019 及 Windows Server 2016 安裝影像。</span><span class="sxs-lookup"><span data-stu-id="09675-537">Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 installation images.</span></span>  |
+|[<span data-ttu-id="09675-538">管理如何下載及套用保護更新</span><span class="sxs-lookup"><span data-stu-id="09675-538">Manage how protection updates are downloaded and applied</span></span>](manage-protection-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="09675-539">保護更新可透過許多來源傳遞。</span><span class="sxs-lookup"><span data-stu-id="09675-539">Protection updates can be delivered through many sources.</span></span> |
+|[<span data-ttu-id="09675-540">管理應下載及套用防護更新的時間</span><span class="sxs-lookup"><span data-stu-id="09675-540">Manage when protection updates should be downloaded and applied</span></span>](manage-protection-update-schedule-microsoft-defender-antivirus.md) | <span data-ttu-id="09675-541">您可以排程應下載保護更新的時間。</span><span class="sxs-lookup"><span data-stu-id="09675-541">You can schedule when protection updates should be downloaded.</span></span> |
+|[<span data-ttu-id="09675-542">管理已過期端點的更新</span><span class="sxs-lookup"><span data-stu-id="09675-542">Manage updates for endpoints that are out of date</span></span>](manage-outdated-endpoints-microsoft-defender-antivirus.md) | <span data-ttu-id="09675-543">如果端點未接更新或排程的掃描，您可以在下次使用者登入時強制更新或掃描。</span><span class="sxs-lookup"><span data-stu-id="09675-543">If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in.</span></span> |
+|[<span data-ttu-id="09675-544">管理事件型強制更新</span><span class="sxs-lookup"><span data-stu-id="09675-544">Manage event-based forced updates</span></span>](manage-event-based-updates-microsoft-defender-antivirus.md) | <span data-ttu-id="09675-545">您可以設定保護更新，以在啟動時或在某些雲端提供的保護事件之後下載。</span><span class="sxs-lookup"><span data-stu-id="09675-545">You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.</span></span> |
+|[<span data-ttu-id="09675-546">管理行動裝置和虛擬機器 (VM) 的更新</span><span class="sxs-lookup"><span data-stu-id="09675-546">Manage updates for mobile devices and virtual machines (VMs)</span></span>](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| <span data-ttu-id="09675-547">您可以指定設定，例如是否應該在電池電源上進行更新，對行動裝置和虛擬機器尤其有用。</span><span class="sxs-lookup"><span data-stu-id="09675-547">You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.</span></span> |
