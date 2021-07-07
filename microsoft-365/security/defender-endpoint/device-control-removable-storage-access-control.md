@@ -16,23 +16,24 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229572"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327044"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓您執行下列工作：
+
 - 審核，允許或防止讀取、寫入或執行可移動儲存的讀取、寫入或執行存取（含或不含）
 
 |特權 |權限  |
 |---------|---------|
-|存取    |  讀取、寫入、執行       |
+|Access    |  讀取、寫入、執行       |
 |動作模式    |    Audit、Allow、防止     |
 |CSP 支援   |   是      |
 |GPO 支援    |   是      |
@@ -46,6 +47,8 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 - **4.18.2104 或更新版本**：新增 SerialNumberId、VID_PID、以 filepath 為基礎的 GPO 支援、ComputerSid
 
 - **4.18.2105 或更新版本**：針對 HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId 新增萬用字元支援、特定電腦上的特定使用者組合、可移動 SSD (SANDISK 至尊 SSD) /USB 連接的 SCSI (UAS) 支援
+
+- **4.18.2107 或更新版本**：新增 Windows 可擕式裝置 (WPD) 支援 (以供行動裝置（例如平板電腦) ）
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell 介面":::
 
@@ -62,15 +65,14 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 **屬性名稱： DescriptorIdList**
 
-1. 描述：列出您要用來在群組中涵蓋的裝置屬性。
-列出您要用來在群組中涵蓋的裝置屬性。
+2. 描述：列出您要用來在群組中涵蓋的裝置屬性。
 如需每個裝置屬性的詳細資訊，請參閱上述 **裝置** 內容一節。
 
-1. 選項：
-
-    - 主要識別碼
+3. 選項：
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId： InstancePathId 是唯一識別系統中裝置的字串，例如 USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8 .07 \ 8735B611&0。 例如， (**&0**) 代表可用的槽，而且可能會從裝置變更為裝置。 為了獲得最佳結果，請在結尾使用萬用字元。 例如，USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8。 07 \ 8735B611 *
@@ -87,7 +89,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 1. 描述：當 DescriptorIDList 中使用多個裝置屬性時，MatchType 會定義關聯性。
 
-1. 選項：
+2. 選項：
 
     - MatchAll： DescriptorIdList 下的任何屬性都是 **和** 關聯;例如，如果系統管理員將 DeviceID 和 InstancePathID，用於每個連線的 USB，系統會檢查 USB 是否同時滿足這兩個值。
     - MatchAny： [DescriptorIdList] 底下的屬性將是 **Or** relationship;例如，如果系統管理員為 DeviceID 和 InstancePathID，則對於每個連線的 USB，只要 USB 具有相同的 **DeviceID** 或 **InstanceID** 值，系統就會執行強制執行。
@@ -100,9 +102,9 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 **屬性名稱： IncludedIdList**
 
-2. 描述：將套用原則的群組 (s) 。 如果新增多個群組，則會將原則套用至所有群組中的任何介質。
+1. 描述：將套用原則的群組 (s) 。 如果新增多個群組，則會將原則套用至所有群組中的任何介質。
 
-3. 選項：此實例必須使用群組識別碼/GUID。
+2. 選項：此實例必須使用群組識別碼/GUID。
 
 下列範例顯示 GroupID 的使用方式：
 
@@ -135,11 +137,11 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 **屬性名稱： Sid**
 
-描述：定義是否對特定使用者或使用者群組套用此原則;一個專案最多可以有一個 Sid，而沒有任何 Sid 的專案則表示在機器上套用原則。
+描述：本機電腦 Sid 或 AD 物件的 Sid，定義是否要在特定使用者或使用者群組上套用此原則;一個專案最多可以有一個 Sid，而沒有任何 Sid 的專案則表示在機器上套用原則。
 
 **屬性名稱： ComputerSid**
 
-描述：定義是否要將此原則套用到特定機器或機器群組上;一個專案最多可以有一個 ComputerSid，而且沒有任何 ComputerSid 的專案則表示在機器上套用原則。 如果您想要將專案套用至特定使用者和特定的機器，請將 Sid 和 ComputerSid 新增至相同的專案。
+描述：本機電腦 Sid 或 AD 物件的 Sid，定義是否要在特定機器或電腦群組上套用此原則;一個專案最多可以有一個 ComputerSid，而沒有任何 ComputerSid 的專案則表示在機器上套用原則。 如果您想要將專案套用至特定使用者和特定的機器，請將 Sid 和 ComputerSid 新增至相同的專案。
 
 **屬性名稱：選項**
 
@@ -254,7 +256,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 - 原則與設定檔管理員角色
 - 已開啟裝置設定檔的「建立/編輯/更新/讀取/刪除/查看報告」許可權的自訂角色
-- 全域管理員
+- 全域系統管理員
 
 ### <a name="deploying-policy-via-oma-uri"></a>透過 OMA-URI 部署原則
 
@@ -322,6 +324,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="描述「可移動儲存」之瓶頸的畫面":::
 
 ## <a name="frequently-asked-questions"></a>常見問題集
+
 **USBs 最大數目的可拆卸儲存體媒體限制是多少？**
 
 我們已驗證一個具有100000媒體的 USB 群組（大小高達 7 MB）。 原則可在 Intune 和 GPO 中運作，但不會出現效能問題。
@@ -347,4 +350,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-

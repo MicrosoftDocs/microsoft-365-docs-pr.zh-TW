@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d423c5051634334f9dbb19b236446cdb579aef69
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286930"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327032"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定警示通知
 
@@ -66,7 +66,7 @@ ms.locfileid: "53286930"
     - **裝置** -選擇是否要將收件者的警示通知給收件者 (全域系統管理員角色只) 或選取的裝置群組。 如需詳細資訊，請參閱 [Create and manage device groups](machine-groups.md)。
     - **警示嚴重性** -選擇警示嚴重性層級。
 
-4. 按一下 [**下一步**]。
+4. 按一下 ****[下一步]。
 
 5. 輸入收件者的電子郵件地址，然後按一下 [ **新增收件** 者]。 您可以新增多個電子郵件地址。
 
@@ -104,3 +104,4 @@ ms.locfileid: "53286930"
 
 - [更新資料保留設定](data-retention-settings.md)
 - [設定進階功能](advanced-features.md)
+- [在 Microsoft Defender for Endpoint 中設定弱點電子郵件通知](/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications)

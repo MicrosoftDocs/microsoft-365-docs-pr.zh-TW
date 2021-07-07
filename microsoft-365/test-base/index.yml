@@ -1,0 +1,62 @@
+### YamlMime:Landing
+title: Microsoft 365 檔的測試基底
+summary: 測試基底 Microsoft 365 是一項 Azure 服務，可協助進行資料驅動的應用程式測試。 由資料和雲端的威力所支援，it 專業人員可以從世界各地的任何地方充分利用智慧測試。 它會協助您測試應用程式，而不會有麻煩、時間承諾，以及設定及維護複雜測試環境的開支。 最重要的是，它會讓您存取 (vm) 和世界類別智慧為您應用程式的安全虛擬機器上的預先發行 Windows 更新。
+metadata:
+  title: M365 檔的測試基底
+  description: 測試基底 Microsoft 365 是一項 Azure 服務，可協助進行資料驅動的應用程式測試。 由資料和雲端的威力所支援，it 專業人員可以從世界各地的任何地方充分利用智慧測試。
+  ms.service: service
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: v-zhifufeng
+  ms.author: v-zhifufeng
+  ms.date: 03/29/2021
+  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
+  ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "53322585"
+landingContent:
+- title: 關於測試基底
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 何謂測試基礎？
+      url: overview.md
+  - linkListType: get-started
+    links:
+    - text: 建立測試基本帳戶
+      url: createAccount.md
+  - linkListType: tutorial
+    links:
+    - text: 其他資源
+      url: faq.md
+- title: 開始使用
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 建立測試基本帳戶
+      url: createAccount.md
+    - text: Upload 應用程式
+      url: uploadApplication.md
+    - text: Upload 二進位檔
+      url: binaries.md
+    - text: 設定測試工作
+      url: testtask.md
+    - text: 選擇您的測試選項
+      url: testoptions.md
+    - text: 檢查您的選擇
+      url: review.md
+    - text: 測試套件指導方針
+      url: contentguideline.md
+    - text: 記憶體迴歸分析
+      url: memory.md
+    - text: CPU 迴歸分析
+      url: cpu.md
+- title: 取得參考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 常見問題集
+      url: faq.md

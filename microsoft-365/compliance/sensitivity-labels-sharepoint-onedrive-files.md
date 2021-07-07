@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 及 OneDrive 中啟用 Word、Excel 和 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 08ea7c88fffebd4466d81ca18f273281ff74c06a
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 67aa69ef8505290b6fde47c4e523a09870312b97
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286546"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322230"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -241,7 +241,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>移除標籤檔的加密
 
-當 SharePoint 管理員需要從 SharePoint 中儲存的檔中移除加密時，可能會發生極少的情況。 對該檔指派「匯出」或「完全控制」 [許可權](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) 的任何使用者，都可以移除 Azure Rights Management Service 從 Azure 資訊保護所套用的加密。 例如，使用任一種使用許可權的使用者都可以取代以未加密的標籤來套用加密的標籤。 或者， [超級使用者](/azure/information-protection/configure-super-users) 可以下載檔案，並在不加密的情況下儲存本機副本。
+當 SharePoint 管理員需要從 SharePoint 中儲存的檔中移除加密時，可能會發生極少的情況。 對該檔指派「匯出」或「完全控制」 [許可權](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) 的任何使用者，都可以移除 Azure Rights Management Service 從 Azure 資訊保護所套用的加密。 例如，使用任一種使用許可權的使用者都可以取代以未加密的標籤來套用加密的標籤。 [超級使用者](/azure/information-protection/configure-super-users)也可以下載檔案，並在不加密的情況下儲存本機副本。
 
 另外，全域管理員或[SharePoint 管理員](/sharepoint/sharepoint-admin-role)可以執行[SPOSensitivityLabelEncryptedFile 指令程式](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)，該 Cmdlet 會同時移除敏感度標籤和加密。 即使系統管理員沒有網站或檔案的存取權限，或 Azure Rights Management 服務無法使用，此 Cmdlet 也會執行。
 

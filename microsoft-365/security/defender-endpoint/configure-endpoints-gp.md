@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314401"
+ms.locfileid: "53326960"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
@@ -101,7 +101,7 @@ ms.locfileid: "53314401"
 
 4. 按一下 [ **原則**]，然後按一下 [系統 **管理範本**]。
 
-5. 按一下 [ **Windows 元件**]，然後 **Windows Defender SmartScreen**]。
+5. 按一下 [ **Windows 元件**]，然後 **Windows Defender ATP**。
 
 6. 選擇啟用或停用裝置的範例共用。
 

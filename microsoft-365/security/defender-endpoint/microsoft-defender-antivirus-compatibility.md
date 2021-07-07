@@ -15,13 +15,13 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/08/2021
-ms.openlocfilehash: f03fab3f296f98b448693c6a5d0886f409201703
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.date: 07/06/2021
+ms.openlocfilehash: aac84d2e957809d1c9579f25c01006798af2c0a9
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288476"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322410"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防毒軟體相容性
 
@@ -33,27 +33,27 @@ ms.locfileid: "53288476"
 
 ## <a name="summary"></a>摘要
 
-Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的端點和裝置上。 但是當使用另一個 (非 Microsoft) 防毒軟體/反惡意軟體解決方案時，會發生什麼事？ 這取決於您是否要將 [Microsoft Defender 用於端點](microsoft-defender-endpoint.md) 搭配防防毒保護使用。 本文說明當端點架至 Microsoft Defender for Endpoint 時，防毒軟體/反惡意程式碼解決方案會發生什麼情況。
+Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的端點和裝置上。 但是當使用另一個 (非 Microsoft) 防毒軟體/反惡意軟體解決方案時，會發生什麼事？ 您可以在其他防病毒產品旁執行 Microsoft Defender 防毒軟體嗎？ 答案取決於幾個因素，例如作業系統，以及您是否要將 [Microsoft Defender 用於端點](microsoft-defender-endpoint.md) 搭配防防毒保護使用。 
 
-## <a name="keep-the-following-points-in-mind"></a>請記住下列幾點
+## <a name="important-points-to-keep-in-mind"></a>請注意重要要點
 
-- 在 active 模式中，Microsoft Defender 防毒軟體會當做電腦上的防病毒應用程式使用。 將會套用設定管理員、群組原則、Intune 或其他管理產品所做的所有設定。 掃描檔案並修正威脅，並在設定工具中報告偵測資訊 (例如 configuration Manager 或機器本身) 上的 Microsoft Defender 防毒軟體應用程式。
+- 在 active 模式中，Microsoft Defender 防毒軟體會當做電腦上的防病毒應用程式使用。 使用 Configuration Manager 設定的設定，將會套用群組原則、Microsoft Intune 或其他管理產品。 會掃描檔案，修正威脅，並在設定工具中報告偵測資訊 (例如設定管理員或終結點本身) 上的 Microsoft Defender 防毒軟體應用程式。
 
-- 在被動模式中，不會將 Microsoft Defender 防毒軟體用作防病毒應用程式，且 Microsoft Defender 防毒軟體不會修正威脅。 會掃描檔案，並提供與 Microsoft Defender for Endpoint service 共用之威脅偵測的報告。 您可能會在[安全性中心](microsoft-defender-security-center.md)看到警示，顯示 Microsoft Defender 防毒軟體為來源，即使 Microsoft Defender 防毒軟體處於被動模式也是一樣。
+- 在被動模式中，不會將 Microsoft Defender 防毒軟體用作防病毒應用程式，且 Microsoft Defender 防毒軟體 *不* 會修正威脅。 會掃描檔案，並提供與 Microsoft Defender for Endpoint service 共用之威脅偵測的報告。 您可能會在[安全性中心](microsoft-defender-security-center.md)看到警示，顯示 Microsoft Defender 防毒軟體為來源，即使 Microsoft Defender 防毒軟體處於被動模式也是一樣。
 
-- 當[以封鎖模式開啟 EDR](edr-in-block-mode.md) ，且 Microsoft Defender 防毒軟體不是主要的防病毒解決方案時，它會偵測並修復惡意專案。 在封鎖模式中 EDR 需要以主動模式或被動模式啟用 Microsoft Defender 防毒軟體。
+- 當 [[封鎖模式] 中的 EDR](edr-in-block-mode.md)已開啟，且 Microsoft Defender 防毒軟體不是主要的防病毒方案時，EDR 在封鎖模式中偵測並修復在裝置上找到的惡意專案 (後的破壞性) 。 在封鎖模式中 EDR 需要以主動模式或被動模式啟用 Microsoft Defender 防毒軟體。
 
-- 停用時，不會將 Microsoft Defender 防毒軟體用作防病毒應用程式。 不會掃描檔案，也不會修正威脅。 建議您不要使用停用/卸載 Microsoft Defender 防毒軟體。如果您使用非 Microsoft 反惡意程式碼/防病毒方案，請盡可能將 Microsoft Defender 防毒軟體維持在被動模式。
+- 停用時，不會將 Microsoft Defender 防毒軟體用作防病毒應用程式。 不會掃描檔案，也不會修正威脅。 一般不建議停用或卸載 Microsoft Defender 防毒軟體。如果您使用非 Microsoft 反惡意程式碼/防病毒方案，請盡可能將 Microsoft Defender 防毒軟體維持在被動模式。
 
-- 如果您是在 Microsoft Defender for Endpoint 中註冊，且使用協力廠商反惡意軟體產品，則會啟用被動模式。 服務需要從 Microsoft Defender 防毒軟體服務共用一般資訊，才能正確地監視裝置和網路，以進行入侵嘗試和攻擊。 若要深入瞭解，請參閱[Microsoft Defender 防毒軟體與 Microsoft Defender for Endpoint 相容](defender-compatibility.md)。 
+- 如果您是在 microsoft Defender for Endpoint 中註冊，且使用非 Microsoft 防病毒/反惡意軟體產品，則 Microsoft Defender 防毒軟體會在被動模式中啟用。 若要正確監視裝置和網路以進行入侵嘗試和攻擊，必須從 Microsoft Defender 防毒軟體中取得一般資訊，才能讓端點進行共用。 若要深入瞭解，請參閱[Microsoft Defender 防毒軟體與 Microsoft Defender for Endpoint 相容](defender-compatibility.md)。 
 
-- 當 Microsoft Defender 防毒軟體處於被動模式時，您仍可[管理 Microsoft Defender 防毒軟體的更新](manage-updates-baselines-microsoft-defender-antivirus.md);不過，如果您的裝置有最新的非 Microsoft 防病毒產品可提供即時防護，您就無法將 Microsoft Defender 防毒軟體移入主動模式。 若要獲得最佳的安全性分層防禦和偵測 efficacy，請務必更新[Microsoft Defender 防毒軟體保護 (安全智慧更新、引擎和平臺) ](manage-updates-baselines-microsoft-defender-antivirus.md) （即使 Microsoft Defender 防毒軟體是以被動模式執行）。
+- 當 Microsoft Defender 防毒軟體處於被動模式時，您仍可[管理 Microsoft Defender 防毒軟體的更新](manage-updates-baselines-microsoft-defender-antivirus.md);不過，如果您的裝置具有非 Microsoft 防病毒產品，且該產品提供來自惡意程式碼的即時防護，您就無法將 Microsoft Defender 防毒軟體移入主動模式。 若要獲得最佳的安全性分層防禦和偵測 efficacy，請務必取得您的防病毒和 antimwalware 更新，即使 Microsoft Defender 防毒軟體是以被動模式執行。 請參閱[管理 Microsoft Defender 防毒軟體更新及套用基準](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-- 當自動停用 Microsoft Defender 防毒軟體時，如果非 Microsoft 防病毒產品所提供的保護功能到期，則可以自動重新啟用它，否則會停止提供即時防護，避免病毒、惡意程式碼或其他威脅。 自動重新啟用可協助確保在您的裝置上維護防防毒保護。 它也可讓您啟用[有限的定期掃描](limited-periodic-scanning-microsoft-defender-antivirus.md)，它會使用 Microsoft Defender 防毒軟體引擎定期檢查威脅，以及您的主要防病毒應用程式。
+- 當自動停用 Microsoft Defender 防毒軟體時，如果非 Microsoft 防病毒/反惡意軟體產品到期，則可以自動重新啟用它，否則會停止提供即時防護病毒、惡意程式碼或其他威脅。 自動重新啟用 Microsoft Defender 防毒軟體可協助確保您的端點維護防防毒保護。 您也可以啟用[有限的定期掃描](limited-periodic-scanning-microsoft-defender-antivirus.md)，當您使用非 Microsoft 防病毒應用程式時，使用 Microsoft Defender 防毒軟體引擎定期檢查威脅。
 
 ## <a name="microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions"></a>Microsoft Defender 防毒軟體和非 Microsoft 防毒軟體/反惡意軟體解決方案
 
-下表摘要說明當非 microsoft 防毒軟體/反惡意程式碼一起使用或沒有 microsoft Defender for Endpoint 時，Microsoft Defender 防毒軟體會發生什麼事。 
+作業系統、防病毒產品及 Defender for Endpoint 會影響 Microsoft Defender 防毒軟體為主動模式、被動模式或已停用。 下表摘要說明當非 microsoft 防毒軟體/反惡意程式碼一起使用或沒有 microsoft Defender for Endpoint 時，Microsoft Defender 防毒軟體會發生什麼事。 
 
 | Windows 版本   | 防病毒/反惡意程式碼解決方案  | 架至 <br/> Endpoint 的 Defender？ | Microsoft Defender 防毒軟體狀態     |
 |------|------|-------|-------|
@@ -120,16 +120,25 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 
 以下為運作方式：
 
-- 如果您組織的用戶端裝置受到非 Microsoft 防病毒/antimwalware 解決方案的保護，當這些裝置架至 Defender for Endpoint 時，Microsoft Defender 防毒軟體會自動進入被動模式。 在此情況下，會發生威脅偵測，但 Microsoft Defender 防毒軟體未修正即時保護和威脅。 **請注意**：此特殊案例不適用於執行 Windows Server 的端點。
+- 如果您組織的用戶端裝置受到非 Microsoft 防病毒/antimwalware 解決方案的保護，當這些裝置架至 Defender for Endpoint 時，Microsoft Defender 防毒軟體會自動進入被動模式。 在此情況下，會發生威脅偵測，但 Microsoft Defender 防毒軟體未修正即時保護和威脅。
+   
+   > [!NOTE]
+   > 這種特殊案例不適用於執行 Windows Server 的端點。
 
-- 如果您組織的用戶端裝置受到非 Microsoft 防病毒/反惡意程式碼解決方案保護，且這些裝置不會架至 Microsoft Defender for Endpoint，則 Microsoft Defender 防毒軟體會自動進入停用模式。 在此情況下，Microsoft Defender 防毒軟體不會偵測或修正威脅。 **請注意**：此特殊案例不適用於執行 Windows Server 的端點。
+- 如果您組織的用戶端裝置受到非 Microsoft 防病毒/反惡意程式碼解決方案保護，且這些裝置不會架至 Microsoft Defender for Endpoint，則 Microsoft Defender 防毒軟體會自動進入停用模式。 在此情況下，Microsoft Defender 防毒軟體不會偵測或修正威脅。
+   
+   > [!NOTE]
+   > 這種特殊案例不適用於執行 Windows Server 的端點。
 
 - 如果組織的端點執行 Windows Server，而這些端點是由非 Microsoft 防毒程式/反惡意程式碼解決方案所保護，當這些端點架至 Defender for Endpoint 時，Microsoft Defender 防毒軟體不會自動進入被動模式或停用模式。 在此特殊案例中，您必須適當地設定 Windows 伺服器端點。 
 
    - 在 Windows server 上，版本1803或更新版本，以及 Windows 伺服器2019，您可以將 Microsoft Defender 防毒軟體設定為以被動模式執行。 
    - 在 Windows Server 2016 上，Microsoft Defender 防毒軟體必須停用 (Windows Server 2016) 不支援被動式模式。
 
-- 如果您組織的端點受到非 Microsoft 防病毒/反惡意軟體解決方案的保護，當這些裝置在啟用[封鎖模式 EDR](/microsoft-365/security/defender-endpoint/edr-in-block-mode)的情況下架至 Defender 時，則會將 defender 用於端點區塊和 remediates 惡意的偽像。 **附注**：此特殊案例不適用於 Windows Server 2016。 在封鎖模式中 EDR 需要以主動模式或被動模式啟用 Microsoft Defender 防毒軟體。
+- 如果您組織的端點受到非 Microsoft 防病毒/反惡意軟體解決方案的保護，當這些裝置在啟用[封鎖模式 EDR](/microsoft-365/security/defender-endpoint/edr-in-block-mode)的情況下架至 Defender 時，則會將 defender 用於端點區塊和 remediates 惡意的偽像。
+   
+   > [!NOTE]
+   > 此特定案例不適用於 Windows Server 2016。 在封鎖模式中 EDR 需要以主動模式或被動模式啟用 Microsoft Defender 防毒軟體。
 
 
 > [!WARNING]

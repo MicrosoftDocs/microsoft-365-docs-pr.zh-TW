@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286882"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327008"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
@@ -212,6 +212,13 @@ Microsoft 受管理的電腦不支援 Azure AD 組織所在的一或多個國家
 
 請確定任何已排除 Microsoft 受管理的電腦裝置的安全性基準原則。 如需步驟，請參閱[Use security 基線 to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines)。 在註冊期間，我們會將新的安全性基準套用到所有的 Microsoft 受管理的電腦裝置。 **新式的工作場所裝置-所有** Azure AD 群組是我們在 Microsoft 受管理的電腦中註冊時所建立的動態群組，所以在註冊後，您必須傳回此群組以排除此群組。 
 
+### <a name="unlicensed-admins"></a>未經許可的系統管理員
+
+當我們與您的 Azure AD 組織互動時，必須啟用此設定，以避免出現「沒有許可權」的錯誤。 
+
+**未就緒**
+
+[**允許存取未授權的系統管理員**] 應已啟用。 如需步驟，請參閱 [來賓帳戶的必要條件](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
 
 ### <a name="windows-apps"></a>Windows 應用程式
 

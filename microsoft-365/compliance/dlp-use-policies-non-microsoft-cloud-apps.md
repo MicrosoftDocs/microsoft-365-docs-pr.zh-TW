@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何對非 Microsoft cloud app 使用 dlp 原則。
-ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 4bda45a6da6b9626391da37eb9a806b3308c5e7f
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300121"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322314"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft cloud app 的資料遺失防護原則 (預覽) 
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>使用非 Microsoft cloud app 的資料遺失防護原則
 
 資料遺失防護 (dlp) 原則的非 Microsoft cloud app 屬於 Microsoft 365 DLP 套件的一部分;您可以使用這些功能，在 Microsoft 365 服務中探索和保護機密專案。 如需所有 Microsoft DLP 產品的詳細資訊，請參閱 [瞭解資料遺失防護](dlp-learn-about-dlp.md)。
 

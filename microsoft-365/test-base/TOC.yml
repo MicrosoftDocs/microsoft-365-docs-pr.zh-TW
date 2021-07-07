@@ -1,0 +1,38 @@
+- name: 測試基礎檔
+  href: index.yml
+- name: 概觀
+  items:
+    - name: 何謂測試基礎？
+      href: overview.md
+- name: 快速入門
+  items:
+    - name: 建立測試基本帳戶
+      href: createAccount.md
+    - name: 上傳套件
+      href: uploadApplication.md
+    - name: Upload二進位 & 相依性
+      href: binaries.md
+    - name: 設定測試工作
+      href: testtask.md
+    - name: 設定測試選項
+      href: testoptions.md
+    - name: 檢閱
+      href: review.md
+    - name: 套件指導方針
+      href: contentguideline.md
+- name: 操作指南
+  items:
+    - name: 伺服器應用程式測試
+      href: server.md
+    - name: 功能測試
+      href: functional.md
+    - name: 功能更新驗證
+      href: feature.md
+    - name: 記憶體迴歸分析
+      href: memory.md
+    - name: CPU 迴歸分析
+      href: cpu.md
+- name: 參考資料
+  items:
+    - name: 常見問題集
+      href: faq.md

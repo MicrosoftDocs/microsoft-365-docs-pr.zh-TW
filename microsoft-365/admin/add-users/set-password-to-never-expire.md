@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 登入您的 Microsoft 365 系統管理員帳戶，將某些個別使用者密碼設定為永不到期，使用 Windows PowerShell。
-ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c9f0c245aca0e028183c42f6a257068d74aa563d
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286259"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326720"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -43,8 +43,6 @@ Microsoft cloud service 的全域系統管理員可以使用 Graph 的[Azure Act
 
 本指南適用于其他提供者，例如 Intune 和 Microsoft 365，也取決於 Azure AD 的身分識別和目錄服務。 [密碼到期] 是原則中唯一可以變更的部分。
 
-> [!NOTE]
-> 只有未透過目錄同步處理同步處理的使用者帳戶密碼才能設定為不會過期。 如需目錄同步處理的詳細資訊，請參閱[連線 AD with Azure AD](/azure/active-directory/connect/active-directory-aadconnect)。
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何檢查密碼的到期原則
 

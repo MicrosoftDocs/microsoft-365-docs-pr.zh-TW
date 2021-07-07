@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 建立及評分工作分派、組建及 curate 課程內容，並使用新的 Microsoft OneDrive Learning 工具互通性應用程式即時共同作業。
-ms.openlocfilehash: 985a316bac689b9bc6c53ab65782d548fcad0db8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256973"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322218"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>將 Microsoft OneDrive LTI 與畫布整合
 
@@ -40,7 +40,11 @@ ms.locfileid: "53256973"
 
 1. 登入<a href="https://onedrivelti.microsoft.com/admin" target="_blank">Microsoft OneDrive LTI 註冊入口網站</a>
 1. 選取 [ **管理員同意** ] 按鈕，並接受許可權。
-1. 選取 [ **建立新的 LTI 租** 使用者] 按鈕。 在 [LTI 登錄] 頁面上的下拉式清單中選取 [ **畫布** ]，然後輸入您的畫布實例的基底 URL。
+
+> [!CAUTION]
+> 若未執行此步驟，下列步驟將會產生錯誤，而且在您取得錯誤之後，您將無法採取此步驟一小時。
+
+3. 選取 [ **建立新的 LTI 租** 使用者] 按鈕。 在 [LTI 登錄] 頁面上的下拉式清單中選取 [ **畫布** ]，然後輸入您的畫布實例的基底 URL。
 
 > [!NOTE]
 > 例如，如果您的畫布實例為 https://contoso.test.instructure.com (， https://contoso.test.instructure.com) 則應輸入完整的 URL。
