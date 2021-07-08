@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解如何尋找 Microsoft Viva Topics 的資源。
-ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7d8a95e924c269660e50355078f4fc9eee9bd333
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538912"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326840"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva Topics 簡介
 
@@ -39,11 +39,11 @@ Viva 主題是一種 Microsoft 365 服務，可協助組織將資訊轉換為知
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|深入了解 Viva Topics |[Microsoft Viva Topics 概觀](topic-experiences-overview.md)|
+|深入了解 Viva Topics |[Viva 主題概述](topic-experiences-overview.md)|
 |了解 AI 如何發現及建議主題|[Microsoft Viva Topics 探索](topic-experiences-discovery.md)|
-|了解主題安全性|[Microsoft Viva 安全性與隱私權](topic-experiences-security-privacy.md)|
-|了解如何取得 Viva Topics|[Microsoft Viva Topics 產品頁面](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
-|查看 Microsoft 技術社群資源中心的資源|[Microsoft Viva Topics 技術社群](https://resources.techcommunity.microsoft.com/viva-topics/)|
+|了解主題安全性|[Viva 主題安全性和隱私權](topic-experiences-security-privacy.md)|
+|了解如何取得 Viva Topics|[Viva 主題產品頁面](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|查看 Microsoft 技術社群資源中心的資源|[Viva 主題技術 Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
 
@@ -53,7 +53,8 @@ Viva 主題是一種 Microsoft 365 服務，可協助組織將資訊轉換為知
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|了解如何開始規劃使用 Microsoft Viva。 |[開始使用](topics-adoption-getstarted.md)<br><br>|  
+|瞭解如何開始規劃使用 Viva 主題 |[開始使用](topics-adoption-getstarted.md)|  
+|為 Viva 主題設定及執行試用試用程式 |[執行試用版](trial-topics.md)|
 
 ## <a name="set-up-and-administration"></a>設定和管理
 
@@ -61,7 +62,7 @@ Viva 主題是一種 Microsoft 365 服務，可協助組織將資訊轉換為知
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|了解如何設定 Microsoft Viva|[設定 Microsoft Viva](set-up-topic-experiences.md)|
+|瞭解如何設定及設定 Viva 主題|[設定 Viva 主題](set-up-topic-experiences.md)|
 |了解如何設定使用者權限|[管理主題權限](topic-experiences-user-permissions.md)|
 |了解如何管理誰可以查看主題|[管理主題可見度](topic-experiences-knowledge-rules.md)|
 |了解如何管理主題探索設定|[管理主題探索](topic-experiences-discovery.md)|

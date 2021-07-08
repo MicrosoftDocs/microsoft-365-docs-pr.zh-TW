@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226344"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326744"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的內幕人士風險管理
 
@@ -86,7 +86,7 @@ ms.locfileid: "53226344"
 
 ### <a name="alerts"></a>警示
 
-通知是由符合原則條件的風險指標自動產生，且會顯示在[警示儀表板](insider-risk-management-alerts.md)中。 此儀表板可讓您快速查看組織需要查看的所有警示、一段時間後待處理的警示以及警示統計資料。 所有原則提醒都會顯示下列資訊，可協助您快速識別現有警示的狀態，以及需要採取動作的新提醒：
+通知是由符合原則條件的風險指標自動產生，且會顯示在[警示儀表板](insider-risk-management-activities.md#alert-dashboard)中。 此儀表板可讓您快速查看組織需要查看的所有警示、一段時間後待處理的警示以及警示統計資料。 所有原則提醒都會顯示下列資訊，可協助您快速識別現有警示的狀態，以及需要採取動作的新提醒：
 
 - 狀態
 - 嚴重性
@@ -105,6 +105,8 @@ ms.locfileid: "53226344"
 ![測試人員風險分級](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>調查
+
+使用 [使用者活動報告 (預覽) ](insider-risk-management-activities.md#user-activity-reports-preview)，快速調查所選使用者的所有活動。 這些報告可讓組織中的調查人員在定義的時段內，檢查特定使用者的活動，而不需要臨時或明確將其指派給「內幕風險管理」原則。 檢查使用者的活動之後，調查人員可以以良性方式解除個別活動，共用或透過電子郵件傳送報告的連結與其他調查人員，或是選擇暫時或明確指派給「內幕風險管理」原則的使用者。
 
 針對需要更深入檢查和調查原則相符的活動詳細資料及案例的提醒，會建立[案例](insider-risk-management-cases.md)。 [案例儀表板] 提供組織內所有使用中案例、一段時間後待處理以及案例統計資料的完整檢視。 檢閱者可以按照狀態、開啟案例的日期，以及上次更新案例的日期來快速篩選案例。
 

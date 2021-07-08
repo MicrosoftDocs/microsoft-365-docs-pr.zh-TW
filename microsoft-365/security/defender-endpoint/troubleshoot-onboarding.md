@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929692"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326900"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -300,6 +300,9 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>疑難排解伺服器上的上架問題
 
+>[!NOTE]
+>下列疑難排解指引只適用于 Windows Server 2016 和更低。
+
 如果您在上架伺服器時遇到問題，請執行下列驗證步驟，以解決可能的問題。
 
 - [確定已安裝並設定 Microsoft Monitoring Agent (MMA) ，以將感應器資料包告給服務](configure-server-endpoints.md)
@@ -334,7 +337,7 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 - 在使用者執行第一次登入時，裝置已關閉或重新開機
 - 在此案例中，即使已部署上架套件，也不會自動啟動 SENSE 服務
 
-<div class="alert"><b>附注：</b>在下列或更新的 Windows 版本上，在下列或更新的版本上啟動使用者登入是必要的： Windows 10，版本1809或 Windows Server 2019 （含[四月 22 2021 更新彙總套件](https://support.microsoft.com/kb/5001384)） </br> Windows 10，版本1909，含[四月2021更新彙總套件](https://support.microsoft.com/kb/5001396) </br> Windows 10，版本 2004/20H2，含[28 2021 年4月的更新彙總套件](https://support.microsoft.com/kb/5001391) </div> 
+<div class="alert"><b>附注：</b>在下列或更新的 Windows 版本上，必須不再需要在 OOBE 中啟動使用者登入： Windows 10 版本1809或 Windows 伺服器2019與[四月 22 2021 更新彙總套件](https://support.microsoft.com/kb/5001384) </br> Windows 10，版本1909，含[四月2021更新彙總套件](https://support.microsoft.com/kb/5001396) </br> Windows 10，版本 2004/20H2，含[28 2021 年4月的更新彙總套件](https://support.microsoft.com/kb/5001391) </div> 
 <br></br>
 > [!NOTE]
 > 下列步驟僅適用于使用 Microsoft Endpoint Configuration Manager。 如需使用 Microsoft Endpoint Configuration Manager 上架的詳細資訊，請參閱[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。

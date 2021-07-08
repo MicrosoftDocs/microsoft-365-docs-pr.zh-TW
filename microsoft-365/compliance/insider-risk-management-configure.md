@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f9cd78cb41a7cbe5011163d1f5734ff0b3c2261e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256324"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326792"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -251,4 +251,4 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
 
 完成這些步驟以建立第一個測試人員風險管理原則後，您會在大約 24 小時後開始從活動指標收到警示。 請視需要使用本文步驟4中的指導方針，或 [建立新的內幕檔風險原則](insider-risk-management-policies.md#create-a-new-policy)中的步驟，來設定其他原則。
 
-若要深入瞭解如何調查「內幕風險預警」和「 **警示」儀表板**，請參閱「 [有問必答風險管理」提醒](insider-risk-management-alerts.md)。
+若要深入瞭解如何調查「內幕風險預警」和「 **警示」儀表板**，請參閱「 [內幕風險管理活動](insider-risk-management-activities.md#alert-dashboard)」。

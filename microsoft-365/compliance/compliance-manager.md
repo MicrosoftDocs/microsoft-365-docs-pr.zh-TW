@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
-ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 536a1c02a820b0ea36fc4fe39ca1d0d31f7bc994
+ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148947"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53330938"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合規性管理員
 
@@ -35,7 +35,7 @@ ms.locfileid: "53148947"
 公開的合規性分數的公開預覽已演變成集中式工具，其具有增強的合規性管理功能和更輕鬆使用。  GA 發行版本提供了更大的預先構建評估集合，可協助您擴大合規性活動。
 
 **深入瞭解 GA 版本：**
-- 我們的 [常見問題](compliance-manager-faq.md) 會逐步引導您深入瞭解演變。
+- 我們的 [常見問題](compliance-manager-faq.yml) 會逐步引導您深入瞭解演變。
 - 閱讀 [此博客文章](https://aka.ms/compliancemanager/GAblog)中的 GA 功能增強功能。
 
 觀看下列影片，瞭解合規性管理員如何協助簡化組織管理規範的方式：

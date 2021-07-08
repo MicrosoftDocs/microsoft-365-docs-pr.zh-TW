@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226524"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326816"
 ---
 # <a name="insider-risk-management-cases"></a>內部人員風險管理案例
 
@@ -147,7 +147,7 @@ ms.locfileid: "53226524"
 
 [ **活動流覽** ] 索引標籤可讓風險分析人員和調查人員查看與風險警示相關的活動詳細資料。 例如，在案例管理動作中，調查人員和分析員可能需要查看與案例相關聯的所有風險活動，以取得詳細資訊。 透過 **活動瀏覽器**，檢閱者可以快速查看偵測到風險的啟用時間表，並識別及篩選與提醒相關聯的所有風險活動。
 
-如需活動瀏覽器的詳細資訊，請參閱「 [內幕人員風險管理提醒](insider-risk-management-alerts.md#activity-explorer-preview) 」文章。
+如需活動瀏覽器的詳細資訊，請參閱「 [內幕人員風險管理提醒](insider-risk-management-activities.md#activity-explorer-preview) 」文章。
 
 ### <a name="content-explorer"></a>內容總管
 
