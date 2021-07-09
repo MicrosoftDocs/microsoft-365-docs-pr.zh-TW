@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 AADSpnSignInEventsBeta 表格
 description: 深入瞭解與高級搜尋架構的 Azure Active Directory 服務主體及受管理身分識別登入事件表格相關的資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，file，IP address，device，machine，使用者，account，identity，AAD
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，file，IP address，device，machine，使用者，帳戶，identity，AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
+ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583541"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53347904"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -48,27 +48,27 @@ ms.locfileid: "52583541"
 
 
 
-| 資料行名稱     | 資料類型 | 描述   |
-| ----- | ----- | ---- |
-| `Timestamp` | datetime      | 記錄的產生日期和時間                                                                                                     |
-| `Application`          | string        | 執行錄製動作的應用程式                                                                                                   |
-| `ApplicationId`        | string        | 應用程式的唯一識別碼                                                                                                           |
-| `IsManagedIdentity`    | 布林值       | 指出登入是否是由受管理身分識別所啟動                                                                               |
-| `ErrorCode`            | int        | 如果發生登入錯誤，則會包含錯誤代碼。 若要尋找特定錯誤碼的描述，請造訪 <https://aka.ms/AADsigninsErrorCodes> 。 |
-| `CorrelationId`        | string        | 登入事件的唯一識別碼                                                                                                          |
-| `ServicePrincipalName` | string        | 啟動登入的服務主體名稱                                                                                        |
-| `ServicePrincipalId`   | string        | 啟動登入之服務主體的唯一識別碼                                                                           |
-| `ResourceDisplayName`  | string        | 存取資源的顯示名稱                                                                                                           |
-| `ResourceId`           | string        | 存取資源的唯一識別碼                                                                                                      |
-| `ResourceTenantId`     | string        | 存取資源租使用者的唯一識別碼                                                                                        |
-| `IPAddress`            | string        | 指派給端點的 IP 位址，並在相關的網路通訊期間使用                                                              |
-| `Country`          | string        | 兩個字母的代碼，指出用戶端 IP 位址為 geolocated 的國家/地區                                                                |
-| `State`                | string        | 發生登入的狀態（若有的話）                                                                                                  |
-| `City`                 | string        | 帳戶使用者所在的城市                                                                                                          |
-| `Latitude`             | string        | 登入位置的北到南部座標                                                                                          |
-| `Longitude`            | string        | 登入位置的東對西座標                                                                                            |
-| `RequestId`            | string        | 要求的唯一識別碼                                                                                                                |
-|`ReportId` | string | 事件的唯一識別碼 | 
+| 資料行名稱 | 資料類型 | 描述 |
+|-----|-----|-----|
+| `Timestamp` | datetime | 記錄的產生日期和時間 |
+| `Application` | string | 執行錄製動作的應用程式 |
+| `ApplicationId` | string | 應用程式的唯一識別碼 |
+| `IsManagedIdentity`    | 布林值       | 指出登入是否是由受管理身分識別所啟動 |
+| `ErrorCode`    | int | 如果發生登入錯誤，則會包含錯誤代碼。 若要尋找特定錯誤碼的描述，請造訪 <https://aka.ms/AADsigninsErrorCodes> 。 |
+| `CorrelationId`        | string        | 登入事件的唯一識別碼 |
+| `ServicePrincipalName` | string        | 啟動登入的服務主體名稱  |
+| `ServicePrincipalId`   | string        | 啟動登入之服務主體的唯一識別碼  |
+| `ResourceDisplayName`  | string        | 存取資源的顯示名稱  |
+| `ResourceId`           | string        | 存取資源的唯一識別碼  |
+| `ResourceTenantId`     | string        | 存取資源租使用者的唯一識別碼 |
+| `IPAddress`            | string        | 指派給端點的 IP 位址，並在相關的網路通訊期間使用  |
+| `Country`          | string        | 兩個字母的代碼，指出用戶端 IP 位址為 geolocated 的國家/地區 |
+| `State`                | string        | 發生登入的狀態（若有的話） |
+| `City`                 | string        | 帳戶使用者所在的城市  |
+| `Latitude`             | string        | 登入位置的北到南部座標 |
+| `Longitude`            | string        | 登入位置的東對西座標 |
+| `RequestId`            | string        | 要求的唯一識別碼 |
+|`ReportId` | string | 事件的唯一識別碼 |
 
  
 
