@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 系統管理員可以瞭解如何在 Microsoft 365 審核記錄檔中使用共用審核，以找出與組織外部使用者共用的資源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819293"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341505"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>使用稽核記錄中的共用稽核
 
@@ -96,26 +96,26 @@ ms.locfileid: "44819293"
 
 第一步是在審核記錄中搜尋共用事件。 如需詳細資訊 (包括搜尋審核記錄檔所需的許可權) ，請參閱在 [安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
-    
+1. 移至<https://compliance.microsoft.com>。
+
 2. 使用您的公司或學校帳戶登入。
-    
-3. 在安全性與合規性中心的左窗格中，按一下 [搜尋]   >  [稽核記錄搜尋]。
-    
-    [稽核記錄搜尋] 頁面隨即顯示。 
-    
+
+3. 在 Microsoft 365 合規性中心的左窗格中，按一下 [**審計**]。
+
+    [稽核 **]** 頁面隨即顯示。
+
 4. 在 [ **活動**] 底下，按一下 [ **共用和存取要求活動** ] 以搜尋共用相關事件。 
-    
+
     ![在 [活動] 底下，選取 [共用和存取要求活動]](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  選取 [日期和時間範圍]，以尋找在該期間內發生的共用事件。 
-    
+5. 選取 [日期和時間範圍]，以尋找在該期間內發生的共用事件。 
+
 6. 按一下 [ **搜尋** ] 以執行搜尋。 
-    
+
 7. 當搜尋執行完畢並顯示結果之後，按一下 [ **匯出結果**] \> **下載所有結果**。
-    
+
     選取 [匯出] 選項之後，視窗底部的訊息會提示您開啟或儲存 CSV 檔案。
-    
+
 8. 按一下 [**另** 存新檔] \>  ，將 CSV 檔案儲存至本機電腦上的資料夾。 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>步驟2：使用 PowerQuery 編輯器格式化匯出的審計記錄檔

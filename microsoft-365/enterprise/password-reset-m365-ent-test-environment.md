@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13169824866e91c1a09d412a875d2f4ce4391fa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921489"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339379"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
 
@@ -90,7 +90,7 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 1. 輸入使用者3帳戶名稱，並輸入 CAPTCHA 中的字元，然後選取 **[下一步]**。
 1. 若要 **驗證步驟 1**，請選取 [ **電子郵件我的備選電子郵件**]，然後選取 [ **電子郵件**]。 當您收到電子郵件時，請輸入驗證碼，然後選取 **[下一步]**。
 1. 在 [ **回到您的帳戶**] 中，輸入使用者3帳戶的新密碼，然後選取 **[完成]**。 請記下「使用者 3」帳戶變更的密碼，並儲存到安全的位置。
-1. 在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 3」帳戶名稱及新密碼登入。 您應該會看到 [Microsoft Office 首頁] 頁面。
+1. 在相同瀏覽器的新分頁中，前往 [https://admin.microsoft.com](https://admin.microsoft.com)，並以「使用者 3」帳戶名稱及新密碼登入。 您應該會看到 [Microsoft Office 首頁] 頁面。
 
 ## <a name="next-step"></a>下一步
 

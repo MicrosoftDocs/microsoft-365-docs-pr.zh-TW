@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何在 Microsoft 365 中建立封存和刪除原則，以自動將專案移至使用者的封存信箱。
-ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062162"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341637"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中的信箱封存和刪除原則
 
@@ -63,11 +63,11 @@ ms.locfileid: "53062162"
 > [!NOTE]
 > 在此程式中，您可以隨時啟用封存信箱，只要在您完成此程式之前已經啟用封存信箱即可。 如果未啟用封存信箱，則不會對任何已指派封存或刪除原則的專案採取任何動作。
   
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至<https://compliance.microsoft.com>。
 
 2. 使用您的全域系統管理員帳戶登入。
     
-3. 在 [安全性 & 規範中心] 中，移至 [ **資訊管理**] 封存 \> ****。
+3. 在 Microsoft 365 合規性中心中，按一下 [**資訊管理** **]，** 然後按一下 [封存] 索引標籤。
 
     您組織中的信箱清單會顯示，以及對應的封存信箱是啟用還是停用。
 
@@ -276,7 +276,7 @@ ms.locfileid: "53062162"
 
 4. 您可以在步驟2中重新執行命令，以驗證指派給預設信箱計畫的保留原則已變更。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 - 保留存留期的計算方式？ 信箱專案的保留天數會從傳遞日期或專案建立的日期開始計算，例如未傳送但由使用者建立的草稿郵件。 當受管理的資料夾助理員處理信箱中的項目時，它會針對其保留標記具有 [刪除並允許復原] 或 [永久刪除] 保留動作的所有項目，加上開始日期和到期日的戳記。 具有封存標籤的專案會以移動日期標記。 
 

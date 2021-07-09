@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要： Active Directory Federation Services (AD FS) 從 Microsoft Cloud Deutschland 進行遷移的遷移步驟。
-ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165654"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339607"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的 AD FS 遷移步驟
 
 在第2階段開始之前，必須套用此設定變更。
-當階段2完成之後，設定變更便可運作，而且您可以透過 Office 365 全域端點（例如）來登入 `https://portal.office.com` 。 如果您要在第2階段之前實施設定變更，則 Office 365 全域端點仍會 _運作_，但新的信賴憑證者信任仍是 Active Directory Federation Services (AD FS) 設定的一部分。
+當階段2完成之後，設定變更便可運作，而且您可以透過 Office 365 全域端點（例如）來登入 `https://admin.microsoft.com` 。 如果您要在第2階段之前實施設定變更，則 Office 365 全域端點仍會 _運作_，但新的信賴憑證者信任仍是 Active Directory Federation Services (AD FS) 設定的一部分。
 
 使用同盟驗證搭配 Active Directory Federation Services (AD FS 的客戶) 不應該對使用內部部署 Active Directory 網域服務之所有驗證的發行人 URIs 進行變更，以進行遷移時 (AD DS) 。 變更簽發者 URIs 會導致網域中的使用者驗證失敗。 簽發者 URIs 可以直接在 AD FS 中變更，或將網域從 _managed_ 轉換成 _同盟，反之亦然_ 。 建議您不要在已遷移的 Azure AD 租使用者中新增、移除或轉換同盟網域。 在遷移完全完成後，可以變更發行者 URIs。
 
@@ -51,9 +51,9 @@ ms.locfileid: "51165654"
 
 4. 在 [新增信賴憑證者信任] 嚮導的 [**歡迎**] 頁面上，選取 [**啟動**]。
 
-5. 在 [ **選取資料來源** ] 頁面上，選取 [匯 **入已發佈線上或本機網路上的信賴憑證者相關資料**]。 **(主機名稱或 URL) 值的同盟中繼資料位址** 必須設定為 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 按 [下一步 **]**。
+5. 在 [ **選取資料來源** ] 頁面上，選取 [匯 **入已發佈線上或本機網路上的信賴憑證者相關資料**]。 **(主機名稱或 URL) 值的同盟中繼資料位址** 必須設定為 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 按一下 ****[下一步]。
 
-6. 在 [**指定顯示名稱**] 頁面上，輸入顯示名稱，例如「**全球 Microsoft Office 365 身分識別平臺**」。 按 [下一步 **]**。
+6. 在 [**指定顯示名稱**] 頁面上，輸入顯示名稱，例如「**全球 Microsoft Office 365 身分識別平臺**」。 按一下 ****[下一步]。
 
 7. 如果您是在 Windows Server 2012 中使用 ADFS，請在 [嚮導] 頁面上的 [**立即設定多重要素驗證？**] 中，根據您的驗證需求選取適當的選項。 如果您堅持使用預設值，請選取 [ **我不想要設定此信賴憑證者信任的多重要素驗證設定**]。 您可以稍後在需要時變更此設定。
 

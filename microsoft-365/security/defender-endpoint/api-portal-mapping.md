@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint 偵測 API 欄位
-description: 瞭解偵測 API 欄位如何對應至 Microsoft Defender 資訊安全中心中的值
+description: 瞭解偵測 API 欄位如何對應至 Microsoft 365 Defender 中的值
 keywords: 偵測、偵測欄位、欄位、api、欄位、提取偵測、rest api、要求、回應
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f9a0d4ddeee5c1dc49c53e324854cabccc5f79e5
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933634"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339547"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint 偵測 API 欄位
 
@@ -33,11 +33,11 @@ ms.locfileid: "51933634"
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-瞭解哪些資料欄位會公開成為偵測 API 的一部分，以及它們如何對應至 Microsoft Defender 資訊安全中心。
+瞭解哪些資料欄位會公開成為偵測 API 的一部分，以及它們如何對應至 Microsoft 365 Defender。
 
 >[!Note]
 >- 已從一或多個偵測中所組成[的 Defender For Endpoint 警示](alerts.md)。
->- **Microsoft Defender ATP 偵測** 是由裝置上發生的可疑事件及其相關 **警示** 詳細資料所組成。
+>- **Microsoft DEFENDER ATP 偵測** 是由裝置上發生的可疑事件及其相關 **警示** 詳細資料所組成。
 >- Microsoft Defender for Endpoint Alert API 是最新的警示消耗 API，且包含每個警示的相關證據的詳細清單。 如需詳細資訊，請參閱 [Alert 方法和屬性](alerts.md) 和 [清單警示](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>偵測 API 欄位及入口網站對應
@@ -52,8 +52,8 @@ ms.locfileid: "51933634"
 > | 入口網站標籤   | SIEM 功能變數名稱           | ArcSight 欄位      | 範例值                                                                      | 說明                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV 偵測到 ' Mikatz ' 高嚴重性惡意程式碼 | 可供每個偵測使用的值。                                                                                                                                               |
-> | 第                | 嚴重性                  | deviceSeverity      | 高                                                                             | 可供每個偵測使用的值。                                                                                                                                               |
-> | 個                | Category                  | deviceEventCategory | 惡意程式碼                                                               | 可供每個偵測使用的值。                                                                                                                                               |
+> | 2                 | 嚴重性                  | deviceSeverity      | 高                                                                             | 可供每個偵測使用的值。                                                                                                                                               |
+> | 3                 | Category                  | deviceEventCategory | 惡意程式碼                                                               | 可供每個偵測使用的值。                                                                                                                                               |
 > | 4                 | 偵測來源                    | sourceServiceName   | 防毒                                                                 | Microsoft Defender 防毒軟體或 Defender for Endpoint。 可供每個偵測使用的值。                                                                                         |
 > | 5                 | MachineName               | sourceHostName      | 桌面4a5ngd6                                                                           | 可供每個偵測使用的值。                                                                                                                                               |
 > | 6                 | FileName                  | 檔案名            | Robocopy.exe                                                                       | 可用於與檔案或處理常式相關聯的偵測。                                                                                                                      |
@@ -61,7 +61,7 @@ ms.locfileid: "51933634"
 > | 8                 | UserDomain                | sourceNtDomain      | 尚未                                                                            | 執行活動之使用者內容的網域，可供 Defender 用於以 Endpoint 為基礎之行為的偵測。                                                           |
 > | 9                 | UserName                  | sourceUserName      | liz bean                                                                           | 執行活動的使用者內容，可供使用 Defender 以進行基於端點行為的偵測。                                                                           |
 > | 10                | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | 可用於與檔案或處理常式相關聯的偵測。                                                                                                                      |
-> | 第               | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | 可用於 Microsoft Defender AV 偵測。                                                                                                                                    |
+> | 11                | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | 可用於 Microsoft Defender AV 偵測。                                                                                                                                    |
 > | 12                | Md5                       | deviceCustomString5 | db979c04a99b96d370988325bb5a8b21                                                   | 可用於 Microsoft Defender AV 偵測。                                                                                                                                    |
 > | 13               | ThreatName                | deviceCustomString1  | HackTool： Win32/Mikatz！ dha                                                         | 可用於 Microsoft Defender AV 偵測。                                                                                                                                    |
 > | 14                | 址                 | sourceAddress       | 218.90.204.141                                                                     | 可用於與網路事件關聯的偵測。 例如，「與惡意網路目的通訊」。                                                        |
@@ -82,7 +82,7 @@ ms.locfileid: "51933634"
 | | IncidentLinkToWDATP | 無對應 | `https://securitycenter.windows.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM` | 可供每個偵測使用的值。
 > | 內部欄位 | LastProcessedTimeUtc      | 無對應          | 2017-05-07T01：56： 58.9936648 Z                                                       | 事件到達後端的時間。 在設定偵測偵測時間範圍的要求參數時，可以使用此欄位。                         |
 > |                  | 不屬於架構    | deviceVendor        |                                                                                    | ArcSight 對應中的靜態值-"Microsoft"。                                                                                                                          |
-> |                  | 不屬於架構    | deviceProduct       |                                                                                    | ArcSight 對應中的靜態值-' Microsoft Defender ATP '。                                                                                                               |
+> |                  | 不屬於架構    | deviceProduct       |                                                                                    | ArcSight 對應中的靜態值-"Microsoft Defender ATP"。                                                                                                               |
 > |                  | 不屬於架構    | deviceVersion       |                                                                                    | ArcSight 對應中的靜態值-' 2.0 '，用來識別對應版本。                                                                                         
 
 

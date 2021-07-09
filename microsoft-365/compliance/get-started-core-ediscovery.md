@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 說明如何開始使用 Microsoft 365 中的核心 eDiscovery。 指派 eDiscovery 許可權並建立案例之後，您可以新增成員、建立 eDiscovery 保留，然後搜尋並匯出與調查相關的內容。
-ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311013"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341469"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>在 Microsoft 365 中開始使用核心 eDiscovery
 
@@ -34,7 +34,7 @@ Microsoft 365 中的核心 ediscovery 提供一種基本 ediscovery 工具，組
 
 核心 eDiscovery 的授權要求適當的組織訂閱和每一使用者授權。
 
-- **組織訂閱：** 若要在 Microsoft 365 規範中心或 Office 365 安全性 & 規範中心存取核心 eDiscovery，以及使用保留與匯出功能，您的組織必須有 Microsoft 365 E3 或 Office 365 E3 訂閱或更高版本。
+- **組織訂閱：** 若要存取 Microsoft 365 合規性中心中的核心 eDiscovery，或 Office 365 安全性 & 合規性中心，並使用保留與匯出功能，您的組織必須有 Microsoft 365 E3 或 Office 365 E3 訂閱或更高版本。
 
 - **每位使用者授權：** 若要在信箱和網站上放置 eDiscovery 暫止，必須根據您的組織訂閱，為使用者指派下列其中一個授權：
 
@@ -42,11 +42,11 @@ Microsoft 365 中的核心 ediscovery 提供一種基本 ediscovery 工具，組
 
    或
 
-  - Office 365具有 Exchange Online 方案2或 Exchange Online 封存附加元件授權的 E1 授權
+  - 使用 Exchange Online 方案2或 Exchange Online 封存附加元件授權 Office 365 E1 授權
 
   AND
 
-  - Office 365具有 SharePoint Online Plan 2 或商務用 OneDrive Plan 2 附加元件授權的 E1 授權
+  - 使用 SharePoint 線上方案2或商務用 OneDrive Plan 2 附加元件授權 Office 365 E1 授權
   
   如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
 
@@ -62,7 +62,7 @@ Microsoft 365 中的核心 ediscovery 提供一種基本 ediscovery 工具，組
 
 完成下列步驟，將使用者新增至 eDiscovery 管理員角色群組：
 
-1. 移至 [https://protection.office.com/permissions](https://protection.office.com/permissions) 並使用 Microsoft 365 或 Office 365 組織中的系統管理員帳戶的認證登入。
+1. 移至 <https://compliance.microsoft.com/permissions> 並使用 Microsoft 365 或 Office 365 組織中的系統管理員帳戶的認證登入。
 
 2. 在 [ **許可權** ] 頁面上，選取 [ **eDiscovery 管理員** ] 角色群組。
 
@@ -82,7 +82,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
 - **EDiscovery Manager**：可以查看及管理他們建立或屬於的核心 eDiscovery 案例。 如果另一個 eDiscovery 管理員建立了案例，但沒有將第二個 eDiscovery 管理員新增為該案例的成員，則第二個 eDiscovery 管理員將無法在規範中心的核心 eDiscovery 頁面上查看或開啟此案例。 一般說來，您組織中的大部分人員都可以新增至 eDiscovery Manager 子組。
 
-- **Ediscovery 管理員**：可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子文件探索系統管理員還可以︰
+- **Ediscovery 管理員**：可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子文件探索系統管理員還可以：
 
   - 查看核心 eDiscovery 頁面上列出的所有案例。
   
@@ -100,7 +100,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。 組織管理角色群組的成員也可以建立核心 eDiscovery 案例。
 
-2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Core**]。
+2. 在 Microsoft 365 合規性中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Core**]。
 
 3. 在 [ **核心電子** 檔探索] 頁面上，按一下 [ **建立案例**]。
 
@@ -114,7 +114,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
 如果您在步驟3中建立案例，而且您是唯一會使用此案例的人員，則您不需要執行此步驟。 您可以開始使用案例來建立 eDiscovery 保留、搜尋內容及匯出搜尋結果。 若要授與其他使用者 (或角色群組) 存取案例，請執行此步驟。
 
-1. 在 [Microsoft 365 規範中心] 中的 **核心 eDiscovery** 頁面上，按一下您要新增成員的案例名稱。
+1. 在 Microsoft 365 合規性中心中的 **核心 eDiscovery** 頁面上，按一下您要新增成員的案例名稱。
 
 2. 在 [案例] 首頁上，選取 [**設定**] 索引標籤，然後選取 [ **Access & 許可權**]。
 

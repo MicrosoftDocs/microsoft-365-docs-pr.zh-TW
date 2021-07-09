@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用 Microsoft 365 的審計記錄檔搜尋工具，協助疑難排解電子郵件帳戶的常見支援問題。
-ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22d511fa2ad538c4ec9729fb051caefad6c3e974
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906091"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341044"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜尋審計記錄檔，以調查常見的支援問題
 
@@ -49,18 +49,18 @@ ms.locfileid: "50906091"
 
 本節說明建立及執行審核記錄搜尋的基本概念。 請使用這些指示做為本文中每個疑難排解案例的開始點。 如需詳細的逐步指示，請參閱 [搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)檔。
 
-1. 移至 [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) 並使用您的公司或學校帳戶登入。
+1. 前往 <https://compliance.microsoft.com/auditlogsearch>，然後使用您的公司或學校帳戶登入。
     
-    **[稽核記錄搜尋]** 頁面隨即顯示。 
+    [稽核 **]** 頁面隨即顯示。 
     
-    ![設定準則，然後選取 [搜尋] 以執行搜尋](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![設定準則，然後選取 [搜尋] 以執行搜尋](../media/AuditLogSearchPage1.png)
   
 4. 您可以設定下列搜尋準則。 本文中的每個疑難排解案例都建議您設定這些欄位的特定指導方針。
     
-    a. **活動：** 選取下拉式清單，以顯示您可以搜尋的活動。 執行搜尋後，系統只會顯示所選活動的稽核記錄。 選取 [ **顯示所有活動的結果** ]，會顯示符合其他搜尋準則之所有活動的結果。 在某些疑難排解案例中，您也必須將此欄位保留空白。
-    
-    b. **開始日期** 和 **結束日期：** 選取日期和時間範圍可顯示在該期間內發生的事件。 預設會選取最後七天。 日期和時間以國際標準時間 (UTC) 格式表示。 您可以指定的最大日期範圍為 90 天。
+   a. **開始日期** 和 **結束日期：** 選取日期和時間範圍可顯示在該期間內發生的事件。 預設會選取最後七天。 日期和時間以國際標準時間 (UTC) 格式表示。 您可以指定的最大日期範圍為 90 天。    
 
+   b. **活動：** 選取下拉式清單，以顯示您可以搜尋的活動。 執行搜尋後，系統只會顯示所選活動的稽核記錄。 選取 [ **顯示所有活動的結果** ]，會顯示符合其他搜尋準則之所有活動的結果。 在某些疑難排解案例中，您也必須將此欄位保留空白。
+    
     c. **使用者：** 在此方塊中按一下，然後選取一或多個使用者，以顯示的搜尋結果。 您在此方塊中選取之使用者所執行之選取活動的審計記錄會顯示在結果清單中。 若要傳回貴組織中所有使用者 (及服務帳戶) 的項目，請將此方塊保留空白。
     
     d. **檔、資料夾或網站：** 輸入部分或所有檔案或資料夾名稱，以搜尋與包含指定關鍵字之資料夾檔案相關的活動。 您也可以指定檔案或資料夾的 URL。 如果您使用 URL，請確定輸入完整 URL 路徑，或者，如果您只輸入 URL 的一部分，請勿包含任何特殊字元或空格。 若要傳回貴組織中所有檔案和資料夾的項目，請將此方塊保留空白。 在本文的所有疑難排解案例中，此欄位會保留空白。
@@ -164,7 +164,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ### <a name="recover-deleted-email-items"></a>復原已刪除的電子郵件專案
 
-如果刪除的郵件保留期間尚未到期，使用者可以復原虛刪除的專案。 在 Exchange Online 中，預設已刪除郵件的保留期間為14天，但是系統管理員可將此設定增加為最長30天。 在本文的 Outlook 中，將使用者指向 [[復原已刪除的郵件] 或 [電子郵件](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)]，以取得復原已刪除專案的指示。
+如果刪除的郵件保留期間尚未到期，使用者可以復原虛刪除的專案。 在 Exchange Online 中，預設已刪除郵件的保留期間為14天，但是系統管理員可將此設定增加為最長30天。 將使用者指向 [[復原已刪除的郵件] 或 Outlook 網頁版文章中的電子郵件](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)，以取得復原已刪除專案的指示。
 
 如先前所述，當已刪除專案的保留期間尚未到期或信箱處於保留狀態時，系統管理員可能能夠復原已刪除的專案，在此情況下，會保留專案，直到保留期間到期為止。 當您執行內容搜尋時，[可復原的專案] 資料夾中的虛刪除和實刪除專案會在搜尋結果中傳回，如果符合搜尋查詢。 如需執行內容搜尋的詳細資訊，請參閱[Office 365 中的內容搜尋](content-search.md)。
 
@@ -175,7 +175,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 當使用者建立其 Exchange Online 信箱的收件匣規則時，對應的審計記錄會儲存至審計記錄檔。 如需收件匣規則的相關資訊，請參閱：
 
-- [在 web 上的 Outlook 使用收件匣規則](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [在 Outlook 網頁版中使用收件匣規則](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
 - [使用規則管理 Outlook 中的電子郵件](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
 以下說明如何為此案例設定審核記錄搜尋查詢：

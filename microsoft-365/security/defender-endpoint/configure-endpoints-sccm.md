@@ -1,6 +1,6 @@
 ---
 title: 使用 Configuration Manager 上線 Windows 10 裝置
-description: 使用 Configuration Manager 在裝置上部署設定套件，使其可架至服務。
+description: 使用 Configuration Manager 在裝置上部署設定套件，讓裝置可架至服務。
 keywords: 使用 sccm 的板載裝置，裝置管理，設定 Microsoft Defender for Endpoint 裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d7c319e37fb804ee4dac3b6bff402942bbc2fa79
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842191"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339655"
 ---
-# <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 上線 Windows 10 裝置
+# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 的 Windows 10 裝置上架
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,9 +71,9 @@ ms.locfileid: "52842191"
 
 
 
-1. 從服務上架嚮導，開啟 Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) 。 您也可以從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得套件：
+1. 從服務上架嚮導，開啟 Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) 。 您也可以從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得套件：
 
-    1. 在功能窗格中，選取 [**設定** 上  >  **架**]。
+    1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理** 上  >  **架**]。
     
     1. 選取 [Windows 10] 做為作業系統。
 
@@ -102,10 +102,10 @@ ms.locfileid: "52842191"
 
 ### <a name="configure-sample-collection-settings"></a>設定範例集合設定
 
-針對每個裝置，您可以設定設定值，以指出是否可以在要求透過 Microsoft Defender 資訊安全中心提交檔案進行深層分析時，從裝置收集範例。
+針對每個裝置，您可以設定設定值，以指出是否可以在要求透過 Microsoft 365 Defender 提交檔案進行深層分析時，從裝置收集範例。
 
 >[!NOTE]
->這些設定設定通常是透過 Configuration Manager 進行。 
+>這些設定設定通常是透過 Configuration Manager 進行。
 
 您可以為 Configuration Manager 中的設定專案設定符合性規則，以變更裝置上的範例共用設定。
 
@@ -179,9 +179,9 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 下架裝置
 
-1. 從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得脫離套件：
+1. 從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得脫離套件：
 
-    1. 在功能窗格中，選取 [**設定**  >   **脫離**]。
+    1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理**  >   **脫離**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 

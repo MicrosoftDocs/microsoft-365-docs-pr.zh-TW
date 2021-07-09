@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861176"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339475"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線 
 6分鐘可供讀取 
@@ -30,7 +30,7 @@ ms.locfileid: "52861176"
 
 Microsoft Defender for Endpoint 支援監控 VDI 和 Windows 虛擬桌面會話。 根據組織的需求，您可能需要執行 VDI 或 Windows 虛擬機器會話，以協助員工從未受管理的裝置、遠端位置或類似案例中存取公司資料和應用程式。 使用 Microsoft Defender for Endpoint，您可以監視這些虛擬機器，以進行反常的活動。
 
- ## <a name="before-you-begin"></a>開始之前
+ ## <a name="before-you-begin"></a>事前準備
 熟悉 [非持久性 VDI 的考慮](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 雖然[Windows 虛擬桌面](/azure/virtual-desktop/overview)不提供非持續性選項，但是它提供使用黃金 Windows 影像的方式，可用來布建新的主機和重新部署電腦。 這會增加環境中的變化程度，進而影響在 Microsoft Defender for Endpoint 入口網站中建立及維護的專案，可能會降低安全性分析分析員的知名度。
 
 > [!NOTE]
@@ -54,7 +54,7 @@ Microsoft 建議將 Microsoft Defender for Endpoint 上架腳本新增至 WVD �
 #### <a name="scenario-1-using-local-group-policy"></a>*案例1：使用本機組策略*
 此案例需要將腳本放在黃金映射中，並使用本機組策略在啟動程式的初期執行。
 
-使用 [板載非持久性虛擬桌面基礎結構 VDI 裝置](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)中的指示。
+使用上 [架非持久性虛擬桌面基礎結構 (VDI) 裝置](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)上的指示。
 
 遵循每個裝置的單一專案指示。
 

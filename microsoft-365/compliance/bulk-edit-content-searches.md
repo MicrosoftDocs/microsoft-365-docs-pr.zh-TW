@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: 在安全性與合規性中心使用大量搜尋編輯器，快速變更一或多個內容搜尋的查詢和內容位置。
-ms.openlocfilehash: f6331bad19e95fd1d7039d5da72349906d3614b8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227384"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341029"
 ---
 # <a name="bulk-edit-content-searches"></a>大量編輯內容搜尋
 
@@ -32,7 +32,7 @@ ms.locfileid: "53227384"
 
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>使用大量搜尋編輯器變更查詢
 
-1. 移至 <https://protection.office.com> ，然後選取 [ **搜尋** \> **內容搜尋**]。
+1. 移至 <https://compliance.microsoft.com> ，然後選取 [ **內容搜尋**]。
 
 2. 在搜尋清單中，選取一或多個搜尋，然後選取 [ **大量搜尋編輯器** ![ 大量搜尋編輯器] 按鈕 ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) 。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何設定 Advanced eDiscovery，讓您可以開始建立及管理案例。 此外，它也會說明必要的 Microsoft 訂閱和授權。 完成一些快速步驟之後，Advanced eDiscovery 工具便可供使用。
-ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be5e5aea03950d28889590004bd796455a71c5be
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919741"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341445"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>設定 Microsoft 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Advanced eDiscovery 授權要求適當的組織訂閱和每一使用者授權。
 
 完成下列步驟，將使用者新增至 eDiscovery 管理員角色群組：
 
-1. 移至 <https://protection.office.com/permissions> 並使用 Microsoft 365 組織中的系統管理員帳戶的認證登入。
+1. 移至 <https://compliance.microsoft.com/permissions> 並使用 Microsoft 365 組織中的系統管理員帳戶的認證登入。
 
 2. 在 [ **許可權** ] 頁面上，選取 [ **eDiscovery 管理員** ] 角色群組。
 
@@ -66,7 +66,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
 - **eDiscovery Manager**：可以查看和管理他們建立或屬於的 Advanced eDiscovery 案例。 如果另一個 ediscovery 管理員建立了案例，但沒有將第二個 ediscovery 管理員新增為該案例的成員，則第二個 ediscovery 管理員將無法在規範中心的 [Advanced eDiscovery] 頁面上，查看或開啟此案例。 一般說來，您組織中的大部分人員都可以新增至 eDiscovery Manager 子組。
 
-- **Ediscovery 管理員**：可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子文件探索系統管理員還可以︰
+- **Ediscovery 管理員**：可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子文件探索系統管理員還可以：
 
   - 檢視 [進階電子文件探索] 頁面上列出的所有案例。
   

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place eDiscovery 和 In-Place 暫止 (，) 中的對應 PowerShell Cmdlet 會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 和 Advanced eDiscovery 的1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: 97be285ae348b018866e3f91f92be523b03e6616
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 77a7daf36c86cd302f774e5a4b934148d3dfd5a7
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055079"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53340993"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊版電子文件探索工具淘汰
 
@@ -345,9 +345,9 @@ Advanced eDiscovery 1.0 版，也就是在核心 eDiscovery 案例中，按一�
 
 若要判斷您的組織是否使用 Advanced eDiscovery 1.0 版：
 
-1. 移至[Office 365 安全性 & 規範中心](https://protection.office.com)。
+1. 移至 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 
-2. 在安全性 & 規範中心的左功能窗格中，按一下 [ **ediscovery > ediscovery**，然後開啟核心 eDiscovery 案例。
+2. 在 [規範中心] 的左功能窗格中，按一下 [ **eDiscovery > core**]，然後開啟核心 eDiscovery 案例。
 
 3. 如果您看到 [**切換至 Advanced eDiscovery** ] 按鈕，按一下該按鈕將會帶您的1.0 版 Advanced eDiscovery （即將淘汰）。 在核心 eDiscovery 中建立及管理案例的功能將不會受到影響。 只有透過按一下 [**切換至 Advanced eDiscovery** ]) 才能在 Advanced eDiscovery 的 1.0 (中新增及分析大小寫資料的功能會被停用。
 

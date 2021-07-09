@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入及封存 Microsoft 365 中的 Telegram 通訊資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，這樣您就可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: d3fbe02dce56bec01d66351aa69500a3d5d93a37
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5db1869a1c386ed75f3d8d1381f598d907d2b5ba
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054824"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339439"
 ---
-# <a name="set-up-a-connector-to-archive-telegram-communications-data-preview"></a>設定連接器以封存 Telegram 通訊資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>設定連接器以封存 Telegram 通訊資料
 
 使用 Microsoft 365 合規性中心中的 TeleMessage 連接器，匯入及封存 Telegram 聊天室、附件、檔案及已刪除的郵件和通話。 在您設定及設定連接器之後，它會連線到您組織的 TeleMessage 帳戶，並將使用 Telegram 歸檔人員的員工行動通訊，匯入 Microsoft 365 中的信箱。
 

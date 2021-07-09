@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326960"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339619"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>使用群組原則的 Windows 10 裝置上架上 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326960"
 
 請取出[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Defender for Endpoint 的各種路徑。
 
-1. 從服務上架嚮導中，開啟 (*WindowsDefenderATPOnboardingPackage.zip*) 的 GP configuration package .zip file。 您也可以從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得套件：
+1. 從服務上架嚮導中，開啟 (*WindowsDefenderATPOnboardingPackage.zip*) 的 GP configuration package .zip file。 您也可以從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得套件：
 
-    1. 在功能窗格中，選取 [**設定** 上  >  **架**]。
+    1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理** 上   >  **架**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53326960"
 
 7. 選取 [ **執行使用者登入與否** ]，然後選取 [ **以最高特權執行** ] 核取方塊。
 
-8. 移至 [**動作**] 索引標籤，然後按一下 [**新增 ...** ]確定 [**動作**] 欄位中已選取 [**啟動程式**]。 輸入共用 *WindowsDefenderATPOnboardingScript .cmd* 檔案的檔案名和位置。
+8. 移至 [**動作**] 索引標籤，然後按一下 [**新增 ...** ]確定 [**動作**] 欄位中已選取 [**啟動程式**]。 輸入共用  *WindowsDefenderATPOnboardingScript .cmd* 檔案的 NetBIOS 路徑。
 
 9. 按一下 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
 
@@ -77,7 +77,7 @@ ms.locfileid: "53326960"
 > 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新的架 Defender For Endpoint 裝置上執行偵測測試](run-detection-test.md)。
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>其他 Defender for Endpoint configuration 設定
-針對每個裝置，您可以使用 Microsoft Defender 資訊安全中心提交檔案進行深入分析時，判斷是否可以從裝置收集範例。
+針對每個裝置，您可以使用 Microsoft 365 Defender 提交檔案進行深入分析時，判斷是否可以從裝置收集範例。
 
 您可以使用「群組原則」 (GP) 設定設定，例如用於 deep analysis 功能的範例共用設定。
 
@@ -189,9 +189,9 @@ Enable\Disable 範例集合| Enabled-「在機器上啟用範例集合」已檢�
 > [!NOTE]
 > 上架和脫離的原則不得同時部署在相同的裝置上，否則會造成無法預期的衝突。
 
-1. 從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得脫離套件：
+1. 從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得脫離套件：
 
-    1. 在功能窗格中，選取 [**設定**  >  **脫離**]。
+    1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理**  >  **脫離**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 
@@ -224,8 +224,8 @@ Enable\Disable 範例集合| Enabled-「在機器上啟用範例集合」已檢�
 
 ## <a name="monitor-devices-using-the-portal"></a>使用入口網站監視裝置
 
-1. 移至[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)。
-2. 按一下 [ **裝置清單**]。
+1. 移至[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)。
+2. 按一下 [ **設備清查**]。
 3. 驗證裝置是否出現。
 
 > [!NOTE]

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何設定高級審核，讓您可以在使用者帳戶受損時執行鑒證調查，或調查其他與安全性相關的事件。
-ms.openlocfilehash: d1752ee7714056254a6c0e5c009aa9aa79ddff3b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 825dadee5260a263d005eb3a37f280381f9425a2
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314300"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339223"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>在 Microsoft 365 中設定高級審計
 
@@ -32,7 +32,7 @@ ms.locfileid: "52314300"
 
 ![設定進階稽核的工作流程](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step1-set-up-advanced-audit-for-users"></a>步驟1：設定使用者的高級審計
+## <a name="step-1-set-up-advanced-audit-for-users"></a>步驟1：為使用者設定高級審計
 
 進階稽核功能，如記錄重要事件 (如 MailItemsAccessed 和 Send) 功能，需要為使用者指派適當的 E5 授權。 此外，必須為這些使用者啟用 [進階稽核] 應用程式/服務方案。 要驗證 [進階稽核] 應用程式是否已指派給使用者，請對每個使用者執行以下步驟：
 

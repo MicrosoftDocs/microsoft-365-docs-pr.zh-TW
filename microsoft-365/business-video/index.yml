@@ -4,7 +4,7 @@ summary: 瞭解如何為您的公司設定和管理 Microsoft 365。
 brand: m365
 metadata:
   title: Microsoft 365 商務版訓練
-  description: 在 Microsoft 365 系統管理中心內設定及管理 Microsoft 365。
+  description: 在 Microsoft 365 系統管理中心中設定及管理 Microsoft 365。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -12,10 +12,10 @@ metadata:
   ms.author: twernermsft
   ms.date: 12/16/2020
   localization_priority: Priority
-  ms.custom: AdminSurgePortfolio
+  ms.custom: null
 productDirectory:
   items:
-    - title: 入門
+    - title: 快速入門
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: 規劃您的移動 Microsoft 365 商務。
       url: what-is-microsoft-365.md
@@ -74,5 +74,5 @@ additionalContent:
           summary: 完成面向大中型企業的教學途徑。
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: 尋找更多系統管理員資源
-          summary: 移至 Microsoft 365 管理中心說明網站。
+          summary: 移至「Microsoft 365 系統管理中心說明」網站。
           url: ../admin/index.yml

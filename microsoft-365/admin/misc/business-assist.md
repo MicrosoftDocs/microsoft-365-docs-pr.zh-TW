@@ -16,18 +16,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: 深入瞭解商務協助計畫，以及它如何協助您的組織改進 Microsoft 365 商務的協助和使用。
-ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 3715fcfcc24c647266bab36a764b3c8711e08bdd
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924584"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338598"
 ---
 # <a name="business-assist-for-microsoft-365"></a>適用於 Microsoft 365 的 Business Assist
 
 使用來自小型企業專家的專家建議，充分利用您的訂閱。
 
 **Microsoft 365 的商務協助** 是專為5位以上的使用者所設計，可讓您和員工在成長業務（從上架到日常使用）時，讓您和員工能夠全天候存取小型商務專家。
+
+### <a name="watch-business-assist-for-microsoft-365"></a>觀賞：商務協助 Microsoft 365
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFTQl]
 
 ## <a name="business-assist-services"></a>商務協助服務
 
@@ -51,7 +55,7 @@ ms.locfileid: "52924584"
 
 只有合格的組織會顯示購買業務協助的選項。 商務協助成本每位使用者每月 $5。 以下是您如何購買商務協助。
 
-1. 在 Microsoft 365 系統管理中心的簡化視圖中，移至 [**訂閱**] 索引標籤，然後選取 [**新增產品**]。
+1. 在 [Microsoft 365 系統管理中心的簡化視圖中，移至 [**訂閱**] 索引標籤，然後選取 [**新增產品**]。
 
 2. 在 [購買服務] 頁面上，選取 **Microsoft 365 的商務協助****資訊**，然後完成購買。
 

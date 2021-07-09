@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: 瞭解如何檢查用戶端電腦連線的記錄，以協助您及早偵測新興的問題。
-ms.openlocfilehash: 87b1d43df560fc7fea5aadfbf1c422eb22883067
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928141"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339367"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基準與效能歷程記錄調整 Office 365 效能
 
@@ -54,7 +54,7 @@ Office 365 所在的高容量專用 Microsoft 網路，不只是透過自動化�
 
 首先，您必須確定您所遇到的問題確實是效能問題，而不是服務事件。 效能問題與 Office 365 中的服務事件不同。 以下說明如何區分這些內容。
   
-如果 Office 365 服務有問題，就是服務事件。 您會在 Microsoft 365 系統管理中心的 [**目前健康情況**] 底下看到紅色或黃色圖示，您也可能會發現用戶端電腦連線至 Office 365 時效能較低。 例如，如果目前的健全狀況報告紅色圖示，而且您看到 Exchange 旁的 **調查**，您也可以從組織中的人員那裡收到一組呼叫，表示使用 Exchange Online 的用戶端信箱執行不當。 在此情況下，假設您的 Exchange Online 效能只是服務內的問題受害者，是合理的。 
+如果 Office 365 服務有問題，就是服務事件。 在 Microsoft 365 系統管理中心中，您會在 [**目前健康** 情況] 底下看到紅色或黃色圖示，您也可能會注意到在用戶端電腦上連接至 Office 365 時效能較低。 例如，如果目前的健全狀況報告紅色圖示，而且您看到 Exchange 旁的 **調查**，您也可以從組織中的人員那裡收到一組呼叫，表示使用 Exchange Online 的用戶端信箱執行不當。 在此情況下，假設您的 Exchange Online 效能只是服務內的問題受害者，是合理的。 
   
 ![Office 365 Health 儀表板，所有工作負載都顯示綠色，但 Exchange 除外，顯示服務已還原。](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -251,7 +251,7 @@ Office 365 所在的高容量專用 Microsoft 網路，不只是透過自動化�
     
 2. 流覽至此案例中的工具 (所在的資料夾，PsPing) 已安裝，並測試這些 Office 365 URLs：
     
-  - psping portal.office.com:443
+  - psping admin.microsoft.com:443
     
   - psping microsoft-my.sharepoint.com:443
     

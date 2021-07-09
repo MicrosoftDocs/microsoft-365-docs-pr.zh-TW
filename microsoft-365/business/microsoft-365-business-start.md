@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解商務的 Microsoft 365，如何加以設定，以及如何準備使用者的裝置和電腦，以確保它們受到商務 Microsoft 365 保護。
-ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706451"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339283"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>開始使用商務 Microsoft 365
 
@@ -57,11 +57,11 @@ ms.locfileid: "52706451"
 
  **商務套件設定 Microsoft 365 的概覽**
   
-下圖說明管理員如何設定 Microsoft 365 的商務。 同時也說明為商務 Microsoft 365 準備 Windows 電腦的步驟。 您也可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)，在 Microsoft 365 系統管理中心新增裝置。 您可以使用 AutoPilot 來設定和預先設定新的裝置，使其在使用者登入商務認證的 Microsoft 365 時立即可供生產力使用。
+下圖說明管理員如何設定 Microsoft 365 的商務。 同時也說明為商務 Microsoft 365 準備 Windows 電腦的步驟。 您也可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 系統管理中心中新增裝置。 您可以使用 AutoPilot 來設定和預先設定新的裝置，使其在使用者登入商務認證的 Microsoft 365 時立即可供生產力使用。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-## <a name="watch-set-up-microsoft-365-business"></a>觀賞：設定 Microsoft 365 商務版
+## <a name="watch-set-up-microsoft-365-business"></a>觀賞：設定 Microsoft 365 商務
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -70,7 +70,7 @@ ms.locfileid: "52706451"
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：設定商務 Microsoft 365 (Admin) 
 
-使用您的全域系統管理員認證登入[Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home)，然後完成下列步驟以設定商務 Microsoft 365。 
+使用您的全域系統管理員認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com/adminportal/home)，並完成下列步驟以設定商務 Microsoft 365。 
   
 1. [使用 Microsoft 365 商務裝置保護裝置資料的先決條件](pre-requisites-for-data-protection.md)
     
@@ -78,7 +78,7 @@ ms.locfileid: "52706451"
     
 2. [使用設定向導設定商務 Microsoft 365](set-up.md)
     
-    如果您要 **永久地從本機 Active Directory 移至雲端**，您可以移至 Microsoft 365 系統管理中心，並使用安裝精靈手動新增您的使用者，也可以使用 Azure AD 連線進行一次同步處理。 執行這項作業的方法有兩種： 
+    如果您 **永久從本機 Active Directory 移至雲端**，您可以移至 Microsoft 365 系統管理中心，並使用設定向導手動新增您的使用者，也可以使用 Azure AD 連線進行一次同步處理。 執行這項作業的方法有兩種： 
     
     - 如果您也有 Exchange 2010、Exchange 2013 或 Exchange 2016 伺服器，您可以[使用最低混合式將 Exchange 信箱快速遷移至 Microsoft 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最基本的混合步驟包括將使用者同步處理至 Azure AD，以及從內部部署至雲端的電子郵件遷移。 電子郵件遷移完成之後，當您使用此方法時，目錄同步處理會自動關閉。
     
@@ -94,7 +94,7 @@ ms.locfileid: "52706451"
 
 系統管理員可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)，預先選取新 Windows 10 電腦的設定。 使用者可以遵循本主題中的步驟，設定其現有或新的 Windows 10 裝置：[為商務使用者設定 Windows 的 Microsoft 365 電腦](set-up-windows-devices.md)。 在現有裝置中，使用者可以 **選擇性地**[將檔案移至商務用 OneDrive](move-files-to-onedrive.md)。 他們也可以使用協力廠商工具，將與 Windows 設定檔相關聯的檔案移至 OneDrive。
   
-如果您的組織使用 Windows 的伺服器 Active Directory 內部部署，您可以設定商務 Microsoft 365 以保護 Windows 10 裝置，同時仍維持對需要本機驗證的內部部署資源的存取。 請遵循[啟用加入網域的 Windows 10 裝置以供商務 Microsoft 365 進行管理](manage-windows-devices.md)，以加以設定的步驟。 這個方法是可取的，且此狀態的裝置稱為 **混合式 AZURE AD join 裝置**。 
+如果您的組織使用 Windows Server Active Directory 內部部署，您可以設定商務 Microsoft 365 以保護 Windows 10 裝置，同時仍維持對需要本機驗證的內部部署資源的存取。 請遵循[啟用加入網域的 Windows 10 裝置以供商務 Microsoft 365 進行管理](manage-windows-devices.md)，以加以設定的步驟。 這個方法是可取的，且此狀態的裝置稱為 **混合式 AZURE AD join 裝置**。 
   
 如果您保留的本機 Active Directory 包含某些內部部署資源 (例如檔案共用和印表機) ，您可以執行下列步驟，讓 **Azure 已加入 azure 的裝置** 存取這些資源：[從 Microsoft 365 for business 的 Azure 已加入 Azure 裝置存取內部部署資源](access-resources.md)。
   
@@ -112,4 +112,4 @@ ms.locfileid: "52706451"
 [Microsoft 365 商務檔和資源](./index.yml) (連結頁面) \
 [管理商務 Microsoft 365](manage.md) (文章) \
 [遷移至 Microsoft 365 for business](migrate-to-microsoft-365-business.md) (文章) \
-[Microsoft 365 商務訓練](../business-video/index.yml)影片 (連結] 頁面) 
+[商務用 Microsoft 365 訓練影片](../business-video/index.yml) (連結頁面)

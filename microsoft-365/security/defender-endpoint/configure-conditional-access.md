@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中設定條件式存取
-description: 深入瞭解在 Intune、Microsoft Defender 資訊安全中心和 Azure 中執行條件式存取所需的步驟
+description: 深入瞭解在 Intune、Microsoft 365 Defender 和 Azure 中執行條件式存取所需的步驟
 keywords: 條件式存取、條件化、存取、裝置風險、風險層級、整合、intune 整合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2c9462fa0d4be4d6ff78ba3e5db2cd4fa71fef0b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843971"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339511"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定條件式存取
 
@@ -35,7 +35,7 @@ ms.locfileid: "52843971"
 
 本節會引導您完成所有必須執行的步驟，才能正確地執行條件式存取。
 
-### <a name="before-you-begin"></a>開始之前
+### <a name="before-you-begin"></a>事前準備
 >[!WARNING]
 >請務必注意，此案例中不支援 Azure AD 註冊裝置。</br>
 >只支援 Intune 註冊的裝置。
@@ -50,10 +50,10 @@ ms.locfileid: "52843971"
 
 
 
-您必須採取下列步驟，Microsoft Defender 資訊安全中心、Intune 入口網站和 Azure AD 入口網站。
+您必須採取下列步驟，Microsoft 365 Defender、Intune 入口網站和 Azure AD 入口網站。
 
 請務必注意存取這些入口網站所需的角色，並執行條件式存取：
-- **Microsoft Defender 資訊安全中心**-您必須登入具有全域系統管理員角色的入口網站，以開啟整合。
+- **Microsoft 365 Defender** -您必須登入具有全域系統管理員角色的入口網站，以開啟整合。
 - **Intune** -您必須使用具有管理許可權的安全性系統管理員許可權登入入口網站。 
 - **AZURE AD 入口網站** -您必須以全域系統管理員、安全性管理員或條件式存取管理員身分登入。
 
@@ -62,7 +62,7 @@ ms.locfileid: "52843971"
 > 您將需要 Microsoft Intune 環境，並已加入 Intune managed 和 Azure AD Windows 10 裝置。
 
 請執行下列步驟來啟用條件式存取：
-- 步驟1：從 Microsoft Defender 資訊安全中心開啟 Microsoft Intune 連接
+- 步驟1：從 Microsoft 365 Defender 開啟 Microsoft Intune 連接
 - 步驟2：在 Intune 中開啟用於端點整合的 Defender
 - 步驟3：在 Intune 中建立相容性原則
 - 步驟4：指派原則 
@@ -70,16 +70,16 @@ ms.locfileid: "52843971"
 
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>步驟1：開啟 Microsoft Intune 連接
-1. 在功能窗格中，選取 [**設定**  >  **高級功能**]  >  **Microsoft Intune** 連線]。
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **一般**  >  **高級功能**  >  **Microsoft Intune 連接**]。
 2. 將 Microsoft Intune 設定切換為 [**開啟**]。
 3. 按一下 [ **儲存喜好** 設定]。
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>步驟2：在 Intune 中開啟用於端點整合的 Defender
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [**裝置符合性**  >  **Microsoft Defender ATP**]。
-3. 設定 **連線 Windows 10 0.15063 + 裝置以 Microsoft Defender 進階威脅防護** 至 [**開啟**]。
-4. 按一下 **[儲存]**。
+2. 選取 [**裝置規範**] [  >  **Microsoft Defender ATP**]。
+3. 設定 **連線 Windows 10 0.15063 + 裝置至 Microsoft Defender Advanced 威脅防護** to **On On**。
+4. 按一下 **儲存**。
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步驟3：在 Intune 中建立相容性原則

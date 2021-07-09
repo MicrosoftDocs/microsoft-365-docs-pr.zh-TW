@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 提供三種 eDiscovery 工具，可供您用來搜尋和匯出在不同位置找到的內容，例如 Exchange 信箱、SharePoint 和商務用 OneDrive 網站、Microsoft 365 群組、Microsoft Teams 和商務用 Skype 交談。 核心 eDiscovery 和 Advanced eDiscovery 提供許多其他功能，可協助您管理調查。
-ms.openlocfilehash: dc332e1a399588e4a1e969af45da6cff92008461
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: a62c8a53081a79e4afd98c82bfaca486a6155a6b
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256345"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341709"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365 中的 eDiscovery 解決方案
 

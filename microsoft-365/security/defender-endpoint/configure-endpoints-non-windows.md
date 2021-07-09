@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 265a7e9093638caa2111c7d1d82e51c8c2437d12
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845456"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339667"
 ---
 # <a name="onboard-non-windows-devices"></a>將非 Windows 裝置上線
 
@@ -38,7 +38,7 @@ ms.locfileid: "52845456"
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender for Endpoint 可提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender 資訊安全中心中查看不同支援作業系統 (OS) 中的警示，也能更好地保護組織的網路。 
+Defender for Endpoint 可提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft 365 Defender 中查看不同支援作業系統 (OS) 中的警示，也能更好地保護組織的網路。 
 
 您將需要知道與 distros 的 Defender for Endpoint 相容的確切 Linux 和 macOS 版本，以供整合運作。 如需詳細資訊，請參閱：
 - [Linux 系統需求上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md#system-requirements)  

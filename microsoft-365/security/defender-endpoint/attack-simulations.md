@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 6ecbf98c81b1f68e42f39269809592fb446e6036
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a56167f0025ec42f4fd441886f83026c1bf23d6
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934378"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339531"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>透過模擬攻擊體驗 Microsoft Defender for Endpoint 
 
@@ -37,11 +37,11 @@ ms.locfileid: "51934378"
 
 >[!TIP]
 >- 深入瞭解 Microsoft Defender for Endpoint 中的最新增強功能： [端點的新](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)功能
->- 在最近的 MITRE 評估中，以試用版的端點示範業界一流的光學器件和偵測功能。 Read： [來自 MITRE ATT 的 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
+>- 在最近的 MITRE 評估中，以試用版的端點示範業界一流的光學器件和偵測功能。 讀取：[從 MITRE ATT 中 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 您可能想要在將許多裝置上架到服務之前，體驗端點的 Defender。 若要這麼做，您可以在一些測試裝置上執行受控制的攻擊模擬。 在執行模擬後的攻擊之後，您可以查看 Endpoint 的 Endpoint 面對惡意活動的反應，以及如何啟用有效的回應。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>事前準備
 
 若要執行提供的任何模擬，您至少需要 [一個架裝置](onboard-configure.md)。 
 
@@ -49,7 +49,7 @@ ms.locfileid: "51934378"
 
 ## <a name="run-a-simulation"></a>執行模擬
 
-1. 在 **[** 說明  >  **模擬 & 教學** 課程] 中，選取您要模擬的哪個可用攻擊案例：
+1. 在 **端點**  >  **評估中 & 教程**  >  **教程 & 模擬**，請選取您要模擬的哪個可用攻擊案例：
 
    - **案例1：檔丟掉後門** -模擬 socially 工程的引誘檔的傳遞。 檔會啟動巧盡心思的後門，可提供駭客控制權。
 

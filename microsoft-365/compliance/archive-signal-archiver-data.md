@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入和封存 Microsoft 365 中的信號通訊資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，這樣您就可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: a779cb312e20fdf5fac0987a33734e7e81ba9c74
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bce1788f2ce08ca8678c5ba29c01e1bec2d1c834
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054826"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339463"
 ---
-# <a name="set-up-a-connector-to-archive-signal-communications-data-preview"></a>設定連接器以封存信號通訊資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-signal-communications-data"></a>設定連接器以封存信號通訊資料
 
 使用 Microsoft 365 合規性中心中的 TeleMessage 連接器，可匯入及封存信號聊天、附件、檔案及已刪除的郵件和通話。 在您設定及設定連接器之後，它會連線到您組織的 TeleMessage 帳戶，並將使用 TeleMessage 信號歸檔器的員工行動通訊，匯入至 Microsoft 365 中的信箱。
 

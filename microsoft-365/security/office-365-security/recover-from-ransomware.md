@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體攻擊復原。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789048"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341433"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 中復原勒索軟體攻擊
 
@@ -101,9 +101,9 @@ ms.locfileid: "52789048"
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步驟7：重新啟用 Exchange ActiveSync 和 OneDrive 同步處理
 
-在您清潔電腦和裝置並復原資料後，您可以重新啟用 Exchange ActiveSync，並 OneDrive 您先前在[步驟 2](#step-2-disable-exchange-activesync-and-onedrive-sync)中停用的同步處理。
+在您清理電腦和裝置並復原資料之後，您可以重新啟用您先前在[步驟 2](#step-2-disable-exchange-activesync-and-onedrive-sync)中停用的 Exchange ActiveSync 和 OneDrive 同步處理。
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步驟 8 (選用) ：封鎖特定檔案副檔名 OneDrive 同步處理
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步驟 8 (選用) ：封鎖特定副檔名的 OneDrive 同步處理
 
 復原之後，您可以阻止商務用 OneDrive 用戶端同步處理此勒索軟體所影響的檔案類型。 如需詳細資訊，請參閱 [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
@@ -141,30 +141,30 @@ ms.locfileid: "52789048"
 
 您可以使用數種方法中的其中一種，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="additional-ransomware-resources"></a>其他勒索軟體資源
 
-- [軟體](/windows/security/threat-protection/intelligence/ransomware-malware)
+[人工運作的勒索軟體概述](/security/compass/human-operated-ransomware)
 
-- [勒索軟體回應-支付或不支付費用？](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+[快速防護勒索軟體和 extortion](/security/compass/protect-against-ransomware)
 
-- [Norsk Hydro 會以透明度回應勒索軟體攻擊](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+[最新的 Microsoft 安全情報報告 PDF) ](https://www.microsoft.com/securityinsights/) (搜尋 "勒索軟體" ) 
+
+勒索軟體： Microsoft 365 Defender 入口網站的 **威脅分析節點** 中 **的普遍和持續威脅** 報告
+
+Microsoft 365 保護：
 
 - [勒索軟體偵測和復原 OneDrive 中的檔案](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
-
-- [Microsoft 安全情報報告](https://www.microsoft.com/securityinsights/)
-
 - [啟用或停用 Office 檔案中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-
 - [EOP 和 Microsoft Defender Office 365 security 的建議設定](recommended-settings-for-eop-and-office365.md)
 
-- [值得升級： Windows 10 的新一代安全性，可在2017中比對勒索軟體的爆發，以復原彈性](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+Microsoft 安全性小組博客文章：
 
-- [沒有 ma，Samas：在此勒索軟體的 modus operandi 中有哪些？](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [透過瞭解 cybersecurity 風險成為彈性：第4部分—流覽目前的威脅 (可能是 2021) ](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-- [Locky 惡意程式碼（幸運）以避免出現](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+  請參閱《 **勒索軟體** ] 區段。
 
-- [MSRT 2016 年7月： Cerber 勒索軟體](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [人工運作的勒索軟體攻擊： preventable 年 3 2020 月的災難 () ](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [勒索軟體回應-支付或不支付費用？ (十二月 2019) ](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro 會以透明性 (十二月 2019) 回應勒索軟體攻擊 ](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [值得升級： Windows 10 的新一代安全性，可在 2017 (2018 年1月的時，向其證實可復原的勒索軟體發作) ](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [Cerberus 的三個機頭（如 Cerber）勒索軟體](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
-
-- [ () Da Vinci 程式碼影響的 Troldesh 勒索軟體](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

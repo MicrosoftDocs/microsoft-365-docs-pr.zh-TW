@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8babc8c5e7464637e29ddacef50c92f252033d26
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 910eb16ad33555ca61875a346b50cea7e63b2220
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314365"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338550"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -44,6 +44,33 @@ ms.locfileid: "53314365"
 - 限制匿名使用者開始 Teams 會議。
 - 需要 Teams 會議中設定大廳。
 - 設定允許在 Teams 會議中出現的使用者。
+
+#### <a name="add-improvement-action-related-to-microsoft-defender-for-endpoint"></a>新增與 Microsoft Defender for Endpoint 相關的改進動作
+- 修正 Microsoft Defender for macOS 的端點感應器資料收集
+- 修正 Microsoft Defender 對 macOS 的 Endpoint 受損通訊
+- 設定 macOS 中的最小密碼長度為15或以上的字元
+- 在 macOS 中將「強制密碼史 ' 設定為「24或以上的密碼 (s) 」
+- 將「密碼最長存留期 ' 設定為 ' 90 或更少的天數，但在 macOS 中不是 0 '
+- 將帳戶鎖定閥值設定為5或更低的 macOS
+- 開啟 macOS 上的防火牆
+- 啟用閘道管理員
+- 啟用系統完整性保護 (SIP) 
+- 啟用 FileVault 磁片加密
+- 將畫面設定為在 macOS 中的屏保程式開始時鎖定
+- 確定屏保程式已設定為在 macOS 20 分鐘以內開始
+- 安全主資料夾
+- 開啟 macOS 的 Microsoft Defender 防毒軟體即時保護
+- 在封鎖模式中開啟 macOS 的 Microsoft Defender 防毒軟體 PUA 保護
+- 為 macOS 啟用 Microsoft Defender 防毒軟體雲端傳送保護
+- 更新 macOS 的 Microsoft Defender 防毒軟體定義
+- 修正 Microsoft Defender for Linux 的 Endpoint 感應器資料收集
+- 修正 Microsoft Defender 以取得 Linux 的 Endpoint 受損通訊
+- 無限制存取帳戶
+- 開啟對 Linux Microsoft Defender 防毒軟體即時保護
+- 開啟 Linux 的封鎖模式中的 Microsoft Defender 防毒軟體 PUA 保護
+- 為 Linux 啟用 Microsoft Defender 防毒軟體雲端傳送保護
+- 更新 Linux 的 Microsoft Defender 防毒軟體定義
+
 
 
 ## <a name="related-resources"></a>相關資源

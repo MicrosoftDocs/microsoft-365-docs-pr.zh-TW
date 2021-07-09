@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286942"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339523"
 ---
 # <a name="configure-device-discovery"></a>設定裝置探索
 
@@ -43,15 +43,15 @@ ms.locfileid: "53286942"
 您可以自訂用來執行標準探索的裝置清單。 您可以在所有也支援此功能的架裝置上啟用 standard discovery， (目前 Windows 10 裝置只) 或透過指定裝置的裝置標記來選取裝置的子集或子集。
 
 > [!IMPORTANT]
-> 預覽時，您必須先在 Microsoft Defender 資訊安全中心中開啟預覽功能。
-> 然後，您可以在 Microsoft 365 的安全性中心存取裝置探索設定。 在 Microsoft Defender 資訊安全中心和 Microsoft 365 的安全性中心都有未管理裝置及安全性建議的清單，而儀表板磚只會 Microsoft 365 安全性中心提供。
+> 預覽時，您必須先在 Microsoft 365 Defender 中開啟預覽功能。
+> 然後，您可以在 Microsoft 365 的安全性中心存取裝置探索設定。 在 Microsoft 365 Defender 和 Microsoft 365 的安全性中心都有未管理裝置及安全性建議的清單，而儀表板磚只會 Microsoft 365 安全性中心提供。
 
 在 Microsoft 365 的安全性中心採取下列設定步驟：
 
 1. 流覽至 **設定 > 裝置探索**。
 2. 選取要用於架裝置的探索模式。
 3. 如果您已選擇使用標準探索，請選取要用於作用中探測的裝置： [所有裝置] 或 [子集]，方法是指定其裝置標記。
-4. 按一下 [儲存]。
+4. 按一下 **儲存**。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>排除在標準探索中積極探測裝置
 

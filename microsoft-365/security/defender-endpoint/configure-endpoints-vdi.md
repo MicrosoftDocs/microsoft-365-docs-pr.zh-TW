@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 555f96dc1f45fb6a406b5993d0b8e4a3745c283b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843207"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339631"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
+# <a name="onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>在 (VDI) 裝置上架上非持久性虛擬桌面基礎結構
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,9 +63,9 @@ ms.locfileid: "52843207"
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>Windows 10 或 Windows 伺服器2019
 
-1.  從服務上架嚮導中，開啟 .zip 檔案 (*WindowsDefenderATPOnboardingPackage.zip*) 的 VDI 設定套件。 您也可以從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得套件：
+1.  從服務上架嚮導中，開啟 .zip 檔案 (*WindowsDefenderATPOnboardingPackage.zip*) 的 VDI 設定套件。 您也可以從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得套件：
 
-    1.  在功能窗格中，選取 [**設定** 上  >  **架**]。
+    1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理** 上  >  **架**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 
@@ -111,11 +111,11 @@ ms.locfileid: "52843207"
    
       - 針對每個裝置的單一專案： 
     
-        只檢查 Microsoft Defender 資訊安全中心中的一個專案。
+        檢查 Microsoft 365 Defender 入口網站中的一個專案。
 
       - 針對每個裝置的多個專案： 
        
-        檢查 Microsoft Defender 資訊安全中心中的多個專案。
+        檢查 Microsoft 365 Defender 入口網站中的多個專案。
 
 6. 按一下功能窗格上的 [ **裝置] 清單** 。
 

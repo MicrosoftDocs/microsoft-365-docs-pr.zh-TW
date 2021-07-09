@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 瞭解如何將個人工作檔案和機密公司檔案移至商務用 OneDrive，只需幾個簡單的步驟即可。
-ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6def1c733093417162ca37906c1d55c0eab23e7d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245097"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339303"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>將檔案移至商務用 OneDrive
 
@@ -44,7 +44,7 @@ ms.locfileid: "52245097"
 
 如果使用者的電腦包含許多個人檔案，請先將這些檔案移至商務用 OneDrive：
   
-1. 移至 portal.office.com，並使用使用者的商務認證 Microsoft 365 登入。
+1. 移至 admin.microsoft.com，並使用使用者的商務認證 Microsoft 365 登入。
 
 2. 按一下應用程式啟動器 ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然後移至 OneDrive。 
     

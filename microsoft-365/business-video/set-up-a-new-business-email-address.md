@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何設定新的商務電子郵件地址。
-ms.openlocfilehash: df984cbee8bdd1bdd40ca8d9b87c71222db0f69d
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065138"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341541"
 ---
 # <a name="set-up-a-new-business-email-address"></a>設定新的公司電子郵件地址
 
@@ -55,7 +55,7 @@ ms.locfileid: "52065138"
 
 請使用您已擁有的功能變數名稱，不論是否要將該功能變數名稱用於網站位址或其他提供者的電子郵件地址。 
 
-## <a name="try-it"></a>試試看吧！
+## <a name="give-it-a-try"></a>請嘗試！
  
 1. 登入主控您網域的網站。 按一下按鈕以自動驗證或手動更新網域。 
 1. 自訂電子郵件地址或將其保留原樣。 

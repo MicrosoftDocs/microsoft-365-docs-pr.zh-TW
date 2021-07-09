@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47d57e51eca4950f7a8f4284fbc916e9d030b2c7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844331"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339235"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>適用于 Microsoft Defender for Endpoint service 的板載 Windows 伺服器
 
@@ -38,7 +38,7 @@ ms.locfileid: "52844331"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
-用於端點的 Defender 擴充支援，也包括 Windows Server 作業系統。 這種支援透過「Microsoft Defender 資訊安全中心主控台」順利提供高級攻擊偵測和調查功能。
+用於端點的 Defender 擴充支援，也包括 Windows Server 作業系統。 這種支援透過「Microsoft 365 Defender 主控台」順利提供高級攻擊偵測和調查功能。
 
 如需有關授權和基礎結構需要的實際內容，請參閱[使用 Defender for Endpoint 保護 Windows server](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)。
 
@@ -66,14 +66,14 @@ ms.locfileid: "52844331"
 一般來講，您必須採取下列步驟：
 
 1. **會滿足開始之前** 區段中所述的上架需求。
-2. 從 Microsoft Defender Security center 開啟伺服器監視。
+2. 從 Microsoft 365 Defender 入口網站開啟伺服器監視。
 3. 針對伺服器安裝和設定 MMA，將感應器資料包告給 Defender for Endpoint。
 4. 設定和更新 System Center Endpoint Protection 用戶端。
 
 > [!TIP]
 > 在裝置上架後，您可以選擇執行偵測測試，以確認它已正確架至服務。 如需詳細資訊，請參閱 [在新的架 Defender For endpoint 端點上執行偵測測試](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>開始之前
+#### <a name="before-you-begin"></a>事前準備
 
 請執行下列步驟來滿足上架需求：
 
@@ -121,7 +121,7 @@ ms.locfileid: "52844331"
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>選項2：透過 Azure Security Center 的板載 Windows 伺服器
 
-1. 在 [Microsoft Defender 資訊安全中心] 導覽窗格中，選取 [**設定**  >  **裝置管理** 上  >  **架**]。
+1. 在 [Microsoft 365 Defender] 導覽窗格中，選取 [**設定**  >  **端點**  >  **裝置管理** 上  >  **架**]。
 
 2. 選取 [ **Windows Server 2008 R2 SP1，2012 R2 和 2016** 當作作業系統。
 
@@ -200,7 +200,7 @@ Endpoint for Endpoint 可以與 Azure Defender 整合，以提供全面的 Windo
     > Azure Defender for server 和 Microsoft Defender for 端點之間的整合已擴充，可支援[Windows Server 2019 和 Windows Virtual Desktop (WVD) ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
 
 - 適用于 azure defender 監控的 Windows 伺服器也會在 defender for endpoint 中提供，azure defender 可在用戶端和伺服器之間，提供單一視圖，使 azure defender 能夠順利連線至 Defender for endpoint 租使用者。  此外，Azure Defender 主控台也可使用 Defender for Endpoint 警示。
-- 伺服器調查-Azure Defender 客戶可以存取 Microsoft Defender 資訊安全中心，以執行詳細調查以找出可能遭到破壞範圍。
+- 伺服器調查-Azure Defender 客戶可以存取 Microsoft 365 Defender 入口網站，以執行詳細的調查，以找出可能遭到破壞的範圍。
 
 > [!IMPORTANT]
 > - 當您使用 Azure Defender 監控伺服器時，系統會自動為美國使用者建立 (的 Endpoint 租使用者，而歐盟為歐洲和英國使用者) 。<br>
@@ -255,7 +255,7 @@ Defender for Endpoint 與 System Center Endpoint Protection 整合。 整合可�
 
 1. 取得您的工作區 ID:
 
-   1. 在功能窗格中，選取 [**設定** 上  >  **架**]。
+   1. 在 [Microsoft 365 Defender] 導覽窗格中，選取 [**設定**  >  **端點**  >  **裝置管理** 上  >  **架**]。
 
    1. 選取 [ **Windows Server 2008 R2 SP1，2012 R2 and 2016** 當作作業系統並取得您的工作區 ID:
 

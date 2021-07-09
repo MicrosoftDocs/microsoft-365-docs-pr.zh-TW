@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何尋找 Microsoft SharePoint Syntex 的資源。
-ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 087cf7b21d00cef3711d8e5765161eaa98418437
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149007"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327056"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 簡介
 
-Microsoft SharePoint Syntex 是一項 Microsoft 365 服務，可協助組織：
+SharePoint Syntex 是一項 Microsoft 365 服務，可協助組織：
 
 - 使用進階 AI 和機器教學來擴大人類經驗
 - 自動化內容處理
@@ -56,7 +56,8 @@ Microsoft SharePoint Syntex 是一項 Microsoft 365 服務，可協助組織：
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
 |了解如何開始規劃以使用 SharePoint Syntex |[SharePoint Syntex 採用：開始使用](./adoption-getstarted.md)| 
-|請參閱範例案例，以了解您可在組織中使用 SharePoint Syntex 的方式 |[Microsoft SharePoint Syntex 的案例和使用案例](./adoption-scenarios.md)| 
+|請參閱範例案例，以了解您可在組織中使用 SharePoint Syntex 的方式 |[SharePoint Syntex 的案例與使用案例](./adoption-scenarios.md)| 
+|設定及執行 SharePoint Syntex 的試驗計畫 |[執行試用版](./trial-syntex.md)|
 |了解如何使用 SharePoint Syntex 將文件程序自動化 |[使用 Microsoft 365 解決方案管理合約](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
@@ -65,7 +66,7 @@ Microsoft SharePoint Syntex 是一項 Microsoft 365 服務，可協助組織：
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|安裝和設定 SharePoint Syntex|[安裝 Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
+|安裝和設定 SharePoint Syntex|[設定 SharePoint Syntex](./set-up-content-understanding.md)|
 |了解影像標記和停用方式|[SharePoint Syntex 中的影像標記](./image-tagging.md)|
 
 ## <a name="models"></a>模型
@@ -76,6 +77,7 @@ Microsoft SharePoint Syntex 是一項 Microsoft 365 服務，可協助組織：
 |:-----|:-----|
 |了解如何使用模型|[建立內容中心](./create-a-content-center.md)<br><br>[建立分類器](./create-a-classifier.md)<br><br>[建立擷取器](./create-an-extractor.md)<br><br>[建立表單處理模型](./create-a-form-processing-model.md)<br><br>[說明類型](./explanation-types-overview.md)<br><br>[套用文件瞭解模型](./apply-a-model.md)<br><br>[透過範例模型深入了解文件瞭解模型](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |將保留標籤套用至模型|[將保留標籤套用至文件瞭解模型](./apply-a-retention-label-to-a-model.md)|
+|將敏感度標籤套用至您的模型|[將敏感度標籤套用至文件了解模型](./apply-a-sensitivity-label-to-a-model.md)|
 |在建立擷取器時使用受管理的中繼資料服務字詞庫分類法|[在建立擷取器時運用字詞庫分類法](./leverage-term-store-taxonomy.md)|
 |了解如何查看您模型的資料|[模型流量分析](./model-usage-analytics.md)|
 |瞭解如何在訓練模型時使用協助工具模式|[SharePoint Syntex 協助工具模式](./accessibility-mode.md)|
@@ -90,4 +92,3 @@ SharePoint Syntex 授權為您的使用者提供進階內容服務，在您的 M
 |了解如何使內容類型更一致地可用於 SharePoint 庫和清單|[將內容類型推入中樞](./push-content-type-to-hub.md)|
 |了解您可用的字詞庫報告|[字詞庫報告](./term-store-analytics.md)|
 
-## <a name="see-also"></a>另請參閱

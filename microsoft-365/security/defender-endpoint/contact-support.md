@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228720"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339181"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>聯絡適用於端點的 Microsoft Defender 支援
 
@@ -58,9 +58,9 @@ ms.locfileid: "53228720"
 
     ![選取 [問號時構件的圖像] 標記](images/support-widget.png)
 
-2. 按一下 [ **需要協助]？**  Microsoft Defender 資訊安全中心的右下方按鈕：
+2. 按一下 [ **需要協助]？**  Microsoft 365 Defender 入口網站右下方的按鈕：
 
-    ![[需要協助] 按鈕的圖像](images/need-help.png)
+    ![[需要協助] 按鈕的圖像](images/need-help-option.png)
 
 在 [widget] 中，將會提供兩個選項：
 
@@ -70,7 +70,7 @@ ms.locfileid: "53228720"
 ## <a name="find-solutions-to-common-problems"></a>尋找常見問題的解決方案
 此選項包含可能與您可能要求的問題相關的文章。 只要開始在搜尋方塊中輸入問題，就會呈現與您的搜尋相關的文章。
 
-![需要協助構件的影像](images/Support3.png)
+![需要協助構件的影像](images/information-on-help-screen.png)
 
 如果建議的文章不足，您可以開啟服務要求。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53228720"
 
 按一下看起來像是耳機的圖示，即可使用此選項。 然後您會看到下列頁面以送出支援案例：
 
-![開啟服務要求構件的影像](images/Support4.png)
+![開啟服務要求構件的影像](images/contact-support-screen.png)
 
 1. 請填入您所面臨問題的標題和描述，以及可能與您聯繫的電話號碼和電子郵件地址。
 

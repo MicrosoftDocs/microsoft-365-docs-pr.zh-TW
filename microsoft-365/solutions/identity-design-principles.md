@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a3be13624c3b3cc9d7be667e28e435c76c513fc3
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289736"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341721"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -272,8 +272,6 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 - **Microsoft Cloud App Security** (/cloud-app-security/manage-admins) 
 - **Stream** - (/stream/assign-administrator-user-role) 
 - **資訊壁壘** - (。/compliance/information-barriers.md) 
-
-針對 rest，在檔中搜尋是最近的工作 <https://docs.microsoft.com/> 。
 
 ### <a name="activity-logs"></a>活動記錄
 

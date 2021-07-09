@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用 PowerShell 指令碼，在 Exchange Online 中執行 Search-UnifiedAuditLog Cmdlet，以搜尋稽核記錄檔。 此指令碼經過最佳化，可傳回大量 (最多50,000 筆) 稽核記錄。 指令碼會將這些記錄匯出為 CSV 檔案，您可以使用 Excel 中的 Power Query 來檢視或轉換。
-ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939563"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341005"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 指令碼來搜尋稽核記錄
 
@@ -48,7 +48,7 @@ ms.locfileid: "51939563"
 
   **UnifiedAuditLogIngestionEnabled** 屬性值為 `True` 表示已開啟 [稽核記錄搜尋]。
 
-- 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能成功執行指令碼。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限] 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 如需詳細資訊，請參閱[在合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中的「搜尋稽核記錄的需求」章節。
+- 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能成功執行指令碼。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限] 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 如需詳細資訊，請參閱[在合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)中的「搜尋稽核記錄的需求」章節。
 
 - 指令碼完成可能需要很長時間。 執行所需的時間取決於您設定指令碼以擷取稽核記錄的日期範圍和間隔大小。 較大的日期範圍和較小的間隔會導致長時間執行。 如需日期範圍和間隔的詳細資訊，請參閱步驟 2 中的表格。
 

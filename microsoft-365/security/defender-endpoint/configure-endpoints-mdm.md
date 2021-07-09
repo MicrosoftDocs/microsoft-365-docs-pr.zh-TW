@@ -1,6 +1,6 @@
 ---
 title: 使用行動裝置管理工具上線 Windows 10 電腦
-description: 使用行動裝置管理工具，在裝置上部署設定套件，使其可架至服務。
+description: 使用行動裝置管理工具，在裝置上部署設定套件，讓裝置可架至服務。
 keywords: 使用 mdm 的板載裝置、裝置管理、板載 Microsoft Defender for Endpoint 裝置、mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f0a0a35d41d56abfcc7975c9e79ff7d537b72f40
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843431"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338574"
 ---
-# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用行動裝置管理工具上線 Windows 10 電腦
+# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>使用行動裝置管理工具板載 Windows 10 裝置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52843431"
 
 如需使用 Defender for Endpoint CSP 的詳細資訊，請參閱 [WINDOWSADVANCEDTHREATPROTECTION CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)檔案。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>事前準備
 如果您正在使用 Microsoft Intune，則必須已註冊裝置 MDM。 否則，將不會成功套用設定。 
 
 如需使用 Microsoft Intune 啟用 MDM 的詳細資訊，請參閱[Device 註冊 (Microsoft Intune) ](/mem/intune/enrollment/device-enrollment)。
@@ -70,9 +70,9 @@ ms.locfileid: "52843431"
 > [!NOTE]
 > 上架和脫離的原則不得同時部署在相同的裝置上，否則會造成無法預期的衝突。
 
-1. 從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得脫離套件：
+1. 從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得脫離套件：
 
-   1. 在功能窗格中，選取 [**設定**  >  **脫離**]。
+   1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理**  >  **脫離**]。
 
    1. 選取 [Windows 10] 做為作業系統。
 

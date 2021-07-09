@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新增及管理安全性 & 合規性中心的活動警示，使 Microsoft 365 會在使用者執行特定活動時傳送電子郵件通知。
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227160"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341601"
 ---
 # <a name="create-activity-alerts"></a>建立活動警示
 
@@ -46,7 +46,7 @@ ms.locfileid: "53227160"
 
 ## <a name="create-an-activity-alert"></a>建立活動警示
 
-1. 請移至 [https://protection.office.com/managealerts](https://protection.office.com/managealerts)。
+1. 移至<https://compliance.microsoft.com/managealerts>。
 
 2. 使用您的公司或學校帳戶登入。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53227160"
 
 您可以關閉活動警示，以避免傳送電子郵件通知。 當您關閉活動通知之後，它仍會顯示在您組織的活動警示清單中，您仍然可以查看其屬性。
 
-1. 移至 [移至] [https://protection.office.com/managealerts](https://protection.office.com/managealerts) 。
+1. 移至<https://compliance.microsoft.com/managealerts>。
 
 2. 使用您的公司或學校帳戶登入。
 
@@ -97,7 +97,7 @@ ms.locfileid: "53227160"
 
 若要將活動提醒重新開啟，只需重複這些步驟，然後按一下 [ **關閉** ] 切換參數，即可將狀態變更為 [ **開啟**]。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 - 以下是傳送至 [傳送此提醒] 欄位中所指定之使用者的電子郵件通知範例， (並列于 [安全性 & 規範中心]) **的 [收** 件者]**頁面上。**
 

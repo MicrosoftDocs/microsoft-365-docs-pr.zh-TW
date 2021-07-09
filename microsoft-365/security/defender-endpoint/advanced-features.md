@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845471"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339571"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -81,7 +81,7 @@ ms.locfileid: "52845471"
 
 ## <a name="autoresolve-remediated-alerts"></a>自動解析修正的警示
 
-針對在 Windows 10 或之後建立的承租人，版本1809會預設設定自動調查和修正功能，以解決自動分析結果狀態為「沒有發現威脅」或「修正」的警示。  如果您不想要自動解決的提醒，您必須手動關閉該功能。
+針對在 Windows 10 版本1809或之後建立的承租人，預設會設定自動調查和修正功能，以解決自動分析結果狀態為「沒有發現威脅」或「修正」的警示。  如果您不想要自動解決的提醒，您必須手動關閉該功能。
 
 > [!TIP]
 > 針對在該版本之前建立的承租人，您必須從 [ [高級功能](https://securitycenter.windows.com/preferences2/integration) ] 頁面手動開啟此功能。
@@ -102,7 +102,7 @@ ms.locfileid: "52845471"
 
 在下列情況開啟 **允許或封鎖** 檔案：
 
-1. 在功能窗格中，選取 [**設定**  >  **高級功能**  >  **允許或封鎖檔**]。
+1. 在功能窗格中，選取 [**設定**  >  **端點**]  >  **[一般**  >  **高級功能**]  >  **允許或封鎖檔**]。
 
 1. 切換設定為 **開啟** 或 **關閉**。
 
@@ -162,7 +162,7 @@ ms.locfileid: "52845471"
 
 只有當您具有使用中 Office 365 E5 或威脅情報附加元件時，才可使用此功能。 如需詳細資訊，請參閱 Office 365 企業版 E5 產品頁面。
 
-當您開啟此功能時，您可以將 Microsoft Defender 中 Office 365 的資料合併成 Microsoft Defender 資訊安全中心，以跨 Office 365 信箱及 Windows 裝置進行全面的安全性調查。
+當您開啟此功能時，您可以將 Microsoft Defender 中 Office 365 的資料合併成 Microsoft 365 Defender，以跨 Office 365 信箱及 Windows 裝置進行全面的安全性調查。
 
 > [!NOTE]
 > 您必須具有適當的授權，才能啟用此功能。
@@ -175,12 +175,12 @@ ms.locfileid: "52845471"
 
 > [!NOTE]
 > Microsoft 威脅專家的 Defender for Endpoint 的功能可與[Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權搭配使用。
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
 
 啟用此設定時，會將 Defender 的端點信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用的深入瞭解。 轉寄的資料會儲存並處理雲端 App 安全性資料所在的相同位置。
 
 > [!NOTE]
-> 在執行 Windows 10 的裝置上，將會有[Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權、版本 1709 (os 組建16299.1085 （含[KB4493441](https://support.microsoft.com/help/4493441)) 、Windows 10、版本 1803 (os 組建17134.704 搭配[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10、版本 1809 (os 組建17763.379 搭配[KB4489899](https://support.microsoft.com/help/4489899)) （或更新版本）。
+> 您可以在執行[Windows 10 的裝置](https://support.microsoft.com/help/4493441)上使用[Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權，取得此項功能、版本 1709 (os 組建 16299.1085) 與 KB4493464 Windows 10， (，版本 1803) os 組建 17134.704 with [](https://support.microsoft.com/help/4493464) Windows 10 版本1809， () os 組建17763.379 搭配[KB4489899](https://support.microsoft.com/help/4489899) Windows 10，或更新版本。
 
 ## <a name="microsoft-secure-score"></a>Microsoft 安全分數
 

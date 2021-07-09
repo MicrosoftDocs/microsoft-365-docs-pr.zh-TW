@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: 瞭解如何自動將 Office 365 安全性與合規性中心使用者重新導向至 Microsoft 365 合規性中心。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 83d6a08d5c189c08c8f7d25daa3af39f28cbf8f1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 62fc302f9f065ac7bb0475a6e72dc240a56a1fe1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226272"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339403"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>將使用者從 Office 365 安全性與合規性中心重新導向至 Microsoft 365 合規性中心
 
@@ -44,7 +44,7 @@ ms.locfileid: "53226272"
 如果有些專案無法運作，或是您沒有透過 Microsoft 365 合規性中心入口網站完成的任何專案，您可以暫時停用所有使用者的自動重新導向。
 
 > [!IMPORTANT]
-> Microsoft 365 合規性中心是目前在 Office 365 安全性與合規性中心中管理之規範解決方案的取代管理入口網站。 所有 Microsoft 365 規範解決方案將會獨自以 Microsoft 365 合規性中心管理。 停用 Microsoft 365 合規性中心的重新導向應該是一項簡短的解決方案。
+> Microsoft 365 合規性中心是目前在 Office 365 安全性與合規性中心中管理之規範解決方案的取代管理入口網站。 所有 Microsoft 365 規範解決方案將會獨自以 Microsoft 365 合規性中心管理。 停用 Microsoft 365 合規性中心的重新導向應該是一個短期的解決方案。
 
 若要切換回 Office 365 安全性與合規性中心 (所有使用者的 protection.microsoft.com) ，請完成下列步驟：
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 瞭解如何在您的 Android 或 iOS 裝置中驗證 Microsoft 365 商務進階版應用程式保護設定。
-ms.openlocfilehash: a0a4a6e6cff59f66a506929e97c99d361472a68b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43e74b548711550090021c39096b1647cee9e039
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578060"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339323"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>驗證 Android 或 iOS 裝置上的應用程式保護設定
 
@@ -42,7 +42,7 @@ ms.locfileid: "51578060"
   
 首先，請確定原則套用至您要驗證的應用程式。
   
-1. 在 Microsoft 365 商務進階版系統 [管理中心](https://portal.office.com)，移至 [**原則**] [ \> **編輯原則**]。
+1. 在 Microsoft 365 商務進階版系統 [管理中心](https://admin.microsoft.com)，移至 [**原則**] [ \> **編輯原則**]。
     
 2. 針對安裝時所建立的設定，選擇 [ **Android 應用程式原則**]，或選擇您建立的其他原則，然後驗證是否強制執行 Outlook，例如。 
     
@@ -131,7 +131,7 @@ ms.locfileid: "51578060"
   
 首先，請確定原則套用至您要驗證的應用程式。
   
-1. 在 Microsoft 365 商務進階版系統 [管理中心](https://portal.office.com)，移至 [**原則**] [ \> **編輯原則**]。
+1. 在 Microsoft 365 商務進階版系統 [管理中心](https://admin.microsoft.com)，移至 [**原則**] [ \> **編輯原則**]。
     
 2. 針對安裝時所建立的設定，選擇 **iOS 的應用程式原則**，或選擇您建立的其他原則，然後在 Outlook 中驗證是否強制執行。 
     

@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908338"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339682"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>在封鎖模式中) 的端點偵測和回應 (EDR
 
@@ -43,7 +43,7 @@ ms.locfileid: "52908338"
 
 組塊模式中的 EDR 也會與[威脅 & 弱點管理](next-gen-threat-and-vuln-mgt.md)整合。 組織的安全性小組會取得[安全性建議](tvm-security-recommendation.md)，以在封鎖模式中開啟 EDR （如果尚未啟用）。 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="在封鎖模式中開啟 EDR 的建議":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="在封鎖模式中開啟 EDR 的建議":::
 
 > [!NOTE]
 > 若要取得最佳保護，請務必 **[部署 Microsoft Defender For Endpoint 基準](configure-machines-security-baseline.md)**。
@@ -69,7 +69,7 @@ ms.locfileid: "52908338"
 3. **在塊狀模式中開啟 EDR**。
 
 > [!NOTE]
-> 在組塊模式中 EDR 只能在 Microsoft Defender 資訊安全中心中開啟。 您無法使用登錄機碼、Intune 或群組原則，在封鎖模式中啟用或停用 EDR。
+> 在組塊模式中 EDR 只能在 Microsoft 365 Defender 入口網站中開啟。 您無法使用登錄機碼、Intune 或群組原則，在封鎖模式中啟用或停用 EDR。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>封鎖模式中 EDR 的需求
 
@@ -115,7 +115,7 @@ ms.locfileid: "52908338"
 
 |方法  |程序  |
 |---------|---------|
-| PowerShell     | 1. 選取 [開始] 功能表，開始輸入 `PowerShell` ，然後在結果中開啟 Windows PowerShell。 <p>2. 輸入 `Get-MpComputerStatus` 。 <p>3. 在結果清單中的 [ **AMRunningMode** ] 列中，尋找下列其中一個值： <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>若要深入瞭解，請參閱 [MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。        |
+| PowerShell     | 1. 選取 [[開始] 功能表]，開始輸入 `PowerShell` ，然後在結果中開啟 Windows PowerShell。 <p>2. 輸入 `Get-MpComputerStatus` 。 <p>3. 在結果清單中的 [ **AMRunningMode** ] 列中，尋找下列其中一個值： <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>若要深入瞭解，請參閱 [MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。        |
 |命令提示字元     | 1. 選取 [開始] 功能表，開始輸入 `Command Prompt` ，然後在結果中開啟 Windows 命令提示字元。 <p>2. 輸入 `sc query windefend` 。 <p>3. 在結果清單中的 [ **狀態** ] 列中，確認服務正在執行中。         |
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>停用封鎖模式中的 EDR 需要多少時間？
@@ -135,5 +135,5 @@ ms.locfileid: "52908338"
 ## <a name="see-also"></a>另請參閱
 
 - [技術 Community 博客：在封鎖模式中引入 EDR：在其蹤跡中停止攻擊](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [行為封鎖和包含專案](behavioral-blocking-containment.md)
+- [行為封鎖及圍堵](behavioral-blocking-containment.md)
 

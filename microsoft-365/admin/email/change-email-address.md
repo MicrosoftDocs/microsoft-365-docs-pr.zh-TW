@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 購買功能變數名稱並將其新增至 Microsoft 365，將您的電子郵件地址變更為易記的電子郵件地址（例如 tom@fourthcoffee.com）。
-ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635519"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341457"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>變更電子郵件地址以使用您的自訂網域
 
@@ -58,33 +58,35 @@ Office 365 德國的初始電子郵件地址包括 onmicrosoft.de，例如 tom@f
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心變更您的電子郵件地址以使用您的自訂網域
 
-您必須具有全域管理員帳戶，才可執行這些步驟。 
+您必須是全域系統管理員才能執行這些步驟。
 
 ::: moniker range="o365-worldwide"
 
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 
 ::: moniker-end
-   
+
 ::: moniker range="o365-germany"
-    
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的系統管理中心。 
-    
+
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的系統管理中心。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 移至 admin center，網址<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>為。 
+1. 移至 admin center，網址<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>為。
 
-::: moniker-end 
+::: moniker-end
 
-2. 移至 [**安裝**  >  **網域**] 頁面。 
+2. 移至 [**安裝**  >  **網域**] 頁面。
 
 3. 在 **[網域]** 頁面上，選取 **[新增網域]**。
-    
-4. 遵循步驟操作，確認您擁有該網域並變更您的電子郵件地址。
-    
-您將會引導您在 Microsoft 365 中，讓您的網域正確設定所有專案。
+
+4. 遵循下列步驟，確認您擁有您的網域。 您將會引導您在 Microsoft 365 中，讓您的網域正確設定所有專案。
+
+5. 移至 [**使用者**] [作用中  >  **使用者**]。
+
+6. 選取使用者來編輯其使用者名稱，並將其變更為您剛新增的網域。
 
 > [!NOTE]
 > 如果您未使用 Exchange 授權，則無法使用網域從 Microsoft 365 租使用者傳送或接收電子郵件。

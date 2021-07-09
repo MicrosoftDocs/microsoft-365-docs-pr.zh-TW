@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何在 Microsoft 365 合規性中心中設定和使用連接器，以匯入商務用 Skype 中的資料並將其封存至 Microsoft 365。
-ms.openlocfilehash: 93128af0c7f305cb2bef55efd5520de77555a222
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4a66ee19530860bd482168297a8c935153442fee
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054818"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339451"
 ---
-# <a name="set-up-a-connector-to-archive-skype-for-business-data-preview"></a>設定商務用 Skype 資料 (預覽的連接器) 
+# <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>設定連接器以封存商務用 Skype 資料
 
 使用 Microsoft 365 合規性中心中的 Veritas 連接器，將商務用 Skype 平臺的資料匯入至 Microsoft 365 組織中的使用者信箱。 Veritas 提供一種[商務用 Skype](https://www.veritas.com/en/au/insights/merge1/skype-for-business)連接器，可設定為定期從協力廠商資料來源捕獲專案 () 並將這些專案匯入 Microsoft 365。 連接器會將使用者、持續交談及會議訊息之間的內容，從商務用 Skype 轉換成電子郵件訊息格式，然後再將這些專案匯入 Microsoft 365 中的使用者信箱。
 

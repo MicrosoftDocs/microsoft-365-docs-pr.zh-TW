@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6786d423d20ec90c12d2ea712003acc787ed599d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d82bffd6eea54256f2c6773f843030a19e27275d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165246"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339355"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>設定受管理的安全性服務提供者整合
 
@@ -44,7 +44,7 @@ ms.locfileid: "51165246"
 
 整合會讓 MSSPs 採取下列動作：
 
-- 取得 MSSP 客戶 Microsoft Defender 資訊安全中心入口網站的存取權
+- 取得 MSSP 客戶 Microsoft 365 Defender 入口網站的存取權
 - 取得電子郵件通知，以及 
 - 透過安全性資訊和事件管理 (SIEM) 工具取得警示
 
@@ -57,7 +57,7 @@ ms.locfileid: "51165246"
 一般而言，必須採取下列設定步驟：
 
 
-- **授與 Microsoft Defender 資訊安全中心的 MSSP 存取權** <br>
+- **授與 Microsoft 365 Defender 的 MSSP 存取權** <br>
 MSSP 客戶必須執行此動作。 它會授與 MSSP 存取權給 MSSP 客戶的端點租使用者的 Defender。
  
 

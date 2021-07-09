@@ -1,5 +1,5 @@
 ---
-title: 解決適用於端點的 Microsoft Defender 中的誤判/漏報
+title: 適用於端點的 Microsoft Defender 中的位址誤判/誤否定
 description: 瞭解如何在 Microsoft Defender for Endpoint 中處理誤報或虛假的否定。
 keywords: 防病毒，例外，排除，Microsoft Defender for Endpoint，誤報，false 負數，封鎖檔，封鎖的 url
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: d3821f4f1f581da5353ee33bd406af8558c0e903
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029954"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339259"
 ---
-# <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解決適用於端點的 Microsoft Defender 中的誤判/漏報
+# <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender 中的位址誤判/誤否定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -141,7 +141,7 @@ ms.locfileid: "53029954"
 
 ### <a name="review-completed-actions"></a>查看已完成的動作
 
-1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
+1. 在 Microsoft 365 Defender 入口網站的左側流覽窗格中，按一下 [**操作中心**]。
 
 2. 選取 [ **記錄** ] 索引標籤，以查看採取的動作清單。
 
@@ -149,7 +149,7 @@ ms.locfileid: "53029954"
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>從行動中心還原隔離的檔案
 
-1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
+1. 在 Microsoft 365 Defender 入口網站的左側流覽窗格中，按一下 [**操作中心**]。
 
 2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。
 
@@ -157,7 +157,7 @@ ms.locfileid: "53029954"
 
 ### <a name="undo-multiple-actions-at-one-time"></a>一次撤銷多個動作
 
-1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
+1. 在 Microsoft 365 Defender 入口網站的左側流覽窗格中，按一下 [**操作中心**]。
 
 2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。
 
@@ -168,7 +168,7 @@ ms.locfileid: "53029954"
 > [!div class="mx-imgBorder"]
 > ![隔離的檔案](images/autoir-quarantine-file-1.png)
 
-1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
+1. 在 Microsoft 365 Defender 入口網站的左側流覽窗格中，按一下 [**操作中心**]。
 
 2. 在 [ **記錄** ] 索引標籤上，選取具有 [ **隔離** 檔] 動作類型的檔案。
 
@@ -252,7 +252,7 @@ ms.locfileid: "53029954"
 
 指標[ (特別](/microsoft-365/security/defender-endpoint/manage-indicators)、有損損或 IoCs) 可讓您的安全性作業小組定義實體的偵測、預防和排除。 例如，您可以在 Microsoft Defender for Endpoint 中指定要省略的掃描和修正動作中的某些檔案。 您也可以使用指示器，針對特定的檔案、IP 位址或 URLs 產生警示。
 
-若要將實體指定為 Microsoft Defender for Endpoint 的排除專案，請為這些實體建立 "allow" 標記。 Microsoft Defender for Endpoint 中的這類「允許」指示器適用于[下一代保護](microsoft-defender-antivirus-in-windows-10.md)、[端點偵測及回應](overview-endpoint-detection-response.md)及[自動化調查 & 修復](/microsoft-365/security/defender-endpoint/automated-investigations)。
+若要將實體指定為 Microsoft Defender for Endpoint 的排除專案，請為這些實體建立 "allow" 標記。 Microsoft Defender for Endpoint 中的這類「允許」指示器適用于 [下一代保護](microsoft-defender-antivirus-in-windows-10.md)、 [端點偵測和回應](overview-endpoint-detection-response.md)，以及 [自動調查 & 修復](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 可為下列專案建立 "Allow" 指示器：
 

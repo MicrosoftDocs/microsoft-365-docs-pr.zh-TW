@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d423c5051634334f9dbb19b236446cdb579aef69
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 2b638742e29d5ca0a8b74adfa6796380114d24a3
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327032"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339499"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定警示通知
 
@@ -50,7 +50,7 @@ ms.locfileid: "53327032"
 您可以建立規則來決定裝置及警示嚴重性，以傳送電子郵件通知及通知收件者。
 
 
-1. 在功能窗格中，選取 [**設定**  >  **電子郵件通知**]。
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **一般**  >  **電子郵件通知**]。
 
 2. 按一下 [ **新增專案**]。
 

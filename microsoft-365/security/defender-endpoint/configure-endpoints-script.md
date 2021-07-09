@@ -1,6 +1,6 @@
 ---
 title: 使用本機指令碼上線 Windows 10 裝置
-description: 使用本機腳本在裝置上部署設定套件，使其可架至服務。
+description: 使用本機腳本在裝置上部署設定套件，以啟用裝置的上架至服務。
 keywords: 使用本機腳本、裝置管理、設定 Microsoft Defender for Endpoint 裝置設定裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842167"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339643"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本機指令碼上線 Windows 10 裝置
+# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>使用本機腳本的 Windows 10 裝置上架
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "52842167"
 請取出[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Defender for Endpoint 的各種路徑。 
 
 
-1.  從服務上架嚮導中，開啟 (*WindowsDefenderATPOnboardingPackage.zip*) 的 GP configuration package .zip file。 您也可以從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得套件：
+1.  從服務上架嚮導中，開啟 (*WindowsDefenderATPOnboardingPackage.zip*) 的 GP configuration package .zip file。 您也可以從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得此套件：
 
-    1. 在功能窗格中，選取 [**設定** 上  >  **架**]。
+    1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理** 上  >  **架**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 
@@ -66,7 +66,7 @@ ms.locfileid: "52842167"
 
     1.  以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
 
-        ![指向以系統管理員身分執行的視窗「開始」功能表](images/run-as-admin.png)
+        ![[開始] 功能表指向以系統管理員身分執行的視窗](images/run-as-admin.png)
 
 4.  輸入指令檔的位置。 如果您已將檔案複製到桌面，請輸入： *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -79,7 +79,7 @@ ms.locfileid: "52842167"
 > 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新架的 Microsoft Defender For endpoint 端點上執行偵測測試](run-detection-test.md)。
 
 ## <a name="configure-sample-collection-settings"></a>設定範例集合設定
-針對每個裝置，您可以設定設定值，以指出是否可以在要求透過 Microsoft Defender 資訊安全中心提交檔案進行深層分析時，從裝置收集範例。
+針對每個裝置，您可以設定設定值，以指出是否可以在要求透過 Microsoft 365 Defender 提交檔案進行深層分析時，從裝置收集範例。
 
 您可以使用 *regedit* 來手動設定裝置的範例共用設定，或建立及執行 *.reg* 檔案。  
 
@@ -105,9 +105,9 @@ Value: 0 or 1
 > [!NOTE]
 > 上架和脫離的原則不得同時部署在相同的裝置上，否則會造成無法預期的衝突。
 
-1. 從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得脫離套件：
+1. 從[Microsoft 365 Defender 入口網站](https://security.microsoft.com/)取得脫離套件：
 
-    1. 在功能窗格中，選取 [**設定**  >  **脫離**]。
+    1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **裝置管理**  > **脫離**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 
@@ -123,7 +123,7 @@ Value: 0 or 1
 
     1.  以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
 
-        ![指向以系統管理員身分執行的視窗「開始」功能表](images/run-as-admin.png)
+        ![[開始] 功能表指向以系統管理員身分執行的視窗](images/run-as-admin.png)
 
 4.  輸入指令檔的位置。 如果您已將檔案複製到桌面，請輸入： *%userprofile%\desktop\ WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd*
 
@@ -139,9 +139,9 @@ Value: 0 or 1
 監視也可以直接在入口網站上進行，或是使用不同的部署工具來執行。
 
 ### <a name="monitor-devices-using-the-portal"></a>使用入口網站監視裝置
-1. 移至 Microsoft Defender 資訊安全中心。
+1. 移至 Microsoft 365 Defender 入口網站。
 
-2. 按一下 [ **裝置清單**]。
+2. 按一下 [ **設備清查**]。
 
 3. 驗證裝置是否出現。
 

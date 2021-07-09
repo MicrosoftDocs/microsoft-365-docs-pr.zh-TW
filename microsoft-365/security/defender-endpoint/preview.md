@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322422"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339487"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint preview 功能
 
@@ -54,7 +54,7 @@ Endpoint service 的 Defender 服務不斷更新，以包含新功能增強功�
 - Microsoft 完全支援。
 - 只能在選取的地理區域或雲端環境中使用。 例如，該功能可能不存在於政府雲端中。
 - 預覽中的個別功能可能會有更多的使用和支援限制。 如果是的話，此資訊通常會注明在功能檔中。
-- 預覽版本會提供標準的支援層級，並建議用於實際執行工作負載。 
+- 預覽版本會以標準的支援層級提供，並且可用於實際執行環境。 
 
 
 

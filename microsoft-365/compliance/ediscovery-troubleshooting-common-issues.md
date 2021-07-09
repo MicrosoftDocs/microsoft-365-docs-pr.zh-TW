@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822235"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339415"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -99,7 +99,7 @@ EDiscovery 或內容搜尋可能會產生下列錯誤： `This search completed 
 建議的解決方法是手動重新索引網站，或等到自動背景程式 reindexes 網站為止。
 
 
-## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>錯誤/問題：此搜尋結果未下載，因為它是無法自行下載的資料夾或其他 artefact，將會下載資料夾或文件庫內的任何專案。
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>錯誤/問題：此搜尋結果未下載，因為它是無法自行下載的資料夾或其他專案，將會下載資料夾或文件庫內的任何專案。
 
 當您執行的 eDiscovery 搜尋包含 SharePoint 線上及一個位於商務位置的硬碟磁碟機時，您可能會看到此錯誤。 這表示我們將要嘗試並匯出索引中所報告的專案，但是它會變成資料夾，因此我們並未將其匯出。 如錯誤中所述，我們不會匯出資料夾專案，但會匯出其內容。
 
@@ -122,7 +122,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>錯誤/問題：匯出搜尋結果的速度緩慢
 
-在安全性與合規性中心匯出搜尋結果從 eDiscovery 或內容搜尋時，下載時間會比預期更長。  您可以查看要下載的資料量，並可能增加匯出速度。
+從 Microsoft 365 合規性中心中的核心 eDiscovery 或內容搜尋匯出搜尋結果時，下載時間會比預期的長。  您可以查看要下載的資料量，並可能增加匯出速度。
 
 ### <a name="resolution"></a>解決方案
 
@@ -145,6 +145,16 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 5. 檢查您將內容匯出到的目錄中的追蹤 .log 檔案，以查看是否有任何錯誤。
 
 6. 如果仍有問題，請考慮將傳回一組大型結果的搜尋分割成較小的搜尋。 例如，您可以在搜尋查詢中使用日期範圍，以傳回較小的結果集，可更快速地下載。
+
+## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>錯誤/問題：匯出程式沒有進展或已停滯
+
+從 Microsoft 365 合規性中心中匯出核心 eDiscovery 或內容搜尋中的搜尋結果時，匯出程式沒有進展或似乎已停滯。
+
+### <a name="resolution"></a>解決方案
+
+1. 如有必要，請重新執行搜尋。 如果搜尋上次執行超過7天，您必須重新執行搜尋。
+
+2. 重新開機匯出。
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>錯誤/問題：「發生內部伺服器錯誤 (500) 
 
@@ -222,7 +232,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ### <a name="resolution"></a>解決方案
 
-這是用戶端問題，為了進行修正，請嘗試下列步驟：
+這是用戶端問題。 若要進行修正，請遵循下列步驟：
 
 1. 嘗試使用另一部用戶端/電腦來下載。
 
@@ -234,6 +244,6 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 5. 請確定沒有任何其他匯出正在下載至相同的資料夾或任何上層資料夾。
 
-6. 如果上述步驟無法運作，請停用 [壓縮] 和 [重復資料刪除]。
+6. 如果上述步驟無法運作，請停用壓縮和重復資料消除。
 
 7. 如果這樣做正常，則問題是由於本機病毒掃描程式或磁片問題所造成。

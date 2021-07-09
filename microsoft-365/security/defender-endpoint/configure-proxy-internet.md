@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290084"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338706"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 Proxy 和網際網路連線能力設定
 
@@ -135,7 +135,7 @@ netsh winhttp reset proxy
 
 下列可供下載的試算表會列出您網路必須能夠連線的服務及其相關 URLs。 您應確定沒有防火牆或網路篩選規則可拒絕這些 URLs 的存取，否則您可能需要為他們建立一個 *允許* 規則。
 
-| 網域清單的試算表 | 說明 |
+| 網域清單的試算表 | 描述 |
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | 服務位置、地理位置和作業系統的特定 DNS 記錄試算表。 <br><br>[在這裡下載試算表。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
@@ -170,7 +170,7 @@ netsh winhttp reset proxy
 
 1. 使用 Microsoft Monitoring Agent (MMA) 的舊版作業系統 (如需詳細資訊，請參閱[在 defender 上的上架先前版本 Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)和[板載 Windows server](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
 
-2. 確定機器已成功地報告 Microsoft Defender 資訊安全中心入口網站。
+2. 確定機器已成功地報告 Microsoft 365 Defender 入口網站。
 
 3. 從 "C:\Program Files \ Microsoft Monitoring Agent \Agent] 執行 TestCloudConnection.exe 工具，以驗證連線，並查看特定工作區所需的 URLs。
 
@@ -178,7 +178,7 @@ netsh winhttp reset proxy
 
     ![Windows PowerShell 中的系統管理員影像](images/admin-powershell.png)
 
-\* \* Ods.opinsights.azure.com、oms.opinsights.azure.com 及 agentsvc.azure-automation.net URL 端點中所用的)  (萬用字元， \* \* 都可以取代為您特定的工作區識別碼。 工作區識別碼是針對您的環境和工作區所特有，可在 Microsoft Defender 資訊安全中心入口網站的承租人內架區段中找到。
+\* \* Ods.opinsights.azure.com、oms.opinsights.azure.com 及 agentsvc.azure-automation.net URL 端點中所用的)  (萬用字元， \* \* 都可以取代為您特定的工作區識別碼。 工作區識別碼是針對您的環境和工作區所特有，可在 Microsoft 365 Defender 入口網站的承租人內架區段中找到。
 
 \*BLOB.CORE.WINDOWS.NET URL 端點可以取代為測試結果的「防火牆規則： \* blob.core.windows.net」一節中所示的 URLs。
 
