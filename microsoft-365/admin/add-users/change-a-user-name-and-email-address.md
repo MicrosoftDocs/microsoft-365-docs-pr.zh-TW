@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全域系統管理員如何在使用者的名稱變更時，變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: fdba2191449bc3ea5aae5b5bde73fe5294b1f9d3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228360"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341017"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -40,7 +40,7 @@ ms.locfileid: "53228360"
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
 
-您必須是[全域系統管理員](about-admin-roles.md)才能執行這些步驟。
+您必須是[全域系統管理員](about-admin-roles.md)，才能完成這些步驟。
 
 ## <a name="change-a-users-email-address"></a>變更使用者的電子郵件地址
 
@@ -64,7 +64,7 @@ ms.locfileid: "53228360"
 
 1. 選取使用者名稱，然後在 **[帳戶]** 索引標籤上，選取 **[管理使用者名稱]**。
 
-1. 在第一個方塊中，輸入新電子郵件地址的第一個部分。如果您已將自己的網域新增至 Microsoft 365，請使用下拉式清單選擇新電子郵件別名的網域。
+1. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增到 Microsoft 365，請使用下拉式清單選擇新電子郵件別名的網域。 [了解如何新增網域](../setup/add-domain.md)。
 
 1. 選取 **[儲存變更]**。
 
@@ -118,7 +118,7 @@ ms.locfileid: "53228360"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。 
 
 ::: moniker-end
 
@@ -177,6 +177,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 
 ## <a name="related-content"></a>相關內容
 
-[系統管理員：重設一或多個使用者的密碼](reset-passwords.md) (文章)
-[為使用者新增另一個電子郵件地址](../email/add-another-email-alias-for-a-user.md) (文章)
-[建立共用信箱](../email/create-a-shared-mailbox.md) (文章)
+[新增網域](../setup/add-domain.md)
+[管理員: 重設一或多個使用者的密碼](reset-passwords.md)
+[將另一個電子郵件地址新增至使用者](../email/add-another-email-alias-for-a-user.md)
+[建立共用信箱](../email/create-a-shared-mailbox.md)
