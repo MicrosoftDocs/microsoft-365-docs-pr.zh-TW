@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 microsoft cloud 德國 (microsoft cloud Deutschland) 移至新德文 datacenter 區域中 Office 365 服務時的其他 Azure Active Directory 資訊。
-ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923847"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362723"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他 Azure Active Directory 資訊
 
@@ -81,6 +81,10 @@ ms.locfileid: "50923847"
 
 如果您發佈的應用程式可供租使用者以外的使用者使用，您可能需要變更您的應用程式註冊，以確保持續性。 其他使用您應用程式的承租人的移動時間可能會與租使用者的時間不同。 為了確保使用者永遠無法存取應用程式，您需要同意將您的應用程式從 Azure 德國同步處理到 Azure 公用。
 
+**如何在遷移期間新增多租使用者應用程式？**
+
+如果您想要使用由其他組織發佈的新應用程式 (多租使用者應用程式) 您將在遷移過程中受到限制，無法在遷移過程中新增該應用程式 (階段2到階段 9) 。  當您的組織完成階段9，而且已完全轉換至 Azure 公用實例時，您可能會執行此工作。
+
 ## <a name="additional-considerations"></a>其他考量
 
 以下是 Azure AD 的其他一些考慮：
@@ -119,7 +123,7 @@ ms.locfileid: "50923847"
 
 - 當租使用者在進行遷移時，會出現有關 Office 365 德國入口網站中的 Azure AD 連線版本和 Office 365 入口網站的警告。 如果在遷移完成之後，版本警告不再顯示警告，可以忽略這種情況。 如果在遷移之前或之後有任何警告，請在任一入口網站中更新 Azure AD 連線。 警告訊息說：「我們偵測到您正在使用過期的目錄同步處理工具。 建議您移至 Microsoft 下載中心，以取得最新版的 Azure AD 連線。」
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

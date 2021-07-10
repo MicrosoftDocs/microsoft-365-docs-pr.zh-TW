@@ -1,6 +1,6 @@
 ---
 title: 轉換 Microsoft 365 商務版雲端解決方案提供者訂閱
-description: 瞭解如何將 Microsoft 365 商務版的 CSP 訂閱從預覽轉換為一般發行 (GA) 。
+description: 瞭解如何將 Microsoft 365 商務 CSP 訂閱從預覽轉換為一般發行 (GA) 。
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 轉換雲端解決方案提供者訂閱
 ms.date: 11/01/2017
-ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924996"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363812"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>轉換 Microsoft 365 商務版雲端解決方案提供者訂閱
 
@@ -36,7 +36,7 @@ ms.locfileid: "52924996"
     ![合作夥伴中心的客戶訂閱](../../media/pc_customer_subscriptions_1.png)
     
 3. 在 [公司 **訂閱** ] 頁面上，選取 [ **新增訂閱**]。
-4. 在 [**新增訂閱**] 頁面上，選取 [ **Small business** ]，然後從清單中選取 [ **Microsoft 365 商務版**]。
+4. 在 [**新增訂閱**] 頁面上，選取 [ **Small business** ]，然後從清單中選取 [ **Microsoft 365 商務**]。
 5. Add the number of licenses and then select **Next: Review** to review the subscription and then select **Submit**.
 
     ![檢視 Microsoft 365 商務版的新訂閱](../../media/pc_customer_reviewnewsubscription.png)
@@ -44,20 +44,20 @@ ms.locfileid: "52924996"
     The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. 您會在下一步暫停預覽訂閱。
 
 6. Select **Microsoft 365 Business Preview**.
-7. 在 [ **Microsoft 365 商務版預覽**] 頁面上，選取 [已 **擱置**] 以暫停預覽訂閱。
+7. 在 [ **Microsoft 365 商務預覽**] 頁面上，選取 [已 **擱置**] 以暫停預覽訂閱。
 
     ![暫停 Microsoft 365 商務版預覽訂閱](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Select **Submit** to confirm.
 
-    在 [**訂閱**] 頁面上，確認 **Microsoft 365 商務版預覽** 狀態顯示為 [已 **擱置**]。
+    在 [**訂閱**] 頁面上，確認 **Microsoft 365 商務預覽** 狀態顯示為 [已 **擱置**]。
 
     ![確認預覽訂閱狀態為已暫停](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 或者，您也可以驗證授權合約。 若要這樣做，請執行下列步驟：
     1. Select **Users and licenses** from the company's **Subscriptions** page.
     2. 在 [ **使用者和授權** ] 頁面上，選取使用者。
-    3. 在使用者的頁面上，檢查 [**指派授權**] 區段，並確認它顯示 **Microsoft 365 商務版**。
+    3. 在使用者的頁面上，檢查 [**指派授權**] 區段，確認它顯示 **Microsoft 365 商務**。
 
         ![確認 Microsoft 365 商務版授權已指派給使用者](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "52924996"
 |-------|-----------------|--------------|---------------|---------------|
 | **狀態** | 在寬限期 | 已到期      | 停用      | 取消佈建 |
 | **服務影響**                                                        |
-| **Microsoft 365 商務版系統管理員入口網站** | 對功能不會造成影響 | 對功能不會造成影響 | 可以新增/刪除使用者、購買訂閱。</br> 無法指派/撤銷授權。 | 將刪除客戶訂閱和所有資料。 系統管理員可以管理其他付費訂閱。 |
+| **Microsoft 365 系統管理中心** | 對功能不會造成影響 | 對功能不會造成影響 | 可以新增/刪除使用者、購買訂閱。</br> 無法指派/撤銷授權。 | 將刪除客戶訂閱和所有資料。 系統管理員可以管理其他付費訂閱。 |
 | **Office 應用程式**                         | 不會影響使用者 | 不會影響使用者 | Office 會進入精簡功能模式。</br> 使用者只能檢視檔案。 | Office 會進入精簡功能模式。</br> 使用者只能檢視檔案。 |
 | **雲端服務 (SharePoint Online、Exchange Online、Skype、Teams 等等)** | 不會影響使用者 | 不會影響使用者 | 使用者和系統管理員不能存取雲端中的資料。 | 將刪除客戶訂閱和所有資料。 |
 | **EM+S 元件** | 不會影響系統管理員</br> 不會影響使用者 | 不會影響系統管理員</br> 不會影響使用者 | 已不再執行功能。</br> 請參閱[訂閱到期對行動裝置的影響](#mobile-device-impacts-upon-subscription-expiration)和[訂閱到期對 Windows 10 電腦的影響](#windows-10-pc-impacts-upon-subscription-expiration)以取得詳細資訊。 | 已不再執行功能。</br> 請參閱[訂閱到期對行動裝置的影響](#mobile-device-impacts-upon-subscription-expiration)和[訂閱到期對 Windows 10 電腦的影響](#windows-10-pc-impacts-upon-subscription-expiration)以取得詳細資訊。 |

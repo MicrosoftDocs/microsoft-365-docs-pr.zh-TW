@@ -1,6 +1,6 @@
 ---
 title: 讓您的使用者準備好使用裝置
-description: 可協助您讓使用者準備好使用裝置的資訊。
+description: 協助您讓使用者準備好使用裝置的資訊
 keywords: Microsoft 受管理的電腦、裝置、起步 Microsoft 365
 ms.service: m365-md
 author: jaimeo
@@ -11,24 +11,22 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fd730017a20f121281c0aba2c2ecca4cbd23a8a7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8a20a7103be799826cb848c71cb285b0884e9540
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925716"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362567"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>讓您的使用者準備好使用裝置
 
-一旦 Microsoft 受管理的電腦裝置手放入您的使用者，快速且簡單的開始使用。 裝置會預先使用目前的 Windows 版本進行預先設定，而設定和應用程式會在使用者完成安裝程式時從雲端安裝。 
+一旦 Microsoft 受管理的電腦裝置手放入您的使用者，快速且簡單的開始使用。 裝置會預先設定為目前版本的 Windows 和設定，而應用程式會在使用者完成安裝時從雲端安裝。 
  
-若要讓這項工作變得更簡單，我們會提供指導，指導使用者進行初始設定，並在必要時提供設定的協助資源，以備日後使用。 您可以自訂此指南，以包含組織特有的特定詳細資料。 然後，您可以將指南直接散佈給使用者及其裝置。 有兩個版本，一個供使用 Microsoft 支援系統的組織 (取得協助應用程式) ，一個用於為使用者提供替代支援的版本。
+若要讓這項工作變得更簡單，我們會提供指導，指導使用者進行初始設定，並在必要時提供設定的協助資源，以備日後使用。 您可以自訂此指南，以包含組織特有的特定詳細資料。 然後，您可以將指南直接散佈給使用者及其裝置。 
 
 ## <a name="to-prepare-the-guide"></a>準備指南
 
-1. 下載適用于貴組織的版本：
-- [Microsoft 受管理的電腦-開始使用您的裝置 (取得協助版本) ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) -如果使用者要使用 Microsoft 的支援系統，請使用此版本。
-- [Microsoft 受管理的電腦-開始使用您的裝置](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)-如果使用者 *不* 會使用 Microsoft 的支援系統，請使用此版本。
+1. 下載指南： [Microsoft 受管理的電腦-您的裝置開始使用](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)。
 2. 使用任何能夠開啟 PDF 檔案的應用程式，填入與您組織相關的詳細資料：
     - 您的使用者應連線的網路名稱，以便繼續安裝 (指南中的步驟 3) 
     - 您組織的 Azure 租使用者帳戶名稱 (指南中的步驟 4) 
@@ -37,10 +35,9 @@ ms.locfileid: "52925716"
 
 ## <a name="ready-to-use-guide"></a>「可使用的指南」
 
-我們也會為不需要自訂之組織提供更一般的指南版本。 有兩個版本，一個供使用 Microsoft 支援系統的組織 (取得協助應用程式) ，一個用於為使用者提供替代支援的版本。 
+我們也會為不需要自訂之組織提供更一般的指南版本。
 
-- [Microsoft 受管理的電腦-開始使用您的裝置 (取得協助版本-準備好) 使用](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf)此版本（如果您的使用者將使用 Microsoft 的支援系統）。
-- [Microsoft 受管理的電腦-開始使用您的裝置 (準備使用)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) -如果使用者 *不* 會使用 Microsoft 的支援系統，請使用此版本。
+只要下載指南： [Microsoft 受管理的電腦開始使用您的裝置 (準備好使用) ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)。
 
 此時，您已準備好繼續部署應用程式：
 

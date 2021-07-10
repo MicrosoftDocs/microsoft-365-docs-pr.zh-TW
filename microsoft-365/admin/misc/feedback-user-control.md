@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解您的使用者可以針對 Microsoft 產品傳送給 Microsoft 的意見反應。
-ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 7b8798847559e84a6ea10079aab010a08d8eaa42
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650054"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363928"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>深入瞭解 Microsoft 對您組織的意見
 
@@ -84,13 +84,12 @@ Microsoft 使用意見反應來改進 Microsoft 產品。 我們會以問題、�
 - **附件**   任何附件 (例如 螢幕擷取畫面，檔案) 會收集為意見反應的一部分？  (Yes/No) 。
 - **TenantId**  如果已從 Azure Active Directory 帳戶提交意見反應，則 TenantId 會產生關聯。
 
-## <a name="data-handling-and-privacy"></a>資料處理和隱私權
-
-我們將重點放在核心資料處理和資料隱私權原則上，讓我們能夠獲得信任。
-我們確定所收到的意見反應是以 Microsoft 控管規則儲存和處理，而且只能針對核准的使用加以存取。
-
-我們利用便於使用的工具和清晰的選項，讓您控制隱私權。 我們對收集和使用資料的方式很透明，所以您可以對您要共用的專案做出明智的決策。 我們會以強大的安全性和加密方式保護您 entrust 的資料。 我們尊重當地隱私權法律，並以人工方式抵制隱私權的法律保護。 我們不會使用您的電子郵件、聊天、檔案或其他個人內容來瞄準廣告。 當我們收集資料時，我們會使用它來改善您的體驗。 深入瞭解 Microsoft [在這裡](https://privacy.microsoft.com/)隱私權的方法。 深入瞭解我們的 [隱私權](/compliance/assurance/assurance-privacy)。
-
 ## <a name="how-can-i-see-my-users-feedback"></a>如何查看我的使用者意見反應？
 
-即將推出，我們將會分享我們為您的 Microsoft 產品收集的意見反應資料。 我們正在處理 Microsoft 365 系統管理中心的新體驗，讓我們來查看、刪除及匯出組織的意見反應資料。 這可讓您直接透明並深入瞭解使用者對 Microsoft 365 產品的體驗。
+為符合 Microsoft 對客戶的法律義務，我們在 Microsoft 365 系統管理中心的經驗，可讓系統管理員針對其組織，查看、刪除及匯出意見反應資料。 客戶擁有所有的使用者意見反應資料，這項功能將協助系統管理員提供使用者對 Microsoft 365 產品的體驗的直接透明性，並可讓使用者反應資料成為任何資料主體要求的一部分。 全域管理員和合規性資料管理員可以查看、匯出和刪除使用者意見反應。 所有其他管理員和讀者都可以查看和匯出意見反應資料，但無法執行規范相關的工作，也無法查看已發表意見反應 (（如使用者名稱、電子郵件或裝置名稱) ）的相關資訊。 若要存取您組織的意見資料，請登入 Microsoft 365 系統管理中心，並自訂導覽以顯示狀況節點。 選取 [狀況] 節點底下的 [ **產品意見** 反應]，即可存取此體驗。
+
+## <a name="data-handling-and-privacy"></a>資料處理和隱私權
+
+我們知道，當您使用我們的雲端服務時，您會使用其中一種最有價值的資產來 entrusting 我們：您的資料。 我們確定所收到的意見反應是以 Microsoft 控管規則儲存和處理，而且只能針對核准的使用加以存取。 我們不會使用您的電子郵件、聊天、檔案或其他個人內容來瞄準廣告。 當我們收集資料時，我們會使用它來改善您的體驗。
+
+若要深入瞭解如何保護您的資料的隱私權和機密性，以及我們如何確保它只會以符合您期望的方式使用，請參閱 [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy)的隱私權原則。

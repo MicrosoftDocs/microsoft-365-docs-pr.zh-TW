@@ -123,7 +123,7 @@ ID | 類別 | ER | Addresses | 連接埠
 148 | 預設<BR>必要 | 否 | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP：** 443、80
 149 | 預設<BR>必要 | 否 | `workplaceanalytics.cdn.office.net` | **TCP：** 443、80
 150 | 預設<BR>選用<BR>**附註：** 封鎖這些端點會影響透過入口網站存取 Office 365 專業增強版部署和管理功能的能力。 | 否 | `*.officeconfig.msocdn.com` | **TCP：** 443
-152 | 預設<BR>選用<BR>**附註：** 這些端點可讓 Office 用戶端中可用的 Office 指令碼功能可透過 [自動化] 索引標籤取得。此功能也可透過 Office 365 系統管理入口網站停用。 | 否 | `*.microsoftusercontent.com` | **TCP：** 443
+152 | 預設<BR>選用<BR>**附註：** 這些端點可讓 Office 用戶端中可用的 Office 指令碼功能可透過 [自動化] 索引標籤取得。此功能也可透過 Microsoft 365 系統管理中心停用。 | 否 | `*.microsoftusercontent.com` | **TCP：** 443
 153 | 預設<BR>必要 | 否 | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP：** 443
 156 | 預設<BR>必要 | 否 | `activity.windows.com` | **TCP：** 443
 157 | 預設<BR>必要 | 否 | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80

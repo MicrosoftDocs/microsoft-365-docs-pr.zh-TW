@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何將 SharePoint 網站移至多地理位置環境中的不同地理位置，並溝通對使用者所做的變更。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910927"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362351"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>將 SharePoint 網站移至不同的地理位置
 
@@ -28,7 +28,7 @@ ms.locfileid: "50910927"
 
 您可以在地理位置之間移動下列類型的網站：
 
-- Microsoft 365 群組連線網站
+- Microsoft 365群組連線的網站，包括與 Microsoft Teams 相關聯的網站
 - 沒有 Microsoft 365 群組關聯的新式網站
 - 傳統 SharePoint 網站
 - 通訊網站
@@ -177,11 +177,11 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 具有網站權限的使用者將在移動期間和移動完成後繼續擁有網站的存取權。
 
-### <a name="sync-client"></a>同步處理用戶端
+### <a name="sync-app"></a>同步處理應用程式
 
-網站移動完成後，同步處理用戶端會自動偵測並順暢地對新網站位置傳輸同步處理。 使用者不需重新登入，或採取任何其他動作。 (需要版本 17.3.6943.0625 或更新版本的同步處理用戶端。)
+完成網站移動之後，同步處理應用程式會自動偵測同步處理至新的網站位置。 使用者不需重新登入，或採取任何其他動作。 需要 (版本17.3.6943.0625 或更新的同步處理應用程式。 ) 
 
-如果使用者在移動時更新檔案，同步處理用戶端會告知使用者，進行移動時檔案上傳會擱置。
+如果使用者在移動時更新檔案，同步處理應用程式會通知他們在移動進行中時，檔案上傳已擱置。
 
 ### <a name="sharing-links"></a>共用連結
 

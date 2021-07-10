@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 我們將在本文中深入解釋如何使用 Microsoft 365 多地理位置，將 Microsoft 365 的目前狀態拓展至多個地理區域。
-ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 17fc2645f69a0d91c71c91718f321e5932d31bd2
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909547"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362759"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -57,6 +57,8 @@ Microsoft 365 多地理位置可作為以下 Microsoft 365 訂閱方案的附加
 - Exchange Online 方案 1 或方案 2
 - 商務用 OneDrive 方案 1 或方案 2
 - SharePoint Online 方案 1 或方案 2
+
+如果授權指派給使用者，後來又遭到移除，Teams 使用者聊天資料會排入佇列中，以移回到中央位置。 不會移動 SharePoint 和 Exchange 資料。
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 多地理位置可用性
 

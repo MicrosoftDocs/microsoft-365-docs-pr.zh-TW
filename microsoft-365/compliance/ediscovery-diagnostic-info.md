@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解如何收集 Microsoft 支援案例的 eDiscovery 診斷資訊。
-ms.openlocfilehash: 842f8baf770f178df3298bbfa911de26ce946ed0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b2441e0b7af8a82e24a8acca9e000e954e1c8964
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926553"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362591"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>收集電子文件探索診斷資訊
 
@@ -39,7 +39,7 @@ ms.locfileid: "50926553"
 檢查所產生的文字檔並 redacting 機密資訊之後，將其傳送給 Microsoft 支援工程師，以在您的案例上運作。
 
 > [!NOTE]
-> 您也可以執行本節中的命令來收集 Microsoft 365 規範中心的 **內容搜尋** 頁面上所列之搜尋和匯出的診斷資訊。
+> 您也可以執行本節中的命令來收集 Microsoft 365 合規性中心中 **內容搜尋** 頁面上所列之搜尋和匯出的診斷資訊。
 
 ### <a name="collect-information-about-searches"></a>收集搜尋的相關資訊
 
@@ -67,10 +67,10 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>收集所有案例資訊
 
-在某些情況下，Microsoft 支援人員在調查您的問題時，並不會體現出所需的資訊。 在此情況下，您可以收集核心 eDiscovery 案例的所有診斷資訊。 下列命令中的 *核心 eDiscovery 案例名稱*，與 Microsoft 365 規範中心的 **核心 ediscovery** 頁面上顯示之案例的名稱相同。
+在某些情況下，Microsoft 支援人員在調查您的問題時，並不會體現出所需的資訊。 在此情況下，您可以收集核心 eDiscovery 案例的所有診斷資訊。 下列命令中的 *核心 eDiscovery 案例名稱*，與 Microsoft 365 合規性中心中 **核心 ediscovery** 頁面上顯示之案例的名稱相同。
 
 ```powershell
-Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
 ## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>收集 Advanced eDiscovery 的診斷資訊

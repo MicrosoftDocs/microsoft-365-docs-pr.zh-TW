@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: 建立及管理測試人員風險原則
           href: insider-risk-management-policies.md
-        - name: 調查測試人員風險警示
-          href: insider-risk-management-alerts.md
+        - name: 調查內部風險活動
+          href: insider-risk-management-activities.md
         - name: 對測試人員風險案例採取動作
           href: insider-risk-management-cases.md
         - name: 使用內部風險稽核記錄來審查活動
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: '建立自訂的敏感性資訊類型 - PowerShell '
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: '移除自訂的敏感性資訊類型 - PowerShell '
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: '修改自訂的敏感性資訊類型 - PowerShell '
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: 自訂敏感性資訊類型篩選參照
+          href: sit-custom-sit-filters.md
         - name: 建立關鍵字字典
           href: create-a-keyword-dictionary.md
         - name: 修改關鍵字字典
@@ -423,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: 商務用 Skype (預覽)
+            - name: 商務用 Skype
               href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md
@@ -457,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS 和語音網路封存工具
               href: archive-o2-network-data.md
-            - name: Signal (預覽)
+            - name: 訊號封存工具
               href: archive-signal-archiver-data.md
-            - name: Telegram (預覽)
+            - name: Telegram 封存工具
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
@@ -915,7 +921,7 @@
         - name: 合規性設定分析器工具
           href: compliance-manager-mcca.md
         - name: 常見問題集 (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: 合規性管理員 (傳統)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft 服務信任入口網站

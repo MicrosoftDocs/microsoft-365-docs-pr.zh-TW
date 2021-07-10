@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板提供您對於貴組織所發現及分類之敏感性資料的可見度。
-ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c0343117251d169d0284c2fdb3fc3b8bca5ff0df
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244380"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362555"
 ---
 # <a name="learn-about-data-classification"></a>了解資料分類
 
@@ -66,6 +66,9 @@ ms.locfileid: "52244380"
 - 安全性系統管理員
 - 合規性資料管理員
 
+> [!NOTE]
+> 最佳做法是一直使用最低權限的角色來授與 Microsoft 365 資料分類的存取權。
+
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>內容中最常使用的敏感性資訊類型
 
 Microsoft 365 隨附許多敏感性資訊類型的定義，例如包含社會安全號碼或信用卡號的項目。 如需有關敏感性資訊類型的詳細資訊，請參閱[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)。
@@ -93,7 +96,7 @@ Microsoft 365 隨附許多敏感性資訊類型的定義，例如包含社會安
 
 如需敏感度標籤的詳細資訊，請參閱[了解敏感度標籤](sensitivity-labels.md)。
 
-SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
+SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md) (部分機器翻譯)。
 
 敏感度標籤卡片會依敏感度等級顯示項目數量 (電子郵件或文件)。
 

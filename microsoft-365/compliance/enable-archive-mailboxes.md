@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何使用合規性中心來啟用封存信箱，以便支援組織的郵件保留、電子文件探索和保留需求。
-ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72aa3f194197140cd86463598a17ab07fbbd647a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926513"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341685"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>啟用合規性中心的封存信箱
 
@@ -40,11 +40,9 @@ Microsoft 365 中的封存 (也稱為 *就地封存*) 可為使用者提供額�
 
 ## <a name="enable-an-archive-mailbox"></a>啟用封存信箱
 
-1. 移至<https://protection.office.com>。
+1. 移至 <https://compliance.microsoft.com> 並登入。
 
-2. 使用您的公司或學校帳戶登入。
-
-3. 在「安全性與合規性中心」的左窗格中，按一下 **[資料控管]** \> **[封存]**。
+2. 在 [Microsoft 365 合規性中心] 的左窗格中，按一下 **[資訊控管]**，然後按一下 **[封存]** 索引標籤。
 
    [封存] 頁面隨即出現。[封存信箱] 欄會指出每個使用者的封存信箱是啟用還是停用。
 
@@ -70,28 +68,26 @@ Microsoft 365 中的封存 (也稱為 *就地封存*) 可為使用者提供額�
 
 您也可以使用「安全性與合規性中心」中的 [封存] 頁面來停用使用者的封存信箱。 停用封存信箱之後，可以在停用它的 30 天內重新連線至使用者的主要信箱。 在此情況下，系統會還原封存信箱的原始內容。 30 天後，便會永久刪除原始封存信箱的內容，無法再復原。 因此，如果您在停用封存超過 30 天之後才重新啟用它，系統會建立新的封存信箱。
 
-在郵件傳遞當日的兩年後，指派給使用者信箱的預設封存原則會將郵件移至封存信箱。 即使您將使用者的封存信箱停用，也不會對信箱郵件造成影響，系統會將這些郵件保留在使用者的主要信箱中。
+在傳遞項目的日期之後的兩年，指派給使用者信箱的預設封存原則會將項目移至封存信箱。如果您停用使用者的封存信箱，則不會對信箱項目採取任何動作，而且它們會保留在使用者的主要信箱中。
 
 若要停用封存信箱：
 
-1. 移至<https://protection.office.com>。
+1. 移至 <https://compliance.microsoft.com> 並登入。
 
-2. 使用您的公司或學校帳戶登入。
-
-3. 在「安全性與合規性中心」的左窗格中，按一下 **[資料控管]** \> **[封存]**。
+2. 在 [Microsoft 365 合規性中心] 的左窗格中，按一下 **[資訊控管]**，然後按一下 **[封存]** 索引標籤。
 
    [封存] 頁面隨即出現。[封存信箱] 欄會指出每個使用者的封存信箱是啟用還是停用。
 
    > [!NOTE]
    > **[封存]** 頁面最多顯示500個使用者。
 
-4. 在信箱清單中，選取要為其停用封存信箱的使用者。
+3. 在信箱清單中，選取要為其停用封存信箱的使用者。
 
-5. 在詳細資料窗格中，按一下 [停用]。
+4. 在詳細資料窗格中，按一下 [停用]。
 
    系統會顯示警告訊息，提醒您有 30 天的時間可以重新啟用封存信箱，30 天之後，系統將會永久刪除封存中的所有資訊。
 
-6. 按一下 [是] 停用封存信箱。
+5. 按一下 [是] 停用封存信箱。
 
    可能需要一些時間才能停用封存信箱。 停用封存信箱後，您可在選取使用者的詳細資料窗格中看到 [封存信箱：已停用]。 您可能需要按一下 [重新整理] ![重新整理圖示](../media/O365-MDM-Policy-RefreshIcon.gif)，以便更新詳細資料窗格中的資訊。
 
@@ -100,7 +96,7 @@ Microsoft 365 中的封存 (也稱為 *就地封存*) 可為使用者提供額�
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 來啟用或停用封存信箱
 
-您也可以使用 Exchange Online PowerShell 來啟用封存信箱。 使用 PowerShell 的主要原因是您可以為組織中的所有使用者快速啟用封存信箱。
+您也可以使用 Exchange Online PowerShell 來啟用封存信箱。使用 PowerShell 的主要原因是您可以為組織中的所有使用者快速啟用封存信箱。
 
 第一個步驟是連線至 Exchange Online PowerShell。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -136,7 +132,7 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 ## <a name="more-information"></a>詳細資訊
 
-- 當封存信箱啟用時，使用者可以將郵件儲存在其封存信箱中。 使用者可以使用 Microsoft Outlook 和 Outlook 網頁版來存取其封存信箱。 只要使用這些用戶端應用程式，使用者就能檢視其封存信箱中的郵件，並且在其主要信箱與其封存信箱之間移動或複製郵件。 使用者也可以使用「復原刪除的郵件」工具復原其封存信箱的 [可復原的項目] 資料夾中的已刪除郵件。
+- 啟用封存信箱時，使用者可以將郵件儲存在其封存信箱中。使用者可以使用 Microsoft Outlook 和 Outlook 網頁版存取其封存信箱。只要使用上述任一個用戶端應用程式，使用者就能檢視其封存信箱中的郵件，並且在其主要信箱與其封存信箱之間移動或複製郵件。使用者也可以使用 [復原刪除的郵件] 工具，從封存信箱中的 [可復原的項目] 資料夾復原已刪除的項目。
 
   如需支援就地封存的 Outlook 授權清單，請參閱[Exchange 功能的 Outlook 授權需求](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
 

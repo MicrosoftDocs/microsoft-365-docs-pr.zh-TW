@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 2f873482dc351050a87993420e718f6de87ac218
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169613"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227528"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -44,20 +44,20 @@ ms.locfileid: "53169613"
 
 對 Microsoft 365 中的內容自動套用敏感度標籤有兩種不同的方法：
 
-- **使用者編輯文件或撰寫 (回覆或轉寄) 電子郵件時的用戶端套用標籤**：使用針對檔案和電子郵件 (包括 Word、Excel、PowerPoint 和 Outlook) 自動套用標籤所設定的標籤。 
-    
-    此方法支援向使用者建議標籤，以及自動套用標籤。 但是在這兩種情況下，使用者都會決定接受或拒絕標籤，以協助確保正確為內容套用標籤。 此用戶端加標籤對於文件有最小延遲，因為您甚至可以在儲存文件之前套用標籤。 不過，並非所有用戶端應用程式都支援自動套用標籤。 這項功能受 Azure 資訊保護整合標籤用戶端和[部分 Office 版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)的支援。 
-    
+- **使用者編輯文件或撰寫 (回覆或轉寄) 電子郵件時的用戶端套用標籤**：使用針對檔案和電子郵件 (包括 Word、Excel、PowerPoint 和 Outlook) 自動套用標籤所設定的標籤。
+
+    此方法支援向使用者建議標籤，以及自動套用標籤。 但是在這兩種情況下，使用者都會決定接受或拒絕標籤，以協助確保正確為內容套用標籤。 此用戶端加標籤對於文件有最小延遲，因為您甚至可以在儲存文件之前套用標籤。 不過，並非所有用戶端應用程式都支援自動套用標籤。 這項功能受 Azure 資訊保護整合標籤用戶端和[部分 Office 版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)的支援。
+
     如需設定指示，請參閱在此頁面上的[如何設定適用於 Office 應用程式的自動套用標籤](#how-to-configure-auto-labeling-for-office-apps)。
 
-- **內容已儲存 (在 SharePoint 或 OneDrive 中) 或寄送電子郵件 (由 Exchange Online 處理) 時的服務端套用標籤**：使用自動套用標籤原則。 
-    
+- **內容已儲存 (在 SharePoint 或 OneDrive 中) 或寄送電子郵件 (由 Exchange Online 處理) 時的服務端套用標籤**：使用自動套用標籤原則。
+
     您可能也聽過此方法稱為待用資料 (SharePoint 和 OneDrive 中的文件) 以及傳輸中的資料 (由 Exchange 傳送或接收的電子郵件) 的自動套用標籤。若是 Exchange，則不會包括待用電子郵件 (信箱)。
-    
+
     由於此標籤是由服務套用，而不是由應用程式套用，因此您不需要擔心使用者擁有哪些應用程式及其版本。 如此一來，您就能立即在整個組織中使用這項功能，並且適用於大規模套用標籤。 自動套用標籤原則不支援建議的標籤，因為使用者不會與套用標籤程序進行互動。 相反地，系統管理員會在模擬模式中執行原則，以協助確保在實際套用標籤之前，內容正確套用標籤。
-    
+
     如需設定指示，請參閱此頁面上的[如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
-    
+
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
     - 支援 Word、PowerPoint 和 Excel 等 Office 檔案。支援 Open XML 格式 (例如 .docx 和 .xlsx)，但不支援 Microsoft Office 97-2003 格式 (例如 .doc 和 .xls)。
         - 這些檔案可在建立自動套用標籤原則之前或之後，以靜止方式自動套用標籤。 如果檔案是開啟工作階段的一部分 (檔案已開啟) ，則無法自動套用標籤。
@@ -77,7 +77,7 @@ ms.locfileid: "53169613"
         - 如果標籤針對 [加密](encryption-sensitivity-labels.md) 進行設定，則不會套用加密。
         - 如果標籤設定為套用 [動態標記](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，請注意，這可能導致人員名稱會在組織的外部。
     - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是傳送電子郵件的人員。 目前無法為自動加密的所有內建電子郵件訊息，設定版權管理員擁有者。
-    
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>比較 Office 應用程式的自動套用標籤與自動套用標籤原則
 
@@ -115,7 +115,7 @@ ms.locfileid: "53169613"
 
 在 Windows 版 Office 應用程式中的自動標籤，是由 Azure 資訊保護整合標籤用戶端支援。 對於 Office 應用程式中的內建標籤，此功能 [ 對不同的應用程式，處於不同的可用性階段 ](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
-當您[建立或編輯敏感度標籤](create-sensitivity-labels.md)時，可使用適用於 Office 應用程式的自動套用標籤設定。 請確定已針對標籤的範圍選取 **[檔案和電子郵件]**： 
+當您[建立或編輯敏感度標籤](create-sensitivity-labels.md)時，可使用適用於 Office 應用程式的自動套用標籤設定。 請確定已針對標籤的範圍選取 **[檔案和電子郵件]**：
 
 ![檔案和電子郵件的敏感度標籤範圍選項](../media/filesandemails-scope-options-sensitivity-label.png)
 
@@ -142,7 +142,7 @@ ms.locfileid: "53169613"
 同時類似於 DLP 原則設定，您可以選擇條件是必須偵測所有敏感性資訊類型，還是只偵測其中一種。 若要讓您的條件更靈活或更複雜，您可以新增 [群組，並使用群組間的邏輯運算子](data-loss-prevention-policies.md#grouping-and-logical-operators)。
 
 > [!NOTE]
-> 根據自訂敏感性資訊類型的自動標記原則僅適用於 OneDrive 和 SharePoint 中新建立或修改的內容。 
+> 根據自訂敏感性資訊類型的自動標記原則僅適用於 OneDrive 和 SharePoint 中新建立或修改的內容；而非現有的內容。
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>為標籤設定可訓練分類器
 
@@ -206,7 +206,7 @@ ms.locfileid: "53169613"
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則
 
-設定自動套用標籤原則之前，請確認您已經知道先決條件。 
+設定自動套用標籤原則之前，請確認您已經知道先決條件。
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自動套用標籤原則的必要條件
 
@@ -218,8 +218,8 @@ ms.locfileid: "53169613"
     - 您必須[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
     - 當自動套用標籤原則執行時，檔案不能由其他程序或使用者開啟。 簽出以編輯的檔案屬於這個類別。
 
-- 如果您計劃使用[自訂敏感性資訊類型](sensitive-information-type-learn-about.md)，而不是內建的敏感性類型： 
-    - 自訂敏感度資訊類型僅適用於強制執行自訂敏感度資訊類型之後，在 SharePoint 或 OneDrive 中新增或修改的內容。 
+- 如果您計劃使用[自訂敏感性資訊類型](sensitive-information-type-learn-about.md)，而不是內建的敏感性類型：
+    - 自訂敏感度資訊類型僅適用於強制執行自訂敏感度資訊類型之後，在 SharePoint 或 OneDrive 中新增或修改的內容。
     - 若要測試新的自訂敏感性資訊類型，請在建立您的自動套用標籤原則之前建立，然後建立含有範例資料的新文件以進行測試。
 
 - 一或多個敏感性標籤[已建立和已發佈](create-sensitivity-labels.md) (給至少一個使用者)，這些標籤可供您針對自動套用標籤原則選取。 針對這些標籤：
@@ -254,42 +254,42 @@ ms.locfileid: "53169613"
 ### <a name="creating-an-auto-labeling-policy"></a>建立自動套用標籤原則
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，瀏覽至敏感度標籤：
-    
+
     - **解決方案** > **資訊保護**
-    
+
     如果您沒有立即看到這個選項，請先選取 [全部顯示]。
 
 2. 選取 **[自動套用標籤]** 索引標籤：
-    
+
     ![自動套用標籤](../media/auto-labeling-tab.png)
-    
+
     > [!NOTE]
     > 如果您沒有看到 **[自動套用標籤]** 索引標籤，就代表您的區域目前無法使用此功能。
 
 3. 選取 **+ 建立自動套用標籤原則**。 這會啟動 [新原則] 精靈：
-    
-    ![自動套用標籤的新原則精靈 ](../media/auto-labeling-wizard.png)
+
+    ![自動套用標籤的新原則精靈](../media/auto-labeling-wizard.png)
 
 4. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取其中一個範本，例如 **財務** 或 **隱私權**。 您可以使用 **[顯示下列內容的選項]** 下拉式清單來精簡搜尋。 或者，如果範本不符合您的需求，請選取 **[自訂原則]**。 選取 **[下一步]**。
 
 5. 針對 **[命名您的自動套用標籤原則]** 頁面：提供唯一名稱，以及選擇性提供說明，以協助識別自動套用的標籤、位置和可識別要套用標籤之內容的條件。
 
 6. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取並指定 Exchange、SharePoint 網站和 OneDrive 的位置。 然後選取 **[下一步]**。
-    
-    ![選擇位置頁面自動套用標籤精靈 ](../media/locations-auto-labeling-wizard.png)
-    
+
+    ![選擇位置頁面自動套用標籤精靈](../media/locations-auto-labeling-wizard.png)
+
     您必須指定個別的 SharePoint 網站和 OneDrive 帳戶。 若為 OneDrive，使用者 OneDrive 帳戶的 URL 會採用下列格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-    
+
     例如，針對 contoso 租用戶中使用者名稱為 "rsimone" 的使用者：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-    
+
     若要驗證租用戶的語法並識別使用者的 URL，請參閱[取得組織中所有使用者的 OneDrive URL 清單](/onedrive/list-onedrive-urls) (部分機器翻譯)。
 
 7. 針對 **設定常用或進階規則** 頁面：保留 **常用規則** 的預設以定義可識別要在您所選取所有位置之間套用標籤之內容的規則。 如果您在每個位置都需要不同的規則，請選取 **[進階規則]**。 然後選取 **[下一步]**。
-    
+
     規則會使用條件，其中包括敏感性資訊類型和共用選項：
     - 針對敏感性資訊類型，您可以選取內建和自訂敏感性資訊類型。
     - 針對共用選項，您可以選擇 **[僅與我組織內部的人員]** 或 **[與我組織外部的人員]**。
-    
+
     如果您唯一的位置是 **[Exchange]**，或如果您選取 **[進階規則]**，則還可以選取其他條件：
     - 寄件者 IP 位址為
     - 收件者網域為
@@ -306,19 +306,19 @@ ms.locfileid: "53169613"
     - 寄件者網域為
     - 收件者為以下的成員
     - 寄件者為
-    
+
     然後，您可以為每個條件指定例外狀況。
-    
+
 8. 根據您先前的選擇，您現在有機會使用條件和例外建立新的規則。
-    
+
     敏感性資訊類型的設定選項，和您針對 Office 應用程式的自動套用標籤所選取的設定選項相同。 如需詳細資訊，請參閱[設定標籤的敏感性資訊類型](#configuring-sensitive-info-types-for-a-label)。
-    
+
     當您已定義所有需要的規則，並確認其狀態為開啟時，請選取 **[下一步]** 以繼續選擇標籤以自動套用。
 
 11. 針對 **[選擇要自動套用的標籤]** 頁面：選取 **[+ 選擇標籤]**，從 **[選擇敏感度標籤]** 窗格中選取標籤，然後選取 **[下一步]**。
 
-12. 針對 **決定立即或稍後測試原則** 頁面：如果您已準備好立即在模擬模式中執行自動套用標籤原則，請選取 **[在模擬模式中執行原則]** 。 否則，請選取 **[將原則關閉]**。 選取 **[下一步]**: 
-    
+12. 針對 **決定立即或稍後測試原則** 頁面：如果您已準備好立即在模擬模式中執行自動套用標籤原則，請選取 **[在模擬模式中執行原則]** 。 否則，請選取 **[將原則關閉]**。 選取 **[下一步]**:
+
     ![測試原則自動套用標籤精靈](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. 針對 **[摘要]** 頁面：檢閱您的自動套用標籤原則設定，視需要進行任何變更，然後完成精靈。
@@ -330,9 +330,9 @@ ms.locfileid: "53169613"
 - 針對 **[關閉]** 區段中的原則，選取 **[編輯原則]** 按鈕。
 
 - 針對 **[模擬]** 區段中的原則，從任一索引標籤中選取頁面頂端的 **[編輯原則]** 選項：
-    
+
     ![編輯自動套用標籤原則選項](../media/auto-labeling-edit.png)
-    
+
     當您準備好執行原則而不進行模擬時，請選取 **[開啟原則]** 選項。
 
 您的自動原則會持續執行，直到刪除為止。 例如，新的和修改過的文件會包含在目前的原則設定中。
@@ -350,12 +350,12 @@ ms.locfileid: "53169613"
 
 在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-若要建立新的自動套用標籤原則： 
+若要建立新的自動套用標籤原則：
 
 ```powershell
 New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
-此命令會為您指定的 SharePoint 網站建立自動套用標籤原則。 若為 OneDrive 位置，請改用 *OneDriveLocation* 參數。 
+此命令會為您指定的 SharePoint 網站建立自動套用標籤原則。 若為 OneDrive 位置，請改用 *OneDriveLocation* 參數。
 
 若要新增其他網站至現有的自動套用標籤原則：
 
@@ -389,11 +389,11 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 雖然自動套用標籤是分類、標記及保護貴組織擁有之 Office 檔案的其中一個最有效率的方法，但請檢查您是否可以使用任何其他方法來補充它，以增加套用標籤觸及率：
 
 - 當您使用 [Microsoft Azure 資訊保護統一標籤用戶端](/azure/information-protection/rms-client/aip-clientv2)：
-    
+
     - 對於內部部署資料存放區 (例如網路共用和 SharePoint Server 文件庫) 中的檔案：使用 [掃描器](/azure/information-protection/deploy-aip-scanner) 以探索這些檔案中的敏感性資訊，並適當地標記它們。 如果您計畫移轉或上傳這些檔案至 Microsoft 365 中的 SharePoint，請先使用掃描器標記檔案，然後再將它們移至雲端。
-    
+
     - 如果您在使用敏感度標籤之前已使用其他套用標籤解決方案：使用 PowerShell 和 [進階設定以重複使用這些解決方案中的標籤](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions)。
 
-- 在提供使用者進行套用敏感度標籤的訓練之後，鼓勵 [手動套用標籤](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。 當您確信使用者瞭解要套用哪個標籤時，請考慮將預設標籤和強制套用標籤設定為 [原則設定](sensitivity-labels.md#what-label-policies-can-do)。 
+- 在提供使用者進行套用敏感度標籤的訓練之後，鼓勵 [手動套用標籤](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。 當您確信使用者瞭解要套用哪個標籤時，請考慮將預設標籤和強制套用標籤設定為 [原則設定](sensitivity-labels.md#what-label-policies-can-do)。
 
 此外，請考慮在 SharePoint 中 [預設將新檔案標示為敏感性](/sharepoint/sensitive-by-default)，以防止來賓存取新增的檔案，直到至少有一個 DLP 原則掃描檔案內容。

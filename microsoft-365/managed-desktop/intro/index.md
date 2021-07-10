@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841363"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362614"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -25,7 +25,6 @@ Microsoft 受管理的電腦是雲端式服務，可整合 [Microsoft 365 企業
 - 使用者裝置部署
 - IT 服務管理和工作
 - 安全性監視和回應
-- 使用者支援
 
 Microsoft 受管理的電腦為當今企業及其員工面臨的若干挑戰，提供了解決方案：
 - 過渡至軟體即服務靈活世界的過程艱鉅。
@@ -33,7 +32,7 @@ Microsoft 受管理的電腦為當今企業及其員工面臨的若干挑戰，�
 - 目前許多 IT 管理和安全性程序早已過期、耗時且成本高昂。
 - 企業希望專注於能使其創造獨家成功的因素，而不願維護數位基礎結構。
 
-利用經過精心策劃和嚴格測試以實現最佳效能和可靠性的裝置和軟體，您的使用者將可享用最新版本的 Windows 10 和 Microsoft 365 Apps 企業版應用程式 (還有更多功能)。 另外，您無需擔心會保持該軟體的任何最新狀態，因為這會自動執行，並會遵循精心監視的階段推出順序，並在每個步驟中對其進行監視。在每個步驟的謹慎推出順序進行。 和註冊裝置系統會以 24x7 的方式監視技術和安全性問題，因此如果發生錯誤，系統會提供協助。
+利用經過精心策劃和嚴格測試以實現最佳效能和可靠性的裝置和軟體，您的使用者將可享用最新版本的 Windows 10 和 Microsoft 365 Apps 企業版應用程式 (還有更多功能)。 另外，您無需擔心會保持該軟體的任何最新狀態，因為這會自動執行，並會遵循精心監視的階段推出順序，並在每個步驟中對其進行監視。在每個步驟的謹慎推出順序進行。 此外，系統會全天候監視註冊裝置的技術和安全性問題，因此如果發生錯誤，可及時提供協助。
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Microsoft 受管理的電腦獨有

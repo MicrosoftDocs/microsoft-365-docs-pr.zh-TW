@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256528"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362327"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -71,11 +71,11 @@ ms.locfileid: "53256528"
 2. 選取 **[新保留原則]** 以啟動 [建立保留原則] 精靈，並命名新的保留原則。
 
 3. 針對 **[選擇要套用原則的位置]** 頁面，請選取 Teams 的任何或所有位置：
-    - **Teams 頻道訊息**：來自標準頻道聊天和標準頻道會議的訊息，但非來自有自身原則位置的[私人頻道](/microsoftteams/private-channels)。
+    - **Teams 頻道訊息**：來自標準頻道聊天和標準頻道會議的訊息，但非來自有自身原則位置的 [私人頻道](/microsoftteams/private-channels)。
     - **Teams 聊天**：來自私人一對一聊天、群組聊天和會議聊天的訊息。
     - **Teams 私人頻道訊息**：來自私人頻道聊天和私人頻道會議的訊息。 此選項目前正在預覽中推出，如果沒有顯示，請過幾天再試一次。
     
-   根據預設，[所有小組和所有使用者都處於選中狀態](#a-policy-that-applies-to-entire-locations)，但您可以透過選取 [**[選擇]** 和 **[排除]** 選項](#a-policy-with-specific-inclusions-or-exclusions)對其進行優化。 不過，在變更預設值之前，請注意保留原則的下列結果，該保留原則在已針對包含或排除項進行設定時，會刪除郵件：
+   根據預設， [會選取所有團隊和所有使用者](#a-policy-that-applies-to-entire-locations)，但您可以選取 **[編輯]** 選項來設定[特定包含或排除](#a-policy-with-specific-inclusions-or-exclusions)的保留原則。 不過，在變更預設值之前，請注意保留原則的下列結果，該保留原則在已針對包含或排除項進行設定時，會刪除郵件：
     
     - 對於群組聊天訊息和私人頻道訊息，因為訊息複本會儲存於聊天中包含的每位使用者的信箱中，所以系統會繼續從未指派此原則的使用者於「電子文件探索」結果中退回郵件複本。
     - 對於未指派此原則的使用者，已刪除的郵件將會回到其 Teams 搜尋結果中，但因為從指派給使用者之原則中已永久刪除，所以不會顯示郵件內容。
@@ -94,9 +94,9 @@ ms.locfileid: "53256528"
 
 - 雖然您可以選取選項，在上次修改項目時開始保留期間，但是一律會使用 **項目建立時間** 的值。 對於已編輯的訊息，原始訊息的一份副本會與原始時間戳記一起儲存，以識別建立此預先編輯訊息的時間，且預先編輯後的訊息具有較新的時間戳記。
 
-- 當您針對 [Teams 頻道訊息] 位置選取 [選擇小組] 時，您可能會看到也不是小組的 Microsoft 365 群組。 請勿選取這些群組。
+- 當您選取 **[Teams 頻道訊息]** 位置的 **[編輯]** 時，您可能會看到不是團隊的 Microsoft 365 群組。 請勿選取這些群組。
 
-- 當您選取 **[選擇 Teams 聊天的使用者]** 位置時，您可能會看到來賓和非信箱使用者。 保留原則並非為這些使用者設計，因此請不要選取他們。
+- 當您選取 Teams 聊天位置的 **[編輯]** 時，您可能會看到來賓和非信箱使用者。 保留原則並非為這些使用者設計，因此請不要選取他們。
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支援 Teams 所需的其他保留原則
@@ -125,17 +125,22 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 2. 選取 **[新增保留原則]** 以建立新的保留原則。
 
-3. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。 
+3. 在 **[選擇要套用原則的位置]** 頁面，請將 Yammer 的一個或兩個位置切換為開啟: **Yammer 社群訊息** 和 **Yammer 使用者訊息**。
     
-    您可以建立只會保留內容但不刪除內容的保留原則，建立會保留並於一段指定的時間後刪除內容的原則，或直接在一段時間後刪除指定內容的原則。 如需詳細資訊，請參閱此頁面上的[保留和刪除內容的設定 ](#settings-for-retaining-and-deleting-content)。
-
-4. 在 [選擇位置 **]** 頁面上，選取 [讓我選擇特定位置 **]**。 然後將 Yammer 的一個或兩個位置切換為開啟：**Yammer 社群訊息** 和 **Yammer 使用者訊息**。
+    > [!IMPORTANT]
+    > 雖然您可以只針對 Yammer 使用者訊息建立保留原則，但此位置的保留原則可以從 Yammer 應用程式刪除所有社群成員的社群訊息。
+    > 
+    > 如果您選擇這個選項，且保留原則將設定為刪除使用者訊息，請確定您了解此含意。 有關詳細資訊，請參閱 [保留功能如何 Yammer 搭配使用](retention-policies-yammer.md#how-retention-works-with-yammer)。
     
     預設會選取所有社群和使用者，但是您可以指定要包含或排除的社群和使用者，以縮小範圍。
     
     針對 Yammer 使用者訊息： 
     - 如果您保留預設值 **全部**，將不會包含 Azure B2B 來賓使用者。 
-    - 如果您選取 [選擇使用者 **]**，就可以將保留原則套用至外部使用者 (如果您知道其帳戶)。
+    - 如果您選取 **[包含]** 欄的 **[編輯]**，就可以將保留原則套用至外部使用者 (如果您知道其帳戶)。
+
+4. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。 
+    
+    您可以建立只會保留內容但不刪除內容的保留原則，建立會保留並於一段指定的時間後刪除內容的原則，或直接在一段時間後刪除指定內容的原則。 如需詳細資訊，請參閱此頁面上的[保留和刪除內容的設定 ](#settings-for-retaining-and-deleting-content)。
 
 5. 完成精靈以儲存您的設定。
 
@@ -167,7 +172,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 2. 選取 **[新保留原則]** 以啟動 [建立保留原則] 精靈，並命名新的保留原則。
 
-3. 對於 **[選擇位置]** 頁面，開啟或關閉除 Teams 位置以外的任何位置。 您可以將每個位置保留為預設值，以便[將原則套用於整個位置](#a-policy-that-applies-to-entire-locations)，或[指定包含和排除](#a-policy-with-specific-inclusions-or-exclusions)。
+3. 針對 **[選擇套用原則的位置]** 頁面，開啟或關閉除 Teams 位置以外的任何位置。 您可以將每個位置保留為預設值，以便[將原則套用於整個位置](#a-policy-that-applies-to-entire-locations)，或[指定包含和排除](#a-policy-with-specific-inclusions-or-exclusions)。
 
     位置專用資訊：
     - [Exchange 電子郵件和 Exchange 公用資料夾](#configuration-information-for-exchange-email-and-exchange-public-folders)
@@ -185,7 +190,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 **Exchange 電子郵件** 位置支援使用者的電子郵件、行事曆和其他信箱專案的保留，方法是套用信箱層級的保留設定。 同時支援共用信箱。
 
-當您將保留設定套用至 **所有收件者** 時，任何[非使用中的信箱](create-and-manage-inactive-mailboxes.md) 皆會納入。 不過，如果您變更此預設值並設定[特定包含或排除範圍](#a-policy-with-specific-inclusions-or-exclusions)，則不支援非使用中的信箱，也不會針對這些信箱套用或排除保留設定。
+當您將保留設定套用至 **所有收件者** 時，任何 [非使用中的信箱](create-and-manage-inactive-mailboxes.md) 皆會納入。 不過，如果您變更此預設值並設定[特定包含或排除範圍](#a-policy-with-specific-inclusions-or-exclusions)，則不支援非使用中的信箱，也不會針對這些信箱套用或排除保留設定。
 
 此外，資源信箱和 Microsoft 365 群組信箱不支援 **所有收件者** 預設，或特定包含或排除範圍。 對於 Microsoft 365 群組信箱，請改為選取 **[Microsoft 365 群組]** 位置。
 

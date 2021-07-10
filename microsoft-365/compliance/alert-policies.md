@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Microsoft 365 合規性中心中建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 4ae85f69eea5221945c531b2b63000be7eb43fb7
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 02b5727f0c844fa6b825b4c0c032ea6c2633d6df
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341065"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363988"
 ---
 # <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合規性中心中的警示原則
 
@@ -62,6 +62,9 @@ ms.locfileid: "53341065"
 移至 <https://compliance.microsoft.com> ，然後選取 [**原則**] [  >  **警示**  >  **報警原則**]。 或者，您可以直接前往 <https://compliance.microsoft.com/alertpolicies> 。
 
 ![在 [規範中心] 中，選取 [原則]，然後在 [警示] 底下，選取 [警示原則] 以查看和建立警示原則。](../media/LaunchAlertPoliciesMCC.png)
+
+> [!NOTE]
+> 您必須獲指派「View-Only 管理提醒」角色，才能在 Microsoft 365 合規性中心中查看警示原則。 您必須獲指派「管理提醒」角色，才能建立及編輯報警原則。 如需詳細資訊，請參閱 [安全性與合規性中心中的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 警示原則由下列設定和條件所組成。
 
@@ -210,7 +213,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理許
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>查看提醒所需的 RBAC 許可權
 
-指派給組織中使用者的角色型存取控制 (RBAC) 許可權決定使用者可以在 [ **提醒** ] 頁面上看到哪些提醒。 這是如何完成的？ 指派給使用者的管理角色會根據其在 Microsoft 365 合規性中心中角色群組的成員資格 () 決定使用者可在 [**提醒**] 頁面上看到的警示類別。 範例如下：
+指派給組織中使用者的角色型存取控制 (RBAC) 許可權決定使用者可以在 [ **提醒** ] 頁面上看到哪些提醒。 這是如何完成的？ 指派給使用者的管理角色會根據其在 Microsoft 365 合規性中心中角色群組的成員資格 () 決定使用者可在 [**提醒**] 頁面上看到的警示類別。 以下為一些範例：
 
 - 記錄管理角色群組的成員只能查看指派 **資訊控制** 類別之警示原則所產生的警示。
 

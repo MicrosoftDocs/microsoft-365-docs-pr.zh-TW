@@ -1,5 +1,5 @@
 ---
-title: 在安全性與合規性中心搜尋稽核記錄
+title: 在 Microsoft 365 合規性中心中搜尋稽核記錄
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合規性中心來搜尋整合的稽核記錄，以檢視組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300133"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363952"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -48,11 +48,11 @@ ms.locfileid: "53300133"
 - 使用 SharePoint Online 或 Microsoft Teams 網站之敏感度標籤的使用者和系統管理員活動
 - 簡報電子郵件和 MyAnalytics 中的系統管理員活動
 
-## <a name="requirements-to-search-the-audit-log"></a>搜尋稽核記錄的要求
+## <a name="before-you-search-the-audit-log"></a>在您搜尋稽核記錄之前
 
 開始搜尋稽核記錄前，請務必閱讀下列項目。
 
-- 預設會開啟適用於 Microsoft 365 和 Office 365 企業組織的 [稽核記錄搜尋]。 其中包括使用 E3/G3 或 E5/G5 訂閱的組織。 若要驗證 [稽核記錄搜尋] 已開啟，您可以在 Exchange Online PowerShell 中執行下列命令：
+- 預設會開啟適用於 Microsoft 365 和 Office 365 企業組織的 [稽核記錄搜尋]。 若要驗證 [稽核記錄搜尋] 已開啟，您可以在 Exchange Online PowerShell 中執行下列命令：
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -60,10 +60,10 @@ ms.locfileid: "53300133"
 
   *UnifiedAuditLogIngestionEnabled* 屬性為 `True` 值表示已開啟 [稽核記錄搜尋]。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
-- 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 **[權限]** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 請注意，Office 365 和 Microsoft 365 中的全域系統管理員會自動成為 Exchange Online 中的 [組織管理] 角色群組成員。 若要提供讓使用者能夠搜尋稽核記錄的最低權限等級，您可以在 Exchange Online 中建立自訂角色群組、新增 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，然後將使用者加入這個新的角色群組成為其中的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](/Exchange/permissions-exo/role-groups)。
+- 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 **[權限]** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 系統會將 Office 365 和 Microsoft 365 中的全域系統管理員自動新增為 Exchange Online 中 [組織管理] 角色群組的成員。 若要提供讓使用者能夠搜尋稽核記錄的最低權限等級，您可以在 Exchange Online 中建立自訂角色群組、新增 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，然後將使用者加入這個新的角色群組成為其中的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](/Exchange/permissions-exo/role-groups)。
 
   > [!IMPORTANT]
-  > 如果您在安全性與合規性中心的 **[權限]** 頁面上，將 [僅限檢視稽核記錄] 或 [稽核記錄] 角色指派給使用者，使用者將無法搜尋稽核記錄。 您必須在 Exchange Online 中指派權限。 這是因為用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet。
+  > 如果您在 Microsoft 365 合規性中心的 **[權限]** 頁面上，將 [僅限檢視稽核記錄] 或 [稽核記錄] 角色指派給使用者，使用者將無法搜尋稽核記錄。 您必須在 Exchange Online 中指派權限。 這是因為用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet。
 
 - 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 或 Microsoft 365 企業版訂閱，具體來說，取決於指派給特定使用者的授權類型。
 
@@ -75,7 +75,7 @@ ms.locfileid: "53300133"
   - 對於獲派其他任何 (非 E5) Office 365 或 Microsoft 365 授權的使用者，稽核記錄會保留 90 天。 如需支援整合稽核記錄的 Office 365 和 Microsoft 365 訂閱清單，請參閱[安全性與合規性中心服務描述](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) (部分機器翻譯)。
 
     > [!NOTE]
-    > 即使信箱稽核預設為開啟，您可能會發現某些使用者的信箱稽核事件在安全性與合規性中心的稽核記錄搜尋或透過 Office 365 管理活動 API 找不到。 如需詳細資訊，請參閱[信箱稽核記錄的相關資訊](enable-mailbox-auditing.md#more-information)。
+    > 即使信箱稽核預設為開啟狀態，您可能還是會發現某些使用者的信箱稽核事件在 Microsoft 365 合規性中心的稽核記錄搜尋中找不到，透過 Office 365 管理活動 API 也找不到。 如需詳細資訊，請參閱[信箱稽核記錄的相關資訊](enable-mailbox-auditing.md#more-information)。
 
 - 如果您想要關閉組織的稽核記錄搜尋功能，您可以在與 Exchange Online 組織連線的遠端 PowerShell 中執行下列命令：
 
@@ -91,7 +91,7 @@ ms.locfileid: "53300133"
 
   如需詳細資訊，請參閱[關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
-- 如先前所述，用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet，也就是 **Search-UnifiedAuditLog**。 這表示您可以使用此 Cmdlet 來搜尋稽核記錄，而不是使用安全性與合規性中心中的 **[稽核記錄搜尋]** 頁面。 您必須在連線到 Exchange Online 組織的遠端 PowerShell，執行此 Cmdlet。 如需詳細資訊，請參閱 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
+- 如先前所述，用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet，也就是 **Search-UnifiedAuditLog**。 這表示您可以使用此 Cmdlet 來搜尋稽核記錄，而不是使用 Microsoft 365 合規性中心中的 **[稽核記錄搜尋]** 頁面。 您必須在連線到 Exchange Online 組織的遠端 PowerShell，執行此 Cmdlet。 如需詳細資訊，請參閱 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
 
   若要了解如何將 **Search-UnifiedAuditLog** Cmdlet 所傳回的搜尋結果匯出為 CSV 檔案，請參閱 [匯出、設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的＜匯出及檢視稽核記錄的秘訣＞一節。
 
@@ -118,7 +118,7 @@ ms.locfileid: "53300133"
   |Microsoft Teams|![核取記號](../media/checkmark.png)||
   |Power Apps||![核取記號](../media/checkmark.png)|
   |Power BI|![核取記號](../media/checkmark.png)||
-  |安全性與合規性中心|![核取記號](../media/checkmark.png)||
+  |Microsoft 365 合規性中心|![核取記號](../media/checkmark.png)||
   |敏感度標籤||![核取記號](../media/checkmark.png)|
   |SharePoint Online 和商務用 OneDrive|![核取記號](../media/checkmark.png)||
   |工作場所分析|![核取記號](../media/checkmark.png)||
@@ -132,7 +132,7 @@ ms.locfileid: "53300133"
 
 ## <a name="search-the-audit-log"></a>搜尋稽核記錄
 
-下列是在 Office 365 中搜尋稽核記錄的流程。
+下列是在 Microsoft 365 中搜尋稽核記錄的流程。
 
 [步驟 1：執行稽核記錄搜尋](#step-1-run-an-audit-log-search)
 
@@ -144,48 +144,42 @@ ms.locfileid: "53300133"
 
 ### <a name="step-1-run-an-audit-log-search"></a>步驟 1：執行稽核記錄搜尋
 
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至 <https://compliance.microsoft.com> 並登入。
 
     > [!TIP]
-    > 您可以使用私密瀏覽工作階段 (而非一般工作階段) 存取安全性與合規性中心，藉此避免使用您目前登入的認證。若要在 Internet Explorer 或 Microsoft Edge 中開啟 InPrivate 瀏覽工作階段，只要按 CTRL+SHIFT+P 就可以了。若要在 Google Chrome 中開啟私密瀏覽工作階段 (稱為無痕式視窗)，請按 CTRL+SHIFT+N。
+    > 使用私密瀏覽工作階段 (而非一般工作階段) 存取 Microsoft 365 合規性中心，藉此避免使用您目前登入的認證。若要在 Internet Explorer 或 Microsoft Edge 中開啟 InPrivate 瀏覽工作階段，只要按 CTRL+SHIFT+P 即可。若要在 Google Chrome 中開啟私密瀏覽工作階段 (稱為無痕式視窗)，請按 CTRL+SHIFT+N。
 
-2. 使用您的公司或學校帳戶登入。
+2. 在 Microsoft 365 合規性中心的左窗格中，按一下 **[稽核]**。
 
-3. 在安全性與合規性中心的左窗格中，按一下 **[搜尋]**，然後按一下 **[稽核記錄搜尋]**。
+    **[稽核]** 頁面隨即顯示。
 
-    **[稽核記錄搜尋]** 頁面隨即顯示。
-
-    ![設定準則，然後按一下 [搜尋] 即可執行報告](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![設定準則，然後按一下 [搜尋] 即可執行報告](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
-    > 您必須先開啟稽核記錄功能，才能執行稽核記錄搜尋。 如果顯示 **[開始記錄使用者和系統管理活動]** 連結，請按一下它以開啟稽核。 (如果您沒有看到此連結，表示貴組織已開啟稽核)。
+    > 如果顯示 **[開始記錄使用者和系統管理活動]** 連結，請按一下它以開啟稽核。 如果您沒有看到此連結，表示貴組織已開啟稽核。
 
-4. 設定下列搜尋準則：
-
-   1. **活動**：按一下下拉式清單以顯示您可以搜尋的活動。 使用者和系統管理員活動會歸類成各種相關活動的群組。 您可以選取特定活動，或者也可以按一下活動群組名稱以選取該群組中的所有活動。 您也可以按一下選定的活動以清除選取。 執行搜尋後，只會顯示選定活動的稽核記錄項目。 選取 **[顯示所有活動的結果]** 會顯示選定使用者或使用者群組所執行的所有活動結果。
-
-      稽核記錄中會記錄超過 100 個使用者和系統管理員活動。 按一下本文主題的 **[已稽核活動]** 索引標籤，可查看不同服務中各項活動的描述。
+3. 在 **[搜尋]** 索引標籤上，設定下列搜尋準則：
 
    1. **開始日期** 和 **結束日期**：根據預設會選取過去七天。 選取日期和時間範圍，以顯示該期間內已發生的事件。 日期和時間以當地時間顯示。 您可以指定的最大日期範圍為 90 天。 如果選定的日期範圍大於 90 天，則會顯示錯誤。
 
-      > [!TIP]
-      > 如果您使用的是 90 天的最大日期範圍，請為 **[開始日期]** 選取目前的時間。 否則，您會收到一則表示開始日期早於結束日期的錯誤。 如果您已開啟過去 90 天中的稽核，最大日期範圍不能在開啟稽核的日期之前開始。
+    > [!TIP]
+    > 如果您使用的是 90 天的最大日期範圍，請為 **[開始日期]** 選取目前的時間。 否則，您會收到一則表示開始日期早於結束日期的錯誤。 如果您已開啟過去 90 天中的稽核，最大日期範圍不能在開啟稽核的日期之前開始。
 
-   1. **使用者**：在此方塊中按一下，然後選取要顯示搜尋結果的一或多位使用者。 結果清單會顯示您在此方塊中選取的使用者所執行的選定活動之稽核記錄項目。 若要傳回貴組織中所有使用者 (及服務帳戶) 的項目，請將此方塊保留空白。
+   2. **活動**：按一下下拉式清單以顯示您可以搜尋的活動。 使用者和系統管理員活動會歸類成各種相關活動的群組。 您可以選取特定活動，或者也可以按一下活動群組名稱以選取該群組中的所有活動。 您也可以按一下選定的活動以清除選取。 執行搜尋後，只會顯示選定活動的稽核記錄項目。 選取 **[顯示所有活動的結果]** 會顯示選定使用者或使用者群組所執行的所有活動結果。<br/><br/>稽核記錄中會記錄超過 100 個使用者和系統管理員活動。 按一下本文主題的 **[已稽核活動]** 索引標籤，可查看不同服務中各項活動的描述。
 
-   1. **檔案、資料夾或網站**：輸入整個檔案或資料夾名稱的一部分，以搜尋含有特定關鍵字之資料夾的檔案相關活動。 您也可以指定檔案或資料夾的 URL。 如果您使用 URL，請確定您輸入了完整的 URL 路徑，或者，如果您只輸入部分 URL，請不要包含任何特殊字元或空格。
+   3. **使用者**：在此方塊中按一下，然後選取要顯示搜尋結果的一或多位使用者。 結果清單會顯示您在此方塊中選取的使用者所執行的選定活動之稽核記錄項目。 若要傳回貴組織中所有使用者 (及服務帳戶) 的項目，請將此方塊保留空白。
 
-      若要傳回貴組織中所有檔案和資料夾的項目，請將此方塊保留空白。
+   4. **檔案、資料夾或網站**：輸入整個檔案或資料夾名稱的一部分，以搜尋含有特定關鍵字之資料夾的檔案相關活動。 您也可以指定檔案或資料夾的 URL。 如果您使用 URL，請確定您輸入了完整的 URL 路徑，或者，如果您只輸入部分 URL，請不要包含任何特殊字元或空格。<br/><br/>若要傳回貴組織中所有檔案和資料夾的項目，請將此方塊保留空白。
 
-      > [!TIP]
-      >
-      > - 如果您要尋找與 **網站** 相關的所有活動，在 URL 後面加入萬用字元符號 (\*) 可傳回該網站的所有項目，例如 `"https://contoso-my.sharepoint.com/personal*"`。
-      >
-      > - 如果您要尋找與 **檔案** 相關的所有活動，在檔案名稱前面加入萬用字元符號 (\*) 可傳回該檔案的所有項目，例如 `"*Customer_Profitability_Sample.csv"`。
+    > [!TIP]
+    >
+    > - 如果您要尋找與 **網站** 相關的所有活動，在 URL 後面加入萬用字元符號 (\*) 可傳回該網站的所有項目，例如 `"https://contoso-my.sharepoint.com/personal*"`。
+    >
+    > - 如果您要尋找與 **檔案** 相關的所有活動，在檔案名稱前面加入萬用字元符號 (\*) 可傳回該檔案的所有項目，例如 `"*Customer_Profitability_Sample.csv"`。
 
-5. 按一下 **[搜尋]** 以使用您的搜尋準則執行搜尋。
+4. 按一下 **[搜尋]** 以使用您的搜尋準則執行搜尋。
 
-   搜尋結果隨即載入，而它們在片刻之後會顯示於 **[結果]** 底下。 完成搜尋時，就會顯示找到的結果數量。 **[結果]** 窗格中的事件會以 150 個事件為增幅地顯示，上限為 5,000 個事件。 如果符合搜尋準則的事件超過 5,000 個，則會顯示最新的 5,000 個事件。
+   搜尋結果隨即載入，而它們在片刻之後會顯示在新的頁面上。 完成搜尋後，隨即顯示找到的結果數量。 系統會以 150 個事件為增量，最多顯示 5,000 個事件。 如果符合搜尋準則的事件超過 5,000 個，則會顯示最新的 5,000 個事件。
 
    ![搜尋完成後，會顯示結果數目。](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -626,7 +620,7 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |已新增地理位置系統管理員|GeoAdminAdded|SharePoint 或全域系統管理員已將使用者新增為某個位置的地理位置系統管理員。|
 |已允許使用者建立群組|AllowGroupCreationSet|網站系統管理員或擁有者新增權限等級至網站，以允許獲派該權限的使用者為該網站建立群組。|
 |已取消網站的地理位置移動|SiteGeoMoveCancelled|SharePoint 或全域系統管理員已成功取消 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [OneDrive 和 SharePoint Online 的多地理位置功能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。|
-|已變更共用原則|SharingPolicyChanged|SharePoint 或全域系統管理員已使用 Microsoft 365 系統管理員入口網站、SharePoint 系統管理員入口網站或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
+|已變更共用原則|SharingPolicyChanged|SharePoint 或全域管理員已使用 Microsoft 365 系統管理中心、SharePoint 系統管理中心或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
 |已變更裝置存取原則|DeviceAccessPolicyChanged|SharePoint 或全域系統管理員已變更您組織中未受控裝置的原則。 此原則可針對未加入您組織的裝置控制 SharePoint、OneDrive 及 Microsoft 365 的存取權。 設定此原則需要 Enterprise Mobility + Security 訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](/sharepoint/control-access-from-unmanaged-devices)。|
 |已變更免除使用者代理程式|CustomizeExemptUsers|SharePoint 或全域系統管理員已自訂 SharePoint 系統管理中心的免除使用者代理程式清單。您可以指定要免除哪些使用者代理程式，以免於接收整個網頁進行索引。這表示當您已指定為免除的使用者代理程式遇到 InfoPath 表單，該表單將會以 XML 檔案的形式傳回，而不是整個網頁。這樣在進行 InfoPath 表單索引時會更迅速。|
 |已變更網路存取原則|NetworkAccessPolicyChanged|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心中 (或是使用 SharePoint Online PowerShell) 變更位置存取原則 (又稱為受信任的網路邊界)。 此類原則可根據您指定的授權 IP 位址範圍，控制能存取您組織 SharePoint 和 OneDrive 資源的使用者。 如需詳細資訊，請參閱[根據網路位置控制 SharePoint Online 與 OneDrive 資料的存取權](/sharepoint/control-access-based-on-network-location)。|
@@ -868,7 +862,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 ### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate 活動
 
-您可以在 Power Automate (之前稱為 Microsoft Flow) 中搜尋活動的稽核記錄。 這些活動包括建立、編輯和刪除流程，以及變更流程權限。 如需有關 Power Automate 活動的稽核資訊，請參閱部落格：[安全性與合規性中心現在已有 Microsoft Flow 稽核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
+您可以在 Power Automate (之前稱為 Microsoft Flow) 中搜尋活動的稽核記錄。 這些活動包括建立、編輯和刪除流程，以及變更流程權限。 如需有關 Power Automate 活動的稽核資訊，請參閱部落格：[Microsoft 365 合規性中心現在已有 Microsoft Flow 稽核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
 ### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps 活動
 
@@ -1071,7 +1065,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **事件發生後多久才能使用稽核記錄？**
 
-大部分稽核資料都可在事件發生後的 30 鐘內予以使用，但對應的稽核記錄項目最多可能需要 24 小時才會顯示在搜尋結果中。 請參閱本文的[搜尋稽核記錄的要求](#requirements-to-search-the-audit-log)一節中的表格，其中顯示不同服務中事件所需的時間。
+大部分稽核資料都可在事件發生後的 30 鐘內予以使用，但對應的稽核記錄項目最多可能需要 24 小時才會顯示在搜尋結果中。 請參閱本文的[在您搜尋稽核記錄之前](#before-you-search-the-audit-log)一節中的表格，其中顯示不同服務中事件所需的時間。
 
 **稽核記錄可保留多久時間？**
 
@@ -1087,7 +1081,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **針對想擷取稽核記錄的服務，我是否要為每項服務個別啟用稽核功能？**
 
-在大部分的服務中，在您初次為貴組織啟用稽核功能之後，稽核功能就會預設為啟用 (如本文 [搜尋稽核記錄](#requirements-to-search-the-audit-log) 一節中所述)。
+在大部分的服務中，在您初次為貴組織開啟稽核功能之後，稽核功能就會預設為啟用狀態 (如本文中的[在您搜尋稽核記錄之前](#before-you-search-the-audit-log)一節中所述)。
 
 **稽核服務支援刪除重複的記錄嗎？**
 

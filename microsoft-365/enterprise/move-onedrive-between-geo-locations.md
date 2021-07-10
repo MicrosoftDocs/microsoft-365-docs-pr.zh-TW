@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 尋找將 OneDrive 網站移至不同地理位置的相關資訊，包括如何排程網站移動，以及如何將期望傳遞給使用者。
-ms.openlocfilehash: 59b3fb47fd195967e7af056c7a71fb4e736471d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9e75c8e4102f82d4ab6e0f99ea26e1c0ad8b4bab
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688231"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362243"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>將 OneDrive 網站移至不同的地理位置 
 
@@ -28,7 +28,7 @@ ms.locfileid: "46688231"
 
 OneDrive 服務使用 Azure Blob 儲存體來儲存內容。 與使用者 OneDrive 相關聯的儲存體 blob 將會從來源移至目的地地理位置 OneDrive 的40天內，以供使用者使用。 當目的地 OneDrive 可用時，就會立即還原使用者 OneDrive 的存取權。
 
-在 OneDrive 異地移動期間 (大約 2-6 小時)，使用者的 OneDrive 會設為唯讀狀態。使用者仍可以透過 OneDrive 同步處理用戶端或 SharePoint Online 中的 OneDrive 網站存取檔案。在完成 OneDrive 異地移動後，若使用者瀏覽至 Microsoft 365 應用程式啟動器中的 OneDrive，將會自動連線到位於目的地理位置的 OneDrive。同步處理用戶端將自動開始新位置的同步處理。
+在 OneDrive 地理位置移動視窗中 (大約2-6 個小時) 使用者的 OneDrive 設定為唯讀。 使用者仍可透過 SharePoint 線上中的 OneDrive 同步處理應用程式或 OneDrive 網站存取其檔案。 OneDrive 地理位置移動完成之後，當使用者流覽至 Microsoft 365 應用程式啟動器中的 OneDrive 時，會自動連線至目的地地理位置的 OneDrive。 同步處理應用程式會自動開始從新位置進行同步處理。
 
 本文所述的程序需要 [Microsoft SharePoint Online PowerShell 模組](https://www.microsoft.com/download/details.aspx?id=35588)。
 
@@ -123,8 +123,8 @@ OneDrive 服務使用 Azure Blob 儲存體來儲存內容。 與使用者 OneDri
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>狀態</strong></th>
-<th align="left"><strong>描述</strong></th>
+<th align="left">狀態</th>
+<th align="left">描述</th>
 </tr>
 </thead>
 <tbody>
@@ -161,7 +161,7 @@ OneDrive 服務使用 Azure Blob 儲存體來儲存內容。 與使用者 OneDri
 
 如果 OneDrive 移到不同的地理位置，OneDrive 使用者應注意是否有服務中斷。除了在移動期間會發生簡短的唯讀狀態，在移動完成後，現有的連結和權限會如預期般繼續運作。
 
-### <a name="onedrive-for-business"></a>商務用 OneDrive
+### <a name="users-onedrive"></a>使用者的 OneDrive
 
 進行移動時，使用者的 OneDrive 會設定為唯讀。 移動完成之後，當使用者流覽 OneDrive Microsoft 365 應用程式啟動器或網頁瀏覽器時，會將他們的 OneDrive 導向至新的地理位置。
 
@@ -169,11 +169,11 @@ OneDrive 服務使用 Azure Blob 儲存體來儲存內容。 與使用者 OneDri
 
 在移動期間和完成後，具有 OneDrive 內容許可權的使用者仍可存取內容。
 
-### <a name="onedrive-sync-client"></a>OneDrive 同步處理用戶端 
+### <a name="onedrive-sync-app"></a>OneDrive 同步處理應用程式 
 
-OneDrive 異地移動完成後，OneDrive 同步處理用戶端會自動偵測並順暢地傳輸同步處理至 OneDrive 的新位置。使用者不必重新登入或採取任何其他動作。(同步處理用戶端需要 17.3.6943.0625 版或更新的版本。)
+當 OneDrive 地理位置移動完成之後，OneDrive 同步處理應用程式會自動偵測同步處理到新的 OneDrive 位置。 使用者不需要重新登入或採取任何其他動作。  需要 (版本17.3.6943.0625 或更新的同步處理應用程式。 ) 
 
-如果使用者在進行 OneDrive 異地移動時更新檔案，同步處理用戶端會告知使用者，進行異地移動時上傳的檔案會擱置。
+如果使用者在 OneDrive 地理位置移動時更新檔案，同步處理應用程式會在移動進行時通知他們檔案上傳已擱置。
 
 ### <a name="sharing-links"></a>共用連結 
 
@@ -193,7 +193,7 @@ OneDrive 異地移動完成後，OneNote win32 用戶端和 UWP (通用) 應用�
 
 OneDrive 異地移動完成後，使用者可以在 Teams 應用程式上存取其 OneDrive 檔案。此外，在異地移動之前從 OneDrive 透過 Teams 交談共用的檔案，在移動完成後將會繼續運作。
 
-### <a name="onedrive-for-business-mobile-app-ios"></a>商務用 OneDrive 行動應用程式 (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive行動裝置 App (iOS)  
 
 在 OneDrive 異地移動完成後，使用者必須在 iOS 行動應用程式上登出並重新登入，以同步處理到 OneDrive 的新位置。
 

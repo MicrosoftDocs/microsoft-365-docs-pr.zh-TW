@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877833"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363976"
 ---
 # <a name="device-control-for-macos"></a>macOS 的裝置控制項
 
@@ -35,38 +35,14 @@ ms.locfileid: "52877833"
 
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## <a name="requirements"></a>需求
 
 MacOS 的裝置控制具有下列必要條件：
 
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint 的授權 (可以是試驗) 
-> - 最低作業系統版本： macOS 10.15.4 或更高版本
-> - 產品版本下限：101.24.59
-> - 您的裝置必須以系統擴充的方式執行 (此為 macOS 11 大 Sur) 上的預設值。 
-> 
->   您可以執行下列命令，檢查您的裝置是否正在系統擴充裝置上執行，並確認是否已列印 `endpoint_security_extension` 至主控台： 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - 您的裝置必須位於 `Beta` 先前稱為 `InsiderFast`) Microsoft AutoUpdate 更新通道的 (。 如需詳細資訊，請參閱 [在 Mac 上部署 Microsoft Defender For Endpoint 的更新](mac-updates.md)。
-> 
->   您可以使用下列命令來檢查更新通道： 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    如果上述命令沒有列印 `Beta` 或 `InsiderFast` ，請從終端執行下列命令。 通道更新會在下次產品開始 (時，或在重新開機裝置) 時生效。 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    或者，如果您在受管理的環境 (JAMF 或 Intune) 中，您可以從遠端設定更新通道。 如需詳細資訊，請參閱 [在 Mac 上部署 Microsoft Defender For Endpoint 的更新](mac-updates.md)。 
+> - 作業系統最低版本： macOS 11 或更高版本
+> - 產品版本下限：101.34.20
 
 ## <a name="device-control-policy"></a>裝置控制項原則
 
@@ -79,7 +55,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | deviceControl |
+| **Key** | deviceControl |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -99,7 +75,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | navigationTarget |
+| **Key** | navigationTarget |
 | **資料類型** | 字串 |
 | **Comments** | 若未定義，產品會使用指向一般頁面的預設 URL，以說明產品所採取的動作。 |
 
@@ -113,7 +89,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -143,10 +119,13 @@ MacOS 的裝置控制具有下列必要條件：
 - `audit` -如果限制存取裝置，則會向使用者顯示通知，但仍然可以使用該裝置。 此強制等級可用於評估原則的效能。
 - `block` -在此強制性層級下，使用者可以在裝置上執行的作業，會限制在原則中定義的專案。 此外，會對使用者提出通知。 
 
+> [!NOTE] 
+> 根據預設，強制性層級設為 `audit` 。 
+
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **資料類型** | 字串 |
 | **可能值** | 審核 (預設)  <br/> 塊 |
 
@@ -171,7 +150,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | 許可 |
+| **Key** | 許可 |
 | **資料類型** | 字串陣列 |
 | **可能值** | 無 <br/> 讀 <br/> 寫 <br/> 執行 |
 
@@ -186,7 +165,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | 供應商 |
+| **Key** | 供應商 |
 | **資料類型** | 字典 (嵌套偏好)  |
 
 針對每個廠商，您可以為該廠商的裝置指定所需的許可權等級。
@@ -194,7 +173,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | 許可 |
+| **Key** | 許可 |
 | **資料類型** | 字串陣列 |
 | **可能值** | 與[預設許可權等級](#default-permission-level)相同 |
 
@@ -203,7 +182,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | 產品 |
+| **Key** | 產品 |
 | **資料類型** | 字典 (嵌套偏好)  |
 
 針對每個產品，您可以指定該產品所需的許可權等級。
@@ -211,7 +190,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | 許可 |
+| **Key** | 許可 |
 | **資料類型** | 字串陣列 |
 | **可能值** | 與[預設許可權等級](#default-permission-level)相同 |
 
@@ -222,7 +201,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | serialNumbers |
+| **Key** | serialNumbers |
 | **資料類型** | 字典 (嵌套偏好)  |
 
 針對每個序數，您可以指定所需的許可權等級。
@@ -230,7 +209,7 @@ MacOS 的裝置控制具有下列必要條件：
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **機碼** | 許可 |
+| **Key** | 許可 |
 | **資料類型** | 字串陣列 |
 | **可能值** | 與[預設許可權等級](#default-permission-level)相同 |
 

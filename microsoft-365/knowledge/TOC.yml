@@ -48,3 +48,5 @@
   items:
     - name: 主導性采用採用快速入門
       href: topics-adoption-getstarted.md
+    - name: 執行試用版
+      href: trial-topics.md

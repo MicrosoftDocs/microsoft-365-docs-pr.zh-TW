@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 瞭解如何設定多地理位置環境中的搜尋。 在多地理位置環境中，只有部分用戶端（例如商務用 OneDrive）可以傳回結果。
-ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+description: 瞭解如何設定多地理位置環境中的搜尋。 在多地理位置環境中，只有部分用戶端（例如 OneDrive）可以傳回結果。
+ms.openlocfilehash: dfc9e3dd986132810f363ba47ba18eae45666fc7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022327"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362267"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>設定 Microsoft 365 多地理位置的搜尋
 
@@ -30,13 +30,13 @@ ms.locfileid: "53022327"
 
 這些用戶端可以從所有地理位置傳回結果：
 
-- 商務用 OneDrive
+- OneDrive
 - Delve
 - SharePoint 首頁
 - 搜尋中心
 - 使用 SharePoint 搜尋 API 的自訂搜尋應用程式
 
-### <a name="onedrive-for-business"></a>商務用 OneDrive
+### <a name="onedrive"></a>OneDrive
 
 多地理位置環境一設定好之後，在 OneDrive 中搜尋的使用者就會取得來自所有地理位置的結果。
 
@@ -65,9 +65,9 @@ Delve 摘要和設定檔卡只會顯示在中央位置中儲存之檔案的預�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>功能</strong></th>
-<th align="left"><strong>運作方式</strong></th>
-<th align="left"><strong>因應措施</strong></th>
+<th align="left">功能</th>
+<th align="left">運作方式</th>
+<th align="left">因應措施</th>
 </tr>
 </thead>
 <tbody>
@@ -111,8 +111,8 @@ Delve 摘要和設定檔卡只會顯示在中央位置中儲存之檔案的預�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>搜尋功能</strong></th>
-<th align="left"><strong>附註</strong></th>
+<th align="left">搜尋功能</th>
+<th align="left">附註</th>
 </tr>
 </thead>
 <tbody>
@@ -121,8 +121,8 @@ Delve 摘要和設定檔卡只會顯示在中央位置中儲存之檔案的預�
 <td align="left">在多地理位置搜尋中不支援僅 App 驗證 (來自服務的特殊權限存取)。</td>
 </tr>
 <tr class="even">
-<td align="left">來賓使用者</td>
-<td align="left">來賓使用者只能取得他們在其中搜尋之地理位置的結果。</td>
+<td align="left">客人</td>
+<td align="left">客人只會從所搜尋的地理位置取得結果。</td>
 </tr>
 </tbody>
 </table>
@@ -253,18 +253,22 @@ MultiGeoSearchStatus – 這是 SharePoint 搜尋 API 在回應中傳回至要�
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>已展開傳送至 **所有** 地理位置的範例 GET 要求
 
-HTTPs:// \<tenant\> / \_ api/search/query？ querytext = "sharepoint" &屬性 = "EnableMultiGeoSearch:true" &ClientType = "my \_ client \_ id"
+```http
+https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+```
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>要展開傳送至 **部分** 地理位置的範例 GET 要求
 
-HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = ' my_client_id ' &property = ' EnableMultiGeoSearch:true，MultiGeoSearchConfiguration： [{DataLocation \\ ： "名稱" \\ ，端點 \\ ： "HTTPs： \\ //contosoNAM.sharepoint.com"，"！ \\ \\ \\ \\ \\ \\ ：" HTTPs： "HTTPs： \\ //DataLocation"}] '
+```http
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+```
 
 > [!NOTE]
 > MultiGeoSearchConfiguration 屬性地理位置清單中的逗號和冒號，其前面會加上 **反斜線** 字元。 這是因為 GET 要求會使用冒號來分隔屬性，以及使用逗號來分隔屬性的引數。 若未使用反斜線做為逸出字元，將會錯誤地解譯 MultiGeoSearchConfiguration 屬性。
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>已展開傳送至 **所有** 地理位置的範例 POST 要求
 
-```text
+```http
     {
     "request": {
             "__metadata": {
@@ -289,7 +293,7 @@ HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = 
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>已展開傳送至 **部分** 地理位置的範例 POST 要求
 
-```text
+```http
     {
         "request": {
             "Querytext": "SharePoint",
@@ -320,7 +324,7 @@ HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = 
 
 此為已展開傳送至 **所有** 地理位置的範例 CSOM 查詢：
 
-```text
+```CSOM
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;

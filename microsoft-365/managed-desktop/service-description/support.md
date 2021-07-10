@@ -1,5 +1,5 @@
 ---
-title: Microsoft 受管理的電腦的支援
+title: 管理員支援
 description: 說明 Microsoft 受管理的電腦的主動式和反應性事件管理。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925500"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362471"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的支援
+# <a name="admin-support"></a>管理員支援
 
 Microsoft 會提供主動和反應性的事件管理。 Microsoft 在 Microsoft 受管理的電腦管理入口網站追蹤事件。 它們會根據 [嚴重性定義](../working-with-managed-desktop/admin-support.md#sev)進行分類。
 
@@ -38,7 +38,7 @@ Microsoft 受管理的電腦支援包括：
 - 使用 Microsoft Defender for Endpoint Windows 10
 - Microsoft 365 Apps 企業版應用程式： Outlook、Word、PowerPoint、Excel、商務用 Skype 用戶端、Microsoft Teams 
 - 商務用 Microsoft Store 
-- 商務用 OneDrive 用戶端 
+- OneDrive 用戶端 
 
 支援詳細資料：
 
