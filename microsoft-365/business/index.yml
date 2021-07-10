@@ -27,10 +27,10 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: Microsoft 365 商務進階版中現已提供防毒管理和通用列印。
       url: 'https://aka.ms/M365BPQ1Update'
-    - title: 加入合作夥伴網路研討會系列
+    - title: 於 7 月 28 日加入 Microsoft 365 Lighthouse 合作夥伴網路研討會
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 透過 Microsoft 365 商務進階版的受管服務加速企業成長。
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: 使用 Microsoft 365 Lighthouse 保護 Microsoft 365 商務進階版客戶並進行標準化。
+      url: 'https://aka.ms/m365lighthousewebinar'
 conceptualContent:
   items:
     - title: 什麼是 Microsoft 365 商務進階版？

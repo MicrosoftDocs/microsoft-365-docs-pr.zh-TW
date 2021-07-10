@@ -9,69 +9,67 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 2eea02b0a891f65ccd7e4e993ca719b0f3aa1b8b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841360"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362603"
 ---
-# <a name="getting-help-for-users"></a><span data-ttu-id="033e1-104">為使用者取得協助</span><span class="sxs-lookup"><span data-stu-id="033e1-104">Getting help for users</span></span>
+# <a name="getting-help-for-users"></a><span data-ttu-id="7a7a8-104">為使用者取得協助</span><span class="sxs-lookup"><span data-stu-id="7a7a8-104">Getting help for users</span></span>
 
-<span data-ttu-id="033e1-105">組織中的使用者可以使用下列兩種方式取得 Microsoft 受管理的電腦裝置的協助：**取得協助** 應用程式或電話支援。</span><span class="sxs-lookup"><span data-stu-id="033e1-105">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="033e1-106">這兩種支援選項均可供使用者在一周7天、一天24小時。</span><span class="sxs-lookup"><span data-stu-id="033e1-106">Both of these support options are available to users 24 hours a day, 7 days a week.</span></span>
+<span data-ttu-id="7a7a8-105">如果您已到達 [工作流程](../service-description/user-support.md) 中需要要求提升裝置存取或升級至 Microsoft 的點，請執行下列步驟：</span><span class="sxs-lookup"><span data-stu-id="7a7a8-105">If you've reached the point in the [workflow](../service-description/user-support.md) where you need to request elevated device access or escalation to Microsoft, follow these steps:</span></span>
  
 >[!NOTE]
-><span data-ttu-id="033e1-107">這些支援選項不適用於測試群組中的裝置。</span><span class="sxs-lookup"><span data-stu-id="033e1-107">These support options are not available for devices in the Test group.</span></span>
+><span data-ttu-id="7a7a8-106">這些支援選項不適用於測試群組中的裝置。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-106">These support options are not available for devices in the Test group.</span></span>
 
-## <a name="get-help-app"></a><span data-ttu-id="033e1-108">取得協助應用程式</span><span class="sxs-lookup"><span data-stu-id="033e1-108">Get Help app</span></span>
+## <a name="elevation-requests"></a><span data-ttu-id="7a7a8-107">提升要求</span><span class="sxs-lookup"><span data-stu-id="7a7a8-107">Elevation requests</span></span>
 
-<span data-ttu-id="033e1-109">為使用者提供支援的慣用方法是 **取得協助**，該使用者裝置內建便於使用的介面。</span><span class="sxs-lookup"><span data-stu-id="033e1-109">The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the user device.</span></span>  
+<span data-ttu-id="7a7a8-108">在您要求更高的裝置存取權之前，最好先檢查哪些動作最適合。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-108">Before you request elevated access to a device, it's best to review which actions are best suited.</span></span>
 
-![取得協助應用程式圖示](../../media/get-help.png)
+- <span data-ttu-id="7a7a8-109">**一般動作** 為此程式的目的，在疑難排解 Microsoft 受管理的電腦裝置的問題時，會進行定期執行。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-109">**Typical actions** are what this process is intended for and would be performed routinely while troubleshooting problems with Microsoft Managed Desktop devices.</span></span> <span data-ttu-id="7a7a8-110">範例包含：</span><span class="sxs-lookup"><span data-stu-id="7a7a8-110">Examples include:</span></span>
+    - <span data-ttu-id="7a7a8-111">提升內建的系統疑難排解程式、命令提示字元，或 Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="7a7a8-111">Elevating built-in system troubleshooters, the command prompt, or Windows PowerShell</span></span>
+    - <span data-ttu-id="7a7a8-112">疑難排解商務營運應用程式</span><span class="sxs-lookup"><span data-stu-id="7a7a8-112">Troubleshooting line-of-business applications</span></span>
+    - <span data-ttu-id="7a7a8-113">使用變通辦法修正應該在設計 (運作的專案，例如 BitLocker 啟用或系統時間未更新) </span><span class="sxs-lookup"><span data-stu-id="7a7a8-113">Using a workaround to correct something that should function by design (such as BitLocker activation or system time not updating)</span></span>
+    - <span data-ttu-id="7a7a8-114">提升裝置管理員執行的工作如更新驅動程式、卸載裝置或掃描新的變更</span><span class="sxs-lookup"><span data-stu-id="7a7a8-114">Elevating Device Manager to do things like update drivers, uninstall a device, or scan for new changes</span></span>
 
-<span data-ttu-id="033e1-111">取得協助是安裝在所有 Microsoft 受管理的電腦裝置上的應用程式，且會釘住至任務列。</span><span class="sxs-lookup"><span data-stu-id="033e1-111">Get Help is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
+- <span data-ttu-id="7a7a8-115">**不建議採取的動作** 包括下列各項：</span><span class="sxs-lookup"><span data-stu-id="7a7a8-115">**Actions that aren't recommended** include the following:</span></span>
+    - <span data-ttu-id="7a7a8-116">安裝軟體或瀏覽器</span><span class="sxs-lookup"><span data-stu-id="7a7a8-116">Installing software or browsers</span></span>
+    - <span data-ttu-id="7a7a8-117">在 Windows 設定外安裝驅動程式（包括週邊設備的驅動程式）</span><span class="sxs-lookup"><span data-stu-id="7a7a8-117">Installing drivers outside of Windows settings, including those for peripherals</span></span>
+    - <span data-ttu-id="7a7a8-118">安裝 .msi 或 .exe 檔</span><span class="sxs-lookup"><span data-stu-id="7a7a8-118">Installing .msi or .exe files</span></span>
+    - <span data-ttu-id="7a7a8-119">安裝 Windows 功能</span><span class="sxs-lookup"><span data-stu-id="7a7a8-119">Installing Windows features</span></span>
 
-- <span data-ttu-id="033e1-112">使用者可以要求提供的電話號碼的回撥，或與服務代表線上交談。</span><span class="sxs-lookup"><span data-stu-id="033e1-112">Users can request a callback to a provided phone number, or chat online with a service rep.</span></span>
-- <span data-ttu-id="033e1-113">在 Microsoft 受管理的電腦支援範圍外的要求會透過電話重新導向至本機的 IT 服務台。</span><span class="sxs-lookup"><span data-stu-id="033e1-113">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>
+- <span data-ttu-id="7a7a8-120">**不支援的動作** 包括下列各項：</span><span class="sxs-lookup"><span data-stu-id="7a7a8-120">**Actions that aren't supported** include the following:</span></span>
+    - <span data-ttu-id="7a7a8-121">安裝與 Microsoft 受管理的電腦安全性或管理功能或作業相衝突的軟體或功能</span><span class="sxs-lookup"><span data-stu-id="7a7a8-121">Installing software or features that conflict with Microsoft Managed Desktop security or management capabilities or operations</span></span>
+    - <span data-ttu-id="7a7a8-122">停用 Microsoft 受管理的電腦所需的 Windows 功能，例如 BitLocker</span><span class="sxs-lookup"><span data-stu-id="7a7a8-122">Disabling a Windows feature that is required for Microsoft Managed Desktop, such as BitLocker</span></span>
+    - <span data-ttu-id="7a7a8-123">修改組織所管理的設定</span><span class="sxs-lookup"><span data-stu-id="7a7a8-123">Modifying settings managed by your org</span></span>
+
+### <a name="to-request-elevation"></a><span data-ttu-id="7a7a8-124">要求提升</span><span class="sxs-lookup"><span data-stu-id="7a7a8-124">To request elevation</span></span>
+
+1. <span data-ttu-id="7a7a8-125">移至入口網站 [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) ，並以您的 Azure Active Directory 認證登入。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-125">Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.</span></span>
+2. <span data-ttu-id="7a7a8-126">選取 [ **新增提升要求**]。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-126">Select **New elevation request**.</span></span>
+3. <span data-ttu-id="7a7a8-127">提供這些詳細資料：</span><span class="sxs-lookup"><span data-stu-id="7a7a8-127">Provide these details:</span></span>
+    - <span data-ttu-id="7a7a8-128">支援來自您自己支援票證系統的 **票證識別碼**。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-128">**Support ticket ID** from your own support ticketing system.</span></span>
+    - <span data-ttu-id="7a7a8-129">**裝置名稱**：輸入裝置序號，然後從功能表中選取裝置。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-129">**Device name**: enter the device serial number and then select the device from the menu.</span></span>
+    - <span data-ttu-id="7a7a8-130">**類別**：選取最符合您問題的類別。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-130">**Category**: Select the category that best fits your issue.</span></span> <span data-ttu-id="7a7a8-131">如果 [沒有] 選項似乎是關閉的，請選取 [ **其他** ]，並在 [動作] 欄位的 **標題** 和 **方案** 中提供其他資訊。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-131">If no option seems close, then select **Other** and provide more info in the **Title** and **Plan of action** fields.</span></span> <span data-ttu-id="7a7a8-132">您最好盡可能選取類別。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-132">It's best to select a category if at all possible.</span></span>
+    - <span data-ttu-id="7a7a8-133">**子類別**：選取最符合問題的一種。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-133">**Subcategory**: Select the one that best fits the issue.</span></span> <span data-ttu-id="7a7a8-134">如果沒有任何選項似乎是關閉的，請選取 [ **其他** ]，並在 **標題** 中提供簡短的描述。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-134">If no option seems close, then select **Other** and provide a short description in **Title**.</span></span> <span data-ttu-id="7a7a8-135">在 [ **行動計畫**] 中，提供您計畫在授與後採取的疑難排解步驟。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-135">In **Plan of action**, provide the troubleshooting steps you plan to take once elevation is granted.</span></span>
+4. <span data-ttu-id="7a7a8-136">選取 **[提交]**。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-136">Select **Submit**.</span></span>
+
+
+## <a name="escalation-requests"></a><span data-ttu-id="7a7a8-137">上報要求</span><span class="sxs-lookup"><span data-stu-id="7a7a8-137">Escalation requests</span></span>
+
+
+<span data-ttu-id="7a7a8-138">如果您需要將問題 [提升](../service-description/user-support.md#escalation-portal) 至 Microsoft，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="7a7a8-138">If you need to [escalate](../service-description/user-support.md#escalation-portal) an issue to Microsoft, follow these steps:</span></span>
+
+1. <span data-ttu-id="7a7a8-139">移至入口網站 [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) ，並以您的 Azure Active Directory 認證登入。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-139">Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.</span></span>
+2. <span data-ttu-id="7a7a8-140">選取 [ **呈報要求**]，然後選取 [ **新增呈報要求**]。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-140">Select **Escalation requests**, and then select **New escalation request**.</span></span>
+3. <span data-ttu-id="7a7a8-141">提供這些詳細資料：</span><span class="sxs-lookup"><span data-stu-id="7a7a8-141">Provide these details:</span></span>
+    - <span data-ttu-id="7a7a8-142">**類別**：選取最符合您問題的類別。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-142">**Category**: Select the category that best fits your issue.</span></span>
+    - <span data-ttu-id="7a7a8-143">**Title**：提供非常簡短的描述。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-143">**Title**: Provide a very brief description.</span></span>
+    - <span data-ttu-id="7a7a8-144">**描述**：新增可協助我們小組瞭解問題的其他詳細資料。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-144">**Description**: Add any additional details that could help our team understand the problem.</span></span> <span data-ttu-id="7a7a8-145">如果您需要附加檔案，您可以在提交要求後回到要求。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-145">If you need to attach files, you can do that by coming back to the request after you submit it.</span></span>
+    - <span data-ttu-id="7a7a8-146">**主要連絡人資訊**：提供如何聯繫主要人員，以與我們的小組合作的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-146">**Primary contact information**: Provide info about how to contact the main person responsible for working with our team.</span></span>
+4. <span data-ttu-id="7a7a8-147">選取 **[提交]**。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-147">Select **Submit**.</span></span>
+5. <span data-ttu-id="7a7a8-148">重新訪問相同入口網站中的票證，以與我們的小組互動。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-148">Revisit the ticket in the same portal to interact with our team.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="033e1-114">取得協助應用程式的顯示語言只是英文，即使使用者在設定其裝置或裝置設定時選取了不同的語言。</span><span class="sxs-lookup"><span data-stu-id="033e1-114">The display language for the Get Help app is English only, even if a user has selected a different language when setting up their device or in device settings.</span></span> 
-
-### <a name="prerequisites"></a><span data-ttu-id="033e1-115">必要條件</span><span class="sxs-lookup"><span data-stu-id="033e1-115">Prerequisites</span></span>
-<span data-ttu-id="033e1-116">為了讓您的使用者能夠透過應用程式取得協助，請確定符合下列必要條件：</span><span class="sxs-lookup"><span data-stu-id="033e1-116">For your users to be able to get help through the app, make sure these prerequisites are met:</span></span>
-
-- <span data-ttu-id="033e1-117">裝置必須使用[設定 Microsoft 受管理的電腦裝置](../get-started/set-up-devices.md)中的其中一種方法來 Microsoft 受管理的電腦註冊，例如[自行註冊新裝置](../get-started/register-devices-self.md)。</span><span class="sxs-lookup"><span data-stu-id="033e1-117">The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).</span></span>
-- <span data-ttu-id="033e1-118">裝置的顯示語言必須設定為下列任何一種英文語言地區設定： en-us、en、en、en 或 en-ca。</span><span class="sxs-lookup"><span data-stu-id="033e1-118">The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.</span></span>
-- <span data-ttu-id="033e1-119">取得協助應用程式應該是最新的。</span><span class="sxs-lookup"><span data-stu-id="033e1-119">The Get Help app should be up to date.</span></span> <span data-ttu-id="033e1-120">若要確認其狀態，請檢查 Microsoft Store 中的應用程式更新。</span><span class="sxs-lookup"><span data-stu-id="033e1-120">To confirm its status, check for app updates in the Microsoft Store.</span></span>
-- <span data-ttu-id="033e1-121">必須可從裝置存取特定 [端點](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) 。</span><span class="sxs-lookup"><span data-stu-id="033e1-121">Certain [endpoints](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) must be accessible from the device.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="033e1-122">在部署裝置以完全運作後，取得協助應用程式最多可能需要一小時。</span><span class="sxs-lookup"><span data-stu-id="033e1-122">The Get Help app can take up to one hour after a device is deployed to fully function.</span></span>
-
-<span data-ttu-id="033e1-123">如果您已檢查這些必要條件，但取得協助應用程式仍無法運作，您的 IT 系統管理員應該會將[支援要求](admin-support.md)歸檔。</span><span class="sxs-lookup"><span data-stu-id="033e1-123">If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).</span></span>
-
-## <a name="phone-support"></a><span data-ttu-id="033e1-124">電話支援</span><span class="sxs-lookup"><span data-stu-id="033e1-124">Phone support</span></span>
-
-<span data-ttu-id="033e1-125">具有 Microsoft 受管理的電腦裝置的使用者也可以存取他們可以撥打的免付費電話號碼。</span><span class="sxs-lookup"><span data-stu-id="033e1-125">Users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="033e1-126">當取得協助無法使用時，應使用這些數位。</span><span class="sxs-lookup"><span data-stu-id="033e1-126">The numbers are meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="033e1-127">例如，如果他們無法登入裝置，或裝置遭到中斷。</span><span class="sxs-lookup"><span data-stu-id="033e1-127">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="033e1-128">以下是電話支援電話號碼：</span><span class="sxs-lookup"><span data-stu-id="033e1-128">Here are the phone numbers for phone support:</span></span>
-
-- <span data-ttu-id="033e1-129">美國： + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="033e1-129">United States: +1 855 425 0216</span></span>
-- <span data-ttu-id="033e1-130">加拿大 (（魁北克）) ： + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="033e1-130">Canada (excluding Quebec): +1 855 425 0216</span></span>
-- <span data-ttu-id="033e1-131">英國： + 44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="033e1-131">United Kingdom: +44 800 026 0698</span></span>
-- <span data-ttu-id="033e1-132">比利時： + 32 800 58533</span><span class="sxs-lookup"><span data-stu-id="033e1-132">Belgium: +32 800 58533</span></span>
-- <span data-ttu-id="033e1-133">盧森堡： + 352 800 40119</span><span class="sxs-lookup"><span data-stu-id="033e1-133">Luxembourg: +352 800 40119</span></span>
-- <span data-ttu-id="033e1-134">澳大利亞： + 61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="033e1-134">Australia: +61 180 037 0619</span></span>
-- <span data-ttu-id="033e1-135">紐西蘭： + 64 988 44380</span><span class="sxs-lookup"><span data-stu-id="033e1-135">New Zealand: +64 988 44380</span></span>
-- <span data-ttu-id="033e1-136">瑞典： + 46 20 120 3554</span><span class="sxs-lookup"><span data-stu-id="033e1-136">Sweden: +46 20 120 3554</span></span>
-- <span data-ttu-id="033e1-137">挪威： + 47 800 62584</span><span class="sxs-lookup"><span data-stu-id="033e1-137">Norway: +47 800 62584</span></span>
-- <span data-ttu-id="033e1-138">冰島： + 354 800 9006</span><span class="sxs-lookup"><span data-stu-id="033e1-138">Iceland: +354 800 9006</span></span>
-- <span data-ttu-id="033e1-139">愛爾蘭： + 353 1 800 832272</span><span class="sxs-lookup"><span data-stu-id="033e1-139">Ireland: +353 1 800 832272</span></span>
-- <span data-ttu-id="033e1-140">丹麥： + 45 80 40 04 01</span><span class="sxs-lookup"><span data-stu-id="033e1-140">Denmark: +45 80 40 04 01</span></span>
-- <span data-ttu-id="033e1-141">芬蘭： + 358 800 525088</span><span class="sxs-lookup"><span data-stu-id="033e1-141">Finland: +358 800 525088</span></span>
-
->[!NOTE]
-><span data-ttu-id="033e1-142">當您呼叫以驗證身分識別時，您必須準備好組織的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="033e1-142">You'll need to have your organizational email address ready when you call to verify your identity.</span></span> 
-
-## <a name="more-resources"></a><span data-ttu-id="033e1-143">其他資源</span><span class="sxs-lookup"><span data-stu-id="033e1-143">More resources</span></span>
-- <span data-ttu-id="033e1-144">[Microsoft 受管理的電腦的系統管理員支援](admin-support.md)。</span><span class="sxs-lookup"><span data-stu-id="033e1-144">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
-- <span data-ttu-id="033e1-145">[Microsoft 受管理的電腦的支援](../service-description/support.md)。</span><span class="sxs-lookup"><span data-stu-id="033e1-145">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
-- <span data-ttu-id="033e1-146">如果您已訂閱 Microsoft 受管理的電腦，您可以在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的 **承租人管理** 功能表之 Microsoft 受管理的電腦區段 **的 [Microsoft 受管理的電腦** 管理指南] 中，找到詳細程式、處理流程、工作指示及 FAQs。</span><span class="sxs-lookup"><span data-stu-id="033e1-146">If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** under the Microsoft Managed Desktop section of the **Tenant administration** menu in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).</span></span>
+> <span data-ttu-id="7a7a8-149">只有嚴重的 C 問題可透過此路徑上報。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-149">Only Severity C issues can be escalated through this path.</span></span> <span data-ttu-id="7a7a8-150">如需其他問題，請與您的 IT 系統管理員聯繫以透過管理入口網站來歸檔要求。</span><span class="sxs-lookup"><span data-stu-id="7a7a8-150">For other issues, contact your IT admin to file the request through the Admin portal.</span></span>
