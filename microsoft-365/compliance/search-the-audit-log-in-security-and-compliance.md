@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合規性中心來搜尋整合的稽核記錄，以檢視組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363952"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341649"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -620,7 +620,7 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |已新增地理位置系統管理員|GeoAdminAdded|SharePoint 或全域系統管理員已將使用者新增為某個位置的地理位置系統管理員。|
 |已允許使用者建立群組|AllowGroupCreationSet|網站系統管理員或擁有者新增權限等級至網站，以允許獲派該權限的使用者為該網站建立群組。|
 |已取消網站的地理位置移動|SiteGeoMoveCancelled|SharePoint 或全域系統管理員已成功取消 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [OneDrive 和 SharePoint Online 的多地理位置功能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。|
-|已變更共用原則|SharingPolicyChanged|SharePoint 或全域管理員已使用 Microsoft 365 系統管理中心、SharePoint 系統管理中心或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
+|已變更共用原則|SharingPolicyChanged|SharePoint 或全域系統管理員已使用 Microsoft 365 系統管理員入口網站、SharePoint 系統管理員入口網站或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
 |已變更裝置存取原則|DeviceAccessPolicyChanged|SharePoint 或全域系統管理員已變更您組織中未受控裝置的原則。 此原則可針對未加入您組織的裝置控制 SharePoint、OneDrive 及 Microsoft 365 的存取權。 設定此原則需要 Enterprise Mobility + Security 訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](/sharepoint/control-access-from-unmanaged-devices)。|
 |已變更免除使用者代理程式|CustomizeExemptUsers|SharePoint 或全域系統管理員已自訂 SharePoint 系統管理中心的免除使用者代理程式清單。您可以指定要免除哪些使用者代理程式，以免於接收整個網頁進行索引。這表示當您已指定為免除的使用者代理程式遇到 InfoPath 表單，該表單將會以 XML 檔案的形式傳回，而不是整個網頁。這樣在進行 InfoPath 表單索引時會更迅速。|
 |已變更網路存取原則|NetworkAccessPolicyChanged|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心中 (或是使用 SharePoint Online PowerShell) 變更位置存取原則 (又稱為受信任的網路邊界)。 此類原則可根據您指定的授權 IP 位址範圍，控制能存取您組織 SharePoint 和 OneDrive 資源的使用者。 如需詳細資訊，請參閱[根據網路位置控制 SharePoint Online 與 OneDrive 資料的存取權](/sharepoint/control-access-based-on-network-location)。|

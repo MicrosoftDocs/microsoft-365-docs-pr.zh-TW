@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8cb1b30da84ece597235d8eef674a12208ab6456
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362647"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363764"
 ---
 # <a name="user-support"></a>使用者支援
 
@@ -83,7 +83,7 @@ ms.locfileid: "53362647"
 
 ### <a name="elevation-portal"></a>提升入口網站 
 
-由於預設會在標準使用者上執行 Microsoft 受管理的電腦裝置，因此某些工作需要提升許可權。  (如需使用者帳戶控制的詳細資訊，請參閱 [user account control](/windows/security/identity-protection/user-account-control/user-account-control-overview)) 為了讓支援人員能夠在疑難排解使用者的問題時 [執行](../working-with-managed-desktop/end-user-support.md#elevation-requests) 工作，我們提供「即時」存取系統管理員帳戶。 此密碼只會安全地以您指定的方式存取，並每隔幾小時就會旋轉。  
+由於預設會在標準使用者上執行 Microsoft 受管理的電腦裝置，因此某些工作需要提升許可權。 如需使用者帳戶控制的詳細資訊，請參閱 [user account control](/windows/security/identity-protection/user-account-control/user-account-control-overview)。 為了讓支援人員能夠在疑難排解使用者的問題時 [執行](../working-with-managed-desktop/end-user-support.md#elevation-requests) 工作，我們提供「即時」的系統管理員帳戶存取權。 此密碼只會安全地以您指定的方式存取，並每隔幾小時就會旋轉。  
 
 如需如何設定使用者存取此入口網站的步驟，請參閱 [Enable user support features](../get-started/enable-support.md)。
 

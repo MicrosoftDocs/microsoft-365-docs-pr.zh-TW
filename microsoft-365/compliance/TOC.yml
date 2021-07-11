@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: 商務用 Skype
+            - name: 商務用 Skype (預覽)
               href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS 和語音網路封存工具
               href: archive-o2-network-data.md
-            - name: 訊號封存工具
+            - name: Signal (預覽)
               href: archive-signal-archiver-data.md
-            - name: Telegram 封存工具
+            - name: Telegram (預覽)
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md

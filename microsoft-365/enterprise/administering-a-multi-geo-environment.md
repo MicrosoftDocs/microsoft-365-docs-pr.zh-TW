@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 系統管理員可以瞭解如何在多地理位置環境中管理 SharePoint 和 OneDrive 服務。
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362315"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363940"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置環境
 
@@ -72,15 +72,15 @@ BCS、Secure Store 及應用程式在每個衛星位置中都有個別的執行�
 
 ## <a name="sharing"></a>共用
 
-系統管理員可以設定並管理每個位置的共用原則。 每個地理位置中的 OneDrive 和 SharePoint 網站只會遵守對應的地理位置特定的共用設定。 (例如，您可以允許在中央位置[外部共用](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能在衛星位置外部共用，反之亦然。) 請注意，共用設定不允許在地理位置之間設定共用限制。
+系統管理員可以設定並管理每個位置的共用原則。 每個地理位置的 OneDrive 和 SharePoint 網站，只會服從對應的地理位置專用共用設定。 (例如，您可以允許在中央位置[外部共用](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能在衛星位置外部共用，反之亦然。) 請注意，共用設定不允許在地理位置之間設定共用限制。
 
 ## <a name="stream"></a>Stream
 
-上傳至資料流程的影片會儲存在上載人員的 OneDrive。 會議錄製會儲存在每個記錄會議的出席者的 OneDrive 中。
+在1:1 聊天中上傳至資料流程的影片會儲存在上載人員的 OneDrive 中。 會議錄製會儲存在每個記錄會議的出席者的 OneDrive 中。
 
 ## <a name="taxonomy"></a>分類
 
-我們使用您公司中央位置主控的主機，針對不同地理位置的企業管理中繼資料，支援統一的[分類法](/sharepoint/managed-metadata)。 我們建議您從中央位置管理全域分類法，並只將特定位置的詞彙增到衛星位置的分類法。 全域分類法詞彙將同步到衛星位置。
+我們支援跨地理位置的企業管理中繼資料的整合式 [分類法](/sharepoint/managed-metadata) ，主要主控于您公司的中央位置。 我們建議您從中央位置管理全域分類法，並只將特定位置的詞彙增到衛星位置的分類法。 全域分類法詞彙將同步到衛星位置。
 
 如需詳細資訊與開發人員指導方針，請參閱[管理多地理位置租用戶中的中繼資料](/sharepoint/dev/solution-guidance/multigeo-managedmetadata)。
 
