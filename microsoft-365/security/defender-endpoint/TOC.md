@@ -174,6 +174,7 @@
 #### [一般]()
 ##### [確認資料儲存位置並更新資料保留設定](data-retention-settings.md)
 ##### [設定警示通知](configure-email-notifications.md)
+##### [設定弱點電子郵件通知](configure-vulnerability-email-notifications.md)
 ##### [設定進階功能](advanced-features.md)
 
 #### [權限]()
