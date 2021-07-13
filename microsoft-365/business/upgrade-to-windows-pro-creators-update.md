@@ -21,46 +21,47 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 探索升級 Windows 裝置的方式，以 Windows 10 專業版使用更高級的安全性和商務網路功能。
-ms.openlocfilehash: 39a7224ea585f8e1fb5052cb6fbb62329bd15656
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e87a9bc4ebbb4d5437e2174dc9f41c4700346ffd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227508"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394144"
 ---
-# <a name="upgrade-windows-devices-to-windows-10-pro"></a><span data-ttu-id="039c6-103">將 Windows 裝置升級為 Windows 10 專業版</span><span class="sxs-lookup"><span data-stu-id="039c6-103">Upgrade Windows devices to Windows 10 Pro</span></span>
+# <a name="upgrade-windows-devices-to-windows-10-pro"></a><span data-ttu-id="db7e2-103">將 Windows 裝置升級為 Windows 10 專業版</span><span class="sxs-lookup"><span data-stu-id="db7e2-103">Upgrade Windows devices to Windows 10 Pro</span></span>
 
-## <a name="watch-upgrade-windows-10-home-to-windows-10-pro"></a><span data-ttu-id="039c6-104">觀賞：將 Windows 10 家用版升級為 Windows 10 專業版</span><span class="sxs-lookup"><span data-stu-id="039c6-104">Watch: Upgrade Windows 10 Home to Windows 10 Pro</span></span>
+## <a name="watch-upgrade-windows-10-home-to-windows-10-pro"></a><span data-ttu-id="db7e2-104">觀賞：將 Windows 10 家用版升級為 Windows 10 專業版</span><span class="sxs-lookup"><span data-stu-id="db7e2-104">Watch: Upgrade Windows 10 Home to Windows 10 Pro</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j]
 
-<span data-ttu-id="039c6-105">如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../business-video/index.yml)。</span><span class="sxs-lookup"><span data-stu-id="039c6-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).</span></span>
+<span data-ttu-id="db7e2-105">如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../business-video/index.yml)。</span><span class="sxs-lookup"><span data-stu-id="db7e2-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).</span></span>
 
-## <a name="upgrade-to-windows-10-pro"></a><span data-ttu-id="039c6-106">升級到 Windows 10 專業版</span><span class="sxs-lookup"><span data-stu-id="039c6-106">Upgrade to Windows 10 Pro</span></span>
+## <a name="upgrade-to-windows-10-pro"></a><span data-ttu-id="db7e2-106">升級到 Windows 10 專業版</span><span class="sxs-lookup"><span data-stu-id="db7e2-106">Upgrade to Windows 10 Pro</span></span>
 
-<span data-ttu-id="039c6-107">若要升級為 Windows 10 專業版，您有數個選項。</span><span class="sxs-lookup"><span data-stu-id="039c6-107">To upgrade to Windows 10 Pro, you have several options.</span></span> <span data-ttu-id="039c6-108">您可以：</span><span class="sxs-lookup"><span data-stu-id="039c6-108">You can:</span></span>
+<span data-ttu-id="db7e2-107">若要升級為 Windows 10 專業版，您有數個選項。</span><span class="sxs-lookup"><span data-stu-id="db7e2-107">To upgrade to Windows 10 Pro, you have several options.</span></span> <span data-ttu-id="db7e2-108">您可以：</span><span class="sxs-lookup"><span data-stu-id="db7e2-108">You can:</span></span>
 
-- <span data-ttu-id="039c6-109">從 [Microsoft 軟體下載網站](https://go.microsoft.com/fwlink/?LinkID=836951)安裝升級。</span><span class="sxs-lookup"><span data-stu-id="039c6-109">Install the upgrade from the [Microsoft Software Download site](https://go.microsoft.com/fwlink/?LinkID=836951).</span></span>
-  - <span data-ttu-id="039c6-110">如果您登入的裝置與您想要更新的裝置位於相同的裝置上，請選取此選項。</span><span class="sxs-lookup"><span data-stu-id="039c6-110">Select this option if the device that you're logged in is on the same device as the one you want to update.</span></span>
-  - <span data-ttu-id="039c6-111">在軟體下載網站中，按一下 [**立即更新**] 以開始升級裝置，以 Windows 10 專業版的建立者更新。</span><span class="sxs-lookup"><span data-stu-id="039c6-111">From the software download site, click **Update now** to start upgrading the device to Windows 10 Pro Creators Update.</span></span>
+- <span data-ttu-id="db7e2-109">從 [Microsoft 軟體下載網站](https://go.microsoft.com/fwlink/?LinkID=836951)安裝升級。</span><span class="sxs-lookup"><span data-stu-id="db7e2-109">Install the upgrade from the [Microsoft Software Download site](https://go.microsoft.com/fwlink/?LinkID=836951).</span></span>
+  - <span data-ttu-id="db7e2-110">如果您登入的裝置與您想要更新的裝置位於相同的裝置上，請選取此選項。</span><span class="sxs-lookup"><span data-stu-id="db7e2-110">Select this option if the device that you're logged in is on the same device as the one you want to update.</span></span>
+  - <span data-ttu-id="db7e2-111">在軟體下載網站中，按一下 [**立即更新**] 以開始升級裝置，以 Windows 10 專業版的建立者更新。</span><span class="sxs-lookup"><span data-stu-id="db7e2-111">From the software download site, click **Update now** to start upgrading the device to Windows 10 Pro Creators Update.</span></span>
 
-- <span data-ttu-id="039c6-112">使用[媒體建立工具](https://go.microsoft.com/fwlink/?LinkID=836960)建立安裝媒體 &ndash; 選取此選項，可建立 Windows 10 專業版的製作者更新安裝媒體 (USB 快閃記憶體磁片磁碟機或 ISO 檔) ，在電腦上安裝 Windows 10，而不是您所使用的電腦。</span><span class="sxs-lookup"><span data-stu-id="039c6-112">Create an installation media using the [Media Creation Tool](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; Select this option to create a Windows 10 Pro Creators Update installation media (USB flash drive or ISO file) to install Windows 10 on a PC that's different from the one you're using.</span></span>
-  - <span data-ttu-id="039c6-113">閱讀如何使用工具及建立安裝媒體的指示。</span><span class="sxs-lookup"><span data-stu-id="039c6-113">Read the instructions on how to use the tool and create your installation media.</span></span>
+- <span data-ttu-id="db7e2-112">使用[媒體建立工具](https://go.microsoft.com/fwlink/?LinkID=836960)建立安裝媒體 &ndash; 選取此選項，可建立 Windows 10 專業版的製作者更新安裝媒體 (USB 快閃記憶體磁片磁碟機或 ISO 檔) ，在電腦上安裝 Windows 10，而不是您所使用的電腦。</span><span class="sxs-lookup"><span data-stu-id="db7e2-112">Create an installation media using the [Media Creation Tool](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; Select this option to create a Windows 10 Pro Creators Update installation media (USB flash drive or ISO file) to install Windows 10 on a PC that's different from the one you're using.</span></span>
+  - <span data-ttu-id="db7e2-113">閱讀如何使用工具及建立安裝媒體的指示。</span><span class="sxs-lookup"><span data-stu-id="db7e2-113">Read the instructions on how to use the tool and create your installation media.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="039c6-114">如果您有執行 Windows 7 Pro、Windows 8 專業版或 Windows 8.1 專業版的 Windows 裝置，您的商務用 Microsoft 365，您就可以使用 Windows Pro 10 升級版。</span><span class="sxs-lookup"><span data-stu-id="039c6-114">If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 for business subscription entitles you to a Windows Pro 10 upgrade.</span></span>
+> <span data-ttu-id="db7e2-114">如果您有執行 Windows 7 Pro、Windows 8 專業版或 Windows 8.1 專業版的 Windows 裝置，您的商務用 Microsoft 365，您就可以使用 Windows Pro 10 升級版。</span><span class="sxs-lookup"><span data-stu-id="db7e2-114">If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 for business subscription entitles you to a Windows Pro 10 upgrade.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="039c6-115">後續步驟</span><span class="sxs-lookup"><span data-stu-id="039c6-115">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="db7e2-115">後續步驟</span><span class="sxs-lookup"><span data-stu-id="db7e2-115">Next steps</span></span>
 
-<span data-ttu-id="039c6-116">若要完成 Windows 10 裝置的設定，請參閱為[商務使用者設定 Microsoft 365 Windows 裝置](set-up-windows-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="039c6-116">To complete setting up Windows 10 devices, see [Set up Windows devices for Microsoft 365 for business users](set-up-windows-devices.md).</span></span>
+<span data-ttu-id="db7e2-116">若要完成 Windows 10 裝置的設定，請參閱為[商務使用者設定 Microsoft 365 Windows 裝置](set-up-windows-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="db7e2-116">To complete setting up Windows 10 devices, see [Set up Windows devices for Microsoft 365 for business users](set-up-windows-devices.md).</span></span>
 
-<span data-ttu-id="039c6-117">若要完成設定 Android 和 iOS 裝置，請參閱為[商務使用者設定 Microsoft 365](set-up-mobile-devices.md)的行動裝置。</span><span class="sxs-lookup"><span data-stu-id="039c6-117">To complete setting up Android and iOS devices, see [Set up mobile devices for Microsoft 365 for business users](set-up-mobile-devices.md).</span></span>
+<span data-ttu-id="db7e2-117">若要完成設定 Android 和 iOS 裝置，請參閱為[商務使用者設定 Microsoft 365](set-up-mobile-devices.md)的行動裝置。</span><span class="sxs-lookup"><span data-stu-id="db7e2-117">To complete setting up Android and iOS devices, see [Set up mobile devices for Microsoft 365 for business users](set-up-mobile-devices.md).</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="039c6-118">相關內容</span><span class="sxs-lookup"><span data-stu-id="039c6-118">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="db7e2-118">相關內容</span><span class="sxs-lookup"><span data-stu-id="db7e2-118">Related content</span></span>
 
-<span data-ttu-id="039c6-119">[商務用 Microsoft 365 訓練影片](../business-video/index.yml) (連結頁面)</span><span class="sxs-lookup"><span data-stu-id="039c6-119">[Microsoft 365 for business training videos](../business-video/index.yml) (link page)</span></span>
+<span data-ttu-id="db7e2-119">[商務用 Microsoft 365 訓練影片](../business-video/index.yml) (連結頁面)</span><span class="sxs-lookup"><span data-stu-id="db7e2-119">[Microsoft 365 for business training videos](../business-video/index.yml) (link page)</span></span>
