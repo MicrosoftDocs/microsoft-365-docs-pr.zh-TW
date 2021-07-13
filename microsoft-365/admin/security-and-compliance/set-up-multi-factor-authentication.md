@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,16 +25,16 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 480e09e42ea53cc78cd738a6e0650feae7a9f8c8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7ee6f3a7fc01fa998e3b984683ddad1402fe5587
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635947"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393616"
 ---
-# <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
+# <a name="set-up-multifactor-authentication"></a>設定多重要素驗證
 
-根據您對[多重因素驗證 (MFA) 及其在 Microsoft 365 中支援](multi-factor-authentication-microsoft-365.md)的了解，是時候進行設定並將其階段推出至您的組織了。
+根據您對[多重因素驗證 (MFA) 及其在 Microsoft 365 中支援](multi-factor-authentication-microsoft-365.md)的了解，是時候進行設定並將其階段性推出至您的組織了。
 
 > [!IMPORTANT]
 > 如果您在 2019 年10 月 21 日之後購買訂閱或試用版，且在您登入時，提示您進行 MFA，則將自動為您的訂閱啟用[安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
@@ -42,7 +44,7 @@ ms.locfileid: "52635947"
 - 您必須是全域系統管理員才能管理 MFA。 如需詳細資訊，請參閱[系統管理員角色](../add-users/about-admin-roles.md)。
 - 如果您已開啟舊版每一使用者 MFA，請 [關閉舊版每一使用者 MFA](#turn-off-legacy-per-user-mfa)。
 - 如果您在 Windows 裝置上安裝有 Office 2013 用戶端，請[開啟 Office 2013 用戶端新式驗證](./enable-modern-authentication.md)。
-- 進階：如果您使用 Active Directory 同盟服務 (AD FS) 搭配協力廠商目錄服務，請設定 Azure MFA Server。 如需詳細資訊，請參閱[使用 Azure AD Multi-Factor Authentication 和協力廠商 VPN 解決方案的進階案例](/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
+- 進階：如果您使用 Active Directory 同盟服務 (AD FS) 搭配協力廠商目錄服務，請設定 Azure MFA Server。 如需詳細資訊，請參閱[使用 Azure AD Multifactor Authentication 和協力廠商 VPN 解決方案的進階案例](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) (部分機器翻譯)。
 
 ## <a name="turn-security-defaults-on-or-off"></a>開啟或關閉安全性預設值
 
@@ -104,5 +106,5 @@ ms.locfileid: "52635947"
 
 ## <a name="related-content"></a>相關內容
 
-[開啟多重要素驗證](../../business-video/turn-on-mfa.md) (影片)
+[開啟多重要素驗證](../../business-video/turn-on-mfa.md) (影片)\
 [為您的手機開啟多重要素驗證](../../business-video/set-up-mfa.md) (影片)

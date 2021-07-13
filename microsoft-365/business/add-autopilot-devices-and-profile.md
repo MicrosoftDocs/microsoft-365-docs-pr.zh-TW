@@ -19,18 +19,19 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 瞭解如何使用 Windows AutoPilot 為您的公司設定新的 Windows 10 裝置，使其可供員工使用。
-ms.openlocfilehash: e178e7df220e89605502d9ed400265bcd963e57e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f160ddcd1e41bd44c908ecc8bbd30a9819f76902
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636099"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393432"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
@@ -79,7 +80,7 @@ ms.locfileid: "52636099"
     
     預設功能是必要的，且會自動設定。 預設功能包括：
     
-    - 略過 Cortana、OneDrive 及 OEM 註冊。
+    - 略過 Cortana、OneDrive 和 OEM 註冊。
     
     - 使用公司品牌建立登入體驗。
     
@@ -89,7 +90,7 @@ ms.locfileid: "52636099"
     
 5. 其他設定則 **略過隱私權設定** ，而 **不允許使用者成為本機系統管理員**。這些皆預設會設為 **Off** 。 
     
-    選擇 **[下一步]**。
+    選擇 ****[下一步]。
     
 6. **您已完成** 表示您已建立的設定檔 (或選擇) 會套用到您透過上載裝置清單所建立的裝置群組。 當裝置使用者下一次登入時，設定就會生效。 選擇 [ **關閉**]。
 

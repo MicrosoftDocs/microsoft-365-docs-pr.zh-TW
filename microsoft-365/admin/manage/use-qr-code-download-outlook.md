@@ -14,13 +14,14 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: 瞭解如何使用 QR 碼來驗證和下載 Outlook 行動裝置。
-ms.openlocfilehash: a403fbbed90229300e707653062c552104c47d97
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c13fbeabd320c64925165ba16797d5a3471961ad
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286702"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391336"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 碼來登入 Outlook 行動應用程式
 

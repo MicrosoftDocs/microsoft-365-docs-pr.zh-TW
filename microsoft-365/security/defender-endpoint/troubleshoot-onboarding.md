@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: fa9592dccd806ad14e609df073c855170dcb2c76
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326900"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391444"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -337,8 +337,10 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 - 在使用者執行第一次登入時，裝置已關閉或重新開機
 - 在此案例中，即使已部署上架套件，也不會自動啟動 SENSE 服務
 
-<div class="alert"><b>附注：</b>在下列或更新的 Windows 版本上，必須不再需要在 OOBE 中啟動使用者登入： Windows 10 版本1809或 Windows 伺服器2019與[四月 22 2021 更新彙總套件](https://support.microsoft.com/kb/5001384) </br> Windows 10，版本1909，含[四月2021更新彙總套件](https://support.microsoft.com/kb/5001396) </br> Windows 10，版本 2004/20H2，含[28 2021 年4月的更新彙總套件](https://support.microsoft.com/kb/5001391) </div> 
-<br></br>
+> [!NOTE]
+> 在下列或更新的 Windows 版本上，必須不再需要在 OOBE 中啟動使用者登入： Windows 10 版本1809或 Windows 伺服器2019與[四月 22 2021 更新彙總套件](https://support.microsoft.com/kb/5001384)。 Windows 10，版本1909，含[四月2021更新彙總套件](https://support.microsoft.com/kb/5001396)。 Windows 10，版本 2004/20H2，含[28 2021 年4月的更新彙總套件](https://support.microsoft.com/kb/5001391)。 
+
+
 > [!NOTE]
 > 下列步驟僅適用于使用 Microsoft Endpoint Configuration Manager。 如需使用 Microsoft Endpoint Configuration Manager 上架的詳細資訊，請參閱[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 

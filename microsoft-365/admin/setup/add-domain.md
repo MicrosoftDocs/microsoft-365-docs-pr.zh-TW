@@ -20,18 +20,19 @@ ms.custom:
 - MSStore_Link
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 dns 主機上新增 dns 記錄，使用設定向導將您的網域新增至 Microsoft 365 系統管理中心中 Microsoft 365。
-ms.openlocfilehash: 547a3bf242130993522b00f53819908b10c9e4d1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: caec9951fa80d19467623922dffa8551d0b4ad0d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227832"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393580"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>將網域新增至 Microsoft 365
 
@@ -101,7 +102,7 @@ ms.locfileid: "53227832"
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
     
-6. 選取 ****[儲存]。
+6. 選取 [儲存]。
 
 ## <a name="registrars-with-domain-connect"></a>使用網域連線的註冊機構
 

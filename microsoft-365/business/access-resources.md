@@ -1,5 +1,5 @@
 ---
-title: 從 Microsoft 365 商務版中已加入 Azure AD 的裝置存取內部部署資源
+title: 從 Microsoft 365 商務中 Azure 已加入 Azure 的裝置存取內部部署資源
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -16,17 +16,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 瞭解如何從加入 Windows 10 裝置的 Azure Active Directory，取得內部部署資源（如商務用行應用程式、檔案共用及印表機）的存取權。
-ms.openlocfilehash: 72b3c5ae538cad24fc12e25717dedccb2fdc9017
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 71d60e0187c917dffb7390afcedf22dc73f44008
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843315"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393452"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>從 Microsoft 365 商務進階版中已加入 Azure AD 的裝置存取內部部署資源
 
@@ -57,7 +58,7 @@ ms.locfileid: "52843315"
 
 如果您 Azure 加入的 Windows 裝置先前已加入網域或在工作組中，請考慮下列限制：
 
-- 當裝置 Azure AD 加入時，它會建立新的使用者，而不會參照現有的設定檔。 設定檔必須手動遷移。 使用者設定檔包含我的最愛、本機檔案、瀏覽器設定及「開始」功能表設定等資訊。 最佳方法是尋找協力廠商工具，將現有的檔案和設定對應至新的設定檔。
+- 當裝置 Azure AD 加入時，它會建立新的使用者，而不會參照現有的設定檔。 設定檔必須手動遷移。 使用者設定檔包含我的最愛、本機檔案、瀏覽器設定和 [開始] 功能表設定等資訊。 最佳方法是尋找協力廠商工具，將現有的檔案和設定對應至新的設定檔。
 
 - 如果裝置使用的群組原則物件 (GPO) ，有些 Gpo 在 Intune 中可能沒有 (CSP) 的同等 [配置服務提供者](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) 。 執行 [MMAT 工具](https://www.microsoft.com/download/details.aspx?id=45520) ，尋找現有 gpo 的類似 csp。
 

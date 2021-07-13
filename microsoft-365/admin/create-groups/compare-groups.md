@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 群組成員可以取得交談、檔案和行事曆活動、Stream 以及 Planner 的群組電子郵件與共用工作區。
-ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903837"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377178"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -61,6 +61,8 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 可以將通訊群組新增到 Microsoft Teams 中的小組。
 
+Microsoft 365 群組不能是通訊群組的成員。
+
 ## <a name="security-groups"></a>安全性群組
 
 [安全性群組](../email/create-edit-or-delete-a-security-group.md)用來授權存取 Microsoft 365 資源，例如 SharePoint。 由於您只需要管理群組，而非將使用者個別新增至每個資源，它們能讓系統管理更容易。
@@ -70,6 +72,8 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 安全性群組可以[在 Azure Active Directory 中針對動態成員資格設定](/azure/active-directory/users-groups-roles/groups-change-type)，以便根據使用者屬性 (例如部門、位置、職稱等) 或裝置屬性 (例如作業系統版本) 自動新增或移除群組成員。
 
 可以將安全性群組新增到小組。
+
+Microsoft 365 群組不能是安全性群組的成員。
 
 ## <a name="mail-enabled-security-groups"></a>擁有郵件功能的安全性群組
 

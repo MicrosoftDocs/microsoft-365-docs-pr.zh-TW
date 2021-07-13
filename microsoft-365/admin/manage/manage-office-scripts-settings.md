@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid: MET150
 description: 瞭解如何管理組織中使用者的 Office 腳本設定。
-ms.openlocfilehash: e0cb52c4a8f48ff2310c83ffce61e08a0236ed59
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: fea50838cf1089b73a6af5bbf86d490293831085
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572306"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392668"
 ---
 # <a name="manage-office-scripts-settings"></a>管理 [Office 指令碼] 設定
 
 [Office 腳本](/office/dev/scripts)可讓使用者在網頁上 Excel 中記錄、編輯和執行腳本，以自動化工作。 Office腳本可與 Power Automate 搭配使用 Excel 線上 (商務) 連接器上的使用者，在活頁簿上執行腳本。 Microsoft 365 系統管理員可以從 Microsoft 365 系統管理中心管理 Office 腳本設定。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 若要管理 Office 腳本設定，您必須是全域系統管理員。如需詳細資訊，請參閱[關於系統管理員角色](../add-users/about-admin-roles.md)。
 
@@ -43,7 +45,7 @@ ms.locfileid: "52572306"
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>管理 Office 腳本和共用腳本的可用性
 
-1. 在 Microsoft 365 系統管理中心，移至 [**設定** \> **組織設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服務</a>] 索引標籤。
+1. 在 Microsoft 365 系統管理中心中，移至 [**設定** 的 \> **組織設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服務</a>] 索引標籤。
 
 2. 選取 [ **Office 腳本**]。
 
@@ -92,13 +94,13 @@ ms.locfileid: "52572306"
 
     - 若要深入瞭解搭配 Power Automate 使用 Office 腳本的詳細資訊，請參閱[with Power Automate 執行 Office 腳本](/office/dev/scripts/develop/power-automate-integration)。
 
-8. 選取 ****[儲存]。
+8. 選取 [儲存]。
 
-    最多可能需要48個小時，Office 腳本設定的變更才會生效。
+    對 Office 指令碼的變更最多可能需要 48 小時的時間才能生效。
 
 ## <a name="next-steps"></a>後續步驟
 
-由於 Office 腳本可搭配 Power Automate 使用，因此建議您檢查現有的資料遺失防護 (DLP) 原則，以確保當使用者使用 Office 腳本時，組織的資料仍保持受保護狀態。 如需詳細資訊，請參閱 [資料遺失防護 (DLP) 原則](/power-automate/prevent-data-loss)。
+由於 Office 腳本可搭配 Power Automate 使用，因此建議您檢查現有的資料遺失防護 (DLP) 原則，以確保當使用者使用 Office 腳本時，組織的資料仍保持受保護狀態。 如需詳細資訊，請參閱[資料外洩防護 (DLP) 原則](/power-automate/prevent-data-loss)。
 
 ## <a name="related-content"></a>相關內容
 

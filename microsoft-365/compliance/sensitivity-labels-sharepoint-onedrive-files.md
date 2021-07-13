@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 及 OneDrive 中啟用 Word、Excel 和 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 67aa69ef8505290b6fde47c4e523a09870312b97
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 61b6c366f76c25ab0b35df4314f63491be5ce5e6
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322230"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377226"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -90,6 +90,12 @@ ms.locfileid: "53322230"
     針對具有上述任何加密設定的標籤，Office 網頁版中不會向使用者顯示標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
 
 - 基於效能考慮，當您將檔上傳或儲存至 SharePoint，而且檔案卷標不會套用加密時，文件庫中的「**敏感度**」欄可能需要一段時間來顯示標籤名稱。 當您使用依賴此欄中標籤名稱的腳本或自動化時，此延遲中的因素。
+
+- 如果檔 [在 SharePoint 中](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)取出時已標示標籤，則文件庫中的「**敏感度**」欄將不會顯示標籤名稱，直到檔存回並下一次開啟時 SharePoint 中。
+
+- 如果已標記及已加密的檔是由使用服務主體名稱的應用程式或服務下載 SharePoint 或 OneDrive，然後使用套用不同加密設定的標籤來重新上傳，則上傳會失敗。 範例案例 Microsoft Cloud App Security 會將檔案中的靈敏度標籤從 **機密** 變更為 **高度機密**，或從 **機密** 變更為 **一般**。
+    
+    若應用程式或服務第一次執行 [SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) 指令程式，則上載不會失敗（如 [ [移除已標記檔的加密](#remove-encryption-for-a-labeled-document) ] 區段所述）。 或者，在上傳之前，會刪除原始檔案，或變更檔案名。
 
 - 使用者可能會在下列另存為案例中體驗開啟加密檔的延遲：使用桌上出版本的 Office，使用者選擇 [另存新檔]，以用於具有敏感度標籤以套用加密的檔。 使用者會選取位置的 SharePoint 或 OneDrive，然後立即嘗試在 Office 網頁版中開啟該檔。 如果服務仍在處理加密，使用者會看到一則訊息，指出必須在其桌面應用程式中開啟檔。 如果他們幾分鐘後再試一次，則會在 Office 網頁版中成功開啟檔。
 

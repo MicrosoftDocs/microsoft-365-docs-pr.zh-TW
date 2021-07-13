@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: '取得「商務用 OneDrive 使用方式報告」，以瞭解整個組織所使用的檔案和儲存總數。 '
-ms.openlocfilehash: 20b9ce6aff01942c23c0f8a98234432ea54d5953
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 92dd18c8e8f6ded655ac6f41d1179e96ef81090b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242045"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393340"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365系統管理中心報告-商務用 OneDrive 使用狀況
 

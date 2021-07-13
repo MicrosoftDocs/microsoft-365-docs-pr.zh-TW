@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 如果您想要重設自己的系統管理員密碼，請在系統管理中心更新您的系統管理員電話號碼和電子郵件地址。
-ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624510"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391300"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新您的系統管理員電話號碼和電子郵件地址
 

@@ -1,5 +1,5 @@
 ---
-title: 將通訊群組清單升級至 Microsoft 365 群組中 Outlook
+title: 在 Outlook 中將通訊群組清單升級至 Microsoft 365 群組
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 瞭解如何將一或多個通訊群組清單升級成 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: aef797a2bf052fcc84c9220993c2e6706eae5f61
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698937"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391384"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Microsoft 365 群組中 Outlook
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>在 Outlook 中將通訊群組清單升級至 Microsoft 365 群組
 
 您可以將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組。 這是一種極好的方式，可讓組織的通訊組列出 Microsoft 365 群組的所有功能。 [為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
@@ -153,7 +155,6 @@ Get-DistributionGroup| Foreach-Object{
 |安全性群組  <br/> |否  <br/> |
 |動態通訊群組清單  <br/> |否  <br/> |
 |已轉換為 **RoomLists** 的通訊群組清單  <br/> |否  <br/> |
-|**關閉** **MemberJoinRestriction** 和/或 **MemberDepartRestriction** 的通訊群組清單  <br/> |否  <br/> |
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>檢查哪些 DLs 有資格升級
 
@@ -173,7 +174,7 @@ Get-DistributionGroup| Foreach-Object{
 
 - Outlook：當有人嘗試在遷移後輸入 Microsoft 365 群組名稱時，在 Outlook 中傳送電子郵件時，收件者將會解析為通訊群組清單，而不是群組。 收件者的連絡人卡片將會是通訊群組清單連絡人卡片。 這是因為 Outlook 中的收件者快取或 nick 名稱快取。 電子郵件會順利傳送至群組，但是可能會造成對寄件者的混淆。<br/>您可以執行本文中的步驟， [Outlook AutoComplete 清單的相關資訊](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list)來重設快取，這會修正此問題。
 
-- 針對網頁上的 Outlook：在網頁上 Outlook 時，通訊群組清單收件者仍會保留在快取中。 您可以依照「 [從自動完成」清單中移除建議的名稱或電子郵件地址](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) 中的步驟進行，以重新整理快取，以查看群組連絡人卡片。
+- Outlook 網頁版：在 Outlook 網頁版情況下，通訊群組清單收件者仍會保留在快取中。 您可以依照「 [從自動完成」清單中移除建議的名稱或電子郵件地址](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) 中的步驟進行，以重新整理快取，以查看群組連絡人卡片。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新增群組成員是否會在其收件匣中取得歡迎使用的電子郵件？
 

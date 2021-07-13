@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得組織中人員如何使用 Microsoft 365 服務的定期報告，並深入了解每個圖表。
-ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 89182ddc317bfefdf0e82632bbe8ec8f78f81ada
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52808996"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377214"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
-您可以輕鬆地查看您的員工使用 Microsoft 365 服務的情況。例如，您可以查出誰經常使用服務且達到使用量配額，或是誰可能完全不需要 Microsoft 365 授權。
+您可以輕鬆地查看您的員工使用 Microsoft 365 服務的情況。例如，您可以查出誰經常使用服務且達到使用量配額，或是誰可能完全不需要 Microsoft 365 授權。永久授權模型將不會包含在報告中。 
   
 您可以索取過去 7 天、30 天、90 天及 180 天的報告。不過系統無法立即提供所有報告期間的資料，您會在 48 小時內看到可用的報告。
   

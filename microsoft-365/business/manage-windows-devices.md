@@ -20,16 +20,17 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何啟用 Microsoft 365，以在少數幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9cc7ca01cec667465e9114083fecdc56ef4e7ce7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287688"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393372"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>啟用已加入網域的 Windows 10 裝置以供 Microsoft 365 商務進階版管理
 

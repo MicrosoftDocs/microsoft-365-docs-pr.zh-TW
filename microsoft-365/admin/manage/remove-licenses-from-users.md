@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: 您用來取消指派產品授權的方法，取決於您是否要取消指派特定使用者或特定產品的授權。
 ms.date: 06/07/2021
-ms.openlocfilehash: 6220ddc15e7b3381da1d78ad3ac4f3c2204bda78
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 8a67d7e690ff07631f696a97d6ed59925bc871df
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256828"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392488"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
@@ -35,7 +36,7 @@ ms.locfileid: "53256828"
 > [!NOTE]
 > 系統管理員無法指派或取消指派貴組織中的使用者所購買的自助購買訂閱授權。 您可以 [接管自助購買訂閱](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然後指派或取消指派授權。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 您必須是全域授權，使用者管理員才能取消指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
 - 您可以[使用 Office 365 PowerShell 移除使用者帳戶中的授權](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)。

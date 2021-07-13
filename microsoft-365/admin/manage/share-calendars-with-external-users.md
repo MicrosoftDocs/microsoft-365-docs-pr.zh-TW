@@ -16,24 +16,25 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: 啟用 Microsoft 365 系統管理中心的行事曆共用，讓使用者能與組織內部或外部的任何人共用他們的行事曆。
-ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 啟用 Microsoft 365 系統管理中心中的行事曆共用，讓使用者能與組織內部或外部的任何人共用其行事曆。
+ms.openlocfilehash: 21dbf12ec495f3a22a45d8a23af807ffd34fef72
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635807"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392452"
 ---
 # <a name="share-calendars-with-external-users"></a>與外部使用者共用行事曆
 
 有時候，您的使用者必須與組織外部的人員排程會議。 若要簡化尋找常見會議時間的程式，Microsoft 365 可讓您為這些人員提供行事曆。 這些是必須查看組織中使用者空閒和忙碌時間的人員，但沒有 Microsoft 365 組織的使用者帳戶。
 
-您可以針對組織中的所有使用者，啟用 Microsoft 365 系統管理中心的行事曆共用。 啟用共用之後，您的使用者就可以使用 Outlook Web App，與組織內部或外部的任何人共用其行事曆。 組織內部的人員可以查看共用的行事曆及其自己的行事曆。 組織外部人員會收到可用來檢視行事曆的 URL。 組織中的使用者決定何時共用和共用多少。
+您可以針對組織中的所有使用者，啟用 Microsoft 365 系統管理中心中的所有使用者的行事曆共用。 啟用共用之後，您的使用者就可以使用 Outlook Web App，與組織內部或外部的任何人共用其行事曆。 組織內部的人員可以查看共用的行事曆及其自己的行事曆。 組織外部人員會收到可用來檢視行事曆的 URL。 組織中的使用者決定何時共用和共用多少。
 
 > [!NOTE]
 > 如果您要與使用 Exchange Server 2013 (一種內部部署的解決方案) 的組織共用行事曆，Exchange 系統管理員必須與雲端之間設定驗證關聯。 這稱為同盟，且必須符合最低軟體需求。 請參閱 [共用](/exchange/sharing-exchange-2013-help)，以取得詳細資訊。
@@ -55,5 +56,5 @@ ms.locfileid: "52635807"
 ## <a name="related-content"></a>相關內容
 
 [開啟或關閉網站](/sharepoint/change-external-sharing-site) (文章) \ 的外部共用
-[Microsoft 365 系統管理中心 (影片的概覽](../../business-video/admin-center-overview.md)) 
+[Microsoft 365 系統管理中心](../../business-video/admin-center-overview.md) (影片的概述) \
 [管理電子郵件和行事曆](../email/index.yml) (連結頁面) 

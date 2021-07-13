@@ -11,20 +11,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: 瞭解如何使用 Microsoft 365 系統管理中心的「Microsoft 365 報告」儀表板取得作用中使用者報告，並找出使用的產品授權數目。
-ms.openlocfilehash: 8ea9feeb18cb1885023ec14f1ffb4d77b2775877
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: 瞭解如何使用 Microsoft 365 系統管理中心中的「Microsoft 365 報告」儀表板來取得作用中使用者報告，並找出使用的產品授權數目。
+ms.openlocfilehash: d127ddccd4944279052c628cbee9cc37dd3c8358
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924368"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391360"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>評估 Microsoft 365 作用中使用者報告
 
@@ -65,4 +67,4 @@ ms.locfileid: "52924368"
 
 
 
-如果貴組織的原則防止您檢視可識別之使用者資訊的報告，您可以變更所有這類報告的隱私權設定。 請參閱 [Microsoft 365 系統管理中心的活動報告中](activity-reports.md)的 [**我要如何隱藏使用者層級詳細資料？** ] 區段。  
+如果貴組織的原則防止您檢視可識別之使用者資訊的報告，您可以變更所有這類報告的隱私權設定。 請參閱 [Microsoft 365 系統管理中心中活動報告](activity-reports.md)中的 [**我要如何隱藏使用者層級詳細資料？** ] 區段。  

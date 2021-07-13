@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 瞭解如何使用 Microsoft 365 系統管理中心中的「Microsoft 365 報告」儀表板取得 Microsoft browser 使用方式報告。
-ms.openlocfilehash: f2d8d8347e7b71375958c56f6649fbb911155d46
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125408"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377202"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365系統管理中心報告-Microsoft 瀏覽器使用量
 
@@ -36,16 +36,6 @@ ms.locfileid: "53125408"
 
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。 
 2. 在 [儀表板] 主頁上，按一下 [Microsoft browser 使用狀況卡片上的 **View more** ] 按鈕。
-
-## <a name="how-to-notify-users-to-upgrade-their-browser"></a>如何通知使用者升級其瀏覽器
-
-![Microsoft 瀏覽器使用方式報告動作流程](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
-
-全域管理員可以加入宣告使用 Edge 舊版 (上的 Microsoft 365 服務，將郵件傳送給使用者。) 和 Internet Explorer (不久不支援) 。 這個目標郵件會通知使用者，這些瀏覽器的支援即將結束，並連結至支援文章，其中包含 Microsoft Edge 的資訊及切換瀏覽器所遵循的簡易步驟。 
-
-您可以在 [報告] 頁面上找到這項功能。 一旦建立郵件，就會以指定的頻率通知使用者，直到2021年8月17日為止。 您可以隨時關閉此功能，停止傳送通知給使用者。 若要重新開始傳送通知，請重新開啟該功能。
-
-如需詳細資訊，請參閱[Microsoft Edge help & 教學](https://support.microsoft.com/microsoft-edge)。
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>解讀 Microsoft browser usage report
 

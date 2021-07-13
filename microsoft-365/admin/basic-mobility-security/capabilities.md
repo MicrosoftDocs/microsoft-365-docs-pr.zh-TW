@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5619ce6a8fa2c705acc6be08e3af8ad6f90a6d99
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228276"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393304"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本行動與安全性的功能
 

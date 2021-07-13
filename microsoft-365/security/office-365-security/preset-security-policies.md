@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender Office 365 的保護功能上套用標準和嚴格的原則設定
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 61166c78f31a86882ef0e2dc2a79683aea794040
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108292"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383459"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的預設安全性原則
 
@@ -99,7 +99,9 @@ ms.locfileid: "53108292"
 3. 自訂安全性原則
 4. 預設的安全性原則
 
-換句話說， **嚴格保護** 原則的設定會覆寫 **標準保護** 原則的設定，它會覆寫自訂原則中的設定，以覆寫預設原則中的設定。
+換句話說， **嚴格保護** 原則的設定會覆寫 **標準保護** 原則的設定，它會覆寫自訂原則中的設定，以覆寫預設原則中的設定。 
+
+例如，如果安全性設定存在於 **標準保護** 中，且系統管理員已為使用者啟用 **標準保護** ，則會套用 **標準防護** 設定，而不是在自訂原則或 (相同使用者) 的預設原則中設定的設定。 請注意，當您將自訂原則套用至組織中的其他使用者，以符合特定需求時，您可能會在部分組織中只套用 **標準** 或 **嚴格保護** 原則。
 
 ## <a name="assign-preset-security-policies-to-users"></a>將預先設定的安全性原則指派給使用者
 
@@ -132,7 +134,7 @@ ms.locfileid: "53108292"
 
    針對使用者或群組，您可以使用大部分識別碼 (名稱、顯示名稱、別名、電子郵件地址、帳戶名稱等)，但會在結果中顯示對應的顯示名稱。 針對使用者，接著輸入星號 (\*) 來查看所有可用的值。
 
-   - **排除這些使用者、群組和網域**：若要新增原則套用至 (收件者例外狀況) 的內部收件者例外狀況，請選取此選項並設定例外狀況。 設定和行為就像是條件。
+   - **排除這些使用者、群組和網域**：若要為原則適用的內部收件者新增例外 (收件者例外)，請選取此選項並設定例外。 設定和行為就像是條件。
 
    完成後，按 [下一步 **]**。
 

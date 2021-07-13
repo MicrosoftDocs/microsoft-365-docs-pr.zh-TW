@@ -1,5 +1,5 @@
 ---
-title: 在您的手機上設定多重要素登入
+title: 在您的手機上設定多要素登錄
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,24 +21,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在您的手機上設定多重要素驗證（有時也稱為雙因素驗證）。
-ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705651"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393472"
 ---
-# <a name="set-up-multi-factor-authentication-on-your-phone"></a>在您的手機上設定多重要素驗證
+# <a name="set-up-multifactor-authentication-on-your-phone"></a>在您的手機上設定多重要素驗證
 
-## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>觀賞：設定行動裝置的多重要素驗證
+## <a name="watch-set-up-multifactor-authentication-with-a-mobile-device"></a>觀賞：設定與行動裝置的多重要素驗證
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
-多重要素驗證為您的企業提供更高的安全性。 請遵循下列步驟加以設定。
+多因素驗證可提供更多的商務安全性。 請遵循下列步驟加以設定。
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 當您登入時 [https://office.com](https://office.com) ，您會看到 [ **需要其他資訊** ] 提示。 選擇 **[下一步]**。
+1. 當您登入時 [https://office.com](https://office.com) ，您會看到 [ **需要其他資訊** ] 提示。 選擇 ****[下一步]。
 1. 在 [**步驟 1**] 底下，從 [**驗證電話**] 下拉式清單中選擇 [行動 **應用程式**]。
 1. 在 [您要如何使用行動裝置應用程式？] 下，選取您要用來登入的方法：
     - 選取 [ **接收要驗證的通知** ] 以直接從行動應用程式驗證，其中可能包含指紋驗證。

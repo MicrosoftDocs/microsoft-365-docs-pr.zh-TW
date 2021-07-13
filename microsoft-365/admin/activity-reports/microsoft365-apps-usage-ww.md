@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: 瞭解如何使用 Microsoft 365 系統管理中心中的 [Microsoft 365 報告] 儀表板，取得使用方式報告的 Microsoft 365 Apps。
-ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: 瞭解如何使用 Microsoft 365 系統管理中心中的 [Microsoft 365 報告] 儀表板，取得使用狀況報告的 Microsoft 365 Apps。
+ms.openlocfilehash: 3147aebc10ff774b8af3ff10f9a76d52a2db87b2
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860746"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377238"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365系統管理中心報告-Microsoft 365 Apps 使用狀況
 
@@ -55,6 +55,6 @@ ms.locfileid: "51860746"
  |4. <br/> |[**平臺**] 視圖會顯示每個平臺之所有應用程式（Windows、Mac、Web 及行動裝置）上的作用中使用者的趨勢。 <br/> |
  |5.<br/>|在 [ **使用者** ] 圖表上，Y 軸是個別應用程式的唯一作用中使用者數目。 在 [ **平臺**]   圖表上，Y 軸是個別平臺的唯一使用者數目。 這兩張圖表的 X 軸都是在指定的平臺上使用應用程式的日期。<br/>|
  6.<br/>|您可以選取圖例中的專案，以篩選您在圖表上看到的數列。 例如，在 [**使用者**] 圖表上，選取 [Outlook]、[Word]、[PowerPoint Excel]、[OneDrive] 或 [Teams]，以查看只與各項相關的資訊。 變更此選取專案並不會變更下方格線表格中的資訊。|
- |7.<br/>|表格顯示每個使用者層級的資料明細。您可以新增或移除表格中的欄位。  <br/><br/>**Username** 是在 Microsoft Apps 執行活動之使用者的電子郵件地址。<br><br/>**上次啟用日期 (UTC)** 是使用者啟用其 Microsoft 365 Apps 訂閱的最晚日期。<br/><br/>**上次活動日期 (UTC)** 是使用者執行有意活動的最晚日期。 若要查看特定日期發生的活動，請直接選取圖表中的日期。<br/><br/>其他資料列會識別使用者在該平臺上的使用中，該應用程式 (于所選期間內 Microsoft 365 Apps) 內的狀態。 |
+ |7.<br/>|表格顯示每個使用者層級的資料明細。您可以新增或移除表格中的欄位。  <br/><br/>**Username** 是在 Microsoft Apps 執行活動之使用者的電子郵件地址。<br><br/>**上次啟用日期 (UTC)** 是使用者在其電腦上啟用其 Microsoft 365 Apps 訂閱的最晚日期，並以其帳戶啟動應用程式。 <br/><br/>**上次活動日期 (UTC)** 是使用者執行有意活動的最晚日期。 若要查看特定日期發生的活動，請直接選取圖表中的日期。<br/><br/>其他資料列會識別使用者在該平臺上的使用中，該應用程式 (于所選期間內 Microsoft 365 Apps) 內的狀態。 |
  |8.<br/>|選取 [ **選擇欄** ] 圖示，以新增或移除報告中的欄。|
  |9.<br/>|您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的匯總、排序及篩選，以進行進一步分析。 如果您的使用者少於100，您可以在報表本身的資料表中進行排序和篩選。 如果您有超過100的使用者，為了進行篩選和排序，您將需要匯出資料。|

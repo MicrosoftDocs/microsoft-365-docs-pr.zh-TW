@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,18 +24,18 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多重要素驗證 (MFA) 會同時使用密碼，該密碼應該是強的，另外也是一種驗證方法。
-ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924728"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393640"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
+# <a name="multifactor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
 密碼是對電腦或線上服務驗證登入的最常見方法，但也是最容易受到攻擊的方法。 人員可以選擇輕鬆密碼，並對不同的電腦和服務使用多個登入的相同密碼。
 
-若要為登入提供額外的安全性層級，您必須使用多重要素驗證 (MFA) ，這兩種驗證都使用密碼，也就是強的，另一種驗證方法是以下列方式進行：
+若要為登入提供額外的安全性層級，您必須使用多因素驗證 (MFA) ，這兩者都使用密碼，也就是強，而另一種驗證方法是根據：
 
 - 您所擁有的專案不會輕易重複，例如智慧型電話。
 - 您獨特且 biologically 的功能，例如您的指紋、字型或其他生物統計學屬性。
@@ -61,7 +62,7 @@ ms.locfileid: "52924728"
 |---|---|---|
 |所有 Microsoft 365 方案|使用安全性預設值，這需要對所有使用者帳戶執行 MFA。 <p> 您也可以在個別使用者帳戶上設定個別使用者 MFA，但不建議這麼做。|小型企業|
 |Microsoft 365 商務進階版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 進階版 P1 授權|使用條件式存取原則，根據群組成員資格、應用程式或其他準則，針對使用者帳戶要求 MFA。|小型企業對企業|
-|Microsoft 365 E5 <p> Azure AD 進階版 P2 授權|使用 Azure AD 身分識別保護，根據登入風險準則要求 MFA。|企業|
+|Microsoft 365 E5 <p> Azure AD Premium P2 授權|使用 Azure AD 身分識別保護，根據登入風險準則要求 MFA。|Enterprise|
 ||||
 
 ### <a name="security-defaults"></a>安全性預設
@@ -101,7 +102,7 @@ ms.locfileid: "52924728"
 
 - Microsoft 365 商務進階版
 - Microsoft 365 E3 和 E5
-- Azure AD 進階版 P1 和 Azure AD 進階版 P2 授權
+- Azure AD Premium P1 和 Azure AD Premium P2 授權
 
 針對具有 Microsoft 365 商務進階版的小型企業，您可以使用下列步驟輕鬆使用條件式存取原則：
 
@@ -132,7 +133,7 @@ ms.locfileid: "52924728"
 您可以使用 Azure AD 身分識別保護和以風險為基礎的條件式存取原則：
 
 - Microsoft 365 E5
-- Azure AD 進階版 P2 授權
+- Azure AD Premium P2 授權
 
 如需詳細資訊，請參閱這個 [Azure AD Identity Protection 概觀](/azure/active-directory/identity-protection/overview-identity-protection)。
 
@@ -150,7 +151,7 @@ ms.locfileid: "52924728"
 
 下表顯示啟用 MFA 與安全性預設、條件式存取原則和每一使用者帳戶設定的結果。
 
-|*項目*|啟用|停用|次要驗證方法|
+|*Item*|啟用|停用|次要驗證方法|
 |---|---|---|---|
 |**安全性預設**|無法使用條件式存取原則|可以使用條件式存取原則|Microsoft Authenticator 應用程式|
 |**條件式存取原則**|如果有任何啟用，您就無法啟用安全性預設值|如果已停用所有原則，則可啟用安全性預設|在註冊 MFA 期間由使用者指定|
@@ -168,7 +169,7 @@ ms.locfileid: "52924728"
 - 啟用及停用安全性預設值
 - 設定條件式存取原則
 
-在 Microsoft 365 系統管理中心，您可以設定每位使用者和服務 MFA 設定。
+在 Microsoft 365 系統管理中心中，您可以設定每位使用者和服務 MFA 設定。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -176,5 +177,5 @@ ms.locfileid: "52924728"
 
 ## <a name="related-content"></a>相關內容
 
-[開啟多重要素驗證](../../business-video/turn-on-mfa.md) (影片)
-[為您的手機開啟多重要素驗證](../../business-video/set-up-mfa.md) (影片)
+[開啟多重要素驗證](../../business-video/turn-on-mfa.md) (影片) \
+[開啟電話的多重要素驗證](../../business-video/set-up-mfa.md) (影片) 

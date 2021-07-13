@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - GEU150
@@ -22,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 深入瞭解由受世紀所運作的 Office 365，其設計目的是為了符合中國的安全、可靠及可伸縮雲端服務的需求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c8d43c385f44434e9ed4832a094ea4909bf505a4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924716"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393604"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365
 
@@ -175,7 +177,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |Exchange主控電子郵件加密  |無法使用。  |
 |Office 365 郵件加密  |即將推出。  |
    
-## <a name="office"></a>Office
+## <a name="office"></a>辦公室
 
 |函數|可用性|
 |:-----|:-----|

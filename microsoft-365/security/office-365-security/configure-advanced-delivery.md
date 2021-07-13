@@ -17,12 +17,12 @@ ms.custom: ''
 description: 系統管理員可以瞭解如何使用 Exchange Online Protection (EOP) 中的高級傳遞原則，以識別不應該在特定支援案例中篩選的郵件 (協力廠商網路釣魚模擬及傳送至安全性作業的郵件 (SecOps) 信箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 053f88da96983b03ad03e75c11a4fa692ac6a850
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: b989b11739b5418ad14e147f76dde0e0dd7b1b1a
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256864"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383447"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>設定將協力廠商網路釣魚模擬的傳遞給使用者及未篩選的郵件以 SecOps 信箱
 
@@ -110,7 +110,7 @@ ms.locfileid: "53256864"
      - 單一 IP：例如，192.168.1.1。
      - IP 範圍：例如，192.168.0.1-192.168.0.254。
      - CIDR IP：例如 192.168.0.1/25。
-   - **類比 URLs 允許**：展開此設定，並選擇性地 URLs 輸入您的網路釣魚類比活動的一部分，而不應該封鎖或引爆，方法是按一下 [方塊]，輸入值，然後按 enter 或選取方塊下方所顯示的值。 您最多可以新增10個專案。
+   - **類比 URLs 允許**：展開此設定，並選擇性地 URLs 輸入您的網路釣魚類比活動的一部分，而不應該封鎖或引爆，方法是按一下 [方塊]，輸入值，然後按 enter 或選取方塊下方所顯示的值。 您最多可以新增10個專案。 如需 URL 語法格式，請參閱 [承租人 Allow/封鎖清單的 URL 語法](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
 
    若要移除現有的值，請按一下 ![[移除] 圖示](../../media/m365-cc-sc-remove-selection-icon.png) 值旁邊的 [移除]。
 

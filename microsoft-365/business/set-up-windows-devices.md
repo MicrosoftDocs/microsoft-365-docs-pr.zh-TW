@@ -22,21 +22,22 @@ ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 為 Microsoft 365 商務進階版使用者設定執行 Windows 10 專業版的 Windows 裝置，以啟用集中式管理及安全性控制。
-ms.openlocfilehash: 7a9c75f6ec14605225d40c103c18e62937e773bf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a911414b1a7abef259f4c5fffbdd48e07f9ebfdd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635867"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393352"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>設定 Microsoft 365 商務進階版使用者的 Windows 裝置
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 在您可以設定 Microsoft 365 商務進階版使用者的 Windows 裝置之前，請確定所有 Windows 裝置都執行 Windows 10 專業版，版本 1703 (建立者更新) 。 Windows 10 專業版是部署 Windows 10 商務版的必要條件，也就是一組雲端服務和裝置管理功能，可補充 Windows 10 專業版和啟用 Microsoft 365 商務進階版的集中式管理及安全性控制。
   
@@ -46,7 +47,7 @@ ms.locfileid: "52635867"
   
 請參閱 Verify the device the the the the device the the [AZURE AD](#verify-the-device-is-connected-to-azure-ad) to verify the the the the the the the the the the
 
-## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>觀賞：連線您的電腦以 Microsoft 365 商務版
+## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>觀賞：連線您的電腦以 Microsoft 365 商務
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
@@ -130,4 +131,4 @@ ms.locfileid: "52635867"
   
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 商務訓練](../business-video/index.yml)影片 (連結] 頁面) 
+[商務用 Microsoft 365 訓練影片](../business-video/index.yml) (連結頁面)

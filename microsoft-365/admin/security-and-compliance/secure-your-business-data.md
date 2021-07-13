@@ -16,18 +16,19 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 如何保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924620"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393628"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務方案 Microsoft 365 的前10種方式
 
@@ -37,16 +38,16 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 
 |*數字*|工作|Microsoft 365 商務標準版|Microsoft 365 商務進階版|
 |---|---|---|---|
-|1|[設定多重要素驗證](secure-your-business-data.md#setup)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|第|[訓練您的使用者](secure-your-business-data.md#train)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|個|[使用專用的系統管理員帳戶](secure-your-business-data.md#admin)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1 |[設定多重要素驗證](secure-your-business-data.md#setup)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2 |[訓練您的使用者](secure-your-business-data.md#train)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[使用專用的系統管理員帳戶](secure-your-business-data.md#admin)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[提升郵件中惡意程式碼的保護層級](secure-your-business-data.md#malware)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[防範勒索軟體](secure-your-business-data.md#ransomware)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[停止電子郵件的自動轉寄功能](secure-your-business-data.md#forwarding)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[使用 Office 郵件加密](secure-your-business-data.md#encryption)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[保護您的電子郵件免受網路釣魚攻擊](secure-your-business-data.md#phishing)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[使用安全附件防範惡意附件和檔案](secure-your-business-data.md#atp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[使用安全連結防禦網路釣魚攻擊](secure-your-business-data.md#phishingatp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[使用保管庫附件防護惡意附件和檔案](secure-your-business-data.md#atp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[使用保管庫連結防禦網路釣魚攻擊](secure-your-business-data.md#phishingatp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 如果您有 Microsoft 商務進階版，設定安全性並安全地開始共同作業的最快速方法是遵循此文件庫中的指引：[適用於小型企業和活動的 Microsoft 365](../../campaigns/index.md)。 本指引是與 Microsoft Defending Democracy 團隊合作開發，可保護所有小型企業客戶抵禦老練駭客發動的網路威脅。
 
@@ -152,7 +153,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 針對每個規則套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
     
 | 設定 | 開啟 Office 檔案的附件之前警告使用者 | 封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型 |
 |:-----|:-----|:-----|
@@ -188,7 +189,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 |設定|拒絕自動轉寄電子郵件至外部網域|
 |---|---|
@@ -267,20 +268,20 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 如需詳細資訊，請參閱[在 Office 365 中設定您的 Defender 的反網路釣魚原則](../../security/office-365-security/configure-atp-anti-phishing-policies.md)。
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：防止惡意附件和檔案使用安全附件
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：防止惡意附件和檔案使用保管庫附件
 <a name="atp"> </a>
 
-人們經常傳送、接收及共用附件，例如文件、簡報和試算表等等。 只查看電子郵件訊息，不一定可輕易知道附件是否安全或有危害。 適用于 Office 365 的 Microsoft Defender 包含安全附件保護，但預設不會開啟此保護。 建議您建立新的規則，以開始使用這種保護。 這項保護會延伸至 SharePoint、OneDrive 和 Microsoft Teams 中的檔案。
+人們經常傳送、接收及共用附件，例如文件、簡報和試算表等等。 只查看電子郵件訊息，不一定可輕易知道附件是否安全或有危害。 Office 365 的 Microsoft Defender 包含保管庫附件保護，但預設不會開啟此保護。 建議您建立新的規則，以開始使用這種保護。 這項保護會延伸至 SharePoint、OneDrive 和 Microsoft Teams 中的檔案。
 
-若要建立安全附件原則，請觀看 [簡短的訓練影片](../../business-video/safe-attachments.md)，或完成下列步驟：
+若要建立保管庫附件原則、查看[簡短的訓練影片](../../business-video/safe-attachments.md)，或完成下列步驟：
 
 1. 移至 <https://protection.office.com> 並以您的系統管理員帳戶登入。
 
 2. 在 [安全性 & 規範中心] 的左功能窗格中，選取 [ **威脅管理**] 底下的 [ **原則**]。
 
-3. 在 [原則] 頁面上，選取 [ **安全附件**]。
+3. 在 [原則] 頁面上，選取 [**保管庫附件**]。
 
-4. 在 [安全附件] 頁面上，選取 [**開啟 SharePoint、OneDrive 及 Microsoft Teams 的 ATP** ] 核取方塊，廣泛套用此保護。
+4. 在 [保管庫附件] 頁面上，選取 [**開啟 SharePoint、OneDrive 和 Microsoft Teams 的 ATP** ] 核取方塊，廣泛套用此保護。
 
 5. 選取 **+** 以建立新的原則。
 
@@ -299,10 +300,10 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 如需詳細資訊，請參閱[在 Office 365 中設定您的 Defender 的反網路釣魚原則](../../security/office-365-security/configure-atp-anti-phishing-policies.md)。
 
-## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：防禦安全連結的網路釣魚攻擊
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：防禦保管庫連結的網路釣魚攻擊
 <a name="phishingatp"> </a>
 
-駭客有時候會在電子郵件或其他檔案的連結中隱藏惡意網站。 安全連結是 Office 365 的 Microsoft Defender 部分，可在電子郵件訊息中 (URLs) ，在電子郵件訊息和 Office 檔中提供網頁位址的驗證，以協助保護您的組織。 保護是透過安全連結原則定義。
+駭客有時候會在電子郵件或其他檔案的連結中隱藏惡意網站。 保管庫連結（部分 Office 365 的 Microsoft Defender）可以透過在電子 Office 郵件訊息中 (URLs) 來驗證網址，以協助保護您的組織。 Protection 是透過保管庫連結原則定義。
 
 我們建議您執行下列作業：
 
@@ -310,41 +311,41 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 - 新增針對您網域中所有收件者的新原則。
 
-若要取得安全連結，請觀看 [簡短的訓練影片](../../business-video/safe-links.md)，或完成下列步驟：
+若要取得保管庫連結，請觀看[簡短的訓練影片](../../business-video/safe-links.md)，或完成下列步驟：
 
 1. 移至 <https://protection.office.com> 並以您的系統管理員帳戶登入。
 
 2. 在 [安全性 & 規範中心] 的左功能窗格中，選取 [ **威脅管理**] 底下的 [ **原則**]。
 
-3. 在 [原則] 頁面上，選取 [ **安全連結**]。
+3. 在 [原則] 頁面上，選取 [**保管庫連結**]。
 
 若要修改預設原則：
 
-1. 在 [安全連結] 頁面的 [ **適用于整個組織的原則**] 底下，按兩下 [ **預設** 原則]。
+1. 在 [保管庫連結] 頁面上，于 [套用 **至整個組織的原則**] 底下，按兩下 [**預設** 原則]。
 
 2. 在 [**對 Office 365 套用至內容的設定**] 下，輸入要封鎖的 URL，例如 _example.com_，然後選取 [ **+** 。
 
 3. 在 [**電子郵件以外套用至內容的設定**] 底下，選取 [ **Office 365 應用程式**]，**當使用者按一下 [安全連結] 時**，請勿追蹤，而且 **不讓使用者點擊至原始 URL 的安全連結**。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 若要建立新的原則針對您網域中的所有收件者：
 
-1. 在 [安全連結] 頁面上，按一下 [套用 **至特定** 收件者的原則] 底下的 [ **+** 建立新原則]。
+1. 在 [保管庫連結] 頁面上，按一下 [套用 **至特定** 收件者的原則] 底下的 [ **+** 建立新原則]。
 
 2. 套用下表所列的設定。
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]。
 
 |設定或選項|建議的設定|
 |---|---|
-|名稱|網域中所有收件者的安全連結原則|
+|名稱|網域中所有收件者的保管庫連結原則|
 |選取郵件中未知可能惡意 URLs 的動作|選取 **[URLs 會在使用者按一下連結時，重新寫入並檢查已知惡意連結的清單**。|
 |針對可疑的連結和指向檔案的連結套用即時 URL 掃描|選取此方塊。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 |
 
-如需詳細資訊，請參閱[Microsoft Defender 中 Office 365 的安全連結](../../security/office-365-security/atp-safe-links.md)。
+如需詳細資訊，請參閱[保管庫 Office 365 的 Microsoft Defender 連結](../../security/office-365-security/atp-safe-links.md)。
 
 ## <a name="related-content"></a>相關內容
 

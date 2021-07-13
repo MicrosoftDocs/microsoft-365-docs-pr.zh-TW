@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 瞭解如何在 Microsoft 365 中變更導覽列頂端的預設主題，並加以自訂，使其符合您公司的徽標或色彩。
-ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227780"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393532"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
@@ -74,7 +75,7 @@ ms.locfileid: "53227780"
 
 2. 在 [**群組**] 底下，您最多可以選擇5個 Microsoft 365 群組可以查看您的群組主題，而不是使用預設主題。 您也可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
 
-3. 選取 ****[儲存]。
+3. 選取 [儲存]。
 
 :::image type="content" source="../../media/default-theme-general-users1.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織中使用者群組的預設主題":::
 

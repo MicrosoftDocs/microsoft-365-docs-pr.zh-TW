@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: 「郵件中心」文章只會以英文顯示，但可以您為 Microsoft 365 指定的語言自動顯示。
-ms.openlocfilehash: f500baccbf3c78b9d775629d38864444c78fb2e3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: feec4a0a48960303ac0c2231b43e125caa901283
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636031"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393100"
 ---
 # <a name="language-translation-for-message-center-posts"></a>訊息中心文章的語言翻譯功能
 
 因為資訊即時性的關係，訊息中心的文章僅以英文撰寫，但可能會根據您的 Microsoft 365 個人語言設定自動顯示指定的語言。 如果您將您的慣用語言設定為英文以外的任何語言，您將會在訊息中心看到自動翻譯文章的選項。 郵件是由電腦轉譯成您的慣用語言，也就是說，電腦已翻譯好。 這個選項會控制預設檢視，但您也可以使用下拉式功能表，以系統支援翻譯的任何語言翻譯和顯示文章。 如果您選取英文，我們會將訊息還原為原始英文版本。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
   
 > [!IMPORTANT]
 > 您必須先設定您的慣用語言，才能選擇訊息中心的語言設定。 如果您將語言設定成英文，則系統不會顯示任何翻譯選項。 您無法為其他人指定慣用語言，所有人都必須自行變更這項設定。 
@@ -49,7 +50,7 @@ ms.locfileid: "52636031"
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 系統管理中心 (影片的概覽](../../business-video/admin-center-overview.md)) 
+[Microsoft 365 系統管理中心](../../business-video/admin-center-overview.md) (影片的概述) \
 [我有何種訂閱？](../admin-overview/what-subscription-do-i-have.md) (文章)\
  (篇文章[上保持最新的變更](../manage/stay-on-top-of-updates.md)) 
 

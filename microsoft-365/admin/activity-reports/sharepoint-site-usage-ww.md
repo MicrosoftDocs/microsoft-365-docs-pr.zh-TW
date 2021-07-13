@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: 取得「SharePoint 網站使用量」報告，瞭解使用者在 SharePoint 網站中儲存的檔案數目、使用的數目，以及使用的總儲存空間。
-ms.openlocfilehash: 62bf01c867b7e9217d25e655af6633a72773caa1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d2c549dbb5ab456dddedf0422cd8aebafab1987d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241865"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393328"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365系統管理中心的報告-SharePoint 網站使用狀況
 

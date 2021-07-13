@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 設定基本行動性和安全性，以利用遠端擦除裝置等動作來保護和管理使用者的行動裝置。
-ms.openlocfilehash: f1cfa6cdc8d799ba62c687408cb12a4ba453f313
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: d878569c691fc25c8c91c5a5a29215e6284a5d71
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177270"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393280"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>設定基本行動與安全性
 
