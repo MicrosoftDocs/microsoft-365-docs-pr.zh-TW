@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Lighthouse (FAQs) 常見問題
+  f1.keywords: NOCSH
+  ms.author: sharik
+  author: SKjerland
+  manager: scotv
+  audience: Admin
+  ms.topic: article
+  ms.prod: microsoft-365-lighthouse
+  localization_priority: Normal
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - AdminSurgePortfolio
+  - M365-Lighthouse
+  search.appverid: MET150
+  description: 針對受管理的服務提供者 (MSPs) 使用 Microsoft 365 Lighthouse，取得常見問題的答案， (FAQs) Microsoft 365 Lighthouse。
+  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
+  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "53395050"
+title: Microsoft 365 Lighthouse (FAQs) 常見問題
+summary: >
+  > [!NOTE]
+
+  > 本文所述的功能都是在預覽中進行變更，而且只有符合 [需求](m365-lighthouse-requirements.md)的合作夥伴才能使用。 如果您的組織沒有 Microsoft 365 Lighthouse，請參閱[註冊 Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。
+
+
+  本文包含 FAQs) 關於 Microsoft 365 Lighthouse 的常見問題解答 (解答。
+
+
+  如果您找不到問題的答案，請離開批註以告知我們，我們會將其新增至本文。
+sections:
+- name: 已略過
+  questions:
+  - question: 何謂 Microsoft 365 Lighthouse？
+    answer: >
+      Microsoft 365 Lighthouse 是協助受管理的服務提供者 (MSPs) 安全且管理裝置、資料和使用者規模，以供小型和中型企業 (SMB) 客戶使用 Microsoft 365 商務進階版的系統管理員入口網站。  Microsoft 365 Lighthouse 會建議針對 smb 量身定制的安全性設定基線，並在所有客戶環境中提供多租使用者視圖，以簡化租使用者的承租人。 如需詳細資訊，請參閱[Microsoft 365 Lighthouse 的總覽](m365-lighthouse-overview.md)。
+  - question: Microsoft 365 Lighthouse 和 Azure Lighthouse 之間的差異為何？
+    answer: >
+      Microsoft 365 Lighthouse 會專注于 Microsoft 365 服務，而不是 Azure 服務。 雖然 azure Lighthouse 已內置於 azure 入口網站，並可讓 IT 合作夥伴管理多個承租人 for Azure，但 Microsoft 365 Lighthouse 是一個獨立入口網站，可協助 MSPs 管理多個 Microsoft 365 商務進階版客戶承租人。 如需 Microsoft 365 Lighthouse 的詳細資訊，請參閱[Microsoft 365 Lighthouse 的總覽](m365-lighthouse-overview.md)。 如需 Azure Lighthouse 的詳細資訊，請參閱 [什麼是 Azure Lighthouse？](/azure/lighthouse/overview)
+  - question: Microsoft 365 Lighthouse 成本是多少？
+    answer: >
+      使用 Microsoft 365 Lighthouse 預覽版來管理 Microsoft 365 商務進階版服務和連線裝置，並不會有其他相關的成本。 Microsoft 365 Lighthouse 目前正在預覽中，可供 MSPs 服務于中小型企業，且具有雲端解決方案提供者 (CSP) 與客戶的關係。 請注意，Microsoft 365 Lighthouse 目前不支援間接提供者。 如需詳細資訊，請參閱[Microsoft 365 Lighthouse 的需求](m365-lighthouse-requirements.md)。
+  - question: Microsoft 365 Lighthouse 使用的需求為何？
+    answer: >
+      如需目前需求的清單，請參閱[Microsoft 365 Lighthouse 的需求](m365-lighthouse-requirements.md)。
+  - question: 如何註冊 Microsoft 365 Lighthouse？
+    answer: >
+      若要註冊 Microsoft 365 Lighthouse，您必須使用 CSP 程式註冊。 我們目前無法支援間接提供者。 如需如何註冊的指示，請參閱[註冊 Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。 若要深入瞭解 CSP 計畫，請參閱[雲端解決方案提供者程式概述](/partner-center/csp-overview)。
+  - question: 我已完成註冊，為何我看不到任何客戶租使用者資料？
+    answer: >
+      在 Microsoft 365 Lighthouse 中載入客戶租使用者資料可能需要長達48小時。 如果您完成上架後，已超過48小時，請與我們的支援小組聯繫以取得協助。 當您完成上架並提供任何相關的螢幕擷取畫面和記錄時，您必須讓他們知道。 如需詳細資訊，請參閱[取得 Microsoft 365 Lighthouse 的說明和支援](m365-lighthouse-get-help-and-support.md)。
+  - question: 為什麼我會看到某些客戶租使用者的資料，而非其他承租人？
+    answer: >
+      若要讓客戶租使用者資料顯示在 Microsoft 365 Lighthouse 中，協力廠商必須建立委派的系統管理員許可權 (透過合作夥伴中心與客戶一起) 。 如需詳細資訊，請參閱 [在夥伴中心要求與客戶的轉銷商關係](/partner-center/request-a-relationship-with-a-customer)。 租使用者在其承租人中也必須至少有一個 Microsoft 365 商務進階版訂閱，且具有低於500的授權使用者。 如需詳細資訊，請參閱[Microsoft 365 Lighthouse 的需求](m365-lighthouse-requirements.md)。
+  - question: 如果我不想要在 Microsoft 365 Lighthouse 中查看特定承租人，該怎麼辦？
+    answer: >
+      如果您不想要在 Microsoft 365 Lighthouse 中查看特定承租人及其資料，您可以停用這些承租人。 若要停用租使用者，請遵循下列步驟：
+
+
+      1. 從左功能窗格中，選取 [ **承租人** ]，以開啟 [ **承租人** ] 頁面。
+
+      1. 找到您要停用的承租人，選取租使用者名稱旁邊的三個點，然後選取 [ **停用承租人**]。
+
+      1. 在出現的確認訊息中，選取 [ **確認** ] 以停用承租人。
+          > [!NOTE]
+          > 一旦停用租使用者，您就無法在租使用者上採取動作，除非 inactivation 完成。 Inactivation 最多可能需要48個小時才能完成。
+
+      若要深入瞭解承租人，請參閱[Microsoft 365 Lighthouse 租使用者清單綜述](m365-lighthouse-tenant-list-overview.md)。
+  - question: 如果我的客戶承租人除了 Microsoft 365 商務進階版以外還有其他訂閱，Microsoft 365 Lighthouse 會運作嗎？
+    answer: Microsoft 365 Lighthouse 可協助您管理擁有其使用者 Microsoft 365 商務進階版授權的客戶承租人。 針對不具備 Business 進階版授權的客戶承租人中的使用者，Microsoft 365 Lighthouse 功能將會受到限制。 例如，如果使用者遺失包含 Intune 的授權，該使用者的裝置、裝置符合性狀態和威脅狀態將無法使用;而且，如果使用者缺少包含 Azure AD P1 的授權，該使用者的密碼和登入管理將無法使用。 如需詳細資訊，請參閱[Microsoft 365 Lighthouse 的需求](m365-lighthouse-requirements.md)。
