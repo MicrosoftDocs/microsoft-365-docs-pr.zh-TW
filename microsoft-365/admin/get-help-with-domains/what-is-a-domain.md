@@ -22,49 +22,50 @@ description: 瞭解網域的定義和購買網域的方式，或使用貴公司�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b69881d72b91bd2cd36255d87444588166458c8c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 949bce3c287c9b7764562586e28bc031fd0d56b6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571874"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393112"
 ---
-# <a name="what-is-a-domain"></a><span data-ttu-id="ccf1d-103">何謂網域？</span><span class="sxs-lookup"><span data-stu-id="ccf1d-103">What is a domain?</span></span>
+# <a name="what-is-a-domain"></a><span data-ttu-id="5fa42-103">何謂網域？</span><span class="sxs-lookup"><span data-stu-id="5fa42-103">What is a domain?</span></span>
 
- <span data-ttu-id="ccf1d-104">若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="5fa42-104">若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。</span><span class="sxs-lookup"><span data-stu-id="5fa42-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="ccf1d-105">網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.**</span><span class="sxs-lookup"><span data-stu-id="ccf1d-105">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="ccf1d-106">後出現的唯一名稱。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-106">in web addresses.</span></span> <span data-ttu-id="ccf1d-107">它通常採用組織名稱和標準 Internet 尾碼（如 yourbusiness）的形式 *。 <span>com* 或 *stateuniversity。 <span>edu*。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-107">It typically takes the form of your organization's name and a standard Internet suffix, such as *yourbusiness.<span>com* or *stateuniversity.<span>edu*.</span></span> 
+<span data-ttu-id="5fa42-105">網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.**</span><span class="sxs-lookup"><span data-stu-id="5fa42-105">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="5fa42-106">後出現的唯一名稱。</span><span class="sxs-lookup"><span data-stu-id="5fa42-106">in web addresses.</span></span> <span data-ttu-id="5fa42-107">它通常採用組織名稱和標準 Internet 尾碼（如 yourbusiness）的形式 *。 <span>com* 或 *stateuniversity。 <span>edu*。</span><span class="sxs-lookup"><span data-stu-id="5fa42-107">It typically takes the form of your organization's name and a standard Internet suffix, such as *yourbusiness.<span>com* or *stateuniversity.<span>edu*.</span></span> 
   
-<span data-ttu-id="ccf1d-108">使用像 rob@contoso 的自訂網域 *。 <span>com* 與 Microsoft 365 可協助為您的品牌建立信譽及認可。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-108">Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
+<span data-ttu-id="5fa42-108">使用像 rob@contoso 的自訂網域 *。 <span>com* 與 Microsoft 365 可協助為您的品牌建立信譽及認可。</span><span class="sxs-lookup"><span data-stu-id="5fa42-108">Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
   
-## <a name="choose-the-experience-thats-best-for-you"></a><span data-ttu-id="ccf1d-109">選擇最符合您需求的體驗︰</span><span class="sxs-lookup"><span data-stu-id="ccf1d-109">Choose the experience that's best for you:</span></span>
+## <a name="choose-the-experience-thats-best-for-you"></a><span data-ttu-id="5fa42-109">選擇最符合您需求的體驗︰</span><span class="sxs-lookup"><span data-stu-id="5fa42-109">Choose the experience that's best for you:</span></span>
 
- <span data-ttu-id="ccf1d-110">**購買新的網域：**</span><span class="sxs-lookup"><span data-stu-id="ccf1d-110">**Buy a new Domain:**</span></span>
+ <span data-ttu-id="5fa42-110">**購買新的網域：**</span><span class="sxs-lookup"><span data-stu-id="5fa42-110">**Buy a new Domain:**</span></span>
   
-<span data-ttu-id="ccf1d-111">使用 Microsoft 365 購買新的網域，我們將設定所有功能。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-111">Use Microsoft 365 to buy a new domain - we'll set everything up.</span></span> [<span data-ttu-id="ccf1d-112">瞭解更多資訊。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-112">Learn more.</span></span>](buy-a-domain-name.md)
+<span data-ttu-id="5fa42-111">使用 Microsoft 365 購買新的網域，我們將設定所有功能。</span><span class="sxs-lookup"><span data-stu-id="5fa42-111">Use Microsoft 365 to buy a new domain - we'll set everything up.</span></span> [<span data-ttu-id="5fa42-112">瞭解更多資訊。</span><span class="sxs-lookup"><span data-stu-id="5fa42-112">Learn more.</span></span>](buy-a-domain-name.md)
   
- <span data-ttu-id="ccf1d-113">**使用您已擁有的網域︰**</span><span class="sxs-lookup"><span data-stu-id="ccf1d-113">**Use a domain you already own:**</span></span>
+ <span data-ttu-id="5fa42-113">**使用您已擁有的網域︰**</span><span class="sxs-lookup"><span data-stu-id="5fa42-113">**Use a domain you already own:**</span></span>
   
-<span data-ttu-id="ccf1d-114">如果您已經擁有類似 you@yourcompany 的網域 *。 <span>com* 您可以新增它，並立即開始使用 OneDrive 和 Microsoft 應用程式。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-114">If you already own a domain like  *you@yourcompany.<span>com*  you can add it and start using OneDrive and Microsoft apps right away.</span></span> <span data-ttu-id="ccf1d-115">設定郵件與商務用 Skype 需要幾分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-115">You'll need to take a few minutes to setup mail and Skype for Business.</span></span> 
+<span data-ttu-id="5fa42-114">如果您已經擁有類似 you@yourcompany 的網域 *。 <span>com* 您可以新增它，並立即開始使用 OneDrive 和 Microsoft 應用程式。</span><span class="sxs-lookup"><span data-stu-id="5fa42-114">If you already own a domain like  *you@yourcompany.<span>com*  you can add it and start using OneDrive and Microsoft apps right away.</span></span> <span data-ttu-id="5fa42-115">設定郵件與商務用 Skype 需要幾分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="5fa42-115">You'll need to take a few minutes to setup mail and Skype for Business.</span></span> 
   
 > [!TIP]
-> <span data-ttu-id="ccf1d-p104">不確定您在哪裡註冊網域註？- [協助您找到網域註冊機構](find-your-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="ccf1d-p104">Not sure where your domain is registered? - [Get help finding your domain registrar](find-your-domain-registrar.md)</span></span>
+> <span data-ttu-id="5fa42-p104">不確定您在哪裡註冊網域註？- [協助您找到網域註冊機構](find-your-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="5fa42-p104">Not sure where your domain is registered? - [Get help finding your domain registrar](find-your-domain-registrar.md)</span></span>
   
- <span data-ttu-id="ccf1d-118">**暫時使用預設網域︰**</span><span class="sxs-lookup"><span data-stu-id="ccf1d-118">**Use a default domain for now:**</span></span>
+ <span data-ttu-id="5fa42-118">**暫時使用預設網域︰**</span><span class="sxs-lookup"><span data-stu-id="5fa42-118">**Use a default domain for now:**</span></span>
   
-<span data-ttu-id="ccf1d-119">您可以使用 yourcompany （如 name.onmicrosoft.com17）的預設網域  *。 <span>com*  立即登入，稍後再新增自訂網域。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-119">You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log in for now and add a custom domain later.</span></span> <span data-ttu-id="ccf1d-120">您無法變更或重新命名預設網域，因此繼續前請務必考慮清楚。</span><span class="sxs-lookup"><span data-stu-id="ccf1d-120">You can't change or rename your default domain - so make sure it's what you want before moving on.</span></span> 
+<span data-ttu-id="5fa42-119">您可以使用 yourcompany （如 name.onmicrosoft.com17）的預設網域  *。 <span>com*  立即登入，稍後再新增自訂網域。</span><span class="sxs-lookup"><span data-stu-id="5fa42-119">You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log in for now and add a custom domain later.</span></span> <span data-ttu-id="5fa42-120">您無法變更或重新命名預設網域，因此繼續前請務必考慮清楚。</span><span class="sxs-lookup"><span data-stu-id="5fa42-120">You can't change or rename your default domain - so make sure it's what you want before moving on.</span></span> 
   
-## <a name="feeling-stuck"></a><span data-ttu-id="ccf1d-121">無法順利進行設定嗎？</span><span class="sxs-lookup"><span data-stu-id="ccf1d-121">Feeling stuck?</span></span>
+## <a name="feeling-stuck"></a><span data-ttu-id="5fa42-121">無法順利進行設定嗎？</span><span class="sxs-lookup"><span data-stu-id="5fa42-121">Feeling stuck?</span></span>
 
-<span data-ttu-id="ccf1d-122">撥打 Microsoft 支援服務- [取得協助設定網域](../../business-video/get-help-support.md)</span><span class="sxs-lookup"><span data-stu-id="ccf1d-122">Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)</span></span>
+<span data-ttu-id="5fa42-122">撥打 Microsoft 支援服務- [取得協助設定網域](../../business-video/get-help-support.md)</span><span class="sxs-lookup"><span data-stu-id="5fa42-122">Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="ccf1d-123">相關內容</span><span class="sxs-lookup"><span data-stu-id="ccf1d-123">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="5fa42-123">相關內容</span><span class="sxs-lookup"><span data-stu-id="5fa42-123">Related content</span></span>
 
-<span data-ttu-id="ccf1d-124">[購買網域](buy-a-domain-name.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="ccf1d-124">[Buy a domain](buy-a-domain-name.md) (article)</span></span>
+<span data-ttu-id="5fa42-124">[購買網域](buy-a-domain-name.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="5fa42-124">[Buy a domain](buy-a-domain-name.md) (article)</span></span>
 
-<span data-ttu-id="ccf1d-125">[新增網域至 Microsoft 365](../setup/add-domain.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="ccf1d-125">[Add a domain to Microsoft 365](../setup/add-domain.md) (article)</span></span>
+<span data-ttu-id="5fa42-125">[新增網域至 Microsoft 365](../setup/add-domain.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="5fa42-125">[Add a domain to Microsoft 365](../setup/add-domain.md) (article)</span></span>
 
-<span data-ttu-id="ccf1d-126">[自訂網域 (文章中的試驗 Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md)) </span><span class="sxs-lookup"><span data-stu-id="ccf1d-126">[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)</span></span>
+<span data-ttu-id="5fa42-126">[自訂網域 (文章中的試驗 Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md)) </span><span class="sxs-lookup"><span data-stu-id="5fa42-126">[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)</span></span>
 
 
