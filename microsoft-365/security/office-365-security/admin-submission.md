@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用 Microsoft 365 Defender 入口網站中的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和電子郵件附件傳送給 Microsoft 以重新掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eecb635972be85e1a1a4f95c2786f209ee249745
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 2d18dd7f5dc702f08a722652394aeb0102f100ef
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203277"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409053"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -67,6 +67,9 @@ ms.locfileid: "53203277"
 2. 在 [ **提交** ] 頁面上，確認已選取 [已 **提交的分析** ] 索引標籤，然後按一下 [ ![ Ad 圖示 ](../../media/m365-cc-sc-create-icon.png) **提交至 Microsoft 進行分析**]。
 
 3. 使用送出 **至 Microsoft 來審閱** 浮出的浮出的浮出方式，如下列各節所述提交郵件、URL 或電子郵件附件。
+
+   > [!NOTE]
+   > 無法在不允許資料離開環境的雲中使用檔案和 URL 提交。 選取 [檔案] 或 [URL] 的功能將會灰顯。
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>將可疑的電子郵件提交給 Microsoft
 

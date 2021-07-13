@@ -18,21 +18,22 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: 系統管理員可以在訂閱到期、停用或取消時，或在訂閱期限中間取消時，重新開機訂閱。
 ms.date: 04/07/2021
-ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572510"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394914"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 
 您可以在系統管理中心重新啟用您的訂閱：訂閱已到期、已由 Microsoft 停用，或您已在訂閱期限內取消。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須是全域或計費系統管理員，才可重新啟用訂閱。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 

@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 您的組織可能需要多個網域，客戶才能找到您。 瞭解如何將另一個網域新增至您的訂閱。
-ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 766d0f6c1e3c68a262bc01ba432e042f0d274ce8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706427"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394842"
 ---
 # <a name="add-another-domain"></a>新增另一個網域
 
@@ -36,7 +37,7 @@ ms.locfileid: "52706427"
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 在 Microsoft 365 系統管理中心，選擇 [**安裝**]。
+1. 在 Microsoft 365 系統管理中心中，選擇 [**安裝**]。
 1. 在 [ **取得您的自訂網域設定**] 底下，選取 [ **View**]。
 1. 選擇 [ **管理**]，然後按一下 [ **新增網域**]。
 1. 輸入您要新增的新功能變數名稱，然後選取 **[下一步]**。

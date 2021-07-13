@@ -17,12 +17,12 @@ ms.collection:
 description: 瞭解如何使用傳遞集區來保護 Microsoft 365 資料中心的電子郵件伺服器信譽。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137712"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409137"
 ---
 # <a name="outbound-delivery-pools"></a>輸出傳遞集區
 
@@ -82,3 +82,6 @@ Microsoft 365 需要驗證原始寄件者是否合法，讓我們能夠滿懷信
 若要讓 DKIM 正常運作，請確定啟用 DKIM 以傳送網域。 例如，fabrikam.com 是 contoso.com 的一部分，且是在組織的公認的網域中定義的。 如果郵件寄件者是 sender@fabrikam.com，必須啟用 DKIM 以進行 fabrikam.com。 您可以閱讀如何啟用 at [DKIM，以驗證從您的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。
 
 若要新增自訂網域，請依照[add a domain to Microsoft 365](../../admin/setup/add-domain.md)中的步驟進行。
+
+如果您網域的 MX 記錄指向協力廠商服務或內部部署電子郵件伺服器，則應該 [對連接器使用增強型篩選](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 增強型篩選可確保輸入郵件的 SPF 驗證正確，並且將避免透過轉送集區傳送電子郵件。
+

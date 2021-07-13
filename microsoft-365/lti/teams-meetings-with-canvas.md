@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 與畫布整合 Microsoft Teams 會議
-ms.openlocfilehash: 946abaec52cb1c5060d5490b409758cf230a4e5a
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 7e13052cb029fef369f6386c2039785e40acc4ff
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256876"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409089"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>使用畫布的 Microsoft Teams 會議
 
@@ -78,3 +78,9 @@ Microsoft Teams 會議是 Learning 工具互通性 (LTI) 應用程式，可協�
 5. 選取 [安裝]。
 
    Microsoft Teams 會議 LTI 應用程式將會新增至外部應用程式的清單。
+   
+## <a name="enable-for-canvas-courses"></a>啟用畫布課程
+
+為了在課程中使用 LTI，Canvas 課程的指導員必須啟用整合同步。每門課程都必須由指導員啟用，以供建立對應的 Teams;Teams 建立功能沒有全域機制。 這是為了避免建立不想要的 Teams 所設計的警告。
+
+請參閱教師的教師 [手冊檔](https://support.microsoft.com/en-us/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) ，以啟用每門課程的 LTI，並完成整合安裝。

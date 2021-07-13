@@ -1,0 +1,42 @@
+- name: Microsoft 365 Lighthouse
+  items:
+    - name: Microsoft 365 Lighthouse 綜述
+      href: m365-lighthouse-overview.md
+    - name: Microsoft 365 Lighthouse 的需求
+      href: m365-lighthouse-requirements.md
+- name: 入門
+  items:
+    - name: 註冊
+      href: m365-lighthouse-sign-up.md
+- name: 安全 Microsoft 365 Lighthouse
+  items:
+    - name: 設定入口網站安全性
+      href: m365-lighthouse-configure-portal-security.md
+- name: 使用基準保護客戶
+  items:
+    - name: 使用基線部署標準租使用者設定的概覽
+      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
+    - name: 部署基準
+      href: m365-lighthouse-deploy-baselines.md
+- name: 管理承租人
+  items:
+    - name: 租使用者清單概覽
+      href: m365-lighthouse-tenant-list-overview.md
+- name: 管理承租人內的使用者
+  items:
+    - name: 使用者頁面概述
+      href: m365-lighthouse-users-page-overview.md
+- name: 管理裝置
+  items:
+    - name: 裝置合規性頁面概述
+      href: m365-lighthouse-device-compliance-page-overview.md
+- name: 管理威脅
+  items:
+    - name: 威脅管理頁面概述
+      href: m365-lighthouse-threat-management-page-overview.md
+- name: 取得協助和支援
+  items:
+    - name: 取得協助和支援
+      href: m365-lighthouse-get-help-and-support.md
+    - name: 'FAQs 所 (的常見問題解答) '
+      href: m365-lighthouse-faq.yml

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81b0594044e238f5855c627b2ce80baf8d8cb9c2
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: cb6e12e9b8ae32c13095239fe67012a520eb6e07
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203181"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408969"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支援的作業系統、平臺及功能-適用于威脅與弱點管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "53203181"
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -62,6 +62,9 @@ CentOS 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
 Ubuntu 16.04 LTS 或更高版本 LTS | 是 | 是 | 是 | 是 | 是
 Oracle Linux 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
 SUSE Linux Enterprise Server 12 或更高版本 | 是 | 是 | 是 | 是 | 是
+
+>[!NOTE]
+> 有些功能不適用於下層作業系統，請參閱 Microsoft 365 Defender 入口網站以取得支援作業系統的詳細資料。
 
 >[!IMPORTANT]
 > \*Red hat Enterprise Linux： "在您的 Microsoft Defender for Endpoint services 中提供及顯示的弱點資料，可供您在其原始格式（從 Red Hat，inc. 開始，來自 Red Hat，inc.，而且可能不是最新）的情況下取得。 「Red Hat 安全性資料 API 存取的資料是以創造性 Commons 歸屬4.0 國際授權授權。 您會在使用此資料時承擔風險。 Microsoft 及其協力廠商供應商對後果性和其他間接損壞和默示擔保的任何責任概不承擔任何責任，包括對非侵權性、適售性和特殊用途適用性的默示擔保。 © 2020 Red Hat。 著作權所有，並保留一切權利。 © 2020 Microsoft。 保留擁有權限。

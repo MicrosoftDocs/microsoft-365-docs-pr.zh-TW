@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 是否要將新的解決方案新增至規範中心、根據您的意見，更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您在不斷變更的相容性環境上保持最高的狀態。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288128"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394938"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性的新功能
 
@@ -40,6 +40,28 @@ ms.locfileid: "53288128"
 > - [Microsoft 365 Defender 的新功能](../security/defender/whats-new.md)
 >
 > 並流覽[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)，以瞭解已啟動、正在開發中、已取消或之前發行的 Microsoft 365 功能。
+
+## <a name="june-2021"></a>2021 年 6 月
+
+### <a name="customer-key"></a>客戶金鑰
+
+- [服務加密](customer-key-overview.md) (客戶金鑰租使用者層級 DEPs 現在會為 Microsoft 資訊保護加密敏感度標籤設定。 ) 
+
+### <a name="ediscovery"></a>電子文件探索
+
+- [查詢及篩選審閱集中的內容](review-set-search.md) ，以新的 UX 格式 (新的查詢及篩選功能，以篩選和搜尋審閱集中的內容) 
+- 在 Advanced eDiscovery (新增標記功能和 UX 中[的審閱集中標記檔](tagging-documents.md)，以更快速且更容易地進行標記檔的審閱。包含新的標記檔功能的方式是使用查詢，並使用篩選器，根據專案的標記方式，快速找出或排除審閱 set 專案) 
+- [設定電子檔探索調查的合規性界限](set-up-compliance-boundaries.md) (Microsoft 已移除聯繫 MS 支援的需求，以要求將符合性屬性同步處理至 OneDrive 帳戶;現在，信箱搜尋許可權篩選器是用來強制執行 OneDrive 的規範界限) 
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+- 敏感度標籤原則嚮導現在會支援[預設標籤及必要標籤的 Outlook 特有選項，](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)以比) PowerShell 高級設定 (仍然支援的更容易。
+- [使用變數的動態標記](sensitivity-labels-office-apps.md#dynamic-markings-with-variables )支援現在已推出 Word、Excel 及 PowerPoint 網頁版
+- Exchange 的[自動標記原則](apply-sensitivity-label-automatically.md)，如果標籤設定為加密，則不會套用加密。 此外，Exchange 的自動標記原則之外，您現在可以設定例外狀況及下列新條件：主旨、收件者位址或寄件者位址符合模式;收件者位址包含字;寄件者網域是，收件者是的成員;寄件者是。
+- 當您使用敏感度標籤與小組、群組和網站時，您可以搭配 BlockSendLabelMismatchEmail 參數使用 Set-SPOTenant，以防止當偵測到未記錄 **檔敏感度不符** 時自動產生的電子郵件。  如需詳細資訊，請參閱 [審核敏感度標籤活動](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )。
+- [驗證內容設定](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option)現在會在敏感度標籤預覽中完全展開。 此外，Microsoft Teams 現在也支援此設定。
+- 使用服務主體名稱標示及加密的檔案（例如 Microsoft Cloud App Security) ，然後上傳至 SharePoint 及 OneDrive）現在可以在 Office 網頁版中開啟 Office[和 SharePoint](sensitivity-labels-sharepoint-onedrive-files.md)中 OneDrive 檔的 (。
+- 當您使用版本 Windows 2105 時 macOS，[共同撰寫和 AutoSave](sensitivity-labels-coauthoring.md)不再受限於生產租使用者，而且在生產環境中目前支援 請注意，iOS 和 Android 仍不支援此功能，且仍在預覽中。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -269,49 +291,3 @@ Outlook 版本和更新：
 
 - 現在，我們的政府承租人 (GCC 和 GCC-H) 支援敏感度標籤。
 - MacOS 的新 [自動標籤](sensitivity-labels-office-apps.md) 支援。
-
-## <a name="december-2020"></a>2020 年 12 月
-
-### <a name="spotlight-new-content-for-insider-risk-solutions"></a>聚光燈：有問必答風險解決方案的新內容
-
-Microsoft 365 法規遵從性內容小組正在運作中建立「內容解決方案」檔，以推廣相容性功能如何搭配使用，以協助符合您的合規性目標。
-
-第一個是將內幕程式風險解決方案結合在一起的內容：通訊法規遵從性、內幕風險管理、資訊障礙及特殊的訪問管理。 以下是您將會發現的內容：
-
-- [內部擁有風險解決方案的新登陸頁面](insider-risk-solution-overview.md)。 包含解決方案可協助緩解、授權需求、部署順序、架構圖例、訓練資源等方面的風險的詳細資料。
-- 每個有問必答風險解決方案的新概述文章。 可協助您瞭解、規劃、部署及管理每個解決方案的文章指引及連結：
-  - [通訊合規性](communication-compliance-solution-overview.md)
-  - [內部風險管理](insider-risk-management-solution-overview.md)
-  - [資訊屏障](information-barriers-solution-overview.md)
-  - [特殊權限存取管理](privileged-access-management-solution-overview.md)
-
-更多即將推出的內容解決方案檔！
-
-### <a name="advanced-ediscovery"></a>進階電子文件探索
-
-改進的工作流程和功能，可[將保管人](add-custodians-to-case.md)和[非 custodial 資料來源](non-custodial-data-sources.md)新增至 Advanced eDiscovery 案例。
-
-### <a name="data-connectors"></a>資料連線器
-
-已[發行四個新的 Veritas 連接器](archiving-third-party-data.md#third-party-data-connectors)： Redtail 講話、Salesforce 交談、ServiceNow 及 Yieldbroker。
-
-### <a name="encryption"></a>加密
-
-[在承租人層級為 Microsoft 365 引進客戶金鑰](customer-key-tenant-level.md)。 使用您提供的金鑰，您可以建立資料加密原則 (DEP) 並指派給租使用者。 DEP 會針對這些工作負載在租使用者上進行資料加密：
-
-- Teams 聊天訊息 (1:1 聊天、群組交談、會議聊天及通道交談) 
-- Teams 媒體訊息 (影像、程式碼片段、影片、wiki 影像) 
-- Teams 儲存區中儲存的 Teams 通話和會議錄製
-- Teams 聊天通知
-- Cortana Teams 聊天建議
-- Teams 狀態郵件
-- Exchange Online 的使用者和信號資訊
-
-### <a name="records-management"></a>記錄管理
-
-[記錄管理系統管理員角色群組](get-started-with-records-management.md#permissions-required-for-records-management)現在會授與所有記錄管理功能的許可權，包括「處置評審」。
-
-### <a name="sensitivity-labels"></a>敏感度標籤
-
-- [在 Azure Purview 中自動標記資料 (預覽) ](/azure/purview/create-sensitivity-label)。 您現在可以為 Azure Purview 中的資產建立及自動套用敏感度標籤，例如 Azure Blob 儲存區中的檔案和 SQL Server 中的資料庫欄。
-- [要求使用者將標籤套用至專案](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 這個新的選項又稱為「必要標籤」，這項新選項需要使用者選擇並套用特定案例下的靈敏度標籤。

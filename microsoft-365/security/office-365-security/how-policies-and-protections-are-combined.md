@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029282"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409125"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
@@ -47,9 +47,9 @@ ms.locfileid: "53029282"
 
   |優先順序|電子郵件保護|類別|要管理的位置|
   |---|---|---|---|
-  |1|惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-  |第|網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |個|高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |1 |惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
+  |2 |網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |3 |高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |4 |詐騙|CAT：欺騙|[EOP 中的欺騙智慧洞察力](learn-about-spoof-intelligence.md)|
   |位<sup>\*</sup>| (受保護的使用者模擬使用者模擬) |UIMP|[在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)|
   |6<sup>\*</sup>|網域模擬 (受保護的網域) |DIMP|[在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-mdo-anti-phishing-policies.md)|
@@ -61,7 +61,8 @@ ms.locfileid: "53029282"
 
 - **原則的優先順序**：針對每個類型的原則 (反垃圾郵件、反惡意程式碼、反網路釣魚等 ) ，都有一個適用于每個人的預設原則，但您可以建立適用于特定使用者的自訂原則。 每個自訂原則都有一個優先順序值，以決定原則的套用順序。 預設原則永遠套用於最後。
 
-  如果使用者是在相同類型的多個原則中定義，則只有具有最高優先順序的原則適用于。 不會評估該類型的任何其餘原則 (包括預設原則) 。
+  > [!IMPORTANT]
+  > 如果使用者是在相同類型的多個原則中定義，則只有具有最高優先順序的原則適用于。 不會評估該類型的任何其餘原則 (包括預設原則) 。
 
 例如，請考慮下列 Microsoft Defender 的反網路釣魚原則，以供套用 **至相同使用者** 的 Office 365，以及識別為使用者類比和欺騙的郵件：
 
@@ -71,8 +72,8 @@ ms.locfileid: "53029282"
 
 |原則名稱|優先順序|使用者模擬|反詐騙|
 |---|---|---|---|
-|原則 A|1|開啟|關閉|
-|原則 B|第|關閉|開啟|
+|原則 A|1 |開啟|關閉|
+|原則 B|2 |關閉|開啟|
 |
 
 1. 郵件會標示及視為欺騙性，因為哄騙具有比使用者模擬 (5) 更高優先順序的 (4) 。

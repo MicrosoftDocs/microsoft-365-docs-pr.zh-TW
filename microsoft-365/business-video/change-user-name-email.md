@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何變更使用者的名稱或電子郵件地址，方法是變更顯示名稱、別名或電子郵件地址。
-ms.openlocfilehash: e012923ebe12a04b07c9236f5ebbd30623cd2dd5
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c7d960daa8b1b83149db90b10b7af4236d535a9d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706415"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394830"
 ---
 # <a name="change-a-users-name-or-email-address"></a>變更使用者的名稱或電子郵件地址
 
@@ -40,7 +41,7 @@ ms.locfileid: "52706415"
 
 ### <a name="change-a-users-display-name"></a>變更使用者的顯示名稱
 
-1. 在 Microsoft 365 系統管理中心，選取 [**使用者**]，然後選取 [作用中的 **使用者**]。
+1. 在 Microsoft 365 系統管理中心中，選取 [**使用者**]，然後選取 [作用中的 **使用者**]。
 1. 從 [作用中使用者] 清單中選取使用者。
 1. 選取 [ **管理連絡人資訊**]。
 1. 變更顯示名稱，然後選取 [ **儲存變更**]。
@@ -49,14 +50,14 @@ ms.locfileid: "52706415"
 
 ### <a name="add-an-email-alias"></a>新增電子郵件別名
 
-1. 在 Microsoft 365 系統管理中心，選取 [**使用者**]，然後選取 [作用中的 **使用者**]。
+1. 在 Microsoft 365 系統管理中心中，選取 [**使用者**]，然後選取 [作用中的 **使用者**]。
 1. 從 [作用中使用者] 清單中選取使用者。
 1. 選取 [ **管理電子郵件別名**]。
 1. 輸入新的別名、驗證網域，然後選取 [ **儲存變更**]。
 
 ### <a name="change-a-username"></a>變更使用者名稱
 
-1. 在 Microsoft 365 系統管理中心，選取 [**使用者**]，然後選取 [作用中的 **使用者**]。
+1. 在 Microsoft 365 系統管理中心中，選取 [**使用者**]，然後選取 [作用中的 **使用者**]。
 1. 從 [作用中使用者] 清單中選取使用者。
 1. 選取 [ **管理使用者名稱**]。
 1. 輸入新的使用者名稱、驗證網域，然後選取 [ **儲存變更**]。

@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將 RingCentral 資料從 Veritas 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、eDiscovery 及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: b5e98df50b0610c9fb583a8521c7a6d6fdb48e44
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 4fc0b61d5bc47a573da3ef8dd12654316e77d073
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276854"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408933"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data-preview"></a>設定連接器以封存 RingCentral 資料 (預覽) 
 
-使用 Microsoft 365 合規性中心中的 Veritas 連接器，將 RingCentral 平臺的資料匯入並封存至您 Microsoft 365 組織中的使用者信箱。 Veritas 提供[RingCentral](https://www.veritas.com/insights/merge1/ringcentral)連接器，可設定為從協力廠商資料來源捕獲專案，並將這些專案匯入至 Microsoft 365。 連接器會將聊天、附件、任務、記事及文章等內容，從 RingCentral 轉換為電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
+使用 Microsoft 365 合規性中心中的 Veritas 連接器，將 RingCentral 平臺的資料匯入並封存至您 Microsoft 365 組織中的使用者信箱。 Veritas 提供將 RingCentral 連接器設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 連接器會將聊天、附件、任務、記事及文章等內容，從 RingCentral 轉換為電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
 
 將 RingCentral 資料儲存在使用者信箱之後，您就可以套用 Microsoft 365 合規性功能，例如訴訟暫止、eDiscovery、保留原則及保留標籤。 使用 RingCentral 連接器在 Microsoft 365 中匯入和封存資料，可協助您的組織遵守政府和法規原則。
 

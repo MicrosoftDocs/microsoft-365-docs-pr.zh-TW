@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 018c47076642d4ce51340aed5fcb25c1d25c6b4f
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 471682b6f830609ef4ff9241bdaa515c97ca2d8d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289160"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394902"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -304,7 +304,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
    - 目標 MailUser 必須具有來自來源信箱的這些屬性，或是使用新的 User 物件進行指派：
       - ExchangeGUID (從源到目標) 的直接流程–信箱 GUID 必須相符。 若目標物件不存在，移動程式將不會繼續進行。
       - ArchiveGUID 從來源到目標)  (直接流程–封存 GUID 必須相符。 若目標物件不存在，移動程式將不會繼續進行。  (只有當來源信箱啟用封存) 時，才需要此。
-      - LegacyExchangeDN (流向 proxyAddress，"x500： <LegacyExchangeDN> " ) – LegacyExchangeDN 必須存在於目標 MailUser 為 x500： proxyAddress。 若目標物件不存在，移動程式將不會繼續進行。
+      - LegacyExchangeDN (流向 proxyAddress，"x500： <LegacyExchangeDN> " ) – LegacyExchangeDN 必須存在於目標 MailUser 為 x500： proxyAddress。 此外，您也需要將來源信箱中的所有 x500 位址複製到目標郵件使用者。 如果目標物件上不存在移動進程，將不會繼續。 
       - UserPrincipalName – UPN 會對應至使用者的新身分識別或目標公司 (例如，user@northwindtraders.onmicrosoft.com) 。
       - 主要 SMTPAddress –主要 SMTP 位址會對應至使用者的新公司 (例如，user@northwind.com) 。
       - TargetAddress/ExternalEmailAddress – MailUser 會參考來源承租人中主控的使用者目前信箱 (例如 user@contoso.onmicrosoft.com) 。 指派此值時，請確認您具有/也指派 PrimarySMTPAddress，否則此值會設定 PrimarySMTPAddress 會造成移動失敗。

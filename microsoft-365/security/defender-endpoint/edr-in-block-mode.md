@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 835195f0c35ada409ef632b2dbfa1b6de0291351
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339682"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409149"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>在封鎖模式中) 的端點偵測和回應 (EDR
 
@@ -68,8 +68,8 @@ ms.locfileid: "53339682"
 
 3. **在塊狀模式中開啟 EDR**。
 
-> [!NOTE]
-> 在組塊模式中 EDR 只能在 Microsoft 365 Defender 入口網站中開啟。 您無法使用登錄機碼、Intune 或群組原則，在封鎖模式中啟用或停用 EDR。
+   > [!NOTE]
+   > 在組塊模式中 EDR 只能在 Microsoft 365 Defender 入口網站中開啟。 您無法使用登錄機碼、Intune 或群組原則，在封鎖模式中啟用或停用 EDR。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>封鎖模式中 EDR 的需求
 
@@ -77,7 +77,7 @@ ms.locfileid: "53339682"
 |---------|---------|
 |權限 |在[Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)中指派全域管理員或安全性管理員角色。 請參閱 [基本許可權](basic-permissions.md)。 |
 |作業系統     |下列其中一個版本： <br/>-Windows 10 (所有版本)  <br/>-Windows Server，版本1803或更新版本 <br/>-Windows Server 2019 <br/>-只有當 Microsoft Defender 防毒軟體處於主動模式時，才 Windows Server 2016 ()      |
-|WindowsE5 登記     |WindowsE5 包含在下列訂閱中： <br/>-Microsoft 365 E5 <br/>-Microsoft 365 E3 搭配身分識別 & 威脅防護服務 <br/><br/>請參閱[每個計畫的](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)[元件](/microsoft-365/enterprise/microsoft-365-overview#components)和功能。       |
+|WindowsE5 登記     |WindowsE5 包含在下列訂閱中： <br/>-Microsoft 365 E5 <br/>-Microsoft 365 E3 搭配 Microsoft 365 E5 安全性附加元件 <br/><br/>請參閱[每個計畫的](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)[元件](/microsoft-365/enterprise/microsoft-365-overview#components)和功能。       |
 |Microsoft Defender 防毒軟體  |必須以主動模式或被動模式安裝和執行 Microsoft Defender 防毒軟體。  (您可以在非 Microsoft 防病毒方案旁使用 Microsoft Defender 防毒軟體。 ) [確認 Microsoft Defender 防毒軟體為主動或被動模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
 |雲端提供的保護 |請確定已設定 Microsoft Defender 防毒軟體，讓[已啟用雲端傳遞的保護](enable-cloud-protection-microsoft-defender-antivirus.md)。 |
 |Microsoft Defender 防毒軟體反惡意程式碼用戶端 |請確定您的用戶端是最新版本。 使用 PowerShell，以系統管理員身分執行 [MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) Cmdlet。 在 **AMProductVersion** 行中，您應該會看到 **4.18.2001.10** 或更新版本。 |
@@ -135,5 +135,5 @@ ms.locfileid: "53339682"
 ## <a name="see-also"></a>另請參閱
 
 - [技術 Community 博客：在封鎖模式中引入 EDR：在其蹤跡中停止攻擊](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [行為封鎖及圍堵](behavioral-blocking-containment.md)
+- [行為封鎖和包含專案](behavioral-blocking-containment.md)
 

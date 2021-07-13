@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/06/2021
-ms.openlocfilehash: f64c71501a550aabdf16b9de2d7a5db93e48caef
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.date: 07/12/2021
+ms.openlocfilehash: 0179c620c8ba00c987395a800ed335644048283f
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314461"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394962"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -496,6 +496,20 @@ Engine： **1.1.17000.7**
 如需詳細資訊，請參閱[Microsoft Defender update for Windows 作業系統安裝影像](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2107.02</summary>
+
+&ensp;套件版本： **1.1.2107.02**    
+&ensp;平臺版本： **4.18.2105.5**   
+&ensp;引擎版本： **1.1.18300.4**  
+&ensp;簽章版本： **1.343.658.0**    
+    
+### <a name="fixes"></a>修復
+- 無
+
+### <a name="additional-information"></a>其他資訊
+- 無  
+<br/>
+</details><details>
 <summary>1.1.2106.01</summary>
 
 &ensp;套件版本： **1.1.2106.01**    

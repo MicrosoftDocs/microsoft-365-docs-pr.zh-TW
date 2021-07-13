@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: dbd4694a7442b3898d24304dc78fc95c28c9a905
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985489"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394950"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租用戶允許/封鎖清單中
 
@@ -40,7 +40,7 @@ ms.locfileid: "52985489"
 
 在 Microsoft 365 具有 Exchange Online 或獨立 Exchange Online Protection 中信箱的組織 (EOP) 組織沒有 Exchange Online 信箱，您可能會反對 EOP 篩選判定。 例如，良好的郵件可能會標示為壞的 (誤報) 或不良郵件可以透過 (誤報) 。
 
-Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單提供了一種方式，可供您手動覆寫 Microsoft 365 篩選 verdicts。 承租人允許/封鎖清單是在郵件流程期間和使用者按一下時使用。 您可以指定下列覆寫類型：
+Microsoft 365 Defender 入口網站中的承租人 Allow/封鎖清單提供了一種方式，可供您手動覆寫 Microsoft 365 篩選 verdicts。 承租人允許/封鎖清單會用於傳入郵件的郵件流程中 (不會套用到組織內的郵件) 在使用者按一下時）。 您可以指定下列覆寫類型：
 
 - 要封鎖的 URLs。
 - 要封鎖的檔案。

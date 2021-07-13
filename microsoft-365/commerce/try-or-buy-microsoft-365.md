@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: GEA150
-description: 為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 商務版應用程式註冊30天免費試用版。
+description: 為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 Apps 商務版註冊30天免費試用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950044"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394866"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>嘗試或購買商務用 Microsoft 365 訂閱
 
-Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您的組織，Microsoft 會為您執行這項工作。 Microsoft 管理裝置，防範實際威脅，並為您的組織提供最新的商務軟體。 您可以為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 商務版應用程式註冊免費試用訂閱，並將其試用30天。
+Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您的組織，Microsoft 會為您執行這項工作。 Microsoft 管理裝置，防範實際威脅，並為您的組織提供最新的商務軟體。 您可以為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 Apps 商務版註冊免費試用訂閱，並將其試用30天。
 
 > [!NOTE]
 > 當您註冊免費試用版時，必須使用信用卡。 當您的免費試用期結束時，您的試用訂閱會自動轉換為付費訂閱。 在試用期結束之前，您的信用卡不會記帳。
@@ -43,13 +44,13 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>事前準備
+## <a name="before-you-begin"></a>在您開始之前
 
 您不需要現有的 Microsoft 帳戶即可註冊免費試用版。 針對本文中的所有其他程式，您必須是組織的全域或計費系統管理員。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>嘗試免費試用訂閱
 
-您是新的客戶，而且您還沒有 Microsoft 的帳戶？ 使用這些步驟來建立帳戶，並註冊 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 商務版應用程式的免費試用訂閱。
+您是新的客戶，而且您還沒有 Microsoft 的帳戶？ 使用這些步驟來建立帳戶，並註冊 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 Apps 商務版的免費試用訂閱。
 
 1. 移至 [ <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 產品] 網站</a>。
 2. 選取您要註冊的計畫，例如 **Microsoft 365 商務標準版**，向下滾動頁面，然後選取 [**嘗試1個月可用**]。

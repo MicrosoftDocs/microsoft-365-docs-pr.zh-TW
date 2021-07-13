@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何建立郵件流程規則以避免盜竊專有資訊，以停止自動轉寄電子郵件。
-ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 23b1afa7a851c0b00fb9fca574ca0bb32057ea42
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706471"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394794"
 ---
 # <a name="stop-email-auto-forward"></a>停止電子郵件自動轉寄
 
@@ -38,7 +39,7 @@ ms.locfileid: "52706471"
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 從 Microsoft 365 系統管理中心，選取 [ **Exchange**，**郵件流程**]，然後在 [**規則**] 索引標籤上，選取加號，然後選擇 [**建立新規則**]。
+1. 從 Microsoft 365 系統管理中心中，選取 [ **Exchange**，**郵件流程**]，然後在 [**規則**] 索引標籤上，選取加號，然後選擇 [**建立新規則**]。
 1. 選取 [ **更多選項**]。 為您的新規則命名。
 1. 然後開啟下拉清單以套用 **此規則如果** 是，請選取 **寄件者**，然後 **是外部內部**。
 1. 選取 **組織內**，然後按一下 **[確定]**。

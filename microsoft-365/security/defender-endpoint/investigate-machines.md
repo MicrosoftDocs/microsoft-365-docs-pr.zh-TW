@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843575"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394890"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>調查 Microsoft Defender for Endpoint Devices 清單中的裝置
 
@@ -58,6 +58,10 @@ ms.locfileid: "52843575"
 -  (主動警示、登入的使用者、安全性評估) 
 
 ![裝置視圖的影像](images/specific-device.png)
+
+> [!NOTE]
+> 由於產品限制，當您決定裝置頁面上的「上次看到」時間範圍 (時，裝置設定檔也不會考慮所有網路證據) 。
+> 例如，在 [裝置] 頁面中的「最後一個看到」值可能會顯示較舊的時間範圍，即使機器的時程表中有更多最近的警示或資料。
 
 ## <a name="device-details"></a>裝置詳細資料
 
@@ -184,6 +188,8 @@ ms.locfileid: "52843575"
 **登入的使用者** 卡片會顯示過去30天內已登入的使用者人數，以及最常和最少的使用者。 選取「查看所有使用者」連結會開啟詳細資料窗格，其中會顯示使用者類型、登入類型，以及使用者第一次查看時間等資訊。 如需詳細資訊，請參閱 [調查使用者實體](investigate-user.md)。
 
 ![使用者詳細資料窗格的影像](images/logged-on-users.png)
+> [!NOTE]
+> 「最常見」使用者值的計算只是以互動式登入的使用者證據為基礎。 不過，「所有使用者」側窗格會計算所有使用者登入的種類，如此一來，只要使用者可能不是互動的，就會在側面窗格中看到更頻繁的使用者。
 
 ### <a name="security-assessments"></a>安全性評估
 
@@ -193,7 +199,7 @@ ms.locfileid: "52843575"
 
 ## <a name="related-topics"></a>相關主題
 
-- [查看和組織 Microsoft Defender for Endpoint 警示佇列](alerts-queue.md)
+- [檢視及組織適用於端點的 Microsoft Defender 警示佇列](alerts-queue.md)
 - [管理 Microsoft Defender for Endpoint 警示](manage-alerts.md)
 - [調查 Microsoft Defender for Endpoint 警示](investigate-alerts.md)
 - [調查與 Defender for Endpoint alert 相關聯的檔案](investigate-files.md)
