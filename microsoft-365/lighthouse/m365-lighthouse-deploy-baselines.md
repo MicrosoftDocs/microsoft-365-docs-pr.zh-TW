@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 針對受管理的服務提供者 (MSPs) 使用 Microsoft 365 Lighthouse，瞭解如何部署 Microsoft 365 Lighthouse 的比較基準。
-ms.openlocfilehash: 0bda7edec2a200e51e734db64e2b703a027e57bb
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f329993443b4bd3003a3e8460d77f9b73ac10fc6
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395077"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409101"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>部署 Microsoft 365 Lighthouse 基線 
 
@@ -37,7 +37,7 @@ Microsoft 365 Lighthouse 基準可讓您部署標準的受管理租使用者設�
 - 設定 Windows 裝置的 Defender 防病毒原則
 - 設定 Windows 裝置的相容性原則
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 請確認您和您的客戶租使用者符合[Microsoft 365 Lighthouse 需求](m365-lighthouse-requirements.md)中所列的需求。
 
@@ -61,5 +61,5 @@ Microsoft 365 Lighthouse 基準可讓您部署標準的受管理租使用者設�
 
 ## <a name="related-content"></a>相關內容
 
-[使用基線部署標準租](m365-lighthouse-deploying-standard-tenant-configurations-overview.md) 使用者設定 (篇文章) \
+[使用基線部署標準租](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) 使用者設定 (篇文章) \
 [Microsoft 365 Lighthouse 常見問題](m365-lighthouse-faq.yml) (文章) 

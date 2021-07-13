@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 針對受管理的服務提供者 (MSPs) ，瞭解 Microsoft 365 Lighthouse 如何協助您保護和管理單一位置的客戶承租人。
-ms.openlocfilehash: a8af12e2fecade0b78f95f1d38bda34f7934ccd6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395074"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409029"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse 綜述
 
@@ -42,7 +42,7 @@ Microsoft 365 Lighthouse 會建議針對中小企業客戶量身定制的安全�
 如需 CSP 程式的詳細資訊，請參閱[雲端解決方案提供者程式概述](/partner-center/csp-overview)。
 
 > [!NOTE]  
-> 類似的產品，Azure Lighthouse 可協助服務提供者使用 Azure 平臺內建的全面且可靠的管理工具，為 Azure 服務提供受管理的服務。 若要深入瞭解，請參閱 [Azure Lighthouse 是什麼？](/azure/lighthouse/overview)   
+> 類似的產品，Azure Lighthouse 可協助服務提供者使用 Azure 平臺內建的全面且可靠的管理工具，為 Azure 服務提供受管理的服務。 若要深入瞭解，請參閱 [什麼是 Azure Lighthouse？](/azure/lighthouse/overview)   
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse 優點
 

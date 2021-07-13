@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 針對受管理的服務提供者 (MSPs) ，瞭解如何註冊 Microsoft 365 Lighthouse。
-ms.openlocfilehash: 08ef5dabaad8e35cfff611325641b99b5a86ad18
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395070"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409005"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>註冊 Microsoft 365 Lighthouse
 
 > [!NOTE]
 > 本文所述的功能都是在預覽中進行變更，而且只有符合 [需求](m365-lighthouse-requirements.md)的合作夥伴才能使用。 如果您的組織沒有 Microsoft 365 Lighthouse，請依照本文中的指示進行註冊。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 - 請確認您和您的客戶租使用者符合[Microsoft 365 Lighthouse 需求](m365-lighthouse-requirements.md)中所列的需求。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53395070"
 
 ## <a name="next-steps"></a>後續步驟
 
-[設定 Microsoft 365 Lighthouse 入口網站安全性]() 
+[設定 Microsoft 365 Lighthouse 入口網站安全性](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>相關內容
 
