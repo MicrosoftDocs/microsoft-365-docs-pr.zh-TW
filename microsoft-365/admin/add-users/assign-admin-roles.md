@@ -1,5 +1,5 @@
 ---
-title: 指派管理員角色 Microsoft 365 系統管理中心
+title: 指派管理員角色的 Microsoft 365 系統管理中心
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: e53d1a414d081ddb74a1c4784adcd982b6194691
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 575d1d8c6b0ffce40877fb41d28df82c24e84d04
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683208"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393772"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 

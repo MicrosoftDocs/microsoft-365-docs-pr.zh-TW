@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 4a3110ead76621e93e646577189b7b03d65caf1d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c0e39a307ee75c661e0f91fcbbcfeae3d95c7257
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286066"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394746"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 

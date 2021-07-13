@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b55572509e9837f2858f96b01a13fbf259b2b770
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346411"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393784"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定及驗證 Microsoft Defender for Endpoint 的排除專案
 
@@ -114,6 +114,18 @@ mdatp exclusion
     Folder exclusion configured successfully
     ```
 
+
+- 新增第二個資料夾的排除專案：
+
+    ```bash
+    mdatp exclusion folder add --path /var/log/
+    mdatp exclusion folder add --path /other/folder
+    ```
+    ```Output
+    Folder exclusion configured successfully
+    ```
+
+
 - 為包含萬用字元的資料夾新增排除專案：
 
     ```bash
@@ -137,6 +149,17 @@ mdatp exclusion
 
     ```bash
     mdatp exclusion process add --name cat
+    ```
+    ```Output    
+    Process exclusion configured successfully
+    ```
+
+
+- 新增第二個處理常式的排除專案：
+
+    ```bash
+    mdatp exclusion process add --name cat
+    mdatp exclusion process add --name dog
     ```
     ```Output    
     Process exclusion configured successfully

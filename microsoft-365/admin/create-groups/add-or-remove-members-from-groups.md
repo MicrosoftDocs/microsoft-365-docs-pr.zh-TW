@@ -13,17 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 瞭解如何將成員新增至群組、從群組中移除成員，以及管理 Microsoft 365 系統管理中心中的群組擁有者狀態。
-ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7eaa74a53ac5f27d801d1cf16c9af035c63c68b1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635603"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393760"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用系統管理中心新增或移除 Microsoft 365 群組中的成員
 
@@ -42,7 +44,7 @@ ms.locfileid: "52635603"
 
 4. 搜尋或選取要新增的成員名稱。
 
-5. 選取 ****[儲存]。
+5. 選取 [儲存]。
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>將群組新增至系統管理員中心的成員
 
@@ -54,7 +56,7 @@ ms.locfileid: "52635603"
 
 4. 搜尋或選取您想要新增的群組名稱。
 
-5. 選取 ****[儲存]。
+5. 選取 [儲存]。
 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>從系統管理中心的群組中移除成員
 

@@ -11,7 +11,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 取得「Microsoft 365 群組」報告，以瞭解群組及其活動。
-ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ed598633205aab83920abef79e766ef16e248f43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939227"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394132"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365系統管理中心的報告-Microsoft 365 群組
 
@@ -69,5 +71,7 @@ ms.locfileid: "51939227"
 
 ## <a name="related-content"></a>相關內容
 
-在系統[管理中心中 Microsoft 365 報告](activity-reports.md) (篇文章) [安全性 & 規範中心內](../../compliance/reports-in-security-and-compliance.md)的報告 () 系統[管理員中心內的報告-](../../admin/activity-reports/active-users-ww.md)作用中的使用者 Microsoft 365 文章 (
+[在系統管理中心中 Microsoft 365 報告](activity-reports.md) (文章) \
+[安全性 & 合規性中心內的報告](../../compliance/reports-in-security-and-compliance.md) (文章) \
+[在系統管理中心中 Microsoft 365 報告-作用中使用者](../../admin/activity-reports/active-users-ww.md) (文章) 
 

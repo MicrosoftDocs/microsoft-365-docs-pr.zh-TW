@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 群組成員可以取得交談、檔案和行事曆活動、Stream 以及 Planner 的群組電子郵件與共用工作區。
-ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 1c9cfb1a1dd65dd72f80b0b0e0f76ccd944b81e2
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377178"
+ms.locfileid: "53383435"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -50,6 +50,8 @@ Microsoft 365 群組可以[在 Azure Active Directory 中針對動態成員資�
 Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Outlook 和 Android 版 Outlook。
 
 如果[系統管理員已啟用](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，則群組成員可以以群組電子郵件地址的身分傳送或代表其傳送。
+
+Microsoft 365 群組不支援與其他 Microsoft 365 群組或通訊群組或安全性群組的巢狀項目。
 
 ## <a name="distribution-groups"></a>通訊群組
 
@@ -97,5 +99,8 @@ Microsoft 365 群組不能是安全性群組的成員。
 
 ## <a name="related-content"></a>相關內容
 
-[深入了解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (文章)
-[為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (文章)
+[深入了解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[在 Outlook 中將通訊群組清單升級至 Microsoft 365 群組](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
+[為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

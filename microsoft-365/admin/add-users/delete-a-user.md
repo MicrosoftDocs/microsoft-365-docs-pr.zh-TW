@@ -16,22 +16,23 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 瞭解如何刪除使用者帳戶，以及如何處理使用者的電子郵件和 OneDrive 內容，以及是否要保留產品授權。
-ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683136"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394348"
 ---
 # <a name="delete-a-user-from-your-organization"></a>刪除貴組織中的使用者
   
 **想知道如何刪除您 *自己* 在工作或學校使用的 Microsoft 365 使用者帳戶？請聯繫您工作或學校的技術支援人員，為您執行這些步驟。**
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 只有 Microsoft 365 具有公司或學校之[全域管理員](about-admin-roles.md)或使用者管理許可權的人員才能刪除使用者帳戶。
 - 在永久刪除使用者資料之前，您有 30 天的期限可以[還原](restore-user.md)帳戶。
@@ -54,7 +55,7 @@ ms.locfileid: "52683136"
 |電子郵件  <br/> | 授與另一個使用者對已刪除使用者之電子郵件的存取權，會將刪除的使用者信箱轉換成共用信箱。 然後新的信箱擁有者可以存取信箱，並監視新的電子郵件。 您也會有下列選項：  <br/>  <br/>變更顯示名稱-建議您變更顯示名稱，以便在作用中 **使用者** 清單中識別共用信箱。  <br/>  開啟自動回復-我們已經為您撰寫了禮貌的自動回復。 您可以將不同的自動回復傳送給組織內的人員，以及組織外的人員。  <br/> <br/> 清除別名-別名是使用者的其他電子郵件地址。 有些組織並未使用它們，否則您不需要在這裡做任何其他事情。 如果使用者確實有別名，我們建議您將其移除，這樣您就可以重複使用這些電子郵件地址。 否則，您無法重複使用這些電子郵件地址，直到已刪除信箱的保留期間已經過去為止。 根據預設，已刪除的信箱可復原30天。 如需詳細資訊，請參閱[刪除或還原 Exchange Online 中的使用者信箱](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)。 <br/> |
 |Active Directory  <br/> |如果您的公司使用與 Azure AD 同步處理的 **Active Directory** ，您必須從 Active Directory 中刪除使用者帳戶。 您無法透過 Office 365 執行這個動作。 如需相關指示，請參閱 [刪除使用者帳戶](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。  <br/> |
 
-### <a name="get-started"></a>快速入門
+### <a name="get-started"></a>入門
 
 由於引導體驗逐步逐步完成刪除使用者的步驟，以下是如何開始的方式。
 
@@ -131,7 +132,7 @@ ms.locfileid: "52683136"
 
 4. 在 [ **移除授權** ] 窗格中的 [ **新數量**] 底下的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數。 例如，如果您有100授權，而且想要移除五個，請輸入95。
 
-5. 選取 ****[儲存]。
+5. 選取 [儲存]。
 
 稍後當您執行步驟以將其他人員新增至您的公司時，系統會提示您同時購買授權，只需一個步驟即可！
 

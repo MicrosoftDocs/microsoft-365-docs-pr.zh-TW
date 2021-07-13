@@ -16,21 +16,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 深入瞭解計費帳戶，以及如何使用它們來管理帳戶設定、發票、支付方式及購買。
 ms.date: 03/17/2021
-ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7b19c30a8a11a816d5cd8906cdb96da36688573c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535635"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394396"
 ---
 # <a name="understand-billing-accounts"></a>了解帳單帳戶
 
 當您註冊以嘗試或購買 Microsoft 產品時，即會建立帳單帳戶。 您可以使用您的計費帳戶來管理帳戶設定、發票、支付方式及購買。 您可以存取多個帳單帳戶。 例如，您已直接註冊 Microsoft 365，或您可以存取組織的 Enterprise 合約、microsoft 產品 & 服務合約或 Microsoft 客戶合約。 針對上述每個案例，您會有個別的帳單帳戶。
 
-Microsoft 365 系統管理中心目前支援下列類型的計費帳戶：
+Microsoft 365 系統管理中心目前支援下列記帳帳戶類型：
 
 - Microsoft 線上服務方案：當您直接註冊 Microsoft 365 訂閱時，就會建立這種計費帳戶。
 - Microsoft 產品 & 服務合約 (MPSA) 程式：當您的組織簽署 MPSA 大量授權合約以購買軟體和線上服務時，就會建立這種計費帳戶。
@@ -74,7 +75,7 @@ Microsoft 365 系統管理中心目前支援下列類型的計費帳戶：
 - **帳單帳戶讀取器** &mdash; 可以查看帳戶。
 
 > [!Note]
-> 計費帳戶角色只適用于帳單帳戶，不適用於其他 Microsoft 365 系統管理中心案例。
+> 計費帳戶角色只適用于帳單帳戶，不會套用到其他 Microsoft 365 系統管理中心案例。
 
 ## <a name="related-content"></a>相關內容
 

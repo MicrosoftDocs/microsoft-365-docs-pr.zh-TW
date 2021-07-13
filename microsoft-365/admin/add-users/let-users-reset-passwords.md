@@ -19,30 +19,31 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何設定原則，讓使用者可以使用自助密碼重設工具來重設自己的密碼。
-ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ac6d7f16cb35cec757340a94c262c3541bea927a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634265"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394312"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
 就像 Microsoft 365 管理員一樣，您可以讓人員使用[自助密碼重設工具](https://go.microsoft.com/fwlink/p/?LinkId=522677)，這樣您就不需要重設密碼。 這可為您分擔一些工作！
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
   
 - 您可以使用任何 Microsoft 365 商務、教育或非盈利性收費方案，**免費** 為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。
 
 - 該工具會使用 Azure。 當您執行這些步驟時，您將會在 Azure 中自動 **免費** 取得此項功能。 如果您不使用其他的 Azure 功能，開啟自助密碼重設不會花費您任何費用。
 
-- **如果您使用的是內部部署 Active Directory**，則不會套用上述兩個點。 相反地，您可以設定此設定，但 **需要對 AZURE AD 進階版付費訂閱**。
+- **如果您使用的是內部部署 Active Directory**，則不會套用上述兩個點。 相反地，您可以設定此設定，但 **需要付費訂閱才能 Azure AD Premium**。
 
 本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [什麼是系統管理員帳戶？](../../business-video/admin-center-overview.md)
 
@@ -76,4 +77,4 @@ ms.locfileid: "52634265"
 
 為[您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) \
 [設定個別使用者的密碼永不過期](set-password-to-never-expire.md) (文章)
-[Microsoft 365 商務版訓練](../../business-video/index.yml)影片 (連結] 頁面) 
+[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 

@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何建立共用的行事曆。
-ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 87b73b9b1bff2d56926c70e812515df3882edcf3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705639"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394204"
 ---
 # <a name="create-a-shared-calendar"></a>建立共用行事曆
 
@@ -47,4 +48,4 @@ ms.locfileid: "52705639"
 
 [在 Outlook (文章中管理您的行事曆和連絡人](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)) \
 [電子郵件](../admin/email/email-collaboration.md) 共同作業 (文章) \
-[Microsoft 365 系統管理中心](admin-center-overview.md) (文章的概覽) 
+[Microsoft 365 系統管理中心](admin-center-overview.md) (文章的概述) 

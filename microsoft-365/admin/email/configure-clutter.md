@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: '瞭解如何使用 Exchange PowerShell 來啟用或停用組織中所有或特定使用者的雜亂功能。 '
-ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706105"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393976"
 ---
 # <a name="configure-clutter-for-your-organization"></a>為您的組織設定混亂
 
@@ -55,12 +57,12 @@ ms.locfileid: "52706105"
 
 如果您使用 PowerShell 大量建立使用者，則必須針對每個使用者的信箱執行 [Set-Clutter](/powershell/module/exchange/set-clutter) ，以管理雜亂。 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何時會向網路上的 Outlook 中的使用者顯示雜亂的開啟/關閉參數？
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何時對 Outlook 網頁版中的使用者顯示雜亂的功能？
 <a name="bkmk_onoff"> </a>
 
 身為系統管理員，您可以使用 Exchange PowerShell 重新啟用雜亂功能。 完成此動作後，焦點收件匣會關閉，而雜亂的功能將會重新成為作用中。 
   
- **如果您使用的是 Microsoft 365 商務進階版訂閱的網頁 Outlook：**
+ **如果您使用的是 Microsoft 365 商務進階版訂閱 Outlook 網頁版：**
   
 - 如果使用者目前已啟用雜亂功能： 
     

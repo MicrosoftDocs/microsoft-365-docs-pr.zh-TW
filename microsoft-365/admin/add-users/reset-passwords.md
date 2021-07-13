@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 使用您的 Microsoft 365 系統管理員帳戶登入，以在商務用 Microsoft 365 中重設使用者的密碼。
-ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635567"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394276"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -126,4 +127,4 @@ ms.locfileid: "52635567"
 [重設密碼](../add-users/reset-passwords.md) (文章)
 [設定個別使用者的密碼永不過期](set-password-to-never-expire.md) (文章)
 為[您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) \
-[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 
+[商務用 Microsoft 365 訓練影片](../../business-video/index.yml) (連結頁面)

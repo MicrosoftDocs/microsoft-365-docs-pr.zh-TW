@@ -18,15 +18,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 瞭解帳單設定檔如何支援發票。
 ms.date: 04/02/2021
-ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537328"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394626"
 ---
 # <a name="understand-billing-profiles"></a>了解帳單設定檔
 
@@ -34,7 +35,7 @@ ms.locfileid: "52537328"
 
 > [!NOTE]
 >
-> 從 Microsoft.com 購買產品和服務的客戶或是在 Microsoft 365 系統管理中心的 [**購買服務**] 頁面上，都無法使用計費設定檔。
+> 從 Microsoft.com 購買產品和服務，或在 Microsoft 365 系統管理中心的 [**購買服務**] 頁面上，客戶無法使用計費設定檔。
 
 ## <a name="what-are-billing-profile-roles"></a>什麼是計費設定檔角色？
 
@@ -73,7 +74,7 @@ ms.locfileid: "52537328"
 
 如果您有任何問題或需要協助您的 Azure 費用，請 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">建立支援 azure 支援的支援要求</a>。
 
-如果您有任何問題或需要協助您 Microsoft 365 系統管理中心的帳單設定檔，請[與支援人員聯繫](../../business-video/get-help-support.md)。
+如果您有任何問題或需要協助您的 Microsoft 365 系統管理中心中的帳單設定檔，請[與支援人員聯繫](../../business-video/get-help-support.md)。
 
 ## <a name="related-content"></a>相關內容
 

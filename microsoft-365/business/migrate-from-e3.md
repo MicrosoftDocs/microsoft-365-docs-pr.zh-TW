@@ -18,16 +18,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 description: 如果您有 Office 365 E3 訂閱，但沒有超過300名員工，請考慮切換至 Microsoft 365 商務進階版。
-ms.openlocfilehash: d139d07c946ff3efed3db3a73eb5e1a4ae66c190
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: c1b4da07b3bf28cce1a48424ab45cde6ea54d367
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623598"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394164"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務進階版
 
@@ -71,7 +72,7 @@ Microsoft 365 商務進階版具有您的小型企業所需的一切，結合了
 若要 Microsoft 365 商務進階版將您的訂閱遷移，請參閱[手動變更計畫](../commerce/subscriptions/change-plans-manually.md)，以取得相關指示。 您也可以[自動升級所有人](../commerce/subscriptions/upgrade-to-different-plan.md)，或與合作夥伴合作，將 E3 訂閱和授權移至 Microsoft 365 商務進階版訂閱。
 下列各節說明您需要做的變更（若有的話），以及遷移後可以執行的動作。
 
-### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365E3 訂閱設定和資料
+### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 訂閱設定和資料
 您不需要在遷移之前對目前的訂閱或資料做任何變更，包括：
 
 - 訂閱設定，例如 DNS 記錄和功能變數名稱。
@@ -120,7 +121,7 @@ Microsoft 365 商務進階版在使用 Exchange Online 方案1時，其使用的
 
 ### <a name="threat-protection"></a>威脅防護
 
-在遷移至 Microsoft 365 商務進階版後，您就能使用 Office 365 的 Defender。 如需概述，請參閱[Microsoft Defender Office 365](../security/office-365-security/defender-for-office-365.md) 。 若要設定，請參閱[設定安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，[設定安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，並[在 Office 365 中設定 Defender 中的反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
+在遷移至 Microsoft 365 商務進階版後，您就能使用 Office 365 的 Defender。 如需概述，請參閱[Microsoft Defender Office 365](../security/office-365-security/defender-for-office-365.md) 。 若要設定，請參閱[設定保管庫連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，[設定保管庫附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，並[在 Office 365 中設定 Defender 的反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 

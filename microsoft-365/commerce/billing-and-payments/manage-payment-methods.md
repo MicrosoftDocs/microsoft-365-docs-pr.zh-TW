@@ -18,15 +18,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 向 Microsoft 購買商務產品或服務時，您可以使用現有的付款方式，或在 Microsoft 365 系統管理中心新增付款方式。
 ms.date: 04/02/2021
-ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537316"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394614"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
 

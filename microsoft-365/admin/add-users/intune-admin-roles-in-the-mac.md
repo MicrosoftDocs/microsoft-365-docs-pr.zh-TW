@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 60a1f21e65df007e78077d8c3bb22161313c1073
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: bee35191e7e80313521891a1efc1780489902ae8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759903"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394324"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Intune 系統管理員角色
 
-您的 Microsoft 365 或 Office 365 訂閱隨附一組系統管理員角色，您可以使用 Microsoft 365 系統管理中心將這些角色指派給組織中的使用者。 每個系統管理員角色會與常見的商務功能對應，並可讓組織中的人員在系統管理中心執行特定工作的權限。
+Microsoft 365 或 Office 365 訂閱隨附一組系統管理員角色，您可以使用 Microsoft 365 系統管理中心將這些角色指派給貴組織的使用者。各個系統管理員角色會對應常用的商務功能，並提供權限給貴組織內部人員，以在系統管理中心中執行特定工作。。
 
 Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。 不過，這些角色是 Intune 系統管理中心中可用角色的子集。 正在尋找 Microsoft Intune 的詳細角色描述嗎？ 請參閱 [使用 Microsoft Intune 的角色型存取控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
@@ -46,7 +47,7 @@ Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft 合作夥伴的委派系統管理
 
-如果您正與 Microsoft 合作夥伴合作，您可以指派系統管理員角色給他們。 他們也可以反過來指派系統管理員角色給您公司 (或他們公司) 中的使用者。 例如，如果他們正在設定並為您管理線上組織，您可能會想要他們這樣做。
+如果您正與 Microsoft 合作夥伴合作，您可以指派系統管理員角色給他們。他們也可以反過來指派系統管理員角色給您公司 (或他們公司) 中的使用者。例如，如果他們正在設定並為您管理線上組織，您可能會想要他們這樣做。
   
 合作夥伴可以指派以下角色： 
   
@@ -56,10 +57,8 @@ Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。
 
 在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](../misc/add-partner.md)。
   
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
-
-[指派系統管理員角色](assign-admin-roles.md)
-
-[Microsoft 365 系統管理中心的活動報告](../activity-reports/activity-reports.md)
+[關於 Microsoft 365 系統管理員角色](about-admin-roles.md) (文章)\
+[指派系統管理員角色](assign-admin-roles.md) (文章)\
+[Microsoft 365 系統管理中心的活動報告](../activity-reports/activity-reports.md) (文章)

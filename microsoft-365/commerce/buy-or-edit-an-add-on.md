@@ -18,14 +18,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 description: 瞭解如何為商務版訂閱購買及管理您的 Microsoft 365 的附件。
 ms.date: 04/02/2021
-ms.openlocfilehash: 8cf586114c9b6ab30a9f4e5acdd669e185edd71b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c9b552ebc6b23bf01816fee197641caf5c6a43c6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331775"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394470"
 ---
 # <a name="buy-or-manage-add-ons"></a>購買或管理附加元件
 

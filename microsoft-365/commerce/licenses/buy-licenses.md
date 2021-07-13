@@ -18,21 +18,22 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: 使用下列步驟可購買更多授權，或減少商務用 Microsoft 365 的授權數目。
 ms.date: 04/07/2021
-ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582701"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394434"
 ---
 # <a name="buy-or-remove-licenses"></a>購買或移除授權
 
 您可以使用下列步驟，購買更多授權或減少訂閱的授權數目。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 您必須是全球或計費系統管理員，才可執行本文所述的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 - 您可以 [同時新增使用者並指派授權](../../admin/add-users/add-users.md)。
@@ -71,7 +72,7 @@ ms.locfileid: "52582701"
 2. 在 [ **產品** ] 索引標籤上，尋找您要購買或移除授權的訂閱。 選取 [ (更多動作) ] 的三個點，然後選取 [ **購買授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. 如果您想要減少授權數目，請在 [ **購買授權** ] 窗格的頂端，選取 [ **移除授權**]。
 4. 若要購買或移除授權，請在 [**授權總數**] 方塊中的 [**新數量**] 下，輸入此訂閱所需的授權總數。 例如，如果您有100授權，而您想要新增5個，請輸入105。 如果您想要移除五個，請輸入95。
-5. 選取 ****[儲存]。
+5. 選取 [儲存]。
 
 > [!NOTE]
 > 若所有授權都已指派給使用者，您就無法減少訂閱的授權數目。 若要減少授權數目，請先 [從使用者取消指派一或多個授權](../../admin/manage/remove-licenses-from-users.md)，然後從訂閱中移除授權。

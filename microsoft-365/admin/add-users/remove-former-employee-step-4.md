@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 請遵循本文中的步驟，讓另一個員工存取離職員工的 OneDrive 和 Outlook 資料。
-ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5868ab1622fea68cc3dabb54a3d06208ccaa165
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730195"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394300"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步驟 4-授予另一個員工 OneDrive 和 Outlook 資料的存取權
 
@@ -128,7 +129,7 @@ ms.locfileid: "52730195"
   
     ![選取上方資料夾並包含檢查子資料夾的 [匯出 Outlook 資料檔案] 對話方塊](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 選取 [下一步]。
+7. 選取 **下一步**。
 
 8. 選取 **[流覽]** ，以選取要將 Outlook 資料檔案儲存 ( .pst) 的位置。 輸入檔案名  *，然後* 選取 **[確定]** 繼續。
 
@@ -171,7 +172,7 @@ Outlook 會立即開始匯出，除非已建立新的 Outlook 資料檔案 ( .ps
 
 5. 在 [ **選項**] 底下，選擇您要處理重複專案的方式
 
-6. 選取 [下一步]。
+6. 選取 **下一步**。
 
 7. 如果已指派密碼給 Outlook 資料檔案 ( .pst) ，請輸入密碼，然後選取 **[確定]**。
 

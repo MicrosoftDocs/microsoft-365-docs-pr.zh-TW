@@ -19,15 +19,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: MET150
 description: 在您的 Microsoft 365 訂閱中新增檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
 ms.date: 04/02/2021
-ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 28716c9506f31fd32f821cfff90bd8eaa19e6495
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256816"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394650"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
@@ -36,7 +37,7 @@ ms.locfileid: "53256816"
 > [!NOTE]
 > 如果您透過大量授權或 CSP 購買訂閱，您就無法為組織直接從 Microsoft 購買 **Office 365 額外檔案儲存體**。 請與您的代表或合作夥伴聯繫以取得協助。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須是全域或 SharePoint 的系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
@@ -76,7 +77,7 @@ ms.locfileid: "53256816"
 3. 在 [產品詳細資料] 頁面的 [ **附加** 元件] 區段中，選取 [ **管理載入** 宏]。
 4. 在 [**管理** 增益集] 窗格中，從 [附加元件] 清單中，選擇 [ **Office 365 多餘****的** 檔案儲存體]。
 5. 在 [ **數量** ] 文字方塊中，輸入您要用於訂閱的 gb 儲存空間數目。
-6. 選取 ****[儲存]。
+6. 選取 [儲存]。
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>我的方案是否符合 Office 365 額外檔案儲存空間的資格？
 

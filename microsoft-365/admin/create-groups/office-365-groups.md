@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 使用 Microsoft 365 群組，您可以讓人員群組存取共用資源的集合，以促進團隊合作的 Microsoft 365。
-ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 612884306b0b999de48f7168981d9c006335f0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782390"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393736"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -53,7 +54,7 @@ Microsoft 365群組是一種基礎成員資格服務，可促進所有團隊間�
 - **Members** -成員可以存取群組中的所有專案，但無法變更群組設定。 依預設，群組成員可以邀請客人加入您的群組，但您可以 [控制該設定](manage-guest-access-in-groups.md)。
 - **來賓** 群組來賓是指來自組織外部的成員。
 
-只有全域系統管理員、使用者管理員和群組系統管理員可以在 Microsoft 365 系統管理中心建立及管理群組。 您不能是委派的系統管理員 (例如，擔任系統管理員的顧問)。
+只有全域系統管理員、使用者管理員和群組系統管理員可以在 Microsoft 365 系統管理中心中建立及管理群組。 您不能是委派的系統管理員 (例如，擔任系統管理員的顧問)。
 
 身為管理員，您可以：
 
@@ -85,7 +86,7 @@ Microsoft 365群組是一種基礎成員資格服務，可促進所有團隊間�
 
 組織可以擁有的 Microsoft 365 組預設數目上限為500000。 若要超出預設限制，您必須聯繫 Microsoft 支援部門。 如需 Microsoft 365 群組限制的詳細資訊，請參閱[Microsoft 365 群組-系統管理](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)說明。
 
-當您具有群組使用量的可操作資訊時，管理您的 Microsoft 365 群組會更有效。 Microsoft 365 系統管理中心有一個報告工具，可讓您查看儲存體使用方式、您擁有的使用中群組數目，以及使用者使用群組的方式。 如需詳細資訊，請參閱：[在系統管理中心中 Microsoft 365 報告](../activity-reports/office-365-groups.md)。
+當您具有群組使用量的可操作資訊時，管理您的 Microsoft 365 群組會更有效。 Microsoft 365 系統管理中心有一個報告工具，可讓您查看儲存使用方式、您擁有的使用中群組數目，以及使用者使用群組的方式。 如需詳細資訊，請參閱：[在系統管理中心中 Microsoft 365 報告](../activity-reports/office-365-groups.md)。
 
 ## <a name="sensitivity-labels"></a>敏感度標籤
 
@@ -114,7 +115,7 @@ Microsoft 365群組是一種基礎成員資格服務，可促進所有團隊間�
 Microsoft 365 群組可搭配 Azure Active Directory 使用。 您取得的群組功能取決於您所擁有的 Azure Active Directory 訂閱，以及指派給群組召集人的授權。
 
 > [!IMPORTANT]
-> 針對所有群組功能，如果您有 Azure AD 進階版訂閱，使用者可以加入群組，不論他們是否已指派 AAD P1 授權。 不會強制執行授權。
+> 針對所有群組功能，如果您有 Azure AD Premium 訂閱，使用者可以加入群組，不論他們是否已指派 AAD P1 授權。 不會強制執行授權。
 > 我們會定期產生使用方式報告，告訴您哪些使用者已遺失授權，而且需要指派給他們，以符合授權要求。 例如，假設使用者沒有授權，而且會將其新增至強制執行命名原則的群組中。 報告會標示您需要授權。
 
 ## <a name="related-content"></a>相關內容

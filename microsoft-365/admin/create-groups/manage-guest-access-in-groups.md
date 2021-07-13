@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 控制來賓存取。
-ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635759"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394060"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>管理 Microsoft 365 群組中的來賓存取
 
@@ -45,7 +47,7 @@ ms.locfileid: "52635759"
 
 ## <a name="manage-groups-guest-access"></a>管理群組來賓存取
 
-如果您想要啟用或停用群組中的「來賓存取」，您可以在 Microsoft 365 系統管理中心進行。
+如果您想要啟用或停用群組中的「來賓存取」，您可以在 Microsoft 365 系統管理中心中這麼做。
 
 1. 在系統管理中心中，移至 [**顯示所有** \> **設定** \> **組織設定**]，然後在 [**服務**] 索引標籤上，選取 [ **Microsoft 365 群組**]。
   
@@ -53,7 +55,7 @@ ms.locfileid: "52635759"
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>從系統管理中心新增來賓至 Microsoft 365 群組
 
-如果您的目錄中已存在來賓，您可以從 Microsoft 365 系統管理中心將其新增至您的群組。 具有動態成員資格的 (群組必須[在 Azure Active Directory 中管理](/azure/active-directory/enterprise-users/groups-create-rule)。 ) 
+如果您的目錄中已存在客人，您可以從 Microsoft 365 系統管理中心將其新增至群組。 具有動態成員資格的 (群組必須[在 Azure Active Directory 中管理](/azure/active-directory/enterprise-users/groups-create-rule)。 ) 
   
 1. 在系統管理中心中，移至 [**群組**  >  **群組**] 頁面。
   
@@ -61,7 +63,7 @@ ms.locfileid: "52635759"
   
 4. 選取 [ **新增成員**]，然後選擇您要新增的客人名稱。
     
-5. 選取 ****[儲存]。
+5. 選取 [儲存]。
 
 如果您想要直接將來賓新增至目錄，您可以[在 Azure 入口網站中新增 Azure Active Directory B2B](/azure/active-directory/b2b/add-users-administrator)共同作業使用者。
 
@@ -70,6 +72,6 @@ ms.locfileid: "52635759"
 ## <a name="related-content"></a>相關內容
 
 [從特定群組封鎖來賓使用者](../../solutions/per-group-guest-access.md) (文章) \
-[管理 Microsoft 365 系統管理中心的群組成員資格](add-or-remove-members-from-groups.md) (文章) \
+[管理 Microsoft 365 系統管理中心 (文章中的群組成員資格](add-or-remove-members-from-groups.md)) \
 [Azure Active Directory 存取評論](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (文章) \
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (文章) 

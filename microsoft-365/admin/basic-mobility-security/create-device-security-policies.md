@@ -15,21 +15,22 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 使用基本行動性和安全性來建立保護組織資訊的裝置原則。
-ms.openlocfilehash: 62dc2eef87d413a9cb62a01541126860620eec3f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5c8794b53dc11d1cee2fc13c8fbc4933e18dd9a3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228252"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394084"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本行動性和安全性中建立裝置安全性原則
 
 您可以使用基本行動性和安全性來建立裝置原則，以協助保護您的組織資訊，使其不會受到未經授權的存取 Microsoft 365。 您可以將原則套用至組織中的任何行動裝置，讓裝置的使用者具有適當的 Microsoft 365 授權，並已在基本行動及安全性中註冊裝置。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 > [!IMPORTANT]
 > 在您可以建立行動裝置原則之前，您必須啟動並設定基本行動性和安全性。 如需詳細資訊，請參閱基本行動性和安全性概述。

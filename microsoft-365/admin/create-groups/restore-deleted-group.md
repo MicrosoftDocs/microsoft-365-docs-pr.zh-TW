@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 已刪除的群組會保留30天，您仍可還原此群組。 30天后，就會永久刪除群組及其內容。
-ms.openlocfilehash: 2c20c2bd3ce91331e7160132047dbf3ecd79c4b8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635735"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394048"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>還原已刪除的 Microsoft 365 群組
 
@@ -56,7 +58,7 @@ ms.locfileid: "52635735"
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-如果您是 Microsoft 365 群組的擁有者，您可以遵循下列步驟，在網頁上 Outlook 中，自行還原群組：
+如果您是 Microsoft 365 群組的擁有者，您可以遵循下列步驟，自行在 Outlook 網頁版中還原群組：
 
 1. 在 [[刪除的群組] 頁面](https://outlook.office.com/people/group/deleted)上，選取 [**群組**] 節點底下的 [**管理群組**] 選項，然後選擇 [**刪除**]。
 
@@ -66,7 +68,7 @@ ms.locfileid: "52635735"
 
 # <a name="admin-center"></a>[系統管理中心](#tab/admin-center)
 
-如果您是全域系統管理員或群組管理員，您可以在 Microsoft 365 系統管理中心還原已刪除的群組：
+如果您是全域系統管理員或群組管理員，則可以在 Microsoft 365 系統管理中心中還原已刪除的群組：
 
 1. 移至 [[系統管理中心]](https://admin.microsoft.com)。
 2. 展開 [ **群組**]，然後按一下 [ **刪除的群組**]。

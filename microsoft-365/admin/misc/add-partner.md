@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Microsoft 365 購買時新增記錄的協力廠商、變更協力廠商或從訂閱刪除合作夥伴。
-ms.openlocfilehash: 4cebbce41cbd2a500cc502b808734f6056271d12
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 78419dd6d1370475c0565c0ad072a7b54639ce43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683340"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393856"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -49,7 +51,7 @@ ms.locfileid: "52683340"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 ::: moniker range="o365-worldwide"
 

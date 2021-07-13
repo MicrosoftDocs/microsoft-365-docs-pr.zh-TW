@@ -18,15 +18,16 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: 您收到的應用程式和服務取決於您購買的 Microsoft 365 產品，例如 Microsoft 365 Apps 商務版。
 ms.date: 07/01/2020
-ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 69996a97b582ec3323a31efbe4cb70fe4a61e19d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779876"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394422"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解商務 Microsoft 365 中的訂閱與授權
 
@@ -42,10 +43,10 @@ ms.locfileid: "52779876"
 
 :::row:::
    :::column span="":::
-        -Microsoft 365 Apps 商務版 Microsoft 365 Apps 企業版 Microsoft 365 商務標準版 Microsoft 365 商務進階版 Microsoft 365 A3-Microsoft 365 A5
+        -Microsoft 365 Apps 商務版 Microsoft 365 Apps 企業版 Microsoft 365 商務標準版 Microsoft 365 商務進階版 Microsoft 365 A3
    :::column-end:::
    :::column span="":::
-        -Microsoft 365 E3 Microsoft 365 E5 Office 365 A1 + Office 365 A3 Office 365 A5 E3-Office 365 E5
+        -Microsoft 365 E3 Microsoft 365 E5 Office 365 A1 加上 Office 365 A3 Office 365 A5 Office 365 E3
    :::column-end:::
 :::row-end:::
 

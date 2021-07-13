@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007162"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394674"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
 
@@ -68,7 +70,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 「啟用與授權」頁面提供 Microsoft 365 啟用的報告;也就是有多少使用者已下載和啟用 Office 的應用程式，以及您的組織已指派多少個授權。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 
-- **啟用** &ndash;追蹤服務方案 (例如，Microsoft 365 企業版應用程式、Project 和 Visio) 組織中的啟用。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
+- **啟用** &ndash;追蹤服務方案 (例如，Microsoft 365 Apps 企業版、Project 和 Visio) 組織中的啟用。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
 
 - **授權** &ndash; 此報告包含授權類型、指派每個授權類型的使用者計數，以及每個月的授權指派發佈的概述。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 

@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，以便您的服務（如電子郵件和商務用 Skype 線上）使用您自己的功能變數名稱。
-ms.openlocfilehash: 1a65ca52b85c2cf2e4fc30e2a71e5930ae7a9a4d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c2de2d8b75aaf50bd1d19d3fd3b507fd476d4847
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287122"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393928"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
@@ -174,7 +175,7 @@ ms.locfileid: "53287122"
 
 8. 如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟9。
 
-9. 選取 **[儲存]**。
+9. 選取 [儲存]。
 
 此外，您還可以建立 CNAME 記錄，協助客戶找到您的網站。
 
@@ -183,7 +184,7 @@ ms.locfileid: "53287122"
 3. 在 [ **主機名稱或別名** ] 方塊中，輸入 **www**。
 4. 在 [指向 **位址** ] 方塊中，為您的網站輸入 (FQDN) 的完整功能變數名稱。 例如， **5om**。
 5. 如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟6。
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 在將名稱伺服器記錄更新為指向 Microsoft 之後，您的網域安裝已完成。 電子郵件會路由傳送至 Microsoft，而您的網站位址的流量仍會繼續前往您目前的網站主機。 '
 

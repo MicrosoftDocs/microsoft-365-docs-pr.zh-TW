@@ -19,13 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 5c472615846ba6460bc829bc0157c6c6da940292
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9429a4fc5adc3447a0238a3e8aa84ab39585fc50
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332015"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394518"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -140,7 +141,7 @@ ms.locfileid: "52332015"
 2. 在 **[產品]** 索引標籤上，選擇您想要更新的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址**]。
 4. 在 [ **編輯服務使用位址** ] 窗格的 [ **加值稅 號碼** ] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。
-5. 選取 ****[儲存]。
+5. 選取 [儲存]。
 
 ## <a name="how-taxes-are-calculated"></a>如何計算稅金
 

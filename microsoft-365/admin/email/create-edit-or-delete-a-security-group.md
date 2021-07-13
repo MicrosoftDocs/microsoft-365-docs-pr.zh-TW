@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組
+title: 在 Microsoft 365 系統管理中心中建立、編輯或刪除安全性群組
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 瞭解如何建立、編輯或刪除安全性群組。
-ms.openlocfilehash: 7887a6371287ebef3a91cc1a37f2ed696df1948d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 525acc45b293563f58bb9aa12c40bec1438cb055
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623998"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393952"
 ---
-# <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組
+# <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中建立、編輯或刪除安全性群組
 
 在 [Microsoft 365 **群組**] 頁面上，您可以建立使用者帳戶群組，供您在 SharePoint 線上和 CRM online 中指派相同的許可權。 例如，管理員可以建立安全性群組以授與 SharePoint 網站存取權給特定群組的人員。 只有全域及使用者管理管理員擁有建立、編輯或刪除安全性群組的權限；如需管理員角色的詳細資訊，請參閱 [指派管理員角色](../add-users/assign-admin-roles.md)。 
   
@@ -40,7 +42,7 @@ ms.locfileid: "52623998"
 
 ### <a name="add-a-security-group"></a>新增安全性群組
 
-1. 在 Microsoft 365 系統管理中心，移至 [**群組**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
+1. 在 Microsoft 365 系統管理中心中，移至 [**群組**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
   
 2. 在 [ **群組** ] 頁面上，選取 [ **新增群組**]。
     
@@ -102,6 +104,6 @@ ms.locfileid: "52623998"
 
 ## <a name="related-content"></a>相關內容
 
-[在 Microsoft 365 系統管理中心建立群組](../create-groups/create-groups.md) (文章) \
+[在 Microsoft 365 系統管理中心中建立群組](../create-groups/create-groups.md) (文章) \
 [向使用者說明 Microsoft 365 群組](../create-groups/explain-groups-knowledge-worker.md) (文章) \
-[在 Microsoft 365 系統管理中心管理群組](../create-groups/manage-groups.md) (文章) 
+[管理 Microsoft 365 系統管理中心](../create-groups/manage-groups.md) (文章中的群組) 

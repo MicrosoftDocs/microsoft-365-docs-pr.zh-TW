@@ -17,21 +17,22 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
+- AdminTemplateSet
 search.appverid: MET150
 description: 當您以 Microsoft 關閉您的帳戶時，系統會刪除所有與您帳戶相關的資訊，包括授權、使用者和使用者資料。
 ms.date: 04/02/2021
-ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624322"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394458"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
 當您使用 Microsoft 關閉您的帳戶時，與您的帳戶相關的所有資訊都會被刪除。 這些資訊包括訂閱、授權、付款方式、使用者及使用者資料。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 開始此程序之前，請務必備份任何您想保留的資料。
 
@@ -52,7 +53,7 @@ ms.locfileid: "52624322"
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
 1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
-2. 在 [ **產品** ] 索引標籤上，尋找使用中的訂閱。 選取三個點 (更多動作)，然後選取 [取消訂閱 **]**。
+2. 在 [ **產品** ] 索引標籤上，尋找使用中的訂閱。 選取三個點 (更多動作)，然後選取 **[取消訂閱]**。
 3. 在 [取消訂閱 **]** 窗格中，選擇取消的原因。選擇性地提供任何意見反應。
 4. 選取 **[儲存]**。
 5. 重複步驟1到4，以取消所有作用中的訂閱。
@@ -82,7 +83,7 @@ ms.locfileid: "52624322"
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：在 Azure Active Directory 中刪除目錄
 
 1. 使用全域系統管理員帳戶登入 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 系統管理中心</a> 。
-2. 選取 **[Azure Active Directory]**。
+2. 選取 [Azure Active Directory]。
 3. 切換至您要刪除的組織。
 4. 選取 [ **刪除租** 使用者]。
 5. 如果您的組織未通過一或多項檢查，您會看到有關如何傳遞檢查的詳細資訊連結。 傳遞所有檢查後，請選取 [ **刪除** ] 以完成程式。

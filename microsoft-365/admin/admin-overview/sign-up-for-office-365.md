@@ -20,17 +20,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
+- AdminTemplateSet
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: 深入瞭解 Office 365 的註冊程式之前，請先瞭解您需要瞭解的知識。
 ms.date: 03/17/2021
-ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683100"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394228"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何註冊系統管理員協助
 
@@ -125,4 +126,4 @@ ms.locfileid: "52683100"
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 
+[商務用 Microsoft 365 訓練影片](../../business-video/index.yml) (連結頁面)

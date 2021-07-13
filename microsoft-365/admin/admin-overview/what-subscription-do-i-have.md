@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: 瞭解如何透過前往 [產品] 頁面來驗證您的組織所擁有的訂閱。
 ms.date: 01/21/2021
-ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706295"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394216"
 ---
 # <a name="what-subscription-do-i-have"></a>我有何種訂閱？
 
@@ -41,7 +42,7 @@ ms.locfileid: "52706295"
 
 ## <a name="related-content"></a>相關內容
   
-[訂閱和帳單](../../commerce/index.yml) (連結) \
+[訂閱和帳單](../../commerce/index.yml) (連結頁面) \
 [檢視帳單](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (文章)\
 [為您的訂閱付費](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
 [變更您的帳單位址](../../commerce/billing-and-payments/change-your-billing-addresses.md) (文章) 

@@ -14,19 +14,21 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype 線上和其他服務的 dns 記錄，以供 Microsoft Windows 型 DNS。
-ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706106"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393724"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用 Windows 基礎的 DNS 建立 Microsoft 的 dns 記錄
 
@@ -49,7 +51,7 @@ ms.locfileid: "52706106"
 - 從 Microsoft 的 [新增 DNS 記錄] 頁面的 [Exchange Online] 區段中的 [MX] 列中，複製列于 [要處理的位置] 底下的值。 您將會在您要建立的記錄中使用此值。 
 - 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **郵件交換器 (MX)**]。 若要尋找網域的此頁面，請參閱[在 Windows 基礎型 DNS 中尋找您的 DNS 記錄](#find-your-dns-records-in-windows-based-dns)。  
 - 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值： 
-    - 主機名稱:  
+    - 主機名稱： 
     - @Address：將點貼到您剛剛從 Microsoft 複製的位址值。  
     - Pref: 
 - 選取 [ **儲存變更**]。
@@ -76,14 +78,14 @@ ms.locfileid: "52706106"
     - 主機名稱： sip
     - 類型： CNAME
     - 位址： sipdir.online.lync.com
-- 選取 **[確定]**。
+- 選取 [確定]。
 
 新增商務用 Skype Online 自動探索 CNAME 記錄。  
 - 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱： lyncdiscover
     - 類型： CNAME
     - 位址： webdir.online.lync.com
-- 選取 **[確定]**。
+- 選取 [確定]。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>為 Microsoft 的 (MDM) 新增兩個適用于行動裝置管理的 CNAME 記錄。
 
@@ -97,7 +99,7 @@ ms.locfileid: "52706106"
 - 主機名稱： enterpriseregistration
 - 類型： CNAME
 - 位址： enterpriseregistration.windows.net
-- 選取 **[確定]**。 
+- 選取 [確定]。 
 
 新增 MDM Enterpriseenrollment CNAME 記錄。 
 -  在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 
@@ -105,7 +107,7 @@ ms.locfileid: "52706106"
     - 主機名稱： enterpriseenrollment
     - 類型： CNAME
     - 位址： enterpriseenrollment-s.manage.microsoft.com
-- 選取 **[確定]**。
+- 選取 [確定]。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
@@ -125,7 +127,7 @@ ms.locfileid: "52706106"
 -  記錄類型： TXT
 -  Address： v = spf1 包含: spf.protection.outlook.com。 .com-all 
          
--  選取 **[確定]**。
+-  選取 [確定]。
    
 ## <a name="add-srv-records"></a>新增 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
@@ -140,9 +142,9 @@ ms.locfileid: "52706106"
     -  通訊協定： _tls
     -  優先順序：100
     -  加權：1
-    -  連接埠：443
+    -  埠：443
     -  目標 (主機名稱) ： sipdir.online.lync.com
--  選取 **[確定]**。 
+-  選取 [確定]。 
 
 
 為商務用 Skype Online 同盟新增 SIP SRV 記錄。  
@@ -155,7 +157,7 @@ ms.locfileid: "52706106"
     -  加權：1
     -  連接埠：5061
     -  目標 (主機名稱) ： sipfed.online.lync.com
--  選取 **[確定]**。 
+-  選取 [確定]。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>新增記錄以驗證您擁有網域 (若您尚未這麼做)
 <a name="BKMK_verify"> </a>

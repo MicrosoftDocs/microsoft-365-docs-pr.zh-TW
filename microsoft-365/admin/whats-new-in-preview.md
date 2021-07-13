@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 系統管理中心有哪些新功能？
+title: Microsoft 365 系統管理中心的新功能為何？
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Microsoft 365 系統管理中心-瞭解本月新增的功能。
+description: Microsoft 365 系統管理中心-瞭解這個月新增的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 497d1f78b2d0c17cfcaa23571838c4dc363b7017
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841963"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394694"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -37,20 +37,46 @@ ms.locfileid: "52841963"
 
 ::: moniker-end
 
-我們不斷將新功能新增至[Microsoft 365 系統管理中心](../business-video/admin-center-overview.md)、修正我們所學的問題，並根據您的意見反應進行變更。 請參閱下列內容，以查看今天可提供的功能。 有些功能會以不同的速度向客戶推出。 如果您還沒有看到功能， [請嘗試將您新增至目標版本](manage/release-options-in-office-365.md)。
+我們會持續將新功能新增至 Microsoft 365 系統管理中心，修正我們所學[的](../business-video/admin-center-overview.md)問題，並根據您的意見反應進行變更。 請參閱下列內容，以查看今天可提供的功能。 有些功能會以不同的速度向客戶推出。 如果您還沒有看到功能， [請嘗試將您新增至目標版本](manage/release-options-in-office-365.md)。
 
 如果您想要瞭解其他 Microsoft 雲端服務的新功能：
 
 - [Azure Active Directory 的新功能](/azure/active-directory/fundamentals/whats-new)
 - [Exchange 系統管理中心的新功能](/Exchange/whats-new)
 - [Microsoft Intune 的新功能](/mem/intune/fundamentals/whats-new)
-- [Microsoft 365 規範中心的新功能](/Office365/SecurityCompliance/whats-new)
+- [Microsoft 365 合規性中心的新功能](/Office365/SecurityCompliance/whats-new)
 - [Microsoft 365 Defender 的新功能](../security/mtp/whats-new.md)
 - [SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](/OfficeUpdates/)
 - [如何檢查 Windows 版本發行狀況](/windows/deployment/update/check-release-health)
 
-## <a name="june-2021"></a>2021年6月
+## <a name="july-2021"></a>2021年7月
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 系統管理中心搜尋
+
+您現在可以在 Microsoft 365 系統管理中心中搜尋 IDs 的事件。 您可以透過社交媒體、工業出版物或其他系統管理員深入瞭解目前的事件。 您現在可以前往系統管理中心，查詢有關該事件的詳細資訊，並瞭解對您組織的影響。 只搜尋系統管理中心的事件識別碼。
+
+:::image type="content" source="../media/incident-id.png" alt-text="螢幕擷取畫面：在系統管理中心搜尋事件識別碼":::
+
+### <a name="support-ticket-insight-for-premier-organizations"></a>支援重要組織的票證洞察力
+
+我們已新增兩個稱為 **大量趨勢** 的圖形，以及 **大量依產品的趨勢** ，提供您支援數量的視覺洞察力。
+
+在 [ **音量趨勢] 索引標籤** 底下的 [gmail] 圖表會在組織的每月增加或減少支援案例時，強調趨勢。 您可以在圖形上懸停，以檢查每月所建立的支援案例數目。
+
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="螢幕擷取畫面：當您的組織每月增加或減少支援案例時，可著重顯示趨勢的 Graph。":::
+
+[ **依產品的趨勢** ] 圖表顯示每月的前3種產品及最高的支援案例。 我們已在表格中啟用篩選功能，您現在可以依據 **產品**、 **嚴重性** 和 **日期** 來篩選結果。
+
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="螢幕擷取畫面： Graph 顯示每月的前3種產品及最高的支援案例":::
+
+我們也在 **View Service Request** 表格中新增2個新的欄位、**嚴重性** 和 **關閉的日期**，讓您更深入瞭解您的入場券。
+
+:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="螢幕擷取畫面：顯示按嚴重性和日期支援票證排序的表格。":::
+
+若要在 Microsoft 365 系統管理中心中查看這些更新，請前往  >  左側功能窗格中的支援 **查看服務要求**。
+
+## <a name="june-2021"></a>2021 年 6 月
 
 ### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 系統管理中心搜尋
 
@@ -60,7 +86,7 @@ ms.locfileid: "52841963"
 
 - 您現在可以透過全域搜尋找到簡化的安裝體驗。 這可協助您和您的小組快速開始使用新功能。 例如，搜尋 [ **設定密碼為永不到期**]。
 
-若要深入瞭解系統管理中心的搜尋，請參閱[Microsoft 365 系統管理中心的搜尋](manage/search-in-the-mac.md)。
+若要深入瞭解系統管理中心的搜尋，請參閱[Microsoft 365 系統管理中心中的搜尋](manage/search-in-the-mac.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -142,11 +168,11 @@ ms.locfileid: "52841963"
 
 ### <a name="monitor-your-most-important-accounts"></a>監視最重要的帳戶
 
-您可以監視和追蹤傳送給使用者的失敗或延遲的電子郵件訊息，其具有高業務影響，例如 CEO。 您可以將使用者新增至 Microsoft 365 系統管理中心的優先順序帳戶清單，追蹤優先順序帳戶。 新增具有敏感或高優先順序資訊存取權、主管、主管或其他使用者。
+您可以監視和追蹤傳送給使用者的失敗或延遲的電子郵件訊息，其具有高業務影響，例如 CEO。 您可以將使用者新增至 Microsoft 365 系統管理中心中的優先順序帳戶清單，以追蹤優先順序帳戶。 新增具有敏感或高優先順序資訊存取權、主管、主管或其他使用者。
 
 優先順序帳戶只適用于符合下列兩項需求的組織：
 
-- Office 365E3 或 Microsoft 365 E3，或是 Office 365 E5 或 Microsoft 365 E5。
+- Office 365 E3 或 Microsoft 365 E3，或是 Office 365 E5 或 Microsoft 365 E5。
 - 至少10000個授權50，至少每月使用 Exchange Online 使用者。
 
 ![功能的安裝頁面：監控最重要的帳戶](../media/MAC-WN-PriorityAccounts.png)
@@ -207,7 +233,7 @@ ms.locfileid: "52841963"
 - 修正 DKIM 安裝問題
 - 診斷 Intune 使用者註冊錯誤
 
-而且，我們將在 Microsoft 365 系統管理中心看到的新的和改善的支援體驗，移至其他一些系統管理中心。 TeamsAdmin Center 和 Security 和合規性管理中心已經具備這種新體驗。 **Exchange 系統管理中心**、 **SharePoint 系統管理中心** 和 **Office .com** 都會隨系統管理員的這個新的「說明」經驗一起更新。
+而且，我們正在推出您已在 Microsoft 365 系統管理中心中看到的新的和改善的支援體驗至其他一些系統管理員中心。 TeamsAdmin Center 和 Security 和合規性管理中心已經具備這種新體驗。 **Exchange 系統管理中心**、 **SharePoint 系統管理中心** 和 **Office .com** 都會隨系統管理員的這個新的「說明」經驗一起更新。
 
 ### <a name="manage-changes-with-microsoft-planner"></a>使用 Microsoft Planner 管理變更
 
@@ -269,7 +295,7 @@ ms.locfileid: "52841963"
 
 在5月12日，我們宣佈 Office 的新更新通道可用性：每月 Enterprise 通道。 此更新通道會在每月的第二個星期二，每個月向您的使用者提供新的 Office 功能。
 
-如果您允許使用者從入口網站自行安裝 Office，您可以為其選取每月 Enterprise 通道。 若要這麼做，請登入 Microsoft 365 系統管理中心，然後移至 [**顯示所有**  > **設定**  >  **組織設定**  >  **服務**]  >  **Office 軟體下載設定**]。 如果您 **每月選取一次 (每月 Enterprise 通道)**，則 Office 的任何新自我安裝會設定為使用每月 Enterprise 通道。
+如果您允許使用者從入口網站自行安裝 Office，您可以為其選取每月 Enterprise 通道。 若要這麼做，請登入 Microsoft 365 系統管理中心，然後移至 [**顯示所有**  > **設定**  >  **組織設定**  >  **服務**  >  **Office 軟體下載設定**]。 如果您 **每月選取一次 (每月 Enterprise 通道)**，則 Office 的任何新自我安裝會設定為使用每月 Enterprise 通道。
 
 與每月 Enterprise 通道的版本一起，我們也會修訂現有更新通道的名稱。 例如，每月通道都會重新命名為目前通道。 新的名稱會在2020年6月9日生效。
 
@@ -277,7 +303,7 @@ ms.locfileid: "52841963"
 
 ### <a name="new-admin-roles"></a>新系統管理員角色
 
-我們已在 Microsoft 365 系統管理中心中新增一些新的 Azure Active Directory 系統管理員角色。
+我們已在 Microsoft 365 系統管理中心中新增了一些新的 Azure Active Directory 系統管理員角色。
 
 - 混合式身分識別系統管理員角色可讓使用者管理雲端布建和驗證服務的許可權。
 - 網路管理員角色可讓使用者管理網路位置，並查看網路洞察力，以作為服務應用程式的 Microsoft 365 軟體。
@@ -302,7 +328,7 @@ ms.locfileid: "52841963"
 ### <a name="docs-training-and-videos-may"></a>檔、訓練和影片 (可能) 
 
 - **Microsoft 365 影片系列的新功能**：本月，我們涵蓋 Teams admin 和安全性與合規性中心的新支援經驗，以及與郵件中心整合的 Planner，以及 Microsoft Teams 中的新3x3 影片版面配置。 
-- [Microsoft 365 管理中心](./index.yml)] 頁面已更新，可協助您更快速地找到您需要的內容。 而且，如果您現在查看此頁面，我們已新增了一張卡片，通知您重要的更新和變更。
+- [Microsoft 365 系統管理中心協助](./index.yml)hub 頁面已更新，可協助您更快速地找到您需要的內容。 而且，如果您現在查看此頁面，我們已新增了一張卡片，通知您重要的更新和變更。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -310,7 +336,7 @@ ms.locfileid: "52841963"
 
 [2020 年 4 月](#april-2020)
 
-好吧，我們這麼！ 我們已將第二個步驟轉向統一角色的體驗，您現在可以在 Microsoft 365 系統管理中心管理 Intune 角色。 您也可以利用諸如搜尋角色及查看角色許可權等功能。 這表示您不需要兩個不同的工具來管理 Microsoft 365 與 Intune 的角色。 當您登入 Microsoft 365 系統管理中心時，您會看到 [角色] 頁面上有兩個樞軸，一個用於 Azure AD，另一個用於 Intune。
+好吧，我們這麼！ 我們已將第二個步驟轉向統一角色的體驗，您現在可以在 Microsoft 365 系統管理中心中管理 Intune 角色。 您也可以利用諸如搜尋角色及查看角色許可權等功能。 這表示您不需要兩個不同的工具來管理 Microsoft 365 與 Intune 的角色。 當您登入 Microsoft 365 系統管理中心時，您會看到 [角色] 頁面上有兩個樞軸，一個用於 Azure AD，另一個用於 Intune。
 
 ![選取 Intune pivot 的「角色」頁面](../media/MAC-WN-IntuneRoles.png)
 
@@ -322,11 +348,11 @@ ms.locfileid: "52841963"
 
 ### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>「需要協助嗎？」 & 安全性與合規性中心在 Teams 系統管理中心中啟動
 
-Teams 系統管理中心、安全性中心及合規性中心現在使用相同的「需要協助」嗎？ Microsoft 365 系統管理中心用來尋找說明和聯繫支援的功能。 我們已從系統管理員那裡收到許多您想要具備相同層級說明和支援的意見，我們很樂意為您提供這項協助和支援。 請試用它，並提供您的意見反應！
+Teams 系統管理中心、安全性中心及合規性中心現在使用相同的「需要協助」嗎？ Microsoft 365 系統管理中心用於尋找說明和聯繫支援的功能。 我們已從系統管理員那裡收到許多您想要具備相同層級說明和支援的意見，我們很樂意為您提供這項協助和支援。 請試用它，並提供您的意見反應！
 
 #### <a name="need-chat"></a>需要聊天？
 
-我們的支援代理程式從家裡開始運作，但仍然需要客戶案例和網際網路頻寬限制，但在家運作時可能會影響客戶的通話品質。 為了繼續支援，我們已在 Microsoft 365 系統管理中心內為商務客戶啟動 live chat 支援選項。
+我們的支援代理程式從家裡開始運作，但仍然需要客戶案例和網際網路頻寬限制，但在家運作時可能會影響客戶的通話品質。 為了繼續支援，我們已在 Microsoft 365 系統管理中心中為商務客戶啟動 live chat 支援選項。
 
 在建立服務要求時，除了電話和電子郵件之外，您現在還會看到 [聊天] 作為選項。 選取 [聊天室] 做為通訊的慣用通道，並建立要求。 建立要求之後，您可以在準備好與 Microsoft 代理人聊天時啟動聊天。
 
@@ -393,7 +419,7 @@ Teams 系統管理中心、安全性中心及合規性中心現在使用相同�
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>自訂群組織的 SharePoint 行動應用程式主題
 
-您現在可以使用 Microsoft 365 系統管理中心，在 SharePoint 行動應用程式中自訂群組織的主題，以 iOS 和 SharePoint Android 行動應用程式。 這項功能可輕鬆提供行動內部網路應用程式經驗，可讓員工在旅途中符合您的 SharePoint 線上。 主題自訂包括您的徽標影像、導覽列色彩、文字和圖示色彩，以及強調色彩的難易色彩。
+您現在可以使用 Microsoft 365 系統管理中心自訂群組織中 SharePoint 行動應用程式的主題，以 iOS 和 SharePoint Android 行動裝置應用程式。 這項功能可輕鬆提供行動內部網路應用程式經驗，可讓員工在旅途中符合您的 SharePoint 線上。 主題自訂包括您的徽標影像、導覽列色彩、文字和圖示色彩，以及強調色彩的難易色彩。
 
 ![圖表將系統管理中心設定對應至行動應用程式。](../media/MAC-WN-CustThemeSP.png)
 
@@ -429,7 +455,7 @@ Teams 系統管理中心、安全性中心及合規性中心現在使用相同�
 > [!TIP]
 > 您不需要執行任何動作，只要您屬於至少一個組織的記錄的協力廠商，就會顯示組織切換器。
 
-1. 在 Microsoft 365 系統管理中心，選取組織名稱。
+1. 在 Microsoft 365 系統管理中心中，選取組織名稱。
 ![螢幕捕捉：首頁顯示組織設定檔名稱及切換圖示的頁首。](../media/MAC-Organization-switcher.png)
 
 2. 在 [組織切換器] 中，選取您要管理的組織。
@@ -442,7 +468,7 @@ Teams 系統管理中心、安全性中心及合規性中心現在使用相同�
 在 [群組] 區域中的兩個變更：
 
 - **依群組名稱排序**：您可以選取 [ **組名** ] 欄，依字母順序排序群組清單。
-- **Restore deleted Microsoft 365 groups**：您不需要再移至 Exchange 系統管理中心，即可還原已刪除的 Microsoft 365 群組。 移至 **Microsoft 365 系統管理中心** \> **群組** \> **已刪除的群組** \> (從清單) \> **還原群組** 中選取群組。 它會將群組還原回 **群組** 清單，並還原群組的電子郵件、交談、筆記本、檔案和行事曆。
+- **Restore deleted Microsoft 365 groups**：您不需要再移至 Exchange 系統管理中心，即可還原已刪除的 Microsoft 365 群組。 移至 **Microsoft 365 系統管理中心** \> **群組** \> **刪除的群組** \> (從清單) \> **還原群組** 中選取群組。 它會將群組還原回 **群組** 清單，並還原群組的電子郵件、交談、筆記本、檔案和行事曆。
 
 ### <a name="videos-training-and-docs-february"></a> (二月份) 的影片、訓練及檔
 

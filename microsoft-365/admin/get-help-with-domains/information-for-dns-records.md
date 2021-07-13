@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 收集必要的值/資訊，以建立 DNS 記錄以將您的網域連線到您的 Microsoft 365 訂閱。
-ms.openlocfilehash: def9fbe201e158f1e071a67caeaf29ed26732f97
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: c9869444da2ccb7f96ee01576d966767681c5b49
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256840"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393880"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集建立 DNS 記錄所需的資訊
 

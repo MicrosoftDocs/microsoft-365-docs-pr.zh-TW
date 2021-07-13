@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 使用基本行動及安全性設定裝置安全性原則和存取規則。
-ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1d1376ec39f7249dfffb94c666b2fdcfa07641a0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706307"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394072"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365 的基本行動性及安全性概述
 
