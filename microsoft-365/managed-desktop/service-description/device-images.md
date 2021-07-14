@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300099"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419508"
 ---
 # <a name="device-images"></a>裝置影像
 
@@ -41,23 +41,7 @@ ms.locfileid: "53300099"
 - Global： mmd@hp.com
 
 ### <a name="lenovo"></a>聯想
-當您從聯想裝置排序裝置以用於 Microsoft 受管理的電腦時，您必須指出包含在訂單中的特定部分號碼。 請聯繫您的聯想銷售代表或聯想通道合作夥伴，並要求他們使用符合我們 [裝置需求](device-requirements.md#minimum-requirements)的系統來建立「*特殊出價模型*」。 若要包含與 Microsoft 受管理的電腦搭配使用的預先載入映射，請要求「銷售代表」參考「*system 組建區塊部分編號 SBB0Q94938 – MMD 啟用*」。
-
-下列產品目前已啟用 Microsoft 受管理的電腦支援：
-
-- L13 Gen 1
-- L13 Yoga Gen 1
-- L14 Gen 1 (Intel) 
-- L14 Gen 1 (AMD) 
-- L15 Gen 1 (Intel) 
-- L15 Gen 1 (AMD) 
-- X1 碳 Gen 8
-- X1 Yoga Gen 5
-- T14 Gen 1 (Intel) 
-- T14 Gen 1 (AMD) 
-- T15 Gen 1
-- X13 Gen 1 (Intel) 
-
+當您從聯想裝置排序裝置以用於 Microsoft 受管理的電腦時，您必須指出包含在訂單中的特定部分號碼。 請聯繫您的聯想銷售代表或聯想通道合作夥伴，並要求他們使用符合我們 [裝置需求](device-requirements.md#minimum-requirements)的系統來建立「*特殊出價模型*」。 若要包含與 Microsoft 受管理的電腦搭配使用的預先載入映射，請要求「銷售代表」參考「*system 組建區塊部分編號 SBB0Q94938 – MMD 啟用*」。 請與您的聯想銷售代表或聯想通道合作夥伴合作，以取得建議的服務、支援及成像服務。
 
 ### <a name="microsoft"></a>Microsoft
 所有符合裝置需求的 Microsoft 裝置都會隨附與 Microsoft 受管理的電腦搭配使用的影像。 不需要其他步驟。

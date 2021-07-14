@@ -3,7 +3,7 @@ title: 使用) 線上 Office 365 內容傳遞網路 (CDN SharePoint
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/19/2020
+ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 瞭解如何使用 Office 365 內容傳遞網路 (CDN) ，以加速 SharePoint 的線上資產的傳遞。
-ms.openlocfilehash: 5e9ed00462b7073c7e03f62a5de6bf26f1e586af
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 24b86f059e5a59d3b6dadf989bef0ab38ad8e010
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289448"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419547"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>使用 Office 365 內容傳遞網路 (CDN) 搭配 SharePoint Online
 
@@ -37,7 +37,7 @@ ms.locfileid: "53289448"
 
 Office 365 CDN 是由可讓您在多個位置或 _來源_ 主控靜態資產的多個 CDN 組成，並透過全球高速網路提供資產。 根據您要在 Office 365 CDN 中主控的內容類型而定，您可以新增 **公用** 來源、**私人** 來源或兩者。 請參閱 [選擇是否每個來源都應該是公開或私人](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) 的，如需公開和私人來源之間差異的詳細資訊。
 
-![Office 365 CDN 概念圖表](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN 概念圖表")
+![Office 365 CDN 概念圖表](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN 概念圖表")
 
 如果您已熟悉 cdn 的運作方式，您只需要完成少數幾個步驟即可啟用租使用者的 Office 365 CDN。 本主題說明如何進行。 如需如何開始主控靜態資產的詳細資訊，請參閱。
 
@@ -920,7 +920,7 @@ SharePoint Online 中的 **發佈功能** 會自動將儲存在公用來源中�
 
 下圖說明 SharePoint 接收公用來源中包含資產之頁面的要求時的工作流程。
 
-![工作流程圖表：從公用來源取回 Office 365 CDN 資產](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "工作流程：從公用來源取回 Office 365 CDN 資產")
+![工作流程圖表：從公用來源取回 Office 365 CDN 資產](../media/O365-CDN/o365-cdn-public-steps-transparent.png "工作流程：從公用來源取回 Office 365 CDN 資產")
 
 > [!TIP]
 > 如果您想要對頁面上的特定 URLs 停用自動重新寫入，您可以取出頁面並新增查詢字串參數 **？NoAutoReWrites = true** 表示您要停用的每個連結的結尾。
@@ -956,7 +956,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 下圖說明 SharePoint 收到來自私人來源之資產的頁面要求時的工作流程。
 
-![工作流程圖表：從私人來源取回 Office 365 CDN 資產](../media/O365-CDN/o365-cdn-private-steps-transparent.svg "工作流程：從私人來源取回 Office 365 CDN 資產")
+![工作流程圖表：從私人來源取回 Office 365 CDN 資產](../media/O365-CDN/o365-cdn-private-steps-transparent.png "工作流程：從私人來源取回 Office 365 CDN 資產")
 
 #### <a name="token-based-authorization-in-private-origins"></a>私人來源中以權杖為基礎的授權
 
@@ -1045,7 +1045,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 + [開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [安裝 Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>也請參閱
 
 [內容傳遞網路](./content-delivery-networks.md)
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 隱私權管理中的主體權利要求解決方案可協助您尋找個人資料，並共同作業檢查內容及建立報告。
-ms.openlocfilehash: b1f92aa7b5e6f8117d8e3a4af758f13d6c91fe99
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378474"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419772"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>管理隱私權管理中的主體權力要求 (預覽) 
 
@@ -47,7 +47,7 @@ ms.locfileid: "53378474"
 
 ## <a name="create-a-request"></a>建立要求
 
-主體權力管理管理員可以使用隱私權管理的嚮導來建立要求。 這個嚮導將引導您完成尋找資料主體的個人資料，並完成其要求的程式。
+主體權力管理管理員可以使用隱私權管理的嚮導來建立要求。 [！附注] 此嚮導會引導您完成尋找資料主體的個人資料，並完成其要求的處理常式。
 
 四個主要步驟包含下列。
 

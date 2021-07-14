@@ -14,16 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解相容性管理員的新功能和內容。 閱讀更新的評估、新的評估範本、新的動作等等。
-ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149019"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419520"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合規性管理員的新功能
 
 **本文內容：** 深入瞭解合規性管理員中的最新更新。
+
+## <a name="july-2021"></a>2021年7月
+
+根據新的範本通用版本，我們新增了 Microsoft 365 以外產品的評估能力。 若要深入瞭解，請從使用 [評估範本](compliance-manager-templates.md)開始。
 
 ## <a name="may-2021"></a>2021 年 5 月
 

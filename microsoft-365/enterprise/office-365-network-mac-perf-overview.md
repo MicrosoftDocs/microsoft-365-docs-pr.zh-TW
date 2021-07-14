@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 系統管理中心的網路連線能力
-ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276998"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419796"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的網路連線能力
 
@@ -78,7 +78,7 @@ Windows位置服務必須同意電腦。 您可以執行 **地圖** 應用程式
 測試報告完成後，測量範例和辦公室位置應會在2-3 分鐘內開始顯示。 如需詳細資訊，請參閱[Microsoft 365 network connectivity test](office-365-network-mac-perf-onboarding-tool.md)。
 
 > [!NOTE]
-> 將您的 office 位置新增至 Microsoft 365 Microsoft 365 系統管理中心中的網路連線時，您可以為您的局域網子網提供 IPv4 或 IPv6 位址。 EgressIP 位址必須使用 IPv4。
+> 目前，wWhen 新增您的 office 位置以 Microsoft 365 Microsoft 365 系統管理中心中的網路連線，您只能為您的局域網子網提供 IPv4 位址。 EgressIP 位址必須使用 IPv4。
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此資訊？
 
@@ -149,7 +149,7 @@ Microsoft 已有數個 Office 桌面和網頁用戶端的現有網路度量，�
 - **SharePoint 最優服務的前端門**-此辦公室位置的使用者應該連接到的建議 SharePoint 服務前端門之一。
 - **SharePoint 欠最優的服務前端門**-一種已連接至使用者的 SharePoint 服務前門門，但不建議使用。
 - **DNS 遞迴解析伺服器**-從偵測到之 DNS 遞迴解析程式（如果有的話）所用的地域 IP 資料庫的位置 Exchange Online () 
-- **Proxy 伺服器** -從偵測到之 proxy 伺服器之地理 IP 資料庫的位置 (（如果有的話）)  
+- **Proxy 伺服器** -從偵測到之 proxy 伺服器之地理 IP 資料庫的位置 (（如果有的話）) 
 
 「Office 位置摘要」頁面也會顯示位置的網路評估、網路評估記錄、此位置的評估與相同城市中其他客戶的比較，以及您可以採取以改善網路效能與可靠性的特定真知灼見和建議清單。
 
@@ -161,7 +161,6 @@ Microsoft 已有數個 Office 桌面和網頁用戶端的現有網路度量，�
 
 > [!div class="mx-imgBorder"]
 > ![位置特定詳細資料](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
-
 
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>與 Microsoft 共用網路評估資料
 
@@ -189,9 +188,9 @@ Microsoft 已有數個 Office 桌面和網頁用戶端的現有網路度量，�
    1. **Address** (必要) ： office 的實體位址
    1. **Latitude** (選用) ：已從 Bing 對應位址的查找中填入空白
    1. **經度** (選用) ：從 Bing 對應位址的查找中填入空白
-   1. **Egress IP 位址範圍 1-5** (選用) ：針對每個範圍，輸入電路名稱，後面接著是以空格分隔的有效 IPv4 或 IPv6 CIDR 地址清單。 這些值是用來區分您使用相同 LAN 子網 IP 位址的多個辦公室位置。 EgressIP 位址範圍全部必須為/24 網路大小，輸入中不包含/24。
+   1. **Egress IP 位址範圍 1-5** (選用) ：針對每個範圍，輸入電路名稱，後面接著以空格分隔的有效 IPv4 CIDR 地址清單。 這些值是用來區分您使用相同 LAN 子網 IP 位址的多個辦公室位置。 EgressIP 位址範圍全部必須為/24 網路大小，輸入中不包含/24。
    1. **LanIps** (必要) ：列出此辦公室位置所使用的局域網子網範圍。 LAN 子網 IDs 需要包含 CIDR 網路大小，網路大小可以介於/8 和/29 之間。 多個 LAN 子網範圍可以以逗號或分號分隔。
-   
+
 1. 當您已新增辦公室位置並儲存檔案時，請按一下 [完成] 欄位 **Upload** 旁邊的 [**流覽]** 按鈕，然後選取儲存的 CSV 檔案。
 
 1. 檔案將會自動驗證。 如果有驗證錯誤，您會看到錯誤訊息：匯 _入檔案中有一些錯誤。請複查錯誤，修正匯入檔，然後再試一次。_ 按一下 [連結] 中的 [ **開啟錯誤詳細資料** ]，以取得特定欄位驗證錯誤的清單。

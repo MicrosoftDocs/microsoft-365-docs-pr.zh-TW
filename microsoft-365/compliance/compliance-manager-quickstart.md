@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合規性管理員快速入門手冊可協助您深入瞭解、取得設定，以及使用合規性管理員。
-ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149043"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419592"
 ---
 # <a name="compliance-manager-quickstart"></a>合規性管理員快速入門
 
@@ -63,7 +63,7 @@ ms.locfileid: "53149043"
 
 您也可以設定所有或改進動作子集的自動測試。 若要瞭解合規性管理員中更高級的功能，請流覽下列連結：
 
-- [新增您自己的控制項和改進動作來擴充合規性管理員範本](compliance-manager-templates.md#extend-an-assessment-template)
+- [新增您自己的控制項和改進動作來擴充合規性管理員範本](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
 - [建立您自己的自訂範本](compliance-manager-templates.md#create-an-assessment-template)
 - [修改現有範本以新增或移除控制項和動作](compliance-manager-templates.md#modify-a-template)
 - [設定改進動作的自動測試](compliance-manager-setup.md#set-up-automated-testing)
