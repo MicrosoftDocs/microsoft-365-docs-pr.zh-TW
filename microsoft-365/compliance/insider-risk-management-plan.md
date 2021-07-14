@@ -12,16 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 19149c7f53cee537450ac12ce5a346a12d43bd91
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326780"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430505"
 ---
 # <a name="plan-for-insider-risk-management"></a>測試人員風險管理計畫
 
 在您的組織中開始使用「 [內部使用者風險管理](insider-risk-management.md) 」之前，您的資訊技術和合規性管理小組應該會檢查重要的規劃活動和考慮。 深入瞭解及規劃部署在下列方面，可協助確保您的實施和使用內部部署的風險管理功能，並與解決方案的最佳作法保持一致。
+
+觀看下列影片，瞭解「有問必答風險管理」工作流程如何協助您的組織避免、偵測及包含風險，同時排定組織值、文化和使用者經驗的優先順序：
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>與組織中的專案關係人合作
 
@@ -82,7 +88,7 @@ ms.locfileid: "53326780"
 與您組織中包含在管理與修復工作流程中的專案關係人共用有問必答風險管理檔：
 
 - [建立及管理測試人員風險原則](insider-risk-management-policies.md)
-- [調查有問必答風險活動](insider-risk-management-activities.md)
+- [調查內部風險活動](insider-risk-management-activities.md)
 - [對測試人員風險案例採取動作](insider-risk-management-cases.md)
 - [使用「內幕風險內容瀏覽器」查看案例資料](insider-risk-management-content-explorer.md)
 - [建立測試人員風險通知範本](insider-risk-management-notices.md)

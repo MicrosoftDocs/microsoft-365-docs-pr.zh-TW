@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 瞭解 Office 365 全域管理員如何將組織的署名套用至加密的電子郵件 & 加密入口網站的內容。
-ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 95320e9f268f19cedd993efe4fa0e68fd75af125
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394711"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430729"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>將貴組織的品牌新增至您的商務用郵件加密加密郵件 Microsoft 365
 
@@ -153,9 +153,12 @@ ms.locfileid: "51394711"
 
 ## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>建立 Exchange 郵件流程規則，將自訂品牌套用至加密的電子郵件
 
+> [!IMPORTANT]
+> 掃描及修改郵件的協力廠商應用程式，可防止 OME 署名正確套用。
+
 修改預設範本或建立新的品牌範本之後，您可以建立 Exchange 郵件流程規則，以根據特定條件套用您的自訂品牌。 這類規則會在下列情況中套用自訂品牌：
 
-- 如果使用者使用 Outlook 網頁上的 Outlook 或手動加密電子郵件，則以前會 Outlook Web App
+- 如果使用者使用 Outlook 或 Outlook 網頁版手動加密電子郵件，則以前會 Outlook Web App
 
 - 如果電子郵件已由 Exchange 郵件流程規則或資料遺失防護原則自動加密
 
@@ -165,7 +168,7 @@ ms.locfileid: "51394711"
 
 2. 選擇 [ **管理** ] 磚。
 
-3. 在 Microsoft 365 系統管理中心 **，選擇 [系統管理中心]** \> **Exchange**。
+3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] \> **Exchange**。
 
 4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange Online 中 Exchange 系統管理中心](/exchange/exchange-admin-center)。
 

@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229548"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430417"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 入口網站啟動計畫程式啟動入口網站
 
@@ -117,9 +117,8 @@ ms.locfileid: "53229548"
 
     > [!NOTE]
     > 最多50個不同的使用者或安全性群組可用於整個啟動。 每個啟動都彼此獨立，因此如果您排程另一個入口網站上的啟動，則可以使用最多50個使用者/安全性群組來啟動。 此外，每個浪潮最多可使用20個不同的使用者或安全性群組。 
-
->入口網站啟動排程器支援安全性群組和啟用郵件功能的安全性群組。 
-
+    >
+    > 入口網站啟動排程器支援安全性群組和啟用郵件功能的安全性群組。 
 
 8. 確認入口網站啟動詳細資料並選取 **排程**。 開始排程後，對 SharePoint 入口網站首頁所做的任何變更，都必須先接收正常的診斷結果，再繼續進行入口網站啟動。
 
@@ -127,7 +126,14 @@ ms.locfileid: "53229548"
 
 如果您打算使用超過100000的使用者啟動入口網站，請遵循下列所列的步驟提交支援要求。 請務必包含所有要求的資訊。
 
-**依照下列步驟執行：**
+> [!NOTE]
+>
+> - 只有在符合下列需求時，才應該遵循此程式：
+> - 啟動頁面已完成。
+> - 已遵循[入口網站健康指導](https://aka.ms/portalhealth)方針。
+> - 啟動日期在14天內。
+
+**請遵循下列步驟：**
 
 1. 移至<https://admin.microsoft.com>。
 2. 確定您使用的是新的系統管理中心預覽
@@ -160,7 +166,7 @@ ms.locfileid: "53229548"
 
 2. 然後，選取 [ **刪除** ]，當您看到下列的訊息時，請選取 **[刪除]** 。
 
-   ![入口網站啟動調度程式工具的影像](../media/portal-launch-delete-2.png)
+   ![詢問您是否要刪除或保留排程啟動的提示圖像](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>使用 PowerShell 入口網站啟動排程器
 

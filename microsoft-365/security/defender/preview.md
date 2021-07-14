@@ -20,19 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 088dbd16c3667331843ff934c80f85aa8d3a837f
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125395"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430813"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 預覽功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> [!IMPORTANT]
-> 預覽版本不會提供任何服務等級協定，不建議用於實際執行工作負載。 某些功能可能不受支援，或可能具有有限的功能。
 
 **適用於：**
 - Microsoft 365 Defender
@@ -42,6 +39,19 @@ Microsoft 365 Defender 服務會持續更新，以包含新功能增強功能及
 深入瞭解 Microsoft 365 Defender 預覽版本中的新功能，並透過開啟預覽體驗，以嘗試即將推出的功能。
 
 如需一般可用之新功能的詳細資訊，請參閱[Microsoft 365 Defender 的新](whats-new.md)功能。
+
+ ## <a name="what-you-need-to-know"></a>您需要瞭解的事項
+
+在使用 public preview 中的功能時，這些功能包括：
+
+- 可能具有限制或有限的功能。 例如，此功能可能只適用于一個平臺。
+- 一般會透過功能變更， (正式) 使用。
+- Microsoft 完全支援。
+- 只能在選取的地理區域或雲端環境中使用。 例如，該功能可能不存在於政府雲端中。
+- 預覽中的個別功能可能會有更多的使用和支援限制。 如果是的話，此資訊通常會注明在功能檔中。
+- 預覽版本會以標準的支援層級提供，並且可用於實際執行環境。 
+
+
 
 ## <a name="required-permissions"></a>必要權限
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 801d94eb769c6b738a1d4c011b67f8a2a7cf81f1
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327044"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430801"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制
 
@@ -39,6 +39,13 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 |GPO 支援    |   是      |
 |以使用者為基礎的支援     |   是      |
 |以機器為基礎的支援    |    是     |
+
+## <a name="licensing"></a>授權
+
+開始使用 [可移動儲存體] 存取控制之前，您應該先[確認 Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要存取和使用 [可移動儲存體] 存取控制，您必須具備下列各項：
+
+- 功能/原則部署的 Microsoft 365 E3。
+- 報告 Microsoft 365 E5。
 
 ## <a name="prepare-your-endpoints"></a>準備您的端點
 
@@ -256,7 +263,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 - 原則與設定檔管理員角色
 - 已開啟裝置設定檔的「建立/編輯/更新/讀取/刪除/查看報告」許可權的自訂角色
-- 全域系統管理員
+- 全域管理員
 
 ### <a name="deploying-policy-via-oma-uri"></a>透過 OMA-URI 部署原則
 
@@ -272,8 +279,6 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - 資料類型： String (XML 檔案) 
-    
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="字串資料類型的 xml 檔":::
 
 2. 針對每個原則，也建立 OMA URI：
 
@@ -287,7 +292,6 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
     - 資料類型： String (XML 檔案) 
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="字串資料類型之 XML 檔案的顯示":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>使用 Intune 使用者介面部署及管理原則
 

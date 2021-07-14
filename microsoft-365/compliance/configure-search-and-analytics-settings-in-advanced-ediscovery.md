@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: 設定套用至案例中所有審閱集的 Advanced eDiscovery 設定。 這包括分析和光學字元辨識的設定。
-ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751300"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430549"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中設定搜尋及分析設定
 
@@ -86,7 +86,7 @@ ms.locfileid: "49751300"
 
 開啟此設定時，會在圖像檔案上執行 OCR 處理。 在下列情況下，會執行 OCR 處理：
 
-- 當保管人和 [非 custodial 資料來源](non-custodial-data-sources.md) 新增至案例時。 在高級索引處理常式期間會執行 OCR 處理。 這表示會在集合搜尋中傳回符合搜尋準則的映射檔中的文字。
+- 當保管人和 [非 custodial 資料來源](non-custodial-data-sources.md) 新增至案例時。 在 [高級索引](indexing-custodian-data.md) 處理常式期間會執行 OCR 處理。 OCR 只會在高級索引期間處理的專案上執行。 例如，如果以部分索引的大型 PDF 檔案，或在高級索引期間處理其他索引錯誤，則檔案也會套用 OCR。 換句話說，OCR 處理只會在高級索引程式期間重新編制索引的檔案上進行。 這表示，在將保管人新增至案例時，有些電子郵件附件不會處理 OCR，因為在高級索引期間未處理這些檔案。 當 OCR 套用圖像檔案時，這些圖像檔案中的文字會在集合期間可供搜尋。
 
 - 當其他資料 (源的內容未與保管人相關聯並新增至非 custodial 資料來源中的案例時) 會新增至審閱集。
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 73d9803736df546f2381b7a84c9089d2460c4c44
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cd3b1343711a5bed9ad606a6b8dc754f223ed279
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843079"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430777"
 ---
 # <a name="get-discovered-vulnerabilities"></a>取得發現的弱點
 
@@ -60,11 +60,11 @@ GET /api/machines/{machineId}/vulnerabilities
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 描述
+名稱 | 類型 | 說明
 :---|:---|:---
-授權 | 字串 | 載荷 {token}。 **必要欄位**。
+授權 | 字串 | 載荷 {token}。 **必要**。
 
-## <a name="request-body"></a>要求正文
+## <a name="request-body"></a>要求內文
 
 空白
 
@@ -105,10 +105,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
             "exploitTypes": [],
             "exploitUris": []
         }
+    ]
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [風險威脅 & 弱點管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織中的薄弱環節](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 當保管人加入 Advanced eDiscovery 案例時，被視為部分索引的任何內容都會重新處理，使其完全可供搜尋。
-ms.openlocfilehash: 904c8fe626ce8ece8f4b48bd5504e4011e9f4fb2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f510b7e9c0fa2c5c181709c96907610066a4b1cf
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911207"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430502"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>進階的監管人資料索引
 
-當保管人加入 Advanced eDiscovery 案例時，被視為部分索引的任何內容都會重新處理，使其完全可供搜尋。  此處理程式稱為「 *高級索引*」。 內容可能會因原因而部分編制索引，包括映射的存在、不支援的檔案類型，或是遇到索引檔案大小限制。
+當系統管理員加入 Advanced eDiscovery 案例時，任何被視為已做為部分索引的內容或是具有索引錯誤，都是重新編制索引，讓它完全可供搜尋。  這種重建索引過程稱為「 *高級索引*」。 內容已部分編制索引或出現索引錯誤的原因有許多。 這包括圖像檔案或檔中的圖像、不支援的檔案類型或檔案大小的索引限制。 若為 SharePoint 檔案，則只有在專案上執行的高級索引程式會標示為已部分編制索引或具有索引錯誤。 在 Exchange 中，具有影像附件的電子郵件將不會標示為已部分編制索引或具有索引錯誤。 這表示將不會重新編制索引高級索引處理常式的檔案。
 
 若要深入瞭解處理支援和部分索引項目目的詳細資訊，請參閱：
 

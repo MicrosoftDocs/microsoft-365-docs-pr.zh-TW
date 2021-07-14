@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 571acc9c240fc0243998050ac3013258a2f85a3e
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 37f533f34753d66d975cb557239b2b168ac78f8e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028941"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430765"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 
@@ -31,7 +31,7 @@ Microsoft 包含特定的主要應用程式，以及參與 Microsoft 受管理�
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft 提供的應用程式
 
-隨附于您的 Microsoft 受管理的電腦授權是 Microsoft 365 Apps 企業版 Standard 套件中的64位版本的應用程式 (Word、Excel、PowerPoint、Outlook、Publisher、Access、商務用 Skype 和 OneNote。預設 *不* 會包含 ) Click-to-Run 和 Microsoft Project 的 Visio 版本，但您可以要求加入這些版本。 如需這些應用程式的詳細資訊，請參閱[Install Microsoft Project or Microsoft Visio Microsoft 受管理的電腦裝置](../get-started/project-visio.md)。
+隨附于您的 Microsoft 受管理的電腦授權是 Microsoft 365 Apps 企業版 Standard 套件中的64位版本的應用程式 (Word、Excel、PowerPoint、Outlook、Publisher、Access、Teams 和 OneNote。預設 *不* 會包含 ) Click-to-Run 和 Microsoft Project 的 Visio 版本，但您可以要求加入這些版本。 如需這些應用程式的詳細資訊，請參閱[Install Microsoft Project or Microsoft Visio Microsoft 受管理的電腦裝置](../get-started/project-visio.md)。
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft 對於我們提供的應用程式的支援。
 
