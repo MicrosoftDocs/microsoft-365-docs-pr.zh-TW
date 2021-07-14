@@ -34,6 +34,8 @@
           href: office-365-air.md
         - name: 自動調查及回應的運作方式
           href: automated-investigation-response-office.md
+        - name: 調查中的電子郵件分析
+          href: email-analysis-investigations.md
         - name: 補救動作
           href: air-remediation-actions.md
         - name: 反惡意程式碼保護
