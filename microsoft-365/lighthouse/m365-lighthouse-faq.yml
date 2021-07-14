@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 針對受管理的服務提供者 (MSPs) 使用 Microsoft 365 Lighthouse，取得常見問題的答案， (FAQs) Microsoft 365 Lighthouse。
-  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
-  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
+  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "53395050"
+  ms.lasthandoff: 07/13/2021
+  ms.locfileid: "53415529"
 title: Microsoft 365 Lighthouse (FAQs) 常見問題
 summary: >
   > [!NOTE]
@@ -49,6 +49,12 @@ sections:
   - question: Microsoft 365 Lighthouse 使用的需求為何？
     answer: >
       如需目前需求的清單，請參閱[Microsoft 365 Lighthouse 的需求](m365-lighthouse-requirements.md)。
+  - question: Microsoft 365 Lighthouse 提供國家/地區的國家/地區？
+    answer: >
+      Microsoft 365 Lighthouse 可用於所有可用 Microsoft 365 （中國和巴勒斯坦權力的機關除外）的國家/地區。 不過，Microsoft 365 Lighthouse 之類的功能（如裝置管理和威脅管理）視 Microsoft Intune 而定，使用者管理依賴 Azure Active Directory (Azure ad) ，且 Intune 和 Azure ad 可能無法在某些國家和地區使用。 如需 Microsoft 365、Azure AD 及 Intune 可用性的完整清單，請參閱[國際性可用性](https://www.microsoft.com/microsoft-365/business/international-availability)。
+
+
+      在全國雲彩中無法使用 Microsoft 365 Lighthouse。
   - question: 如何註冊 Microsoft 365 Lighthouse？
     answer: >
       若要註冊 Microsoft 365 Lighthouse，您必須使用 CSP 程式註冊。 我們目前無法支援間接提供者。 如需如何註冊的指示，請參閱[註冊 Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。 若要深入瞭解 CSP 計畫，請參閱[雲端解決方案提供者程式概述](/partner-center/csp-overview)。
