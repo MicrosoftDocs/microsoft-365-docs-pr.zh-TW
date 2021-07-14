@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/06/2021
+ms.date: 07/13/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2265f3680e425ade062d444685fbd8873eaa02ca
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f9ecade23964db88076347b3a89085b25c1b1538
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274961"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415560"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>管理貴公司的 Microsoft Defender 防毒軟體
 
@@ -31,6 +31,7 @@ ms.locfileid: "52274961"
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender 防毒軟體](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 
 您可以使用下列工具來管理及設定 Microsoft Defender 防毒軟體：
 
@@ -49,4 +50,4 @@ ms.locfileid: "52274961"
 |[使用群組原則設定管理 Microsoft Defender 防毒軟體](use-group-policy-microsoft-defender-antivirus.md)|位於 ADMX 範本中的所有群組原則設定清單 |
 |[使用 PowerShell Cmdlet 管理 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)|使用 PowerShell Cmdlet 來管理 Microsoft Defender 防毒軟體的指示，以及所有 Cmdlet 及允許參數的檔連結 |
 |[使用 Windows 管理工具 (WMI) 管理 Microsoft Defender 防毒軟體](use-wmi-microsoft-defender-antivirus.md)| 使用 WMI 管理 Microsoft Defender 防毒軟體的指示，加上 WMIv2 APIs (檔的連結（包括所有的類別、方法及屬性）)  |
-|[使用 mpcmdrun.exe 命令列工具管理 Microsoft Defender 防毒軟體](command-line-arguments-microsoft-defender-antivirus.md)|使用專用命令列工具來管理及使用 Microsoft Defender 防毒軟體的指示 |
+|[使用 MpCmdRun.exe 命令列工具管理 Microsoft Defender 防毒軟體](command-line-arguments-microsoft-defender-antivirus.md)| 使用專用命令列工具來管理及使用 Microsoft Defender 防毒軟體的指示 |

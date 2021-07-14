@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339235"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415608"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>適用于 Microsoft Defender for Endpoint service 的板載 Windows 伺服器
 
@@ -73,7 +73,7 @@ ms.locfileid: "53339235"
 > [!TIP]
 > 在裝置上架後，您可以選擇執行偵測測試，以確認它已正確架至服務。 如需詳細資訊，請參閱 [在新的架 Defender For endpoint 端點上執行偵測測試](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>事前準備
+#### <a name="before-you-begin"></a>開始之前
 
 請執行下列步驟來滿足上架需求：
 
@@ -222,6 +222,12 @@ Defender for Endpoint 與 System Center Endpoint Protection 整合。 整合可�
 ## <a name="offboard-windows-servers"></a>下架 Windows 伺服器
 
 您可以在 Windows 用戶端裝置使用的相同方法中，下架 Windows Server (SAC) 、Windows server 2019 和 Windows 10 Server 2019 Core edition。
+
+- [使用群組原則脫離](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [使用 Configuration Manager 的下架裝置](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [使用行動裝置管理工具下架及監視裝置](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [使用本機腳本的下架裝置](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
 
 若為其他 Windows 伺服器版本，您有兩個選項可從服務下架 Windows 伺服器：
 

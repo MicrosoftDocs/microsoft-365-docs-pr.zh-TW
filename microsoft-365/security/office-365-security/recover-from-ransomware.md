@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體攻擊復原。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341433"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415548"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 中復原勒索軟體攻擊
 
@@ -143,16 +143,19 @@ ms.locfileid: "53341433"
 
 ## <a name="additional-ransomware-resources"></a>其他勒索軟體資源
 
-[人工運作的勒索軟體概述](/security/compass/human-operated-ransomware)
+重要的行業資訊：
 
-[快速防護勒索軟體和 extortion](/security/compass/protect-against-ransomware)
+- [人工運作的勒索軟體概述](/security/compass/human-operated-ransomware)
 
-[最新的 Microsoft 安全情報報告 PDF) ](https://www.microsoft.com/securityinsights/) (搜尋 "勒索軟體" ) 
+- [快速防護勒索軟體和 extortion](/security/compass/protect-against-ransomware)
 
-勒索軟體： Microsoft 365 Defender 入口網站的 **威脅分析節點** 中 **的普遍和持續威脅** 報告
+- [最新的 Microsoft 安全情報報告](https://www.microsoft.com/securityinsights/) (參閱頁面 22-24) 
+
+- 勒索軟體： Microsoft 365 Defender 入口網站的「**威脅分析」節點** 中的 **普遍和持續威脅** 報告 (請參閱下列 [授權需求](/microsoft-365/security/defender/prerequisites#licensing-requirements)) 
 
 Microsoft 365 保護：
 
+- [惡意程式碼與勒索軟體防護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [勒索軟體偵測和復原 OneDrive 中的檔案](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [啟用或停用 Office 檔案中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 - [EOP 和 Microsoft Defender Office 365 security 的建議設定](recommended-settings-for-eop-and-office365.md)

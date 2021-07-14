@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 內容共同作業的詳細資訊-人員體驗生產力分數。
-ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: d403f533fd69ee47fb48907f11d4752985daea1a
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300076"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415620"
 ---
 # <a name="content-collaboration--people-experiences"></a>內容共同作業–人員經驗
 
@@ -137,7 +137,7 @@ Microsoft OneDrive 商務及 SharePoint 協助使用者輕鬆地從裝置和應�
         - 分子：將檔案附加至最近28天內未儲存至 OneDrive 或 SharePoint 的電子郵件人數。
         - 分母：在過去28天內，可以存取 Exchange 和 OneDrive、SharePoint 或兩者的人員人數。
       - **線上檔的連結：** 列的藍色 (彩色) 部分，而分數線上的分數 (分子/分母) 代表使用附件的人員百分比，以及在電子郵件中附加檔案連結。
-        - 分子：附加線上檔案連結的人員人數 (儲存至 OneDrive 或 SharePoint) 于過去28天內的電子郵件。
+        - 分子：在過去28天內，將線上檔案連結到電子郵件的人員人數。
         - 分母：可以存取 Exchange 和 OneDrive、SharePoint 或兩者在過去28天內的人員人數。
 4. **資源連結：** 選取此連結可查看 [說明] 內容。
 

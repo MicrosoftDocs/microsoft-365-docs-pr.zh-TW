@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 針對受管理的服務提供者 (MSPs) ，瞭解如何註冊 Microsoft 365 Lighthouse。
-ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409005"
+ms.locfileid: "53415632"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>註冊 Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "53409005"
 
     若要確認 Microsoft 365 Lighthouse 已成功新增至您的租使用者，請在 Microsoft 365 系統管理中心的 [**帳單 > 產品**] 中尋找 Microsoft 365 Lighthouse。
 
-1. 如果您未重新導向至 Microsoft 365 Lighthouse 入口網站，請移至 `https://lighthouse.microsoft.com/` 。
+1. 如果您未重新導向至 Microsoft 365 Lighthouse 入口網站，請移至 <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> 。
 
 1. 選取 [ **同意 & 繼續** 完成合作夥伴合約修正。
 
