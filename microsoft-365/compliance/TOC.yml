@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: 商務用 Skype (預覽)
+            - name: 商務用 Skype
               href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS 和語音網路封存工具
               href: archive-o2-network-data.md
-            - name: Signal (預覽)
+            - name: 訊號封存工具
               href: archive-signal-archiver-data.md
-            - name: Telegram (預覽)
+            - name: Telegram 封存工具
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
@@ -932,6 +932,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: 能源服務安全性與合規性
           href: ../solutions/energy-secure-collaboration.md
+- name: 管理隱私權風險
+  items:
+    - name: 了解隱私權管理
+      href: privacy-management.md
+    - name: 開始使用記錄管理
+      href: privacy-management-setup.md
+    - name: 在隱私權管理中尋找並視覺化個人資料
+      href: privacy-management-data-profile.md
+    - name: 在隱私權管理中建立及管理原則
+      href: privacy-management-policies.md
+    - name: 在隱私權管理中管理主體權利要求
+      href: privacy-management-subject-rights-requests.md
 - name: 混合式合規性功能
   items:
     - name: 使用 AD RMS 的 Exchange Online 郵件加密
