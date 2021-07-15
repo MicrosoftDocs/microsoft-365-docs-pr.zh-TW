@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 972282713e21c0e1f99a66e696de32531e68d4a7
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: e1de507dd5ec9508df0318c8ba2ef30af795e25b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114773"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430789"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -190,7 +190,7 @@ ms.locfileid: "53114773"
 
     ![提示使用者輸入理由](../media/Sensitivity-label-justification-required.png)
 
-- 針對文件、電子郵件、文件和容器，**要求使用者套用標籤**。 這些選項也稱為強制標籤，可確保使用者必須先套用標籤才能儲存文件和傳送電子郵件以及建立新群組或網站。
+- 針對文件及電子郵件、僅文件、容器，以及 Power BI 內容，**要求使用者套用標籤**。 這些選項也稱為強制標籤，可確保使用者儲存文件和傳送電子郵件、建立新群組或網站，以及當他們使用 Power BI 的未標籤內容之前，必須先套用標籤。
     
     若為文件和電子郵件，使用者可手動指派標籤、根據您設定的條件而自動指派，或依預設指派 (如上所述的預設標籤選項)。當使用者需要指派標籤時，Outlook 中顯示的提示範例：
 
@@ -199,6 +199,8 @@ ms.locfileid: "53114773"
     如需文件和電子郵件的強制標籤詳細資訊，請參閱[要求使用者在電子郵件和文件中套用標籤](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。
     
     若為容器，您必須在建立群組或網站時指派標籤。
+    
+    如需深入了解 Power BI 的強制標籤，請參閱 [Power BI 的強制標籤原則](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)。
     
     請考慮使用此選項來協助增加您的標記涵蓋範圍。 不過，若沒有使用者訓練，這些設定可能導致不正確的標記。 此外，除非您也設定對應的預設標籤，否則強制標籤的常見提示可能會讓使用者感到無益。
 

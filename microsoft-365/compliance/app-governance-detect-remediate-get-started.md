@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 開始使用應用程式威脅偵測和補救。
-ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420078"
+ms.locfileid: "53430717"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>開始使用應用程式威脅偵測和補救
 
@@ -27,7 +27,7 @@ ms.locfileid: "53420078"
 
 Microsoft 應用程式控管會收集內建應用程式控管偵測方法根據惡意應用程式活動所產生的威脅警示，以及您建立之作用中應用程式原則所產生的原則型警示。
 
-第一個檢視應用程式警示的地方是位於 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance) 的應用程式控管儀表板。
+第一個檢視應用程式警示的地方是位於 [https://aka.ms/appgovernance](https://aka.ms/appgovernance) 的應用程式控管儀表板。
 
 ![Microsoft 365 合規性中心的應用程式控管概觀頁面，且已醒目提示偵測和原則警示區段](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 

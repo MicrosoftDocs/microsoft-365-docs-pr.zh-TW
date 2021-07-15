@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 開始使用應用程式控管功能來控管您的應用程式。
-ms.openlocfilehash: 0fc00819947d3d472de9199b0381c6f33de0acd6
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420074"
+ms.locfileid: "53430705"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>開始使用應用程式控管 (預覽)
 
-若要開始使用 Microsoft 雲端 App 安全性的應用程式控管功能：
+若要開始使用 Microsoft 雲端 App 安全性的應用程式控管附加元件：
 
-1. 確認您的帳戶具有適當的授權等級。 應用程式控管是 Microsoft 雲端 App 安全性 (MCAS) 的附加元件功能，因此 MCAS 必須以獨立產品或屬於下列各種授權套件的一部分存在於您的帳戶中。
+1. 確認您的帳戶具有適當的授權等級。應用程式控管是 Microsoft 雲端 App 安全性 (MCAS) 的附加元件功能，因此 MCAS 必須以獨立產品或屬於下列各種授權套件的一部分存在於您的帳戶中。
 1. 您必須具有下列其中一個系統管理員角色，才能存取入口網站中的應用程式控管頁面。
 
 ## <a name="licensing-for-app-governance"></a>應用程式控管的授權

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195018"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438069"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -305,7 +305,12 @@ ms.locfileid: "53195018"
     mdatp health --field org_id
     ```
 
-2. 執行 MicrosoftDefenderATPOnboardingLinuxServer.py，請注意，為了執行此命令，您必須 `python` 安裝在裝置上：
+2. 執行 MicrosoftDefenderATPOnboardingLinuxServer.py。 
+   
+    >[!NOTE]
+    >若要執行此命令，您必須已 `python` 安裝在裝置上。 如果您正在執行 RHEL ∞或 Ubuntu 20.04 或更新版本，則您必須使用 Python 3，而不是 Python。
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -423,5 +428,5 @@ Options:
 
 如需如何從用戶端裝置移除 Linux 上的 Endpoint Endpoint 的詳細資訊，請參閱 [Uninstall](linux-resources.md#uninstall) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [調查代理程式健康狀況問題](health-status.md)

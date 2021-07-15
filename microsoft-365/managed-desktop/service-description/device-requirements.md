@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245789"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438009"
 ---
 # <a name="device-requirements"></a>裝置需求
 
@@ -49,7 +49,9 @@ Microsoft 受管理的電腦會定期評估服務中要包含的裝置需求。 
 - 64位版本的 Microsoft 365 Apps 企業版 
 - 所有適用的裝置驅動程式
 
-
+> [!NOTE]
+> 當預先安裝的軟體達到一般可用性時，Windows 11 會是另一個選項。
+>
 ### <a name="physical-features"></a>實體功能
 
 裝置必須具備下列功能：
@@ -62,7 +64,8 @@ Microsoft 受管理的電腦會定期評估服務中要包含的裝置需求。 
 如需這些功能和服務所使用之相關技術的詳細資訊，請參閱[Microsoft 受管理的電腦技術](../intro/technologies.md)。
 
 > [!NOTE]
-> 不支援 ARM 處理器。
+>- 不支援 ARM 處理器。
+>- Windows 11 具有額外的[硬體需求](/windows/whats-new/windows-11-requirements)。
 
 裝置應該符合或超過下列儲存區和記憶體的限制：
 

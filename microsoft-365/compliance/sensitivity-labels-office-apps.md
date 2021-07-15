@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2484aed7dd5f70a92b1199f472c983848326db7c
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228588"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430753"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -361,6 +361,8 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [Azure 資訊保護統一標籤用戶端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支援此設定 (也稱為強制標籤)。 有關 Office 應用程式内建標籤的資訊，請參閱本頁[功能](#support-for-sensitivity-label-capabilities-in-apps)一節中的表格以了解最低版本。
 >
 > 要對文檔而不是電子郵件使用強制標籤，請參閱下一節中說明如何設定 Outlook 特定選項的指示。
+> 
+> 若要對 Power BI 使用強制標籤，請參閱 [Power BI 的強制標籤原則](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)。
 
 選取 **要求使用者在電子郵件和文件中套用標籤** 原則設定時，獲派原則的使用者必須在下列情況下選取並套用敏感度標籤：
 
