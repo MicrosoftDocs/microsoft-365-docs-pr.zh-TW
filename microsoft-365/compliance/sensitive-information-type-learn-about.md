@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: ''
-ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+description: 本文概述敏感資訊類型，以及如何偵測敏感資訊，例如社會保險、信用卡或銀行帳戶號碼，以識別敏感專案
+ms.openlocfilehash: dee4ec59ce5fe6140c4aef33d147e89e11facd59
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300378"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453618"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
@@ -35,12 +35,13 @@ ms.locfileid: "53300378"
 
 ## <a name="sensitive-information-types-are-used-in"></a>敏感資訊類型是用於
 
-- [資料遺失防護原則](dlp-learn-about-dlp.md) 
+- [資料遺失防護原則](dlp-learn-about-dlp.md)
 - [敏感性標籤](sensitivity-labels.md)
 - [保留標籤](retention.md)
 - [內部風險管理](insider-risk-management.md)
 - [通訊合規性](communication-compliance.md)
 - [自動標籤型原則](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [隱私權管理 (預覽) ](privacy-management.md)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>敏感資訊類型的基礎部分
 
@@ -104,7 +105,7 @@ ms.locfileid: "53300378"
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - 阿根廷國內身分識別號碼 
-- Identity 
+- 身分識別 
 - 身分識別的國內身分識別卡片 
 - DNI 
 - 個人的 NIC 註冊人員 
@@ -158,7 +159,7 @@ ms.locfileid: "53300378"
 > 
 > 例如，若要偵測關鍵字 ，例如「机密的document」，請使用關鍵字的兩個變體；一個在日文和英文文字之間具有空格，另一個在日文和英文文字之間沒有空格。 因此，要新增到 SIT 中的關鍵字應該是「机密的 document」和「机密的document」。 同樣地，若要偵測片語「東京オリンピック2020」，應該使用兩個變體；「東京オリンピック 2020」和「東京オリンピック2020」。
 > 
-> 使用雙位元組連字號或雙位元組字元來建立 RegEx 時，請務必逸出這兩個字元，就像一個字元會逸出 RegEx 中的連字號或空格一樣。 以下是範例 RegEx 供參考：
+> 使用雙位元組連字號或雙位元組句號來建立 RegEx 時，請務必逸出這兩個字元，就像一個字元會逸出 RegEx 中的連字號或句號一樣。以下是供參考的範例 RegEx:
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > 我們建議您在關鍵字清單中使用 string match，而不是字比對。

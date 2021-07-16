@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: 深入瞭解 Teams 如何搭配 Microsoft 365 多地理位置運作。
-ms.openlocfilehash: 9fe9b289b0ffbef12327c4232b9deb6727b6d718
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362643"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453522"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Microsoft Teams 中的多地理位置功能
 
@@ -48,7 +48,7 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>通道郵件
 
-每個 Microsoft 365 群組都有一個慣用資料位置 (PDL) ，表示要儲存相關資料的地理位置。 Teams 會使用隨每個小組相關聯之群組的 PDL，來決定要為該小組儲存通道訊息資料的位置。 這包括在管道會議中發生的聊天。
+每個 Microsoft 365 群組都有一個慣用資料位置 (PDL) ，表示要儲存相關資料的地理位置。 Teams 會使用隨每個小組相關聯之群組的 PDL，來決定要為該小組儲存通道訊息資料的位置。 這包括專用通道，以及通道會議中所發生的聊天。
 
 當使用者建立新的小組時，該使用者的 pdl 會決定指派給 Microsoft 365 群組的 pdl。 Group PDL 會決定團隊資料的儲存位置。 如果該使用者的 PDL 稍後變更，則不會變更群組的 PDL。
 
@@ -66,7 +66,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 Teams多地理位置對使用者而言是無縫的。 一旦您變更使用者或群組的 PDL，對應的資料就會排隊進行遷移，而且即使在進行遷移時，也會自動進行遷移，但不會影響使用者或其 Teams 用戶端。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 多地理位置租用戶組態](/microsoft-365/enterprise/multi-geo-tenant-configuration)
 

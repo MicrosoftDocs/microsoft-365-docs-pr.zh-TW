@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148899"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454014"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -32,7 +32,7 @@ ms.locfileid: "53148899"
 
 合規性管理員可供具有 Office 365 和 Microsoft 365 授權的組織使用，並可政府社群雲端 (GCC) 中等、GCC 高及國防 (DoD) 客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 組織的 Microsoft 365 全域管理員可能會是第一個存取合規性管理員的使用者。 我們建議全域管理員登入，並設定第一次造訪合規性管理員時所述的使用者權限。
 
@@ -49,32 +49,30 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 
 ### <a name="where-to-set-permissions"></a>設定許可權的位置
 
-擁有組織之全域系統管理員角色的人員可以設定合規性管理員的使用者權限。 您可以在 Office 365 安全性 & 規範中心以及 Azure Active Directory (Azure AD) 中設定許可權。
+擁有組織之全域系統管理員角色的人員可以設定合規性管理員的使用者權限。 您可以在 Microsoft 365 合規性中心中設定許可權，也可以在 Azure Active Directory (Azure AD) 中設定。
 
 > [!NOTE]
 > 美國政府 Community 中的客戶 (GCC) 高和最的防禦權 (DoD) 環境只能在 Azure AD 中為合規性管理員設定使用者權限和角色。 請參閱下列 Azure AD 指示和角色類型定義。
 
-若要在 Office 365 安全性 & 規範中心設定許可權並指派角色，請執行下列步驟：
+若要在 Microsoft 365 合規性中心中設定許可權並指派角色，請遵循下列步驟：
 
-1. 移至 [ [Office 365 安全性 & 規範中心](https://protection.office.com/)]，然後選取左側導覽的 **許可權**。
+1. 移至 [ [Microsoft 365 合規性中心](https://compliance.microsoft.com/compliancemanager)]，然後選取左側導覽的 **許可權**。
 
-2. 尋找您要新增一或多個使用者的角色群組，然後選取 [組名] 左側的方塊。  (請參閱 [下列角色和相關功能的清單](#role-types)。 會模仿角色名稱的角色群組名稱。 ) 
+2. 在 [ **規範中心** ] 下拉式清單中，選取 [ **角色**]。 
 
-3. 在該群組的彈出窗格上，選取 [**成員**] 標題底下的 [**編輯**]。
+3. 尋找您要新增一或多個使用者的角色群組，然後選取 [組名] 左側的方塊。  (請參閱 [下列角色和相關功能的清單](#role-types)。 會模仿角色名稱的角色群組名稱。 ) 
 
-4. 選取 **[選擇成員**]。 會出現另一個快顯視窗。
+4. 在該群組的彈出窗格上，選取 [**成員**] 標題底下的 [**編輯**]。
 
-5. 選取 [ **+ 新增** ] 選擇一或多個要新增至群組的使用者。
+5. 選取 **[選擇成員**]。 會出現另一個快顯視窗。
 
-6. 選取您要新增之名稱旁邊的核取方塊，然後選取底部的 [ **新增** ] 按鈕。
+6. 選取 [ **+ 新增** ] 選擇一或多個要新增至群組的使用者。
 
-7. 當您完成指派使用者時，請選取 [ **完成**]，然後選取 [ **儲存**]，然後按一下 [ **關閉**]。
+7. 選取您要新增之名稱旁邊的核取方塊，然後選取底部的 [ **新增** ] 按鈕。
 
-##### <a name="more-about-the-office-365-security--compliance-center"></a>Office 365 安全性 & 規範中心的詳細資訊
+8. 當您完成指派使用者時，請選取 [ **完成**]，然後選取 [ **儲存**]，然後按一下 [ **關閉**]。
 
-深入瞭解[Office 365 安全性 & 規範中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
-
-如果您沒有 Office 365 安全性與合規性中心的存取權，或者您需要在 Microsoft 服務信任入口網站中存取傳統版本的合規性管理員，則服務信任入口網站中的系統管理員設定會提供另一種方法，來指派角色 ([view 指示](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)) 。 請注意，這些角色在其功能上的限制更為有限。
+如果您需要在 Microsoft 服務信任入口網站中存取傳統版本的合規性管理員，服務信任入口網站中的系統管理員設定會提供另一種方法， ([view 指示](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)) 中指派角色。 請注意，這些角色在其功能上的限制更為有限。
 
 ##### <a name="more-about-azure-ad"></a>有關 Azure AD 的詳細資訊
 
@@ -93,7 +91,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 | **編輯資料**| 合規性管理員貢獻 | 合規性系統管理員 | 
 | **編輯測試結果**| 合規性管理員評定員 | 合規性系統管理員 | 
 | **管理評估、範本及租使用者資料**| 合規性管理員管理 | 合規性管理員、規範資料管理員、安全性管理員  | 
-| **指派使用者**| 全域管理員 | 全域管理員 | 
+| **指派使用者**| 全域系統管理員 | 全域系統管理員 | 
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>自動測試和使用者歷程記錄的設定
 
@@ -187,7 +185,7 @@ Microsoft 365 合規性中心中的合規性管理員設定可讓您啟用及停
 8. 當重新指派完成時，您會在飛入窗格中看到一則確認訊息，以確認先前使用者的所有改進動作都已重新指派給新的使用者。 如果您收到重新指派失敗通知，請關閉視窗，然後再試一次。 若要關閉彈出窗格，請選取 [ **完成**]。
 
 新的受託人會收到已獲指派給改進動作的電子郵件。 電子郵件包含 [改進動作的詳細資料] 頁面的直接連結。
- 
+
  > [!NOTE]
 > 如果您重新指派具有暫止更新的動作，當重新指派後接受更新時，就會中斷重新分派電子郵件中動作的直接連結。 您可以在接受更新後，將動作重新指派給使用者，以修正此問題。 深入瞭解 [改進動作的更新](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)。
 
@@ -215,7 +213,7 @@ Microsoft 365 合規性中心中的合規性管理員設定可讓您啟用及停
 
 合規性管理員儀表板專為您提供目前符合性狀況的一覽式視圖。
 
-![合規性管理員-儀表板](../media/compliance-manager-dashboard.png "合規性管理員儀表板")
+:::image type="content" alt-text="合規性管理員-儀表板。" source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### <a name="overall-compliance-score"></a>整體合規性分數
 
@@ -363,5 +361,5 @@ Microsoft 365 合規性中心中的合規性管理員設定可讓您啟用及停
 
 **深入瞭解：** 請 [參閱如何使用評估範本](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 [設定評估](compliance-manager-assessments.md)，以自訂合規性管理員。

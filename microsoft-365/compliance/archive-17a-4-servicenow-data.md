@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用 17a-4 ServiceNow DataParser 連接器，以匯入及封存 Microsoft 365 中的 ServiceNow 資料。
-ms.openlocfilehash: 992f34864f0de7ddff1f8159e9970157bcffb964
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: a01e075b6cbf400bc3b7dc38950d87443a46f81c
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276962"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454418"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>設定 ServiceNow 資料 (預覽的連接器) 
+# <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>設定從 ServiceNow 封存資料的連接器
 
 使用來自 17a-4 LLC 的[ServiceNow DataParser](https://www.17a-4.com/dataparser/) ，將資料從 ServiceNow 匯入至 Microsoft 365 組織中的使用者信箱。 DataParser 包含的 ServiceNow 連接器會設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 ServiceNow DataParser 連接器會將 ServiceNow 的資料轉換成電子郵件格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 

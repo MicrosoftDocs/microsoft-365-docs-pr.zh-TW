@@ -58,7 +58,7 @@ Microsoft 365 多地理位置可作為以下 Microsoft 365 訂閱方案的附加
 - 商務用 OneDrive 方案 1 或方案 2
 - SharePoint Online 方案 1 或方案 2
 
-如果授權指派給使用者但稍後移除，Teams 使用者聊天資料會排入佇列移回中央位置。 不會移動 SharePoint 和 Exchange 資料。
+如果授權指派給使用者但稍後移除，Teams 使用者聊天資料會排入佇列，等候移回中央位置。 不會移動 SharePoint 和 Exchange 資料。
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 多地理位置可用性
 

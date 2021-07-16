@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用 17a-4 Bloomberg DataParser 連接器，以匯入及封存 Microsoft 365 中的 Bloomberg 資料。
-ms.openlocfilehash: 7fcc02384ce7bea6b9903fddef1256b97b8e340c
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 2d4005468d7df7987d1794e8d61262c8fde70b5f
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096388"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454538"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-data-preview"></a>設定連接器以封存 Bloomberg 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-bloomberg-data"></a>設定連接器以封存 Bloomberg 資料
 
 使用來自 17a-4 LLC 的[Bloomberg DataParser](https://www.17a-4.com/Bloomberg-dataparser/) ，將資料從 Bloomberg 匯入至 Microsoft 365 組織中的使用者信箱。 DataParser 包含的 Bloomberg 連接器設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 Bloomberg DataParser connector 會將 Bloomberg 資料轉換成電子郵件訊息格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 

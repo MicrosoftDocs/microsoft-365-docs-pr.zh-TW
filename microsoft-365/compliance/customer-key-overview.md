@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
-ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9a8558a0cf36f2040614ca3ffb61e7ba9936d40f
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769446"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463958"
 ---
 # <a name="service-encryption-with-customer-key"></a>客戶金鑰服務加密
 
@@ -48,7 +48,7 @@ Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 啟用的
 - Teams 媒體訊息 (影像、程式碼片段、影片郵件、音訊訊息、wiki 影像) 
 - Teams 儲存區中儲存的 Teams 通話和會議錄製
 - Teams 聊天通知
-- 使用 Cortana Teams 聊天建議
+- Cortana Teams 聊天建議
 - Teams 狀態郵件
 - Exchange Online 的使用者和信號資訊
 - Exchange Online 信箱 DEPs 未加密的信箱
@@ -63,7 +63,7 @@ Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 啟用的
 - SharePoint 和商務用 OneDrive 資料。
 - 商務用 OneDrive 和 SharePoint online 中儲存的 Microsoft Teams 檔案和部分 Teams 呼叫和會議錄製，都是使用 SharePoint 線上 DEP 進行加密。
 - 其他 Microsoft 365 工作負載，例如，客戶機碼目前不支援的 Yammer 和 Planner。
-- TeamsLive 事件和 Q&即時事件。 針對 Teams，此案例是唯一一種未使用多重工作負載 DEP 以客戶金鑰加密的案例。
+- Teams即時事件資料。
 
 每個租使用者可以建立多個 DEPs，但一次只能指派一個 DEP。 當您指派 DEP 時，加密會自動開始，但需要一些時間才能完成，具體取決於您的承租人的大小。
 

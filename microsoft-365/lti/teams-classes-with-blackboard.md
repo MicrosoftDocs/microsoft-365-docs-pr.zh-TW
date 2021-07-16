@@ -1,5 +1,5 @@
 ---
-title: 整合具有 Blackboard 的 Microsoft Teams 類別瞭解超
+title: 使用具有 Blackboard 的 Microsoft Teams 類別瞭解超
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,13 +12,13 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: 整合具有 Blackboard 的 Microsoft Teams 類別瞭解超
-ms.openlocfilehash: da98fae3fa5d6be2513147be58747512bea99e16
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+description: 使用具有 Blackboard 的 Microsoft Teams 類別瞭解超
+ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314486"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454626"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>使用具有 Blackboard 的 Microsoft Teams 類別瞭解超
 
@@ -27,15 +27,15 @@ ms.locfileid: "53314486"
 您的類別可能包括即時交談、影片會議或非同步互動。 您可以在一個地方新增學生的檔案共用和 cocreation 體驗。 使用「學習」的 Microsoft Teams 類別會以「大量重新定義教學」和有效學習的意義。
 
 > [!IMPORTANT]
-> 確定您已在學生資訊系統 (SIS 中成功設定機構電子郵件欄位) `help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student\_Information\_System/SIS\_Planning`
+> 確定您已在[學生資訊系統 (SIS](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)中成功設定機構電子郵件欄位) 
 >
->Microsoft Teams 類別整合依賴您 SIS 中的「機構電子郵件」欄位，以對應至正確的 Microsoft Azure Active Directory (AAD) 使用者主體名稱 (UPN) 。 若尚未布建任何機構電子郵件，這將會預設為現有的電子郵件。 建議您為每位使用者設定此欄位，以確保其資料同步處理，且 Microsoft AAD 和 Blackboard 間的電子郵件資料沒有衝突。
+>Microsoft Teams 類別整合依賴您 SIS 中的「機構電子郵件」欄位，對應至正確的 Microsoft Azure Active Directory (AAD) [使用者主體名稱 (UPN) ](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)。 若尚未布建任何機構電子郵件，這將會預設為現有的電子郵件。 建議您為每位使用者設定此欄位，以確保其資料同步處理，且 AAD 和 Blackboard 間的電子郵件資料沒有衝突。
 >
 > 如果您未在 SIS 對應中適當地設定此欄位，整合將繼續運作，但使用者可能不會出現在所建立的 Teams 類別中，而且可能會發生錯誤。
 
 ## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>支援機構資料對應–機構電子郵件 SIS 欄位
 
-當您使用雲端提供者整合的一部分演變時，Blackboard 會透過「學生資訊系統架構整合」和「公用 REST」 APIs 等方式，在 Blackboard 中建立新的 **機構電子郵件** 欄位，讓組織能夠在 Blackboard 上有效地管理資料同步處理常式。
+在使用雲端提供者整合的過程中，Blackboard 會透過「學生資訊系統架構整合」和「公用 REST」 APIs 等方式，在 Blackboard 中建立新的 **機構電子郵件** 欄位，讓組織能夠在 Blackboard 上有效地管理資料同步處理常式。
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>機構的電子郵件含義為何？
 
@@ -46,7 +46,7 @@ ms.locfileid: "53314486"
  當兩個電子郵件地址不同時，請執行下列其中一項：
 
 - 您必須進行決策，使其具有優先權，並將其當作人員和機構電子郵件。
-  或
+  或者
 - 機構可以在其機構電子郵件中設定自訂欄位對應，這樣可以解決可能的衝突。
 
 「**機構電子郵件** 欄位對應」現在可用於「**高級設定設定** 的所有現有 SIS 整合類型  >  。使用者會 **瞭解物件類型**  >  **欄位對應**。
@@ -59,6 +59,8 @@ ms.locfileid: "53314486"
 **僅限 Ultra 課程查看課程** 可使用 Microsoft Teams 類別整合。 您的機構必須完成這些需求才能使用：
 
 - 讓 Blackboard 瞭解超深入瞭解 SaaS 啟用超基礎導覽
+
+  ![課程中已啟用該功能的範例](media/feature-availability.png)
 
 - 啟用 LTI 以供課程使用。
 
@@ -157,6 +159,10 @@ ms.locfileid: "53314486"
 > [!NOTE]
 > 您會將 **{租** 使用者更換為您的特定機構 Microsoft Azure 租使用者識別碼。
 
+您將會看到 [許可權] 視窗，此視窗會告訴您您會將 Blackboard 的許可權授與 access Microsoft Teams。
+
+![Microsoft 和 Blackboard 的 [許可權] 視窗](media/permissions1.png)
+
 ### <a name="after-configuring-the-lti-applications"></a>設定 LTI 應用程式之後
 
 1. 在 [**系統管理員] 面板** 上，流覽至 [**工具及公用程式**]，然後選取 [ **Microsoft Teams Integration Admin**]。
@@ -172,3 +178,5 @@ ms.locfileid: "53314486"
    - 若未經核准，請遵循所述的步驟，以產生同意的 URL，並將其傳送給 Microsoft 365 全域管理員以核准。
 
 5. 確認核准後，請選取 [ **重試** 以確認]，然後選取 [ **提交**]。
+
+   ![表示您的存取已封鎖的對話方塊](media/blocked-access.png)

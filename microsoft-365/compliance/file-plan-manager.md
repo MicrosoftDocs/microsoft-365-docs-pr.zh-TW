@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計畫為保留標籤提供進階管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 422a76db5705e80c67803b798275e1faedd1d7aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906873"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419760"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用檔案計畫來管理保留標籤
 
@@ -32,7 +32,7 @@ ms.locfileid: "50906873"
 
 - 您可以從試算表匯入相關資訊，大量建立保留標籤。
 
-- 您可以從現有保留標籤匯出資訊，以便進行分析和離線共同作業或進行大量編輯。
+- 您可以從現有保留標籤匯出資訊，以便進行分析和離線共同作業。
 
 - 有關保留標籤的詳細資訊將會顯示，讓您可以從一個檢視輕鬆查看所有保留標籤的各項設定。
 
@@ -99,7 +99,7 @@ ms.locfileid: "50906873"
 
 檔案計畫可讓您隨著保留標籤包含更多資訊。 這些檔案計畫描述元提供更多可改善您要加上標籤之內容的可管理性和組織的選項。
 
-根據預設，從 [參照識別碼] 開始，接下來的幾個欄會顯示這些檔案計畫描述元，供您在建立保留標籤或編輯現有標籤時指定。 
+根據預設，從 **[參照識別碼]** 開始，接下來的幾個欄會顯示這些選用檔案計畫描述元，供您在建立保留標籤或編輯現有標籤時指定。 
 
 為了讓您開始使用，以下檔案計畫描述元有一些現成可用的值： 
 - 商務功能/部門
@@ -123,13 +123,13 @@ ms.locfileid: "50906873"
 
 ![匯出檔案計畫的選項](../media/compliance-file-plan-export-labels.png)
 
-包含所有現有保留標籤的 *.csv 檔案隨即開啟。 例如：
+包含所有現有保留標籤的 *.csv 檔案隨即開啟。範例：
 
 ![顯示所有保留標籤的 CSV 檔案](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>將保留標籤匯入至您的檔案計劃
 
-在檔案計畫中，您可以大量匯入新保留標籤，並使用相同的方法來大量修改現有的保留標籤。
+在檔案計畫中，您可以使用具有特定格式的 .csv 檔案來大量匯入新的保留標籤。 在匯入這些標籤之後，您可以在 .csv 檔案中進行編輯，然後再次重新匯入檔案，以更輕鬆地大量編輯現有的保留標籤。
 
 若要匯出新的保留標籤，以及修改現有的保留標籤： 
 
@@ -139,52 +139,56 @@ ms.locfileid: "50906873"
 
    ![下載空白檔案計劃範本的選項](../media/file-plan-blank-template-option.png)
 
-2. 下載空白範本以匯入全新保留標籤。 或者，您可以從當匯出組織中的現有保留標籤時所匯出的 .csv 檔案開始。
+2. 依指示下載空白的範本：
 
    ![Excel 中開啟空白檔案計畫範本](../media/file-plan-blank-template.png)
 
-3. 使用說明每個屬性的屬性和有效值的以下資訊填寫範本。 若要匯出，某些值的長度上限為：
+3. 使用說明每個屬性的屬性和有效值的以下資訊填寫範本。若要匯入，某些值的長度上限為：
     
     - **LabelName**： 長度上限為 64 個字元
     - **註解** 和 **附注**： 長度上限為 1024 個字元
     - 所有其他值：無限制長度
     <br/>
     
-   |屬性	|類型|有效值|
-   |:-----|:-----|:-----|
-   |LabelName|字串|此屬性會指定保留標籤的名稱。|
-   |留言|字串|使用此屬性來新增系統管理員保留標籤相關的描述。 只有在合規性中心中管理保留標籤的系統管理員才會看到這個描述。|
-   |附註|字串|使用此屬性來新增使用者保留標籤相關的描述。 當使用者將游標移到應用程式 (例如 Outlook、SharePoint 和 OneDrive) 中的標籤上時，就會出現此描述。 如果您將此屬性保留空白，則會顯示說明標籤之保留設定的預設描述。 |
-   |IsRecordLabel|字串|此屬性會指定標籤是否將內容標示為記錄。 有效值為： </br>**TRUE**：標籤會將項目標示為記錄，並因此無法刪除該項目。 </br>**FALSE**：標籤不會將內容標示為記錄。 這是預設值。|
-   |RetentionAction|字串|此屬性指定由 RetentionDuration 屬性指定的值過期之後所要採取的動作。 有效值為： </br>**Delete**：刪除早於 RetentionDuration 屬性指定值的項目。</br>**Keep**：保留由 RetentionDuration 屬性指定期間內的項目，然後在期間到期時不執行任何動作。 </br>**KeepAndDelete**：保留由 RetentionDuration 屬性指定期間內的項目，然後在期間到期時將之刪除。   |
-   |RetentionDuration|字串|此屬性會指定要保留內容的天數。 有效值為： </br>**無限制**：系統會無限期保留這些項目。 </br>**_n_*_： 正整數；例如，_* 365**。 
-   |RetentionType|字串|此屬性會指定保留期限是否從內容建立日期、事件日期、已套用標籤日期或上次修改日期算起。 有效值為： </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|填入此屬性時，系統會在保留期間到期時觸發處置檢閱。 此屬性會指定 **KeepAndDelete** 保留動作檢閱者的電子郵件地址。 您可以包含個別使用者、通訊群組或安全性群組的電子郵件地址。 您可以使用分號指定多個電子郵件地址。|
-   |ReferenceId|字串|此屬性指定在 [參考識別碼] 檔案計劃描述元中顯示的值，您可以將它用作組織的唯一值。| 
-   |Departmentname|字串|此屬性指定在 **[功能/部門]** 檔案計劃描述元中顯示的值。|
-   |類別|字串|此屬性指定在 **[類別]** 檔案計劃描述元中顯示的值。|
-   |子類別|字串|此屬性指定在 **[子類別]** 檔案計劃描述元中顯示的值。|
-   |AuthorityType|字串|此屬性指定在 **[授權單位類型]** 檔案計劃描述元中顯示的值。|
-   |CitationName|字串|此屬性指定在 [條款/引文] 檔案計畫描述元中顯示的引文名稱。 例如，「2002 年沙賓法案」。 |
-   |CitationUrl|字串|此屬性指定在 **[條款/引文]** 檔案計劃描述元中顯示的 URL。|
-   |CitationJurisdiction|字串|此屬性指定在 [條款/引文] 檔案計畫描述元中顯示的管轄單位或代理機構。 例如「美國證券交易委員會 (SEC)」|
-   |Regulatory|字串|保留空白。 目前無法使用此屬性。|
-   |EventType|字串|此屬性會指定與標籤相關聯的保留規則。 您可以使用唯一識別規則的任何值。 例如：</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>您可以使用 [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) Cmdlet 來檢視可用的保留規則。 請注意，因為 EventType 值是每個組織特有，如果從某組織匯出標籤，您無法使用來自該組織的 EventType 屬性值，來將標籤匯入至不同組織。|
+   |屬性	|類型|必要|有效值|
+   |:-----|:-----|:-----|:-----|
+   |LabelName|字串|是|此屬性會指定保留標籤的名稱，且在租用戶中必須是唯一的。|
+   |留言|字串|否|使用此屬性來新增系統管理員保留標籤相關的描述。 只有在合規性中心中管理保留標籤的系統管理員才會看到這個描述。|
+   |附註|字串|否|使用此屬性來新增使用者保留標籤相關的描述。 當使用者將游標移到應用程式 (例如 Outlook、SharePoint 和 OneDrive) 中的標籤上時，就會出現此描述。 如果您將此屬性保留空白，則會顯示說明標籤之保留設定的預設描述。 |
+   |IsRecordLabel|字串|否，除非 **法規** 為 **TRUE**|此屬性會指定標籤是否將內容標示為記錄。有效值如下：</br>**TRUE**：標籤會將項目標示為記錄，並因此無法刪除該項目。 </br>**FALSE**：標籤不會將內容標示為記錄。 這是預設值。 </br> </br> 群組相依性：指定此屬性時，也必須指定 RetentionAction、RetentionDuration 和 RetentionType。|
+   |RetentionAction|字串|否，除非指定 **RetentionDuration**、**RetentionType** 或 **ReviewerEmail**|此屬性指定由 RetentionDuration 屬性 (如果有指定) 指定的值過期之後所要採取的動作。有效值為：</br>**Delete**：刪除早於 RetentionDuration 屬性指定值的項目。</br>**Keep**：保留由 RetentionDuration 屬性指定期間內的項目，然後在期間到期時不執行任何動作。 </br>**KeepAndDelete**：保留由 RetentionDuration 屬性指定期間內的項目，然後在期間到期時將之刪除。 </br> </br> 群組相依性：指定此屬性時，也必須指定 RetentionDuration 和 RetentionType。 |
+   |RetentionDuration|字串|否，除非指定 **RetentionAction** 或 **RetentionType**|此屬性會指定要保留內容的天數。有效值為： </br>**無限制**：系統會無限期保留這些項目。 </br>**_n_*：以天為單位的正整數；例如 **365**。 支援的最大數目為 24,855，即 68 年。 如果您需要比此上限更長的時間，請改用 Unlimited。</br> </br> 群組相依性：指定此屬性時，也必須指定 RetentionAction 和 RetentionType。
+   |RetentionType|字串|否，除非指定 **RetentionAction** 或 **RetentionDuration**|此屬性會指定保留期限 (如果指定) 是否從內容建立日期、事件日期、已套用標籤日期或上次修改日期算起。有效值為：</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> 群組相依性：指定此屬性時，也必須指定 RetentionAction 和 RetentionDuration。|
+   |ReviewerEmail|SmtpAddress|否|指定此屬性時，系統會在保留期間到期時觸發處置檢閱。 此屬性會指定 **KeepAndDelete** 保留動作檢閱者的電子郵件地址。 </br> </br> 您可以在您的租用戶中包含個別使用者、通訊群組或安全性群組的電子郵件地址。 指定多個電子郵件地址並使用分號 (;) 隔開它們。 </br> </br> 群組相依性：指定此屬性時，也必須指定 **RetentionAction** (必須為 **KeepAndDelete**)、**RetentionDuration** 和 **RetentionType**。|
+   |ReferenceId|字串|否|此屬性指定在 [參考識別碼] 檔案計劃描述元中顯示的值，您可以將它用作組織的唯一值。| 
+   |Departmentname|字串|否|此屬性指定在 **[功能/部門]** 檔案計劃描述元中顯示的值。|
+   |類別|字串|否|此屬性指定在 **[類別]** 檔案計劃描述元中顯示的值。|
+   |子類別|字串|否|此屬性指定在 **[子類別]** 檔案計劃描述元中顯示的值。|
+   |AuthorityType|字串|否|此屬性指定在 **[授權單位類型]** 檔案計劃描述元中顯示的值。|
+   |CitationName|字串|否|此屬性指定在 [條款/引文] 檔案計畫描述元中顯示的引文名稱。 例如，「2002 年沙賓法案」。 |
+   |CitationUrl|字串|否|此屬性指定在 **[條款/引文]** 檔案計劃描述元中顯示的 URL。|
+   |CitationJurisdiction|字串|否|此屬性指定在 **[條款/引文]** 檔案計劃描述元中顯示的管轄單位或代理機構；例如「美國證券交易委員會 (SEC)」。|
+   |Regulatory|字串|否|此屬性會指定標籤是否將內容標示為法規記錄，這比標示為記錄 [更具限制性](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 若要使用此標籤設定，必須將您的租用戶者設定為 [顯示選項以將內容標示為法規記錄](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)，否則匯入驗證將失敗。 有效值為： </br>**TRUE**：此標籤會將此項目標示為法規記錄。 您也必須將 **IsRecordLabel** 屬性設定為 TRUE。</br>**FALSE**：此標籤不會將內容標示為法規記錄。 這是預設值。|
+   |EventType|字串|否，除非 **RetenType** 為 **EventAgeInDays**|此屬性指定 [事件型保留](event-driven-retention.md) 的事件種類。 指定現有的事件種類，此類型會顯示在 **記錄管理** > **事件** > **管理事件類型** 中。 或者，使用 [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) Cmdlet 以檢視可供使用的事件類型。 雖然有一些內建事件類性，例如 **員工活動** 和 **產品存留期**，您也可以建立自己的事件類型。 </br> </br> 如果您指定自己的事件類型，它必須在匯入之前即已存在，因為名稱會在匯入過程中進行驗證。|
    |||
 
    以下是含有保留標籤相關資訊的範本範例。
 
    ![已填入資訊的檔案計畫範本](../media/file-plan-filled-out-template.png)
 
-4. 在 [填寫並匯入您的檔案計畫] 頁面的步驟 3 下方，按一下 [瀏覽檔案] 以上傳填寫的範本。 
+4. 在 **[填寫並匯入您的檔案計畫]** 頁面的步驟 3 下方，按一下 **[瀏覽檔案]** 以上傳填寫完成的範本，然後選取 **[下一步]**。
 
-   檔案計畫會驗證項目並顯示匯入統計資料。
+   檔案計畫會上傳該檔案並驗證此項目，也會顯示匯入統計資料。
 
    ![檔案計畫匯入統計資料](../media/file-plan-import-statistics.png)
 
-   如果發生驗證錯誤，檔案計畫匯入會繼續驗證匯入檔案中的每個項目，並顯示參考匯入檔案中該行和列號的所有錯誤。 複製顯示的錯誤結果，以便在您回到匯入檔案時可加以修正。
+5. 根據驗證結果：
+    
+    - 如果驗證失敗：請注意匯入檔案中要進行修正的列號和欄名稱。 請選取 **關閉**，然後 **是** 以進行確認。 修正檔案中的錯誤並儲存檔案，再次選取 **匯入** 選項，然後返回步驟 4。
+    
+    - 如果驗證通過：您可以選取 **上線** 以提供可在租用戶中使用的保留標籤。 或者，選取頁面的 [關閉] 圖示，和 **是** 以確認您想要關閉精靈，而不會讓此保留標籤在您的租用戶中立即使用。
 
-匯入完成後，您現在可以將保留標籤新增至新的保留標籤原則，或自動套用。 您可以直接從 [檔案計畫] 頁面執行此動作，方法是選取 [+ 建立標籤] 下拉式清單，然後選取 [發佈標籤的原則] 或 [自動套用標籤的原則]。
+當已匯入的標籤新增至您的租用戶之後，您現在可以將保留標籤新增至新的保留標籤原則，或自動套用。 您可以直接從 [檔案計畫] 頁面執行此動作，方法是選取 [+ 建立標籤] 下拉式清單，然後選取 [發佈標籤的原則] 或 [自動套用標籤的原則]。
 
 ## <a name="next-steps"></a>後續步驟
 

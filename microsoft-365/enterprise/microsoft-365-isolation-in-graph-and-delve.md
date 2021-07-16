@@ -17,11 +17,11 @@ f1.keywords:
 description: 在本文中，將說明 Microsoft 365 租使用者隔離在 Office Graph 和 Delve 中的運作方式。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 966f02726a2cce18e30e4d5bc7ab0beb5db51a29
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332385"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464070"
 ---
 # <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft 365Microsoft Graph 和 Delve 中的租使用者隔離
 

@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cff0810a4469d3c2d9ff2fe0fe5100b7a37408ae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930304"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454742"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>將非 Microsoft endpoint protection 切換為 Microsoft Defender for Endpoint
 
@@ -47,7 +47,7 @@ ms.locfileid: "52930304"
 
 |階段 |描述 |
 |--|--|
-|[準備遷移](switch-to-microsoft-defender-prepare.md) |[在 **準備** 階段](switch-to-microsoft-defender-prepare.md)內： <p>1. 更新您組織的裝置。 <p>2. 取得適用于端點的 Defender。 <p>3. 規劃您的角色和許可權，並授與 Microsoft Defender 資訊安全中心的存取權。 <p>4. 設定您的裝置 proxy 和網際網路設定，以啟用組織裝置和 Defender for Endpoint 之間的通訊。 |
+|[準備遷移](switch-to-microsoft-defender-prepare.md) |[在 **準備** 階段](switch-to-microsoft-defender-prepare.md)內： <p>1. 更新您組織的裝置。 <p>2. 取得適用于端點的 Defender。 <p>3. 規劃您的角色和許可權，並授與 Microsoft 365 Defender 入口網站的存取權。 <p>4. 設定您的裝置 proxy 和網際網路設定，以啟用組織裝置和 Defender for Endpoint 之間的通訊。 |
 |[設定端點的 Defender](switch-to-microsoft-defender-setup.md) |在 [**安裝** 階段](switch-to-microsoft-defender-setup.md)內： <p>1. 啟用/重新安裝 Microsoft Defender 防毒軟體。 <p>2. 設定用於端點的 Defender。 <p>3. 將用於端點的 Defender 新增至現有解決方案的排除清單。 <p>4. 將現有的解決方案新增至 Microsoft Defender 防毒軟體的排除清單。 <p>5. 設定您的裝置群組、集合及組織單位。 <p>6. 設定反惡意程式碼原則和即時保護設定。|
 |[Endpoint to Defender 的板載](switch-to-microsoft-defender-onboard.md) |在 [第 **板** 階段](switch-to-microsoft-defender-onboard.md)期間： <p>1. 將裝置板載 to Defender for Endpoint。 <p>2. 執行偵測測試。 <p>3. 確認 Microsoft Defender 防毒軟體以被動模式執行。 <p>4. 取得 Microsoft Defender 防毒軟體的更新。 <p>5. 卸載現有的 endpoint protection 解決方案。 <p>6. 確定 Endpoint for Endpoint 可以正確運作。 |
 
@@ -68,6 +68,6 @@ ms.locfileid: "52930304"
 
 **想要深入瞭解？請參閱 [適用于 Endpoint 的 Defender](microsoft-defender-endpoint.md)。**
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 - 繼續進行 [遷移的準備工作](switch-to-microsoft-defender-prepare.md)。

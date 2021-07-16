@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 了解如何使用 Office 365 IP 位址和 URL Web 服務來協助您更能識別並區分 Office 365 網路流量。
-ms.openlocfilehash: 0469070ed6d46b7695526697c255e23c0dc009ec
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286414"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419781"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務
 
@@ -63,22 +63,22 @@ Office 365 IP 位址和 URL Web 服務可協助您更能識別並區分 Office 3
 
 這些參數為所有 Web 服務方法通用：
 
-- **format=<JSON | CSV>** - 依預設，傳回的資料格式為 JSON。 使用此選擇性參數可以逗點分隔值 (CSV) 格式傳回資料。
-- **ClientRequestId=\<guid>** - 您為用戶端關聯所產生的必要 GUID。 針對每個呼叫 Web 服務的電腦產生唯一 GUID (此頁面上包含的指令碼會為您產生 GUID)。 請勿使用下列範例所示的 GUID，因為未來 Web 服務可能會加以封鎖。 GUID 格式為 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 代表十六進位數字。
+- **format=\<JSON \| CSV\>** — 依預設，傳回的資料格式為 JSON。 使用此選擇性參數可以逗點分隔值 (CSV) 格式傳回資料。
+- **ClientRequestId=\<guid\>** - 您為用戶端關聯所產生的必要 GUID。 針對每個呼叫 Web 服務的電腦產生唯一 GUID (此頁面上包含的指令碼會為您產生 GUID)。 請勿使用下列範例所示的 GUID，因為未來 Web 服務可能會加以封鎖。 GUID 格式為 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 代表十六進位數字。
 
   若要產生 GUID，您可以使用 PowerShell 命令 [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid)，或使用線上服務，例如[線上 GUID 產生器](https://www.guidgenerator.com/)。
 
 ## <a name="version-web-method"></a>版本 Web 方法
 
-Microsoft 在每個月底更新 Office 365 IP 位址和 FQDN 項目。 有時也會因為支援事件、安全性更新或其他作業需求而發佈額外的更新。
+Microsoft 在每個月月初更新 Office 365 IP 位址和 FQDN 項目。 有時也會因為支援事件、安全性更新或其他作業需求而發佈額外的更新。
 
 每個已發佈執行個體的資料都會被指派一個版本號碼，版本 Web 方法可讓您檢查每個 Office 365 服務執行個體的最新版本。我們建議您檢查版本的頻率是一個小時不超過一次。
 
 版本 Web 方法的參數為：
 
-- **AllVersions=<true | false>** - 依預設，傳回的版本是最新的。 由於 Web 服務已先發行，因此包含此選擇性參數可要求所有已發佈的版本。
-- **Format=<JSON | CSV | RSS>** - 除了 JSON 和 CSV 格式，版本 Web 方法也支援 RSS。 您可以使用此選擇性參數搭配 _AllVersions=true_ 參數，要求可以與 Outlook 或其他 RSS 讀取程式搭配使用的 RSS 摘要。
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - 此選擇性參數可指定要傳回版本的執行個體。 如果省略，則會傳回所有執行個體。 有效的執行個體為：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **AllVersions=\<true \| false\>** — 依預設，傳回的版本是最新的。 由於 Web 服務已先發行，因此包含此選擇性參數可要求所有已發佈的版本。
+- **Format=\<JSON \| CSV \| RSS\>** — 除了 JSON 和 CSV 格式，版本 Web 方法也支援 RSS。 您可以使用此選擇性參數搭配 _AllVersions=true_ 參數，要求可以與 Outlook 或其他 RSS 讀取程式搭配使用的 RSS 摘要。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — 此選擇性參數可指定要傳回版本的執行個體。 如果省略，則會傳回所有執行個體。 有效的執行個體為：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
 版本 Web 方法沒有速率限制，也不會傳回 429 HTTP 回應碼。版本 Web 方法的回應會包含建議快取資料達 1 小時的快取控制 (cache-control) 標頭。版本 Web 方法的結果可能是單一記錄或記錄的陣列。每個記錄的元素是：
 
@@ -86,9 +86,9 @@ Microsoft 在每個月底更新 Office 365 IP 位址和 FQDN 項目。 有時也
 - latest - 指定執行個體端點的最新版本。
 - versions - 指定執行個體所有舊版的清單。這個元素只有在 _AllVersions_ 參數為 true 時才會納入。
 
-### <a name="examples"></a>範例：
+### <a name="version-web-method-examples"></a>版本 Web 方法範例
 
-範例 1 要求 URI：[https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+範例 1 要求 URI：<https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 這個 URI 會傳回每個 Office 365 服務執行個體的最新版本。範例結果：
 
@@ -120,7 +120,7 @@ Microsoft 在每個月底更新 Office 365 IP 位址和 FQDN 項目。 有時也
 > [!IMPORTANT]
 > 這些 URI 中 ClientRequestID 參數的 GUID 只是範例。若要試用 Web 服務 URI，請產生您自己的 GUID。這些範例中所顯示的 GUID 未來可能會遭到 Web 服務封鎖。
 
-範例 2 要求 URI：[https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+範例 2 要求 URI：<https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 這個 URI 會傳回指定 Office 365 服務執行個體的最新版本。範例結果：
 
@@ -131,7 +131,7 @@ Microsoft 在每個月底更新 Office 365 IP 位址和 FQDN 項目。 有時也
 }
 ```
 
-範例 3 要求 URI：[https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+範例 3 要求 URI：<https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 此 URI 會以 CSV 格式顯示輸出。範例結果：
 
@@ -140,7 +140,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-範例 4 要求 URI：[https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+範例 4 要求 URI：<https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 此 URI 會顯示已針對 Office 365 全球服務執行個體發佈的所有舊版。範例結果：
 
@@ -155,7 +155,7 @@ Worldwide,2018063000
 }
 ```
 
-範例 5 RSS 摘要 URI：[https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS](https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS)
+範例 5 RSS 摘要 URI：<https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS>
 
 此 URI 會顯示已發佈版本的 RSS 摘要，其中包含每個版本的變更清單連結。範例結果：
 
@@ -180,10 +180,10 @@ Worldwide,2018063000
 
 端點 Web 方法的參數為：
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - 以逗點分隔的服務區域清單。 有效的項目為 _Common_、_Exchange_、_SharePoint_ 和 _Skype_。 因為 _Common_ 服務區域項目是其他所有服務區域的必要條件，因此 Web 服務一律會包含。 如果您未包含此參數，則會傳回所有服務區域。
-- **TenantName=<tenant_name>** - 您的 Office 365 租用戶名稱。 Web 服務會取得您提供的名稱，並將它在 URL 中包含租用戶名稱的部分插入。 如果您沒有提供租用戶名稱，則 URL 的這部分會是萬用字元 (\*)。
-- **NoIPv6=<true | false>** - 如果您未在網路中使用 IPv6，將此參數設為 _true_ 可從輸出排除 IPv6 位址。
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - 此必要參數指定要傳回端點的執行個體。 有效的執行個體為：_Worldwide_、_China_、_Germany_、_USGovDoD_ 及 _USGovGCCHigh_。
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — 以逗號分隔的服務區域清單。 有效的項目為 _Common_、_Exchange_、_SharePoint_ 和 _Skype_。 因為 _Common_ 服務區域項目是其他所有服務區域的必要條件，因此 Web 服務一律會包含。 如果您未包含此參數，則會傳回所有服務區域。
+- **TenantName=\<tenant_name\>** — 您的 Office 365 租用戶名稱。 Web 服務會取得您提供的名稱，並將它在 URL 中包含租用戶名稱的部分插入。 如果您沒有提供租用戶名稱，則 URL 的這部分會是萬用字元 (\*)。
+- **NoIPv6=\<true \| false\>** — 如果您未在網路中使用 IPv6，將此參數設為 _true_ 可從輸出排除 IPv6 位址。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — 此必要參數指定要傳回端點的執行個體。 有效的執行個體為：_Worldwide_、_China_、_Germany_、_USGovDoD_ 及 _USGovGCCHigh_。
 
 如果您從相同用戶端 IP 位址呼叫端點 Web 方法非常多次，您可能會收到 HTTP 回應碼 _429 (太多要求)_。 如果您收到此回應碼，請先等候 1 小時，再重複您的要求，或是針對要求產生新的 GUID。 一般的最佳作法是，只在版本 Web 方法指出有新版本可用時，再呼叫端點 Web 方法。
 
@@ -200,9 +200,9 @@ Worldwide,2018063000
 - required - 如果需要此端點集才能支援 Office 365 連線，則為 _True_。如果此端點集為選擇性的，則為 _False_。
 - notes - 針對選擇性的端點，這些文字說明無法在網路層存取此端點集中的 IP 位址或 URL 時，無法使用的 Office 365 功能。如果空白則省略。
 
-### <a name="examples"></a>範例：
+### <a name="endpoints-web-method-examples"></a>端點 Web 方法範例
 
-範例 1 要求 URI：[https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+範例 1 要求 URI：<https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 此 URI 會取得所有工作負載之 Office 365 全球執行個體的所有端點。顯示輸出摘要的範例結果：
 
@@ -278,9 +278,9 @@ Worldwide,2018063000
   - ips - 要從 _ips_ 陣列移除的項目。
   - urls - 要從 _urls_ 陣列移除的項目。
 
-### <a name="examples"></a>範例:
+### <a name="changes-web-method-examples"></a>變更 Web 方法範例
 
-範例 1 要求 URI：[https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+範例 1 要求 URI：<https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 這會要求對 Office 365 全球服務執行個體所做的所有先前變更。範例結果：
 
@@ -318,7 +318,7 @@ Worldwide,2018063000
      [
 ```
 
-範例 2 要求 URI：[https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+範例 2 要求 URI：<https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 這會要求從 Office 365 全球執行個體指定版本之後的變更。在此案例中，指定版本是最新版本。範例結果：
 

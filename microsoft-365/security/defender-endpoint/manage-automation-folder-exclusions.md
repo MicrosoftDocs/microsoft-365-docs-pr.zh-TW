@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 37a251acd3b7631cffffaf2eb76bf0f2b4954ee6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185834"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454814"
 ---
 # <a name="manage-automation-folder-exclusions"></a>管理自動化資料夾排除 
 
@@ -59,7 +59,7 @@ ms.locfileid: "51185834"
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>新增自動化資料夾排除
-1. 在功能窗格中，選取 [**設定**  >  **自動化資料夾排除**]。  
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **規則**  >  **自動化資料夾排除**]。  
 
 2. 按一下 [ **新增資料夾排除**]。  
 
@@ -69,22 +69,21 @@ ms.locfileid: "51185834"
     - 延伸模組
     - 檔案名稱
     - 描述
-    
 
-4. 按一下 **[儲存]**。
+4. 按一下 **儲存**。
 
 >[!NOTE]
 > 收集或檢查排除的檔案的即時回應命令會失敗，錯誤如下：「File 已排除」。 此外，自動調查會忽略排除的專案。
 
 ## <a name="edit-an-automation-folder-exclusion"></a>編輯自動化資料夾排除 
-1. 在功能窗格中，選取 [**設定**  >  **自動化資料夾排除**]。 
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **規則**  >  **自動化資料夾排除**]。 
 
 2. 在資料夾排除上按一下 [ **編輯** ]。  
 
 3. 更新規則的詳細資料，然後按一下 [ **儲存**]。
 
 ## <a name="remove-an-automation-folder-exclusion"></a>移除自動化資料夾排除 
-1. 在功能窗格中，選取 [**設定**  >  **自動化資料夾排除**]。  
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **規則**  >  **自動化資料夾排除**]。  
 2. 按一下 [ **移除排除**]。 
 
 

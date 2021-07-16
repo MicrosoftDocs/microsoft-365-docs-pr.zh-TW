@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: 設定 Microsoft 365 承租人的藍圖。
-ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909451"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464030"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 的承租人藍圖
 
@@ -43,14 +43,14 @@ ms.locfileid: "50909451"
 - [規劃用戶端應用程式的支援](microsoft-365-client-support-certificate-based-authentication.md)
 - [決定如何使用混合式新式驗證](hybrid-modern-auth-overview.md)
 - [規劃 Office 2007 和 Office 2010 升級](plan-upgrade-previous-versions-office.md)
-- [瞭解租使用者隔離](microsoft-365-tenant-isolation-overview.md)
+- [瞭解租使用者隔離](/compliance/assurance/microsoft-365-isolation-controls)
 
 ### <a name="deploy"></a>部署
 
 若要部署您的租使用者： 
 
 - 為您的組織新增 [DNS 網域](../admin/setup/add-domain.md) 。
-- 使用[Microsoft 365 系統管理中心的設定指南](setup-guides-for-microsoft-365.md)。
+- 使用[Microsoft 365 系統管理中心中的設定指南](setup-guides-for-microsoft-365.md)。
 - 組建您的身分 [識別基礎結構](identity-roadmap-microsoft-365.md) ，並 [保護使用者登入](microsoft-365-secure-sign-in.md)。
 
 ### <a name="move-a-tenants-geographic-locations"></a>移動租使用者的地理位置
@@ -76,6 +76,6 @@ Microsoft 繼續開啟新的資料中心地理位置， (geos) Microsoft 365 服
 - [跨租用戶信箱移轉](cross-tenant-mailbox-migration.md)
 - [租用戶到租用戶的移轉](microsoft-365-tenant-to-tenant-migrations.md)
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>下一個步驟
 
 以 [訂閱、授權、帳戶及](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)租使用者的方式開始規劃承租人。

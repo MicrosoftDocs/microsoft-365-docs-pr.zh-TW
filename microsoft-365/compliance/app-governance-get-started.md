@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 開始使用應用程式控管功能來控管您的應用程式。
-ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 80487298f2c3c3a93f0083337ddb223bd68e2611
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430705"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438033"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>開始使用應用程式控管 (預覽)
 
@@ -30,7 +30,7 @@ ms.locfileid: "53430705"
 
 ## <a name="licensing-for-app-governance"></a>應用程式控管的授權
 
-開始使用應用程式控管之前，您應先確認 [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)以及任何附加元件。 若要存取並使用應用程式控管，貴組織必須具備下列其中一種訂閱或附加元件：
+開始使用應用程式控管之前，您應先確認您的 [Microsoft 365 系統管理中心 - 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)以及任何附加元件。 若要存取並使用應用程式控管，貴組織必須具備下列其中一種訂閱或附加元件：
 
 - Microsoft 雲端 App 安全性
 - Microsoft 365 E5
@@ -69,6 +69,9 @@ ms.locfileid: "53430705"
 - 安全性系統管理員
 - 安全性操作員
 - 安全性讀取者 (唯讀)
+
+> [!NOTE]
+> 只有全域系統管理員可以啟動應用程式管理免費試用版。
 
 以下是每個角色的功能。
 

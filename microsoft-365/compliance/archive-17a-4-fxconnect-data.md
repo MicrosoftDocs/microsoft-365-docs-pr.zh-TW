@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用17a-4 連線 DataParser 連接器，以匯入及封存 Microsoft 365 中的 FX 連線資料。
-ms.openlocfilehash: 1126b6f427d650367c837abe0146f1d4e0ebc547
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 667f36d111a877a7e2e04aa54653f61556d337d9
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096397"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454490"
 ---
-# <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>設定連接器，將 FX 連線資料 (預覽中) 
+# <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>設定從 FX 連線封存資料的連接器
 
 使用來自 17a-4 LLC 的[fx 連線 DataParser](https://www.17a-4.com/dataparser-roadmap/) ，將資料從 FX 連線匯入至 Microsoft 365 組織中的使用者信箱。 DataParser 包含的 FX 連線連接器會設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 FX 連線 DataParser 連接器會將 FX 連線資料轉換成電子郵件格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 

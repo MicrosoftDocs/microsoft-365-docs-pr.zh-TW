@@ -17,11 +17,11 @@ f1.keywords:
 description: 瞭解隔離控制在 Microsoft 365 內的運作方式，允許服務在必要的情況下運作或保持自治。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 514b12e44d9e81a18b691ebf3196a3d21157e71b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918939"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464074"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Microsoft 365 隔離控制項 
 

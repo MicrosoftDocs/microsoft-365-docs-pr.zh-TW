@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1549512a02fe3af71d32c6b33c69cc705de99a8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 74b89d86b770cb47a0855b45d457ea8ce5fb9802
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862124"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454754"
 ---
 # <a name="manage-suppression-rules"></a>管理歸併規則
 
@@ -40,7 +40,7 @@ ms.locfileid: "51862124"
 您可以查看所有抑制規則的清單，並在一個位置進行管理。 您也可以開啟或關閉警示抑制規則。
 
 
-1. 在功能窗格中，選取 [**設定**  >  **警示抑制**]。 組織中使用者所建立的隱藏規則清單隨即顯示。
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **規則**  >  **警示抑制**]。 組織中使用者所建立的隱藏規則清單隨即顯示。
 
 2. 按一下規則名稱旁邊的核取方塊，以選取規則。
 
@@ -49,7 +49,7 @@ ms.locfileid: "51862124"
 
 ## <a name="view-details-of-a-suppression-rule"></a>查看抑制規則的詳細資料
 
-1. 在功能窗格中，選取 [**設定**  >  **警示抑制**]。 組織中使用者所建立的隱藏規則清單隨即顯示。
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **規則**  >  **警示抑制**]。 組織中使用者所建立的隱藏規則清單隨即顯示。
 
 2. 按一下規則名稱。 會顯示規則的詳細資料。 您將會看到 [狀態]、[範圍]、[動作]、[建立者]、[建立者] 和 [建立規則] 日期等規則詳細資料。 您也可以查看相關聯的警示和規則條件。
 

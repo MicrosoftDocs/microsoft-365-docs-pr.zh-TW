@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 331dd1ea510983e57c069f8d142aa0f7d3f7062e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ca689b846589ffcb1b8aa4d85ea8a0312f8d9d51
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226080"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463970"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中準備 TLS 1.2
 
@@ -30,9 +30,11 @@ ms.locfileid: "53226080"
 
 如需如何刪除 TLS 1.0 和 1.1 相依性的詳細資訊，請參閱下列白皮書：[解決 TLS 1.0 問題](https://www.microsoft.com/download/details.aspx?id=55266)。
 
+升級至 TLS 1.2 之後，請確定您要使用的密碼套件是由 Azure 前端所支援。 Microsoft 365 和 Azure 前面門在密碼套件支援上稍有不同。 如需詳細資訊，請參閱 [Azure Front 門窗所支援的目前密碼套件為何？](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)。
+
 ## <a name="more-information"></a>其他相關資訊
 
-自 2020 年 1 月起，我們已經開始淘汰 TLS 1.0 和 1.1。 不支援透過 DoD 或 GCC High 執行個體中的 TLS 1.0 或 1.1 連線至 Office 365 的任何用戶端、裝置或服務。 對於我們的 Office 365 的商業客戶而言，TLS 1.0 和1.1 的棄用會在10月15日開始2020，並在下列星期和月份繼續進行。 
+自 2020 年 1 月起，我們已經開始淘汰 TLS 1.0 和 1.1。 不支援透過 DoD 或 GCC High 執行個體中的 TLS 1.0 或 1.1 連線至 Office 365 的任何用戶端、裝置或服務。 對於我們的 Office 365 的商業客戶而言，TLS 1.0 和1.1 的棄用會在10月15日開始2020，並在下列星期和月份繼續進行。
 
 為維持 Office 365 服務連線，我們推薦所有用戶端-伺服器及瀏覽器伺服器組合都使用 TLS 1.2（或更新版本）。 您可能必須更新特定的用戶端-伺服器及瀏覽器伺服器組合。
 

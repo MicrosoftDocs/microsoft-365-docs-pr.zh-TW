@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用 CellTrust SL2 資料連線器，以匯入及封存行動通訊資料。
-ms.openlocfilehash: 0929a92978f9b48d40153b3cc7328e5e05b54fd0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 191160921c9e949aa7b82520d72dc7a18bfb26ef
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096990"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453968"
 ---
-# <a name="archive-data-from-celltrust-sl2-to-microsoft-365-preview"></a>將資料從 CellTrust SL2 封存至 Microsoft 365 (預覽) 
+# <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>將資料從 CellTrust SL2 封存至 Microsoft 365
 
 CellTrust SL2 會捕獲行動通訊資料，並與領先的封存技術整合，以符合 FINRA、HIPAA、FOIA 和 TCPA 等法規的電子探索需求。 SL2 資料連線器會將行動通訊專案匯入 Microsoft 365。 本文說明使用 CellTrust SL2 資料連線器進行封存，將 SL2 與 Microsoft 365 進行整合的處理常式。 完成此程式假設您已訂閱 CellTrust SL2 服務，並且熟悉 SL2 架構。 如需 SL2 的相關資訊，請參閱 <www.celltrust.com>。
 

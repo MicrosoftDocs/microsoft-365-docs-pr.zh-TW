@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934078"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454777"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>裝置用 Microsoft 安全分數
 
@@ -32,7 +32,7 @@ ms.locfileid: "51934078"
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -41,13 +41,13 @@ ms.locfileid: "51934078"
 >[!NOTE]
 > 設定分數現在是裝置威脅與弱點管理的一部分，成為裝置的 Microsoft 安全分數。
 
-您的裝置得分會顯示在 Microsoft Defender 資訊安全中心的[威脅與弱點管理儀表板](tvm-dashboard-insights.md)中。 針對裝置的 Microsoft 安全分數較高表示您的端點對 cybersecurity 威脅攻擊的彈性程度較高。 它會反映各類裝置的集合安全性設定狀態，其方式如下：
+您的裝置得分會顯示在 Microsoft 365 Defender 入口網站的[威脅與弱點管理儀表板](tvm-dashboard-insights.md)中。 針對裝置的 Microsoft 安全分數較高表示您的端點對 cybersecurity 威脅攻擊的彈性程度較高。 它會反映各類裝置的集合安全性設定狀態，其方式如下：
 
 - 應用程式
 - 作業系統
 - 網路
 - 帳戶
-- 安全性控制
+- 安全性控制項
 
 選取類別以移至 [ [**安全性建議**](tvm-security-recommendation.md) ] 頁面，然後查看相關的建議。
 
@@ -57,7 +57,7 @@ ms.locfileid: "51934078"
 
 變更可能需要數小時的時間，才能在儀表板中反映。
 
-1. 在功能窗格中，移至 **設定**  >  **高級功能** 
+1. 在功能窗格中，移至 **設定**  >  **端點**  >  **一般**  >  **高級功能** 
 
 2. 向左下往 **Microsoft 安全分數** ，將設定切換為 [ **開啟**]。
 
@@ -79,19 +79,21 @@ ms.locfileid: "51934078"
 
 修正安全性建議清單中的問題，以改善安全性設定。 當您這麼做時，裝置的 Microsoft 安全評分會提升，而且您的組織會變得更具彈性，以防禦 cybersecurity 威脅和弱點。
 
-1. 從威脅與弱點管理儀表板中的 [裝置] 的 [Microsoft Secure 得分] 中，選取其中一個類別。 您將會看到與該類別相關的建議清單。 將會帶您前往 [ [**安全性建議**](tvm-security-recommendation.md) ] 頁面。 如果您想要查看所有安全性建議，只要您到達 [安全性建議] 頁面，就會清除 [搜尋] 欄位。
+1. 從威脅與弱點管理儀表板中的 [裝置卡片] 的 [Microsoft 安全計分]，選取其中一個類別。 您將會看到與該類別相關的建議清單。 將會帶您前往 [ [**安全性建議**](tvm-security-recommendation.md) ] 頁面。 如果您想要查看所有安全性建議，只要您到達 [安全性建議] 頁面，就會清除 [搜尋] 欄位。
 
 2. 選取清單中的專案。 隨即會開啟彈出面板，其中會顯示與建議相關的詳細資料。 選取 [ **修復選項**]。
 
-   ![安全性控制相關的安全性建議](images/tvm_security_controls.png)
+   :::image type="content" alt-text="安全性控制相關的安全性建議。" source="images/security-controls.png":::
 
 3. 閱讀描述以瞭解問題的內容及下一步的工作。 選取 [到期日]、[新增附注]，然後選取 [將 **所有修復活動資料匯出至 CSV** ]，以便將其附加至電子郵件進行後續工作。
 
 4. **提交要求**。 您會看到一則確認訊息，表明已建立修復工作。
-   ![修正任務建立確認](images/tvm_remediation_task_created.png)
+
+   :::image type="content" alt-text="修正任務建立確認。" source="images/remediation-task-created.png":::
 
 5. 儲存 CSV 檔案。
-   ![儲存 csv 檔案](images/tvm_save_csv_file.png)
+
+   :::image type="content" alt-text="儲存 csv 檔案。" source="images/tvm_save_csv_file.png":::
 
 6. 傳送追蹤電子郵件給您的 IT 系統管理員，並允許您為修正所分派的時間傳播至系統。
 

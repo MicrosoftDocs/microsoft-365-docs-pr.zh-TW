@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用 17a-4 Refinitiv Eikon Messenger DataParser 連接器，以匯入及封存 Refinitiv Eikon Messenger 資料 Microsoft 365。
-ms.openlocfilehash: 59380695a6ade9a7dfc36c51ea4254e13a7fd03c
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 4577d849e84955f10c2f3176c2e384410430ebc6
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097000"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454430"
 ---
-# <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data-preview"></a>設定連接器以封存 Refinitiv Eikon Messenger 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>設定連接器以封存 Refinitiv Eikon Messenger 資料
 
 使用[Refinitiv Eikon messenger DataParser](https://www.17a-4.com/refinitiv-messenger-dataparser/) from 17a-4 LLC，匯入及封存資料從 Refinitiv Eikon messenger 到 Microsoft 365 組織中的使用者信箱。 DataParser 包含 Refinitiv Eikon Messenger 連接器，可設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 Refinitiv Eikon Messenger DataParser connector 會將 Refinitiv Eikon Messenger 資料轉換成電子郵件訊息格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 

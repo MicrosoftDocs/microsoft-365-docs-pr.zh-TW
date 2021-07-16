@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用 17a-4 Symphony DataParser 連接器，以匯入及封存 Microsoft 365 中的 Symphony 資料。
-ms.openlocfilehash: da947c80a296aa4fee8ccabb9bb82eecc1d9b103
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0dce81b5251612bc3c3ddb467c658bd4a32d56f7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096973"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453930"
 ---
-# <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>設定連接器以封存 Symphony 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-data-from-symphony"></a>設定從 Symphony 封存資料的連接器
 
 使用來自 17a-4 LLC 的[Symphony DataParser](https://www.17a-4.com/Symphony-dataparser/) ，將 Symphony 通訊資料匯入及封存至 Microsoft 365 組織中的使用者信箱。 DataParser 包含的 Symphony 連接器設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 Symphony DataParser connector 會將 Symphony 資料轉換成電子郵件訊息格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 

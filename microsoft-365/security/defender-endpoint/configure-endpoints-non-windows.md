@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339667"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454706"
 ---
 # <a name="onboard-non-windows-devices"></a>將非 Windows 裝置上線
 
@@ -50,7 +50,7 @@ Defender for Endpoint 可提供 Windows 和非 Windows 平臺的集中式安全�
 
    - 若為 macOS 裝置，您可以選擇透過 Microsoft Defender for Endpoint 或協力廠商解決方案來進行板載。 如需詳細資訊，請參閱 [Mac 上的 Microsoft Defender For Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
-   - 如果是其他非 Windows 裝置，請 **透過協力廠商整合選擇板載非 Windows 裝置**。   
+   - 若為其他非 Windows 裝置，請 **透過協力廠商整合選擇 [板載非 Windows 裝置**]。   
     1. 在功能窗格中，選取 [**互通性**  >  **夥伴**]。 請確定已列出協力廠商解決方案。
     2. 在 [**夥伴應用程式**] 索引標籤中，選取支援非 Windows 裝置的合作夥伴。
     3. 選取 [ **開啟夥伴頁面** ] 以開啟夥伴的頁面。 依照頁面上提供的指示進行。

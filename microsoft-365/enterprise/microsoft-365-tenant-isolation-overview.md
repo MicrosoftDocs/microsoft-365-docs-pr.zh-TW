@@ -17,11 +17,11 @@ f1.keywords:
 description: 本文摘要說明 Microsoft 如何在雲端服務（如 Microsoft 365）中強制執行租使用者隔離。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: b52d936bb00ac0adef0baf428cbc5f9a8f8aba49
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194646"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464071"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Microsoft 365 中的租使用者隔離
 

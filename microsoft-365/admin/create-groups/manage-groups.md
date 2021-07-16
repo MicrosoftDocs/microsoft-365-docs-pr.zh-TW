@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何管理 Microsoft 365 群組，包括新增移除群組成員、編輯電子郵件地址、組名或描述，以及自訂群組的運作方式。
-ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ec8198b7e28b47bcbbf40818fbe624b2744f0ee
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908707"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454574"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理 Microsoft 365 系統管理中心中的群組
 
 [建立 Microsoft 365 群組](create-groups.md)並新增群組成員之後，您可以設定群組。 您可以編輯群組名稱或描述、管理擁有者或成員，並指定外部寄件者是否可以寄出群組，以及是否要將群組交談的複本傳送給成員。
 
-前往 Microsoft 365 系統管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
+移至 Microsoft 365 系統管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
 
 ## <a name="edit-the-group-name-or-description"></a>編輯群組名稱或描述
 
@@ -54,7 +54,7 @@ ms.locfileid: "50908707"
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>將交談複本傳送至群組成員的收件匣
   
-當您使用系統管理中心建立群組時，使用者預設不會取得群組電子郵件和會議邀請傳送至其收件匣的副本。 他們必須前往群組，才能看到交談和會議。 您可以在系統管理中心變更此設定。
+當您使用系統管理中心建立群組時，使用者不會收到傳送至其收件匣之群組電子郵件的副本，但使用者可取得傳送至收件匣的群組會議邀請的副本。 他們必須前往群組，才能看到交談。 您可以在系統管理中心變更此設定。
 
 當您開啟此設定時，群組成員將會取得群組電子郵件和會議邀請傳送至其 Outlook 收件匣的副本。 群組成員可以閱讀和刪除此電子郵件複本，且不會影響任何其他人。 電子郵件複本仍會存在群組收件匣中。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50908707"
 
 3. 在 [**設定**] 索引標籤上，如果您想要讓成員在自己的收件匣接收群組郵件和行事曆專案的副本，請選取 [**將群組交談和事件的副本傳送至群組成員**]
 
-4. 選取 ****[儲存]。
+4. 選取 **[儲存]**。
 
 ## <a name="let-people-outside-the-organization-email-the-group"></a>讓組織外部的人員以電子郵件傳送群組
 
@@ -78,7 +78,7 @@ ms.locfileid: "50908707"
 
 3. 在 [系統管理中心群組] 清單中，選取您要變更之群組的名稱，然後在 [**設定**] 索引標籤上，選取 [**允許外部寄件者以電子郵件傳送此群組**]。
     
-4. 選取 ****[儲存]。
+4. 選取 **[儲存]**。
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>永久刪除 Microsoft 365 群組
 

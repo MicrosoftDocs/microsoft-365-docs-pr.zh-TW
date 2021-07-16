@@ -13,19 +13,24 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 將 Microsoft Teams 類別與畫布整合
-ms.openlocfilehash: 50e4e8ef912a8f19f379bba29b328a5a27358b5c
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e8ab45de84fe8325f6d5b349deb96aa831d54e36
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256900"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454682"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>使用具有畫布的 Microsoft Teams 類別
 
-> [!IMPORTANT]
-> 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
-
 Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協助教育者和學生輕鬆流覽其 Learning 管理系統 (LMS) 和 Teams。 使用者可以直接從 LMS 中存取與其課程相關聯的類別小組。
+
+## <a name="prerequisites-before-deployment"></a>部署之前的必要條件
+
+> [!NOTE]
+> 目前的類別 Teams LTI 只支援在有限範圍內 Microsoft Azure Active Directory (AAD) 同步處理畫布使用者。 
+> - 您的租使用者必須在 (電子郵件、使用者識別碼或 SIS 識別碼) 和 Microsoft AAD 中的 UPN 的畫布欄位之間完全符合。 我們正在努力展開對同步處理功能的彈性，但是與此同時，在與 AAD 中的 UPN 不相符的任何使用者，也不會將其新增至與 AAD 同步處理的 Teams 類別中。 
+> - 只有一個 Microsoft 租使用者可以用於在畫布和 Microsoft 之間對應使用者。
+> - 您必須先關閉 SDS，才能使用類別 Teams LTI，以避免重複群組。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理
 
@@ -78,3 +83,9 @@ Microsoft Teams 類別是 Learning 工具互通性 (LTI) 應用程式，可協�
 5. 選取 [安裝]。
 
    Microsoft Teams 類別 LTI 應用程式將會新增至外部應用程式的清單。
+   
+## <a name="enabling-the-lti-app-for-canvas-courses"></a>為 Canvas 課程啟用 LTI 應用程式
+
+若要在課程內使用 LTI 應用程式，Canvas 課程的指導員必須啟用整合同步。每門課程都必須由指導員啟用，以供建立相對應的團隊。小組建立沒有全域機制。 這是設計為防止不想要建立的小組的預防措施。
+
+請參閱教師的教師 [檔](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) ，以針對每門課程啟用 LTI 應用程式，並完成整合安裝。

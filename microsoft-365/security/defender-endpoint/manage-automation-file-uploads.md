@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8935368e4439221f2ce21cfa620e540c02165f8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b7d330388dd698cb524c1f4a8edaf9039ba4d16e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185846"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454826"
 ---
 # <a name="manage-automation-file-uploads"></a>管理自動化檔案上傳
 
@@ -41,7 +41,7 @@ ms.locfileid: "51185846"
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>新增副檔名名稱和附件分機名稱。
 
-1. 在功能窗格中，選取 [**設定**  >  **自動化** 檔案上傳]。 
+1. 在功能窗格中，選取 [**設定**  >  **端點**  >  **規則**  >  **自動上傳**]。
 
 2. 切換 [內容分析] 設定為 [ **開啟** ] 和 [ **關閉**]。
 

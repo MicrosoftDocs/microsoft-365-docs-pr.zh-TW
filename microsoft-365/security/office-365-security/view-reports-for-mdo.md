@@ -20,12 +20,12 @@ description: 系統管理員可以瞭解如何針對 Microsoft 365 Defender 入�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e8bb03202139137adf55c4c10230b1c4e99253ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083509"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454718"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中查看 Office 365 報表的 Defender
 
@@ -191,11 +191,24 @@ ms.locfileid: "53083509"
 |報告|主題|
 |---|---|
 |**Explorer** (microsoft defender for Office 365 plan 2) 或 **即時** 偵測 (Microsoft defender for Office 365 Plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
-|**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告](view-email-security-reports.md)|
-|**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|**保管庫連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示在過去7天中保管庫連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
-|僅 PowerShell) ， **EOP 和 Microsoft Defender for Office 365 (的郵件流量結果**。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**EOP 和 Defender Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|不需要 Office 365 Defender 的電子郵件安全性報告|[在 Microsoft 365 Defender 入口網站中查看電子郵件安全性報告](view-email-security-reports.md)|
+|Exchange 系統管理中心的郵件流程報告 (EAC) |[新 Exchange 系統管理中心的郵件流程報告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|
+
+PowerShell 報告 Cmdlet：
+
+<br>
+
+****
+
+|報告|主題|
+|---|---|
+|排名最前面的寄件者及收件者|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|主要惡意程式碼|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|郵件流量|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|安全連結|[SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
+|遭破壞的使用者|[CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
+|郵件流程狀態|[MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>流覽 Office 365 報表的 Defender 時，需要哪些許可權？
@@ -205,7 +218,7 @@ ms.locfileid: "53083509"
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取器**
+- **全域讀取者**
 
 如需詳細資訊，請參閱 [Microsoft 365 Defender 入口網站中的權限](permissions-microsoft-365-security-center.md)。
 

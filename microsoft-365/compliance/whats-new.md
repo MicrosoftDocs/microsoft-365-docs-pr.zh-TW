@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 是否要將新的解決方案新增至規範中心、根據您的意見，更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您在不斷變更的相容性環境上保持最高的狀態。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: acbad7a1c5fa541ee83da668768cc42af7a5afda
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394938"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464006"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性的新功能
 
@@ -46,6 +46,10 @@ ms.locfileid: "53394938"
 ### <a name="customer-key"></a>客戶金鑰
 
 - [服務加密](customer-key-overview.md) (客戶金鑰租使用者層級 DEPs 現在會為 Microsoft 資訊保護加密敏感度標籤設定。 ) 
+
+### <a name="data-connectors"></a>資料連線器
+
+- 我們已發行 [17 個新的資料連線器與 17A-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) ，與 [CellTrust 的合作關係中的一個新的連接器](archiving-third-party-data.md#celltrust-data-connectors)。 我們也隨 [Veritas](archiving-third-party-data.md#veritas-data-connectors) 和 [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors)發行其他的資料連線器。 迄今為止，這會產生65可用的資料連線器，將協力廠商資料匯入並封存至 Microsoft 365。
 
 ### <a name="ediscovery"></a>電子文件探索
 

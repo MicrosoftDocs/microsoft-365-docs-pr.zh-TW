@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用17a-4 縮放 DataParser 連接器，以匯入及封存 Microsoft 365 中的縮放資料。
-ms.openlocfilehash: dffececb0719999abf19ea58eab1a52afdb3daea
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 1c70099efa17b5ff6c1c4dfcd71c6bf6790535c8
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096989"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453942"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-data-preview"></a>設定連接器以封存縮放資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-zoom-data"></a>設定連接器以封存縮放資料
 
 使用來自 17a-4 LLC 的 [[縮放 DataParser](https://www.17a-4.com/dataparser/) ]，將資料從縮放平臺匯入至 Microsoft 365 組織中的使用者信箱。 DataParser 包含縮放連接器，可設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 縮放 DataParser 連接器會將縮放資料轉換為電子郵件訊息格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 

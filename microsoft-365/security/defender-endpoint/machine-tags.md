@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ffe7d13ca0943e8927d0d9ce663527fedf880e48
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
-ms.translationtype: HT
+ms.openlocfilehash: 83dd2483b93b2f4fe520973ce05346f59baf2f28
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187586"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453555"
 ---
 # <a name="create-and-manage-device-tags"></a>建立及管理裝置標籤
 
@@ -58,11 +58,11 @@ ms.locfileid: "51187586"
 
 2. 從回應動作列中選取 **管理標籤**。
 
-    ![管理標籤按鈕的影像](images/manage-tags.png)
+    :::image type="content" alt-text="[管理標記] 按鈕的圖像。" source="images/manage-tags-option.png":::
 
 3. 輸入以尋找或建立標籤
 
-    ![在裝置 1 上新增標籤的影像](images/new-tags.png)
+    :::image type="content" alt-text="在 device1 上新增標記的影像。" source="images/create-new-tag.png":::
 
 標籤被新增至裝置檢視中，也會反映在 **裝置清單** 檢視中。 然後可以使用 **標籤** 篩選查看相關的裝置清單。
 
@@ -72,7 +72,7 @@ ms.locfileid: "51187586"
 
 您也可以從此檢視中删除標籤。
 
-![在裝置 2 上新增標籤的影像](images/more-manage-tags.png)
+:::image type="content" alt-text="在 device2 上新增標記的影像。" source="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>透過設定登錄機碼值新增裝置標籤
 

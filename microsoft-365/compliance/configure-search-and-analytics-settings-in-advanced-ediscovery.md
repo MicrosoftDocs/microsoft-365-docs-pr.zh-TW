@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: 設定套用至案例中所有審閱集的 Advanced eDiscovery 設定。 這包括分析和光學字元辨識的設定。
-ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 2b9c438e28b8d9b84ec8cc29bf85911e5bdc3c8d
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430549"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453894"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中設定搜尋及分析設定
 
@@ -80,13 +80,13 @@ ms.locfileid: "53430549"
 
 ## <a name="ignore-text"></a>忽略文字
 
-在某些情況下，有些文字會降低分析品質，例如在電子郵件中加入的冗長免責聲明，不論電子郵件的內容為何。 如果您知道應忽略的文字，則可以指定應排除文字的文字字串和分析功能 (近似重複項、電子郵件對話、主題和相關性)，將其從分析中排除。 也支援使用正則運算式 (RegEx) 為略過的文字。 
+在某些情況下，有些文字會降低分析品質，例如在電子郵件中加入的冗長免責聲明，不論電子郵件的內容為何。 如果您知道應忽略的文字，則可以指定應排除文字的文字字串和分析功能 (近似重複項、電子郵件對話、主題和相關性)，將其從分析中排除。 也支援使用正則運算式 (RegEx) 為略過的文字。
 
 ## <a name="optical-character-recognition-ocr"></a>光學字元辨識 (OCR)
 
 開啟此設定時，會在圖像檔案上執行 OCR 處理。 在下列情況下，會執行 OCR 處理：
 
-- 當保管人和 [非 custodial 資料來源](non-custodial-data-sources.md) 新增至案例時。 在 [高級索引](indexing-custodian-data.md) 處理常式期間會執行 OCR 處理。 OCR 只會在高級索引期間處理的專案上執行。 例如，如果以部分索引的大型 PDF 檔案，或在高級索引期間處理其他索引錯誤，則檔案也會套用 OCR。 換句話說，OCR 處理只會在高級索引程式期間重新編制索引的檔案上進行。 這表示，在將保管人新增至案例時，有些電子郵件附件不會處理 OCR，因為在高級索引期間未處理這些檔案。 當 OCR 套用圖像檔案時，這些圖像檔案中的文字會在集合期間可供搜尋。
+- 當保管人和 [非 custodial 資料來源](non-custodial-data-sources.md) 新增至案例時。 當 OCR 套用到圖像檔案時，這些檔案中的文字會在集合期間可供搜尋。 在 [高級索引](indexing-custodian-data.md) 處理常式期間會執行 OCR 處理。 OCR 只會在高級索引期間處理的專案上執行。 例如，如果以部分索引的大型 PDF 檔案，或在高級索引期間處理其他索引錯誤，則檔案也會套用 OCR。 換句話說，OCR 處理只會在高級索引程式期間重新編制索引的檔案上進行。 這表示在某些情況下，您可能會將保管人新增至案例，但是某些電子郵件附件不會處理 OCR，因為在高級索引期間未處理這些檔案。
 
 - 當其他資料 (源的內容未與保管人相關聯並新增至非 custodial 資料來源中的案例時) 會新增至審閱集。
 

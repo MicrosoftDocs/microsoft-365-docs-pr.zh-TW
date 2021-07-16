@@ -1,22 +1,22 @@
-- name: 從 Google Workspace 切換至 Microsoft 365
+- name: 從 Google Workspace 切換到 Microsoft 365
   items:
     - name: 概觀
       href: move-from-google-workspace-overview.md
     - name: 註冊 Microsoft 365。
       href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: 為 Google 遷移設定 Microsoft 365
+    - name: 設定 Microsoft 365 以進行 Google 移轉
       href: set-up-microsoft-365-forgoogle.md
     - name: 設定 Windows 裝置的安全性原則
       href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: 新增 Google Workspace 網域
       href: add-google-domain.md
-    - name: 安裝 Office 應用程式和 Microsoft 團隊
+    - name: 安裝 Office 應用程式和 Microsoft Teams
       href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: 將電子郵件、行事曆和連絡人遷移至 Microsoft 365
+    - name: 將電子郵件、行事曆和連絡人移轉到 Microsoft 365
       href: migrate-email.md
     - name: 將您的網域連線到 Microsoft 365
       href: connect-domain-tom365.md
-    - name: 使用移動器移動所有人的資料
-      href: mover-migrate-files.md
+    - name: 使用移轉管理員移動每個人的資料
+      href: 'https://docs.microsoft.com/sharepointmigration/mm-google-overview'
     - name: 取消 Google Workspace
       href: cancel-google.md

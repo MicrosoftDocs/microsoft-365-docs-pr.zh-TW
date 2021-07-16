@@ -555,6 +555,44 @@
           href: record-versioning.md
         - name: 適用於法規需求的資源
           href: retention-regulatory-requirements.md
+- name: 管理應用程式控管
+  items:
+    - name: 保護及管理您的應用程式
+      href: app-governance-manage-app-protection-governance.md
+    - name: 開始使用應用程式控管
+      href: app-governance-get-started.md
+    - name: 提交應用程式控管的意見反應
+      href: app-governance-feedback.md
+    - name: 取得可見度與深入解析
+      items:
+        - name: 了解可見度與深入解析
+          href: app-governance-visibility-insights-overview.md
+        - name: 快速入門
+          href: app-governance-visibility-insights-get-started.md
+        - name: 檢視您的應用程式
+          href: app-governance-visibility-insights-view-apps.md
+        - name: 判斷合規性狀況
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: 實作應用程式原則
+      items:
+        - name: 了解應用程式原則
+          href: app-governance-app-policies-overview.md
+        - name: 快速入門
+          href: app-governance-app-policies-get-started.md
+        - name: 建立應用程式原則
+          href: app-governance-app-policies-create.md
+        - name: 管理應用程式原則
+          href: app-governance-app-policies-manage.md
+    - name: 偵測與補救應用程式威脅
+      items:
+        - name: 了解偵測和補救
+          href: app-governance-detect-remediate-overview.md
+        - name: 快速入門
+          href: app-governance-detect-remediate-get-started.md
+        - name: 調查異常偵測警示
+          href: app-governance-anomaly-detection-alerts.md
+        - name: 補救應用程式威脅
+          href: app-governance-detect-remediate-detect-threats.md
 - name: 管理電子文件探索
   items:
     - name: Microsoft 365 電子文件探索解決方案

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438069"
+ms.locfileid: "53454802"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -266,13 +266,13 @@ ms.locfileid: "53438069"
 
 ## <a name="download-the-onboarding-package"></a>下載上架套件
 
-從 Microsoft Defender 資訊安全中心下載上架套件：
+從 Microsoft 365 Defender 入口網站下載上架套件：
 
-1. 在 Microsoft Defender 資訊安全中心中，移至 **設定 > 裝置管理 > 上架**。
-2. 在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。 在第二個下拉式功能表中，選取 [ **本機腳本 (，最多10個裝置)** 做為部署方法。
+1. 在 Microsoft 365 Defender 入口網站中，移至 **設定 > 端點 > 裝置管理 > 上架**。
+2. 在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。 在第二個下拉式功能表中，選取 [ **本機腳本** ] 做為部署方法。
 3. 選取 [ **下載上架] 套件**。 將檔案儲存為 WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender 資訊安全中心螢幕擷取畫面](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender 入口網站快照](images/atp-portal-onboarding-linux.png)
 
 4. 在命令提示字元中，確認您有檔案。
     解壓縮封存的內容：
@@ -359,11 +359,11 @@ ms.locfileid: "53438069"
 
 若要測試 linux EDR 的功能，請遵循下列步驟，在 linux 伺服器上模擬偵測，並調查案例。 
 
-1.  確認架 Linux 伺服器出現在 Microsoft Defender 資訊安全中心中。 如果這是電腦的第一個上架，可能需要長達20分鐘，直到出現為止。 
+1.  確認架 Linux 伺服器出現在 Microsoft 365 Defender 中。 如果這是電腦的第一個上架，可能需要長達20分鐘，直到出現為止。 
 
 2.  下載 [腳本](https://aka.ms/LinuxDIY) 檔案並將其解壓縮至架 Linux 伺服器，並執行下列命令： `./mde_linux_edr_diy.sh`
 
-3.  幾分鐘後，就會在 Microsoft Defender 資訊安全中心中引發偵測。
+3.  幾分鐘後，就會在 Microsoft 365 Defender 中引發偵測。
 
 4.  查看警示詳細資料、電腦時程表，並執行您的一般調查步驟。
 

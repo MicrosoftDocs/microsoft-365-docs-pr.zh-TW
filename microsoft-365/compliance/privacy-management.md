@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 隱私權管理提供的解決方案可以評估貴組織在 Microsoft 365 中儲存的個人資料，並協助您找出並修正隱私權風險。
-ms.openlocfilehash: 4f98a5c867b232e3eca298a163fe4b6b4855f7a9
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378473"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53455382"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft 隱私權管理 (預覽) 
 
@@ -70,7 +70,7 @@ Microsoft 365 隱私權管理提供解決方案，可讓您：
 
 Microsoft 365 中的隱私權管理可協助您透過主體權利要求解決方案來處理這些查詢。 它提供自動化和工作流程功能，可協助您搜尋您儲存在 Microsoft 365 中的主體資料、查看結果、選取適當的檔案，以及產生報告。 同時，您可以安全地與組織中的其他專家共同作業，讓要求完成。
 
-請注意，這個主體權力要求解決方案提供的功能，是「規範中心」中 (DSR) 解決方案的原始資料主體要求以外的功能，且兩者之間沒有工作流程的連線或共用。 舊版 DSR 頁面會在日後停用。
+請注意，這個主體權力要求解決方案提供的功能，是「規範中心」中 (DSR) 解決方案的原始資料主體要求以外的功能，且兩者之間沒有工作流程的連線或共用。
 
 若要深入瞭解，請參閱 [管理主體權力要求](privacy-management-subject-rights-requests.md)。
 

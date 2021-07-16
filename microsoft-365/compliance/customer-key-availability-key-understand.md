@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 瞭解用於復原遺失之客戶機碼的可用性金鑰。
-ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0f65721856cd046f28a399701e625239decbd9b6
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227076"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463994"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>了解客戶金鑰的可用性金鑰
 
@@ -65,7 +65,7 @@ Microsoft 採用縱深防禦策略，防止惡意參與者影響儲存在 Micros
 
 建立 Microsoft 365 以避免濫用可用性金鑰。 應用層是唯一一種方法，可讓您用來加密及解密資料的索引鍵（包括可用性金鑰）。 只有 Microsoft 365 服務程式代碼能夠轉譯及遍歷金鑰階層，以進行加密和解密活動。 客戶金鑰、可用性機碼、其他階層機碼和客戶資料的儲存位置之間存在邏輯隔離。 這項隔離可降低事件中的一個或多個位置遭到破壞時，資料洩密的風險。 階層中的每一層都有內建的「全天候入侵偵測」功能，以保護儲存的資料和機密。
 
-會執行存取控制，以防止對內部系統進行未經授權的存取，包括可用性金鑰機密存放區。 Microsoft 工程師無法直接存取可用性金鑰機密存放區。 如需存取控制的其他詳細資訊，請參閱[Microsoft 365 中的管理存取控制](/Office365/securitycompliance/office-365-administrative-access-controls-overview)。
+會執行存取控制，以防止對內部系統進行未經授權的存取，包括可用性金鑰機密存放區。 Microsoft 工程師無法直接存取可用性金鑰機密存放區。 如需存取控制的其他詳細資訊，請參閱[Microsoft 365 中的管理存取控制](/compliance/office-365-administrative-access-controls-overview)。
 
 技術控制措施可防止 Microsoft 人員登入高許可權的服務帳戶，攻擊者可能會使用這些帳戶來冒充 Microsoft 服務。 例如，這些控制措施會防止互動式登入。
 

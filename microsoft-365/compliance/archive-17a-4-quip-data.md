@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何設定和使用 17a-4 Quip DataParser 連接器，以匯入及封存 Microsoft 365 中的 Quip 資料。
-ms.openlocfilehash: 6db47d79cdab0f130d2b7b3483d37c08b267cdfd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: e3379e238b0142522d4161149fd38892843e6eae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097005"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454442"
 ---
-# <a name="set-up-a-connector-to-archive-quip-data-preview"></a>設定連接器以封存 Quip 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-quip-data"></a>設定連接器以封存 Quip 資料
 
 使用來自 17a-4 LLC 的[Quip DataParser](https://www.17a-4.com/quip-dataparser/) ，將資料從 Quip 匯入至 Microsoft 365 組織中的使用者信箱。 DataParser 包含的 Quip 連接器設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 Quip DataParser connector 會將 Quip 資料轉換成電子郵件訊息格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 

@@ -1,15 +1,15 @@
 ---
-title: 設定 Microsoft 365 的 Defender 試用實驗室或試驗環境
-description: Access Microsoft 365 的安全性中心然後設定 Microsoft 365 Defender 試用實驗室環境
-keywords: Microsoft 365defender 試用安裝程式 Microsoft 365 defender 試驗設定，請嘗試 Microsoft 365 defender，Microsoft 365 defender 評估實驗室安裝程式
+title: 設定您的 Microsoft 365 Defender 試用實驗室或試驗環境
+description: Access Microsoft 365 的安全性中心，然後設定 Microsoft 365 Defender 試用實驗室環境
+keywords: Microsoft 365 Defender 試用設定，請 Microsoft 365 Defender 試點設定，嘗試 Microsoft 365 Defender，Microsoft 365 Defender 評估實驗室安裝程式
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: v-lsaldanha
+author: lovina-saldanha
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6db3003aa6465df90a3d2e4af55b28ccccf44100
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935422"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454730"
 ---
-# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>設定 Microsoft 365 的 Defender 試用實驗室環境 
+# <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>在實驗室環境中設定您的 Microsoft 365 Defender 試用版 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,31 +34,13 @@ ms.locfileid: "51935422"
 **適用於：**
 - Microsoft 365 Defender 
 
-
-建立 Microsoft 365 的 Defender 試用實驗室或試驗環境並加以部署時，會有三個階段的程式：
-
-|[![階段 1：準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[階段 1：準備](prepare-m365d-eval.md) |![階段 2：設定](../../media/phase-diagrams/setup.png)<br/>階段 2：設定 |[![第 3 階段：導入](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[第 3 階段：導入](config-m365d-eval.md) | [![回到試驗](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[回到試驗行動手冊](m365d-pilot.md) |
-|--|--|--|--|
-||*您在這裡！*  | | |
-
-
-您目前是在 [設定] 階段。 請先開始存取 Microsoft 365 的安全性中心，然後設定您的試用實驗室或試驗環境。
-
-註冊 Office 365 或 Azure Active Directory 訂閱，以產生可用於註冊 Microsoft 365 E5 授權的 *onmicrosoft.com* 租使用者。 
-
->[!NOTE]
->如果您已經有現有的 Office 365 或 Azure Active Directory 訂閱，則可以略過 Office 365 E5 試用版或試驗承租人建立步驟。
-
-在這個階段中，您將會指導您：
-- 建立 Office 365 E5 試用租使用者
-- 啟用 Microsoft 365 試用訂閱
-
+本主題將引導您設定專用實驗室環境。 如需在生產中設定試用的詳細資訊，請參閱《新[評估與試驗 Microsoft 365 Defender](eval-overview.md)手冊》。 
 
 ## <a name="create-an-office-365-e5-trial-tenant"></a>建立 Office 365 E5 試用租使用者
 >[!NOTE]
->如果您已經有現有的 Office 365 或 Azure Active Directory 訂閱，您可以略過 Office 365 E5 試用租使用者建立步驟。
+>如果您已經有現有的 Office 365 或 Azure Active Directory 訂閱，您可以略過 Office 365 E5 的試用租使用者建立步驟。
 
-1. 移至 [Office 365 E5 產品入口網站](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab)，然後選取 [**免費試用版**]。
+1. 移至 [Office 365 E5 的產品入口網站](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab)，然後選取 [**免費試用版**]。
 
    ![影像 of_Office 365 E5 免費試用版頁面](../../media/mtp-eval-9.png)
   
@@ -81,15 +63,15 @@ ms.locfileid: "51935422"
 
    ![影像 of_Office 365 E5 試用註冊設定] 頁面，您可以在其中設定自訂功能變數名稱](../../media/mtp-eval-13.png)
  
-6. 設定第一個身分識別，這將是租使用者的全域管理員。 填入 **名稱** 和 **密碼**。 按一下 [ **註冊**]。
+6. 設定第一個身分識別，這將是租使用者的全域管理員。 填入 **名稱** 和 **密碼**。 按一下 [註冊]。
 
    ![影像 of_Office 365 E5 試用註冊設定] 頁面，您可以在這裡設定您的商務身分識別](../../media/mtp-eval-14.png)
 
 7. 按一下 [**移至設定**] 以完成 Office 365 E5 試用租使用者布建。
 
-   ![Office 365 E5 試用註冊設定頁面的影像，提示按一下 [開始設定] 按鈕](../../media/mtp-eval-15.png)
+   ![Office 365 E5 試用註冊安裝程式頁面的影像，提示按一下 [前往設定] 按鈕](../../media/mtp-eval-15.png)
 
-8. 連線公司網域加入 Office 365 租使用者。 選選擇 [**連線您已擁有的網域**，然後輸入您的功能變數名稱。 按 [下一步 **]**。
+8. 連線公司網域加入 Office 365 租使用者。 選選擇 [**連線您已擁有的網域**，然後輸入您的功能變數名稱。 按一下 ****[下一步]。
 
    ![影像 of_Office 365 E5 安裝頁面，您應該在其中個人化登入和電子郵件](../../media/mtp-eval-16.png)
  
@@ -144,7 +126,7 @@ ms.locfileid: "51935422"
 
    ![影像 of_Microsoft 365 E5 開始免費試用頁面，您應該在此頁面上時鐘立即試按鈕開始](../../media/mtp-eval-27.png)
  
-6. 移至 **Microsoft 365 系統管理中心**  >  **使用者** 作用中的  >  **使用者**。 選取您的使用者帳戶，選取 [**管理產品授權**]，然後換用 Office 365 E5 到 **Microsoft 365 E5** 的授權。 按一下 **[儲存]**。
+6. 前往 **Microsoft 365 系統管理 Center**  >  **使用者** 作用中的使用者  >  ****。 選取您的使用者帳戶，選取 [**管理產品授權**]，然後將授權從 Office 365 E5 換成 **Microsoft 365 E5**。 按一下 **儲存**。
 
    ![Image of_Microsoft 365 Admin Center 頁面，您可以在其中選取 Microsoft 365 E5 授權](../../media/mtp-eval-28.png)
  
@@ -158,6 +140,6 @@ ms.locfileid: "51935422"
 
 
 
-## <a name="next-step"></a>下一步
-|[階段3：設定板載 &](config-m365d-eval.md) | 針對您的 Microsoft 365 Defender 試用實驗室或試驗環境和上架端點，設定每個 Microsoft 365 Defender pillar。
+## <a name="next-step"></a>後續步驟
+|[階段3：設定板載 &](config-m365d-eval.md) | 針對 Microsoft 365 Defender 試用實驗室或試驗環境設定每個 Microsoft 365 Defender pillar，並在您的端點上架。
 |:-------|:-----|

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 瞭解如何在 Microsoft 365 中設定和使用17a-4 寬限 DataParser 連接器，以匯入及封存可寬延時間資料。
-ms.openlocfilehash: 0eb9564ac5a6e8a3fa76cf1a336f266a456b272a
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 66c1db3f37512ec6988fc9385f50b2df1dc6d8ed
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096969"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454406"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>設定 (預覽中封存寬限資料的連接器) 
+# <a name="set-up-a-connector-to-archive-slack-data"></a>設定連接器以封存寬限資料
 
 使用[DataParser 從 17a-4 LLC](https://www.17a-4.com/slack-dataparser/)匯入延後平臺中的資料，並將其封存至您 Microsoft 365 組織中的使用者信箱。 DataParser 包含的寬延時間連接器設定為從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 [自動寬限 DataParser] 連接器會將可寬延時間的資料轉換成電子郵件格式，然後將這些專案匯入 Microsoft 365 中的使用者信箱。
 
