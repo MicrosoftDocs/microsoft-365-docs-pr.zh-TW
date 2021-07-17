@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3ee0ca72f0eb3623755c9b342966915f520c485d
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/16/2021
-ms.locfileid: "53457980"
+ms.locfileid: "53461384"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>使用 Microsoft 受管理的電腦預覽及測試 Windows 11
 
@@ -24,7 +24,7 @@ ms.locfileid: "53457980"
 
 迄今為止，95% 以上的 Microsoft 受管理的電腦裝置符合[Windows 11 的資格準則](/windows/whats-new/windows-11-requirements)。 您可以從 Microsoft 受管理的電腦要求裝置的資格狀態的詳細資料。 若要將要求歸檔，請遵循下列步驟：
 
-1. 使用 Microsoft 受管理的電腦服務工程小組開啟新的服務要求。 如果您需要詳細資訊，說明如何針對此要求進行檔案，請參閱 [Admin support](admin-support.md)。
+1. 使用 Microsoft 受管理的電腦服務工程小組開啟新的服務要求。 如果您需要有關如何將要求歸檔的詳細資訊，請參閱 [Admin support](admin-support.md)。
 2. 使用下欄欄位的值：
     - 職稱： Windows 11 裝置資格
     - 要求類型：資訊的要求
@@ -52,7 +52,7 @@ ms.locfileid: "53457980"
 
 業務關鍵型應用程式是在封閉式 Windows 11 環境中更具驗證的最佳候選人。 我們可以協助您根據使用狀況和可靠性資料，將應用程式的優先順序設為 Windows 11 的測試。 若要要求我們的建議，請遵循下列步驟：
 
-1. 使用 Microsoft 受管理的電腦服務工程小組開啟新的服務要求。 如果您需要詳細資訊，說明如何針對此要求進行檔案，請參閱 [Admin support](admin-support.md)。
+1. 使用 Microsoft 受管理的電腦服務工程小組開啟新的服務要求。 如果您需要有關如何將要求歸檔的詳細資訊，請參閱 [Admin support](admin-support.md)。
 2. 使用下欄欄位的值：
     - 職稱： Windows 11 個測試基候選項目
     - 要求類型：資訊的要求
