@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計畫為保留標籤提供進階管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6aa47048d9654c46694e8a8eb0626b18b8b52f69
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419760"
+ms.locfileid: "53430627"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用檔案計畫來管理保留標籤
 
@@ -39,8 +39,6 @@ ms.locfileid: "53419760"
 - 檔案計畫描述元針對每個標籤支援額外和選用的資訊。
 
 檔案計畫可用於所有保留標籤，即使它們不會將內容標示為記錄。
-
-![檔案計畫頁面](../media/compliance-file-plan.png)
 
 如需有關保留標籤為何及其使用方式的相關資訊，請參閱[瞭解保留原則及保留標籤](retention.md)。
 
@@ -111,9 +109,9 @@ ms.locfileid: "53419760"
 
 ![建立或編輯保留標籤時的檔案計畫描述元](../media/file-plan-descriptors.png)
 
-檔案計畫描述元欄的範例檢視：
+當您針對這些各個選用描述項選取 **[選擇]** 時，您可以選取其中一個全新的值，或建立您自己的值然後加以選取。 例如： 
 
-![檔案計畫描述元欄](../media/file-plan-descriptors-on-labels-tab.png)
+![建立用於佈建/引文的新檔案計畫描述元](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>匯出所有保留標籤以分析或啟用離線檢閱
 
@@ -129,9 +127,7 @@ ms.locfileid: "53419760"
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>將保留標籤匯入至您的檔案計劃
 
-在檔案計畫中，您可以使用具有特定格式的 .csv 檔案來大量匯入新的保留標籤。 在匯入這些標籤之後，您可以在 .csv 檔案中進行編輯，然後再次重新匯入檔案，以更輕鬆地大量編輯現有的保留標籤。
-
-若要匯出新的保留標籤，以及修改現有的保留標籤： 
+在檔案計畫中，您可以使用具有特定格式的 .csv 檔案來大量匯入新的保留標籤： 
 
 1. 在 [檔案計畫] 頁面上，按一下 [匯入] 以使用 [填寫並匯入您的檔案計畫] 頁面：
 
@@ -188,7 +184,7 @@ ms.locfileid: "53419760"
     
     - 如果驗證通過：您可以選取 **上線** 以提供可在租用戶中使用的保留標籤。 或者，選取頁面的 [關閉] 圖示，和 **是** 以確認您想要關閉精靈，而不會讓此保留標籤在您的租用戶中立即使用。
 
-當已匯入的標籤新增至您的租用戶之後，您現在可以將保留標籤新增至新的保留標籤原則，或自動套用。 您可以直接從 [檔案計畫] 頁面執行此動作，方法是選取 [+ 建立標籤] 下拉式清單，然後選取 [發佈標籤的原則] 或 [自動套用標籤的原則]。
+當已匯入的標籤新增至您的租用戶之後，您現在可透過加以發佈來提供給使用者，或加以自動套用。 您可以從 **[標籤原則]** 執行這兩項操作，然後選取 **[發佈標籤]**，或選取 **[自動套用標籤]**。
 
 ## <a name="next-steps"></a>後續步驟
 

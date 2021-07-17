@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立應用程式原則。
-ms.openlocfilehash: 17417d7fac80f2763edbbaa8dbb2c8be16e47371
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420102"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438057"
 ---
 # <a name="create-app-policies"></a>建立應用程式原則
 
@@ -32,7 +32,7 @@ ms.locfileid: "53420102"
 
 您可以從提供的範本建立可自訂的應用程式原則，也可以建立自己的自訂應用程式原則。
 
-若要建立新的應用程式原則，請前往 **[Microsoft 365 合規性中心] > [應用程式防護與控管] > [概觀頁面] > [原則]**：
+若要建立新的應用程式原則，請前往 **[Microsoft 365 合規性中心] > [應用程式控管] > [概觀頁面] > [原則]**：
 
 - 若要使用針對應用程式使用量設計的範本，來建立新的應用程式原則，請選取 **[建立原則]** 下的 **[建立應用程式使用量原則]**。
 - 若要使用針對應用程式權限設計的範本，來建立新的應用程式原則，請選取 **[建立原則]** 下的 **[建立權限原則]**。

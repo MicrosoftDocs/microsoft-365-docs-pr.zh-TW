@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解應用程式威脅偵測和補救。
-ms.openlocfilehash: 26cd8501fdd8bd828357f8adb7d4e90f96e70114
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420076"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438045"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>了解應用程式威脅偵測和補救
 
@@ -42,9 +42,9 @@ ms.locfileid: "53420076"
 
 應用程式控管、Azure Active Directory (Azure AD) 和 Microsoft 雲端 App 安全性會收集並提供不同的資料集：
 
-- Azure AD 提供基礎應用程式中繼資料，以及有關應用程式登入的詳細資訊。
 - 應用程式控管提供 API 層級的應用程式活動詳細資訊。
-- Microsoft 雲端 App 安全性提供應用程式風險資訊。
+- Azure AD 提供基礎應用程式中繼資料，以及有關應用程式登入的詳細資訊。
+- Microsoft Cloud App Security 提供應用程式風險資訊。
 
 透過跨應用程式控管、Azure AD 和 Microsoft 雲端 App 安全性分享資訊，您可以在一個入口網站中顯示彙總資訊，並輕鬆連結到另一個入口網站以獲取更多資訊。 範例如下：
 

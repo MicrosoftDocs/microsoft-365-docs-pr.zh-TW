@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解應用程式原則。
-ms.openlocfilehash: 6d4ff23ca0e09f5e410d32d6ced144afc0c4bb15
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: b5d36d6597de54d7936bc542d37d91d0fac0ba45
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420081"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437961"
 ---
 # <a name="learn-about-app-policies"></a>了解應用程式原則
 
@@ -29,18 +29,7 @@ Microsoft 應用程式控管會偵測您 Microsoft 365 租用戶中的異常應�
 
 這些適用於應用程式、使用者模式及行為的原則可保護您的使用者，避免使用不符合規範或惡意的應用程式，並限制危險應用程式存取您的租用戶資料。
 
-以下是應用程式原則管理所需的系統管理員角色的快速檢視。
-
-| 角色 | 讀取原則 | 建立、更新或刪除原則 |
-|:-------|:-----|:-------|
-| 合規性系統管理員 | ![核取記號](..\media\checkmark.png) | ![核取記號](..\media\checkmark.png) |
-| 合規性讀取者 | ![核取記號](..\media\checkmark.png) |  |
-| 全域系統管理員 | ![核取記號](..\media\checkmark.png) | ![核取記號](..\media\checkmark.png) |
-| 全域讀取者  | ![核取記號](..\media\checkmark.png) |  |
-| 安全性系統管理員 | ![核取記號](..\media\checkmark.png) | ![核取記號](..\media\checkmark.png) |
-| 安全性讀取者  | ![核取記號](..\media\checkmark.png) |  |
-| 安全性操作員 | ![核取記號](..\media\checkmark.png) | ![核取記號](..\media\checkmark.png) |
-||||
+請參閱[系統管理員角色](app-governance-get-started.md#administrator-roles)，以了解哪些角色可以修改原則。
 
 <!--
 How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 

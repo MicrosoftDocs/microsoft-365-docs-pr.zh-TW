@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 判斷您的應用程式合規性狀況。
-ms.openlocfilehash: 3d7cac319c31bac40a3aad2f6b9a4c16303f6a20
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420059"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438021"
 ---
 # <a name="determine-your-app-compliance-posture"></a>判斷您的應用程式合規性狀況
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-Microsoft 應用程式控管可讓您從 [Microsoft 365 合規性中心](https://compliance.microsoft.com/appgovernance) 的應用程式控管概觀頁面，快速評估協力廠商應用程式的合規性狀況，及其對於您 Microsoft 365 租用戶中的資料存取權。
+Microsoft 應用程式控管可讓您從 [Microsoft 365 合規性中心](https://aka.ms/appgovernance) 的應用程式控管概觀頁面，快速評估協力廠商應用程式的合規性狀況，及其對於您 Microsoft 365 租用戶中的資料存取權。
 
 ![Microsoft 365 合規性中心的應用程式控管概觀頁面](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
@@ -54,7 +54,7 @@ Microsoft 應用程式控管可讓您從 [Microsoft 365 合規性中心](https:/
 
 - 資料與資源存取：
 
-  - 過去 90 天內的應用程式 API 資料存取
-  - 過去 90 天內的熱門資源使用量
+  - 於目前和前三個行事曆月份，租用戶中的應用程式透過圖形 API 存取的資料總計。 (目前僅包含郵件和檔案上傳和下載使用情況)
+  - 目前和前三個行事曆月份的資料使用情況，按資源類型細分。 (目前僅包含郵件和檔案上傳和下載使用情況)
 
   從此資訊中，您可以判斷 Microsoft 365 租用戶的資料存取是否有異常高峰。

@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: 瞭解如何使用 AllowSelfServicePurchase PowerShell Cmdlet 來開啟或關閉自助購買服務。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
-ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.date: 07/16/2021
+ms.openlocfilehash: 77cb1c753db22929ea2c3d14226a3927e6406b89
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227472"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461360"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase
 
@@ -104,7 +104,9 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Project 方案 3 | CFQ7TTC0KXNC |
 | Visio 方案 1 | CFQ7TTC0KXN9 |
 | Visio 方案 2 | CFQ7TTC0KXN8 |
-
+| Windows 365 Enterprise | CFQ7TTC0HHS9 |
+| Windows 365 商務 | CFQ7TTC0J203 |
+| Windows 365 商務，具有 Windows 的混合式權益 | CFQ7TTC0HX99 |
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或設定 AllowSelfServicePurchase 的狀態
 
 在您查看可供自助購買之產品的清單後，您可以查看或修改特定產品的設定。

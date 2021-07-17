@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 了解如何使用 Office 365 IP 位址和 URL Web 服務來協助您更能識別並區分 Office 365 網路流量。
-ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6a8786d99c92fae43113d550b76a87281cde0c5b
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419781"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461288"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務
 
@@ -131,7 +131,7 @@ Microsoft 在每個月月初更新 Office 365 IP 位址和 FQDN 項目。 有時
 }
 ```
 
-範例 3 要求 URI：<https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+範例 3 要求 URI：<https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 此 URI 會以 CSV 格式顯示輸出。範例結果：
 
@@ -140,7 +140,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-範例 4 要求 URI：<https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+範例 4 要求 URI：<https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 此 URI 會顯示已針對 Office 365 全球服務執行個體發佈的所有舊版。範例結果：
 

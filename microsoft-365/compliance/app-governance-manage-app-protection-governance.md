@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 實施 Microsoft 應用程式控管功能以控管您的應用程式。
-ms.openlocfilehash: bc8c739132de52abb69c15479cd851462e9f6ce7
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 63bd6684bc041c3c82ba6b8ddcc28c2600182b26
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420073"
+ms.locfileid: "53430693"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security 的應用程式控管附加元件（預覽版）
 
@@ -53,7 +53,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## <a name="a-first-glimpse-at-app-governance"></a>應用程式控管初探
 
-若要查看應用程式控管儀表板，請前往 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance)。 請注意，您的登入帳戶必須具有其中一個[系統管理員角色](app-governance-get-started.md#administrator-roles)，才能檢視任何應用程式控管資料。
+若要查看應用程式控管儀表板，請前往 [https://aka.ms/appgovernance](https://aka.ms/appgovernance)。 請注意，您的登入帳戶必須具有其中一個[系統管理員角色](app-governance-get-started.md#administrator-roles)，才能檢視任何應用程式控管資料。
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Azure AD 和 Microsoft Cloud App Security 的應用程式控管整合
 
